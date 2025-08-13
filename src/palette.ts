@@ -82,7 +82,8 @@ export const palette: Palette = {
     primary: '#a9b1d6',
     muted: '#8a8ea8',
     subtle: '#545c7e',
-    inactive: '#787c99',
+    // Slightly cooler blue-gray for inactive text
+    inactive: '#7682a8',
     soft: '#a8b2d0',
     softTitle: '#b8c2e8',
     selectionText: '#c8d2f0',

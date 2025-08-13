@@ -75,7 +75,7 @@ export function buildColors(): Record<string, string> {
     'activityBar.foreground': palette.fg.soft,
     'activityBar.activeBorder': '#3b3e52',
     'activityBar.activeBackground': '#1f1f24',
-    'activityBar.inactiveForeground': palette.fg.subtle,
+    'activityBar.inactiveForeground': palette.fg.inactive,
     'activityBar.border': palette.line.border,
     'activityBarBadge.background': palette.brand.primary,
     'activityBarBadge.foreground': '#fff',
@@ -142,6 +142,7 @@ export function buildColors(): Record<string, string> {
     'editor.foldBackground': '#1b1b214a',
     'editorLink.activeForeground': '#acb0d0',
     'editor.selectionBackground': '#515c7e40',
+    // Use the same cool selection hue but lighter alpha for inactive selection
     'editor.inactiveSelectionBackground': '#515c7e25',
     'editor.findMatchBackground': '#3d59a166',
     'editor.findMatchBorder': palette.accent.yellow,
@@ -254,10 +255,10 @@ export function buildColors(): Record<string, string> {
     'tab.activeForeground': palette.fg.onSelection,
     'tab.hoverForeground': palette.fg.onSelection,
     'tab.activeBorder': '#5a7bc4',
-    'tab.inactiveForeground': palette.fg.subtle,
+    'tab.inactiveForeground': palette.fg.inactive,
     'tab.border': palette.line.border,
     'tab.unfocusedActiveForeground': palette.fg.soft,
-    'tab.unfocusedInactiveForeground': palette.fg.subtle,
+    'tab.unfocusedInactiveForeground': palette.fg.inactive,
     'tab.unfocusedHoverForeground': palette.fg.soft,
     'tab.activeModifiedBorder': '#1a1b26',
     'tab.inactiveModifiedBorder': '#1f202e',
@@ -268,7 +269,7 @@ export function buildColors(): Record<string, string> {
     'panel.background': palette.bg.base,
     'panel.border': palette.line.border,
     'panelTitle.activeForeground': palette.fg.activeTitle,
-    'panelTitle.inactiveForeground': palette.fg.subtle,
+    'panelTitle.inactiveForeground': palette.fg.inactive,
     'panelTitle.activeBorder': palette.bg.sunken,
     'panelInput.border': palette.bg.sunken,
 
@@ -286,7 +287,7 @@ export function buildColors(): Record<string, string> {
 
     // Title bar
     'titleBar.activeForeground': palette.fg.muted,
-    'titleBar.inactiveForeground': palette.fg.subtle,
+    'titleBar.inactiveForeground': palette.fg.inactive,
     'titleBar.activeBackground': palette.bg.base,
     'titleBar.inactiveBackground': palette.bg.base,
     'titleBar.border': palette.line.border,
