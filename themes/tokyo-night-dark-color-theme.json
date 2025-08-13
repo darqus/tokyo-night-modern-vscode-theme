@@ -89,10 +89,10 @@
 
     "tree.indentGuidesStroke": "#2b2b3b",
     "sideBar.foreground": "#a8b2d0",
-    "sideBar.background": "#16161c",
+    "sideBar.background": "#121218",
     "sideBar.border": "#1a1a1c",
     "sideBarTitle.foreground": "#b8c2e8",
-    "sideBarSectionHeader.background": "#16161e",
+    "sideBarSectionHeader.background": "#0f0f15",
     "sideBarSectionHeader.foreground": "#c8d2f0",
     "sideBarSectionHeader.border": "#1a1a1c",
     "sideBar.dropBackground": "#282a38",
@@ -102,7 +102,7 @@
     "list.activeSelectionBackground": "#252838",
 
     "list.activeSelectionForeground": "#d8e2f8",
-    "list.inactiveSelectionBackground": "#1c1d29",
+    "list.inactiveSelectionBackground": "#18192a",
     "list.inactiveSelectionForeground": "#a9b1d6",
     "list.focusBackground": "#212230",
     "list.focusForeground": "#d8e2f8",
@@ -238,8 +238,8 @@
     "diffEditor.insertedTextBackground": "#41a6b515",
     "diffEditor.removedTextBackground": "#db4b4b22",
 
-    "breadcrumb.background": "#16161c",
-    "breadcrumbPicker.background": "#16161c",
+    "breadcrumb.background": "#121218",
+    "breadcrumbPicker.background": "#121218",
     "breadcrumb.foreground": "#515670",
     "breadcrumb.focusForeground": "#a9b1d6",
     "breadcrumb.activeSelectionForeground": "#a9b1d6",
