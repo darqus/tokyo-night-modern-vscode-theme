@@ -89,10 +89,10 @@
 
     "tree.indentGuidesStroke": "#404050",
     "sideBar.foreground": "#a8b2d0",
-    "sideBar.background": "#121218",
+    "sideBar.background": "#16161c",
     "sideBar.border": "#1a1a1c",
     "sideBarTitle.foreground": "#b8c2e8",
-    "sideBarSectionHeader.background": "#0f0f15",
+    "sideBarSectionHeader.background": "#16161c",
     "sideBarSectionHeader.foreground": "#c8d2f0",
     "sideBarSectionHeader.border": "#1a1a1c",
     "sideBar.dropBackground": "#1a1c28",
@@ -166,8 +166,8 @@
     "editor.lineHighlightBackground": "#282a38",
     "editorWhitespace.foreground": "#363b54",
 
-    "editorMarkerNavigation.background": "#16161e",
-    "editorHoverWidget.background": "#16161e",
+    "editorMarkerNavigation.background": "#16161c",
+    "editorHoverWidget.background": "#16161c",
     "editorHoverWidget.border": "#1a1a1c",
 
     "editorBracketMatch.background": "#16161e",
@@ -208,14 +208,14 @@
     "editorGroupHeader.noTabsBackground": "#121214",
     "editorGroupHeader.border": "#1a1a1c",
 
-    "editorPane.background": "#121214",
+    "editorPane.background": "#16161c",
 
-    "editorWidget.background": "#121214",
+    "editorWidget.background": "#16161c",
     "editorWidget.resizeBorder": "#545c7e33",
 
-    "editorSuggestWidget.background": "#121214",
+    "editorSuggestWidget.background": "#16161c",
     "editorSuggestWidget.border": "#1a1a1c",
-    "editorSuggestWidget.selectedBackground": "#252732",
+    "editorSuggestWidget.selectedBackground": "#2a2d3a",
     "editorSuggestWidget.highlightForeground": "#6183bb",
 
     "editorCodeLens.foreground": "#484f70",
@@ -223,12 +223,12 @@
     "editorLightBulbAutoFix.foreground": "#e0af68",
 
     "peekView.border": "#1a1a1c",
-    "peekViewEditor.background": "#121214",
+    "peekViewEditor.background": "#16161c",
     "peekViewEditor.matchHighlightBackground": "#3d59a166",
     "peekViewTitle.background": "#1a1a1c",
     "peekViewTitleLabel.foreground": "#a9b1d6",
     "peekViewTitleDescription.foreground": "#8a8ea8",
-    "peekViewResult.background": "#1a1a1c",
+    "peekViewResult.background": "#16161c",
     "peekViewResult.selectionForeground": "#a9b1d6",
     "peekViewResult.selectionBackground": "#3d59a133",
     "peekViewResult.lineForeground": "#a9b1d6",
@@ -238,8 +238,8 @@
     "diffEditor.insertedTextBackground": "#41a6b515",
     "diffEditor.removedTextBackground": "#db4b4b22",
 
-    "breadcrumb.background": "#121218",
-    "breadcrumbPicker.background": "#121218",
+    "breadcrumb.background": "#16161c",
+    "breadcrumbPicker.background": "#16161c",
     "breadcrumb.foreground": "#515670",
     "breadcrumb.focusForeground": "#a9b1d6",
     "breadcrumb.activeSelectionForeground": "#a9b1d6",
@@ -293,8 +293,8 @@
     "textSeparator.foreground": "#363b54",
 
     "debugExceptionWidget.border": "#963c47",
-    "debugExceptionWidget.background": "#1a1a1e",
-    "debugToolBar.background": "#1a1a1e",
+    "debugExceptionWidget.background": "#16161c",
+    "debugToolBar.background": "#16161c",
 
     "debugConsole.infoForeground": "#8a8ea8",
     "debugConsole.errorForeground": "#bb616b",
@@ -365,8 +365,8 @@
     "gitlens.gutterUncommittedForegroundColor": "#444b6a",
     "gitlens.gutterForegroundColor": "#444b6a",
 
-    "notificationCenterHeader.background": "#1a1a1e",
-    "notifications.background": "#1a1a1e",
+    "notificationCenterHeader.background": "#16161c",
+    "notifications.background": "#16161c",
     "notificationLink.foreground": "#6183bb",
     "notificationsErrorIcon.foreground": "#bb616b",
     "notificationsWarningIcon.foreground": "#bba461",
