@@ -160,8 +160,8 @@
     "editor.selectionHighlightBackground": "#515c7e44",
 
     "editorCursor.foreground": "#c0caf5",
-    "editorIndentGuide.background": "#282a38",
-    "editorIndentGuide.activeBackground": "#363b54",
+    "editorIndentGuide.background1": "#282a38",
+    "editorIndentGuide.activeBackground1": "#363b54",
     "editorLineNumber.foreground": "#363b54",
     "editorLineNumber.activeForeground": "#737aa2",
     "editor.lineHighlightBackground": "#282a38",
