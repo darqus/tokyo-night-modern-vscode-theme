@@ -4,6 +4,8 @@ export interface Palette {
   bg: {
     base: Hex
     elevated: Hex
+  sunken: Hex
+  overlay: Hex
   }
   line: {
     border: Hex
@@ -50,6 +52,8 @@ export const palette: Palette = {
   bg: {
     base: '#16161c',
     elevated: '#1a1a22',
+  sunken: '#121215',
+  overlay: '#1a1a1e',
   },
   line: {
     border: '#1a1a1c',

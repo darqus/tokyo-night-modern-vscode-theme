@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build:theme": "ts-node src/build.ts",
+    "test:smoke": "ts-node scripts/smoke-compare.ts",
     "vscode:prepublish": "npm run build:theme",
     "package": "vsce package",
     "publish": "vsce publish",
