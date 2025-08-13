@@ -95,18 +95,18 @@
     "sideBarSectionHeader.background": "#0f0f15",
     "sideBarSectionHeader.foreground": "#c8d2f0",
     "sideBarSectionHeader.border": "#1a1a1c",
-    "sideBar.dropBackground": "#282a38",
+    "sideBar.dropBackground": "#1a1c28",
 
-    "list.dropBackground": "#282a38",
+    "list.dropBackground": "#1a1c28",
     "list.deemphasizedForeground": "#9ca6c8",
-    "list.activeSelectionBackground": "#252838",
+    "list.activeSelectionBackground": "#1a2030",
 
     "list.activeSelectionForeground": "#d8e2f8",
     "list.inactiveSelectionBackground": "#18192a",
     "list.inactiveSelectionForeground": "#a9b1d6",
-    "list.focusBackground": "#212230",
+    "list.focusBackground": "#161c28",
     "list.focusForeground": "#d8e2f8",
-    "list.hoverBackground": "#18181f",
+    "list.hoverBackground": "#0f0f18",
     "list.hoverForeground": "#d8e2f8",
 
     "list.highlightForeground": "#668ac4",
