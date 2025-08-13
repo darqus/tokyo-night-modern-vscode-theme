@@ -3,7 +3,7 @@
   "displayName": "Tokyo Night Dark",
   "description": "Darker version of Tokyo Night Dark",
   "version": "0.3.3",
-  "publisher": "darqus",
+  "publisher": "tokyo-night-dark",
   "license": "MIT",
   "engines": {
     "vscode": "^1.67.0"
