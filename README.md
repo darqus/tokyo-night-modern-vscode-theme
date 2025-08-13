@@ -1,7 +1,7 @@
-# [Tokyo Night Abyss](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-theme-darqus)
+# [Tokyo Night Darqus](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-darqus-theme)
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/darqus.tokyo-night-dark.svg)](https://marketplace.visualstudio.com/items?itemName=darqus.tokyo-night-dark)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating-star/darqus.tokyo-night-dark.svg)](https://marketplace.visualstudio.com/items?itemName=darqus.tokyo-night-dark)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/tokyo-night-dark.tokyo-night-darqus-theme.svg)](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-darqus-theme)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/tokyo-night-dark.tokyo-night-darqus-theme.svg)](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-darqus-theme)
 [![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-dark)](https://github.com/darqus/tokyo-night-dark/issues)
 
 <br>
@@ -10,7 +10,7 @@ Darker version of the tokyo night theme with slightly more desaturated syntax hi
 
 ## Screenshots
 
-![Screenshot - Tokyo Night Dark](https://raw.githubusercontent.com/darqus/tokyo-night-dark/master/static/ss_tokyo_night_dark.png)
+![Screenshot - Tokyo Night Darqus](https://raw.githubusercontent.com/darqus/tokyo-night-dark/master/static/ss_tokyo_night_dark.png)
 
 ## Original Theme
 
