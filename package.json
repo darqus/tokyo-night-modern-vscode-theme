@@ -36,11 +36,16 @@
     ]
   },
   "scripts": {
+    "build:theme": "ts-node src/build.ts",
+    "vscode:prepublish": "npm run build:theme",
     "package": "vsce package",
     "publish": "vsce publish",
     "release": "standard-version"
   },
   "devDependencies": {
-    "standard-version": "^9.5.0"
+    "@types/node": "^20.19.10",
+    "standard-version": "^9.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
