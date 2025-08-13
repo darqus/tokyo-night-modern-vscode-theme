@@ -164,7 +164,8 @@ export function buildColors(): Record<string, string> {
     // Editor widgets/hover
     'editorMarkerNavigation.background': palette.bg.base,
     'editorHoverWidget.background': palette.bg.base,
-    'editorHoverWidget.border': palette.line.border,
+    'editorHoverWidget.border': withAlpha(palette.line.border, '00'),
+    'editorHoverWidget.foreground': palette.fg.primary,
 
     // Bracket match
     'editorBracketMatch.background': '#16161e',
@@ -214,7 +215,9 @@ export function buildColors(): Record<string, string> {
     'editorWidget.resizeBorder': '#545c7e33',
     'editorSuggestWidget.background': palette.bg.base,
     'editorSuggestWidget.border': '#00000000',
-    'editorSuggestWidget.selectedBackground': '#2a2d3a',
+    'editorSuggestWidget.foreground': palette.fg.primary,
+    'editorSuggestWidget.selectedBackground': palette.bg.selection.menu,
+    'editorSuggestWidget.selectedForeground': palette.fg.onSelection,
     'editorSuggestWidget.highlightForeground': '#6183bb',
     'editorCodeLens.foreground': '#484f70',
     'editorLightBulb.foreground': palette.accent.yellow,
@@ -386,14 +389,20 @@ export function buildColors(): Record<string, string> {
 
     // Menus
     'menubar.selectionForeground': palette.fg.selectionText,
-    'menubar.selectionBackground': '#2a2d3a',
-    'menubar.selectionBorder': '#1b1e2e',
+    'menubar.selectionBackground': palette.bg.selection.menu,
+    'menubar.selectionBorder': palette.line.menu,
     'menu.foreground': palette.fg.soft,
     'menu.background': palette.bg.base,
     'menu.selectionForeground': palette.fg.selectionText,
-    'menu.selectionBackground': '#2a2d3a',
+    'menu.selectionBackground': palette.bg.selection.menu,
     'menu.separatorBackground': palette.line.border,
-    'menu.border': palette.line.border,
+    'menu.border': withAlpha(palette.line.border, '00'),
+    // Quick input (Command Palette, Quick Fix picker)
+    'quickInput.background': palette.bg.base,
+    'quickInput.foreground': palette.fg.primary,
+    'quickInputTitle.background': palette.bg.sunken,
+    'quickInputList.focusBackground': palette.bg.selection.focus,
+    'quickInputList.focusForeground': palette.fg.onSelection,
   }
 }
 

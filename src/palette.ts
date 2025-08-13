@@ -10,10 +10,12 @@ export interface Palette {
       active: Hex
       inactive: Hex
       focus: Hex
+      menu: Hex
     }
   }
   line: {
     border: Hex
+    menu: Hex
   }
   fg: {
     primary: Hex
@@ -69,10 +71,12 @@ export const palette: Palette = {
       active: '#1a2030',
       inactive: '#181c28',
       focus: '#161c28',
+      menu: '#2a2d3a',
     },
   },
   line: {
     border: '#1a1a1c',
+    menu: '#1b1e2e',
   },
   fg: {
     primary: '#a9b1d6',
