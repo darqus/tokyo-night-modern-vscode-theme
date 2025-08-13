@@ -15,7 +15,3 @@ Darker version of the tokyo night theme with slightly more desaturated syntax hi
 ## Original Theme
 
 <https://github.com/enkia/tokyo-night-vscode-theme>
-
-## Forker from
-
-<https://github.com/darqus/tokyo-night-dark>
