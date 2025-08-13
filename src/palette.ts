@@ -4,8 +4,13 @@ export interface Palette {
   bg: {
     base: Hex
     elevated: Hex
-  sunken: Hex
-  overlay: Hex
+    sunken: Hex
+    overlay: Hex
+    selection: {
+      active: Hex
+      inactive: Hex
+      focus: Hex
+    }
   }
   line: {
     border: Hex
@@ -14,6 +19,12 @@ export interface Palette {
     primary: Hex
     muted: Hex
     subtle: Hex
+    inactive: Hex
+    soft: Hex
+    softTitle: Hex
+    selectionText: Hex
+    onSelection: Hex
+    activeTitle: Hex
   }
   brand: {
     primary: Hex
@@ -52,8 +63,13 @@ export const palette: Palette = {
   bg: {
     base: '#16161c',
     elevated: '#1a1a22',
-  sunken: '#121215',
-  overlay: '#1a1a1e',
+    sunken: '#121215',
+    overlay: '#1a1a1e',
+    selection: {
+      active: '#1a2030',
+      inactive: '#181c28',
+      focus: '#161c28',
+    },
   },
   line: {
     border: '#1a1a1c',
@@ -62,6 +78,12 @@ export const palette: Palette = {
     primary: '#a9b1d6',
     muted: '#8a8ea8',
     subtle: '#545c7e',
+    inactive: '#787c99',
+    soft: '#a8b2d0',
+    softTitle: '#b8c2e8',
+    selectionText: '#c8d2f0',
+    onSelection: '#d8e2f8',
+    activeTitle: '#9ca6c8',
   },
   brand: {
     primary: '#3d59a1',

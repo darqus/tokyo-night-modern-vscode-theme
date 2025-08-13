@@ -95,7 +95,7 @@
     "list.deemphasizedForeground": "#7aa2f7",
     "list.activeSelectionBackground": "#1a2030",
     "list.activeSelectionForeground": "#d8e2f8",
-    "list.inactiveSelectionBackground": "#18192a",
+    "list.inactiveSelectionBackground": "#181c28",
     "list.inactiveSelectionForeground": "#787c99",
     "list.focusBackground": "#161c28",
     "list.focusForeground": "#d8e2f8",

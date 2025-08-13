@@ -27,7 +27,7 @@ export function buildColors(): Record<string, string> {
     // Badges, icons, settings
     'badge.background': '#7e83b230',
     'badge.foreground': '#c8d2f0',
-    'icon.foreground': '#a8b2d0',
+    'icon.foreground': palette.fg.soft,
     'settings.headerForeground': '#6183bb',
 
     // Window + sash
@@ -72,7 +72,7 @@ export function buildColors(): Record<string, string> {
 
     // Activity bar
     'activityBar.background': palette.bg.base,
-    'activityBar.foreground': '#a8b2d0',
+    'activityBar.foreground': palette.fg.soft,
     'activityBar.activeBorder': '#3b3e52',
     'activityBar.activeBackground': '#1f1f24',
     'activityBar.inactiveForeground': palette.fg.subtle,
@@ -82,26 +82,26 @@ export function buildColors(): Record<string, string> {
 
     // Side bar
     'tree.indentGuidesStroke': '#404050',
-    'sideBar.foreground': '#a8b2d0',
+    'sideBar.foreground': palette.fg.soft,
     'sideBar.background': palette.bg.base,
     'sideBar.border': palette.line.border,
-    'sideBarTitle.foreground': '#b8c2e8',
+    'sideBarTitle.foreground': palette.fg.softTitle,
     'sideBarSectionHeader.background': palette.bg.base,
-    'sideBarSectionHeader.foreground': '#c8d2f0',
+    'sideBarSectionHeader.foreground': palette.fg.selectionText,
     'sideBarSectionHeader.border': palette.line.border,
     'sideBar.dropBackground': '#1a1c28',
 
     // Lists
     'list.dropBackground': '#1a1c28',
     'list.deemphasizedForeground': palette.accent.blue,
-    'list.activeSelectionBackground': '#1a2030',
-    'list.activeSelectionForeground': '#d8e2f8',
-    'list.inactiveSelectionBackground': '#18192a',
-    'list.inactiveSelectionForeground': '#787c99',
-    'list.focusBackground': '#161c28',
-    'list.focusForeground': '#d8e2f8',
+    'list.activeSelectionBackground': palette.bg.selection.active,
+    'list.activeSelectionForeground': palette.fg.onSelection,
+    'list.inactiveSelectionBackground': palette.bg.selection.inactive,
+    'list.inactiveSelectionForeground': palette.fg.inactive,
+    'list.focusBackground': palette.bg.selection.focus,
+    'list.focusForeground': palette.fg.onSelection,
     'list.hoverBackground': '#0f0f18',
-    'list.hoverForeground': '#d8e2f8',
+    'list.hoverForeground': palette.fg.onSelection,
     'list.highlightForeground': palette.accent.blue,
     'list.invalidItemForeground': palette.accent.yellow,
     'list.errorForeground': palette.accent.red,
@@ -175,7 +175,7 @@ export function buildColors(): Record<string, string> {
     'editorOverviewRuler.errorForeground': '#db4b4b',
     'editorOverviewRuler.warningForeground': palette.accent.yellow,
     'editorOverviewRuler.infoForeground': '#1abc9c',
-  'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
+    'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
     'editorOverviewRuler.findMatchForeground': '#a9b1d644',
     'editorOverviewRuler.rangeHighlightForeground': '#a9b1d644',
     'editorOverviewRuler.selectionHighlightForeground': '#a9b1d622',
@@ -248,14 +248,14 @@ export function buildColors(): Record<string, string> {
     // Tabs
     'tab.activeBackground': palette.bg.elevated,
     'tab.inactiveBackground': palette.bg.base,
-    'tab.activeForeground': '#d8e2f8',
-    'tab.hoverForeground': '#d8e2f8',
+    'tab.activeForeground': palette.fg.onSelection,
+    'tab.hoverForeground': palette.fg.onSelection,
     'tab.activeBorder': '#5a7bc4',
     'tab.inactiveForeground': palette.fg.subtle,
     'tab.border': palette.line.border,
-    'tab.unfocusedActiveForeground': '#a8b2d0',
+    'tab.unfocusedActiveForeground': palette.fg.soft,
     'tab.unfocusedInactiveForeground': palette.fg.subtle,
-    'tab.unfocusedHoverForeground': '#a8b2d0',
+    'tab.unfocusedHoverForeground': palette.fg.soft,
     'tab.activeModifiedBorder': '#1a1b26',
     'tab.inactiveModifiedBorder': '#1f202e',
     'tab.unfocusedActiveBorder': '#1f202e',
@@ -264,21 +264,21 @@ export function buildColors(): Record<string, string> {
     // Panels
     'panel.background': palette.bg.base,
     'panel.border': palette.line.border,
-    'panelTitle.activeForeground': '#9ca6c8',
+    'panelTitle.activeForeground': palette.fg.activeTitle,
     'panelTitle.inactiveForeground': palette.fg.subtle,
-  'panelTitle.activeBorder': palette.bg.sunken,
-  'panelInput.border': palette.bg.sunken,
+    'panelTitle.activeBorder': palette.bg.sunken,
+    'panelInput.border': palette.bg.sunken,
 
     // Status bar
     'statusBar.foreground': palette.fg.muted,
     'statusBar.background': palette.bg.base,
     'statusBar.border': palette.line.border,
-  'statusBar.noFolderBackground': palette.bg.sunken,
-  'statusBar.debuggingBackground': palette.bg.sunken,
+    'statusBar.noFolderBackground': palette.bg.sunken,
+    'statusBar.debuggingBackground': palette.bg.sunken,
     'statusBar.debuggingForeground': palette.fg.muted,
     'statusBarItem.activeBackground': '#1f1f24',
     'statusBarItem.hoverBackground': '#252732',
-  'statusBarItem.prominentBackground': palette.bg.overlay,
+    'statusBarItem.prominentBackground': palette.bg.overlay,
     'statusBarItem.prominentHoverBackground': '#20222c',
 
     // Title bar
@@ -289,12 +289,12 @@ export function buildColors(): Record<string, string> {
     'titleBar.border': palette.line.border,
 
     // Text
-  'walkThrough.embeddedEditorBackground': palette.bg.sunken,
+    'walkThrough.embeddedEditorBackground': palette.bg.sunken,
     'textLink.foreground': '#6183bb',
     'textLink.activeForeground': palette.accent.cyan,
     'textPreformat.foreground': '#9699a8',
-  'textBlockQuote.background': palette.bg.sunken,
-  'textCodeBlock.background': palette.bg.sunken,
+    'textBlockQuote.background': palette.bg.sunken,
+    'textCodeBlock.background': palette.bg.sunken,
     'textSeparator.foreground': '#363b54',
 
     // Debug
@@ -385,12 +385,12 @@ export function buildColors(): Record<string, string> {
     'notifications.foreground': palette.fg.primary,
 
     // Menus
-    'menubar.selectionForeground': '#c8d2f0',
+    'menubar.selectionForeground': palette.fg.selectionText,
     'menubar.selectionBackground': '#2a2d3a',
     'menubar.selectionBorder': '#1b1e2e',
-    'menu.foreground': '#a8b2d0',
+    'menu.foreground': palette.fg.soft,
     'menu.background': palette.bg.base,
-    'menu.selectionForeground': '#c8d2f0',
+    'menu.selectionForeground': palette.fg.selectionText,
     'menu.selectionBackground': '#2a2d3a',
     'menu.separatorBackground': palette.line.border,
     'menu.border': palette.line.border,
