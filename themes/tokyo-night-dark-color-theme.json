@@ -82,7 +82,7 @@
     "activityBar.foreground": "#a8b2d0",
     "activityBar.activeBorder": "#3b3e52",
     "activityBar.activeBackground": "#1f1f24",
-    "activityBar.inactiveForeground": "#515670",
+    "activityBar.inactiveForeground": "#545c7e",
     "activityBar.border": "#121214",
     "activityBarBadge.background": "#3d59a1",
     "activityBarBadge.foreground": "#fff",
@@ -98,12 +98,12 @@
     "sideBar.dropBackground": "#1a1c28",
 
     "list.dropBackground": "#1a1c28",
-    "list.deemphasizedForeground": "#b8c2e8",
+    "list.deemphasizedForeground": "#7aa2f7",
     "list.activeSelectionBackground": "#1a2030",
 
     "list.activeSelectionForeground": "#d8e2f8",
     "list.inactiveSelectionBackground": "#18192a",
-    "list.inactiveSelectionForeground": "#a9b1d6",
+    "list.inactiveSelectionForeground": "#787c99",
     "list.focusBackground": "#161c28",
     "list.focusForeground": "#d8e2f8",
     "list.hoverBackground": "#0f0f18",
@@ -148,6 +148,7 @@
     "editor.selectionBackground": "#515c7e40",
     "editor.inactiveSelectionBackground": "#515c7e25",
 
+    "editor.findMatchBackground": "#3d59a166",
     "editor.findMatchBackground": "#3d59a166",
     "editor.findMatchBorder": "#e0af68",
     "editor.findMatchHighlightBackground": "#3d59a166",
@@ -249,10 +250,10 @@
     "tab.activeForeground": "#d8e2f8",
     "tab.hoverForeground": "#d8e2f8",
     "tab.activeBorder": "#5a7bc4",
-    "tab.inactiveForeground": "#787c99",
+    "tab.inactiveForeground": "#545c7e",
     "tab.border": "#1a1a1c",
     "tab.unfocusedActiveForeground": "#a8b2d0",
-    "tab.unfocusedInactiveForeground": "#787c99",
+    "tab.unfocusedInactiveForeground": "#545c7e",
     "tab.unfocusedHoverForeground": "#a8b2d0",
     "tab.activeModifiedBorder": "#1a1b26",
     "tab.inactiveModifiedBorder": "#1f202e",
@@ -262,7 +263,7 @@
     "panel.background": "#16161c",
     "panel.border": "#151516",
     "panelTitle.activeForeground": "#9ca6c8",
-    "panelTitle.inactiveForeground": "#515670",
+    "panelTitle.inactiveForeground": "#545c7e",
     "panelTitle.activeBorder": "#121215",
     "panelInput.border": "#121215",
 
@@ -279,7 +280,7 @@
     "statusBarItem.prominentHoverBackground": "#20222c",
 
     "titleBar.activeForeground": "#8a8ea8",
-    "titleBar.inactiveForeground": "#8a8ea8",
+    "titleBar.inactiveForeground": "#545c7e",
     "titleBar.activeBackground": "#16161c",
     "titleBar.inactiveBackground": "#16161c",
     "titleBar.border": "#1a1a1c",
@@ -1222,7 +1223,7 @@
     {
       "name": "JSON Key - Level 7",
       "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
         "foreground": "#f7768e"
