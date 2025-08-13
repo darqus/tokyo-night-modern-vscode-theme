@@ -87,7 +87,7 @@
     "activityBarBadge.background": "#3d59a1",
     "activityBarBadge.foreground": "#fff",
 
-    "tree.indentGuidesStroke": "#2b2b3b",
+    "tree.indentGuidesStroke": "#404050",
     "sideBar.foreground": "#a8b2d0",
     "sideBar.background": "#121218",
     "sideBar.border": "#1a1a1c",
@@ -98,7 +98,7 @@
     "sideBar.dropBackground": "#1a1c28",
 
     "list.dropBackground": "#1a1c28",
-    "list.deemphasizedForeground": "#9ca6c8",
+    "list.deemphasizedForeground": "#b8c2e8",
     "list.activeSelectionBackground": "#1a2030",
 
     "list.activeSelectionForeground": "#d8e2f8",
@@ -109,10 +109,10 @@
     "list.hoverBackground": "#0f0f18",
     "list.hoverForeground": "#d8e2f8",
 
-    "list.highlightForeground": "#668ac4",
-    "list.invalidItemForeground": "#c97018",
-    "list.errorForeground": "#bb616b",
-    "list.warningForeground": "#c49a5a",
+    "list.highlightForeground": "#7aa2f7",
+    "list.invalidItemForeground": "#e0af68",
+    "list.errorForeground": "#f7768e",
+    "list.warningForeground": "#e0af68",
 
     "listFilterWidget.background": "#1a1a1c",
     "listFilterWidget.outline": "#3d59a1",
@@ -337,12 +337,12 @@
     "terminal.ansiBrightCyan": "#7dcfff",
     "terminal.ansiBrightWhite": "#acb0d0",
 
-    "gitDecoration.modifiedResourceForeground": "#6183bb",
+    "gitDecoration.modifiedResourceForeground": "#7aa2f7",
     "gitDecoration.ignoredResourceForeground": "#515670",
     "gitDecoration.deletedResourceForeground": "#914c54",
-    "gitDecoration.renamedResourceForeground": "#449dab",
-    "gitDecoration.addedResourceForeground": "#449dab",
-    "gitDecoration.untrackedResourceForeground": "#449dab",
+    "gitDecoration.renamedResourceForeground": "#73daca",
+    "gitDecoration.addedResourceForeground": "#73daca",
+    "gitDecoration.untrackedResourceForeground": "#73daca",
     "gitDecoration.conflictingResourceForeground": "#bb7a61",
     "gitDecoration.stageDeletedResourceForeground": "#914c54",
     "gitDecoration.stageModifiedResourceForeground": "#6183bb",
