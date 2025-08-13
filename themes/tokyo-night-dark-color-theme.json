@@ -245,7 +245,7 @@
     "breadcrumb.activeSelectionForeground": "#a9b1d6",
 
     "tab.activeBackground": "#1a1a22",
-    "tab.inactiveBackground": "#121214",
+    "tab.inactiveBackground": "#1a1a1e",
     "tab.activeForeground": "#d8e2f8",
     "tab.hoverForeground": "#d8e2f8",
     "tab.activeBorder": "#5a7bc4",
