@@ -214,7 +214,7 @@
     "editorWidget.resizeBorder": "#545c7e33",
 
     "editorSuggestWidget.background": "#16161c",
-    "editorSuggestWidget.border": "#1a1a1c",
+    "editorSuggestWidget.border": "#00000000",
     "editorSuggestWidget.selectedBackground": "#2a2d3a",
     "editorSuggestWidget.highlightForeground": "#6183bb",
 
@@ -368,9 +368,12 @@
     "notificationCenterHeader.background": "#16161c",
     "notifications.background": "#16161c",
     "notificationLink.foreground": "#6183bb",
-    "notificationsErrorIcon.foreground": "#bb616b",
-    "notificationsWarningIcon.foreground": "#bba461",
-    "notificationsInfoIcon.foreground": "#0da0ba",
+    "notificationsErrorIcon.foreground": "#f7768e",
+    "notificationsWarningIcon.foreground": "#e0af68",
+    "notificationsInfoIcon.foreground": "#7aa2f7",
+    "notificationToast.border": "#1a1a1c",
+    "notifications.border": "#1a1a1c",
+    "notifications.foreground": "#a9b1d6",
 
     "menubar.selectionForeground": "#c8d2f0",
     "menubar.selectionBackground": "#2a2d3a",
