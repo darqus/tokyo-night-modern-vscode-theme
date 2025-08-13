@@ -19,6 +19,7 @@ export function buildColors(): Record<string, string> {
     // Top-level and base
     foreground: palette.fg.muted,
     descriptionForeground: '#515670',
+    disabledForeground: palette.fg.inactive,
     focusBorder: '#545c7e33',
     errorForeground: '#515670',
     'widget.shadow': '#ffffff00',
@@ -100,6 +101,10 @@ export function buildColors(): Record<string, string> {
     'list.inactiveSelectionForeground': palette.fg.inactive,
     'list.focusBackground': palette.bg.selection.focus,
     'list.focusForeground': palette.fg.onSelection,
+    // When the list container is not focused but item has focus
+    'list.inactiveFocusBackground': palette.bg.selection.inactive,
+    // Keep the text subdued in inactive focus
+    'list.inactiveFocusForeground': palette.fg.inactive,
     'list.hoverBackground': '#0f0f18',
     'list.hoverForeground': palette.fg.onSelection,
     'list.highlightForeground': palette.accent.blue,
