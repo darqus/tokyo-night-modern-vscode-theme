@@ -1,8 +1,9 @@
 {
-  "name": "tokyo-night-dark",
-  "displayName": "Tokyo Night Dark",
-  "description": "Darker version of Tokyo Night Dark",
-  "version": "0.3.3",
+  "name": "tokyo-night-theme-darqus",
+  "displayName": "Tokyo Night Abyss",
+  "description": "A darker version of the Tokyo Night theme.",
+  "version": "0.3.4",
+  "author": "darqus",
   "publisher": "tokyo-night-dark",
   "license": "MIT",
   "engines": {
@@ -28,7 +29,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Tokyo Night Dark",
+        "label": "Tokyo Night Darqus",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-dark-color-theme.json"
       }

@@ -1,7 +1,8 @@
 {
-  "name": "Tokyo Night Dark",
-  "author": "kito0",
-  "maintainers": ["kito0 <drewshah0@gmail.com>"],
+  "name": "Tokyo Night Darker",
+  "displayName": "Tokyo Night Darker",
+  "author": "darqus",
+  "maintainers": ["darqus <darqus.ru@gmail.com>"],
   "type": "dark",
   "semanticTokenColors": {
     "parameter.declaration": {

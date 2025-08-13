@@ -1,4 +1,4 @@
-# [Tokyo Night Dark](https://marketplace.visualstudio.com/items?itemName=darqus.tokyo-night-dark)
+# [Tokyo Night Darker](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-darker-theme)
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/darqus.tokyo-night-dark.svg)](https://marketplace.visualstudio.com/items?itemName=darqus.tokyo-night-dark)
 [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/darqus.tokyo-night-dark.svg)](https://marketplace.visualstudio.com/items?itemName=darqus.tokyo-night-dark)
