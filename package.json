@@ -2,7 +2,7 @@
   "name": "tokyo-night-theme-darqus",
   "displayName": "Tokyo Night Darqus",
   "description": "A darker version of the Tokyo Night theme.",
-  "version": "0.3.6",
+  "version": "0.3.7-0",
   "author": "darqus",
   "publisher": "tokyo-night-dark",
   "license": "MIT",
@@ -41,7 +41,8 @@
     "vscode:prepublish": "npm run build:theme",
     "package": "vsce package",
     "publish": "vsce publish",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prerelease": "standard-version --prerelease"
   },
   "devDependencies": {
     "@types/node": "^20.19.10",
