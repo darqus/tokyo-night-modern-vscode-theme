@@ -26,8 +26,8 @@ export function buildColors(): Record<string, string> {
     'scrollbar.shadow': withAlpha(palette.fg.subtle, '33'),
 
     // Значки, иконки, настройки - улучшенная видимость
-    'badge.background': withAlpha(palette.brand.primary, 'DD'),
-    'badge.foreground': '#FFFFFF',
+    'badge.background': palette.brand.primary,
+    'badge.foreground': palette.bg.base,
     'icon.foreground': palette.fg.soft,
     'settings.headerForeground': palette.fg.primary,
 
@@ -85,7 +85,7 @@ export function buildColors(): Record<string, string> {
     'activityBar.inactiveForeground': palette.fg.subtle,
     'activityBar.border': palette.line.border,
     'activityBarBadge.background': palette.brand.primary,
-    'activityBarBadge.foreground': '#ffffff',
+    'activityBarBadge.foreground': palette.bg.base,
 
     // Боковая панель - улучшенная иерархия
     'tree.indentGuidesStroke': palette.line.border,
