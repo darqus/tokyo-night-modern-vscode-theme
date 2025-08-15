@@ -171,7 +171,7 @@ export const palette: Palette = {
     // Акцентные цвета из оригинальной палитры Tokyo Night
     blue: '#7aa2f7', // Ключевые слова, типы
     cyan: '#7dcfff', // Строки, импорты
-    teal: '#73daca', // Свойства, атрибуты
+    teal: '#85c9c1', // Свойства, атрибуты
     magenta: '#bb9af7', // Переменные, константы
     yellow: '#e0af68', // Числа, параметры
     orange: '#ff9e64', // Функции, методы
@@ -184,8 +184,8 @@ export const palette: Palette = {
     brightBlack: '#565f89',
     red: '#f7768e',
     brightRed: '#f7768e',
-    green: '#9ece6a',
-    brightGreen: '#9ece6a',
+    green: '#a2c27e',
+    brightGreen: '#a2c27e',
     yellow: '#e0af68',
     brightYellow: '#e0af68',
     blue: '#7aa2f7',
