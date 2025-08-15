@@ -354,7 +354,7 @@
     "debugView.valueChangedHighlight": "#7aa2f7aa",
     "debugTokenExpression.name": "#7dcfff",
     "debugTokenExpression.value": "#9aa5ce",
-    "debugTokenExpression.string": "#4ea044",
+    "debugTokenExpression.string": "#72ac6a",
     "debugTokenExpression.boolean": "#ff9e64",
     "debugTokenExpression.number": "#ff9e64",
     "debugTokenExpression.error": "#bb616b",
@@ -538,7 +538,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -650,7 +650,7 @@
         "meta.at-rule.function variable.parameter.url"
       ],
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -947,7 +947,7 @@
         "meta.definition.variable"
       ],
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1164,14 +1164,14 @@
       "name": "Changed",
       "scope": "markup.changed",
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
       "name": "Regular Expressions",
       "scope": "string.regexp",
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1204,7 +1204,7 @@
       "name": "Regular Expressions - Quantifier",
       "scope": "keyword.operator.quantifier.regexp",
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1218,7 +1218,7 @@
       "name": "Escape Characters",
       "scope": "constant.character.escape",
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1316,7 +1316,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1393,7 +1393,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
@@ -1528,7 +1528,7 @@
         "variable.language.fenced.markdown"
       ],
       "settings": {
-        "foreground": "#4ea044"
+        "foreground": "#72ac6a"
       }
     },
     {
