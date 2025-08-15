@@ -470,88 +470,88 @@ export interface Palette {
 
 export const palette: Palette = {
   bg: {
-    // Фоны в стиле Tokyo Night для лучшего погружения
-    base: '#16161e', // Основной фон редактора
-    elevated: '#16161e', // Всплывающие окна, панели - теперь используют базовый фон
-    sunken: '#17171dff', // Статус-бар, сайдбар
-    overlay: '#16161e', // Оверлеи - теперь используют базовый фон
-    input: '#181820', // Поля ввода
-    hover: '#292e42', // Hover-эффекты
-    active: '#3d59a1', // Активные элементы
-    drop: '#2b3a65', // Зоны drag-n-drop
-    lineHighlight: '#1e202e', // Подсветка текущей строки
-    bracketMatch: '#3b4261', // Подсветка скобок
-    tabs: '#16161e', // Фон вкладок - уже использует базовый фон
+    // Cooler, more balanced backgrounds
+    base: '#1a1b26', // Main editor background
+    elevated: '#24283b', // Panels, dialogs
+    sunken: '#16161e', // Status bar, sidebars
+    overlay: '#24283b', // Overlays
+    input: '#24283b', // Input fields
+    hover: '#363b54', // Hover effects
+    active: '#3d59a1', // Active elements
+    drop: '#3d59a1', // Drag-n-drop zones
+    lineHighlight: '#24283b', // Current line highlight
+    bracketMatch: '#3b4261', // Bracket match highlight
+    tabs: '#1a1b26', // Tab background
     selection: {
-      active: '#364a82', // Активное выделение
-      inactive: '#2b3a65', // Неактивное выделение
-      focus: '#3d59a1', // Выделение в фокусе
-      menu: '#364a82', // Выделение в меню
+      active: '#3d59a1', // Active selection
+      inactive: '#2b3a65', // Inactive selection
+      focus: '#3d59a1', // Focus selection
+      menu: '#364a82', // Menu selection
     },
   },
   line: {
-    border: '#222639', // Основные границы
-    menu: '#202433', // Границы в меню
+    border: '#363b54', // Main borders
+    menu: '#363b54', // Menu borders
   },
   fg: {
-    // Цвета текста в стиле Tokyo Night
-    primary: '#c0caf5', // Основной текст
-    muted: '#a9b1d6', // Второстепенный текст
-    subtle: '#565a7a', // Подсказки, комментарии
-    inactive: '#7a7e9a', // Неактивный текст (увеличена яркость для лучшей читаемости)
-    panelText: '#8b8faf', // Текст в боковых панелях (промежуточная яркость между subtle и muted)
-    soft: '#a9b1d6', // Мягкий текст
-    softTitle: '#c0caf5', // Заголовки
-    selectionText: '#ffffff', // Текст на выделении (белый для контраста)
-    onSelection: '#ffffff', // Текст поверх выделения
-    activeTitle: '#c0caf5', // Активные заголовки
+    // Text colors with better contrast
+    primary: '#c0caf5', // Primary text
+    muted: '#a9b1d6', // Secondary text
+    subtle: '#545c7e', // Hints, comments
+    inactive: '#545c7e', // Inactive text
+    panelText: '#a9b1d6', // Panel text
+    soft: '#a9b1d6', // Soft text
+    softTitle: '#c0caf5', // Titles
+    selectionText: '#ffffff', // Text on selection
+    onSelection: '#ffffff', // Text over selection
+    activeTitle: '#c0caf5', // Active titles
   },
   brand: {
-    primary: '#7aa2f7', // Основной акцентный цвет (Tokyo Night blue)
+    primary: '#7aa2f7', // Primary brand color (Tokyo Night blue)
     button: {
-      primary: '#3d59a1', // Более темный синий для кнопок
-      hover: '#4a6bb8', // Hover-эффект для кнопок
+      primary: '#3d59a1', // Darker blue for buttons
+      hover: '#4a6bb8', // Button hover effect
     },
   },
   accent: {
-    // Акцентные цвета из оригинальной палитры Tokyo Night
-    blue: '#7aa2f7', // Ключевые слова, типы
-    cyan: '#7dcfff', // Строки, импорты
-    teal: '#85c9c1', // Свойства, атрибуты
-    magenta: '#bb9af7', // Переменные, константы
-    yellow: '#e0af68', // Числа, параметры
-    orange: '#ff9e64', // Функции, методы
-    red: '#f7768e', // Ошибки, предупреждения
-    purple: '#9d7cd8', // Операторы, спецсимволы
+    // Original Tokyo Night accent colors
+    blue: '#7aa2f7',
+    cyan: '#7dcfff',
+    teal: '#85c9c1',
+    magenta: '#bb9af7',
+    yellow: '#e0af68',
+    orange: '#ff9e64',
+    red: '#f7768e',
+    purple: '#9d7cd8',
   },
   token: {
-    // Цвета для токенов синтаксиса
-    comment: '#444b6a',
-    commentDoc: '#5a638c',
-    commentDocEmphasized: '#646e9c',
-    constant: '#c0768e',
-    string: '#72ac6a',
+    // Refined syntax highlighting tokens
+    comment: '#545c7e',
+    commentDoc: '#545c7e',
+    commentDocEmphasized: '#6b7499',
+    constant: '#e0af68', // Changed from a reddish pink to yellow
+    string: '#9ece6a', // Brighter green for strings
     color: '#9aa5ce',
-    invalid: '#ff5370',
+    invalid: '#f7768e',
     invalidDeprecated: '#bb9af7',
     storageType: '#bb9af7',
     storageModifier: '#9d7cd8',
     interpolation: '#7dcfff',
     templateKeyword: '#0db9d7',
     spread: '#e0687a',
-    operator: '#72ac6a',
+    operator: '#89ddff', // Changed from green to a light blue
     importExport: '#7dcfff',
     keyword: '#bb9af7',
     keywordSql: '#7dcfff',
     keywordLogical: '#bb9af7',
     tag: '#f7768e',
-    tagComponent: '#de5971',
-    tagPunctuation: '#ba3c97',
-    globalConstant: '#e0687a',
+    tagComponent: '#bb9af7', // Components are now magenta
+    tagPunctuation: '#89ddff', // Punctuation is now light blue
+    globalConstant: '#e0af68',
     variable: '#c0caf5',
     objectVariable: '#c0caf5',
     arrayKey: '#7dcfff',
-    objectKey: '#73daca',
+    objectKey: '#c0caf5', // Object keys are now primary text color
     objectProperty: '#7dcfff',
     objectPropertyAlt: '#c0caf5',
     objectKeyLevel3: '#41a6b5',
@@ -559,7 +559,7 @@ export const palette: Palette = {
     otherVariable: '#f7768e',
     method: '#7aa2f7',
     function: '#7aa2f7',
-    functionArg: '#e0687a',
+    functionArg: '#e0af68',
     typeConstant: '#bb9af7',
     variableDefinition: '#bb9af7',
     inheritedClass: '#bb9af7',
@@ -567,7 +567,7 @@ export const palette: Palette = {
     className: '#c0caf5',
     supportFunction: '#0db9d7',
     cssProperty: '#7aa2f7',
-    cssFont: '#72ac6a',
+    cssFont: '#9ece6a',
     cssClass: '#c0caf5',
     cssId: '#bb9af7',
     cssTag: '#0db9d7',
@@ -577,7 +577,7 @@ export const palette: Palette = {
     cssParentSelector: '#73daca',
     scssMixin: '#bb9af7',
     scssInclude: '#9d7cd8',
-    cssValue: '#85d0b7',
+    cssValue: '#ff9e64', // CSS values are now orange
     languageMethod: '#f7768e',
     thisKeyword: '#f7768e',
     htmlAttribute: '#bb9af7',
@@ -591,9 +591,9 @@ export const palette: Palette = {
     regexGroup: '#f7768e',
     regexCharClass: '#bb9af7',
     regexCharSet: '#e0af68',
-    regexQuantifier: '#72ac6a',
+    regexQuantifier: '#9ece6a',
     regexBackslash: '#c0caf5',
-    escapeChar: '#72ac6a',
+    escapeChar: '#9ece6a',
     decorator: '#7aa2f7',
     cssUnit: '#f7768e',
     jsonKey0: '#7aa2f7',
@@ -604,10 +604,10 @@ export const palette: Palette = {
     jsonKey5: '#0db9d7',
     jsonKey6: '#73daca',
     jsonKey7: '#f7768e',
-    jsonKey8: '#72ac6a',
+    jsonKey8: '#9ece6a',
     plainPunctuation: '#9abdf5',
     blockPunctuation: '#9abdf5',
-    markdownH1: '#72ac6a',
+    markdownH1: '#9ece6a',
     markdownH2: '#61bdf2',
     markdownH3: '#7aa2f7',
     markdownH4: '#6d91de',
@@ -616,17 +616,17 @@ export const palette: Palette = {
     markdownContent: '#c0caf5',
     htmlText: '#9aa5ce',
     markdownRawInline: '#bb9af7',
-    markdownRawPunctuation: '#4E5579',
+    markdownRawPunctuation: '#545c7e',
     markupItalic: '#c0caf5',
     markupBold: '#c0caf5',
-    markdownBlockquote: '#4e5579',
+    markdownBlockquote: '#545c7e',
     markdownLink: '#73daca',
-    markdownCodeBlock: '#72ac6a',
-    markdownSeparator: '#444b6a',
+    markdownCodeBlock: '#9ece6a',
+    markdownSeparator: '#545c7e',
     markupTable: '#c0cefc',
-    tokenInfo: '#0db9d7',
+    tokenInfo: '#7dcfff',
     tokenWarn: '#ffdb69',
-    tokenError: '#db4b4b',
+    tokenError: '#f7768e',
     tokenDebug: '#b267e6',
     apacheTag: '#f7768e',
     preprocessor: '#73daca',
@@ -647,11 +647,11 @@ export const palette: Palette = {
   ansi: {
     // ANSI цвета для терминала в стиле Tokyo Night
     black: '#414868',
-    brightBlack: '#484e71',
+    brightBlack: '#545c7e',
     red: '#f7768e',
     brightRed: '#f7768e',
-    green: '#a2c27e',
-    brightGreen: '#a2c27e',
+    green: '#9ece6a',
+    brightGreen: '#9ece6a',
     yellow: '#e0af68',
     brightYellow: '#e0af68',
     blue: '#7aa2f7',
@@ -675,7 +675,7 @@ export const palette: Palette = {
       fg: '#c8d2f0',
     },
     sash: {
-      hover: '#202840',
+      hover: '#363b54',
     },
     selectionWash: '#515c7e',
     scrollbarBase: '#868bc4',
@@ -684,22 +684,22 @@ export const palette: Palette = {
       border: '#0f0f14',
     },
     list: {
-      hoverBg: '#0f0f18',
-      dropBg: '#1a1c28',
+      hoverBg: '#24283b',
+      dropBg: '#3d59a1',
     },
     editorLinkActive: '#acb0d0',
-    codeLens: '#484f70',
-    noMatches: '#a6333f',
+    codeLens: '#545c7e',
+    noMatches: '#f7768e',
     settingsHeader: '#6183bb',
     window: {
       border: '#0d0f17',
     },
     tab: {
-      activeBorder: '#5a7bc4',
-      activeModifiedBorder: '#1a1b26',
-      inactiveModifiedBorder: '#1f202e',
-      unfocusedActiveBorder: '#1f202e',
-      lastPinnedBorder: '#222333',
+      activeBorder: '#7aa2f7',
+      activeModifiedBorder: '#ff9e64',
+      inactiveModifiedBorder: '#e0af68',
+      unfocusedActiveBorder: '#24283b',
+      lastPinnedBorder: '#363b54',
     },
     statusItem: {
       hover: '#252732',
@@ -711,52 +711,48 @@ export const palette: Palette = {
     },
     debug: {
       exceptionBorder: '#963c47',
-      consoleError: '#bb616b',
-      consoleWarning: '#c49a5a',
+      consoleError: '#f7768e',
+      consoleWarning: '#e0af68',
       stateLabelBg: '#1e1e25',
       tokenValue: '#9aa5ce',
-      tokenString: '#72ac6a',
-      tokenError: '#bb616b',
-      info: '#0da0ba',
+      tokenString: '#9ece6a',
+      tokenError: '#f7768e',
+      info: '#7dcfff',
     },
     editorOverview: {
-      error: '#db4b4b',
-      info: '#1abc9c',
-      modified: '#394b70',
-      added: '#164846',
-      deleted: '#703438',
+      error: '#f7768e',
+      info: '#7dcfff',
+      modified: '#7aa2f7',
+      added: '#9ece6a',
+      deleted: '#f7768e',
     },
     gutter: {
-      modified: '#394b70',
-      added: '#164846',
-      deleted: '#823c41',
+      modified: '#7aa2f7',
+      added: '#9ece6a',
+      deleted: '#f7768e',
     },
     minimapGutter: {
-      modified: '#425882',
-      added: '#1C5957',
-      deleted: '#944449',
+      modified: '#7aa2f7',
+      added: '#9ece6a',
+      deleted: '#f7768e',
     },
     charts: {
       foreground: '#9aa5ce',
     },
     gitlens: {
-      foreground: '#444b6a',
+      foreground: '#545c7e',
     },
     git: {
-      ignored: '#444857',
-      deleted: '#914c54',
-      conflicting: '#bb7a61',
-      stageDeleted: '#914c54',
-      stageModified: '#6183bb',
+      ignored: '#545c7e',
+      deleted: '#f7768e',
+      conflicting: '#e0af68',
+      stageDeleted: '#f7768e',
+      stageModified: '#7aa2f7',
     },
-    /** Common semantic colors */
     semantic: {
-      /** Pure white for high contrast */
       white: '#ffffff',
-      /** Notification links */
       notificationLink: '#6183bb',
-      /** Offline status */
-      offline: '#914c54',
+      offline: '#f7768e',
     },
   },
 }
