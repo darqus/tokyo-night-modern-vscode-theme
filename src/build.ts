@@ -115,7 +115,7 @@ export function buildColors(): Record<string, string> {
 
     // Боковая панель - улучшенная иерархия
     'tree.indentGuidesStroke': palette.line.border,
-    'sideBar.foreground': palette.fg.primary,
+    'sideBar.foreground': palette.fg.subtle, // Более приглушенный цвет для неактивных файлов
     'sideBar.background': palette.bg.sunken,
     'sideBar.border': palette.line.border,
     'sideBarTitle.foreground': palette.fg.softTitle,
@@ -137,7 +137,7 @@ export function buildColors(): Record<string, string> {
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
     // Сохранять приглушенный текст при неактивном фокусе
     'list.inactiveFocusForeground': palette.fg.subtle,
-    'list.hoverBackground': palette.ui.list.hoverBg,
+    'list.hoverBackground': palette.bg.hover, // Используем hover цвет при наведении
     'list.hoverForeground': palette.fg.primary,
     'list.highlightForeground': palette.brand.primary,
     'list.invalidItemForeground': palette.accent.yellow,
