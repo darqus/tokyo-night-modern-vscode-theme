@@ -52,8 +52,8 @@ export function buildColors(): Record<string, string> {
     'button.foreground': palette.fg.selectionText,
     'button.border': withAlpha(palette.fg.subtle, '20'),
     'button.separator': withAlpha(palette.fg.subtle, '33'),
-    'button.secondaryBackground': withAlpha(palette.fg.subtle, '20'),
-    'button.secondaryHoverBackground': withAlpha(palette.fg.subtle, '30'),
+    'button.secondaryBackground': withAlpha(palette.fg.primary, '10'),
+    'button.secondaryHoverBackground': withAlpha(palette.fg.primary, '15'),
     'button.secondaryForeground': palette.fg.primary,
     'progressBar.background': palette.brand.primary,
 
