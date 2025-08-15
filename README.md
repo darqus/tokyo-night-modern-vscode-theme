@@ -4,11 +4,80 @@
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/tokyo-night-dark.tokyo-night-theme-darqus.svg)](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-theme-darqus&ssr=false#review-details)
 [![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-dark)](https://github.com/darqus/tokyo-night-dark/issues)
 
-Darker version of the tokyo night theme with slightly more desaturated syntax highlighting.
+A darker version of the Tokyo Night theme with slightly more muted syntax highlighting.
 
-## Screenshots
+## 🎨 Features
+
+- **Deep dark background** - reduces eye strain
+- **Muted accents** - soft syntax highlighting
+- **High contrast** - excellent readability
+- **TypeScript-generated** - modern theme architecture
+
+## 📸 Screenshots
 
 ![Screenshot - Tokyo Night Darqus](https://raw.githubusercontent.com/darqus/tokyo-night-dark/master/static/ss_tokyo_night_dark.png)
+
+## 🚀 Installation
+
+### From VS Code Marketplace
+
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Tokyo Night Darqus"
+4. Click Install
+
+### From the command line
+
+```bash
+code --install-extension tokyo-night-dark.tokyo-night-theme-darqus
+```
+
+## 🛠️ Development
+
+This theme is built using a modern TypeScript approach for better maintainability and extensibility.
+
+### Quick start
+
+```bash
+# Clone the repository
+git clone https://github.com/darqus/tokyo-night-dark.git
+cd tokyo-night-dark
+
+# Install dependencies
+npm install
+
+# Build the theme
+npm run build:theme
+
+# Testing
+npm run test:smoke
+```
+
+### Project structure
+
+```bash
+src/
+├── palette.ts             # 🎨 Color palette
+├── build.ts               # 🔧 Theme generator
+├── tokenColors.ts         # 🌈 Syntax colors
+├── semanticTokenColors.ts # 🎯 Semantic colors
+└── utils/color.ts         # 🛠️ Color utilities
+```
+
+### Documentation
+
+- [📋 Architecture](./ARCHITECTURE.md) - How the theme is structured
+- [🛠️ Development](./DEVELOPMENT.md) - Developer's guide
+- [🎨 Examples](./EXAMPLES.md) - Customization examples
+
+## 🎨 Color Palette
+
+| Category | Description | Examples |
+|-----------|----------|---------|
+| **Background** | Background colors | `#16161c` (base), `#1a1a22` (elevated) |
+| **Foreground** | Text colors | `#a9b1d6` (primary), `#8a8ea8` (muted) |
+| **Accents** | Syntax highlighting | `#7aa2f7` (blue), `#f7768e` (red) |
+| **ANSI** | Terminal colors | Full palette for the terminal |
 
 ## Original Theme
 

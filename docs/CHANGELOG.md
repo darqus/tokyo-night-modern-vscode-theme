@@ -31,7 +31,3 @@ All notable changes to this project will be documented in this file. See [standa
 * **README:** correct theme name and update marketplace badges ([91fee93](https://github.com/darqus/tokyo-night-dark/commit/91fee9399b4ee55b02f2e5bd403fe46d201fceca))
 * **themes:** update indent guide colors for tokyo-night-dark ([80ad159](https://github.com/darqus/tokyo-night-dark/commit/80ad15906e37331e1b1edb0cf6059b284935411a))
 * update dependencies to resolve security vulnerabilities ([67a9182](https://github.com/darqus/tokyo-night-dark/commit/67a918268f473181ff6a17e20bee3f39b6508425))
-
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

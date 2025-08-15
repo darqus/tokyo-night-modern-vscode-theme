@@ -1,53 +1,101 @@
 export type Hex = `#${string}`
 
+/**
+ * The main color palette for the Tokyo Night Dark theme.
+ *
+ * Organized by functional groups for easy understanding and maintenance.
+ * All colors use hex format with type safety.
+ */
 export interface Palette {
+  /** Background colors - from darkest to lightest */
   bg: {
+    /** Main background of the editor and side panels */
     base: Hex
+    /** Elevated elements (panels, dialogs) */
     elevated: Hex
+    /** Sunken areas (statusbar, some panels) */
     sunken: Hex
+    /** Overlays and modal windows */
     overlay: Hex
+    /** Input fields and forms */
     input: Hex
+    /** Hover state for interactive elements */
     hover: Hex
+    /** Active/pressed elements */
     active: Hex
+    /** Drop zones for drag&drop */
     drop: Hex
+    /** Current line highlight */
     lineHighlight: Hex
+    /** Matching bracket highlight */
     bracketMatch: Hex
+    /** Tab background */
     tabs: Hex
+    /** Different types of selection */
     selection: {
+      /** Active selection */
       active: Hex
+      /** Inactive selection */
       inactive: Hex
+      /** Selection in focus */
       focus: Hex
+      /** Selection in a menu */
       menu: Hex
     }
   }
+  /** Lines and borders */
   line: {
+    /** Main element borders */
     border: Hex
+    /** Borders in menus */
     menu: Hex
   }
+  /** Text colors - from primary to auxiliary */
   fg: {
+    /** Primary text */
     primary: Hex
+    /** Muted text (secondary information) */
     muted: Hex
+    /** Subtle text (hints, labels) */
     subtle: Hex
+    /** Inactive/disabled text */
     inactive: Hex
+    /** Soft text (intermediate brightness) */
     soft: Hex
+    /** Soft titles */
     softTitle: Hex
+    /** Text on selection */
     selectionText: Hex
+    /** Text on top of a selection */
     onSelection: Hex
+    /** Active titles */
     activeTitle: Hex
   }
+  /** Brand colors */
   brand: {
+    /** Primary brand color (buttons, links) */
     primary: Hex
   }
+  /** Accent colors for syntax highlighting */
   accent: {
+    /** Blue - keywords, types */
     blue: Hex
+    /** Cyan - strings, imports */
     cyan: Hex
+    /** Teal - properties, attributes */
     teal: Hex
+    /** Magenta - variables, constants */
     magenta: Hex
+    /** Yellow - numbers, parameters */
     yellow: Hex
+    /** Orange - functions, methods */
     orange: Hex
+    /** Red - errors, warnings */
     red: Hex
+    /** Purple - operators, special characters */
     purple: Hex
   }
+  /** ANSI colors for the terminal */
   ansi: {
     black: Hex
     brightBlack: Hex
