@@ -121,6 +121,115 @@ export interface Palette {
     white: Hex
     brightWhite: Hex
   }
+  /** UI-specific colors and helpers (non-syntax, common UI accents) */
+  ui: {
+    /** Subtle/description text */
+    description: Hex
+    /** Breadcrumb foreground */
+    breadcrumb: Hex
+    /** Shadows */
+    shadow: {
+      widget: Hex
+      scrollbar: Hex
+    }
+    /** Badges */
+    badge: {
+      base: Hex
+      fg: Hex
+    }
+    /** Sash */
+    sash: {
+      hover: Hex
+    }
+    /** Selection wash base (used with alpha) */
+    selectionWash: Hex
+    /** Scrollbar slider base (used with alpha) */
+    scrollbarBase: Hex
+    /** Inputs */
+    input: {
+      placeholder: Hex
+      border: Hex
+    }
+    /** Lists */
+    list: {
+      hoverBg: Hex
+      dropBg: Hex
+    }
+    /** Links in editor when active */
+    editorLinkActive: Hex
+    /** CodeLens text */
+    codeLens: Hex
+    /** Generic 'no matches' outline (e.g., filter widget) */
+    noMatches: Hex
+    /** Muted blue highlight for suggestions etc. */
+    settingsHeader: Hex
+    /** Window borders */
+    window: {
+      border: Hex
+    }
+    /** Tabs specifics */
+    tab: {
+      activeBorder: Hex
+      activeModifiedBorder: Hex
+      inactiveModifiedBorder: Hex
+      unfocusedActiveBorder: Hex
+      lastPinnedBorder: Hex
+    }
+    /** Status bar item states */
+    statusItem: {
+      hover: Hex
+      prominentHover: Hex
+    }
+    /** Text specifics */
+    text: {
+      preformat: Hex
+      separator: Hex
+    }
+    /** Debug UI specifics */
+    debug: {
+      exceptionBorder: Hex
+      consoleError: Hex
+      consoleWarning: Hex
+      stateLabelBg: Hex
+      tokenValue: Hex
+      tokenString: Hex
+      tokenError: Hex
+      info: Hex
+    }
+    /** Editor overview ruler colors */
+    editorOverview: {
+      error: Hex
+      info: Hex
+      modified: Hex
+      added: Hex
+      deleted: Hex
+    }
+    /** Editor gutter colors */
+    gutter: {
+      modified: Hex
+      added: Hex
+      deleted: Hex
+    }
+    /** Minimap gutter colors */
+    minimapGutter: {
+      modified: Hex
+      added: Hex
+      deleted: Hex
+    }
+    /** Charts */
+    charts: {
+      foreground: Hex
+    }
+    /** GitLens helpers */
+    gitlens: {
+      foreground: Hex
+    }
+    /** Git decorations */
+    git: {
+      deleted: Hex
+      conflicting: Hex
+    }
+  }
 }
 
 export const palette: Palette = {
@@ -196,5 +305,89 @@ export const palette: Palette = {
     brightCyan: '#7dcfff',
     white: '#c0caf5',
     brightWhite: '#c0caf5',
+  },
+  ui: {
+    description: '#515670',
+    breadcrumb: '#515670',
+    shadow: {
+      widget: '#ffffff00',
+      scrollbar: '#00000033',
+    },
+    badge: {
+      base: '#7e83b2',
+      fg: '#c8d2f0',
+    },
+    sash: {
+      hover: '#29355a',
+    },
+    selectionWash: '#515c7e',
+    scrollbarBase: '#868bc4',
+    input: {
+      placeholder: '#787c99',
+      border: '#0f0f14',
+    },
+    list: {
+      hoverBg: '#0f0f18',
+      dropBg: '#1a1c28',
+    },
+    editorLinkActive: '#acb0d0',
+    codeLens: '#484f70',
+    noMatches: '#a6333f',
+    settingsHeader: '#6183bb',
+    window: {
+      border: '#0d0f17',
+    },
+    tab: {
+      activeBorder: '#5a7bc4',
+      activeModifiedBorder: '#1a1b26',
+      inactiveModifiedBorder: '#1f202e',
+      unfocusedActiveBorder: '#1f202e',
+      lastPinnedBorder: '#222333',
+    },
+    statusItem: {
+      hover: '#252732',
+      prominentHover: '#20222c',
+    },
+    text: {
+      preformat: '#9699a8',
+      separator: '#363b54',
+    },
+    debug: {
+      exceptionBorder: '#963c47',
+      consoleError: '#bb616b',
+      consoleWarning: '#c49a5a',
+      stateLabelBg: '#1e1e25',
+      tokenValue: '#9aa5ce',
+      tokenString: '#9ece6a',
+      tokenError: '#bb616b',
+      info: '#0da0ba',
+    },
+    editorOverview: {
+      error: '#db4b4b',
+      info: '#1abc9c',
+      modified: '#394b70',
+      added: '#164846',
+      deleted: '#703438',
+    },
+    gutter: {
+      modified: '#394b70',
+      added: '#164846',
+      deleted: '#823c41',
+    },
+    minimapGutter: {
+      modified: '#425882',
+      added: '#1C5957',
+      deleted: '#944449',
+    },
+    charts: {
+      foreground: '#9aa5ce',
+    },
+    gitlens: {
+      foreground: '#444b6a',
+    },
+    git: {
+      deleted: '#914c54',
+      conflicting: '#bb7a61',
+    },
   },
 }

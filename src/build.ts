@@ -22,19 +22,19 @@ export function buildColors(): Record<string, string> {
     disabledForeground: palette.fg.inactive,
     focusBorder: withAlpha(palette.brand.primary, '33'),
     errorForeground: palette.accent.red,
-    'widget.shadow': withAlpha(palette.fg.subtle, '00'),
-    'scrollbar.shadow': withAlpha(palette.fg.subtle, '33'),
+    'widget.shadow': palette.ui.shadow.widget,
+    'scrollbar.shadow': palette.ui.shadow.scrollbar,
 
     // Значки, иконки, настройки - улучшенная видимость
-    'badge.background': palette.brand.primary,
-    'badge.foreground': palette.bg.base,
+    'badge.background': palette.ui.badge.base,
+    'badge.foreground': palette.ui.badge.fg,
     'icon.foreground': palette.fg.soft,
     'settings.headerForeground': palette.fg.primary,
 
     // Окно и разделитель
-    'window.activeBorder': '#0d0f17',
-    'window.inactiveBorder': '#0d0f17',
-    'sash.hoverBorder': '#29355a',
+    'window.activeBorder': palette.ui.window.border,
+    'window.inactiveBorder': palette.ui.window.border,
+    'sash.hoverBorder': palette.ui.sash.hover,
 
     // Кнопки/значки расширений - стандартизация с VS Code
     'extensionButton.prominentBackground': palette.brand.primary,
@@ -42,14 +42,14 @@ export function buildColors(): Record<string, string> {
       palette.brand.primary,
       'AA'
     ),
-    'extensionButton.prominentForeground': '#ffffff',
+    'extensionButton.prominentForeground': palette.fg.selectionText,
     'extensionBadge.remoteBackground': palette.brand.primary,
     'extensionBadge.remoteForeground': '#ffffff',
 
     // Кнопки / индикатор выполнения - улучшенный контраст
     'button.background': palette.brand.button.primary,
     'button.hoverBackground': palette.brand.button.hover,
-    'button.foreground': '#ffffff',
+    'button.foreground': palette.fg.selectionText,
     'button.secondaryBackground': withAlpha(palette.fg.subtle, '20'),
     'button.secondaryHoverBackground': withAlpha(palette.fg.subtle, '30'),
     'button.secondaryForeground': palette.fg.primary,
@@ -59,7 +59,7 @@ export function buildColors(): Record<string, string> {
     'input.background': palette.bg.input,
     'input.foreground': palette.fg.primary,
     'input.border': palette.line.border,
-    'input.placeholderForeground': withAlpha(palette.fg.subtle, '60'),
+    'input.placeholderForeground': palette.ui.input.placeholder,
     'inputOption.activeForeground': palette.fg.onSelection,
     'inputOption.activeBackground': palette.bg.selection.active,
     'inputValidation.infoForeground': palette.fg.primary,
@@ -111,7 +111,7 @@ export function buildColors(): Record<string, string> {
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
     // Сохранять приглушенный текст при неактивном фокусе
     'list.inactiveFocusForeground': palette.fg.subtle,
-    'list.hoverBackground': palette.bg.hover,
+    'list.hoverBackground': palette.ui.list.hoverBg,
     'list.hoverForeground': palette.fg.primary,
     'list.highlightForeground': palette.brand.primary,
     'list.invalidItemForeground': palette.accent.yellow,
@@ -120,7 +120,7 @@ export function buildColors(): Record<string, string> {
 
     'listFilterWidget.background': palette.line.border,
     'listFilterWidget.outline': palette.brand.primary,
-    'listFilterWidget.noMatchesOutline': '#a6333f',
+    'listFilterWidget.noMatchesOutline': palette.ui.noMatches,
 
     // Выборщик (Picker) - улучшенная читаемость
     'pickerGroup.foreground': palette.fg.primary,
@@ -128,9 +128,15 @@ export function buildColors(): Record<string, string> {
     'pickerGroup.background': palette.bg.elevated,
 
     // Ползунок полосы прокрутки - улучшенная видимость
-    'scrollbarSlider.background': withAlpha(palette.fg.subtle, '40'),
-    'scrollbarSlider.hoverBackground': withAlpha(palette.fg.subtle, '60'),
-    'scrollbarSlider.activeBackground': withAlpha(palette.fg.subtle, '80'),
+    'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '40'),
+    'scrollbarSlider.hoverBackground': withAlpha(
+      palette.ui.scrollbarBase,
+      '60'
+    ),
+    'scrollbarSlider.activeBackground': withAlpha(
+      palette.ui.scrollbarBase,
+      '80'
+    ),
 
     // Подсветка/направляющие для скобок - улучшенная видимость
     'editorBracketHighlight.foreground1': palette.accent.blue,
@@ -170,7 +176,7 @@ export function buildColors(): Record<string, string> {
     'editor.background': palette.bg.base,
     'editor.foreground': palette.fg.primary,
     'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
-    'editorLink.activeForeground': palette.accent.cyan,
+    'editorLink.activeForeground': palette.ui.editorLinkActive,
     'editor.selectionBackground': palette.bg.selection.active,
     // Использовать тот же оттенок для выделения, но с меньшей прозрачностью для неактивного выделения
     'editor.inactiveSelectionBackground': palette.bg.selection.inactive,
@@ -276,8 +282,8 @@ export function buildColors(): Record<string, string> {
     'editorSuggestWidget.foreground': palette.fg.primary,
     'editorSuggestWidget.selectedBackground': palette.bg.selection.menu,
     'editorSuggestWidget.selectedForeground': palette.fg.onSelection,
-    'editorSuggestWidget.highlightForeground': '#6183bb',
-    'editorCodeLens.foreground': '#484f70',
+    'editorSuggestWidget.highlightForeground': palette.ui.settingsHeader,
+    'editorCodeLens.foreground': palette.ui.codeLens,
     'editorLightBulb.foreground': palette.accent.yellow,
     'editorLightBulbAutoFix.foreground': palette.accent.yellow,
 
@@ -311,7 +317,7 @@ export function buildColors(): Record<string, string> {
     // Хлебные крошки
     'breadcrumb.background': palette.bg.base,
     'breadcrumbPicker.background': palette.bg.base,
-    'breadcrumb.foreground': '#515670',
+    'breadcrumb.foreground': palette.ui.breadcrumb,
     'breadcrumb.focusForeground': palette.fg.primary,
     'breadcrumb.activeSelectionForeground': palette.fg.primary,
 
@@ -320,16 +326,16 @@ export function buildColors(): Record<string, string> {
     'tab.inactiveBackground': palette.bg.base,
     'tab.activeForeground': palette.fg.onSelection,
     'tab.hoverForeground': palette.fg.onSelection,
-    'tab.activeBorder': '#5a7bc4',
+    'tab.activeBorder': palette.ui.tab.activeBorder,
     'tab.inactiveForeground': palette.fg.inactive,
     'tab.border': palette.line.border,
     'tab.unfocusedActiveForeground': palette.fg.soft,
     'tab.unfocusedInactiveForeground': palette.fg.inactive,
     'tab.unfocusedHoverForeground': palette.fg.soft,
-    'tab.activeModifiedBorder': '#1a1b26',
-    'tab.inactiveModifiedBorder': '#1f202e',
-    'tab.unfocusedActiveBorder': '#1f202e',
-    'tab.lastPinnedBorder': '#222333',
+    'tab.activeModifiedBorder': palette.ui.tab.activeModifiedBorder,
+    'tab.inactiveModifiedBorder': palette.ui.tab.inactiveModifiedBorder,
+    'tab.unfocusedActiveBorder': palette.ui.tab.unfocusedActiveBorder,
+    'tab.lastPinnedBorder': palette.ui.tab.lastPinnedBorder,
 
     // Панели
     'panel.background': palette.bg.base,
@@ -347,9 +353,10 @@ export function buildColors(): Record<string, string> {
     'statusBar.debuggingBackground': palette.bg.sunken,
     'statusBar.debuggingForeground': palette.fg.muted,
     'statusBarItem.activeBackground': palette.bg.active,
-    'statusBarItem.hoverBackground': '#252732',
+    'statusBarItem.hoverBackground': palette.ui.statusItem.hover,
     'statusBarItem.prominentBackground': palette.bg.overlay,
-    'statusBarItem.prominentHoverBackground': '#20222c',
+    'statusBarItem.prominentHoverBackground':
+      palette.ui.statusItem.prominentHover,
 
     // Заголовок окна
     'titleBar.activeForeground': palette.fg.muted,
@@ -360,12 +367,12 @@ export function buildColors(): Record<string, string> {
 
     // Текст
     'walkThrough.embeddedEditorBackground': palette.bg.sunken,
-    'textLink.foreground': '#6183bb',
+    'textLink.foreground': palette.ui.settingsHeader,
     'textLink.activeForeground': palette.accent.cyan,
-    'textPreformat.foreground': '#9699a8',
+    'textPreformat.foreground': palette.ui.text.preformat,
     'textBlockQuote.background': palette.bg.sunken,
     'textCodeBlock.background': palette.bg.sunken,
-    'textSeparator.foreground': '#363b54',
+    'textSeparator.foreground': palette.ui.text.separator,
 
     // Отладка
     'debugExceptionWidget.border': '#963c47',
