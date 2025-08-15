@@ -75,6 +75,13 @@ export interface Palette {
   brand: {
     /** Primary brand color (buttons, links) */
     primary: Hex
+    /** Button specific colors */
+    button: {
+      /** Primary button background */
+      primary: Hex
+      /** Primary button hover background */
+      hover: Hex
+    }
   }
   /** Accent colors for syntax highlighting */
   accent: {
@@ -155,6 +162,10 @@ export const palette: Palette = {
   },
   brand: {
     primary: '#7aa2f7', // Основной акцентный цвет (Tokyo Night blue)
+    button: {
+      primary: '#3d59a1', // Более темный синий для кнопок
+      hover: '#4a6bb8', // Hover-эффект для кнопок
+    },
   },
   accent: {
     // Акцентные цвета из оригинальной палитры Tokyo Night

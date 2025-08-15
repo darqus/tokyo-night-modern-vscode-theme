@@ -47,8 +47,8 @@ export function buildColors(): Record<string, string> {
     'extensionBadge.remoteForeground': '#ffffff',
 
     // Кнопки / индикатор выполнения - улучшенный контраст
-    'button.background': palette.brand.primary,
-    'button.hoverBackground': withAlpha(palette.brand.primary, 'AA'),
+    'button.background': palette.brand.button.primary,
+    'button.hoverBackground': palette.brand.button.hover,
     'button.foreground': '#ffffff',
     'button.secondaryBackground': withAlpha(palette.fg.subtle, '20'),
     'button.secondaryHoverBackground': withAlpha(palette.fg.subtle, '30'),
