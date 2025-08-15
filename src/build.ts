@@ -20,13 +20,13 @@ export function buildColors(): Record<string, string> {
     foreground: palette.fg.muted,
     descriptionForeground: '#515670',
     disabledForeground: palette.fg.inactive,
-    focusBorder: '#545c7e33',
+    focusBorder: withAlpha(palette.fg.subtle, '33'),
     errorForeground: '#515670',
-    'widget.shadow': '#ffffff00',
-    'scrollbar.shadow': '#00000033',
+    'widget.shadow': withAlpha(palette.ansi.white, '00'),
+    'scrollbar.shadow': withAlpha(palette.ansi.black, '33'),
 
     // Badges, icons, settings
-    'badge.background': '#7e83b230',
+    'badge.background': withAlpha(palette.fg.muted, '30'),
     'badge.foreground': '#c8d2f0',
     'icon.foreground': palette.fg.soft,
     'settings.headerForeground': '#6183bb',
@@ -37,8 +37,8 @@ export function buildColors(): Record<string, string> {
     'sash.hoverBorder': '#29355a',
 
     // Extension buttons/badges
-    'extensionButton.prominentBackground': '#3d59a1DD',
-    'extensionButton.prominentHoverBackground': '#3d59a1AA',
+    'extensionButton.prominentBackground': withAlpha(palette.brand.primary, 'DD'),
+    'extensionButton.prominentHoverBackground': withAlpha(palette.brand.primary, 'AA'),
     'extensionButton.prominentForeground': '#ffffff',
     'extensionBadge.remoteBackground': palette.brand.primary,
     'extensionBadge.remoteForeground': '#ffffff',
@@ -50,12 +50,12 @@ export function buildColors(): Record<string, string> {
     'progressBar.background': palette.brand.primary,
 
     // Inputs
-    'input.background': '#141419',
+    'input.background': palette.bg.input,
     'input.foreground': palette.fg.primary,
     'input.border': '#0f0f14',
-    'input.placeholderForeground': '#787c998A',
+    'input.placeholderForeground': withAlpha(palette.fg.muted, '8A'),
     'inputOption.activeForeground': '#c0caf5',
-    'inputOption.activeBackground': '#3d59a144',
+    'inputOption.activeBackground': withAlpha(palette.brand.primary, '44'),
     'inputValidation.infoForeground': '#000000',
     'inputValidation.infoBackground': '#0da0ba',
     'inputValidation.infoBorder': '#0db9d7',
@@ -68,14 +68,14 @@ export function buildColors(): Record<string, string> {
 
     // Dropdowns
     'dropdown.foreground': palette.fg.muted,
-    'dropdown.background': '#141419',
-    'dropdown.listBackground': '#141419',
+    'dropdown.background': palette.bg.input,
+    'dropdown.listBackground': palette.bg.input,
 
     // Activity bar
     'activityBar.background': palette.bg.base,
     'activityBar.foreground': palette.fg.soft,
     'activityBar.activeBorder': '#3b3e52',
-    'activityBar.activeBackground': '#1f1f24',
+    'activityBar.activeBackground': palette.bg.active,
     'activityBar.inactiveForeground': palette.fg.inactive,
     'activityBar.border': palette.line.border,
     'activityBarBadge.background': palette.brand.primary,
@@ -90,10 +90,10 @@ export function buildColors(): Record<string, string> {
     'sideBarSectionHeader.background': palette.bg.base,
     'sideBarSectionHeader.foreground': palette.fg.selectionText,
     'sideBarSectionHeader.border': palette.line.border,
-    'sideBar.dropBackground': '#1a1c28',
+    'sideBar.dropBackground': palette.bg.drop,
 
     // Lists
-    'list.dropBackground': '#1a1c28',
+    'list.dropBackground': palette.bg.drop,
     'list.deemphasizedForeground': palette.accent.blue,
     'list.activeSelectionBackground': palette.bg.selection.active,
     'list.activeSelectionForeground': palette.fg.onSelection,
@@ -105,7 +105,7 @@ export function buildColors(): Record<string, string> {
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
     // Keep the text subdued in inactive focus
     'list.inactiveFocusForeground': palette.fg.inactive,
-    'list.hoverBackground': '#0f0f18',
+    'list.hoverBackground': palette.bg.hover,
     'list.hoverForeground': palette.fg.onSelection,
     'list.highlightForeground': palette.accent.blue,
     'list.invalidItemForeground': palette.accent.yellow,
@@ -121,9 +121,9 @@ export function buildColors(): Record<string, string> {
     'pickerGroup.border': palette.line.border,
 
     // Scrollbar slider
-    'scrollbarSlider.background': '#868bc440',
-    'scrollbarSlider.hoverBackground': '#868bc460',
-    'scrollbarSlider.activeBackground': '#868bc480',
+    'scrollbarSlider.background': withAlpha(palette.fg.muted, '40'),
+    'scrollbarSlider.hoverBackground': withAlpha(palette.fg.muted, '60'),
+    'scrollbarSlider.activeBackground': withAlpha(palette.fg.muted, '80'),
 
     // Bracket highlight/guide
     'editorBracketHighlight.foreground1': '#698cd6',
@@ -141,22 +141,22 @@ export function buildColors(): Record<string, string> {
     'editorBracketPairGuide.activeBackground6': '#c49a5a',
 
     // Selections & highlights
-    'selection.background': '#515c7e40',
+    'selection.background': withAlpha(palette.fg.subtle, '40'),
     'editor.background': palette.bg.elevated,
     'editor.foreground': palette.fg.primary,
-    'editor.foldBackground': '#1b1b214a',
+    'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
     'editorLink.activeForeground': '#acb0d0',
-    'editor.selectionBackground': '#515c7e40',
+    'editor.selectionBackground': withAlpha(palette.fg.subtle, '40'),
     // Use the same cool selection hue but lighter alpha for inactive selection
-    'editor.inactiveSelectionBackground': '#515c7e25',
-    'editor.findMatchBackground': '#3d59a166',
+    'editor.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '25'),
+    'editor.findMatchBackground': withAlpha(palette.brand.primary, '66'),
     'editor.findMatchBorder': palette.accent.yellow,
-    'editor.findMatchHighlightBackground': '#3d59a166',
-    'editor.findRangeHighlightBackground': '#515c7e33',
-    'editor.rangeHighlightBackground': '#515c7e20',
-    'editor.wordHighlightBackground': '#515c7e44',
-    'editor.wordHighlightStrongBackground': '#515c7e55',
-    'editor.selectionHighlightBackground': '#515c7e44',
+    'editor.findMatchHighlightBackground': withAlpha(palette.brand.primary, '66'),
+    'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '33'),
+    'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20'),
+    'editor.wordHighlightBackground': withAlpha(palette.fg.subtle, '44'),
+    'editor.wordHighlightStrongBackground': withAlpha(palette.fg.subtle, '55'),
+    'editor.selectionHighlightBackground': withAlpha(palette.fg.subtle, '44'),
 
     // Cursor/indent/line/whitespace
     'editorCursor.foreground': '#c0caf5',
@@ -164,7 +164,7 @@ export function buildColors(): Record<string, string> {
     'editorIndentGuide.activeBackground1': '#363b54',
     'editorLineNumber.foreground': '#363b54',
     'editorLineNumber.activeForeground': '#737aa2',
-    'editor.lineHighlightBackground': '#282a38',
+    'editor.lineHighlightBackground': palette.bg.lineHighlight,
     'editorWhitespace.foreground': '#363b54',
 
     // Editor widgets/hover
@@ -174,7 +174,7 @@ export function buildColors(): Record<string, string> {
     'editorHoverWidget.foreground': palette.fg.primary,
 
     // Bracket match
-    'editorBracketMatch.background': '#16161e',
+    'editorBracketMatch.background': palette.bg.bracketMatch,
     'editorBracketMatch.border': '#42465d',
 
     // Overview ruler
@@ -183,11 +183,11 @@ export function buildColors(): Record<string, string> {
     'editorOverviewRuler.warningForeground': palette.accent.yellow,
     'editorOverviewRuler.infoForeground': '#1abc9c',
     'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
-    'editorOverviewRuler.findMatchForeground': '#a9b1d644',
-    'editorOverviewRuler.rangeHighlightForeground': '#a9b1d644',
-    'editorOverviewRuler.selectionHighlightForeground': '#a9b1d622',
-    'editorOverviewRuler.wordHighlightForeground': '#bb9af755',
-    'editorOverviewRuler.wordHighlightStrongForeground': '#bb9af766',
+    'editorOverviewRuler.findMatchForeground': withAlpha(palette.fg.primary, '44'),
+    'editorOverviewRuler.rangeHighlightForeground': withAlpha(palette.fg.primary, '44'),
+    'editorOverviewRuler.selectionHighlightForeground': withAlpha(palette.fg.primary, '22'),
+    'editorOverviewRuler.wordHighlightForeground': withAlpha(palette.accent.magenta, '55'),
+    'editorOverviewRuler.wordHighlightStrongForeground': withAlpha(palette.accent.magenta, '66'),
     'editorOverviewRuler.modifiedForeground': '#394b70',
     'editorOverviewRuler.addedForeground': '#164846',
     'editorOverviewRuler.deletedForeground': '#703438',
@@ -209,18 +209,18 @@ export function buildColors(): Record<string, string> {
 
     // Editor groups/headers
     'editorGroup.border': palette.line.border,
-    'editorGroup.dropBackground': '#282a38',
+    'editorGroup.dropBackground': palette.bg.lineHighlight,
     'editorGroupHeader.tabsBorder': palette.line.border,
-    'editorGroupHeader.tabsBackground': '#121214',
-    'editorGroupHeader.noTabsBackground': '#121214',
+    'editorGroupHeader.tabsBackground': palette.bg.tabs,
+    'editorGroupHeader.noTabsBackground': palette.bg.tabs,
     'editorGroupHeader.border': palette.line.border,
     'editorPane.background': palette.bg.base,
 
     // Editor widgets/suggest
     'editorWidget.background': palette.bg.base,
-    'editorWidget.resizeBorder': '#545c7e33',
+    'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '33'),
     'editorSuggestWidget.background': palette.bg.base,
-    'editorSuggestWidget.border': '#00000000',
+    'editorSuggestWidget.border': withAlpha(palette.ansi.black, '00'),
     'editorSuggestWidget.foreground': palette.fg.primary,
     'editorSuggestWidget.selectedBackground': palette.bg.selection.menu,
     'editorSuggestWidget.selectedForeground': palette.fg.onSelection,
@@ -232,20 +232,20 @@ export function buildColors(): Record<string, string> {
     // Peek view
     'peekView.border': palette.line.border,
     'peekViewEditor.background': palette.bg.base,
-    'peekViewEditor.matchHighlightBackground': '#3d59a166',
+    'peekViewEditor.matchHighlightBackground': withAlpha(palette.brand.primary, '66'),
     'peekViewTitle.background': palette.line.border,
     'peekViewTitleLabel.foreground': palette.fg.primary,
     'peekViewTitleDescription.foreground': palette.fg.muted,
     'peekViewResult.background': palette.bg.base,
     'peekViewResult.selectionForeground': palette.fg.primary,
-    'peekViewResult.selectionBackground': '#3d59a133',
+    'peekViewResult.selectionBackground': withAlpha(palette.brand.primary, '33'),
     'peekViewResult.lineForeground': palette.fg.primary,
     'peekViewResult.fileForeground': palette.fg.muted,
-    'peekViewResult.matchHighlightBackground': '#3d59a166',
+    'peekViewResult.matchHighlightBackground': withAlpha(palette.brand.primary, '66'),
 
     // Diff editor
-    'diffEditor.insertedTextBackground': '#41a6b522',
-    'diffEditor.removedTextBackground': '#db4b4b22',
+    'diffEditor.insertedTextBackground': withAlpha(palette.accent.cyan, '22'),
+    'diffEditor.removedTextBackground': withAlpha(palette.accent.red, '22'),
 
     // Breadcrumbs
     'breadcrumb.background': palette.bg.base,
@@ -285,7 +285,7 @@ export function buildColors(): Record<string, string> {
     'statusBar.noFolderBackground': palette.bg.sunken,
     'statusBar.debuggingBackground': palette.bg.sunken,
     'statusBar.debuggingForeground': palette.fg.muted,
-    'statusBarItem.activeBackground': '#1f1f24',
+    'statusBarItem.activeBackground': palette.bg.active,
     'statusBarItem.hoverBackground': '#252732',
     'statusBarItem.prominentBackground': palette.bg.overlay,
     'statusBarItem.prominentHoverBackground': '#20222c',
@@ -315,11 +315,11 @@ export function buildColors(): Record<string, string> {
     'debugConsole.sourceForeground': palette.fg.muted,
     'debugConsole.warningForeground': '#c49a5a',
     'debugConsoleInputIcon.foreground': palette.accent.teal,
-    'editor.stackFrameHighlightBackground': '#E2BD3A20',
-    'editor.focusedStackFrameHighlightBackground': '#73daca20',
+    'editor.stackFrameHighlightBackground': withAlpha(palette.accent.yellow, '20'),
+    'editor.focusedStackFrameHighlightBackground': withAlpha(palette.accent.teal, '20'),
     'debugView.stateLabelForeground': palette.fg.muted,
     'debugView.stateLabelBackground': '#1e1e25',
-    'debugView.valueChangedHighlight': '#3d59a1aa',
+    'debugView.valueChangedHighlight': withAlpha(palette.brand.primary, 'aa'),
     'debugTokenExpression.name': palette.accent.cyan,
     'debugTokenExpression.value': '#9aa5ce',
     'debugTokenExpression.string': '#9ece6a',
@@ -330,7 +330,7 @@ export function buildColors(): Record<string, string> {
     // Terminal
     'terminal.background': palette.bg.base,
     'terminal.foreground': palette.fg.primary,
-    'terminal.selectionBackground': '#515c7e30',
+    'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'),
     'terminalCursor.background': '',
     'terminalCursor.foreground': '',
     'terminal.ansiBlack': palette.ansi.black,
@@ -372,10 +372,10 @@ export function buildColors(): Record<string, string> {
     'charts.lines': palette.line.border,
 
     // Merge
-    'merge.currentHeaderBackground': '#007a75aa',
-    'merge.currentContentBackground': '#007a7544',
-    'merge.incomingHeaderBackground': '#3d59a1aa',
-    'merge.incomingContentBackground': '#3d59a144',
+    'merge.currentHeaderBackground': withAlpha(palette.accent.teal, 'aa'),
+    'merge.currentContentBackground': withAlpha(palette.accent.teal, '44'),
+    'merge.incomingHeaderBackground': withAlpha(palette.brand.primary, 'aa'),
+    'merge.incomingContentBackground': withAlpha(palette.brand.primary, '44'),
 
     // GitLens
     'gitlens.trailingLineForegroundColor': '#444b6a',

@@ -6,6 +6,13 @@ export interface Palette {
     elevated: Hex
     sunken: Hex
     overlay: Hex
+    input: Hex
+    hover: Hex
+    active: Hex
+    drop: Hex
+    lineHighlight: Hex
+    bracketMatch: Hex
+    tabs: Hex
     selection: {
       active: Hex
       inactive: Hex
@@ -67,6 +74,13 @@ export const palette: Palette = {
     elevated: '#1a1a22',
     sunken: '#121215',
     overlay: '#1a1a1e',
+    input: '#141419',
+    hover: '#0f0f18',
+    active: '#1f1f24',
+    drop: '#1a1c28',
+    lineHighlight: '#282a38',
+    bracketMatch: '#16161e',
+    tabs: '#121214',
     selection: {
       active: '#1a2030',
       inactive: '#181c28',
