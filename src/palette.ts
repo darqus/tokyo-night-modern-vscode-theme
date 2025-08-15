@@ -254,8 +254,8 @@ export const palette: Palette = {
     },
   },
   line: {
-    border: '#2D3248', // Основные границы
-    menu: '#2a2f41', // Границы в меню
+    border: '#222639', // Основные границы
+    menu: '#202433', // Границы в меню
   },
   fg: {
     // Цвета текста в стиле Tokyo Night
@@ -318,7 +318,7 @@ export const palette: Palette = {
       fg: '#c8d2f0',
     },
     sash: {
-      hover: '#29355a',
+      hover: '#202840',
     },
     selectionWash: '#515c7e',
     scrollbarBase: '#868bc4',
