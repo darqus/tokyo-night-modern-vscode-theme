@@ -177,9 +177,13 @@ export function buildColors(): Record<string, string> {
     'editor.foreground': palette.fg.primary,
     'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
     'editorLink.activeForeground': palette.ui.editorLinkActive,
-    'editor.selectionBackground': palette.bg.selection.active,
+    'editor.selectionBackground': withAlpha(palette.ui.selectionWash, '22'),
+    'editor.selectionForeground': palette.fg.onSelection,
     // Использовать тот же оттенок для выделения, но с меньшей прозрачностью для неактивного выделения
-    'editor.inactiveSelectionBackground': palette.bg.selection.inactive,
+    'editor.inactiveSelectionBackground': withAlpha(
+      palette.ui.selectionWash,
+      '22'
+    ),
     'editor.findMatchBackground': withAlpha(palette.brand.primary, '66'),
     'editor.findMatchBorder': palette.accent.yellow,
     'editor.findMatchHighlightBackground': withAlpha(
