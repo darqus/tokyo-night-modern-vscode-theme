@@ -353,14 +353,49 @@ export function buildColors(): Record<string, string> {
     'statusBar.foreground': palette.fg.muted,
     'statusBar.background': palette.bg.base,
     'statusBar.border': palette.line.border,
+    // Состояния без папки/отладки/фокус
     'statusBar.noFolderBackground': palette.bg.sunken,
+    'statusBar.noFolderForeground': palette.fg.muted,
     'statusBar.debuggingBackground': palette.bg.sunken,
     'statusBar.debuggingForeground': palette.fg.muted,
+    'statusBar.debuggingBorder': palette.line.border,
+    'statusBar.noFolderBorder': palette.line.border,
+    'statusBar.focusBorder': palette.ui.sash.hover,
     'statusBarItem.activeBackground': palette.bg.active,
+    'statusBarItem.hoverForeground': palette.fg.primary,
     'statusBarItem.hoverBackground': palette.ui.statusItem.hover,
     'statusBarItem.prominentBackground': palette.bg.overlay,
+    'statusBarItem.prominentForeground': palette.fg.primary,
     'statusBarItem.prominentHoverBackground':
       palette.ui.statusItem.prominentHover,
+    'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
+    // Remote индикатор
+    'statusBarItem.remoteBackground': palette.brand.primary,
+    'statusBarItem.remoteForeground': '#ffffff',
+    'statusBarItem.remoteHoverBackground': withAlpha(
+      palette.brand.primary,
+      'cc'
+    ),
+    'statusBarItem.remoteHoverForeground': '#ffffff',
+    // Ошибки/предупреждения
+    'statusBarItem.errorBackground': palette.accent.red,
+    'statusBarItem.errorForeground': '#ffffff',
+    'statusBarItem.errorHoverBackground': withAlpha(palette.accent.red, 'cc'),
+    'statusBarItem.errorHoverForeground': '#ffffff',
+    'statusBarItem.warningBackground': palette.accent.yellow,
+    'statusBarItem.warningForeground': '#16161e',
+    'statusBarItem.warningHoverBackground': withAlpha(
+      palette.accent.yellow,
+      'cc'
+    ),
+    'statusBarItem.warningHoverForeground': '#16161e',
+    // Прочее
+    'statusBarItem.compactHoverBackground': palette.ui.statusItem.hover,
+    'statusBarItem.focusBorder': palette.ui.sash.hover,
+    'statusBarItem.offlineBackground': '#914c54',
+    'statusBarItem.offlineForeground': '#ffffff',
+    'statusBarItem.offlineHoverBackground': withAlpha('#914c54', 'cc'),
+    'statusBarItem.offlineHoverForeground': '#ffffff',
 
     // Заголовок окна
     'titleBar.activeForeground': palette.fg.muted,
