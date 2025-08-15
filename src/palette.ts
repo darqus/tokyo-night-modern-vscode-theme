@@ -102,6 +102,228 @@ export interface Palette {
     /** Purple - operators, special characters */
     purple: Hex
   }
+  /** Token-specific colors for syntax highlighting */
+  token: {
+    /** Comments and documentation */
+    comment: Hex
+    /** Documentation subtypes */
+    commentDoc: Hex
+    /** Emphasized documentation */
+    commentDocEmphasized: Hex
+    /** Constant values (numbers, booleans) */
+    constant: Hex
+    /** Strings and text content */
+    string: Hex
+    /** Color values */
+    color: Hex
+    /** Invalid code */
+    invalid: Hex
+    /** Invalid deprecated */
+    invalidDeprecated: Hex
+    /** Storage types and modifiers */
+    storageType: Hex
+    /** Storage modifiers (var, const, let) */
+    storageModifier: Hex
+    /** Template interpolation */
+    interpolation: Hex
+    /** Blade/Twig/Smarty keywords */
+    templateKeyword: Hex
+    /** Spread operator */
+    spread: Hex
+    /** Operators and punctuation */
+    operator: Hex
+    /** Import/export keywords */
+    importExport: Hex
+    /** General keywords */
+    keyword: Hex
+    /** SQL keywords */
+    keywordSql: Hex
+    /** Logical operators */
+    keywordLogical: Hex
+    /** HTML/XML tags */
+    tag: Hex
+    /** Component tags */
+    tagComponent: Hex
+    /** Tag punctuation */
+    tagPunctuation: Hex
+    /** Global constants */
+    globalConstant: Hex
+    /** Variables */
+    variable: Hex
+    /** Object variables */
+    objectVariable: Hex
+    /** Array keys */
+    arrayKey: Hex
+    /** Object keys */
+    objectKey: Hex
+    /** Object properties */
+    objectProperty: Hex
+    /** Object properties (alternative) */
+    objectPropertyAlt: Hex
+    /** Nested object keys (level 3) */
+    objectKeyLevel3: Hex
+    /** C-related variables */
+    cVariable: Hex
+    /** Other variables */
+    otherVariable: Hex
+    /** Methods */
+    method: Hex
+    /** Functions */
+    function: Hex
+    /** Function arguments */
+    functionArg: Hex
+    /** Type constants */
+    typeConstant: Hex
+    /** Variable definitions */
+    variableDefinition: Hex
+    /** Inherited classes */
+    inheritedClass: Hex
+    /** Classes and support types */
+    classSupport: Hex
+    /** Class names */
+    className: Hex
+    /** Support functions */
+    supportFunction: Hex
+    /** CSS properties */
+    cssProperty: Hex
+    /** CSS fonts */
+    cssFont: Hex
+    /** CSS classes */
+    cssClass: Hex
+    /** CSS IDs */
+    cssId: Hex
+    /** CSS tags */
+    cssTag: Hex
+    /** CSS references */
+    cssReference: Hex
+    /** CSS punctuation */
+    cssPunctuation: Hex
+    /** CSS at-rules */
+    cssAtRule: Hex
+    /** CSS parent selector */
+    cssParentSelector: Hex
+    /** SCSS mixins */
+    scssMixin: Hex
+    /** SCSS includes */
+    scssInclude: Hex
+    /** CSS values */
+    cssValue: Hex
+    /** Language methods */
+    languageMethod: Hex
+    /** This keyword */
+    thisKeyword: Hex
+    /** HTML attributes */
+    htmlAttribute: Hex
+    /** HTML entities */
+    htmlEntity: Hex
+    /** Vue attributes */
+    vueAttribute: Hex
+    /** CSS pseudo selectors */
+    cssPseudo: Hex
+    /** Markup inserted */
+    markupInserted: Hex
+    /** Markup deleted */
+    markupDeleted: Hex
+    /** Markup changed */
+    markupChanged: Hex
+    /** Regular expressions */
+    regex: Hex
+    /** Regex groups */
+    regexGroup: Hex
+    /** Regex character classes */
+    regexCharClass: Hex
+    /** Regex character sets */
+    regexCharSet: Hex
+    /** Regex quantifiers */
+    regexQuantifier: Hex
+    /** Regex backslash */
+    regexBackslash: Hex
+    /** Escape characters */
+    escapeChar: Hex
+    /** Decorators */
+    decorator: Hex
+    /** CSS units */
+    cssUnit: Hex
+    /** JSON keys (different levels) */
+    jsonKey0: Hex
+    jsonKey1: Hex
+    jsonKey2: Hex
+    jsonKey3: Hex
+    jsonKey4: Hex
+    jsonKey5: Hex
+    jsonKey6: Hex
+    jsonKey7: Hex
+    jsonKey8: Hex
+    /** Plain punctuation */
+    plainPunctuation: Hex
+    /** Block punctuation */
+    blockPunctuation: Hex
+    /** Markdown headings */
+    markdownH1: Hex
+    markdownH2: Hex
+    markdownH3: Hex
+    markdownH4: Hex
+    markdownH5: Hex
+    markdownH6: Hex
+    /** Markdown content */
+    markdownContent: Hex
+    /** HTML text */
+    htmlText: Hex
+    /** Markdown raw inline */
+    markdownRawInline: Hex
+    /** Markdown raw punctuation */
+    markdownRawPunctuation: Hex
+    /** Markup italic */
+    markupItalic: Hex
+    /** Markup bold */
+    markupBold: Hex
+    /** Markdown blockquote */
+    markdownBlockquote: Hex
+    /** Markdown links */
+    markdownLink: Hex
+    /** Markdown code blocks */
+    markdownCodeBlock: Hex
+    /** Markdown separator */
+    markdownSeparator: Hex
+    /** Markup table */
+    markupTable: Hex
+    /** Token info */
+    tokenInfo: Hex
+    /** Token warn */
+    tokenWarn: Hex
+    /** Token error */
+    tokenError: Hex
+    /** Token debug */
+    tokenDebug: Hex
+    /** Apache tags */
+    apacheTag: Hex
+    /** Preprocessor */
+    preprocessor: Hex
+    /** Environment values */
+    envValue: Hex
+    /** Ignored elements */
+    ignored: Hex
+    /** Numbers */
+    number: Hex
+    /** Markup elements */
+    markup: Hex
+    /** Error elements */
+    error: Hex
+    /** Code blocks */
+    codeBlock: Hex
+    /** Link text */
+    linkText: Hex
+    /** Quote marks */
+    quoteMark: Hex
+    /** Link URLs */
+    linkUrl: Hex
+    /** Warnings */
+    warning: Hex
+    /** Deleted content */
+    deleted: Hex
+    /** Inserted content */
+    inserted: Hex
+  }
   /** ANSI colors for the terminal */
   ansi: {
     black: Hex
@@ -299,6 +521,126 @@ export const palette: Palette = {
     red: '#f7768e', // Ошибки, предупреждения
     purple: '#9d7cd8', // Операторы, спецсимволы
   },
+  token: {
+    // Цвета для токенов синтаксиса
+    comment: '#444b6a',
+    commentDoc: '#5a638c',
+    commentDocEmphasized: '#646e9c',
+    constant: '#c0768e',
+    string: '#89ff8f',
+    color: '#9aa5ce',
+    invalid: '#ff5370',
+    invalidDeprecated: '#bb9af7',
+    storageType: '#bb9af7',
+    storageModifier: '#9d7cd8',
+    interpolation: '#7dcfff',
+    templateKeyword: '#0db9d7',
+    spread: '#e0687a',
+    operator: '#89ff8f',
+    importExport: '#7dcfff',
+    keyword: '#bb9af7',
+    keywordSql: '#7dcfff',
+    keywordLogical: '#bb9af7',
+    tag: '#f7768e',
+    tagComponent: '#de5971',
+    tagPunctuation: '#ba3c97',
+    globalConstant: '#e0687a',
+    variable: '#c0caf5',
+    objectVariable: '#c0caf5',
+    arrayKey: '#7dcfff',
+    objectKey: '#73daca',
+    objectProperty: '#7dcfff',
+    objectPropertyAlt: '#c0caf5',
+    objectKeyLevel3: '#41a6b5',
+    cVariable: '#f7768e',
+    otherVariable: '#f7768e',
+    method: '#7aa2f7',
+    function: '#7aa2f7',
+    functionArg: '#e0687a',
+    typeConstant: '#bb9af7',
+    variableDefinition: '#bb9af7',
+    inheritedClass: '#bb9af7',
+    classSupport: '#0db9d7',
+    className: '#c0caf5',
+    supportFunction: '#0db9d7',
+    cssProperty: '#7aa2f7',
+    cssFont: '#89ff8f',
+    cssClass: '#c0caf5',
+    cssId: '#bb9af7',
+    cssTag: '#0db9d7',
+    cssReference: '#0db9d7',
+    cssPunctuation: '#9abdf5',
+    cssAtRule: '#ff9e64',
+    cssParentSelector: '#73daca',
+    scssMixin: '#bb9af7',
+    scssInclude: '#9d7cd8',
+    cssValue: '#85d0b7',
+    languageMethod: '#f7768e',
+    thisKeyword: '#f7768e',
+    htmlAttribute: '#bb9af7',
+    htmlEntity: '#0DB9D7',
+    vueAttribute: '#bb9af7',
+    cssPseudo: '#bb9af7',
+    markupInserted: '#449dab',
+    markupDeleted: '#914c54',
+    markupChanged: '#6183bb',
+    regex: '#b4f9f8',
+    regexGroup: '#f7768e',
+    regexCharClass: '#bb9af7',
+    regexCharSet: '#e0af68',
+    regexQuantifier: '#89ff8f',
+    regexBackslash: '#c0caf5',
+    escapeChar: '#89ff8f',
+    decorator: '#7aa2f7',
+    cssUnit: '#f7768e',
+    jsonKey0: '#7aa2f7',
+    jsonKey1: '#0db9d7',
+    jsonKey2: '#7dcfff',
+    jsonKey3: '#bb9af7',
+    jsonKey4: '#e0af68',
+    jsonKey5: '#0db9d7',
+    jsonKey6: '#73daca',
+    jsonKey7: '#f7768e',
+    jsonKey8: '#89ff8f',
+    plainPunctuation: '#9abdf5',
+    blockPunctuation: '#9abdf5',
+    markdownH1: '#89ff8f',
+    markdownH2: '#61bdf2',
+    markdownH3: '#7aa2f7',
+    markdownH4: '#6d91de',
+    markdownH5: '#9aa5ce',
+    markdownH6: '#747ca1',
+    markdownContent: '#c0caf5',
+    htmlText: '#9aa5ce',
+    markdownRawInline: '#bb9af7',
+    markdownRawPunctuation: '#4E5579',
+    markupItalic: '#c0caf5',
+    markupBold: '#c0caf5',
+    markdownBlockquote: '#4e5579',
+    markdownLink: '#73daca',
+    markdownCodeBlock: '#89ff8f',
+    markdownSeparator: '#444b6a',
+    markupTable: '#c0cefc',
+    tokenInfo: '#0db9d7',
+    tokenWarn: '#ffdb69',
+    tokenError: '#db4b4b',
+    tokenDebug: '#b267e6',
+    apacheTag: '#f7768e',
+    preprocessor: '#73daca',
+    envValue: '#7aa2f7',
+    // Добавленные недостающие свойства
+    ignored: '#444b6a',
+    number: '#c0768e',
+    markup: '#449dab',
+    error: '#914c54',
+    codeBlock: '#61bdf2',
+    linkText: '#6d91de',
+    quoteMark: '#747ca1',
+    linkUrl: '#c0cefc',
+    warning: '#ffdb69',
+    deleted: '#db4b4b',
+    inserted: '#b267e6',
+  },
   ansi: {
     // ANSI цвета для терминала в стиле Tokyo Night
     black: '#414868',
@@ -370,7 +712,7 @@ export const palette: Palette = {
       consoleWarning: '#c49a5a',
       stateLabelBg: '#1e1e25',
       tokenValue: '#9aa5ce',
-      tokenString: '#9ece6a',
+      tokenString: '#89ff8f',
       tokenError: '#bb616b',
       info: '#0da0ba',
     },
