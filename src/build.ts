@@ -7,8 +7,8 @@ import * as fs from 'node:fs'
 import * as path from 'node:path'
 
 /**
- * Minimal TS generator. For the first step, we only ensure we can write the existing theme file.
- * Next iterations can migrate colors step-by-step to use palette and helpers.
+ * Минимальный генератор на TS. На первом этапе мы просто гарантируем, что можем записать существующий файл темы.
+ * В следующих итерациях можно будет постепенно переносить цвета для использования палитры и вспомогательных функций.
  */
 
 const root = path.resolve(__dirname, '..')
@@ -16,7 +16,7 @@ const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
 export function buildColors(): Record<string, string> {
   return {
-    // Top-level and base - улучшенная контрастность
+    // Верхний уровень и основа - улучшенная контрастность
     foreground: palette.fg.primary,
     descriptionForeground: palette.fg.muted,
     disabledForeground: palette.fg.inactive,
@@ -25,18 +25,18 @@ export function buildColors(): Record<string, string> {
     'widget.shadow': withAlpha(palette.fg.subtle, '00'),
     'scrollbar.shadow': withAlpha(palette.fg.subtle, '33'),
 
-    // Badges, icons, settings - улучшенная видимость
+    // Значки, иконки, настройки - улучшенная видимость
     'badge.background': withAlpha(palette.brand.primary, 'DD'),
     'badge.foreground': '#FFFFFF',
     'icon.foreground': palette.fg.soft,
     'settings.headerForeground': palette.fg.primary,
 
-    // Window + sash
+    // Окно и разделитель
     'window.activeBorder': '#0d0f17',
     'window.inactiveBorder': '#0d0f17',
     'sash.hoverBorder': '#29355a',
 
-    // Extension buttons/badges - стандартизация с VS Code
+    // Кнопки/значки расширений - стандартизация с VS Code
     'extensionButton.prominentBackground': palette.brand.primary,
     'extensionButton.prominentHoverBackground': withAlpha(
       palette.brand.primary,
@@ -46,7 +46,7 @@ export function buildColors(): Record<string, string> {
     'extensionBadge.remoteBackground': palette.brand.primary,
     'extensionBadge.remoteForeground': '#ffffff',
 
-    // Buttons / progress - улучшенный контраст
+    // Кнопки / индикатор выполнения - улучшенный контраст
     'button.background': palette.brand.primary,
     'button.hoverBackground': withAlpha(palette.brand.primary, 'AA'),
     'button.foreground': '#ffffff',
@@ -55,7 +55,7 @@ export function buildColors(): Record<string, string> {
     'button.secondaryForeground': palette.fg.primary,
     'progressBar.background': palette.brand.primary,
 
-    // Inputs - улучшенная доступность
+    // Поля ввода - улучшенная доступность
     'input.background': palette.bg.input,
     'input.foreground': palette.fg.primary,
     'input.border': palette.line.border,
@@ -72,12 +72,12 @@ export function buildColors(): Record<string, string> {
     'inputValidation.errorBackground': withAlpha(palette.accent.red, '20'),
     'inputValidation.errorBorder': palette.accent.red,
 
-    // Dropdowns
+    // Выпадающие списки
     'dropdown.foreground': palette.fg.muted,
     'dropdown.background': palette.bg.input,
     'dropdown.listBackground': palette.bg.input,
 
-    // Activity bar - стандартизация с VS Code
+    // Панель действий - стандартизация с VS Code
     'activityBar.background': palette.bg.base,
     'activityBar.foreground': palette.fg.primary,
     'activityBar.activeBorder': palette.brand.primary,
@@ -87,7 +87,7 @@ export function buildColors(): Record<string, string> {
     'activityBarBadge.background': palette.brand.primary,
     'activityBarBadge.foreground': '#ffffff',
 
-    // Side bar - улучшенная иерархия
+    // Боковая панель - улучшенная иерархия
     'tree.indentGuidesStroke': palette.line.border,
     'sideBar.foreground': palette.fg.primary,
     'sideBar.background': palette.bg.sunken,
@@ -98,7 +98,7 @@ export function buildColors(): Record<string, string> {
     'sideBarSectionHeader.border': palette.line.border,
     'sideBar.dropBackground': palette.bg.drop,
 
-    // Lists - улучшенная контрастность
+    // Списки - улучшенная контрастность
     'list.dropBackground': palette.bg.drop,
     'list.deemphasizedForeground': palette.fg.subtle,
     'list.activeSelectionBackground': palette.bg.selection.active,
@@ -107,9 +107,9 @@ export function buildColors(): Record<string, string> {
     'list.inactiveSelectionForeground': palette.fg.subtle,
     'list.focusBackground': palette.bg.selection.focus,
     'list.focusForeground': palette.fg.onSelection,
-    // When the list container is not focused but item has focus
+    // Когда контейнер списка не в фокусе, но элемент в фокусе
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
-    // Keep the text subdued in inactive focus
+    // Сохранять приглушенный текст при неактивном фокусе
     'list.inactiveFocusForeground': palette.fg.subtle,
     'list.hoverBackground': palette.bg.hover,
     'list.hoverForeground': palette.fg.primary,
@@ -122,17 +122,17 @@ export function buildColors(): Record<string, string> {
     'listFilterWidget.outline': palette.brand.primary,
     'listFilterWidget.noMatchesOutline': '#a6333f',
 
-    // Picker - улучшенная читаемость
+    // Выборщик (Picker) - улучшенная читаемость
     'pickerGroup.foreground': palette.fg.primary,
     'pickerGroup.border': palette.line.border,
     'pickerGroup.background': palette.bg.elevated,
 
-    // Scrollbar slider - улучшенная видимость
+    // Ползунок полосы прокрутки - улучшенная видимость
     'scrollbarSlider.background': withAlpha(palette.fg.subtle, '40'),
     'scrollbarSlider.hoverBackground': withAlpha(palette.fg.subtle, '60'),
     'scrollbarSlider.activeBackground': withAlpha(palette.fg.subtle, '80'),
 
-    // Bracket highlight/guide - улучшенная видимость
+    // Подсветка/направляющие для скобок - улучшенная видимость
     'editorBracketHighlight.foreground1': palette.accent.blue,
     'editorBracketHighlight.foreground2': palette.accent.cyan,
     'editorBracketHighlight.foreground3': palette.accent.magenta,
@@ -165,14 +165,14 @@ export function buildColors(): Record<string, string> {
       '30'
     ),
 
-    // Selections & highlights - улучшенная контрастность
+    // Выделения и подсветки - улучшенная контрастность
     'selection.background': palette.bg.selection.active,
     'editor.background': palette.bg.base,
     'editor.foreground': palette.fg.primary,
     'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
     'editorLink.activeForeground': palette.accent.cyan,
     'editor.selectionBackground': palette.bg.selection.active,
-    // Use the same cool selection hue but lighter alpha for inactive selection
+    // Использовать тот же оттенок для выделения, но с меньшей прозрачностью для неактивного выделения
     'editor.inactiveSelectionBackground': palette.bg.selection.inactive,
     'editor.findMatchBackground': withAlpha(palette.brand.primary, '66'),
     'editor.findMatchBorder': palette.accent.yellow,
@@ -195,7 +195,7 @@ export function buildColors(): Record<string, string> {
       '60'
     ),
 
-    // Cursor/indent/line/whitespace - улучшенная видимость
+    // Курсор/отступы/строка/пробелы - улучшенная видимость
     'editorCursor.foreground': palette.fg.primary,
     'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '20'),
     'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '40'),
@@ -204,17 +204,17 @@ export function buildColors(): Record<string, string> {
     'editor.lineHighlightBackground': palette.bg.lineHighlight,
     'editorWhitespace.foreground': withAlpha(palette.fg.subtle, '40'),
 
-    // Editor widgets/hover - улучшенная контрастность
+    // Виджеты/всплывающие подсказки редактора - улучшенная контрастность
     'editorMarkerNavigation.background': palette.bg.elevated,
     'editorHoverWidget.background': palette.bg.elevated,
     'editorHoverWidget.border': palette.line.border,
     'editorHoverWidget.foreground': palette.fg.primary,
 
-    // Bracket match - улучшенная видимость
+    // Соответствие скобок - улучшенная видимость
     'editorBracketMatch.background': palette.bg.bracketMatch,
     'editorBracketMatch.border': palette.accent.blue,
 
-    // Overview ruler
+    // Обзорная линейка
     'editorOverviewRuler.border': palette.line.border,
     'editorOverviewRuler.errorForeground': '#db4b4b',
     'editorOverviewRuler.warningForeground': palette.accent.yellow,
@@ -244,14 +244,14 @@ export function buildColors(): Record<string, string> {
     'editorOverviewRuler.addedForeground': '#164846',
     'editorOverviewRuler.deletedForeground': '#703438',
 
-    // Ruler/messages
+    // Линейка/сообщения
     'editorRuler.foreground': palette.line.border,
     'editorError.foreground': '#db4b4b',
     'editorWarning.foreground': palette.accent.yellow,
     'editorInfo.foreground': '#0da0ba',
     'editorHint.foreground': '#0da0ba',
 
-    // Gutter + minimap
+    // Область редактора (Gutter) и миникарта
     'editorGutter.modifiedBackground': '#394b70',
     'editorGutter.addedBackground': '#164846',
     'editorGutter.deletedBackground': '#823c41',
@@ -259,7 +259,7 @@ export function buildColors(): Record<string, string> {
     'minimapGutter.addedBackground': '#1C5957',
     'minimapGutter.deletedBackground': '#944449',
 
-    // Editor groups/headers
+    // Группы/заголовки редактора
     'editorGroup.border': palette.line.border,
     'editorGroup.dropBackground': palette.bg.lineHighlight,
     'editorGroupHeader.tabsBorder': palette.line.border,
@@ -268,7 +268,7 @@ export function buildColors(): Record<string, string> {
     'editorGroupHeader.border': palette.line.border,
     'editorPane.background': palette.bg.base,
 
-    // Editor widgets/suggest
+    // Виджеты/подсказки редактора
     'editorWidget.background': palette.bg.base,
     'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '33'),
     'editorSuggestWidget.background': palette.bg.base,
@@ -281,7 +281,7 @@ export function buildColors(): Record<string, string> {
     'editorLightBulb.foreground': palette.accent.yellow,
     'editorLightBulbAutoFix.foreground': palette.accent.yellow,
 
-    // Peek view
+    // Окно быстрого просмотра (Peek view)
     'peekView.border': palette.line.border,
     'peekViewEditor.background': palette.bg.base,
     'peekViewEditor.matchHighlightBackground': withAlpha(
@@ -304,18 +304,18 @@ export function buildColors(): Record<string, string> {
       '66'
     ),
 
-    // Diff editor
+    // Редактор сравнения (Diff)
     'diffEditor.insertedTextBackground': withAlpha(palette.accent.cyan, '22'),
     'diffEditor.removedTextBackground': withAlpha(palette.accent.red, '22'),
 
-    // Breadcrumbs
+    // Хлебные крошки
     'breadcrumb.background': palette.bg.base,
     'breadcrumbPicker.background': palette.bg.base,
     'breadcrumb.foreground': '#515670',
     'breadcrumb.focusForeground': palette.fg.primary,
     'breadcrumb.activeSelectionForeground': palette.fg.primary,
 
-    // Tabs
+    // Вкладки
     'tab.activeBackground': palette.bg.elevated,
     'tab.inactiveBackground': palette.bg.base,
     'tab.activeForeground': palette.fg.onSelection,
@@ -331,7 +331,7 @@ export function buildColors(): Record<string, string> {
     'tab.unfocusedActiveBorder': '#1f202e',
     'tab.lastPinnedBorder': '#222333',
 
-    // Panels
+    // Панели
     'panel.background': palette.bg.base,
     'panel.border': palette.line.border,
     'panelTitle.activeForeground': palette.fg.activeTitle,
@@ -339,7 +339,7 @@ export function buildColors(): Record<string, string> {
     'panelTitle.activeBorder': palette.bg.sunken,
     'panelInput.border': palette.bg.sunken,
 
-    // Status bar
+    // Строка состояния
     'statusBar.foreground': palette.fg.muted,
     'statusBar.background': palette.bg.base,
     'statusBar.border': palette.line.border,
@@ -351,14 +351,14 @@ export function buildColors(): Record<string, string> {
     'statusBarItem.prominentBackground': palette.bg.overlay,
     'statusBarItem.prominentHoverBackground': '#20222c',
 
-    // Title bar
+    // Заголовок окна
     'titleBar.activeForeground': palette.fg.muted,
     'titleBar.inactiveForeground': palette.fg.inactive,
     'titleBar.activeBackground': palette.bg.base,
     'titleBar.inactiveBackground': palette.bg.base,
     'titleBar.border': palette.line.border,
 
-    // Text
+    // Текст
     'walkThrough.embeddedEditorBackground': palette.bg.sunken,
     'textLink.foreground': '#6183bb',
     'textLink.activeForeground': palette.accent.cyan,
@@ -367,7 +367,7 @@ export function buildColors(): Record<string, string> {
     'textCodeBlock.background': palette.bg.sunken,
     'textSeparator.foreground': '#363b54',
 
-    // Debug
+    // Отладка
     'debugExceptionWidget.border': '#963c47',
     'debugExceptionWidget.background': palette.bg.base,
     'debugToolBar.background': palette.bg.base,
@@ -394,7 +394,7 @@ export function buildColors(): Record<string, string> {
     'debugTokenExpression.number': palette.accent.orange,
     'debugTokenExpression.error': '#bb616b',
 
-    // Terminal
+    // Терминал
     'terminal.background': palette.bg.base,
     'terminal.foreground': palette.fg.primary,
     'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'),
@@ -417,7 +417,7 @@ export function buildColors(): Record<string, string> {
     'terminal.ansiBrightCyan': palette.ansi.brightCyan,
     'terminal.ansiBrightWhite': palette.ansi.brightWhite,
 
-    // Git decorations
+    // Оформление Git
     'gitDecoration.modifiedResourceForeground': palette.accent.blue,
     'gitDecoration.ignoredResourceForeground': '#515670',
     'gitDecoration.deletedResourceForeground': '#914c54',
@@ -428,7 +428,7 @@ export function buildColors(): Record<string, string> {
     'gitDecoration.stageDeletedResourceForeground': '#914c54',
     'gitDecoration.stageModifiedResourceForeground': '#6183bb',
 
-    // Charts
+    // Диаграммы
     'charts.red': palette.accent.red,
     'charts.blue': palette.accent.blue,
     'charts.yellow': palette.accent.yellow,
@@ -438,7 +438,7 @@ export function buildColors(): Record<string, string> {
     'charts.foreground': '#9aa5ce',
     'charts.lines': palette.line.border,
 
-    // Merge
+    // Слияние (Merge)
     'merge.currentHeaderBackground': withAlpha(palette.accent.teal, 'aa'),
     'merge.currentContentBackground': withAlpha(palette.accent.teal, '44'),
     'merge.incomingHeaderBackground': withAlpha(palette.brand.primary, 'aa'),
@@ -449,7 +449,7 @@ export function buildColors(): Record<string, string> {
     'gitlens.gutterUncommittedForegroundColor': '#444b6a',
     'gitlens.gutterForegroundColor': '#444b6a',
 
-    // Notifications
+    // Уведомления
     'notificationCenterHeader.background': palette.bg.base,
     'notifications.background': palette.bg.base,
     'notificationLink.foreground': '#6183bb',
@@ -460,7 +460,7 @@ export function buildColors(): Record<string, string> {
     'notifications.border': palette.line.border,
     'notifications.foreground': palette.fg.primary,
 
-    // Menus
+    // Меню
     'menubar.selectionForeground': palette.fg.selectionText,
     'menubar.selectionBackground': palette.bg.selection.menu,
     'menubar.selectionBorder': palette.line.menu,
@@ -470,7 +470,7 @@ export function buildColors(): Record<string, string> {
     'menu.selectionBackground': palette.bg.selection.menu,
     'menu.separatorBackground': palette.line.border,
     'menu.border': withAlpha(palette.line.border, '00'),
-    // Quick input (Command Palette, Quick Fix picker)
+    // Быстрый ввод (Палитра команд, выборщик быстрых исправлений)
     'quickInput.background': palette.bg.base,
     'quickInput.foreground': palette.fg.primary,
     'quickInputTitle.background': palette.bg.sunken,
