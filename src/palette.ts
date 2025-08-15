@@ -495,8 +495,8 @@ export const palette: Palette = {
     // Цвета текста в стиле Tokyo Night
     primary: '#c0caf5', // Основной текст
     muted: '#a9b1d6', // Второстепенный текст
-    subtle: '#565f89', // Подсказки, комментарии
-    inactive: '#565f89', // Неактивный текст
+    subtle: '#484e71', // Подсказки, комментарии
+    inactive: '#484e71', // Неактивный текст
     soft: '#a9b1d6', // Мягкий текст
     softTitle: '#c0caf5', // Заголовки
     selectionText: '#ffffff', // Текст на выделении (белый для контраста)
@@ -644,7 +644,7 @@ export const palette: Palette = {
   ansi: {
     // ANSI цвета для терминала в стиле Tokyo Night
     black: '#414868',
-    brightBlack: '#565f89',
+    brightBlack: '#484e71',
     red: '#f7768e',
     brightRed: '#f7768e',
     green: '#a2c27e',
@@ -661,8 +661,8 @@ export const palette: Palette = {
     brightWhite: '#c0caf5',
   },
   ui: {
-    description: '#515670',
-    breadcrumb: '#515670',
+    description: '#444857',
+    breadcrumb: '#444857',
     shadow: {
       widget: '#ffffff00',
       scrollbar: '#00000033',
@@ -740,7 +740,7 @@ export const palette: Palette = {
       foreground: '#444b6a',
     },
     git: {
-      ignored: '#515670',
+      ignored: '#444857',
       deleted: '#914c54',
       conflicting: '#bb7a61',
       stageDeleted: '#914c54',
