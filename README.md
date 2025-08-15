@@ -15,7 +15,7 @@ A darker version of the Tokyo Night theme with slightly more muted syntax highli
 
 ## 📸 Screenshots
 
-![Screenshot - Tokyo Night Darqus](https://raw.githubusercontent.com/darqus/tokyo-night-dark/master/static/ss_tokyo_night_dark.png)
+![Screenshot - Tokyo Night Darqus](https://github.com/darqus/tokyo-night-dark/blob/main/static/ss_tokyo_night_dark.png?raw=true)
 
 ## 🚀 Installation
 
