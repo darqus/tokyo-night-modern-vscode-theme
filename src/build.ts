@@ -86,8 +86,6 @@ export function buildColors(): Record<string, string> {
     'checkbox.background': palette.bg.input,
     'checkbox.foreground': palette.fg.primary,
     'checkbox.border': palette.line.border,
-    'checkbox.disabledBackground': withAlpha(palette.bg.input, '66'),
-    'checkbox.disabledForeground': palette.fg.inactive,
     'checkbox.selectBackground': palette.bg.selection.active,
     'checkbox.selectBorder': palette.line.border,
     'radio.activeForeground': palette.fg.primary,
@@ -110,7 +108,6 @@ export function buildColors(): Record<string, string> {
     // Вариант Activity Bar сверху (Activity Bar: Top)
     'activityBarTop.background': palette.bg.base,
     'activityBarTop.foreground': palette.fg.primary,
-    'activityBarTop.border': palette.line.border,
     'activityBarTop.activeBackground': palette.bg.elevated,
 
     // Боковая панель - улучшенная иерархия
@@ -135,8 +132,6 @@ export function buildColors(): Record<string, string> {
     'list.focusForeground': palette.fg.onSelection,
     // Когда контейнер списка не в фокусе, но элемент в фокусе
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
-    // Сохранять приглушенный текст при неактивном фокусе
-    'list.inactiveFocusForeground': palette.fg.subtle,
     'list.hoverBackground': palette.bg.hover, // Используем hover цвет при наведении
     'list.hoverForeground': palette.fg.primary,
     'list.highlightForeground': palette.brand.primary,
@@ -151,7 +146,6 @@ export function buildColors(): Record<string, string> {
     // Выборщик (Picker) - улучшенная читаемость
     'pickerGroup.foreground': palette.fg.primary,
     'pickerGroup.border': palette.line.border,
-    'pickerGroup.background': palette.bg.elevated,
 
     // Ползунок полосы прокрутки - улучшенная видимость
     'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '40'),
