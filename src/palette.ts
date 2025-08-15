@@ -60,6 +60,8 @@ export interface Palette {
     subtle: Hex
     /** Inactive/disabled text */
     inactive: Hex
+    /** Panel text (improved readability in sidebars) */
+    panelText: Hex
     /** Soft text (intermediate brightness) */
     soft: Hex
     /** Soft titles */
@@ -496,7 +498,8 @@ export const palette: Palette = {
     primary: '#c0caf5', // Основной текст
     muted: '#a9b1d6', // Второстепенный текст
     subtle: '#565a7a', // Подсказки, комментарии
-    inactive: '#565a7a', // Неактивный текст
+    inactive: '#7a7e9a', // Неактивный текст (увеличена яркость для лучшей читаемости)
+    panelText: '#8b8faf', // Текст в боковых панелях (промежуточная яркость между subtle и muted)
     soft: '#a9b1d6', // Мягкий текст
     softTitle: '#c0caf5', // Заголовки
     selectionText: '#ffffff', // Текст на выделении (белый для контраста)

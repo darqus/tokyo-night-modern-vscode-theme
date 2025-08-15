@@ -91,7 +91,7 @@ export function buildColors(): Record<string, string> {
     'radio.activeForeground': palette.fg.primary,
     'radio.activeBackground': palette.bg.input,
     'radio.activeBorder': palette.line.border,
-    'radio.inactiveForeground': palette.fg.subtle,
+    'radio.inactiveForeground': palette.fg.panelText,
     'radio.inactiveBackground': palette.bg.input,
     'radio.inactiveBorder': palette.line.border,
     'radio.inactiveHoverBackground': palette.bg.hover,
@@ -101,7 +101,7 @@ export function buildColors(): Record<string, string> {
     'activityBar.foreground': palette.fg.primary,
     'activityBar.activeBorder': palette.brand.primary,
     'activityBar.activeBackground': palette.bg.elevated,
-    'activityBar.inactiveForeground': palette.fg.subtle,
+    'activityBar.inactiveForeground': palette.fg.panelText,
     'activityBar.border': palette.line.border,
     'activityBarBadge.background': palette.brand.primary,
     'activityBarBadge.foreground': palette.bg.base,
@@ -112,7 +112,7 @@ export function buildColors(): Record<string, string> {
 
     // Боковая панель - улучшенная иерархия
     'tree.indentGuidesStroke': palette.line.border,
-    'sideBar.foreground': palette.fg.subtle, // Более приглушенный цвет для неактивных файлов
+    'sideBar.foreground': palette.fg.panelText, // Улучшенная читаемость для текста в боковой панели
     'sideBar.background': palette.bg.sunken,
     'sideBar.border': palette.line.border,
     'sideBarTitle.foreground': palette.fg.softTitle,
@@ -123,11 +123,11 @@ export function buildColors(): Record<string, string> {
 
     // Списки - улучшенная контрастность
     'list.dropBackground': palette.bg.drop,
-    'list.deemphasizedForeground': palette.fg.subtle,
+    'list.deemphasizedForeground': palette.fg.panelText,
     'list.activeSelectionBackground': palette.bg.selection.active,
     'list.activeSelectionForeground': palette.fg.onSelection,
     'list.inactiveSelectionBackground': palette.bg.selection.inactive,
-    'list.inactiveSelectionForeground': palette.fg.subtle,
+    'list.inactiveSelectionForeground': palette.fg.panelText,
     'list.focusBackground': palette.bg.selection.focus,
     'list.focusForeground': palette.fg.onSelection,
     // Когда контейнер списка не в фокусе, но элемент в фокусе
