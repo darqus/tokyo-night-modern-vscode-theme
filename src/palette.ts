@@ -145,8 +145,8 @@ export const palette: Palette = {
     },
   },
   line: {
-    border: '#3b4261', // Основные границы
-    menu: '#3b4261', // Границы в меню
+    border: '#2a2f41', // Основные границы
+    menu: '#2a2f41', // Границы в меню
   },
   fg: {
     // Цвета текста в стиле Tokyo Night
