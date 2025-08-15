@@ -126,7 +126,7 @@ export interface Palette {
 export const palette: Palette = {
   bg: {
     // Фоны в стиле Tokyo Night для лучшего погружения
-    base: '#1a1b26', // Основной фон редактора
+    base: '#16161e', // Основной фон редактора
     elevated: '#24283b', // Всплывающие окна, панели
     sunken: '#16161e', // Статус-бар, сайдбар
     overlay: '#24283b', // Оверлеи
