@@ -118,60 +118,63 @@ export interface Palette {
 
 export const palette: Palette = {
   bg: {
-    base: '#16161c',
-    elevated: '#1a1a22',
-    sunken: '#121215',
-    overlay: '#1a1a1e',
-    input: '#141419',
-    hover: '#0f0f18',
-    active: '#1f1f24',
-    drop: '#1a1c28',
-    lineHighlight: '#282a38',
-    bracketMatch: '#16161e',
-    tabs: '#121214',
+    // Фоны в стиле Tokyo Night для лучшего погружения
+    base: '#1a1b26', // Основной фон редактора
+    elevated: '#24283b', // Всплывающие окна, панели
+    sunken: '#16161e', // Статус-бар, сайдбар
+    overlay: '#24283b', // Оверлеи
+    input: '#2a2f41', // Поля ввода
+    hover: '#292e42', // Hover-эффекты
+    active: '#3d59a1', // Активные элементы
+    drop: '#2b3a65', // Зоны drag-n-drop
+    lineHighlight: '#1e202e', // Подсветка текущей строки
+    bracketMatch: '#3b4261', // Подсветка скобок
+    tabs: '#16161e', // Фон вкладок
     selection: {
-      active: '#1a2030',
-      inactive: '#181c28',
-      focus: '#161c28',
-      menu: '#2a2d3a',
+      active: '#364a82', // Активное выделение
+      inactive: '#2b3a65', // Неактивное выделение
+      focus: '#3d59a1', // Выделение в фокусе
+      menu: '#364a82', // Выделение в меню
     },
   },
   line: {
-    border: '#1a1a1c',
-    menu: '#1b1e2e',
+    border: '#3b4261', // Основные границы
+    menu: '#3b4261', // Границы в меню
   },
   fg: {
-    primary: '#a9b1d6',
-    muted: '#8a8ea8',
-    subtle: '#545c7e',
-    // Cooler blue-gray for inactive/disabled text (used widely across inactive UI)
-    inactive: '#6f7fb3',
-    soft: '#a8b2d0',
-    softTitle: '#b8c2e8',
-    selectionText: '#c8d2f0',
-    onSelection: '#d8e2f8',
-    activeTitle: '#9ca6c8',
+    // Цвета текста в стиле Tokyo Night
+    primary: '#c0caf5', // Основной текст
+    muted: '#a9b1d6', // Второстепенный текст
+    subtle: '#565f89', // Подсказки, комментарии
+    inactive: '#565f89', // Неактивный текст
+    soft: '#a9b1d6', // Мягкий текст
+    softTitle: '#c0caf5', // Заголовки
+    selectionText: '#ffffff', // Текст на выделении (белый для контраста)
+    onSelection: '#ffffff', // Текст поверх выделения
+    activeTitle: '#c0caf5', // Активные заголовки
   },
   brand: {
-    primary: '#3d59a1',
+    primary: '#7aa2f7', // Основной акцентный цвет (Tokyo Night blue)
   },
   accent: {
-    blue: '#7aa2f7',
-    cyan: '#7dcfff',
-    teal: '#73daca',
-    magenta: '#bb9af7',
-    yellow: '#e0af68',
-    orange: '#ff9e64',
-    red: '#f7768e',
-    purple: '#9d7cd8',
+    // Акцентные цвета из оригинальной палитры Tokyo Night
+    blue: '#7aa2f7', // Ключевые слова, типы
+    cyan: '#7dcfff', // Строки, импорты
+    teal: '#73daca', // Свойства, атрибуты
+    magenta: '#bb9af7', // Переменные, константы
+    yellow: '#e0af68', // Числа, параметры
+    orange: '#ff9e64', // Функции, методы
+    red: '#f7768e', // Ошибки, предупреждения
+    purple: '#9d7cd8', // Операторы, спецсимволы
   },
   ansi: {
-    black: '#363b54',
-    brightBlack: '#363b54',
+    // ANSI цвета для терминала в стиле Tokyo Night
+    black: '#414868',
+    brightBlack: '#565f89',
     red: '#f7768e',
     brightRed: '#f7768e',
-    green: '#73daca',
-    brightGreen: '#73daca',
+    green: '#9ece6a',
+    brightGreen: '#9ece6a',
     yellow: '#e0af68',
     brightYellow: '#e0af68',
     blue: '#7aa2f7',
@@ -180,7 +183,7 @@ export const palette: Palette = {
     brightMagenta: '#bb9af7',
     cyan: '#7dcfff',
     brightCyan: '#7dcfff',
-    white: '#a9b1d6',
+    white: '#c0caf5',
     brightWhite: '#c0caf5',
   },
 }
