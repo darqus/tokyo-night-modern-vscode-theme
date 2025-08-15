@@ -1,4 +1,5 @@
 import type { Hex } from './palette'
+import { palette } from './palette'
 
 export type SemanticTokenStyle = {
   foreground?: Hex
@@ -9,12 +10,12 @@ export type SemanticTokenStyle = {
 }
 
 export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
-  'parameter.declaration': { foreground: '#e0af68' },
-  parameter: { foreground: '#d9d4cd' },
-  'property.declaration': { foreground: '#73daca' },
-  'property.defaultLibrary': { foreground: '#2ac3de' },
-  '*.defaultLibrary': { foreground: '#2ac3de' },
-  'variable.defaultLibrary': { foreground: '#2ac3de' },
-  'variable.declaration': { foreground: '#bb9af7' },
-  variable: { foreground: '#c0caf5' },
+  'parameter.declaration': { foreground: palette.accent.yellow },
+  parameter: { foreground: palette.fg.muted },
+  'property.declaration': { foreground: palette.accent.teal },
+  'property.defaultLibrary': { foreground: palette.accent.cyan },
+  '*.defaultLibrary': { foreground: palette.accent.cyan },
+  'variable.defaultLibrary': { foreground: palette.accent.cyan },
+  'variable.declaration': { foreground: palette.accent.magenta },
+  variable: { foreground: palette.fg.primary },
 }

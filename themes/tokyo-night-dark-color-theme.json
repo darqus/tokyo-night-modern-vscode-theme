@@ -11,19 +11,19 @@
       "foreground": "#e0af68"
     },
     "parameter": {
-      "foreground": "#d9d4cd"
+      "foreground": "#a9b1d6"
     },
     "property.declaration": {
-      "foreground": "#73daca"
+      "foreground": "#85c9c1"
     },
     "property.defaultLibrary": {
-      "foreground": "#2ac3de"
+      "foreground": "#7dcfff"
     },
     "*.defaultLibrary": {
-      "foreground": "#2ac3de"
+      "foreground": "#7dcfff"
     },
     "variable.defaultLibrary": {
-      "foreground": "#2ac3de"
+      "foreground": "#7dcfff"
     },
     "variable.declaration": {
       "foreground": "#bb9af7"

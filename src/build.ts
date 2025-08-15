@@ -44,7 +44,7 @@ export function buildColors(): Record<string, string> {
     ),
     'extensionButton.prominentForeground': palette.fg.selectionText,
     'extensionBadge.remoteBackground': palette.brand.primary,
-    'extensionBadge.remoteForeground': '#ffffff',
+    'extensionBadge.remoteForeground': palette.ui.semantic.white,
 
     // Кнопки / индикатор выполнения - улучшенный контраст
     'button.background': palette.brand.button.primary,
@@ -278,9 +278,9 @@ export function buildColors(): Record<string, string> {
 
     // Обзорная линейка
     'editorOverviewRuler.border': palette.line.border,
-    'editorOverviewRuler.errorForeground': '#db4b4b',
+    'editorOverviewRuler.errorForeground': palette.ui.editorOverview.error,
     'editorOverviewRuler.warningForeground': palette.accent.yellow,
-    'editorOverviewRuler.infoForeground': '#1abc9c',
+    'editorOverviewRuler.infoForeground': palette.ui.editorOverview.info,
     'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
     'editorOverviewRuler.findMatchForeground': withAlpha(
       palette.fg.primary,
@@ -302,24 +302,25 @@ export function buildColors(): Record<string, string> {
       palette.accent.magenta,
       '66'
     ),
-    'editorOverviewRuler.modifiedForeground': '#394b70',
-    'editorOverviewRuler.addedForeground': '#164846',
-    'editorOverviewRuler.deletedForeground': '#703438',
+    'editorOverviewRuler.modifiedForeground':
+      palette.ui.editorOverview.modified,
+    'editorOverviewRuler.addedForeground': palette.ui.editorOverview.added,
+    'editorOverviewRuler.deletedForeground': palette.ui.editorOverview.deleted,
 
     // Линейка/сообщения
     'editorRuler.foreground': palette.line.border,
-    'editorError.foreground': '#db4b4b',
+    'editorError.foreground': palette.ui.editorOverview.error,
     'editorWarning.foreground': palette.accent.yellow,
-    'editorInfo.foreground': '#0da0ba',
-    'editorHint.foreground': '#0da0ba',
+    'editorInfo.foreground': palette.ui.debug.info,
+    'editorHint.foreground': palette.ui.debug.info,
 
     // Область редактора (Gutter) и миникарта
-    'editorGutter.modifiedBackground': '#394b70',
-    'editorGutter.addedBackground': '#164846',
-    'editorGutter.deletedBackground': '#823c41',
-    'minimapGutter.modifiedBackground': '#425882',
-    'minimapGutter.addedBackground': '#1C5957',
-    'minimapGutter.deletedBackground': '#944449',
+    'editorGutter.modifiedBackground': palette.ui.gutter.modified,
+    'editorGutter.addedBackground': palette.ui.gutter.added,
+    'editorGutter.deletedBackground': palette.ui.gutter.deleted,
+    'minimapGutter.modifiedBackground': palette.ui.minimapGutter.modified,
+    'minimapGutter.addedBackground': palette.ui.minimapGutter.added,
+    'minimapGutter.deletedBackground': palette.ui.minimapGutter.deleted,
 
     // Группы/заголовки редактора
     'editorGroup.border': palette.line.border,
@@ -431,31 +432,34 @@ export function buildColors(): Record<string, string> {
     'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
     // Remote индикатор
     'statusBarItem.remoteBackground': palette.brand.primary,
-    'statusBarItem.remoteForeground': '#ffffff',
+    'statusBarItem.remoteForeground': palette.ui.semantic.white,
     'statusBarItem.remoteHoverBackground': withAlpha(
       palette.brand.primary,
       'cc'
     ),
-    'statusBarItem.remoteHoverForeground': '#ffffff',
+    'statusBarItem.remoteHoverForeground': palette.ui.semantic.white,
     // Ошибки/предупреждения
     'statusBarItem.errorBackground': palette.accent.red,
-    'statusBarItem.errorForeground': '#ffffff',
+    'statusBarItem.errorForeground': palette.ui.semantic.white,
     'statusBarItem.errorHoverBackground': withAlpha(palette.accent.red, 'cc'),
-    'statusBarItem.errorHoverForeground': '#ffffff',
+    'statusBarItem.errorHoverForeground': palette.ui.semantic.white,
     'statusBarItem.warningBackground': palette.accent.yellow,
-    'statusBarItem.warningForeground': '#16161e',
+    'statusBarItem.warningForeground': palette.bg.base,
     'statusBarItem.warningHoverBackground': withAlpha(
       palette.accent.yellow,
       'cc'
     ),
-    'statusBarItem.warningHoverForeground': '#16161e',
+    'statusBarItem.warningHoverForeground': palette.bg.base,
     // Прочее
     'statusBarItem.compactHoverBackground': palette.ui.statusItem.hover,
     'statusBarItem.focusBorder': palette.ui.sash.hover,
-    'statusBarItem.offlineBackground': '#914c54',
-    'statusBarItem.offlineForeground': '#ffffff',
-    'statusBarItem.offlineHoverBackground': withAlpha('#914c54', 'cc'),
-    'statusBarItem.offlineHoverForeground': '#ffffff',
+    'statusBarItem.offlineBackground': palette.ui.semantic.offline,
+    'statusBarItem.offlineForeground': palette.ui.semantic.white,
+    'statusBarItem.offlineHoverBackground': withAlpha(
+      palette.ui.semantic.offline,
+      'cc'
+    ),
+    'statusBarItem.offlineHoverForeground': palette.ui.semantic.white,
 
     // Заголовок окна
     'titleBar.activeForeground': palette.fg.muted,
@@ -482,13 +486,13 @@ export function buildColors(): Record<string, string> {
     'textSeparator.foreground': palette.ui.text.separator,
 
     // Отладка
-    'debugExceptionWidget.border': '#963c47',
+    'debugExceptionWidget.border': palette.ui.debug.exceptionBorder,
     'debugExceptionWidget.background': palette.bg.base,
     'debugToolBar.background': palette.bg.base,
     'debugConsole.infoForeground': palette.fg.muted,
-    'debugConsole.errorForeground': '#bb616b',
+    'debugConsole.errorForeground': palette.ui.debug.consoleError,
     'debugConsole.sourceForeground': palette.fg.muted,
-    'debugConsole.warningForeground': '#c49a5a',
+    'debugConsole.warningForeground': palette.ui.debug.consoleWarning,
     'debugConsoleInputIcon.foreground': palette.accent.teal,
     'editor.stackFrameHighlightBackground': withAlpha(
       palette.accent.yellow,
@@ -499,14 +503,14 @@ export function buildColors(): Record<string, string> {
       '20'
     ),
     'debugView.stateLabelForeground': palette.fg.muted,
-    'debugView.stateLabelBackground': '#1e1e25',
+    'debugView.stateLabelBackground': palette.ui.debug.stateLabelBg,
     'debugView.valueChangedHighlight': withAlpha(palette.brand.primary, 'aa'),
     'debugTokenExpression.name': palette.accent.cyan,
-    'debugTokenExpression.value': '#9aa5ce',
-    'debugTokenExpression.string': '#9ece6a',
+    'debugTokenExpression.value': palette.ui.debug.tokenValue,
+    'debugTokenExpression.string': palette.ui.debug.tokenString,
     'debugTokenExpression.boolean': palette.accent.orange,
     'debugTokenExpression.number': palette.accent.orange,
-    'debugTokenExpression.error': '#bb616b',
+    'debugTokenExpression.error': palette.ui.debug.tokenError,
 
     // Терминал
     'terminal.background': palette.bg.base,
@@ -547,14 +551,15 @@ export function buildColors(): Record<string, string> {
 
     // Оформление Git
     'gitDecoration.modifiedResourceForeground': palette.accent.blue,
-    'gitDecoration.ignoredResourceForeground': '#515670',
-    'gitDecoration.deletedResourceForeground': '#914c54',
+    'gitDecoration.ignoredResourceForeground': palette.ui.git.ignored,
+    'gitDecoration.deletedResourceForeground': palette.ui.git.deleted,
     'gitDecoration.renamedResourceForeground': palette.accent.teal,
     'gitDecoration.addedResourceForeground': palette.accent.teal,
     'gitDecoration.untrackedResourceForeground': palette.accent.teal,
-    'gitDecoration.conflictingResourceForeground': '#bb7a61',
-    'gitDecoration.stageDeletedResourceForeground': '#914c54',
-    'gitDecoration.stageModifiedResourceForeground': '#6183bb',
+    'gitDecoration.conflictingResourceForeground': palette.ui.git.conflicting,
+    'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted,
+    'gitDecoration.stageModifiedResourceForeground':
+      palette.ui.git.stageModified,
     'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '80'),
 
     // Диаграммы
@@ -564,7 +569,7 @@ export function buildColors(): Record<string, string> {
     'charts.orange': palette.accent.orange,
     'charts.green': palette.accent.teal,
     'charts.purple': palette.accent.purple,
-    'charts.foreground': '#9aa5ce',
+    'charts.foreground': palette.ui.charts.foreground,
     'charts.lines': palette.line.border,
 
     // Слияние (Merge)
@@ -574,14 +579,14 @@ export function buildColors(): Record<string, string> {
     'merge.incomingContentBackground': withAlpha(palette.brand.primary, '44'),
 
     // GitLens
-    'gitlens.trailingLineForegroundColor': '#444b6a',
-    'gitlens.gutterUncommittedForegroundColor': '#444b6a',
-    'gitlens.gutterForegroundColor': '#444b6a',
+    'gitlens.trailingLineForegroundColor': palette.ui.gitlens.foreground,
+    'gitlens.gutterUncommittedForegroundColor': palette.ui.gitlens.foreground,
+    'gitlens.gutterForegroundColor': palette.ui.gitlens.foreground,
 
     // Уведомления
     'notificationCenterHeader.background': palette.bg.base,
     'notifications.background': palette.bg.base,
-    'notificationLink.foreground': '#6183bb',
+    'notificationLink.foreground': palette.ui.semantic.notificationLink,
     'notificationsErrorIcon.foreground': palette.accent.red,
     'notificationsWarningIcon.foreground': palette.accent.yellow,
     'notificationsInfoIcon.foreground': palette.accent.blue,

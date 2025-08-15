@@ -226,8 +226,20 @@ export interface Palette {
     }
     /** Git decorations */
     git: {
+      ignored: Hex
       deleted: Hex
       conflicting: Hex
+      stageDeleted: Hex
+      stageModified: Hex
+    }
+    /** Common semantic colors */
+    semantic: {
+      /** Pure white for high contrast */
+      white: Hex
+      /** Notification links */
+      notificationLink: Hex
+      /** Offline status */
+      offline: Hex
     }
   }
 }
@@ -386,8 +398,20 @@ export const palette: Palette = {
       foreground: '#444b6a',
     },
     git: {
+      ignored: '#515670',
       deleted: '#914c54',
       conflicting: '#bb7a61',
+      stageDeleted: '#914c54',
+      stageModified: '#6183bb',
+    },
+    /** Common semantic colors */
+    semantic: {
+      /** Pure white for high contrast */
+      white: '#ffffff',
+      /** Notification links */
+      notificationLink: '#6183bb',
+      /** Offline status */
+      offline: '#914c54',
     },
   },
 }
