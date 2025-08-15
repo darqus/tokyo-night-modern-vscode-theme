@@ -41,8 +41,7 @@
     "vscode:prepublish": "npm run build:theme",
     "package": "vsce package",
     "publish": "vsce publish",
-    "release": "standard-version",
-    "prerelease": "standard-version --prerelease"
+    "release": "standard-version"
   },
   "devDependencies": {
     "@types/node": "^20.19.10",
