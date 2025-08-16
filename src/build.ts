@@ -429,12 +429,9 @@ export function buildColors(): Record<string, string> {
       palette.ui.statusItem.prominentHover,
     'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
     // Remote индикатор
-    'statusBarItem.remoteBackground': palette.brand.primary,
+    'statusBarItem.remoteBackground': palette.brand.button.primary,
     'statusBarItem.remoteForeground': palette.ui.semantic.white,
-    'statusBarItem.remoteHoverBackground': withAlpha(
-      palette.brand.primary,
-      'cc'
-    ),
+    'statusBarItem.remoteHoverBackground': palette.brand.button.hover,
     'statusBarItem.remoteHoverForeground': palette.ui.semantic.white,
     // Ошибки/предупреждения
     'statusBarItem.errorBackground': palette.accent.red,
