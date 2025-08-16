@@ -483,10 +483,10 @@ export const palette: Palette = {
     bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
     tabs: '#16161e', // Tab background (darkened)
     selection: {
-      active: '#3d59a1', // Active selection
-      inactive: '#2b3a65', // Inactive selection
-      focus: '#3d59a1', // Focus selection
-      menu: '#364a82', // Menu selection
+      active: '#252a3f', // Active selection
+      inactive: '#2e313d', // Inactive selection
+      focus: '#2b3a65', // Focus selection
+      menu: '#2b3a65', // Menu selection
     },
   },
   line: {
