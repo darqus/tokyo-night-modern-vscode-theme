@@ -473,7 +473,7 @@ export const palette: Palette = {
     // Cooler, more balanced backgrounds (darkened for GitHub)
     base: '#16161e', // Main editor background (darkened)
     elevated: '#181820', // Panels, dialogs (darkened)
-    sunken: '#121217', // Status bar, sidebars (darkened)
+    sunken: '#0d0d11', // Status bar, sidebars (darkened)
     overlay: '#181820', // Overlays (darkened)
     input: '#181820', // Input fields (darkened)
     hover: '#1e1f2a', // Hover effects (slightly lighter than base)
