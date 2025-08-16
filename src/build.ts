@@ -99,7 +99,7 @@ export function buildColors(): Record<string, string> {
     // Панель действий - стандартизация с VS Code
     'activityBar.background': palette.bg.base,
     'activityBar.foreground': palette.fg.primary,
-    'activityBar.activeBorder': palette.brand.primary,
+    'activityBar.activeBorder': palette.brand.button.primary,
     'activityBar.activeBackground': palette.bg.elevated,
     'activityBar.inactiveForeground': palette.fg.inactive,
     'activityBar.border': palette.line.border,
