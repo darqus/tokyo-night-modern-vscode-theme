@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.14](https://github.com/darqus/tokyo-night-dark/compare/v0.3.13...v0.3.14) (2025-08-16)
+
+
+### Features
+
+* adjust diff editor colors and remove borders ([a55d396](https://github.com/darqus/tokyo-night-dark/commit/a55d39696b311a4e52d5b9b9d53320c85327d7c3))
+* **colors:** update badge and remote indicators ([2081c0d](https://github.com/darqus/tokyo-night-dark/commit/2081c0d5e38d9b8866dfc079c0a9548ae4349717))
+
 ### [0.3.13](https://github.com/darqus/tokyo-night-dark/compare/v0.3.12...v0.3.13) (2025-08-16)
 
 ### [0.3.12](https://github.com/darqus/tokyo-night-dark/compare/v0.3.11...v0.3.12) (2025-08-16)
