@@ -43,8 +43,8 @@ export function buildColors(): Record<string, string> {
       'AA'
     ),
     'extensionButton.prominentForeground': palette.fg.selectionText,
-    'extensionBadge.remoteBackground': palette.brand.primary,
-    'extensionBadge.remoteForeground': palette.ui.semantic.white,
+    'extensionBadge.remoteBackground': palette.ui.badge.base,
+    'extensionBadge.remoteForeground': palette.ui.badge.fg,
 
     // Кнопки / индикатор выполнения - улучшенный контраст
     'button.background': palette.brand.button.primary,
@@ -103,8 +103,8 @@ export function buildColors(): Record<string, string> {
     'activityBar.activeBackground': palette.bg.elevated,
     'activityBar.inactiveForeground': palette.fg.inactive,
     'activityBar.border': palette.line.border,
-    'activityBarBadge.background': palette.brand.primary,
-    'activityBarBadge.foreground': palette.bg.base,
+    'activityBarBadge.background': palette.ui.badge.base,
+    'activityBarBadge.foreground': palette.ui.badge.fg,
     // Вариант Activity Bar сверху (Activity Bar: Top)
     'activityBarTop.background': palette.bg.base,
     'activityBarTop.foreground': palette.fg.primary,

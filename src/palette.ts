@@ -671,8 +671,8 @@ export const palette: Palette = {
       scrollbar: '#00000033',
     },
     badge: {
-      base: '#3d4268',
-      fg: '#a9b1d6',
+      base: '#7dcfff',
+      fg: '#16161e',
     },
     sash: {
       hover: '#252a3f',
