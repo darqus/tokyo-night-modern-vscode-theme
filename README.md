@@ -133,5 +133,3 @@ npm run build:theme
 ```
 
 The output file themes/tokyo-night-dark-color-theme.json is updated in-place.
-
-Publish/package commands trigger the build automatically via the `vscode:prepublish` script.
