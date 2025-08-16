@@ -54,7 +54,7 @@
     "extensionBadge.remoteBackground": "#7aa2f7",
     "extensionBadge.remoteForeground": "#ffffff",
     "button.background": "#3d59a1",
-    "button.hoverBackground": "#4a6bb8",
+    "button.hoverBackground": "#7aa2f7",
     "button.foreground": "#ffffff",
     "button.border": "#545c7e20",
     "button.separator": "#545c7e33",
