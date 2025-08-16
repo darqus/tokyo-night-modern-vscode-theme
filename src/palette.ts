@@ -509,8 +509,8 @@ export const palette: Palette = {
   brand: {
     primary: '#7dcfff', // Primary brand color (Tokyo Night blue)
     button: {
-      primary: '#3d59a1', // Darker blue for buttons
-      hover: '#8dabec', // Button hover effect - active Tokyo Night blue
+      primary: '#364a82', // Darker blue for buttons
+      hover: '#3d59a1', // Button hover effect - active Tokyo Night blue
     },
   },
   accent: {
