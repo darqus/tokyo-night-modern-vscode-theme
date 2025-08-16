@@ -470,18 +470,18 @@ export interface Palette {
 
 export const palette: Palette = {
   bg: {
-    // Cooler, more balanced backgrounds
-    base: '#1a1b26', // Main editor background
-    elevated: '#1c1d28', // Panels, dialogs (slightly lighter than base)
-    sunken: '#16161e', // Status bar, sidebars
-    overlay: '#1c1d28', // Overlays (slightly lighter than base)
-    input: '#1c1d28', // Input fields (slightly lighter than base)
+    // Cooler, more balanced backgrounds (darkened for GitHub)
+    base: '#16161e', // Main editor background (darkened)
+    elevated: '#181820', // Panels, dialogs (darkened)
+    sunken: '#121217', // Status bar, sidebars (darkened)
+    overlay: '#181820', // Overlays (darkened)
+    input: '#181820', // Input fields (darkened)
     hover: '#1e1f2a', // Hover effects (slightly lighter than base)
     active: '#252a3f', // Active elements (darker, closer to base)
     drop: '#252a3f', // Drag-n-drop zones (darker, closer to base)
-    lineHighlight: '#1c1d28', // Current line highlight (slightly lighter than base)
+    lineHighlight: '#181820', // Current line highlight (darkened)
     bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
-    tabs: '#1a1b26', // Tab background
+    tabs: '#16161e', // Tab background (darkened)
     selection: {
       active: '#3d59a1', // Active selection
       inactive: '#2b3a65', // Inactive selection
