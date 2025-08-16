@@ -72,12 +72,39 @@ src/
 
 ## 🎨 Color Palette
 
-| Category | Description | Examples |
-|-----------|----------|---------|
-| **Background** | Background colors | `#16161c` (base), `#1a1a22` (elevated) |
-| **Foreground** | Text colors | `#a9b1d6` (primary), `#8a8ea8` (muted) |
-| **Accents** | Syntax highlighting | `#7aa2f7` (blue), `#f7768e` (red) |
-| **ANSI** | Terminal colors | Full palette for the terminal |
+The Tokyo Night Darqus theme uses a carefully selected color palette to provide a comfortable and visually appealing coding experience. Below are some of the key color categories and their representative hex values.
+
+### Accent Colors
+
+These colors are primarily used for syntax highlighting and provide visual distinction for different code elements.
+
+| Color Name | Hex Value | Description |
+|---|---|---|
+| Blue | `#7aa2f7` | Keywords, types |
+| Cyan | `#7dcfff` | Strings, imports |
+| Teal | `#85c9c1` | Properties, attributes |
+| Magenta | `#bb9af7` | Variables, constants |
+| Yellow | `#e0af68` | Numbers, parameters |
+| Orange | `#ff9e64` | Functions, methods |
+| Red | `#f7768e` | Errors, warnings |
+| Purple | `#9d7cd8` | Operators, special characters |
+
+### Token Colors (Examples)
+
+These are examples of colors used for specific syntax tokens, providing fine-grained control over code readability.
+
+| Token Type | Hex Value | Description |
+|---|---|---|
+| Comment | `#545c7e` | Comments and documentation |
+| String | `#9ece6a` | Strings and text content |
+| Keyword | `#bb9af7` | General keywords |
+| Function | `#7aa2f7` | Function names |
+| Variable | `#c0caf5` | General variables |
+| Operator | `#89ddff` | Operators and punctuation |
+| Tag | `#f7768e` | HTML/XML tags |
+| Number | `#c0768e` | Numeric values |
+| Error | `#f7768e` | Error indicators |
+| Warning | `#ffdb69` | Warning indicators |
 
 ## Original Theme
 
