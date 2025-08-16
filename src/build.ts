@@ -366,10 +366,10 @@ export function buildColors(): Record<string, string> {
     ),
 
     // Редактор сравнения (Diff)
-    'diffEditor.insertedTextBackground': withAlpha(palette.accent.cyan, '22'),
-    'diffEditor.removedTextBackground': withAlpha(palette.accent.red, '22'),
-    'diffEditor.insertedTextBorder': withAlpha(palette.accent.cyan, '66'),
-    'diffEditor.removedTextBorder': withAlpha(palette.accent.red, '66'),
+    'diffEditor.insertedTextBackground': palette.accent.cyan,
+    'diffEditor.removedTextBackground': palette.accent.red,
+    'diffEditor.insertedTextBorder': withAlpha(palette.accent.cyan, 0),
+    'diffEditor.removedTextBorder': withAlpha(palette.accent.red, 0),
 
     // Хлебные крошки
     'breadcrumb.background': palette.bg.base,
