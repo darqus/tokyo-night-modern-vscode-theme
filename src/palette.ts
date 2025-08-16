@@ -507,10 +507,10 @@ export const palette: Palette = {
     activeTitle: '#c0caf5', // Active titles
   },
   brand: {
-    primary: '#7aa2f7', // Primary brand color (Tokyo Night blue)
+    primary: '#7dcfff', // Primary brand color (Tokyo Night blue)
     button: {
       primary: '#3d59a1', // Darker blue for buttons
-      hover: '#7aa2f7', // Button hover effect - active Tokyo Night blue
+      hover: '#8dabec', // Button hover effect - active Tokyo Night blue
     },
   },
   accent: {
