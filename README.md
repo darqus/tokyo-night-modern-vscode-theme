@@ -66,9 +66,9 @@ src/
 
 ### Documentation
 
-- [📋 Architecture](./ARCHITECTURE.md) - How the theme is structured
-- [🛠️ Development](./DEVELOPMENT.md) - Developer's guide
-- [🎨 Examples](./EXAMPLES.md) - Customization examples
+- [📋 Architecture](./docs/ARCHITECTURE.md) - How the theme is structured
+- [🛠️ Development](./docs/DEVELOPMENT.md) - Developer's guide
+- [🎨 Examples](./docs/EXAMPLES.md) - Customization examples
 
 ## 🎨 Color Palette
 
