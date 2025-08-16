@@ -80,14 +80,14 @@ These colors are primarily used for syntax highlighting and provide visual disti
 
 | Color Name | Hex Value | Description |
 |---|---|---|
-| Blue | `#7aa2f7` | Keywords, types |
-| Cyan | `#7dcfff` | Strings, imports |
-| Teal | `#85c9c1` | Properties, attributes |
-| Magenta | `#bb9af7` | Variables, constants |
-| Yellow | `#e0af68` | Numbers, parameters |
-| Orange | `#ff9e64` | Functions, methods |
-| Red | `#f7768e` | Errors, warnings |
-| Purple | `#9d7cd8` | Operators, special characters |
+| Blue | <span style="background-color: #7aa2f7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7aa2f7` | Keywords, types |
+| Cyan | <span style="background-color: #7dcfff; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7dcfff` | Strings, imports |
+| Teal | <span style="background-color: #85c9c1; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#85c9c1` | Properties, attributes |
+| Magenta | <span style="background-color: #bb9af7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#bb9af7` | Variables, constants |
+| Yellow | <span style="background-color: #e0af68; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#e0af68` | Numbers, parameters |
+| Orange | <span style="background-color: #ff9e64; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#ff9e64` | Functions, methods |
+| Red | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | Errors, warnings |
+| Purple | <span style="background-color: #9d7cd8; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#9d7cd8` | Operators, special characters |
 
 ### Token Colors (Examples)
 
@@ -95,16 +95,16 @@ These are examples of colors used for specific syntax tokens, providing fine-gra
 
 | Token Type | Hex Value | Description |
 |---|---|---|
-| Comment | `#545c7e` | Comments and documentation |
-| String | `#9ece6a` | Strings and text content |
-| Keyword | `#bb9af7` | General keywords |
-| Function | `#7aa2f7` | Function names |
-| Variable | `#c0caf5` | General variables |
-| Operator | `#89ddff` | Operators and punctuation |
-| Tag | `#f7768e` | HTML/XML tags |
-| Number | `#c0768e` | Numeric values |
-| Error | `#f7768e` | Error indicators |
-| Warning | `#ffdb69` | Warning indicators |
+| Comment | <span style="background-color: #545c7e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#545c7e` | Comments and documentation |
+| String | <span style="background-color: #9ece6a; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#9ece6a` | Strings and text content |
+| Keyword | <span style="background-color: #bb9af7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#bb9af7` | General keywords |
+| Function | <span style="background-color: #7aa2f7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7aa2f7` | Function names |
+| Variable | <span style="background-color: #c0caf5; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#c0caf5` | General variables |
+| Operator | <span style="background-color: #89ddff; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#89ddff` | Operators and punctuation |
+| Tag | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | HTML/XML tags |
+| Number | <span style="background-color: #c0768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#c0768e` | Numeric values |
+| Error | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | Error indicators |
+| Warning | <span style="background-color: #ffdb69; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#ffdb69` | Warning indicators |
 
 ## Original Theme
 
