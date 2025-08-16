@@ -101,7 +101,7 @@ export function buildColors(): Record<string, string> {
     'activityBar.foreground': palette.fg.primary,
     'activityBar.activeBorder': palette.brand.primary,
     'activityBar.activeBackground': palette.bg.elevated,
-    'activityBar.inactiveForeground': palette.fg.panelText,
+    'activityBar.inactiveForeground': palette.fg.inactive,
     'activityBar.border': palette.line.border,
     'activityBarBadge.background': palette.brand.primary,
     'activityBarBadge.foreground': palette.bg.base,
