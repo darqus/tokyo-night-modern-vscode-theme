@@ -472,15 +472,15 @@ export const palette: Palette = {
   bg: {
     // Cooler, more balanced backgrounds
     base: '#1a1b26', // Main editor background
-    elevated: '#24283b', // Panels, dialogs
+    elevated: '#1c1d28', // Panels, dialogs (slightly lighter than base)
     sunken: '#16161e', // Status bar, sidebars
-    overlay: '#24283b', // Overlays
-    input: '#24283b', // Input fields
-    hover: '#363b54', // Hover effects
-    active: '#3d59a1', // Active elements
-    drop: '#3d59a1', // Drag-n-drop zones
-    lineHighlight: '#24283b', // Current line highlight
-    bracketMatch: '#3b4261', // Bracket match highlight
+    overlay: '#1c1d28', // Overlays (slightly lighter than base)
+    input: '#1c1d28', // Input fields (slightly lighter than base)
+    hover: '#1e1f2a', // Hover effects (slightly lighter than base)
+    active: '#252a3f', // Active elements (darker, closer to base)
+    drop: '#252a3f', // Drag-n-drop zones (darker, closer to base)
+    lineHighlight: '#1c1d28', // Current line highlight (slightly lighter than base)
+    bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
     tabs: '#1a1b26', // Tab background
     selection: {
       active: '#3d59a1', // Active selection
@@ -671,11 +671,11 @@ export const palette: Palette = {
       scrollbar: '#00000033',
     },
     badge: {
-      base: '#7e83b2',
-      fg: '#c8d2f0',
+      base: '#3d4268',
+      fg: '#a9b1d6',
     },
     sash: {
-      hover: '#363b54',
+      hover: '#252a3f',
     },
     selectionWash: '#515c7e',
     scrollbarBase: '#868bc4',
@@ -684,7 +684,7 @@ export const palette: Palette = {
       border: '#20212c',
     },
     list: {
-      hoverBg: '#24283b',
+      hoverBg: '#1f2335',
       dropBg: '#3d59a1',
     },
     editorLinkActive: '#acb0d0',
@@ -702,8 +702,8 @@ export const palette: Palette = {
       lastPinnedBorder: '#363b54',
     },
     statusItem: {
-      hover: '#252732',
-      prominentHover: '#20222c',
+      hover: '#1f2335',
+      prominentHover: '#1a1b26',
     },
     text: {
       preformat: '#9699a8',
