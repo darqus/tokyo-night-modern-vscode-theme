@@ -490,8 +490,8 @@ export const palette: Palette = {
     },
   },
   line: {
-    border: '#363b54', // Main borders
-    menu: '#363b54', // Menu borders
+    border: '#22232e', // Main borders
+    menu: '#22232e', // Menu borders
   },
   fg: {
     // Text colors with better contrast
@@ -681,7 +681,7 @@ export const palette: Palette = {
     scrollbarBase: '#868bc4',
     input: {
       placeholder: '#787c99',
-      border: '#0f0f14',
+      border: '#20212c',
     },
     list: {
       hoverBg: '#24283b',
@@ -692,7 +692,7 @@ export const palette: Palette = {
     noMatches: '#f7768e',
     settingsHeader: '#6183bb',
     window: {
-      border: '#0d0f17',
+      border: '#20212c',
     },
     tab: {
       activeBorder: '#7aa2f7',
