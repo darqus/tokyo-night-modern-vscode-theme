@@ -94,7 +94,7 @@ export function buildColors(): Record<string, string> {
     'radio.inactiveForeground': palette.fg.panelText,
     'radio.inactiveBackground': palette.bg.input,
     'radio.inactiveBorder': palette.line.border,
-    'radio.inactiveHoverBackground': palette.bg.hover,
+    'radio.inactiveHoverBackground': palette.brand.primary, // Активный hover для radio
 
     // Панель действий - стандартизация с VS Code
     'activityBar.background': palette.bg.base,
@@ -337,6 +337,10 @@ export function buildColors(): Record<string, string> {
     'editorCodeLens.foreground': palette.ui.codeLens,
     'editorLightBulb.foreground': palette.accent.yellow,
     'editorLightBulbAutoFix.foreground': palette.accent.yellow,
+
+    // Виджеты поиска - активные кнопки при наведении
+    'searchEditor.findMatchBorder': palette.accent.yellow,
+    'searchEditor.textInputBorder': palette.line.border,
 
     // Окно быстрого просмотра (Peek view)
     'peekView.border': palette.line.border,
@@ -604,6 +608,10 @@ export function buildColors(): Record<string, string> {
     'menu.selectionBackground': palette.bg.selection.menu,
     'menu.separatorBackground': palette.line.border,
     'menu.border': withAlpha(palette.line.border, '00'),
+
+    // Кнопки в контролах (поиск, замена и т.д.)
+    'toolbar.hoverBackground': withAlpha(palette.bg.base, '20'), // Активный hover для кнопок в тулбаре
+    'toolbar.activeBackground': withAlpha(palette.bg.base, '20'),
     // Быстрый ввод (Палитра команд, выборщик быстрых исправлений)
     'quickInput.background': palette.bg.base,
     'quickInput.foreground': palette.fg.primary,
