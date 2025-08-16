@@ -90,14 +90,14 @@ interface Palette {
 
 | Название цвета | Hex-значение | Описание |
 |---|---|---|
-| Blue | `#7aa2f7` | Ключевые слова, типы |
-| Cyan | `#7dcfff` | Строки, импорты |
-| Teal | `#85c9c1` | Свойства, атрибуты |
-| Magenta | `#bb9af7` | Переменные, константы |
-| Yellow | `#e0af68` | Числа, параметры |
-| Orange | `#ff9e64` | Функции, методы |
-| Red | `#f7768e` | Ошибки, предупреждения |
-| Purple | `#9d7cd8` | Операторы, специальные символы |
+| Blue | <span style="background-color: #7aa2f7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7aa2f7` | Ключевые слова, типы |
+| Cyan | <span style="background-color: #7dcfff; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7dcfff` | Строки, импорты |
+| Teal | <span style="background-color: #85c9c1; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#85c9c1` | Свойства, атрибуты |
+| Magenta | <span style="background-color: #bb9af7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#bb9af7` | Переменные, константы |
+| Yellow | <span style="background-color: #e0af68; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#e0af68` | Числа, параметры |
+| Orange | <span style="background-color: #ff9e64; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#ff9e64` | Функции, методы |
+| Red | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | Ошибки, предупреждения |
+| Purple | <span style="background-color: #9d7cd8; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#9d7cd8` | Операторы, специальные символы |
 
 ### Примеры цветов токенов
 
@@ -105,16 +105,25 @@ interface Palette {
 
 | Тип токена | Hex-значение | Описание |
 |---|---|---|
-| Comment | `#545c7e` | Комментарии и документация |
-| String | `#9ece6a` | Строки и текстовое содержимое |
-| Keyword | `#bb9af7` | Общие ключевые слова |
-| Function | `#7aa2f7` | Имена функций |
-| Variable | `#c0caf5` | Общие переменные |
-| Operator | `#89ddff` | Операторы и пунктуация |
-| Tag | `#f7768e` | HTML/XML теги |
-| Number | `#c0768e` | Числовые значения |
-| Error | `#f7768e` | Индикаторы ошибок |
-| Warning | `#ffdb69` | Индикаторы предупреждений |
+| Comment | <span style="background-color: #545c7e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#545c7e` | Комментарии и документация |
+| String | <span style="background-color: #9ece6a; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#9ece6a` | Строки и текстовое содержимое |
+| Keyword | <span style="background-color: #bb9af7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#bb9af7` | Общие ключевые слова |
+| Function | <span style="background-color: #7aa2f7; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#7aa2f7` | Имена функций |
+| Variable | <span style="background-color: #c0caf5; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#c0caf5` | Общие переменные |
+| Operator | <span style="background-color: #89ddff; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#89ddff` | Операторы и пунктуация |
+| Tag | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | HTML/XML теги |
+| Number | <span style="background-color: #c0768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#c0768e` | Числовые значения |
+| Error | <span style="background-color: #f7768e; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#f7768e` | Индикаторы ошибок |
+| Warning | <span style="background-color: #ffdb69; display: inline-block; width: 12px; height: 12px; border: 1px solid #ccc; vertical-align: middle; margin-right: 5px;"></span> `#ffdb69` | Индикаторы предупреждений |
+
+### Иерархия цветов
+
+1. **Базовые цвета** - фундаментальная палитра
+2. **Фоновые цвета** - различные уровни глубины
+3. **Текстовые цвета** - иерархия важности
+4. **Акцентные цвета** - для синтаксиса и элементов UI
+5. **Специальные цвета** - ошибки, предупреждения, бренд
+
 
 ### Иерархия цветов
 
