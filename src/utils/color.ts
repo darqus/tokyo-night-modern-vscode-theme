@@ -13,7 +13,7 @@ const HEX_RE = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i
  * ensure6('#ff0000') // '#ff0000'
  * ensure6('#FF0000') // '#ff0000' (converted to lowercase)
  */
-function ensure6(hex: Hex): string {
+const ensure6 = (hex: Hex): string => {
   const m = HEX_RE.exec(hex)
   if (!m) throw new Error(`Invalid hex color: ${hex}`)
   return `#${m[1]}`.toLowerCase()
@@ -36,7 +36,7 @@ function ensure6(hex: Hex): string {
  * withAlpha('#ff0000', '80') // '#ff000080'
  * withAlpha('#ff0000', 'FF') // '#ff0000ff'
  */
-export function withAlpha(hex: Hex, alpha: number | string): Hex {
+export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
   const base = ensure6(hex)
   let a: string
 
@@ -65,6 +65,6 @@ export function withAlpha(hex: Hex, alpha: number | string): Hex {
  * @param v - The value to convert
  * @returns The same value without changes
  */
-export function toString<T>(v: T): T {
+export const toString = <T>(v: T): T => {
   return v
 }
