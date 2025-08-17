@@ -12,10 +12,10 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darqus/tokyo-night-dark"
+    "url": "https://github.com/darqus/tokyo-night-vscode-theme-lod"
   },
   "bugs": {
-    "url": "https://github.com/darqus/tokyo-night-dark/issues"
+    "url": "https://github.com/darqus/tokyo-night-vscode-theme-lod/issues"
   },
   "categories": [
     "Themes"

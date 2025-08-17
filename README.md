@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod)
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod&ssr=false#review-details)
-[![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-dark)](https://github.com/darqus/tokyo-night-dark/issues)
+[![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-vscode-theme-lod)](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues)
 
 A darker version of the Tokyo Night theme with slightly more muted syntax highlighting.
 
@@ -15,7 +15,7 @@ A darker version of the Tokyo Night theme with slightly more muted syntax highli
 
 ## 📸 Screenshots
 
-![Screenshot - Tokyo Night Darqus](https://github.com/darqus/tokyo-night-dark/blob/main/static/ss_tokyo_night_dark.png?raw=true)
+![Screenshot - Tokyo Night Darqus](https://github.com/darqus/tokyo-night-vscode-theme-lod/blob/main/static/ss_tokyo_night_dark.png?raw=true)
 
 ## 🚀 Installation
 
@@ -40,8 +40,8 @@ This theme is built using a modern TypeScript approach for better maintainabilit
 
 ```bash
 # Clone the repository
-git clone https://github.com/darqus/tokyo-night-dark.git
-cd tokyo-night-dark
+git clone https://github.com/darqus/tokyo-night-vscode-theme-lod.git
+cd tokyo-night-vscode-theme-lod
 
 # Install dependencies
 npm install
