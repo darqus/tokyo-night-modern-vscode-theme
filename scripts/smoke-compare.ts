@@ -13,16 +13,16 @@ import { semanticTokenColors } from '../src/semanticTokenColors'
 const root = path.resolve(__dirname, '..')
 const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
-function loadTheme(): any {
+const loadTheme = (): any => {
   const json = fs.readFileSync(themePath, 'utf8')
   return JSON.parse(json)
 }
 
-function stable<T>(obj: T): string {
+const stable = <T>(obj: T): string => {
   return JSON.stringify(obj, Object.keys(obj as any).sort(), 2)
 }
 
-function diffObjects(a: any, b: any): string[] {
+const diffObjects = (a: any, b: any): string[] => {
   const issues: string[] = []
   const aKeys = new Set(Object.keys(a || {}))
   const bKeys = new Set(Object.keys(b || {}))
@@ -31,7 +31,11 @@ function diffObjects(a: any, b: any): string[] {
     const bv = b?.[k]
     if (typeof av === 'object' && typeof bv === 'object' && av && bv) {
       if (JSON.stringify(av) !== JSON.stringify(bv)) {
-        issues.push(`Mismatch at key ${k}:\n  expected: ${JSON.stringify(av)}\n  actual:   ${JSON.stringify(bv)}`)
+        issues.push(
+          `Mismatch at key ${k}:\n  expected: ${JSON.stringify(
+            av
+          )}\n  actual:   ${JSON.stringify(bv)}`
+        )
       }
     } else if (av !== bv) {
       issues.push(`Mismatch at key ${k}: expected ${av} vs actual ${bv}`)
@@ -40,7 +44,7 @@ function diffObjects(a: any, b: any): string[] {
   return issues
 }
 
-function main() {
+const main = () => {
   const theme = loadTheme()
 
   // colors

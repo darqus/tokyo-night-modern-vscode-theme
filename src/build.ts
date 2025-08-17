@@ -14,7 +14,7 @@ import * as path from 'node:path'
 const root = path.resolve(__dirname, '..')
 const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
-export function buildColors(): Record<string, string> {
+export const buildColors = (): Record<string, string> => {
   return {
     // Верхний уровень и основа - улучшенная контрастность
     foreground: palette.fg.primary,
@@ -627,7 +627,7 @@ export function buildColors(): Record<string, string> {
   }
 }
 
-function main() {
+const main = () => {
   const original = fs.readFileSync(themePath, 'utf8')
   const theme = JSON.parse(original) as Record<string, any>
 
