@@ -2,10 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/darqus/tokyo-night-dark/compare/v0.3.15...v0.4.0) (2025-01-27)
+
+### ⚠ BREAKING CHANGES
+
+* **marketplace:** Extension ID changed from `tokyo-night-dark.tokyo-night-theme-darqus` to `lod-inc.tokyo-night-lod`
+* **branding:** Extension name changed from "Tokyo Night Darqus" to "Tokyo Night Lod"
+
+### Features
+
+* **marketplace:** change publisher from tokyo-night-dark to lod-inc
+* **marketplace:** rename extension from tokyo-night-theme-darqus to tokyo-night-lod
+* **branding:** update display name to "Tokyo Night Lod"
+
 ### [0.3.15](https://github.com/darqus/tokyo-night-dark/compare/v0.3.14...v0.3.15) (2025-08-17)
 
 ### [0.3.14](https://github.com/darqus/tokyo-night-dark/compare/v0.3.13...v0.3.14) (2025-08-16)
-
 
 ### Features
 
@@ -17,7 +29,6 @@ All notable changes to this project will be documented in this file. See [standa
 ### [0.3.12](https://github.com/darqus/tokyo-night-dark/compare/v0.3.11...v0.3.12) (2025-08-16)
 
 ### [0.3.11](https://github.com/darqus/tokyo-night-dark/compare/v0.3.10...v0.3.11) (2025-08-16)
-
 
 ### Features
 
@@ -31,7 +42,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **theme:** improve readability and contrast in various components ([b1c4665](https://github.com/darqus/tokyo-night-dark/commit/b1c4665eeb0a078cdc64c3860eec021725667c6e))
 * **theme:** update button hover color to primary blue ([07185f0](https://github.com/darqus/tokyo-night-dark/commit/07185f0690ce0d6a5a1eb6485c101d74675399f1))
 
-
 ### Bug Fixes
 
 * adjust editor selection colors for better visibility ([7c6b492](https://github.com/darqus/tokyo-night-dark/commit/7c6b492bbd230a8d34afc41827fcaf50dcc3af1b))
@@ -44,7 +54,6 @@ All notable changes to this project will be documented in this file. See [standa
 ### [0.3.9](https://github.com/darqus/tokyo-night-dark/compare/v0.3.9-0...v0.3.9) (2025-08-15)
 
 ### [0.3.9-0](https://github.com/darqus/tokyo-night-dark/compare/v0.3.8...v0.3.9-0) (2025-08-15)
-
 
 ### Features
 

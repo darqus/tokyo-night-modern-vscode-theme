@@ -1,9 +1,9 @@
 {
-  "name": "Tokyo Night Darqus",
-  "displayName": "Tokyo Night Darqus",
-  "author": "darqus",
+  "name": "Tokyo Night Lod",
+  "displayName": "Tokyo Night Lod",
+  "author": "lod",
   "maintainers": [
-    "darqus <darqus.ru@gmail.com>"
+    "lod"
   ],
   "type": "dark",
   "semanticTokenColors": {

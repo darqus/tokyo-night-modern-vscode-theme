@@ -1,10 +1,10 @@
 {
-  "name": "tokyo-night-theme-darqus",
-  "displayName": "Tokyo Night Darqus",
+  "name": "tokyo-night-lod",
+  "displayName": "Tokyo Night Lod",
   "description": "A darker version of the Tokyo Night theme.",
-  "version": "0.3.15",
-  "author": "darqus",
-  "publisher": "tokyo-night-dark",
+  "version": "0.4.0",
+  "author": "lod",
+  "publisher": "lod-inc",
   "license": "MIT",
   "engines": {
     "vscode": "^1.74.0"
@@ -29,7 +29,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Tokyo Night Darqus",
+        "label": "Tokyo Night Lod",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-dark-color-theme.json"
       }

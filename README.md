@@ -1,7 +1,7 @@
-# [Tokyo Night Darqus](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-theme-darqus)
+# [Tokyo Night Lod](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod)
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/tokyo-night-dark.tokyo-night-theme-darqus.svg)](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-theme-darqus)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/tokyo-night-dark.tokyo-night-theme-darqus.svg)](https://marketplace.visualstudio.com/items?itemName=tokyo-night-dark.tokyo-night-theme-darqus&ssr=false#review-details)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod&ssr=false#review-details)
 [![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-dark)](https://github.com/darqus/tokyo-night-dark/issues)
 
 A darker version of the Tokyo Night theme with slightly more muted syntax highlighting.
@@ -23,13 +23,13 @@ A darker version of the Tokyo Night theme with slightly more muted syntax highli
 
 1. Open VS Code
 2. Go to Extensions (Ctrl+Shift+X)
-3. Search for "Tokyo Night Darqus"
+3. Search for "Tokyo Night Lod"
 4. Click Install
 
 ### From the command line
 
 ```bash
-code --install-extension tokyo-night-dark.tokyo-night-theme-darqus
+code --install-extension lod-inc.tokyo-night-lod
 ```
 
 ## 🛠️ Development
