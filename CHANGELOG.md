@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.1...v0.4.2) (2025-08-18)
+
+
+### Bug Fixes
+
+* **theme:** improve contrast and extend semantic token support ([202dda0](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/202dda0883fe623f454848b51aa58939d4cdfad7))
+
 ### 0.4.1 (2025-08-18)
 
 
