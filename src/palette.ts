@@ -525,10 +525,10 @@ export const palette: Palette = {
     purple: '#9d7cd8',
   },
   token: {
-    // Refined syntax highlighting tokens
-    comment: '#545c7e',
-    commentDoc: '#545c7e',
-    commentDocEmphasized: '#6b7499',
+    // Refined syntax highlighting tokens - IMPROVED CONTRAST
+    comment: '#6b7499',        // было #545c7e - увеличена яркость для лучшей читаемости
+    commentDoc: '#5a607a',     // было #545c7e - небольшое увеличение контрастности
+    commentDocEmphasized: '#7481a6',
     constant: '#e0af68', // Changed from a reddish pink to yellow
     string: '#9ece6a', // Brighter green for strings
     color: '#9aa5ce',
@@ -631,8 +631,8 @@ export const palette: Palette = {
     apacheTag: '#f7768e',
     preprocessor: '#73daca',
     envValue: '#7aa2f7',
-    // Добавленные недостающие свойства
-    ignored: '#444b6a',
+    // Добавленные недостающие свойства - IMPROVED CONTRAST
+    ignored: '#6b7499',        // было #444b6a - синхронизировано с comment
     number: '#c0768e',
     markup: '#449dab',
     error: '#914c54',
