@@ -96,18 +96,23 @@ export const buildColors = (): Record<string, string> => {
     'radio.inactiveBorder': palette.line.border,
     'radio.inactiveHoverBackground': palette.brand.primary, // Активный hover для radio
 
-    // Панель действий - стандартизация с VS Code
+    // Панель действий - улучшенная контрастность иконок (по аналогии с Dark+)
     'activityBar.background': palette.bg.base,
-    'activityBar.foreground': palette.fg.primary,
-    'activityBar.activeBorder': palette.brand.button.primary,
+    'activityBar.foreground': palette.fg.selectionText, // Увеличиваем контрастность активных иконок до белого
+    'activityBar.activeBorder': palette.ui.badge.base, // Используем цвет бейджа для активной границы
     'activityBar.activeBackground': palette.bg.elevated,
-    'activityBar.inactiveForeground': palette.fg.inactive,
+    'activityBar.inactiveForeground': palette.fg.subtle, // Сохраняем приглушенный цвет для неактивных иконок
     'activityBar.border': palette.line.border,
-    'activityBarBadge.background': palette.ui.badge.base,
-    'activityBarBadge.foreground': palette.ui.badge.fg,
+    'activityBarBadge.background': palette.ui.badge.base, // Используем цвет бейджа из Dark+
+    'activityBarBadge.foreground': palette.ui.badge.fg, // Белый текст для максимальной контрастности
+    // Добавляем цвета для предупреждений и ошибок в Activity Bar
+    'activityWarningBadge.foreground': palette.bg.base,
+    'activityWarningBadge.background': palette.accent.yellow,
+    'activityErrorBadge.foreground': palette.bg.base,
+    'activityErrorBadge.background': palette.accent.red,
     // Вариант Activity Bar сверху (Activity Bar: Top)
     'activityBarTop.background': palette.bg.base,
-    'activityBarTop.foreground': palette.fg.primary,
+    'activityBarTop.foreground': palette.fg.selectionText, // Синхронизируем с основным цветом
     'activityBarTop.activeBackground': palette.bg.elevated,
 
     // Боковая панель - улучшенная иерархия
@@ -159,31 +164,31 @@ export const buildColors = (): Record<string, string> => {
     ),
 
     // Подсветка/направляющие для скобок - ОПТИМИЗИРОВАННАЯ РАЗЛИЧИМОСТЬ
-    'editorBracketHighlight.foreground1': palette.accent.blue,         // синий
-    'editorBracketHighlight.foreground2': palette.accent.orange,       // оранжевый (вместо cyan)
-    'editorBracketHighlight.foreground3': palette.token.string,        // зеленый (вместо magenta)
-    'editorBracketHighlight.foreground4': palette.accent.yellow,       // желтый
-    'editorBracketHighlight.foreground5': palette.accent.red,          // красный
-    'editorBracketHighlight.foreground6': palette.accent.magenta,      // магента
+    'editorBracketHighlight.foreground1': palette.accent.blue, // синий
+    'editorBracketHighlight.foreground2': palette.accent.orange, // оранжевый (вместо cyan)
+    'editorBracketHighlight.foreground3': palette.token.string, // зеленый (вместо magenta)
+    'editorBracketHighlight.foreground4': palette.accent.yellow, // желтый
+    'editorBracketHighlight.foreground5': palette.accent.red, // красный
+    'editorBracketHighlight.foreground6': palette.accent.magenta, // магента
     'editorBracketHighlight.unexpectedBracket.foreground': palette.accent.red,
     'editorBracketPairGuide.activeBackground1': withAlpha(
       palette.accent.blue,
-      '40'  // было 30 - увеличиваем alpha для лучшей видимости
+      '40' // было 30 - увеличиваем alpha для лучшей видимости
     ),
     'editorBracketPairGuide.activeBackground2': withAlpha(
-      palette.accent.orange,  // синхронизация с новым цветом foreground2
+      palette.accent.orange, // синхронизация с новым цветом foreground2
       '40'
     ),
     'editorBracketPairGuide.activeBackground3': withAlpha(
-      palette.token.string,   // синхронизация с новым цветом foreground3
+      palette.token.string, // синхронизация с новым цветом foreground3
       '40'
     ),
     'editorBracketPairGuide.activeBackground4': withAlpha(
-      palette.accent.yellow,  // синхронизация с новым цветом foreground4
+      palette.accent.yellow, // синхронизация с новым цветом foreground4
       '40'
     ),
     'editorBracketPairGuide.activeBackground5': withAlpha(
-      palette.accent.red,     // синхронизация с новым цветом foreground5
+      palette.accent.red, // синхронизация с новым цветом foreground5
       '40'
     ),
     'editorBracketPairGuide.activeBackground6': withAlpha(

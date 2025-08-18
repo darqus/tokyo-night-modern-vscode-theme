@@ -501,7 +501,7 @@ export const palette: Palette = {
     // Text colors with better contrast
     primary: '#c0caf5', // Primary text
     muted: '#a9b1d6', // Secondary text
-    subtle: '#545c7e', // Hints, comments
+    subtle: '#6b7499', // Hints, comments - увеличена яркость для лучшей контрастности
     inactive: '#545c7e', // Inactive text
     panelText: '#a9b1d6', // Panel text
     soft: '#a9b1d6', // Soft text
@@ -678,8 +678,8 @@ export const palette: Palette = {
       scrollbar: '#00000033',
     },
     badge: {
-      base: '#7dcfff',
-      fg: '#16161e',
+      base: '#007ACC', // Используем цвет бейджа из Dark+ для лучшей контрастности
+      fg: '#ffffff', // Белый текст для максимальной контрастности
     },
     sash: {
       hover: '#252a3f',
