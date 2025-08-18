@@ -20,7 +20,7 @@ export const buildColors = (): Record<string, string> => {
     foreground: palette.fg.primary,
     descriptionForeground: palette.fg.muted,
     disabledForeground: palette.fg.inactive,
-    focusBorder: withAlpha(palette.brand.primary, '33'),
+    focusBorder: withAlpha(palette.brand.primary, '66'), // было 33 - увеличиваем alpha для лучшей видимости
     errorForeground: palette.accent.red,
     'widget.shadow': palette.ui.shadow.widget,
     'scrollbar.shadow': palette.ui.shadow.scrollbar,
@@ -132,7 +132,7 @@ export const buildColors = (): Record<string, string> => {
     'list.focusForeground': palette.fg.onSelection,
     // Когда контейнер списка не в фокусе, но элемент в фокусе
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
-    'list.hoverBackground': palette.bg.hover, // Используем hover цвет при наведении
+    'list.hoverBackground': palette.ui.list.hoverBg, // используем обновленный hover цвет для списков
     'list.hoverForeground': palette.fg.primary,
     'list.highlightForeground': palette.brand.primary,
     'list.invalidItemForeground': palette.accent.yellow,
@@ -158,37 +158,37 @@ export const buildColors = (): Record<string, string> => {
       '80'
     ),
 
-    // Подсветка/направляющие для скобок - улучшенная видимость
-    'editorBracketHighlight.foreground1': palette.accent.blue,
-    'editorBracketHighlight.foreground2': palette.accent.cyan,
-    'editorBracketHighlight.foreground3': palette.accent.magenta,
-    'editorBracketHighlight.foreground4': palette.accent.teal,
-    'editorBracketHighlight.foreground5': palette.accent.orange,
-    'editorBracketHighlight.foreground6': palette.accent.yellow,
+    // Подсветка/направляющие для скобок - ОПТИМИЗИРОВАННАЯ РАЗЛИЧИМОСТЬ
+    'editorBracketHighlight.foreground1': palette.accent.blue,         // синий
+    'editorBracketHighlight.foreground2': palette.accent.orange,       // оранжевый (вместо cyan)
+    'editorBracketHighlight.foreground3': palette.token.string,        // зеленый (вместо magenta)
+    'editorBracketHighlight.foreground4': palette.accent.yellow,       // желтый
+    'editorBracketHighlight.foreground5': palette.accent.red,          // красный
+    'editorBracketHighlight.foreground6': palette.accent.magenta,      // магента
     'editorBracketHighlight.unexpectedBracket.foreground': palette.accent.red,
     'editorBracketPairGuide.activeBackground1': withAlpha(
       palette.accent.blue,
-      '30'
+      '40'  // было 30 - увеличиваем alpha для лучшей видимости
     ),
     'editorBracketPairGuide.activeBackground2': withAlpha(
-      palette.accent.cyan,
-      '30'
+      palette.accent.orange,  // синхронизация с новым цветом foreground2
+      '40'
     ),
     'editorBracketPairGuide.activeBackground3': withAlpha(
-      palette.accent.magenta,
-      '30'
+      palette.token.string,   // синхронизация с новым цветом foreground3
+      '40'
     ),
     'editorBracketPairGuide.activeBackground4': withAlpha(
-      palette.accent.teal,
-      '30'
+      palette.accent.yellow,  // синхронизация с новым цветом foreground4
+      '40'
     ),
     'editorBracketPairGuide.activeBackground5': withAlpha(
-      palette.accent.orange,
-      '30'
+      palette.accent.red,     // синхронизация с новым цветом foreground5
+      '40'
     ),
     'editorBracketPairGuide.activeBackground6': withAlpha(
-      palette.accent.yellow,
-      '30'
+      palette.accent.magenta, // синхронизация с новым цветом foreground6
+      '40'
     ),
 
     // Выделения и подсветки - улучшенная контрастность

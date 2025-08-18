@@ -476,10 +476,10 @@ export const palette: Palette = {
     sunken: '#14141c', // Status bar, sidebars (darkened)
     overlay: '#181820', // Overlays (darkened)
     input: '#181820', // Input fields (darkened)
-    hover: '#1e1f2a', // Hover effects (slightly lighter than base)
-    active: '#252a3f', // Active elements (darker, closer to base)
-    drop: '#252a3f', // Drag-n-drop zones (darker, closer to base)
-    lineHighlight: '#181820', // Current line highlight (darkened)
+    hover: '#24283b',   // было #1e1f2a - более контрастный hover
+    active: '#2a3041',  // было #252a3f - еще темнее для active состояния
+    drop: '#2a3041',    // синхронизировано с active
+    lineHighlight: '#1a1b26', // было #181820 - немного ярче
     bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
     tabs: '#16161e', // Tab background (darkened)
     selection: {
@@ -537,16 +537,16 @@ export const palette: Palette = {
     storageType: '#bb9af7',
     storageModifier: '#9d7cd8',
     interpolation: '#7dcfff',
-    templateKeyword: '#0db9d7',
+    templateKeyword: '#73daca', // было #0db9d7 - более отличимый teal цвет
     spread: '#e0687a',
-    operator: '#89ddff', // Changed from green to a light blue
-    importExport: '#7dcfff',
+    operator: '#a9b1d6',      // было #89ddff - используем muted цвет для лучшего баланса
+    importExport: '#bb9af7',  // было #7dcfff - используем magenta для ключевых слов
     keyword: '#bb9af7',
     keywordSql: '#7dcfff',
     keywordLogical: '#bb9af7',
     tag: '#f7768e',
-    tagComponent: '#bb9af7', // Components are now magenta
-    tagPunctuation: '#89ddff', // Punctuation is now light blue
+    tagComponent: '#bb9af7',  // Components are now magenta
+    tagPunctuation: '#a9b1d6', // было #89ddff - менее яркий для пунктуации
     globalConstant: '#e0af68',
     variable: '#c0caf5',
     objectVariable: '#c0caf5',
@@ -684,8 +684,8 @@ export const palette: Palette = {
       border: '#20212c',
     },
     list: {
-      hoverBg: '#1f2335',
-      dropBg: '#3d59a1',
+      hoverBg: '#24283b',  // было #1f2335 - синхронизировано с общим hover
+      dropBg: '#4158a6',   // было #3d59a1 - более яркий drop
     },
     editorLinkActive: '#acb0d0',
     codeLens: '#545c7e',
@@ -702,8 +702,8 @@ export const palette: Palette = {
       lastPinnedBorder: '#363b54',
     },
     statusItem: {
-      hover: '#1f2335',
-      prominentHover: '#1a1b26',
+      hover: '#24283b',     // было #1f2335 - консистентный hover
+      prominentHover: '#2a3041', // было #1a1b26 - больше контраста
     },
     text: {
       preformat: '#9699a8',
