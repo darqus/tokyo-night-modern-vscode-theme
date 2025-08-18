@@ -263,6 +263,118 @@
     },
     "alias:yaml": {
       "foreground": "#7dcfff"
+    },
+    "constant": {
+      "foreground": "#e0af68"
+    },
+    "constant.readonly": {
+      "foreground": "#e0af68",
+      "bold": true
+    },
+    "number": {
+      "foreground": "#e0af68"
+    },
+    "string": {
+      "foreground": "#9ece6a"
+    },
+    "boolean": {
+      "foreground": "#bb9af7"
+    },
+    "null": {
+      "foreground": "#bb9af7"
+    },
+    "undefined": {
+      "foreground": "#bb9af7"
+    },
+    "operator": {
+      "foreground": "#bb9af7"
+    },
+    "keyword": {
+      "foreground": "#bb9af7"
+    },
+    "keyword.control": {
+      "foreground": "#bb9af7",
+      "bold": true
+    },
+    "keyword.operator": {
+      "foreground": "#bb9af7"
+    },
+    "keyword.type": {
+      "foreground": "#7aa2f7"
+    },
+    "keyword.modifier": {
+      "foreground": "#7dcfff"
+    },
+    "comment": {
+      "foreground": "#6b7499"
+    },
+    "comment.documentation": {
+      "foreground": "#6b7499",
+      "italic": true
+    },
+    "comment.keyword": {
+      "foreground": "#7aa2f7",
+      "italic": true
+    },
+    "error": {
+      "foreground": "#914c54",
+      "underline": true
+    },
+    "warning": {
+      "foreground": "#ffdb69",
+      "underline": true
+    },
+    "deprecated": {
+      "foreground": "#545c7e",
+      "strikethrough": true
+    },
+    "regexp": {
+      "foreground": "#f7768e"
+    },
+    "regexp.characterClass": {
+      "foreground": "#e0af68"
+    },
+    "regexp.escape": {
+      "foreground": "#7dcfff"
+    },
+    "decorator": {
+      "foreground": "#7aa2f7"
+    },
+    "annotation": {
+      "foreground": "#7aa2f7"
+    },
+    "parameter.type": {
+      "foreground": "#7dcfff"
+    },
+    "parameter.name": {
+      "foreground": "#e0af68"
+    },
+    "argument": {
+      "foreground": "#c0caf5"
+    },
+    "label": {
+      "foreground": "#7aa2f7"
+    },
+    "reference": {
+      "foreground": "#85c9c1"
+    },
+    "escapeSequence": {
+      "foreground": "#7dcfff"
+    },
+    "formatSpecifier": {
+      "foreground": "#e0af68"
+    },
+    "punctuation": {
+      "foreground": "#c0caf5"
+    },
+    "punctuation.delimiter": {
+      "foreground": "#a9b1d6"
+    },
+    "punctuation.bracket": {
+      "foreground": "#c0caf5"
+    },
+    "punctuation.special": {
+      "foreground": "#bb9af7"
     }
   },
   "semanticClass": "tokyo-night",

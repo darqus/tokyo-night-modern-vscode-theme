@@ -72,6 +72,10 @@ export interface Palette {
     onSelection: Hex
     /** Active titles */
     activeTitle: Hex
+    /** Breadcrumb text (improved contrast) */
+    breadcrumb: Hex
+    /** Description text (improved contrast) */
+    description: Hex
   }
   /** Brand colors */
   brand: {
@@ -476,9 +480,9 @@ export const palette: Palette = {
     sunken: '#14141c', // Status bar, sidebars (darkened)
     overlay: '#181820', // Overlays (darkened)
     input: '#181820', // Input fields (darkened)
-    hover: '#24283b',   // было #1e1f2a - более контрастный hover
-    active: '#2a3041',  // было #252a3f - еще темнее для active состояния
-    drop: '#2a3041',    // синхронизировано с active
+    hover: '#24283b', // было #1e1f2a - более контрастный hover
+    active: '#2a3041', // было #252a3f - еще темнее для active состояния
+    drop: '#2a3041', // синхронизировано с active
     lineHighlight: '#1a1b26', // было #181820 - немного ярче
     bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
     tabs: '#16161e', // Tab background (darkened)
@@ -505,6 +509,9 @@ export const palette: Palette = {
     selectionText: '#ffffff', // Text on selection
     onSelection: '#ffffff', // Text over selection
     activeTitle: '#c0caf5', // Active titles
+    // Improved contrast UI elements
+    breadcrumb: '#7aa2f7', // Улучшение контрастности до 4.5:1
+    description: '#7aa2f7', // Более читаемый
   },
   brand: {
     primary: '#7dcfff', // Primary brand color (Tokyo Night blue)
@@ -526,8 +533,8 @@ export const palette: Palette = {
   },
   token: {
     // Refined syntax highlighting tokens - IMPROVED CONTRAST
-    comment: '#6b7499',        // было #545c7e - увеличена яркость для лучшей читаемости
-    commentDoc: '#5a607a',     // было #545c7e - небольшое увеличение контрастности
+    comment: '#6b7499', // было #545c7e - увеличена яркость для лучшей читаемости
+    commentDoc: '#5a607a', // было #545c7e - небольшое увеличение контрастности
     commentDocEmphasized: '#7481a6',
     constant: '#e0af68', // Changed from a reddish pink to yellow
     string: '#9ece6a', // Brighter green for strings
@@ -539,13 +546,13 @@ export const palette: Palette = {
     interpolation: '#7dcfff',
     templateKeyword: '#73daca', // было #0db9d7 - более отличимый teal цвет
     spread: '#e0687a',
-    operator: '#a9b1d6',      // было #89ddff - используем muted цвет для лучшего баланса
-    importExport: '#bb9af7',  // было #7dcfff - используем magenta для ключевых слов
+    operator: '#a9b1d6', // было #89ddff - используем muted цвет для лучшего баланса
+    importExport: '#bb9af7', // было #7dcfff - используем magenta для ключевых слов
     keyword: '#bb9af7',
     keywordSql: '#7dcfff',
     keywordLogical: '#bb9af7',
     tag: '#f7768e',
-    tagComponent: '#bb9af7',  // Components are now magenta
+    tagComponent: '#bb9af7', // Components are now magenta
     tagPunctuation: '#a9b1d6', // было #89ddff - менее яркий для пунктуации
     globalConstant: '#e0af68',
     variable: '#c0caf5',
@@ -632,7 +639,7 @@ export const palette: Palette = {
     preprocessor: '#73daca',
     envValue: '#7aa2f7',
     // Добавленные недостающие свойства - IMPROVED CONTRAST
-    ignored: '#6b7499',        // было #444b6a - синхронизировано с comment
+    ignored: '#6b7499', // было #444b6a - синхронизировано с comment
     number: '#c0768e',
     markup: '#449dab',
     error: '#914c54',
@@ -684,8 +691,8 @@ export const palette: Palette = {
       border: '#20212c',
     },
     list: {
-      hoverBg: '#24283b',  // было #1f2335 - синхронизировано с общим hover
-      dropBg: '#4158a6',   // было #3d59a1 - более яркий drop
+      hoverBg: '#24283b', // было #1f2335 - синхронизировано с общим hover
+      dropBg: '#4158a6', // было #3d59a1 - более яркий drop
     },
     editorLinkActive: '#acb0d0',
     codeLens: '#545c7e',
@@ -702,7 +709,7 @@ export const palette: Palette = {
       lastPinnedBorder: '#363b54',
     },
     statusItem: {
-      hover: '#24283b',     // было #1f2335 - консистентный hover
+      hover: '#24283b', // было #1f2335 - консистентный hover
       prominentHover: '#2a3041', // было #1a1b26 - больше контраста
     },
     text: {

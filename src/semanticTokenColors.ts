@@ -40,8 +40,8 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   'interface.declaration': { foreground: palette.accent.teal },
   'enum.declaration': { foreground: palette.accent.yellow },
   'type.declaration': { foreground: palette.accent.orange },
-  'typeParameter': { foreground: palette.accent.teal },
-  'struct': { foreground: palette.accent.orange },
+  typeParameter: { foreground: palette.accent.teal },
+  struct: { foreground: palette.accent.orange },
 
   // Модули и пространства имен
   namespace: { foreground: palette.accent.blue },
@@ -130,4 +130,58 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   'property:yaml': { foreground: palette.accent.blue },
   'anchor:yaml': { foreground: palette.accent.cyan },
   'alias:yaml': { foreground: palette.accent.cyan },
+
+  // ДОПОЛНИТЕЛЬНЫЕ СЕМАНТИЧЕСКИЕ ПРАВИЛА - Phase 1.4
+  // Константы и литералы
+  constant: { foreground: palette.accent.yellow },
+  'constant.readonly': { foreground: palette.accent.yellow, bold: true },
+  number: { foreground: palette.accent.yellow },
+  string: { foreground: palette.token.string },
+  boolean: { foreground: palette.accent.magenta },
+  null: { foreground: palette.accent.magenta },
+  undefined: { foreground: palette.accent.magenta },
+
+  // Операторы и ключевые слова
+  operator: { foreground: palette.accent.magenta },
+  keyword: { foreground: palette.accent.magenta },
+  'keyword.control': { foreground: palette.accent.magenta, bold: true },
+  'keyword.operator': { foreground: palette.accent.magenta },
+  'keyword.type': { foreground: palette.accent.blue },
+  'keyword.modifier': { foreground: palette.accent.cyan },
+
+  // Комментарии и документация
+  comment: { foreground: palette.token.comment },
+  'comment.documentation': { foreground: palette.token.comment, italic: true },
+  'comment.keyword': { foreground: palette.accent.blue, italic: true },
+
+  // Ошибки и предупреждения
+  error: { foreground: palette.token.error, underline: true },
+  warning: { foreground: palette.token.warning, underline: true },
+  deprecated: { foreground: palette.fg.inactive, strikethrough: true },
+
+  // Регулярные выражения
+  regexp: { foreground: palette.accent.red },
+  'regexp.characterClass': { foreground: palette.accent.yellow },
+  'regexp.escape': { foreground: palette.accent.cyan },
+
+  // Декораторы и аннотации
+  decorator: { foreground: palette.accent.blue },
+  annotation: { foreground: palette.accent.blue },
+
+  // Параметры и аргументы
+  'parameter.type': { foreground: palette.accent.cyan },
+  'parameter.name': { foreground: palette.accent.yellow },
+  argument: { foreground: palette.fg.primary },
+
+  // Метки и ссылки
+  label: { foreground: palette.accent.blue },
+  reference: { foreground: palette.accent.teal },
+
+  // Специальные токены
+  escapeSequence: { foreground: palette.accent.cyan },
+  formatSpecifier: { foreground: palette.accent.yellow },
+  punctuation: { foreground: palette.fg.primary },
+  'punctuation.delimiter': { foreground: palette.fg.muted },
+  'punctuation.bracket': { foreground: palette.fg.primary },
+  'punctuation.special': { foreground: palette.accent.magenta },
 }
