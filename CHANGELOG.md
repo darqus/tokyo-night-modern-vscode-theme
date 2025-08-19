@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.3](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.2...v0.4.3) (2025-08-19)
 
-
 ### Features
 
 * **theme:** enhance breadcrumb accessibility and consistency ([41959d1](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/41959d147df98d93eb1f60c5e605348ea59f6418))
@@ -15,7 +14,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **theme:** improve contrast and visibility for various UI elements ([011d6e6](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/011d6e6db8f22369abcd6b61aa7abeeb1918b33a))
 * **theme:** improve highlight visibility in editor and search ([7df8552](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/7df8552378e6ea8d8649bb719793789c06355ba5))
 
-
 ### Bug Fixes
 
 * remove unnecessary newline in color.ts ([f055e54](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f055e5438145f837096be2404a5c93c9f77a88fb))
@@ -23,13 +21,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.2](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.1...v0.4.2) (2025-08-18)
 
-
 ### Bug Fixes
 
 * **theme:** improve contrast and extend semantic token support ([202dda0](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/202dda0883fe623f454848b51aa58939d4cdfad7))
 
 ### 0.4.1 (2025-08-18)
-
 
 ### Features
 
@@ -38,7 +34,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **colors:** update badge and remote indicators ([2081c0d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/2081c0d5e38d9b8866dfc079c0a9548ae4349717))
 * **marketplace:** rename extension and update publisher ([ed74e25](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/ed74e25a3338219b775807cba504390135702c87))
 * **palette:** add token-specific colors for syntax highlighting ([efb8381](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/efb838166806d7c91ab15e8caa2409b3f66529d7))
-* rename theme from Tokyo Night Darker to Tokyo Night Darqus ([37a0e9d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/37a0e9d6cee6007952c3d73be83589eceba046da))
+* rename theme from Tokyo Night Darker to Tokyo Night Lod ([37a0e9d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/37a0e9d6cee6007952c3d73be83589eceba046da))
 * **semantic-tokens:** add extended semantic rules for enhanced syntax highlighting ([9aa1b43](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/9aa1b4313930191f7034fbacae57a44250657b37))
 * **static:** add new Tokyo Night Dark screenshot ([d861e97](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d861e97d1d28ebca54643c2c23d8c6f79f9a87bc))
 * **static:** add screenshot of tokyo night dark theme ([d0bb73c](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d0bb73c717b8cf2b1b3bb25cd51f40638f61be35))
@@ -54,7 +50,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **theme:** improve readability and contrast in various components ([b1c4665](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b1c4665eeb0a078cdc64c3860eec021725667c6e))
 * **theme:** update button hover color to primary blue ([07185f0](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/07185f0690ce0d6a5a1eb6485c101d74675399f1))
 * **theme:** update theme name and improve metadata ([c07fd1c](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/c07fd1c2495095ecbe77a1a9ee82949e371b07d0))
-
 
 ### Bug Fixes
 
@@ -73,7 +68,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### ⚠ BREAKING CHANGES
 
 * **marketplace:** Extension ID changed from `tokyo-night-dark.tokyo-night-theme-darqus` to `lod-inc.tokyo-night-lod`
-* **branding:** Extension name changed from "Tokyo Night Darqus" to "Tokyo Night Lod"
+* **branding:** Extension name changed from "Tokyo Night Lod" to "Tokyo Night Lod"
 
 ### Features
 

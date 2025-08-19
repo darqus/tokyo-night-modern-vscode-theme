@@ -15,7 +15,7 @@ A darker version of the Tokyo Night theme with slightly more muted syntax highli
 
 ## 📸 Screenshots
 
-![Screenshot - Tokyo Night Darqus](https://github.com/darqus/tokyo-night-vscode-theme-lod/blob/main/static/ss_tokyo_night_dark.png?raw=true)
+![Screenshot - Tokyo Night Lod](https://github.com/darqus/tokyo-night-vscode-theme-lod/blob/main/static/ss_tokyo_night_dark.png?raw=true)
 
 ## 🚀 Installation
 
@@ -72,7 +72,7 @@ src/
 
 ## 🎨 Color Palette
 
-The Tokyo Night Darqus theme uses a carefully selected color palette to provide a comfortable and visually appealing coding experience. Below are some of the key color categories and their representative hex values.
+The Tokyo Night Lod theme uses a carefully selected color palette to provide a comfortable and visually appealing coding experience. Below are some of the key color categories and their representative hex values.
 
 ### Accent Colors
 
