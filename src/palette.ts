@@ -1,256 +1,256 @@
 export type Hex = `#${string}`
 
 /**
- * The main color palette for the Tokyo Night Dark theme.
+ * Основная цветовая палитра для темы Tokyo Night Dark.
  *
- * Organized by functional groups for easy understanding and maintenance.
- * All colors use hex format with type safety.
+ * Организована по функциональным группам для легкого понимания и поддержки.
+ * Все цвета используют формат hex с проверкой типов.
  */
 export interface Palette {
-  /** Background colors - from darkest to lightest */
+  /** Цвета фона - от самых темных до самых светлых */
   bg: {
-    /** Main background of the editor and side panels */
+    /** Основной фон редактора и боковых панелей */
     base: Hex
-    /** Elevated elements (panels, dialogs) */
+    /** Приподнятые элементы (панели, диалоги) */
     elevated: Hex
-    /** Sunken areas (statusbar, some panels) */
+    /** Утопленные области (статус-бар, некоторые панели) */
     sunken: Hex
-    /** Overlays and modal windows */
+    /** Наложения и модальные окна */
     overlay: Hex
-    /** Input fields and forms */
+    /** Поля ввода и формы */
     input: Hex
-    /** Hover state for interactive elements */
+    /** Состояние наведения для интерактивных элементов */
     hover: Hex
-    /** Active/pressed elements */
+    /** Активные/нажатые элементы */
     active: Hex
-    /** Drop zones for drag&drop */
+    /** Зоны перетаскивания для drag&drop */
     drop: Hex
-    /** Current line highlight */
+    /** Подсветка текущей строки */
     lineHighlight: Hex
-    /** Matching bracket highlight */
+    /** Подсветка совпадающих скобок */
     bracketMatch: Hex
-    /** Tab background */
+    /** Фон вкладок */
     tabs: Hex
-    /** Different types of selection */
+    /** Различные типы выделения */
     selection: {
-      /** Active selection */
+      /** Активное выделение */
       active: Hex
-      /** Inactive selection */
+      /** Неактивное выделение */
       inactive: Hex
-      /** Selection in focus */
+      /** Выделение в фокусе */
       focus: Hex
-      /** Selection in a menu */
+      /** Выделение в меню */
       menu: Hex
     }
   }
-  /** Lines and borders */
+  /** Линии и границы */
   line: {
-    /** Main element borders */
+    /** Основные границы элементов */
     border: Hex
-    /** Borders in menus */
+    /** Границы в меню */
     menu: Hex
   }
-  /** Text colors - from primary to auxiliary */
+  /** Цвета текста - от основного до вспомогательного */
   fg: {
-    /** Primary text */
+    /** Основной текст */
     primary: Hex
-    /** Muted text (secondary information) */
+    /** Приглушенный текст (вторичная информация) */
     muted: Hex
-    /** Subtle text (hints, labels) */
+    /** Тусклый текст (подсказки, метки) */
     subtle: Hex
-    /** Inactive/disabled text */
+    /** Неактивный/отключенный текст */
     inactive: Hex
-    /** Panel text (improved readability in sidebars) */
+    /** Текст панелей (улучшенная читаемость в боковых панелях) */
     panelText: Hex
-    /** Soft text (intermediate brightness) */
+    /** Мягкий текст (промежуточная яркость) */
     soft: Hex
-    /** Soft titles */
+    /** Мягкие заголовки */
     softTitle: Hex
-    /** Text on selection */
+    /** Текст на выделении */
     selectionText: Hex
-    /** Text on top of a selection */
+    /** Текст поверх выделения */
     onSelection: Hex
-    /** Active titles */
+    /** Активные заголовки */
     activeTitle: Hex
-    /** Breadcrumb text (improved contrast) */
+    /** Текст хлебных крошек (улучшенный контраст) */
     breadcrumb: Hex
-    /** Description text (improved contrast) */
+    /** Текст описания (улучшенный контраст) */
     description: Hex
   }
-  /** Brand colors */
+  /** Брендовые цвета */
   brand: {
-    /** Primary brand color (buttons, links) */
+    /** Основной брендовый цвет (кнопки, ссылки) */
     primary: Hex
-    /** Button specific colors */
+    /** Специальные цвета кнопок */
     button: {
-      /** Primary button background */
+      /** Фон основной кнопки */
       primary: Hex
-      /** Primary button hover background */
+      /** Фон основной кнопки при наведении */
       hover: Hex
     }
   }
-  /** Accent colors for syntax highlighting */
+  /** Акцентные цвета для подсветки синтаксиса */
   accent: {
-    /** Blue - keywords, types */
+    /** Синий - ключевые слова, типы */
     blue: Hex
-    /** Cyan - strings, imports */
+    /** Голубой - строки, импорты */
     cyan: Hex
-    /** Teal - properties, attributes */
+    /** Бирюзовый - свойства, атрибуты */
     teal: Hex
-    /** Magenta - variables, constants */
+    /** Пурпурный - переменные, константы */
     magenta: Hex
-    /** Yellow - numbers, parameters */
+    /** Желтый - числа, параметры */
     yellow: Hex
-    /** Orange - functions, methods */
+    /** Оранжевый - функции, методы */
     orange: Hex
-    /** Red - errors, warnings */
+    /** Красный - ошибки, предупреждения */
     red: Hex
-    /** Purple - operators, special characters */
+    /** Фиолетовый - операторы, специальные символы */
     purple: Hex
   }
-  /** Token-specific colors for syntax highlighting */
+  /** Цвета для токенов для подсветки синтаксиса */
   token: {
-    /** Comments and documentation */
+    /** Комментарии и документация */
     comment: Hex
-    /** Documentation subtypes */
+    /** Подтипы документации */
     commentDoc: Hex
-    /** Emphasized documentation */
+    /** Выделенная документация */
     commentDocEmphasized: Hex
-    /** Constant values (numbers, booleans) */
+    /** Константные значения (числа, булевы) */
     constant: Hex
-    /** Strings and text content */
+    /** Строки и текстовое содержимое */
     string: Hex
-    /** Color values */
+    /** Значения цвета */
     color: Hex
-    /** Invalid code */
+    /** Недопустимый код */
     invalid: Hex
-    /** Invalid deprecated */
+    /** Недопустимый устаревший код */
     invalidDeprecated: Hex
-    /** Storage types and modifiers */
+    /** Типы хранения и модификаторы */
     storageType: Hex
-    /** Storage modifiers (var, const, let) */
+    /** Модификаторы хранения (var, const, let) */
     storageModifier: Hex
-    /** Template interpolation */
+    /** Интерполяция шаблонов */
     interpolation: Hex
-    /** Blade/Twig/Smarty keywords */
+    /** Ключевые слова Blade/Twig/Smarty */
     templateKeyword: Hex
-    /** Spread operator */
+    /** Оператор spread */
     spread: Hex
-    /** Operators and punctuation */
+    /** Операторы и пунктуация */
     operator: Hex
-    /** Import/export keywords */
+    /** Ключевые слова import/export */
     importExport: Hex
-    /** General keywords */
+    /** Общие ключевые слова */
     keyword: Hex
-    /** SQL keywords */
+    /** Ключевые слова SQL */
     keywordSql: Hex
-    /** Logical operators */
+    /** Логические операторы */
     keywordLogical: Hex
-    /** HTML/XML tags */
+    /** Теги HTML/XML */
     tag: Hex
-    /** Component tags */
+    /** Теги компонентов */
     tagComponent: Hex
-    /** Tag punctuation */
+    /** Пунктуация тегов */
     tagPunctuation: Hex
-    /** Global constants */
+    /** Глобальные константы */
     globalConstant: Hex
-    /** Variables */
+    /** Переменные */
     variable: Hex
-    /** Object variables */
+    /** Объектные переменные */
     objectVariable: Hex
-    /** Array keys */
+    /** Ключи массивов */
     arrayKey: Hex
-    /** Object keys */
+    /** Ключи объектов */
     objectKey: Hex
-    /** Object properties */
+    /** Свойства объектов */
     objectProperty: Hex
-    /** Object properties (alternative) */
+    /** Свойства объектов (альтернативные) */
     objectPropertyAlt: Hex
-    /** Nested object keys (level 3) */
+    /** Вложенные ключи объектов (уровень 3) */
     objectKeyLevel3: Hex
-    /** C-related variables */
+    /** Переменные, связанные с C */
     cVariable: Hex
-    /** Other variables */
+    /** Другие переменные */
     otherVariable: Hex
-    /** Methods */
+    /** Методы */
     method: Hex
-    /** Functions */
+    /** Функции */
     function: Hex
-    /** Function arguments */
+    /** Аргументы функций */
     functionArg: Hex
-    /** Type constants */
+    /** Константы типов */
     typeConstant: Hex
-    /** Variable definitions */
+    /** Определения переменных */
     variableDefinition: Hex
-    /** Inherited classes */
+    /** Наследуемые классы */
     inheritedClass: Hex
-    /** Classes and support types */
+    /** Классы и вспомогательные типы */
     classSupport: Hex
-    /** Class names */
+    /** Имена классов */
     className: Hex
-    /** Support functions */
+    /** Вспомогательные функции */
     supportFunction: Hex
-    /** CSS properties */
+    /** Свойства CSS */
     cssProperty: Hex
-    /** CSS fonts */
+    /** Шрифты CSS */
     cssFont: Hex
-    /** CSS classes */
+    /** Классы CSS */
     cssClass: Hex
-    /** CSS IDs */
+    /** Идентификаторы CSS */
     cssId: Hex
-    /** CSS tags */
+    /** Теги CSS */
     cssTag: Hex
-    /** CSS references */
+    /** Ссылки CSS */
     cssReference: Hex
-    /** CSS punctuation */
+    /** Пунктуация CSS */
     cssPunctuation: Hex
-    /** CSS at-rules */
+    /** At-правила CSS */
     cssAtRule: Hex
-    /** CSS parent selector */
+    /** Родительский селектор CSS */
     cssParentSelector: Hex
-    /** SCSS mixins */
+    /** Миксины SCSS */
     scssMixin: Hex
-    /** SCSS includes */
+    /** Включения SCSS */
     scssInclude: Hex
-    /** CSS values */
+    /** Значения CSS */
     cssValue: Hex
-    /** Language methods */
+    /** Языковые методы */
     languageMethod: Hex
-    /** This keyword */
+    /** Ключевое слово this */
     thisKeyword: Hex
-    /** HTML attributes */
+    /** Атрибуты HTML */
     htmlAttribute: Hex
-    /** HTML entities */
+    /** Сущности HTML */
     htmlEntity: Hex
-    /** Vue attributes */
+    /** Атрибуты Vue */
     vueAttribute: Hex
-    /** CSS pseudo selectors */
+    /** Псевдоселекторы CSS */
     cssPseudo: Hex
-    /** Markup inserted */
+    /** Вставленная разметка */
     markupInserted: Hex
-    /** Markup deleted */
+    /** Удаленная разметка */
     markupDeleted: Hex
-    /** Markup changed */
+    /** Измененная разметка */
     markupChanged: Hex
-    /** Regular expressions */
+    /** Регулярные выражения */
     regex: Hex
-    /** Regex groups */
+    /** Группы регулярных выражений */
     regexGroup: Hex
-    /** Regex character classes */
+    /** Классы символов регулярных выражений */
     regexCharClass: Hex
-    /** Regex character sets */
+    /** Наборы символов регулярных выражений */
     regexCharSet: Hex
-    /** Regex quantifiers */
+    /** Квантификаторы регулярных выражений */
     regexQuantifier: Hex
-    /** Regex backslash */
+    /** Обратная косая черта в регулярных выражениях */
     regexBackslash: Hex
-    /** Escape characters */
+    /** Escape-символы */
     escapeChar: Hex
-    /** Decorators */
+    /** Декораторы */
     decorator: Hex
-    /** CSS units */
+    /** Единицы измерения CSS */
     cssUnit: Hex
-    /** JSON keys (different levels) */
+    /** Ключи JSON (разные уровни) */
     jsonKey0: Hex
     jsonKey1: Hex
     jsonKey2: Hex
@@ -260,77 +260,77 @@ export interface Palette {
     jsonKey6: Hex
     jsonKey7: Hex
     jsonKey8: Hex
-    /** Plain punctuation */
+    /** Обычная пунктуация */
     plainPunctuation: Hex
-    /** Block punctuation */
+    /** Блочная пунктуация */
     blockPunctuation: Hex
-    /** Markdown headings */
+    /** Заголовки Markdown */
     markdownH1: Hex
     markdownH2: Hex
     markdownH3: Hex
     markdownH4: Hex
     markdownH5: Hex
     markdownH6: Hex
-    /** Markdown content */
+    /** Содержимое Markdown */
     markdownContent: Hex
-    /** HTML text */
+    /** Текст HTML */
     htmlText: Hex
-    /** Markdown raw inline */
+    /** Встроенный сырой код Markdown */
     markdownRawInline: Hex
-    /** Markdown raw punctuation */
+    /** Сырая пунктуация Markdown */
     markdownRawPunctuation: Hex
-    /** Markup italic */
+    /** Курсивная разметка */
     markupItalic: Hex
-    /** Markup bold */
+    /** Жирная разметка */
     markupBold: Hex
-    /** Markdown blockquote */
+    /** Цитаты Markdown */
     markdownBlockquote: Hex
-    /** Markdown links */
+    /** Ссылки Markdown */
     markdownLink: Hex
-    /** Markdown code blocks */
+    /** Блоки кода Markdown */
     markdownCodeBlock: Hex
-    /** Markdown separator */
+    /** Разделители Markdown */
     markdownSeparator: Hex
-    /** Markup table */
+    /** Таблицы в разметке */
     markupTable: Hex
-    /** Token info */
+    /** Информационные токены */
     tokenInfo: Hex
-    /** Token warn */
+    /** Токены-предупреждения */
     tokenWarn: Hex
-    /** Token error */
+    /** Токены-ошибки */
     tokenError: Hex
-    /** Token debug */
+    /** Отладочные токены */
     tokenDebug: Hex
-    /** Apache tags */
+    /** Теги Apache */
     apacheTag: Hex
-    /** Preprocessor */
+    /** Препроцессор */
     preprocessor: Hex
-    /** Environment values */
+    /** Значения окружения */
     envValue: Hex
-    /** Ignored elements */
+    /** Игнорируемые элементы */
     ignored: Hex
-    /** Numbers */
+    /** Числа */
     number: Hex
-    /** Markup elements */
+    /** Элементы разметки */
     markup: Hex
-    /** Error elements */
+    /** Элементы ошибок */
     error: Hex
-    /** Code blocks */
+    /** Блоки кода */
     codeBlock: Hex
-    /** Link text */
+    /** Текст ссылок */
     linkText: Hex
-    /** Quote marks */
+    /** Кавычки */
     quoteMark: Hex
-    /** Link URLs */
+    /** URL-адреса ссылок */
     linkUrl: Hex
-    /** Warnings */
+    /** Предупреждения */
     warning: Hex
-    /** Deleted content */
+    /** Удаленное содержимое */
     deleted: Hex
-    /** Inserted content */
+    /** Вставленное содержимое */
     inserted: Hex
   }
-  /** ANSI colors for the terminal */
+  /** Цвета ANSI для терминала */
   ansi: {
     black: Hex
     brightBlack: Hex
@@ -349,53 +349,53 @@ export interface Palette {
     white: Hex
     brightWhite: Hex
   }
-  /** UI-specific colors and helpers (non-syntax, common UI accents) */
+  /** Цвета и вспомогательные элементы для пользовательского интерфейса (не для синтаксиса, общие акценты пользовательского интерфейса) */
   ui: {
-    /** Subtle/description text */
+    /** Тусклый/описательный текст */
     description: Hex
-    /** Breadcrumb foreground */
+    /** Цвет текста хлебных крошек */
     breadcrumb: Hex
-    /** Shadows */
+    /** Тени */
     shadow: {
       widget: Hex
       scrollbar: Hex
     }
-    /** Badges */
+    /** Значки */
     badge: {
       base: Hex
       fg: Hex
     }
-    /** Sash */
+    /** Разделитель */
     sash: {
       hover: Hex
     }
-    /** Selection wash base (used with alpha) */
+    /** Базовая заливка выделения (используется с альфа-каналом) */
     selectionWash: Hex
-    /** Scrollbar slider base (used with alpha) */
+    /** Базовый цвет ползунка полосы прокрутки (используется с альфа-каналом) */
     scrollbarBase: Hex
-    /** Inputs */
+    /** Поля ввода */
     input: {
       placeholder: Hex
       border: Hex
     }
-    /** Lists */
+    /** Списки */
     list: {
       hoverBg: Hex
       dropBg: Hex
     }
-    /** Links in editor when active */
+    /** Активные ссылки в редакторе */
     editorLinkActive: Hex
-    /** CodeLens text */
+    /** Текст CodeLens */
     codeLens: Hex
-    /** Generic 'no matches' outline (e.g., filter widget) */
+    /** Общий контур "нет совпадений" (например, виджет фильтра) */
     noMatches: Hex
-    /** Muted blue highlight for suggestions etc. */
+    /** Приглушенная синяя подсветка для предложений и т.д. */
     settingsHeader: Hex
-    /** Window borders */
+    /** Границы окон */
     window: {
       border: Hex
     }
-    /** Tabs specifics */
+    /** Особенности вкладок */
     tab: {
       activeBorder: Hex
       activeModifiedBorder: Hex
@@ -403,17 +403,17 @@ export interface Palette {
       unfocusedActiveBorder: Hex
       lastPinnedBorder: Hex
     }
-    /** Status bar item states */
+    /** Состояния элементов строки состояния */
     statusItem: {
       hover: Hex
       prominentHover: Hex
     }
-    /** Text specifics */
+    /** Особенности текста */
     text: {
       preformat: Hex
       separator: Hex
     }
-    /** Debug UI specifics */
+    /** Особенности пользовательского интерфейса отладки */
     debug: {
       exceptionBorder: Hex
       consoleError: Hex
@@ -424,7 +424,7 @@ export interface Palette {
       tokenError: Hex
       info: Hex
     }
-    /** Editor overview ruler colors */
+    /** Цвета линейки обзора редактора */
     editorOverview: {
       error: Hex
       info: Hex
@@ -432,27 +432,27 @@ export interface Palette {
       added: Hex
       deleted: Hex
     }
-    /** Editor gutter colors */
+    /** Цвета полей редактора */
     gutter: {
       modified: Hex
       added: Hex
       deleted: Hex
     }
-    /** Minimap gutter colors */
+    /** Цвета полей миникарты */
     minimapGutter: {
       modified: Hex
       added: Hex
       deleted: Hex
     }
-    /** Charts */
+    /** Диаграммы */
     charts: {
       foreground: Hex
     }
-    /** GitLens helpers */
+    /** Вспомогательные элементы GitLens */
     gitlens: {
       foreground: Hex
     }
-    /** Git decorations */
+    /** Декорации Git */
     git: {
       ignored: Hex
       deleted: Hex
@@ -460,13 +460,13 @@ export interface Palette {
       stageDeleted: Hex
       stageModified: Hex
     }
-    /** Common semantic colors */
+    /** Общие семантические цвета */
     semantic: {
-      /** Pure white for high contrast */
+      /** Чисто белый для высокого контраста */
       white: Hex
-      /** Notification links */
+      /** Ссылки в уведомлениях */
       notificationLink: Hex
-      /** Offline status */
+      /** Статус "офлайн" */
       offline: Hex
     }
   }

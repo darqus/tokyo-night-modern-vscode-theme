@@ -1,38 +1,38 @@
 import type { Hex } from '../palette'
 
-/** Regular expression for checking hex colors */
+/** Регулярное выражение для проверки шестнадцатеричных цветов */
 const HEX_RE = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i
 
 /**
- * Ensures a 6-character hex format for a color
- * @param hex - The hex color to normalize
- * @returns A normalized 6-character hex color
- * @throws {Error} If the color is not in a valid hex format
+ * Обеспечивает шестизначный формат hex для цвета
+ * @param hex - Шестнадцатеричный цвет для нормализации
+ * @returns Нормализованный шестизначный шестнадцатеричный цвет
+ * @throws {Error} Если цвет не в допустимом шестнадцатеричном формате
  *
  * @example
  * ensure6('#ff0000') // '#ff0000'
- * ensure6('#FF0000') // '#ff0000' (converted to lowercase)
+ * ensure6('#FF0000') // '#ff0000' (преобразован в нижний регистр)
  */
 const ensure6 = (hex: Hex): string => {
   const m = HEX_RE.exec(hex)
-  if (!m) throw new Error(`Invalid hex color: ${hex}`)
+  if (!m) throw new Error(`Недопустимый шестнадцатеричный цвет: ${hex}`)
   return `#${m[1]}`.toLowerCase()
 }
 
 /**
- * Adds an alpha channel (transparency) to a hex color
+ * Добавляет альфа-канал (прозрачность) к шестнадцатеричному цвету
  *
- * @param hex - The base hex color
- * @param alpha - Transparency (0-1 as a number or 'AA' as a hex string)
- * @returns A hex color with an alpha channel
- * @throws {Error} If the alpha value is incorrect
+ * @param hex - Базовый шестнадцатеричный цвет
+ * @param alpha - Прозрачность (0-1 в виде числа или 'AA' в виде шестнадцатеричной строки)
+ * @returns Шестнадцатеричный цвет с альфа-каналом
+ * @throws {Error} Если значение альфа некорректно
  *
  * @example
- * // Using a numeric value (0-1)
+ * // Использование числового значения (0-1)
  * withAlpha('#ff0000', 0.5) // '#ff000080'
  * withAlpha('#ff0000', 0.25) // '#ff000040'
  *
- * // Using a hex string
+ * // Использование шестнадцатеричной строки
  * withAlpha('#ff0000', '80') // '#ff000080'
  * withAlpha('#ff0000', 'FF') // '#ff0000ff'
  */
@@ -42,15 +42,15 @@ export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
 
   if (typeof alpha === 'number') {
     if (alpha < 0 || alpha > 1) {
-      throw new Error('alpha number must be 0..1')
+      throw new Error('число альфа должно быть от 0 до 1')
     }
     a = Math.round(alpha * 255)
       .toString(16)
       .padStart(2, '0')
   } else {
-    // Assuming a hex format like 'AA'
+    // Предполагается шестнадцатеричный формат, например 'AA'
     if (!/^[0-9a-fA-F]{2}$/.test(alpha)) {
-      throw new Error('alpha hex must be two hex chars')
+      throw new Error('шестнадцатеричное значение альфа должно состоять из двух шестнадцатеричных символов')
     }
     a = alpha.toLowerCase()
   }
@@ -59,11 +59,11 @@ export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
 }
 
 /**
- * Utility for converting a value to a string (identity function)
- * Used for compatibility with existing code
+ * Утилита для преобразования значения в строку (функция идентичности)
+ * Используется для совместимости с существующим кодом
  *
- * @param v - The value to convert
- * @returns The same value without changes
+ * @param v - Значение для преобразования
+ * @returns То же значение без изменений
  */
 export const toString = <T>(v: T): T => {
   return v
