@@ -77,8 +77,8 @@ export const getEditorColors = () => ({
   'editor.findMatchBorder': palette.accent.red,
   /** Цвет фона для других найденных совпадений (неактивные) */
   'editor.findMatchHighlightBackground': withAlpha(
-    palette.bg.selection.inactive,
-    '25%'
+    palette.accent.purple,
+    '15%'
   ),
   /** Цвет рамки для других найденных совпадений */
   'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
