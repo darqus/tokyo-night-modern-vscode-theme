@@ -36,7 +36,7 @@
     ]
   },
   "scripts": {
-    "build:theme": "ts-node src/build.ts",
+    "build": "ts-node src/build.ts",
     "test:smoke": "ts-node scripts/smoke-compare.ts",
     "package": "vsce package",
     "publish": "vsce publish",
