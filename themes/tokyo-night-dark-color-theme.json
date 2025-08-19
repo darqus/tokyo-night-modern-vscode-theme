@@ -325,7 +325,7 @@
       "underline": true
     },
     "deprecated": {
-      "foreground": "#545c7e",
+      "foreground": "#7883b3",
       "strikethrough": true
     },
     "regexp": {
@@ -381,7 +381,7 @@
   "colors": {
     "foreground": "#c0caf5",
     "descriptionForeground": "#a9b1d6",
-    "disabledForeground": "#545c7e",
+    "disabledForeground": "#7883b3",
     "focusBorder": "#007acc66",
     "errorForeground": "#f7768e",
     "widget.border": "#22232e",
@@ -637,7 +637,7 @@
     "panel.background": "#16161e",
     "panel.border": "#22232e",
     "panelTitle.activeForeground": "#c0caf5",
-    "panelTitle.inactiveForeground": "#545c7e",
+    "panelTitle.inactiveForeground": "#7883b3",
     "panelTitle.activeBorder": "#14141c",
     "panelInput.border": "#14141c",
     "panelSection.border": "#22232e",
@@ -682,13 +682,13 @@
     "statusBarItem.offlineHoverBackground": "#f7768ecc",
     "statusBarItem.offlineHoverForeground": "#ffffff",
     "titleBar.activeForeground": "#a9b1d6",
-    "titleBar.inactiveForeground": "#545c7e",
+    "titleBar.inactiveForeground": "#7883b3",
     "titleBar.activeBackground": "#16161e",
     "titleBar.inactiveBackground": "#16161e",
     "titleBar.border": "#22232e",
     "commandCenter.foreground": "#a9b1d6",
     "commandCenter.activeForeground": "#c0caf5",
-    "commandCenter.inactiveForeground": "#545c7e",
+    "commandCenter.inactiveForeground": "#7883b3",
     "commandCenter.background": "#16161e",
     "commandCenter.activeBackground": "#24283b",
     "commandCenter.border": "#22232e",
