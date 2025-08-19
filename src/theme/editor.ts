@@ -90,16 +90,16 @@ export const getEditorColors = () => ({
   'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20%'),
 
   /** Цвет фона для выделения слова */
-  'editor.wordHighlightBackground': withAlpha(palette.accent.blue, '25%'), // Немного увеличена видимость
+  'editor.wordHighlightBackground': withAlpha(palette.accent.yellow, '20%'), // Немного увеличена видимость
   /** Цвет рамки для выделения слова */
-  'editor.wordHighlightBorder': withAlpha(palette.accent.blue, '30%'), // Немного увеличена видимость
+  'editor.wordHighlightBorder': withAlpha(palette.accent.yellow, '50%'), // Немного увеличена видимость
   /** Цвет фона для "сильного" выделения слова */
   'editor.wordHighlightStrongBackground': withAlpha(
-    palette.accent.blue,
-    '30%' // Немного увеличена видимость
+    palette.accent.yellow,
+    '25%' // Немного увеличена видимость
   ),
   /** Цвет рамки для "сильного" выделения слова */
-  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.blue, '40%'), // Немного увеличена видимость
+  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.yellow, '60%'), // Немного увеличена видимость
   /** Цвет фона для выделения вхождения */
   'editor.selectionHighlightBackground': withAlpha(
     palette.accent.blue,
