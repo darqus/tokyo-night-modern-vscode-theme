@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.3](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.2...v0.4.3) (2025-08-19)
+
+
+### Features
+
+* **theme:** enhance breadcrumb accessibility and consistency ([41959d1](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/41959d147df98d93eb1f60c5e605348ea59f6418))
+* **theme:** enhance button visibility and color contrast ([2c61de3](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/2c61de39180bdfb613e951d9538a14ab020d4eed))
+* **theme:** enhance contrast and add border for search/replace widgets ([310c29c](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/310c29c85403c72138bfcc8b804d3b8d1122472b))
+* **theme:** enhance contrast and update colors for better visibility ([4793870](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/47938705d541d4724b2f73fc36fd2e2c37441fd8))
+* **theme:** improve color transparency and contrast ([b37b7ff](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b37b7ff021a9fb4a9ee170ee07020b06cfa4acdd))
+* **theme:** improve contrast and visibility for various UI elements ([011d6e6](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/011d6e6db8f22369abcd6b61aa7abeeb1918b33a))
+* **theme:** improve highlight visibility in editor and search ([7df8552](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/7df8552378e6ea8d8649bb719793789c06355ba5))
+
+
+### Bug Fixes
+
+* remove unnecessary newline in color.ts ([f055e54](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f055e5438145f837096be2404a5c93c9f77a88fb))
+* update editor find range highlight colors ([f298c14](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f298c14b8f08be81ee3b870e1b0dfb4067cdc1e3))
+
 ### [0.4.2](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.1...v0.4.2) (2025-08-18)
 
 
