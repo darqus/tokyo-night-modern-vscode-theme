@@ -47,7 +47,7 @@ cd tokyo-night-vscode-theme-lod
 npm install
 
 # Build the theme
-npm run build:theme
+npm run build
 
 # Testing
 npm run test:smoke
@@ -129,7 +129,7 @@ How to edit colors and token colors:
 - Regenerate theme JSON:
 
 ```bash
-npm run build:theme
+npm run build
 ```
 
 The output file themes/tokyo-night-dark-color-theme.json is updated in-place.

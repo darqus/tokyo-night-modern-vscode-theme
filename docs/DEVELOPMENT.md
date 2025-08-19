@@ -17,7 +17,7 @@ npm install
 ### Сборка темы
 
 ```bash
-npm run build:theme
+npm run build
 ```
 
 ### Тестирование
@@ -125,7 +125,7 @@ const palette: Palette = {
 ### Рабочий процесс
 
 1. Вносите изменения в исходные файлы
-2. Запустите сборку: `npm run build:theme`
+2. Запустите сборку: `npm run build`
 3. Проверьте результат в VS Code
 4. Запустите тесты: `npm run test:smoke`
 
@@ -174,7 +174,7 @@ const palette: Palette = {
 
 ### Скрипты
 
-- `npm run build:theme` - сборка темы
+- `npm run build` - сборка темы
 - `npm run test:smoke` - тестирование
 - `npm run package` - упаковка для публикации
 - `npm run publish` - публикация в Marketplace

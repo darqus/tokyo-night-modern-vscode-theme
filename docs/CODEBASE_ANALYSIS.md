@@ -427,7 +427,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Build theme
-        run: npm run build:theme
+        run: npm run build
       - name: Validate theme
         run: npm run validate
 ```
