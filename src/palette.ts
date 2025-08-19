@@ -474,136 +474,139 @@ export interface Palette {
 
 export const palette: Palette = {
   bg: {
-    // Cooler, more balanced backgrounds (darkened for GitHub)
-    base: '#16161e', // Main editor background (darkened)
-    elevated: '#181820', // Panels, dialogs (darkened)
-    sunken: '#14141c', // Status bar, sidebars (darkened)
-    overlay: '#181820', // Overlays (darkened)
-    input: '#181820', // Input fields (darkened)
-    hover: '#24283b', // было #1e1f2a - более контрастный hover
-    active: '#2a3041', // было #252a3f - еще темнее для active состояния
-    drop: '#2a3041', // синхронизировано с active
-    lineHighlight: '#1a1b26', // было #181820 - немного ярче
-    bracketMatch: '#1e1f2a', // Bracket match highlight (slightly lighter than base)
-    tabs: '#16161e', // Tab background (darkened)
+    // Основные фоновые цвета - от самого темного к самому светлому
+    base: '#16161e', // Основной фон редактора и боковых панелей (затемнен для GitHub)
+    elevated: '#181820', // Приподнятые элементы (панели, диалоги) - затемнен
+    sunken: '#14141c', // Утопленные области (статусбар, некоторые панели) - затемнен
+    overlay: '#181820', // Оверлеи и модальные окна - затемнен
+    input: '#181820', // Поля ввода и формы - затемнен
+    hover: '#24283b', // Состояние наведения для интерактивных элементов (было #1e1f2a - более контрастный)
+    active: '#2a3041', // Активные/нажатые элементы (было #252a3f - еще темнее для active состояния)
+    drop: '#2a3041', // Зоны перетаскивания для drag&drop (синхронизировано с active)
+    lineHighlight: '#1a1b26', // Подсветка текущей строки (было #181820 - немного ярче)
+    bracketMatch: '#1e1f2a', // Подсветка соответствующих скобок (немного светлее базового)
+    tabs: '#16161e', // Фон вкладок (затемнен)
     selection: {
-      active: '#252a3f', // Active selection
-      inactive: '#292b39', // Inactive selection - более мягкий, но контрастный к фону боковой панели
-      focus: '#2b3a65', // Focus selection
-      menu: '#2b3a65', // Menu selection
+      active: '#252a3f', // Активное выделение
+      inactive: '#292b39', // Неактивное выделение (более мягкий, но контрастный к фону боковой панели)
+      focus: '#2b3a65', // Выделение в фокусе
+      menu: '#2b3a65', // Выделение в меню
     },
   },
   line: {
-    border: '#22232e', // Main borders
-    menu: '#22232e', // Menu borders
+    // Линии и границы
+    border: '#22232e', // Основные границы элементов
+    menu: '#22232e', // Границы в меню
   },
   fg: {
-    // Text colors with better contrast
-    primary: '#c0caf5', // Primary text
-    muted: '#a9b1d6', // Secondary text
-    subtle: '#6b7499', // Hints, comments - увеличена яркость для лучшей контрастности
-    inactive: '#545c7e', // Inactive text
-    panelText: '#c0caf5', // Panel text - увеличена контрастность для боковой панели
-    soft: '#a9b1d6', // Soft text
-    softTitle: '#c0caf5', // Titles
-    selectionText: '#ffffff', // Text on selection
-    onSelection: '#ffffff', // Text over selection
-    activeTitle: '#c0caf5', // Active titles
-    // Improved contrast UI elements
-    breadcrumb: '#7aa2f7', // Улучшение контрастности до 4.5:1
-    description: '#7aa2f7', // Более читаемый
+    // Цвета текста - от основного к вспомогательному (улучшенная контрастность)
+    primary: '#c0caf5', // Основной текст
+    muted: '#a9b1d6', // Приглушенный текст (вторичная информация)
+    subtle: '#6b7499', // Тонкий текст (подсказки, метки) - увеличена яркость для лучшей контрастности
+    inactive: '#545c7e', // Неактивный/отключенный текст
+    panelText: '#c0caf5', // Текст панелей (улучшенная читаемость в боковых панелях) - увеличена контрастность
+    soft: '#a9b1d6', // Мягкий текст (промежуточная яркость)
+    softTitle: '#c0caf5', // Мягкие заголовки
+    selectionText: '#ffffff', // Текст на выделении
+    onSelection: '#ffffff', // Текст поверх выделения
+    activeTitle: '#c0caf5', // Активные заголовки
+    // Улучшенные элементы UI с повышенной контрастностью
+    breadcrumb: '#7aa2f7', // Текст хлебных крошек (улучшение контрастности до 4.5:1)
+    description: '#7aa2f7', // Текст описаний (более читаемый)
   },
   brand: {
-    primary: '#7dcfff', // Primary brand color (Tokyo Night blue)
+    // Брендовые цвета
+    primary: '#7dcfff', // Основной брендовый цвет (кнопки, ссылки) - Tokyo Night голубой
     button: {
-      primary: '#364a82', // Darker blue for buttons
-      hover: '#3d59a1', // Button hover effect - active Tokyo Night blue
+      // Специфичные цвета кнопок
+      primary: '#364a82', // Фон основной кнопки - темно-синий
+      hover: '#3d59a1', // Фон кнопки при наведении - активный Tokyo Night синий
     },
   },
   accent: {
-    // Original Tokyo Night accent colors
-    blue: '#7aa2f7',
-    cyan: '#7dcfff',
-    teal: '#85c9c1',
-    magenta: '#bb9af7',
-    yellow: '#e0af68',
-    orange: '#ff9e64',
-    red: '#f7768e',
-    purple: '#9d7cd8',
+    // Акцентные цвета для подсветки синтаксиса (оригинальные цвета Tokyo Night)
+    blue: '#7aa2f7', // Синий - ключевые слова, типы
+    cyan: '#7dcfff', // Циан - строки, импорты
+    teal: '#85c9c1', // Бирюзовый - свойства, атрибуты
+    magenta: '#bb9af7', // Пурпурный - переменные, константы
+    yellow: '#e0af68', // Желтый - числа, параметры
+    orange: '#ff9e64', // Оранжевый - функции, методы
+    red: '#f7768e', // Красный - ошибки, предупреждения
+    purple: '#9d7cd8', // Фиолетовый - операторы, специальные символы
   },
   token: {
-    // Refined syntax highlighting tokens - IMPROVED CONTRAST
-    comment: '#6b7499', // было #545c7e - увеличена яркость для лучшей читаемости
-    commentDoc: '#5a607a', // было #545c7e - небольшое увеличение контрастности
-    commentDocEmphasized: '#7481a6',
-    constant: '#e0af68', // Changed from a reddish pink to yellow
-    string: '#9ece6a', // Brighter green for strings
-    color: '#9aa5ce',
-    invalid: '#f7768e',
-    invalidDeprecated: '#bb9af7',
-    storageType: '#bb9af7',
-    storageModifier: '#9d7cd8',
-    interpolation: '#7dcfff',
-    templateKeyword: '#73daca', // было #0db9d7 - более отличимый teal цвет
-    spread: '#e0687a',
-    operator: '#a9b1d6', // было #89ddff - используем muted цвет для лучшего баланса
-    importExport: '#bb9af7', // было #7dcfff - используем magenta для ключевых слов
-    keyword: '#bb9af7',
-    keywordSql: '#7dcfff',
-    keywordLogical: '#bb9af7',
-    tag: '#f7768e',
-    tagComponent: '#bb9af7', // Components are now magenta
-    tagPunctuation: '#a9b1d6', // было #89ddff - менее яркий для пунктуации
-    globalConstant: '#e0af68',
-    variable: '#c0caf5',
-    objectVariable: '#c0caf5',
-    arrayKey: '#7dcfff',
-    objectKey: '#c0caf5', // Object keys are now primary text color
-    objectProperty: '#7dcfff',
-    objectPropertyAlt: '#c0caf5',
-    objectKeyLevel3: '#41a6b5',
-    cVariable: '#f7768e',
-    otherVariable: '#f7768e',
-    method: '#7aa2f7',
-    function: '#7aa2f7',
-    functionArg: '#e0af68',
-    typeConstant: '#bb9af7',
-    variableDefinition: '#bb9af7',
-    inheritedClass: '#bb9af7',
-    classSupport: '#0db9d7',
-    className: '#c0caf5',
-    supportFunction: '#0db9d7',
-    cssProperty: '#7aa2f7',
-    cssFont: '#9ece6a',
-    cssClass: '#c0caf5',
-    cssId: '#bb9af7',
-    cssTag: '#0db9d7',
-    cssReference: '#0db9d7',
-    cssPunctuation: '#9abdf5',
-    cssAtRule: '#ff9e64',
-    cssParentSelector: '#73daca',
-    scssMixin: '#bb9af7',
-    scssInclude: '#9d7cd8',
-    cssValue: '#ff9e64', // CSS values are now orange
-    languageMethod: '#f7768e',
-    thisKeyword: '#f7768e',
-    htmlAttribute: '#bb9af7',
-    htmlEntity: '#0DB9D7',
-    vueAttribute: '#bb9af7',
-    cssPseudo: '#bb9af7',
-    markupInserted: '#449dab',
-    markupDeleted: '#914c54',
-    markupChanged: '#6183bb',
-    regex: '#b4f9f8',
-    regexGroup: '#f7768e',
-    regexCharClass: '#bb9af7',
-    regexCharSet: '#e0af68',
-    regexQuantifier: '#9ece6a',
-    regexBackslash: '#c0caf5',
-    escapeChar: '#9ece6a',
-    decorator: '#7aa2f7',
-    cssUnit: '#f7768e',
-    jsonKey0: '#7aa2f7',
+    // Токены для подсветки синтаксиса - улучшенная контрастность
+    comment: '#6b7499', // Комментарии и документация (было #545c7e - увеличена яркость для лучшей читаемости)
+    commentDoc: '#5a607a', // Подтипы документации (было #545c7e - небольшое увеличение контрастности)
+    commentDocEmphasized: '#7481a6', // Выделенная документация
+    constant: '#e0af68', // Константные значения (числа, булевы) - изменено с розоватого на желтый
+    string: '#9ece6a', // Строки и текстовое содержимое - более яркий зеленый
+    color: '#9aa5ce', // Цветовые значения
+    invalid: '#f7768e', // Недопустимый код
+    invalidDeprecated: '#bb9af7', // Недопустимый устаревший код
+    storageType: '#bb9af7', // Типы хранения и модификаторы
+    storageModifier: '#9d7cd8', // Модификаторы хранения (var, const, let)
+    interpolation: '#7dcfff', // Интерполяция шаблонов
+    templateKeyword: '#73daca', // Ключевые слова Blade/Twig/Smarty (было #0db9d7 - более отличимый teal цвет)
+    spread: '#e0687a', // Оператор распространения
+    operator: '#a9b1d6', // Операторы и пунктуация (было #89ddff - используем muted цвет для лучшего баланса)
+    importExport: '#bb9af7', // Ключевые слова import/export (было #7dcfff - используем magenta для ключевых слов)
+    keyword: '#bb9af7', // Общие ключевые слова
+    keywordSql: '#7dcfff', // SQL ключевые слова
+    keywordLogical: '#bb9af7', // Логические операторы
+    tag: '#f7768e', // HTML/XML теги
+    tagComponent: '#bb9af7', // Теги компонентов (теперь пурпурные)
+    tagPunctuation: '#a9b1d6', // Пунктуация тегов (было #89ddff - менее яркий для пунктуации)
+    globalConstant: '#e0af68', // Глобальные константы
+    variable: '#c0caf5', // Переменные
+    objectVariable: '#c0caf5', // Объектные переменные
+    arrayKey: '#7dcfff', // Ключи массивов
+    objectKey: '#c0caf5', // Ключи объектов (теперь цвет основного текста)
+    objectProperty: '#7dcfff', // Свойства объектов
+    objectPropertyAlt: '#c0caf5', // Свойства объектов (альтернативные)
+    objectKeyLevel3: '#41a6b5', // Вложенные ключи объектов (уровень 3)
+    cVariable: '#f7768e', // C-связанные переменные
+    otherVariable: '#f7768e', // Другие переменные
+    method: '#7aa2f7', // Методы
+    function: '#7aa2f7', // Функции
+    functionArg: '#e0af68', // Аргументы функций
+    typeConstant: '#bb9af7', // Типовые константы
+    variableDefinition: '#bb9af7', // Определения переменных
+    inheritedClass: '#bb9af7', // Наследуемые классы
+    classSupport: '#0db9d7', // Классы и поддерживающие типы
+    className: '#c0caf5', // Имена классов
+    supportFunction: '#0db9d7', // Поддерживающие функции
+    cssProperty: '#7aa2f7', // CSS свойства
+    cssFont: '#9ece6a', // CSS шрифты
+    cssClass: '#c0caf5', // CSS классы
+    cssId: '#bb9af7', // CSS идентификаторы
+    cssTag: '#0db9d7', // CSS теги
+    cssReference: '#0db9d7', // CSS ссылки
+    cssPunctuation: '#9abdf5', // CSS пунктуация
+    cssAtRule: '#ff9e64', // CSS at-правила
+    cssParentSelector: '#73daca', // CSS родительский селектор
+    scssMixin: '#bb9af7', // SCSS миксины
+    scssInclude: '#9d7cd8', // SCSS включения
+    cssValue: '#ff9e64', // CSS значения (теперь оранжевые)
+    languageMethod: '#f7768e', // Языковые методы
+    thisKeyword: '#f7768e', // Ключевое слово this
+    htmlAttribute: '#bb9af7', // HTML атрибуты
+    htmlEntity: '#0DB9D7', // HTML сущности
+    vueAttribute: '#bb9af7', // Vue атрибуты
+    cssPseudo: '#bb9af7', // CSS псевдо-селекторы
+    markupInserted: '#449dab', // Вставленная разметка
+    markupDeleted: '#914c54', // Удаленная разметка
+    markupChanged: '#6183bb', // Измененная разметка
+    regex: '#b4f9f8', // Регулярные выражения
+    regexGroup: '#f7768e', // Группы регулярных выражений
+    regexCharClass: '#bb9af7', // Классы символов регулярных выражений
+    regexCharSet: '#e0af68', // Наборы символов регулярных выражений
+    regexQuantifier: '#9ece6a', // Квантификаторы регулярных выражений
+    regexBackslash: '#c0caf5', // Обратная косая черта в регулярных выражениях
+    escapeChar: '#9ece6a', // Escape-символы
+    decorator: '#7aa2f7', // Декораторы
+    cssUnit: '#f7768e', // CSS единицы измерения
+    jsonKey0: '#7aa2f7', // JSON ключи (разные уровни)
     jsonKey1: '#0db9d7',
     jsonKey2: '#7dcfff',
     jsonKey3: '#bb9af7',
@@ -612,154 +615,172 @@ export const palette: Palette = {
     jsonKey6: '#73daca',
     jsonKey7: '#f7768e',
     jsonKey8: '#9ece6a',
-    plainPunctuation: '#9abdf5',
-    blockPunctuation: '#9abdf5',
-    markdownH1: '#9ece6a',
+    plainPunctuation: '#9abdf5', // Обычная пунктуация
+    blockPunctuation: '#9abdf5', // Блочная пунктуация
+    markdownH1: '#9ece6a', // Markdown заголовки
     markdownH2: '#61bdf2',
     markdownH3: '#7aa2f7',
     markdownH4: '#6d91de',
     markdownH5: '#9aa5ce',
     markdownH6: '#747ca1',
-    markdownContent: '#c0caf5',
-    htmlText: '#9aa5ce',
-    markdownRawInline: '#bb9af7',
-    markdownRawPunctuation: '#545c7e',
-    markupItalic: '#c0caf5',
-    markupBold: '#c0caf5',
-    markdownBlockquote: '#545c7e',
-    markdownLink: '#73daca',
-    markdownCodeBlock: '#9ece6a',
-    markdownSeparator: '#545c7e',
-    markupTable: '#c0cefc',
-    tokenInfo: '#7dcfff',
-    tokenWarn: '#ffdb69',
-    tokenError: '#f7768e',
-    tokenDebug: '#b267e6',
-    apacheTag: '#f7768e',
-    preprocessor: '#73daca',
-    envValue: '#7aa2f7',
-    // Добавленные недостающие свойства - IMPROVED CONTRAST
-    ignored: '#6b7499', // было #444b6a - синхронизировано с comment
-    number: '#c0768e',
-    markup: '#449dab',
-    error: '#914c54',
-    codeBlock: '#61bdf2',
-    linkText: '#6d91de',
-    quoteMark: '#747ca1',
-    linkUrl: '#c0cefc',
-    warning: '#ffdb69',
-    deleted: '#db4b4b',
-    inserted: '#b267e6',
+    markdownContent: '#c0caf5', // Markdown содержимое
+    htmlText: '#9aa5ce', // HTML текст
+    markdownRawInline: '#bb9af7', // Markdown сырой встроенный код
+    markdownRawPunctuation: '#545c7e', // Markdown сырая пунктуация
+    markupItalic: '#c0caf5', // Разметка курсив
+    markupBold: '#c0caf5', // Разметка жирный
+    markdownBlockquote: '#545c7e', // Markdown цитаты
+    markdownLink: '#73daca', // Markdown ссылки
+    markdownCodeBlock: '#9ece6a', // Markdown блоки кода
+    markdownSeparator: '#545c7e', // Markdown разделители
+    markupTable: '#c0cefc', // Разметка таблиц
+    tokenInfo: '#7dcfff', // Информационные токены
+    tokenWarn: '#ffdb69', // Предупреждающие токены
+    tokenError: '#f7768e', // Токены ошибок
+    tokenDebug: '#b267e6', // Отладочные токены
+    apacheTag: '#f7768e', // Apache теги
+    preprocessor: '#73daca', // Препроцессор
+    envValue: '#7aa2f7', // Значения окружения
+    // Добавленные недостающие свойства - улучшенная контрастность
+    ignored: '#6b7499', // Игнорируемые элементы (было #444b6a - синхронизировано с comment)
+    number: '#c0768e', // Числа
+    markup: '#449dab', // Элементы разметки
+    error: '#914c54', // Элементы ошибок
+    codeBlock: '#61bdf2', // Блоки кода
+    linkText: '#6d91de', // Текст ссылок
+    quoteMark: '#747ca1', // Кавычки
+    linkUrl: '#c0cefc', // URL ссылок
+    warning: '#ffdb69', // Предупреждения
+    deleted: '#db4b4b', // Удаленное содержимое
+    inserted: '#b267e6', // Вставленное содержимое
   },
   ansi: {
     // ANSI цвета для терминала в стиле Tokyo Night
-    black: '#414868',
-    brightBlack: '#545c7e',
-    red: '#f7768e',
-    brightRed: '#f7768e',
-    green: '#9ece6a',
-    brightGreen: '#9ece6a',
-    yellow: '#e0af68',
-    brightYellow: '#e0af68',
-    blue: '#7aa2f7',
-    brightBlue: '#7aa2f7',
-    magenta: '#bb9af7',
-    brightMagenta: '#bb9af7',
-    cyan: '#7dcfff',
-    brightCyan: '#7dcfff',
-    white: '#c0caf5',
-    brightWhite: '#c0caf5',
+    black: '#414868', // Черный
+    brightBlack: '#545c7e', // Яркий черный
+    red: '#f7768e', // Красный
+    brightRed: '#f7768e', // Яркий красный
+    green: '#9ece6a', // Зеленый
+    brightGreen: '#9ece6a', // Яркий зеленый
+    yellow: '#e0af68', // Желтый
+    brightYellow: '#e0af68', // Яркий желтый
+    blue: '#7aa2f7', // Синий
+    brightBlue: '#7aa2f7', // Яркий синий
+    magenta: '#bb9af7', // Пурпурный
+    brightMagenta: '#bb9af7', // Яркий пурпурный
+    cyan: '#7dcfff', // Циан
+    brightCyan: '#7dcfff', // Яркий циан
+    white: '#c0caf5', // Белый
+    brightWhite: '#c0caf5', // Яркий белый
   },
   ui: {
-    description: '#c0caf5', // Максимальная контрастность для описаний в виджетах
-    breadcrumb: '#c0caf5', // Увеличена контрастность для навигации
+    // UI-специфичные цвета и помощники (не синтаксис, общие UI акценты)
+    description: '#c0caf5', // Тонкий/описательный текст - максимальная контрастность для описаний в виджетах
+    breadcrumb: '#c0caf5', // Передний план хлебных крошек - увеличена контрастность для навигации
     shadow: {
-      widget: '#ffffff00',
-      scrollbar: '#00000033',
+      // Тени
+      widget: '#ffffff00', // Тень виджета
+      scrollbar: '#00000033', // Тень скроллбара
     },
     badge: {
-      base: '#007ACC', // Используем цвет бейджа из Dark+ для лучшей контрастности
-      fg: '#ffffff', // Белый текст для максимальной контрастности
+      // Значки
+      base: '#007ACC', // Базовый цвет значка - используем цвет из Dark+ для лучшей контрастности
+      fg: '#ffffff', // Передний план значка - белый текст для максимальной контрастности
     },
     sash: {
-      hover: '#252a3f',
+      // Разделитель
+      hover: '#252a3f', // Разделитель при наведении
     },
-    selectionWash: '#515c7e',
-    scrollbarBase: '#868bc4',
+    selectionWash: '#515c7e', // Базовая заливка выделения (используется с альфа)
+    scrollbarBase: '#868bc4', // Базовый цвет ползунка скроллбара (используется с альфа)
     input: {
-      placeholder: '#787c99',
-      border: '#20212c',
+      // Поля ввода
+      placeholder: '#787c99', // Заполнитель поля ввода
+      border: '#20212c', // Граница поля ввода
     },
     list: {
-      hoverBg: '#24283b', // было #1f2335 - синхронизировано с общим hover
-      dropBg: '#4158a6', // было #3d59a1 - более яркий drop
+      // Списки
+      hoverBg: '#24283b', // Фон списка при наведении (было #1f2335 - синхронизировано с общим hover)
+      dropBg: '#4158a6', // Фон списка при перетаскивании (было #3d59a1 - более яркий drop)
     },
-    editorLinkActive: '#acb0d0',
-    codeLens: '#7aa2f7', // Увеличена контрастность для CodeLens
-    noMatches: '#f7768e',
-    settingsHeader: '#6183bb',
+    editorLinkActive: '#acb0d0', // Ссылки в редакторе когда активны
+    codeLens: '#7aa2f7', // Текст CodeLens - увеличена контрастность
+    noMatches: '#f7768e', // Общий контур "нет совпадений" (например, виджет фильтра)
+    settingsHeader: '#6183bb', // Приглушенная синяя подсветка для предложений и т.д.
     window: {
-      border: '#20212c',
+      // Границы окон
+      border: '#20212c', // Граница окна
     },
     tab: {
-      activeBorder: '#7aa2f7',
-      activeModifiedBorder: '#ff9e64',
-      inactiveModifiedBorder: '#e0af68',
-      unfocusedActiveBorder: '#24283b',
-      lastPinnedBorder: '#363b54',
+      // Специфика вкладок
+      activeBorder: '#7aa2f7', // Граница активной вкладки
+      activeModifiedBorder: '#ff9e64', // Граница активной измененной вкладки
+      inactiveModifiedBorder: '#e0af68', // Граница неактивной измененной вкладки
+      unfocusedActiveBorder: '#24283b', // Граница активной вкладки без фокуса
+      lastPinnedBorder: '#363b54', // Граница последней закрепленной вкладки
     },
     statusItem: {
-      hover: '#24283b', // было #1f2335 - консистентный hover
-      prominentHover: '#2a3041', // было #1a1b26 - больше контраста
+      // Состояния элементов статусбара
+      hover: '#24283b', // Наведение на элемент статусбара (было #1f2335 - консистентный hover)
+      prominentHover: '#2a3041', // Выделенное наведение на элемент статусбара (было #1a1b26 - больше контраста)
     },
     text: {
-      preformat: '#9699a8',
-      separator: '#363b54',
+      // Специфика текста
+      preformat: '#9699a8', // Предварительно отформатированный текст
+      separator: '#363b54', // Разделитель текста
     },
     debug: {
-      exceptionBorder: '#963c47',
-      consoleError: '#f7768e',
-      consoleWarning: '#e0af68',
-      stateLabelBg: '#1e1e25',
-      tokenValue: '#9aa5ce',
-      tokenString: '#9ece6a',
-      tokenError: '#f7768e',
-      info: '#7dcfff',
+      // Специфика отладочного UI
+      exceptionBorder: '#963c47', // Граница исключения отладки
+      consoleError: '#f7768e', // Ошибка консоли отладки
+      consoleWarning: '#e0af68', // Предупреждение консоли отладки
+      stateLabelBg: '#1e1e25', // Фон метки состояния отладки
+      tokenValue: '#9aa5ce', // Значение токена отладки
+      tokenString: '#9ece6a', // Строка токена отладки
+      tokenError: '#f7768e', // Ошибка токена отладки
+      info: '#7dcfff', // Информация отладки
     },
     editorOverview: {
-      error: '#f7768e',
-      info: '#7dcfff',
-      modified: '#7aa2f7',
-      added: '#9ece6a',
-      deleted: '#f7768e',
+      // Цвета линейки обзора редактора
+      error: '#f7768e', // Ошибка в обзоре редактора
+      info: '#7dcfff', // Информация в обзоре редактора
+      modified: '#7aa2f7', // Измененное в обзоре редактора
+      added: '#9ece6a', // Добавленное в обзоре редактора
+      deleted: '#f7768e', // Удаленное в обзоре редактора
     },
     gutter: {
-      modified: '#7aa2f7',
-      added: '#9ece6a',
-      deleted: '#f7768e',
+      // Цвета желоба редактора
+      modified: '#7aa2f7', // Измененное в желобе
+      added: '#9ece6a', // Добавленное в желобе
+      deleted: '#f7768e', // Удаленное в желобе
     },
     minimapGutter: {
-      modified: '#7aa2f7',
-      added: '#9ece6a',
-      deleted: '#f7768e',
+      // Цвета желоба миникарты
+      modified: '#7aa2f7', // Измененное в желобе миникарты
+      added: '#9ece6a', // Добавленное в желобе миникарты
+      deleted: '#f7768e', // Удаленное в желобе миникарты
     },
     charts: {
-      foreground: '#9aa5ce',
+      // Диаграммы
+      foreground: '#9aa5ce', // Передний план диаграмм
     },
     gitlens: {
-      foreground: '#a9b1d6', // Увеличена контрастность для GitLens
+      // Помощники GitLens
+      foreground: '#a9b1d6', // Передний план GitLens - увеличена контрастность
     },
     git: {
-      ignored: '#6b7499', // Увеличена контрастность для игнорируемых файлов
-      deleted: '#f7768e',
-      conflicting: '#e0af68',
-      stageDeleted: '#f7768e',
-      stageModified: '#7aa2f7',
+      // Git декорации
+      ignored: '#6b7499', // Игнорируемые Git файлы - увеличена контрастность
+      deleted: '#f7768e', // Удаленные Git файлы
+      conflicting: '#e0af68', // Конфликтующие Git файлы
+      stageDeleted: '#f7768e', // Удаленные в стейдже Git файлы
+      stageModified: '#7aa2f7', // Измененные в стейдже Git файлы
     },
     semantic: {
-      white: '#ffffff',
-      notificationLink: '#6183bb',
-      offline: '#f7768e',
+      // Общие семантические цвета
+      white: '#ffffff', // Чистый белый для высокого контраста
+      notificationLink: '#6183bb', // Ссылки уведомлений
+      offline: '#f7768e', // Статус оффлайн
     },
   },
 }
