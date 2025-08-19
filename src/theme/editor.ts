@@ -72,18 +72,18 @@ export const getEditorColors = () => ({
 
   // === ПОИСК И СОВПАДЕНИЯ ===
   /** Цвет фона для текущего найденного совпадения (активное) */
-  'editor.findMatchBackground': withAlpha(palette.accent.magenta, '15%'),
+  'editor.findMatchBackground': withAlpha(palette.accent.yellow, '15%'),
   /** Цвет рамки для текущего найденного совпадения */
-  'editor.findMatchBorder': withAlpha(palette.accent.yellow, '45%'),
+  'editor.findMatchBorder': palette.accent.red,
   /** Цвет фона для других найденных совпадений (неактивные) */
   'editor.findMatchHighlightBackground': withAlpha(
-    palette.accent.yellow,
-    '15%'
+    palette.bg.selection.inactive,
+    '25%'
   ),
   /** Цвет рамки для других найденных совпадений */
-  'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '45%'),
+  'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
   /** Цвет фона для выделения диапазона поиска */
-  'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '15%'),
+  'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '25%'),
   /** Цвет рамки для выделения диапазона поиска */
   'editor.findRangeHighlightBorder': withAlpha(palette.fg.muted, '45%'),
   /** Цвет фона для общего выделения диапазона */
@@ -91,7 +91,7 @@ export const getEditorColors = () => ({
 
   // === ВЫДЕЛЕНИЕ СЛОВ И СИМВОЛОВ ===
   /** Цвет фона для выделения слова под курсором (read access) */
-  'editor.wordHighlightBackground': withAlpha(palette.accent.magenta, '15%'),
+  'editor.wordHighlightBackground': withAlpha(palette.accent.magenta, '5%'),
   /** Цвет рамки для выделения слова под курсором */
   'editor.wordHighlightBorder': withAlpha(palette.accent.magenta, '45%'),
   /** Цвет фона для "сильного" выделения слова (write access) */
