@@ -53,9 +53,9 @@ export const buildColors = (): Record<string, string> => {
     'button.foreground': palette.fg.selectionText,
     'button.border': withAlpha(palette.fg.subtle, '20'),
     'button.separator': withAlpha(palette.fg.subtle, '33'),
-    'button.secondaryBackground': withAlpha(palette.fg.primary, '10'),
-    'button.secondaryHoverBackground': withAlpha(palette.fg.primary, '15'),
-    'button.secondaryForeground': palette.fg.primary,
+    'button.secondaryBackground': palette.bg.elevated, // Улучшенный фон для вторичных кнопок
+    'button.secondaryHoverBackground': palette.bg.hover, // Улучшенный hover для вторичных кнопок
+    'button.secondaryForeground': palette.fg.selectionText, // Белый текст для лучшей контрастности
     'progressBar.background': palette.brand.primary,
 
     // Поля ввода - улучшенная доступность
