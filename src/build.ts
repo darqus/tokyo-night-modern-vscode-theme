@@ -1,5 +1,4 @@
 /// <reference types="node" />
-import { palette } from './palette'
 import { tokenColors } from './tokenColors'
 import { semanticTokenColors } from './semanticTokenColors'
 import * as fs from 'node:fs'

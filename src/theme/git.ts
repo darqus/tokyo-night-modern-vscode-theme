@@ -11,7 +11,6 @@ export const getGitColors = () => ({
   'gitDecoration.untrackedResourceForeground': palette.accent.teal, // Неотслеживаемые файлы
   'gitDecoration.conflictingResourceForeground': palette.ui.git.conflicting, // Конфликтующие файлы
   'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted, // Удаленные в стейдже
-  'gitDecoration.stageModifiedResourceForeground':
-    palette.ui.git.stageModified, // Измененные в стейдже
+  'gitDecoration.stageModifiedResourceForeground': palette.ui.git.stageModified, // Измененные в стейдже
   'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '50%'), // Git blame аннотации
 })

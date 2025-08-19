@@ -785,11 +785,16 @@ export const getTokenColors = (): TokenColor[] => [
   },
   // JSON Key Scopes (Generated)
   ...Array.from({ length: 9 }).map((_, i) => {
-    const baseScope = 'source.json meta.structure.dictionary.json';
+    const baseScope = 'source.json meta.structure.dictionary.json'
     const levelScope = Array.from({ length: i })
-      .map(() => 'meta.structure.dictionary.value.json meta.structure.dictionary.json')
-      .join(' ');
-    const fullScope = `${baseScope}${levelScope ? ' ' + levelScope : ''} support.type.property-name.json`;
+      .map(
+        () =>
+          'meta.structure.dictionary.value.json meta.structure.dictionary.json'
+      )
+      .join(' ')
+    const fullScope = `${baseScope}${
+      levelScope ? ' ' + levelScope : ''
+    } support.type.property-name.json`
 
     const colors = [
       palette.accent.blue,
@@ -801,7 +806,7 @@ export const getTokenColors = (): TokenColor[] => [
       palette.token.objectKey,
       palette.accent.red,
       palette.token.string,
-    ];
+    ]
 
     return {
       name: `JSON Key - Level ${i}`,
@@ -809,7 +814,7 @@ export const getTokenColors = (): TokenColor[] => [
       settings: {
         foreground: colors[i],
       },
-    };
+    }
   }),
   {
     name: 'Plain Punctuation',

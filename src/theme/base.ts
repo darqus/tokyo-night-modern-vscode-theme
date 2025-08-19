@@ -35,10 +35,7 @@ export const getBaseColors = () => ({
 
   // Ползунок полосы прокрутки - улучшенная видимость
   'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '25%'),
-  'scrollbarSlider.hoverBackground': withAlpha(
-    palette.ui.scrollbarBase,
-    '38%'
-  ),
+  'scrollbarSlider.hoverBackground': withAlpha(palette.ui.scrollbarBase, '38%'),
   'scrollbarSlider.activeBackground': withAlpha(
     palette.ui.scrollbarBase,
     '50%'

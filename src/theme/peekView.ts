@@ -14,10 +14,7 @@ export const getPeekViewColors = () => ({
   'peekViewTitleDescription.foreground': palette.fg.muted,
   'peekViewResult.background': palette.bg.base,
   'peekViewResult.selectionForeground': palette.fg.primary,
-  'peekViewResult.selectionBackground': withAlpha(
-    palette.brand.primary,
-    '20%'
-  ),
+  'peekViewResult.selectionBackground': withAlpha(palette.brand.primary, '20%'),
   'peekViewResult.lineForeground': palette.fg.primary,
   'peekViewResult.fileForeground': palette.fg.muted,
   'peekViewResult.matchHighlightBackground': withAlpha(
