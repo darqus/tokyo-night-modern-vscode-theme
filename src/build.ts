@@ -22,6 +22,7 @@ export const buildColors = (): Record<string, string> => {
     disabledForeground: palette.fg.inactive,
     focusBorder: withAlpha(palette.ui.badge.base, '66'), // Используем цвет бейджа для фокуса
     errorForeground: palette.accent.red,
+    'widget.border': palette.line.border, // Граница для виджетов поиска/замены как в Dark+
     'widget.shadow': palette.ui.shadow.widget,
     'scrollbar.shadow': palette.ui.shadow.scrollbar,
 
@@ -221,6 +222,7 @@ export const buildColors = (): Record<string, string> => {
     'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '33'),
     'editor.findRangeHighlightBorder': withAlpha(palette.fg.subtle, '55'),
     'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20'),
+
     'editor.wordHighlightBackground': withAlpha(
       palette.bg.selection.active,
       '60'
@@ -331,9 +333,11 @@ export const buildColors = (): Record<string, string> => {
     'editorGroupHeader.border': palette.line.border,
     'editorPane.background': palette.bg.base,
 
-    // Виджеты/подсказки редактора
-    'editorWidget.background': palette.bg.base,
-    'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '33'),
+    // Виджеты/подсказки редактора - улучшенная контрастность для поиска/замены
+    'editorWidget.background': palette.bg.elevated, // Используем elevated фон для лучшего выделения
+    'editorWidget.border': palette.line.border, // Добавляем границу как в Dark+
+    'editorWidget.foreground': palette.fg.primary, // Явно задаем цвет текста
+    'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '66'), // Увеличиваем непрозрачность границы изменения размера
     'editorSuggestWidget.background': palette.bg.base,
     'editorSuggestWidget.border': withAlpha(palette.ansi.black, '00'),
     'editorSuggestWidget.foreground': palette.fg.primary,
@@ -344,7 +348,8 @@ export const buildColors = (): Record<string, string> => {
     'editorLightBulb.foreground': palette.accent.yellow,
     'editorLightBulbAutoFix.foreground': palette.accent.yellow,
 
-    // Виджеты поиска - активные кнопки при наведении
+    // Виджеты поиска - активные кнопки при наведении и улучшенная контрастность
+    'searchEditor.findMatchBackground': withAlpha(palette.ui.badge.base, '66'),
     'searchEditor.findMatchBorder': palette.accent.yellow,
     'searchEditor.textInputBorder': palette.line.border,
 
