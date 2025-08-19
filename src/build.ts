@@ -385,12 +385,12 @@ export const buildColors = (): Record<string, string> => {
     'diffEditor.removedLineBackground': withAlpha(palette.accent.red, 0.1),
     'diffEditor.diagonalFill': withAlpha(palette.fg.subtle, 0.2),
 
-    // Хлебные крошки
+    // Хлебные крошки (по принципам Dark+ с улучшенной контрастностью)
     'breadcrumb.background': palette.bg.base,
-    'breadcrumbPicker.background': palette.bg.base,
-    'breadcrumb.foreground': palette.ui.breadcrumb,
-    'breadcrumb.focusForeground': palette.fg.primary,
-    'breadcrumb.activeSelectionForeground': palette.fg.primary,
+    'breadcrumbPicker.background': palette.bg.elevated, // Немного отличается от основного фона
+    'breadcrumb.foreground': palette.ui.breadcrumb, // Контрастный серый как в Dark+
+    'breadcrumb.focusForeground': palette.fg.selectionText, // Белый для фокуса (как в Dark+)
+    'breadcrumb.activeSelectionForeground': palette.fg.selectionText, // Белый для активного выбора
 
     // Вкладки - улучшенная контрастность (по аналогии с Dark+)
     'tab.activeBackground': palette.bg.base, // Фон активной вкладки

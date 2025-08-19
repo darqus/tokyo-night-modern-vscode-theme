@@ -671,8 +671,8 @@ export const palette: Palette = {
     brightWhite: '#c0caf5',
   },
   ui: {
-    description: '#444857',
-    breadcrumb: '#444857',
+    description: '#7aa2f7', // Улучшенная контрастность, как в fg.description
+    breadcrumb: '#a9b1d6', // Применяем принципы Dark+ - более контрастный серый
     shadow: {
       widget: '#ffffff00',
       scrollbar: '#00000033',
