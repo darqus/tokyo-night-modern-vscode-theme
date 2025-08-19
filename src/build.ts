@@ -338,7 +338,7 @@ export const buildColors = (): Record<string, string> => {
     'editorWidget.border': palette.line.border, // Добавляем границу
     'editorWidget.foreground': palette.fg.primary, // Явно задаем цвет текста
     'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '66'), // Увеличиваем непрозрачность границы изменения размера
-    'editorSuggestWidget.background': palette.bg.base,
+    'editorSuggestWidget.background': palette.bg.elevated, // Осветлен для лучшей видимости подсказок
     'editorSuggestWidget.border': withAlpha(palette.ansi.black, '00'),
     'editorSuggestWidget.foreground': palette.fg.primary,
     'editorSuggestWidget.selectedBackground': palette.bg.selection.menu,
@@ -499,7 +499,7 @@ export const buildColors = (): Record<string, string> => {
 
     // Отладка
     'debugExceptionWidget.border': palette.ui.debug.exceptionBorder,
-    'debugExceptionWidget.background': palette.bg.base,
+    'debugExceptionWidget.background': palette.bg.elevated, // Осветлен для лучшей видимости
     'debugToolBar.background': palette.bg.base,
     'debugConsole.infoForeground': palette.fg.muted,
     'debugConsole.errorForeground': palette.ui.debug.consoleError,
@@ -600,8 +600,8 @@ export const buildColors = (): Record<string, string> => {
     'gitlens.gutterForegroundColor': palette.ui.gitlens.foreground, // Общий текст GitLens
 
     // Уведомления
-    'notificationCenterHeader.background': palette.bg.base, // Фон заголовка центра уведомлений
-    'notifications.background': palette.bg.base, // Фон уведомлений
+    'notificationCenterHeader.background': palette.bg.overlay, // Фон заголовка центра уведомлений - осветлен
+    'notifications.background': palette.bg.overlay, // Фон уведомлений - осветлен для лучшей читаемости
     'notificationLink.foreground': palette.ui.semantic.notificationLink, // Ссылки в уведомлениях
     'notificationsErrorIcon.foreground': palette.accent.red, // Иконка ошибки
     'notificationsWarningIcon.foreground': palette.accent.yellow, // Иконка предупреждения
@@ -633,7 +633,7 @@ export const buildColors = (): Record<string, string> => {
     'toolbar.activeBackground': withAlpha(palette.bg.base, '20'), // Фон активной кнопки тулбара
 
     // Быстрый ввод (Палитра команд, выборщик быстрых исправлений)
-    'quickInput.background': palette.bg.base, // Фон палитры команд
+    'quickInput.background': palette.bg.elevated, // Фон палитры команд - осветлен для лучшей видимости
     'quickInput.foreground': palette.fg.primary, // Текст палитры команд
     'quickInputTitle.background': palette.bg.sunken, // Фон заголовка палитры команд
     'quickInputList.focusBackground': palette.bg.selection.focus, // Фон выбранного элемента в палитре команд
