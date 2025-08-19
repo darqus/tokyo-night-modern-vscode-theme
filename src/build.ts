@@ -16,11 +16,11 @@ const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
 export const buildColors = (): Record<string, string> => {
   return {
-    // Верхний уровень и основа - улучшенная контрастность
+    // Верхний уровень и основа - улучшенная контрастность (по аналогии с Dark+)
     foreground: palette.fg.primary,
     descriptionForeground: palette.fg.muted,
     disabledForeground: palette.fg.inactive,
-    focusBorder: withAlpha(palette.brand.primary, '66'), // было 33 - увеличиваем alpha для лучшей видимости
+    focusBorder: withAlpha(palette.ui.badge.base, '66'), // Используем цвет бейджа для фокуса
     errorForeground: palette.accent.red,
     'widget.shadow': palette.ui.shadow.widget,
     'scrollbar.shadow': palette.ui.shadow.scrollbar,
@@ -126,20 +126,21 @@ export const buildColors = (): Record<string, string> => {
     'sideBarSectionHeader.border': palette.line.border,
     'sideBar.dropBackground': palette.bg.drop,
 
-    // Списки - улучшенная контрастность
+    // Списки - улучшенная контрастность (по аналогии с Dark+)
     'list.dropBackground': palette.bg.drop,
     'list.deemphasizedForeground': palette.fg.panelText,
     'list.activeSelectionBackground': palette.bg.selection.active,
-    'list.activeSelectionForeground': palette.fg.onSelection,
+    'list.activeSelectionForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
+    'list.activeSelectionIconForeground': palette.fg.selectionText, // Белые иконки для выбранных элементов
     'list.inactiveSelectionBackground': palette.bg.selection.inactive,
-    'list.inactiveSelectionForeground': palette.fg.panelText,
+    'list.inactiveSelectionForeground': palette.fg.primary, // Более контрастный текст для неактивного выделения
     'list.focusBackground': palette.bg.selection.focus,
-    'list.focusForeground': palette.fg.onSelection,
+    'list.focusForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
     // Когда контейнер списка не в фокусе, но элемент в фокусе
     'list.inactiveFocusBackground': palette.bg.selection.inactive,
     'list.hoverBackground': palette.ui.list.hoverBg, // используем обновленный hover цвет для списков
     'list.hoverForeground': palette.fg.primary,
-    'list.highlightForeground': palette.brand.primary,
+    'list.highlightForeground': palette.ui.badge.base, // Используем цвет бейджа для подсветки
     'list.invalidItemForeground': palette.accent.yellow,
     'list.errorForeground': palette.accent.red,
     'list.warningForeground': palette.accent.yellow,
@@ -196,27 +197,27 @@ export const buildColors = (): Record<string, string> => {
       '40'
     ),
 
-    // Выделения и подсветки - улучшенная контрастность
+    // Выделения и подсветки - улучшенная контрастность (по аналогии с Dark+)
     'selection.background': palette.bg.selection.active,
     'editor.background': palette.bg.base,
     'editor.foreground': palette.fg.primary,
     'editor.placeholder.foreground': palette.ui.input.placeholder,
     'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
-    'editorLink.activeForeground': palette.ui.editorLinkActive,
+    'editorLink.activeForeground': palette.ui.badge.base, // Синхронизация с бейджами
     'editor.selectionBackground': withAlpha(palette.ui.selectionWash, '40'),
-    'editor.selectionForeground': palette.fg.onSelection,
+    'editor.selectionForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
     // Использовать тот же оттенок для выделения, но с меньшей прозрачностью для неактивного выделения
     'editor.inactiveSelectionBackground': withAlpha(
       palette.ui.selectionWash,
       '30'
     ),
-    'editor.findMatchBackground': withAlpha(palette.brand.primary, '66'),
+    'editor.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Синхронизация с бейджами
     'editor.findMatchBorder': palette.accent.yellow,
     'editor.findMatchHighlightBackground': withAlpha(
-      palette.brand.primary,
+      palette.ui.badge.base, // Синхронизация с бейджами
       '66'
     ),
-    'editor.findMatchHighlightBorder': withAlpha(palette.brand.primary, '99'),
+    'editor.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Синхронизация с бейджами
     'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '33'),
     'editor.findRangeHighlightBorder': withAlpha(palette.fg.subtle, '55'),
     'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20'),
@@ -241,12 +242,12 @@ export const buildColors = (): Record<string, string> => {
       palette.bg.selection.active,
       '99'
     ),
-    'editor.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'),
+    'editor.hoverHighlightBackground': withAlpha(palette.ui.badge.base, '33'), // Синхронизация с бейджами
 
-    // Курсор/отступы/строка/пробелы - улучшенная видимость
+    // Курсор/отступы/строка/пробелы - улучшенная видимость (по аналогии с Dark+)
     'editorCursor.foreground': palette.fg.primary,
-    'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '20'),
-    'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '40'),
+    'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '40'), // Увеличена непрозрачность для лучшей видимости
+    'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '70'), // Увеличена непрозрачность для лучшей видимости
     'editorLineNumber.foreground': palette.fg.subtle,
     'editorLineNumber.activeForeground': palette.fg.primary,
     'editor.lineHighlightBackground': palette.bg.lineHighlight,
@@ -386,21 +387,23 @@ export const buildColors = (): Record<string, string> => {
     'breadcrumb.focusForeground': palette.fg.primary,
     'breadcrumb.activeSelectionForeground': palette.fg.primary,
 
-    // Вкладки
-    'tab.activeBackground': palette.bg.elevated,
-    'tab.inactiveBackground': palette.bg.base,
-    'tab.activeForeground': palette.fg.onSelection,
-    'tab.hoverForeground': palette.fg.onSelection,
-    'tab.activeBorder': palette.ui.tab.activeBorder,
-    'tab.inactiveForeground': palette.fg.inactive,
+    // Вкладки - улучшенная контрастность (по аналогии с Dark+)
+    'tab.activeBackground': palette.bg.base, // Фон активной вкладки
+    'tab.inactiveBackground': palette.bg.elevated, // Фон неактивной вкладки
+    'tab.activeForeground': palette.fg.primary, // Текст активной вкладки - более яркий
+    'tab.hoverForeground': palette.fg.selectionText, // Текст при наведении - максимальная контрастность
+    'tab.activeBorder': palette.ui.badge.base, // Граница активной вкладки - синхронизация с бейджами
+    'tab.inactiveForeground': palette.fg.muted, // Текст неактивной вкладки - более контрастный
     'tab.border': palette.line.border,
-    'tab.unfocusedActiveForeground': palette.fg.soft,
-    'tab.unfocusedInactiveForeground': palette.fg.inactive,
-    'tab.unfocusedHoverForeground': palette.fg.soft,
+    'tab.unfocusedActiveForeground': palette.fg.primary, // Текст активной вкладки в неактивном окне
+    'tab.unfocusedInactiveForeground': palette.fg.muted, // Текст неактивной вкладки в неактивном окне
+    'tab.unfocusedHoverForeground': palette.fg.primary, // Текст при наведении в неактивном окне
     'tab.activeModifiedBorder': palette.ui.tab.activeModifiedBorder,
     'tab.inactiveModifiedBorder': palette.ui.tab.inactiveModifiedBorder,
-    'tab.unfocusedActiveBorder': palette.ui.tab.unfocusedActiveBorder,
-    'tab.lastPinnedBorder': palette.ui.tab.lastPinnedBorder,
+    'tab.unfocusedActiveBorder': palette.ui.badge.base, // Синхронизация с бейджами
+    'tab.lastPinnedBorder': withAlpha(palette.fg.subtle, 'cc'), // Более заметная граница
+    'tab.selectedBackground': palette.bg.base, // Фон выбранной вкладки
+    'tab.selectedForeground': withAlpha(palette.fg.selectionText, 'a0'), // Текст выбранной вкладки
 
     // Панели
     'panel.background': palette.bg.base,
@@ -416,9 +419,9 @@ export const buildColors = (): Record<string, string> => {
     'panelStickyScroll.background': palette.bg.elevated,
     'panelStickyScroll.border': palette.line.border,
 
-    // Строка состояния
+    // Строка состояния - улучшенная контрастность (по аналогии с Dark+)
     'statusBar.foreground': palette.fg.muted,
-    'statusBar.background': palette.bg.base,
+    'statusBar.background': palette.bg.sunken, // Более темный фон для лучшего контраста
     'statusBar.border': palette.line.border,
     // Состояния без папки/отладки/фокус
     'statusBar.noFolderBackground': palette.bg.sunken,
@@ -436,11 +439,11 @@ export const buildColors = (): Record<string, string> => {
     'statusBarItem.prominentHoverBackground':
       palette.ui.statusItem.prominentHover,
     'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
-    // Remote индикатор
-    'statusBarItem.remoteBackground': palette.brand.button.primary,
-    'statusBarItem.remoteForeground': palette.ui.semantic.white,
-    'statusBarItem.remoteHoverBackground': palette.brand.button.hover,
-    'statusBarItem.remoteHoverForeground': palette.ui.semantic.white,
+    // Remote индикатор - стандартизация с Dark+
+    'statusBarItem.remoteBackground': '#16825D', // Стандартный цвет из Dark+
+    'statusBarItem.remoteForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
+    'statusBarItem.remoteHoverBackground': withAlpha('#16825D', 'cc'), // Более светлый при наведении
+    'statusBarItem.remoteHoverForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
     // Ошибки/предупреждения
     'statusBarItem.errorBackground': palette.accent.red,
     'statusBarItem.errorForeground': palette.ui.semantic.white,
@@ -515,19 +518,20 @@ export const buildColors = (): Record<string, string> => {
     'debugTokenExpression.number': palette.accent.orange,
     'debugTokenExpression.error': palette.ui.debug.tokenError,
 
-    // Терминал
+    // Терминал - улучшенная контрастность (по аналогии с Dark+)
     'terminal.background': palette.bg.base,
     'terminal.foreground': palette.fg.primary,
     'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'),
+    'terminal.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '30'), // Синхронизация с Dark+
     'terminalCursor.background': palette.bg.base,
     'terminalCursor.foreground': palette.fg.primary,
-    'terminal.findMatchBackground': withAlpha(palette.brand.primary, '66'),
+    'terminal.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Синхронизация с бейджами
     'terminal.findMatchBorder': palette.accent.yellow,
     'terminal.findMatchHighlightBackground': withAlpha(
-      palette.brand.primary,
+      palette.ui.badge.base, // Синхронизация с бейджами
       '66'
     ),
-    'terminal.findMatchHighlightBorder': withAlpha(palette.brand.primary, '99'),
+    'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Синхронизация с бейджами
     'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'),
     'terminal.dropBackground': palette.bg.drop,
     'terminalOverviewRuler.findMatchForeground': withAlpha(
