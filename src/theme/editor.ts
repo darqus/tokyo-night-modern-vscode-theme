@@ -83,9 +83,9 @@ export const getEditorColors = () => ({
   /** Цвет рамки для других найденных совпадений */
   'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
   /** Цвет фона для выделения диапазона поиска */
-  'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '15%'),
+  'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '15%'),
   /** Цвет рамки для выделения диапазона поиска */
-  'editor.findRangeHighlightBorder': withAlpha(palette.fg.subtle, '0%'),
+  'editor.findRangeHighlightBorder': withAlpha(palette.fg.muted, '15%'),
   /** Цвет фона для общего выделения диапазона */
   'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '15%'),
 
