@@ -16,13 +16,13 @@ const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
 export const buildColors = (): Record<string, string> => {
   return {
-    // Верхний уровень и основа - улучшенная контрастность (по аналогии с Dark+)
+    // Верхний уровень и основа
     foreground: palette.fg.primary,
     descriptionForeground: palette.fg.muted,
     disabledForeground: palette.fg.inactive,
     focusBorder: withAlpha(palette.ui.badge.base, '66'), // Используем цвет бейджа для фокуса
     errorForeground: palette.accent.red,
-    'widget.border': palette.line.border, // Граница для виджетов поиска/замены как в Dark+
+    'widget.border': palette.line.border, // Граница для виджетов поиска/замены
     'widget.shadow': palette.ui.shadow.widget,
     'scrollbar.shadow': palette.ui.shadow.scrollbar,
 
@@ -97,14 +97,14 @@ export const buildColors = (): Record<string, string> => {
     'radio.inactiveBorder': palette.line.border,
     'radio.inactiveHoverBackground': palette.brand.primary, // Активный hover для radio
 
-    // Панель действий - улучшенная контрастность иконок (по аналогии с Dark+)
+    // Панель действий
     'activityBar.background': palette.bg.base,
     'activityBar.foreground': palette.fg.selectionText, // Увеличиваем контрастность активных иконок до белого
     'activityBar.activeBorder': palette.ui.badge.base, // Используем цвет бейджа для активной границы
     'activityBar.activeBackground': palette.bg.elevated,
     'activityBar.inactiveForeground': palette.fg.subtle, // Сохраняем приглушенный цвет для неактивных иконок
     'activityBar.border': palette.line.border,
-    'activityBarBadge.background': palette.ui.badge.base, // Используем цвет бейджа из Dark+
+    'activityBarBadge.background': palette.ui.badge.base, // Используем цвет бейджа
     'activityBarBadge.foreground': palette.ui.badge.fg, // Белый текст для максимальной контрастности
     // Добавляем цвета для предупреждений и ошибок в Activity Bar
     'activityWarningBadge.foreground': palette.bg.base,
@@ -127,7 +127,7 @@ export const buildColors = (): Record<string, string> => {
     'sideBarSectionHeader.border': palette.line.border,
     'sideBar.dropBackground': palette.bg.drop,
 
-    // Списки - улучшенная контрастность (по аналогии с Dark+)
+    // Списки
     'list.dropBackground': palette.bg.drop,
     'list.deemphasizedForeground': palette.fg.panelText,
     'list.activeSelectionBackground': palette.bg.selection.active,
@@ -198,7 +198,7 @@ export const buildColors = (): Record<string, string> => {
       '40'
     ),
 
-    // Выделения и подсветки - улучшенная контрастность (по аналогии с Dark+)
+    // Выделения и подсветки
     'selection.background': palette.bg.selection.active,
     'editor.background': palette.bg.base,
     'editor.foreground': palette.fg.primary,
@@ -246,7 +246,7 @@ export const buildColors = (): Record<string, string> => {
     ),
     'editor.hoverHighlightBackground': withAlpha(palette.ui.badge.base, '33'), // Синхронизация с бейджами
 
-    // Курсор/отступы/строка/пробелы - улучшенная видимость (по аналогии с Dark+)
+    // Курсор/отступы/строка/пробелы
     'editorCursor.foreground': palette.fg.primary,
     'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '40'), // Увеличена непрозрачность для лучшей видимости
     'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '70'), // Увеличена непрозрачность для лучшей видимости
@@ -335,7 +335,7 @@ export const buildColors = (): Record<string, string> => {
 
     // Виджеты/подсказки редактора - улучшенная контрастность для поиска/замены
     'editorWidget.background': palette.bg.elevated, // Используем elevated фон для лучшего выделения
-    'editorWidget.border': palette.line.border, // Добавляем границу как в Dark+
+    'editorWidget.border': palette.line.border, // Добавляем границу
     'editorWidget.foreground': palette.fg.primary, // Явно задаем цвет текста
     'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '66'), // Увеличиваем непрозрачность границы изменения размера
     'editorSuggestWidget.background': palette.bg.base,
@@ -385,14 +385,14 @@ export const buildColors = (): Record<string, string> => {
     'diffEditor.removedLineBackground': withAlpha(palette.accent.red, 0.1),
     'diffEditor.diagonalFill': withAlpha(palette.fg.subtle, 0.2),
 
-    // Хлебные крошки (по принципам Dark+ с улучшенной контрастностью)
+    // Хлебные крошки
     'breadcrumb.background': palette.bg.base,
     'breadcrumbPicker.background': palette.bg.elevated, // Немного отличается от основного фона
-    'breadcrumb.foreground': palette.ui.breadcrumb, // Контрастный серый как в Dark+
-    'breadcrumb.focusForeground': palette.fg.selectionText, // Белый для фокуса (как в Dark+)
+    'breadcrumb.foreground': palette.ui.breadcrumb, // Контрастный серый
+    'breadcrumb.focusForeground': palette.fg.selectionText, // Белый для фокуса
     'breadcrumb.activeSelectionForeground': palette.fg.selectionText, // Белый для активного выбора
 
-    // Вкладки - улучшенная контрастность (по аналогии с Dark+)
+    // Вкладки
     'tab.activeBackground': palette.bg.base, // Фон активной вкладки
     'tab.inactiveBackground': palette.bg.elevated, // Фон неактивной вкладки
     'tab.activeForeground': palette.fg.primary, // Текст активной вкладки - более яркий
@@ -424,7 +424,7 @@ export const buildColors = (): Record<string, string> => {
     'panelStickyScroll.background': palette.bg.elevated,
     'panelStickyScroll.border': palette.line.border,
 
-    // Строка состояния - улучшенная контрастность (по аналогии с Dark+)
+    // Строка состояния
     'statusBar.foreground': palette.fg.muted,
     'statusBar.background': palette.bg.sunken, // Более темный фон для лучшего контраста
     'statusBar.border': palette.line.border,
@@ -444,7 +444,7 @@ export const buildColors = (): Record<string, string> => {
     'statusBarItem.prominentHoverBackground':
       palette.ui.statusItem.prominentHover,
     'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
-    // Remote индикатор - стандартизация с Dark+
+    // Remote индикатор
     'statusBarItem.remoteBackground': palette.brand.button.primary,
     'statusBarItem.remoteForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
     'statusBarItem.remoteHoverBackground': palette.brand.button.hover, // Более светлый при наведении
@@ -478,6 +478,7 @@ export const buildColors = (): Record<string, string> => {
     'titleBar.activeBackground': palette.bg.base,
     'titleBar.inactiveBackground': palette.bg.base,
     'titleBar.border': palette.line.border,
+
     // Command Center (новое меню в заголовке окна)
     'commandCenter.foreground': palette.fg.muted,
     'commandCenter.activeForeground': palette.fg.primary,
@@ -523,7 +524,7 @@ export const buildColors = (): Record<string, string> => {
     'debugTokenExpression.number': palette.accent.orange,
     'debugTokenExpression.error': palette.ui.debug.tokenError,
 
-    // Терминал - улучшенная контрастность (по аналогии с Dark+)
+    // Терминал
     'terminal.background': palette.bg.base, // Фон терминала
     'terminal.foreground': palette.fg.primary, // Основной текст терминала
     'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'), // Фон выделения текста
@@ -535,7 +536,8 @@ export const buildColors = (): Record<string, string> => {
     'terminal.findMatchHighlightBackground': withAlpha(
       palette.ui.badge.base,
       '66'
-    ), // Фон других совпадений
+    ),
+    // Фон других совпадений
     'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Граница других совпадений
     'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'), // Фон при наведении
     'terminal.dropBackground': palette.bg.drop, // Фон при перетаскивании
@@ -609,6 +611,7 @@ export const buildColors = (): Record<string, string> => {
     'notifications.foreground': palette.fg.primary, // Текст уведомлений
     'notificationCenter.border': palette.line.border, // Граница центра уведомлений
     'notificationCenterHeader.foreground': palette.fg.primary, // Текст заголовка центра уведомлений
+
     // Баннер
     'banner.background': palette.bg.elevated, // Фон баннера
     'banner.foreground': palette.fg.primary, // Текст баннера
@@ -628,6 +631,7 @@ export const buildColors = (): Record<string, string> => {
     // Кнопки в контролах (поиск, замена и т.д.)
     'toolbar.hoverBackground': withAlpha(palette.bg.base, '20'), // Фон при наведении на кнопки тулбара
     'toolbar.activeBackground': withAlpha(palette.bg.base, '20'), // Фон активной кнопки тулбара
+
     // Быстрый ввод (Палитра команд, выборщик быстрых исправлений)
     'quickInput.background': palette.bg.base, // Фон палитры команд
     'quickInput.foreground': palette.fg.primary, // Текст палитры команд
@@ -635,6 +639,7 @@ export const buildColors = (): Record<string, string> => {
     'quickInputList.focusBackground': palette.bg.selection.focus, // Фон выбранного элемента в палитре команд
     'quickInputList.focusForeground': palette.fg.onSelection, // Текст выбранного элемента в палитре команд
     'quickInputList.focusIconForeground': palette.fg.onSelection, // Иконка выбранного элемента в палитре команд
+
     // Подписи клавиш
     'keybindingLabel.background': withAlpha(palette.bg.elevated, '99'), // Фон подписи клавиш
     'keybindingLabel.foreground': palette.fg.primary, // Текст подписи клавиш
