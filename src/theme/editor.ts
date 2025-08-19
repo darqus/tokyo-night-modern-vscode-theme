@@ -72,16 +72,16 @@ export const getEditorColors = () => ({
     '19%'
   ),
   /** Цвет фона для найденного совпадения */
-  'editor.findMatchBackground': withAlpha(palette.accent.yellow, '30%'),
+  'editor.findMatchBackground': withAlpha(palette.accent.yellow, '25%'),
   /** Цвет рамки для найденного совпадения */
-  'editor.findMatchBorder': withAlpha(palette.accent.yellow, '50%'),
+  'editor.findMatchBorder': withAlpha(palette.accent.yellow, '40%'),
   /** Цвет фона для выделения найденного совпадения */
   'editor.findMatchHighlightBackground': withAlpha(
     palette.accent.yellow,
-    '40%'
+    '30%'
   ),
   /** Цвет рамки для выделения найденного совпадения */
-  'editor.findMatchHighlightBorder': palette.accent.yellow,
+  'editor.findMatchHighlightBorder': withAlpha(palette.accent.yellow, '80%'),
   /** Цвет фона для выделения диапазона */
   'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '20%'),
   /** Цвет рамки для выделения диапазона */
@@ -90,23 +90,23 @@ export const getEditorColors = () => ({
   'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20%'),
 
   /** Цвет фона для выделения слова */
-  'editor.wordHighlightBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.wordHighlightBackground': withAlpha(palette.accent.blue, '12%'),
   /** Цвет рамки для выделения слова */
-  'editor.wordHighlightBorder': withAlpha(palette.accent.blue, '30%'),
+  'editor.wordHighlightBorder': withAlpha(palette.accent.blue, '24%'),
   /** Цвет фона для "сильного" выделения слова */
   'editor.wordHighlightStrongBackground': withAlpha(
     palette.accent.blue,
-    '25%'
+    '20%'
   ),
   /** Цвет рамки для "сильного" выделения слова */
-  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.blue, '50%'),
+  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.blue, '40%'),
   /** Цвет фона для выделения вхождения */
   'editor.selectionHighlightBackground': withAlpha(
     palette.accent.blue,
-    '20%'
+    '15%'
   ),
   /** Цвет рамки для выделения вхождения */
-  'editor.selectionHighlightBorder': withAlpha(palette.accent.blue, '40%'),
+  'editor.selectionHighlightBorder': withAlpha(palette.accent.blue, '30%'),
   /** Цвет фона при наведении на элемент */
   'editor.hoverHighlightBackground': withAlpha(palette.ui.badge.base, '80%'), // Синхронизация с бейджами
 
