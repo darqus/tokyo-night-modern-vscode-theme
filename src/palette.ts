@@ -488,7 +488,7 @@ export const palette: Palette = {
     tabs: '#16161e', // Tab background (darkened)
     selection: {
       active: '#252a3f', // Active selection
-      inactive: '#2e313d', // Inactive selection
+      inactive: '#292b39', // Inactive selection - более мягкий, но контрастный к фону боковой панели
       focus: '#2b3a65', // Focus selection
       menu: '#2b3a65', // Menu selection
     },
