@@ -503,7 +503,7 @@ export const palette: Palette = {
     muted: '#a9b1d6', // Secondary text
     subtle: '#6b7499', // Hints, comments - увеличена яркость для лучшей контрастности
     inactive: '#545c7e', // Inactive text
-    panelText: '#a9b1d6', // Panel text
+    panelText: '#c0caf5', // Panel text - увеличена контрастность для боковой панели
     soft: '#a9b1d6', // Soft text
     softTitle: '#c0caf5', // Titles
     selectionText: '#ffffff', // Text on selection
@@ -671,8 +671,8 @@ export const palette: Palette = {
     brightWhite: '#c0caf5',
   },
   ui: {
-    description: '#7aa2f7', // Улучшенная контрастность, как в fg.description
-    breadcrumb: '#a9b1d6', // Применяем принципы Dark+ - более контрастный серый
+    description: '#c0caf5', // Максимальная контрастность для описаний в виджетах
+    breadcrumb: '#c0caf5', // Увеличена контрастность для навигации
     shadow: {
       widget: '#ffffff00',
       scrollbar: '#00000033',
@@ -695,7 +695,7 @@ export const palette: Palette = {
       dropBg: '#4158a6', // было #3d59a1 - более яркий drop
     },
     editorLinkActive: '#acb0d0',
-    codeLens: '#545c7e',
+    codeLens: '#7aa2f7', // Увеличена контрастность для CodeLens
     noMatches: '#f7768e',
     settingsHeader: '#6183bb',
     window: {
@@ -747,10 +747,10 @@ export const palette: Palette = {
       foreground: '#9aa5ce',
     },
     gitlens: {
-      foreground: '#545c7e',
+      foreground: '#a9b1d6', // Увеличена контрастность для GitLens
     },
     git: {
-      ignored: '#545c7e',
+      ignored: '#6b7499', // Увеличена контрастность для игнорируемых файлов
       deleted: '#f7768e',
       conflicting: '#e0af68',
       stageDeleted: '#f7768e',
