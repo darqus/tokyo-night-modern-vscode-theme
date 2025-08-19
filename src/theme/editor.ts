@@ -74,18 +74,18 @@ export const getEditorColors = () => ({
   /** Цвет фона для текущего найденного совпадения (активное) */
   'editor.findMatchBackground': withAlpha(palette.accent.magenta, '15%'),
   /** Цвет рамки для текущего найденного совпадения */
-  'editor.findMatchBorder': withAlpha(palette.accent.yellow, '15%'),
+  'editor.findMatchBorder': withAlpha(palette.accent.yellow, '45%'),
   /** Цвет фона для других найденных совпадений (неактивные) */
   'editor.findMatchHighlightBackground': withAlpha(
     palette.accent.yellow,
     '15%'
   ),
   /** Цвет рамки для других найденных совпадений */
-  'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
+  'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '45%'),
   /** Цвет фона для выделения диапазона поиска */
   'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '15%'),
   /** Цвет рамки для выделения диапазона поиска */
-  'editor.findRangeHighlightBorder': withAlpha(palette.fg.muted, '15%'),
+  'editor.findRangeHighlightBorder': withAlpha(palette.fg.muted, '45%'),
   /** Цвет фона для общего выделения диапазона */
   'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '15%'),
 
@@ -93,18 +93,18 @@ export const getEditorColors = () => ({
   /** Цвет фона для выделения слова под курсором (read access) */
   'editor.wordHighlightBackground': withAlpha(palette.accent.magenta, '15%'),
   /** Цвет рамки для выделения слова под курсором */
-  'editor.wordHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
+  'editor.wordHighlightBorder': withAlpha(palette.accent.magenta, '45%'),
   /** Цвет фона для "сильного" выделения слова (write access) */
   'editor.wordHighlightStrongBackground': withAlpha(
     palette.accent.magenta,
     '15%'
   ),
   /** Цвет рамки для "сильного" выделения слова */
-  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.magenta, '15%'),
+  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.magenta, '45%'),
   /** Цвет фона для выделения похожих символов при выделении */
   'editor.selectionHighlightBackground': withAlpha(palette.accent.blue, '15%'),
   /** Цвет рамки для выделения похожих символов */
-  'editor.selectionHighlightBorder': withAlpha(palette.accent.blue, '15%'),
+  'editor.selectionHighlightBorder': withAlpha(palette.accent.blue, '45%'),
   /** Цвет фона при наведении курсора на элемент */
   'editor.hoverHighlightBackground': withAlpha(palette.accent.blue, '15%'),
 
@@ -279,7 +279,7 @@ export const getEditorColors = () => ({
   /** Цвет фона найденных совпадений в редакторе поиска */
   'searchEditor.findMatchBackground': withAlpha(palette.ui.badge.base, '15%'),
   /** Цвет границы найденных совпадений в редакторе поиска */
-  'searchEditor.findMatchBorder': palette.accent.yellow,
+  'searchEditor.findMatchBorder': palette.accent.cyan,
   /** Цвет границы поля ввода в редакторе поиска */
   'searchEditor.textInputBorder': palette.line.border,
 })
