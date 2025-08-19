@@ -445,9 +445,9 @@ export const buildColors = (): Record<string, string> => {
       palette.ui.statusItem.prominentHover,
     'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
     // Remote индикатор - стандартизация с Dark+
-    'statusBarItem.remoteBackground': '#16825D', // Стандартный цвет из Dark+
+    'statusBarItem.remoteBackground': palette.brand.button.primary,
     'statusBarItem.remoteForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
-    'statusBarItem.remoteHoverBackground': withAlpha('#16825D', 'cc'), // Более светлый при наведении
+    'statusBarItem.remoteHoverBackground': palette.brand.button.hover, // Более светлый при наведении
     'statusBarItem.remoteHoverForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
     // Ошибки/предупреждения
     'statusBarItem.errorBackground': palette.accent.red,
