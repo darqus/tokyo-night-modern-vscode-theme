@@ -524,120 +524,122 @@ export const buildColors = (): Record<string, string> => {
     'debugTokenExpression.error': palette.ui.debug.tokenError,
 
     // Терминал - улучшенная контрастность (по аналогии с Dark+)
-    'terminal.background': palette.bg.base,
-    'terminal.foreground': palette.fg.primary,
-    'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'),
-    'terminal.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '30'), // Синхронизация с Dark+
-    'terminalCursor.background': palette.bg.base,
-    'terminalCursor.foreground': palette.fg.primary,
-    'terminal.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Синхронизация с бейджами
-    'terminal.findMatchBorder': palette.accent.yellow,
+    'terminal.background': palette.bg.base, // Фон терминала
+    'terminal.foreground': palette.fg.primary, // Основной текст терминала
+    'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'), // Фон выделения текста
+    'terminal.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '30'), // Фон неактивного выделения
+    'terminalCursor.background': palette.bg.base, // Фон курсора
+    'terminalCursor.foreground': palette.fg.primary, // Цвет курсора
+    'terminal.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Фон найденного совпадения
+    'terminal.findMatchBorder': palette.accent.yellow, // Граница найденного совпадения
     'terminal.findMatchHighlightBackground': withAlpha(
-      palette.ui.badge.base, // Синхронизация с бейджами
+      palette.ui.badge.base,
       '66'
-    ),
-    'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Синхронизация с бейджами
-    'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'),
-    'terminal.dropBackground': palette.bg.drop,
+    ), // Фон других совпадений
+    'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Граница других совпадений
+    'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'), // Фон при наведении
+    'terminal.dropBackground': palette.bg.drop, // Фон при перетаскивании
     'terminalOverviewRuler.findMatchForeground': withAlpha(
       palette.fg.primary,
       '44'
-    ),
-    'terminalOverviewRuler.cursorForeground': palette.fg.primary,
-    'terminal.ansiBlack': palette.ansi.black,
-    'terminal.ansiRed': palette.ansi.red,
-    'terminal.ansiGreen': palette.ansi.green,
-    'terminal.ansiYellow': palette.ansi.yellow,
-    'terminal.ansiBlue': palette.ansi.blue,
-    'terminal.ansiMagenta': palette.ansi.magenta,
-    'terminal.ansiCyan': palette.ansi.cyan,
-    'terminal.ansiWhite': palette.ansi.white,
-    'terminal.ansiBrightBlack': palette.ansi.brightBlack,
-    'terminal.ansiBrightRed': palette.ansi.brightRed,
-    'terminal.ansiBrightGreen': palette.ansi.brightGreen,
-    'terminal.ansiBrightYellow': palette.ansi.brightYellow,
-    'terminal.ansiBrightBlue': palette.ansi.brightBlue,
-    'terminal.ansiBrightMagenta': palette.ansi.brightMagenta,
-    'terminal.ansiBrightCyan': palette.ansi.brightCyan,
-    'terminal.ansiBrightWhite': palette.ansi.brightWhite,
+    ), // Индикатор совпадений в обзорной линейке
+    'terminalOverviewRuler.cursorForeground': palette.fg.primary, // Индикатор курсора в обзорной линейке
+    // ANSI цвета терминала
+    'terminal.ansiBlack': palette.ansi.black, // Черный
+    'terminal.ansiRed': palette.ansi.red, // Красный
+    'terminal.ansiGreen': palette.ansi.green, // Зеленый
+    'terminal.ansiYellow': palette.ansi.yellow, // Желтый
+    'terminal.ansiBlue': palette.ansi.blue, // Синий
+    'terminal.ansiMagenta': palette.ansi.magenta, // Пурпурный
+    'terminal.ansiCyan': palette.ansi.cyan, // Голубой
+    'terminal.ansiWhite': palette.ansi.white, // Белый
+    // Яркие ANSI цвета терминала
+    'terminal.ansiBrightBlack': palette.ansi.brightBlack, // Яркий черный
+    'terminal.ansiBrightRed': palette.ansi.brightRed, // Яркий красный
+    'terminal.ansiBrightGreen': palette.ansi.brightGreen, // Яркий зеленый
+    'terminal.ansiBrightYellow': palette.ansi.brightYellow, // Яркий желтый
+    'terminal.ansiBrightBlue': palette.ansi.brightBlue, // Яркий синий
+    'terminal.ansiBrightMagenta': palette.ansi.brightMagenta, // Яркий пурпурный
+    'terminal.ansiBrightCyan': palette.ansi.brightCyan, // Яркий голубой
+    'terminal.ansiBrightWhite': palette.ansi.brightWhite, // Яркий белый
 
     // Оформление Git
-    'gitDecoration.modifiedResourceForeground': palette.accent.blue,
-    'gitDecoration.ignoredResourceForeground': palette.ui.git.ignored,
-    'gitDecoration.deletedResourceForeground': palette.ui.git.deleted,
-    'gitDecoration.renamedResourceForeground': palette.accent.teal,
-    'gitDecoration.addedResourceForeground': palette.accent.teal,
-    'gitDecoration.untrackedResourceForeground': palette.accent.teal,
-    'gitDecoration.conflictingResourceForeground': palette.ui.git.conflicting,
-    'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted,
+    'gitDecoration.modifiedResourceForeground': palette.accent.blue, // Измененные файлы
+    'gitDecoration.ignoredResourceForeground': palette.ui.git.ignored, // Игнорируемые файлы
+    'gitDecoration.deletedResourceForeground': palette.ui.git.deleted, // Удаленные файлы
+    'gitDecoration.renamedResourceForeground': palette.accent.teal, // Переименованные файлы
+    'gitDecoration.addedResourceForeground': palette.accent.teal, // Добавленные файлы
+    'gitDecoration.untrackedResourceForeground': palette.accent.teal, // Неотслеживаемые файлы
+    'gitDecoration.conflictingResourceForeground': palette.ui.git.conflicting, // Конфликтующие файлы
+    'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted, // Удаленные в стейдже
     'gitDecoration.stageModifiedResourceForeground':
-      palette.ui.git.stageModified,
-    'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '80'),
+      palette.ui.git.stageModified, // Измененные в стейдже
+    'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '80'), // Git blame аннотации
 
     // Диаграммы
-    'charts.red': palette.accent.red,
-    'charts.blue': palette.accent.blue,
-    'charts.yellow': palette.accent.yellow,
-    'charts.orange': palette.accent.orange,
-    'charts.green': palette.accent.teal,
-    'charts.purple': palette.accent.purple,
-    'charts.foreground': palette.ui.charts.foreground,
-    'charts.lines': palette.line.border,
+    'charts.red': palette.accent.red, // Красные элементы диаграмм
+    'charts.blue': palette.accent.blue, // Синие элементы диаграмм
+    'charts.yellow': palette.accent.yellow, // Желтые элементы диаграмм
+    'charts.orange': palette.accent.orange, // Оранжевые элементы диаграмм
+    'charts.green': palette.accent.teal, // Зеленые элементы диаграмм
+    'charts.purple': palette.accent.purple, // Пурпурные элементы диаграмм
+    'charts.foreground': palette.ui.charts.foreground, // Основной текст диаграмм
+    'charts.lines': palette.line.border, // Линии диаграмм
 
     // Слияние (Merge)
-    'merge.currentHeaderBackground': withAlpha(palette.accent.teal, 'aa'),
-    'merge.currentContentBackground': withAlpha(palette.accent.teal, '44'),
-    'merge.incomingHeaderBackground': withAlpha(palette.brand.primary, 'aa'),
-    'merge.incomingContentBackground': withAlpha(palette.brand.primary, '44'),
+    'merge.currentHeaderBackground': withAlpha(palette.accent.teal, 'aa'), // Заголовок текущей ветки
+    'merge.currentContentBackground': withAlpha(palette.accent.teal, '44'), // Контент текущей ветки
+    'merge.incomingHeaderBackground': withAlpha(palette.brand.primary, 'aa'), // Заголовок входящей ветки
+    'merge.incomingContentBackground': withAlpha(palette.brand.primary, '44'), // Контент входящей ветки
 
     // GitLens
-    'gitlens.trailingLineForegroundColor': palette.ui.gitlens.foreground,
-    'gitlens.gutterUncommittedForegroundColor': palette.ui.gitlens.foreground,
-    'gitlens.gutterForegroundColor': palette.ui.gitlens.foreground,
+    'gitlens.trailingLineForegroundColor': palette.ui.gitlens.foreground, // Текст в конце строки
+    'gitlens.gutterUncommittedForegroundColor': palette.ui.gitlens.foreground, // Незакоммиченные изменения
+    'gitlens.gutterForegroundColor': palette.ui.gitlens.foreground, // Общий текст GitLens
 
     // Уведомления
-    'notificationCenterHeader.background': palette.bg.base,
-    'notifications.background': palette.bg.base,
-    'notificationLink.foreground': palette.ui.semantic.notificationLink,
-    'notificationsErrorIcon.foreground': palette.accent.red,
-    'notificationsWarningIcon.foreground': palette.accent.yellow,
-    'notificationsInfoIcon.foreground': palette.accent.blue,
-    'notificationToast.border': palette.line.border,
-    'notifications.border': palette.line.border,
-    'notifications.foreground': palette.fg.primary,
-    'notificationCenter.border': palette.line.border,
-    'notificationCenterHeader.foreground': palette.fg.primary,
+    'notificationCenterHeader.background': palette.bg.base, // Фон заголовка центра уведомлений
+    'notifications.background': palette.bg.base, // Фон уведомлений
+    'notificationLink.foreground': palette.ui.semantic.notificationLink, // Ссылки в уведомлениях
+    'notificationsErrorIcon.foreground': palette.accent.red, // Иконка ошибки
+    'notificationsWarningIcon.foreground': palette.accent.yellow, // Иконка предупреждения
+    'notificationsInfoIcon.foreground': palette.accent.blue, // Иконка информации
+    'notificationToast.border': palette.line.border, // Граница всплывающих уведомлений
+    'notifications.border': palette.line.border, // Граница уведомлений
+    'notifications.foreground': palette.fg.primary, // Текст уведомлений
+    'notificationCenter.border': palette.line.border, // Граница центра уведомлений
+    'notificationCenterHeader.foreground': palette.fg.primary, // Текст заголовка центра уведомлений
     // Баннер
-    'banner.background': palette.bg.elevated,
-    'banner.foreground': palette.fg.primary,
-    'banner.iconForeground': palette.brand.primary,
+    'banner.background': palette.bg.elevated, // Фон баннера
+    'banner.foreground': palette.fg.primary, // Текст баннера
+    'banner.iconForeground': palette.brand.primary, // Иконка баннера
 
     // Меню
-    'menubar.selectionForeground': palette.fg.selectionText,
-    'menubar.selectionBackground': palette.bg.selection.menu,
-    'menubar.selectionBorder': palette.line.menu,
-    'menu.foreground': palette.fg.soft,
-    'menu.background': palette.bg.base,
-    'menu.selectionForeground': palette.fg.selectionText,
-    'menu.selectionBackground': palette.bg.selection.menu,
-    'menu.separatorBackground': palette.line.border,
-    'menu.border': withAlpha(palette.line.border, '00'),
+    'menubar.selectionForeground': palette.fg.selectionText, // Текст выбранного элемента менюбара
+    'menubar.selectionBackground': palette.bg.selection.menu, // Фон выбранного элемента менюбара
+    'menubar.selectionBorder': palette.line.menu, // Граница выбранного элемента менюбара
+    'menu.foreground': palette.fg.soft, // Основной текст меню
+    'menu.background': palette.bg.base, // Фон меню
+    'menu.selectionForeground': palette.fg.selectionText, // Текст выбранного элемента меню
+    'menu.selectionBackground': palette.bg.selection.menu, // Фон выбранного элемента меню
+    'menu.separatorBackground': palette.line.border, // Разделитель в меню
+    'menu.border': withAlpha(palette.line.border, '00'), // Граница меню (прозрачная)
 
     // Кнопки в контролах (поиск, замена и т.д.)
-    'toolbar.hoverBackground': withAlpha(palette.bg.base, '20'), // Активный hover для кнопок в тулбаре
-    'toolbar.activeBackground': withAlpha(palette.bg.base, '20'),
+    'toolbar.hoverBackground': withAlpha(palette.bg.base, '20'), // Фон при наведении на кнопки тулбара
+    'toolbar.activeBackground': withAlpha(palette.bg.base, '20'), // Фон активной кнопки тулбара
     // Быстрый ввод (Палитра команд, выборщик быстрых исправлений)
-    'quickInput.background': palette.bg.base,
-    'quickInput.foreground': palette.fg.primary,
-    'quickInputTitle.background': palette.bg.sunken,
-    'quickInputList.focusBackground': palette.bg.selection.focus,
-    'quickInputList.focusForeground': palette.fg.onSelection,
-    'quickInputList.focusIconForeground': palette.fg.onSelection,
-    // Keybinding labels
-    'keybindingLabel.background': withAlpha(palette.bg.elevated, '99'),
-    'keybindingLabel.foreground': palette.fg.primary,
-    'keybindingLabel.border': palette.line.border,
-    'keybindingLabel.bottomBorder': withAlpha(palette.line.border, 'aa'),
+    'quickInput.background': palette.bg.base, // Фон палитры команд
+    'quickInput.foreground': palette.fg.primary, // Текст палитры команд
+    'quickInputTitle.background': palette.bg.sunken, // Фон заголовка палитры команд
+    'quickInputList.focusBackground': palette.bg.selection.focus, // Фон выбранного элемента в палитре команд
+    'quickInputList.focusForeground': palette.fg.onSelection, // Текст выбранного элемента в палитре команд
+    'quickInputList.focusIconForeground': palette.fg.onSelection, // Иконка выбранного элемента в палитре команд
+    // Подписи клавиш
+    'keybindingLabel.background': withAlpha(palette.bg.elevated, '99'), // Фон подписи клавиш
+    'keybindingLabel.foreground': palette.fg.primary, // Текст подписи клавиш
+    'keybindingLabel.border': palette.line.border, // Граница подписи клавиш
+    'keybindingLabel.bottomBorder': withAlpha(palette.line.border, 'aa'), // Нижняя граница подписи клавиш
   }
 }
 
