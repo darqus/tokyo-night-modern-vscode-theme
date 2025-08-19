@@ -33,30 +33,28 @@ import { getMiscColors } from './theme/misc'
 const root = path.resolve(__dirname, '..')
 const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
-export const buildColors = (): Record<string, string> => {
-  return {
-    ...getBaseColors(),
-    ...getButtonColors(),
-    ...getInputColors(),
-    ...getActivityBarColors(),
-    ...getSideBarColors(),
-    ...getListColors(),
-    ...getEditorColors(),
-    ...getTabColors(),
-    ...getStatusBarColors(),
-    ...getTerminalColors(),
-    ...getGitColors(),
-    ...getNotificationColors(),
-    ...getMenuColors(),
-    ...getPeekViewColors(),
-    ...getDiffEditorColors(),
-    ...getMergeColors(),
-    ...getChartColors(),
-    ...getDebugColors(),
-    ...getQuickInputColors(),
-    ...getMiscColors(),
-  }
-}
+export const buildColors = (): Record<string, string> => ({
+  ...getBaseColors(),
+  ...getButtonColors(),
+  ...getInputColors(),
+  ...getActivityBarColors(),
+  ...getSideBarColors(),
+  ...getListColors(),
+  ...getEditorColors(),
+  ...getTabColors(),
+  ...getStatusBarColors(),
+  ...getTerminalColors(),
+  ...getGitColors(),
+  ...getNotificationColors(),
+  ...getMenuColors(),
+  ...getPeekViewColors(),
+  ...getDiffEditorColors(),
+  ...getMergeColors(),
+  ...getChartColors(),
+  ...getDebugColors(),
+  ...getQuickInputColors(),
+  ...getMiscColors(),
+})
 
 const main = () => {
   const original = fs.readFileSync(themePath, 'utf8')
