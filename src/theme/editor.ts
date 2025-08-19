@@ -12,27 +12,27 @@ export const getEditorColors = () => ({
   'editorBracketHighlight.unexpectedBracket.foreground': palette.accent.red,
   'editorBracketPairGuide.activeBackground1': withAlpha(
     palette.accent.blue,
-    '40' // было 30 - увеличиваем alpha для лучшей видимости
+    '25%' // было 30 - увеличиваем alpha для лучшей видимости
   ),
   'editorBracketPairGuide.activeBackground2': withAlpha(
     palette.accent.orange, // синхронизация с новым цветом foreground2
-    '40'
+    '25%'
   ),
   'editorBracketPairGuide.activeBackground3': withAlpha(
     palette.token.string, // синхронизация с новым цветом foreground3
-    '40'
+    '25%'
   ),
   'editorBracketPairGuide.activeBackground4': withAlpha(
     palette.accent.yellow, // синхронизация с новым цветом foreground4
-    '40'
+    '25%'
   ),
   'editorBracketPairGuide.activeBackground5': withAlpha(
     palette.accent.red, // синхронизация с новым цветом foreground5
-    '40'
+    '25%'
   ),
   'editorBracketPairGuide.activeBackground6': withAlpha(
     palette.accent.magenta, // синхронизация с новым цветом foreground6
-    '40'
+    '25%'
   ),
 
   // Выделения и подсветки
@@ -40,57 +40,57 @@ export const getEditorColors = () => ({
   'editor.background': palette.bg.base,
   'editor.foreground': palette.fg.primary,
   'editor.placeholder.foreground': palette.ui.input.placeholder,
-  'editor.foldBackground': withAlpha(palette.bg.elevated, '4a'),
+  'editor.foldBackground': withAlpha(palette.bg.elevated, '29%'),
   'editorLink.activeForeground': palette.ui.badge.base, // Синхронизация с бейджами
-  'editor.selectionBackground': withAlpha(palette.ui.selectionWash, '40'),
+  'editor.selectionBackground': withAlpha(palette.ui.selectionWash, '25%'),
   'editor.selectionForeground': palette.fg.selectionText, // Белый текст для максимальной контрастности
   // Использовать тот же оттенок для выделения, но с меньшей прозрачностью для неактивного выделения
   'editor.inactiveSelectionBackground': withAlpha(
     palette.ui.selectionWash,
-    '30'
+    '19%'
   ),
-  'editor.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Синхронизация с бейджами
+  'editor.findMatchBackground': withAlpha(palette.ui.badge.base, '40%'), // Синхронизация с бейджами
   'editor.findMatchBorder': palette.accent.yellow,
   'editor.findMatchHighlightBackground': withAlpha(
     palette.ui.badge.base, // Синхронизация с бейджами
-    '66'
+    '40%'
   ),
-  'editor.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Синхронизация с бейджами
-  'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '33'),
-  'editor.findRangeHighlightBorder': withAlpha(palette.fg.subtle, '55'),
-  'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '20'),
+  'editor.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '60%'), // Синхронизация с бейджами
+  'editor.findRangeHighlightBackground': withAlpha(palette.fg.subtle, '20%'),
+  'editor.findRangeHighlightBorder': withAlpha(palette.fg.subtle, '33%'),
+  'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '13%'),
 
   'editor.wordHighlightBackground': withAlpha(
     palette.bg.selection.active,
-    '60'
+    '38%'
   ),
-  'editor.wordHighlightBorder': withAlpha(palette.bg.selection.active, '88'),
+  'editor.wordHighlightBorder': withAlpha(palette.bg.selection.active, '53%'),
   'editor.wordHighlightStrongBackground': withAlpha(
     palette.bg.selection.active,
-    '80'
+    '50%'
   ),
   'editor.wordHighlightStrongBorder': withAlpha(
     palette.bg.selection.active,
-    'aa'
+    '67%'
   ),
   'editor.selectionHighlightBackground': withAlpha(
     palette.bg.selection.active,
-    '60'
+    '38%'
   ),
   'editor.selectionHighlightBorder': withAlpha(
     palette.bg.selection.active,
-    '99'
+    '60%'
   ),
-  'editor.hoverHighlightBackground': withAlpha(palette.ui.badge.base, '33'), // Синхронизация с бейджами
+  'editor.hoverHighlightBackground': withAlpha(palette.ui.badge.base, '20%'), // Синхронизация с бейджами
 
   // Курсор/отступы/строка/пробелы
   'editorCursor.foreground': palette.fg.primary,
-  'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '40'), // Увеличена непрозрачность для лучшей видимости
-  'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '70'), // Увеличена непрозрачность для лучшей видимости
+  'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '25%'), // Увеличена непрозрачность для лучшей видимости
+  'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '44%'), // Увеличена непрозрачность для лучшей видимости
   'editorLineNumber.foreground': palette.fg.subtle,
   'editorLineNumber.activeForeground': palette.fg.primary,
   'editor.lineHighlightBackground': palette.bg.lineHighlight,
-  'editorWhitespace.foreground': withAlpha(palette.fg.subtle, '40'),
+  'editorWhitespace.foreground': withAlpha(palette.fg.subtle, '25%'),
 
   // Sticky Scroll в редакторе
   'editorStickyScroll.background': palette.bg.elevated,
@@ -108,11 +108,11 @@ export const getEditorColors = () => ({
   'editorBracketMatch.border': palette.accent.blue,
 
   // Подсказки внутри кода (Inlay hints)
-  'editorInlayHint.background': withAlpha(palette.bg.elevated, '80'),
+  'editorInlayHint.background': withAlpha(palette.bg.elevated, '50%'),
   'editorInlayHint.foreground': palette.fg.muted,
-  'editorInlayHint.typeBackground': withAlpha(palette.bg.elevated, '80'),
+  'editorInlayHint.typeBackground': withAlpha(palette.bg.elevated, '50%'),
   'editorInlayHint.typeForeground': palette.fg.muted,
-  'editorInlayHint.parameterBackground': withAlpha(palette.bg.elevated, '80'),
+  'editorInlayHint.parameterBackground': withAlpha(palette.bg.elevated, '50%'),
   'editorInlayHint.parameterForeground': palette.fg.muted,
 
   // Обзорная линейка
@@ -123,23 +123,23 @@ export const getEditorColors = () => ({
   'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
   'editorOverviewRuler.findMatchForeground': withAlpha(
     palette.fg.primary,
-    '44'
+    '27%'
   ),
   'editorOverviewRuler.rangeHighlightForeground': withAlpha(
     palette.fg.primary,
-    '44'
+    '27%'
   ),
   'editorOverviewRuler.selectionHighlightForeground': withAlpha(
     palette.fg.primary,
-    '22'
+    '13%'
   ),
   'editorOverviewRuler.wordHighlightForeground': withAlpha(
     palette.accent.magenta,
-    '55'
+    '33%'
   ),
   'editorOverviewRuler.wordHighlightStrongForeground': withAlpha(
     palette.accent.magenta,
-    '66'
+    '40%'
   ),
   'editorOverviewRuler.modifiedForeground':
     palette.ui.editorOverview.modified,
@@ -174,9 +174,9 @@ export const getEditorColors = () => ({
   'editorWidget.background': palette.bg.elevated, // Используем elevated фон для лучшего выделения
   'editorWidget.border': palette.line.border, // Добавляем границу
   'editorWidget.foreground': palette.fg.primary, // Явно задаем цвет текста
-  'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '66'), // Увеличиваем непрозрачность границы изменения размера
+  'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '40%'), // Увеличиваем непрозрачность границы изменения размера
   'editorSuggestWidget.background': palette.bg.elevated, // Осветлен для лучшей видимости подсказок
-  'editorSuggestWidget.border': withAlpha(palette.ansi.black, '00'),
+  'editorSuggestWidget.border': withAlpha(palette.ansi.black, '0%'),
   'editorSuggestWidget.foreground': palette.fg.primary,
   'editorSuggestWidget.selectedBackground': palette.bg.selection.menu,
   'editorSuggestWidget.selectedForeground': palette.fg.onSelection,
@@ -186,7 +186,7 @@ export const getEditorColors = () => ({
   'editorLightBulbAutoFix.foreground': palette.accent.yellow,
 
   // Виджеты поиска - активные кнопки при наведении и улучшенная контрастность
-  'searchEditor.findMatchBackground': withAlpha(palette.ui.badge.base, '66'),
+  'searchEditor.findMatchBackground': withAlpha(palette.ui.badge.base, '40%'),
   'searchEditor.findMatchBorder': palette.accent.yellow,
   'searchEditor.textInputBorder': palette.line.border,
 })

@@ -6,7 +6,7 @@ export const getBaseColors = () => ({
   foreground: palette.fg.primary,
   descriptionForeground: palette.fg.muted,
   disabledForeground: palette.fg.inactive,
-  focusBorder: withAlpha(palette.ui.badge.base, '66'), // Используем цвет бейджа для фокуса
+  focusBorder: withAlpha(palette.ui.badge.base, '40%'), // Используем цвет бейджа для фокуса
   errorForeground: palette.accent.red,
   'widget.border': palette.line.border, // Граница для виджетов поиска/замены
   'widget.shadow': palette.ui.shadow.widget,
@@ -27,21 +27,21 @@ export const getBaseColors = () => ({
   'extensionButton.prominentBackground': palette.brand.primary,
   'extensionButton.prominentHoverBackground': withAlpha(
     palette.brand.primary,
-    'AA'
+    '67%'
   ),
   'extensionButton.prominentForeground': palette.fg.selectionText,
   'extensionBadge.remoteBackground': palette.ui.badge.base,
   'extensionBadge.remoteForeground': palette.ui.badge.fg,
 
   // Ползунок полосы прокрутки - улучшенная видимость
-  'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '40'),
+  'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '25%'),
   'scrollbarSlider.hoverBackground': withAlpha(
     palette.ui.scrollbarBase,
-    '60'
+    '38%'
   ),
   'scrollbarSlider.activeBackground': withAlpha(
     palette.ui.scrollbarBase,
-    '80'
+    '50%'
   ),
 
   // Текст
@@ -75,8 +75,8 @@ export const getBaseColors = () => ({
   'banner.iconForeground': palette.brand.primary, // Иконка баннера
 
   // Подписи клавиш
-  'keybindingLabel.background': withAlpha(palette.bg.elevated, '99'), // Фон подписи клавиш
+  'keybindingLabel.background': withAlpha(palette.bg.elevated, '60%'), // Фон подписи клавиш
   'keybindingLabel.foreground': palette.fg.primary, // Текст подписи клавиш
   'keybindingLabel.border': palette.line.border, // Граница подписи клавиш
-  'keybindingLabel.bottomBorder': withAlpha(palette.line.border, 'aa'), // Нижняя граница подписи клавиш
+  'keybindingLabel.bottomBorder': withAlpha(palette.line.border, '67%'), // Нижняя граница подписи клавиш
 })

@@ -13,15 +13,15 @@ export const getDebugColors = () => ({
   'debugConsoleInputIcon.foreground': palette.accent.teal,
   'editor.stackFrameHighlightBackground': withAlpha(
     palette.accent.yellow,
-    '20'
+    '13%'
   ),
   'editor.focusedStackFrameHighlightBackground': withAlpha(
     palette.accent.teal,
-    '20'
+    '13%'
   ),
   'debugView.stateLabelForeground': palette.fg.muted,
   'debugView.stateLabelBackground': palette.ui.debug.stateLabelBg,
-  'debugView.valueChangedHighlight': withAlpha(palette.brand.primary, 'aa'),
+  'debugView.valueChangedHighlight': withAlpha(palette.brand.primary, '67%'),
   'debugTokenExpression.name': palette.accent.cyan,
   'debugTokenExpression.value': palette.ui.debug.tokenValue,
   'debugTokenExpression.string': palette.ui.debug.tokenString,

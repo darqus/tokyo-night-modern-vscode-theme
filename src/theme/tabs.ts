@@ -16,7 +16,7 @@ export const getTabColors = () => ({
   'tab.activeModifiedBorder': palette.ui.tab.activeModifiedBorder,
   'tab.inactiveModifiedBorder': palette.ui.tab.inactiveModifiedBorder,
   'tab.unfocusedActiveBorder': palette.ui.badge.base, // Синхронизация с бейджами
-  'tab.lastPinnedBorder': withAlpha(palette.fg.subtle, 'cc'), // Более заметная граница
+  'tab.lastPinnedBorder': withAlpha(palette.fg.subtle, '80%'), // Более заметная граница
   'tab.selectedBackground': palette.bg.base, // Фон выбранной вкладки
-  'tab.selectedForeground': withAlpha(palette.fg.selectionText, 'a0'), // Текст выбранной вкладки
+  'tab.selectedForeground': withAlpha(palette.fg.selectionText, '63%'), // Текст выбранной вкладки
 })

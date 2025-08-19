@@ -12,13 +12,13 @@ export const getInputColors = () => ({
   'inputOption.activeBorder': palette.line.border,
   'inputOption.hoverBackground': palette.bg.hover,
   'inputValidation.infoForeground': palette.fg.primary,
-  'inputValidation.infoBackground': withAlpha(palette.accent.cyan, '20'),
+  'inputValidation.infoBackground': withAlpha(palette.accent.cyan, '13%'),
   'inputValidation.infoBorder': palette.accent.cyan,
   'inputValidation.warningForeground': palette.fg.primary,
-  'inputValidation.warningBackground': withAlpha(palette.accent.yellow, '20'),
+  'inputValidation.warningBackground': withAlpha(palette.accent.yellow, '13%'),
   'inputValidation.warningBorder': palette.accent.yellow,
   'inputValidation.errorForeground': palette.fg.primary,
-  'inputValidation.errorBackground': withAlpha(palette.accent.red, '20'),
+  'inputValidation.errorBackground': withAlpha(palette.accent.red, '13%'),
   'inputValidation.errorBorder': palette.accent.red,
 
   // Выпадающие списки

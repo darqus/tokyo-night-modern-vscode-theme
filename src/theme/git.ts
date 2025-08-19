@@ -13,5 +13,5 @@ export const getGitColors = () => ({
   'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted, // Удаленные в стейдже
   'gitDecoration.stageModifiedResourceForeground':
     palette.ui.git.stageModified, // Измененные в стейдже
-  'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '80'), // Git blame аннотации
+  'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '50%'), // Git blame аннотации
 })

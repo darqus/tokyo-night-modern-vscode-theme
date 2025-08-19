@@ -30,13 +30,13 @@ export const getStatusBarColors = () => ({
   // Ошибки/предупреждения
   'statusBarItem.errorBackground': palette.accent.red,
   'statusBarItem.errorForeground': palette.ui.semantic.white,
-  'statusBarItem.errorHoverBackground': withAlpha(palette.accent.red, 'cc'),
+  'statusBarItem.errorHoverBackground': withAlpha(palette.accent.red, '80%'),
   'statusBarItem.errorHoverForeground': palette.ui.semantic.white,
   'statusBarItem.warningBackground': palette.accent.yellow,
   'statusBarItem.warningForeground': palette.bg.base,
   'statusBarItem.warningHoverBackground': withAlpha(
     palette.accent.yellow,
-    'cc'
+    '80%'
   ),
   'statusBarItem.warningHoverForeground': palette.bg.base,
   // Прочее
@@ -46,7 +46,7 @@ export const getStatusBarColors = () => ({
   'statusBarItem.offlineForeground': palette.ui.semantic.white,
   'statusBarItem.offlineHoverBackground': withAlpha(
     palette.ui.semantic.offline,
-    'cc'
+    '80%'
   ),
   'statusBarItem.offlineHoverForeground': palette.ui.semantic.white,
 })

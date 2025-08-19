@@ -23,18 +23,19 @@ const ensure6 = (hex: Hex): string => {
  * Добавляет альфа-канал (прозрачность) к шестнадцатеричному цвету
  *
  * @param hex - Базовый шестнадцатеричный цвет
- * @param alpha - Прозрачность (0-1 в виде числа или 'AA' в виде шестнадцатеричной строки)
+ * @param alpha - Прозрачность (число 0-1, проценты "0%"-"100%", или hex-строка "AA")
  * @returns Шестнадцатеричный цвет с альфа-каналом
  * @throws {Error} Если значение альфа некорректно
  *
  * @example
  * // Использование числового значения (0-1)
  * withAlpha('#ff0000', 0.5) // '#ff000080'
- * withAlpha('#ff0000', 0.25) // '#ff000040'
+ *
+ * // Использование процентов
+ * withAlpha('#ff0000', '75%') // '#ff0000bf'
  *
  * // Использование шестнадцатеричной строки
  * withAlpha('#ff0000', '80') // '#ff000080'
- * withAlpha('#ff0000', 'FF') // '#ff0000ff'
  */
 export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
   const base = ensure6(hex)
@@ -48,11 +49,21 @@ export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
       .toString(16)
       .padStart(2, '0')
   } else {
-    // Предполагается шестнадцатеричный формат, например 'AA'
-    if (!/^[0-9a-fA-F]{2}$/.test(alpha)) {
-      throw new Error('шестнадцатеричное значение альфа должно состоять из двух шестнадцатеричных символов')
+    if (alpha.endsWith('%')) {
+      const percent = parseInt(alpha.slice(0, -1), 10)
+      if (isNaN(percent) || percent < 0 || percent > 100) {
+        throw new Error('процент альфа должен быть от "0%" до "100%"')
+      }
+      a = Math.round((percent / 100) * 255)
+        .toString(16)
+        .padStart(2, '0')
+    } else if (/^[0-9a-fA-F]{2}$/.test(alpha)) {
+      a = alpha.toLowerCase()
+    } else {
+      throw new Error(
+        'строка альфа должна быть либо процентом (например, "50%"), либо двухсимвольным шестнадцатеричным значением (например, "80")'
+      )
     }
-    a = alpha.toLowerCase()
   }
 
   return `${base}${a}` as Hex

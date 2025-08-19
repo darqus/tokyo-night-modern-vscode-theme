@@ -17,8 +17,8 @@ export const getMiscColors = () => ({
   'panelStickyScroll.border': palette.line.border,
 
   // Кнопки в контролах (поиск, замена и т.д.)
-  'toolbar.hoverBackground': withAlpha(palette.bg.base, '20'), // Фон при наведении на кнопки тулбара
-  'toolbar.activeBackground': withAlpha(palette.bg.base, '20'), // Фон активной кнопки тулбара
+  'toolbar.hoverBackground': withAlpha(palette.bg.base, '13%'), // Фон при наведении на кнопки тулбара
+  'toolbar.activeBackground': withAlpha(palette.bg.base, '13%'), // Фон активной кнопки тулбара
 
   // GitLens
   'gitlens.trailingLineForegroundColor': palette.ui.gitlens.foreground, // Текст в конце строки

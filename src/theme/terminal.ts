@@ -5,23 +5,23 @@ export const getTerminalColors = () => ({
   // Терминал
   'terminal.background': palette.bg.base, // Фон терминала
   'terminal.foreground': palette.fg.primary, // Основной текст терминала
-  'terminal.selectionBackground': withAlpha(palette.fg.subtle, '30'), // Фон выделения текста
-  'terminal.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '30'), // Фон неактивного выделения
+  'terminal.selectionBackground': withAlpha(palette.fg.subtle, '19%'), // Фон выделения текста
+  'terminal.inactiveSelectionBackground': withAlpha(palette.fg.subtle, '19%'), // Фон неактивного выделения
   'terminalCursor.background': palette.bg.base, // Фон курсора
   'terminalCursor.foreground': palette.fg.primary, // Цвет курсора
-  'terminal.findMatchBackground': withAlpha(palette.ui.badge.base, '66'), // Фон найденного совпадения
+  'terminal.findMatchBackground': withAlpha(palette.ui.badge.base, '40%'), // Фон найденного совпадения
   'terminal.findMatchBorder': palette.accent.yellow, // Граница найденного совпадения
   'terminal.findMatchHighlightBackground': withAlpha(
     palette.ui.badge.base,
-    '66'
+    '40%'
   ),
   // Фон других совпадений
-  'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '99'), // Граница других совпадений
-  'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '33'), // Фон при наведении
+  'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '60%'), // Граница других совпадений
+  'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '20%'), // Фон при наведении
   'terminal.dropBackground': palette.bg.drop, // Фон при перетаскивании
   'terminalOverviewRuler.findMatchForeground': withAlpha(
     palette.fg.primary,
-    '44'
+    '27%'
   ), // Индикатор совпадений в обзорной линейке
   'terminalOverviewRuler.cursorForeground': palette.fg.primary, // Индикатор курсора в обзорной линейке
   // ANSI цвета терминала
