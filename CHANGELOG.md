@@ -1,14 +1,5 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-
-## [1.0.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.3...v1.0.0) (2025-08-21)
-
-
 ### ⚠ BREAKING CHANGES
 
 * **release:** replaced release system with smart automatic one
@@ -17,11 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * apply prettier formatting to multiple files ([18b1fe1](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/18b1fe1ed1e594b9d0d21b08acaeb432fb926ca7))
 
-
 ### ♻️ Code Refactoring
 
 * **scripts:** include dynamic colors in smoke test comparison ([f81ffef](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f81ffef6c4d1d5b3cd6f8618b354bea72ac9ec0a))
-
 
 ### 📚 Documentation
 
@@ -31,14 +20,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * **README:** add local installation instructions for the extension ([fd4d242](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/fd4d24206273b600b478328bf1808c86a60384e1))
 * **README:** update installation instructions and fix translation errors ([22c0f1d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/22c0f1d16e8a74dc5d215ff9421efd8a3b6739d9))
 
-
 ### ✨ Features
 
 * **doc:** add smart versioning documentation ([65ca541](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/65ca54120a5ebfc993655dde52fb748be844d010))
 * **i18n:** update smart versioning system to use English language ([d4b0034](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d4b0034bcf787f4c761abfd81f31442056027f33))
 * **release:** implement automated release process ([bf1bc90](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/bf1bc90b99baa17c86a63b9269f2f08f95442ebb))
 * **release:** smart system for automatic version detection ([537a358](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/537a3586962beab3cde852facdd5581fa73c7f45))
-
 
 ### 🐛 Bug Fixes
 
