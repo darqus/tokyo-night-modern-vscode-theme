@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.2.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.0.0...v1.2.0) (2025-08-21)
+
+
+### ✨ Features
+
+* add new Tokyo Night themes ([e8ba64b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/e8ba64b4287ae9d570a7cfc6168983b6ddb81217))
+
+
+### 👷 CI/CD
+
+* remove GitHub Actions workflows ([ea3dc79](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/ea3dc7911496ff2c3c447b375e5d6f787feb5a82))
+
 ## [1.1.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.0.0...v1.1.0) (2025-08-21)
 
 
