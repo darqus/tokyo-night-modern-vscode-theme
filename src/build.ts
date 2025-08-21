@@ -28,8 +28,6 @@ import { getMiscColors } from './theme/misc'
 import { ThemeConfigManager, ConfigFactory } from './config/themeConfig'
 import { PluginManager, PluginConfigFactory } from './plugins/index'
 import { ThemeValidator } from './validation/themeValidator'
-import { DynamicColorSystem, ColorSystemFactory } from './utils/colorSystem'
-import { palette } from './palette'
 
 /**
  * Улучшенный генератор темы с поддержкой новой архитектуры
