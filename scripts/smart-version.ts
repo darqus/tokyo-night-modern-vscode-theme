@@ -452,9 +452,9 @@ class SmartVersionManager {
     console.log('\n📋 Next steps:')
     console.log('1. Review changes in CHANGELOG.md')
     console.log('2. Push changes: git push --follow-tags origin main')
-    console.log('3. Опубликуйте пакет: npm run publish')
-    console.log('4. Проверьте релиз на GitHub')
-    console.log(`\n🎉 Новая версия: ${version}`)
+    console.log('3. Publish package: npm run publish')
+    console.log('4. Check release on GitHub')
+    console.log(`\n🎉 New version: ${version}`)
   }
 }
 
