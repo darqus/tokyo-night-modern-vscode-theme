@@ -1,310 +1,263 @@
-# Tokyo Night Dark Theme - Руководство разработчика
+# Development Guide
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-### Требования
+### Prerequisites
 
 - Node.js 16+
-- VS Code (для разработки и тестирования)
-- TypeScript
+- npm or yarn
+- VS Code (for testing)
 
-### Установка зависимостей
+### Setup
 
 ```bash
+# Clone the repository
+git clone https://github.com/darqus/tokyo-night-vscode-theme-lod.git
+cd tokyo-night-vscode-theme-lod
+
+# Install dependencies
 npm install
+
+# Build the theme
+npm run build:all
+
+# Run tests
+npm test
 ```
 
-### Сборка темы
+## 🏗️ Building Themes
+
+### Build Commands
 
 ```bash
-npm run build
+npm run build           # Build main theme only
+npm run build:all       # Build all theme variants
+npm run build:variants  # Build accessibility and minimal variants
 ```
 
-### Тестирование
+### Theme Files Generated
 
-```bash
-npm run test:smoke
-```
+- `themes/tokyo-night-dark-color-theme.json` - Main theme
+- `themes/tokyo-night-dark-high-contrast-color-theme.json` - High contrast variant
+- `themes/tokyo-night-dark-minimal-color-theme.json` - Minimal variant
+- `themes/tokyo-night-accessibility-color-theme.json` - Accessibility focused
+- `themes/tokyo-night-minimal-color-theme.json` - Clean minimal version
 
-## 📁 Структура проекта
+## 🎨 Customizing Colors
 
-### Основные файлы
+### Editing the Color Palette
 
-#### `src/palette.ts` - Палитра цветов
+1. Open `src/palette.ts`
+2. Modify color values in the appropriate section:
+   - `background` - Editor and UI backgrounds
+   - `foreground` - Text colors
+   - `accent` - Highlight colors
+   - `syntax` - Code syntax colors
+3. Run `npm run build:all` to regenerate themes
+4. Test in VS Code
 
-**Назначение**: Центральное место для всех определений цветов
-
-**Как использовать**:
+### Example Color Change
 
 ```typescript
-import { palette } from './palette'
-
-// Доступ к цветам
-const backgroundColor = palette.bg.base
-const textColor = palette.fg.primary
-const accentColor = palette.accent.blue
+// src/palette.ts
+export const palette = {
+  background: {
+    primary: '#1a1b26',    // Main editor background
+    secondary: '#16161e',  // Sidebar background
+    // ... other colors
+  }
+}
 ```
 
-**Структура**:
+### Adding New Colors
 
-- `bg` - фоновые цвета (base, elevated, sunken, и т.д.)
-- `fg` - текстовые цвета (primary, muted, subtle, и т.д.)
-- `accent` - акцентные цвета для синтаксиса
-- `ansi` - цвета терминала
-- `brand` - брендовые цвета
+1. Add color to appropriate palette section
+2. Update TypeScript interfaces if needed
+3. Use the new color in token or semantic color files
+4. Rebuild themes
 
-#### `src/build.ts` - Генератор темы
+## 🌈 Syntax Highlighting
 
-**Назначение**: Собирает все компоненты в финальный JSON файл
+### Token Colors (`src/tokenColors.ts`)
 
-**Как изменять**:
-
-- Добавляйте новые цвета в `buildColors()`
-- Используйте утилиты из `utils/color.ts`
-- Ссылайтесь на цвета из `palette.ts`
-
-#### `src/tokenColors.ts` - Цвета синтаксиса
-
-**Назначение**: Определяет цвета для различных элементов синтаксиса
-
-**Как добавлять новые правила**:
+Controls TextMate grammar highlighting:
 
 ```typescript
 {
-  name: "Название правила",
-  scope: ["список.секций"],
+  scope: ['comment', 'punctuation.definition.comment'],
   settings: {
-    foreground: "#цвет",
-    fontStyle: "italic|bold|underline"
+    foreground: palette.syntax.comment,
+    fontStyle: 'italic'
   }
 }
 ```
 
-#### `src/semanticTokenColors.ts` - Семантические цвета
+### Semantic Colors (`src/semanticTokenColors.ts`)
 
-**Назначение**: Определяет цвета для семантических токенов VS Code
-
-## 🎨 Работа с цветами
-
-### Основные принципы
-
-1. **Используйте палитру** - всегда ссылайтесь на цвета из `palette.ts`
-2. **Избегайте магических чисел** - не используйте хардкоденные цвета
-3. **Сохраняйте консистентность** - следуйте установленной иерархии
-
-### Добавление нового цвета
-
-1. Определите цвет в `src/palette.ts`
-2. Добавьте тип в интерфейс `Palette`
-3. Используйте цвет в `build.ts` или других файлах
-
-### Пример добавления цвета
+Enhanced language server highlighting:
 
 ```typescript
-// В src/palette.ts
-interface Palette {
-  // ... существующие свойства
-  custom: {
-    highlight: Hex
-  }
+{
+  'variable.readonly': palette.syntax.constant,
+  'function.declaration': palette.syntax.function,
+  // ... more mappings
 }
-
-const palette: Palette = {
-  // ... существующие свойства
-  custom: {
-    highlight: '#ffeb3b'
-  }
-}
-
-// В src/build.ts
-'customHighlight': palette.custom.highlight
 ```
 
-## 🛠️ Разработка
+## 🧪 Testing
 
-### Рабочий процесс
-
-1. Вносите изменения в исходные файлы
-2. Запустите сборку: `npm run build`
-3. Проверьте результат в VS Code
-4. Запустите тесты: `npm run test:smoke`
-
-### Отладка
-
-- Используйте `console.log` в `build.ts` для отладки
-- Проверяйте сгенерированный JSON файл
-- Тестируйте тему в реальных условиях
-
-### Тестирование
-
-- **Smoke тесты**: `npm run test:smoke` - базовая проверка
-- **Визуальное тестирование**: установите тему и проверьте внешний вид
-- **Тестирование синтаксиса**: откройте файлы с разным кодом
-
-## 📋 Конвенции кода
-
-### TypeScript
-
-- Используйте строгую типизацию
-- Определяйте интерфейсы для сложных структур
-- Избегайте `any` типа
-
-### Именование
-
-- Используйте camelCase для переменных и функций
-- Используйте PascalCase для классов и интерфейсов
-- Используйте UPPER_SNAKE_CASE для констант
-
-### Комментарии
-
-- Объясняйте сложные логические блоки
-- Документируйте публичные API
-- Указывайте причины нетривиальных решений
-
-## 🔧 Инструменты
-
-### VS Code настройки
-
-Рекомендуемые расширения для разработки:
-
-- TypeScript Importer
-- Prettier
-- ESLint
-- GitLens
-
-### Скрипты
-
-- `npm run build` - сборка темы
-- `npm run test:smoke` - тестирование
-- `npm run package` - упаковка для публикации
-- `npm run publish` - публикация в Marketplace
-
-### Линтинг и форматирование
+### Running Tests
 
 ```bash
-# Автоматическое исправление
-npm run lint:fix
-
-# Проверка качества
-npm run lint
+npm test              # All tests
+npm run test:smoke    # Smoke tests only
+npm run validate:all  # Validate theme files
 ```
 
-## 🚀 Публикация
+### Manual Testing
 
-### Подготовка
+1. Build themes: `npm run build:all`
+2. Install extension locally: `npm run package`
+3. Load `.vsix` file in VS Code
+4. Test with different file types
 
-1. Убедитесь, что все тесты проходят
-2. Проверьте версию в `package.json`
-3. Обновите changelog
+### Test Files
 
-### Сборка и публикация
+Create test files for different languages:
+
+- `test.ts` - TypeScript
+- `test.js` - JavaScript
+- `test.json` - JSON
+- `test.md` - Markdown
+- `test.css` - CSS
+
+## 📦 Packaging & Release
+
+### Manual Package
 
 ```bash
-# Упаковка
-npm run package
-
-# Публикация
-npm run publish
+npm run package  # Creates .vsix file
 ```
 
-## 🐛 Отладка проблем
+### Smart Release System
 
-### Тема не применяется
+```bash
+npm run release:dry    # Preview release
+npm run release        # Create release
+npm run release:force  # Force release (skip checks)
+```
 
-1. Проверьте путь к файлу темы в `package.json`
-2. Убедитесь, что JSON валиден
-3. Перезапустите VS Code
+The smart release system:
 
-### Цвета отображаются неправильно
+- Analyzes conventional commits
+- Determines version bump (patch/minor/major)
+- Updates CHANGELOG.md
+- Creates git tags
+- Packages extension
 
-1. Проверьте, что цвета используются из палитры
-2. Убедитесь, что сборка прошла успешно
-3. Проверьте сгенерированный JSON файл
+### Publishing
 
-### Синтаксис подсвечивается неверно
+```bash
+npm run publish  # Publish to VS Code Marketplace
+```
 
-1. Проверьте правила в `tokenColors.ts`
-2. Убедитесь, что scope корректен
-3. Проверьте приоритеты правил
+## 🔧 CLI Commands
 
-## 📚 Ресурсы
+### Using the CLI
 
-### Документация VS Code тем
+```bash
+npm run cli <command> [options]
+```
 
-- [Official Documentation](https://code.visualstudio.com/api/references/theme-color)
-- [Theme Color Reference](https://code.visualstudio.com/api/references/theme-color)
+### Available Commands
+
+```bash
+# Build specific variant
+npm run cli build accessibility
+npm run cli build minimal
+
+# Validate theme file
+npm run cli validate themes/tokyo-night-dark-color-theme.json
+
+# Test theme consistency
+npm run cli test
+```
+
+## 🐛 Debugging
+
+### Common Issues
+
+1. **Build Fails**
+   - Check TypeScript errors: `npx tsc --noEmit`
+   - Verify color values are valid hex codes
+
+2. **Colors Not Applying**
+   - Rebuild themes: `npm run build:all`
+   - Restart VS Code
+   - Check theme is selected in VS Code settings
+
+3. **Test Failures**
+   - Run individual tests to isolate issues
+   - Check theme JSON validity
+   - Verify smoke test expectations
+
+### Debug Build Process
+
+Add console logs to `src/build.ts`:
+
+```typescript
+console.log('Building theme with palette:', palette);
+console.log('Generated theme colors:', theme.colors);
+```
+
+## 📊 Performance Tips
+
+### Build Optimization
+
+- Use `npm run build` for single theme during development
+- Only run `npm run build:all` when needed
+- Cache node_modules for faster CI builds
+
+### Theme Size
+
+- Keep color palette minimal
+- Avoid duplicate color values
+- Use utility functions for color variations
+
+## 🔄 Git Workflow
+
+### Conventional Commits
+
+Use conventional commit format for automatic versioning:
+
+```bash
+git commit -m "feat(colors): add new accent color for warnings"
+git commit -m "fix(build): resolve TypeScript compilation error"
+git commit -m "docs(readme): update installation instructions"
+```
+
+### Commit Types
+
+- `feat:` - New features
+- `fix:` - Bug fixes
+- `docs:` - Documentation changes
+- `style:` - Code formatting
+- `refactor:` - Code refactoring
+- `test:` - Test additions/changes
+- `chore:` - Maintenance tasks
+
+## 🆘 Getting Help
+
+### Resources
+
+- [VS Code Theme Guide](https://code.visualstudio.com/api/extension-guides/color-theme)
 - [TextMate Grammar](https://macromates.com/manual/en/language_grammars)
+- [Project Issues](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues)
 
-### TypeScript
+### Debugging Tools
 
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+- **Developer Console** - `Help > Toggle Developer Tools`
+- **Scope Inspector** - `Developer: Inspect Editor Tokens and Scopes`
+- **Color Picker** - Use browser dev tools on theme JSON
 
-### Цветовые схемы
-
-- [Accessible Color Contrast](https://webaim.org/resources/contrastchecker/)
-- [Color Theory](https://www.canva.com/colors/color-wheel/)
-
-## 🤝 Вклад в проект
-
-### Процесс внесения изменений
-
-1. Форкните репозиторий
-2. Создайте ветку для изменений
-3. Внесите изменения и протестируйте
-4. Создайте Pull Request
-
-### Требования к PR
-
-- Все тесты должны проходить
-- Код должен соответствовать конвенциям
-- Обновите документацию при необходимости
-- Добавьте тесты для нового функционала
-
-### Code Review
-
-- Будьте готовы к обсуждению изменений
-- Отвечайте на комментарии reviewers
-- Вносите правки по запросам
-
-## 🎯 Лучшие практики
-
-### Разработка
-
-- Начинайте с малого, постепенно добавляйте функционал
-- Тестируйте изменения на каждом шаге
-- Документируйте сложные решения
-
-### Качество кода
-
-- Следуйте принципу KISS (Keep It Simple, Stupid)
-- Избегайте дублирования кода
-- Пишите читаемый и понятный код
-
-### Производительность
-
-- Минимизируйте количество перерисовок
-- Оптимизируйте правила синтаксиса
-- Используйте кеширование где возможно
-
-## 📈 Метрики качества
-
-### Технические метрики
-
-- **Coverage** - процент покрытый тестами
-- **Complexity** - сложность функций
-- **Maintainability** - индекс поддерживаемости
-- **Reliability** - количество багов на 1000 строк
-
-### Пользовательские метрики
-
-- **Usability** - удобство использования
-- **Accessibility** - доступность для людей с ограниченными возможностями
-- **Performance** - производительность темы
-- **Compatibility** - совместимость с разными версиями VS Code
-
-## 🎉 Заключение
-
-Это руководство поможет вам эффективно работать с проектом Tokyo Night Dark Theme. Следуйте этим рекомендациям, и ваш код будет качественным, поддерживаемым и приятным для работы.
-
-Если у вас есть вопросы или предложения по улучшению документации, пожалуйста, создайте issue или Pull Request.
+This development guide should help you get started with contributing to the Tokyo Night Lod theme project.

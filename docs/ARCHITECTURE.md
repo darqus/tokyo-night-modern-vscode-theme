@@ -1,223 +1,243 @@
-# Tokyo Night Dark Theme - Улучшенная архитектура
+# Tokyo Night Lod - Architecture Guide
 
-## 📋 Обзор проекта
+## 📋 Project Overview
 
-Проект представляет собой цветовую тему VS Code "Tokyo Night Dark" с современной архитектурой на TypeScript. Основная цель - обеспечить высокую читаемость кода, удобство поддержки и расширяемость.
+The Tokyo Night Lod theme is a VS Code color theme built with a modern TypeScript architecture. The primary goals are to ensure high code readability, easy maintenance, and extensibility.
 
-## 🎯 Принципы дизайна
+## 🎯 Design Principles
 
-### 1. Единый источник правды (Single Source of Truth)
+### 1. Single Source of Truth
 
-- Все цвета определены в `src/palette.ts`
-- Избегание "магических чисел" и дублирования цветов
-- Централизованное управление цветовой схемой
+- All colors are defined in `src/palette.ts`
+- Avoiding "magic numbers" and color duplication
+- Centralized color scheme management
 
-### 2. Типобезопасность
+### 2. Type Safety
 
-- Использование TypeScript для всех структур данных
-- Строгая типизация палитры и токенов
-- Автоматическая проверка ошибок компиляции
+- TypeScript for all data structures
+- Strong typing for palette and tokens
+- Automatic compilation error checking
 
-### 3. Модульность
+### 3. Modularity
 
-- Разделение ответственности между файлами
-- Четкие интерфейсы между компонентами
-- Возможность независимого тестирования
+- Clear separation of responsibilities
+- Well-defined interfaces between components
+- Independent testing capabilities
 
-### 4. Автоматизация
+### 4. Automation
 
-- Генерация темы из исходного кода
-- Автоматическая сборка и валидация
-- Предсказуемый результат сборки
+- Theme generation from source code
+- Automated build and validation
+- Predictable build results
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 src/
-├── palette.ts              # 🎨 Центральная палитра цветов
-├── build.ts                # 🏗️ Генератор темы
-├── tokenColors.ts          # 🌈 Цвета синтаксиса
-├── semanticTokenColors.ts  # 🎯 Семантические цвета
+├── palette.ts              # 🎨 Central color palette
+├── build.ts                # 🏗️ Theme generator
+├── tokenColors.ts          # 🌈 Syntax colors
+├── semanticTokenColors.ts  # 🎯 Semantic colors
 └── utils/
-    └── color.ts            # 🛠️ Утилиты для работы с цветами
+    └── color.ts            # 🛠️ Color utilities
 
 themes/
-└── tokyo-night-dark-color-theme.json  # 📄 Сгенерированная тема
+├── tokyo-night-dark-color-theme.json           # 📄 Main theme
+├── tokyo-night-dark-high-contrast-color-theme.json  # 🔍 High contrast variant
+└── tokyo-night-dark-minimal-color-theme.json        # ✨ Minimal variant
+
+scripts/
+├── cli.ts                  # 🖥️ Command line interface
+├── smart-version.ts        # 🤖 Smart versioning system
+└── smoke-compare.ts        # 🧪 Smoke tests
 
 docs/
-├── ARCHITECTURE.md         # 📋 Документация архитектуры
-├── DEVELOPMENT.md          # 🛠️ Руководство разработчика
-└── EXAMPLES.md             # 💡 Примеры использования
+├── README.md               # 📖 Documentation index
+├── ARCHITECTURE.md         # 🏗️ This file
+├── DEVELOPMENT.md          # 🛠️ Developer guide
+└── SMART_VERSIONING.md     # 🤖 Versioning system
 ```
 
-## 🎨 Цветовая система
+## 🎨 Color System
 
-### Основные категории цветов
+### Palette Structure
+
+The color palette is organized into logical groups:
 
 ```typescript
 interface Palette {
-  bg: {        // Фоновые цвета
-    base: Hex      // Основной фон
-    elevated: Hex  // Повышенный уровень
-    sunken: Hex    // Углубленные элементы
-    // ... и другие
-  }
-  fg: {        // Цвета текста
-    primary: Hex   // Основной текст
-    muted: Hex     // Приглушенный текст
-    subtle: Hex    // Нежный текст
-    // ... и другие
-  }
-  accent: {    // Акцентные цвета
-    blue: Hex      // Синий - ключевые слова
-    cyan: Hex      // Бирюзовый - строки
-    // ... и другие
-  }
-  ansi: {      // ANSI цвета терминала
-    black: Hex     // Черный
-    red: Hex       // Красный
-    // ... и другие
-  }
-  brand: {     // Брендовые цвета
-    primary: Hex   // Основной бренд
-  }
+  background: BackgroundColors    // Editor and UI backgrounds
+  foreground: ForegroundColors    // Text and content colors
+  accent: AccentColors           // Highlight and accent colors
+  syntax: SyntaxColors           // Code syntax highlighting
+  semantic: SemanticColors       // Semantic token colors
+  ui: UIColors                   // VS Code UI elements
 }
 ```
 
-### Акцентные цвета
+### Color Categories
 
-Акцентные цвета используются для синтаксического выделения и обеспечивают визуальное различие между различными элементами кода.
+1. **Background Colors** - Various shades for editor, sidebars, and panels
+2. **Foreground Colors** - Text colors with different opacity levels
+3. **Accent Colors** - Brand colors and highlights
+4. **Syntax Colors** - Language-specific token colors
+5. **Semantic Colors** - Enhanced semantic highlighting
+6. **UI Colors** - VS Code interface elements
 
-| Название цвета | Hex-значение | Описание |
-|---|---|---|
-| Blue | `#7aa2f7` | Ключевые слова, типы |
-| Cyan | `#7dcfff` | Строки, импорты |
-| Teal | `#85c9c1` | Свойства, атрибуты |
-| Magenta | `#bb9af7` | Переменные, константы |
-| Yellow | `#e0af68` | Числа, параметры |
-| Orange | `#ff9e64` | Функции, методы |
-| Red | `#f7768e` | Ошибки, предупреждения |
-| Purple | `#9d7cd8` | Операторы, специальные символы |
+## 🏗️ Build System
 
-### Примеры цветов токенов
+### Theme Generation Process
 
-Эти цвета используются для конкретных синтаксических токенов, обеспечивая детальный контроль над читаемостью кода.
+1. **Palette Loading** - Load color definitions from `palette.ts`
+2. **Token Color Mapping** - Apply colors to TextMate scopes
+3. **Semantic Token Mapping** - Apply semantic token colors
+4. **UI Color Mapping** - Apply colors to VS Code UI elements
+5. **Theme Output** - Generate final JSON theme files
 
-| Тип токена | Hex-значение | Описание |
-|---|---|---|
-| Comment | `#545c7e` | Комментарии и документация |
-| String | `#9ece6a` | Строки и текстовое содержимое |
-| Keyword | `#bb9af7` | Общие ключевые слова |
-| Function | `#7aa2f7` | Имена функций |
-| Variable | `#c0caf5` | Общие переменные |
-| Operator | `#89ddff` | Операторы и пунктуация |
-| Tag | `#f7768e` | HTML/XML теги |
-| Number | `#c0768e` | Числовые значения |
-| Error | `#f7768e` | Индикаторы ошибок |
-| Warning | `#ffdb69` | Индикаторы предупреждений |
+### Build Pipeline
 
-### Иерархия цветов
+```bash
+npm run build        # Build main theme
+npm run build:all    # Build all variants
+npm run validate     # Validate theme files
+npm run test        # Run all tests
+```
 
-1. **Базовые цвета** - фундаментальная палитра
-2. **Фоновые цвета** - различные уровни глубины
-3. **Текстовые цвета** - иерархия важности
-4. **Акцентные цвета** - для синтаксиса и элементов UI
-5. **Специальные цвета** - ошибки, предупреждения, бренд
+## 🔧 Component Details
 
-### Иерархия цветов
+### src/palette.ts
 
-1. **Базовые цвета** - фундаментальная палитра
-2. **Фоновые цвета** - различные уровни глубины
-3. **Текстовые цвета** - иерархия важности
-4. **Акцентные цвета** - для синтаксиса и элементов UI
-5. **Специальные цвета** - ошибки, предупреждения, бренд
+Central color definitions using a typed interface. All colors are defined here to maintain consistency and enable easy theme variations.
 
-## 🏗️ Процесс сборки
+### src/build.ts
 
-### 1. Определение цветов
+Main theme generator that:
 
-Все цвета определяются в `src/palette.ts` с использованием строгой типизации.
+- Reads the existing theme JSON structure
+- Replaces color sections with generated values
+- Preserves non-color theme properties
+- Outputs updated theme files
 
-### 2. Настройка токенов
+### src/tokenColors.ts
 
-Цвета синтаксиса настраиваются в `src/tokenColors.ts` с использованием TextMate грамматики.
+TextMate token color definitions with:
 
-### 3. Генерация темы
+- Scope-based color mapping
+- Font style specifications
+- Language-specific highlighting rules
 
-Скрипт `src/build.ts` собирает все компоненты в финальный JSON файл темы.
+### src/semanticTokenColors.ts
 
-### 4. Тестирование
+Semantic token colors for enhanced highlighting:
 
-Доступны тесты для проверки целостности темы и соответствия ожиданиям.
+- Language server provided tokens
+- More precise code element identification
+- Better TypeScript/JavaScript support
 
-## 📊 Улучшения для понимания кода
+### src/utils/color.ts
 
-### 1. Четкая структура файлов
+Color manipulation utilities:
 
-- Каждый файл имеет одну четкую ответственность
-- Логическая группировка функциональности
-- Минимальное количество зависимостей
+- Alpha channel manipulation
+- Color format conversion
+- Palette color referencing helpers
 
-### 2. Типобезопасная разработка
+## 🎮 CLI Interface
 
-- TypeScript для всех компонентов
-- Интерфейсы для всех структур данных
-- Автоматическая проверка ошибок
+The project includes a powerful CLI tool (`scripts/cli.ts`) for:
 
-### 3. Документация
+- **Building** theme variants
+- **Validating** theme files
+- **Testing** theme consistency
+- **Managing** development workflows
 
-- Подробные комментарии в коде
-- Отдельные файлы документации
-- Примеры использования
+### Available Commands
 
-### 4. Конфигурация
+```bash
+npm run cli build <variant>      # Build specific variant
+npm run cli validate <theme>     # Validate theme file
+npm run cli test                 # Run theme tests
+```
 
-- Централизованное управление настройками
-- Четкие разделения между средами
-- Версионирование и контроль изменений
+## 🤖 Smart Versioning
 
-## 🚀 Рекомендации по развитию
+Automated release management system that:
 
-### 1. Расширение палитры
+- Analyzes conventional commits
+- Determines semantic version increments
+- Generates changelogs
+- Creates GitHub releases
+- Packages extension files
 
-- Добавление новых категорий цветов при необходимости
-- Поддержка темных/светлых вариантов
-- Адаптация под разные типы дисплеев
+See [Smart Versioning Guide](./SMART_VERSIONING.md) for detailed information.
 
-### 2. Улучшение синтаксиса
+## 🧪 Testing Strategy
 
-- Добавление поддержки новых языков
-- Оптимизация существующих правил
-- Улучшение контрастности и читаемости
+### Validation Levels
 
-### 3. Интеграция с экосистемой
+1. **JSON Schema Validation** - Ensure theme files are valid
+2. **Color Accessibility** - Check contrast ratios
+3. **Smoke Testing** - Compare theme outputs
+4. **Integration Testing** - Test build pipeline
 
-- Поддержка других редакторов кода
-- Интеграция с инструментами разработки
-- Экспорт в другие форматы
+### Test Commands
 
-### 4. Автоматизация тестирования
+```bash
+npm test                    # Run all tests
+npm run test:smoke         # Smoke tests only
+npm run validate:all       # Validate all themes
+```
 
-- Юнит-тесты для компонентов
-- Интеграционные тесты для сборки
-- Визуальное тестирование результата
+## 🔄 Development Workflow
 
-## 🔧 Инструменты и технологии
+### Making Changes
 
-- **TypeScript** - типобезопасная разработка
-- **VS Code API** - интеграция с редактором
-- **JSON Schema** - валидация структуры темы
-- **ESLint** - контроль качества кода
-- **Prettier** - форматирование кода
+1. **Modify Colors** - Edit `src/palette.ts`
+2. **Update Tokens** - Modify `src/tokenColors.ts` or `src/semanticTokenColors.ts`
+3. **Build Theme** - Run `npm run build:all`
+4. **Test Changes** - Run `npm test`
+5. **Validate Output** - Check generated theme files
 
-## 📈 Метрики качества
+### Adding New Features
 
-- **Cohesion** - высокая связанность внутри модулей
-- **Coupling** - слабая связанность между модулями
-- **Maintainability** - простота поддержки и расширения
-- **Readability** - понятность кода для новых разработчиков
-- **Testability** - возможность тестирования компонентов
+1. **Plan Changes** - Consider impact on existing themes
+2. **Update Types** - Modify TypeScript interfaces
+3. **Implement Logic** - Add new build logic
+4. **Test Thoroughly** - Ensure all variants work
+5. **Document Changes** - Update relevant documentation
 
-## 🎯 Заключение
+## 🌟 Extension Points
 
-Данная архитектура обеспечивает баланс между простотой использования и гибкостью настройки. Проект легко расширять, поддерживать и адаптировать под новые требования при сохранении высокого качества кода.
+The architecture supports easy extension for:
+
+- **New Color Variants** - Add new palette configurations
+- **Custom Token Colors** - Extend syntax highlighting
+- **Additional Themes** - Create new theme variants
+- **Build Customization** - Modify generation logic
+
+## 📊 Performance Considerations
+
+- **Build Speed** - Optimized TypeScript compilation
+- **Theme Size** - Minimal JSON output
+- **VS Code Integration** - Efficient color loading
+- **Memory Usage** - Optimized color definitions
+
+## 🔗 Dependencies
+
+### Runtime Dependencies
+
+- None (pure theme files)
+
+### Development Dependencies
+
+- **TypeScript** - Type-safe development
+- **ts-node** - TypeScript execution
+- **standard-version** - Automated versioning
+
+### VS Code Compatibility
+
+- **Minimum Version** - VS Code 1.74.0
+- **Theme API** - VS Code Color Theme API v1
+- **Semantic Tokens** - VS Code Semantic Highlighting API
+
+This architecture ensures maintainable, scalable, and high-quality theme development while providing excellent developer experience.

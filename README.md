@@ -3,90 +3,103 @@
 [![Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod)
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/lod-inc.tokyo-night-lod.svg)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-lod&ssr=false#review-details)
 [![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-vscode-theme-lod)](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A darker version of the Tokyo Night theme with slightly more muted syntax highlighting.
+A refined version of the Tokyo Night theme with improved contrast, multiple variants, and a modern TypeScript-based architecture.
 
-## 🎨 Features
+## ✨ Features
 
-- **Deep dark background** - reduces eye strain
-- **Muted accents** - soft syntax highlighting
-- **High contrast** - excellent readability
-- **TypeScript-generated** - modern theme architecture
+- **🎨 Multiple Variants** - Standard, High Contrast, Minimal, and Accessibility versions
+- **🔧 TypeScript Architecture** - Modern, maintainable theme generation system
+- **🤖 Smart Versioning** - Automated release management with conventional commits
+- **🧪 Quality Assurance** - Comprehensive testing and validation pipeline
+- **📚 Excellent Documentation** - Detailed guides for users and contributors
 
 ## 📸 Screenshots
 
-![Screenshot - Tokyo Night Lod](https://github.com/darqus/tokyo-night-vscode-theme-lod/blob/main/static/ss_tokyo_night_dark.png?raw=true)
+![Tokyo Night Lod - Main Theme](https://github.com/darqus/tokyo-night-vscode-theme-lod/blob/main/static/ss_tokyo_night_dark.png?raw=true)
 
 ## 🚀 Installation
 
-### From VS Code Marketplace
+### Via VS Code Marketplace
 
 1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X)
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 3. Search for "Tokyo Night Lod"
-4. Click Install
+4. Click **Install**
 
-### From the command line
+### Via Command Line
 
 ```bash
 code --install-extension lod-inc.tokyo-night-lod
 ```
 
-### Local Installation
-
-First, you need to package the extension. This will create a `.vsix` file.
+### Manual Installation
 
 ```bash
+# Download the latest release
 npm run package
-```
 
-Then, you can install the extension from the generated `.vsix` file.
-
-Next, go to the Extensions panel (Ctrl+Shift+X), click the "..." button in the top right corner and select "Install from VSIX..." and choose the .vsix file from the dist folder.
-
-```bash
+# Install the .vsix file
 code --install-extension tokyo-night-lod-*.vsix
 ```
 
-## 🛠️ Development
+## 🎨 Theme Variants
 
-This theme is built using a modern TypeScript approach for better maintainability and extensibility.
+| Variant | Description | Best For |
+|---------|-------------|----------|
+| **Tokyo Night Lod** | Standard version with balanced contrast | General development |
+| **Tokyo Night Lod High Contrast** | Enhanced contrast for better visibility | Accessibility, bright environments |
+| **Tokyo Night Lod Minimal** | Clean, minimal styling | Distraction-free coding |
 
-### Quick start
+## 🛠️ For Developers
+
+### Quick Start
 
 ```bash
-# Clone the repository
+# Clone and setup
 git clone https://github.com/darqus/tokyo-night-vscode-theme-lod.git
 cd tokyo-night-vscode-theme-lod
-
-# Install dependencies
 npm install
 
-# Build the theme
-npm run build
+# Build all theme variants
+npm run build:all
 
-# Testing
-npm run test:smoke
+# Run tests
+npm test
+
+# Create a release
+npm run release:dry  # Preview
+npm run release      # Execute
 ```
 
-### Project structure
+### Project Architecture
 
-```bash
+```
 src/
-├── palette.ts             # 🎨 Color palette
-├── build.ts               # 🔧 Theme generator
-├── tokenColors.ts         # 🌈 Syntax colors
-├── semanticTokenColors.ts # 🎯 Semantic colors
-└── utils/color.ts         # 🛠️ Color utilities
+├── palette.ts              # 🎨 Central color definitions
+├── build.ts                # 🏗️ Theme generator
+├── tokenColors.ts          # 🌈 Syntax highlighting rules
+├── semanticTokenColors.ts  # 🎯 Semantic token colors
+└── utils/color.ts          # 🛠️ Color manipulation utilities
+
+scripts/
+├── cli.ts                  # 🖥️ Command line interface
+├── smart-version.ts        # 🤖 Automated versioning
+└── smoke-compare.ts        # 🧪 Theme validation tests
 ```
 
-### Documentation
+## 📖 Documentation
 
-- [📋 Architecture](./docs/ARCHITECTURE.md) - How the theme is structured
-- [🛠️ Development](./docs/DEVELOPMENT.md) - Developer's guide
-- [🎨 Examples](./docs/EXAMPLES.md) - Customization examples
+| Document | Description |
+|----------|-------------|
+| [📋 Architecture Guide](./docs/ARCHITECTURE.md) | Theme structure and design principles |
+| [🛠️ Development Guide](./docs/DEVELOPMENT.md) | How to build and modify themes |
+| [🤖 Smart Versioning](./docs/SMART_VERSIONING.md) | Automated release system |
+| [🎨 Color Palette](./docs/COLOR_PALETTE.md) | Understanding theme colors |
+| [📚 Full Documentation](./docs/README.md) | Complete documentation index |
 
-## 🎨 Color Palette
+## 🎨 Color System
 
 The Tokyo Night Lod theme uses a carefully selected color palette to provide a comfortable and visually appealing coding experience. Below are some of the key color categories and their representative hex values.
 
