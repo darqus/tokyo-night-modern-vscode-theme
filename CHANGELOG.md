@@ -1,5 +1,14 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+
+## [1.0.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.3...v1.0.0) (2025-08-21)
+
+
 ### ⚠ BREAKING CHANGES
 
 * **release:** replaced release system with smart automatic one
@@ -8,17 +17,6 @@
 
 * apply prettier formatting to multiple files ([18b1fe1](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/18b1fe1ed1e594b9d0d21b08acaeb432fb926ca7))
 
-### ♻️ Code Refactoring
-
-* **scripts:** include dynamic colors in smoke test comparison ([f81ffef](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f81ffef6c4d1d5b3cd6f8618b354bea72ac9ec0a))
-
-### 📚 Documentation
-
-* add enhanced architecture guides and implementation report ([36623f4](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/36623f4d5fa5ae87fca2729c62da5053210795e9))
-* add SMART_VERSIONING guide ([40e83bd](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/40e83bd9e457c8d37370099de7a5565c43ce8878))
-* finalize branding and naming for Tokyo Night Lod theme ([86690ff](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/86690ffcb01c390a72315354db8d0b9d828e151e))
-* **README:** add local installation instructions for the extension ([fd4d242](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/fd4d24206273b600b478328bf1808c86a60384e1))
-* **README:** update installation instructions and fix translation errors ([22c0f1d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/22c0f1d16e8a74dc5d215ff9421efd8a3b6739d9))
 
 ### ✨ Features
 
@@ -27,13 +25,45 @@
 * **release:** implement automated release process ([bf1bc90](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/bf1bc90b99baa17c86a63b9269f2f08f95442ebb))
 * **release:** smart system for automatic version detection ([537a358](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/537a3586962beab3cde852facdd5581fa73c7f45))
 
+
+### 📚 Documentation
+
+* add enhanced architecture guides and implementation report ([36623f4](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/36623f4d5fa5ae87fca2729c62da5053210795e9))
+* add SMART_VERSIONING guide ([40e83bd](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/40e83bd9e457c8d37370099de7a5565c43ce8878))
+* **ARCHITECTURE:** update architecture guide and remove analysis summary ([a61de50](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/a61de507753286e13248f3663954fec8dfac6910))
+* finalize branding and naming for Tokyo Night Lod theme ([86690ff](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/86690ffcb01c390a72315354db8d0b9d828e151e))
+* **README:** add local installation instructions for the extension ([fd4d242](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/fd4d24206273b600b478328bf1808c86a60384e1))
+* **README:** update installation instructions and fix translation errors ([22c0f1d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/22c0f1d16e8a74dc5d215ff9421efd8a3b6739d9))
+
+
+### 🏗️ Build System
+
+* refactor theme building process and improve file handling ([c9e6a4e](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/c9e6a4e5b7f3fd4719130cb0fd8f05d887ca3ef6))
+
+
+### ♻️ Code Refactoring
+
+* **build:** improve theme generator with new architecture ([b4bfe83](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b4bfe83dda8ed81a5d9f9827a3d98200512d35ea))
+* **scripts:** include dynamic colors in smoke test comparison ([f81ffef](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f81ffef6c4d1d5b3cd6f8618b354bea72ac9ec0a))
+* **scripts:** update smoke-compare script for current theming model ([58edc6c](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/58edc6c37de37e84b94f3634abd11df446c08d5a))
+* **theme:** optimize color generation and styling ([8e63687](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/8e63687adef87c91a8dd694ac5eeb8f8c52ad762))
+
+
 ### 🐛 Bug Fixes
 
 * **i18n:** complete translation of smart-version.ts to English ([a4e6301](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/a4e6301be0318652a20a16a6cf68acb6dde1fec0))
+* **i18n:** translate final console messages to English ([6258b96](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/6258b96b549d6432daadc8304d30ebd687c38d87))
 * **release:** improve commit analysis and information display ([8016a49](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/8016a49ede3ec1f8c82e3bac3b37e3fc4e00e149))
+* remove unnecessary whitespace ([05a63a0](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/05a63a06a84098c4e516a22012044fb0ea9f535b))
 * **scripts:** update release type message to English ([17e824b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/17e824bb192ecb5bbfba9dfb3c6bad14241ae838))
 * **test:** fix smoke tests for new architecture ([ab72702](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/ab7270244cb6e94e9587ef63bb90a695035e20b9))
+* types/v3-directive not published ([fe1258b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/fe1258b8826cf1bbbc0683e06f4ac9d9629aae80))
 * update empty code diff to empty commit message ([504fa21](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/504fa2148f79480d91bcafa8a0797a4b88a0e063))
+
+
+### ⏪ Reverts
+
+* Changelog and version number reverted to previous state ([bce6a31](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/bce6a31e09336f5f08e13d8806d812dd698ca612))
 
 ### [0.4.3](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v0.4.2...v0.4.3) (2025-08-19)
 
