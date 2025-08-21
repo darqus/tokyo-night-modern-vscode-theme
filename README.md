@@ -32,6 +32,20 @@ A darker version of the Tokyo Night theme with slightly more muted syntax highli
 code --install-extension lod-inc.tokyo-night-lod
 ```
 
+### Local Installation
+
+First, you need to package the extension. This will create a `.vsix` file.
+
+```bash
+npm run package
+```
+
+Then, you can install the extension from the generated `.vsix` file.
+
+```bash
+code --install-extension tokyo-night-lod-*.vsix
+```
+
 ## 🛠️ Development
 
 This theme is built using a modern TypeScript approach for better maintainability and extensibility.
