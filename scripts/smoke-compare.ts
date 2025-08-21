@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import * as fs from 'node:fs'
 import * as path from 'node:path'
-import { buildColors } from '../src/build'
+import { buildColors, buildDynamicColors } from '../src/build'
 import { tokenColors } from '../src/tokenColors'
 import { semanticTokenColors } from '../src/semanticTokenColors'
 
@@ -47,8 +47,10 @@ const diffObjects = (a: any, b: any): string[] => {
 const main = () => {
   const theme = loadTheme()
 
-  // colors
-  const genColors = buildColors()
+  // colors - включаем и базовые и динамические цвета
+  const baseColors = buildColors()
+  const dynamicColors = buildDynamicColors()
+  const genColors = { ...baseColors, ...dynamicColors }
   const colorsIssues = diffObjects(genColors, theme.colors)
 
   // tokenColors
