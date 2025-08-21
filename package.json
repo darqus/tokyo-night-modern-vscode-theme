@@ -32,19 +32,33 @@
         "label": "Tokyo Night Lod",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-dark-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Lod High Contrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-dark-high-contrast-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Lod Minimal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-dark-minimal-color-theme.json"
       }
     ]
   },
   "scripts": {
     "build": "ts-node src/build.ts",
+    "build:all": "ts-node src/build.ts && npm run build:variants",
+    "build:variants": "ts-node scripts/cli.ts build accessibility && ts-node scripts/cli.ts build minimal",
+    "validate": "ts-node scripts/cli.ts validate themes/tokyo-night-dark-color-theme.json",
+    "validate:all": "ts-node scripts/cli.ts validate themes/tokyo-night-dark-color-theme.json && ts-node scripts/cli.ts validate themes/tokyo-night-dark-high-contrast-color-theme.json && ts-node scripts/cli.ts validate themes/tokyo-night-dark-minimal-color-theme.json",
     "test:smoke": "ts-node scripts/smoke-compare.ts",
+    "cli": "ts-node scripts/cli.ts",
     "package": "vsce package",
     "publish": "vsce publish",
     "release": "standard-version"
   },
   "devDependencies": {
     "@types/node": "^20.19.10",
-    "colord": "^2.9.3",
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"

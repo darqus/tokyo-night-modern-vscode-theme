@@ -806,7 +806,22 @@
     "breadcrumbPicker.background": "#1c1d24",
     "breadcrumb.foreground": "#c0caf5",
     "breadcrumb.focusForeground": "#ffffff",
-    "breadcrumb.activeSelectionForeground": "#ffffff"
+    "breadcrumb.activeSelectionForeground": "#ffffff",
+    "jsonKey0": "#5571ad",
+    "jsonKey1": "#6788d0",
+    "jsonKey2": "#6e92de",
+    "jsonKey3": "#6788d0",
+    "jsonKey4": "#5571ad",
+    "jsonKey5": "#445a8a",
+    "jsonKey6": "#3d517b",
+    "jsonKey7": "#445a8a",
+    "jsonKey8": "#5571ad",
+    "markdownH1": "#8eb95f",
+    "markdownH2": "#7ea555",
+    "markdownH3": "#6f904a",
+    "markdownH4": "#5f7c40",
+    "markdownH5": "#4f6735",
+    "markdownH6": "#3f522a"
   },
   "tokenColors": [
     {
