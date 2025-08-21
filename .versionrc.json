@@ -1,0 +1,81 @@
+{
+  "standard": {
+    "preset": "conventionalcommits"
+  },
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "perf",
+      "section": "Performance Improvements"
+    },
+    {
+      "type": "revert",
+      "section": "Reverts"
+    },
+    {
+      "type": "docs",
+      "section": "Documentation",
+      "hidden": false
+    },
+    {
+      "type": "style",
+      "section": "Styles",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "Code Refactoring",
+      "hidden": false
+    },
+    {
+      "type": "test",
+      "section": "Tests",
+      "hidden": false
+    },
+    {
+      "type": "build",
+      "section": "Build System",
+      "hidden": false
+    },
+    {
+      "type": "ci",
+      "section": "Continuous Integration",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "Chores",
+      "hidden": true
+    }
+  ],
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "userUrlFormat": "{{host}}/{{user}}",
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "skip": {
+    "bump": false,
+    "changelog": false,
+    "commit": false,
+    "tag": false
+  },
+  "bumpFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ],
+  "packageFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ]
+}

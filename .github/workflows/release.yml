@@ -1,0 +1,174 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.gitignore'
+      - '.vscode/**'
+
+  # Ручной запуск
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - patch
+          - minor
+          - major
+          - alpha
+          - beta
+          - rc
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Build project
+        run: npm run build:all
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: |
+            themes/
+            !themes/.gitkeep
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+          path: themes/
+
+      - name: Check for conventional commits
+        id: check-commits
+        run: |
+          # Проверяем есть ли коммиты для релиза
+          if git log $(git describe --tags --abbrev=0)..HEAD --oneline | grep -E '^[a-f0-9]+ (feat|fix|perf)(\(.+\))?: ' > /dev/null; then
+            echo "has_release_commits=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_release_commits=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create release (auto)
+        if: steps.check-commits.outputs.has_release_commits == 'true' && github.event.inputs.release_type == 'auto'
+        run: npm run release
+
+      - name: Create release (manual)
+        if: github.event.inputs.release_type != 'auto' && github.event.inputs.release_type != ''
+        run: npm run release:${{ github.event.inputs.release_type }}
+
+      - name: Create VSIX package
+        if: steps.check-commits.outputs.has_release_commits == 'true' || github.event.inputs.release_type != 'auto'
+        run: npm run package
+
+      - name: Upload VSIX artifact
+        if: steps.check-commits.outputs.has_release_commits == 'true' || github.event.inputs.release_type != 'auto'
+        uses: actions/upload-artifact@v4
+        with:
+          name: vsix-package
+          path: '*.vsix'
+
+      - name: Push changes
+        if: steps.check-commits.outputs.has_release_commits == 'true' || github.event.inputs.release_type != 'auto'
+        run: git push --follow-tags origin main
+
+      - name: Create GitHub Release
+        if: steps.check-commits.outputs.has_release_commits == 'true' || github.event.inputs.release_type != 'auto'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Получаем последний тег
+          TAG=$(git describe --tags --abbrev=0)
+
+          # Создаем GitHub релиз с VSIX файлом
+          gh release create $TAG *.vsix \
+            --title "Release $TAG" \
+            --notes-file CHANGELOG.md \
+            --target main
+
+  publish:
+    needs: release
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Download VSIX package
+        uses: actions/download-artifact@v4
+        with:
+          name: vsix-package
+
+      - name: Install vsce
+        run: npm install -g vsce
+
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: vsce publish --packagePath *.vsix
