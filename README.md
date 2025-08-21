@@ -42,6 +42,8 @@ npm run package
 
 Then, you can install the extension from the generated `.vsix` file.
 
+Next, go to the Extensions panel (Ctrl+Shift+X), click the "..." button in the top right corner and select "Install from VSIX..." and choose the .vsix file from the dist folder.
+
 ```bash
 code --install-extension tokyo-night-lod-*.vsix
 ```
@@ -117,8 +119,8 @@ These are examples of colors used for specific syntax tokens, providing fine-gra
 | Operator | `#89ddff` | Operators and punctuation |
 | Tag | `#f7768e` | HTML/XML tags |
 | Number | `#c0768e` | Numeric values |
-| Error | `#f7768e` | Индикаторы ошибок |
-| Warning | `#ffdb69` | Индикаторы предупреждений |
+| Error | `#f7768e` | Error indicators |
+| Warning | `#ffdb69` | Warning indicators |
 
 ## Original Theme
 
