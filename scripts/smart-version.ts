@@ -1,8 +1,8 @@
 #!/usr/bin/env ts-node
 
 /**
- * Умная система автоматического версионирования
- * Анализирует conventional commits и определяет правильный тип версии
+ * Smart Automatic Versioning System
+ * Analyzes conventional commits and determines the correct version type
  */
 
 import { execSync } from 'child_process'
