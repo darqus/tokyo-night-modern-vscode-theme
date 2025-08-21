@@ -315,7 +315,7 @@ class SmartVersionManager {
     )
 
     console.log(
-      `\n📈 Рекомендованный тип релиза: ${analysis.recommended.toUpperCase()}`
+      `\n📈 Recommended release type: ${analysis.recommended.toUpperCase()}`
     )
 
     if (analysis.summary.length > 0) {
