@@ -20,11 +20,6 @@ export const getMiscColors = () => ({
   'toolbar.hoverBackground': withAlpha(palette.bg.base, '13%'), // Фон при наведении на кнопки тулбара
   'toolbar.activeBackground': withAlpha(palette.bg.base, '13%'), // Фон активной кнопки тулбара
 
-  // GitLens
-  'gitlens.trailingLineForegroundColor': palette.ui.gitlens.foreground, // Текст в конце строки
-  'gitlens.gutterUncommittedForegroundColor': palette.ui.gitlens.foreground, // Незакоммиченные изменения
-  'gitlens.gutterForegroundColor': palette.ui.gitlens.foreground, // Общий текст GitLens
-
   // Хлебные крошки
   'breadcrumb.background': palette.bg.base,
   'breadcrumbPicker.background': palette.bg.elevated, // Немного отличается от основного фона

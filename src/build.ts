@@ -109,27 +109,10 @@ export const buildThemeWithConfig = (configName?: string) => {
 /**
  * Генерация динамических цветов
  */
-export const buildDynamicColors = (): Record<string, string> => {
-  const colorSystem = ColorSystemFactory.createDynamicSystem({
-    blue: palette.accent.blue,
-    cyan: palette.accent.cyan,
-    green: palette.token.string,
-    yellow: palette.accent.yellow,
-    orange: palette.accent.orange,
-    red: palette.accent.red,
-    magenta: palette.accent.magenta,
-    purple: palette.accent.purple,
-  })
-
+export const buildDynamicColors = () => {
+  // Убираем генерацию недопустимых цветовых свойств для VS Code тем
+  // JSON-ключи и Markdown заголовки уже правильно настроены в tokenColors
   const dynamicColors: Record<string, string> = {}
-
-  // Генерируем JSON ключи динамически
-  const jsonKeys = colorSystem.generateJsonKeys(8)
-  Object.assign(dynamicColors, jsonKeys)
-
-  // Генерируем заголовки Markdown
-  const markdownHeaders = colorSystem.generateMarkdownHeaders()
-  Object.assign(dynamicColors, markdownHeaders)
 
   return dynamicColors
 }

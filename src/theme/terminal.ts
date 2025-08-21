@@ -18,7 +18,7 @@ export const getTerminalColors = () => ({
   // Фон других совпадений
   'terminal.findMatchHighlightBorder': withAlpha(palette.ui.badge.base, '60%'), // Граница других совпадений
   'terminal.hoverHighlightBackground': withAlpha(palette.brand.primary, '20%'), // Фон при наведении
-  'terminal.dropBackground': palette.bg.drop, // Фон при перетаскивании
+  'terminal.dropBackground': withAlpha(palette.bg.drop, '50%'), // Фон при перетаскивании
   'terminalOverviewRuler.findMatchForeground': withAlpha(
     palette.fg.primary,
     '27%'
