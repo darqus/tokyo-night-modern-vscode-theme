@@ -54,7 +54,7 @@ class SmartVersionManager {
   async analyzeCommits(
     options: SmartVersionOptions = {}
   ): Promise<VersionAnalysis> {
-    console.log('🔍 Анализ коммитов для определения версии...\n')
+    console.log('🔍 Analyzing commits to determine version...\n')
 
     const commits = this.getCommitsSinceLastRelease(options.since)
     const analysis = this.analyzeCommitTypes(commits)
@@ -73,7 +73,7 @@ class SmartVersionManager {
    */
   async smartRelease(options: SmartVersionOptions = {}): Promise<void> {
     try {
-      console.log('🤖 Запускаем умную систему релизов...\n')
+      console.log('🤖 Starting smart release system...\n')
 
       if (!options.force) {
         this.checkGitStatus()
@@ -82,7 +82,7 @@ class SmartVersionManager {
       const analysis = await this.analyzeCommits(options)
 
       if (analysis.commits.length === 0) {
-        console.log('ℹ️  Нет коммитов для релиза с последней версии')
+        console.log('ℹ️  No commits for release since last version')
         return
       }
 
@@ -92,27 +92,25 @@ class SmartVersionManager {
         analysis.recommended
       )
 
-      console.log(`\n📊 Информация о релизе:`)
-      console.log(`   🏷️  Текущая версия: ${currentVersion}`)
-      console.log(`   🏷️  Новая версия: ${nextVersion}`)
-      console.log(`   📝 Изменений: ${analysis.commits.length}`)
-      console.log(`   📈 Тип релиза: ${analysis.recommended.toUpperCase()}`)
+      console.log(`\n📊 Release Information:`)
+      console.log(`   🏷️  Current version: ${currentVersion}`)
+      console.log(`   🏷️  New version: ${nextVersion}`)
+      console.log(`   📝 Changes: ${analysis.commits.length}`)
+      console.log(`   📈 Release type: ${analysis.recommended.toUpperCase()}`)
 
       if (analysis.hasBreaking) {
-        console.log(`   💥 ВНИМАНИЕ: Есть breaking changes!`)
+        console.log(`   💥 WARNING: Contains breaking changes!`)
       }
 
       if (options.dryRun) {
-        console.log(
-          '\n🧪 Режим предварительного просмотра - изменения не применены'
-        )
+        console.log('\n🧪 Preview mode - changes not applied')
         return
       }
 
       // Выполняем релиз
       await this.executeRelease(analysis.recommended, options)
 
-      console.log('\n✅ Умный релиз успешно завершен!')
+      console.log('\n✅ Smart release successfully completed!')
       this.printNextSteps(nextVersion)
     } catch (error) {
       console.error('❌ Ошибка умного релиза:', error)
@@ -307,8 +305,8 @@ class SmartVersionManager {
    * Напечатать краткий анализ
    */
   private printAnalysisSummary(analysis: VersionAnalysis): void {
-    console.log('🔍 Анализ коммитов завершен:')
-    console.log(`   📝 Коммитов для анализа: ${analysis.stats.total}`)
+    console.log('🔍 Commit analysis completed:')
+    console.log(`   📝 Commits analyzed: ${analysis.stats.total}`)
     console.log(`   ✨ Features: ${analysis.stats.features > 0 ? '✅' : '❌'}`)
     console.log(`   🐛 Fixes: ${analysis.stats.fixes > 0 ? '✅' : '❌'}`)
     console.log(`   💥 Breaking: ${analysis.stats.breaking > 0 ? '✅' : '❌'}`)
@@ -321,10 +319,10 @@ class SmartVersionManager {
     )
 
     if (analysis.summary.length > 0) {
-      console.log('\n📋 Краткое содержание изменений:')
+      console.log('\n📋 Summary of changes:')
       analysis.summary.slice(0, 10).forEach((item) => console.log(item))
       if (analysis.summary.length > 10) {
-        console.log(`   ... и еще ${analysis.summary.length - 10} изменений`)
+        console.log(`   ... and ${analysis.summary.length - 10} more changes`)
       }
     }
 
@@ -333,22 +331,21 @@ class SmartVersionManager {
       currentVersion,
       analysis.recommended
     )
-    console.log(`\n📊 Версия: ${currentVersion} → ${nextVersion}`)
+    console.log(`\n📊 Version: ${currentVersion} → ${nextVersion}`)
   }
 
   /**
    * Напечатать детальный анализ
    */
   private printDetailedAnalysis(analysis: VersionAnalysis): void {
-    console.log('📊 Детальная статистика коммитов:')
-    console.log(`   Всего коммитов: ${analysis.stats.total}`)
-    console.log(`   Features (feat): ${analysis.stats.features}`)
-    console.log(`   Fixes (fix): ${analysis.stats.fixes}`)
-    console.log(`   Performance (perf): ${analysis.stats.performance}`)
+    console.log('📊 Detailed commit statistics:')
+    console.log(`   Total commits: ${analysis.stats.total}`)
+    console.log(`   Features: ${analysis.stats.features}`)
+    console.log(`   Bug fixes: ${analysis.stats.fixes}`)
     console.log(`   Breaking changes: ${analysis.stats.breaking}`)
-    console.log(`   Прочие: ${analysis.stats.others}`)
+    console.log(`   Others: ${analysis.stats.others}`)
 
-    console.log('\n📝 Все коммиты:')
+    console.log('\n📝 All commits:')
     analysis.commits.forEach((commit) => {
       const breaking = commit.breaking ? ' 💥' : ''
       const scope = commit.scope ? `(${commit.scope})` : ''
@@ -412,10 +409,10 @@ class SmartVersionManager {
     type: string,
     options: SmartVersionOptions
   ): Promise<void> {
-    console.log('\n🏗️  Выполняем релиз...')
+    console.log('\n🏗️  Executing release...')
 
     // Запускаем тесты
-    console.log('🧪 Запускаем тесты...')
+    console.log('🧪 Running tests...')
     try {
       execSync('npm run test', { stdio: 'inherit' })
     } catch (error) {
@@ -423,7 +420,7 @@ class SmartVersionManager {
     }
 
     // Собираем проект
-    console.log('🏗️  Собираем проект...')
+    console.log('🏗️  Building project...')
     try {
       execSync('npm run build:all', { stdio: 'inherit' })
     } catch (error) {
@@ -431,7 +428,7 @@ class SmartVersionManager {
     }
 
     // Создаем релиз с standard-version
-    console.log(`📦 Создаем ${type} релиз...`)
+    console.log(`📦 Creating ${type} release...`)
     try {
       const command = `npx standard-version --release-as ${type}`
       execSync(command, { stdio: 'inherit' })
@@ -440,7 +437,7 @@ class SmartVersionManager {
     }
 
     // Создаем пакет
-    console.log('📦 Создаем VSIX пакет...')
+    console.log('📦 Creating VSIX package...')
     try {
       execSync('npm run package', { stdio: 'inherit' })
     } catch (error) {
@@ -452,9 +449,9 @@ class SmartVersionManager {
    * Показать следующие шаги
    */
   private printNextSteps(version: string): void {
-    console.log('\n📋 Следующие шаги:')
-    console.log('1. Проверьте изменения в CHANGELOG.md')
-    console.log('2. Отправьте изменения: git push --follow-tags origin main')
+    console.log('\n📋 Next steps:')
+    console.log('1. Review changes in CHANGELOG.md')
+    console.log('2. Push changes: git push --follow-tags origin main')
     console.log('3. Опубликуйте пакет: npm run publish')
     console.log('4. Проверьте релиз на GitHub')
     console.log(`\n🎉 Новая версия: ${version}`)

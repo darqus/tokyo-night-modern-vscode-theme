@@ -5,43 +5,43 @@
   "types": [
     {
       "type": "feat",
-      "section": "✨ Новые возможности"
+      "section": "✨ Features"
     },
     {
       "type": "fix",
-      "section": "🐛 Исправления"
+      "section": "🐛 Bug Fixes"
     },
     {
       "type": "perf",
-      "section": "⚡ Улучшения производительности"
+      "section": "⚡ Performance Improvements"
     },
     {
       "type": "revert",
-      "section": "⏪ Откаты"
+      "section": "⏪ Reverts"
     },
     {
       "type": "docs",
-      "section": "📚 Документация",
+      "section": "📚 Documentation",
       "hidden": false
     },
     {
       "type": "style",
-      "section": "💄 Стили и форматирование",
+      "section": "💄 Styles and Formatting",
       "hidden": false
     },
     {
       "type": "refactor",
-      "section": "♻️ Рефакторинг",
+      "section": "♻️ Code Refactoring",
       "hidden": false
     },
     {
       "type": "test",
-      "section": "🧪 Тесты",
+      "section": "🧪 Tests",
       "hidden": false
     },
     {
       "type": "build",
-      "section": "🏗️ Сборка и зависимости",
+      "section": "🏗️ Build System",
       "hidden": false
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "type": "chore",
-      "section": "🔧 Прочие изменения",
+      "section": "🔧 Miscellaneous Chores",
       "hidden": true
     }
   ],
@@ -61,7 +61,7 @@
   "userUrlFormat": "{{host}}/{{user}}",
   "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
   "issuePrefixes": ["#"],
-  "header": "# Changelog\n\nВсе значительные изменения в этом проекте будут документированы в этом файле.\n\nФормат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.0.0/),\nи этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).\n\n",
+  "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),\nand this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n\n",
   "skip": {
     "bump": false,
     "changelog": false,
@@ -81,9 +81,9 @@
     }
   ],
   "scripts": {
-    "postchangelog": "echo '📝 CHANGELOG обновлен'",
-    "postcommit": "echo '💾 Коммит релиза создан'",
-    "posttag": "echo '🏷️ Тег создан'",
-    "postrelease": "echo '🚀 Релиз завершен! Не забудьте: git push --follow-tags origin main'"
+    "postchangelog": "echo '📝 CHANGELOG updated'",
+    "postcommit": "echo '💾 Release commit created'",
+    "posttag": "echo '🏷️ Tag created'",
+    "postrelease": "echo '🚀 Release completed! Don\\'t forget: git push --follow-tags origin main'"
   }
 }
