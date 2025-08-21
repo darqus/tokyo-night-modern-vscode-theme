@@ -42,6 +42,16 @@
         "label": "Tokyo Night Lod Minimal",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-dark-minimal-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Lod Accessibility",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-accessibility-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Lod Clean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-minimal-color-theme.json"
       }
     ]
   },
