@@ -783,8 +783,8 @@ export const getTokenColors = (): TokenColor[] => [
       foreground: palette.accent.red,
     },
   },
-  // JSON Key Scopes (Generated)
-  ...Array.from({ length: 9 }).map((_, i) => {
+  // JSON Key Scopes (Optimized)
+  ...Array.from({ length: 4 }).map((_, i) => {
     const baseScope = 'source.json meta.structure.dictionary.json'
     const levelScope = Array.from({ length: i })
       .map(
@@ -801,11 +801,6 @@ export const getTokenColors = (): TokenColor[] => [
       palette.token.templateKeyword,
       palette.accent.cyan,
       palette.accent.magenta,
-      palette.accent.yellow,
-      palette.token.templateKeyword, // Level 5 uses same as Level 1
-      palette.token.objectKey,
-      palette.accent.red,
-      palette.token.string,
     ]
 
     return {

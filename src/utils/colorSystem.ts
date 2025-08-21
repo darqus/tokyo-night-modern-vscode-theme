@@ -14,9 +14,9 @@ export class DynamicColorSystem {
   }
 
   /**
-   * Генерация цветов по глубине (для вложенных структур JSON, XML)
+   * Генерация цветов по глубине (для вложенных структур JSON, XML) - оптимизировано
    */
-  generateByDepth(baseColor: Hex, depth: number, maxDepth: number = 8): Hex {
+  generateByDepth(baseColor: Hex, depth: number, maxDepth: number = 4): Hex {
     const lightness = this.mapDepthToLightness(depth, maxDepth)
     return this.adjustLightness(baseColor, lightness)
   }
@@ -46,9 +46,9 @@ export class DynamicColorSystem {
   }
 
   /**
-   * Генерация JSON ключей динамически
+   * Генерация JSON ключей динамически (оптимизировано)
    */
-  generateJsonKeys(maxDepth: number = 8): Record<string, Hex> {
+  generateJsonKeys(maxDepth: number = 4): Record<string, Hex> {
     const result: Record<string, Hex> = {}
     const baseColor = this.baseColors.get('blue') || '#7aa2f7'
 
@@ -104,9 +104,9 @@ export class DynamicColorSystem {
   private simpleLightnessAdjust(color: Hex, lightness: number): Hex {
     // Простая реализация без внешних зависимостей
     const hex = color.replace('#', '')
-    const r = parseInt(hex.substr(0, 2), 16)
-    const g = parseInt(hex.substr(2, 2), 16)
-    const b = parseInt(hex.substr(4, 2), 16)
+    const r = parseInt(hex.substring(0, 2), 16)
+    const g = parseInt(hex.substring(2, 4), 16)
+    const b = parseInt(hex.substring(4, 6), 16)
 
     const factor = lightness
     const newR = Math.round(r * factor)
@@ -145,9 +145,18 @@ export class StateColorSystem {
   private adjustBrightness(color: Hex, factor: number): Hex {
     // Простая реализация без внешних зависимостей
     const hex = color.replace('#', '')
-    const r = Math.min(255, Math.round(parseInt(hex.substr(0, 2), 16) * factor))
-    const g = Math.min(255, Math.round(parseInt(hex.substr(2, 2), 16) * factor))
-    const b = Math.min(255, Math.round(parseInt(hex.substr(4, 2), 16) * factor))
+    const r = Math.min(
+      255,
+      Math.round(parseInt(hex.substring(0, 2), 16) * factor)
+    )
+    const g = Math.min(
+      255,
+      Math.round(parseInt(hex.substring(2, 4), 16) * factor)
+    )
+    const b = Math.min(
+      255,
+      Math.round(parseInt(hex.substring(4, 6), 16) * factor)
+    )
 
     return `#${r.toString(16).padStart(2, '0')}${g
       .toString(16)
