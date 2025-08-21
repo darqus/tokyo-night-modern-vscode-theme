@@ -109,35 +109,29 @@ export const buildThemeWithConfig = (configName?: string) => {
 /**
  * Генерация динамических цветов
  */
-export const buildDynamicColors = () => {
-  // Убираем генерацию недопустимых цветовых свойств для VS Code тем
-  // JSON-ключи и Markdown заголовки уже правильно настроены в tokenColors
-  const dynamicColors: Record<string, string> = {}
-
-  return dynamicColors
-}
-
 const main = () => {
   console.log('🏗️  Сборка темы Tokyo Night Lod...')
 
-  const original = fs.readFileSync(themePath, 'utf8')
-  const theme = JSON.parse(original) as Record<string, any>
-
-  // Используем стандартную сборку цветов
-  const baseColors = buildColors()
-
-  // Добавляем динамические цвета
-  const dynamicColors = buildDynamicColors()
-
-  // Объединяем все цвета
-  theme.colors = {
-    ...baseColors,
-    ...dynamicColors,
+  // Создаем директорию themes если она не существует
+  const themesDir = path.dirname(themePath)
+  if (!fs.existsSync(themesDir)) {
+    fs.mkdirSync(themesDir, { recursive: true })
   }
 
-  theme.tokenColors = tokenColors
-  theme.semanticTokenColors = semanticTokenColors
+  // Генерируем тему с нуля
+  const theme = {
+    name: 'Tokyo Night Lod',
+    displayName: 'Tokyo Night Lod',
+    author: 'lod',
+    maintainers: ['lod'],
+    type: 'dark',
+    semanticClass: 'tokyo-night',
+    semanticTokenColors: semanticTokenColors,
+    colors: buildColors(),
+    tokenColors: tokenColors,
+  }
 
+  // Сохраняем основную тему
   const out = JSON.stringify(theme, null, 2) + '\n'
   fs.writeFileSync(themePath, out, 'utf8')
 
@@ -154,8 +148,11 @@ const main = () => {
     'themes',
     'tokyo-night-dark-high-contrast-color-theme.json'
   )
-  const accessibilityOut = JSON.stringify(accessibilityTheme, null, 2) + '\n'
-  fs.writeFileSync(accessibilityPath, accessibilityOut, 'utf8')
+  fs.writeFileSync(
+    accessibilityPath,
+    JSON.stringify(accessibilityTheme, null, 2) + '\n',
+    'utf8'
+  )
   console.log(`✅ Высококонтрастный вариант: ${accessibilityPath}`)
 
   // Генерируем минималистичный вариант
@@ -165,8 +162,11 @@ const main = () => {
     'themes',
     'tokyo-night-dark-minimal-color-theme.json'
   )
-  const minimalOut = JSON.stringify(minimalTheme, null, 2) + '\n'
-  fs.writeFileSync(minimalPath, minimalOut, 'utf8')
+  fs.writeFileSync(
+    minimalPath,
+    JSON.stringify(minimalTheme, null, 2) + '\n',
+    'utf8'
+  )
   console.log(`✅ Минималистичный вариант: ${minimalPath}`)
 }
 
