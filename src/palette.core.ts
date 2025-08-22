@@ -33,21 +33,21 @@ export const core = {
 
   // Текстовые тона
   text: {
-    // Чуть более холодные тона для текста, чтобы убрать розоватый оттенок на откалиброванных дисплеях
-    primary: '#c7d2ff' as Hex,
-    muted: '#b3bce8' as Hex,
-    subtle: '#7580a7' as Hex,
-    inactive: '#7883b3' as Hex,
-    soft: '#b3bce8' as Hex,
+    // Ещё более нейтральные (серо-синие) тона текста для интерфейса
+    primary: '#c9d1e6' as Hex,
+    muted: '#b6bfd4' as Hex,
+    subtle: '#77819b' as Hex,
+    inactive: '#7681a0' as Hex,
+    soft: '#b6bfd4' as Hex,
     selection: '#ffffff' as Hex,
-    subtle2: '#9aa5ce' as Hex,
+    subtle2: '#96a1be' as Hex,
     gray600: '#545c7e' as Hex,
     comment: '#6b7499' as Hex,
     commentDoc: '#5a607a' as Hex,
     commentDocEmphasized: '#7481a6' as Hex,
     preformat: '#9699a8' as Hex,
-    placeholder: '#7a85b0' as Hex,
-    editorLinkActive: '#acb0d0' as Hex,
+    placeholder: '#8892a6' as Hex,
+    editorLinkActive: '#aeb8d0' as Hex,
   },
 
   // Акцентные семейства

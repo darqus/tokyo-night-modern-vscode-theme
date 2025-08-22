@@ -46,8 +46,8 @@ export const palette: Palette = {
     onSelection: core.text.selection, // Текст поверх выделения
     activeTitle: core.text.primary, // Активные заголовки
     // Улучшенные элементы UI с повышенной контрастностью
-    breadcrumb: core.accent.blue, // Текст хлебных крошек (улучшение контрастности до 4.5:1)
-    description: core.accent.blue, // Текст описаний (более читаемый)
+    breadcrumb: core.text.primary, // Нейтральный для хлебных крошек
+    description: core.text.muted, // Нейтральный для описаний
   },
   brand: {
     // Брендовые цвета

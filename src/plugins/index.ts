@@ -180,9 +180,9 @@ export const highContrastPlugin: ThemePlugin = {
     enhancedColors['sideBar.foreground'] = core.text.selection
 
     // Усиливаем границы
-    enhancedColors.focusBorder = core.text.selection
-    enhancedColors['button.focusBorder'] = core.text.selection
-    enhancedColors['input.focusBorder'] = core.text.selection
+    enhancedColors.focusBorder = core.text.primary
+    enhancedColors['button.focusBorder'] = core.text.primary
+    enhancedColors['input.focusBorder'] = core.text.primary
 
     return {
       ...theme,

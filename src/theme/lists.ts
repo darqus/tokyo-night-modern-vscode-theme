@@ -15,7 +15,7 @@ export const getListColors = () => ({
   'list.inactiveFocusBackground': palette.bg.selection.inactive,
   'list.hoverBackground': palette.ui.list.hoverBg, // используем обновленный hover цвет для списков
   'list.hoverForeground': palette.fg.primary,
-  'list.highlightForeground': palette.ui.badge.base, // Используем цвет бейджа для подсветки
+  'list.highlightForeground': palette.fg.primary, // Нейтральная подсветка текста
   'list.invalidItemForeground': palette.accent.yellow,
   'list.errorForeground': palette.accent.red,
   'list.warningForeground': palette.accent.yellow,

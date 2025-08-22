@@ -15,7 +15,7 @@ export const getEditorColors = () => ({
   /** Цвет для пятой пары скобок */
   'editorBracketHighlight.foreground5': palette.accent.red, // красный
   /** Цвет для шестой пары скобок */
-  'editorBracketHighlight.foreground6': palette.accent.magenta, // магента
+  'editorBracketHighlight.foreground6': palette.accent.blue, // холоднее, вместо магенты
   /** Цвет для неожиданных/несоответствующих скобок */
   'editorBracketHighlight.unexpectedBracket.foreground': palette.accent.red,
   /** Цвет фона для активной направляющей первой пары скобок */
@@ -81,7 +81,7 @@ export const getEditorColors = () => ({
     '15%'
   ),
   /** Цвет рамки для других найденных совпадений */
-  'editor.findMatchHighlightBorder': withAlpha(palette.accent.magenta, '15%'),
+  'editor.findMatchHighlightBorder': withAlpha(palette.accent.blue, '15%'),
   /** Цвет фона для выделения диапазона поиска */
   'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '25%'),
   /** Цвет рамки для выделения диапазона поиска */
@@ -91,16 +91,13 @@ export const getEditorColors = () => ({
 
   // === ВЫДЕЛЕНИЕ СЛОВ И СИМВОЛОВ ===
   /** Цвет фона для выделения слова под курсором (read access) */
-  'editor.wordHighlightBackground': withAlpha(palette.accent.magenta, '5%'),
+  'editor.wordHighlightBackground': withAlpha(palette.accent.blue, '5%'),
   /** Цвет рамки для выделения слова под курсором */
-  'editor.wordHighlightBorder': withAlpha(palette.accent.magenta, '45%'),
+  'editor.wordHighlightBorder': withAlpha(palette.accent.blue, '45%'),
   /** Цвет фона для "сильного" выделения слова (write access) */
-  'editor.wordHighlightStrongBackground': withAlpha(
-    palette.accent.magenta,
-    '15%'
-  ),
+  'editor.wordHighlightStrongBackground': withAlpha(palette.accent.blue, '15%'),
   /** Цвет рамки для "сильного" выделения слова */
-  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.magenta, '45%'),
+  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.blue, '45%'),
   /** Цвет фона для выделения похожих символов при выделении */
   'editor.selectionHighlightBackground': withAlpha(palette.accent.blue, '15%'),
   /** Цвет рамки для выделения похожих символов */
@@ -190,12 +187,12 @@ export const getEditorColors = () => ({
   ),
   /** Цвет индикаторов выделенных слов (read) в миниатюре */
   'editorOverviewRuler.wordHighlightForeground': withAlpha(
-    palette.accent.magenta,
+    palette.accent.blue,
     '15%'
   ),
   /** Цвет индикаторов выделенных слов (write) в миниатюре */
   'editorOverviewRuler.wordHighlightStrongForeground': withAlpha(
-    palette.accent.magenta,
+    palette.accent.blue,
     '15%'
   ),
   /** Цвет индикаторов измененных строк в миниатюре */

@@ -9,7 +9,7 @@
       "foreground": "#7dd3fc"
     },
     "parameter": {
-      "foreground": "#b3bce8"
+      "foreground": "#b6bfd4"
     },
     "property.declaration": {
       "foreground": "#85c9c1"
@@ -33,14 +33,14 @@
       "foreground": "#7dcfff"
     },
     "variable.mutable": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "variable.static": {
       "foreground": "#bb9af7",
       "bold": true
     },
     "variable.local": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "variable.global": {
       "foreground": "#e46876"
@@ -206,7 +206,7 @@
       "foreground": "#7aa2f7"
     },
     "class:css": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "id:css": {
       "foreground": "#bb9af7"
@@ -228,11 +228,11 @@
       "bold": true
     },
     "emphasis:markdown": {
-      "foreground": "#c7d2ff",
+      "foreground": "#c9d1e6",
       "italic": true
     },
     "strong:markdown": {
-      "foreground": "#c7d2ff",
+      "foreground": "#c9d1e6",
       "bold": true
     },
     "code:markdown": {
@@ -323,7 +323,7 @@
       "underline": true
     },
     "deprecated": {
-      "foreground": "#7883b3",
+      "foreground": "#7681a0",
       "strikethrough": true
     },
     "regexp": {
@@ -348,7 +348,7 @@
       "foreground": "#7dd3fc"
     },
     "argument": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "label": {
       "foreground": "#7aa2f7"
@@ -363,13 +363,13 @@
       "foreground": "#7dd3fc"
     },
     "punctuation": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "punctuation.delimiter": {
-      "foreground": "#b3bce8"
+      "foreground": "#b6bfd4"
     },
     "punctuation.bracket": {
-      "foreground": "#c7d2ff"
+      "foreground": "#c9d1e6"
     },
     "punctuation.special": {
       "foreground": "#bb9af7"
@@ -616,7 +616,7 @@
         "meta.at-rule.function variable.parameter.url"
       ],
       "settings": {
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
@@ -686,7 +686,7 @@
       "name": "Tag Punctuation",
       "scope": "punctuation.definition.tag",
       "settings": {
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
@@ -712,14 +712,14 @@
         "variable.parameter.handlebars"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
       "name": "Object Variable",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -740,7 +740,7 @@
         "meta.field.declaration.ts variable.object.property"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -759,7 +759,7 @@
       "name": "Object Property",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -879,7 +879,7 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -923,7 +923,7 @@
         "meta.at-rule.mixin.scss entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -976,7 +976,7 @@
         "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1019,7 +1019,7 @@
       "name": "SCSS Include Mixin Argument",
       "scope": "meta.property-list meta.at-rule.include",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1037,7 +1037,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1051,7 +1051,7 @@
       "name": "Variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1170,21 +1170,21 @@
       "name": "Regular Expressions - Quantifier",
       "scope": "keyword.operator.quantifier.regexp",
       "settings": {
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
       "name": "Regular Expressions - Backslash",
       "scope": "constant.character.escape.backslash",
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
       "name": "Escape Characters",
       "scope": "constant.character.escape",
       "settings": {
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
@@ -1279,7 +1279,7 @@
         "meta.embedded.block"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1314,7 +1314,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
@@ -1380,7 +1380,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1391,7 +1391,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1402,7 +1402,7 @@
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1438,7 +1438,7 @@
         "string.other.link.description.title.markdown"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
@@ -1449,7 +1449,7 @@
         "variable.language.fenced.markdown"
       ],
       "settings": {
-        "foreground": "#363846"
+        "foreground": "#373940"
       }
     },
     {
@@ -1508,7 +1508,7 @@
         "meta.preprocessor"
       ],
       "settings": {
-        "foreground": "#3c3f4d"
+        "foreground": "#3c3f45"
       }
     },
     {
