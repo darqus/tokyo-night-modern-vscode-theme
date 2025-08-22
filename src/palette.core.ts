@@ -75,8 +75,8 @@ export const core = {
   },
   brand: {
     button: {
-      primary: mix(interfaceColors.editorBg, basePalette.blue, 0.18),
-      hover: mix(interfaceColors.editorBg, basePalette.blue, 0.25),
+      primary: mix(interfaceColors.editorBg, basePalette.blue, 0.08),
+      hover: mix(interfaceColors.editorBg, basePalette.blue, 0.12),
     },
   },
   ui: {
