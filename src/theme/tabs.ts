@@ -3,8 +3,8 @@ import { withAlpha } from '../utils/color'
 
 export const getTabColors = () => ({
   // Вкладки
-  'tab.activeBackground': palette.bg.base, // Фон активной вкладки
-  'tab.inactiveBackground': palette.bg.elevated, // Фон неактивной вкладки
+  'tab.activeBackground': palette.bg.base, // Фон активной вкладки - теперь светлее
+  'tab.inactiveBackground': palette.bg.base, // Фон неактивной вкладки - теперь темнее
   'tab.activeForeground': palette.fg.primary, // Текст активной вкладки - более яркий
   'tab.hoverForeground': palette.fg.selectionText, // Текст при наведении - максимальная контрастность
   'tab.activeBorder': palette.ui.badge.base, // Граница активной вкладки - синхронизация с бейджами
@@ -17,6 +17,6 @@ export const getTabColors = () => ({
   'tab.inactiveModifiedBorder': palette.ui.tab.inactiveModifiedBorder,
   'tab.unfocusedActiveBorder': palette.ui.badge.base, // Синхронизация с бейджами
   'tab.lastPinnedBorder': withAlpha(palette.fg.subtle, '80%'), // Более заметная граница
-  'tab.selectedBackground': palette.bg.base, // Фон выбранной вкладки
+  'tab.selectedBackground': palette.bg.base, // Фон выбранной вкладки - соответствует активной
   'tab.selectedForeground': withAlpha(palette.fg.selectionText, '63%'), // Текст выбранной вкладки
 })

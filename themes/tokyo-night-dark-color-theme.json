@@ -619,7 +619,7 @@
     "searchEditor.findMatchBorder": "#7dcfff",
     "searchEditor.textInputBorder": "#2d2d31",
     "tab.activeBackground": "#18181d",
-    "tab.inactiveBackground": "#2a2a2f",
+    "tab.inactiveBackground": "#18181d",
     "tab.activeForeground": "#c5c5c7",
     "tab.hoverForeground": "#ffffff",
     "tab.activeBorder": "#7bb2fa",
