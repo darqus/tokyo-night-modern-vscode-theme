@@ -79,3 +79,60 @@ export const withAlpha = (hex: Hex, alpha: number | string): Hex => {
 export const toString = <T>(v: T): T => {
   return v
 }
+
+/**
+ * Parse 6/8-digit hex to RGB(A)
+ */
+const parseHex = (
+  hex: Hex
+): { r: number; g: number; b: number; a?: number } => {
+  const m = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i.exec(hex)
+  if (!m) throw new Error(`Недопустимый шестнадцатеричный цвет: ${hex}`)
+  const int = parseInt(m[1], 16)
+  const r = (int >> 16) & 0xff
+  const g = (int >> 8) & 0xff
+  const b = int & 0xff
+  const a = m[2] ? parseInt(m[2], 16) : undefined
+  return { r, g, b, a }
+}
+
+/**
+ * Convert RGB to 6-digit hex
+ */
+const rgbToHex = (r: number, g: number, b: number): Hex => {
+  const clamp = (v: number) => Math.max(0, Math.min(255, Math.round(v)))
+  return ('#' +
+    clamp(r).toString(16).padStart(2, '0') +
+    clamp(g).toString(16).padStart(2, '0') +
+    clamp(b).toString(16).padStart(2, '0')) as Hex
+}
+
+/**
+ * Смешивает два цвета (линейная интерполяция в RGB)
+ * @param a Цвет A
+ * @param b Цвет B
+ * @param weight Доля смешивания B [0..1]; 0 -> A, 1 -> B
+ */
+export const mix = (a: Hex, b: Hex, weight: number): Hex => {
+  const w = Math.max(0, Math.min(1, weight))
+  const ca = parseHex(ensure6(a) as Hex)
+  const cb = parseHex(ensure6(b) as Hex)
+  const r = ca.r * (1 - w) + cb.r * w
+  const g = ca.g * (1 - w) + cb.g * w
+  const bl = ca.b * (1 - w) + cb.b * w
+  return rgbToHex(r, g, bl)
+}
+
+/**
+ * Осветляет цвет, смешивая его с указанным "белым" (по умолчанию — самим цветом; для удобства используйте core.text.selection при вызове)
+ */
+export const lightenToward = (color: Hex, toward: Hex, amount: number): Hex => {
+  return mix(color, toward, amount)
+}
+
+/**
+ * Затемняет цвет, смешивая его с указанным "чёрным" (передавайте самый тёмный фон палитры)
+ */
+export const darkenToward = (color: Hex, toward: Hex, amount: number): Hex => {
+  return mix(color, toward, amount)
+}

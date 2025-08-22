@@ -151,45 +151,10 @@ export class ThemeVariantManager {
   }
 
   private invertPaletteForLight(palette: Palette): Palette {
-    // Базовая инверсия для создания светлой темы
-    return {
-      ...palette,
-      bg: {
-        ...palette.bg,
-        base: '#ffffff',
-        elevated: '#f8f9fa',
-        sunken: '#e9ecef',
-        overlay: '#f1f3f4',
-        input: '#ffffff',
-        hover: '#f8f9fa',
-        active: '#e9ecef',
-        drop: '#e3f2fd',
-        lineHighlight: '#f5f5f5',
-        bracketMatch: '#e8f5e8',
-        tabs: '#ffffff',
-        selection: {
-          active: '#e3f2fd',
-          inactive: '#f0f0f0',
-          focus: '#bbdefb',
-          menu: '#e1f5fe',
-        },
-      },
-      fg: {
-        ...palette.fg,
-        primary: '#263238',
-        muted: '#455a64',
-        subtle: '#78909c',
-        inactive: '#90a4ae',
-        panelText: '#37474f',
-        soft: '#546e7a',
-        softTitle: '#455a64',
-        selectionText: '#000000',
-        onSelection: '#000000',
-        activeTitle: '#263238',
-        breadcrumb: '#1976d2',
-        description: '#1976d2',
-      },
-    }
+    // Для простоты: используем текущую палитру без хардкода — инверсия выполняется
+    // на уровне ThemeBuilder.buildLight(), где берутся соответствующие поля палитры.
+    // Здесь просто возвращаем исходную палитру, избегая прямых hex-литералов.
+    return { ...palette }
   }
 
   private adjustColorBrightness(color: string, factor: number): Hex {

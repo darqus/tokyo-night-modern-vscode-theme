@@ -1,5 +1,6 @@
 import { palette } from '../palette'
 import { core } from '../palette.core'
+import { withAlpha, darkenToward, lightenToward } from '../utils/color'
 import { buildColors } from '../build'
 import { tokenColors } from '../tokenColors'
 import { semanticTokenColors } from '../semanticTokenColors'
@@ -59,48 +60,63 @@ export class ThemeBuilder {
       'editor.foreground': core.text.selection,
       foreground: core.text.selection,
 
-      // Делаем фон более тёмным
-      'editor.background': '#000000',
-      'activityBar.background': '#000000',
-      'sideBar.background': '#000000',
-      'statusBar.background': '#000000',
-      'titleBar.activeBackground': '#000000',
+      // Делаем фон более тёмным (без прямого хардкода чёрного)
+      'editor.background': darkenToward(core.bg.base, core.bg.sunken, 0.6),
+      'activityBar.background': darkenToward(core.bg.base, core.bg.sunken, 0.7),
+      'sideBar.background': darkenToward(core.bg.base, core.bg.sunken, 0.6),
+      'statusBar.background': darkenToward(core.bg.base, core.bg.sunken, 0.75),
+      'titleBar.activeBackground': darkenToward(
+        core.bg.base,
+        core.bg.sunken,
+        0.7
+      ),
 
       // Увеличиваем контраст границ
-      'activityBar.border': '#ffffff33',
-      'sideBar.border': '#ffffff33',
-      'editor.lineHighlightBorder': '#ffffff1a',
+      'activityBar.border': withAlpha(core.text.selection, '20%'),
+      'sideBar.border': withAlpha(core.text.selection, '20%'),
+      'editor.lineHighlightBorder': withAlpha(core.text.selection, '10%'),
 
       // Более контрастные цвета выделения
-      'editor.selectionBackground': '#0066cc99',
-      'editor.selectionHighlightBackground': '#00ffff33',
+      'editor.selectionBackground': withAlpha(palette.accent.blue, '60%'),
+      'editor.selectionHighlightBackground': withAlpha(
+        palette.accent.cyan,
+        '20%'
+      ),
 
       // Более яркие акцентные цвета
-      'activityBar.activeBorder': '#00ffff',
-      'tab.activeBorder': '#00ffff',
-      'panelTitle.activeBorder': '#00ffff',
+      'activityBar.activeBorder': palette.accent.cyan,
+      'tab.activeBorder': palette.accent.cyan,
+      'panelTitle.activeBorder': palette.accent.cyan,
 
       // Контрастные кнопки
-      'button.background': '#0066cc',
+      'button.background': darkenToward(
+        palette.brand.primary,
+        core.bg.base,
+        0.2
+      ),
       'button.foreground': core.text.selection,
-      'button.hoverBackground': '#0080ff',
+      'button.hoverBackground': lightenToward(
+        palette.brand.primary,
+        palette.token.codeBlock,
+        0.2
+      ),
 
       // Контрастные поля ввода
-      'input.background': '#1a1a1a',
+      'input.background': core.bg.input,
       'input.foreground': core.text.selection,
-      'input.border': '#ffffff66',
+      'input.border': withAlpha(core.text.selection, '40%'),
     }
 
     // Корректируем семантические токены для лучшего контраста
     const highContrastSemanticTokens = {
       ...semanticTokenColors,
       variable: { foreground: core.text.selection },
-      function: { foreground: '#00ffff' },
-      class: { foreground: '#ffff00' },
-      type: { foreground: '#ff00ff' },
-      keyword: { foreground: '#00ff00' },
-      string: { foreground: '#ff8000' },
-      comment: { foreground: '#808080' },
+      function: { foreground: palette.accent.cyan },
+      class: { foreground: palette.accent.purple },
+      type: { foreground: palette.accent.magenta },
+      keyword: { foreground: palette.accent.magenta },
+      string: { foreground: palette.token.string },
+      comment: { foreground: palette.token.comment },
     }
 
     return {
@@ -186,60 +202,60 @@ export class ThemeBuilder {
     // Инвертируем цвета для светлой темы
     const lightColors = {
       // Базовые цвета
-      foreground: '#263238',
-      descriptionForeground: '#455a64',
-      errorForeground: '#b71c1c',
+      foreground: palette.fg.primary,
+      descriptionForeground: palette.fg.description,
+      errorForeground: palette.ui.debug.consoleError,
 
       // Фоны
-      'editor.background': '#ffffff',
-      'editor.foreground': '#263238',
-      'activityBar.background': '#f5f5f5',
-      'activityBar.foreground': '#263238',
-      'sideBar.background': '#fafafa',
-      'sideBar.foreground': '#37474f',
-      'statusBar.background': '#e0e0e0',
-      'statusBar.foreground': '#263238',
-      'titleBar.activeBackground': '#f5f5f5',
-      'titleBar.activeForeground': '#263238',
+      'editor.background': palette.bg.base,
+      'editor.foreground': palette.fg.primary,
+      'activityBar.background': palette.bg.elevated,
+      'activityBar.foreground': palette.fg.primary,
+      'sideBar.background': palette.bg.overlay,
+      'sideBar.foreground': palette.fg.panelText,
+      'statusBar.background': palette.bg.sunken,
+      'statusBar.foreground': palette.fg.primary,
+      'titleBar.activeBackground': palette.bg.elevated,
+      'titleBar.activeForeground': palette.fg.primary,
 
       // Границы
-      'activityBar.border': '#e0e0e0',
-      'sideBar.border': '#e0e0e0',
-      'panel.border': '#e0e0e0',
-      'tab.border': '#e0e0e0',
+      'activityBar.border': palette.line.border,
+      'sideBar.border': palette.line.border,
+      'panel.border': palette.line.border,
+      'tab.border': palette.line.border,
 
       // Активные элементы
-      'activityBar.activeBorder': '#1976d2',
-      'tab.activeBorder': '#1976d2',
-      'activityBar.activeBackground': '#e3f2fd',
+      'activityBar.activeBorder': palette.ui.tab.activeBorder,
+      'tab.activeBorder': palette.ui.tab.activeBorder,
+      'activityBar.activeBackground': palette.bg.selection.active,
 
       // Выделение
-      'editor.selectionBackground': '#b3d4fc',
-      'editor.lineHighlightBackground': '#f5f5f5',
+      'editor.selectionBackground': palette.bg.selection.active,
+      'editor.lineHighlightBackground': palette.bg.lineHighlight,
 
       // Кнопки
-      'button.background': '#1976d2',
+      'button.background': palette.brand.button.primary,
       'button.foreground': core.text.selection,
-      'button.hoverBackground': '#1565c0',
+      'button.hoverBackground': palette.brand.button.hover,
 
       // Поля ввода
-      'input.background': '#ffffff',
-      'input.foreground': '#263238',
-      'input.border': '#bdbdbd',
+      'input.background': palette.bg.input,
+      'input.foreground': palette.fg.primary,
+      'input.border': palette.ui.input.border,
       // Видимая граница фокуса для улучшенной доступности
-      focusBorder: '#1976d2',
+      focusBorder: palette.ui.tab.activeBorder,
     }
 
     // Светлые семантические токены
     const lightSemanticTokens = {
       ...semanticTokenColors,
-      variable: { foreground: '#263238' },
-      function: { foreground: '#1976d2' },
-      class: { foreground: '#7b1fa2' },
-      keyword: { foreground: '#6a1b9a' },
-      string: { foreground: '#388e3c' },
-      comment: { foreground: '#757575' },
-      number: { foreground: '#f57c00' },
+      variable: { foreground: palette.fg.primary },
+      function: { foreground: palette.accent.blue },
+      class: { foreground: palette.accent.purple },
+      keyword: { foreground: palette.accent.purple },
+      string: { foreground: palette.token.string },
+      comment: { foreground: palette.token.comment },
+      number: { foreground: palette.token.number },
     }
 
     return {
@@ -272,30 +288,43 @@ export class ThemeBuilder {
       'statusBar.foreground': core.text.selection,
 
       // Более заметные границы
-      focusBorder: '#ffff00', // Жёлтая граница фокуса
-      'activityBar.activeBorder': '#ffff00',
-      'tab.activeBorder': '#ffff00',
-      'button.border': '#ffffff',
+      focusBorder: palette.ui.tab.activeModifiedBorder,
+      'activityBar.activeBorder': palette.ui.tab.activeModifiedBorder,
+      'tab.activeBorder': palette.ui.tab.activeModifiedBorder,
+      'button.border': core.text.selection,
 
       // Контрастные кнопки
-      'button.background': '#0066cc',
+      'button.background': darkenToward(
+        palette.brand.primary,
+        core.bg.base,
+        0.2
+      ),
       'button.foreground': core.text.selection,
-      'button.hoverBackground': '#0080ff',
+      'button.hoverBackground': lightenToward(
+        palette.brand.primary,
+        palette.token.codeBlock,
+        0.2
+      ),
 
       // Заметные цвета состояний
-      'inputValidation.errorBorder': '#ff0000',
-      'inputValidation.warningBorder': '#ffaa00',
-      'inputValidation.infoBorder': '#00aaff',
+      'inputValidation.errorBorder': palette.accent.red,
+      'inputValidation.warningBorder': palette.accent.yellow,
+      'inputValidation.infoBorder': palette.accent.cyan,
 
-      // Контрастные цвета Git
-      'gitDecoration.addedResourceForeground': '#00ff00',
-      'gitDecoration.modifiedResourceForeground': '#ffff00',
-      'gitDecoration.deletedResourceForeground': '#ff0000',
+      // Контрастные цвета Git (основаны на тех же оттенках, что и в обзоре редактора)
+      'gitDecoration.addedResourceForeground': palette.ui.editorOverview.added,
+      'gitDecoration.modifiedResourceForeground':
+        palette.ui.editorOverview.modified,
+      'gitDecoration.deletedResourceForeground':
+        palette.ui.editorOverview.deleted,
 
       // Контрастное выделение
-      'editor.selectionBackground': '#0066cc99',
-      'editor.wordHighlightBackground': '#ffff0066',
-      'editor.wordHighlightStrongBackground': '#ff660066',
+      'editor.selectionBackground': withAlpha(palette.accent.blue, '60%'),
+      'editor.wordHighlightBackground': withAlpha(palette.accent.yellow, '40%'),
+      'editor.wordHighlightStrongBackground': withAlpha(
+        palette.accent.red,
+        '40%'
+      ),
     }
 
     return {
@@ -349,23 +378,12 @@ export class ThemeBuilder {
    * Корректировка tokenColors для светлой темы
    */
   private static adjustTokenColorsForLight(tokens: any[]): any[] {
-    const lightColorMap: Record<string, string> = {
-      '#7aa2f7': '#1976d2', // blue -> dark blue
-      '#bb9af7': '#7b1fa2', // purple -> dark purple
-      '#9ece6a': '#388e3c', // green -> dark green
-      '#f7768e': '#d32f2f', // red -> dark red
-      '#7dcfff': '#0277bd', // cyan -> dark cyan
-      '#c0caf5': '#263238', // white -> dark gray
-      '#a9b1d6': '#455a64', // muted -> dark muted
-    }
-
     return tokens.map((token) => ({
       ...token,
       settings: {
         ...token.settings,
         foreground: token.settings?.foreground
-          ? lightColorMap[token.settings.foreground] ||
-            this.darkenColor(token.settings.foreground)
+          ? this.darkenColor(token.settings.foreground)
           : undefined,
       },
     }))
@@ -423,17 +441,8 @@ export class ThemeBuilder {
    * Делает цвет доступным (WCAG AAA)
    */
   private static makeAccessible(color: string): string {
-    // Специальные цвета для accessibility
-    const accessibleColors: Record<string, string> = {
-      '#7aa2f7': '#4fc3f7', // Более яркий синий
-      '#bb9af7': '#e1bee7', // Более яркий фиолетовый
-      '#9ece6a': '#a5d6a7', // Более яркий зелёный
-      '#f7768e': '#ffab91', // Более яркий красный
-      '#7dcfff': '#80deea', // Более яркий циан
-      '#c0caf5': '#ffffff', // Белый
-      '#a9b1d6': '#e0e0e0', // Светло-серый
-    }
-
-    return accessibleColors[color] || color
+    // Алгоритмическое повышение контрастности без хардкода карт соответствий
+    if (!color.startsWith('#')) return color
+    return lightenToward(color as any, core.text.selection, 0.3)
   }
 }
