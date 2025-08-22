@@ -304,10 +304,10 @@
       "foreground": "#7dcfff"
     },
     "comment": {
-      "foreground": "#dff3ff"
+      "foreground": "#acb3be"
     },
     "comment.documentation": {
-      "foreground": "#dff3ff",
+      "foreground": "#acb3be",
       "italic": true
     },
     "comment.keyword": {
@@ -446,7 +446,7 @@
         "comment.block.documentation punctuation"
       ],
       "settings": {
-        "foreground": "#43494d"
+        "foreground": "#343639"
       }
     },
     {
@@ -466,7 +466,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#464a4d"
+        "foreground": "#38393c"
       }
     },
     {
@@ -478,7 +478,7 @@
         "comment.block.documentation entity.name.type.instance"
       ],
       "settings": {
-        "foreground": "#464a4d"
+        "foreground": "#38393c"
       }
     },
     {
@@ -1303,7 +1303,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#43494d"
+        "foreground": "#343639"
       }
     },
     {
@@ -1419,7 +1419,7 @@
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#43494d"
+        "foreground": "#343639"
       }
     },
     {
@@ -1457,7 +1457,7 @@
       "scope": "meta.separator",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#43494d"
+        "foreground": "#343639"
       }
     },
     {
