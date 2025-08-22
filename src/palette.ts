@@ -1,5 +1,37 @@
 import type { Hex, Palette } from './types/palette'
 import { core } from './palette.core'
+import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
+
+// Производные цвета для замены legacy-цветов
+const tealSoft = lightenToward(core.accent.teal, core.accent.cyan, 0.25)
+const skyLight = lightenToward(core.accent.cyan, core.accent.blue, 0.35)
+const indigo = mix(core.accent.blue, core.accent.purple, 0.5)
+const rose = lightenToward(core.accent.red, core.accent.magenta, 0.3)
+const azureLight = lightenToward(core.accent.cyan, core.accent.blue, 0.18)
+const tealDeep = darkenToward(core.accent.teal, core.accent.blue, 0.25)
+const bluePunctuation = darkenToward(core.accent.blue, core.accent.purple, 0.18)
+const blue400 = lightenToward(core.accent.blue, core.accent.cyan, 0.18)
+const mint = lightenToward(core.accent.green, core.accent.cyan, 0.18)
+const lilac = lightenToward(core.accent.magenta, core.accent.blue, 0.18)
+const pinkMuted = mix(core.accent.red, core.accent.magenta, 0.5)
+const azure = lightenToward(core.accent.cyan, core.accent.blue, 0.12)
+const maroon = darkenToward(core.accent.red, core.accent.purple, 0.18)
+const blueMuted = mix(core.accent.blue, core.text.muted, 0.4)
+const aquaLight = lightenToward(core.accent.cyan, core.accent.teal, 0.18)
+const sky = lightenToward(core.accent.cyan, core.accent.blue, 0.22)
+const grayBlue400 = mix(core.accent.blue, core.text.subtle, 0.5)
+const blueBright = lightenToward(core.accent.blue, core.accent.cyan, 0.25)
+const blueSoft = lightenToward(core.accent.blue, core.text.subtle, 0.18)
+const violet = lightenToward(core.accent.purple, core.accent.blue, 0.18)
+const cyan500 = darkenToward(core.accent.cyan, core.accent.blue, 0.18)
+const slate = mix(core.accent.blue, core.accent.cyan, 0.3)
+const steel = darkenToward(core.accent.blue, core.text.muted, 0.18)
+const steelAlt = lightenToward(core.accent.blue, core.text.muted, 0.18)
+const steelMuted = mix(core.accent.blue, core.text.muted, 0.6)
+const brick = darkenToward(core.accent.red, core.accent.orange, 0.18)
+const redMuted = mix(core.accent.red, core.text.muted, 0.5)
+const badgeBase = lightenToward(core.accent.blue, core.accent.cyan, 0.12)
+const windowBorder = darkenToward(core.accent.blue, core.text.muted, 0.22)
 
 /**
  * Базовые (ядро) цвета темы для исключения дублирования значений hex.
@@ -62,10 +94,10 @@ export const palette: Palette = {
     // Акцентные цвета для подсветки синтаксиса (оптимизированы для холодной схемы Tokyo Night)
     blue: core.accent.blue, // Синий - ключевые слова, типы
     cyan: core.accent.cyan, // Циан - строки, импорты
-    teal: core.accent.tealSoft, // Бирюзовый - свойства, атрибуты
+    teal: tealSoft, // Бирюзовый - свойства, атрибуты
     magenta: core.accent.magenta, // Пурпурный - переменные, константы
-    yellow: core.accent.skyLight, // Холодный голубо-желтый - числа, параметры
-    orange: core.accent.indigo, // Холодный индиго - функции, методы
+    yellow: skyLight, // Холодный голубо-желтый - числа, параметры
+    orange: indigo, // Холодный индиго - функции, методы
     red: core.accent.red, // Красный - ошибки, предупреждения
     purple: core.accent.purple, // Фиолетовый - операторы, специальные символы
   },
@@ -74,7 +106,7 @@ export const palette: Palette = {
     comment: core.text.comment, // Комментарии и документация
     commentDoc: core.text.commentDoc, // Подтипы документации
     commentDocEmphasized: core.text.commentDocEmphasized, // Выделенная документация
-    constant: core.accent.skyLight, // Константные значения (числа, булевы) - холодный голубо-желтый
+    constant: skyLight, // Константные значения (числа, булевы) - холодный голубо-желтый
     string: core.accent.green, // Строки и текстовое содержимое - более яркий зеленый
     color: core.text.subtle2, // Цветовые значения
     invalid: core.accent.red, // Недопустимый код
@@ -83,7 +115,7 @@ export const palette: Palette = {
     storageModifier: core.accent.purple, // Модификаторы хранения (var, const, let)
     interpolation: core.accent.cyan, // Интерполяция шаблонов
     templateKeyword: core.accent.teal, // Ключевые слова Blade/Twig/Smarty
-    spread: core.accent.rose, // Оператор распространения
+    spread: rose, // Оператор распространения
     operator: core.text.muted, // Операторы и пунктуация
     importExport: core.accent.magenta, // Ключевые слова import/export
     keyword: core.accent.magenta, // Общие ключевые слова
@@ -93,72 +125,72 @@ export const palette: Palette = {
     tag: core.accent.blue, // HTML/XML теги
     tagComponent: core.accent.magenta, // Теги компонентов (теперь пурпурные)
     tagPunctuation: core.text.muted, // Пунктуация тегов
-    globalConstant: core.accent.skyLight, // Глобальные константы - холодный голубо-желтый
+    globalConstant: skyLight, // Глобальные константы - холодный голубо-желтый
     variable: core.text.primary, // Переменные
     objectVariable: core.text.primary, // Объектные переменные
     arrayKey: core.accent.cyan, // Ключи массивов
     objectKey: core.text.primary, // Ключи объектов (теперь цвет основного текста)
     objectProperty: core.accent.cyan, // Свойства объектов
     objectPropertyAlt: core.text.primary, // Свойства объектов (альтернативные)
-    objectKeyLevel3: core.accent.azureLight, // Вложенные ключи объектов (уровень 3)
+    objectKeyLevel3: azureLight, // Вложенные ключи объектов (уровень 3)
     cVariable: core.accent.blue, // C-связанные переменные (сдвиг к синему)
     otherVariable: core.accent.cyan, // Другие переменные (сдвиг к циану)
     method: core.accent.blue, // Методы
     function: core.accent.blue, // Функции
-    functionArg: core.accent.sky, // Аргументы функций - холодный голубой
+    functionArg: sky, // Аргументы функций - холодный голубой
     typeConstant: core.accent.magenta, // Типовые константы
     variableDefinition: core.accent.magenta, // Определения переменных
     inheritedClass: core.accent.magenta, // Наследуемые классы
-    classSupport: core.accent.tealDeep, // Классы и поддерживающие типы
+    classSupport: tealDeep, // Классы и поддерживающие типы
     className: core.text.primary, // Имена классов
-    supportFunction: core.accent.tealDeep, // Поддерживающие функции
+    supportFunction: tealDeep, // Поддерживающие функции
     cssProperty: core.accent.blue, // CSS свойства
     cssFont: core.accent.green, // CSS шрифты
     cssClass: core.text.primary, // CSS классы
     cssId: core.accent.magenta, // CSS идентификаторы
-    cssTag: core.accent.tealDeep, // CSS теги
-    cssReference: core.accent.tealDeep, // CSS ссылки
-    cssPunctuation: core.accent.bluePunctuation, // CSS пунктуация
-    cssAtRule: core.accent.blue400, // CSS at-правила - холодный синий
+    cssTag: tealDeep, // CSS теги
+    cssReference: tealDeep, // CSS ссылки
+    cssPunctuation: bluePunctuation, // CSS пунктуация
+    cssAtRule: blue400, // CSS at-правила - холодный синий
     cssParentSelector: core.accent.teal, // CSS родительский селектор
     scssMixin: core.accent.magenta, // SCSS миксины
     scssInclude: core.accent.purple, // SCSS включения
-    cssValue: core.accent.mint, // CSS значения - холодный зеленый
+    cssValue: mint, // CSS значения - холодный зеленый
     languageMethod: core.accent.blue, // Языковые методы
     thisKeyword: core.accent.cyan, // Ключевое слово this
     htmlAttribute: core.accent.magenta, // HTML атрибуты
-    htmlEntity: core.accent.tealDeep, // HTML сущности
+    htmlEntity: tealDeep, // HTML сущности
     vueAttribute: core.accent.magenta, // Vue атрибуты
     cssPseudo: core.accent.magenta, // CSS псевдо-селекторы
-    markupInserted: core.accent.azure, // Вставленная разметка
-    markupDeleted: core.accent.maroon, // Удаленная разметка
-    markupChanged: core.accent.blueMuted, // Измененная разметка
-    regex: core.accent.aquaLight, // Регулярные выражения
+    markupInserted: azure, // Вставленная разметка
+    markupDeleted: maroon, // Удаленная разметка
+    markupChanged: blueMuted, // Измененная разметка
+    regex: aquaLight, // Регулярные выражения
     regexGroup: core.accent.purple, // Группы регулярных выражений (холоднее)
     regexCharClass: core.accent.magenta, // Классы символов регулярных выражений
-    regexCharSet: core.accent.sky, // Наборы символов регулярных выражений - холодный голубой
+    regexCharSet: sky, // Наборы символов регулярных выражений - холодный голубой
     regexQuantifier: core.accent.green, // Квантификаторы регулярных выражений
     regexBackslash: core.text.primary, // Обратная косая черта в регулярных выражениях
     escapeChar: core.accent.green, // Escape-символы
     decorator: core.accent.blue, // Декораторы
     cssUnit: core.accent.blue, // CSS единицы измерения (холоднее)
     jsonKey0: core.accent.blue, // JSON ключи (разные уровни)
-    jsonKey1: core.accent.tealDeep,
+    jsonKey1: tealDeep,
     jsonKey2: core.accent.cyan,
     jsonKey3: core.accent.magenta,
-    jsonKey4: core.accent.sky, // Холодный голубой
-    jsonKey5: core.accent.tealDeep,
+    jsonKey4: sky, // Холодный голубой
+    jsonKey5: tealDeep,
     jsonKey6: core.accent.teal,
     jsonKey7: core.accent.red,
     jsonKey8: core.accent.green,
-    plainPunctuation: core.accent.bluePunctuation, // Обычная пунктуация
-    blockPunctuation: core.accent.bluePunctuation, // Блочная пунктуация
+    plainPunctuation: bluePunctuation, // Обычная пунктуация
+    blockPunctuation: bluePunctuation, // Блочная пунктуация
     markdownH1: core.accent.green, // Markdown заголовки
-    markdownH2: core.accent.blueBright,
+    markdownH2: blueBright,
     markdownH3: core.accent.blue,
-    markdownH4: core.accent.blueSoft,
+    markdownH4: blueSoft,
     markdownH5: core.text.subtle2,
-    markdownH6: core.accent.grayBlue400,
+    markdownH6: grayBlue400,
     markdownContent: core.text.primary, // Markdown содержимое
     htmlText: core.text.subtle2, // HTML текст
     markdownRawInline: core.accent.magenta, // Markdown сырой встроенный код
@@ -169,37 +201,37 @@ export const palette: Palette = {
     markdownLink: core.accent.teal, // Markdown ссылки
     markdownCodeBlock: core.accent.green, // Markdown блоки кода
     markdownSeparator: core.text.gray600, // Markdown разделители
-    markupTable: core.accent.blueWash, // Разметка таблиц
+    markupTable: blueMuted, // Разметка таблиц
     tokenInfo: core.accent.cyan, // Информационные токены
-    tokenWarn: core.accent.cyan300, // Предупреждающие токены - холодный циан
+    tokenWarn: cyan500, // Предупреждающие токены - холодный циан
     tokenError: core.accent.red, // Токены ошибок
-    tokenDebug: core.accent.lilac, // Отладочные токены
+    tokenDebug: lilac, // Отладочные токены
     apacheTag: core.accent.red, // Apache теги
     preprocessor: core.accent.teal, // Препроцессор
     envValue: core.accent.blue, // Значения окружения
     // Добавленные недостающие свойства - улучшенная контрастность
     ignored: core.text.comment, // Игнорируемые элементы
-    number: core.accent.pinkMuted, // Числа
-    markup: core.accent.azure, // Элементы разметки
-    error: core.accent.maroon, // Элементы ошибок
-    codeBlock: core.accent.blueBright, // Блоки кода
-    linkText: core.accent.blueSoft, // Текст ссылок
-    quoteMark: core.accent.grayBlue400, // Кавычки
-    linkUrl: core.accent.blueWash, // URL ссылок
-    warning: core.accent.cyan300, // Предупреждения - холодный циан
-    deleted: core.accent.redMuted, // Удаленное содержимое
-    inserted: core.accent.lilac, // Вставленное содержимое
+    number: pinkMuted, // Числа
+    markup: azure, // Элементы разметки
+    error: maroon, // Элементы ошибок
+    codeBlock: blueBright, // Блоки кода
+    linkText: blueSoft, // Текст ссылок
+    quoteMark: grayBlue400, // Кавычки
+    linkUrl: blueMuted, // URL ссылок
+    warning: cyan500, // Предупреждения - холодный циан
+    deleted: redMuted, // Удаленное содержимое
+    inserted: lilac, // Вставленное содержимое
   },
   ansi: {
     // ANSI цвета для терминала в стиле Tokyo Night
-    black: core.accent.indigoDark, // Черный
+    black: indigo, // Черный
     brightBlack: core.text.gray600, // Яркий черный
     red: core.accent.red, // Красный
     brightRed: core.accent.red, // Яркий красный
     green: core.accent.green, // Зеленый
     brightGreen: core.accent.green, // Яркий зеленый
-    yellow: core.accent.skyLight, // Холодный голубо-желтый
-    brightYellow: core.accent.skyLight, // Яркий холодный голубо-желтый
+    yellow: skyLight, // Холодный голубо-желтый
+    brightYellow: skyLight, // Яркий холодный голубо-желтый
     blue: core.accent.blue, // Синий
     brightBlue: core.accent.blue, // Яркий синий
     magenta: core.accent.magenta, // Пурпурный
@@ -220,56 +252,56 @@ export const palette: Palette = {
     },
     badge: {
       // Значки
-      base: core.accent.badgeBase, // Базовый цвет значка
+      base: badgeBase, // Базовый цвет значка
       fg: core.text.selection, // Белый текст для максимального контраста на ярком фоне значка
     },
     sash: {
       // Разделитель
-      hover: core.accent.steelAlt, // Разделитель при наведении
+      hover: steelAlt, // Разделитель при наведении
     },
     selectionWash: core.ui.selectionWash, // Базовая заливка выделения (используется с альфа)
     scrollbarBase: core.ui.scrollbarBase, // Базовый цвет ползунка скроллбара (используется с альфа)
     input: {
       // Поля ввода
       placeholder: core.text.placeholder, // Улучшенный заполнитель для WCAG AA
-      border: core.borders.input, // Улучшенная граница поля ввода
+      border: core.border, // Улучшенная граница поля ввода
     },
     list: {
       // Списки
-      hoverBg: core.accent.steel, // Улучшенный фон списка при наведении
-      dropBg: core.accent.badgeBase, // Фон списка при перетаскивании
+      hoverBg: steel, // Улучшенный фон списка при наведении
+      dropBg: badgeBase, // Фон списка при перетаскивании
     },
     editorLinkActive: core.text.editorLinkActive, // Ссылки в редакторе когда активны
     codeLens: core.accent.blue, // Текст CodeLens - увеличена контрастность
     noMatches: core.accent.blue, // Общий контур "нет совпадений" (прохладнее)
-    settingsHeader: core.accent.blueMuted, // Приглушенная синяя подсветка для предложений и т.д.
+    settingsHeader: blueMuted, // Приглушенная синяя подсветка для предложений и т.д.
     window: {
       // Границы окон
-      border: core.accent.windowBorder, // Граница окна
+      border: windowBorder, // Граница окна
     },
     tab: {
       // Специфика вкладок
       activeBorder: core.accent.blue, // Граница активной вкладки
-      activeModifiedBorder: core.accent.violet, // Граница активной измененной вкладки - холодный фиолетовый
-      inactiveModifiedBorder: core.accent.cyan500, // Граница неактивной измененной вкладки - холодный циан
+      activeModifiedBorder: violet, // Граница активной измененной вкладки - холодный фиолетовый
+      inactiveModifiedBorder: cyan500, // Граница неактивной измененной вкладки - холодный циан
       unfocusedActiveBorder: core.ui.tab.unfocusedActive, // Улучшенная граница активной вкладки без фокуса
-      lastPinnedBorder: core.accent.slate, // Граница последней закрепленной вкладки
+      lastPinnedBorder: slate, // Граница последней закрепленной вкладки
     },
     statusItem: {
       // Состояния элементов статусбара
-      hover: core.accent.steel, // Улучшенное наведение на элемент статусбара
-      prominentHover: core.accent.steelMuted, // Выделенное наведение на элемент статусбара
+      hover: steel, // Улучшенное наведение на элемент статусбара
+      prominentHover: steelMuted, // Выделенное наведение на элемент статусбара
     },
     text: {
       // Специфика текста
       preformat: core.text.preformat, // Предварительно отформатированный текст
-      separator: core.accent.slate, // Разделитель текста
+      separator: slate, // Разделитель текста
     },
     debug: {
       // Специфика отладочного UI
-      exceptionBorder: core.accent.brick, // Граница исключения отладки
+      exceptionBorder: brick, // Граница исключения отладки
       consoleError: core.accent.red, // Ошибка консоли отладки
-      consoleWarning: core.accent.cyan300, // Предупреждение консоли отладки - холодный циан
+      consoleWarning: cyan500, // Предупреждение консоли отладки - холодный циан
       stateLabelBg: core.bg.stateLabel, // Фон метки состояния отладки
       tokenValue: core.text.subtle2, // Значение токена отладки
       tokenString: core.accent.green, // Строка токена отладки
@@ -308,14 +340,14 @@ export const palette: Palette = {
       // Git декорации
       ignored: core.text.comment, // Игнорируемые Git файлы - увеличена контрастность
       deleted: core.accent.red, // Удаленные Git файлы
-      conflicting: core.accent.aqua, // Конфликтующие Git файлы - холодный teal
+      conflicting: aquaLight, // Конфликтующие Git файлы - холодный teal
       stageDeleted: core.accent.red, // Удаленные в стейдже Git файлы
       stageModified: core.accent.blue, // Измененные в стейдже Git файлы
     },
     semantic: {
       // Общие семантические цвета
       white: core.text.selection, // Чистый белый для высокого контраста
-      notificationLink: core.accent.blueMuted, // Ссылки уведомлений
+      notificationLink: blueMuted, // Ссылки уведомлений
       offline: core.accent.red, // Статус оффлайн
     },
   },

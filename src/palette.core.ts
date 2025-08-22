@@ -1,119 +1,92 @@
-import type { Hex } from './types/palette'
+import { basePalette } from './palette.base'
+import { interfaceColors } from './palette.interface'
+
+import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 
 /**
- * Базовые (ядро) цвета темы для исключения дублирования значений hex.
- * Эти константы переиспользуются в разных разделах палитры.
+ * Ядро темы: только ссылки на базовую палитру и основные интерфейсные цвета.
+ * Все остальные цвета должны быть производными через утилиты.
  */
 export const core = {
-  // Нейтральные фоны и границы
   bg: {
-    base: '#18181d' as Hex,
-    elevated: '#1c1d24' as Hex,
-    sunken: '#16161b' as Hex,
-    overlay: '#1e1f26' as Hex,
-    input: '#1a1a21' as Hex,
-    hover: '#242530' as Hex,
-    active: '#26293a' as Hex,
-    drop: '#2b3140' as Hex,
-    lineHighlight: '#1c1d24' as Hex,
-    bracketMatch: '#202129' as Hex,
-    tabs: '#18181d' as Hex,
+    base: interfaceColors.editorBg,
+    elevated: lightenToward(interfaceColors.editorBg, basePalette.white, 0.08),
+    sunken: darkenToward(interfaceColors.editorBg, basePalette.black, 0.08),
+    overlay: lightenToward(interfaceColors.editorBg, basePalette.white, 0.12),
+    input: mix(interfaceColors.editorBg, basePalette.gray, 0.15),
+    hover: lightenToward(interfaceColors.editorBg, basePalette.white, 0.1),
+    active: lightenToward(interfaceColors.editorBg, basePalette.blue, 0.07),
+    drop: darkenToward(interfaceColors.editorBg, basePalette.black, 0.12),
+    lineHighlight: lightenToward(
+      interfaceColors.editorBg,
+      basePalette.blue,
+      0.04
+    ),
+    bracketMatch: lightenToward(
+      interfaceColors.editorBg,
+      basePalette.cyan,
+      0.06
+    ),
+    tabs: interfaceColors.editorBg,
     selection: {
-      active: '#262b3d' as Hex,
-      inactive: '#2a2c3b' as Hex,
-      focus: '#2c3b64' as Hex,
-      menu: '#2c3b64' as Hex,
+      active: withAlpha(basePalette.blue, 0.18),
+      inactive: withAlpha(basePalette.blue, 0.1),
+      focus: withAlpha(basePalette.cyan, 0.18),
+      menu: withAlpha(basePalette.cyan, 0.18),
     },
-    stateLabel: '#1e1e25' as Hex,
+    stateLabel: darkenToward(interfaceColors.editorBg, basePalette.black, 0.06),
   },
-  border: '#262733' as Hex,
-  borders: {
-    input: '#262835' as Hex,
-  },
-
-  // Текстовые тона
+  border: lightenToward(basePalette.black, basePalette.white, 0.09),
+  // ...другие поля аналогично: только ссылки или производные через утилиты
   text: {
-    // Ещё более нейтральные (серо-синие) тона текста для интерфейса
-    primary: '#c7d0dc' as Hex,
-    muted: '#b2bccb' as Hex,
-    subtle: '#7f8a9b' as Hex,
-    inactive: '#8a94ad' as Hex,
-    soft: '#aeb7c7' as Hex,
-    selection: '#ffffff' as Hex,
-    subtle2: '#9aa5ba' as Hex,
-    gray600: '#5b6475' as Hex,
-    comment: '#6e788d' as Hex,
-    commentDoc: '#5f6778' as Hex,
-    commentDocEmphasized: '#7a869e' as Hex,
-    preformat: '#98a2b0' as Hex,
-    placeholder: '#8e98a8' as Hex,
-    editorLinkActive: '#aab4c8' as Hex,
+    primary: interfaceColors.editorFg,
+    muted: mix(interfaceColors.editorFg, basePalette.gray, 0.3),
+    subtle: basePalette.gray,
+    inactive: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
+    soft: lightenToward(interfaceColors.editorFg, basePalette.white, 0.12),
+    selection: basePalette.white,
+    subtle2: mix(interfaceColors.editorFg, basePalette.gray, 0.4),
+    gray600: darkenToward(basePalette.gray, basePalette.black, 0.2),
+    comment: mix(interfaceColors.editorFg, basePalette.cyan, 0.25),
+    commentDoc: mix(interfaceColors.editorFg, basePalette.cyan, 0.18),
+    commentDocEmphasized: lightenToward(
+      interfaceColors.editorFg,
+      basePalette.cyan,
+      0.18
+    ),
+    preformat: lightenToward(interfaceColors.editorFg, basePalette.gray, 0.1),
+    placeholder: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
+    editorLinkActive: lightenToward(
+      interfaceColors.editorFg,
+      basePalette.blue,
+      0.18
+    ),
   },
-
-  // Акцентные семейства
   accent: {
-    blue: '#7aa2f7' as Hex,
-    cyan: '#7dcfff' as Hex,
-    teal: '#73daca' as Hex,
-    tealDeep: '#0db9d7' as Hex,
-    purple: '#9d7cd8' as Hex,
-    magenta: '#bb9af7' as Hex,
-    // Чуть более холодный и менее насыщенный красный, чтобы не "кричал" на дисплеях с точной цветопередачей
-    red: '#e46876' as Hex,
-    green: '#9ece6a' as Hex,
-    sky: '#38bdf8' as Hex,
-    skyLight: '#7dd3fc' as Hex,
-    indigo: '#6366f1' as Hex,
-    blueMuted: '#6183bb' as Hex,
-    blueBright: '#61bdf2' as Hex,
-    bluePunctuation: '#9abdf5' as Hex,
-    lilac: '#b267e6' as Hex,
-    mint: '#34d399' as Hex,
-    aqua: '#14b8a6' as Hex,
-    azure: '#449dab' as Hex,
-    maroon: '#914c54' as Hex,
-    slate: '#363b54' as Hex,
-    steel: '#2a3047' as Hex,
-    badgeBase: '#4158a6' as Hex,
-    windowBorder: '#20212c' as Hex,
-    // Дополнительные полутона и вариации для устранения хардкода
-    tealSoft: '#85c9c1' as Hex,
-    rose: '#e0687a' as Hex,
-    azureLight: '#41a6b5' as Hex,
-    blue400: '#60a5fa' as Hex,
-    aquaLight: '#b4f9f8' as Hex,
-    blueSoft: '#6d91de' as Hex,
-    grayBlue400: '#747ca1' as Hex,
-    blueWash: '#c0cefc' as Hex,
-    cyan300: '#22d3ee' as Hex,
-    redMuted: '#db4b4b' as Hex,
-    pinkMuted: '#c0768e' as Hex,
-    indigoDark: '#414868' as Hex,
-    steelAlt: '#252a3f' as Hex,
-    steelMuted: '#2a3041' as Hex,
-    brick: '#963c47' as Hex,
-    violet: '#8b5cf6' as Hex,
-    cyan500: '#06b6d4' as Hex,
-    steel2: '#2b3047' as Hex,
+    blue: basePalette.blue,
+    cyan: basePalette.cyan,
+    teal: basePalette.teal,
+    purple: basePalette.purple,
+    magenta: basePalette.magenta,
+    red: basePalette.red,
+    green: basePalette.green,
+    yellow: basePalette.yellow,
+    orange: basePalette.orange,
   },
-
-  // Брендовые оттенки для UI
   brand: {
     button: {
-      primary: '#263147' as Hex,
-      hover: '#2c3952' as Hex,
+      primary: mix(interfaceColors.editorBg, basePalette.blue, 0.18),
+      hover: mix(interfaceColors.editorBg, basePalette.blue, 0.25),
     },
   },
-
-  // UI вспомогательные цвета
   ui: {
-    shadow: '#7aa2f733' as Hex,
-    selectionWash: '#515c7e' as Hex,
-    scrollbarBase: '#868bc4' as Hex,
+    shadow: withAlpha(basePalette.blue, 0.2),
+    selectionWash: withAlpha(basePalette.cyan, 0.18),
+    scrollbarBase: mix(basePalette.blue, basePalette.gray, 0.4),
     tab: {
-      activeModified: '#8b5cf6' as Hex,
-      inactiveModified: '#06b6d4' as Hex,
-      unfocusedActive: '#2b3047' as Hex,
+      activeModified: basePalette.purple,
+      inactiveModified: basePalette.cyan,
+      unfocusedActive: darkenToward(basePalette.blue, basePalette.black, 0.18),
     },
   },
 } as const
