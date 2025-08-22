@@ -10,9 +10,9 @@ import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 export const core = {
   bg: {
     base: interfaceColors.editorBg,
-    elevated: lightenToward(interfaceColors.editorBg, basePalette.white, 0.08),
-    sunken: darkenToward(interfaceColors.editorBg, basePalette.black, 0.08),
-    overlay: lightenToward(interfaceColors.editorBg, basePalette.white, 0.12),
+    elevated: lightenToward(interfaceColors.editorBg, basePalette.black, 0.04),
+    overlay: lightenToward(interfaceColors.editorBg, basePalette.black, 0.08),
+    sunken: lightenToward(interfaceColors.editorBg, basePalette.black, 0.12),
     input: mix(interfaceColors.editorBg, basePalette.gray, 0.15),
     hover: lightenToward(interfaceColors.editorBg, basePalette.white, 0.1),
     active: lightenToward(interfaceColors.editorBg, basePalette.blue, 0.07),
