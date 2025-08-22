@@ -2,6 +2,7 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { buildColors } from '../src/build'
+import { execSync } from 'node:child_process'
 import { tokenColors } from '../src/tokenColors'
 import { semanticTokenColors } from '../src/semanticTokenColors'
 
@@ -45,6 +46,13 @@ const diffObjects = (a: any, b: any): string[] => {
 }
 
 const main = () => {
+  // Always build fresh theme files to avoid comparing against stale JSON
+  try {
+    execSync('npm run build', { stdio: 'inherit' })
+  } catch (e) {
+    console.error('Failed to build theme before smoke compare')
+    process.exit(1)
+  }
   const theme = loadTheme()
 
   // colors - используем только buildColors, поскольку динамические цвета теперь встроены

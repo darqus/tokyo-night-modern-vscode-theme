@@ -281,6 +281,8 @@ export const ALLOWED_THEME_PROPERTIES = new Set([
   'editorLink.activeForeground',
   'editor.rangeHighlightBackground',
   'editor.rangeHighlightBorder',
+  // Placeholder text in editor input fields
+  'editor.placeholder.foreground',
   'editor.symbolHighlightBackground',
   'editor.symbolHighlightBorder',
   'editorWhitespace.foreground',
@@ -517,6 +519,9 @@ export const ALLOWED_THEME_PROPERTIES = new Set([
   'panelSectionHeader.background',
   'panelSectionHeader.foreground',
   'panelSectionHeader.border',
+  // Panel sticky scroll
+  'panelStickyScroll.background',
+  'panelStickyScroll.border',
 
   // Status Bar colors
   'statusBar.background',
@@ -721,6 +726,8 @@ export const ALLOWED_THEME_PROPERTIES = new Set([
   'walkThrough.embeddedEditorBackground',
 
   // Git colors
+  // Git blame annotations in editor
+  'git.blame.editorDecorationForeground',
   'gitDecoration.addedResourceForeground',
   'gitDecoration.modifiedResourceForeground',
   'gitDecoration.deletedResourceForeground',
