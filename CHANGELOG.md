@@ -6,6 +6,67 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.3.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.2.1...v1.3.0) (2025-08-22)
+
+
+### 🏗️ Build System
+
+* add pre-compare build step and update theme properties ([24b4be3](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/24b4be3afdcd7e9926e00296ac45803a9c55e6e6))
+
+
+### 🐛 Bug Fixes
+
+* enhance widget and scrollbar shadows, update placeholder color ([dab1017](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/dab1017c6e83040b5f646fa0be869ff4ad3087cd)), closes [#7aa2f733](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7aa2f733) [#747ca1](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/747ca1)
+* **palette:** adjust base palette white and interface editorFg colors ([d5f9473](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d5f9473cfce2adddd48a517e04844baefb95b021))
+* Remove JSON key level colors to address highlighting issue ([a32a697](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/a32a697c040edcb87c4d13c0148d6a836770b56a)), closes [#32](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/32)
+* **theme:** improve accessibility and high contrast themes ([63d25bd](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/63d25bd479c35fbd2b4cd693ec3af2fcc871b2ab))
+* **theme:** improve contrast and accessibility for various components ([00fda22](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/00fda227700b9ca8ada1d52b2b38aaee4d44dd86))
+* **themes:** update focus border and match highlight colors ([6b226ef](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/6b226efd74ef81f2f45e575e2ec7559a703468e0)), closes [#7bb2fa66](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7bb2fa66) [#95abd966](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/95abd966) [#7bb2fa66](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7bb2fa66) [#7bb2fa99](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7bb2fa99) [#95abd966](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/95abd966) [#95abd999](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/95abd999) [#7bb2](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7bb2) [#95abd9](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/95abd9) [#7bb2](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7bb2) [#95abd9](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/95abd9)
+
+
+### ✨ Features
+
+* **palette:** adjust git decoration colors for better contrast and visibility ([30318c2](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/30318c2065e89b67f2102af70db974daa0f65d16))
+* **palette:** calculate interface border color ([22fe984](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/22fe984fe0f8d8d6dacbf17664155feee5b99d27))
+* **palette:** update badge base color ([73afef7](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/73afef7f175d07cf5443aea135459379721eb5b7))
+* **tabs:** unify active and inactive tab backgrounds ([a7eaad8](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/a7eaad8de17e876dd41f45301bc3bfa294debd3a)), closes [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181)
+* **theme:** add light theme and improve theme variants ([8761351](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/8761351a29597ce9136c6711af1cac6e8b0e15ab))
+* **theme:** add subtle shadows to UI elements ([baf3d4e](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/baf3d4e401d25464d00ab822867156934524b7f7))
+* **theme:** implement comprehensive theme validation and improvement ([b1cfc83](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b1cfc83b924f7a47a1fac6ba1202475bfe82b589))
+* **theme:** update focus border validation logic ([e7be124](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/e7be124311b7101717f07ad4d8bff211cdf933e7))
+* **validation:** enhance theme validation and color usage analysis ([5e4a455](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/5e4a4551110f3277f1fc3d243e2e8d5330ef987e))
+
+
+### ♻️ Code Refactoring
+
+* adjust comment colors across themes ([b8e624d](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b8e624d483fd5c14765eb2e56220e1e600d22507))
+* **palette:** migrate to core color system ([f396080](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f396080d767e8ac1b3a332a24f3724ed9d64126d))
+* **palette:** remove redundant comments from scrollbar colors ([5f5dc30](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/5f5dc30997f44ffd653b09c190dad0555dbcfaf7))
+* **palette:** reorganize and derive legacy colors ([2a43a76](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/2a43a766abf268b5cbbdc2ef2a3c7b7e9d71d517))
+* **palette:** split core colors into separate file ([3c6e448](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/3c6e448b33db5e10f07bf6aa69916d98314c3221))
+* **palette:** update comment colors and adjust git decoration ([77dee57](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/77dee57cea5659778e6585fd86e7c69c68b4331d))
+* **theme:** improve color contrast and accessibility ([d764abe](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d764abe656ef1c3a25805cad21ace6d27e422672))
+* **theme:** optimize color temperature for Tokyo Night ([347af9e](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/347af9ea0e7cc6d147accc0195436d4c6306523b))
+* **theme:** simplify theme generation and remove config/plugins ([f124233](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f1242338437b0ffa5626abe80a6aaf134e52d13d))
+* **theme:** update background colors for consistency ([eed2c6b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/eed2c6b9e5244de096eca932e5e861a02d9615ec)), closes [#2a2a2](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/2a2a2) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181d26](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181d26) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181d26](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181d26) [#18181d26](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181d26) [#18181d26](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181d26) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181) [#18181](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/18181)
+* update color scheme and improve contrast ([70e02ae](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/70e02ae11f398f11cb9b0ed96403a1796daba120))
+
+
+### 💄 Styles and Formatting
+
+* adjust activity bar colors and add hover state ([c7396e2](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/c7396e21f1dcba3e20857cc87d61784f30e9f31c))
+* adjust badge and link colors ([d05fb9e](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d05fb9e85c2521b33ea875f8adce6ee579f939c9))
+* **button:** adjust button background and hover colors ([42ac43a](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/42ac43a74376a72cfe84b062ed8a732ce7aed89e))
+* **colors:** adjust color palette for consistent display across devices ([1a1798f](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/1a1798f02aaed13764594e1c7c6afc05f00bf4ac))
+* improve contrast and visibility of active top bar ([310152f](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/310152fd605e09644fefdecc71af0bda38a81036))
+* **list:** update hover background color ([549674f](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/549674fb7608e1e21aba07144ba979464993449d)), closes [#313b54](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/313b54) [#313b54](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/313b54) [#313b54](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/313b54)
+* **palette:** adjust hover and active colors for better consistency ([258f556](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/258f5567cd39788577e8f0f489de50303c4a2e94))
+* **palette:** adjust white color values for better contrast and visibility ([4cdd00b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/4cdd00b96d06003091e0b2df5c51f43c8f40e960))
+* **theme:** update menu selection background colors ([ca924ce](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/ca924ce1993377439c179c4ce68b4a943379b6f2)), closes [#2a3144](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/2a3144) [#7dcfff2](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/7dcfff2)
+* update border colors for dark themes ([de38678](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/de386781a4a7da6098ebfe8178fad6f32d32cc16)), closes [#22232](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/22232) [#262733](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/262733)
+* update color values and adjust theme appearance ([cf6848c](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/cf6848c043d1dda6b5c44f4d7931f379b3ffe93c))
+* update focus border and accent colors ([cb02716](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/cb02716a8bae0627acb1d0907ddc90f842e31dfd)), closes [#20e2](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/20e2) [#4158a6](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues/4158a6)
+
 ### [1.2.1](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.2.0...v1.2.1) (2025-08-21)
 
 
