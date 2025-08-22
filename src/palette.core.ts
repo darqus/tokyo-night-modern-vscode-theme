@@ -34,20 +34,20 @@ export const core = {
   // Текстовые тона
   text: {
     // Ещё более нейтральные (серо-синие) тона текста для интерфейса
-    primary: '#c9d1e6' as Hex,
-    muted: '#b6bfd4' as Hex,
-    subtle: '#77819b' as Hex,
-    inactive: '#7681a0' as Hex,
-    soft: '#b6bfd4' as Hex,
+    primary: '#c7d0dc' as Hex,
+    muted: '#b2bccb' as Hex,
+    subtle: '#7f8a9b' as Hex,
+    inactive: '#8a94ad' as Hex,
+    soft: '#aeb7c7' as Hex,
     selection: '#ffffff' as Hex,
-    subtle2: '#96a1be' as Hex,
-    gray600: '#545c7e' as Hex,
-    comment: '#6b7499' as Hex,
-    commentDoc: '#5a607a' as Hex,
-    commentDocEmphasized: '#7481a6' as Hex,
-    preformat: '#9699a8' as Hex,
-    placeholder: '#8892a6' as Hex,
-    editorLinkActive: '#aeb8d0' as Hex,
+    subtle2: '#9aa5ba' as Hex,
+    gray600: '#5b6475' as Hex,
+    comment: '#6e788d' as Hex,
+    commentDoc: '#5f6778' as Hex,
+    commentDocEmphasized: '#7a869e' as Hex,
+    preformat: '#98a2b0' as Hex,
+    placeholder: '#8e98a8' as Hex,
+    editorLinkActive: '#aab4c8' as Hex,
   },
 
   // Акцентные семейства
