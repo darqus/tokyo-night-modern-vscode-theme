@@ -3,8 +3,26 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v1.3.0.html).
 
+
+## [1.4.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.3.0...v1.4.0) (2025-08-22)
+
+
+### ✨ Features
+
+* **static:** update Tokyo Night Dark screenshot ([708e488](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/708e488844cf838610e30e2baeb9bcfabed7fb6a))
+
+
+### ♻️ Code Refactoring
+
+* remove unused themeConfig and plugin index files ([3c814d2](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/3c814d20a390b2b25226db76fcd1930b46c16a31))
+* **theme:** simplify architecture to single Tokyo Night Lod theme ([d8d9494](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/d8d94945f76d4b3332db79de7e3f3a77875ace7f))
+
+
+### 🏗️ Build System
+
+* update version and changelog ([be711de](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/be711debbc96dd5b196045e2c78ba2551dba1141))
 
 ## [1.3.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.2.1...v1.3.0) (2025-08-22)
 
