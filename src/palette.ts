@@ -268,7 +268,7 @@ export const palette: Palette = {
     },
     list: {
       // Списки
-      hoverBg: steel, // Улучшенный фон списка при наведении
+      hoverBg: core.brand.button.hover, // Улучшенный фон списка при наведении
       dropBg: badgeBase, // Фон списка при перетаскивании
     },
     editorLinkActive: core.text.editorLinkActive, // Ссылки в редакторе когда активны

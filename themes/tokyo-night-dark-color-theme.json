@@ -504,7 +504,7 @@
     "list.focusBackground": "#7dcfff2e",
     "list.focusForeground": "#ffffff",
     "list.inactiveFocusBackground": "#7aa2f71a",
-    "list.hoverBackground": "#8bacf3",
+    "list.hoverBackground": "#313b54",
     "list.hoverForeground": "#ffffff",
     "list.highlightForeground": "#ffffff",
     "list.invalidItemForeground": "#7cbffc",
