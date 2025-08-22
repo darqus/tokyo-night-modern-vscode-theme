@@ -116,45 +116,35 @@ const main = () => {
     fs.mkdirSync(themesDir, { recursive: true })
   }
 
-  // Генерируем тему с нуля
-  const theme = {
-    name: 'Tokyo Night Lod',
-    displayName: 'Tokyo Night Lod',
-    author: 'lod',
-    maintainers: ['lod'],
-    type: 'dark',
-    semanticClass: 'tokyo-night',
-    semanticTokenColors: semanticTokenColors,
-    colors: buildColors(),
-    tokenColors: tokenColors,
-  }
+  // Импортируем ThemeBuilder
+  const { ThemeBuilder } = require('./variants/themeBuilder')
 
-  // Сохраняем основную тему
+  // Генерируем основную тему
+  const theme = ThemeBuilder.buildStandard()
   const out = JSON.stringify(theme, null, 2) + '\n'
   fs.writeFileSync(themePath, out, 'utf8')
-
-  console.log('✅ Тема успешно собрана!')
+  console.log('✅ Основная тема собрана!')
   console.log(`📁 Файл: ${themePath}`)
 
   // Генерируем дополнительные варианты
   console.log('\n🎨 Генерация вариантов темы...')
 
-  // Генерируем высококонтрастный вариант
-  const accessibilityTheme = buildThemeWithConfig('accessibility')
-  const accessibilityPath = path.join(
+  // Высококонтрастная тема
+  const highContrastTheme = ThemeBuilder.buildHighContrast()
+  const highContrastPath = path.join(
     root,
     'themes',
     'tokyo-night-dark-high-contrast-color-theme.json'
   )
   fs.writeFileSync(
-    accessibilityPath,
-    JSON.stringify(accessibilityTheme, null, 2) + '\n',
+    highContrastPath,
+    JSON.stringify(highContrastTheme, null, 2) + '\n',
     'utf8'
   )
-  console.log(`✅ Высококонтрастный вариант: ${accessibilityPath}`)
+  console.log(`✅ Высококонтрастная тема: ${highContrastPath}`)
 
-  // Генерируем минималистичный вариант
-  const minimalTheme = buildThemeWithConfig('minimal')
+  // Минималистичная тема
+  const minimalTheme = ThemeBuilder.buildMinimal()
   const minimalPath = path.join(
     root,
     'themes',
@@ -165,7 +155,51 @@ const main = () => {
     JSON.stringify(minimalTheme, null, 2) + '\n',
     'utf8'
   )
-  console.log(`✅ Минималистичный вариант: ${minimalPath}`)
+  console.log(`✅ Минималистичная тема: ${minimalPath}`)
+
+  // Тема accessibility
+  const accessibilityTheme = ThemeBuilder.buildAccessibility()
+  const accessibilityPath = path.join(
+    root,
+    'themes',
+    'tokyo-night-accessibility-color-theme.json'
+  )
+  fs.writeFileSync(
+    accessibilityPath,
+    JSON.stringify(accessibilityTheme, null, 2) + '\n',
+    'utf8'
+  )
+  console.log(`✅ Accessibility тема: ${accessibilityPath}`)
+
+  // Светлая тема
+  const lightTheme = ThemeBuilder.buildLight()
+  const lightPath = path.join(
+    root,
+    'themes',
+    'tokyo-night-light-color-theme.json'
+  )
+  fs.writeFileSync(
+    lightPath,
+    JSON.stringify(lightTheme, null, 2) + '\n',
+    'utf8'
+  )
+  console.log(`✅ Светлая тема: ${lightPath}`)
+
+  // Обновляем также minimal theme (чистый вариант)
+  const cleanTheme = ThemeBuilder.buildMinimal()
+  cleanTheme.name = 'Tokyo Night Lod Clean'
+  cleanTheme.displayName = 'Tokyo Night Lod Clean'
+  const cleanPath = path.join(
+    root,
+    'themes',
+    'tokyo-night-minimal-color-theme.json'
+  )
+  fs.writeFileSync(
+    cleanPath,
+    JSON.stringify(cleanTheme, null, 2) + '\n',
+    'utf8'
+  )
+  console.log(`✅ Чистая тема: ${cleanPath}`)
 }
 
 if (require.main === module) {

@@ -42,7 +42,7 @@
       },
       {
         "label": "Tokyo Night Lod High Contrast",
-        "uiTheme": "vs-dark",
+        "uiTheme": "hc-dark",
         "path": "./themes/tokyo-night-dark-high-contrast-color-theme.json"
       },
       {
@@ -52,13 +52,18 @@
       },
       {
         "label": "Tokyo Night Lod Accessibility",
-        "uiTheme": "vs-dark",
+        "uiTheme": "hc-dark",
         "path": "./themes/tokyo-night-accessibility-color-theme.json"
       },
       {
         "label": "Tokyo Night Lod Clean",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-minimal-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Lod Light",
+        "uiTheme": "vs",
+        "path": "./themes/tokyo-night-light-color-theme.json"
       }
     ]
   },
