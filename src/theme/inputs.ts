@@ -6,6 +6,7 @@ export const getInputColors = () => ({
   'input.background': palette.bg.input,
   'input.foreground': palette.fg.primary,
   'input.border': palette.line.border,
+  'input.focusBorder': palette.brand.primary, // Добавлена видимая граница фокуса для WCAG
   'input.placeholderForeground': palette.ui.input.placeholder,
   'inputOption.activeForeground': palette.fg.onSelection,
   'inputOption.activeBackground': palette.bg.selection.active,
