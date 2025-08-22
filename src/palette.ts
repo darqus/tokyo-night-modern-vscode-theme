@@ -30,7 +30,7 @@ const steelAlt = lightenToward(core.accent.blue, core.text.muted, 0.18)
 const steelMuted = mix(core.accent.blue, core.text.muted, 0.6)
 const brick = darkenToward(core.accent.red, core.accent.orange, 0.18)
 const redMuted = mix(core.accent.red, core.text.muted, 0.5)
-const badgeBase = mix(core.accent.blue, core.text.muted, 0.5)
+const badgeBase = lightenToward(core.accent.blue, core.accent.cyan, 0.35)
 const windowBorder = darkenToward(core.accent.blue, core.text.muted, 0.22)
 
 /**
