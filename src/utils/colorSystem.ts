@@ -1,5 +1,5 @@
-import type { Hex } from '../palette'
-import { core } from '../palette'
+import type { Hex } from '../types/palette'
+import { core } from '../palette.core'
 import { withAlpha } from './color'
 
 /**

@@ -1,5 +1,5 @@
 import type { ThemeVariant, ThemeConfig } from '../types/theme'
-import type { Palette, Hex } from '../palette'
+import type { Palette, Hex } from '../types/palette'
 
 /**
  * Определение поддерживаемых вариантов темы

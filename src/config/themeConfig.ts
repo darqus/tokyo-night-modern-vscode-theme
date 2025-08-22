@@ -1,5 +1,5 @@
 import type { ThemeSettings, ThemeData, ThemeConfig } from '../types/theme'
-import type { Palette } from '../palette'
+import type { Palette } from '../types/palette'
 import { palette } from '../palette'
 import { ThemeVariantManager, variants } from '../variants/index'
 import { buildColors } from '../build'

@@ -3,7 +3,7 @@ import type {
   ComponentStates,
   ComponentStyle,
 } from '../types/theme'
-import type { Hex } from '../palette'
+import type { Hex } from '../types/palette'
 import { palette } from '../palette'
 import { withAlpha } from '../utils/color'
 

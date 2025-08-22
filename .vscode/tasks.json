@@ -1,11 +1,23 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build theme JSON",
-      "type": "shell",
-      "command": "npm run build",
-      "problemMatcher": ["$tsc"]
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build theme JSON",
+			"type": "shell",
+			"command": "npm run build",
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Build theme JSON",
+			"type": "shell",
+			"command": "npm run build"
+		},
+		{
+			"label": "Build theme JSON",
+			"type": "shell",
+			"command": "npm run validate:all"
+		}
+	]
 }

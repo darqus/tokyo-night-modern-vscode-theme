@@ -1,4 +1,4 @@
-import type { Hex } from './palette'
+import type { Hex } from './types/palette'
 import { palette } from './palette'
 
 export type SemanticTokenStyle = {

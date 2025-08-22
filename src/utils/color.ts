@@ -1,4 +1,4 @@
-import type { Hex } from '../palette'
+import type { Hex } from '../types/palette'
 
 /** Регулярное выражение для проверки шестнадцатеричных цветов */
 const HEX_RE = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i

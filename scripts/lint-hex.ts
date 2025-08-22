@@ -7,7 +7,7 @@ const SRC = path.join(ROOT, 'src')
 
 // Files allowed to contain raw hex values (centralized or variant-only logic)
 const ALLOWLIST = new Set<string>([
-  path.join(SRC, 'palette.ts'),
+  path.join(SRC, 'palette.core.ts'),
   path.join(SRC, 'variants', 'themeBuilder.ts'),
   path.join(SRC, 'variants', 'index.ts'),
   path.join(SRC, 'validation', 'themeValidator.ts'),

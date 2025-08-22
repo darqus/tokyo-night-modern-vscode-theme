@@ -4,7 +4,7 @@ import type {
   ValidationIssue,
   ThemeData,
 } from '../types/theme'
-import type { Hex } from '../palette'
+import type { Hex } from '../types/palette'
 
 /**
  * Система валидации качества темы

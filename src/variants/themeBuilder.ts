@@ -1,4 +1,5 @@
-import { palette, core } from '../palette'
+import { palette } from '../palette'
+import { core } from '../palette.core'
 import { buildColors } from '../build'
 import { tokenColors } from '../tokenColors'
 import { semanticTokenColors } from '../semanticTokenColors'

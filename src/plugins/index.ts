@@ -1,5 +1,6 @@
 import type { ThemePlugin, ThemeData } from '../types/theme'
-import { palette, core } from '../palette'
+import { palette } from '../palette'
+import { core } from '../palette.core'
 
 /**
  * Система плагинов для расширения функциональности темы
