@@ -7,7 +7,6 @@ export const getButtonColors = () => ({
   'button.hoverBackground': palette.brand.button.hover,
   'button.foreground': palette.fg.selectionText,
   'button.border': withAlpha(palette.fg.subtle, '25%'), // Увеличена видимость границы
-  'button.focusBorder': palette.brand.primary, // Добавлена видимая граница фокуса для WCAG
   'button.separator': withAlpha(palette.fg.subtle, '31%'), // Увеличена видимость разделителя
   'button.secondaryBackground': withAlpha(palette.bg.elevated, '100%'), // Полностью непрозрачный фон для лучшего контраста
   'button.secondaryHoverBackground': withAlpha(palette.bg.hover, '100%'), // Полностью непрозрачный hover

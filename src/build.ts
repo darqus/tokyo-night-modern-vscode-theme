@@ -28,6 +28,7 @@ import { getMiscColors } from './theme/misc'
 import { ThemeConfigManager, ConfigFactory } from './config/themeConfig'
 import { PluginManager, PluginConfigFactory } from './plugins/index'
 import { ThemeValidator } from './validation/themeValidator'
+import { PropertyValidator } from './validation/propertyValidator'
 
 /**
  * Улучшенный генератор темы с поддержкой новой архитектуры
@@ -105,6 +106,70 @@ export const buildThemeWithConfig = (configName?: string) => {
 }
 
 /**
+ * Валидация и сохранение темы
+ */
+const validateAndSaveTheme = (
+  theme: any,
+  themePath: string,
+  themeName: string
+): void => {
+  // Валидируем свойства темы
+  const propertyValidator = new PropertyValidator()
+  const propertyValidation = propertyValidator.validateThemeProperties(theme)
+
+  if (!propertyValidation.passed) {
+    console.warn(`⚠️  Найдены проблемы с свойствами в ${themeName}:`)
+    propertyValidation.issues.forEach((issue) => {
+      const severity =
+        issue.severity === 'error'
+          ? '🔴'
+          : issue.severity === 'warning'
+          ? '🟡'
+          : '🔵'
+      console.warn(`${severity} ${issue.property}: ${issue.message}`)
+      if (issue.suggestion) {
+        console.warn(`  💡 ${issue.suggestion}`)
+      }
+    })
+
+    // Автоматически исправляем недопустимые свойства
+    const { fixedTheme, fixes } = propertyValidator.fixInvalidProperties(theme)
+    if (fixes.length > 0) {
+      console.log(`🔧 Автоматически исправлено ${fixes.length} проблем:`)
+      fixes.forEach((fix) => {
+        console.log(`  • ${fix.property}: ${fix.action}`)
+      })
+      theme = fixedTheme
+    }
+  } else {
+    console.log(`✅ Валидация свойств ${themeName} прошла успешно`)
+  }
+
+  // Валидируем качество темы
+  const qualityValidator = new ThemeValidator()
+  const qualityValidation = qualityValidator.validateTheme(theme)
+
+  if (!qualityValidation.passed) {
+    console.warn(`⚠️  Найдены проблемы с качеством в ${themeName}:`)
+    qualityValidation.issues.forEach((issue) => {
+      const severity =
+        issue.severity === 'error'
+          ? '🔴'
+          : issue.severity === 'warning'
+          ? '🟡'
+          : '🔵'
+      console.warn(`${severity} ${issue.message}`)
+      if (issue.suggestion) {
+        console.warn(`  💡 ${issue.suggestion}`)
+      }
+    })
+  }
+
+  // Сохраняем тему
+  const out = JSON.stringify(theme, null, 2) + '\n'
+  fs.writeFileSync(themePath, out, 'utf8')
+}
+/**
  * Генерация динамических цветов
  */
 const main = () => {
@@ -119,11 +184,11 @@ const main = () => {
   // Импортируем ThemeBuilder
   const { ThemeBuilder } = require('./variants/themeBuilder')
 
+  console.log('\n🔍 Валидация и сборка тем...')
+
   // Генерируем основную тему
   const theme = ThemeBuilder.buildStandard()
-  const out = JSON.stringify(theme, null, 2) + '\n'
-  fs.writeFileSync(themePath, out, 'utf8')
-  console.log('✅ Основная тема собрана!')
+  validateAndSaveTheme(theme, themePath, 'Tokyo Night Dark')
   console.log(`📁 Файл: ${themePath}`)
 
   // Генерируем дополнительные варианты
@@ -136,12 +201,12 @@ const main = () => {
     'themes',
     'tokyo-night-dark-high-contrast-color-theme.json'
   )
-  fs.writeFileSync(
+  validateAndSaveTheme(
+    highContrastTheme,
     highContrastPath,
-    JSON.stringify(highContrastTheme, null, 2) + '\n',
-    'utf8'
+    'Tokyo Night High Contrast'
   )
-  console.log(`✅ Высококонтрастная тема: ${highContrastPath}`)
+  console.log(`📁 Высококонтрастная тема: ${highContrastPath}`)
 
   // Минималистичная тема
   const minimalTheme = ThemeBuilder.buildMinimal()
@@ -150,12 +215,8 @@ const main = () => {
     'themes',
     'tokyo-night-dark-minimal-color-theme.json'
   )
-  fs.writeFileSync(
-    minimalPath,
-    JSON.stringify(minimalTheme, null, 2) + '\n',
-    'utf8'
-  )
-  console.log(`✅ Минималистичная тема: ${minimalPath}`)
+  validateAndSaveTheme(minimalTheme, minimalPath, 'Tokyo Night Minimal')
+  console.log(`📁 Минималистичная тема: ${minimalPath}`)
 
   // Тема accessibility
   const accessibilityTheme = ThemeBuilder.buildAccessibility()
@@ -164,12 +225,12 @@ const main = () => {
     'themes',
     'tokyo-night-accessibility-color-theme.json'
   )
-  fs.writeFileSync(
+  validateAndSaveTheme(
+    accessibilityTheme,
     accessibilityPath,
-    JSON.stringify(accessibilityTheme, null, 2) + '\n',
-    'utf8'
+    'Tokyo Night Accessibility'
   )
-  console.log(`✅ Accessibility тема: ${accessibilityPath}`)
+  console.log(`📁 Accessibility тема: ${accessibilityPath}`)
 
   // Светлая тема
   const lightTheme = ThemeBuilder.buildLight()
@@ -178,12 +239,8 @@ const main = () => {
     'themes',
     'tokyo-night-light-color-theme.json'
   )
-  fs.writeFileSync(
-    lightPath,
-    JSON.stringify(lightTheme, null, 2) + '\n',
-    'utf8'
-  )
-  console.log(`✅ Светлая тема: ${lightPath}`)
+  validateAndSaveTheme(lightTheme, lightPath, 'Tokyo Night Light')
+  console.log(`📁 Светлая тема: ${lightPath}`)
 
   // Обновляем также minimal theme (чистый вариант)
   const cleanTheme = ThemeBuilder.buildMinimal()
@@ -194,12 +251,10 @@ const main = () => {
     'themes',
     'tokyo-night-minimal-color-theme.json'
   )
-  fs.writeFileSync(
-    cleanPath,
-    JSON.stringify(cleanTheme, null, 2) + '\n',
-    'utf8'
-  )
-  console.log(`✅ Чистая тема: ${cleanPath}`)
+  validateAndSaveTheme(cleanTheme, cleanPath, 'Tokyo Night Clean')
+  console.log(`📁 Чистая тема: ${cleanPath}`)
+
+  console.log('\n🎉 Сборка завершена! Все темы прошли валидацию.')
 }
 
 if (require.main === module) {

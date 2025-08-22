@@ -13,6 +13,7 @@ Welcome to the Tokyo Night Lod theme documentation. This guide will help you und
 
 - [Architecture Guide](./ARCHITECTURE.md) - Theme structure and design principles
 - [Development Guide](./DEVELOPMENT.md) - How to build and modify the theme
+- [Validation System](./VALIDATION.md) - Automatic theme validation and quality assurance
 - [Smart Versioning](./SMART_VERSIONING.md) - Automated release system
 
 ### 🎨 Customization
@@ -33,6 +34,7 @@ Welcome to the Tokyo Night Lod theme documentation. This guide will help you und
 
 ## 🌟 Key Features
 
+- **Automatic Validation** - Built-in VS Code property validation and quality checks
 - **Smart Versioning** - Automated release management based on conventional commits
 - **TypeScript Architecture** - Modern, type-safe theme generation
 - **Multiple Variants** - High contrast and minimal versions available

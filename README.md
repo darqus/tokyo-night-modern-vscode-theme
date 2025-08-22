@@ -95,6 +95,7 @@ scripts/
 |----------|-------------|
 | [📋 Architecture Guide](./docs/ARCHITECTURE.md) | Theme structure and design principles |
 | [🛠️ Development Guide](./docs/DEVELOPMENT.md) | How to build and modify themes |
+| [🔍 Validation System](./docs/VALIDATION.md) | Automatic theme validation and quality assurance |
 | [🤖 Smart Versioning](./docs/SMART_VERSIONING.md) | Automated release system |
 | [🎨 Color Palette](./docs/COLOR_PALETTE.md) | Understanding theme colors |
 | [📚 Full Documentation](./docs/README.md) | Complete documentation index |
@@ -155,10 +156,3 @@ How to edit colors and token colors:
 - Edit token colors in src/tokenColors.ts (scopes and foreground/background/fontStyle)
 - Edit semantic token colors in src/semanticTokenColors.ts
 - Optionally adjust build logic in src/build.ts if you want to map new keys or use helpers
-- Regenerate theme JSON:
-
-```bash
-npm run build
-```
-
-The output file themes/tokyo-night-dark-color-theme.json is updated in-place.
