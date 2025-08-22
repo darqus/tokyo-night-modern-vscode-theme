@@ -346,7 +346,7 @@ export const palette: Palette = {
     },
     semantic: {
       // Общие семантические цвета
-      white: core.text.selection, // Чистый белый для высокого контраста
+      white: core.text.primary, // Белый цвет (основной текст) для контраста
       notificationLink: blueMuted, // Ссылки уведомлений
       offline: core.accent.red, // Статус оффлайн
     },
