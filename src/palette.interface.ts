@@ -1,6 +1,5 @@
-import type { Hex } from './types/palette'
 import { basePalette } from './palette.base'
-import { lightenToward } from './utils/color'
+import { darkenToward, lightenToward } from './utils/color'
 
 /**
  * Основные цвета интерфейса (editor background, foreground, border и т.д.)
@@ -8,7 +7,7 @@ import { lightenToward } from './utils/color'
  */
 export const interfaceColors = {
   editorBg: basePalette.black,
-  editorFg: basePalette.white,
+  editorFg: darkenToward(basePalette.black, basePalette.white, 0.75), // Цвет текста в редакторе
   border: lightenToward(basePalette.black, basePalette.white, 0.1), // Граница, немного светлее фона
   accent: basePalette.blue,
   error: basePalette.red,

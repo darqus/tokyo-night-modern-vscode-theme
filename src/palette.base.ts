@@ -6,7 +6,7 @@ import type { Hex } from './types/palette'
  */
 export const basePalette = {
   black: '#18181d' as Hex,
-  white: '#eeeeee' as Hex,
+  white: '#ffffff' as Hex,
   gray: '#7f8a9b' as Hex,
   blue: '#7aa2f7' as Hex,
   cyan: '#7dcfff' as Hex,
