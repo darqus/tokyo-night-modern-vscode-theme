@@ -25,8 +25,6 @@ import { getQuickInputColors } from './theme/quickInput'
 import { getMiscColors } from './theme/misc'
 
 // Новые модули улучшенной архитектуры
-import { ThemeConfigManager, ConfigFactory } from './config/themeConfig'
-import { PluginManager, PluginConfigFactory } from './plugins/index'
 import { ThemeValidator } from './validation/themeValidator'
 import { PropertyValidator } from './validation/propertyValidator'
 
@@ -63,47 +61,8 @@ export const buildColors = (): Record<string, string> => ({
 /**
  * Улучшенная функция сборки с поддержкой конфигурации и плагинов
  */
-export const buildThemeWithConfig = (configName?: string) => {
-  // Создаем конфигурацию
-  let config = ConfigFactory.createDeveloperConfig()
-
-  if (configName === 'accessibility') {
-    config = ConfigFactory.createAccessibilityConfig()
-  } else if (configName === 'minimal') {
-    config = ConfigFactory.createMinimalConfig()
-  }
-
-  // Создаем менеджер конфигурации
-  const configManager = new ThemeConfigManager(config)
-
-  // Создаем менеджер плагинов
-  const pluginManager = new PluginManager()
-
-  // Автоматически включаем плагины для поддерживаемых языков
-  pluginManager.autoEnableForLanguages(config.syntax.customLanguageSupport)
-
-  // Генерируем тему
-  let theme = configManager.generateTheme()
-
-  // Применяем плагины
-  theme = pluginManager.applyPlugins(theme, '0.4.0')
-
-  // Валидируем тему
-  const validator = new ThemeValidator()
-  const validationResult = validator.validateTheme(theme)
-
-  if (!validationResult.passed) {
-    console.warn('Обнаружены проблемы с темой:')
-    validationResult.issues.forEach((issue) => {
-      console.warn(`[${issue.severity}] ${issue.message}`)
-      if (issue.suggestion) {
-        console.warn(`  Совет: ${issue.suggestion}`)
-      }
-    })
-  }
-
-  return theme
-}
+// Упрощение архитектуры: удалён слой Config/Plugin.
+// Генерация тем выполняется напрямую через ThemeBuilder, а проверки — через валидаторы ниже.
 
 /**
  * Валидация и сохранение темы

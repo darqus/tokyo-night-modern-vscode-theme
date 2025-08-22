@@ -1,3 +1,9 @@
+/**
+ * Deprecated: plugin system removed to simplify architecture.
+ * This stub remains for backwards compatibility if any tooling still imports it.
+ */
+export {}
+
 import type { ThemePlugin, ThemeData } from '../types/theme'
 import { palette } from '../palette'
 import { core } from '../palette.core'

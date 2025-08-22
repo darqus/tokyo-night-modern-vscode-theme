@@ -5,10 +5,8 @@
  * Без внешних зависимостей
  */
 
-import { ThemeConfigManager, ConfigFactory } from '../src/config/themeConfig'
-import { PluginManager, PluginConfigFactory } from '../src/plugins/index'
 import { ThemeValidator } from '../src/validation/themeValidator'
-import { buildThemeWithConfig } from '../src/build'
+import { ThemeBuilder } from '../src/variants/themeBuilder'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 
@@ -20,35 +18,39 @@ function showHelp() {
 🎨 Tokyo Night Lod CLI v0.4.0
 
 Команды:
-  build [config]           Собрать тему (developer|accessibility|minimal)
+  build                    Собрать стандартный набор тем (dark, hc, minimal, light, accessibility)
   validate <file>          Валидировать тему
-  plugins list            Показать доступные плагины
-  plugins enable <names>   Включить плагины
-  config create <type>     Создать конфигурацию
   info                    Информация о теме
   help                    Показать эту справку
 
 Примеры:
-  node scripts/cli.ts build accessibility
+  node scripts/cli.ts build
   node scripts/cli.ts validate ./themes/theme.json
-  node scripts/cli.ts plugins list
-  node scripts/cli.ts config create developer
 `)
 }
 
 function buildCommand() {
-  const configType = args[1] || 'developer'
-  console.log(`🏗️  Сборка темы с конфигурацией: ${configType}`)
-
+  console.log('🏗️  Сборка полного набора тем...')
   try {
-    const theme = buildThemeWithConfig(configType)
-    const outputPath = path.join(
-      './themes',
-      `tokyo-night-${configType}-color-theme.json`
-    )
+    const outDir = './themes'
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
 
-    fs.writeFileSync(outputPath, JSON.stringify(theme, null, 2) + '\n', 'utf8')
-    console.log(`✅ Тема собрана: ${outputPath}`)
+    const buildAndWrite = (name: string, theme: any) => {
+      const filename = `tokyo-night-${name}-color-theme.json`
+      const outputPath = path.join(outDir, filename)
+      fs.writeFileSync(
+        outputPath,
+        JSON.stringify(theme, null, 2) + '\n',
+        'utf8'
+      )
+      console.log(`✅ Сгенерировано: ${outputPath}`)
+    }
+
+    buildAndWrite('dark', ThemeBuilder.buildStandard())
+    buildAndWrite('dark-high-contrast', ThemeBuilder.buildHighContrast())
+    buildAndWrite('dark-minimal', ThemeBuilder.buildMinimal())
+    buildAndWrite('light', ThemeBuilder.buildLight())
+    buildAndWrite('accessibility', ThemeBuilder.buildAccessibility())
   } catch (error) {
     console.error('❌ Ошибка сборки:', error)
     process.exit(1)
@@ -98,72 +100,21 @@ function validateCommand() {
   }
 }
 
-function pluginsCommand() {
-  const subCommand = args[1]
-  const pluginManager = new PluginManager()
-
-  if (subCommand === 'list') {
-    console.log('📦 Доступные плагины:')
-    pluginManager.getAvailablePlugins().forEach((plugin) => {
-      const status = pluginManager.isPluginEnabled(plugin.name) ? '✅' : '⭕'
-      console.log(
-        `${status} ${plugin.name} v${plugin.version} - ${plugin.description}`
-      )
-    })
-  } else if (subCommand === 'enable') {
-    const plugins = args.slice(2)
-    plugins.forEach((plugin) => {
-      if (pluginManager.enablePlugin(plugin)) {
-        console.log(`✅ Плагин "${plugin}" включен`)
-      } else {
-        console.error(`❌ Плагин "${plugin}" не найден`)
-      }
-    })
-  } else {
-    console.error('❌ Неизвестная команда плагинов. Используйте: list, enable')
-  }
-}
-
-function configCommand() {
-  const subCommand = args[1]
-  const type = args[2]
-
-  if (subCommand === 'create' && type) {
-    let config
-    switch (type) {
-      case 'developer':
-        config = ConfigFactory.createDeveloperConfig()
-        break
-      case 'accessibility':
-        config = ConfigFactory.createAccessibilityConfig()
-        break
-      case 'minimal':
-        config = ConfigFactory.createMinimalConfig()
-        break
-      default:
-        console.error(`❌ Неизвестный тип конфигурации: ${type}`)
-        process.exit(1)
-    }
-
-    const outputPath = `./theme-config-${type}.json`
-    fs.writeFileSync(outputPath, JSON.stringify(config, null, 2) + '\n', 'utf8')
-    console.log(`✅ Конфигурация "${type}" создана: ${outputPath}`)
-  } else {
-    console.error('❌ Использование: config create <type>')
-  }
-}
+// Удалены команды plugins и config для упрощения
 
 function infoCommand() {
-  console.log('🎨 Tokyo Night Lod - Улучшенная архитектура')
+  console.log('🎨 Tokyo Night Lod — упрощённая архитектура')
   console.log('📦 Версия: 0.4.0')
-  console.log('🏗️  Архитектура: Модульная с поддержкой плагинов')
+  console.log(
+    '🏗️  Архитектура: Плоская (без конфигов и плагинов), генерация через ThemeBuilder'
+  )
   console.log('🎯 Особенности:')
-  console.log('  - Множественные варианты темы')
-  console.log('  - Система плагинов для языков')
-  console.log('  - Автоматическая валидация')
-  console.log('  - Динамическая генерация цветов')
-  console.log('  - Гибкая конфигурация')
-  console.log('  - WCAG 2.1 совместимость')
+  console.log(
+    '  - Встроенные варианты: dark, high-contrast, minimal, light, accessibility'
+  )
+  console.log('  - Автоматическая валидация тем')
+  console.log('  - Цвета строго из палитры + цветокоррекция (без хардкода)')
+  console.log('  - Совместимость с WCAG 2.1 (контрастность)')
 }
 
 // Обработка команд
@@ -173,12 +124,6 @@ switch (command) {
     break
   case 'validate':
     validateCommand()
-    break
-  case 'plugins':
-    pluginsCommand()
-    break
-  case 'config':
-    configCommand()
     break
   case 'info':
     infoCommand()

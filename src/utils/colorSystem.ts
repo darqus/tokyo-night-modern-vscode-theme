@@ -1,3 +1,9 @@
+/**
+ * Deprecated: color system utilities are not used in simplified architecture.
+ * Left as a stub for compatibility.
+ */
+export {}
+
 import type { Hex } from '../types/palette'
 import { core } from '../palette.core'
 import { withAlpha } from './color'

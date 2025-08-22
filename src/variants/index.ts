@@ -1,3 +1,9 @@
+/**
+ * Deprecated: Variant manager collapsed into ThemeBuilder flows.
+ * Keep this stub to avoid breaking imports; no runtime functionality.
+ */
+export {}
+
 import type { ThemeVariant, ThemeConfig } from '../types/theme'
 import type { Palette, Hex } from '../types/palette'
 

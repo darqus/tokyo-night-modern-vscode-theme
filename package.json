@@ -69,8 +69,7 @@
   },
   "scripts": {
     "build": "ts-node src/build.ts",
-    "build:all": "ts-node src/build.ts && npm run build:variants",
-    "build:variants": "ts-node scripts/cli.ts build accessibility && ts-node scripts/cli.ts build minimal",
+    "build:all": "ts-node src/build.ts",
     "validate": "ts-node src/scripts/validate-theme.ts",
     "validate:all": "ts-node src/scripts/validate-theme.ts --all",
     "validate:summary": "ts-node src/scripts/validate-theme.ts --all --summary",

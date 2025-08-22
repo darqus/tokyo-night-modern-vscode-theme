@@ -1,3 +1,9 @@
+/**
+ * Deprecated: UI component manager removed to simplify theme generation.
+ * This stub remains intentionally empty.
+ */
+export {}
+
 import type {
   UIComponent,
   ComponentStates,
