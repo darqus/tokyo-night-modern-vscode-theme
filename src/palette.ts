@@ -30,7 +30,7 @@ const steelAlt = lightenToward(core.accent.blue, core.text.muted, 0.18)
 const steelMuted = mix(core.accent.blue, core.text.muted, 0.6)
 const brick = darkenToward(core.accent.red, core.accent.orange, 0.18)
 const redMuted = mix(core.accent.red, core.text.muted, 0.5)
-const badgeBase = lightenToward(core.accent.blue, core.accent.cyan, 0.12)
+const badgeBase = mix(core.accent.blue, core.text.muted, 0.5)
 const windowBorder = darkenToward(core.accent.blue, core.text.muted, 0.22)
 
 /**
@@ -253,7 +253,7 @@ export const palette: Palette = {
     badge: {
       // Значки
       base: badgeBase, // Базовый цвет значка
-      fg: core.text.selection, // Белый текст для максимального контраста на ярком фоне значка
+      fg: core.bg.base,
     },
     sash: {
       // Разделитель
