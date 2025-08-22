@@ -1,5 +1,5 @@
 import type { ThemePlugin, ThemeData } from '../types/theme'
-import { palette } from '../palette'
+import { palette, core } from '../palette'
 
 /**
  * Система плагинов для расширения функциональности темы
@@ -174,14 +174,14 @@ export const highContrastPlugin: ThemePlugin = {
     const enhancedColors = { ...theme.colors }
 
     // Делаем текст ярче
-    enhancedColors.foreground = '#ffffff'
-    enhancedColors['editor.foreground'] = '#ffffff'
-    enhancedColors['sideBar.foreground'] = '#ffffff'
+    enhancedColors.foreground = core.text.selection
+    enhancedColors['editor.foreground'] = core.text.selection
+    enhancedColors['sideBar.foreground'] = core.text.selection
 
     // Усиливаем границы
-    enhancedColors.focusBorder = '#ffffff'
-    enhancedColors['button.focusBorder'] = '#ffffff'
-    enhancedColors['input.focusBorder'] = '#ffffff'
+    enhancedColors.focusBorder = core.text.selection
+    enhancedColors['button.focusBorder'] = core.text.selection
+    enhancedColors['input.focusBorder'] = core.text.selection
 
     return {
       ...theme,

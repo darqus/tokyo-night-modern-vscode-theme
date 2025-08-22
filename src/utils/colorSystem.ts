@@ -1,4 +1,5 @@
 import type { Hex } from '../palette'
+import { core } from '../palette'
 import { withAlpha } from './color'
 
 /**
@@ -42,7 +43,9 @@ export class DynamicColorSystem {
     }
 
     const colorNames = contextMap[context] || ['blue']
-    return colorNames.map((name) => this.baseColors.get(name) || '#7aa2f7')
+    return colorNames.map(
+      (name) => this.baseColors.get(name) || core.accent.blue
+    )
   }
 
   /**
@@ -50,7 +53,7 @@ export class DynamicColorSystem {
    */
   generateJsonKeys(maxDepth: number = 4): Record<string, Hex> {
     const result: Record<string, Hex> = {}
-    const baseColor = this.baseColors.get('blue') || '#7aa2f7'
+    const baseColor = this.baseColors.get('blue') || core.accent.blue
 
     for (let i = 0; i <= maxDepth; i++) {
       result[`jsonKey${i}`] = this.generateByDepth(baseColor, i, maxDepth)
@@ -63,7 +66,7 @@ export class DynamicColorSystem {
    * Генерация заголовков Markdown
    */
   generateMarkdownHeaders(): Record<string, Hex> {
-    const baseColor = this.baseColors.get('green') || '#9ece6a'
+    const baseColor = this.baseColors.get('green') || core.accent.green
     const headers: Record<string, Hex> = {}
 
     for (let i = 1; i <= 6; i++) {

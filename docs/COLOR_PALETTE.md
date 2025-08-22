@@ -2,6 +2,20 @@
 
 This document provides a complete reference for the Tokyo Night Lod color palette, including hex values, usage contexts, and customization guidelines.
 
+## Core colors (no-duplication source)
+
+To avoid duplication and drift, the theme exposes a centralized set of base colors in code:
+
+- Source: `src/palette.ts` exports `core` and `palette`
+- Prefer `core` for shared, repeated colors (backgrounds, borders, text levels, and accent families)
+- Use `palette` for domain-specific mappings (UI, tokens, ansi, etc.)
+
+Guideline:
+
+- New shared colors that recur across multiple areas should be added to `core` first.
+- Downstream usage should reference `core` (or `palette` if it’s a domain mapping) instead of hardcoding hex values.
+- This keeps contrast, branding and hue families consistent across the theme variants and plugins.
+
 ## 🎨 Primary Palette
 
 ### Background Colors
@@ -34,7 +48,7 @@ This document provides a complete reference for the Tokyo Night Lod color palett
 | **Functions** | `#7aa2f7` | Function names | `function()`, `method()` |
 | **Variables** | `#c0caf5` | Variable names | `const myVar`, `let data` |
 | **Types** | `#7dcfff` | Type annotations | `string`, `number`, `boolean` |
-| **Operators** | `#89ddff` | Operators | `+`, `-`, `=`, `&&`, `||` |
+| **Operators** | `#89ddff` | Operators | `+`, `-`, `=`, `&&`, `\|\|` |
 
 ### Semantic Colors
 
