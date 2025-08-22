@@ -1,21 +1,8 @@
 import type { Hex } from './palette'
 
 /**
- * Основные типы для улучшенной архитектуры темы
+ * Основные типы для Tokyo Night Lod темы
  */
-
-export interface ThemeVariant {
-  id: string
-  name: string
-  displayName: string
-  baseConfig: ThemeConfig
-}
-
-export interface ThemeConfig {
-  contrast: 'low' | 'normal' | 'high'
-  saturation: 'muted' | 'normal' | 'vibrant'
-  brightness: 'darker' | 'normal' | 'lighter'
-}
 
 export interface ComponentStates {
   default: ComponentStyle
@@ -35,11 +22,6 @@ export interface ComponentStyle {
 export interface UIComponent {
   name: string
   states: ComponentStates
-  variants?: ComponentVariants
-}
-
-export interface ComponentVariants {
-  [key: string]: ComponentStates
 }
 
 export interface ColorScale {
@@ -89,7 +71,6 @@ export interface ThemePlugin {
 }
 
 export interface ThemeSettings {
-  variant: string
   contrast: 'low' | 'normal' | 'high'
 
   syntax: {

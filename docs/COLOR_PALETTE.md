@@ -84,27 +84,18 @@ Guideline:
 | **Info** | `#7aa2f7` | Information notices |
 | **Success** | `#9ece6a` | Success indicators |
 
-## 🎯 Theme Variants
+## 🎯 Tokyo Night Lod Theme
 
-### High Contrast Version
+The single, carefully crafted theme with optimal balance:
 
-Increased contrast ratios for better accessibility:
-
-| Element | Standard | High Contrast |
-|---------|----------|---------------|
-| Background | `#1a1b26` | `#0f0f14` |
-| Text | `#c0caf5` | `#ffffff` |
-| Selection | `#283457` | `#4a5c8a` |
-
-### Minimal Version
-
-Reduced visual noise for distraction-free coding:
-
-| Element | Standard | Minimal |
-|---------|----------|---------|
-| Line Numbers | `#3b4261` | `#2a2f47` |
-| Indent Guides | `#292e42` | `#1f2336` |
-| Brackets | `#89ddff` | `#7aa2f7` |
+| Element | Hex Value | Description |
+|---------|-----------|-------------|
+| Background | `#1a1b26` | Main editor background |
+| Text | `#c0caf5` | Primary text color |
+| Selection | `#283457` | Text selection background |
+| Line Numbers | `#3b4261` | Line number color |
+| Indent Guides | `#292e42` | Indentation guides |
+| Brackets | `#89ddff` | Bracket matching |
 
 ## 🛠️ Customization
 

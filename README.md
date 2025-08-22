@@ -5,11 +5,11 @@
 [![Issues](https://img.shields.io/github/issues/darqus/tokyo-night-vscode-theme-lod)](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A refined version of the Tokyo Night theme with improved contrast, multiple variants, and a modern TypeScript-based architecture.
+A refined version of the Tokyo Night theme with improved contrast and a modern TypeScript-based architecture.
 
 ## ✨ Features
 
-- **🎨 Multiple Variants** - Standard, High Contrast, Minimal, and Accessibility versions
+- **🎨 Refined Design** - Carefully balanced colors for optimal readability
 - **🔧 TypeScript Architecture** - Modern, maintainable theme generation system
 - **🤖 Smart Versioning** - Automated release management with conventional commits
 - **🧪 Quality Assurance** - Comprehensive testing and validation pipeline
@@ -44,13 +44,9 @@ npm run package
 code --install-extension tokyo-night-lod-*.vsix
 ```
 
-## 🎨 Theme Variants
+## 🎨 Theme
 
-| Variant | Description | Best For |
-|---------|-------------|----------|
-| **Tokyo Night Lod** | Standard version with balanced contrast | General development |
-| **Tokyo Night Lod High Contrast** | Enhanced contrast for better visibility | Accessibility, bright environments |
-| **Tokyo Night Lod Minimal** | Clean, minimal styling | Distraction-free coding |
+**Tokyo Night Lod** - A refined dark theme with balanced contrast, perfect for general development work. Features carefully selected colors that provide excellent readability while maintaining the aesthetic appeal of the original Tokyo Night theme.
 
 ## 🛠️ For Developers
 
@@ -62,8 +58,8 @@ git clone https://github.com/darqus/tokyo-night-vscode-theme-lod.git
 cd tokyo-night-vscode-theme-lod
 npm install
 
-# Build all theme variants
-npm run build:all
+# Build the theme
+npm run build
 
 # Run tests
 npm test

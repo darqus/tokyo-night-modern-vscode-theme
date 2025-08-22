@@ -97,7 +97,7 @@ class ReleaseManager {
    */
   private buildProject(): void {
     try {
-      execSync('npm run build:all', { stdio: 'inherit' })
+      execSync('npm run build', { stdio: 'inherit' })
     } catch (error) {
       throw new Error('Ошибка сборки проекта')
     }

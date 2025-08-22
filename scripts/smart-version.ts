@@ -422,7 +422,7 @@ class SmartVersionManager {
     // Собираем проект
     console.log('🏗️  Building project...')
     try {
-      execSync('npm run build:all', { stdio: 'inherit' })
+      execSync('npm run build', { stdio: 'inherit' })
     } catch (error) {
       throw new Error('Ошибка сборки проекта')
     }

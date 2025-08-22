@@ -1,7 +1,7 @@
 {
   "name": "tokyo-night-lod",
   "displayName": "Tokyo Night Lod",
-  "description": "A darker version of the Tokyo Night theme.",
+  "description": "A refined version of the Tokyo Night theme with improved contrast and modern TypeScript architecture.",
   "version": "1.3.0",
   "author": "lod",
   "publisher": "lod-inc",
@@ -39,37 +39,11 @@
         "label": "Tokyo Night Lod",
         "uiTheme": "vs-dark",
         "path": "./themes/tokyo-night-dark-color-theme.json"
-      },
-      {
-        "label": "Tokyo Night Lod High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/tokyo-night-dark-high-contrast-color-theme.json"
-      },
-      {
-        "label": "Tokyo Night Lod Minimal",
-        "uiTheme": "vs-dark",
-        "path": "./themes/tokyo-night-dark-minimal-color-theme.json"
-      },
-      {
-        "label": "Tokyo Night Lod Accessibility",
-        "uiTheme": "hc-black",
-        "path": "./themes/tokyo-night-accessibility-color-theme.json"
-      },
-      {
-        "label": "Tokyo Night Lod Clean",
-        "uiTheme": "vs-dark",
-        "path": "./themes/tokyo-night-minimal-color-theme.json"
-      },
-      {
-        "label": "Tokyo Night Lod Light",
-        "uiTheme": "vs",
-        "path": "./themes/tokyo-night-light-color-theme.json"
       }
     ]
   },
   "scripts": {
     "build": "ts-node src/build.ts",
-    "build:all": "ts-node src/build.ts",
     "validate": "ts-node src/scripts/validate-theme.ts",
     "validate:all": "ts-node src/scripts/validate-theme.ts --all",
     "validate:summary": "ts-node src/scripts/validate-theme.ts --all --summary",

@@ -19,7 +19,7 @@ cd tokyo-night-vscode-theme-lod
 npm install
 
 # Build the theme
-npm run build:all
+npm run build
 
 # Run tests
 npm test
@@ -30,18 +30,12 @@ npm test
 ### Build Commands
 
 ```bash
-npm run build           # Build main theme only
-npm run build:all       # Build all theme variants
-npm run build:variants  # Build accessibility and minimal variants
+npm run build    # Build the theme
 ```
 
-### Theme Files Generated
+### Theme File Generated
 
-- `themes/tokyo-night-dark-color-theme.json` - Main theme
-- `themes/tokyo-night-dark-high-contrast-color-theme.json` - High contrast variant
-- `themes/tokyo-night-dark-minimal-color-theme.json` - Minimal variant
-- `themes/tokyo-night-accessibility-color-theme.json` - Accessibility focused
-- `themes/tokyo-night-minimal-color-theme.json` - Clean minimal version
+- `themes/tokyo-night-dark-color-theme.json` - Tokyo Night Lod theme
 
 ## 🎨 Customizing Colors
 
@@ -53,7 +47,7 @@ npm run build:variants  # Build accessibility and minimal variants
    - `foreground` - Text colors
    - `accent` - Highlight colors
    - `syntax` - Code syntax colors
-3. Run `npm run build:all` to regenerate themes
+3. Run `npm run build` to regenerate the theme
 4. Test in VS Code
 
 ### Example Color Change
@@ -116,7 +110,7 @@ npm run validate:all  # Validate theme files
 
 ### Manual Testing
 
-1. Build themes: `npm run build:all`
+1. Build themes: `npm run build`
 2. Install extension locally: `npm run package`
 3. Load `.vsix` file in VS Code
 4. Test with different file types
@@ -192,7 +186,7 @@ npm run cli test
    - Verify color values are valid hex codes
 
 2. **Colors Not Applying**
-   - Rebuild themes: `npm run build:all`
+   - Rebuild themes: `npm run build`
    - Restart VS Code
    - Check theme is selected in VS Code settings
 
@@ -215,7 +209,7 @@ console.log('Generated theme colors:', theme.colors);
 ### Build Optimization
 
 - Use `npm run build` for single theme during development
-- Only run `npm run build:all` when needed
+- Only run `npm run build` when needed
 - Cache node_modules for faster CI builds
 
 ### Theme Size

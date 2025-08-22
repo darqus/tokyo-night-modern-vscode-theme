@@ -42,9 +42,7 @@ src/
     └── color.ts            # 🛠️ Color utilities
 
 themes/
-├── tokyo-night-dark-color-theme.json           # 📄 Main theme
-├── tokyo-night-dark-high-contrast-color-theme.json  # 🔍 High contrast variant
-└── tokyo-night-dark-minimal-color-theme.json        # ✨ Minimal variant
+└── tokyo-night-dark-color-theme.json           # 📄 Tokyo Night Lod theme
 
 scripts/
 ├── cli.ts                  # 🖥️ Command line interface
@@ -97,8 +95,7 @@ interface Palette {
 ### Build Pipeline
 
 ```bash
-npm run build        # Build main theme
-npm run build:all    # Build all variants
+npm run build       # Build the theme
 npm run validate     # Validate theme files
 npm run test        # Run all tests
 ```
@@ -194,7 +191,7 @@ npm run validate:all       # Validate all themes
 
 1. **Modify Colors** - Edit `src/palette.ts`
 2. **Update Tokens** - Modify `src/tokenColors.ts` or `src/semanticTokenColors.ts`
-3. **Build Theme** - Run `npm run build:all`
+3. **Build Theme** - Run `npm run build`
 4. **Test Changes** - Run `npm test`
 5. **Validate Output** - Check generated theme files
 

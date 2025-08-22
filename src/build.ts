@@ -150,70 +150,7 @@ const main = () => {
   validateAndSaveTheme(theme, themePath, 'Tokyo Night Dark')
   console.log(`📁 Файл: ${themePath}`)
 
-  // Генерируем дополнительные варианты
-  console.log('\n🎨 Генерация вариантов темы...')
-
-  // Высококонтрастная тема
-  const highContrastTheme = ThemeBuilder.buildHighContrast()
-  const highContrastPath = path.join(
-    root,
-    'themes',
-    'tokyo-night-dark-high-contrast-color-theme.json'
-  )
-  validateAndSaveTheme(
-    highContrastTheme,
-    highContrastPath,
-    'Tokyo Night High Contrast'
-  )
-  console.log(`📁 Высококонтрастная тема: ${highContrastPath}`)
-
-  // Минималистичная тема
-  const minimalTheme = ThemeBuilder.buildMinimal()
-  const minimalPath = path.join(
-    root,
-    'themes',
-    'tokyo-night-dark-minimal-color-theme.json'
-  )
-  validateAndSaveTheme(minimalTheme, minimalPath, 'Tokyo Night Minimal')
-  console.log(`📁 Минималистичная тема: ${minimalPath}`)
-
-  // Тема accessibility
-  const accessibilityTheme = ThemeBuilder.buildAccessibility()
-  const accessibilityPath = path.join(
-    root,
-    'themes',
-    'tokyo-night-accessibility-color-theme.json'
-  )
-  validateAndSaveTheme(
-    accessibilityTheme,
-    accessibilityPath,
-    'Tokyo Night Accessibility'
-  )
-  console.log(`📁 Accessibility тема: ${accessibilityPath}`)
-
-  // Светлая тема
-  const lightTheme = ThemeBuilder.buildLight()
-  const lightPath = path.join(
-    root,
-    'themes',
-    'tokyo-night-light-color-theme.json'
-  )
-  validateAndSaveTheme(lightTheme, lightPath, 'Tokyo Night Light')
-  console.log(`📁 Светлая тема: ${lightPath}`)
-
-  // Обновляем также minimal theme (чистый вариант)
-  const cleanTheme = ThemeBuilder.buildMinimal()
-  cleanTheme.name = 'Tokyo Night Lod Clean'
-  cleanTheme.displayName = 'Tokyo Night Lod Clean'
-  const cleanPath = path.join(
-    root,
-    'themes',
-    'tokyo-night-minimal-color-theme.json'
-  )
-  validateAndSaveTheme(cleanTheme, cleanPath, 'Tokyo Night Clean')
-  console.log(`📁 Чистая тема: ${cleanPath}`)
-
-  console.log('\n🎉 Сборка завершена! Все темы прошли валидацию.')
+  console.log('\n🎉 Сборка завершена! Тема прошла валидацию.')
 }
 
 if (require.main === module) {
