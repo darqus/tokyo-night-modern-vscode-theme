@@ -42,7 +42,7 @@
       },
       {
         "label": "Tokyo Night Lod High Contrast",
-        "uiTheme": "hc-dark",
+        "uiTheme": "hc-black",
         "path": "./themes/tokyo-night-dark-high-contrast-color-theme.json"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "label": "Tokyo Night Lod Accessibility",
-        "uiTheme": "hc-dark",
+        "uiTheme": "hc-black",
         "path": "./themes/tokyo-night-accessibility-color-theme.json"
       },
       {
@@ -78,6 +78,7 @@
     "validate:colors": "ts-node src/scripts/validate-theme.ts --all --verbose | grep 'ИНФОРМАЦИЯ.*используется'",
     "validate:fix": "ts-node src/scripts/validate-theme.ts --all --fix",
     "test": "npm run validate:all && npm run test:smoke",
+    "lint:hex": "ts-node scripts/lint-hex.ts",
     "test:smoke": "ts-node scripts/smoke-compare.ts",
     "test:version": "ts-node scripts/test-smart-version.ts",
     "cli": "ts-node scripts/cli.ts",

@@ -384,11 +384,11 @@
   "colors": {
     "foreground": "#263238",
     "descriptionForeground": "#455a64",
-    "errorForeground": "#d32f2f",
+    "errorForeground": "#b71c1c",
     "editor.background": "#ffffff",
     "editor.foreground": "#263238",
     "activityBar.background": "#f5f5f5",
-    "activityBar.foreground": "#455a64",
+    "activityBar.foreground": "#263238",
     "sideBar.background": "#fafafa",
     "sideBar.foreground": "#37474f",
     "statusBar.background": "#e0e0e0",
@@ -409,7 +409,8 @@
     "button.hoverBackground": "#1565c0",
     "input.background": "#ffffff",
     "input.foreground": "#263238",
-    "input.border": "#bdbdbd"
+    "input.border": "#bdbdbd",
+    "focusBorder": "#1976d2"
   },
   "tokenColors": [
     {

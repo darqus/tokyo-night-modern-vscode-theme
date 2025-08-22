@@ -1,4 +1,4 @@
-import { palette } from '../palette'
+import { palette, core } from '../palette'
 import { buildColors } from '../build'
 import { tokenColors } from '../tokenColors'
 import { semanticTokenColors } from '../semanticTokenColors'
@@ -55,8 +55,8 @@ export class ThemeBuilder {
       ...baseColors,
 
       // Увеличиваем контраст текста
-      'editor.foreground': '#ffffff',
-      foreground: '#ffffff',
+      'editor.foreground': core.text.selection,
+      foreground: core.text.selection,
 
       // Делаем фон более тёмным
       'editor.background': '#000000',
@@ -81,19 +81,19 @@ export class ThemeBuilder {
 
       // Контрастные кнопки
       'button.background': '#0066cc',
-      'button.foreground': '#ffffff',
+      'button.foreground': core.text.selection,
       'button.hoverBackground': '#0080ff',
 
       // Контрастные поля ввода
       'input.background': '#1a1a1a',
-      'input.foreground': '#ffffff',
+      'input.foreground': core.text.selection,
       'input.border': '#ffffff66',
     }
 
     // Корректируем семантические токены для лучшего контраста
     const highContrastSemanticTokens = {
       ...semanticTokenColors,
-      variable: { foreground: '#ffffff' },
+      variable: { foreground: core.text.selection },
       function: { foreground: '#00ffff' },
       class: { foreground: '#ffff00' },
       type: { foreground: '#ff00ff' },
@@ -187,13 +187,13 @@ export class ThemeBuilder {
       // Базовые цвета
       foreground: '#263238',
       descriptionForeground: '#455a64',
-      errorForeground: '#d32f2f',
+      errorForeground: '#b71c1c',
 
       // Фоны
       'editor.background': '#ffffff',
       'editor.foreground': '#263238',
       'activityBar.background': '#f5f5f5',
-      'activityBar.foreground': '#455a64',
+      'activityBar.foreground': '#263238',
       'sideBar.background': '#fafafa',
       'sideBar.foreground': '#37474f',
       'statusBar.background': '#e0e0e0',
@@ -218,13 +218,15 @@ export class ThemeBuilder {
 
       // Кнопки
       'button.background': '#1976d2',
-      'button.foreground': '#ffffff',
+      'button.foreground': core.text.selection,
       'button.hoverBackground': '#1565c0',
 
       // Поля ввода
       'input.background': '#ffffff',
       'input.foreground': '#263238',
       'input.border': '#bdbdbd',
+      // Видимая граница фокуса для улучшенной доступности
+      focusBorder: '#1976d2',
     }
 
     // Светлые семантические токены
@@ -262,11 +264,11 @@ export class ThemeBuilder {
       ...baseColors,
 
       // WCAG AAA compliance - коэффициент контрастности 7:1
-      foreground: '#ffffff',
-      'editor.foreground': '#ffffff',
-      'activityBar.foreground': '#ffffff',
-      'sideBar.foreground': '#ffffff',
-      'statusBar.foreground': '#ffffff',
+      foreground: core.text.selection,
+      'editor.foreground': core.text.selection,
+      'activityBar.foreground': core.text.selection,
+      'sideBar.foreground': core.text.selection,
+      'statusBar.foreground': core.text.selection,
 
       // Более заметные границы
       focusBorder: '#ffff00', // Жёлтая граница фокуса
@@ -276,7 +278,7 @@ export class ThemeBuilder {
 
       // Контрастные кнопки
       'button.background': '#0066cc',
-      'button.foreground': '#ffffff',
+      'button.foreground': core.text.selection,
       'button.hoverBackground': '#0080ff',
 
       // Заметные цвета состояний
