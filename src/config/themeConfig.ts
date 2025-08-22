@@ -1,6 +1,7 @@
 import type { ThemeSettings, ThemeData, ThemeConfig } from '../types/theme'
 import type { Palette } from '../types/palette'
 import { palette } from '../palette'
+import { core } from '../palette.core'
 import { ThemeVariantManager, variants } from '../variants/index'
 import { buildColors } from '../build'
 import { tokenColors } from '../tokenColors'
@@ -169,8 +170,8 @@ export class ThemeConfigManager {
 
     if (this.config.ui.tabBarStyle === 'minimal') {
       // Упрощенный стиль вкладок
-      baseColors['tab.border'] = 'transparent'
-      baseColors['tab.activeBorder'] = 'transparent'
+      baseColors['tab.border'] = core.ui.shadow
+      baseColors['tab.activeBorder'] = core.ui.shadow
     }
 
     return baseColors

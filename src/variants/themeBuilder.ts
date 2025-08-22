@@ -126,29 +126,29 @@ export class ThemeBuilder {
       ...baseColors,
 
       // Убираем границы и рамки
-      'activityBar.border': 'transparent',
-      'sideBar.border': 'transparent',
-      'tab.border': 'transparent',
-      'panel.border': 'transparent',
-      'statusBar.border': 'transparent',
-      'titleBar.border': 'transparent',
+      'activityBar.border': core.ui.shadow,
+      'sideBar.border': core.ui.shadow,
+      'tab.border': core.ui.shadow,
+      'panel.border': core.ui.shadow,
+      'statusBar.border': core.ui.shadow,
+      'titleBar.border': core.ui.shadow,
 
       // Убираем активные границы
-      'tab.activeBorder': 'transparent',
-      'panelTitle.activeBorder': 'transparent',
-      'activityBar.activeBorder': 'transparent',
+      'tab.activeBorder': core.ui.shadow,
+      'panelTitle.activeBorder': core.ui.shadow,
+      'activityBar.activeBorder': core.ui.shadow,
 
       // Минимальные цвета выделения
-      'editor.lineHighlightBackground': 'transparent',
-      'editor.lineHighlightBorder': 'transparent',
+      'editor.lineHighlightBackground': core.ui.shadow,
+      'editor.lineHighlightBorder': core.ui.shadow,
 
       // Упрощённые цвета hover
-      'list.hoverBackground': 'transparent',
-      'tab.hoverBackground': 'transparent',
+      'list.hoverBackground': core.ui.shadow,
+      'tab.hoverBackground': core.ui.shadow,
 
       // Убираем тени
-      'widget.shadow': 'transparent',
-      'scrollbar.shadow': 'transparent',
+      'widget.shadow': core.ui.shadow,
+      'scrollbar.shadow': core.ui.shadow,
 
       // Приглушённые цвета значков
       'activityBarBadge.background': palette.fg.subtle,
