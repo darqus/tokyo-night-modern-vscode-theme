@@ -33,11 +33,12 @@ export const core = {
 
   // Текстовые тона
   text: {
-    primary: '#c0caf5' as Hex,
-    muted: '#a9b1d6' as Hex,
+    // Чуть более холодные тона для текста, чтобы убрать розоватый оттенок на откалиброванных дисплеях
+    primary: '#c7d2ff' as Hex,
+    muted: '#b3bce8' as Hex,
     subtle: '#7580a7' as Hex,
     inactive: '#7883b3' as Hex,
-    soft: '#a9b1d6' as Hex,
+    soft: '#b3bce8' as Hex,
     selection: '#ffffff' as Hex,
     subtle2: '#9aa5ce' as Hex,
     gray600: '#545c7e' as Hex,
@@ -57,7 +58,8 @@ export const core = {
     tealDeep: '#0db9d7' as Hex,
     purple: '#9d7cd8' as Hex,
     magenta: '#bb9af7' as Hex,
-    red: '#f7768e' as Hex,
+    // Чуть более холодный и менее насыщенный красный, чтобы не "кричал" на дисплеях с точной цветопередачей
+    red: '#e46876' as Hex,
     green: '#9ece6a' as Hex,
     sky: '#38bdf8' as Hex,
     skyLight: '#7dd3fc' as Hex,

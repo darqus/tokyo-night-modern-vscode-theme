@@ -89,7 +89,8 @@ export const palette: Palette = {
     keyword: core.accent.magenta, // Общие ключевые слова
     keywordSql: core.accent.cyan, // SQL ключевые слова
     keywordLogical: core.accent.magenta, // Логические операторы
-    tag: core.accent.red, // HTML/XML теги
+    // Теги делаем менее "красными" для общих сценариев чтения кода
+    tag: core.accent.blue, // HTML/XML теги
     tagComponent: core.accent.magenta, // Теги компонентов (теперь пурпурные)
     tagPunctuation: core.text.muted, // Пунктуация тегов
     globalConstant: core.accent.skyLight, // Глобальные константы - холодный голубо-желтый
@@ -100,8 +101,8 @@ export const palette: Palette = {
     objectProperty: core.accent.cyan, // Свойства объектов
     objectPropertyAlt: core.text.primary, // Свойства объектов (альтернативные)
     objectKeyLevel3: core.accent.azureLight, // Вложенные ключи объектов (уровень 3)
-    cVariable: core.accent.red, // C-связанные переменные
-    otherVariable: core.accent.red, // Другие переменные
+    cVariable: core.accent.blue, // C-связанные переменные (сдвиг к синему)
+    otherVariable: core.accent.cyan, // Другие переменные (сдвиг к циану)
     method: core.accent.blue, // Методы
     function: core.accent.blue, // Функции
     functionArg: core.accent.sky, // Аргументы функций - холодный голубой
@@ -123,8 +124,8 @@ export const palette: Palette = {
     scssMixin: core.accent.magenta, // SCSS миксины
     scssInclude: core.accent.purple, // SCSS включения
     cssValue: core.accent.mint, // CSS значения - холодный зеленый
-    languageMethod: core.accent.red, // Языковые методы
-    thisKeyword: core.accent.red, // Ключевое слово this
+    languageMethod: core.accent.blue, // Языковые методы
+    thisKeyword: core.accent.cyan, // Ключевое слово this
     htmlAttribute: core.accent.magenta, // HTML атрибуты
     htmlEntity: core.accent.tealDeep, // HTML сущности
     vueAttribute: core.accent.magenta, // Vue атрибуты
@@ -133,14 +134,14 @@ export const palette: Palette = {
     markupDeleted: core.accent.maroon, // Удаленная разметка
     markupChanged: core.accent.blueMuted, // Измененная разметка
     regex: core.accent.aquaLight, // Регулярные выражения
-    regexGroup: core.accent.red, // Группы регулярных выражений
+    regexGroup: core.accent.purple, // Группы регулярных выражений (холоднее)
     regexCharClass: core.accent.magenta, // Классы символов регулярных выражений
     regexCharSet: core.accent.sky, // Наборы символов регулярных выражений - холодный голубой
     regexQuantifier: core.accent.green, // Квантификаторы регулярных выражений
     regexBackslash: core.text.primary, // Обратная косая черта в регулярных выражениях
     escapeChar: core.accent.green, // Escape-символы
     decorator: core.accent.blue, // Декораторы
-    cssUnit: core.accent.red, // CSS единицы измерения
+    cssUnit: core.accent.blue, // CSS единицы измерения (холоднее)
     jsonKey0: core.accent.blue, // JSON ключи (разные уровни)
     jsonKey1: core.accent.tealDeep,
     jsonKey2: core.accent.cyan,
@@ -240,7 +241,7 @@ export const palette: Palette = {
     },
     editorLinkActive: core.text.editorLinkActive, // Ссылки в редакторе когда активны
     codeLens: core.accent.blue, // Текст CodeLens - увеличена контрастность
-    noMatches: core.accent.red, // Общий контур "нет совпадений" (например, виджет фильтра)
+    noMatches: core.accent.blue, // Общий контур "нет совпадений" (прохладнее)
     settingsHeader: core.accent.blueMuted, // Приглушенная синяя подсветка для предложений и т.д.
     window: {
       // Границы окон

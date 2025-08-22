@@ -255,7 +255,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
-      foreground: palette.accent.red,
+      foreground: palette.accent.blue,
     },
   },
   {
@@ -357,7 +357,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'C-related Block Level Variables',
     scope: 'source.cpp meta.block variable.other',
     settings: {
-      foreground: palette.accent.red,
+      foreground: palette.accent.cyan,
     },
   },
   {
