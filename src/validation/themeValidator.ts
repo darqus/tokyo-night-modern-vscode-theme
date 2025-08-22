@@ -11,6 +11,12 @@ import type { Hex } from '../palette'
  * Автоматически проверяет контрастность, консистентность и доступность
  */
 
+export interface ValidationOptions {
+  verbose?: boolean
+  skipInfo?: boolean
+  rules?: string[]
+}
+
 export class ThemeValidator {
   private rules: ValidationRule[] = [
     {
@@ -41,16 +47,46 @@ export class ThemeValidator {
     },
   ]
 
+  private options: ValidationOptions = {}
+
+  constructor(options: ValidationOptions = {}) {
+    this.options = {
+      verbose: false,
+      skipInfo: false,
+      ...options,
+    }
+  }
+
   /**
    * Валидация всей темы
    */
-  validateTheme(theme: ThemeData): ValidationResult {
+  validateTheme(
+    theme: ThemeData,
+    options?: ValidationOptions
+  ): ValidationResult {
+    const validationOptions = { ...this.options, ...options }
     const allIssues: ValidationIssue[] = []
 
-    for (const rule of this.rules) {
+    // Фильтруем правила, если указаны конкретные
+    const rulesToRun = validationOptions.rules
+      ? this.rules.filter((rule) =>
+          validationOptions.rules!.includes(rule.name)
+        )
+      : this.rules
+
+    for (const rule of rulesToRun) {
       try {
         const result = rule.validate(theme)
-        allIssues.push(...result.issues)
+        let filteredIssues = result.issues
+
+        // Фильтруем информационные сообщения если нужно
+        if (validationOptions.skipInfo) {
+          filteredIssues = result.issues.filter(
+            (issue) => issue.severity !== 'info'
+          )
+        }
+
+        allIssues.push(...filteredIssues)
       } catch (error) {
         allIssues.push({
           severity: 'error',
@@ -226,18 +262,81 @@ export class ThemeValidator {
       colorCount.get(value)!.push(key)
     })
 
-    // Ищем избыточные дублирования
+    // Анализируем использование цветов с улучшенной логикой
     colorCount.forEach((keys, color) => {
-      if (keys.length > 5) {
+      const usage = keys.length
+
+      // Игнорируем основные цвета палитры, которые должны использоваться часто
+      const isBaseColor = this.isBaseThemeColor(color, keys)
+
+      if (usage > 20 && !isBaseColor) {
+        issues.push({
+          severity: 'warning',
+          message: `Цвет ${color} используется слишком часто (${usage} раз)`,
+          suggestion: `Проверьте, не нужно ли разделить на семантические варианты. Используется в: ${keys
+            .slice(0, 5)
+            .join(', ')}${usage > 5 ? '...' : ''}`,
+        })
+      } else if (usage > 10 && usage <= 20 && !isBaseColor) {
         issues.push({
           severity: 'info',
-          message: `Цвет ${color} используется в ${keys.length} местах`,
-          suggestion: 'Рассмотрите возможность выделения в переменную палитры',
+          message: `Цвет ${color} активно используется в ${usage} местах`,
+          suggestion: `Убедитесь, что это семантически корректно. Основные места: ${keys
+            .slice(0, 3)
+            .join(', ')}`,
+        })
+      } else if (usage > 5 && usage <= 10) {
+        // Для умеренного использования показываем только в verbose режиме
+        issues.push({
+          severity: 'info',
+          message: `Цвет ${color} используется в ${usage} местах`,
+          suggestion: 'Хорошо сбалансированное использование',
         })
       }
     })
 
     return { passed: true, issues }
+  }
+
+  /**
+   * Определяет, является ли цвет базовым цветом темы
+   */
+  private isBaseThemeColor(color: string, usageKeys: string[]): boolean {
+    // Основные цвета, которые должны использоваться часто
+    const baseColorPatterns = [
+      // Фоновые цвета
+      /background$/,
+      /\.background$/,
+      // Цвета текста
+      /foreground$/,
+      /\.foreground$/,
+      // Границы
+      /border$/,
+      /\.border$/,
+    ]
+
+    // Проверяем, используется ли цвет в основных элементах темы
+    const hasBaseUsage = usageKeys.some(
+      (key) =>
+        baseColorPatterns.some((pattern) => pattern.test(key)) ||
+        key === 'foreground' ||
+        key === 'background' ||
+        key.includes('editor.') ||
+        key.includes('activityBar.') ||
+        key.includes('sideBar.')
+    )
+
+    // Определенные цвета считаются базовыми
+    const commonBaseColors = [
+      '#c0caf5', // Основной текст
+      '#a9b1d6', // Вторичный текст
+      '#22232e', // Темный фон
+      '#18181d', // Основной фон
+      '#1a1a21', // Фон панелей
+      '#ffffff', // Белый для контраста
+    ]
+
+    return hasBaseUsage || commonBaseColors.includes(color)
   }
 
   /**

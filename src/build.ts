@@ -145,8 +145,8 @@ const validateAndSaveTheme = (
     console.log(`✅ Валидация свойств ${themeName} прошла успешно`)
   }
 
-  // Валидируем качество темы
-  const qualityValidator = new ThemeValidator()
+  // Валидируем качество темы (с отключением избыточных информационных сообщений)
+  const qualityValidator = new ThemeValidator({ skipInfo: true })
   const qualityValidation = qualityValidator.validateTheme(theme)
 
   if (!qualityValidation.passed) {

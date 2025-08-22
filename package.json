@@ -74,6 +74,8 @@
     "validate": "ts-node src/scripts/validate-theme.ts",
     "validate:all": "ts-node src/scripts/validate-theme.ts --all",
     "validate:summary": "ts-node src/scripts/validate-theme.ts --all --summary",
+    "validate:verbose": "ts-node src/scripts/validate-theme.ts --all --verbose",
+    "validate:colors": "ts-node src/scripts/validate-theme.ts --all --verbose | grep 'ИНФОРМАЦИЯ.*используется'",
     "validate:fix": "ts-node src/scripts/validate-theme.ts --all --fix",
     "test": "npm run validate:all && npm run test:smoke",
     "test:smoke": "ts-node scripts/smoke-compare.ts",
