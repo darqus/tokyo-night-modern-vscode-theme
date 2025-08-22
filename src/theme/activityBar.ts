@@ -5,7 +5,7 @@ export const getActivityBarColors = () => ({
   'activityBar.background': palette.bg.base,
   'activityBar.foreground': palette.fg.muted, // Улучшенная контрастность: WCAG AA 4.5:1+
   'activityBar.activeBorder': palette.ui.badge.base, // Используем цвет бейджа для активной границы
-  'activityBar.activeBackground': palette.bg.elevated,
+  'activityBar.activeBackground': palette.bg.hover, // Более яркий фон для активного элемента
   'activityBar.inactiveForeground': palette.fg.muted, // Улучшенная контрастность для неактивных иконок
   'activityBar.border': palette.line.border,
   'activityBarBadge.background': palette.ui.badge.base, // Используем цвет бейджа
@@ -18,5 +18,5 @@ export const getActivityBarColors = () => ({
   // Вариант Activity Bar сверху (Activity Bar: Top)
   'activityBarTop.background': palette.bg.base,
   'activityBarTop.foreground': palette.fg.muted, // Улучшенная контрастность
-  'activityBarTop.activeBackground': palette.bg.elevated,
+  'activityBarTop.activeBackground': palette.bg.hover, // Более яркий фон для активного элемента в верхней панели
 })
