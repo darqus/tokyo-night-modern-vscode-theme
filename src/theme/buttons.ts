@@ -8,8 +8,8 @@ export const getButtonColors = () => ({
   'button.foreground': palette.fg.selectionText,
   'button.border': withAlpha(palette.fg.subtle, '25%'), // Увеличена видимость границы
   'button.separator': withAlpha(palette.fg.subtle, '31%'), // Увеличена видимость разделителя
-  'button.secondaryBackground': withAlpha(palette.bg.elevated, '100%'), // Полностью непрозрачный фон для лучшего контраста
-  'button.secondaryHoverBackground': withAlpha(palette.bg.hover, '100%'), // Полностью непрозрачный hover
-  'button.secondaryForeground': palette.fg.primary, // Основной цвет текста вместо белого для лучшей читаемости
+  'button.secondaryBackground': palette.brand.button.primary,
+  'button.secondaryHoverBackground': palette.brand.button.hover,
+  'button.secondaryForeground': palette.fg.selectionText,
   'progressBar.background': palette.brand.primary,
 })
