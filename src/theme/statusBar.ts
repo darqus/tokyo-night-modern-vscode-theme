@@ -16,11 +16,10 @@ export const getStatusBarColors = () => ({
   'statusBar.focusBorder': palette.ui.sash.hover,
   'statusBarItem.activeBackground': palette.bg.active,
   'statusBarItem.hoverForeground': palette.fg.primary,
-  'statusBarItem.hoverBackground': palette.ui.statusItem.hover,
+  'statusBarItem.hoverBackground': withAlpha(palette.bg.hover, '60%'),
   'statusBarItem.prominentBackground': palette.bg.overlay,
   'statusBarItem.prominentForeground': palette.fg.primary,
-  'statusBarItem.prominentHoverBackground':
-    palette.ui.statusItem.prominentHover,
+  'statusBarItem.prominentHoverBackground': withAlpha(palette.bg.hover, '40%'),
   'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
   // Remote индикатор
   'statusBarItem.remoteBackground': palette.brand.button.primary,
@@ -40,7 +39,7 @@ export const getStatusBarColors = () => ({
   ),
   'statusBarItem.warningHoverForeground': palette.bg.base,
   // Прочее
-  'statusBarItem.compactHoverBackground': palette.ui.statusItem.hover,
+  'statusBarItem.compactHoverBackground': withAlpha(palette.bg.hover, '50%'),
   'statusBarItem.focusBorder': palette.ui.sash.hover,
   'statusBarItem.offlineBackground': palette.ui.semantic.offline,
   'statusBarItem.offlineForeground': palette.ui.semantic.white,
