@@ -174,25 +174,41 @@ export class ThemeValidator {
   private validateAccessibility(theme: ThemeData): ValidationResult {
     const issues: ValidationIssue[] = []
 
-    // Проверяем наличие border для focus состояний
-    const focusElements = [
-      'focusBorder',
+    // Проверяем наличие общей границы фокуса (единственное корректное свойство)
+    if (
+      !theme.colors['focusBorder'] ||
+      theme.colors['focusBorder'] === 'transparent'
+    ) {
+      issues.push({
+        severity: 'warning',
+        message: `Отсутствует видимая граница фокуса для focusBorder`,
+        suggestion:
+          'Добавьте видимую границу в свойство "focusBorder" для лучшей навигации с клавиатуры',
+      })
+    }
+
+    // Проверяем, что устаревшие свойства фокуса не используются
+    const deprecatedFocusProperties = [
       'button.focusBorder',
       'input.focusBorder',
+      'checkbox.focusBorder',
+      'radio.focusBorder',
     ]
 
-    for (const element of focusElements) {
-      if (!theme.colors[element] || theme.colors[element] === 'transparent') {
+    for (const property of deprecatedFocusProperties) {
+      if (theme.colors[property]) {
         issues.push({
-          severity: 'warning',
-          message: `Отсутствует видимая граница фокуса для ${element}`,
-          suggestion:
-            'Добавьте видимую границу для лучшей навигации с клавиатуры',
+          severity: 'error',
+          message: `Свойство ${property} устарело`,
+          suggestion: `Используйте общее свойство "focusBorder" вместо "${property}"`,
         })
       }
     }
 
-    return { passed: true, issues }
+    return {
+      passed: issues.filter((i) => i.severity === 'error').length === 0,
+      issues,
+    }
   }
 
   /**
