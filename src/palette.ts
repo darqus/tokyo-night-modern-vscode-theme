@@ -338,11 +338,11 @@ export const palette: Palette = {
     },
     git: {
       // Git декорации
-      ignored: core.text.comment, // Игнорируемые Git файлы - увеличена контрастность
-      deleted: core.accent.red, // Удаленные Git файлы
-      conflicting: aquaLight, // Конфликтующие Git файлы - холодный teal
-      stageDeleted: core.accent.red, // Удаленные в стейдже Git файлы
-      stageModified: core.accent.blue, // Измененные в стейдже Git файлы
+      ignored: darkenToward(core.text.comment, core.bg.base, 0.4), // Игнорируемые Git файлы - увеличена контрастность
+      deleted: darkenToward(core.accent.red, core.bg.base, 0.3), // Удаленные Git файлы
+      conflicting: darkenToward(aquaLight, core.bg.base, 0.3), // Конфликтующие Git файлы - холодный teal
+      stageDeleted: darkenToward(core.accent.red, core.bg.base, 0.2), // Удаленные в стейдже Git файлы
+      stageModified: darkenToward(core.accent.blue, core.bg.base, 0.2), // Измененные в стейдже Git файлы
     },
     semantic: {
       // Общие семантические цвета
