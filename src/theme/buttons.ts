@@ -7,7 +7,7 @@ export const getButtonColors = () => ({
   'button.hoverBackground': palette.brand.button.hover,
   'button.foreground': palette.fg.selectionText,
   'button.border': withAlpha(palette.fg.subtle, '25%'), // Увеличена видимость границы
-  'button.separator': withAlpha(palette.fg.subtle, '31%'), // Увеличена видимость разделителя
+  'button.separator': withAlpha(palette.fg.subtle, '20%'), // Увеличена видимость разделителя
   'button.secondaryBackground': palette.brand.button.primary,
   'button.secondaryHoverBackground': palette.brand.button.hover,
   'button.secondaryForeground': palette.fg.selectionText,
