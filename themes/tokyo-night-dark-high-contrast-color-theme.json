@@ -304,10 +304,10 @@
       "foreground": "#7dcfff"
     },
     "comment": {
-      "foreground": "#acb3be"
+      "foreground": "#929caa"
     },
     "comment.documentation": {
-      "foreground": "#acb3be",
+      "foreground": "#929caa",
       "italic": true
     },
     "comment.keyword": {
@@ -706,7 +706,7 @@
     "terminal.ansiBrightCyan": "#7dcfff",
     "terminal.ansiBrightWhite": "#ffffff",
     "gitDecoration.modifiedResourceForeground": "#7aa2f7",
-    "gitDecoration.ignoredResourceForeground": "#acb3be",
+    "gitDecoration.ignoredResourceForeground": "#929caa",
     "gitDecoration.deletedResourceForeground": "#e46876",
     "gitDecoration.renamedResourceForeground": "#76d7d7",
     "gitDecoration.addedResourceForeground": "#76d7d7",
@@ -846,7 +846,7 @@
         "comment.block.documentation punctuation"
       ],
       "settings": {
-        "foreground": "#e0e9f7"
+        "foreground": "#becbdd"
       }
     },
     {
@@ -866,7 +866,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#f1f8ff"
+        "foreground": "#cfd9ea"
       }
     },
     {
@@ -878,7 +878,7 @@
         "comment.block.documentation entity.name.type.instance"
       ],
       "settings": {
-        "foreground": "#f1f8ff"
+        "foreground": "#cfd9ea"
       }
     },
     {
@@ -1703,7 +1703,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#e0e9f7"
+        "foreground": "#becbdd"
       }
     },
     {
@@ -1819,7 +1819,7 @@
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#e0e9f7"
+        "foreground": "#becbdd"
       }
     },
     {
@@ -1857,7 +1857,7 @@
       "scope": "meta.separator",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#e0e9f7"
+        "foreground": "#becbdd"
       }
     },
     {

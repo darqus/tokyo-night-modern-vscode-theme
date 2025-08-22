@@ -47,12 +47,12 @@ export const core = {
     selection: basePalette.white,
     subtle2: mix(interfaceColors.editorFg, basePalette.gray, 0.4),
     gray600: darkenToward(basePalette.gray, basePalette.black, 0.2),
-    comment: mix(interfaceColors.editorFg, basePalette.gray, 0.65),
-    commentDoc: mix(interfaceColors.editorFg, basePalette.gray, 0.55),
+    comment: mix(interfaceColors.editorFg, basePalette.gray, 0.85),
+    commentDoc: mix(interfaceColors.editorFg, basePalette.gray, 0.75),
     commentDocEmphasized: lightenToward(
       interfaceColors.editorFg,
       basePalette.gray,
-      0.55
+      0.75
     ),
     preformat: lightenToward(interfaceColors.editorFg, basePalette.gray, 0.1),
     placeholder: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
