@@ -1,12 +1,9 @@
-import { palette } from '../palette'
-import { core } from '../palette.core'
-import { withAlpha, darkenToward, lightenToward } from '../utils/color'
 import { buildColors } from '../build'
 import { tokenColors } from '../tokenColors'
 import { semanticTokenColors } from '../semanticTokenColors'
 
 /**
- * Интерфейс конфигурации темы
+ * Theme configuration interface
  */
 export interface ThemeConfig {
   name: string
@@ -16,13 +13,28 @@ export interface ThemeConfig {
 }
 
 /**
- * Строитель темы Tokyo Night Lod
+ * Complete theme object type
+ */
+export interface ThemeObject {
+  name: string
+  displayName: string
+  author: string
+  maintainers: string[]
+  type: 'dark'
+  semanticClass: string
+  semanticTokenColors: typeof semanticTokenColors
+  colors: ReturnType<typeof buildColors>
+  tokenColors: typeof tokenColors
+}
+
+/**
+ * Tokyo Night Lod theme builder
  */
 export class ThemeBuilder {
   /**
-   * Создать стандартную тему
+   * Create standard theme
    */
-  static buildStandard(): any {
+  static buildStandard(): ThemeObject {
     return {
       name: 'Tokyo Night Lod',
       displayName: 'Tokyo Night Lod',
