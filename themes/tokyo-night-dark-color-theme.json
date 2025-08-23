@@ -446,7 +446,7 @@
     "inputOption.activeBorder": "#2d2f36",
     "inputOption.hoverBackground": "#20232e",
     "inputValidation.infoForeground": "#d8dadc",
-    "inputValidation.infoBackground": "#7dcfff21",
+    "inputValidation.infoBackground": "#7aa2f721",
     "inputValidation.infoBorder": "#7dcfff",
     "inputValidation.warningForeground": "#d8dadc",
     "inputValidation.warningBackground": "#e0af6821",

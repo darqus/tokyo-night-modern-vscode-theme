@@ -194,7 +194,7 @@ export const debugViewValueChangedHighlight = withAlpha(
 )
 
 // Input validation colors with alpha
-export const inputValidationInfoBackground = withAlpha(basePalette.cyan, 0.13)
+export const inputValidationInfoBackground = withAlpha(basePalette.blue, 0.13)
 export const inputValidationWarningBackground = withAlpha(
   basePalette.yellow,
   0.13
