@@ -286,4 +286,17 @@ export interface Palette {
       offline: Hex
     }
   }
+  brackets: {
+    round: Hex
+    square: Hex
+    curly: Hex
+    angle: Hex
+  }
+  punctuation: {
+    comma: Hex
+    dot: Hex
+    colon: Hex
+    semicolon: Hex
+    operator: Hex
+  }
 }

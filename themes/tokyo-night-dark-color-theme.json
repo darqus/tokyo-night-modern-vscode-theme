@@ -372,7 +372,37 @@
       "foreground": "#b4b9c2"
     },
     "punctuation.bracket": {
-      "foreground": "#b4b9c2"
+      "foreground": "#b594f1"
+    },
+    "punctuation.bracket.round": {
+      "foreground": "#7cc4fd"
+    },
+    "punctuation.bracket.square": {
+      "foreground": "#75d8d5"
+    },
+    "punctuation.bracket.curly": {
+      "foreground": "#b594f1"
+    },
+    "punctuation.bracket.angle": {
+      "foreground": "#faa165"
+    },
+    "punctuation.separator": {
+      "foreground": "#e9aa67"
+    },
+    "punctuation.separator.comma": {
+      "foreground": "#e9aa67"
+    },
+    "punctuation.separator.dot": {
+      "foreground": "#7bb2fa"
+    },
+    "punctuation.separator.colon": {
+      "foreground": "#77d6df"
+    },
+    "punctuation.separator.semicolon": {
+      "foreground": "#a685e1"
+    },
+    "punctuation.operator": {
+      "foreground": "#91d287"
     },
     "punctuation.special": {
       "foreground": "#bb9af7"
@@ -484,7 +514,6 @@
     "activityErrorBadge.background": "#d76c88",
     "activityBarTop.background": "#18181d",
     "activityBarTop.foreground": "#b4b9c2",
-    "activityBarTop.activeBackground": "#20232e",
     "tree.indentGuidesStroke": "#2d2f36",
     "sideBar.foreground": "#d8dadc",
     "sideBar.background": "#18181d",
@@ -612,6 +641,7 @@
     "editorSuggestWidget.selectedBackground": "#7aa2f726",
     "editorSuggestWidget.selectedForeground": "#e8e8e8",
     "editorSuggestWidget.highlightForeground": "#91abe2",
+    "editorCodeLens.foreground": "#7aa2f7",
     "editorLightBulb.foreground": "#7cbffc",
     "editorLightBulbAutoFix.foreground": "#7cbffc",
     "searchEditor.findMatchBackground": "#7aa2f726",
@@ -982,13 +1012,125 @@
       }
     },
     {
-      "name": "Operator, Misc",
+      "name": "Round Brackets ()",
+      "scope": [
+        "punctuation.section.parens.begin",
+        "punctuation.section.parens.end",
+        "punctuation.section.group.begin",
+        "punctuation.section.group.end"
+      ],
+      "settings": {
+        "foreground": "#7cc4fd"
+      }
+    },
+    {
+      "name": "Square Brackets []",
+      "scope": [
+        "punctuation.section.brackets.begin",
+        "punctuation.section.brackets.end",
+        "punctuation.section.array.begin",
+        "punctuation.section.array.end"
+      ],
+      "settings": {
+        "foreground": "#75d8d5"
+      }
+    },
+    {
+      "name": "Curly Brackets {}",
+      "scope": [
+        "punctuation.section.braces.begin",
+        "punctuation.section.braces.end",
+        "punctuation.section.object.begin",
+        "punctuation.section.object.end",
+        "punctuation.definition.block",
+        "punctuation.definition.switch-expression.begin.bracket",
+        "punctuation.definition.switch-expression.end.bracket",
+        "punctuation.definition.section.switch-block.begin.bracket",
+        "punctuation.definition.section.switch-block.end.bracket"
+      ],
+      "settings": {
+        "foreground": "#b594f1"
+      }
+    },
+    {
+      "name": "Angle Brackets <>",
+      "scope": [
+        "punctuation.definition.generic.begin",
+        "punctuation.definition.generic.end",
+        "punctuation.definition.type.begin",
+        "punctuation.definition.type.end",
+        "punctuation.definition.tag",
+        "punctuation.definition.arguments",
+        "punctuation.definition.parameters",
+        "punctuation.definition.dictionary",
+        "punctuation.definition.array"
+      ],
+      "settings": {
+        "foreground": "#faa165"
+      }
+    },
+    {
+      "name": "Commas",
+      "scope": [
+        "punctuation.separator.comma",
+        "punctuation.separator.list",
+        "punctuation.separator.sequence"
+      ],
+      "settings": {
+        "foreground": "#e9aa67"
+      }
+    },
+    {
+      "name": "Dots",
+      "scope": [
+        "punctuation.separator.dot",
+        "punctuation.accessor.dot",
+        "punctuation.separator.period"
+      ],
+      "settings": {
+        "foreground": "#7bb2fa"
+      }
+    },
+    {
+      "name": "Colons",
+      "scope": [
+        "punctuation.separator.colon",
+        "punctuation.separator.key-value",
+        "punctuation.separator.type"
+      ],
+      "settings": {
+        "foreground": "#77d6df"
+      }
+    },
+    {
+      "name": "Semicolons",
+      "scope": [
+        "punctuation.terminator.statement",
+        "punctuation.separator.statement",
+        "punctuation.terminator.rule"
+      ],
+      "settings": {
+        "foreground": "#a685e1"
+      }
+    },
+    {
+      "name": "Operators",
       "scope": [
         "keyword.operator",
         "keyword.control.as",
         "keyword.other",
         "keyword.operator.bitwise.shift",
-        "punctuation",
+        "keyword.other.template",
+        "keyword.other.substitution",
+        "entity.name.operator"
+      ],
+      "settings": {
+        "foreground": "#91d287"
+      }
+    },
+    {
+      "name": "Other Punctuation",
+      "scope": [
         "text.html.twig meta.tag.inline.any.html",
         "meta.tag.template.value.twig meta.function.arguments.twig",
         "meta.directive.vue punctuation.separator.key-value.html",
@@ -997,12 +1139,8 @@
         "punctuation.support.type.property-name",
         "text.html.vue-html meta.tag",
         "punctuation.definition.keyword",
-        "punctuation.terminator.rule",
         "punctuation.definition.entity",
         "punctuation.separator.inheritance.php",
-        "keyword.other.template",
-        "keyword.other.substitution",
-        "entity.name.operator",
         "meta.property-list punctuation.separator.key-value",
         "meta.at-rule.mixin punctuation.separator.key-value",
         "meta.at-rule.function variable.parameter.url"

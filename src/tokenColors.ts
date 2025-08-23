@@ -180,13 +180,125 @@ export const getTokenColors = (): TokenColor[] => [
     },
   },
   {
-    name: 'Operator, Misc',
+    name: 'Round Brackets ()',
+    scope: [
+      'punctuation.section.parens.begin',
+      'punctuation.section.parens.end',
+      'punctuation.section.group.begin',
+      'punctuation.section.group.end',
+    ],
+    settings: {
+      foreground: palette.brackets.round,
+    },
+  },
+  {
+    name: 'Square Brackets []',
+    scope: [
+      'punctuation.section.brackets.begin',
+      'punctuation.section.brackets.end',
+      'punctuation.section.array.begin',
+      'punctuation.section.array.end',
+    ],
+    settings: {
+      foreground: palette.brackets.square,
+    },
+  },
+  {
+    name: 'Curly Brackets {}',
+    scope: [
+      'punctuation.section.braces.begin',
+      'punctuation.section.braces.end',
+      'punctuation.section.object.begin',
+      'punctuation.section.object.end',
+      'punctuation.definition.block',
+      'punctuation.definition.switch-expression.begin.bracket',
+      'punctuation.definition.switch-expression.end.bracket',
+      'punctuation.definition.section.switch-block.begin.bracket',
+      'punctuation.definition.section.switch-block.end.bracket',
+    ],
+    settings: {
+      foreground: palette.brackets.curly,
+    },
+  },
+  {
+    name: 'Angle Brackets <>',
+    scope: [
+      'punctuation.definition.generic.begin',
+      'punctuation.definition.generic.end',
+      'punctuation.definition.type.begin',
+      'punctuation.definition.type.end',
+      'punctuation.definition.tag',
+      'punctuation.definition.arguments',
+      'punctuation.definition.parameters',
+      'punctuation.definition.dictionary',
+      'punctuation.definition.array',
+    ],
+    settings: {
+      foreground: palette.brackets.angle,
+    },
+  },
+  {
+    name: 'Commas',
+    scope: [
+      'punctuation.separator.comma',
+      'punctuation.separator.list',
+      'punctuation.separator.sequence',
+    ],
+    settings: {
+      foreground: palette.punctuation.comma,
+    },
+  },
+  {
+    name: 'Dots',
+    scope: [
+      'punctuation.separator.dot',
+      'punctuation.accessor.dot',
+      'punctuation.separator.period',
+    ],
+    settings: {
+      foreground: palette.punctuation.dot,
+    },
+  },
+  {
+    name: 'Colons',
+    scope: [
+      'punctuation.separator.colon',
+      'punctuation.separator.key-value',
+      'punctuation.separator.type',
+    ],
+    settings: {
+      foreground: palette.punctuation.colon,
+    },
+  },
+  {
+    name: 'Semicolons',
+    scope: [
+      'punctuation.terminator.statement',
+      'punctuation.separator.statement',
+      'punctuation.terminator.rule',
+    ],
+    settings: {
+      foreground: palette.punctuation.semicolon,
+    },
+  },
+  {
+    name: 'Operators',
     scope: [
       'keyword.operator',
       'keyword.control.as',
       'keyword.other',
       'keyword.operator.bitwise.shift',
-      'punctuation',
+      'keyword.other.template',
+      'keyword.other.substitution',
+      'entity.name.operator',
+    ],
+    settings: {
+      foreground: palette.punctuation.operator,
+    },
+  },
+  {
+    name: 'Other Punctuation',
+    scope: [
       'text.html.twig meta.tag.inline.any.html',
       'meta.tag.template.value.twig meta.function.arguments.twig',
       'meta.directive.vue punctuation.separator.key-value.html',
@@ -195,12 +307,8 @@ export const getTokenColors = (): TokenColor[] => [
       'punctuation.support.type.property-name',
       'text.html.vue-html meta.tag',
       'punctuation.definition.keyword',
-      'punctuation.terminator.rule',
       'punctuation.definition.entity',
       'punctuation.separator.inheritance.php',
-      'keyword.other.template',
-      'keyword.other.substitution',
-      'entity.name.operator',
       'meta.property-list punctuation.separator.key-value',
       'meta.at-rule.mixin punctuation.separator.key-value',
       'meta.at-rule.function variable.parameter.url',

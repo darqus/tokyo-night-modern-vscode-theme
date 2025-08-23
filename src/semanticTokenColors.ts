@@ -180,8 +180,28 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   // Специальные токены
   escapeSequence: { foreground: palette.accent.cyan },
   formatSpecifier: { foreground: palette.accent.yellow },
+
+  // Улучшенные правила для скобок и пунктуации
   punctuation: { foreground: palette.token.operator },
   'punctuation.delimiter': { foreground: palette.fg.muted },
-  'punctuation.bracket': { foreground: palette.token.operator },
+
+  // Различные типы скобок
+  'punctuation.bracket': { foreground: palette.brackets.curly },
+  'punctuation.bracket.round': { foreground: palette.brackets.round },
+  'punctuation.bracket.square': { foreground: palette.brackets.square },
+  'punctuation.bracket.curly': { foreground: palette.brackets.curly },
+  'punctuation.bracket.angle': { foreground: palette.brackets.angle },
+
+  // Различные типы пунктуации
+  'punctuation.separator': { foreground: palette.punctuation.comma },
+  'punctuation.separator.comma': { foreground: palette.punctuation.comma },
+  'punctuation.separator.dot': { foreground: palette.punctuation.dot },
+  'punctuation.separator.colon': { foreground: palette.punctuation.colon },
+  'punctuation.separator.semicolon': {
+    foreground: palette.punctuation.semicolon,
+  },
+
+  // Операторы
+  'punctuation.operator': { foreground: palette.punctuation.operator },
   'punctuation.special': { foreground: palette.accent.magenta },
 }

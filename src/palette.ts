@@ -29,6 +29,16 @@ import {
   redMuted,
   badgeBase,
   windowBorder,
+  // Новые цвета для скобок и пунктуации
+  bracketRound,
+  bracketSquare,
+  bracketCurly,
+  bracketAngle,
+  punctuationComma,
+  punctuationDot,
+  punctuationColon,
+  punctuationSemicolon,
+  punctuationOperator,
 } from './palette.derived'
 
 /**
@@ -346,5 +356,19 @@ export const palette: Palette = {
       notificationLink: blueMuted, // Ссылки уведомлений
       offline: core.accent.red, // Статус оффлайн
     },
+  },
+  // Новые цвета для скобок и пунктуации
+  brackets: {
+    round: bracketRound, // Круглые скобки () - светлый голубой
+    square: bracketSquare, // Квадратные скобки [] - бирюзовый
+    curly: bracketCurly, // Фигурные скобки {} - пурпурный
+    angle: bracketAngle, // Угловые скобки <> - теплый оранжевый
+  },
+  punctuation: {
+    comma: punctuationComma, // Запятые - теплый желто-оранжевый
+    dot: punctuationDot, // Точки - светлый голубой
+    colon: punctuationColon, // Двоеточия - бирюзово-голубой
+    semicolon: punctuationSemicolon, // Точка с запятой - пурпурный
+    operator: punctuationOperator, // Операторы - зеленовато-бирюзовый
   },
 }

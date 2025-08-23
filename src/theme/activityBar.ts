@@ -8,8 +8,6 @@ export const getActivityBarColors = () => ({
   'activityBar.activeBackground': palette.bg.hover, // Фон активной иконки
   'activityBar.inactiveForeground': palette.fg.inactive, // Цвет неактивных иконок
   'activityBar.border': palette.line.border, // Граница панели действий
-  'activityBar.hoverBackground': palette.bg.hover, // Фон при наведении на иконку
-  'activityBar.hoverForeground': palette.fg.onSelection, // Цвет иконки при наведении
 
   // Значки уведомлений на иконках
   'activityBarBadge.background': palette.ui.badge.base, // Фон значка уведомления
@@ -24,7 +22,4 @@ export const getActivityBarColors = () => ({
   // Панель действий в верхней позиции (Activity Bar: Top)
   'activityBarTop.background': palette.bg.base, // Фон верхней панели действий
   'activityBarTop.foreground': palette.fg.muted, // Цвет иконок в верхней панели
-  'activityBarTop.activeBackground': palette.bg.hover, // Фон активной иконки в верхней панели
-  'activityBarTop.hoverBackground': palette.bg.hover, // Фон при наведении в верхней панели
-  'activityBarTop.hoverForeground': palette.fg.onSelection, // Цвет иконки при наведении в верхней панели
 })
