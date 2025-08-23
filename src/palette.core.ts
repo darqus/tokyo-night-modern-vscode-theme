@@ -36,10 +36,10 @@ export const core = {
     },
     stateLabel: darkenToward(interfaceColors.editorBg, basePalette.black, 0.06),
   },
-  border: lightenToward(basePalette.black, basePalette.white, 0.09),
+  border: lightenToward(basePalette.black, basePalette.white, 0.1),
   // ...другие поля аналогично: только ссылки или производные через утилиты
   text: {
-    primary: interfaceColors.editorFg,
+    primary: darkenToward(basePalette.black, basePalette.white, 0.65),
     muted: mix(interfaceColors.editorFg, basePalette.gray, 0.3),
     subtle: basePalette.gray,
     inactive: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
@@ -47,12 +47,12 @@ export const core = {
     selection: basePalette.white,
     subtle2: mix(interfaceColors.editorFg, basePalette.gray, 0.4),
     gray600: darkenToward(basePalette.gray, basePalette.black, 0.2),
-    comment: mix(interfaceColors.editorFg, basePalette.gray, 0.85),
-    commentDoc: mix(interfaceColors.editorFg, basePalette.gray, 0.75),
-    commentDocEmphasized: lightenToward(
+    comment: darkenToward(interfaceColors.editorFg, basePalette.black, 0.25),
+    commentDoc: darkenToward(interfaceColors.editorFg, basePalette.black, 0.15),
+    commentDocEmphasized: darkenToward(
       interfaceColors.editorFg,
-      basePalette.gray,
-      0.75
+      basePalette.black,
+      0.1
     ),
     preformat: lightenToward(interfaceColors.editorFg, basePalette.gray, 0.1),
     placeholder: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
