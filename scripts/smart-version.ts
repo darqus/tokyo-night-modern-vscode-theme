@@ -39,6 +39,9 @@ interface SmartVersionOptions {
   force?: boolean
   verbose?: boolean
   since?: string
+  patch?: boolean
+  minor?: boolean
+  major?: boolean
 }
 
 class SmartVersionManager {
@@ -79,28 +82,34 @@ class SmartVersionManager {
         this.checkGitStatus()
       }
 
-      const analysis = await this.analyzeCommits(options)
+      // Determine release type
+      let releaseType: 'patch' | 'minor' | 'major'
 
-      if (analysis.commits.length === 0) {
-        console.log('ℹ️  No commits for release since last version')
-        return
+      if (options.patch) {
+        releaseType = 'patch'
+      } else if (options.minor) {
+        releaseType = 'minor'
+      } else if (options.major) {
+        releaseType = 'major'
+      } else {
+        // Smart analysis mode
+        const analysis = await this.analyzeCommits(options)
+
+        if (analysis.commits.length === 0) {
+          console.log('ℹ️  No commits for release since last version')
+          return
+        }
+
+        releaseType = analysis.recommended
       }
 
       const currentVersion = this.getCurrentVersion()
-      const nextVersion = this.calculateNextVersion(
-        currentVersion,
-        analysis.recommended
-      )
+      const nextVersion = this.calculateNextVersion(currentVersion, releaseType)
 
       console.log(`\n📊 Release Information:`)
       console.log(`   🏷️  Current version: ${currentVersion}`)
       console.log(`   🏷️  New version: ${nextVersion}`)
-      console.log(`   📝 Changes: ${analysis.commits.length}`)
-      console.log(`   📈 Release type: ${analysis.recommended.toUpperCase()}`)
-
-      if (analysis.hasBreaking) {
-        console.log(`   💥 WARNING: Contains breaking changes!`)
-      }
+      console.log(`   📈 Release type: ${releaseType.toUpperCase()}`)
 
       if (options.dryRun) {
         console.log('\n🧪 Preview mode - changes not applied')
@@ -108,7 +117,7 @@ class SmartVersionManager {
       }
 
       // Выполняем релиз
-      await this.executeRelease(analysis.recommended, options)
+      await this.executeRelease(releaseType, options)
 
       console.log('\n✅ Smart release successfully completed!')
       this.printNextSteps(nextVersion)
@@ -477,6 +486,9 @@ async function main() {
   --force                            # Игнорировать git проверки
   --verbose                          # Детальный вывод анализа
   --since <tag>                      # Анализ с определенного тега
+  --patch                            # Явно указать patch версию
+  --minor                            # Явно указать minor версию
+  --major                            # Явно указать major версию
   --help, -h                         # Показать эту справку
 
 Примеры:
@@ -484,6 +496,9 @@ async function main() {
   npm run version:analyze            # Только анализ
   npm run version:smart -- --verbose # Детальный анализ + релиз
   npm run version:smart -- --since v1.0.0  # Анализ с версии 1.0.0
+  npm run version:smart -- --patch   # Явно указать patch версию
+  npm run version:smart -- --minor   # Явно указать minor версию
+  npm run version:smart -- --major   # Явно указать major версию
 
 Логика определения версий:
   - MAJOR: если есть breaking changes (feat!: или BREAKING CHANGE:)
@@ -500,6 +515,9 @@ async function main() {
     since: args.includes('--since')
       ? args[args.indexOf('--since') + 1]
       : undefined,
+    patch: args.includes('--patch'),
+    minor: args.includes('--minor'),
+    major: args.includes('--major'),
   }
 
   // Определяем режим работы
