@@ -372,37 +372,37 @@
       "foreground": "#b4b9c2"
     },
     "punctuation.bracket": {
-      "foreground": "#b594f1"
+      "foreground": "#b493ef"
     },
     "punctuation.bracket.round": {
-      "foreground": "#7cc4fd"
+      "foreground": "#7dc8fe"
     },
     "punctuation.bracket.square": {
-      "foreground": "#75d8d5"
+      "foreground": "#76d7d7"
     },
     "punctuation.bracket.curly": {
-      "foreground": "#b594f1"
+      "foreground": "#b493ef"
     },
     "punctuation.bracket.angle": {
-      "foreground": "#faa165"
-    },
-    "punctuation.separator": {
-      "foreground": "#e9aa67"
-    },
-    "punctuation.separator.comma": {
-      "foreground": "#e9aa67"
-    },
-    "punctuation.separator.dot": {
       "foreground": "#7bb2fa"
     },
+    "punctuation.separator": {
+      "foreground": "#7cbbfb"
+    },
+    "punctuation.separator.comma": {
+      "foreground": "#7cbbfb"
+    },
+    "punctuation.separator.dot": {
+      "foreground": "#7badf9"
+    },
     "punctuation.separator.colon": {
-      "foreground": "#77d6df"
+      "foreground": "#76d7da"
     },
     "punctuation.separator.semicolon": {
-      "foreground": "#a685e1"
+      "foreground": "#a584e0"
     },
     "punctuation.operator": {
-      "foreground": "#91d287"
+      "foreground": "#77d6df"
     },
     "punctuation.special": {
       "foreground": "#bb9af7"
@@ -1020,7 +1020,7 @@
         "punctuation.section.group.end"
       ],
       "settings": {
-        "foreground": "#7cc4fd"
+        "foreground": "#7dc8fe"
       }
     },
     {
@@ -1032,7 +1032,7 @@
         "punctuation.section.array.end"
       ],
       "settings": {
-        "foreground": "#75d8d5"
+        "foreground": "#76d7d7"
       }
     },
     {
@@ -1049,7 +1049,7 @@
         "punctuation.definition.section.switch-block.end.bracket"
       ],
       "settings": {
-        "foreground": "#b594f1"
+        "foreground": "#b493ef"
       }
     },
     {
@@ -1066,7 +1066,7 @@
         "punctuation.definition.array"
       ],
       "settings": {
-        "foreground": "#faa165"
+        "foreground": "#7bb2fa"
       }
     },
     {
@@ -1077,7 +1077,7 @@
         "punctuation.separator.sequence"
       ],
       "settings": {
-        "foreground": "#e9aa67"
+        "foreground": "#7cbbfb"
       }
     },
     {
@@ -1088,7 +1088,7 @@
         "punctuation.separator.period"
       ],
       "settings": {
-        "foreground": "#7bb2fa"
+        "foreground": "#7badf9"
       }
     },
     {
@@ -1099,7 +1099,7 @@
         "punctuation.separator.type"
       ],
       "settings": {
-        "foreground": "#77d6df"
+        "foreground": "#76d7da"
       }
     },
     {
@@ -1110,7 +1110,7 @@
         "punctuation.terminator.rule"
       ],
       "settings": {
-        "foreground": "#a685e1"
+        "foreground": "#a584e0"
       }
     },
     {
@@ -1125,7 +1125,7 @@
         "entity.name.operator"
       ],
       "settings": {
-        "foreground": "#91d287"
+        "foreground": "#77d6df"
       }
     },
     {

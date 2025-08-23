@@ -18,40 +18,44 @@ export const bluePunctuation = darkenToward(
   0.18
 )
 
-// Улучшенные цвета для различных типов скобок и пунктуации
+// Оптимизированные цвета для различных типов скобок и пунктуации - соответствие мировым стандартам и холодной схеме
 export const bracketRound = lightenToward(
   core.accent.cyan,
   core.accent.blue,
-  0.25
-) // Круглые скобки - светлый голубой
+  0.15
+) // Круглые скобки - холодный голубой (стандарт: основной тип скобок)
 export const bracketSquare = lightenToward(
   core.accent.teal,
   core.accent.cyan,
-  0.2
-) // Квадратные скобки - бирюзовый
+  0.25
+) // Квадратные скобки - холодный бирюзовый (стандарт: массивы/индексы)
 export const bracketCurly = lightenToward(
   core.accent.magenta,
   core.accent.purple,
-  0.2
-) // Фигурные скобки - пурпурный
+  0.25
+) // Фигурные скобки - холодный пурпурный (стандарт: объекты/блоки)
 export const bracketAngle = lightenToward(
-  core.accent.orange,
-  core.accent.yellow,
-  0.15
-) // Угловые скобки - теплый оранжевый
-export const punctuationComma = mix(core.accent.yellow, core.accent.orange, 0.3) // Запятые - теплый желто-оранжевый
-export const punctuationDot = lightenToward(
   core.accent.blue,
   core.accent.cyan,
   0.35
-) // Точки - светлый голубой
-export const punctuationColon = mix(core.accent.teal, core.accent.cyan, 0.4) // Двоеточия - бирюзово-голубой
+) // Угловые скобки - холодный голубой (стандарт: дженерики/теги)
+export const punctuationComma = lightenToward(
+  core.accent.cyan,
+  core.accent.blue,
+  0.45
+) // Запятые - холодный голубой (стандарт: разделители)
+export const punctuationDot = lightenToward(
+  core.accent.blue,
+  core.accent.cyan,
+  0.25
+) // Точки - холодный голубой (стандарт: доступ к свойствам)
+export const punctuationColon = mix(core.accent.teal, core.accent.cyan, 0.3) // Двоеточия - холодный бирюзовый (стандарт: типы/объекты)
 export const punctuationSemicolon = mix(
   core.accent.purple,
   core.accent.magenta,
-  0.3
-) // Точка с запятой - пурпурный
-export const punctuationOperator = mix(core.accent.green, core.accent.teal, 0.3) // Операторы - зеленовато-бирюзовый
+  0.25
+) // Точка с запятой - холодный пурпурный (стандарт: терминаторы)
+export const punctuationOperator = mix(core.accent.teal, core.accent.cyan, 0.4) // Операторы - холодный бирюзовый (стандарт: операции)
 export const blue400 = lightenToward(core.accent.blue, core.accent.cyan, 0.18)
 export const mint = lightenToward(core.accent.green, core.accent.cyan, 0.18)
 export const lilac = lightenToward(core.accent.magenta, core.accent.blue, 0.18)
