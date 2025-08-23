@@ -1,12 +1,20 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  focusBorder,
+  extensionButtonProminentHoverBackground,
+  scrollbarSliderBackground,
+  scrollbarSliderHoverBackground,
+  scrollbarSliderActiveBackground,
+  keybindingLabelBackground,
+  keybindingLabelBottomBorder,
+} from '../palette.core.derived'
 
 export const getBaseColors = () => ({
   // Верхний уровень и основа
   foreground: palette.fg.primary,
   descriptionForeground: palette.fg.muted,
   disabledForeground: palette.fg.inactive,
-  focusBorder: withAlpha(palette.ui.badge.base, '40%'), // Используем цвет бейджа для фокуса
+  focusBorder: focusBorder, // Используем цвет бейджа для фокуса
   errorForeground: palette.accent.red,
   'widget.border': palette.line.border, // Граница для виджетов поиска/замены
   'widget.shadow': palette.ui.shadow.widget,
@@ -25,21 +33,16 @@ export const getBaseColors = () => ({
 
   // Кнопки/значки расширений - стандартизация с VS Code
   'extensionButton.prominentBackground': palette.brand.primary,
-  'extensionButton.prominentHoverBackground': withAlpha(
-    palette.brand.primary,
-    '67%'
-  ),
+  'extensionButton.prominentHoverBackground':
+    extensionButtonProminentHoverBackground,
   'extensionButton.prominentForeground': palette.fg.selectionText,
   'extensionBadge.remoteBackground': palette.ui.badge.base,
   'extensionBadge.remoteForeground': palette.ui.badge.fg,
 
   // Ползунок полосы прокрутки - улучшенная видимость
-  'scrollbarSlider.background': withAlpha(palette.ui.scrollbarBase, '25%'),
-  'scrollbarSlider.hoverBackground': withAlpha(palette.ui.scrollbarBase, '38%'),
-  'scrollbarSlider.activeBackground': withAlpha(
-    palette.ui.scrollbarBase,
-    '50%'
-  ),
+  'scrollbarSlider.background': scrollbarSliderBackground,
+  'scrollbarSlider.hoverBackground': scrollbarSliderHoverBackground,
+  'scrollbarSlider.activeBackground': scrollbarSliderActiveBackground,
 
   // Текст
   'walkThrough.embeddedEditorBackground': palette.bg.sunken,
@@ -72,8 +75,8 @@ export const getBaseColors = () => ({
   'banner.iconForeground': palette.brand.primary, // Иконка баннера
 
   // Подписи клавиш
-  'keybindingLabel.background': withAlpha(palette.bg.elevated, '60%'), // Фон подписи клавиш
+  'keybindingLabel.background': keybindingLabelBackground, // Фон подписи клавиш
   'keybindingLabel.foreground': palette.fg.primary, // Текст подписи клавиш
   'keybindingLabel.border': palette.line.border, // Граница подписи клавиш
-  'keybindingLabel.bottomBorder': withAlpha(palette.line.border, '67%'), // Нижняя граница подписи клавиш
+  'keybindingLabel.bottomBorder': keybindingLabelBottomBorder, // Нижняя граница подписи клавиш
 })

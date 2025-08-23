@@ -1,5 +1,43 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  editorBracketPairGuideActiveBackground1,
+  editorBracketPairGuideActiveBackground2,
+  editorBracketPairGuideActiveBackground3,
+  editorBracketPairGuideActiveBackground4,
+  editorBracketPairGuideActiveBackground5,
+  editorBracketPairGuideActiveBackground6,
+  editorFoldBackground,
+  editorSelectionBackground,
+  editorInactiveSelectionBackground,
+  editorFindMatchBackground,
+  editorFindMatchHighlightBackground,
+  editorFindMatchHighlightBorder,
+  editorFindRangeHighlightBackground,
+  editorFindRangeHighlightBorder,
+  editorRangeHighlightBackground,
+  editorWordHighlightBackground,
+  editorWordHighlightBorder,
+  editorWordHighlightStrongBackground,
+  editorWordHighlightStrongBorder,
+  editorSelectionHighlightBackground,
+  editorSelectionHighlightBorder,
+  editorHoverHighlightBackground,
+  editorIndentGuideBackground1,
+  editorIndentGuideActiveBackground1,
+  editorWhitespaceForeground,
+  editorBracketMatchBorder,
+  editorInlayHintBackground,
+  editorInlayHintTypeBackground,
+  editorInlayHintParameterBackground,
+  editorOverviewRulerFindMatchForeground,
+  editorOverviewRulerRangeHighlightForeground,
+  editorOverviewRulerSelectionHighlightForeground,
+  editorOverviewRulerWordHighlightForeground,
+  editorOverviewRulerWordHighlightStrongForeground,
+  editorWidgetResizeBorder,
+  editorSuggestWidgetBorder,
+  searchEditorFindMatchBackground,
+} from '../palette.core.derived'
 
 export const getEditorColors = () => ({
   // === ПОДСВЕТКА СКОБОК И НАПРАВЛЯЮЩИЕ ===
@@ -19,35 +57,23 @@ export const getEditorColors = () => ({
   /** Цвет для неожиданных/несоответствующих скобок */
   'editorBracketHighlight.unexpectedBracket.foreground': palette.accent.red,
   /** Цвет фона для активной направляющей первой пары скобок */
-  'editorBracketPairGuide.activeBackground1': withAlpha(
-    palette.accent.blue,
-    '15%' // было 30 - увеличиваем alpha для лучшей видимости
-  ),
+  'editorBracketPairGuide.activeBackground1':
+    editorBracketPairGuideActiveBackground1,
   /** Цвет фона для активной направляющей второй пары скобок */
-  'editorBracketPairGuide.activeBackground2': withAlpha(
-    palette.accent.orange, // синхронизация с новым цветом foreground2
-    '15%'
-  ),
+  'editorBracketPairGuide.activeBackground2':
+    editorBracketPairGuideActiveBackground2,
   /** Цвет фона для активной направляющей третьей пары скобок */
-  'editorBracketPairGuide.activeBackground3': withAlpha(
-    palette.token.string, // синхронизация с новым цветом foreground3
-    '15%'
-  ),
+  'editorBracketPairGuide.activeBackground3':
+    editorBracketPairGuideActiveBackground3,
   /** Цвет фона для активной направляющей четвертой пары скобок */
-  'editorBracketPairGuide.activeBackground4': withAlpha(
-    palette.accent.yellow, // синхронизация с новым цветом foreground4
-    '15%'
-  ),
+  'editorBracketPairGuide.activeBackground4':
+    editorBracketPairGuideActiveBackground4,
   /** Цвет фона для активной направляющей пятой пары скобок */
-  'editorBracketPairGuide.activeBackground5': withAlpha(
-    palette.accent.red, // синхронизация с новым цветом foreground5
-    '15%'
-  ),
+  'editorBracketPairGuide.activeBackground5':
+    editorBracketPairGuideActiveBackground5,
   /** Цвет фона для активной направляющей шестой пары скобок */
-  'editorBracketPairGuide.activeBackground6': withAlpha(
-    palette.accent.magenta, // синхронизация с новым цветом foreground6
-    '15%'
-  ),
+  'editorBracketPairGuide.activeBackground6':
+    editorBracketPairGuideActiveBackground6,
 
   // === ОСНОВНЫЕ ЦВЕТА РЕДАКТОРА ===
   /** Цвет фона для общего выделения (не в редакторе) */
@@ -59,59 +85,56 @@ export const getEditorColors = () => ({
   /** Цвет текста-заполнителя в редакторе */
   'editor.placeholder.foreground': palette.ui.input.placeholder,
   /** Цвет фона для свернутых (collapsed) областей кода */
-  'editor.foldBackground': withAlpha(palette.bg.elevated, '15%'),
+  'editor.foldBackground': editorFoldBackground,
   /** Цвет активных ссылок в редакторе (Ctrl+Click) */
   'editorLink.activeForeground': palette.ui.badge.base,
   // === ВЫДЕЛЕНИЕ ТЕКСТА И ПОИСК ===
   /** Цвет фона для выделенного текста (основное выделение) */
-  'editor.selectionBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.selectionBackground': editorSelectionBackground,
   /** Цвет текста для выделенного текста */
   'editor.selectionForeground': palette.fg.selectionText,
   /** Цвет фона для неактивного выделения */
-  'editor.inactiveSelectionBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.inactiveSelectionBackground': editorInactiveSelectionBackground,
 
   // === ПОИСК И СОВПАДЕНИЯ ===
   /** Цвет фона для текущего найденного совпадения (активное) */
-  'editor.findMatchBackground': withAlpha(palette.accent.yellow, '15%'),
+  'editor.findMatchBackground': editorFindMatchBackground,
   /** Цвет рамки для текущего найденного совпадения */
   'editor.findMatchBorder': palette.accent.red,
   /** Цвет фона для других найденных совпадений (неактивные) */
-  'editor.findMatchHighlightBackground': withAlpha(
-    palette.accent.purple,
-    '15%'
-  ),
+  'editor.findMatchHighlightBackground': editorFindMatchHighlightBackground,
   /** Цвет рамки для других найденных совпадений */
-  'editor.findMatchHighlightBorder': withAlpha(palette.accent.blue, '15%'),
+  'editor.findMatchHighlightBorder': editorFindMatchHighlightBorder,
   /** Цвет фона для выделения диапазона поиска */
-  'editor.findRangeHighlightBackground': withAlpha(palette.fg.soft, '25%'),
+  'editor.findRangeHighlightBackground': editorFindRangeHighlightBackground,
   /** Цвет рамки для выделения диапазона поиска */
-  'editor.findRangeHighlightBorder': withAlpha(palette.fg.muted, '45%'),
+  'editor.findRangeHighlightBorder': editorFindRangeHighlightBorder,
   /** Цвет фона для общего выделения диапазона */
-  'editor.rangeHighlightBackground': withAlpha(palette.fg.subtle, '15%'),
+  'editor.rangeHighlightBackground': editorRangeHighlightBackground,
 
   // === ВЫДЕЛЕНИЕ СЛОВ И СИМВОЛОВ ===
   /** Цвет фона для выделения слова под курсором (read access) */
-  'editor.wordHighlightBackground': withAlpha(palette.accent.blue, '5%'),
+  'editor.wordHighlightBackground': editorWordHighlightBackground,
   /** Цвет рамки для выделения слова под курсором */
-  'editor.wordHighlightBorder': withAlpha(palette.accent.blue, '45%'),
+  'editor.wordHighlightBorder': editorWordHighlightBorder,
   /** Цвет фона для "сильного" выделения слова (write access) */
-  'editor.wordHighlightStrongBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.wordHighlightStrongBackground': editorWordHighlightStrongBackground,
   /** Цвет рамки для "сильного" выделения слова */
-  'editor.wordHighlightStrongBorder': withAlpha(palette.accent.blue, '45%'),
+  'editor.wordHighlightStrongBorder': editorWordHighlightStrongBorder,
   /** Цвет фона для выделения похожих символов при выделении */
-  'editor.selectionHighlightBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.selectionHighlightBackground': editorSelectionHighlightBackground,
   /** Цвет рамки для выделения похожих символов */
-  'editor.selectionHighlightBorder': withAlpha(palette.accent.blue, '45%'),
+  'editor.selectionHighlightBorder': editorSelectionHighlightBorder,
   /** Цвет фона при наведении курсора на элемент */
-  'editor.hoverHighlightBackground': withAlpha(palette.accent.blue, '15%'),
+  'editor.hoverHighlightBackground': editorHoverHighlightBackground,
 
   // === КУРСОР, СТРОКИ И ОТСТУПЫ ===
   /** Цвет курсора в редакторе */
   'editorCursor.foreground': palette.fg.primary,
   /** Цвет вертикальных направляющих отступов */
-  'editorIndentGuide.background1': withAlpha(palette.fg.subtle, '15%'),
+  'editorIndentGuide.background1': editorIndentGuideBackground1,
   /** Цвет активной направляющей отступа (текущий уровень) */
-  'editorIndentGuide.activeBackground1': withAlpha(palette.fg.subtle, '15%'),
+  'editorIndentGuide.activeBackground1': editorIndentGuideActiveBackground1,
   /** Цвет номеров строк */
   'editorLineNumber.foreground': palette.fg.subtle,
   /** Цвет номера активной строки */
@@ -119,7 +142,7 @@ export const getEditorColors = () => ({
   /** Цвет фона подсветки текущей строки */
   'editor.lineHighlightBackground': palette.bg.lineHighlight,
   /** Цвет отображения пробелов, табов и переносов строк */
-  'editorWhitespace.foreground': withAlpha(palette.fg.subtle, '15%'),
+  'editorWhitespace.foreground': editorWhitespaceForeground,
 
   // === STICKY SCROLL (ЗАКРЕПЛЕННЫЕ ЗАГОЛОВКИ) ===
   /** Цвет фона для закрепленных заголовков функций/классов */
@@ -143,19 +166,19 @@ export const getEditorColors = () => ({
   /** Цвет фона для выделения парной скобки */
   'editorBracketMatch.background': palette.bg.bracketMatch,
   /** Цвет рамки вокруг парной скобки */
-  'editorBracketMatch.border': withAlpha(palette.accent.blue, '15%'),
+  'editorBracketMatch.border': editorBracketMatchBorder,
 
   // === INLAY HINTS (ВСТРОЕННЫЕ ПОДСКАЗКИ ТИПОВ) ===
   /** Цвет фона для встроенных подсказок (общие) */
-  'editorInlayHint.background': withAlpha(palette.bg.elevated, '15%'),
+  'editorInlayHint.background': editorInlayHintBackground,
   /** Цвет текста встроенных подсказок (общие) */
   'editorInlayHint.foreground': palette.fg.muted,
   /** Цвет фона для подсказок типов переменных */
-  'editorInlayHint.typeBackground': withAlpha(palette.bg.elevated, '15%'),
+  'editorInlayHint.typeBackground': editorInlayHintTypeBackground,
   /** Цвет текста подсказок типов переменных */
   'editorInlayHint.typeForeground': palette.fg.muted,
   /** Цвет фона для подсказок имен параметров */
-  'editorInlayHint.parameterBackground': withAlpha(palette.bg.elevated, '15%'),
+  'editorInlayHint.parameterBackground': editorInlayHintParameterBackground,
   /** Цвет текста подсказок имен параметров */
   'editorInlayHint.parameterForeground': palette.fg.muted,
 
@@ -171,30 +194,20 @@ export const getEditorColors = () => ({
   /** Цвет индикаторов парных скобок в миниатюре */
   'editorOverviewRuler.bracketMatchForeground': palette.bg.overlay,
   /** Цвет индикаторов найденных совпадений в миниатюре */
-  'editorOverviewRuler.findMatchForeground': withAlpha(
-    palette.fg.primary,
-    '15%'
-  ),
+  'editorOverviewRuler.findMatchForeground':
+    editorOverviewRulerFindMatchForeground,
   /** Цвет индикаторов выделенного диапазона в миниатюре */
-  'editorOverviewRuler.rangeHighlightForeground': withAlpha(
-    palette.fg.primary,
-    '15%'
-  ),
+  'editorOverviewRuler.rangeHighlightForeground':
+    editorOverviewRulerRangeHighlightForeground,
   /** Цвет индикаторов похожих символов в миниатюре */
-  'editorOverviewRuler.selectionHighlightForeground': withAlpha(
-    palette.fg.primary,
-    '15%'
-  ),
+  'editorOverviewRuler.selectionHighlightForeground':
+    editorOverviewRulerSelectionHighlightForeground,
   /** Цвет индикаторов выделенных слов (read) в миниатюре */
-  'editorOverviewRuler.wordHighlightForeground': withAlpha(
-    palette.accent.blue,
-    '15%'
-  ),
+  'editorOverviewRuler.wordHighlightForeground':
+    editorOverviewRulerWordHighlightForeground,
   /** Цвет индикаторов выделенных слов (write) в миниатюре */
-  'editorOverviewRuler.wordHighlightStrongForeground': withAlpha(
-    palette.accent.blue,
-    '15%'
-  ),
+  'editorOverviewRuler.wordHighlightStrongForeground':
+    editorOverviewRulerWordHighlightStrongForeground,
   /** Цвет индикаторов измененных строк в миниатюре */
   'editorOverviewRuler.modifiedForeground': palette.ui.editorOverview.modified,
   /** Цвет индикаторов добавленных строк в миниатюре */
@@ -252,11 +265,11 @@ export const getEditorColors = () => ({
   /** Цвет текста в виджетах редактора */
   'editorWidget.foreground': palette.fg.primary,
   /** Цвет границы изменения размера виджета */
-  'editorWidget.resizeBorder': withAlpha(palette.fg.subtle, '15%'),
+  'editorWidget.resizeBorder': editorWidgetResizeBorder,
   /** Цвет фона списка автодополнения */
   'editorSuggestWidget.background': palette.bg.elevated,
   /** Цвет границы списка автодополнения */
-  'editorSuggestWidget.border': withAlpha(palette.ansi.black, '0%'),
+  'editorSuggestWidget.border': editorSuggestWidgetBorder,
   /** Цвет текста в списке автодополнения */
   'editorSuggestWidget.foreground': palette.fg.primary,
   /** Цвет фона выбранного элемента автодополнения */
@@ -274,7 +287,7 @@ export const getEditorColors = () => ({
 
   // === РЕДАКТОР ПОИСКА (SEARCH EDITOR) ===
   /** Цвет фона найденных совпадений в редакторе поиска */
-  'searchEditor.findMatchBackground': withAlpha(palette.ui.badge.base, '15%'),
+  'searchEditor.findMatchBackground': searchEditorFindMatchBackground,
   /** Цвет границы найденных совпадений в редакторе поиска */
   'searchEditor.findMatchBorder': palette.accent.cyan,
   /** Цвет границы поля ввода в редакторе поиска */

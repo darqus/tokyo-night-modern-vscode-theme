@@ -1,5 +1,12 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  statusBarItemHoverBackground,
+  statusBarItemProminentHoverBackground,
+  statusBarItemErrorHoverBackground,
+  statusBarItemWarningHoverBackground,
+  statusBarItemCompactHoverBackground,
+  statusBarItemOfflineHoverBackground,
+} from '../palette.core.derived'
 
 export const getStatusBarColors = () => ({
   // Строка состояния
@@ -16,10 +23,11 @@ export const getStatusBarColors = () => ({
   'statusBar.focusBorder': palette.ui.sash.hover,
   'statusBarItem.activeBackground': palette.bg.active,
   'statusBarItem.hoverForeground': palette.fg.primary,
-  'statusBarItem.hoverBackground': withAlpha(palette.bg.hover, '60%'),
+  'statusBarItem.hoverBackground': statusBarItemHoverBackground,
   'statusBarItem.prominentBackground': palette.bg.overlay,
   'statusBarItem.prominentForeground': palette.fg.primary,
-  'statusBarItem.prominentHoverBackground': withAlpha(palette.bg.hover, '40%'),
+  'statusBarItem.prominentHoverBackground':
+    statusBarItemProminentHoverBackground,
   'statusBarItem.prominentHoverForeground': palette.fg.onSelection,
   // Remote индикатор
   'statusBarItem.remoteBackground': palette.brand.button.primary,
@@ -29,23 +37,17 @@ export const getStatusBarColors = () => ({
   // Ошибки/предупреждения
   'statusBarItem.errorBackground': palette.accent.red,
   'statusBarItem.errorForeground': palette.ui.semantic.white,
-  'statusBarItem.errorHoverBackground': withAlpha(palette.accent.red, '80%'),
+  'statusBarItem.errorHoverBackground': statusBarItemErrorHoverBackground,
   'statusBarItem.errorHoverForeground': palette.ui.semantic.white,
   'statusBarItem.warningBackground': palette.accent.yellow,
   'statusBarItem.warningForeground': palette.bg.base,
-  'statusBarItem.warningHoverBackground': withAlpha(
-    palette.accent.yellow,
-    '80%'
-  ),
+  'statusBarItem.warningHoverBackground': statusBarItemWarningHoverBackground,
   'statusBarItem.warningHoverForeground': palette.bg.base,
   // Прочее
-  'statusBarItem.compactHoverBackground': withAlpha(palette.bg.hover, '50%'),
+  'statusBarItem.compactHoverBackground': statusBarItemCompactHoverBackground,
   'statusBarItem.focusBorder': palette.ui.sash.hover,
   'statusBarItem.offlineBackground': palette.ui.semantic.offline,
   'statusBarItem.offlineForeground': palette.ui.semantic.white,
-  'statusBarItem.offlineHoverBackground': withAlpha(
-    palette.ui.semantic.offline,
-    '80%'
-  ),
+  'statusBarItem.offlineHoverBackground': statusBarItemOfflineHoverBackground,
   'statusBarItem.offlineHoverForeground': palette.ui.semantic.white,
 })

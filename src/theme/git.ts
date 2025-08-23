@@ -1,5 +1,5 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import { gitBlameEditorDecorationForeground } from '../palette.core.derived'
 
 export const getGitColors = () => ({
   // Оформление Git
@@ -12,5 +12,5 @@ export const getGitColors = () => ({
   'gitDecoration.conflictingResourceForeground': palette.ui.git.conflicting, // Конфликтующие файлы
   'gitDecoration.stageDeletedResourceForeground': palette.ui.git.stageDeleted, // Удаленные в стейдже
   'gitDecoration.stageModifiedResourceForeground': palette.ui.git.stageModified, // Измененные в стейдже
-  'git.blame.editorDecorationForeground': withAlpha(palette.fg.subtle, '50%'), // Git blame аннотации
+  'git.blame.editorDecorationForeground': gitBlameEditorDecorationForeground, // Git blame аннотации
 })

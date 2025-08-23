@@ -1,5 +1,8 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  toolbarHoverBackground,
+  toolbarActiveBackground,
+} from '../palette.core.derived'
 
 export const getMiscColors = () => ({
   // Панели
@@ -17,8 +20,8 @@ export const getMiscColors = () => ({
   'panelStickyScroll.border': palette.line.border,
 
   // Кнопки в контролах (поиск, замена и т.д.)
-  'toolbar.hoverBackground': withAlpha(palette.bg.base, '13%'), // Фон при наведении на кнопки тулбара
-  'toolbar.activeBackground': withAlpha(palette.bg.base, '13%'), // Фон активной кнопки тулбара
+  'toolbar.hoverBackground': toolbarHoverBackground, // Фон при наведении на кнопки тулбара
+  'toolbar.activeBackground': toolbarActiveBackground, // Фон активной кнопки тулбара
 
   // Хлебные крошки
   'breadcrumb.background': palette.bg.base,

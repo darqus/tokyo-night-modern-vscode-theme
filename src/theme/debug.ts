@@ -1,5 +1,9 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  editorStackFrameHighlightBackground,
+  editorFocusedStackFrameHighlightBackground,
+  debugViewValueChangedHighlight,
+} from '../palette.core.derived'
 
 export const getDebugColors = () => ({
   // Отладка
@@ -11,17 +15,12 @@ export const getDebugColors = () => ({
   'debugConsole.sourceForeground': palette.fg.muted,
   'debugConsole.warningForeground': palette.ui.debug.consoleWarning,
   'debugConsoleInputIcon.foreground': palette.accent.teal,
-  'editor.stackFrameHighlightBackground': withAlpha(
-    palette.accent.yellow,
-    '13%'
-  ),
-  'editor.focusedStackFrameHighlightBackground': withAlpha(
-    palette.accent.teal,
-    '13%'
-  ),
+  'editor.stackFrameHighlightBackground': editorStackFrameHighlightBackground,
+  'editor.focusedStackFrameHighlightBackground':
+    editorFocusedStackFrameHighlightBackground,
   'debugView.stateLabelForeground': palette.fg.muted,
   'debugView.stateLabelBackground': palette.ui.debug.stateLabelBg,
-  'debugView.valueChangedHighlight': withAlpha(palette.brand.primary, '67%'),
+  'debugView.valueChangedHighlight': debugViewValueChangedHighlight,
   'debugTokenExpression.name': palette.accent.cyan,
   'debugTokenExpression.value': palette.ui.debug.tokenValue,
   'debugTokenExpression.string': palette.ui.debug.tokenString,

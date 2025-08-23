@@ -1,5 +1,9 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  inputValidationInfoBackground,
+  inputValidationWarningBackground,
+  inputValidationErrorBackground,
+} from '../palette.core.derived'
 
 export const getInputColors = () => ({
   // Поля ввода - улучшенная доступность
@@ -12,13 +16,13 @@ export const getInputColors = () => ({
   'inputOption.activeBorder': palette.line.border,
   'inputOption.hoverBackground': palette.bg.hover,
   'inputValidation.infoForeground': palette.fg.primary,
-  'inputValidation.infoBackground': withAlpha(palette.accent.cyan, '13%'),
+  'inputValidation.infoBackground': inputValidationInfoBackground,
   'inputValidation.infoBorder': palette.accent.cyan,
   'inputValidation.warningForeground': palette.fg.primary,
-  'inputValidation.warningBackground': withAlpha(palette.accent.yellow, '13%'),
+  'inputValidation.warningBackground': inputValidationWarningBackground,
   'inputValidation.warningBorder': palette.accent.yellow,
   'inputValidation.errorForeground': palette.fg.primary,
-  'inputValidation.errorBackground': withAlpha(palette.accent.red, '13%'),
+  'inputValidation.errorBackground': inputValidationErrorBackground,
   'inputValidation.errorBorder': palette.accent.red,
 
   // Выпадающие списки

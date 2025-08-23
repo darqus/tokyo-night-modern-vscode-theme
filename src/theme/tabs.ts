@@ -1,5 +1,8 @@
 import { palette } from '../palette'
-import { withAlpha } from '../utils/color'
+import {
+  tabLastPinnedBorder,
+  tabSelectedForeground,
+} from '../palette.core.derived'
 
 export const getTabColors = () => ({
   // Вкладки
@@ -16,7 +19,7 @@ export const getTabColors = () => ({
   'tab.activeModifiedBorder': palette.ui.tab.activeModifiedBorder,
   'tab.inactiveModifiedBorder': palette.ui.tab.inactiveModifiedBorder,
   'tab.unfocusedActiveBorder': palette.ui.badge.base, // Синхронизация с бейджами
-  'tab.lastPinnedBorder': withAlpha(palette.fg.subtle, '80%'), // Более заметная граница
+  'tab.lastPinnedBorder': tabLastPinnedBorder, // Более заметная граница
   'tab.selectedBackground': palette.bg.base, // Фон выбранной вкладки - соответствует активной
-  'tab.selectedForeground': withAlpha(palette.fg.selectionText, '63%'), // Текст выбранной вкладки
+  'tab.selectedForeground': tabSelectedForeground, // Текст выбранной вкладки
 })
