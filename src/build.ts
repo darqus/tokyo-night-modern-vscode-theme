@@ -25,6 +25,7 @@ import { getMiscColors } from './theme/misc'
 // Новые модули улучшенной архитектуры
 import { ThemeValidator } from './validation/themeValidator'
 import { PropertyValidator } from './validation/propertyValidator'
+import type { ThemeObject } from './variants/themeBuilder'
 
 /**
  * Улучшенный генератор темы с поддержкой новой архитектуры
@@ -66,7 +67,7 @@ export const buildColors = (): Record<string, string> => ({
  * Валидация и сохранение темы
  */
 const validateAndSaveTheme = (
-  theme: any,
+  theme: ThemeObject,
   themePath: string,
   themeName: string
 ): void => {
