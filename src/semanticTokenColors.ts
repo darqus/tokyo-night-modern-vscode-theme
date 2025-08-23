@@ -18,14 +18,14 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   '*.defaultLibrary': { foreground: palette.accent.cyan },
   'variable.defaultLibrary': { foreground: palette.accent.cyan },
   'variable.declaration': { foreground: palette.accent.magenta },
-  variable: { foreground: palette.fg.primary },
+  variable: { foreground: palette.accent.cyan },
 
   // РАСШИРЕННЫЕ СЕМАНТИЧЕСКИЕ ПРАВИЛА - Phase 1.3
   // Переменные с модификаторами
   'variable.readonly': { foreground: palette.accent.cyan },
-  'variable.mutable': { foreground: palette.fg.primary },
+  'variable.mutable': { foreground: palette.accent.cyan },
   'variable.static': { foreground: palette.accent.magenta, bold: true },
-  'variable.local': { foreground: palette.fg.primary },
+  'variable.local': { foreground: palette.accent.cyan },
   'variable.global': { foreground: palette.accent.red },
 
   // Функции и методы
@@ -106,7 +106,7 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
 
   // CSS/SCSS
   'property:css': { foreground: palette.accent.blue },
-  'class:css': { foreground: palette.fg.primary },
+  'class:css': { foreground: palette.accent.blue },
   'id:css': { foreground: palette.accent.magenta },
   'pseudoClass:css': { foreground: palette.accent.magenta },
   'pseudoElement:css': { foreground: palette.accent.magenta },
@@ -115,8 +115,8 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
 
   // Markdown
   'heading:markdown': { foreground: palette.accent.blue, bold: true },
-  'emphasis:markdown': { foreground: palette.fg.primary, italic: true },
-  'strong:markdown': { foreground: palette.fg.primary, bold: true },
+  'emphasis:markdown': { foreground: palette.accent.cyan, italic: true },
+  'strong:markdown': { foreground: palette.accent.blue, bold: true },
   'code:markdown': { foreground: palette.accent.magenta },
   'codeBlock:markdown': { foreground: palette.accent.cyan },
   'link:markdown': { foreground: palette.accent.teal },
@@ -171,7 +171,7 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   // Параметры и аргументы
   'parameter.type': { foreground: palette.accent.cyan },
   'parameter.name': { foreground: palette.accent.yellow },
-  argument: { foreground: palette.fg.primary },
+  argument: { foreground: palette.accent.cyan },
 
   // Метки и ссылки
   label: { foreground: palette.accent.blue },
@@ -180,8 +180,8 @@ export const semanticTokenColors: Record<string, SemanticTokenStyle> = {
   // Специальные токены
   escapeSequence: { foreground: palette.accent.cyan },
   formatSpecifier: { foreground: palette.accent.yellow },
-  punctuation: { foreground: palette.fg.primary },
+  punctuation: { foreground: palette.token.operator },
   'punctuation.delimiter': { foreground: palette.fg.muted },
-  'punctuation.bracket': { foreground: palette.fg.primary },
+  'punctuation.bracket': { foreground: palette.token.operator },
   'punctuation.special': { foreground: palette.accent.magenta },
 }

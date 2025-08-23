@@ -295,14 +295,14 @@ export const getTokenColors = (): TokenColor[] => [
       'variable.parameter.handlebars',
     ],
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   },
   {
     name: 'Object Variable',
     scope: 'variable.other.object',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   },
   {
@@ -342,7 +342,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Object Property',
     scope: 'variable.other.object.property',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   }, // More specific override for object properties
   {
@@ -463,7 +463,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Class Name',
     scope: 'entity.name',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.blue,
     },
   },
   {
@@ -504,7 +504,7 @@ export const getTokenColors = (): TokenColor[] => [
       'meta.at-rule.mixin.scss entity.name.function.scss',
     ],
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.blue,
     },
   },
   {
@@ -600,7 +600,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'SCSS Include Mixin Argument',
     scope: 'meta.property-list meta.at-rule.include',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   },
   {
@@ -618,7 +618,7 @@ export const getTokenColors = (): TokenColor[] => [
       'variable.other.class.js',
     ],
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.blue,
     },
   },
   {
@@ -632,7 +632,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Variable punctuation',
     scope: 'variable.other punctuation.definition.variable',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   },
   {
@@ -756,7 +756,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Regular Expressions - Backslash',
     scope: 'constant.character.escape.backslash',
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.accent.cyan,
     },
   },
   {
@@ -847,7 +847,7 @@ export const getTokenColors = (): TokenColor[] => [
     name: 'Markdown - Plain',
     scope: ['meta.jsx.children', 'meta.embedded.block'],
     settings: {
-      foreground: palette.fg.primary,
+      foreground: palette.token.markdownContent,
     },
   },
   {
@@ -943,7 +943,7 @@ export const getTokenColors = (): TokenColor[] => [
     scope: ['markup.italic', 'markup.italic punctuation'],
     settings: {
       fontStyle: 'italic',
-      foreground: palette.fg.primary,
+      foreground: palette.token.markupItalic,
     },
   },
   {
@@ -951,7 +951,7 @@ export const getTokenColors = (): TokenColor[] => [
     scope: ['markup.bold', 'markup.bold punctuation'],
     settings: {
       fontStyle: 'bold',
-      foreground: palette.fg.primary,
+      foreground: palette.token.markupBold,
     },
   },
   {
@@ -962,7 +962,7 @@ export const getTokenColors = (): TokenColor[] => [
     ],
     settings: {
       fontStyle: 'bold italic',
-      foreground: palette.fg.primary,
+      foreground: palette.accent.blue,
     },
   },
   {

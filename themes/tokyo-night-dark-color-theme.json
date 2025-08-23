@@ -30,20 +30,20 @@
       "foreground": "#bb9af7"
     },
     "variable": {
-      "foreground": "#e0e0e2"
+      "foreground": "#7dcfff"
     },
     "variable.readonly": {
       "foreground": "#7dcfff"
     },
     "variable.mutable": {
-      "foreground": "#e0e0e2"
+      "foreground": "#7dcfff"
     },
     "variable.static": {
       "foreground": "#bb9af7",
       "bold": true
     },
     "variable.local": {
-      "foreground": "#e0e0e2"
+      "foreground": "#7dcfff"
     },
     "variable.global": {
       "foreground": "#e46876"
@@ -209,7 +209,7 @@
       "foreground": "#7aa2f7"
     },
     "class:css": {
-      "foreground": "#e0e0e2"
+      "foreground": "#7aa2f7"
     },
     "id:css": {
       "foreground": "#bb9af7"
@@ -231,11 +231,11 @@
       "bold": true
     },
     "emphasis:markdown": {
-      "foreground": "#e0e0e2",
+      "foreground": "#7dcfff",
       "italic": true
     },
     "strong:markdown": {
-      "foreground": "#e0e0e2",
+      "foreground": "#7aa2f7",
       "bold": true
     },
     "code:markdown": {
@@ -351,7 +351,7 @@
       "foreground": "#7cbffc"
     },
     "argument": {
-      "foreground": "#e0e0e2"
+      "foreground": "#7dcfff"
     },
     "label": {
       "foreground": "#7aa2f7"
@@ -366,13 +366,13 @@
       "foreground": "#7cbffc"
     },
     "punctuation": {
-      "foreground": "#e0e0e2"
+      "foreground": "#bec2c9"
     },
     "punctuation.delimiter": {
       "foreground": "#bec2c9"
     },
     "punctuation.bracket": {
-      "foreground": "#e0e0e2"
+      "foreground": "#bec2c9"
     },
     "punctuation.special": {
       "foreground": "#bb9af7"
@@ -1105,14 +1105,14 @@
         "variable.parameter.handlebars"
       ],
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
       "name": "Object Variable",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1152,7 +1152,7 @@
       "name": "Object Property",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1272,7 +1272,7 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7aa2f7"
       }
     },
     {
@@ -1316,7 +1316,7 @@
         "meta.at-rule.mixin.scss entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7aa2f7"
       }
     },
     {
@@ -1412,7 +1412,7 @@
       "name": "SCSS Include Mixin Argument",
       "scope": "meta.property-list meta.at-rule.include",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1430,7 +1430,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7aa2f7"
       }
     },
     {
@@ -1444,7 +1444,7 @@
       "name": "Variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1570,7 +1570,7 @@
       "name": "Regular Expressions - Backslash",
       "scope": "constant.character.escape.backslash",
       "settings": {
-        "foreground": "#e0e0e2"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1795,7 +1795,7 @@
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#e0e0e2"
+        "foreground": "#7aa2f7"
       }
     },
     {
