@@ -4,7 +4,7 @@ import { core } from './palette.core'
 import { badgeBase } from './palette.derived'
 import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 
-export const aquaLight = lightenToward(basePalette.cyan, basePalette.teal, 0.18)
+export const aquaLight = lightenToward(basePalette.cyan, basePalette.blue, 0.15)
 
 export const bgElevated = lightenToward(
   interfaceColors.editorBg,
@@ -69,119 +69,63 @@ export const bgStateLabel = darkenToward(
 
 export const border = lightenToward(basePalette.black, basePalette.white, 0.1)
 
-export const textPrimary = darkenToward(
-  basePalette.black,
+export const textPrimary = mix(basePalette.black, basePalette.white, 0.68)
+
+export const textMuted = mix(basePalette.white, basePalette.gray, 0.4)
+
+export const textInactive = mix(basePalette.white, basePalette.gray, 0.55)
+
+export const textSoft = mix(basePalette.white, basePalette.cyan, 0.08)
+
+export const textSubtle2 = mix(basePalette.white, basePalette.gray, 0.48)
+
+export const textGray600 = mix(basePalette.gray, basePalette.black, 0.25)
+
+export const textComment = mix(basePalette.gray, basePalette.blue, 0.15)
+
+export const textCommentDoc = mix(basePalette.gray, basePalette.blue, 0.1)
+
+export const textCommentDocEmphasized = mix(
+  basePalette.gray,
+  basePalette.cyan,
+  0.08
+)
+
+export const textPreformat = mix(basePalette.white, basePalette.cyan, 0.12)
+
+export const textPlaceholder = mix(basePalette.white, basePalette.gray, 0.6)
+
+export const textEditorLinkActive = mix(
   basePalette.white,
-  0.65
+  basePalette.blue,
+  0.2
 )
 
-export const textMuted = mix(interfaceColors.editorFg, basePalette.gray, 0.3)
+export const brandButtonPrimary = mix(basePalette.black, basePalette.blue, 0.22)
 
-export const textInactive = mix(interfaceColors.editorFg, basePalette.gray, 0.5)
+export const brandButtonHover = mix(basePalette.black, basePalette.blue, 0.28)
 
-export const textSoft = lightenToward(
-  interfaceColors.editorFg,
-  basePalette.white,
-  0.12
-)
+export const uiShadow = withAlpha(basePalette.cyan, 0.18)
 
-export const textSubtle2 = mix(interfaceColors.editorFg, basePalette.gray, 0.4)
+export const uiSelectionWash = withAlpha(basePalette.blue, 0.15)
 
-export const textGray600 = darkenToward(
-  basePalette.gray,
+export const uiScrollbarBase = mix(basePalette.cyan, basePalette.gray, 0.35)
+
+export const uiTabUnfocusedActive = mix(
+  basePalette.blue,
   basePalette.black,
   0.2
 )
 
-export const textComment = darkenToward(
-  basePalette.gray,
-  basePalette.black,
-  0.3
-)
+export const uiGitIgnored = mix(textComment, basePalette.black, 0.35)
 
-export const textCommentDoc = darkenToward(
-  basePalette.gray,
-  basePalette.black,
-  0.25
-)
+export const uiGitDeleted = mix(basePalette.red, basePalette.magenta, 0.15)
 
-export const textCommentDocEmphasized = darkenToward(
-  basePalette.gray,
-  basePalette.black,
-  0.2
-)
+export const uiGitConflicting = mix(aquaLight, basePalette.blue, 0.2)
 
-export const textPreformat = lightenToward(
-  interfaceColors.editorFg,
-  basePalette.gray,
-  0.1
-)
+export const uiGitStageDeleted = mix(basePalette.red, basePalette.magenta, 0.1)
 
-export const textPlaceholder = mix(
-  interfaceColors.editorFg,
-  basePalette.gray,
-  0.5
-)
-
-export const textEditorLinkActive = lightenToward(
-  interfaceColors.editorFg,
-  basePalette.blue,
-  0.18
-)
-
-export const brandButtonPrimary = mix(
-  interfaceColors.editorBg,
-  basePalette.blue,
-  0.25
-)
-
-export const brandButtonHover = mix(
-  interfaceColors.editorBg,
-  basePalette.blue,
-  0.3
-)
-
-export const uiShadow = withAlpha(basePalette.blue, 0.2)
-
-export const uiSelectionWash = withAlpha(basePalette.cyan, 0.18)
-
-export const uiScrollbarBase = mix(basePalette.blue, basePalette.gray, 0.4)
-
-export const uiTabUnfocusedActive = darkenToward(
-  basePalette.blue,
-  basePalette.black,
-  0.18
-)
-
-export const uiGitIgnored = darkenToward(
-  textComment,
-  interfaceColors.editorBg,
-  0.4
-)
-
-export const uiGitDeleted = darkenToward(
-  basePalette.red,
-  interfaceColors.editorBg,
-  0.3
-)
-
-export const uiGitConflicting = darkenToward(
-  aquaLight,
-  interfaceColors.editorBg,
-  0.3
-)
-
-export const uiGitStageDeleted = darkenToward(
-  basePalette.red,
-  interfaceColors.editorBg,
-  0.2
-)
-
-export const uiGitStageModified = darkenToward(
-  basePalette.blue,
-  interfaceColors.editorBg,
-  0.2
-)
+export const uiGitStageModified = mix(basePalette.blue, basePalette.cyan, 0.15)
 
 // Terminal colors with alpha
 export const terminalSelectionBackground = withAlpha(textSubtle2, '19%')
