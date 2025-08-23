@@ -41,7 +41,7 @@ export const bgStateLabel = mix(
   basePalette.gray,
   0.15
 )
-export const border = mix(basePalette.black, basePalette.gray, 0.4)
+export const border = mix(basePalette.black, basePalette.gray, 0.2)
 export const textPrimary = mix(basePalette.white, basePalette.gray, 0.08)
 
 export const textMuted = mix(basePalette.white, basePalette.gray, 0.4)
