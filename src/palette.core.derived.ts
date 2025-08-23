@@ -29,11 +29,11 @@ export const bgActive = lightenToward(
 )
 export const bgDrop = withAlpha(basePalette.blue, 0.15)
 export const bgLineHighlight = withAlpha(basePalette.blue, 0.08)
-export const bgBracketMatch = withAlpha(basePalette.cyan, 0.12)
+export const bgBracketMatch = withAlpha(basePalette.blue, 0.12)
 
 export const bgSelectionActive = withAlpha(basePalette.blue, 0.2)
 export const bgSelectionInactive = withAlpha(basePalette.blue, 0.12)
-export const bgSelectionFocus = withAlpha(basePalette.cyan, 0.15)
+export const bgSelectionFocus = withAlpha(basePalette.blue, 0.15)
 export const bgSelectionMenu = withAlpha(basePalette.blue, 0.15)
 
 export const bgStateLabel = mix(
@@ -78,11 +78,11 @@ export const brandButtonPrimary = mix(basePalette.black, basePalette.blue, 0.18)
 
 export const brandButtonHover = mix(basePalette.black, basePalette.blue, 0.22)
 
-export const uiShadow = withAlpha(basePalette.cyan, 0.18)
+export const uiShadow = withAlpha(basePalette.blue, 0.18)
 
 export const uiSelectionWash = withAlpha(basePalette.blue, 0.12)
 
-export const uiScrollbarBase = mix(basePalette.cyan, basePalette.gray, 0.35)
+export const uiScrollbarBase = mix(basePalette.blue, basePalette.gray, 0.35)
 
 export const uiTabUnfocusedActive = mix(
   basePalette.blue,
@@ -98,7 +98,7 @@ export const uiGitConflicting = mix(aquaLight, basePalette.blue, 0.2)
 
 export const uiGitStageDeleted = mix(basePalette.red, basePalette.magenta, 0.1)
 
-export const uiGitStageModified = mix(basePalette.blue, basePalette.cyan, 0.15)
+export const uiGitStageModified = mix(basePalette.blue, basePalette.blue, 0.15)
 
 // Terminal colors with alpha
 export const terminalSelectionBackground = withAlpha(textSubtle2, 0.19)
@@ -160,13 +160,13 @@ export const gitBlameEditorDecorationForeground = withAlpha(textSubtle2, 0.5)
 
 // Diff editor colors with alpha
 export const diffEditorInsertedTextBackground = withAlpha(
-  basePalette.cyan,
+  basePalette.blue,
   0.15
 )
 export const diffEditorRemovedTextBackground = withAlpha(basePalette.red, 0.15)
-export const diffEditorInsertedTextBorder = withAlpha(basePalette.cyan, 0)
+export const diffEditorInsertedTextBorder = withAlpha(basePalette.blue, 0)
 export const diffEditorRemovedTextBorder = withAlpha(basePalette.red, 0)
-export const diffEditorInsertedLineBackground = withAlpha(basePalette.cyan, 0.1)
+export const diffEditorInsertedLineBackground = withAlpha(basePalette.blue, 0.1)
 export const diffEditorRemovedLineBackground = withAlpha(basePalette.red, 0.1)
 export const diffEditorDiagonalFill = withAlpha(textSubtle2, 0.2)
 
