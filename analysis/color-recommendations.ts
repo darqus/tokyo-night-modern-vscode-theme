@@ -4,14 +4,7 @@
  */
 
 import type { Hex } from '../src/types/palette'
-
-export interface ColorReplacement {
-  current: Hex
-  recommended: Hex
-  reason: string
-  priority: 'high' | 'medium' | 'low'
-  category: string
-}
+import { ColorReplacement, WarmColorToKeep, Priority } from './types'
 
 export const colorReplacements: ColorReplacement[] = [
   // Высокий приоритет - основные акценты
@@ -92,11 +85,7 @@ export const colorReplacements: ColorReplacement[] = [
 ]
 
 // Цвета, которые СЛЕДУЕТ ОСТАВИТЬ (семантически важные)
-export const keepWarmColors: Array<{
-  color: Hex
-  reason: string
-  category: string
-}> = [
+export const keepWarmColors: WarmColorToKeep[] = [
   {
     color: '#f7768e',
     reason: 'Красный семантически важен для ошибок',
@@ -125,9 +114,7 @@ export const keepWarmColors: Array<{
 ]
 
 // Функция для применения рекомендаций
-export function applyColorRecommendations(
-  priority: 'high' | 'medium' | 'low' = 'high'
-) {
+export function applyColorRecommendations(priority: Priority = 'high') {
   const recommendations = colorReplacements.filter((r) => {
     if (priority === 'high') return r.priority === 'high'
     if (priority === 'medium') return ['high', 'medium'].includes(r.priority)

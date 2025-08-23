@@ -10,6 +10,34 @@ import { ThemeBuilder } from '../src/variants/themeBuilder'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 
+interface ThemeData {
+  name: string
+  type: string
+  colors: Record<string, string>
+  tokenColors: Array<{
+    name?: string
+    scope: string | string[]
+    settings: {
+      foreground?: string
+      background?: string
+      fontStyle?: string
+    }
+  }>
+  semanticHighlighting?: boolean
+  semanticTokenColors?: Record<
+    string,
+    {
+      foreground?: string
+      background?: string
+      fontStyle?: string
+      bold?: boolean
+      italic?: boolean
+      underline?: boolean
+      strikethrough?: boolean
+    }
+  >
+}
+
 const args = process.argv.slice(2)
 const command = args[0]
 
@@ -35,7 +63,7 @@ function buildCommand() {
     const outDir = './themes'
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
 
-    const buildAndWrite = (name: string, theme: any) => {
+    const buildAndWrite = (name: string, theme: ThemeData) => {
       const filename = `tokyo-night-${name}-color-theme.json`
       const outputPath = path.join(outDir, filename)
       fs.writeFileSync(
@@ -47,10 +75,11 @@ function buildCommand() {
     }
 
     buildAndWrite('dark', ThemeBuilder.buildStandard())
-    buildAndWrite('dark-high-contrast', ThemeBuilder.buildHighContrast())
-    buildAndWrite('dark-minimal', ThemeBuilder.buildMinimal())
-    buildAndWrite('light', ThemeBuilder.buildLight())
-    buildAndWrite('accessibility', ThemeBuilder.buildAccessibility())
+    // Note: Other theme variants are not yet implemented in ThemeBuilder
+    // buildAndWrite('dark-high-contrast', ThemeBuilder.buildHighContrast())
+    // buildAndWrite('dark-minimal', ThemeBuilder.buildMinimal())
+    // buildAndWrite('light', ThemeBuilder.buildLight())
+    // buildAndWrite('accessibility', ThemeBuilder.buildAccessibility())
   } catch (error) {
     console.error('❌ Ошибка сборки:', error)
     process.exit(1)

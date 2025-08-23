@@ -5,6 +5,9 @@ import { buildColors } from '../src/build'
 import { execSync } from 'node:child_process'
 import { tokenColors } from '../src/tokenColors'
 import { semanticTokenColors } from '../src/semanticTokenColors'
+import type { ThemeData } from '../src/types/theme'
+import type { TokenColor } from '../src/tokenColors'
+import type { SemanticTokenStyle } from '../src/semanticTokenColors'
 
 /**
  * Smoke test that checks that the generated sections equal the existing theme JSON sections.
@@ -14,16 +17,19 @@ import { semanticTokenColors } from '../src/semanticTokenColors'
 const root = path.resolve(__dirname, '..')
 const themePath = path.join(root, 'themes', 'tokyo-night-dark-color-theme.json')
 
-const loadTheme = (): any => {
+const loadTheme = (): ThemeData => {
   const json = fs.readFileSync(themePath, 'utf8')
   return JSON.parse(json)
 }
 
-const stable = <T>(obj: T): string => {
-  return JSON.stringify(obj, Object.keys(obj as any).sort(), 2)
+const stable = <T extends Record<string, unknown>>(obj: T): string => {
+  return JSON.stringify(obj, Object.keys(obj).sort(), 2)
 }
 
-const diffObjects = (a: any, b: any): string[] => {
+const diffObjects = (
+  a: Record<string, unknown> | null | undefined,
+  b: Record<string, unknown> | null | undefined
+): string[] => {
   const issues: string[] = []
   const aKeys = new Set(Object.keys(a || {}))
   const bKeys = new Set(Object.keys(b || {}))

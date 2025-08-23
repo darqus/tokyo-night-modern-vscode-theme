@@ -3,6 +3,44 @@ import {
   DEPRECATED_PROPERTIES,
   RENAMED_PROPERTIES,
 } from './allowedProperties'
+import type { ThemeData } from '../types/theme'
+import type { TokenColor } from '../tokenColors'
+import type { SemanticTokenStyle } from '../semanticTokenColors'
+
+// Define a more flexible theme type for validation purposes
+interface VSCodeThemeObject
+  extends Omit<ThemeData, 'tokenColors' | 'semanticTokenColors'> {
+  tokenColors?:
+    | TokenColor[]
+    | Array<{
+        name?: string
+        scope: string | string[]
+        settings: {
+          foreground?: string
+          background?: string
+          fontStyle?: string
+        }
+      }>
+  semanticTokenColors?:
+    | Record<string, SemanticTokenStyle>
+    | Record<
+        string,
+        {
+          foreground?: string
+          background?: string
+          fontStyle?: string
+          bold?: boolean
+          italic?: boolean
+          underline?: boolean
+          strikethrough?: boolean
+        }
+      >
+  displayName?: string
+  author?: string
+  maintainers?: string[]
+  semanticClass?: string
+  [key: string]: unknown // Allow additional properties for validation
+}
 
 export interface PropertyValidationIssue {
   property: string
@@ -25,7 +63,7 @@ export class PropertyValidator {
   /**
    * Валидация объекта темы на допустимые свойства
    */
-  validateThemeProperties(theme: any): PropertyValidationResult {
+  validateThemeProperties(theme: VSCodeThemeObject): PropertyValidationResult {
     const issues: PropertyValidationIssue[] = []
 
     // Проверяем базовую структуру
@@ -87,7 +125,7 @@ export class PropertyValidator {
    * Проверка базовой структуры темы
    */
   private validateBasicStructure(
-    theme: any,
+    theme: VSCodeThemeObject,
     issues: PropertyValidationIssue[]
   ): void {
     // Проверяем обязательные поля
@@ -220,7 +258,17 @@ export class PropertyValidator {
    * Проверка tokenColors
    */
   private validateTokenColors(
-    tokenColors: any[],
+    tokenColors:
+      | TokenColor[]
+      | Array<{
+          name?: string
+          scope: string | string[]
+          settings: {
+            foreground?: string
+            background?: string
+            fontStyle?: string
+          }
+        }>,
     issues: PropertyValidationIssue[]
   ): void {
     if (!Array.isArray(tokenColors)) {
@@ -264,7 +312,20 @@ export class PropertyValidator {
    * Проверка semanticTokenColors
    */
   private validateSemanticTokenColors(
-    semanticTokenColors: Record<string, any>,
+    semanticTokenColors:
+      | Record<string, SemanticTokenStyle>
+      | Record<
+          string,
+          {
+            foreground?: string
+            background?: string
+            fontStyle?: string
+            bold?: boolean
+            italic?: boolean
+            underline?: boolean
+            strikethrough?: boolean
+          }
+        >,
     issues: PropertyValidationIssue[]
   ): void {
     for (const [tokenType, settings] of Object.entries(semanticTokenColors)) {
@@ -454,8 +515,8 @@ export class PropertyValidator {
   /**
    * Исправление недопустимых свойств
    */
-  fixInvalidProperties(theme: any): {
-    fixedTheme: any
+  fixInvalidProperties(theme: VSCodeThemeObject): {
+    fixedTheme: VSCodeThemeObject
     fixes: Array<{
       property: string
       action: string

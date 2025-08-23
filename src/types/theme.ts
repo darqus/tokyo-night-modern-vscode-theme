@@ -1,4 +1,6 @@
 import type { Hex } from './palette'
+import type { TokenColor } from '../tokenColors'
+import type { SemanticTokenStyle } from '../semanticTokenColors'
 
 /**
  * Основные типы для Tokyo Night Lod темы
@@ -58,15 +60,21 @@ export interface ThemeData {
   name: string
   type: 'dark' | 'light'
   colors: Record<string, string>
-  tokenColors: any[]
-  semanticTokenColors: Record<string, any>
+  tokenColors: TokenColor[]
+  semanticTokenColors: Record<string, SemanticTokenStyle>
+}
+
+export interface ThemeConfig {
+  // Define theme configuration properties as needed
+  // For now, this can be a flexible type until specific config needs are identified
+  [key: string]: unknown
 }
 
 export interface ThemePlugin {
   name: string
   version: string
   description: string
-  apply: (theme: ThemeData, config?: any) => ThemeData
+  apply: (theme: ThemeData, config?: ThemeConfig) => ThemeData
   isCompatible: (themeVersion: string) => boolean
 }
 

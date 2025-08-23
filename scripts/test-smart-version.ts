@@ -8,6 +8,29 @@
 import { execSync } from 'child_process'
 import { SmartVersionManager } from './smart-version'
 
+interface CommitData {
+  hash: string
+  type: string
+  scope?: string
+  description: string
+  breaking: boolean
+}
+
+interface AnalysisResult {
+  recommended: 'patch' | 'minor' | 'major'
+  commits: CommitData[]
+  stats: {
+    total: number
+    features: number
+    fixes: number
+    breaking: number
+    performance: number
+    others: number
+  }
+  summary: string[]
+  hasBreaking: boolean
+}
+
 interface TestScenario {
   name: string
   commits: string[]
@@ -137,7 +160,7 @@ class SmartVersionTester {
         .filter((commit) => commit !== null)
 
       // Анализируем коммиты
-      const analysis = this.analyzeTestCommits(mockCommits as any[])
+      const analysis = this.analyzeTestCommits(mockCommits as CommitData[])
 
       console.log('\n🔍 Результат анализа:')
       console.log(
@@ -177,7 +200,7 @@ class SmartVersionTester {
   /**
    * Анализировать тестовые коммиты (упрощенная версия)
    */
-  private analyzeTestCommits(commits: any[]): any {
+  private analyzeTestCommits(commits: CommitData[]): AnalysisResult {
     const stats = {
       total: commits.length,
       features: 0,

@@ -4,9 +4,10 @@
  */
 
 import { palette } from '../src/palette'
+import { RGB, HSL, ColorTemperature, ColorAnalysisResult } from './types'
 
 // Функция для конвертации hex в RGB (поддерживает альфа-канал)
-function hexToRgb(hex: string): { r: number; g: number; b: number } {
+function hexToRgb(hex: string): RGB {
   // Убираем # если есть
   hex = hex.replace('#', '')
 
@@ -26,11 +27,7 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } {
 }
 
 // Функция для конвертации RGB в HSL
-function rgbToHsl(
-  r: number,
-  g: number,
-  b: number
-): { h: number; s: number; l: number } {
+function rgbToHsl(r: number, g: number, b: number): HSL {
   r /= 255
   g /= 255
   b /= 255
@@ -69,9 +66,7 @@ function rgbToHsl(
 }
 
 // Функция для определения цветовой температуры
-function getColorTemperature(
-  hex: string
-): 'холодный' | 'нейтральный' | 'теплый' {
+function getColorTemperature(hex: string): ColorTemperature {
   const rgb = hexToRgb(hex)
   const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b)
 
@@ -91,17 +86,10 @@ function getColorTemperature(
 
 // Функция для анализа всей палитры
 function analyzePalette() {
-  const results: Array<{
-    category: string
-    name: string
-    hex: string
-    temperature: string
-    hsl: { h: number; s: number; l: number }
-    concern: string
-  }> = []
+  const results: ColorAnalysisResult[] = []
 
   // Функция для обхода объекта палитры
-  function traverseObject(obj: any, path: string = '') {
+  function traverseObject(obj: Record<string, unknown>, path: string = '') {
     for (const [key, value] of Object.entries(obj)) {
       const currentPath = path ? `${path}.${key}` : key
 
@@ -130,12 +118,12 @@ function analyzePalette() {
           concern,
         })
       } else if (typeof value === 'object' && value !== null) {
-        traverseObject(value, currentPath)
+        traverseObject(value as Record<string, unknown>, currentPath)
       }
     }
   }
 
-  traverseObject(palette)
+  traverseObject(palette as unknown as Record<string, unknown>)
   return results
 }
 

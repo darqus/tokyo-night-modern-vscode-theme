@@ -73,7 +73,9 @@ const validateAndSaveTheme = (
 ): void => {
   // Валидируем свойства темы
   const propertyValidator = new PropertyValidator()
-  const propertyValidation = propertyValidator.validateThemeProperties(theme)
+  const propertyValidation = propertyValidator.validateThemeProperties(
+    theme as any
+  )
 
   if (!propertyValidation.passed) {
     console.warn(`⚠️  Найдены проблемы с свойствами в ${themeName}:`)
@@ -91,13 +93,20 @@ const validateAndSaveTheme = (
     })
 
     // Автоматически исправляем недопустимые свойства
-    const { fixedTheme, fixes } = propertyValidator.fixInvalidProperties(theme)
+    const { fixedTheme, fixes } = propertyValidator.fixInvalidProperties(
+      theme as any
+    )
     if (fixes.length > 0) {
       console.log(`🔧 Автоматически исправлено ${fixes.length} проблем:`)
       fixes.forEach((fix) => {
         console.log(`  • ${fix.property}: ${fix.action}`)
       })
-      theme = fixedTheme
+      // Ensure displayName is present for type compatibility
+      theme = {
+        ...fixedTheme,
+        displayName:
+          fixedTheme.displayName || theme.displayName || 'Tokyo Night Lod',
+      } as ThemeObject
     }
   } else {
     console.log(`✅ Валидация свойств ${themeName} прошла успешно`)
