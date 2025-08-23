@@ -1,84 +1,50 @@
 # Development Guide
 
-## 🚀 Quick Start
+Quick guide for building and modifying the Tokyo Night Lod theme.
 
-### Prerequisites
-
-- Node.js 16+
-- npm or yarn
-- VS Code (for testing)
-
-### Setup
+## 🚀 Setup
 
 ```bash
-# Clone the repository
 git clone https://github.com/darqus/tokyo-night-vscode-theme-lod.git
 cd tokyo-night-vscode-theme-lod
-
-# Install dependencies
 npm install
-
-# Build the theme
 npm run build
-
-# Run tests
-npm test
 ```
 
-## 🏗️ Building Themes
-
-### Build Commands
-
-```bash
-npm run build    # Build the theme
-```
-
-### Theme File Generated
-
-- `themes/tokyo-night-dark-color-theme.json` - Tokyo Night Lod theme
+**Requirements:** Node.js 16+, VS Code for testing
 
 ## 🎨 Customizing Colors
 
-### Editing the Color Palette
+### Edit Color Palette
 
 1. Open `src/palette.ts`
-2. Modify color values in the appropriate section:
-   - `background` - Editor and UI backgrounds
+2. Modify colors in appropriate sections:
+   - `background` - Editor/UI backgrounds
    - `foreground` - Text colors
    - `accent` - Highlight colors
    - `syntax` - Code syntax colors
-3. Run `npm run build` to regenerate the theme
+3. Run `npm run build`
 4. Test in VS Code
 
-### Example Color Change
+### Example
 
 ```typescript
 // src/palette.ts
 export const palette = {
   background: {
-    primary: '#1a1b26',    // Main editor background
-    secondary: '#16161e',  // Sidebar background
-    // ... other colors
+    primary: '#1a1b26',    // Main editor
+    secondary: '#16161e',  // Sidebar
   }
 }
 ```
-
-### Adding New Colors
-
-1. Add color to appropriate palette section
-2. Update TypeScript interfaces if needed
-3. Use the new color in token or semantic color files
-4. Rebuild themes
 
 ## 🌈 Syntax Highlighting
 
 ### Token Colors (`src/tokenColors.ts`)
 
-Controls TextMate grammar highlighting:
-
 ```typescript
 {
-  scope: ['comment', 'punctuation.definition.comment'],
+  scope: ['comment'],
   settings: {
     foreground: palette.syntax.comment,
     fontStyle: 'italic'
@@ -88,170 +54,67 @@ Controls TextMate grammar highlighting:
 
 ### Semantic Colors (`src/semanticTokenColors.ts`)
 
-Enhanced language server highlighting:
-
 ```typescript
 {
   'variable.readonly': palette.syntax.constant,
   'function.declaration': palette.syntax.function,
-  // ... more mappings
 }
 ```
 
 ## 🧪 Testing
 
-### Running Tests
-
 ```bash
 npm test              # All tests
-npm run test:smoke    # Smoke tests only
-npm run validate:all  # Validate theme files
+npm run build         # Build theme
+npm run package       # Create .vsix file
 ```
 
-### Manual Testing
+**Manual Testing:**
 
-1. Build themes: `npm run build`
-2. Install extension locally: `npm run package`
-3. Load `.vsix` file in VS Code
-4. Test with different file types
+1. Build theme
+2. Install `.vsix` in VS Code
+3. Test with different file types
 
-### Test Files
-
-Create test files for different languages:
-
-- `test.ts` - TypeScript
-- `test.js` - JavaScript
-- `test.json` - JSON
-- `test.md` - Markdown
-- `test.css` - CSS
-
-## 📦 Packaging & Release
-
-### Manual Package
+## 📦 Release
 
 ```bash
-npm run package  # Creates .vsix file
+npm run release:dry   # Preview release
+npm run release       # Create release
 ```
 
-### Smart Release System
+The system automatically:
 
-```bash
-npm run release:dry    # Preview release
-npm run release        # Create release
-npm run release:force  # Force release (skip checks)
-```
-
-The smart release system:
-
-- Analyzes conventional commits
-- Determines version bump (patch/minor/major)
+- Analyzes commits for version bump
 - Updates CHANGELOG.md
 - Creates git tags
 - Packages extension
 
-### Publishing
+## 🔧 Commands
 
 ```bash
-npm run publish  # Publish to VS Code Marketplace
+npm run build         # Build theme
+npm run validate:all  # Validate themes
+npm run cli --help    # CLI options
 ```
 
-## 🔧 CLI Commands
+## 🐛 Troubleshooting
 
-### Using the CLI
-
-```bash
-npm run cli <command> [options]
-```
-
-### Available Commands
-
-```bash
-# Build specific variant
-npm run cli build accessibility
-npm run cli build minimal
-
-# Validate theme file
-npm run cli validate themes/tokyo-night-dark-color-theme.json
-
-# Test theme consistency
-npm run cli test
-```
-
-## 🐛 Debugging
-
-### Common Issues
-
-1. **Build Fails**
-   - Check TypeScript errors: `npx tsc --noEmit`
-   - Verify color values are valid hex codes
-
-2. **Colors Not Applying**
-   - Rebuild themes: `npm run build`
-   - Restart VS Code
-   - Check theme is selected in VS Code settings
-
-3. **Test Failures**
-   - Run individual tests to isolate issues
-   - Check theme JSON validity
-   - Verify smoke test expectations
-
-### Debug Build Process
-
-Add console logs to `src/build.ts`:
-
-```typescript
-console.log('Building theme with palette:', palette);
-console.log('Generated theme colors:', theme.colors);
-```
-
-## 📊 Performance Tips
-
-### Build Optimization
-
-- Use `npm run build` for single theme during development
-- Only run `npm run build` when needed
-- Cache node_modules for faster CI builds
-
-### Theme Size
-
-- Keep color palette minimal
-- Avoid duplicate color values
-- Use utility functions for color variations
+**Build fails:** Check TypeScript errors with `npx tsc --noEmit`
+**Colors not applying:** Rebuild and restart VS Code
+**Test failures:** Check theme JSON validity
 
 ## 🔄 Git Workflow
 
-### Conventional Commits
-
-Use conventional commit format for automatic versioning:
+Use conventional commits for automatic versioning:
 
 ```bash
-git commit -m "feat(colors): add new accent color for warnings"
-git commit -m "fix(build): resolve TypeScript compilation error"
-git commit -m "docs(readme): update installation instructions"
+git commit -m "feat(colors): add new accent color"
+git commit -m "fix(build): resolve compilation error"
+git commit -m "docs: update readme"
 ```
 
-### Commit Types
-
-- `feat:` - New features
-- `fix:` - Bug fixes
-- `docs:` - Documentation changes
-- `style:` - Code formatting
-- `refactor:` - Code refactoring
-- `test:` - Test additions/changes
-- `chore:` - Maintenance tasks
-
-## 🆘 Getting Help
-
-### Resources
+## 📚 Resources
 
 - [VS Code Theme Guide](https://code.visualstudio.com/api/extension-guides/color-theme)
-- [TextMate Grammar](https://macromates.com/manual/en/language_grammars)
 - [Project Issues](https://github.com/darqus/tokyo-night-vscode-theme-lod/issues)
-
-### Debugging Tools
-
-- **Developer Console** - `Help > Toggle Developer Tools`
-- **Scope Inspector** - `Developer: Inspect Editor Tokens and Scopes`
-- **Color Picker** - Use browser dev tools on theme JSON
-
-This development guide should help you get started with contributing to the Tokyo Night Lod theme project.
+- **Debug Tools:** `Help > Toggle Developer Tools` in VS Code

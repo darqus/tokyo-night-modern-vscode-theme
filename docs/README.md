@@ -1,49 +1,38 @@
 # Tokyo Night Lod - Documentation
 
-Welcome to the Tokyo Night Lod theme documentation. This guide will help you understand, use, and contribute to the project.
+Complete documentation for the Tokyo Night Lod VS Code theme.
 
-## 📚 Documentation Structure
+## 📖 Quick Navigation
 
-### 🚀 Getting Started
+### For Users
 
-- [Installation & Setup](../README.md#installation) - How to install and use the theme
-- [Quick Start Guide](./QUICK_START.md) - Get up and running in minutes
+- [Installation](../README.md#installation) - Install the theme
+- [Color Reference](./COLOR_PALETTE.md) - Available colors and usage
 
-### 🏗️ Development
+### For Developers
 
-- [Architecture Guide](./ARCHITECTURE.md) - Theme structure and design principles
-- [Development Guide](./DEVELOPMENT.md) - How to build and modify the theme
-- [Validation System](./VALIDATION.md) - Automatic theme validation and quality assurance
-- [Smart Versioning](./SMART_VERSIONING.md) - Automated release system
+- [Development Guide](./DEVELOPMENT.md) - Build and modify themes
+- [Architecture](./ARCHITECTURE.md) - Project structure
+- [Validation](./VALIDATION.md) - Theme validation system
 
-### 🎨 Customization
+### Advanced
 
-- [Color Palette](./COLOR_PALETTE.md) - Understanding and customizing colors
-- [Configuration Examples](./EXAMPLES.md) - Common customization patterns
+- [Smart Versioning](./SMART_VERSIONING.md) - Automated releases
+- [Quick Start](./QUICK_START.md) - Get started quickly
 
-### 🔧 Advanced Topics
+## 🚀 Quick Start
 
-- [Build System](./BUILD_SYSTEM.md) - TypeScript-based theme generation
-- [Testing](./TESTING.md) - Quality assurance and validation
-- [Contributing](./CONTRIBUTING.md) - How to contribute to the project
+1. **Install**: Get the theme from VS Code Marketplace
+2. **Develop**: Clone repo, run `npm install && npm run build`
+3. **Customize**: Edit `src/palette.ts` for color changes
 
-### 📖 Reference
+## 🎯 Key Features
 
-- [Release Process](./RELEASE_PROCESS.md) - How releases are created
-- [VS Code Theme Guidelines](./vscode-theme-guidelines.md) - Best practices
-
-## 🌟 Key Features
-
-- **Automatic Validation** - Built-in VS Code property validation and quality checks
-- **Smart Versioning** - Automated release management based on conventional commits
-- **TypeScript Architecture** - Modern, type-safe theme generation
-- **Multiple Variants** - High contrast and minimal versions available
-- **Comprehensive Testing** - Smoke tests and validation pipeline
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details on how to get started.
+- TypeScript-based theme generation
+- Automatic validation and testing
+- Smart release management
+- Comprehensive color system
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+MIT License - see [LICENSE](../LICENSE) for details.
