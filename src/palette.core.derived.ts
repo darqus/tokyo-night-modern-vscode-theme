@@ -216,8 +216,8 @@ export const statusBarItemOfflineHoverBackground = withAlpha(
 )
 
 // Button colors with alpha
-export const buttonBorder = withAlpha(textSubtle2, 0.25)
-export const buttonSeparator = withAlpha(textSubtle2, 0.2)
+export const buttonBorder = withAlpha(basePalette.blue, 0.5)
+export const buttonSeparator = withAlpha(basePalette.blue, 0.4)
 
 // Editor bracket pair guide colors with alpha
 export const editorBracketPairGuideActiveBackground1 = withAlpha(
