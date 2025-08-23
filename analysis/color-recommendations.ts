@@ -3,7 +3,7 @@
  * для сохранения холодной цветовой схемы Tokyo Night
  */
 
-import type { Hex } from '../src/palette'
+import type { Hex } from '../src/types/palette'
 
 export interface ColorReplacement {
   current: Hex
