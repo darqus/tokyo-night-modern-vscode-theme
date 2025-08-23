@@ -91,22 +91,22 @@ export const textGray600 = darkenToward(
   0.2
 )
 
-export const textComment = lightenToward(
-  interfaceColors.editorBg,
+export const textComment = darkenToward(
   basePalette.gray,
-  0.1
+  basePalette.black,
+  0.3
 )
 
-export const textCommentDoc = lightenToward(
-  interfaceColors.editorBg,
+export const textCommentDoc = darkenToward(
   basePalette.gray,
-  0.1
+  basePalette.black,
+  0.25
 )
 
-export const textCommentDocEmphasized = lightenToward(
-  interfaceColors.editorBg,
+export const textCommentDocEmphasized = darkenToward(
   basePalette.gray,
-  0.1
+  basePalette.black,
+  0.2
 )
 
 export const textPreformat = lightenToward(
