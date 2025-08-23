@@ -6,68 +6,48 @@ export const aquaLight = lightenToward(basePalette.cyan, basePalette.blue, 0.15)
 
 export const bgElevated = lightenToward(
   interfaceColors.editorBg,
-  basePalette.black,
-  0.04
-)
-
-export const bgOverlay = lightenToward(
-  interfaceColors.editorBg,
-  basePalette.black,
+  basePalette.gray,
   0.08
 )
-
-export const bgSunken = lightenToward(
+export const bgOverlay = lightenToward(
+  interfaceColors.editorBg,
+  basePalette.gray,
+  0.12
+)
+export const bgSunken = darkenToward(
   interfaceColors.editorBg,
   basePalette.black,
-  0.12
+  0.05
 )
 
 export const bgInput = mix(interfaceColors.editorBg, basePalette.gray, 0.15)
 
 export const bgHover = lightenToward(
   interfaceColors.editorBg,
-  basePalette.white,
-  0.1
+  basePalette.blue,
+  0.08
 )
-
 export const bgActive = lightenToward(
   interfaceColors.editorBg,
   basePalette.blue,
-  0.07
-)
-
-export const bgDrop = darkenToward(
-  interfaceColors.editorBg,
-  basePalette.black,
   0.12
 )
+export const bgDrop = withAlpha(basePalette.blue, 0.15)
+export const bgLineHighlight = withAlpha(basePalette.blue, 0.08)
+export const bgBracketMatch = withAlpha(basePalette.cyan, 0.12)
 
-export const bgLineHighlight = lightenToward(
+export const bgSelectionActive = withAlpha(basePalette.blue, 0.25)
+export const bgSelectionInactive = withAlpha(basePalette.blue, 0.15)
+export const bgSelectionFocus = withAlpha(basePalette.cyan, 0.2)
+export const bgSelectionMenu = withAlpha(basePalette.blue, 0.18)
+
+export const bgStateLabel = mix(
   interfaceColors.editorBg,
-  basePalette.blue,
-  0.04
+  basePalette.gray,
+  0.15
 )
-
-export const bgBracketMatch = lightenToward(
-  interfaceColors.editorBg,
-  basePalette.cyan,
-  0.06
-)
-
-export const bgSelectionActive = withAlpha(basePalette.blue, 0.18)
-export const bgSelectionInactive = withAlpha(basePalette.blue, 0.1)
-export const bgSelectionFocus = withAlpha(basePalette.cyan, 0.18)
-export const bgSelectionMenu = withAlpha(basePalette.cyan, 0.18)
-
-export const bgStateLabel = darkenToward(
-  interfaceColors.editorBg,
-  basePalette.black,
-  0.06
-)
-
-export const border = lightenToward(basePalette.black, basePalette.white, 0.1)
-
-export const textPrimary = mix(basePalette.black, basePalette.white, 0.68)
+export const border = mix(basePalette.black, basePalette.gray, 0.4)
+export const textPrimary = basePalette.white
 
 export const textMuted = mix(basePalette.white, basePalette.gray, 0.4)
 
@@ -126,68 +106,62 @@ export const uiGitStageDeleted = mix(basePalette.red, basePalette.magenta, 0.1)
 export const uiGitStageModified = mix(basePalette.blue, basePalette.cyan, 0.15)
 
 // Terminal colors with alpha
-export const terminalSelectionBackground = withAlpha(textSubtle2, '19%')
-export const terminalFindMatchBackground = withAlpha(basePalette.blue, '40%')
+export const terminalSelectionBackground = withAlpha(textSubtle2, 0.19)
+export const terminalFindMatchBackground = withAlpha(basePalette.blue, 0.4)
 export const terminalFindMatchHighlightBackground = withAlpha(
   basePalette.blue,
-  '40%'
+  0.4
 )
-export const terminalFindMatchHighlightBorder = withAlpha(
-  basePalette.blue,
-  '60%'
-)
+export const terminalFindMatchHighlightBorder = withAlpha(basePalette.blue, 0.6)
 export const terminalHoverHighlightBackground = withAlpha(
   brandButtonPrimary,
-  '20%'
+  0.2
 )
-export const terminalDropBackground = withAlpha(bgDrop, '50%')
+export const terminalDropBackground = withAlpha(bgDrop, 0.5)
 export const terminalOverviewRulerFindMatchForeground = withAlpha(
   textPrimary,
-  '27%'
+  0.27
 )
 
 // Base theme colors with alpha
-export const focusBorder = withAlpha(basePalette.blue, '40%')
+export const focusBorder = withAlpha(basePalette.blue, 0.4)
 export const extensionButtonProminentHoverBackground = withAlpha(
   brandButtonPrimary,
-  '30%'
+  0.3
 )
-export const scrollbarSliderBackground = withAlpha(uiScrollbarBase, '25%')
-export const scrollbarSliderHoverBackground = withAlpha(uiScrollbarBase, '38%')
-export const scrollbarSliderActiveBackground = withAlpha(uiScrollbarBase, '50%')
-export const keybindingLabelBackground = withAlpha(bgElevated, '60%')
-export const keybindingLabelBottomBorder = withAlpha(border, '67%')
+export const scrollbarSliderBackground = withAlpha(uiScrollbarBase, 0.25)
+export const scrollbarSliderHoverBackground = withAlpha(uiScrollbarBase, 0.38)
+export const scrollbarSliderActiveBackground = withAlpha(uiScrollbarBase, 0.5)
+export const keybindingLabelBackground = withAlpha(bgElevated, 0.6)
+export const keybindingLabelBottomBorder = withAlpha(border, 0.67)
 
 // Misc colors with alpha
-export const toolbarHoverBackground = withAlpha(interfaceColors.editorBg, '13%')
-export const toolbarActiveBackground = withAlpha(
-  interfaceColors.editorBg,
-  '13%'
-)
+export const toolbarHoverBackground = withAlpha(interfaceColors.editorBg, 0.13)
+export const toolbarActiveBackground = withAlpha(interfaceColors.editorBg, 0.13)
 
 // Peek view colors with alpha
 export const peekViewEditorMatchHighlightBackground = withAlpha(
   brandButtonPrimary,
-  '15%'
+  0.15
 )
 export const peekViewResultSelectionBackground = withAlpha(
   brandButtonPrimary,
-  '20%'
+  0.2
 )
 export const peekViewResultMatchHighlightBackground = withAlpha(
   brandButtonPrimary,
-  '15%'
+  0.15
 )
 
 // Tabs colors with alpha
-export const tabLastPinnedBorder = withAlpha(textSubtle2, '80%')
-export const tabSelectedForeground = withAlpha(textPrimary, '63%')
+export const tabLastPinnedBorder = withAlpha(textSubtle2, 0.8)
+export const tabSelectedForeground = withAlpha(textPrimary, 0.63)
 
 // Menus colors with alpha
-export const menuBorder = withAlpha(border, '0%')
+export const menuBorder = withAlpha(border, 0)
 
 // Git colors with alpha
-export const gitBlameEditorDecorationForeground = withAlpha(textSubtle2, '50%')
+export const gitBlameEditorDecorationForeground = withAlpha(textSubtle2, 0.5)
 
 // Diff editor colors with alpha
 export const diffEditorInsertedTextBackground = withAlpha(
@@ -202,148 +176,136 @@ export const diffEditorRemovedLineBackground = withAlpha(basePalette.red, 0.1)
 export const diffEditorDiagonalFill = withAlpha(textSubtle2, 0.2)
 
 // Merge colors with alpha
-export const mergeCurrentHeaderBackground = withAlpha(basePalette.teal, '67%')
-export const mergeCurrentContentBackground = withAlpha(basePalette.teal, '27%')
-export const mergeIncomingHeaderBackground = withAlpha(
-  brandButtonPrimary,
-  '67%'
-)
+export const mergeCurrentHeaderBackground = withAlpha(basePalette.teal, 0.67)
+export const mergeCurrentContentBackground = withAlpha(basePalette.teal, 0.27)
+export const mergeIncomingHeaderBackground = withAlpha(brandButtonPrimary, 0.67)
 export const mergeIncomingContentBackground = withAlpha(
   brandButtonPrimary,
-  '27%'
+  0.27
 )
 
 // Debug colors with alpha
 export const editorStackFrameHighlightBackground = withAlpha(
   basePalette.yellow,
-  '15%'
+  0.15
 )
 export const editorFocusedStackFrameHighlightBackground = withAlpha(
   basePalette.teal,
-  '15%'
+  0.15
 )
 export const debugViewValueChangedHighlight = withAlpha(
   brandButtonPrimary,
-  '67%'
+  0.67
 )
 
 // Input validation colors with alpha
-export const inputValidationInfoBackground = withAlpha(basePalette.cyan, '13%')
+export const inputValidationInfoBackground = withAlpha(basePalette.cyan, 0.13)
 export const inputValidationWarningBackground = withAlpha(
   basePalette.yellow,
-  '13%'
+  0.13
 )
-export const inputValidationErrorBackground = withAlpha(basePalette.red, '13%')
+export const inputValidationErrorBackground = withAlpha(basePalette.red, 0.13)
 
 // Status bar colors with alpha
-export const statusBarItemHoverBackground = withAlpha(bgHover, '60%')
-export const statusBarItemProminentHoverBackground = withAlpha(bgHover, '40%')
-export const statusBarItemErrorHoverBackground = withAlpha(
-  basePalette.red,
-  '80%'
-)
+export const statusBarItemHoverBackground = withAlpha(bgHover, 0.6)
+export const statusBarItemProminentHoverBackground = withAlpha(bgHover, 0.4)
+export const statusBarItemErrorHoverBackground = withAlpha(basePalette.red, 0.8)
 export const statusBarItemWarningHoverBackground = withAlpha(
   basePalette.yellow,
-  '80%'
+  0.8
 )
-export const statusBarItemCompactHoverBackground = withAlpha(bgHover, '50%')
+export const statusBarItemCompactHoverBackground = withAlpha(bgHover, 0.5)
 export const statusBarItemOfflineHoverBackground = withAlpha(
   basePalette.red,
-  '80%'
+  0.8
 )
 
 // Button colors with alpha
-export const buttonBorder = withAlpha(textSubtle2, '25%')
-export const buttonSeparator = withAlpha(textSubtle2, '20%')
+export const buttonBorder = withAlpha(textSubtle2, 0.25)
+export const buttonSeparator = withAlpha(textSubtle2, 0.2)
 
 // Editor bracket pair guide colors with alpha
 export const editorBracketPairGuideActiveBackground1 = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
 export const editorBracketPairGuideActiveBackground2 = withAlpha(
   basePalette.orange,
-  '15%'
+  0.15
 )
 export const editorBracketPairGuideActiveBackground3 = withAlpha(
   basePalette.green,
-  '15%'
+  0.15
 )
 export const editorBracketPairGuideActiveBackground4 = withAlpha(
   basePalette.yellow,
-  '15%'
+  0.15
 )
 export const editorBracketPairGuideActiveBackground5 = withAlpha(
   basePalette.red,
-  '15%'
+  0.15
 )
 export const editorBracketPairGuideActiveBackground6 = withAlpha(
   basePalette.magenta,
-  '15%'
+  0.15
 )
 
 // Editor colors with alpha
-export const editorFoldBackground = withAlpha(bgElevated, '15%')
-export const editorSelectionBackground = withAlpha(basePalette.blue, '15%')
+export const editorFoldBackground = withAlpha(bgElevated, 0.15)
+export const editorSelectionBackground = withAlpha(basePalette.blue, 0.15)
 export const editorInactiveSelectionBackground = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
-export const editorFindMatchBackground = withAlpha(basePalette.yellow, '15%')
+export const editorFindMatchBackground = withAlpha(basePalette.yellow, 0.15)
 export const editorFindMatchHighlightBackground = withAlpha(
   basePalette.purple,
-  '15%'
+  0.15
 )
-export const editorFindMatchHighlightBorder = withAlpha(basePalette.blue, '15%')
-export const editorFindRangeHighlightBackground = withAlpha(textSoft, '25%')
-export const editorFindRangeHighlightBorder = withAlpha(textMuted, '45%')
-export const editorRangeHighlightBackground = withAlpha(textSubtle2, '15%')
-export const editorWordHighlightBackground = withAlpha(basePalette.blue, '5%')
-export const editorWordHighlightBorder = withAlpha(basePalette.blue, '45%')
+export const editorFindMatchHighlightBorder = withAlpha(basePalette.blue, 0.15)
+export const editorFindRangeHighlightBackground = withAlpha(textSoft, 0.25)
+export const editorFindRangeHighlightBorder = withAlpha(textMuted, 0.45)
+export const editorRangeHighlightBackground = withAlpha(textSubtle2, 0.15)
+export const editorWordHighlightBackground = withAlpha(basePalette.blue, 0.05)
+export const editorWordHighlightBorder = withAlpha(basePalette.blue, 0.45)
 export const editorWordHighlightStrongBackground = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
-export const editorWordHighlightStrongBorder = withAlpha(
-  basePalette.blue,
-  '45%'
-)
+export const editorWordHighlightStrongBorder = withAlpha(basePalette.blue, 0.45)
 export const editorSelectionHighlightBackground = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
-export const editorSelectionHighlightBorder = withAlpha(basePalette.blue, '45%')
-export const editorHoverHighlightBackground = withAlpha(basePalette.blue, '15%')
-export const editorIndentGuideBackground1 = withAlpha(textSubtle2, '15%')
-export const editorIndentGuideActiveBackground1 = withAlpha(textSubtle2, '15%')
-export const editorWhitespaceForeground = withAlpha(textSubtle2, '15%')
-export const editorBracketMatchBorder = withAlpha(basePalette.blue, '15%')
-export const editorInlayHintBackground = withAlpha(bgElevated, '15%')
-export const editorInlayHintTypeBackground = withAlpha(bgElevated, '15%')
-export const editorInlayHintParameterBackground = withAlpha(bgElevated, '15%')
+export const editorSelectionHighlightBorder = withAlpha(basePalette.blue, 0.45)
+export const editorHoverHighlightBackground = withAlpha(basePalette.blue, 0.15)
+export const editorIndentGuideBackground1 = withAlpha(textSubtle2, 0.15)
+export const editorIndentGuideActiveBackground1 = withAlpha(textSubtle2, 0.15)
+export const editorWhitespaceForeground = withAlpha(textSubtle2, 0.15)
+export const editorBracketMatchBorder = withAlpha(basePalette.blue, 0.15)
+export const editorInlayHintBackground = withAlpha(bgElevated, 0.15)
+export const editorInlayHintTypeBackground = withAlpha(bgElevated, 0.15)
+export const editorInlayHintParameterBackground = withAlpha(bgElevated, 0.15)
 export const editorOverviewRulerFindMatchForeground = withAlpha(
   textPrimary,
-  '15%'
+  0.15
 )
 export const editorOverviewRulerRangeHighlightForeground = withAlpha(
   textPrimary,
-  '15%'
+  0.15
 )
 export const editorOverviewRulerSelectionHighlightForeground = withAlpha(
   textPrimary,
-  '15%'
+  0.15
 )
 export const editorOverviewRulerWordHighlightForeground = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
 export const editorOverviewRulerWordHighlightStrongForeground = withAlpha(
   basePalette.blue,
-  '15%'
+  0.15
 )
-export const editorWidgetResizeBorder = withAlpha(textSubtle2, '15%')
-export const editorSuggestWidgetBorder = withAlpha(basePalette.black, '0%')
-export const searchEditorFindMatchBackground = withAlpha(
-  basePalette.blue,
-  '15%'
-)
+export const editorWidgetResizeBorder = withAlpha(textSubtle2, 0.15)
+export const editorSuggestWidgetBorder = withAlpha(basePalette.black, 0)
+export const searchEditorFindMatchBackground = withAlpha(basePalette.blue, 0.15)
