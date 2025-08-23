@@ -48,7 +48,7 @@ export class ComponentStateFactory {
       focus: {
         background: baseBackground,
         foreground: baseForeground,
-        border: withAlpha(accent, '66%'),
+        border: withAlpha(accent, 0.66),
       },
       disabled: {
         background: palette.bg.elevated,
@@ -118,7 +118,7 @@ export const buttonComponent: UIComponent = {
       border: 'transparent',
     },
     active: {
-      background: withAlpha(palette.brand.button.primary, '80%'),
+      background: withAlpha(palette.brand.button.primary, 0.8),
       foreground: palette.fg.selectionText,
       border: 'transparent',
     },
@@ -171,7 +171,7 @@ export const listComponent: UIComponent = {
     focus: {
       background: palette.bg.selection.focus,
       foreground: palette.fg.onSelection,
-      border: withAlpha(palette.brand.primary, '50%'),
+      border: withAlpha(palette.brand.primary, 0.5),
     },
     disabled: {
       background: 'transparent',
@@ -204,19 +204,19 @@ export const badgeComponent: UIComponent = {
       border: 'transparent',
     },
     hover: {
-      background: withAlpha(palette.ui.badge.base, '80%'),
+      background: withAlpha(palette.ui.badge.base, 0.8),
       foreground: palette.ui.badge.fg,
       border: 'transparent',
     },
     active: {
-      background: withAlpha(palette.ui.badge.base, '90%'),
+      background: withAlpha(palette.ui.badge.base, 0.9),
       foreground: palette.ui.badge.fg,
       border: 'transparent',
     },
     focus: {
       background: palette.ui.badge.base,
       foreground: palette.ui.badge.fg,
-      border: withAlpha(palette.brand.primary, '50%'),
+      border: withAlpha(palette.brand.primary, 0.5),
     },
   },
 }

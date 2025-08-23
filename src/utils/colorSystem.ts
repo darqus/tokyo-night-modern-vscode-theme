@@ -146,8 +146,8 @@ export class StateColorSystem {
       default: this.baseColor,
       hover: this.adjustBrightness(this.baseColor, 1.1),
       active: this.adjustBrightness(this.baseColor, 0.9),
-      focus: withAlpha(this.baseColor, '66%'),
-      disabled: withAlpha(this.baseColor, '40%'),
+      focus: withAlpha(this.baseColor, 0.66),
+      disabled: withAlpha(this.baseColor, 0.4),
     }
   }
 
