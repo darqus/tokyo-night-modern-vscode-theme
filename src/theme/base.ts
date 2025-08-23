@@ -23,7 +23,7 @@ export const getBaseColors = () => ({
   // Значки, иконки, настройки - улучшенная видимость
   'badge.background': palette.ui.badge.base,
   'badge.foreground': palette.ui.badge.fg,
-  'icon.foreground': palette.fg.soft,
+  'icon.foreground': palette.fg.muted,
   'settings.headerForeground': palette.fg.primary,
 
   // Окно и разделитель

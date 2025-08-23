@@ -9,7 +9,7 @@ export const getTabColors = () => ({
   'tab.activeBackground': palette.bg.base, // Фон активной вкладки - теперь светлее
   'tab.inactiveBackground': palette.bg.base, // Фон неактивной вкладки - теперь темнее
   'tab.activeForeground': palette.fg.primary, // Текст активной вкладки - более яркий
-  'tab.hoverForeground': palette.fg.selectionText, // Текст при наведении - максимальная контрастность
+  'tab.hoverForeground': palette.fg.activeTitle, // Текст при наведении - максимальная контрастность
   'tab.activeBorder': palette.ui.badge.base, // Граница активной вкладки - синхронизация с бейджами
   'tab.inactiveForeground': palette.fg.muted, // Текст неактивной вкладки - более контрастный
   'tab.border': palette.line.border,

@@ -71,7 +71,6 @@ export const palette: Palette = {
     inactive: core.text.inactive, // Неактивный/отключенный текст
     panelText: core.text.primary, // Текст панелей (улучшенная читаемость в боковых панелях) - увеличена контрастность
     soft: core.text.soft, // Мягкий текст (промежуточная яркость)
-    softTitle: core.text.primary, // Мягкие заголовки
     selectionText: core.text.selection, // Текст на выделении
     onSelection: core.text.selection, // Текст поверх выделения
     activeTitle: core.text.primary, // Активные заголовки

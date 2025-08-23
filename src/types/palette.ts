@@ -36,7 +36,6 @@ export interface Palette {
     inactive: Hex
     panelText: Hex
     soft: Hex
-    softTitle: Hex
     selectionText: Hex
     onSelection: Hex
     activeTitle: Hex

@@ -36,10 +36,10 @@ export const bgDrop = withAlpha(basePalette.blue, 0.15)
 export const bgLineHighlight = withAlpha(basePalette.blue, 0.08)
 export const bgBracketMatch = withAlpha(basePalette.cyan, 0.12)
 
-export const bgSelectionActive = withAlpha(basePalette.blue, 0.25)
-export const bgSelectionInactive = withAlpha(basePalette.blue, 0.15)
-export const bgSelectionFocus = withAlpha(basePalette.cyan, 0.2)
-export const bgSelectionMenu = withAlpha(basePalette.blue, 0.18)
+export const bgSelectionActive = withAlpha(basePalette.blue, 0.2)
+export const bgSelectionInactive = withAlpha(basePalette.blue, 0.12)
+export const bgSelectionFocus = withAlpha(basePalette.cyan, 0.15)
+export const bgSelectionMenu = withAlpha(basePalette.blue, 0.15)
 
 export const bgStateLabel = mix(
   interfaceColors.editorBg,
@@ -79,13 +79,13 @@ export const textEditorLinkActive = mix(
   0.2
 )
 
-export const brandButtonPrimary = mix(basePalette.black, basePalette.blue, 0.22)
+export const brandButtonPrimary = mix(basePalette.black, basePalette.blue, 0.18)
 
-export const brandButtonHover = mix(basePalette.black, basePalette.blue, 0.28)
+export const brandButtonHover = mix(basePalette.black, basePalette.blue, 0.22)
 
 export const uiShadow = withAlpha(basePalette.cyan, 0.18)
 
-export const uiSelectionWash = withAlpha(basePalette.blue, 0.15)
+export const uiSelectionWash = withAlpha(basePalette.blue, 0.12)
 
 export const uiScrollbarBase = mix(basePalette.cyan, basePalette.gray, 0.35)
 
@@ -124,7 +124,7 @@ export const terminalOverviewRulerFindMatchForeground = withAlpha(
 )
 
 // Base theme colors with alpha
-export const focusBorder = withAlpha(basePalette.blue, 0.4)
+export const focusBorder = withAlpha(basePalette.blue, 0.3)
 export const extensionButtonProminentHoverBackground = withAlpha(
   brandButtonPrimary,
   0.3
