@@ -1,7 +1,5 @@
 import { basePalette } from './palette.base'
 import { interfaceColors } from './palette.interface'
-import { core } from './palette.core'
-import { badgeBase } from './palette.derived'
 import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 
 export const aquaLight = lightenToward(basePalette.cyan, basePalette.blue, 0.15)
@@ -129,9 +127,15 @@ export const uiGitStageModified = mix(basePalette.blue, basePalette.cyan, 0.15)
 
 // Terminal colors with alpha
 export const terminalSelectionBackground = withAlpha(textSubtle2, '19%')
-export const terminalFindMatchBackground = withAlpha(badgeBase, '40%')
-export const terminalFindMatchHighlightBackground = withAlpha(badgeBase, '40%')
-export const terminalFindMatchHighlightBorder = withAlpha(badgeBase, '60%')
+export const terminalFindMatchBackground = withAlpha(basePalette.blue, '40%')
+export const terminalFindMatchHighlightBackground = withAlpha(
+  basePalette.blue,
+  '40%'
+)
+export const terminalFindMatchHighlightBorder = withAlpha(
+  basePalette.blue,
+  '60%'
+)
 export const terminalHoverHighlightBackground = withAlpha(
   brandButtonPrimary,
   '20%'
@@ -143,7 +147,7 @@ export const terminalOverviewRulerFindMatchForeground = withAlpha(
 )
 
 // Base theme colors with alpha
-export const focusBorder = withAlpha(badgeBase, '40%')
+export const focusBorder = withAlpha(basePalette.blue, '40%')
 export const extensionButtonProminentHoverBackground = withAlpha(
   brandButtonPrimary,
   '30%'
@@ -177,7 +181,7 @@ export const peekViewResultMatchHighlightBackground = withAlpha(
 
 // Tabs colors with alpha
 export const tabLastPinnedBorder = withAlpha(textSubtle2, '80%')
-export const tabSelectedForeground = withAlpha(core.text.selection, '63%')
+export const tabSelectedForeground = withAlpha(textPrimary, '63%')
 
 // Menus colors with alpha
 export const menuBorder = withAlpha(border, '0%')
@@ -339,4 +343,7 @@ export const editorOverviewRulerWordHighlightStrongForeground = withAlpha(
 )
 export const editorWidgetResizeBorder = withAlpha(textSubtle2, '15%')
 export const editorSuggestWidgetBorder = withAlpha(basePalette.black, '0%')
-export const searchEditorFindMatchBackground = withAlpha(badgeBase, '15%')
+export const searchEditorFindMatchBackground = withAlpha(
+  basePalette.blue,
+  '15%'
+)
