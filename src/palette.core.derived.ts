@@ -54,14 +54,14 @@ export const textSubtle2 = mix(basePalette.white, basePalette.gray, 0.48)
 
 export const textGray600 = mix(basePalette.gray, basePalette.black, 0.25)
 
-export const textComment = mix(basePalette.gray, basePalette.blue, 0.15)
+export const textComment = mix(basePalette.gray, basePalette.black, 0.25)
 
-export const textCommentDoc = mix(basePalette.gray, basePalette.blue, 0.1)
+export const textCommentDoc = mix(basePalette.gray, basePalette.black, 0.2)
 
 export const textCommentDocEmphasized = mix(
   basePalette.gray,
-  basePalette.cyan,
-  0.08
+  basePalette.black,
+  0.15
 )
 
 export const textPreformat = mix(basePalette.white, basePalette.cyan, 0.12)
