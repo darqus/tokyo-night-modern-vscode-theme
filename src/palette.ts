@@ -1,36 +1,35 @@
 import type { Hex, Palette } from './types/palette'
 import { core } from './palette.core'
-import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
-
-// Производные цвета для замены legacy-цветов
-const tealSoft = lightenToward(core.accent.teal, core.accent.cyan, 0.25)
-const skyLight = lightenToward(core.accent.cyan, core.accent.blue, 0.35)
-const indigo = mix(core.accent.blue, core.accent.purple, 0.5)
-const rose = lightenToward(core.accent.red, core.accent.magenta, 0.3)
-const azureLight = lightenToward(core.accent.cyan, core.accent.blue, 0.18)
-const tealDeep = darkenToward(core.accent.teal, core.accent.blue, 0.25)
-const bluePunctuation = darkenToward(core.accent.blue, core.accent.purple, 0.18)
-const blue400 = lightenToward(core.accent.blue, core.accent.cyan, 0.18)
-const mint = lightenToward(core.accent.green, core.accent.cyan, 0.18)
-const lilac = lightenToward(core.accent.magenta, core.accent.blue, 0.18)
-const pinkMuted = mix(core.accent.red, core.accent.magenta, 0.5)
-const azure = lightenToward(core.accent.cyan, core.accent.blue, 0.12)
-const maroon = darkenToward(core.accent.red, core.accent.purple, 0.18)
-const blueMuted = mix(core.accent.blue, core.text.muted, 0.4)
-const sky = lightenToward(core.accent.cyan, core.accent.blue, 0.22)
-const grayBlue400 = mix(core.accent.blue, core.text.subtle, 0.5)
-const blueBright = lightenToward(core.accent.blue, core.accent.cyan, 0.25)
-const blueSoft = lightenToward(core.accent.blue, core.text.subtle, 0.18)
-const violet = lightenToward(core.accent.purple, core.accent.blue, 0.18)
-const cyan500 = darkenToward(core.accent.cyan, core.accent.blue, 0.18)
-const slate = mix(core.accent.blue, core.accent.cyan, 0.3)
-const steel = darkenToward(core.accent.blue, core.text.muted, 0.35)
-const steelAlt = lightenToward(core.accent.blue, core.text.muted, 0.18)
-const steelMuted = mix(core.accent.blue, core.text.muted, 0.8)
-const brick = darkenToward(core.accent.red, core.accent.orange, 0.18)
-const redMuted = mix(core.accent.red, core.text.muted, 0.5)
-const badgeBase = lightenToward(core.accent.blue, core.accent.cyan, 0.35)
-const windowBorder = darkenToward(core.accent.blue, core.text.muted, 0.22)
+import {
+  tealSoft,
+  skyLight,
+  indigo,
+  rose,
+  azureLight,
+  tealDeep,
+  bluePunctuation,
+  blue400,
+  mint,
+  lilac,
+  pinkMuted,
+  azure,
+  maroon,
+  blueMuted,
+  sky,
+  grayBlue400,
+  blueBright,
+  blueSoft,
+  violet,
+  cyan500,
+  slate,
+  steel,
+  steelAlt,
+  steelMuted,
+  brick,
+  redMuted,
+  badgeBase,
+  windowBorder,
+} from './palette.derived'
 
 /**
  * Базовые (ядро) цвета темы для исключения дублирования значений hex.

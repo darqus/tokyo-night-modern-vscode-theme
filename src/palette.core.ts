@@ -1,68 +1,44 @@
 import { basePalette } from './palette.base'
 import { interfaceColors } from './palette.interface'
+import * as derived from './palette.core.derived'
 
-import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
-
-const aquaLight = lightenToward(basePalette.cyan, basePalette.teal, 0.18)
-
-/**
- * Ядро темы: только ссылки на базовую палитру и основные интерфейсные цвета.
- * Все остальные цвета должны быть производными через утилиты.
- */
 export const core = {
   bg: {
     base: interfaceColors.editorBg,
-    elevated: lightenToward(interfaceColors.editorBg, basePalette.black, 0.04),
-    overlay: lightenToward(interfaceColors.editorBg, basePalette.black, 0.08),
-    sunken: lightenToward(interfaceColors.editorBg, basePalette.black, 0.12),
-    input: mix(interfaceColors.editorBg, basePalette.gray, 0.15),
-    hover: lightenToward(interfaceColors.editorBg, basePalette.white, 0.1),
-    active: lightenToward(interfaceColors.editorBg, basePalette.blue, 0.07),
-    drop: darkenToward(interfaceColors.editorBg, basePalette.black, 0.12),
-    lineHighlight: lightenToward(
-      interfaceColors.editorBg,
-      basePalette.blue,
-      0.04
-    ),
-    bracketMatch: lightenToward(
-      interfaceColors.editorBg,
-      basePalette.cyan,
-      0.06
-    ),
+    elevated: derived.bgElevated,
+    overlay: derived.bgOverlay,
+    sunken: derived.bgSunken,
+    input: derived.bgInput,
+    hover: derived.bgHover,
+    active: derived.bgActive,
+    drop: derived.bgDrop,
+    lineHighlight: derived.bgLineHighlight,
+    bracketMatch: derived.bgBracketMatch,
     tabs: interfaceColors.editorBg,
     selection: {
-      active: withAlpha(basePalette.blue, 0.18),
-      inactive: withAlpha(basePalette.blue, 0.1),
-      focus: withAlpha(basePalette.cyan, 0.18),
-      menu: withAlpha(basePalette.cyan, 0.18),
+      active: derived.bgSelectionActive,
+      inactive: derived.bgSelectionInactive,
+      focus: derived.bgSelectionFocus,
+      menu: derived.bgSelectionMenu,
     },
-    stateLabel: darkenToward(interfaceColors.editorBg, basePalette.black, 0.06),
+    stateLabel: derived.bgStateLabel,
   },
-  border: lightenToward(basePalette.black, basePalette.white, 0.1),
-  // ...другие поля аналогично: только ссылки или производные через утилиты
+  border: derived.border,
   text: {
-    primary: darkenToward(basePalette.black, basePalette.white, 0.65),
-    muted: mix(interfaceColors.editorFg, basePalette.gray, 0.3),
+    primary: derived.textPrimary,
+    muted: derived.textMuted,
     subtle: basePalette.gray,
-    inactive: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
-    soft: lightenToward(interfaceColors.editorFg, basePalette.white, 0.12),
+    inactive: derived.textInactive,
+    soft: derived.textSoft,
     selection: basePalette.white,
-    subtle2: mix(interfaceColors.editorFg, basePalette.gray, 0.4),
-    gray600: darkenToward(basePalette.gray, basePalette.black, 0.2),
-    comment: darkenToward(interfaceColors.editorFg, basePalette.black, 0.25),
-    commentDoc: darkenToward(interfaceColors.editorFg, basePalette.black, 0.15),
-    commentDocEmphasized: darkenToward(
-      interfaceColors.editorFg,
-      basePalette.black,
-      0.1
-    ),
-    preformat: lightenToward(interfaceColors.editorFg, basePalette.gray, 0.1),
-    placeholder: mix(interfaceColors.editorFg, basePalette.gray, 0.5),
-    editorLinkActive: lightenToward(
-      interfaceColors.editorFg,
-      basePalette.blue,
-      0.18
-    ),
+    subtle2: derived.textSubtle2,
+    gray600: derived.textGray600,
+    comment: derived.textComment,
+    commentDoc: derived.textCommentDoc,
+    commentDocEmphasized: derived.textCommentDocEmphasized,
+    preformat: derived.textPreformat,
+    placeholder: derived.textPlaceholder,
+    editorLinkActive: derived.textEditorLinkActive,
   },
   accent: {
     blue: basePalette.blue,
@@ -77,29 +53,25 @@ export const core = {
   },
   brand: {
     button: {
-      primary: mix(interfaceColors.editorBg, basePalette.blue, 0.25),
-      hover: mix(interfaceColors.editorBg, basePalette.blue, 0.3),
+      primary: derived.brandButtonPrimary,
+      hover: derived.brandButtonHover,
     },
   },
   ui: {
-    shadow: withAlpha(basePalette.blue, 0.2),
-    selectionWash: withAlpha(basePalette.cyan, 0.18),
-    scrollbarBase: mix(basePalette.blue, basePalette.gray, 0.4),
+    shadow: derived.uiShadow,
+    selectionWash: derived.uiSelectionWash,
+    scrollbarBase: derived.uiScrollbarBase,
     tab: {
       activeModified: basePalette.purple,
       inactiveModified: basePalette.cyan,
-      unfocusedActive: darkenToward(basePalette.blue, basePalette.black, 0.18),
+      unfocusedActive: derived.uiTabUnfocusedActive,
     },
     git: {
-      ignored: darkenToward(
-        darkenToward(interfaceColors.editorFg, basePalette.black, 0.25),
-        interfaceColors.editorBg,
-        0.4
-      ),
-      deleted: darkenToward(basePalette.red, interfaceColors.editorBg, 0.3),
-      conflicting: darkenToward(aquaLight, interfaceColors.editorBg, 0.3),
-      stageDeleted: darkenToward(basePalette.red, interfaceColors.editorBg, 0.2),
-      stageModified: darkenToward(basePalette.blue, interfaceColors.editorBg, 0.2),
+      ignored: derived.uiGitIgnored,
+      deleted: derived.uiGitDeleted,
+      conflicting: derived.uiGitConflicting,
+      stageDeleted: derived.uiGitStageDeleted,
+      stageModified: derived.uiGitStageModified,
     },
   },
 } as const
