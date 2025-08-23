@@ -1,4 +1,4 @@
-import type { Hex, Palette } from './types/palette'
+import type { Palette } from './types/palette'
 import { core } from './palette.core'
 import {
   tealSoft,
