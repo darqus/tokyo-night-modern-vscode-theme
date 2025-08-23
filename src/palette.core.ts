@@ -7,7 +7,6 @@ export const core = {
     base: interfaceColors.editorBg,
     elevated: derived.bgElevated,
     overlay: derived.bgOverlay,
-    sunken: derived.bgSunken,
     input: derived.bgInput,
     hover: derived.bgHover,
     active: derived.bgActive,

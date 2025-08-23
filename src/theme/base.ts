@@ -45,12 +45,12 @@ export const getBaseColors = () => ({
   'scrollbarSlider.activeBackground': scrollbarSliderActiveBackground,
 
   // Текст
-  'walkThrough.embeddedEditorBackground': palette.bg.sunken,
+  'walkThrough.embeddedEditorBackground': palette.bg.base,
   'textLink.foreground': palette.ui.settingsHeader,
   'textLink.activeForeground': palette.accent.cyan,
   'textPreformat.foreground': palette.ui.text.preformat,
-  'textBlockQuote.background': palette.bg.sunken,
-  'textCodeBlock.background': palette.bg.sunken,
+  'textBlockQuote.background': palette.bg.base,
+  'textCodeBlock.background': palette.bg.base,
   'textSeparator.foreground': palette.ui.text.separator,
 
   // Заголовок окна

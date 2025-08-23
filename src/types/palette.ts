@@ -9,7 +9,6 @@ export interface Palette {
   bg: {
     base: Hex
     elevated: Hex
-    sunken: Hex
     overlay: Hex
     input: Hex
     hover: Hex

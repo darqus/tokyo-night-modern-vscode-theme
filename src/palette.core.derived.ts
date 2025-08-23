@@ -14,11 +14,6 @@ export const bgOverlay = lightenToward(
   basePalette.gray,
   0.12
 )
-export const bgSunken = darkenToward(
-  interfaceColors.editorBg,
-  basePalette.black,
-  0.05
-)
 
 export const bgInput = mix(interfaceColors.editorBg, basePalette.gray, 0.15)
 

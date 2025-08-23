@@ -4,7 +4,7 @@ export const getSideBarColors = () => ({
   // Боковая панель - улучшенная иерархия
   'tree.indentGuidesStroke': palette.line.border,
   'sideBar.foreground': palette.fg.panelText, // Улучшенная читаемость для текста в боковой панели
-  'sideBar.background': palette.bg.sunken,
+  'sideBar.background': palette.bg.base,
   'sideBar.border': palette.line.border,
   'sideBarTitle.foreground': palette.fg.activeTitle,
   'sideBarSectionHeader.background': palette.bg.elevated,
