@@ -17,7 +17,6 @@ const pinkMuted = mix(core.accent.red, core.accent.magenta, 0.5)
 const azure = lightenToward(core.accent.cyan, core.accent.blue, 0.12)
 const maroon = darkenToward(core.accent.red, core.accent.purple, 0.18)
 const blueMuted = mix(core.accent.blue, core.text.muted, 0.4)
-const aquaLight = lightenToward(core.accent.cyan, core.accent.teal, 0.18)
 const sky = lightenToward(core.accent.cyan, core.accent.blue, 0.22)
 const grayBlue400 = mix(core.accent.blue, core.text.subtle, 0.5)
 const blueBright = lightenToward(core.accent.blue, core.accent.cyan, 0.25)
@@ -165,7 +164,7 @@ export const palette: Palette = {
     markupInserted: azure, // Вставленная разметка
     markupDeleted: maroon, // Удаленная разметка
     markupChanged: blueMuted, // Измененная разметка
-    regex: aquaLight, // Регулярные выражения
+    regex: core.accent.cyan, // Регулярные выражения
     regexGroup: core.accent.purple, // Группы регулярных выражений (холоднее)
     regexCharClass: core.accent.magenta, // Классы символов регулярных выражений
     regexCharSet: sky, // Наборы символов регулярных выражений - холодный голубой
@@ -338,11 +337,11 @@ export const palette: Palette = {
     },
     git: {
       // Git декорации
-      ignored: darkenToward(core.text.comment, core.bg.base, 0.4), // Игнорируемые Git файлы - увеличена контрастность
-      deleted: darkenToward(core.accent.red, core.bg.base, 0.3), // Удаленные Git файлы
-      conflicting: darkenToward(aquaLight, core.bg.base, 0.3), // Конфликтующие Git файлы - холодный teal
-      stageDeleted: darkenToward(core.accent.red, core.bg.base, 0.2), // Удаленные в стейдже Git файлы
-      stageModified: darkenToward(core.accent.blue, core.bg.base, 0.2), // Измененные в стейдже Git файлы
+      ignored: core.ui.git.ignored, // Игнорируемые Git файлы - увеличена контрастность
+      deleted: core.ui.git.deleted, // Удаленные Git файлы
+      conflicting: core.ui.git.conflicting, // Конфликтующие Git файлы - холодный teal
+      stageDeleted: core.ui.git.stageDeleted, // Удаленные в стейдже Git файлы
+      stageModified: core.ui.git.stageModified, // Измененные в стейдже Git файлы
     },
     semantic: {
       // Общие семантические цвета

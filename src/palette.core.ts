@@ -3,6 +3,8 @@ import { interfaceColors } from './palette.interface'
 
 import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 
+const aquaLight = lightenToward(basePalette.cyan, basePalette.teal, 0.18)
+
 /**
  * Ядро темы: только ссылки на базовую палитру и основные интерфейсные цвета.
  * Все остальные цвета должны быть производными через утилиты.
@@ -87,6 +89,17 @@ export const core = {
       activeModified: basePalette.purple,
       inactiveModified: basePalette.cyan,
       unfocusedActive: darkenToward(basePalette.blue, basePalette.black, 0.18),
+    },
+    git: {
+      ignored: darkenToward(
+        darkenToward(interfaceColors.editorFg, basePalette.black, 0.25),
+        interfaceColors.editorBg,
+        0.4
+      ),
+      deleted: darkenToward(basePalette.red, interfaceColors.editorBg, 0.3),
+      conflicting: darkenToward(aquaLight, interfaceColors.editorBg, 0.3),
+      stageDeleted: darkenToward(basePalette.red, interfaceColors.editorBg, 0.2),
+      stageModified: darkenToward(basePalette.blue, interfaceColors.editorBg, 0.2),
     },
   },
 } as const
