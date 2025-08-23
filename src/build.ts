@@ -1,6 +1,4 @@
 /// <reference types="node" />
-import { tokenColors } from './tokenColors'
-import { semanticTokenColors } from './semanticTokenColors'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { getBaseColors } from './theme/base'
