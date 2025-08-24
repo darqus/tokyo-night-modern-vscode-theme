@@ -6,6 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v1.3.0.html).
 
 
+## [1.7.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.6.1...v1.7.0) (2025-08-24)
+
+
+### 📚 Documentation
+
+* trigger new workflow run ([b0e9bdc](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/b0e9bdcd4cecc8df24fd672591bb01543dcf8621))
+
+
+### 🐛 Bug Fixes
+
+* **lint:** allow hex values in palette.base.ts ([cb6d991](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/cb6d991b000f73a089f4742422d0e3f8c421c31f))
+
+
+### ✨ Features
+
+* **release:** create github release automatically ([e7311e9](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/e7311e9a5bc8fa09c555207351daaa483a75fb6a))
+
+
+### 👷 CI/CD
+
+* **release:** commit all changes before release ([f6a6492](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/f6a6492111cb6be94e1cabde77d9503f0c1d159a))
+* **release:** commit package-lock.json before release ([1158c80](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/1158c808221efd5d0253f87aa44d1864bbe9455b))
+* **release:** install vsce and standard-version globally ([5e158da](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/5e158da71a7c995fa61c0b5ec74952c9b44ff62a))
+* **release:** update scripts and package-lock.json ([fc27b22](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/fc27b22ed32326fbaa0a39d87de0947e55cc7718))
+* **release:** use npm install to get latest scripts ([0455cf8](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/0455cf82a4391920416699ddcd22d2218089861d))
+
 ### [1.6.1](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.6.0...v1.6.1) (2025-08-24)
 
 
