@@ -1,7 +1,6 @@
 import { basePalette } from './palette.base'
 import { withAlpha, mix, lightenToward, darkenToward } from './utils/color'
 
-// --- Inlined palette.interface.ts content ---
 const interfaceColors = {
   editorBg: basePalette.black,
   editorFg: basePalette.white,
@@ -12,8 +11,6 @@ const interfaceColors = {
   success: basePalette.green,
   info: basePalette.cyan,
 } as const
-
-// --- Inlined and EXPORTED palette.core.derived.ts content ---
 
 export const aquaLight = lightenToward(basePalette.cyan, basePalette.blue, 0.15)
 
@@ -317,8 +314,6 @@ export const editorOverviewRulerWordHighlightStrongForeground = withAlpha(
 export const editorWidgetResizeBorder = withAlpha(textSubtle2, 0.15)
 export const editorSuggestWidgetBorder = withAlpha(basePalette.black, 0)
 export const searchEditorFindMatchBackground = withAlpha(basePalette.blue, 0.15)
-
-// --- Structured Core Export ---
 
 export const core = {
   bg: {
