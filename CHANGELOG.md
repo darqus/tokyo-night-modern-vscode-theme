@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v1.3.0.html).
 
 
+## [1.6.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.5.0...v1.6.0) (2025-08-24)
+
+
+### ✨ Features
+
+* **static:** update screenshot for tokyo night dark theme ([2705912](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/2705912d3a6f68d8afae1ac3669c8ac6297371f7))
+* **theme:** elevate window title bar and activity bar ([cf28a30](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/cf28a30d7c5ad1f894435d456caecd4105702fb5))
+
+
+### ♻️ Code Refactoring
+
+* **palette:** consolidate core palette and derived colors ([959c838](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/959c8383dc0da9613bb1a574b971e11b5888994e))
+* **palette:** remove unnecessary comments and code ([1376bc9](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/1376bc9db0aaa1b7995f6edf6c7919a9fef609ff))
+* **theme:** update Nord theme colors ([6f1df6b](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/6f1df6bdc9acb8fe155a6114b0cde110a42ee1f6))
+
+
+### 💄 Styles and Formatting
+
+* **theme:** update activity bar colors ([1f42057](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/1f4205763818144216b2e62d93199a0b4c11f4b3))
+* update colors for dark theme ([379c8d9](https://github.com/darqus/tokyo-night-vscode-theme-lod/commit/379c8d9ec60cc6e1446bf166f24568380d5bcb09))
+
 ## [1.5.0](https://github.com/darqus/tokyo-night-vscode-theme-lod/compare/v1.4.0...v1.5.0) (2025-08-23)
 
 
