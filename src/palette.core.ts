@@ -318,7 +318,6 @@ export const editorWidgetResizeBorder = withAlpha(textSubtle2, 0.15)
 export const editorSuggestWidgetBorder = withAlpha(basePalette.black, 0)
 export const searchEditorFindMatchBackground = withAlpha(basePalette.blue, 0.15)
 
-
 // --- Structured Core Export ---
 
 export const core = {

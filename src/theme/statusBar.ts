@@ -11,12 +11,12 @@ import {
 export const getStatusBarColors = () => ({
   // Строка состояния
   'statusBar.foreground': palette.fg.muted,
-  'statusBar.background': palette.bg.base, // Основной фон
+  'statusBar.background': palette.bg.overlay, // Основной фон
   'statusBar.border': palette.line.border,
   // Состояния без папки/отладки/фокус
-  'statusBar.noFolderBackground': palette.bg.base,
+  'statusBar.noFolderBackground': palette.bg.overlay,
   'statusBar.noFolderForeground': palette.fg.muted,
-  'statusBar.debuggingBackground': palette.bg.base,
+  'statusBar.debuggingBackground': palette.bg.overlay,
   'statusBar.debuggingForeground': palette.fg.muted,
   'statusBar.debuggingBorder': palette.line.border,
   'statusBar.noFolderBorder': palette.line.border,

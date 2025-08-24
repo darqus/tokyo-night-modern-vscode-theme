@@ -2,7 +2,7 @@ import { palette } from '../palette'
 
 export const getActivityBarColors = () => ({
   // Панель действий (Activity Bar)
-  'activityBar.background': palette.bg.base, // Фон панели действий
+  'activityBar.background': palette.bg.elevated, // Фон панели действий
   'activityBar.foreground': palette.fg.muted, // Цвет иконок в панели действий
   'activityBar.activeBorder': palette.accent.blue, // Граница активной иконки
   'activityBar.activeBackground': palette.bg.hover, // Фон активной иконки

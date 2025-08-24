@@ -56,8 +56,8 @@ export const getBaseColors = () => ({
   // Заголовок окна
   'titleBar.activeForeground': palette.fg.muted,
   'titleBar.inactiveForeground': palette.fg.inactive,
-  'titleBar.activeBackground': palette.bg.base,
-  'titleBar.inactiveBackground': palette.bg.base,
+  'titleBar.activeBackground': palette.bg.elevated,
+  'titleBar.inactiveBackground': palette.bg.elevated,
   'titleBar.border': palette.line.border,
 
   // Command Center (новое меню в заголовке окна)
