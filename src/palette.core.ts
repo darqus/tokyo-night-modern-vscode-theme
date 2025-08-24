@@ -12,6 +12,8 @@ const interfaceColors = {
   info: basePalette.cyan,
 } as const
 
+const generatedGray = mix(basePalette.white, basePalette.black, 0.55)
+
 export const aquaLight = lightenToward(basePalette.cyan, basePalette.blue, 0.15)
 
 export const bgElevated = darkenToward(
@@ -48,35 +50,35 @@ export const bgSelectionMenu = withAlpha(basePalette.blue, 0.15)
 
 export const bgStateLabel = mix(
   interfaceColors.editorBg,
-  basePalette.gray,
+  generatedGray,
   0.15
 )
-export const border = mix(basePalette.black, basePalette.gray, 0.2)
-export const textPrimary = mix(basePalette.white, basePalette.gray, 0.15)
+export const border = mix(basePalette.black, generatedGray, 0.2)
+export const textPrimary = mix(basePalette.white, generatedGray, 0.15)
 
-export const textMuted = mix(basePalette.white, basePalette.gray, 0.5)
+export const textMuted = mix(basePalette.white, generatedGray, 0.5)
 
-export const textInactive = mix(basePalette.white, basePalette.gray, 0.65)
+export const textInactive = mix(basePalette.white, generatedGray, 0.65)
 
 export const textSoft = mix(basePalette.white, basePalette.cyan, 0.15)
 
-export const textSubtle2 = mix(basePalette.white, basePalette.gray, 0.55)
+export const textSubtle2 = mix(basePalette.white, generatedGray, 0.55)
 
-export const textGray600 = mix(basePalette.gray, basePalette.black, 0.35)
+export const textGray600 = mix(generatedGray, basePalette.black, 0.35)
 
-export const textComment = mix(basePalette.gray, basePalette.black, 0.35)
+export const textComment = mix(generatedGray, basePalette.black, 0.35)
 
-export const textCommentDoc = mix(basePalette.gray, basePalette.black, 0.3)
+export const textCommentDoc = mix(generatedGray, basePalette.black, 0.3)
 
 export const textCommentDocEmphasized = mix(
-  basePalette.gray,
+  generatedGray,
   basePalette.black,
   0.25
 )
 
 export const textPreformat = mix(basePalette.white, basePalette.cyan, 0.18)
 
-export const textPlaceholder = mix(basePalette.white, basePalette.gray, 0.7)
+export const textPlaceholder = mix(basePalette.white, generatedGray, 0.7)
 
 export const textEditorLinkActive = mix(
   basePalette.white,
@@ -92,7 +94,7 @@ export const uiShadow = withAlpha(basePalette.blue, 0.18)
 
 export const uiSelectionWash = withAlpha(basePalette.blue, 0.12)
 
-export const uiScrollbarBase = mix(basePalette.blue, basePalette.gray, 0.35)
+export const uiScrollbarBase = mix(basePalette.blue, generatedGray, 0.35)
 
 export const uiTabUnfocusedActive = mix(
   basePalette.blue,
@@ -339,7 +341,7 @@ export const core = {
   text: {
     primary: textPrimary,
     muted: textMuted,
-    subtle: basePalette.gray,
+    subtle: generatedGray,
     inactive: textInactive,
     soft: textSoft,
     selection: basePalette.white,
