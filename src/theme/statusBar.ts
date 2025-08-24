@@ -6,7 +6,7 @@ import {
   statusBarItemWarningHoverBackground,
   statusBarItemCompactHoverBackground,
   statusBarItemOfflineHoverBackground,
-} from '../palette.core.derived'
+} from '../palette.core'
 
 export const getStatusBarColors = () => ({
   // Строка состояния

@@ -37,7 +37,7 @@ import {
   editorWidgetResizeBorder,
   editorSuggestWidgetBorder,
   searchEditorFindMatchBackground,
-} from '../palette.core.derived'
+} from '../palette.core'
 
 export const getEditorColors = () => ({
   // === ПОДСВЕТКА СКОБОК И НАПРАВЛЯЮЩИЕ ===

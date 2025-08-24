@@ -2,7 +2,7 @@ import { palette } from '../palette'
 import {
   tabLastPinnedBorder,
   tabSelectedForeground,
-} from '../palette.core.derived'
+} from '../palette.core'
 
 export const getTabColors = () => ({
   // Вкладки

@@ -1,5 +1,5 @@
 import { palette } from '../palette'
-import { buttonBorder, buttonSeparator } from '../palette.core.derived'
+import { buttonBorder, buttonSeparator } from '../palette.core'
 
 export const getButtonColors = () => ({
   // Кнопки / индикатор выполнения - улучшенный контраст

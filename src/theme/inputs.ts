@@ -3,7 +3,7 @@ import {
   inputValidationInfoBackground,
   inputValidationWarningBackground,
   inputValidationErrorBackground,
-} from '../palette.core.derived'
+} from '../palette.core'
 
 export const getInputColors = () => ({
   // Поля ввода - улучшенная доступность
