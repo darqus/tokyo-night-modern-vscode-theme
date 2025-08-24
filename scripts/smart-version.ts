@@ -445,12 +445,33 @@ class SmartVersionManager {
       throw new Error(`Ошибка создания релиза: ${error}`)
     }
 
+    // Публикуем теги
+    console.log('📤 Pushing tags...')
+    try {
+      execSync('git push --follow-tags origin main', { stdio: 'inherit' })
+    } catch (error) {
+      throw new Error('Ошибка публикации тегов')
+    }
+
     // Создаем пакет
     console.log('📦 Creating VSIX package...')
     try {
       execSync('npm run package', { stdio: 'inherit' })
     } catch (error) {
       throw new Error('Ошибка создания пакета')
+    }
+
+    // Создаем релиз на GitHub
+    console.log('🚀 Creating GitHub release...')
+    try {
+      const latestTag = execSync('git describe --tags --abbrev=0', {
+        encoding: 'utf8',
+      }).trim()
+      execSync(`gh release create ${latestTag} --generate-notes`, {
+        stdio: 'inherit',
+      })
+    } catch (error) {
+      throw new Error('Ошибка создания релиза на GitHub')
     }
   }
 
@@ -459,11 +480,10 @@ class SmartVersionManager {
    */
   private printNextSteps(version: string): void {
     console.log('\n📋 Next steps:')
-    console.log('1. Review changes in CHANGELOG.md')
-    console.log('2. Push changes: git push --follow-tags origin main')
-    console.log('3. Publish package: npm run publish')
-    console.log('4. Check release on GitHub')
-    console.log(`\n🎉 New version: ${version}`)
+    console.log('1. Publish package: npm run publish')
+    console.log(
+      `🎉 New version ${version} is released and available on GitHub!`
+    )
   }
 }
 
