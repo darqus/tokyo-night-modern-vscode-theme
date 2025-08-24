@@ -5,7 +5,7 @@ import type { Hex } from './types/palette'
  * из которых строится вся остальная тема.
  */
 export const basePalette = {
-  black: '#18181d' as Hex,
+  black: '#0d1117' as Hex,
   white: '#e8e8e8' as Hex,
   gray: '#7f8a9b' as Hex,
   blue: '#7aa2f7' as Hex,
