@@ -126,7 +126,17 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
+        run: npm ci
+
+      - name: Update package-lock.json
         run: npm install
+
+      - name: Commit package-lock.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git commit -m "ci(release): update package-lock.json"
 
       - name: Install global dependencies
         run: npm install -g vsce standard-version
