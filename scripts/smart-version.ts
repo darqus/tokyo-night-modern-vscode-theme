@@ -445,14 +445,6 @@ class SmartVersionManager {
       throw new Error(`Ошибка создания релиза: ${error}`)
     }
 
-    // Публикуем теги
-    console.log('📤 Pushing tags...')
-    try {
-      execSync('git push --follow-tags origin main', { stdio: 'inherit' })
-    } catch (error) {
-      throw new Error('Ошибка публикации тегов')
-    }
-
     // Создаем пакет
     console.log('📦 Creating VSIX package...')
     try {
@@ -479,7 +471,8 @@ class SmartVersionManager {
    * Показать следующие шаги
    */
   private printNextSteps(version: string): void {
-    console.log('\n📋 Next steps:')
+    console.log('
+📋 Next steps:')
     console.log('1. Publish package: npm run publish')
     console.log(
       `🎉 New version ${version} is released and available on GitHub!`
