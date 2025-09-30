@@ -26,7 +26,7 @@ export const interfacePalette: InterfacePalette = {
     // Make hover/active/selection a bit brighter and slightly more opaque
     hover: withAlpha(lightenPerceptual(basePalette.gray, 0.25), 0.12),
     active: withAlpha(lightenPerceptual(basePalette.blue, 0.35), 0.16),
-    selection: withAlpha(lightenPerceptual(basePalette.blue, 0.45), 0.26),
+    selection: withAlpha(lightenPerceptual(basePalette.blue, 0.45), 0.2),
     // Специализированные hover цвета
     // Сохраняем стабильный sRGB-mix для вспомогательных hover-градаций
     hoverSubtle: withAlpha(mix(basePalette.white, basePalette.gray, 0.4), 0.1),
