@@ -2,7 +2,7 @@
   "name": "tokyo-night-modern",
   "displayName": "Tokyo Night Modern",
   "description": "Beautiful modern dark theme for VS Code with carefully crafted colors and contemporary design",
-  "version": "2.0.6",
+  "version": "2.0.33",
   "author": "lod",
   "publisher": "lod-inc",
   "license": "MIT",
@@ -45,7 +45,6 @@
   "scripts": {
     "build": "ts-node src/build.ts",
     "build:watch": "ts-node-dev --respawn src/build.ts",
-
     "test": "jest tests/unit --passWithNoTests",
     "test:update": "jest tests/unit -u",
     "test:watch": "jest tests/unit --watch",
