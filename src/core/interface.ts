@@ -41,7 +41,7 @@ export const interfacePalette: InterfacePalette = {
     inverse: basePalette.textInverse,
     muted: basePalette.textSecondary,
     subtle: basePalette.textMuted,
-    inactive: mix(basePalette.white, basePalette.gray, 0.75),
+    inactive: mix(basePalette.black, basePalette.gray, 0.65),
     // Дополнительные приглушенные цвета для номеров строк
     // Чуть темнее и нейтральнее для обычных номеров
     lineNumber: mix(basePalette.bgPrimary, basePalette.gray, 0.35),
@@ -54,19 +54,19 @@ export const interfacePalette: InterfacePalette = {
       primary: basePalette.textDefault,
       muted: basePalette.textSecondary,
       subtle: basePalette.textMuted,
-      inactive: mix(basePalette.white, basePalette.gray, 0.75),
+      inactive: mix(basePalette.black, basePalette.gray, 0.65),
     },
     elevated: {
       primary: basePalette.textDefault,
       muted: basePalette.textSecondary,
       subtle: basePalette.textMuted,
-      inactive: mix(basePalette.white, basePalette.gray, 0.75),
+      inactive: mix(basePalette.black, basePalette.gray, 0.75),
     },
     overlay: {
       primary: basePalette.textDefault,
       muted: lightenPerceptual(basePalette.textSecondary, 0.15),
       subtle: basePalette.textMuted,
-      inactive: mix(basePalette.white, basePalette.gray, 0.75),
+      inactive: mix(basePalette.black, basePalette.gray, 0.85),
     },
   },
 
