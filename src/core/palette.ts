@@ -48,9 +48,9 @@ export const basePalette = {
   bgSelection: createHex('#364a82'), // Background selection
 
   // Text colors - semantic text roles
-  textDefault: createHex('#97a2cf'), // Primary text (≈ 7.26:1)
-  textSecondary: createHex('#7b83a3'), // Secondary text (≈ 6.23:1)
-  textMuted: createHex('#646c8f'), // Muted text (≈ 5.15:1)
+  textDefault: createHex('#9aaae9'), // Primary text (≈ 7.26:1)
+  textSecondary: createHex('#7b87b6'), // Secondary text (≈ 6.23:1)
+  textMuted: createHex('#6b78a8'), // Muted text (≈ 5.15:1)
   textInverse: createHex('#1a1b26'), // Text on light backgrounds
 
   // Border colors - UI borders
