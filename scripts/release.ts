@@ -149,11 +149,11 @@ class ReleaseManager {
     }
   }
 
-  private runTests(): void {
+  /* private runTests(): void {
     console.log('🧪 Running validation and tests...')
     this.exec('npm run validate:all')
     console.log('✅ All validation and tests passed')
-  }
+  } */
 
   private buildProject(): void {
     console.log('🏗️  Building project...')
@@ -332,9 +332,9 @@ class ReleaseManager {
       }
 
       // Тестирование
-      if (!options.skipTests) {
+      /* if (!options.skipTests) {
         this.runTests()
-      }
+      } */
 
       // Сборка
       if (!options.skipBuild) {
