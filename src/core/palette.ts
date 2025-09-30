@@ -58,7 +58,8 @@ export const basePalette = {
   borderSeparator: createHex('#30344c'),
 
   // UI element colors
-  buttonPrimary: createHex('#007acc'), // Primary button color
+  buttonPrimary: createHex('#0078d4'), // Primary button color
+  buttonPrimaryHover: createHex('#026ec1'), // Primary button hover color
   linkDefault: createHex('#29acf8'), // Default link color
 
   // State colors - semantic states

@@ -90,7 +90,7 @@ export const interfacePalette: InterfacePalette = {
       background: basePalette.buttonPrimary,
       foreground: basePalette.white,
       // чуть светлее при hover для выразительности
-      hoverBackground: lightenPerceptual(basePalette.buttonPrimary, 0.15),
+      hoverBackground: basePalette.buttonPrimaryHover,
       // активная/hover рамка — сплошной link без прозрачности
       border: basePalette.linkDefault,
       // separator выравнен с border.default (нейтральный)
