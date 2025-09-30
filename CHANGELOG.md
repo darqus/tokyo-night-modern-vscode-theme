@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.33](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.0.6...v2.0.33) (2025-09-30)
+
+
+### Features
+
+* **colors:** enhance search and selection highlighting ([c60faec](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/c60faecbceed2857c59e8ffa1b42c756425c679b))
+* **core:** improve color contrast and readability ([d49b596](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/d49b5960b5bda0970351cbeda502b6d7022a67bc))
+* **theme:** add new color tokens and update existing ones ([3984da3](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/3984da3b11e46cf051aca3e725e832903cf81042))
+* **theme:** add title bar foreground color tokens ([5ca1646](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5ca164613573a362147c9b1fa12d47298761d212))
+* **theme:** implement configurable theme generation and plugin system ([8264906](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/8264906edf79f40f8d4d26fa61db45050ed3c4a0))
+* **themes:** add placeholder and fold colors for tokyo-night-modern ([5fbb95b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5fbb95bc1b578c8a89846a03d57a1dc37ac997fc))
+* **tokens:** add new editor and inline chat placeholder tokens ([040ca44](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/040ca44dd5040fbaedb57aa7a3f85346129d10e1))
+
 ### [2.0.6](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v1.18.19...v2.0.6) (2025-09-25)
 
 
