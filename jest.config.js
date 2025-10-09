@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testMatch: ['**/tests/unit/**/*.test.ts'],
+  testMatch: ['**/tests/**/*.test.ts'],
   collectCoverageFrom: [
     'src/**/*.ts',
     '!src/types/**/*.ts',
@@ -18,7 +18,7 @@ module.exports = {
     }
   },
   verbose: true,
-  setupFilesAfterEnv: ['<rootDir>/tests/unit/setupTests.ts'],
+  // setupFilesAfterEnv: ['<rootDir>/tests/unit/setupTests.ts'],
   maxWorkers: '50%',
   testTimeout: 10000,
   clearMocks: true,

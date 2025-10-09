@@ -122,7 +122,7 @@
     "input.placeholderForeground": "#6b78a8",
     "button.background": "#0078d4",
     "button.foreground": "#ffffff",
-    "button.hoverBackground": "#026ec1",
+    "button.hoverBackground": "#1f88d9",
     "button.border": "#29acf8",
     "button.separator": "#202230",
     "button.secondaryBackground": "#1f2230",
@@ -157,7 +157,7 @@
     "terminal.selectionBackground": "#88b0ff33",
     "terminal.inactiveSelectionBackground": "#727fb01f",
     "terminal.border": "#202230",
-    "terminal.hoverHighlightBackground": "#7cbffc3d",
+    "terminal.hoverHighlightBackground": "#84adff29",
     "terminal.ansiBlack": "#1a1b26",
     "terminal.ansiRed": "#f38095",
     "terminal.ansiGreen": "#a7c785",
@@ -488,7 +488,8 @@
         "entity.name.function.member"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
       }
     },
     {
