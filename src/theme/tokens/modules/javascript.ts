@@ -247,4 +247,95 @@ export const javascriptTokens: TokenColor[] = [
       foreground: palette.pragma,
     },
   },
+  {
+    name: 'JS/TS: Punctuation Separator Key-Value',
+    scope: 'punctuation.separator.key-value',
+    settings: { foreground: palette.variable },
+  },
+  {
+    name: 'JS/TS: Import Keyword',
+    scope: 'keyword.operator.expression.import',
+    settings: { foreground: palette.keywordAsync },
+  },
+  {
+    name: 'JS/TS: Math',
+    scope: 'support.constant.math',
+    settings: { foreground: palette.yellow },
+  },
+  {
+    name: 'JS/TS: Math Property',
+    scope: 'support.constant.property.math',
+    settings: { foreground: palette.orange },
+  },
+  {
+    name: 'JS/TS: Variable Other Constant',
+    scope: 'variable.other.constant',
+    settings: { foreground: palette.yellow },
+  },
+  {
+    name: 'JS/TS: Module',
+    scope: [
+      'support.module.node',
+      'support.type.object.module',
+      'support.module.node',
+    ],
+    settings: { foreground: palette.yellow },
+  },
+  {
+    name: 'JS/TS: Entity Name Type Module',
+    scope: 'entity.name.type.module',
+    settings: { foreground: palette.yellow },
+  },
+  {
+    name: 'JS/TS: Variable Read-Write',
+    scope: [
+      'variable.other.readwrite',
+      'meta.object-literal.key',
+      'support.variable.property',
+      'support.variable.object.process',
+      'support.variable.object.node',
+    ],
+    settings: { foreground: palette.red },
+  },
+  {
+    name: 'JS/TS: JSON',
+    scope: 'support.constant.json',
+    settings: { foreground: palette.orange },
+  },
+  {
+    name: 'JS/TS: Keyword',
+    scope: [
+      'keyword.operator.expression.instanceof',
+      'keyword.operator.new',
+      'keyword.operator.ternary',
+      'keyword.operator.optional',
+      'keyword.operator.expression.keyof',
+    ],
+    settings: { foreground: palette.purple },
+  },
+  {
+    name: 'JS/TS: Console',
+    scope: 'support.type.object.console',
+    settings: { foreground: palette.red },
+  },
+  {
+    name: 'JS/TS: Console Property',
+    scope: 'support.variable.property.process',
+    settings: { foreground: palette.orange },
+  },
+  {
+    name: 'JS/TS: Console Function',
+    scope: ['entity.name.function', 'support.function.console'],
+    settings: { foreground: palette.keywordAsync },
+  },
+  {
+    name: 'JS/TS: DOM',
+    scope: 'support.type.object.dom',
+    settings: { foreground: palette.blue },
+  },
+  {
+    name: 'JS/TS: DOM Variable',
+    scope: ['support.variable.dom', 'support.variable.property.dom'],
+    settings: { foreground: palette.red },
+  },
 ]

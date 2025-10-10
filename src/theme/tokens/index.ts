@@ -11,6 +11,9 @@ import { pythonTokens } from './modules/python'
 import { javaTokens } from './modules/java'
 import { cppTokens } from './modules/cpp'
 import { vueTokens } from './modules/vue'
+import { rustTokens } from './modules/rust'
+import { haskellTokens } from './modules/haskell'
+import { goTokens } from './modules/go'
 
 // Объединение всех токенов в один массив для использования в теме
 export const allTokens: TokenColor[] = [
@@ -25,5 +28,8 @@ export const allTokens: TokenColor[] = [
   ...pythonTokens,
   ...javaTokens,
   ...cppTokens,
+  ...goTokens,
+  ...haskellTokens,
+  ...rustTokens,
   ...vueTokens,
 ]

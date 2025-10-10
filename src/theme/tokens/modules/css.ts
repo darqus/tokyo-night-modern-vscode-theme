@@ -37,4 +37,27 @@ export const cssTokens: TokenColor[] = [
     scope: 'support.function.misc.css',
     settings: { foreground: palette.purple },
   },
+  {
+    name: 'CSS: Operator',
+    scope: ['keyword.operator.css', 'keyword.operator.scss', 'keyword.operator.less'],
+    settings: { foreground: palette.blue },
+  },
+  {
+    name: 'CSS: Color Standard Name',
+    scope: [
+      'support.constant.color.w3c-standard-color-name.css',
+      'support.constant.color.w3c-standard-color-name.scss',
+    ],
+    settings: { foreground: palette.orange },
+  },
+  {
+    name: 'CSS: Comma',
+    scope: 'punctuation.separator.list.comma.css',
+    settings: { foreground: palette.variable },
+  },
+  {
+    name: 'CSS: Vendored Property Name',
+    scope: 'support.type.vendored.property-name.css',
+    settings: { foreground: palette.blue },
+  },
 ]
