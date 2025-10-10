@@ -1,6 +1,6 @@
+// tokenColors полностью синхронизирован с themes/tokyo-night-modern-color-theme.json
 import { palette } from './palette'
 
-// tokenColors полностью синхронизирован с themes/tokyo-night-modern-color-theme.json
 export const tokenColors = [
   {
     name: 'Comment - Line',
@@ -315,8 +315,7 @@ export const tokenColors = [
     scope: ['keyword.operator'],
     settings: { foreground: palette.accentPurpleAlt },
   },
-  // Добавленные токены из темы Tokyo Night
- {
+  {
     name: 'Variable Parameters',
     scope: ['variable.parameter'],
     settings: { foreground: palette.funcParam },
@@ -336,7 +335,7 @@ export const tokenColors = [
     scope: ['support.type'],
     settings: { foreground: palette.accentCyan },
   },
- {
+  {
     name: 'Support Classes',
     scope: ['support.class'],
     settings: { foreground: palette.accentYellow },
@@ -391,7 +390,7 @@ export const tokenColors = [
     scope: ['constant.other.symbol'],
     settings: { foreground: palette.accentTeal },
   },
- {
+  {
     name: 'Entity Name Function',
     scope: ['entity.name.function'],
     settings: { foreground: palette.keywordAsync },
@@ -446,7 +445,7 @@ export const tokenColors = [
     scope: ['storage.modifier'],
     settings: { foreground: palette.keywordAccess },
   },
- {
+  {
     name: 'Storage Class',
     scope: ['storage.class'],
     settings: { foreground: palette.accentPurple },
@@ -466,7 +465,7 @@ export const tokenColors = [
     scope: ['string.regexp'],
     settings: { foreground: palette.regexp },
   },
- {
+  {
     name: 'String Regexp Source Ruby Embedded',
     scope: ['string.regexp source.ruby.embedded'],
     settings: { foreground: palette.accentGreen },
@@ -519,9 +518,9 @@ export const tokenColors = [
   {
     name: 'Meta Method Call',
     scope: ['meta.method-call'],
-    settings: { foreground: palette.mdHeading },
+    settings: { foreground: palette.keywordAsync },
   },
- {
+  {
     name: 'Meta Method',
     scope: ['meta.method'],
     settings: { foreground: palette.keywordAsync },
@@ -561,7 +560,7 @@ export const tokenColors = [
     scope: ['meta.function-call.arguments'],
     settings: { foreground: palette.funcParam },
   },
- {
+  {
     name: 'Meta Function Call Python',
     scope: ['meta.function-call.python'],
     settings: { foreground: palette.keywordAsync },
@@ -571,7 +570,7 @@ export const tokenColors = [
     scope: ['variable.function'],
     settings: { foreground: palette.keywordAsync },
   },
- {
+  {
     name: 'Variable Argument',
     scope: ['variable.argument'],
     settings: { foreground: palette.funcParam },
@@ -586,7 +585,7 @@ export const tokenColors = [
     scope: ['variable.other.constant'],
     settings: { foreground: palette.accentCyan },
   },
- {
+  {
     name: 'Variable Other Member',
     scope: ['variable.other.member'],
     settings: { foreground: palette.variable },
@@ -635,12 +634,12 @@ export const tokenColors = [
     name: 'Markup Italic',
     scope: ['markup.italic'],
     settings: { fontStyle: 'italic' },
- },
+  },
   {
     name: 'Markup Heading',
     scope: ['markup.heading'],
     settings: { foreground: palette.mdHeading, fontStyle: 'bold' },
- },
+  },
   {
     name: 'Markup Link',
     scope: ['markup.underline.link', 'string.other.link'],
@@ -696,7 +695,7 @@ export const tokenColors = [
     scope: ['punctuation.section.inner-class'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Separator',
     scope: ['punctuation.separator'],
     settings: { foreground: palette.delimiter },
@@ -706,7 +705,7 @@ export const tokenColors = [
     scope: ['punctuation.terminator'],
     settings: { foreground: palette.delimiter },
   },
- {
+  {
     name: 'Punctuation Array',
     scope: ['punctuation.definition.array'],
     settings: { foreground: palette.bracket },
@@ -856,7 +855,7 @@ export const tokenColors = [
     scope: ['punctuation.definition.heading'],
     settings: { foreground: palette.mdHeading },
   },
- {
+  {
     name: 'Punctuation Definition Identity',
     scope: ['punctuation.definition.identity'],
     settings: { foreground: palette.accentBlue },
@@ -867,8 +866,11 @@ export const tokenColors = [
     settings: { foreground: palette.bracket },
   },
   {
-    name: 'Punctuation Definition String',
-    scope: ['punctuation.definition.string.begin', 'punctuation.definition.string.end'],
+    name: 'Punctuation Definition String Begin/End',
+    scope: [
+      'punctuation.definition.string.begin',
+      'punctuation.definition.string.end',
+    ],
     settings: { foreground: palette.accentGreen },
   },
   {
@@ -886,7 +888,7 @@ export const tokenColors = [
     scope: ['punctuation.section.function'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Scope Begin',
     scope: ['punctuation.section.scope.begin'],
     settings: { foreground: palette.bracket },
@@ -911,7 +913,7 @@ export const tokenColors = [
     scope: ['punctuation.section.method.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Class Begin',
     scope: ['punctuation.section.class.begin'],
     settings: { foreground: palette.bracket },
@@ -926,7 +928,7 @@ export const tokenColors = [
     scope: ['punctuation.section.inner-class.begin'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Inner Class End',
     scope: ['punctuation.section.inner-class.end'],
     settings: { foreground: palette.bracket },
@@ -941,7 +943,7 @@ export const tokenColors = [
     scope: ['punctuation.section.block.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Arguments Begin',
     scope: ['punctuation.section.arguments.begin'],
     settings: { foreground: palette.bracket },
@@ -1221,7 +1223,7 @@ export const tokenColors = [
     scope: ['punctuation.section.switch.case.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Switch Default Begin',
     scope: ['punctuation.section.switch.default.begin'],
     settings: { foreground: palette.bracket },
@@ -1291,7 +1293,7 @@ export const tokenColors = [
     scope: ['punctuation.section.object.block.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Array Block Begin',
     scope: ['punctuation.section.array.block.begin'],
     settings: { foreground: palette.bracket },
@@ -1561,7 +1563,7 @@ export const tokenColors = [
     scope: ['punctuation.section.package-statement.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Namespace Statement Begin',
     scope: ['punctuation.section.namespace-statement.begin'],
     settings: { foreground: palette.bracket },
@@ -1571,7 +1573,7 @@ export const tokenColors = [
     scope: ['punctuation.section.namespace-statement.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Using Statement Begin',
     scope: ['punctuation.section.using-statement.begin'],
     settings: { foreground: palette.bracket },
@@ -1791,7 +1793,7 @@ export const tokenColors = [
     scope: ['punctuation.section.generic-implementation.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Generic Initialization Begin',
     scope: ['punctuation.section.generic-initialization.begin'],
     settings: { foreground: palette.bracket },
@@ -1831,7 +1833,7 @@ export const tokenColors = [
     scope: ['punctuation.section.generic-function-call.end'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Generic Operator Call Begin',
     scope: ['punctuation.section.generic-operator-call.begin'],
     settings: { foreground: palette.bracket },
@@ -1936,7 +1938,7 @@ export const tokenColors = [
     scope: ['punctuation.section.generic-operator-call.arguments.begin'],
     settings: { foreground: palette.bracket },
   },
- {
+  {
     name: 'Punctuation Section Generic Operator Call Arguments End',
     scope: ['punctuation.section.generic-operator-call.arguments.end'],
     settings: { foreground: palette.bracket },
@@ -2103,7 +2105,9 @@ export const tokenColors = [
   },
   {
     name: 'Punctuation Section Generic Constructor Call Type Arguments Begin',
-    scope: ['punctuation.section.generic-constructor-call.type-arguments.begin'],
+    scope: [
+      'punctuation.section.generic-constructor-call.type-arguments.begin',
+    ],
     settings: { foreground: palette.bracket },
   },
   {
@@ -2163,7 +2167,9 @@ export const tokenColors = [
   },
   {
     name: 'Punctuation Section Generic Declaration Call Type Arguments Begin',
-    scope: ['punctuation.section.generic-declaration-call.type-arguments.begin'],
+    scope: [
+      'punctuation.section.generic-declaration-call.type-arguments.begin',
+    ],
     settings: { foreground: palette.bracket },
   },
   {
@@ -2183,22 +2189,30 @@ export const tokenColors = [
   },
   {
     name: 'Punctuation Section Generic Implementation Call Type Arguments Begin',
-    scope: ['punctuation.section.generic-implementation-call.type-arguments.begin'],
+    scope: [
+      'punctuation.section.generic-implementation-call.type-arguments.begin',
+    ],
     settings: { foreground: palette.bracket },
   },
   {
     name: 'Punctuation Section Generic Implementation Call Type Arguments End',
-    scope: ['punctuation.section.generic-implementation-call.type-arguments.end'],
+    scope: [
+      'punctuation.section.generic-implementation-call.type-arguments.end',
+    ],
     settings: { foreground: palette.bracket },
   },
   {
     name: 'Punctuation Section Generic Initialization Call Type Arguments Begin',
-    scope: ['punctuation.section.generic-initialization-call.type-arguments.begin'],
+    scope: [
+      'punctuation.section.generic-initialization-call.type-arguments.begin',
+    ],
     settings: { foreground: palette.bracket },
   },
   {
     name: 'Punctuation Section Generic Initialization Call Type Arguments End',
-    scope: ['punctuation.section.generic-initialization-call.type-arguments.end'],
+    scope: [
+      'punctuation.section.generic-initialization-call.type-arguments.end',
+    ],
     settings: { foreground: palette.bracket },
   },
 ]
