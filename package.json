@@ -49,8 +49,8 @@
     "build:theme:watch": "ts-node-dev --respawn --watch src/theme --watch scripts/build-theme.ts scripts/build-theme.ts",
     "docs:tokens": "ts-node scripts/generate-token-docs.ts",
     "docs:colors": "ts-node scripts/generate-color-docs.ts",
-  "build:vsix": "ts-node scripts/build-vsix.ts",
-  "package": "npm run build:vsix"
+    "build:vsix": "ts-node scripts/build-vsix.ts",
+    "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts"
   },
   "devDependencies": {
