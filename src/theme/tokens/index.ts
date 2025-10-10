@@ -10,6 +10,7 @@ import { yamlTokens } from './yaml'
 import { pythonTokens } from './python'
 import { javaTokens } from './java'
 import { cppTokens } from './cpp'
+import { vueTokens } from './vue'
 
 // Объединение всех токенов в один массив для использования в теме
 export const allTokens: TokenColor[] = [
@@ -24,4 +25,5 @@ export const allTokens: TokenColor[] = [
   ...pythonTokens,
   ...javaTokens,
   ...cppTokens,
+  ...vueTokens,
 ]
