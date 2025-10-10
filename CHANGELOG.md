@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.0.33...v2.1.0) (2025-10-10)
+
+
+### Features
+
+* **theme:** implement modular theme generation pipeline ([81c2b26](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/81c2b26dccbc1c04dda7aeedea9fa80fbaf01af5))
+
 ### [2.0.33](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.0.6...v2.0.33) (2025-09-30)
 
 
