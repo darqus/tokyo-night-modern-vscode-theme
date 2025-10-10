@@ -420,7 +420,7 @@
         "invalid.deprecated"
       ],
       "settings": {
-        "foreground": "#8591bfb3",
+        "foreground": "#8591bf",
         "fontStyle": "strikethrough"
       }
     },
@@ -1093,6 +1093,64 @@
       "scope": "meta.preprocessor.cpp",
       "settings": {
         "foreground": "#729bcb"
+      }
+    },
+    {
+      "name": "Vue: Interpolation",
+      "scope": [
+        "punctuation.definition.interpolation.begin.vue",
+        "punctuation.definition.interpolation.end.vue"
+      ],
+      "settings": {
+        "foreground": "#7dcfff"
+      }
+    },
+    {
+      "name": "Vue: Directive",
+      "scope": [
+        "entity.name.tag.directive.vue"
+      ],
+      "settings": {
+        "foreground": "#b18af8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue: Directive Attribute",
+      "scope": [
+        "entity.other.attribute-name.directive.vue"
+      ],
+      "settings": {
+        "foreground": "#f0ac74",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue: Composition API Functions",
+      "scope": [
+        "support.function.import.vue"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Pinia: Store Properties",
+      "scope": [
+        "variable.other.property.pinia"
+      ],
+      "settings": {
+        "foreground": "#accbf8"
+      }
+    },
+    {
+      "name": "Pinia: Getters/Actions",
+      "scope": [
+        "entity.name.function.pinia"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
       }
     }
   ]
