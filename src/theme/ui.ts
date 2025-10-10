@@ -1,21 +1,52 @@
 import { palette } from './palette'
+import { combineColorWithAlpha } from './color-utils'
 
 export const colors = {
   'commandCenter.background': palette.background,
   'commandCenter.activeBackground': palette.backgroundPanel,
   'commandCenter.border': palette.border,
-  'diffEditor.insertedTextBackground': palette.accentGreen + palette.alpha1f,
-  'diffEditor.removedTextBackground': palette.accentRed + palette.alpha1f,
-  'diffEditor.insertedLineBackground': palette.accentGreen + palette.alpha14,
-  'diffEditor.removedLineBackground': palette.accentRed + palette.alpha14,
+  'diffEditor.insertedTextBackground': combineColorWithAlpha(
+    palette.accentGreen,
+    palette.alpha1f
+  ),
+  'diffEditor.removedTextBackground': combineColorWithAlpha(
+    palette.accentRed,
+    palette.alpha1f
+  ),
+  'diffEditor.insertedLineBackground': combineColorWithAlpha(
+    palette.accentGreen,
+    palette.alpha14
+  ),
+  'diffEditor.removedLineBackground': combineColorWithAlpha(
+    palette.accentRed,
+    palette.alpha14
+  ),
   'diffEditor.diagonalFill': palette.backgroundPanel,
   'merge.border': palette.border,
-  'merge.currentHeaderBackground': palette.accentGreen + palette.alpha1f,
-  'merge.currentContentBackground': palette.accentGreen + palette.alpha0f,
-  'merge.incomingHeaderBackground': palette.accentBlue + palette.alpha1f,
-  'merge.incomingContentBackground': palette.accentBlue + palette.alpha0f,
-  'merge.commonHeaderBackground': palette.accentYellow + palette.alpha1a,
-  'merge.commonContentBackground': palette.accentYellow + palette.alpha0d,
+  'merge.currentHeaderBackground': combineColorWithAlpha(
+    palette.accentGreen,
+    palette.alpha1f
+  ),
+  'merge.currentContentBackground': combineColorWithAlpha(
+    palette.accentGreen,
+    palette.alpha0f
+  ),
+  'merge.incomingHeaderBackground': combineColorWithAlpha(
+    palette.accentBlue,
+    palette.alpha1f
+  ),
+  'merge.incomingContentBackground': combineColorWithAlpha(
+    palette.accentBlue,
+    palette.alpha0f
+  ),
+  'merge.commonHeaderBackground': combineColorWithAlpha(
+    palette.accentYellow,
+    palette.alpha1a
+  ),
+  'merge.commonContentBackground': combineColorWithAlpha(
+    palette.accentYellow,
+    palette.alpha0d
+  ),
   foreground: palette.foreground,
   'icon.foreground': palette.foregroundInactive,
   descriptionForeground: palette.foregroundAlt,
@@ -60,7 +91,10 @@ export const colors = {
   'statusBarItem.hoverBackground': palette.alpha1fFull,
   'statusBarItem.hoverForeground': palette.foreground,
   'statusBarItem.compactHoverBackground': palette.alpha1fFull,
-  'statusBarItem.activeBackground': palette.accentBlue + palette.alpha33,
+  'statusBarItem.activeBackground': combineColorWithAlpha(
+    palette.accentBlue,
+    palette.alpha33
+  ),
   'statusBarItem.focusBorder': palette.selectionBlueAlphaLight,
   'statusBar.focusBorder': palette.selectionBlueAlphaLight,
   'statusBarItem.prominentBackground': palette.blueStrong,
@@ -76,11 +110,23 @@ export const colors = {
   'tab.hoverForeground': palette.foreground,
   'tab.border': palette.border,
   'tab.lastPinnedBorder': palette.borderAlt,
-  'tab.unfocusedActiveBackground': palette.background + palette.alphaCC,
-  'tab.unfocusedActiveForeground': palette.foreground + palette.alphaCC,
-  'tab.unfocusedInactiveForeground': palette.foregroundAlt + palette.alpha99,
+  'tab.unfocusedActiveBackground': combineColorWithAlpha(
+    palette.background,
+    palette.alphaCC
+  ),
+  'tab.unfocusedActiveForeground': combineColorWithAlpha(
+    palette.foreground,
+    palette.alphaCC
+  ),
+  'tab.unfocusedInactiveForeground': combineColorWithAlpha(
+    palette.foregroundAlt,
+    palette.alpha99
+  ),
   'textBlockQuote.background': palette.backgroundPanel,
-  'textBlockQuote.border': palette.accentBlue + palette.alpha59,
+  'textBlockQuote.border': combineColorWithAlpha(
+    palette.accentBlue,
+    palette.alpha59
+  ),
   'titleBar.activeBackground': palette.backgroundAlt,
   'titleBar.inactiveBackground': palette.backgroundAlt,
   'titleBar.activeForeground': palette.foreground,
@@ -174,10 +220,14 @@ export const colors = {
   'terminal.ansiBrightCyan': palette.accentBlueAlt,
   'terminal.ansiBrightWhite': palette.white,
   'terminalCommandDecoration.defaultBackground': palette.selectionBlueAlphaMid,
-  'terminalCommandDecoration.successBackground':
-    palette.accentGreen + palette.alpha33,
-  'terminalCommandDecoration.errorBackground':
-    palette.accentRed + palette.alpha33,
+  'terminalCommandDecoration.successBackground': combineColorWithAlpha(
+    palette.accentGreen,
+    palette.alpha33
+  ),
+  'terminalCommandDecoration.errorBackground': combineColorWithAlpha(
+    palette.accentRed,
+    palette.alpha33
+  ),
   'textLink.foreground': palette.accentBlueAlt,
   'textLink.activeForeground': palette.accentBlueAlt,
   'editorLink.activeForeground': palette.accentBlueAlt,

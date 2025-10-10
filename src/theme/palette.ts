@@ -1,5 +1,6 @@
 // Декларативная палитра для генератора темы VS Code
-export const palette = {
+// Базовые цвета
+export const baseColors = {
   background: '#1a1b26',
   backgroundAlt: '#1f2230',
   backgroundSidebar: '#181923',
@@ -9,22 +10,30 @@ export const palette = {
   foreground: '#9aaae9',
   foregroundAlt: '#7b87b6',
   foregroundInactive: '#6b78a8',
-  accentBlue: '#7dcfff',
-  accentBlueAlt: '#29acf8',
-  accentPurple: '#b18af8',
-  accentPurpleAlt: '#9d7cd8',
-  accentGreen: '#a7c785',
-  accentYellow: '#f7de70',
-  accentOrange: '#f0ac74',
-  accentRed: '#f38095',
-  accentCyan: '#73daca',
-  accentTeal: '#96cab6',
-  accentPink: '#af7c9f',
   white: '#ffffff',
   black: '#1a1b26',
   gray: '#76767d',
   grayLight: '#dfe2db',
   grayDark: '#363c54',
+}
+
+// Акцентные цвета
+export const accentColors = {
+  blue: '#7dcfff',
+  blueAlt: '#29acf8',
+  purple: '#b18af8',
+  purpleAlt: '#9d7cd8',
+  green: '#a7c785',
+  yellow: '#f7de70',
+  orange: '#f0ac74',
+  red: '#f38095',
+  cyan: '#73daca',
+  teal: '#96cab6',
+  pink: '#af7c9f',
+}
+
+// Специфические цвета для синтаксиса
+export const syntaxColors = {
   commentDoc: '#7d909e',
   jsdocTag: '#729bcb',
   keywordAccess: '#a582e5',
@@ -49,74 +58,32 @@ export const palette = {
   funcParam: '#accbf8',
   regexp: '#bfce7f',
   accessor: '#7dcfff',
+}
 
-  // Дополнительные цвета и альфа-оттенки для UI
-  selectionBlueAlpha: '#88b0ff33',
-  selectionBlueAlphaStrong: '#88b0ff33',
-  selectionBlueAlphaLight: '#7aa2f766',
-  selectionBlueAlphaMid: '#7dcfff33',
-  selectionBlueAlphaBorder: '#7dcfff',
-  selectionBlueAlphaBorder2: '#7aa2f766',
-  selectionBlueAlphaBorder3: '#7dcfff66',
-  selectionBlueAlphaBorder4: '#7dcfff59',
-  selectionBlueAlphaBorder5: '#7dcfffcc',
-  selectionBlueAlphaBorder6: '#7dcfff1f',
-  selectionBlueAlphaBorder7: '#7dcfff0f',
-  selectionBlueAlphaBorder8: '#7dcfff1a',
-  selectionBlueAlphaBorder9: '#7dcfff0d',
-  selectionBlueAlphaBorder10: '#7dcfff99',
-  selectionBlueAlphaBorder11: '#7dcfff14',
-  selectionBlueAlphaBorder12: '#7dcfff80',
-  selectionBlueAlphaBorder13: '#7dcfffb3',
-  selectionBlueAlphaBorder14: '#7dcfffcc',
-  selectionBlueAlphaBorder15: '#7dcfff1f',
-  selectionBlueAlphaBorder16: '#7dcfff0f',
-  selectionBlueAlphaBorder17: '#7dcfff1a',
-  selectionBlueAlphaBorder18: '#7dcfff0d',
-  selectionBlueAlphaBorder19: '#7dcfff99',
-  selectionBlueAlphaBorder20: '#7dcfff14',
-  selectionBlueAlphaBorder21: '#7dcfff80',
-  selectionBlueAlphaBorder22: '#7dcfffb3',
-  selectionBlueAlphaBorder23: '#7dcfffcc',
-  selectionBlueAlphaBorder24: '#7dcfff1f',
-  selectionBlueAlphaBorder25: '#7dcfff0f',
-  selectionBlueAlphaBorder26: '#7dcfff1a',
-  selectionBlueAlphaBorder27: '#7dcfff0d',
-  selectionBlueAlphaBorder28: '#7dcfff99',
-  selectionBlueAlphaBorder29: '#7dcfff14',
-  selectionBlueAlphaBorder30: '#7dcfff80',
-  selectionBlueAlphaBorder31: '#7dcfffb3',
-  selectionBlueAlphaBorder32: '#7dcfffcc',
-  selectionBlueAlphaBorder33: '#7dcfff1f',
-  selectionBlueAlphaBorder34: '#7dcfff0f',
-  selectionBlueAlphaBorder35: '#7dcfff1a',
-  selectionBlueAlphaBorder36: '#7dcfff0d',
-  selectionBlueAlphaBorder37: '#7dcfff99',
-  selectionBlueAlphaBorder38: '#7dcfff14',
-  selectionBlueAlphaBorder39: '#7dcfff80',
-  selectionBlueAlphaBorder40: '#7dcfffb3',
-  selectionBlueAlphaBorder41: '#7dcfffcc',
-  // Часто используемые альфа-оттенки и спеццвета
-  alpha1f: '1f',
-  alpha14: '14',
-  alpha0f: '0f',
-  alpha1a: '1a',
-  alpha0d: '0d',
-  alpha33: '33',
-  alpha66: '66',
-  alpha99: '99',
-  alpha80: '80',
-  alphaB3: 'b3',
-  alphaCC: 'cc',
-  alpha59: '59',
-  alpha1fFull: '#727fb01f',
-  alpha29: '29',
-  alpha2e: '2e',
-  alpha3d: '3d',
-  alpha40: '40',
-  alpha00: '#00000000',
-  alphaE6: 'e6',
-  // Спеццвета для кнопок, бейджей и др.
+// Альфа-значения
+export const alphaValues = {
+  '1f': '1f',
+  '14': '14',
+  '0f': '0f',
+  '1a': '1a',
+  '0d': '0d',
+  '33': '33',
+  '66': '66',
+  '99': '99',
+  '80': '80',
+  b3: 'b3',
+  cc: 'cc',
+  '59': '59',
+  '29': '29',
+  '2e': '2e',
+  '3d': '3d',
+  '40': '40',
+  '00': '00',
+  e6: 'e6',
+}
+
+// Специальные цвета для UI
+export const uiColors = {
   blueStrong: '#0078d4',
   blueHover: '#1f88d9',
   blueSeparator: '#202230',
@@ -128,8 +95,6 @@ export const palette = {
   grayMenu: '#363c55',
   grayShadow: '#282d43e6',
   grayScrollbar: '#272b40',
-  grayWidget: '#363c55',
-  grayWidgetShadow: '#282d43e6',
   grayWidgetBorder: '#363c55',
   grayWidgetBackground: '#1f2230',
   grayWidgetForeground: '#9aaae9',
@@ -204,3 +169,138 @@ export const palette = {
   grayWidgetTerminalDrop: '#23273933',
   hoverWidgetHighlight: '#43b6f9',
 }
+
+// Генерация полной палитры с альфа-вариантами
+import { createColorPalette, isValidColor } from './color-utils'
+
+// Объединение всех базовых цветов
+const allBaseColors = {
+  ...baseColors,
+  ...accentColors,
+  ...syntaxColors,
+  ...uiColors,
+  // Добавление альфа-вариантов для основных цветов
+  selectionBlueAlpha: '#88b0ff33',
+  selectionBlueAlphaStrong: '#8b0ff333',
+  selectionBlueAlphaLight: '#7aa2f7',
+  selectionBlueAlphaMid: '#7dcfff33',
+  selectionBlueAlphaBorder: '#7dcfff',
+  alpha0: '#00000000',
+  alpha1fFull: '#727fb01f',
+}
+
+// Создание полной палитры с альфа-вариантами
+export const palette = createColorPalette(allBaseColors, alphaValues)
+
+// Добавляем недостающие цвета, которые используются в ui.ts
+palette.accentGreen = accentColors.green
+palette.accentRed = accentColors.red
+palette.accentBlue = accentColors.blue
+palette.accentYellow = accentColors.yellow
+palette.accentBlueAlt = accentColors.blueAlt
+palette.accentPurple = accentColors.purple
+palette.accentPurpleAlt = accentColors.purpleAlt
+palette.accentPink = accentColors.pink
+palette.accentCyan = accentColors.cyan
+palette.accentTeal = accentColors.teal
+palette.accentOrange = accentColors.orange
+
+// Добавляем недостающие альфа-ключи как полноценные цвета с альфа-каналом
+palette.alpha1f = '1f'
+palette.alpha14 = '14'
+palette.alpha0f = '0f'
+palette.alpha1a = '1a'
+palette.alpha0d = '0d'
+palette.alpha33 = '33'
+palette.alpha59 = '59'
+palette.alphaCC = 'cc'
+palette.alpha99 = '99'
+
+// Добавляем специфические цвета для UI элементов
+palette.grayWidgetScrollbarSliderHover = uiColors.grayWidgetScrollbarSliderHover
+palette.grayWidgetBorder = uiColors.grayWidgetBorder
+palette.hoverWidgetHighlight = uiColors.hoverWidgetHighlight
+palette.grayWidgetPeekViewMatch = uiColors.grayWidgetPeekViewMatch
+palette.grayWidgetPeekViewSelection = uiColors.grayWidgetPeekViewSelection
+palette.grayWidgetFilterMatch = uiColors.grayWidgetFilterMatch
+palette.grayWidgetFilterMatchBorder = uiColors.grayWidgetFilterMatchBorder
+palette.grayWidgetSearchMatch = uiColors.grayWidgetSearchMatch
+palette.grayWidgetSearchMatchBorder = uiColors.grayWidgetSearchMatchBorder
+palette.grayWidgetFindMatch = uiColors.grayWidgetFindMatch
+palette.grayWidgetFindMatchBorder = uiColors.grayWidgetFindMatchBorder
+palette.grayWidgetFindMatchHighlight = uiColors.grayWidgetFindMatchHighlight
+palette.grayWidgetWordHighlight = uiColors.grayWidgetWordHighlight
+palette.grayWidgetWordHighlightStrong = uiColors.grayWidgetWordHighlightStrong
+palette.grayWidgetHoverHighlight = uiColors.grayWidgetHoverHighlight
+palette.grayWidgetSelectionHighlight = uiColors.grayWidgetSelectionHighlight
+palette.grayWidgetSelectionHighlightBorder =
+  uiColors.grayWidgetSelectionHighlightBorder
+palette.grayWidgetToolbarHover = uiColors.grayWidgetToolbarHover
+palette.grayWidgetToolbarActive = uiColors.grayWidgetToolbarActive
+palette.grayWidgetToolbarOutline = uiColors.grayWidgetToolbarOutline
+palette.grayWidgetDebugToolbar = uiColors.grayWidgetDebugToolbar
+palette.grayWidgetDebugToolbarBorder = uiColors.grayWidgetDebugToolbarBorder
+palette.grayWidgetDebugException = uiColors.grayWidgetDebugException
+palette.grayWidgetDebugExceptionBorder = uiColors.grayWidgetDebugExceptionBorder
+palette.grayWidgetStackFrame = uiColors.grayWidgetStackFrame
+palette.grayWidgetStackFrameHighlight = uiColors.grayWidgetStackFrameHighlight
+palette.grayWidgetBreakpoint = uiColors.grayWidgetBreakpoint
+palette.grayWidgetBreakpointDisabled = uiColors.grayWidgetBreakpointDisabled
+palette.grayWidgetBreakpointUnverified = uiColors.grayWidgetBreakpointUnverified
+palette.grayWidgetBreakpointCurrent = uiColors.grayWidgetBreakpointCurrent
+palette.grayWidgetBreakpointStack = uiColors.grayWidgetBreakpointStack
+palette.grayWidgetInlineChat = uiColors.grayWidgetInlineChat
+palette.grayWidgetInlineChatForeground = uiColors.grayWidgetInlineChatForeground
+palette.grayWidgetInlineChatBorder = uiColors.grayWidgetInlineChatBorder
+palette.grayWidgetInlineChatInput = uiColors.grayWidgetInlineChatInput
+palette.grayWidgetScrollbar = uiColors.grayWidgetScrollbar
+palette.grayWidgetScrollbarSlider = uiColors.grayWidgetScrollbarSlider
+palette.grayWidgetScrollbarSliderActive =
+  uiColors.grayWidgetScrollbarSliderActive
+palette.grayWidgetRangeHighlight = uiColors.grayWidgetRangeHighlight
+palette.grayWidgetOverviewRulerFindMatch =
+  uiColors.grayWidgetOverviewRulerFindMatch
+palette.grayWidgetOverviewRulerSelectionHighlight =
+  uiColors.grayWidgetOverviewRulerSelectionHighlight
+palette.grayWidgetOverviewRulerRangeHighlight =
+  uiColors.grayWidgetOverviewRulerRangeHighlight
+palette.editorLineNumberActive = uiColors.editorLineNumberActive
+palette.activityBarInactive = uiColors.activityBarInactive
+palette.terminalBrightRed = uiColors.terminalBrightRed
+palette.terminalBrightGreen = uiColors.terminalBrightGreen
+palette.terminalBrightYellow = uiColors.terminalBrightYellow
+palette.terminalBrightMagenta = uiColors.terminalBrightMagenta
+palette.grayWidgetOverviewRulerWordHighlight =
+  uiColors.grayWidgetOverviewRulerWordHighlight
+palette.grayWidgetOverviewRulerWordHighlightStrong =
+  uiColors.grayWidgetOverviewRulerWordHighlightStrong
+palette.grayWidgetMinimapFindMatch = uiColors.grayWidgetMinimapFindMatch
+palette.grayWidgetMinimapSelectionHighlight =
+  uiColors.grayWidgetMinimapSelectionHighlight
+palette.grayWidgetEditorGroupDrop = uiColors.grayWidgetEditorGroupDrop
+palette.grayWidgetListDrop = uiColors.grayWidgetListDrop
+palette.grayWidgetPanelSectionDrop = uiColors.grayWidgetPanelSectionDrop
+palette.grayWidgetTerminalDrop = uiColors.grayWidgetTerminalDrop
+
+// Валидация палитры
+export function validatePalette(): void {
+  const invalidColors: string[] = []
+  for (const [key, value] of Object.entries(palette)) {
+    if (typeof value === 'string') {
+      // Пропускаем альфа-компоненты, которые являются строками длиной 2 и содержат только шестнадцатеричные символы
+      if (value.length === 2 && /^[0-9a-fA-F]+$/.test(value)) {
+        continue // Это альфа-компонент, пропускаем проверку
+      }
+      if (!isValidColor(value)) {
+        invalidColors.push(`${key}: ${value}`)
+      }
+    }
+  }
+
+  if (invalidColors.length > 0) {
+    console.warn('Найдены недопустимые цвета в палитре:', invalidColors)
+  }
+}
+
+// Выполняем валидацию палитры при загрузке
+validatePalette()
