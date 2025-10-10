@@ -1,6 +1,6 @@
 // Токены синтаксиса для Vue
-import { TokenColor } from '../token-utils';
-import { palette } from '../palette';
+import { TokenColor } from '../../token-utils'
+import { palette } from '../../palette'
 
 export const vueTokens: TokenColor[] = [
   {
@@ -50,11 +50,11 @@ export const vueTokens: TokenColor[] = [
   {
     name: 'Pinia: Getters/Actions',
     scope: [
-        'entity.name.function.pinia', // getters and actions in Pinia
+      'entity.name.function.pinia', // getters and actions in Pinia
     ],
     settings: {
-        foreground: palette.keywordAsync,
-        fontStyle: 'bold'
-    }
-  }
-];
+      foreground: palette.keywordAsync,
+      fontStyle: 'bold',
+    },
+  },
+]
