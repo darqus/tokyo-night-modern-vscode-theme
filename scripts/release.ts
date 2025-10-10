@@ -16,12 +16,6 @@ interface ReleaseOptions {
 class ReleaseManager {
   private packagePath = join(process.cwd(), 'package.json')
   private changelogPath = join(process.cwd(), 'CHANGELOG.md')
-  private themeGeneratorPath = join(
-    process.cwd(),
-    'src',
-    'generators',
-    'theme.ts'
-  )
 
   private exec(command: string, options: { silent?: boolean } = {}): string {
     console.log(`🔧 ${command}`)
@@ -202,29 +196,6 @@ class ReleaseManager {
     }
   }
 
-  private updateThemeVersion(newVersion: string): void {
-    console.log('📝 Updating THEME_VERSION in theme generator...')
-    try {
-      const filePath = this.themeGeneratorPath
-      const src = readFileSync(filePath, 'utf8')
-      const replaced = src.replace(
-        /(THEME_VERSION\s*:\s*env\.THEME_VERSION\s*\|\|\s*')([^']*)(')/,
-        (_m, p1, _old, p3) => `${p1}${newVersion}${p3}`
-      )
-
-      if (src === replaced) {
-        console.warn(
-          '⚠️  THEME_VERSION pattern not found or already up to date'
-        )
-      } else {
-        writeFileSync(filePath, replaced, 'utf8')
-        console.log('✅ THEME_VERSION updated')
-      }
-    } catch (error) {
-      console.warn('⚠️  Failed to update THEME_VERSION in theme.ts')
-    }
-  }
-
   private commitAndTag(version: string): void {
     console.log('📦 Committing changes and creating tag...')
 
@@ -346,9 +317,6 @@ class ReleaseManager {
         releaseType,
         options.prerelease || false
       )
-
-      // Синхронизация версии дефолтной THEME_VERSION в генераторе темы
-      this.updateThemeVersion(newVersion)
 
       // Генерация .vsix пакета с новой версией
       this.generatePackage()
