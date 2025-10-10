@@ -1726,18 +1726,29 @@
       }
     },
     {
-      "name": "Pinia: Store Properties",
+      "name": "Pinia: State",
       "scope": [
-        "variable.other.property.pinia"
+        "variable.other.property.state.pinia"
       ],
       "settings": {
-        "foreground": "#accbf8"
+        "foreground": "#f7de70"
       }
     },
     {
-      "name": "Pinia: Getters/Actions",
+      "name": "Pinia: Getters",
       "scope": [
-        "entity.name.function.pinia"
+        "entity.name.function.getter.pinia",
+        "variable.other.property.getter.pinia"
+      ],
+      "settings": {
+        "foreground": "#accbf8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Pinia: Actions",
+      "scope": [
+        "entity.name.function.action.pinia"
       ],
       "settings": {
         "foreground": "#7aa2f7",

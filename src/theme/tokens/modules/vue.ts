@@ -39,18 +39,29 @@ export const vueTokens: TokenColor[] = [
     },
   },
   {
-    name: 'Pinia: Store Properties',
+    name: 'Pinia: State',
     scope: [
-      'variable.other.property.pinia', // properties in Pinia stores
+      'variable.other.property.state.pinia', // e.g. state in defineStore
     ],
     settings: {
-      foreground: palette.funcParam,
+      foreground: palette.yellow,
     },
   },
   {
-    name: 'Pinia: Getters/Actions',
+    name: 'Pinia: Getters',
     scope: [
-      'entity.name.function.pinia', // getters and actions in Pinia
+      'entity.name.function.getter.pinia', // e.g. getters in defineStore
+      'variable.other.property.getter.pinia',
+    ],
+    settings: {
+      foreground: palette.funcParam,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'Pinia: Actions',
+    scope: [
+      'entity.name.function.action.pinia', // e.g. actions in defineStore
     ],
     settings: {
       foreground: palette.keywordAsync,
