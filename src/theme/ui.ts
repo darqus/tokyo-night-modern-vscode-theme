@@ -1,86 +1,70 @@
 import { palette } from './palette'
-import { combineColorWithAlpha } from './color-utils'
 
 export const colors = {
+  // Command Center
   'commandCenter.background': palette.background,
   'commandCenter.activeBackground': palette.backgroundPanel,
   'commandCenter.border': palette.border,
-  'diffEditor.insertedTextBackground': combineColorWithAlpha(
-    palette.accentGreen,
-    palette.alpha1f
-  ),
-  'diffEditor.removedTextBackground': combineColorWithAlpha(
-    palette.accentRed,
-    palette.alpha1f
-  ),
-  'diffEditor.insertedLineBackground': combineColorWithAlpha(
-    palette.accentGreen,
-    palette.alpha14
-  ),
-  'diffEditor.removedLineBackground': combineColorWithAlpha(
-    palette.accentRed,
-    palette.alpha14
-  ),
+
+  // Diffs
+  'diffEditor.insertedTextBackground': palette.greenAlpha1f,
+  'diffEditor.removedTextBackground': palette.redAlpha1f,
+  'diffEditor.insertedLineBackground': palette.greenAlpha14,
+  'diffEditor.removedLineBackground': palette.redAlpha14,
   'diffEditor.diagonalFill': palette.backgroundPanel,
+
+  // Merges
   'merge.border': palette.border,
-  'merge.currentHeaderBackground': combineColorWithAlpha(
-    palette.accentGreen,
-    palette.alpha1f
-  ),
-  'merge.currentContentBackground': combineColorWithAlpha(
-    palette.accentGreen,
-    palette.alpha0f
-  ),
-  'merge.incomingHeaderBackground': combineColorWithAlpha(
-    palette.accentBlue,
-    palette.alpha1f
-  ),
-  'merge.incomingContentBackground': combineColorWithAlpha(
-    palette.accentBlue,
-    palette.alpha0f
-  ),
-  'merge.commonHeaderBackground': combineColorWithAlpha(
-    palette.accentYellow,
-    palette.alpha1a
-  ),
-  'merge.commonContentBackground': combineColorWithAlpha(
-    palette.accentYellow,
-    palette.alpha0d
-  ),
+  'merge.currentHeaderBackground': palette.greenAlpha1f,
+  'merge.currentContentBackground': palette.greenAlpha0f,
+  'merge.incomingHeaderBackground': palette.blueAlpha1f,
+  'merge.incomingContentBackground': palette.blueAlpha0f,
+  'merge.commonHeaderBackground': palette.yellowAlpha1a,
+  'merge.commonContentBackground': palette.yellowAlpha0d,
+
+  // General UI
   foreground: palette.foreground,
   'icon.foreground': palette.foregroundInactive,
   descriptionForeground: palette.foregroundAlt,
   disabledForeground: palette.foregroundAlt,
-  focusBorder: palette.alpha00,
-  errorForeground: palette.accentRed,
-  'selection.background': palette.selectionBlueAlpha,
+  focusBorder: palette.backgroundAlpha00, // transparent focus border
+  errorForeground: palette.red,
+  'selection.background': palette.selectionBlueAlpha33,
+
+  // Editor
   'editor.background': palette.background,
   'editor.foreground': palette.foreground,
-  'editor.selectionBackground': palette.selectionBlueAlpha,
-  'editor.inactiveSelectionBackground': palette.alpha1fFull,
-  'editor.lineHighlightBackground': palette.alpha1fFull,
+  'editor.selectionBackground': palette.selectionBlueAlpha33,
+  'editor.inactiveSelectionBackground': palette.foregroundAlpha1f,
+  'editor.lineHighlightBackground': palette.foregroundAlpha1f,
   'editorLineNumber.foreground': palette.grayDark,
-  'editorLineNumber.activeForeground': palette.editorLineNumberActive,
+  'editorLineNumber.activeForeground': palette.grayEditorLineNumberActive,
   'editorCursor.foreground': palette.foregroundAlt,
   'editorIndentGuide.background1': palette.border,
-  'editorIndentGuide.activeBackground1': palette.selectionBlueAlphaLight,
+  'editorIndentGuide.activeBackground1': palette.blue,
   'editorStickyScroll.background': palette.backgroundAlt,
-  'editorStickyScrollHover.background': palette.alpha1fFull,
+  'editorStickyScrollHover.background': palette.foregroundAlpha1f,
   'editor.placeholder.foreground': palette.foregroundInactive,
   'editor.foldPlaceholderForeground': palette.foregroundAlt,
+
+  // Side Bar
   'sideBar.background': palette.backgroundSidebar,
   'sideBar.foreground': palette.foreground,
   'sideBar.border': palette.border,
   'sideBarSectionHeader.background': palette.backgroundPanel,
   'sideBarSectionHeader.foreground': palette.foreground,
+
+  // Activity Bar
   'activityBar.background': palette.backgroundAlt,
   'activityBar.foreground': palette.foregroundAlt,
   'activityBar.inactiveForeground': palette.activityBarInactive,
-  'activityBar.activeBorder': palette.accentBlue,
+  'activityBar.activeBorder': palette.blue,
   'activityBar.activeBackground': palette.background,
-  'activityBar.activeFocusBorder': palette.selectionBlueAlphaLight,
+  'activityBar.activeFocusBorder': palette.blue,
   'activityBar.border': palette.border,
-  'activityBar.dropBorder': palette.accentBlue,
+  'activityBar.dropBorder': palette.blue,
+
+  // Status Bar
   'statusBar.background': palette.backgroundAlt,
   'statusBar.foreground': palette.foregroundAlt,
   'statusBar.border': palette.border,
@@ -88,108 +72,112 @@ export const colors = {
   'statusBarItem.remoteForeground': palette.white,
   'statusBarItem.remoteHoverBackground': palette.blueHover,
   'statusBarItem.remoteHoverForeground': palette.white,
-  'statusBarItem.hoverBackground': palette.alpha1fFull,
+  'statusBarItem.hoverBackground': palette.foregroundAlpha1f,
   'statusBarItem.hoverForeground': palette.foreground,
-  'statusBarItem.compactHoverBackground': palette.alpha1fFull,
-  'statusBarItem.activeBackground': combineColorWithAlpha(
-    palette.accentBlue,
-    palette.alpha33
-  ),
-  'statusBarItem.focusBorder': palette.selectionBlueAlphaLight,
-  'statusBar.focusBorder': palette.selectionBlueAlphaLight,
+  'statusBarItem.compactHoverBackground': palette.foregroundAlpha1f,
+  'statusBarItem.activeBackground': palette.blueAlpha33,
+  'statusBarItem.focusBorder': palette.blue,
+  'statusBar.focusBorder': palette.blue,
   'statusBarItem.prominentBackground': palette.blueStrong,
   'statusBarItem.prominentForeground': palette.white,
   'statusBarItem.prominentHoverBackground': palette.blueHover,
   'statusBarItem.prominentHoverForeground': palette.white,
+
+  // Tabs
   'tab.activeBackground': palette.background,
   'tab.activeForeground': palette.foreground,
-  'tab.activeBorderTop': palette.accentBlue,
+  'tab.activeBorderTop': palette.blue,
   'tab.inactiveBackground': palette.backgroundAlt,
   'tab.inactiveForeground': palette.foregroundAlt,
-  'tab.hoverBackground': palette.alpha1fFull,
+  'tab.hoverBackground': palette.foregroundAlpha1f,
   'tab.hoverForeground': palette.foreground,
   'tab.border': palette.border,
   'tab.lastPinnedBorder': palette.borderAlt,
-  'tab.unfocusedActiveBackground': combineColorWithAlpha(
-    palette.background,
-    palette.alphaCC
-  ),
-  'tab.unfocusedActiveForeground': combineColorWithAlpha(
-    palette.foreground,
-    palette.alphaCC
-  ),
-  'tab.unfocusedInactiveForeground': combineColorWithAlpha(
-    palette.foregroundAlt,
-    palette.alpha99
-  ),
+  'tab.unfocusedActiveBackground': palette.backgroundAlphaCC,
+  'tab.unfocusedActiveForeground': palette.foregroundAlphaCC,
+  'tab.unfocusedInactiveForeground': palette.foregroundAltAlpha99,
+
+  // Text
   'textBlockQuote.background': palette.backgroundPanel,
-  'textBlockQuote.border': combineColorWithAlpha(
-    palette.accentBlue,
-    palette.alpha59
-  ),
+  'textBlockQuote.border': palette.blueAlpha59,
+  'textLink.foreground': palette.blueAlt,
+  'textLink.activeForeground': palette.blueAlt,
+  'editorLink.activeForeground': palette.blueAlt,
+
+  // Title Bar
   'titleBar.activeBackground': palette.backgroundAlt,
   'titleBar.inactiveBackground': palette.backgroundAlt,
   'titleBar.activeForeground': palette.foreground,
   'titleBar.inactiveForeground': palette.foregroundAlt,
   'titleBar.border': palette.border,
+
+  // Editor Groups & Panels
   'editorGroupHeader.tabsBackground': palette.backgroundAlt,
   'editorGroupHeader.noTabsBackground': palette.backgroundAlt,
   'editorGroupHeader.tabsBorder': palette.border,
   'editorGroup.border': palette.border,
   'editorGroup.emptyBackground': palette.background,
-  'editorGroup.focusedEmptyBorder': palette.selectionBlueAlphaLight,
+  'editorGroup.focusedEmptyBorder': palette.blue,
   'panel.background': palette.background,
   'panel.border': palette.border,
   'panelSectionHeader.background': palette.background,
   'panelSectionHeader.foreground': palette.foreground,
   'panelTitle.activeForeground': palette.foreground,
   'panelTitle.inactiveForeground': palette.foregroundAlt,
-  'panelTitle.activeBorder': palette.accentBlue,
+  'panelTitle.activeBorder': palette.blue,
   'panelTitle.border': palette.border,
-  'panel.dropBorder': palette.selectionBlueAlphaBorder,
+  'panel.dropBorder': palette.blue,
   'panelTitleBadge.background': palette.blueStrong,
   'panelTitleBadge.foreground': palette.white,
-  'panelSection.border': palette.grayBadge,
-  'panelSectionHeader.border': palette.grayBadge,
-  'list.activeSelectionBackground': palette.selectionBlueAlpha,
+  'panelSection.border': palette.grayDark,
+  'panelSectionHeader.border': palette.grayDark,
+
+  // Lists
+  'list.activeSelectionBackground': palette.selectionBlueAlpha33,
   'list.activeSelectionForeground': palette.foreground,
-  'list.inactiveSelectionBackground': palette.alpha1fFull,
+  'list.inactiveSelectionBackground': palette.foregroundAlpha1f,
   'list.inactiveSelectionForeground': palette.foreground,
-  'list.hoverBackground': palette.alpha1fFull,
+  'list.hoverBackground': palette.foregroundAlpha1f,
   'list.hoverForeground': palette.foreground,
-  'list.focusBackground': palette.selectionBlueAlpha,
+  'list.focusBackground': palette.selectionBlueAlpha33,
   'list.focusForeground': palette.foreground,
-  'list.highlightForeground': palette.accentBlueAlt,
+  'list.highlightForeground': palette.blueAlt,
+
+  // Inputs & Buttons
   'input.background': palette.backgroundAlt,
   'input.foreground': palette.foreground,
   'input.border': palette.border,
-  'inputOption.activeBorder': palette.accentBlueAlt,
+  'inputOption.activeBorder': palette.blueAlt,
   'input.placeholderForeground': palette.foregroundInactive,
   'button.background': palette.blueStrong,
   'button.foreground': palette.white,
   'button.hoverBackground': palette.blueHover,
-  'button.border': palette.accentBlueAlt,
+  'button.border': palette.blueAlt,
   'button.separator': palette.blueSeparator,
   'button.secondaryBackground': palette.backgroundAlt,
   'button.secondaryForeground': palette.foreground,
   'button.secondaryHoverBackground': palette.blueSecondary,
-  'badge.background': palette.blueBadge,
+
+  // Badges
+  'badge.background': palette.badgeBlue,
   'badge.foreground': palette.white,
-  'activityBarBadge.background': palette.blueBadge,
+  'activityBarBadge.background': palette.badgeBlue,
   'activityBarBadge.foreground': palette.white,
-  'activityWarningBadge.background': palette.yellowBadge,
+  'activityWarningBadge.background': palette.badgeYellow,
   'activityWarningBadge.foreground': palette.background,
-  'activityErrorBadge.background': palette.redBadge,
+  'activityErrorBadge.background': palette.badgeRed,
   'activityErrorBadge.foreground': palette.background,
-  'extensionBadge.remoteBackground': palette.blueBadge,
+  'extensionBadge.remoteBackground': palette.badgeBlue,
   'extensionBadge.remoteForeground': palette.white,
+
+  // Menus & Dropdowns
   'menu.background': palette.background,
   'menu.foreground': palette.foreground,
-  'menu.selectionBackground': palette.alpha00,
+  'menu.selectionBackground': palette.backgroundAlpha00,
   'menu.selectionForeground': palette.foreground,
-  'menu.selectionBorder': palette.accentBlueAlt,
-  'menubar.selectionBorder': palette.accentBlueAlt,
-  'menubar.selectionBackground': palette.alpha00,
+  'menu.selectionBorder': palette.blueAlt,
+  'menubar.selectionBorder': palette.blueAlt,
+  'menubar.selectionBackground': palette.backgroundAlpha00,
   'menubar.selectionForeground': palette.foreground,
   'menu.border': palette.border,
   'menu.separatorBackground': palette.grayMenu,
@@ -197,40 +185,35 @@ export const colors = {
   'dropdown.foreground': palette.foreground,
   'dropdown.border': palette.border,
   'dropdown.listBackground': palette.background,
+
+  // Terminal
   'terminal.background': palette.background,
   'terminal.foreground': palette.foreground,
-  'terminal.selectionBackground': palette.selectionBlueAlpha,
-  'terminal.inactiveSelectionBackground': palette.alpha1fFull,
+  'terminal.selectionBackground': palette.selectionBlueAlpha33,
+  'terminal.inactiveSelectionBackground': palette.foregroundAlpha1f,
   'terminal.border': palette.border,
-  'terminal.hoverHighlightBackground': palette.grayWidgetScrollbarSliderHover,
+  'terminal.hoverHighlightBackground': palette.grayScrollbarSliderHover,
   'terminal.ansiBlack': palette.background,
-  'terminal.ansiRed': palette.accentRed,
-  'terminal.ansiGreen': palette.accentGreen,
-  'terminal.ansiYellow': palette.accentYellow,
-  'terminal.ansiBlue': palette.accentBlueAlt,
-  'terminal.ansiMagenta': palette.accentPurple,
-  'terminal.ansiCyan': palette.accentBlueAlt,
+  'terminal.ansiRed': palette.red,
+  'terminal.ansiGreen': palette.green,
+  'terminal.ansiYellow': palette.yellow,
+  'terminal.ansiBlue': palette.blueAlt,
+  'terminal.ansiMagenta': palette.purple,
+  'terminal.ansiCyan': palette.blueAlt,
   'terminal.ansiWhite': palette.grayLight,
-  'terminal.ansiBrightBlack': palette.gray,
+  'terminal.ansiBrightBlack': palette.grayDark,
   'terminal.ansiBrightRed': palette.terminalBrightRed,
   'terminal.ansiBrightGreen': palette.terminalBrightGreen,
   'terminal.ansiBrightYellow': palette.terminalBrightYellow,
-  'terminal.ansiBrightBlue': palette.accentBlueAlt,
+  'terminal.ansiBrightBlue': palette.blueAlt,
   'terminal.ansiBrightMagenta': palette.terminalBrightMagenta,
-  'terminal.ansiBrightCyan': palette.accentBlueAlt,
+  'terminal.ansiBrightCyan': palette.blueAlt,
   'terminal.ansiBrightWhite': palette.white,
-  'terminalCommandDecoration.defaultBackground': palette.selectionBlueAlphaMid,
-  'terminalCommandDecoration.successBackground': combineColorWithAlpha(
-    palette.accentGreen,
-    palette.alpha33
-  ),
-  'terminalCommandDecoration.errorBackground': combineColorWithAlpha(
-    palette.accentRed,
-    palette.alpha33
-  ),
-  'textLink.foreground': palette.accentBlueAlt,
-  'textLink.activeForeground': palette.accentBlueAlt,
-  'editorLink.activeForeground': palette.accentBlueAlt,
+  'terminalCommandDecoration.defaultBackground': palette.selectionBlueAlpha33,
+  'terminalCommandDecoration.successBackground': palette.greenAlpha33,
+  'terminalCommandDecoration.errorBackground': palette.redAlpha33,
+
+  // Notifications & Widgets
   'notifications.background': palette.backgroundAlt,
   'notifications.foreground': palette.foreground,
   'notifications.border': palette.border,
@@ -240,83 +223,88 @@ export const colors = {
   'editorHoverWidget.foreground': palette.foreground,
   'editorSuggestWidget.background': palette.backgroundPanel,
   'editorSuggestWidget.border': palette.grayWidgetBorder,
-  'editorSuggestWidget.highlightForeground': palette.accentBlueAlt,
-  'editorSuggestWidget.selectedBackground': palette.selectionBlueAlpha,
+  'editorSuggestWidget.highlightForeground': palette.blueAlt,
+  'editorSuggestWidget.selectedBackground': palette.selectionBlueAlpha33,
   'editorSuggestWidget.selectedForeground': palette.foreground,
   'editorSuggestWidget.selectedIconForeground': palette.foreground,
   'quickInput.background': palette.backgroundAlt,
   'editorWidget.background': palette.backgroundAlt,
   'widget.border': palette.grayWidgetBorder,
-  'widget.shadow': palette.grayShadow,
+  'widget.shadow': palette.grayShadowAlphae6,
   'editorWidget.border': palette.grayWidgetBorder,
   'quickInput.foreground': palette.foreground,
   'quickInputTitle.background': palette.backgroundPanel,
-  'quickInputList.focusBackground': palette.selectionBlueAlpha,
+  'quickInputList.focusBackground': palette.selectionBlueAlpha33,
   'quickInputList.focusForeground': palette.foreground,
+
+  // Peek View
   'peekViewEditor.background': palette.backgroundAlt,
   'peekViewResult.background': palette.backgroundAlt,
   'peekViewTitle.background': palette.backgroundPanel,
-  'peekViewEditor.matchHighlightBackground': palette.grayWidgetPeekViewMatch,
-  'peekViewResult.matchHighlightBackground': palette.grayWidgetPeekViewMatch,
-  'peekViewResult.selectionBackground': palette.grayWidgetPeekViewSelection,
-  'list.filterMatchBackground': palette.grayWidgetFilterMatch,
-  'list.filterMatchBorder': palette.grayWidgetFilterMatchBorder,
-  'searchEditor.findMatchBackground': palette.grayWidgetSearchMatch,
-  'searchEditor.findMatchBorder': palette.grayWidgetSearchMatchBorder,
-  'editor.findMatchBackground': palette.grayWidgetFindMatch,
-  'editor.findMatchBorder': palette.grayWidgetFindMatchBorder,
-  'editor.findMatchHighlightBackground': palette.grayWidgetFindMatchHighlight,
+  'peekViewEditor.matchHighlightBackground': palette.blueAlpha2e,
+  'peekViewResult.matchHighlightBackground': palette.blueAlpha2e,
+  'peekViewResult.selectionBackground': palette.blueAlpha33,
+
+  // Find & Search
+  'list.filterMatchBackground': palette.purpleAlpha40,
+  'list.filterMatchBorder': palette.blueAltAlpha00,
+  'searchEditor.findMatchBackground': palette.purpleAlpha40,
+  'searchEditor.findMatchBorder': palette.blueAltAlpha00,
+  'editor.findMatchBackground': palette.purpleAlpha33,
+  'editor.findMatchBorder': palette.blueAltAlpha00,
+  'editor.findMatchHighlightBackground': palette.purpleAlpha40,
   'editor.findMatchForeground': palette.foreground,
-  'terminal.findMatchBackground': palette.grayWidgetTerminalFindMatch,
-  'terminal.findMatchBorder': palette.grayWidgetTerminalFindMatchBorder,
-  'terminal.findMatchHighlightBackground':
-    palette.grayWidgetTerminalFindMatchHighlight,
-  'editor.wordHighlightBackground': palette.grayWidgetWordHighlight,
-  'editor.wordHighlightStrongBackground': palette.grayWidgetWordHighlightStrong,
-  'editor.hoverHighlightBackground': palette.grayWidgetHoverHighlight,
-  'editor.selectionHighlightBackground': palette.grayWidgetSelectionHighlight,
-  'editor.selectionHighlightBorder': palette.grayWidgetSelectionHighlightBorder,
-  'toolbar.hoverBackground': palette.grayWidgetToolbarHover,
-  'toolbar.activeBackground': palette.grayWidgetToolbarActive,
-  'toolbar.hoverOutline': palette.grayWidgetToolbarOutline,
-  'debugToolBar.background': palette.grayWidgetDebugToolbar,
-  'debugToolBar.border': palette.grayWidgetDebugToolbarBorder,
-  'debugExceptionWidget.background': palette.grayWidgetDebugException,
-  'debugExceptionWidget.border': palette.grayWidgetDebugExceptionBorder,
-  'editor.stackFrameHighlightBackground': palette.grayWidgetStackFrame,
-  'editor.focusedStackFrameHighlightBackground':
-    palette.grayWidgetStackFrameHighlight,
-  'debugIcon.breakpointForeground': palette.grayWidgetBreakpoint,
-  'debugIcon.breakpointDisabledForeground':
-    palette.grayWidgetBreakpointDisabled,
-  'debugIcon.breakpointUnverifiedForeground':
-    palette.grayWidgetBreakpointUnverified,
-  'debugIcon.breakpointCurrentStackframeForeground':
-    palette.grayWidgetBreakpointCurrent,
-  'debugIcon.breakpointStackframeForeground': palette.grayWidgetBreakpointStack,
-  'inlineChat.background': palette.grayWidgetInlineChat,
-  'inlineChat.foreground': palette.grayWidgetInlineChatForeground,
-  'inlineChat.border': palette.grayWidgetInlineChatBorder,
-  'inlineChatInput.placeholderForeground': palette.grayWidgetInlineChatInput,
+  'terminal.findMatchBackground': palette.purpleAlpha33,
+  'terminal.findMatchBorder': palette.blueAltAlpha00,
+  'terminal.findMatchHighlightBackground': palette.purpleAlpha40,
+
+  // Highlights
+  'editor.wordHighlightBackground': palette.foregroundAlpha1f,
+  'editor.wordHighlightStrongBackground': palette.selectionBlueAlpha33,
+  'editor.hoverHighlightBackground': palette.foregroundAlpha1f,
+  'editor.selectionHighlightBackground': palette.purpleAlpha40,
+  'editor.selectionHighlightBorder': palette.blueAltAlpha00,
+
+  // Toolbar & Debug
+  'toolbar.hoverBackground': palette.foregroundAlpha1f,
+  'toolbar.activeBackground': palette.blueAlpha33,
+  'toolbar.hoverOutline': palette.backgroundAlpha00,
+  'debugToolBar.background': palette.backgroundPanel,
+  'debugToolBar.border': palette.blueAlpha66,
+  'debugExceptionWidget.background': palette.backgroundPanel,
+  'debugExceptionWidget.border': palette.grayWidgetBorder,
+  'editor.stackFrameHighlightBackground': palette.foregroundAlpha1f,
+  'editor.focusedStackFrameHighlightBackground': palette.selectionBlueAlpha33,
+  'debugIcon.breakpointForeground': palette.red,
+  'debugIcon.breakpointDisabledForeground': palette.redAlpha80,
+  'debugIcon.breakpointUnverifiedForeground': palette.yellow,
+  'debugIcon.breakpointCurrentStackframeForeground': palette.blue,
+  'debugIcon.breakpointStackframeForeground': palette.blueAlphab3,
+
+  // Inline Chat
+  'inlineChat.background': '#182031', // Specific hardcoded value
+  'inlineChat.foreground': palette.white,
+  'inlineChat.border': palette.border,
+  'inlineChatInput.placeholderForeground': palette.foregroundInactive,
+
+  // Scrollbar & Minimap
   'scrollbar.shadow': palette.grayScrollbar,
-  'scrollbarSlider.background': palette.grayWidgetScrollbarSlider,
-  'scrollbarSlider.hoverBackground': palette.grayWidgetScrollbarSliderHover,
-  'scrollbarSlider.activeBackground': palette.grayWidgetScrollbarSliderActive,
-  'editor.rangeHighlightBackground': palette.grayWidgetRangeHighlight,
-  'editorOverviewRuler.findMatchForeground':
-    palette.grayWidgetOverviewRulerFindMatch,
-  'editorOverviewRuler.selectionHighlightForeground':
-    palette.grayWidgetOverviewRulerSelectionHighlight,
-  'editorOverviewRuler.rangeHighlightForeground':
-    palette.grayWidgetOverviewRulerRangeHighlight,
-  'editorOverviewRuler.wordHighlightForeground':
-    palette.grayWidgetOverviewRulerWordHighlight,
+  'scrollbarSlider.background': palette.foregroundAlpha1f,
+  'scrollbarSlider.hoverBackground': palette.selectionBlueAlpha29,
+  'scrollbarSlider.activeBackground': palette.selectionBlueAlpha33,
+  'editor.rangeHighlightBackground': palette.foregroundAlpha1f,
+  'editorOverviewRuler.findMatchForeground': palette.blueAltAlpha00,
+  'editorOverviewRuler.selectionHighlightForeground': palette.blueAltAlpha00,
+  'editorOverviewRuler.rangeHighlightForeground': palette.blueAlphaCC,
+  'editorOverviewRuler.wordHighlightForeground': palette.foregroundAlpha1f,
   'editorOverviewRuler.wordHighlightStrongForeground':
-    palette.grayWidgetOverviewRulerWordHighlightStrong,
-  'minimap.findMatchHighlight': palette.grayWidgetMinimapFindMatch,
-  'minimap.selectionHighlight': palette.grayWidgetMinimapSelectionHighlight,
-  'editorGroup.dropBackground': palette.grayWidgetEditorGroupDrop,
-  'list.dropBackground': palette.grayWidgetListDrop,
-  'panelSection.dropBackground': palette.grayWidgetPanelSectionDrop,
-  'terminal.dropBackground': palette.grayWidgetTerminalDrop,
+    palette.selectionBlueAlpha33,
+  'minimap.findMatchHighlight': palette.purpleAlpha80,
+  'minimap.selectionHighlight': palette.selectionBlueAlpha33,
+
+  // Drop Backgrounds
+  'editorGroup.dropBackground': palette.backgroundPanelAlpha33,
+  'list.dropBackground': palette.backgroundPanelAlpha33,
+  'panelSection.dropBackground': palette.backgroundPanelAlpha33,
+  'terminal.dropBackground': palette.backgroundPanelAlpha33,
 }

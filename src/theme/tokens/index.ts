@@ -1,15 +1,5 @@
-// Корневой модуль для токенов синтаксиса
-export {
-  TokenColor,
-  TokenModule,
-  createToken,
-  combineTokenModules,
-  updateTokenColors,
-  filterTokensByLanguage,
-  filterTokensByScope,
-} from '../token-utils'
-
-// Импорты модулей токенов для разных языков
+import { TokenColor } from '../token-utils'
+import { commonTokens } from './common'
 import { javascriptTokens } from './javascript'
 import { typescriptTokens } from './typescript'
 import { htmlTokens } from './html'
@@ -20,10 +10,9 @@ import { yamlTokens } from './yaml'
 import { pythonTokens } from './python'
 import { javaTokens } from './java'
 import { cppTokens } from './cpp'
-import { commonTokens } from './common'
 
-// Объединение всех токенов в один массив
-export const allTokens = [
+// Объединение всех токенов в один массив для использования в теме
+export const allTokens: TokenColor[] = [
   ...commonTokens,
   ...javascriptTokens,
   ...typescriptTokens,
