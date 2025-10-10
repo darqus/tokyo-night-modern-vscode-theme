@@ -39,6 +39,7 @@ Thumbs.db
 .git/**
 .gitignore
 .gitattributes
+.github
 
 # Package management
 package-lock.json
@@ -56,3 +57,7 @@ pnpm-lock.yaml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Custom project files to exclude from VSIX
+cspell.json
+firebase-debug.log
