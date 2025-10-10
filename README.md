@@ -1,119 +1,76 @@
+
 # 🌆 Tokyo Night Modern
 
-> A modern, meticulously balanced dark theme for VS Code — minimal base palette, declarative DSL mapping, full test guardrails.
+> A modern, balanced dark theme for VS Code. Minimalist palette, declarative generation, strict tests.
 
 ![Tokyo Night Modern](static/ss_tokyo_night_modern.png)
 
 ## 🎨 Overview
 
-- **12 base colors** → **406 workbench UI colors** (DSL‑generated)
-- WCAG‑aware contrast targets (advisory tests)
-- Zero hardcoded workbench colors – role‑driven interface layer
-- Declarative token DSL (`modernInterfaceMapping.ts`)
-- Partial snapshots for focused diffs
-- Full unit + structural validation (token count guard, forbidden list, alpha policies)
+- Generation of the entire theme from a declarative palette (`src/theme/palette.ts`)
+- All working colors and tokens — through code, without manual JSON edits
+- Structure validation and identity tests of the final file
+- No hardcoded colors — only roles and tokens
 
 ---
 
-### 🌎 Live Preview
+## Quick Start
 
-🔮 [Open in vscode.dev](https://vscode.dev/theme/lod-inc.tokyo-night-modern)
-
----
-
-### 🚀 Quick Start
-
-1. Open VS Code Extensions (`Ctrl+Shift+X`)
-2. Search “Tokyo Night Modern”
-3. Install & select **Tokyo Night Modern**
+1. Open VS Code, go to Extensions (`Ctrl+Shift+X`)
+2. Find "Tokyo Night Modern"
+3. Install and select the **Tokyo Night Modern** theme
 
 ---
 
-### 🏗️ Architecture (DSL 2.0)
+## 🏗️ Project Structure
 
 ```text
-12 base colors → 406 workbench colors → 13 syntax tokens
+src/theme/
+ palette.ts   # Palette and base colors
+ ui.ts        # Interface color mapping
+ tokens.ts    # Syntax tokens
+scripts/       # Build, validation, release
+themes/        # Final JSON for VS Code
+tests/         # Identity tests
 ```
-
-```text
-src/
-├── core/           # Base palette, interface roles, utilities
-├── generators/     # DSL + theme builder + token assembly
-├── types/          # Theme & palette types
-└── build.ts        # Build entry point
-
-Legacy engine + manual mapping removed in 2.0.0 (DSL is authoritative).
-```
-
-### 🎨 Palette Structure
-
-The color palette follows a semantic naming convention for improved clarity:
-
-- **Base colors**: `black`, `gray`, `light`, `white`, `blue`, `cyan`, `teal`, `purple`, `green`, `yellow`, `orange`, `red`, `magenta`
-- **Surface colors**: `bgPrimary`, `bgSecondary`, `bgTertiary`, `bgOverlay`
-- **Text colors**: `textDefault`, `textSecondary`, `textMuted`, `textSubtle`, `textInverse`
-- **State colors**: `stateSuccess`, `stateWarning`, `stateError`, `stateInfo`
-- **UI elements**: `buttonPrimary`, `borderDefault`, `linkDefault`
 
 ---
 
-### 🛠️ Development
+## 🛠️ Development and Build
 
 ```bash
 git clone https://github.com/darqus/tokyo-night-modern-vscode-theme.git
 cd tokyo-night-modern-vscode-theme
 npm install
-npm run build         # Build theme
-npm test              # Run test suite (unit + snapshots)
-npm run validate:all  # Validate + tests
-npm run docs:tokens   # Generate docs/TOKENS.md from DSL
-npm run test:coverage # Coverage report
+npm run build:theme      # Build theme (themes/tokyo-night-modern-color-theme.json)
+npm run test:theme       # Final file identity test
+npm run validate:theme   # Theme structure validation
+npm run build:vsix       # Build VSIX for publishing
 ```
 
 ---
+## 📊 Metrics (current)
 
-### 📊 Metrics (Guarded)
+| Metric | Value |
+|---------|----------|
+| Base colors | 30+ |
+| Interface colors | 400+ |
+| Syntax tokens | 40+ |
+| Tests | 1 (identity) |
+| Hardcoded colors | 0 |
 
-| Metric | Value | Status |
-|--------|-------|--------|
-| **Base colors** | 12 | ✅ |
-| **Workbench colors** | 406 | ✅ |
-| **Syntax tokens** | 13 | ✅ |
-| **Tests** | 130 | ✅ |
-| **Build time** | ~0.7–1.0s | ✅ |
-| **Hardcoded colors** | 0 | ✅ |
-
----
-
-### 📚 Documentation
-
-- [Quick Start](docs/QUICK_START.md) - Installation and setup
-- [Development](docs/DEVELOPMENT.md) - Build and contribute
-- [Colors](docs/COLORS.md) - Color palette reference
-- [Theme Analysis](docs/THEME_ANALYSIS.md) - Architecture deep dive
-- [Tokens](docs/TOKENS.md) - Auto‑generated token table (DSL)
-- [Color Engine (sRGB vs OKLCH)](docs/COLOR_ENGINE.md) - Rules for color operations and transparency
-- [Release & Versioning](docs/RELEASE_VERSIONING.md) - Automated releases and version rules
-- [Contributing](docs/CONTRIBUTING.md) - Guidelines for contributing
 
 ---
+## 📄 License
 
-### 📄 License
+MIT License — see [LICENSE](LICENSE)
 
-MIT License - see [LICENSE](LICENSE) for details.
 
 ---
+## 🌆 About the Project
 
-### 🔥 2.0.0 Breaking Changes
-
-- Removed legacy files: `interfaceMapping.ts`, `themeEngine.ts`, related types
-- Migration: import `createTokens` from `modernInterfaceMapping.ts`
-- Added partial snapshots (core / lists_panels / terminal_widgets)
-- Added token documentation generator (`docs:tokens`)
-
-### 🌆 Tokyo Night Modern
-
-Crafted with ❤️ for long coding sessions.
+Made with ❤️ for long coding sessions.
 
 ⭐ GitHub: <https://github.com/darqus/tokyo-night-modern-vscode-theme>
 📦 Marketplace: <https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern>
+
