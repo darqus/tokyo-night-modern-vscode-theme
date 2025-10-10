@@ -50,7 +50,7 @@
     "docs:tokens": "ts-node scripts/generate-token-docs.ts",
     "docs:colors": "ts-node scripts/generate-color-docs.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
-    "release": "standard-version"
+    "release": "ts-node scripts/release.ts"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
