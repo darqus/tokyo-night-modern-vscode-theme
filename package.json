@@ -44,11 +44,9 @@
   },
   "scripts": {
     "build:theme": "ts-node scripts/build-theme.ts",
+    "build:theme:watch": "ts-node-dev --respawn --watch src/theme --watch scripts/build-theme.ts scripts/build-theme.ts",
     "test:theme": "jest tests/theme-identical.test.ts",
     "validate:theme": "ts-node scripts/validate-theme.ts",
-    "build:theme:watch": "ts-node-dev --respawn --watch src/theme --watch scripts/build-theme.ts scripts/build-theme.ts",
-    "docs:tokens": "ts-node scripts/generate-token-docs.ts",
-    "docs:colors": "ts-node scripts/generate-color-docs.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
     "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts"
