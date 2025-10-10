@@ -48,7 +48,6 @@
     "test:theme": "jest tests/theme-identical.test.ts",
     "validate:theme": "ts-node scripts/validate-theme.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
-    "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts"
   },
   "devDependencies": {
