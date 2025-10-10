@@ -42,6 +42,7 @@ Thumbs.db
 .github
 
 # Package management
+package.json
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
@@ -59,5 +60,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Custom project files to exclude from VSIX
+*.md
 cspell.json
 firebase-debug.log
