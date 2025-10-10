@@ -205,7 +205,6 @@
     "peekViewResult.matchHighlightBackground": "#7dcfff2e",
     "peekViewResult.selectionBackground": "#7dcfff33",
     "list.filterMatchBackground": "#b18af840",
-    "list.filterMatchBorder": "#29acf800",
     "searchEditor.findMatchBackground": "#b18af840",
     "searchEditor.findMatchBorder": "#29acf800",
     "editor.findMatchBackground": "#b18af833",
