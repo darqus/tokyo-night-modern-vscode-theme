@@ -151,7 +151,7 @@ class ReleaseManager {
 
   private buildProject(): void {
     console.log('🏗️  Building project...')
-    this.exec('npm run build')
+    this.exec('npm run build:theme')
     console.log('✅ Build completed')
   }
 
