@@ -2,8 +2,11 @@ import { execSync } from 'child_process'
 import path from 'path'
 import fs from 'fs'
 
-// Имя итогового файла
-const VSIX_NAME = 'tokyo-night-modern-2.0.33.vsix'
+// Получаем версию из package.json
+const pkg = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf-8')
+)
+const VSIX_NAME = `tokyo-night-modern-${pkg.version}.vsix`
 
 // Путь к папке с расширением (предполагается, что build-theme уже сгенерировал нужные файлы)
 const EXT_DIR = path.resolve(__dirname, '../')
