@@ -14,7 +14,7 @@ export const toolbarDebugColors = {
   'debugExceptionWidget.background': palette.backgroundPanel, // Фон виджета исключений отладки
   'debugExceptionWidget.border': palette.grayWidgetBorder, // Граница виджета исключений отладки
   'editor.stackFrameHighlightBackground': palette.foregroundAlpha1f, // Фон подсветки стека вызовов в редакторе
-  'editor.focusedStackFrameHighlightBackground': palette.selectionBlueAlpha33, // Фон подсветки фокусированного стека вызовов в редакторе
+  'editor.focusedStackFrameHighlightBackground': palette.selectionAlpha33, // Фон подсветки фокусированного стека вызовов в редакторе
   'debugIcon.breakpointForeground': palette.red, // Цвет иконки точки останова
   'debugIcon.breakpointDisabledForeground': palette.redAlpha80, // Цвет отключенной иконки точки останова
   'debugIcon.breakpointUnverifiedForeground': palette.yellow, // Цвет непроверенной иконки точки останова

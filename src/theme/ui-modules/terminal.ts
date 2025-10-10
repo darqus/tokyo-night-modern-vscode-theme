@@ -8,7 +8,7 @@ export const terminalColors = {
   // Terminal
   'terminal.background': palette.background, // Фон терминала
   'terminal.foreground': palette.foreground, // Цвет текста в терминале
-  'terminal.selectionBackground': palette.selectionBlueAlpha33, // Фон выделенного текста в терминале
+  'terminal.selectionBackground': palette.selectionAlpha33, // Фон выделенного текста в терминале
   'terminal.inactiveSelectionBackground': palette.foregroundAlpha1f, // Фон неактивного выделения в терминале
   'terminal.border': palette.border, // Граница терминала
   'terminal.hoverHighlightBackground': palette.grayScrollbarSliderHover, // Фон подсветки при наведении в терминале
@@ -28,7 +28,7 @@ export const terminalColors = {
   'terminal.ansiBrightMagenta': palette.terminalBrightMagenta, // Ярко-пурпурный ANSI цвет
   'terminal.ansiBrightCyan': palette.blueAlt, // Ярко-голубой ANSI цвет
   'terminal.ansiBrightWhite': palette.white, // Ярко-белый ANSI цвет
-  'terminalCommandDecoration.defaultBackground': palette.selectionBlueAlpha33, // Фон декорации команды по умолчанию
+  'terminalCommandDecoration.defaultBackground': palette.selectionAlpha33, // Фон декорации команды по умолчанию
   'terminalCommandDecoration.successBackground': palette.greenAlpha33, // Фон успешной декорации команды
   'terminalCommandDecoration.errorBackground': palette.redAlpha33, // Фон ошибки декорации команды
 }

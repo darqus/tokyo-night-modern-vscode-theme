@@ -12,5 +12,5 @@ export const generalUIColors = {
   disabledForeground: palette.foregroundAlt, // Цвет текста для отключенных элементов
   focusBorder: palette.backgroundAlpha00, // Граница фокуса (прозрачная)
   errorForeground: palette.red, // Цвет текста ошибок
-  'selection.background': palette.selectionBlueAlpha33, // Фон выделенного текста
+  'selection.background': palette.selectionAlpha66, // Фон выделенного текста
 }
