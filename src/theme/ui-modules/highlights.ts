@@ -7,7 +7,7 @@ import { palette } from '../palette'
 export const highlightColors = {
   // Highlights
   'editor.wordHighlightBackground': palette.foregroundAlpha1f, // Фон подсветки слова
-  'editor.wordHighlightStrongBackground': palette.selectionBlueAlpha33, // Фон сильной подсветки слова
+  'editor.wordHighlightStrongBackground': palette.selectionAlpha33, // Фон сильной подсветки слова
   'editor.hoverHighlightBackground': palette.foregroundAlpha1f, // Фон подсветки при наведении
   'editor.selectionHighlightBackground': palette.purpleAlpha40, // Фон подсветки выделения
   'editor.selectionHighlightBorder': palette.blueAltAlpha00, // Граница подсветки выделения

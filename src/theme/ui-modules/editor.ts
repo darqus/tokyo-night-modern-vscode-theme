@@ -8,7 +8,7 @@ export const editorColors = {
   // Editor
   'editor.background': palette.background, // Фон редактора
   'editor.foreground': palette.foreground, // Цвет текста в редакторе
-  'editor.selectionBackground': palette.selectionBlueAlpha33, // Фон выделенного текста
+  'editor.selectionBackground': palette.selectionAlpha33, // Фон выделенного текста
   'editor.inactiveSelectionBackground': palette.foregroundAlpha1f, // Фон неактивного выделения
   'editor.lineHighlightBackground': palette.foregroundAlpha1f, // Фон подсветки строки
   'editorLineNumber.foreground': palette.grayDark, // Цвет номеров строк

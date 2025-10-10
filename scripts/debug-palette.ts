@@ -11,15 +11,15 @@ const problemKeys = [
   'accentYellow',
   'alpha1a',
   'alpha0d',
-  'selectionBlueAlpha',
+  'selectionAlpha',
   'alpha1fFull',
   'editorLineNumberActive',
   'activityBarInactive',
   'accentBlueAlt',
   'grayDark',
-  'selectionBlueAlphaLight',
-  'selectionBlueAlphaMid',
-  'selectionBlueAlphaBorder',
+  'selectionAlphaLight',
+  'selectionAlphaMid',
+  'selectionAlphaBorder',
   'alpha33',
   'alpha59',
   'alpha00',
@@ -147,17 +147,59 @@ problemKeys.forEach((key) => {
 import { combineColorWithAlpha } from '../src/theme/color-utils'
 
 console.log('\nChecking specific combinations:')
-console.log('accentGreen + alpha1f:', combineColorWithAlpha(palette.accentGreen, palette.alpha1f))
-console.log('accentRed + alpha1f:', combineColorWithAlpha(palette.accentRed, palette.alpha1f))
-console.log('accentGreen + alpha14:', combineColorWithAlpha(palette.accentGreen, palette.alpha14))
-console.log('accentRed + alpha14:', combineColorWithAlpha(palette.accentRed, palette.alpha14))
-console.log('accentBlue + alpha1f:', combineColorWithAlpha(palette.accentBlue, palette.alpha1f))
-console.log('accentGreen + alpha0f:', combineColorWithAlpha(palette.accentGreen, palette.alpha0f))
-console.log('accentBlue + alpha0f:', combineColorWithAlpha(palette.accentBlue, palette.alpha0f))
-console.log('accentYellow + alpha1a:', combineColorWithAlpha(palette.accentYellow, palette.alpha1a))
-console.log('accentYellow + alpha0d:', combineColorWithAlpha(palette.accentYellow, palette.alpha0d))
-console.log('accentGreen + alpha33:', combineColorWithAlpha(palette.accentGreen, palette.alpha33))
-console.log('accentBlueAlt + alpha59:', combineColorWithAlpha(palette.accentBlueAlt, palette.alpha59))
-console.log('background + alphaCC:', combineColorWithAlpha(palette.background, palette.alphaCC))
-console.log('foreground + alphaCC:', combineColorWithAlpha(palette.foreground, palette.alphaCC))
-console.log('foregroundAlt + alpha99:', combineColorWithAlpha(palette.foregroundAlt, palette.alpha99))
+console.log(
+  'accentGreen + alpha1f:',
+  combineColorWithAlpha(palette.accentGreen, palette.alpha1f)
+)
+console.log(
+  'accentRed + alpha1f:',
+  combineColorWithAlpha(palette.accentRed, palette.alpha1f)
+)
+console.log(
+  'accentGreen + alpha14:',
+  combineColorWithAlpha(palette.accentGreen, palette.alpha14)
+)
+console.log(
+  'accentRed + alpha14:',
+  combineColorWithAlpha(palette.accentRed, palette.alpha14)
+)
+console.log(
+  'accentBlue + alpha1f:',
+  combineColorWithAlpha(palette.accentBlue, palette.alpha1f)
+)
+console.log(
+  'accentGreen + alpha0f:',
+  combineColorWithAlpha(palette.accentGreen, palette.alpha0f)
+)
+console.log(
+  'accentBlue + alpha0f:',
+  combineColorWithAlpha(palette.accentBlue, palette.alpha0f)
+)
+console.log(
+  'accentYellow + alpha1a:',
+  combineColorWithAlpha(palette.accentYellow, palette.alpha1a)
+)
+console.log(
+  'accentYellow + alpha0d:',
+  combineColorWithAlpha(palette.accentYellow, palette.alpha0d)
+)
+console.log(
+  'accentGreen + alpha33:',
+  combineColorWithAlpha(palette.accentGreen, palette.alpha33)
+)
+console.log(
+  'accentBlueAlt + alpha59:',
+  combineColorWithAlpha(palette.accentBlueAlt, palette.alpha59)
+)
+console.log(
+  'background + alphaCC:',
+  combineColorWithAlpha(palette.background, palette.alphaCC)
+)
+console.log(
+  'foreground + alphaCC:',
+  combineColorWithAlpha(palette.foreground, palette.alphaCC)
+)
+console.log(
+  'foregroundAlt + alpha99:',
+  combineColorWithAlpha(palette.foregroundAlt, palette.alpha99)
+)

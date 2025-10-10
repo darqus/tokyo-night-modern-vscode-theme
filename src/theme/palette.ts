@@ -94,7 +94,7 @@ const uiColors: ColorPalette = {
   hoverWidgetHighlight: '#43b6f9',
 
   // Special selections and highlights
-  selectionBlue: '#88b0ff',
+  selection: '#b620d4',
 }
 
 // 5. Альфа-значения (единственный источник правды для прозрачности)
