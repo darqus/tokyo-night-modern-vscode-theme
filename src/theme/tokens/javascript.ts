@@ -1,5 +1,6 @@
 // Токены синтаксиса для JavaScript
 import { TokenColor } from '../token-utils';
+import { palette } from '../palette';
 
 export const javascriptTokens: TokenColor[] = [
   {
@@ -11,7 +12,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.control.switch',
     ],
     settings: {
-      foreground: '#b18af8'
+      foreground: palette.purple
     }
  },
   {
@@ -23,7 +24,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.definitelytyped',
     ],
     settings: {
-      foreground: '#9d7cd8'
+      foreground: palette.purpleAlt
     }
  },
   {
@@ -35,7 +36,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.control.as',
     ],
     settings: {
-      foreground: '#7dcfff'
+      foreground: palette.blue
     }
   },
  {
@@ -48,7 +49,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.implements',
     ],
     settings: {
-      foreground: '#f7de70'
+      foreground: palette.yellow
     }
   },
   {
@@ -60,7 +61,7 @@ export const javascriptTokens: TokenColor[] = [
       'storage.modifier.readonly',
     ],
     settings: {
-      foreground: '#a582e5'
+      foreground: palette.keywordAccess
     }
  },
   {
@@ -71,14 +72,14 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.await',
     ],
     settings: {
-      foreground: '#7aa2f7'
+      foreground: palette.keywordAsync
     }
   },
   {
     name: 'JavaScript: String Template',
     scope: ['string.template', 'string.quasi'],
     settings: {
-      foreground: '#96cab6'
+      foreground: palette.teal
     }
  },
   {
@@ -88,21 +89,21 @@ export const javascriptTokens: TokenColor[] = [
       'punctuation.definition.template-expression',
     ],
     settings: {
-      foreground: '#96cab6'
+      foreground: palette.teal
     }
   },
   {
     name: 'JavaScript: Function Parameter',
     scope: ['variable.parameter', 'meta.parameters variable'],
     settings: {
-      foreground: '#accbf8'
+      foreground: palette.funcParam
     }
  },
   {
     name: 'JavaScript: Method Call',
     scope: ['variable.function', 'entity.name.function.member'],
     settings: {
-      foreground: '#7aa2f7',
+      foreground: palette.keywordAsync,
       fontStyle: 'bold'
     }
  },
@@ -110,140 +111,140 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Function Declaration',
     scope: ['entity.name.function', 'meta.function-call entity.name.function'],
     settings: {
-      foreground: '#7aa2f7'
+      foreground: palette.keywordAsync
     }
   },
   {
     name: 'JavaScript: Class Name',
     scope: ['entity.name.class', 'entity.name.type.class'],
     settings: {
-      foreground: '#f7de70'
+      foreground: palette.yellow
     }
   },
   {
     name: 'JavaScript: Interface Name',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: '#c6d8a9'
+      foreground: palette.interface
     }
  },
   {
     name: 'JavaScript: Enum Name',
     scope: ['entity.name.type.enum'],
     settings: {
-      foreground: '#f4c572'
+      foreground: palette.enum
     }
   },
  {
     name: 'JavaScript: Namespace',
     scope: ['entity.name.namespace', 'entity.name.type.module'],
     settings: {
-      foreground: '#87b6f3'
+      foreground: palette.namespace
     }
   },
   {
     name: 'JavaScript: Primitive Type',
     scope: ['support.type.primitive', 'keyword.type'],
     settings: {
-      foreground: '#73daca'
+      foreground: palette.cyan
     }
   },
  {
     name: 'JavaScript: Generic Type Parameter',
     scope: ['entity.name.type.parameter'],
     settings: {
-      foreground: '#e1d6a5'
+      foreground: palette.typeParam
     }
   },
   {
     name: 'JavaScript: Union Type Operator',
     scope: ['keyword.operator.type.union'],
     settings: {
-      foreground: '#9d7cd8'
+      foreground: palette.purpleAlt
     }
  },
   {
     name: 'JavaScript: Built-in Type',
     scope: ['support.type.builtin'],
     settings: {
-      foreground: '#77bee1'
+      foreground: palette.builtinType
     }
   },
   {
     name: 'JavaScript: Custom Type',
     scope: ['entity.name.type'],
     settings: {
-      foreground: '#f7de70'
+      foreground: palette.yellow
     }
  },
   {
     name: 'JavaScript: Arithmetic Operator',
     scope: ['keyword.operator.arithmetic'],
     settings: {
-      foreground: '#9d7cd8'
+      foreground: palette.purpleAlt
     }
   },
  {
     name: 'JavaScript: Comparison Operator',
     scope: ['keyword.operator.comparison', 'keyword.operator.relational'],
     settings: {
-      foreground: '#a783e8'
+      foreground: palette.comparisonOp
     }
   },
  {
     name: 'JavaScript: Logical Operator',
     scope: ['keyword.operator.logical'],
     settings: {
-      foreground: '#b18af8'
+      foreground: palette.purple
     }
   },
   {
     name: 'JavaScript: Assignment Operator',
     scope: ['keyword.operator.assignment'],
     settings: {
-      foreground: '#a893e1'
+      foreground: palette.assignOp
     }
   },
   {
     name: 'JavaScript: Ternary Operator',
     scope: ['keyword.operator.ternary'],
     settings: {
-      foreground: '#7dcfff'
+      foreground: palette.blue
     }
  },
   {
     name: 'JavaScript: Spread Operator',
     scope: ['keyword.operator.spread', 'keyword.operator.rest'],
     settings: {
-      foreground: '#7cbdfc'
+      foreground: palette.spreadOp
     }
   },
   {
     name: 'JavaScript: Decorator',
     scope: ['entity.name.function.decorator', 'punctuation.decorator'],
     settings: {
-      foreground: '#f0ac74'
+      foreground: palette.orange
     }
   },
   {
     name: 'JavaScript: Annotation',
     scope: ['storage.type.annotation'],
     settings: {
-      foreground: '#f4c572'
+      foreground: palette.annotation
     }
   },
   {
     name: 'JavaScript: Attribute',
     scope: ['entity.other.attribute-name.attribute'],
     settings: {
-      foreground: '#f5cf71'
+      foreground: palette.attribute
     }
   },
   {
     name: 'JavaScript: Pragma/Directive',
     scope: ['meta.preprocessor', 'keyword.other.directive'],
     settings: {
-      foreground: '#729bcb'
+      foreground: palette.pragma
     }
   }
 ];

@@ -1,5 +1,6 @@
 // Токены синтаксиса для Vue
 import { TokenColor } from '../token-utils';
+import { palette } from '../palette';
 
 export const vueTokens: TokenColor[] = [
   {
@@ -9,14 +10,14 @@ export const vueTokens: TokenColor[] = [
       'punctuation.definition.interpolation.end.vue',
     ],
     settings: {
-      foreground: '#7dcfff',
+      foreground: palette.blue,
     },
   },
   {
     name: 'Vue: Directive',
     scope: ['entity.name.tag.directive.vue'],
     settings: {
-      foreground: '#b18af8',
+      foreground: palette.purple,
       fontStyle: 'italic',
     },
   },
@@ -24,7 +25,7 @@ export const vueTokens: TokenColor[] = [
     name: 'Vue: Directive Attribute',
     scope: ['entity.other.attribute-name.directive.vue'],
     settings: {
-      foreground: '#f0ac74',
+      foreground: palette.orange,
       fontStyle: 'italic',
     },
   },
@@ -34,7 +35,7 @@ export const vueTokens: TokenColor[] = [
       'support.function.import.vue', // ref, reactive, computed, etc.
     ],
     settings: {
-      foreground: '#7aa2f7',
+      foreground: palette.keywordAsync,
     },
   },
   {
@@ -43,7 +44,7 @@ export const vueTokens: TokenColor[] = [
       'variable.other.property.pinia', // properties in Pinia stores
     ],
     settings: {
-      foreground: '#accbf8',
+      foreground: palette.funcParam,
     },
   },
   {
@@ -52,7 +53,7 @@ export const vueTokens: TokenColor[] = [
         'entity.name.function.pinia', // getters and actions in Pinia
     ],
     settings: {
-        foreground: '#7aa2f7',
+        foreground: palette.keywordAsync,
         fontStyle: 'bold'
     }
   }
