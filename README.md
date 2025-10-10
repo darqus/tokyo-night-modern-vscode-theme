@@ -1,4 +1,3 @@
-
 # 🌆 Tokyo Night Modern
 
 > A modern, balanced dark theme for VS Code. Minimalist palette, declarative generation, strict tests.
@@ -49,6 +48,7 @@ npm run build:vsix       # Build VSIX for publishing
 ```
 
 ---
+
 ## 📊 Metrics (current)
 
 | Metric | Value |
@@ -59,18 +59,18 @@ npm run build:vsix       # Build VSIX for publishing
 | Tests | 1 (identity) |
 | Hardcoded colors | 0 |
 
-
 ---
+
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE)
 
-
 ---
+
 ## 🌆 About the Project
 
 Made with ❤️ for long coding sessions.
 
 ⭐ GitHub: <https://github.com/darqus/tokyo-night-modern-vscode-theme>
-📦 Marketplace: <https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern>
 
+📦 Marketplace: <https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern>
