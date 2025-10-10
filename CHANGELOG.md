@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.4](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.1.0...v2.2.4) (2025-10-10)
+
+
+### Features
+
+* update version to 2.1.2 and add package script ([d9080b7](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/d9080b72ac625d1882d75146ec893d5691eddb98)), closes [#123](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/123)
+
 ## [2.1.0](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.0.33...v2.1.0) (2025-10-10)
 
 
