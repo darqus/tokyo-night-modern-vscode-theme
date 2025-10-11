@@ -1,16 +1,14 @@
-import fs from 'fs'
-import path from 'path'
+import { colors } from '../src/theme/ui'
+import { tokenColors } from '../src/theme/tokens'
 
-describe('Theme generator output', () => {
-  it('should generate a file identical to the original', () => {
-    const generated = fs.readFileSync(
-      path.join(__dirname, '../themes/tokyo-night-modern-color-theme.json'),
-      'utf8'
-    )
-    const original = fs.readFileSync(
-      path.join(__dirname, '../themes/tokyo-night-modern-color-theme.json'),
-      'utf8'
-    )
-    expect(generated).toBe(original)
+describe('Theme', () => {
+  it('should match the snapshot', () => {
+    const theme = {
+      name: 'Tokyo Night Modern',
+      type: 'dark',
+      colors,
+      tokenColors,
+    }
+    expect(theme).toMatchSnapshot()
   })
 })
