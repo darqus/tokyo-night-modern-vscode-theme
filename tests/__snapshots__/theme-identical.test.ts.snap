@@ -4,13 +4,13 @@ exports[`Theme should match the snapshot 1`] = `
 {
   "colors": {
     "activityBar.activeBackground": "#1a1b26",
-    "activityBar.activeBorder": "#7dcfff",
-    "activityBar.activeFocusBorder": "#7dcfff",
+    "activityBar.activeBorder": "#7aa2f7",
+    "activityBar.activeFocusBorder": "#7aa2f7",
     "activityBar.background": "#1f2230",
-    "activityBar.border": "#202230",
-    "activityBar.dropBorder": "#7dcfff",
-    "activityBar.foreground": "#7b87b6",
-    "activityBar.inactiveForeground": "#4f577b",
+    "activityBar.border": "#1a1b26",
+    "activityBar.dropBorder": "#7aa2f7",
+    "activityBar.foreground": "#7aa2f7",
+    "activityBar.inactiveForeground": "#7b87b6",
     "activityBarBadge.background": "#0078d4",
     "activityBarBadge.foreground": "#ffffff",
     "activityErrorBadge.background": "#f38095",
@@ -20,7 +20,7 @@ exports[`Theme should match the snapshot 1`] = `
     "badge.background": "#0078d4",
     "badge.foreground": "#ffffff",
     "button.background": "#0078d4",
-    "button.border": "#29acf8",
+    "button.border": "#2f477b",
     "button.foreground": "#ffffff",
     "button.hoverBackground": "#1f88d9",
     "button.secondaryBackground": "#1f2230",
@@ -32,48 +32,48 @@ exports[`Theme should match the snapshot 1`] = `
     "commandCenter.border": "#202230",
     "debugExceptionWidget.background": "#232739",
     "debugExceptionWidget.border": "#363c55",
-    "debugIcon.breakpointCurrentStackframeForeground": "#7dcfff",
-    "debugIcon.breakpointDisabledForeground": "#f3809580",
-    "debugIcon.breakpointForeground": "#f38095",
+    "debugIcon.breakpointCurrentStackframeForeground": "#7aa2f7",
+    "debugIcon.breakpointDisabledForeground": "#f7768e80",
+    "debugIcon.breakpointForeground": "#f7768e",
     "debugIcon.breakpointStackframeForeground": undefined,
-    "debugIcon.breakpointUnverifiedForeground": "#f7de70",
+    "debugIcon.breakpointUnverifiedForeground": "#e0af68",
     "debugToolBar.background": "#232739",
-    "debugToolBar.border": "#7dcfff66",
+    "debugToolBar.border": "#7aa2f766",
     "descriptionForeground": "#7b87b6",
     "diffEditor.diagonalFill": "#232739",
-    "diffEditor.insertedLineBackground": "#a7c78514",
-    "diffEditor.insertedTextBackground": "#a7c7851f",
-    "diffEditor.removedLineBackground": "#f3809514",
-    "diffEditor.removedTextBackground": "#f380951f",
+    "diffEditor.insertedLineBackground": "#9ece6a14",
+    "diffEditor.insertedTextBackground": "#9ece6a1f",
+    "diffEditor.removedLineBackground": "#f7768e14",
+    "diffEditor.removedTextBackground": "#f7768e1f",
     "disabledForeground": "#7b87b6",
     "dropdown.background": "#1a1b26",
     "dropdown.border": "#202230",
     "dropdown.foreground": "#9aaae9",
     "dropdown.listBackground": "#1a1b26",
     "editor.background": "#1a1b26",
-    "editor.findMatchBackground": "#b18af833",
-    "editor.findMatchBorder": "#29acf800",
+    "editor.findMatchBackground": "#bb9af733",
+    "editor.findMatchBorder": "#2f477b00",
     "editor.findMatchForeground": "#9aaae9",
-    "editor.findMatchHighlightBackground": "#b18af840",
-    "editor.focusedStackFrameHighlightBackground": "#b620d433",
+    "editor.findMatchHighlightBackground": "#bb9af740",
+    "editor.focusedStackFrameHighlightBackground": "#2358ca33",
     "editor.foldPlaceholderForeground": "#7b87b6",
     "editor.foreground": "#9aaae9",
     "editor.hoverHighlightBackground": "#9aaae91f",
-    "editor.inactiveSelectionBackground": "#9aaae91f",
-    "editor.lineHighlightBackground": "#9aaae91f",
+    "editor.inactiveSelectionBackground": "#1a1b2600",
+    "editor.lineHighlightBackground": "#1f2230",
     "editor.placeholder.foreground": "#6b78a8",
     "editor.rangeHighlightBackground": "#9aaae91f",
-    "editor.selectionBackground": "#b620d433",
-    "editor.selectionHighlightBackground": "#b18af840",
-    "editor.selectionHighlightBorder": "#29acf800",
+    "editor.selectionBackground": "#2358ca",
+    "editor.selectionHighlightBackground": "#bb9af740",
+    "editor.selectionHighlightBorder": "#2f477b00",
     "editor.stackFrameHighlightBackground": "#9aaae91f",
     "editor.wordHighlightBackground": "#9aaae91f",
-    "editor.wordHighlightStrongBackground": "#b620d433",
-    "editorCursor.foreground": "#7b87b6",
+    "editor.wordHighlightStrongBackground": "#2358ca33",
+    "editorCursor.foreground": "#9aaae9",
     "editorGroup.border": "#202230",
     "editorGroup.dropBackground": "#23273933",
     "editorGroup.emptyBackground": "#1a1b26",
-    "editorGroup.focusedEmptyBorder": "#7dcfff",
+    "editorGroup.focusedEmptyBorder": "#7aa2f7",
     "editorGroupHeader.noTabsBackground": "#1f2230",
     "editorGroupHeader.tabsBackground": "#1f2230",
     "editorGroupHeader.tabsBorder": "#202230",
@@ -81,32 +81,32 @@ exports[`Theme should match the snapshot 1`] = `
     "editorHoverWidget.border": "#363c55",
     "editorHoverWidget.foreground": "#9aaae9",
     "editorHoverWidget.highlightForeground": "#43b6f9",
-    "editorIndentGuide.activeBackground1": "#7dcfff",
-    "editorIndentGuide.background1": "#202230",
-    "editorLineNumber.activeForeground": "#6f89b9",
+    "editorIndentGuide.activeBackground1": "#202230",
+    "editorIndentGuide.background1": "#1f2230",
+    "editorLineNumber.activeForeground": "#9aaae9",
     "editorLineNumber.foreground": "#363c54",
-    "editorLink.activeForeground": "#29acf8",
-    "editorOverviewRuler.findMatchForeground": "#29acf800",
+    "editorLink.activeForeground": "#2f477b",
+    "editorOverviewRuler.findMatchForeground": "#2f477b00",
     "editorOverviewRuler.rangeHighlightForeground": undefined,
-    "editorOverviewRuler.selectionHighlightForeground": "#29acf800",
+    "editorOverviewRuler.selectionHighlightForeground": "#2f477b00",
     "editorOverviewRuler.wordHighlightForeground": "#9aaae91f",
-    "editorOverviewRuler.wordHighlightStrongForeground": "#b620d433",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#2358ca33",
     "editorStickyScroll.background": "#1f2230",
     "editorStickyScrollHover.background": "#9aaae91f",
     "editorSuggestWidget.background": "#232739",
     "editorSuggestWidget.border": "#363c55",
-    "editorSuggestWidget.highlightForeground": "#29acf8",
-    "editorSuggestWidget.selectedBackground": "#b620d433",
+    "editorSuggestWidget.highlightForeground": "#2f477b",
+    "editorSuggestWidget.selectedBackground": "#2358ca33",
     "editorSuggestWidget.selectedForeground": "#9aaae9",
     "editorSuggestWidget.selectedIconForeground": "#9aaae9",
     "editorWidget.background": "#1f2230",
     "editorWidget.border": "#363c55",
-    "errorForeground": "#f38095",
+    "errorForeground": "#f7768e",
     "extensionBadge.remoteBackground": "#0078d4",
     "extensionBadge.remoteForeground": "#ffffff",
-    "focusBorder": "#1a1b2600",
+    "focusBorder": "#202230",
     "foreground": "#9aaae9",
-    "icon.foreground": "#6b78a8",
+    "icon.foreground": "#9aaae9",
     "inlineChat.background": "#182031",
     "inlineChat.border": "#202230",
     "inlineChat.foreground": "#ffffff",
@@ -115,15 +115,15 @@ exports[`Theme should match the snapshot 1`] = `
     "input.border": "#202230",
     "input.foreground": "#9aaae9",
     "input.placeholderForeground": "#6b78a8",
-    "inputOption.activeBorder": "#29acf8",
-    "list.activeSelectionBackground": "#b620d433",
+    "inputOption.activeBorder": "#2f477b",
+    "list.activeSelectionBackground": "#2358ca33",
     "list.activeSelectionForeground": "#9aaae9",
     "list.dropBackground": "#23273933",
-    "list.filterMatchBackground": "#b18af840",
+    "list.filterMatchBackground": "#bb9af740",
     "list.filterMatchBorder": undefined,
-    "list.focusBackground": "#b620d433",
+    "list.focusBackground": "#2358ca33",
     "list.focusForeground": "#9aaae9",
-    "list.highlightForeground": "#29acf8",
+    "list.highlightForeground": "#2f477b",
     "list.hoverBackground": "#9aaae91f",
     "list.hoverForeground": "#9aaae9",
     "list.inactiveSelectionBackground": "#9aaae91f",
@@ -132,56 +132,56 @@ exports[`Theme should match the snapshot 1`] = `
     "menu.border": "#202230",
     "menu.foreground": "#9aaae9",
     "menu.selectionBackground": "#1a1b2600",
-    "menu.selectionBorder": "#29acf8",
+    "menu.selectionBorder": "#2f477b",
     "menu.selectionForeground": "#9aaae9",
     "menu.separatorBackground": "#363c55",
     "menubar.selectionBackground": "#1a1b2600",
-    "menubar.selectionBorder": "#29acf8",
+    "menubar.selectionBorder": "#2f477b",
     "menubar.selectionForeground": "#9aaae9",
     "merge.border": "#202230",
-    "merge.commonContentBackground": "#f7de700d",
-    "merge.commonHeaderBackground": "#f7de701a",
-    "merge.currentContentBackground": "#a7c7850f",
-    "merge.currentHeaderBackground": "#a7c7851f",
-    "merge.incomingContentBackground": "#7dcfff0f",
-    "merge.incomingHeaderBackground": "#7dcfff1f",
-    "minimap.findMatchHighlight": "#b18af880",
-    "minimap.selectionHighlight": "#b620d433",
+    "merge.commonContentBackground": "#e0af680d",
+    "merge.commonHeaderBackground": "#e0af681a",
+    "merge.currentContentBackground": "#9ece6a0f",
+    "merge.currentHeaderBackground": "#9ece6a1f",
+    "merge.incomingContentBackground": "#7aa2f70f",
+    "merge.incomingHeaderBackground": "#7aa2f71f",
+    "minimap.findMatchHighlight": "#bb9af780",
+    "minimap.selectionHighlight": "#2358ca33",
     "notifications.background": "#1f2230",
     "notifications.border": "#202230",
     "notifications.foreground": "#9aaae9",
     "panel.background": "#1a1b26",
     "panel.border": "#202230",
-    "panel.dropBorder": "#7dcfff",
+    "panel.dropBorder": "#7aa2f7",
     "panelSection.border": "#363c54",
     "panelSection.dropBackground": "#23273933",
     "panelSectionHeader.background": "#1a1b26",
     "panelSectionHeader.border": "#363c54",
     "panelSectionHeader.foreground": "#9aaae9",
-    "panelTitle.activeBorder": "#7dcfff",
+    "panelTitle.activeBorder": "#7aa2f7",
     "panelTitle.activeForeground": "#9aaae9",
     "panelTitle.border": "#202230",
     "panelTitle.inactiveForeground": "#7b87b6",
     "panelTitleBadge.background": "#0078d4",
     "panelTitleBadge.foreground": "#ffffff",
     "peekViewEditor.background": "#1f2230",
-    "peekViewEditor.matchHighlightBackground": "#7dcfff2e",
+    "peekViewEditor.matchHighlightBackground": "#7aa2f72e",
     "peekViewResult.background": "#1f2230",
-    "peekViewResult.matchHighlightBackground": "#7dcfff2e",
-    "peekViewResult.selectionBackground": "#7dcfff33",
+    "peekViewResult.matchHighlightBackground": "#7aa2f72e",
+    "peekViewResult.selectionBackground": "#7aa2f733",
     "peekViewTitle.background": "#232739",
     "quickInput.background": "#1f2230",
     "quickInput.foreground": "#9aaae9",
-    "quickInputList.focusBackground": "#b620d433",
+    "quickInputList.focusBackground": "#2358ca33",
     "quickInputList.focusForeground": "#9aaae9",
     "quickInputTitle.background": "#232739",
     "scrollbar.shadow": "#272b40",
-    "scrollbarSlider.activeBackground": "#b620d433",
+    "scrollbarSlider.activeBackground": "#2358ca33",
     "scrollbarSlider.background": "#9aaae91f",
-    "scrollbarSlider.hoverBackground": "#b620d429",
-    "searchEditor.findMatchBackground": "#b18af840",
-    "searchEditor.findMatchBorder": "#29acf800",
-    "selection.background": "#b620d466",
+    "scrollbarSlider.hoverBackground": "#2358ca29",
+    "searchEditor.findMatchBackground": "#bb9af740",
+    "searchEditor.findMatchBorder": "#2f477b00",
+    "selection.background": "#2358ca",
     "sideBar.background": "#181923",
     "sideBar.border": "#202230",
     "sideBar.foreground": "#9aaae9",
@@ -189,23 +189,26 @@ exports[`Theme should match the snapshot 1`] = `
     "sideBarSectionHeader.foreground": "#9aaae9",
     "statusBar.background": "#1f2230",
     "statusBar.border": "#202230",
-    "statusBar.focusBorder": "#7dcfff",
+    "statusBar.debuggingBackground": "#f7768e",
+    "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.focusBorder": "#7aa2f7",
     "statusBar.foreground": "#7b87b6",
-    "statusBarItem.activeBackground": "#7dcfff33",
-    "statusBarItem.compactHoverBackground": "#9aaae91f",
-    "statusBarItem.focusBorder": "#7dcfff",
-    "statusBarItem.hoverBackground": "#9aaae91f",
+    "statusBar.noFolderBackground": "#1f2230",
+    "statusBarItem.activeBackground": "#202230",
+    "statusBarItem.compactHoverBackground": "#232739",
+    "statusBarItem.focusBorder": "#7aa2f7",
+    "statusBarItem.hoverBackground": "#232739",
     "statusBarItem.hoverForeground": "#9aaae9",
-    "statusBarItem.prominentBackground": "#0078d4",
+    "statusBarItem.prominentBackground": "#f7768e",
     "statusBarItem.prominentForeground": "#ffffff",
-    "statusBarItem.prominentHoverBackground": "#1f88d9",
+    "statusBarItem.prominentHoverBackground": "#ff9e64",
     "statusBarItem.prominentHoverForeground": "#ffffff",
     "statusBarItem.remoteBackground": "#0078d4",
     "statusBarItem.remoteForeground": "#ffffff",
     "statusBarItem.remoteHoverBackground": "#1f88d9",
     "statusBarItem.remoteHoverForeground": "#ffffff",
     "tab.activeBackground": "#1a1b26",
-    "tab.activeBorderTop": "#7dcfff",
+    "tab.activeBorderTop": "#7aa2f7",
     "tab.activeForeground": "#9aaae9",
     "tab.border": "#202230",
     "tab.hoverBackground": "#9aaae91f",
@@ -217,44 +220,44 @@ exports[`Theme should match the snapshot 1`] = `
     "tab.unfocusedActiveForeground": undefined,
     "tab.unfocusedInactiveForeground": "#7b87b699",
     "terminal.ansiBlack": "#1a1b26",
-    "terminal.ansiBlue": "#29acf8",
+    "terminal.ansiBlue": "#2f477b",
     "terminal.ansiBrightBlack": "#363c54",
-    "terminal.ansiBrightBlue": "#29acf8",
-    "terminal.ansiBrightCyan": "#29acf8",
+    "terminal.ansiBrightBlue": "#2f477b",
+    "terminal.ansiBrightCyan": "#2f477b",
     "terminal.ansiBrightGreen": "#b4cf97",
     "terminal.ansiBrightMagenta": "#bd9cf9",
     "terminal.ansiBrightRed": "#f593a5",
     "terminal.ansiBrightWhite": "#ffffff",
     "terminal.ansiBrightYellow": "#f8e385",
-    "terminal.ansiCyan": "#29acf8",
-    "terminal.ansiGreen": "#a7c785",
-    "terminal.ansiMagenta": "#b18af8",
-    "terminal.ansiRed": "#f38095",
+    "terminal.ansiCyan": "#2f477b",
+    "terminal.ansiGreen": "#9ece6a",
+    "terminal.ansiMagenta": "#bb9af7",
+    "terminal.ansiRed": "#f7768e",
     "terminal.ansiWhite": "#dfe2db",
-    "terminal.ansiYellow": "#f7de70",
+    "terminal.ansiYellow": "#e0af68",
     "terminal.background": "#1a1b26",
     "terminal.border": "#202230",
     "terminal.dropBackground": "#23273933",
-    "terminal.findMatchBackground": "#b18af833",
-    "terminal.findMatchBorder": "#29acf800",
-    "terminal.findMatchHighlightBackground": "#b18af840",
+    "terminal.findMatchBackground": "#bb9af733",
+    "terminal.findMatchBorder": "#2f477b00",
+    "terminal.findMatchHighlightBackground": "#bb9af740",
     "terminal.foreground": "#9aaae9",
     "terminal.hoverHighlightBackground": undefined,
     "terminal.inactiveSelectionBackground": "#9aaae91f",
-    "terminal.selectionBackground": "#b620d433",
-    "terminalCommandDecoration.defaultBackground": "#b620d433",
-    "terminalCommandDecoration.errorBackground": "#f3809533",
-    "terminalCommandDecoration.successBackground": "#a7c78533",
+    "terminal.selectionBackground": "#2358ca33",
+    "terminalCommandDecoration.defaultBackground": "#2358ca33",
+    "terminalCommandDecoration.errorBackground": "#f7768e33",
+    "terminalCommandDecoration.successBackground": "#9ece6a33",
     "textBlockQuote.background": "#232739",
-    "textBlockQuote.border": "#7dcfff59",
-    "textLink.activeForeground": "#29acf8",
-    "textLink.foreground": "#29acf8",
+    "textBlockQuote.border": "#7aa2f759",
+    "textLink.activeForeground": "#2f477b",
+    "textLink.foreground": "#2f477b",
     "titleBar.activeBackground": "#1f2230",
     "titleBar.activeForeground": "#9aaae9",
     "titleBar.border": "#202230",
     "titleBar.inactiveBackground": "#1f2230",
     "titleBar.inactiveForeground": "#7b87b6",
-    "toolbar.activeBackground": "#7dcfff33",
+    "toolbar.activeBackground": "#7aa2f733",
     "toolbar.hoverBackground": "#9aaae91f",
     "toolbar.hoverOutline": "#1a1b2600",
     "widget.border": "#363c55",
@@ -281,7 +284,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#7d909e",
+        "foreground": "#4a505d",
       },
     },
     {
@@ -291,7 +294,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -301,7 +304,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.string",
       ],
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
@@ -310,7 +313,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric",
       ],
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -319,7 +322,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean",
       ],
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -328,7 +331,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -355,7 +358,7 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -373,7 +376,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -392,7 +395,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter",
       ],
       "settings": {
-        "foreground": "#accbf8",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -419,7 +422,7 @@ exports[`Theme should match the snapshot 1`] = `
         "invalid",
       ],
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -439,7 +442,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.brace",
       ],
       "settings": {
-        "foreground": "#a6b1de",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -448,7 +451,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.separator",
       ],
       "settings": {
-        "foreground": "#a6b1de",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -457,7 +460,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.accessor",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -469,7 +472,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.control.switch",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -481,7 +484,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.definitelytyped",
       ],
       "settings": {
-        "foreground": "#9d7cd8",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -493,7 +496,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.control.as",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -506,7 +509,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.implements",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -518,7 +521,7 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.modifier.readonly",
       ],
       "settings": {
-        "foreground": "#a582e5",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -529,7 +532,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.await",
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -539,7 +542,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.quasi",
       ],
       "settings": {
-        "foreground": "#96cab6",
+        "foreground": "#9ece6a",
       },
     },
     {
@@ -549,7 +552,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.template-expression",
       ],
       "settings": {
-        "foreground": "#96cab6",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -559,7 +562,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.parameters variable",
       ],
       "settings": {
-        "foreground": "#accbf8",
+        "foreground": "#9aaae9",
       },
     },
     {
@@ -590,7 +593,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.class",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -599,7 +602,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.interface",
       ],
       "settings": {
-        "foreground": "#c6d8a9",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -608,7 +611,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.enum",
       ],
       "settings": {
-        "foreground": "#f4c572",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -618,7 +621,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.module",
       ],
       "settings": {
-        "foreground": "#87b6f3",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -628,7 +631,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.type",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -637,7 +640,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.parameter",
       ],
       "settings": {
-        "foreground": "#e1d6a5",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -646,7 +649,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.type.union",
       ],
       "settings": {
-        "foreground": "#9d7cd8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -655,7 +658,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.type.builtin",
       ],
       "settings": {
-        "foreground": "#77bee1",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -664,7 +667,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -673,7 +676,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.arithmetic",
       ],
       "settings": {
-        "foreground": "#9d7cd8",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -683,7 +686,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.relational",
       ],
       "settings": {
-        "foreground": "#a783e8",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -692,7 +695,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.logical",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -701,7 +704,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.assignment",
       ],
       "settings": {
-        "foreground": "#a893e1",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -710,7 +713,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.ternary",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -720,7 +723,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.rest",
       ],
       "settings": {
-        "foreground": "#7cbdfc",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -730,7 +733,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -739,7 +742,7 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type.annotation",
       ],
       "settings": {
-        "foreground": "#f4c572",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -748,7 +751,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.other.attribute-name.attribute",
       ],
       "settings": {
-        "foreground": "#f5cf71",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -758,14 +761,14 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.directive",
       ],
       "settings": {
-        "foreground": "#729bcb",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "JS/TS: Punctuation Separator Key-Value",
       "scope": "punctuation.separator.key-value",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#9aaae9",
       },
     },
     {
@@ -779,21 +782,21 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS/TS: Math",
       "scope": "support.constant.math",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "JS/TS: Math Property",
       "scope": "support.constant.property.math",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
       "name": "JS/TS: Variable Other Constant",
       "scope": "variable.other.constant",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -804,14 +807,14 @@ exports[`Theme should match the snapshot 1`] = `
         "support.module.node",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "JS/TS: Entity Name Type Module",
       "scope": "entity.name.type.module",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -824,14 +827,14 @@ exports[`Theme should match the snapshot 1`] = `
         "support.variable.object.node",
       ],
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#9aaae9",
       },
     },
     {
       "name": "JS/TS: JSON",
       "scope": "support.constant.json",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -844,21 +847,21 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.expression.keyof",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "JS/TS: Console",
       "scope": "support.type.object.console",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "JS/TS: Console Property",
       "scope": "support.variable.property.process",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -885,49 +888,49 @@ exports[`Theme should match the snapshot 1`] = `
         "support.variable.property.dom",
       ],
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "TypeScript: Primitive Type",
       "scope": "support.type.primitive.ts",
       "settings": {
-        "foreground": "#77bee1",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "TypeScript: Keyword",
       "scope": "keyword.typescript",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "TypeScript: Decorator",
       "scope": "meta.decorator.ts entity.name.function.ts",
       "settings": {
-        "foreground": "#f4c572",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "TypeScript: Type Parameter",
       "scope": "entity.name.type.parameter.ts",
       "settings": {
-        "foreground": "#e1d6a5",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "TypeScript: Enum Member",
       "scope": "variable.other.enummember.ts",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
       "name": "TypeScript: Namespace",
       "scope": "entity.name.namespace.ts",
       "settings": {
-        "foreground": "#87b6f3",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -938,21 +941,21 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.jsdoc",
       ],
       "settings": {
-        "foreground": "#729bcb",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "HTML: Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "HTML: Attribute",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -963,7 +966,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.tag.end",
       ],
       "settings": {
-        "foreground": "#f3809580",
+        "foreground": "#f7768e80",
       },
     },
     {
@@ -974,21 +977,21 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "CSS: Tag Name",
       "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "CSS: Class Selector",
       "scope": "entity.other.attribute-name.class.css",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -996,7 +999,7 @@ exports[`Theme should match the snapshot 1`] = `
       "scope": "entity.other.attribute-name.id.css",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#29acf8",
+        "foreground": "#2f477b",
       },
     },
     {
@@ -1010,21 +1013,21 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "CSS: Property Value",
       "scope": "support.constant.property-value.css",
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "CSS: Unit",
       "scope": "keyword.other.unit.css",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "CSS: Function",
       "scope": "support.function.misc.css",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1035,7 +1038,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.less",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1045,7 +1048,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.constant.color.w3c-standard-color-name.scss",
       ],
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1059,7 +1062,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "CSS: Vendored Property Name",
       "scope": "support.type.vendored.property-name.css",
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1070,7 +1073,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#7aa2f7",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1080,7 +1083,7 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.bold",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1090,7 +1093,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.other.link",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1100,7 +1103,7 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.fenced_code",
       ],
       "settings": {
-        "foreground": "#95af90",
+        "foreground": "#9ece6a",
       },
     },
     {
@@ -1108,7 +1111,7 @@ exports[`Theme should match the snapshot 1`] = `
       "scope": "markup.quote",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#7d909e",
+        "foreground": "#4a505d",
       },
     },
     {
@@ -1122,14 +1125,14 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Markdown: Heading Punctuation",
       "scope": "punctuation.definition.heading.markdown",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "Markdown: List Punctuation",
       "scope": "punctuation.definition.list.begin.markdown",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1143,7 +1146,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Markdown: Bold Punctuation",
       "scope": "punctuation.definition.bold.markdown",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1153,14 +1156,14 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.inline.raw.string.markdown",
       ],
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
       "name": "Markdown: List Punctuation Definition",
       "scope": "punctuation.definition.list.markdown",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1171,14 +1174,14 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.metadata.markdown",
       ],
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "Markdown: Beginning List Punctuation",
       "scope": "beginning.punctuation.definition.list.markdown",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1188,7 +1191,7 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.underline.link.image.markdown",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1205,49 +1208,49 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JSON: Property Name",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "JSON: String",
       "scope": "string.quoted.double.json",
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
       "name": "JSON: Number",
       "scope": "constant.numeric.json",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
       "name": "JSON: Boolean",
       "scope": "constant.language.json",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "JSON: Null",
       "scope": "constant.language.null.json",
       "settings": {
-        "foreground": "#af7c9f",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "JSON: Meta Structure Dictionary String",
       "scope": "source.json meta.structure.dictionary.json > string.quoted.json",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "JSON: Meta Structure Dictionary String Punctuation",
       "scope": "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1259,7 +1262,7 @@ exports[`Theme should match the snapshot 1`] = `
         "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
       ],
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
@@ -1269,35 +1272,35 @@ exports[`Theme should match the snapshot 1`] = `
         "source.json meta.structure.array.json > constant.language.json",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "YAML: Entity Name",
       "scope": "entity.name.tag.yaml",
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "YAML: String",
       "scope": "string.unquoted.plain.out.yaml",
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
       "name": "YAML: Constant",
       "scope": "constant.language.yaml",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "Python: Keyword",
       "scope": "keyword.python",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1311,28 +1314,28 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Class",
       "scope": "entity.name.type.class.python",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Python: Decorator",
       "scope": "entity.name.function.decorator.python",
       "settings": {
-        "foreground": "#f4c572",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Python: String",
       "scope": "string.quoted.single.python",
       "settings": {
-        "foreground": "#a7c785",
+        "foreground": "#9ece6a",
       },
     },
     {
       "name": "Python: Magic Variable",
       "scope": "support.variable.magic.python",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1351,28 +1354,28 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Self Parameter",
       "scope": "variable.parameter.function.language.special.self.python",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Python: Parameter",
       "scope": "variable.parameter.function.language.python",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
       "name": "Python: Type",
       "scope": "support.type.python",
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "Python: Logical Operator",
       "scope": "keyword.operator.logical.python",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1386,7 +1389,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Placeholder",
       "scope": "constant.character.format.placeholder.other.python",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1403,21 +1406,21 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.function.decorator.identifier.python",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "Java: Keyword",
       "scope": "keyword.java",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Java: Class",
       "scope": "entity.name.type.class.java",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1431,7 +1434,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Java: Annotation",
       "scope": "storage.type.annotation.java",
       "settings": {
-        "foreground": "#f4c572",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1441,14 +1444,14 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type.object.array.java",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Java: Source",
       "scope": "source.java",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1495,35 +1498,35 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type.generic.java",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Java: Instanceof",
       "scope": "keyword.operator.instanceof.java",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Java: Variable Name",
       "scope": "meta.definition.variable.name.java",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
       "name": "C++: Keyword",
       "scope": "keyword.cpp",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "C++: Class",
       "scope": "entity.name.type.class.cpp",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1537,7 +1540,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "C++: Preprocessor",
       "scope": "meta.preprocessor.cpp",
       "settings": {
-        "foreground": "#729bcb",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1574,7 +1577,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.bitwise.shift.cpp",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1584,7 +1587,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.separator.cpp",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1594,7 +1597,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.type.posix-reserved.cpp",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1604,14 +1607,14 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.sizeof.cpp",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Go: Operator",
       "scope": "keyword.operator.assignment.go",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1621,28 +1624,28 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.address.go",
       ],
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Go: Package Name",
       "scope": "entity.name.package.go",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Haskell: Variable Generic Type",
       "scope": "variable.other.generic-type.haskell",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Haskell: Storage Type",
       "scope": "storage.type.haskell",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1663,14 +1666,14 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Rust: Entity Name Lifetime",
       "scope": "entity.name.lifetime.rust",
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "Rust: Variable Language",
       "scope": "variable.language.rust",
       "settings": {
-        "foreground": "#f38095",
+        "foreground": "#f7768e",
       },
     },
     {
@@ -1684,14 +1687,14 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Rust: Keyword Operator Sigil",
       "scope": "keyword.operator.sigil.rust",
       "settings": {
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
       "name": "Rust: Support Constant Core",
       "scope": "support.constant.core.rust",
       "settings": {
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1701,7 +1704,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.interpolation.end.vue",
       ],
       "settings": {
-        "foreground": "#7dcfff",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1711,7 +1714,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b18af8",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1721,7 +1724,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#f0ac74",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -1739,7 +1742,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.property.state.pinia",
       ],
       "settings": {
-        "foreground": "#f7de70",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1750,7 +1753,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#accbf8",
+        "foreground": "#c0caf5",
       },
     },
     {

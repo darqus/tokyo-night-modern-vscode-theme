@@ -95,6 +95,21 @@ const uiColors: ColorPalette = {
 
   // Special selections and highlights
   selection: '#2358ca',
+
+  // Adapted Status Bar Colors (using theme's color palette)
+  statusBarBackground: baseColors.backgroundAlt, // '#1f2230' - использовать основной фон боковой панели
+  statusBarForeground: baseColors.foregroundAlt, // '#7b87b6' - использовать альтернативный текстовый цвет темы
+  statusBarBorder: baseColors.border, // '#202230' - использовать общий цвет границ
+  statusBarNoFolderBackground: baseColors.backgroundAlt, // '#1f2230' - фон без папки как основной фон строки состояния
+  statusBarDebuggingBackground: accentColors.red, // '#f7768e' - использовать красный акцент для отладки
+  statusBarDebuggingForeground: baseColors.white, // '#ffffff' - белый текст при отладке
+  statusBarItemHoverBackground: baseColors.backgroundPanel, // '#232739' - использовать цвет фона панели при наведении
+  statusBarItemHoverForeground: baseColors.foreground, // '#9aaae9' - использовать основной цвет текста при наведении
+  statusBarItemActiveBackground: baseColors.border, // '#202230' - использовать цвет границы для активного элемента
+  statusBarItemProminentBackground: accentColors.red, // '#f7768e' - использовать красный акцент для выделенных элементов
+  statusBarItemProminentForeground: baseColors.white, // '#ffffff' - белый текст для выделенных элементов
+  statusBarItemProminentHoverBackground: accentColors.orange, // '#ff9e64' - использовать оранжевый акцент при наведении на выделенный элемент
+  statusBarItemProminentHoverForeground: baseColors.white, // '#ffffff' - белый текст при наведении на выделенный элемент
 }
 
 // 5. Альфа-значения (единственный источник правды для прозрачности)
