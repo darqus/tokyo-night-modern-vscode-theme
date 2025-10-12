@@ -10,14 +10,19 @@ export const scrollbarMinimapColors = {
   'editorOverviewRuler.bracketMatchForeground': palette.backgroundAlt,
   'editorOverviewRuler.deletedForeground': palette.redDark5,
   'editorOverviewRuler.errorForeground': palette.redDark,
-  'editorOverviewRuler.findMatchForeground': palette.overviewRulerFindMatchFgAlpha44,
+  'editorOverviewRuler.findMatchForeground':
+    palette.overviewRulerFindMatchFgAlpha44,
   'editorOverviewRuler.infoForeground': palette.cyanDark4,
   'editorOverviewRuler.modifiedForeground': palette.blueDark3,
-  'editorOverviewRuler.rangeHighlightForeground': palette.overviewRulerRangeHighlightFgAlpha44,
-  'editorOverviewRuler.selectionHighlightForeground': palette.overviewRulerSelectionHighlightFgAlpha30,
+  'editorOverviewRuler.rangeHighlightForeground':
+    palette.overviewRulerRangeHighlightFgAlpha44,
+  'editorOverviewRuler.selectionHighlightForeground':
+    palette.overviewRulerSelectionHighlightFgAlpha30,
   'editorOverviewRuler.warningForeground': palette.yellow,
-  'editorOverviewRuler.wordHighlightForeground': palette.overviewRulerWordHighlightFgAlpha55,
-  'editorOverviewRuler.wordHighlightStrongForeground': palette.overviewRulerWordHighlightStrongFgAlpha66,
+  'editorOverviewRuler.wordHighlightForeground':
+    palette.overviewRulerWordHighlightFgAlpha55,
+  'editorOverviewRuler.wordHighlightStrongForeground':
+    palette.overviewRulerWordHighlightStrongFgAlpha66,
   'minimap.findMatchHighlight': palette.purpleAlpha80,
   'minimap.selectionHighlight': palette.selectionAlpha33,
   'minimapGutter.addedBackground': palette.greenDark5,

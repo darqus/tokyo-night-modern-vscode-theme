@@ -11,11 +11,13 @@ export const statusBarColors = {
   'statusBar.foreground': palette.foregroundAlt,
   'statusBar.noFolderBackground': palette.backgroundAlt,
   'statusBarItem.activeBackground': palette.backgroundAlt,
-  'statusBarItem.compactHoverBackground': palette.statusBarItemCompactHoverBgAlpha90,
+  'statusBarItem.compactHoverBackground':
+    palette.statusBarItemCompactHoverBgAlpha90,
   'statusBarItem.hoverBackground': palette.statusBarItemHoverBgAlphaAA,
   'statusBarItem.hoverForeground': palette.blue,
   'statusBarItem.prominentBackground': palette.backgroundAlt,
-  'statusBarItem.prominentHoverBackground': palette.statusBarItemProminentHoverBg,
+  'statusBarItem.prominentHoverBackground':
+    palette.statusBarItemProminentHoverBg,
   'statusBarItem.remoteBackground': palette.backgroundAlt,
   'statusBarItem.remoteForeground': palette.blue,
   'statusBarItem.remoteHoverBackground': palette.backgroundAlt,

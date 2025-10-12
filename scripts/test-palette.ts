@@ -247,11 +247,11 @@ const combinations = [
   {
     name: 'merge.currentHeaderBackground',
     value: combineColorWithAlpha(palette.accentGreen, palette.alpha1f),
- },
+  },
   {
     name: 'merge.currentContentBackground',
     value: combineColorWithAlpha(palette.accentGreen, palette.alpha0f),
- },
+  },
   {
     name: 'merge.incomingHeaderBackground',
     value: combineColorWithAlpha(palette.accentBlue, palette.alpha1f),
@@ -267,7 +267,7 @@ const combinations = [
   {
     name: 'merge.commonContentBackground',
     value: combineColorWithAlpha(palette.accentYellow, palette.alpha0d),
- },
+  },
   {
     name: 'statusBarItem.activeBackground',
     value: combineColorWithAlpha(palette.accentBlue, palette.alpha33),

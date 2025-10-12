@@ -1,17 +1,17 @@
 // Утилиты для работы с токенами синтаксиса
 export interface TokenColor {
-  name: string;
-  scope: string | string[];
+  name: string
+  scope: string | string[]
   settings: {
-    foreground?: string;
-    background?: string;
-    fontStyle?: string;
-  };
+    foreground?: string
+    background?: string
+    fontStyle?: string
+  }
 }
 
 export interface TokenModule {
-  language: string;
-  tokens: TokenColor[];
+  language: string
+  tokens: TokenColor[]
 }
 
 /**
@@ -21,8 +21,12 @@ export interface TokenModule {
  * @param settings Настройки (цвета, стиль)
  * @returns TokenColor объект
  */
-export function createToken(name: string, scope: string | string[], settings: TokenColor['settings']): TokenColor {
-  return { name, scope, settings };
+export function createToken(
+  name: string,
+  scope: string | string[],
+  settings: TokenColor['settings']
+): TokenColor {
+  return { name, scope, settings }
 }
 
 /**
@@ -31,12 +35,12 @@ export function createToken(name: string, scope: string | string[], settings: To
  * @returns Объединенный массив токенов
  */
 export function combineTokenModules(...modules: TokenModule[]): TokenColor[] {
-  return modules.flatMap(module => 
-    module.tokens.map(token => ({
+  return modules.flatMap((module) =>
+    module.tokens.map((token) => ({
       ...token,
-      name: `${module.language}: ${token.name}`
+      name: `${module.language}: ${token.name}`,
     }))
-  );
+  )
 }
 
 /**
@@ -45,23 +49,26 @@ export function combineTokenModules(...modules: TokenModule[]): TokenColor[] {
  * @param colorMap Карта соответствия старых цветов новым
  * @returns Новые токены с обновленными цветами
  */
-export function updateTokenColors(tokens: TokenColor[], colorMap: Record<string, string>): TokenColor[] {
-  return tokens.map(token => {
-    const newSettings = { ...token.settings };
-    
+export function updateTokenColors(
+  tokens: TokenColor[],
+  colorMap: Record<string, string>
+): TokenColor[] {
+  return tokens.map((token) => {
+    const newSettings = { ...token.settings }
+
     if (newSettings.foreground && colorMap[newSettings.foreground]) {
-      newSettings.foreground = colorMap[newSettings.foreground];
+      newSettings.foreground = colorMap[newSettings.foreground]
     }
-    
+
     if (newSettings.background && colorMap[newSettings.background]) {
-      newSettings.background = colorMap[newSettings.background];
+      newSettings.background = colorMap[newSettings.background]
     }
-    
+
     return {
       ...token,
-      settings: newSettings
-    };
-  });
+      settings: newSettings,
+    }
+  })
 }
 
 /**
@@ -70,8 +77,11 @@ export function updateTokenColors(tokens: TokenColor[], colorMap: Record<string,
  * @param language Язык для фильтрации
  * @returns Отфильтрованный массив токенов
  */
-export function filterTokensByLanguage(tokens: TokenColor[], language: string): TokenColor[] {
-  return tokens.filter(token => token.name.startsWith(`${language}: `));
+export function filterTokensByLanguage(
+  tokens: TokenColor[],
+  language: string
+): TokenColor[] {
+  return tokens.filter((token) => token.name.startsWith(`${language}: `))
 }
 
 /**
@@ -80,12 +90,15 @@ export function filterTokensByLanguage(tokens: TokenColor[], language: string): 
  * @param scope Паттерн scope для фильтрации
  * @returns Отфильтрованный массив токенов
  */
-export function filterTokensByScope(tokens: TokenColor[], scope: string): TokenColor[] {
-  return tokens.filter(token => {
+export function filterTokensByScope(
+  tokens: TokenColor[],
+  scope: string
+): TokenColor[] {
+  return tokens.filter((token) => {
     if (typeof token.scope === 'string') {
-      return token.scope.includes(scope);
+      return token.scope.includes(scope)
     } else {
-      return token.scope.some(s => s.includes(scope));
+      return token.scope.some((s) => s.includes(scope))
     }
-  });
+  })
 }

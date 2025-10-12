@@ -361,10 +361,10 @@ async function main() {
     type: args.includes('--major')
       ? 'major'
       : args.includes('--minor')
-      ? 'minor'
-      : args.includes('--patch')
-      ? 'patch'
-      : undefined,
+        ? 'minor'
+        : args.includes('--patch')
+          ? 'patch'
+          : undefined,
     prerelease: args.includes('--prerelease'),
     dryRun: args.includes('--dry-run'),
     skipTests: args.includes('--skip-tests'),

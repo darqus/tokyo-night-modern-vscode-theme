@@ -1,4 +1,4 @@
-import { palette } from '../palette';
+import { palette } from '../palette'
 
 /**
  * Command Center UI элементы
@@ -6,7 +6,7 @@ import { palette } from '../palette';
  */
 export const commandCenterColors = {
   // Command Center
-  'commandCenter.background': palette.background,           // Фон командного центра
+  'commandCenter.background': palette.background, // Фон командного центра
   'commandCenter.activeBackground': palette.backgroundPanel, // Фон активного элемента в командном центре
-  'commandCenter.border': palette.border,                   // Граница командного центра
-};
+  'commandCenter.border': palette.border, // Граница командного центра
+}
