@@ -39,6 +39,7 @@
     "build:theme": "ts-node scripts/build-theme.ts",
     "build:theme:watch": "ts-node-dev --respawn --watch src/theme --watch scripts/build-theme.ts scripts/build-theme.ts",
     "test:theme": "jest tests/theme-identical.test.ts",
+    "test:theme:update": "jest tests/theme-identical.test.ts -u",
     "validate:theme": "ts-node scripts/validate-theme.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
     "release": "ts-node scripts/release.ts"
