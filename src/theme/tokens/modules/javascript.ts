@@ -13,6 +13,7 @@ export const javascriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.red,
+      fontStyle: 'bold',
     },
   },
   {
@@ -36,7 +37,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.control.as',
     ],
     settings: {
-      foreground: palette.blue,
+      foreground: palette.purple,
     },
   },
   {
@@ -61,7 +62,7 @@ export const javascriptTokens: TokenColor[] = [
       'storage.modifier.readonly',
     ],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.purpleAlt,
     },
   },
   {
@@ -72,7 +73,8 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.await',
     ],
     settings: {
-      foreground: palette.red,
+      foreground: palette.cyan,
+      fontStyle: 'bold',
     },
   },
   {
@@ -89,14 +91,15 @@ export const javascriptTokens: TokenColor[] = [
       'punctuation.definition.template-expression',
     ],
     settings: {
-      foreground: palette.red,
+      foreground: palette.cyan,
+      fontStyle: 'bold',
     },
   },
   {
     name: 'JavaScript: Function Parameter',
     scope: ['variable.parameter', 'meta.parameters variable'],
     settings: {
-      foreground: palette.foreground,
+      foreground: palette.funcParam,
     },
   },
   {
@@ -119,20 +122,21 @@ export const javascriptTokens: TokenColor[] = [
     scope: ['entity.name.class', 'entity.name.type.class'],
     settings: {
       foreground: palette.yellow,
+      fontStyle: 'bold',
     },
   },
   {
     name: 'JavaScript: Interface Name',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: palette.blue,
+      foreground: palette.purple,
     },
   },
   {
     name: 'JavaScript: Enum Name',
     scope: ['entity.name.type.enum'],
     settings: {
-      foreground: palette.blue,
+      foreground: palette.purpleAlt,
     },
   },
   {
@@ -153,14 +157,14 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Generic Type Parameter',
     scope: ['entity.name.type.parameter'],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.purpleAlt,
     },
   },
   {
     name: 'JavaScript: Union Type Operator',
     scope: ['keyword.operator.type.union'],
     settings: {
-      foreground: palette.purple,
+      foreground: palette.cyan,
     },
   },
   {
@@ -209,7 +213,7 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Ternary Operator',
     scope: ['keyword.operator.ternary'],
     settings: {
-      foreground: palette.red,
+      foreground: palette.cyan,
     },
   },
   {

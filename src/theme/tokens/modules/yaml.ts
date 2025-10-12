@@ -5,7 +5,7 @@ export const yamlTokens: TokenColor[] = [
   {
     name: 'YAML: Entity Name',
     scope: 'entity.name.tag.yaml',
-    settings: { foreground: palette.blue },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'YAML: String',

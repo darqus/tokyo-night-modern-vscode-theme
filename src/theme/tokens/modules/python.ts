@@ -5,7 +5,7 @@ export const pythonTokens: TokenColor[] = [
   {
     name: 'Python: Keyword',
     scope: 'keyword.python',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'Python: Function',
@@ -15,7 +15,7 @@ export const pythonTokens: TokenColor[] = [
   {
     name: 'Python: Class',
     scope: 'entity.name.type.class.python',
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.yellow, fontStyle: 'bold' },
   },
   {
     name: 'Python: Decorator',
@@ -50,7 +50,7 @@ export const pythonTokens: TokenColor[] = [
   {
     name: 'Python: Parameter',
     scope: 'variable.parameter.function.language.python',
-    settings: { foreground: palette.orange },
+    settings: { foreground: palette.funcParam },
   },
   {
     name: 'Python: Type',
@@ -60,14 +60,14 @@ export const pythonTokens: TokenColor[] = [
   {
     name: 'Python: Logical Operator',
     scope: 'keyword.operator.logical.python',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.cyan },
   },
   {
     name: 'Python: Function Call',
     scope: 'meta.function-call.generic.python',
     settings: { foreground: palette.keywordAsync },
   },
-  {
+ {
     name: 'Python: Placeholder',
     scope: 'constant.character.format.placeholder.other.python',
     settings: { foreground: palette.orange },
@@ -75,7 +75,7 @@ export const pythonTokens: TokenColor[] = [
   {
     name: 'Python: Function Decorator',
     scope: 'meta.function.decorator.python',
-    settings: { foreground: palette.keywordAsync },
+    settings: { foreground: palette.annotation },
   },
   {
     name: 'Python: Function Support',

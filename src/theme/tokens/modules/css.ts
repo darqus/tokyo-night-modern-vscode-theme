@@ -5,7 +5,7 @@ export const cssTokens: TokenColor[] = [
   {
     name: 'CSS: Tag Name',
     scope: 'entity.name.tag.css',
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.yellow, fontStyle: 'bold' },
   },
   {
     name: 'CSS: Class Selector',
@@ -15,7 +15,7 @@ export const cssTokens: TokenColor[] = [
   {
     name: 'CSS: ID Selector',
     scope: 'entity.other.attribute-name.id.css',
-    settings: { foreground: palette.blueAlt, fontStyle: 'bold' },
+    settings: { foreground: palette.pink, fontStyle: 'bold' },
   },
   {
     name: 'CSS: Property Name',
@@ -25,7 +25,7 @@ export const cssTokens: TokenColor[] = [
   {
     name: 'CSS: Property Value',
     scope: 'support.constant.property-value.css',
-    settings: { foreground: palette.blue },
+    settings: { foreground: palette.green },
   },
   {
     name: 'CSS: Unit',
@@ -40,7 +40,7 @@ export const cssTokens: TokenColor[] = [
   {
     name: 'CSS: Operator',
     scope: ['keyword.operator.css', 'keyword.operator.scss', 'keyword.operator.less'],
-    settings: { foreground: palette.blue },
+    settings: { foreground: palette.cyan },
   },
   {
     name: 'CSS: Color Standard Name',
