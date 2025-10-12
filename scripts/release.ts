@@ -157,7 +157,7 @@ class ReleaseManager {
 
   private generatePackage(): void {
     console.log('📦 Generating .vsix package...')
-    this.exec('npm run package')
+    this.exec('npm run build:vsix')
     console.log('✅ Package generated')
   }
 
@@ -219,7 +219,7 @@ class ReleaseManager {
     console.log('📦 Skipping VS Code Marketplace publishing (no key)...')
 
     try {
-      this.exec('npm run package')
+      this.exec('npm run build:vsix')
       // this.exec('npm run publish')
       console.log(
         '⚠️  Marketplace publishing skipped. To publish, configure VSCE token.'
@@ -227,7 +227,7 @@ class ReleaseManager {
     } catch (error) {
       console.error('❌ Failed to create package')
       console.error('Please check your setup and try manually:')
-      console.error('  npm run package')
+      console.error('  npm run build:vsix')
       // console.error('  npm run publish')
       throw error
     }
