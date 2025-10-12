@@ -5,24 +5,21 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление групп редакторов и панелей в VS Code
  */
 export const editorGroupsPanelsColors = {
-  // Editor Groups & Panels
-  'editorGroupHeader.tabsBackground': palette.backgroundAlt, // Фон заголовка группы редакторов с вкладками
-  'editorGroupHeader.noTabsBackground': palette.backgroundAlt, // Фон заголовка группы редакторов без вкладок
-  'editorGroupHeader.tabsBorder': palette.border, // Граница вкладок группы редакторов
-  'editorGroup.border': palette.border, // Граница группы редакторов
-  'editorGroup.emptyBackground': palette.background, // Фон пустой группы редакторов
-  'editorGroup.focusedEmptyBorder': palette.blue, // Граница пустой группы редакторов в фокусе
-  'panel.background': palette.background, // Фон панели
-  'panel.border': palette.border, // Граница панели
-  'panelSectionHeader.background': palette.background, // Фон заголовка секции панели
-  'panelSectionHeader.foreground': palette.foreground, // Цвет текста заголовка секции панели
-  'panelTitle.activeForeground': palette.foreground, // Цвет активного заголовка панели
-  'panelTitle.inactiveForeground': palette.foregroundAlt, // Цвет неактивного заголовка панели
-  'panelTitle.activeBorder': palette.blue, // Активная граница заголовка панели
-  'panelTitle.border': palette.border, // Граница заголовка панели
-  'panel.dropBorder': palette.blue, // Граница при перетаскивании на панель
-  'panelTitleBadge.background': palette.blueStrong, // Фон значка заголовка панели
-  'panelTitleBadge.foreground': palette.white, // Цвет значка заголовка панели
-  'panelSection.border': palette.grayDark, // Граница секции панели
-  'panelSectionHeader.border': palette.grayDark, // Граница заголовка секции панели
+  'editorGroup.border': palette.borderAlt2Alpha20,
+  'editorGroup.dropBackground': palette.blueDarkAlpha20,
+  'editorGroup.dropIntoPromptBorder': palette.borderAlt3,
+  'editorGroupHeader.border': palette.backgroundAlt,
+  'editorGroupHeader.noTabsBackground': palette.backgroundAlt,
+  'editorGroupHeader.tabsBackground': palette.backgroundAlt,
+  'editorGroupHeader.tabsBorder': palette.backgroundAlt,
+  'editorPane.background': palette.backgroundAlt,
+  'panel.background': palette.backgroundAlt,
+  'panel.border': palette.borderAlpha40,
+  'panel.dropBorder': palette.borderAltAlpha40,
+  'panelInput.border': palette.borderAltAlpha40,
+  'panelSection.border': palette.border,
+  'panelSection.dropBackground': palette.blueDarkAlpha20,
+  'panelTitle.activeBorder': palette.borderAlpha40,
+  'panelTitle.activeForeground': palette.foreground,
+  'panelTitle.inactiveForeground': palette.foregroundAlphaAA,
 }

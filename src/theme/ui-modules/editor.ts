@@ -5,19 +5,74 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление редактора кода в VS Code
  */
 export const editorColors = {
-  // Editor
-  'editor.background': palette.background, // Фон редактора
-  'editor.foreground': palette.foreground, // Цвет текста в редакторе
-  'editor.selectionBackground': palette.selection, // Фон выделенного текста
-  'editor.inactiveSelectionBackground': palette.backgroundAlpha00, // Фон неактивного выделения
-  'editor.lineHighlightBackground': palette.backgroundAlt, // Фон подсветки строки
-  'editorLineNumber.foreground': palette.grayDark, // Цвет номеров строк
-  'editorLineNumber.activeForeground': palette.foreground, // Цвет активного номера строки
-  'editorCursor.foreground': palette.foreground, // Цвет курсора
-  'editorIndentGuide.background1': palette.backgroundAlt, // Фон направляющих отступов
-  'editorIndentGuide.activeBackground1': palette.border, // Фон активной направляющей отступа
-  'editorStickyScroll.background': palette.backgroundAlt, // Фон закрепленной прокрутки
-  'editorStickyScrollHover.background': palette.foregroundAlpha1f, // Фон закрепленной прокрутки при наведении
-  'editor.placeholder.foreground': palette.foregroundInactive, // Цвет плейсхолдера
-  'editor.foldPlaceholderForeground': palette.foregroundAlt, // Цвет плейсхолдера свернутого кода
+  'editor.background': palette.background,
+  'editor.findMatchBackground': palette.editorFindMatchBgAlpha66,
+  'editor.findMatchHighlightBackground': palette.editorFindMatchBgAlpha66,
+  'editor.findRangeHighlightBackground': palette.editorFindRangeHighlightBgAlpha33,
+  'editor.focusedStackFrameHighlightBackground': palette.editorFocusedStackFrameBgAlpha20,
+  'editor.foldBackground': palette.backgroundAlt3Alpha4A,
+  'editor.foreground': palette.foreground,
+  'editor.inactiveSelectionBackground': palette.editorInactiveSelectionBgAlpha45,
+  'editor.lineHighlightBackground': palette.backgroundAlt2,
+  'editor.lineHighlightBorder': palette.transparent,
+  'editor.rangeHighlightBackground': palette.editorRangeHighlightBgAlpha20,
+  'editor.selectionBackground': palette.editorSelectionBgAlpha60,
+  'editor.selectionHighlightBackground': palette.editorSelectionHighlightBgAlpha44,
+  'editor.stackFrameHighlightBackground': palette.editorStackFrameBgAlpha20,
+  'editor.wordHighlightBackground': palette.editorWordHighlightBgAlpha44,
+  'editor.wordHighlightStrongBackground': palette.editorWordHighlightStrongBgAlpha55,
+  'editorBracketHighlight.foreground1': palette.blueMid,
+  'editorBracketHighlight.foreground2': palette.blueLight2,
+  'editorBracketHighlight.foreground3': palette.purpleMid,
+  'editorBracketHighlight.foreground4': palette.cyanDark2,
+  'editorBracketHighlight.foreground5': palette.greenDark3,
+  'editorBracketHighlight.foreground6': palette.yellowDark,
+  'editorBracketHighlight.unexpectedBracket.foreground': palette.redDark,
+  'editorBracketMatch.background': palette.backgroundAlt,
+  'editorBracketMatch.border': palette.borderAlt2,
+  'editorBracketPairGuide.activeBackground1': palette.blueMid,
+  'editorBracketPairGuide.activeBackground2': palette.blueLight2,
+  'editorBracketPairGuide.activeBackground3': palette.purpleMid,
+  'editorBracketPairGuide.activeBackground4': palette.cyanDark2,
+  'editorBracketPairGuide.activeBackground5': palette.greenDark3,
+  'editorBracketPairGuide.activeBackground6': palette.yellowDark,
+  'editorCodeLens.foreground': palette.foregroundAlt5,
+  'editorCursor.background': palette.backgroundAlt,
+  'editorCursor.foreground': palette.yellow,
+  'editorError.foreground': palette.redDark,
+  'editorHint.foreground': palette.cyanDark3,
+  'editorHoverWidget.background': palette.backgroundAlt,
+  'editorHoverWidget.border': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground1': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground2': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground3': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground4': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground5': palette.borderAltAlpha40,
+  'editorIndentGuide.activeBackground6': palette.borderAltAlpha40,
+  'editorIndentGuide.background1': palette.borderAltAlpha20,
+  'editorIndentGuide.background2': palette.borderAltAlpha20,
+  'editorIndentGuide.background3': palette.borderAltAlpha20,
+  'editorIndentGuide.background4': palette.borderAltAlpha20,
+  'editorIndentGuide.background5': palette.borderAltAlpha20,
+  'editorIndentGuide.background6': palette.borderAltAlpha20,
+  'editorInfo.foreground': palette.cyanDark3,
+  'editorLightBulb.foreground': palette.yellow,
+  'editorLightBulbAutoFix.foreground': palette.yellow,
+  'editorLineNumber.activeForeground': palette.foregroundAlt8,
+  'editorLineNumber.foreground': palette.foregroundAlt6,
+  'editorLink.activeForeground': palette.foregroundAlt7,
+  'editorMarkerNavigation.background': palette.backgroundAlt,
+  'editorOverviewRuler.border': palette.transparent,
+  'editorOverviewRuler.bracketMatchForeground': palette.backgroundAlt,
+  'editorRuler.foreground': palette.editorRuler,
+  'editorStickyScroll.shadow': palette.scrollbarShadowAlpha,
+  'editorSuggestWidget.background': palette.backgroundAlt,
+  'editorSuggestWidget.border': palette.borderAltAlpha40,
+  'editorSuggestWidget.foreground': palette.foreground,
+  'editorSuggestWidget.highlightForeground': palette.borderAlt,
+  'editorSuggestWidget.selectedBackground': palette.backgroundAlt6,
+  'editorWarning.foreground': palette.yellow,
+  'editorWhitespace.foreground': palette.foregroundAlt6,
+  'editorWidget.background': palette.backgroundAlt,
+  'editorWidget.resizeBorder': palette.editorWordHighlightBgAlpha33,
 }

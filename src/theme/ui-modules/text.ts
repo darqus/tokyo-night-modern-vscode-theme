@@ -5,10 +5,12 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление текстовых элементов в VS Code
  */
 export const textColors = {
-  // Text
-  'textBlockQuote.background': palette.backgroundPanel, // Фон цитаты
-  'textBlockQuote.border': palette.blueAlpha59, // Граница цитаты
-  'textLink.foreground': palette.blueAlt, // Цвет текстовой ссылки
-  'textLink.activeForeground': palette.blueAlt, // Цвет активной текстовой ссылки
-  'editorLink.activeForeground': palette.blueAlt, // Цвет активной ссылки в редакторе
+  'textBlockQuote.background': palette.textBlockQuoteBg,
+  'textBlockQuote.border': palette.blue,
+  'textCodeBlock.background': palette.textCodeBlockBg,
+  'textLink.activeForeground': palette.yellow,
+  'textLink.foreground': palette.cyan,
+  'textPreformat.background': palette.textPreformatBg,
+  'textPreformat.foreground': palette.blue,
+  'textSeparator.foreground': palette.foregroundAlt6,
 }

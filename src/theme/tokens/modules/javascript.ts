@@ -4,349 +4,184 @@ import { palette } from '../../palette'
 
 export const javascriptTokens: TokenColor[] = [
   {
-    name: 'JavaScript: Keyword Control Flow',
+    name: 'JS variable',
     scope: [
-      'keyword.control.flow',
-      'keyword.control.conditional',
-      'keyword.control.loop',
-      'keyword.control.switch',
+      'variable',
+      'support.variable',
+      'string constant.other.placeholder',
+      'variable.parameter.handlebars',
     ],
     settings: {
-      foreground: palette.red,
-      fontStyle: 'bold',
+      foreground: palette.variable,
     },
   },
   {
-    name: 'JavaScript: Keyword Declaration',
+    name: 'JS object variable',
+    scope: 'variable.other.object',
+    settings: {
+      foreground: palette.variable,
+    },
+  },
+  {
+    name: 'JS array variable',
+    scope: 'meta.array.literal variable',
+    settings: {
+      foreground: palette.variableAlt,
+    },
+  },
+  {
+    name: 'JS object key',
     scope: [
-      'keyword.control.declare',
-      'storage.type',
-      'storage.modifier.declare',
-      'keyword.other.definitelytyped',
-    ],
-    settings: {
-      foreground: palette.keywordAccess,
-    },
-  },
-  {
-    name: 'JavaScript: Keyword Import/Export',
-    scope: [
-      'keyword.control.import',
-      'keyword.control.export',
-      'keyword.control.from',
-      'keyword.control.as',
-    ],
-    settings: {
-      foreground: palette.purple,
-    },
-  },
-  {
-    name: 'JavaScript: Keyword Type System',
-    scope: [
-      'keyword.control.type',
-      'keyword.interface',
-      'keyword.class',
-      'keyword.extends',
-      'keyword.implements',
-    ],
-    settings: {
-      foreground: palette.yellow,
-    },
-  },
-  {
-    name: 'JavaScript: Keyword Access Modifiers',
-    scope: [
-      'storage.modifier.access',
-      'storage.modifier.static',
-      'storage.modifier.abstract',
-      'storage.modifier.readonly',
-    ],
-    settings: {
-      foreground: palette.purpleAlt,
-    },
-  },
-  {
-    name: 'JavaScript: Keyword Async/Await',
-    scope: [
-      'storage.modifier.async',
-      'keyword.control.flow.await',
-      'keyword.other.await',
-    ],
-    settings: {
-      foreground: palette.cyan,
-      fontStyle: 'bold',
-    },
-  },
-  {
-    name: 'JavaScript: String Template',
-    scope: ['string.template', 'string.quasi'],
-    settings: {
-      foreground: palette.green,
-    },
-  },
-  {
-    name: 'JavaScript: Template Expression',
-    scope: [
-      'meta.embedded.expression',
-      'punctuation.definition.template-expression',
-    ],
-    settings: {
-      foreground: palette.cyan,
-      fontStyle: 'bold',
-    },
-  },
-  {
-    name: 'JavaScript: Function Parameter',
-    scope: ['variable.parameter', 'meta.parameters variable'],
-    settings: {
-      foreground: palette.funcParam,
-    },
-  },
-  {
-    name: 'JavaScript: Method Call',
-    scope: ['variable.function', 'entity.name.function.member'],
-    settings: {
-      foreground: palette.blue,
-      fontStyle: 'bold',
-    },
-  },
-  {
-    name: 'JavaScript: Function Declaration',
-    scope: ['entity.name.function', 'meta.function-call entity.name.function'],
-    settings: {
-      foreground: palette.blue,
-    },
-  },
-  {
-    name: 'JavaScript: Class Name',
-    scope: ['entity.name.class', 'entity.name.type.class'],
-    settings: {
-      foreground: palette.yellow,
-      fontStyle: 'bold',
-    },
-  },
-  {
-    name: 'JavaScript: Interface Name',
-    scope: ['entity.name.type.interface'],
-    settings: {
-      foreground: palette.purple,
-    },
-  },
-  {
-    name: 'JavaScript: Enum Name',
-    scope: ['entity.name.type.enum'],
-    settings: {
-      foreground: palette.purpleAlt,
-    },
-  },
-  {
-    name: 'JavaScript: Namespace',
-    scope: ['entity.name.namespace', 'entity.name.type.module'],
-    settings: {
-      foreground: palette.namespace,
-    },
-  },
-  {
-    name: 'JavaScript: Primitive Type',
-    scope: ['support.type.primitive', 'keyword.type'],
-    settings: {
-      foreground: palette.yellow,
-    },
-  },
-  {
-    name: 'JavaScript: Generic Type Parameter',
-    scope: ['entity.name.type.parameter'],
-    settings: {
-      foreground: palette.purpleAlt,
-    },
-  },
-  {
-    name: 'JavaScript: Union Type Operator',
-    scope: ['keyword.operator.type.union'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Built-in Type',
-    scope: ['support.type.builtin'],
-    settings: {
-      foreground: palette.keywordAccess,
-    },
-  },
-  {
-    name: 'JavaScript: Custom Type',
-    scope: ['entity.name.type'],
-    settings: {
-      foreground: palette.orange,
-    },
-  },
-  {
-    name: 'JavaScript: Type Annotation',
-    scope: ['meta.type.annotation'],
-    settings: {
-      foreground: palette.orange,
-    },
-  },
-  {
-    name: 'JavaScript: Arithmetic Operator',
-    scope: ['keyword.operator.arithmetic'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Comparison Operator',
-    scope: ['keyword.operator.comparison', 'keyword.operator.relational'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Logical Operator',
-    scope: ['keyword.operator.logical'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Assignment Operator',
-    scope: ['keyword.operator.assignment'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Ternary Operator',
-    scope: ['keyword.operator.ternary'],
-    settings: {
-      foreground: palette.cyan,
-    },
-  },
-  {
-    name: 'JavaScript: Spread Operator',
-    scope: ['keyword.operator.spread', 'keyword.operator.rest'],
-    settings: {
-      foreground: palette.purple,
-    },
-  },
-  {
-    name: 'JavaScript: Decorator',
-    scope: ['entity.name.function.decorator', 'punctuation.decorator'],
-    settings: {
-      foreground: palette.yellow,
-    },
-  },
-  {
-    name: 'JavaScript: Annotation',
-    scope: ['storage.type.annotation'],
-    settings: {
-      foreground: palette.yellow,
-    },
-  },
-  {
-    name: 'JavaScript: Attribute',
-    scope: ['entity.other.attribute-name.attribute'],
-    settings: {
-      foreground: palette.blue,
-    },
-  },
-  {
-    name: 'JavaScript: Pragma/Directive',
-    scope: ['meta.preprocessor', 'keyword.other.directive'],
-    settings: {
-      foreground: palette.blue,
-    },
-  },
-  {
-    name: 'JS/TS: Punctuation Separator Key-Value',
-    scope: 'punctuation.separator.key-value',
-    settings: { foreground: palette.foreground },
-  },
-  {
-    name: 'JS/TS: Import Keyword',
-    scope: 'keyword.operator.expression.import',
-    settings: { foreground: palette.blue },
-  },
-  {
-    name: 'JS/TS: Math',
-    scope: 'support.constant.math',
-    settings: { foreground: palette.yellow },
-  },
-  {
-    name: 'JS/TS: Math Property',
-    scope: 'support.constant.property.math',
-    settings: { foreground: palette.orange },
-  },
-  {
-    name: 'JS/TS: Variable Other Constant',
-    scope: 'variable.other.constant',
-    settings: { foreground: palette.yellow },
-  },
-  {
-    name: 'JS/TS: Module',
-    scope: [
-      'support.module.node',
-      'support.type.object.module',
-      'support.module.node',
-    ],
-    settings: { foreground: palette.yellow },
-  },
-  {
-    name: 'JS/TS: Entity Name Type Module',
-    scope: 'entity.name.type.module',
-    settings: { foreground: palette.yellow },
-  },
-  {
-    name: 'JS/TS: Variable Read-Write',
-    scope: [
-      'variable.other.readwrite',
       'meta.object-literal.key',
-      'support.variable.property',
-      'support.variable.object.process',
-      'support.variable.object.node',
+      'string.alias.graphql',
+      'string.unquoted.graphql',
+      'string.unquoted.alias.graphql',
+      'meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js',
+      'meta.field.declaration.ts variable.object.property',
     ],
-    settings: { foreground: palette.foreground },
+    settings: {
+      foreground: palette.variableAlt2,
+    },
   },
   {
-    name: 'JS/TS: JSON',
-    scope: 'support.constant.json',
-    settings: { foreground: palette.orange },
-  },
-  {
-    name: 'JS/TS: Keyword',
+    name: 'JS property',
     scope: [
-      'keyword.operator.expression.instanceof',
-      'keyword.operator.new',
-      'keyword.operator.ternary',
-      'keyword.operator.optional',
-      'keyword.operator.expression.keyof',
+      'variable.other.property',
+      'support.variable.property',
+      'support.variable.property.dom',
+      'meta.function-call variable.other.object.property',
     ],
-    settings: { foreground: palette.red },
+    settings: {
+      foreground: palette.variableProperty,
+    },
   },
   {
-    name: 'JS/TS: Console',
-    scope: 'support.type.object.console',
-    settings: { foreground: palette.blue },
+    name: 'JS object property',
+    scope: 'variable.other.object.property',
+    settings: {
+      foreground: palette.variableObjectProperty,
+    },
   },
   {
-    name: 'JS/TS: Console Property',
-    scope: 'support.variable.property.process',
-    settings: { foreground: palette.orange },
+    name: 'JS nested object key',
+    scope:
+      'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
+    settings: {
+      foreground: palette.variableNested,
+    },
   },
   {
-    name: 'JS/TS: Console Function',
-    scope: ['entity.name.function', 'support.function.console'],
-    settings: { foreground: palette.blue },
+    name: 'JS support variable',
+    scope: 'support.other.variable',
+    settings: {
+      foreground: palette.supportVariable,
+    },
   },
   {
-    name: 'JS/TS: DOM',
-    scope: 'support.type.object.dom',
-    settings: { foreground: palette.cyan },
+    name: 'JS function',
+    scope: [
+      'meta.class-method.js entity.name.function.js',
+      'entity.name.method.js',
+      'variable.function.constructor',
+      'keyword.other.special-method',
+      'storage.type.cs',
+    ],
+    settings: {
+      foreground: palette.function,
+    },
   },
   {
-    name: 'JS/TS: DOM Variable',
-    scope: ['support.variable.dom', 'support.variable.property.dom'],
-    settings: { foreground: palette.blue },
+    name: 'JS function',
+    scope: [
+      'entity.name.function',
+      'meta.function-call',
+      'meta.function-call entity.name.function',
+      'variable.function',
+      'meta.definition.method entity.name.function',
+      'meta.object-literal entity.name.function',
+    ],
+    settings: {
+      foreground: palette.function,
+    },
+  },
+  {
+    name: 'JS function parameter',
+    scope: [
+      'variable.parameter.function.language.special',
+      'variable.parameter',
+      'meta.function.parameters punctuation.definition.variable',
+      'meta.function.parameter variable',
+    ],
+    settings: {
+      foreground: palette.functionParameter,
+    },
+  },
+  {
+    name: 'JS module',
+    scope: [
+      'entity.name.module.js',
+      'variable.import.parameter.js',
+      'variable.other.class.js',
+    ],
+    settings: {
+      foreground: palette.jsModule,
+    },
+  },
+  {
+    name: 'JS language variable',
+    scope: 'variable.language',
+    settings: {
+      foreground: palette.variableLanguage,
+    },
+  },
+  {
+    name: 'JS variable punctuation',
+    scope: 'variable.other punctuation.definition.variable',
+    settings: {
+      foreground: palette.variable,
+    },
+  },
+  {
+    name: 'JS this',
+    scope: [
+      'source.js constant.other.object.key.js string.unquoted.label.js',
+      'variable.language.this punctuation.definition.variable',
+      'keyword.other.this',
+    ],
+    settings: {
+      foreground: palette.jsThis,
+    },
+  },
+  {
+    name: 'JS decorator',
+    scope: [
+      'tag.decorator.js entity.name.tag.js',
+      'tag.decorator.js punctuation.definition.tag.js',
+    ],
+    settings: {
+      foreground: palette.decorator,
+    },
+  },
+  {
+    name: 'JSX children',
+    scope: 'meta.jsx.children',
+    settings: {
+      foreground: palette.variable,
+    },
+  },
+  {
+    name: 'JS variable name',
+    scope: 'entity.name.variable',
+    settings: {
+      foreground: palette.variableName,
+    },
+  },
+  {
+    name: 'JS parameter',
+    scope: ['variable.parameter', 'parameters variable.function'],
+    settings: {
+      foreground: palette.parameter,
+      fontStyle: 'italic',
+    },
   },
 ]

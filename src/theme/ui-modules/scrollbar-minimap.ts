@@ -5,17 +5,26 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление полосы прокрутки и миникарты в VS Code
  */
 export const scrollbarMinimapColors = {
-  // Scrollbar & Minimap
-  'scrollbar.shadow': palette.grayScrollbar, // Тень полосы прокрутки
-  'scrollbarSlider.background': palette.foregroundAlpha1f, // Фон ползунка полосы прокрутки
-  'scrollbarSlider.hoverBackground': palette.selectionAlpha29, // Фон ползунка полосы прокрутки при наведении
-  'scrollbarSlider.activeBackground': palette.selectionAlpha33, // Фон активного ползунка полосы прокрутки
-  'editor.rangeHighlightBackground': palette.foregroundAlpha1f, // Фон подсветки диапазона в редакторе
-  'editorOverviewRuler.findMatchForeground': palette.blueAltAlpha00, // Цвет линейки поиска совпадений в обзорной линейке редактора
-  'editorOverviewRuler.selectionHighlightForeground': palette.blueAltAlpha00, // Цвет линейки подсветки выделения в обзорной линейке редактора
-  'editorOverviewRuler.rangeHighlightForeground': palette.blueAlphaCC, // Цвет линейки подсветки диапазона в обзорной линейке редактора
-  'editorOverviewRuler.wordHighlightForeground': palette.foregroundAlpha1f, // Цвет линейки подсветки слова в обзорной линейке редактора
-  'editorOverviewRuler.wordHighlightStrongForeground': palette.selectionAlpha33, // Цвет линейки сильной подсветки слова в обзорной линейке редактора
-  'minimap.findMatchHighlight': palette.purpleAlpha80, // Подсветка совпадений поиска в миникарте
-  'minimap.selectionHighlight': palette.selectionAlpha33, // Подсветка выделения в миникарте
+  'editorOverviewRuler.addedForeground': palette.overviewRulerAddedFg,
+  'editorOverviewRuler.border': palette.transparent,
+  'editorOverviewRuler.bracketMatchForeground': palette.backgroundAlt,
+  'editorOverviewRuler.deletedForeground': palette.redDark5,
+  'editorOverviewRuler.errorForeground': palette.redDark,
+  'editorOverviewRuler.findMatchForeground': palette.overviewRulerFindMatchFgAlpha44,
+  'editorOverviewRuler.infoForeground': palette.cyanDark4,
+  'editorOverviewRuler.modifiedForeground': palette.blueDark3,
+  'editorOverviewRuler.rangeHighlightForeground': palette.overviewRulerRangeHighlightFgAlpha44,
+  'editorOverviewRuler.selectionHighlightForeground': palette.overviewRulerSelectionHighlightFgAlpha30,
+  'editorOverviewRuler.warningForeground': palette.yellow,
+  'editorOverviewRuler.wordHighlightForeground': palette.overviewRulerWordHighlightFgAlpha55,
+  'editorOverviewRuler.wordHighlightStrongForeground': palette.overviewRulerWordHighlightStrongFgAlpha66,
+  'minimap.findMatchHighlight': palette.purpleAlpha80,
+  'minimap.selectionHighlight': palette.selectionAlpha33,
+  'minimapGutter.addedBackground': palette.greenDark5,
+  'minimapGutter.deletedBackground': palette.redDark6,
+  'minimapGutter.modifiedBackground': palette.blueDark3,
+  'scrollbar.shadow': palette.scrollbarShadowAlpha,
+  'scrollbarSlider.activeBackground': palette.scrollbarSliderBgAlpha34,
+  'scrollbarSlider.background': palette.scrollbarSliderBgAlpha34,
+  'scrollbarSlider.hoverBackground': palette.scrollbarSliderBgAlpha34,
 }

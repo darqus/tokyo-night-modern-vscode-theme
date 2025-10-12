@@ -5,12 +5,17 @@ import { palette } from '../palette'
  * Эти токены отвечают за общие элементы пользовательского интерфейса в VS Code
  */
 export const generalUIColors = {
-  // General UI
-  foreground: palette.foreground, // Общий цвет текста
-  'icon.foreground': palette.foreground, // Цвет иконок
-  descriptionForeground: palette.foregroundAlt, // Цвет описаний
-  disabledForeground: palette.foregroundAlt, // Цвет текста для отключенных элементов
-  focusBorder: palette.border, // Граница фокуса (прозрачная)
-  errorForeground: palette.red, // Цвет текста ошибок
-  'selection.background': palette.selection, // Фон выделенного текста
+  'breadcrumb.activeSelectionForeground': palette.blue,
+  'breadcrumb.focusForeground': palette.blue,
+  'breadcrumb.foreground': palette.foregroundAlt,
+  'breadcrumbPicker.background': palette.backgroundAlt,
+  descriptionForeground: palette.foregroundAlt4,
+  errorForeground: palette.foregroundAlt4,
+  focusBorder: palette.borderFocus,
+  foreground: palette.foregroundAlt3,
+  'icon.foreground': palette.blue,
+  'sash.hoverBorder': palette.sashHoverBorder,
+  'selection.background': palette.selectionBgAlpha60,
+  'widget.border': palette.borderAltAlpha40,
+  'widget.shadow': palette.widgetShadowAlpha,
 }

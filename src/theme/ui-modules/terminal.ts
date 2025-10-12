@@ -5,30 +5,32 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление встроенного терминала в VS Code
  */
 export const terminalColors = {
-  // Terminal
-  'terminal.background': palette.background, // Фон терминала
-  'terminal.foreground': palette.foreground, // Цвет текста в терминале
-  'terminal.selectionBackground': palette.selectionAlpha33, // Фон выделенного текста в терминале
-  'terminal.inactiveSelectionBackground': palette.foregroundAlpha1f, // Фон неактивного выделения в терминале
-  'terminal.border': palette.border, // Граница терминала
-  'terminal.hoverHighlightBackground': palette.grayScrollbarSliderHover, // Фон подсветки при наведении в терминале
-  'terminal.ansiBlack': palette.background, // Черный ANSI цвет
-  'terminal.ansiRed': palette.red, // Красный ANSI цвет
-  'terminal.ansiGreen': palette.green, // Зеленый ANSI цвет
-  'terminal.ansiYellow': palette.yellow, // Желтый ANSI цвет
-  'terminal.ansiBlue': palette.blueAlt, // Синий ANSI цвет
-  'terminal.ansiMagenta': palette.purple, // Пурпурный ANSI цвет
-  'terminal.ansiCyan': palette.blueAlt, // Голубой ANSI цвет
-  'terminal.ansiWhite': palette.grayLight, // Белый ANSI цвет
-  'terminal.ansiBrightBlack': palette.grayDark, // Ярко-черный ANSI цвет
-  'terminal.ansiBrightRed': palette.terminalBrightRed, // Ярко-красный ANSI цвет
-  'terminal.ansiBrightGreen': palette.terminalBrightGreen, // Ярко-зеленый ANSI цвет
-  'terminal.ansiBrightYellow': palette.terminalBrightYellow, // Ярко-желтый ANSI цвет
-  'terminal.ansiBrightBlue': palette.blueAlt, // Ярко-синий ANSI цвет
-  'terminal.ansiBrightMagenta': palette.terminalBrightMagenta, // Ярко-пурпурный ANSI цвет
-  'terminal.ansiBrightCyan': palette.blueAlt, // Ярко-голубой ANSI цвет
-  'terminal.ansiBrightWhite': palette.white, // Ярко-белый ANSI цвет
-  'terminalCommandDecoration.defaultBackground': palette.selectionAlpha33, // Фон декорации команды по умолчанию
-  'terminalCommandDecoration.successBackground': palette.greenAlpha33, // Фон успешной декорации команды
-  'terminalCommandDecoration.errorBackground': palette.redAlpha33, // Фон ошибки декорации команды
+  'terminal.ansiBlack': palette.foregroundAlt6,
+  'terminal.ansiBlue': palette.blue,
+  'terminal.ansiBrightBlack': palette.foregroundAlt6,
+  'terminal.ansiBrightBlue': palette.blue,
+  'terminal.ansiBrightCyan': palette.cyan,
+  'terminal.ansiBrightGreen': palette.greenDark,
+  'terminal.ansiBrightMagenta': palette.pink,
+  'terminal.ansiBrightRed': palette.red,
+  'terminal.ansiBrightWhite': palette.foregroundAlt7,
+  'terminal.ansiBrightYellow': palette.yellow,
+  'terminal.ansiCyan': palette.cyan,
+  'terminal.ansiGreen': palette.greenDark,
+  'terminal.ansiMagenta': palette.pink,
+  'terminal.ansiRed': palette.red,
+  'terminal.ansiWhite': palette.foregroundAlt3,
+  'terminal.ansiYellow': palette.yellow,
+  'terminal.background': palette.backgroundAlt,
+  'terminal.border': palette.borderAlpha40,
+  'terminal.dropBackground': palette.blueDarkAlpha20,
+  'terminal.foreground': palette.foregroundAlt3,
+  'terminal.selectionBackground': palette.terminalSelectionBgAlpha30,
+  'terminal.tab.activeBorder': palette.blue,
+  'terminalCommandDecoration.defaultBackground': palette.yellow,
+  'terminalCommandDecoration.errorBackground': palette.red,
+  'terminalCommandDecoration.successBackground': palette.cyan,
+  'terminalCursor.background': palette.backgroundAlt,
+  'terminalCursor.foreground': palette.yellow,
+  'terminalOverviewRuler.cursorForeground': palette.yellow,
 }

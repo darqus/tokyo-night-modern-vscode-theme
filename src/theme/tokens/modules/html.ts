@@ -3,27 +3,49 @@ import { palette } from '../../palette'
 
 export const htmlTokens: TokenColor[] = [
   {
-    name: 'HTML: Tag',
-    scope: 'entity.name.tag',
-    settings: { foreground: palette.red, fontStyle: 'bold' },
-  },
- {
-    name: 'HTML: Attribute',
-    scope: 'entity.other.attribute-name',
-    settings: { foreground: palette.purple },
-  },
-  {
-    name: 'HTML: Punctuation Tag',
+    name: 'HTML attribute',
     scope: [
-      'punctuation.definition.tag',
-      'punctuation.definition.tag.begin',
-      'punctuation.definition.tag.end',
+      'entity.other.attribute-name',
+      'text.html.basic entity.other.attribute-name.html',
+      'text.html.basic entity.other.attribute-name',
     ],
-    settings: { foreground: palette.redAlpha80 },
+    settings: {
+      foreground: palette.htmlAttribute,
+    },
   },
   {
-    name: 'HTML: Doctype',
-    scope: ['entity.name.tag.doctype', 'meta.tag.sgml.doctype.html'],
-    settings: { foreground: palette.purple, fontStyle: 'italic' },
+    name: 'HTML entity',
+    scope: 'text.html constant.character.entity',
+    settings: {
+      foreground: palette.htmlEntity,
+    },
+  },
+  {
+    name: 'HTML id',
+    scope: [
+      'entity.other.attribute-name.id.html',
+      'meta.directive.vue entity.other.attribute-name.html',
+    ],
+    settings: {
+      foreground: palette.htmlId,
+    },
+  },
+  {
+    name: 'HTML component',
+    scope: [
+      'entity.name.tag.other.html',
+      'entity.name.tag support.class.component',
+      'support.class.component.html',
+    ],
+    settings: {
+      foreground: palette.htmlComponent,
+    },
+  },
+  {
+    name: 'HTML tag',
+    scope: 'entity.name.tag',
+    settings: {
+      foreground: palette.htmlTag,
+    },
   },
 ]

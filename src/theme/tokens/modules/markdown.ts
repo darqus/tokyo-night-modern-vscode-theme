@@ -3,93 +3,170 @@ import { palette } from '../../palette'
 
 export const markdownTokens: TokenColor[] = [
   {
-    name: 'Markdown: Heading',
-    scope: ['markup.heading', 'entity.name.section.markdown'],
-    settings: { foreground: palette.mdHeading, fontStyle: 'bold' },
+    name: 'MD list item',
+    scope: 'punctuation.definition.list_item.markdown',
+    settings: {
+      foreground: palette.mdListItemAlpha60,
+    },
   },
   {
-    name: 'Markdown: Emphasis',
-    scope: ['markup.italic', 'markup.bold'],
-    settings: { foreground: palette.yellow },
+    name: 'MD raw',
+    scope: 'text.html.markdown markup.inline.raw.markdown',
+    settings: {
+      foreground: palette.mdRaw,
+    },
   },
   {
-    name: 'Markdown: Link',
-    scope: ['markup.underline.link', 'string.other.link'],
-    settings: { foreground: palette.blue },
+    name: 'MD raw punctuation',
+    scope:
+      'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
+    settings: {
+      foreground: palette.mdRawPunctuation,
+    },
   },
   {
-    name: 'Markdown: Code',
-    scope: ['markup.inline.raw', 'markup.fenced_code'],
-    settings: { foreground: palette.mdCode },
+    name: 'MD heading 1',
+    scope: [
+      'heading.1.markdown entity.name',
+      'heading.1.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading1,
+    },
   },
   {
-    name: 'Markdown: Quote',
+    name: 'MD heading 2',
+    scope: [
+      'heading.2.markdown entity.name',
+      'heading.2.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading2,
+    },
+  },
+  {
+    name: 'MD heading 3',
+    scope: [
+      'heading.3.markdown entity.name',
+      'heading.3.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading3,
+    },
+  },
+  {
+    name: 'MD heading 4',
+    scope: [
+      'heading.4.markdown entity.name',
+      'heading.4.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading4,
+    },
+  },
+  {
+    name: 'MD heading 5',
+    scope: [
+      'heading.5.markdown entity.name',
+      'heading.5.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading5,
+    },
+  },
+  {
+    name: 'MD heading 6',
+    scope: [
+      'heading.6.markdown entity.name',
+      'heading.6.markdown punctuation.definition.heading.markdown',
+    ],
+    settings: {
+      foreground: palette.mdHeading6,
+    },
+  },
+  {
+    name: 'MD italic',
+    scope: ['markup.italic', 'markup.italic punctuation'],
+    settings: {
+      foreground: palette.mdItalic,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'MD bold',
+    scope: ['markup.bold', 'markup.bold punctuation'],
+    settings: {
+      foreground: palette.mdBold,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'MD bold italic',
+    scope: [
+      'markup.bold markup.italic',
+      'markup.bold markup.italic punctuation',
+    ],
+    settings: {
+      foreground: palette.mdBold,
+      fontStyle: 'bold italic',
+    },
+  },
+  {
+    name: 'MD underline',
+    scope: ['markup.underline', 'markup.underline punctuation'],
+    settings: {
+      fontStyle: 'underline',
+    },
+  },
+  {
+    name: 'MD quote punctuation',
+    scope: 'markup.quote punctuation.definition.blockquote.markdown',
+    settings: {
+      foreground: palette.mdQuote,
+    },
+  },
+  {
+    name: 'MD quote',
     scope: 'markup.quote',
-    settings: { foreground: palette.commentDoc, fontStyle: 'italic' },
+    settings: {
+      fontStyle: '',
+    },
   },
   {
-    name: 'Markdown: List',
-    scope: 'markup.list',
-    settings: { foreground: palette.foreground },
-  },
-  {
-    name: 'Markdown: Heading Punctuation',
-    scope: 'punctuation.definition.heading.markdown',
-    settings: { foreground: palette.red },
-  },
-  {
-    name: 'Markdown: List Punctuation',
-    scope: 'punctuation.definition.list.begin.markdown',
-    settings: { foreground: palette.red },
-  },
-  {
-    name: 'Markdown: Heading Setext',
-    scope: 'markup.heading.setext',
-    settings: { foreground: palette.variable },
-  },
-  {
-    name: 'Markdown: Bold Punctuation',
-    scope: 'punctuation.definition.bold.markdown',
-    settings: { foreground: palette.orange },
-  },
-  {
-    name: 'Markdown: Inline Raw',
-    scope: ['markup.inline.raw.markdown', 'markup.inline.raw.string.markdown'],
-    settings: { foreground: palette.green },
-  },
-  {
-    name: 'Markdown: List Punctuation Definition',
-    scope: 'punctuation.definition.list.markdown',
-    settings: { foreground: palette.red },
-  },
-  {
-    name: 'Markdown: String Punctuation',
+    name: 'MD link',
     scope: [
-      'punctuation.definition.string.begin.markdown',
-      'punctuation.definition.string.end.markdown',
-      'punctuation.definition.metadata.markdown',
+      'markup.underline.link',
+      'constant.other.reference.link.markdown',
+      'string.other.link.description.title.markdown',
     ],
-    settings: { foreground: palette.red },
+    settings: {
+      foreground: palette.mdLink,
+    },
   },
   {
-    name: 'Markdown: Beginning List Punctuation',
-    scope: 'beginning.punctuation.definition.list.markdown',
-    settings: { foreground: palette.red },
-  },
-  {
-    name: 'Markdown: Link',
+    name: 'MD code',
     scope: [
-      'markup.underline.link.markdown',
-      'markup.underline.link.image.markdown',
+      'markup.fenced_code.block.markdown',
+      'markup.inline.raw.string.markdown',
+      'variable.language.fenced.markdown',
     ],
-    settings: { foreground: palette.purple },
+    settings: {
+      foreground: palette.mdCode,
+    },
   },
   {
-    name: 'Markdown: Link Title',
-    scope: [
-      'string.other.link.title.markdown',
-      'string.other.link.description.markdown',
-    ],
-    settings: { foreground: palette.keywordAsync },
+    name: 'MD separator',
+    scope: 'meta.separator',
+    settings: {
+      foreground: palette.mdSeparator,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'MD table',
+    scope: 'markup.table',
+    settings: {
+      foreground: palette.mdTable,
+    },
   },
 ]

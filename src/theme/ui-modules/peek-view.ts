@@ -5,11 +5,16 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление режима просмотра (peek view) в VS Code
  */
 export const peekViewColors = {
-  // Peek View
-  'peekViewEditor.background': palette.backgroundAlt, // Фон редактора в режиме просмотра
-  'peekViewResult.background': palette.backgroundAlt, // Фон результата в режиме просмотра
-  'peekViewTitle.background': palette.backgroundPanel, // Фон заголовка в режиме просмотра
-  'peekViewEditor.matchHighlightBackground': palette.blueAlpha2e, // Фон подсветки совпадений в редакторе просмотра
-  'peekViewResult.matchHighlightBackground': palette.blueAlpha2e, // Фон подсветки совпадений в результате просмотра
-  'peekViewResult.selectionBackground': palette.blueAlpha33, // Фон выделения в результате просмотра
+  'peekView.border': palette.borderAlpha40,
+  'peekViewEditor.background': palette.backgroundAlt,
+  'peekViewEditor.matchHighlightBackground': palette.blueDarkAlpha40,
+  'peekViewResult.background': palette.backgroundAlt,
+  'peekViewResult.fileForeground': palette.foreground,
+  'peekViewResult.lineForeground': palette.blue,
+  'peekViewResult.matchHighlightBackground': palette.editorFindMatchBgAlpha66,
+  'peekViewResult.selectionBackground': palette.peekViewResultSelectionBgAlpha40,
+  'peekViewResult.selectionForeground': palette.foreground,
+  'peekViewTitle.background': palette.backgroundAlt,
+  'peekViewTitleDescription.foreground': palette.foreground,
+  'peekViewTitleLabel.foreground': palette.blue,
 }
