@@ -5,19 +5,16 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление меню и выпадающих списков в VS Code
  */
 export const menuDropdownColors = {
-  // Menus & Dropdowns
-  'menu.background': palette.background, // Фон меню
-  'menu.foreground': palette.foreground, // Цвет текста в меню
-  'menu.selectionBackground': palette.backgroundAlpha00, // Фон выделенного элемента в меню (прозрачный)
-  'menu.selectionForeground': palette.foreground, // Цвет текста выделенного элемента в меню
-  'menu.selectionBorder': palette.blueAlt, // Граница выделенного элемента в меню
-  'menubar.selectionBorder': palette.blueAlt, // Граница выделенного элемента в меню строки меню
-  'menubar.selectionBackground': palette.backgroundAlpha00, // Фон выделенного элемента в строке меню
-  'menubar.selectionForeground': palette.foreground, // Цвет текста выделенного элемента в строке меню
-  'menu.border': palette.border, // Граница меню
-  'menu.separatorBackground': palette.grayMenu, // Фон разделителя в меню
-  'dropdown.background': palette.background, // Фон выпадающего списка
-  'dropdown.foreground': palette.foreground, // Цвет текста в выпадающем списке
-  'dropdown.border': palette.border, // Граница выпадающего списка
-  'dropdown.listBackground': palette.background, // Фон списка в выпадающем списке
+  'dropdown.background': palette.backgroundAlt,
+  'dropdown.border': palette.borderAltAlpha40,
+  'dropdown.foreground': palette.foreground,
+  'dropdown.listBackground': palette.backgroundAlt2,
+  'menu.background': palette.backgroundAlt,
+  'menu.border': palette.borderAltAlpha40,
+  'menu.foreground': palette.foreground,
+  'menu.selectionBackground': palette.backgroundAlt5,
+  'menu.selectionForeground': palette.blue,
+  'menu.separatorBackground': palette.borderAltAlpha40,
+  'menubar.selectionBackground': palette.backgroundAlt5,
+  'menubar.selectionForeground': palette.foreground,
 }

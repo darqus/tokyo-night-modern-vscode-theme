@@ -6,12 +6,11 @@ import { palette } from '../palette'
  */
 export const activityBarColors = {
   // Activity Bar
-  'activityBar.background': palette.backgroundAlt, // Фон панели активности
-  'activityBar.foreground': palette.blue, // Цвет иконок на панели активности
-  'activityBar.inactiveForeground': palette.foregroundAlt, // Цвет неактивных иконок на панели активности
-  'activityBar.activeBorder': palette.blue, // Граница активного элемента на панели активности
-  'activityBar.activeBackground': palette.background, // Фон активного элемента на панели активности
-  'activityBar.activeFocusBorder': palette.blue, // Граница фокуса активного элемента на панели активности
-  'activityBar.border': palette.background, // Граница панели активности
-  'activityBar.dropBorder': palette.blue, // Граница при перетаскивании на панель активности
+  'activityBar.background': palette.backgroundAlt,
+  'activityBar.foreground': palette.blue,
+  'activityBar.inactiveForeground': palette.foregroundAlt,
+  'activityBar.activeBorder': palette.blue,
+  'activityBar.activeBackground': palette.backgroundAlt7,
+  'activityBar.border': palette.backgroundAlt,
+  'activityBar.dropBorder': palette.blue,
 }

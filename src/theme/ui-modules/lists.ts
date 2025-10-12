@@ -5,14 +5,19 @@ import { palette } from '../palette'
  * Эти токены отвечают за оформление списков в VS Code
  */
 export const listColors = {
-  // Lists
-  'list.activeSelectionBackground': palette.selectionAlpha33, // Фон активного выделения в списке
-  'list.activeSelectionForeground': palette.foreground, // Цвет текста активного выделения в списке
-  'list.inactiveSelectionBackground': palette.foregroundAlpha1f, // Фон неактивного выделения в списке
-  'list.inactiveSelectionForeground': palette.foreground, // Цвет текста неактивного выделения в списке
-  'list.hoverBackground': palette.foregroundAlpha1f, // Фон элемента списка при наведении
-  'list.hoverForeground': palette.foreground, // Цвет текста элемента списка при наведении
-  'list.focusBackground': palette.selectionAlpha33, // Фон элемента списка в фокусе
-  'list.focusForeground': palette.foreground, // Цвет текста элемента списка в фокусе
-  'list.highlightForeground': palette.blueAlt, // Цвет выделенного текста в списке
+  'list.activeSelectionBackground': palette.listActiveSelectionBgAlpha90,
+  'list.activeSelectionForeground': palette.blue,
+  'list.deemphasizedForeground': palette.foregroundAlt3,
+  'list.dropBackground': palette.blueDarkAlpha20,
+  'list.errorForeground': palette.redDark2,
+  'list.focusBackground': palette.listFocusBg,
+  'list.focusForeground': palette.foreground,
+  'list.highlightForeground': palette.blueDark4,
+  'list.hoverBackground': palette.listHoverBgAlpha60,
+  'list.hoverForeground': palette.blue,
+  'list.inactiveSelectionBackground': palette.listInactiveSelectionBg,
+  'list.inactiveSelectionForeground': palette.blue,
+  'list.inactiveSelectionIconForeground': palette.blue,
+  'list.invalidItemForeground': palette.orangeDark3,
+  'list.warningForeground': palette.yellowDark,
 }
