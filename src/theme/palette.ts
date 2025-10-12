@@ -64,7 +64,7 @@ const accentColors: ColorPalette = {
   // --- Purples ---
   purple: '#bb9af7',
   purpleMid: '#9a7ecc', // editorBracketHighlight.foreground3
-  purpleDark: '#9d7cd8', // charts.purple
+  purpleDark: '#7256a3', // charts.purple
 
   // --- Greens ---
   green: '#9ece6a', // debugTokenExpression.string
