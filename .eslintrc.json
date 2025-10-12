@@ -25,6 +25,7 @@
     "no-var": "error",
     "import/no-cycle": ["error", { "maxDepth": 1 }]
   },
+  "ignorePatterns": ["themes/*"],
   "settings": {
     "import/resolver": {
       "typescript": true
