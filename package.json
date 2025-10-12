@@ -2,7 +2,7 @@
   "name": "tokyo-night-modern",
   "displayName": "Tokyo Night Modern",
   "description": "Beautiful modern dark theme for VS Code with carefully crafted colors and contemporary design",
-  "version": "2.2.4",
+  "version": "2.2.40",
   "author": "lod",
   "publisher": "lod-inc",
   "license": "MIT",
@@ -42,6 +42,7 @@
     "test:theme:update": "jest tests/theme-identical.test.ts -u",
     "validate:theme": "ts-node scripts/validate-theme.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
+    "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
@@ -52,6 +53,7 @@
     "@types/node": "^24.5.2",
     "@typescript-eslint/eslint-plugin": "^8.46.0",
     "@typescript-eslint/parser": "^8.46.0",
+    "@vscode/vsce": "^3.6.2",
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
@@ -62,6 +64,7 @@
     "ts-jest": "^29.4.4",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tslib": "^2.8.1",
     "typescript": "^5.9.2"
   }
 }
