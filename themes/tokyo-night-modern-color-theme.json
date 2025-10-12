@@ -290,7 +290,10 @@
     "editorOverviewRuler.warningForeground": "#e0af68",
     "minimapGutter.addedBackground": "#1c5957",
     "minimapGutter.deletedBackground": "#914c54",
-    "minimapGutter.modifiedBackground": "#394b70"
+    "minimapGutter.modifiedBackground": "#394b70",
+    "scrollbarSlider.activeBackground": "#2A2F4034",
+    "scrollbarSlider.background": "#2A2F4034",
+    "scrollbarSlider.hoverBackground": "#2A2F4034"
   },
   "tokenColors": [
     {
