@@ -2,7 +2,6 @@
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/darqus/tokyo-night-modern-vscode-theme/release.yml?branch=main&style=flat-square)](https://github.com/darqus/tokyo-night-modern-vscode-theme/actions)
 
 > A modern, balanced dark theme for VS Code. Minimalist palette, declarative generation, strict tests.
 
