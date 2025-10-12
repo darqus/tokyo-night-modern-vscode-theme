@@ -17,50 +17,50 @@ const baseColors: ColorPalette = {
   foregroundAlt: '#7b87b6',
   foregroundInactive: '#6b78a8',
   white: '#ffffff',
-  black: '#1a1b26',
+  black: '#000000',
 }
 
 // 2. Акцентные цвета (для выделения)
 const accentColors: ColorPalette = {
-  blue: '#7dcfff',
-  blueAlt: '#29acf8',
-  purple: '#b18af8',
+  blue: '#7aa2f7',
+  blueAlt: '#2f477b',
+  purple: '#bb9af7',
   purpleAlt: '#9d7cd8',
-  green: '#a7c785',
-  yellow: '#f7de70',
-  orange: '#f0ac74',
-  red: '#f38095',
-  cyan: '#73daca',
-  teal: '#96cab6',
-  pink: '#af7c9f',
+  green: '#9ece6a',
+  yellow: '#e0af68',
+  orange: '#ff9e64',
+  red: '#f7768e',
+  cyan: '#7dcfff',
+  teal: '#495f77',
+  pink: '#f7768e',
 }
 
 // 3. Цвета для синтаксиса
 const syntaxColors: ColorPalette = {
-  commentDoc: '#7d909e',
-  jsdocTag: '#729bcb',
-  keywordAccess: '#a582e5',
+  commentDoc: '#4a505d',
+  jsdocTag: '#7aa2f7',
+  keywordAccess: '#bb9af7',
   keywordAsync: '#7aa2f7',
-  interface: '#c6d8a9',
-  enum: '#f4c572',
-  namespace: '#87b6f3',
-  typeParam: '#e1d6a5',
-  builtinType: '#77bee1',
-  comparisonOp: '#a783e8',
-  assignOp: '#a893e1',
-  spreadOp: '#7cbdfc',
-  annotation: '#f4c572',
-  attribute: '#f5cf71',
-  pragma: '#729bcb',
-  mdHeading: '#7aa2f7',
-  mdCode: '#95af90',
+  interface: '#7aa2f7',
+  enum: '#bb9af7',
+  namespace: '#bb9af7',
+  typeParam: '#bb9af7',
+  builtinType: '#e0af68',
+  comparisonOp: '#7dcfff',
+  assignOp: '#7dcfff',
+  spreadOp: '#bb9af7',
+  annotation: '#e0af68',
+  attribute: '#7aa2f7',
+  pragma: '#7aa2f7',
+  mdHeading: '#bb9af7',
+  mdCode: '#9ece6a',
   bracket: '#c0caf5',
-  delimiter: '#a6b1de',
+  delimiter: '#c0caf5',
   deprecated: '#8591bf', // Alpha will be applied in token
   variable: '#c0caf5',
-  funcParam: '#accbf8',
-  regexp: '#bfce7f',
-  accessor: '#7dcfff',
+  funcParam: '#c0caf5',
+  regexp: '#bb9af7',
+  accessor: '#7aa2f7',
 }
 
 // 4. Цвета для специфических элементов UI
@@ -94,7 +94,7 @@ const uiColors: ColorPalette = {
   hoverWidgetHighlight: '#43b6f9',
 
   // Special selections and highlights
-  selection: '#b620d4',
+  selection: '#2358ca',
 }
 
 // 5. Альфа-значения (единственный источник правды для прозрачности)

@@ -12,7 +12,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.control.switch',
     ],
     settings: {
-      foreground: palette.purple,
+      foreground: palette.red,
     },
   },
   {
@@ -24,7 +24,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.definitelytyped',
     ],
     settings: {
-      foreground: palette.purpleAlt,
+      foreground: palette.yellow,
     },
   },
   {
@@ -61,7 +61,7 @@ export const javascriptTokens: TokenColor[] = [
       'storage.modifier.readonly',
     ],
     settings: {
-      foreground: palette.keywordAccess,
+      foreground: palette.yellow,
     },
   },
   {
@@ -72,14 +72,14 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.await',
     ],
     settings: {
-      foreground: palette.keywordAsync,
+      foreground: palette.red,
     },
   },
   {
     name: 'JavaScript: String Template',
     scope: ['string.template', 'string.quasi'],
     settings: {
-      foreground: palette.teal,
+      foreground: palette.green,
     },
   },
   {
@@ -89,21 +89,21 @@ export const javascriptTokens: TokenColor[] = [
       'punctuation.definition.template-expression',
     ],
     settings: {
-      foreground: palette.teal,
+      foreground: palette.red,
     },
   },
   {
     name: 'JavaScript: Function Parameter',
     scope: ['variable.parameter', 'meta.parameters variable'],
     settings: {
-      foreground: palette.funcParam,
+      foreground: palette.foreground,
     },
   },
   {
     name: 'JavaScript: Method Call',
     scope: ['variable.function', 'entity.name.function.member'],
     settings: {
-      foreground: palette.keywordAsync,
+      foreground: palette.blue,
       fontStyle: 'bold',
     },
   },
@@ -111,7 +111,7 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Function Declaration',
     scope: ['entity.name.function', 'meta.function-call entity.name.function'],
     settings: {
-      foreground: palette.keywordAsync,
+      foreground: palette.blue,
     },
   },
   {
@@ -125,14 +125,14 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Interface Name',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: palette.interface,
+      foreground: palette.blue,
     },
   },
   {
     name: 'JavaScript: Enum Name',
     scope: ['entity.name.type.enum'],
     settings: {
-      foreground: palette.enum,
+      foreground: palette.blue,
     },
   },
   {
@@ -146,28 +146,28 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Primitive Type',
     scope: ['support.type.primitive', 'keyword.type'],
     settings: {
-      foreground: palette.cyan,
+      foreground: palette.yellow,
     },
   },
   {
     name: 'JavaScript: Generic Type Parameter',
     scope: ['entity.name.type.parameter'],
     settings: {
-      foreground: palette.typeParam,
+      foreground: palette.yellow,
     },
   },
   {
     name: 'JavaScript: Union Type Operator',
     scope: ['keyword.operator.type.union'],
     settings: {
-      foreground: palette.purpleAlt,
+      foreground: palette.purple,
     },
   },
   {
     name: 'JavaScript: Built-in Type',
     scope: ['support.type.builtin'],
     settings: {
-      foreground: palette.builtinType,
+      foreground: palette.yellow,
     },
   },
   {
@@ -181,81 +181,81 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Arithmetic Operator',
     scope: ['keyword.operator.arithmetic'],
     settings: {
-      foreground: palette.purpleAlt,
+      foreground: palette.cyan,
     },
   },
   {
     name: 'JavaScript: Comparison Operator',
     scope: ['keyword.operator.comparison', 'keyword.operator.relational'],
     settings: {
-      foreground: palette.comparisonOp,
+      foreground: palette.cyan,
     },
   },
   {
     name: 'JavaScript: Logical Operator',
     scope: ['keyword.operator.logical'],
     settings: {
-      foreground: palette.purple,
+      foreground: palette.cyan,
     },
   },
   {
     name: 'JavaScript: Assignment Operator',
     scope: ['keyword.operator.assignment'],
     settings: {
-      foreground: palette.assignOp,
+      foreground: palette.cyan,
     },
   },
   {
     name: 'JavaScript: Ternary Operator',
     scope: ['keyword.operator.ternary'],
     settings: {
-      foreground: palette.blue,
+      foreground: palette.red,
     },
   },
   {
     name: 'JavaScript: Spread Operator',
     scope: ['keyword.operator.spread', 'keyword.operator.rest'],
     settings: {
-      foreground: palette.spreadOp,
+      foreground: palette.purple,
     },
   },
   {
     name: 'JavaScript: Decorator',
     scope: ['entity.name.function.decorator', 'punctuation.decorator'],
     settings: {
-      foreground: palette.orange,
+      foreground: palette.yellow,
     },
   },
   {
     name: 'JavaScript: Annotation',
     scope: ['storage.type.annotation'],
     settings: {
-      foreground: palette.annotation,
+      foreground: palette.yellow,
     },
   },
   {
     name: 'JavaScript: Attribute',
     scope: ['entity.other.attribute-name.attribute'],
     settings: {
-      foreground: palette.attribute,
+      foreground: palette.blue,
     },
   },
   {
     name: 'JavaScript: Pragma/Directive',
     scope: ['meta.preprocessor', 'keyword.other.directive'],
     settings: {
-      foreground: palette.pragma,
+      foreground: palette.blue,
     },
   },
   {
     name: 'JS/TS: Punctuation Separator Key-Value',
     scope: 'punctuation.separator.key-value',
-    settings: { foreground: palette.variable },
+    settings: { foreground: palette.foreground },
   },
   {
     name: 'JS/TS: Import Keyword',
     scope: 'keyword.operator.expression.import',
-    settings: { foreground: palette.keywordAsync },
+    settings: { foreground: palette.blue },
   },
   {
     name: 'JS/TS: Math',
@@ -295,7 +295,7 @@ export const javascriptTokens: TokenColor[] = [
       'support.variable.object.process',
       'support.variable.object.node',
     ],
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.foreground },
   },
   {
     name: 'JS/TS: JSON',
@@ -311,12 +311,12 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.operator.optional',
       'keyword.operator.expression.keyof',
     ],
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.red },
   },
   {
     name: 'JS/TS: Console',
     scope: 'support.type.object.console',
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.blue },
   },
   {
     name: 'JS/TS: Console Property',
@@ -326,16 +326,16 @@ export const javascriptTokens: TokenColor[] = [
   {
     name: 'JS/TS: Console Function',
     scope: ['entity.name.function', 'support.function.console'],
-    settings: { foreground: palette.keywordAsync },
+    settings: { foreground: palette.blue },
   },
   {
     name: 'JS/TS: DOM',
     scope: 'support.type.object.dom',
-    settings: { foreground: palette.blue },
+    settings: { foreground: palette.cyan },
   },
   {
     name: 'JS/TS: DOM Variable',
     scope: ['support.variable.dom', 'support.variable.property.dom'],
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.blue },
   },
 ]

@@ -7,10 +7,10 @@ import { palette } from '../palette'
 export const generalUIColors = {
   // General UI
   foreground: palette.foreground, // Общий цвет текста
-  'icon.foreground': palette.foregroundInactive, // Цвет иконок
+  'icon.foreground': palette.foreground, // Цвет иконок
   descriptionForeground: palette.foregroundAlt, // Цвет описаний
   disabledForeground: palette.foregroundAlt, // Цвет текста для отключенных элементов
-  focusBorder: palette.backgroundAlpha00, // Граница фокуса (прозрачная)
+  focusBorder: palette.border, // Граница фокуса (прозрачная)
   errorForeground: palette.red, // Цвет текста ошибок
-  'selection.background': palette.selectionAlpha66, // Фон выделенного текста
+  'selection.background': palette.selection, // Фон выделенного текста
 }
