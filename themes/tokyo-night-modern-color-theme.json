@@ -1,6 +1,7 @@
 {
   "name": "Tokyo Night Modern",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     "commandCenter.background": "#101620",
     "commandCenter.border": "#4e6ab2",
@@ -1287,5 +1288,13 @@
       "scope": "source.cpp meta.block variable.other",
       "settings": {}
     }
-  ]
+  ],
+  "semanticTokenColors": {
+    "method": {
+      "foreground": "#7AA2F7"
+    },
+    "variable.readonly": {
+      "foreground": "#e0af68"
+    }
+  }
 }
