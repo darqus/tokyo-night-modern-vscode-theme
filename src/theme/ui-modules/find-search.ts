@@ -7,7 +7,8 @@ import { palette } from '../palette'
 export const findSearchColors = {
   'editor.findMatchBackground': palette.editorFindMatchBgAlpha66,
   'editor.findMatchHighlightBackground': palette.editorFindMatchBgAlpha66,
-  'editorOverviewRuler.findMatchForeground': palette.overviewRulerFindMatchFgAlpha44,
+  'editorOverviewRuler.findMatchForeground':
+    palette.overviewRulerFindMatchFgAlpha44,
   'listFilterWidget.background': palette.listFilterWidgetBackground,
   'listFilterWidget.noMatchesOutline': palette.redDark7,
   'listFilterWidget.outline': palette.border,

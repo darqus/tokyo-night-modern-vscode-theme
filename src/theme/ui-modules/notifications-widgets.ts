@@ -1,4 +1,4 @@
-import { palette } from '../palette';
+import { palette } from '../palette'
 
 /**
  * Notifications & Widgets UI элементы
@@ -26,4 +26,4 @@ export const notificationWidgetColors = {
   'notificationsWarningIcon.foreground': palette.purpleHover,
   'widget.border': palette.borderAltAlpha40,
   'widget.shadow': palette.widgetShadowAlpha,
-};
+}

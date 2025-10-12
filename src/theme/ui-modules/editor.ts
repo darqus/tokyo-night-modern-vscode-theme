@@ -8,19 +8,24 @@ export const editorColors = {
   'editor.background': palette.background,
   'editor.findMatchBackground': palette.editorFindMatchBgAlpha66,
   'editor.findMatchHighlightBackground': palette.editorFindMatchBgAlpha66,
-  'editor.findRangeHighlightBackground': palette.editorFindRangeHighlightBgAlpha33,
-  'editor.focusedStackFrameHighlightBackground': palette.editorFocusedStackFrameBgAlpha20,
+  'editor.findRangeHighlightBackground':
+    palette.editorFindRangeHighlightBgAlpha33,
+  'editor.focusedStackFrameHighlightBackground':
+    palette.editorFocusedStackFrameBgAlpha20,
   'editor.foldBackground': palette.backgroundAlt3Alpha4A,
   'editor.foreground': palette.foreground,
-  'editor.inactiveSelectionBackground': palette.editorInactiveSelectionBgAlpha45,
+  'editor.inactiveSelectionBackground':
+    palette.editorInactiveSelectionBgAlpha45,
   'editor.lineHighlightBackground': palette.backgroundAlt2,
   'editor.lineHighlightBorder': palette.transparent,
   'editor.rangeHighlightBackground': palette.editorRangeHighlightBgAlpha20,
   'editor.selectionBackground': palette.editorSelectionBgAlpha60,
-  'editor.selectionHighlightBackground': palette.editorSelectionHighlightBgAlpha44,
+  'editor.selectionHighlightBackground':
+    palette.editorSelectionHighlightBgAlpha44,
   'editor.stackFrameHighlightBackground': palette.editorStackFrameBgAlpha20,
   'editor.wordHighlightBackground': palette.editorWordHighlightBgAlpha44,
-  'editor.wordHighlightStrongBackground': palette.editorWordHighlightStrongBgAlpha55,
+  'editor.wordHighlightStrongBackground':
+    palette.editorWordHighlightStrongBgAlpha55,
   'editorBracketHighlight.foreground1': palette.blueMid,
   'editorBracketHighlight.foreground2': palette.blueLight2,
   'editorBracketHighlight.foreground3': palette.purpleMid,

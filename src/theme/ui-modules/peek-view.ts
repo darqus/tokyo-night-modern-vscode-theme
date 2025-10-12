@@ -12,7 +12,8 @@ export const peekViewColors = {
   'peekViewResult.fileForeground': palette.foreground,
   'peekViewResult.lineForeground': palette.blue,
   'peekViewResult.matchHighlightBackground': palette.editorFindMatchBgAlpha66,
-  'peekViewResult.selectionBackground': palette.peekViewResultSelectionBgAlpha40,
+  'peekViewResult.selectionBackground':
+    palette.peekViewResultSelectionBgAlpha40,
   'peekViewResult.selectionForeground': palette.foreground,
   'peekViewTitle.background': palette.backgroundAlt,
   'peekViewTitleDescription.foreground': palette.foreground,

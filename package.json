@@ -42,12 +42,22 @@
     "test:theme:update": "jest tests/theme-identical.test.ts -u",
     "validate:theme": "ts-node scripts/validate-theme.ts",
     "build:vsix": "ts-node scripts/build-vsix.ts",
-    "release": "ts-node scripts/release.ts"
+    "release": "ts-node scripts/release.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "cleanup:palette": "ts-node scripts/cleanup-palette.ts"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.0",
+    "@typescript-eslint/parser": "^8.46.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
     "jest": "^30.1.3",
+    "prettier": "^3.6.2",
     "standard-version": "^9.5.0",
     "ts-jest": "^29.4.4",
     "ts-node": "^10.9.2",

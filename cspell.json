@@ -1,9 +1,5 @@
 {
   "version": "0.2",
   "language": "ru,en",
-  "words": [
-    "codetag",
-    "definitelytyped",
-    "Stackframe"
-  ]
+  "words": ["codetag", "definitelytyped", "Stackframe"]
 }
