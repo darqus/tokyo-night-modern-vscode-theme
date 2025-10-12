@@ -36,54 +36,6 @@
 
 ---
 
-## 🏗️ Project Structure
-
-The project is structured to separate concerns and automate the theme generation process.
-
-```text
-.
-├── src/theme/
-│   ├── palette.ts        # Base palette and color roles
-│   ├── ui.ts             # UI color generation
-│   ├── tokens.ts         # Syntax token generation
-│   └── ...               # Other modules
-├── scripts/              # Build, validation, and release automation
-├── themes/               # Output directory for the generated JSON theme
-└── tests/                # Identity and validation tests
-```
-
----
-
-## 🛠️ Development
-
-To get started with local development:
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/darqus/tokyo-night-modern-vscode-theme.git
-cd tokyo-night-modern-vscode-theme
-
-# 2. Install dependencies
-npm install
-
-# 3. Run the development script
-npm run dev
-
-# 4. Build, test, and validate
-npm run build:theme      # Generate the theme file
-npm run test             # Run all tests
-npm run validate:theme   # Validate the theme structure
-npm run build:vsix       # Package for release
-```
-
----
-
-## 🗺️ Roadmap
-
-Our plans for the future are documented in the [Roadmap](docs/ROADMAP.md).
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a bug report, a feature request, or a pull request, we appreciate your help. Please read our contributing guidelines (to be created).
