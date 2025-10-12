@@ -19,10 +19,10 @@ exports[`Theme should match the snapshot 1`] = `
     "activityWarningBadge.foreground": "#1a1b26",
     "badge.background": "#0078d4",
     "badge.foreground": "#ffffff",
-    "button.background": "#0078d4",
+    "button.background": "#223855",
     "button.border": "#3d59a1",
     "button.foreground": "#ffffff",
-    "button.hoverBackground": "#1f88d9",
+    "button.hoverBackground": "#264061",
     "button.secondaryBackground": "#1f2230",
     "button.secondaryForeground": "#9aaae9",
     "button.secondaryHoverBackground": "#232634",
@@ -162,7 +162,7 @@ exports[`Theme should match the snapshot 1`] = `
     "panelTitle.activeForeground": "#9aaae9",
     "panelTitle.border": "#202230",
     "panelTitle.inactiveForeground": "#7b87b6",
-    "panelTitleBadge.background": "#0078d4",
+    "panelTitleBadge.background": "#223855",
     "panelTitleBadge.foreground": "#ffffff",
     "peekViewEditor.background": "#1f2230",
     "peekViewEditor.matchHighlightBackground": "#7aa2f72e",
@@ -203,9 +203,9 @@ exports[`Theme should match the snapshot 1`] = `
     "statusBarItem.prominentForeground": "#ffffff",
     "statusBarItem.prominentHoverBackground": "#ff9e64",
     "statusBarItem.prominentHoverForeground": "#ffffff",
-    "statusBarItem.remoteBackground": "#0078d4",
+    "statusBarItem.remoteBackground": "#223855",
     "statusBarItem.remoteForeground": "#ffffff",
-    "statusBarItem.remoteHoverBackground": "#1f88d9",
+    "statusBarItem.remoteHoverBackground": "#264061",
     "statusBarItem.remoteHoverForeground": "#ffffff",
     "tab.activeBackground": "#1a1b26",
     "tab.activeBorderTop": "#7aa2f7",
@@ -358,7 +358,7 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -376,7 +376,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -395,7 +395,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -404,7 +404,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support",
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -413,7 +413,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.function",
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -485,7 +485,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.definitelytyped",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -565,7 +565,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.parameters variable",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -662,7 +662,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.type.builtin",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -671,7 +671,16 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type",
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
+      },
+    },
+    {
+      "name": "JavaScript: Type Annotation",
+      "scope": [
+        "meta.type.annotation",
+      ],
+      "settings": {
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -899,7 +908,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "TypeScript: Primitive Type",
       "scope": "support.type.primitive.ts",
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -907,7 +916,7 @@ exports[`Theme should match the snapshot 1`] = `
       "scope": "keyword.typescript",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#bb9af7",
+        "foreground": "#ff9e64",
       },
     },
     {
@@ -936,6 +945,13 @@ exports[`Theme should match the snapshot 1`] = `
       "scope": "entity.name.namespace.ts",
       "settings": {
         "foreground": "#c097d7",
+      },
+    },
+    {
+      "name": "TypeScript: Type Annotation",
+      "scope": "meta.type.annotation.ts",
+      "settings": {
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1208,7 +1224,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.other.link.description.markdown",
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1317,7 +1333,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Function",
       "scope": "entity.name.function.python",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1372,7 +1388,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Parameter",
       "scope": "variable.parameter.function.language.python",
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1393,7 +1409,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Python: Function Call",
       "scope": "meta.function-call.generic.python",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1440,7 +1456,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Java: Method",
       "scope": "entity.name.function.java",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1500,7 +1516,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Java: Method",
       "scope": "meta.method.java",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1548,7 +1564,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "C++: Method",
       "scope": "entity.name.function.cpp",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1674,7 +1690,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Rust: Support Function Standard Library",
       "scope": "support.function.std.rust",
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1748,7 +1764,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.function.import.vue",
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
     {
@@ -1768,7 +1784,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e0af68",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1778,7 +1794,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
       },
     },
   ],

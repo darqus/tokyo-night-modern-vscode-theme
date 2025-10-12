@@ -73,7 +73,7 @@ export const commonTokens: TokenColor[] = [
     name: 'Storage Type',
     scope: ['storage.type'],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.keywordAccess,
     },
   },
   {
@@ -87,7 +87,7 @@ export const commonTokens: TokenColor[] = [
     name: 'Entity Name Type',
     scope: ['entity.name.type'],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.orange,
     },
   },
   {

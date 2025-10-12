@@ -57,9 +57,9 @@
     "statusBar.noFolderBackground": "#1f2230",
     "statusBar.debuggingBackground": "#f7768e",
     "statusBar.debuggingForeground": "#ffffff",
-    "statusBarItem.remoteBackground": "#0078d4",
+    "statusBarItem.remoteBackground": "#223855",
     "statusBarItem.remoteForeground": "#ffffff",
-    "statusBarItem.remoteHoverBackground": "#1f88d9",
+    "statusBarItem.remoteHoverBackground": "#264061",
     "statusBarItem.remoteHoverForeground": "#ffffff",
     "statusBarItem.hoverBackground": "#232739",
     "statusBarItem.hoverForeground": "#9aaae9",
@@ -106,7 +106,7 @@
     "panelTitle.activeBorder": "#7aa2f7",
     "panelTitle.border": "#202230",
     "panel.dropBorder": "#7aa2f7",
-    "panelTitleBadge.background": "#0078d4",
+    "panelTitleBadge.background": "#223855",
     "panelTitleBadge.foreground": "#ffffff",
     "panelSection.border": "#363c54",
     "panelSectionHeader.border": "#363c54",
@@ -124,9 +124,9 @@
     "input.border": "#202230",
     "inputOption.activeBorder": "#3d59a1",
     "input.placeholderForeground": "#6b78a8",
-    "button.background": "#0078d4",
+    "button.background": "#223855",
     "button.foreground": "#ffffff",
-    "button.hoverBackground": "#1f88d9",
+    "button.hoverBackground": "#264061",
     "button.border": "#3d59a1",
     "button.separator": "#202230",
     "button.secondaryBackground": "#1f2230",
@@ -349,7 +349,7 @@
         "storage.type"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -367,7 +367,7 @@
         "entity.name.type"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -386,7 +386,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#bb9af7"
       }
     },
     {
@@ -395,7 +395,7 @@
         "support"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -404,7 +404,7 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -476,7 +476,7 @@
         "keyword.other.definitelytyped"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -556,7 +556,7 @@
         "meta.parameters variable"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#bb9af7"
       }
     },
     {
@@ -653,7 +653,7 @@
         "support.type.builtin"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -662,7 +662,16 @@
         "entity.name.type"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
+      }
+    },
+    {
+      "name": "JavaScript: Type Annotation",
+      "scope": [
+        "meta.type.annotation"
+      ],
+      "settings": {
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -890,14 +899,14 @@
       "name": "TypeScript: Primitive Type",
       "scope": "support.type.primitive.ts",
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#ff9e64"
       }
     },
     {
       "name": "TypeScript: Keyword",
       "scope": "keyword.typescript",
       "settings": {
-        "foreground": "#bb9af7",
+        "foreground": "#ff9e64",
         "fontStyle": "bold"
       }
     },
@@ -927,6 +936,13 @@
       "scope": "entity.name.namespace.ts",
       "settings": {
         "foreground": "#c097d7"
+      }
+    },
+    {
+      "name": "TypeScript: Type Annotation",
+      "scope": "meta.type.annotation.ts",
+      "settings": {
+        "foreground": "#e0af68"
       }
     },
     {
@@ -1199,7 +1215,7 @@
         "string.other.link.description.markdown"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1308,7 +1324,7 @@
       "name": "Python: Function",
       "scope": "entity.name.function.python",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1363,7 +1379,7 @@
       "name": "Python: Parameter",
       "scope": "variable.parameter.function.language.python",
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#bb9af7"
       }
     },
     {
@@ -1384,7 +1400,7 @@
       "name": "Python: Function Call",
       "scope": "meta.function-call.generic.python",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1431,7 +1447,7 @@
       "name": "Java: Method",
       "scope": "entity.name.function.java",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1491,7 +1507,7 @@
       "name": "Java: Method",
       "scope": "meta.method.java",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1539,7 +1555,7 @@
       "name": "C++: Method",
       "scope": "entity.name.function.cpp",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1665,7 +1681,7 @@
       "name": "Rust: Support Function Standard Library",
       "scope": "support.function.std.rust",
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1739,7 +1755,7 @@
         "support.function.import.vue"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#0db9d7"
       }
     },
     {
@@ -1758,7 +1774,7 @@
         "variable.other.property.getter.pinia"
       ],
       "settings": {
-        "foreground": "#e0af68",
+        "foreground": "#bb9af7",
         "fontStyle": "italic"
       }
     },
@@ -1768,7 +1784,7 @@
         "entity.name.function.action.pinia"
       ],
       "settings": {
-        "foreground": "#7aa2f7",
+        "foreground": "#0db9d7",
         "fontStyle": "bold"
       }
     }
