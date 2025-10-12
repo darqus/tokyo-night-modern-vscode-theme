@@ -10,7 +10,7 @@ export const typescriptTokens: TokenColor[] = [
   {
     name: 'TypeScript: Keyword',
     scope: 'keyword.typescript',
-    settings: { foreground: palette.purple, fontStyle: 'bold' },
+    settings: { foreground: palette.keywordAccess, fontStyle: 'bold' },
   },
   {
     name: 'TypeScript: Decorator',
@@ -31,6 +31,11 @@ export const typescriptTokens: TokenColor[] = [
     name: 'TypeScript: Namespace',
     scope: 'entity.name.namespace.ts',
     settings: { foreground: palette.namespace },
+  },
+  {
+    name: 'TypeScript: Type Annotation',
+    scope: 'meta.type.annotation.ts',
+    settings: { foreground: palette.yellow },
   },
   {
     name: 'TypeScript: JSDoc Tags',

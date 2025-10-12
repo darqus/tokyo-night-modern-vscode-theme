@@ -39,13 +39,13 @@ const accentColors: ColorPalette = {
 const syntaxColors: ColorPalette = {
   commentDoc: '#565f89',
   jsdocTag: '#e0af68',
-  keywordAccess: '#bb9af7',
-  keywordAsync: '#7aa2f7',
-  interface: '#7aa2f7',
+  keywordAccess: '#ff9e64',
+  keywordAsync: '#0db9d7',
+  interface: '#7dcfff',
   enum: '#c097d7',
   namespace: '#c097d7',
   typeParam: '#c097d7',
-  builtinType: '#e0af68',
+  builtinType: '#ff9e64',
   comparisonOp: '#89ddff',
   assignOp: '#89ddff',
   spreadOp: '#bb9af7',
@@ -58,7 +58,7 @@ const syntaxColors: ColorPalette = {
   delimiter: '#89ddff',
   deprecated: '#9d7cd8', // Alpha will be applied in token
   variable: '#c0caf5',
-  funcParam: '#e0af68',
+  funcParam: '#bb9af7',
   regexp: '#b4f9f8',
   accessor: '#7aa2f7',
 }
@@ -66,8 +66,8 @@ const syntaxColors: ColorPalette = {
 // 4. Цвета для специфических элементов UI
 const uiColors: ColorPalette = {
   // Blues
-  blueStrong: '#0078d4',
-  blueHover: '#1f88d9',
+  blueStrong: '#223855',
+  blueHover: '#264061',
   blueSeparator: '#202230',
   blueSecondary: '#232634',
 

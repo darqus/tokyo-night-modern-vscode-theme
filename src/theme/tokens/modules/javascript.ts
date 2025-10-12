@@ -25,7 +25,7 @@ export const javascriptTokens: TokenColor[] = [
       'keyword.other.definitelytyped',
     ],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.keywordAccess,
     },
   },
   {
@@ -171,14 +171,21 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JavaScript: Built-in Type',
     scope: ['support.type.builtin'],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.keywordAccess,
     },
   },
   {
     name: 'JavaScript: Custom Type',
     scope: ['entity.name.type'],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.orange,
+    },
+  },
+  {
+    name: 'JavaScript: Type Annotation',
+    scope: ['meta.type.annotation'],
+    settings: {
+      foreground: palette.orange,
     },
   },
   {
