@@ -283,6 +283,7 @@ const uiColors: ColorPalette = {
   treeIndentGuidesStroke: '#7aa2f7',
   welcomePageProgressFg: '#2ac3de',
   welcomePageTileBg: '#2ac3de',
+  editorStickyScrollHoverBg: '#45496c3f',
 }
 
 // 5. Альфа-значения (единственный источник правды для прозрачности)

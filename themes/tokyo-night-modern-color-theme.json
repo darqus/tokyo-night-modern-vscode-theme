@@ -83,6 +83,8 @@
     "editorOverviewRuler.border": "#00000000",
     "editorOverviewRuler.bracketMatchForeground": "#0f141c",
     "editorRuler.foreground": "#0f141c",
+    "editorStickyScroll.background": "#0f141c",
+    "editorStickyScrollHover.background": "#45496c3f",
     "editorSuggestWidget.background": "#0f141c",
     "editorSuggestWidget.border": "#6183bb40",
     "editorSuggestWidget.foreground": "#a9b1d6",
