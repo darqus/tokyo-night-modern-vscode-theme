@@ -10,6 +10,12 @@
 
 ---
 
+## 🌎 Live Preview
+
+🔮 [Open in vscode.dev](https://vscode.dev/theme/lod-inc.tokyo-night-modern)
+
+---
+
 ## 🎨 Overview
 
 **Tokyo Night Modern** is not just another dark theme. It's a declaratively generated, minimalist theme focused on balance and consistency.
@@ -23,10 +29,10 @@
 
 ## 🚀 Quick Start
 
-1.  Open **VS Code**.
-2.  Go to `Extensions` (`Ctrl+Shift+X`).
-3.  Search for "Tokyo Night Modern".
-4.  Click **Install** and select it as your active theme.
+1. Open **VS Code**.
+2. Go to `Extensions` (`Ctrl+Shift+X`).
+3. Search for "Tokyo Night Modern".
+4. Click **Install** and select it as your active theme.
 
 ---
 
