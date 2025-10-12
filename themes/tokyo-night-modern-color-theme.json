@@ -20,7 +20,7 @@
     "foreground": "#cccccc",
     "icon.foreground": "#7aa2f7",
     "sash.hoverBorder": "#29355a",
-    "selection.background": "#a9b1d660",
+    "selection.background": "#4e6ab260",
     "widget.border": "#6183bb40",
     "editor.background": "#101620",
     "editor.findMatchBackground": "#4e6ab266",
