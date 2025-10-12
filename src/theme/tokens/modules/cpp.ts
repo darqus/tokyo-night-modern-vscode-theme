@@ -5,19 +5,19 @@ export const cppTokens: TokenColor[] = [
   {
     name: 'C++: Keyword',
     scope: 'keyword.cpp',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'C++: Class',
     scope: 'entity.name.type.class.cpp',
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.yellow, fontStyle: 'bold' },
   },
   {
     name: 'C++: Method',
     scope: 'entity.name.function.cpp',
     settings: { foreground: palette.keywordAsync },
   },
-  {
+ {
     name: 'C++: Preprocessor',
     scope: 'meta.preprocessor.cpp',
     settings: { foreground: palette.pragma },
@@ -53,12 +53,12 @@ export const cppTokens: TokenColor[] = [
       'keyword.operator.decrement.cpp',
       'keyword.operator.bitwise.shift.cpp',
     ],
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.cyan },
   },
   {
     name: 'C++: Punctuation',
     scope: ['punctuation.separator.c', 'punctuation.separator.cpp'],
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.delimiter },
   },
   {
     name: 'C++: Posix Type',
@@ -71,6 +71,6 @@ export const cppTokens: TokenColor[] = [
   {
     name: 'C++: Sizeof',
     scope: ['keyword.operator.sizeof.c', 'keyword.operator.sizeof.cpp'],
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.cyan },
   },
 ]

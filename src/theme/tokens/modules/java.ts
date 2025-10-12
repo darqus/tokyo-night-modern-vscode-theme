@@ -5,12 +5,12 @@ export const javaTokens: TokenColor[] = [
   {
     name: 'Java: Keyword',
     scope: 'keyword.java',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'Java: Class',
     scope: 'entity.name.type.class.java',
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.yellow, fontStyle: 'bold' },
   },
   {
     name: 'Java: Method',
@@ -25,7 +25,7 @@ export const javaTokens: TokenColor[] = [
   {
     name: 'Java: Type',
     scope: ['storage.type.annotation.java', 'storage.type.object.array.java'],
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.blue },
   },
   {
     name: 'Java: Source',
@@ -71,16 +71,16 @@ export const javaTokens: TokenColor[] = [
       'storage.type.java',
       'storage.type.generic.java',
     ],
-    settings: { foreground: palette.yellow },
+    settings: { foreground: palette.purple },
   },
   {
     name: 'Java: Instanceof',
     scope: 'keyword.operator.instanceof.java',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.cyan },
   },
   {
     name: 'Java: Variable Name',
     scope: 'meta.definition.variable.name.java',
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.foreground },
   },
 ]

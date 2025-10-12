@@ -5,9 +5,9 @@ export const htmlTokens: TokenColor[] = [
   {
     name: 'HTML: Tag',
     scope: 'entity.name.tag',
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.red, fontStyle: 'bold' },
   },
-  {
+ {
     name: 'HTML: Attribute',
     scope: 'entity.other.attribute-name',
     settings: { foreground: palette.purple },

@@ -23,7 +23,7 @@ const baseColors: ColorPalette = {
 // 2. Акцентные цвета (для выделения)
 const accentColors: ColorPalette = {
   blue: '#7aa2f7',
-  blueAlt: '#2f477b',
+  blueAlt: '#3d59a1',
   purple: '#bb9af7',
   purpleAlt: '#9d7cd8',
   green: '#9ece6a',
@@ -31,35 +31,35 @@ const accentColors: ColorPalette = {
   orange: '#ff9e64',
   red: '#f7768e',
   cyan: '#7dcfff',
-  teal: '#495f77',
-  pink: '#f7768e',
+  teal: '#4db1b8',
+  pink: '#fae4fc',
 }
 
 // 3. Цвета для синтаксиса
 const syntaxColors: ColorPalette = {
-  commentDoc: '#4a505d',
-  jsdocTag: '#7aa2f7',
+  commentDoc: '#565f89',
+  jsdocTag: '#e0af68',
   keywordAccess: '#bb9af7',
   keywordAsync: '#7aa2f7',
   interface: '#7aa2f7',
-  enum: '#bb9af7',
-  namespace: '#bb9af7',
-  typeParam: '#bb9af7',
+  enum: '#c097d7',
+  namespace: '#c097d7',
+  typeParam: '#c097d7',
   builtinType: '#e0af68',
-  comparisonOp: '#7dcfff',
-  assignOp: '#7dcfff',
+  comparisonOp: '#89ddff',
+  assignOp: '#89ddff',
   spreadOp: '#bb9af7',
   annotation: '#e0af68',
-  attribute: '#7aa2f7',
-  pragma: '#7aa2f7',
+  attribute: '#73daca',
+  pragma: '#e0af68',
   mdHeading: '#bb9af7',
   mdCode: '#9ece6a',
   bracket: '#c0caf5',
-  delimiter: '#c0caf5',
-  deprecated: '#8591bf', // Alpha will be applied in token
+  delimiter: '#89ddff',
+  deprecated: '#9d7cd8', // Alpha will be applied in token
   variable: '#c0caf5',
-  funcParam: '#c0caf5',
-  regexp: '#bb9af7',
+  funcParam: '#e0af68',
+  regexp: '#b4f9f8',
   accessor: '#7aa2f7',
 }
 
@@ -87,11 +87,11 @@ const uiColors: ColorPalette = {
   activityBarInactive: '#4f577b',
 
   // Terminal Colors
-  terminalBrightRed: '#f593a5',
-  terminalBrightGreen: '#b4cf97',
-  terminalBrightYellow: '#f8e385',
-  terminalBrightMagenta: '#bd9cf9',
-  hoverWidgetHighlight: '#43b6f9',
+  terminalBrightRed: '#ff8b99',
+  terminalBrightGreen: '#b9f27c',
+  terminalBrightYellow: '#ffdd7a',
+  terminalBrightMagenta: '#ff8dce',
+  hoverWidgetHighlight: '#565f89',
 
   // Special selections and highlights
   selection: '#2358ca',

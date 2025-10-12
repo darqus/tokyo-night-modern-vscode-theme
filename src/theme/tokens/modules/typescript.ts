@@ -10,7 +10,7 @@ export const typescriptTokens: TokenColor[] = [
   {
     name: 'TypeScript: Keyword',
     scope: 'keyword.typescript',
-    settings: { foreground: palette.purple },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'TypeScript: Decorator',
@@ -20,7 +20,7 @@ export const typescriptTokens: TokenColor[] = [
   {
     name: 'TypeScript: Type Parameter',
     scope: 'entity.name.type.parameter.ts',
-    settings: { foreground: palette.typeParam },
+    settings: { foreground: palette.purpleAlt },
   },
   {
     name: 'TypeScript: Enum Member',

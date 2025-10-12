@@ -59,14 +59,14 @@ export const commonTokens: TokenColor[] = [
     name: 'Operator',
     scope: ['keyword.operator'],
     settings: {
-      foreground: palette.purpleAlt,
+      foreground: palette.cyan,
     },
   },
   {
     name: 'Storage',
     scope: ['storage'],
     settings: {
-      foreground: palette.purpleAlt,
+      foreground: palette.purple,
     },
   },
   {

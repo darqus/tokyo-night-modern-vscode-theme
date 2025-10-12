@@ -5,7 +5,7 @@ export const jsonTokens: TokenColor[] = [
   {
     name: 'JSON: Property Name',
     scope: 'support.type.property-name.json',
-    settings: { foreground: palette.blue },
+    settings: { foreground: palette.purple, fontStyle: 'bold' },
   },
   {
     name: 'JSON: String',
@@ -30,13 +30,13 @@ export const jsonTokens: TokenColor[] = [
   {
     name: 'JSON: Meta Structure Dictionary String',
     scope: 'source.json meta.structure.dictionary.json > string.quoted.json',
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.green },
   },
   {
     name: 'JSON: Meta Structure Dictionary String Punctuation',
     scope:
       'source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string',
-    settings: { foreground: palette.red },
+    settings: { foreground: palette.delimiter },
   },
   {
     name: 'JSON: Meta Structure Value String',
