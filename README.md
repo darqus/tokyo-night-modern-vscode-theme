@@ -35,12 +35,6 @@
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Whether it's a bug report, a feature request, or a pull request, we appreciate your help. Please read our contributing guidelines (to be created).
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
