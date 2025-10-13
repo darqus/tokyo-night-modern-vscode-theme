@@ -41,7 +41,7 @@ const baseColors: ColorPalette = {
   // --- Common Colors ---
   white: '#ffffff',
   black: '#000000',
-  transparent: '#00000000',
+  transparent: '#000000',
   editorRuler: '#0f141c',
 
   // --- Special UI ---
@@ -53,7 +53,7 @@ const baseColors: ColorPalette = {
 const accentColors: ColorPalette = {
   // --- Blues ---
   blue: '#7aa2f7',
-  blueLight: '#7dcfff', // debugTokenExpression.name, terminal.ansiBrightCyan
+  blueLight: '#7dcfff', // debugTokenExpression.name, terminal.ansiBrightCyan - NOTE: same as cyan
   blueLight2: '#68b3de', // editorBracketHighlight.foreground2
   blueMid: '#698cd6', // editorBracketHighlight.foreground1
   blueDark: '#4e6ab2', // activityBarBadge.background, button.background
@@ -96,7 +96,7 @@ const accentColors: ColorPalette = {
   redError: '#FF5370', // token invalid
 
   // --- Cyans & Teals ---
-  cyan: '#7dcfff',
+  cyan: '#7dcfff', // debugTokenExpression.name, terminal.ansiBrightCyan - NOTE: same as blueLight
   cyanDark: '#73daca', // debugConsoleInputIcon.foreground
   cyanDark2: '#25aac2', // editorBracketHighlight.foreground4
   cyanDark3: '#0da0ba', // editorHint.foreground, editorInfo.foreground
@@ -107,7 +107,7 @@ const accentColors: ColorPalette = {
 
   // --- Other ---
   pink: '#bb9af7', // terminal.ansiBrightMagenta, terminal.ansiMagenta
-  magenta: '#bb9af7', // alias for pink
+  // magenta: '#bb9af7', // alias for pink - REMOVED: same as pink
   gitIgnored: '#616680',
   statusBarDebugBg: '#ff9e64',
   statusBarRemoteBg: '#7aa2f7',
@@ -283,7 +283,7 @@ const uiColors: ColorPalette = {
   treeIndentGuidesStroke: '#7aa2f7',
   welcomePageProgressFg: '#2ac3de',
   welcomePageTileBg: '#2ac3de',
-  editorStickyScrollHoverBg: '#45496c3f',
+  editorStickyScrollHoverBg: '#45496c',
 }
 
 // 5. Альфа-значения (единственный источник правды для прозрачности)
