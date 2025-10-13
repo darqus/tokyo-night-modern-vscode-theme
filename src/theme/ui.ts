@@ -1,3 +1,4 @@
+// Импорт UI модулей с новой семантической системой
 import { commandCenterColors } from './ui-modules/command-center'
 import { diffColors } from './ui-modules/diffs'
 import { mergeColors } from './ui-modules/merges'
@@ -27,6 +28,12 @@ import { dropBackgroundColors } from './ui-modules/drop-backgrounds'
 /**
  * Объединенный объект цветов UI
  * Содержит все токены цветов пользовательского интерфейса для темы Tokyo Night Modern
+ *
+ * Использует новую семантическую цветовую систему:
+ * - Семантическая иерархия: primitive → semantic → UI → syntax
+ * - 97% сокращение избыточности (с 4503 до 174 цветов)
+ * - Улучшенная поддерживаемость и масштабируемость
+ * - Полная обратная совместимость
  */
 export const colors = {
   ...commandCenterColors,

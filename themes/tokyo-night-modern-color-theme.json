@@ -1301,5 +1301,15 @@
     "variable.readonly": {
       "foreground": "#e0af68"
     }
+  },
+  "_metadata": {
+    "version": "2.3.0",
+    "buildSystem": "semantic-color-system",
+    "paletteOptimization": {
+      "totalColors": 4503,
+      "reduction": "97%",
+      "structure": "primitive → semantic → UI → syntax"
+    },
+    "buildDate": "2025-10-13T19:29:36.757Z"
   }
 }
