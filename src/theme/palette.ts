@@ -8,9 +8,9 @@ import {
 // 1. Базовые цвета (основа темы)
 const baseColors: ColorPalette = {
   // --- Backgrounds ---
-  background: '#101620', // editor.background
-  backgroundAlt: '#0f141c', // activityBar.background, editorPane.background, etc.
-  backgroundAlt2: '#122843', // editor.lineHighlightBackground, dropdown.listBackground
+  background: '#10151d', // editor.background
+  backgroundAlt: '#0a1018', // activityBar.background, editorPane.background, etc.
+  backgroundAlt2: '#17233d', // editor.lineHighlightBackground, dropdown.listBackground
   backgroundAlt3: '#111117', // editor.foldBackground (base for alpha)
   backgroundAlt4: '#1c1d29', // list.focusBackground, list.inactiveSelectionBackground
   backgroundAlt5: '#1e202e', // menu.selectionBackground, menubar.selectionBackground
