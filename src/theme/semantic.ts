@@ -1,4 +1,4 @@
-import { palette } from './palette'
+import { palette } from './palette/index'
 
 export const semanticTokenColors = {
   // Pinia/Vuex actions are methods

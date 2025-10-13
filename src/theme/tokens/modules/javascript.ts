@@ -1,6 +1,6 @@
 // Токены синтаксиса для JavaScript
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const javascriptTokens: TokenColor[] = [
   {
@@ -26,7 +26,7 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JS array variable',
     scope: 'meta.array.literal variable',
     settings: {
-      foreground: palette.variableAlt,
+      foreground: palette.variable,
     },
   },
   {
@@ -40,7 +40,7 @@ export const javascriptTokens: TokenColor[] = [
       'meta.field.declaration.ts variable.object.property',
     ],
     settings: {
-      foreground: palette.variableAlt2,
+      foreground: palette.variable,
     },
   },
   {
@@ -52,14 +52,14 @@ export const javascriptTokens: TokenColor[] = [
       'meta.function-call variable.other.object.property',
     ],
     settings: {
-      foreground: palette.variableProperty,
+      foreground: palette.property,
     },
   },
   {
     name: 'JS object property',
     scope: 'variable.other.object.property',
     settings: {
-      foreground: palette.variableObjectProperty,
+      foreground: palette.property,
     },
   },
   {
@@ -67,14 +67,14 @@ export const javascriptTokens: TokenColor[] = [
     scope:
       'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
     settings: {
-      foreground: palette.variableNested,
+      foreground: palette.property,
     },
   },
   {
     name: 'JS support variable',
     scope: 'support.other.variable',
     settings: {
-      foreground: palette.supportVariable,
+      foreground: palette.variable,
     },
   },
   {
@@ -113,7 +113,7 @@ export const javascriptTokens: TokenColor[] = [
       'meta.function.parameter variable',
     ],
     settings: {
-      foreground: palette.functionParameter,
+      foreground: palette.parameter,
     },
   },
   {
@@ -131,7 +131,7 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JS language variable',
     scope: 'variable.language',
     settings: {
-      foreground: palette.variableLanguage,
+      foreground: palette.variable,
     },
   },
   {
@@ -173,7 +173,7 @@ export const javascriptTokens: TokenColor[] = [
     name: 'JS variable name',
     scope: 'entity.name.variable',
     settings: {
-      foreground: palette.variableName,
+      foreground: palette.variable,
     },
   },
   {

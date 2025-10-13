@@ -1,5 +1,5 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const yamlTokens: TokenColor[] = [
   {

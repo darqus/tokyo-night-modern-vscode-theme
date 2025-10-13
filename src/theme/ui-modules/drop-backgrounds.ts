@@ -1,4 +1,4 @@
-import { palette } from '../palette'
+import { palette } from '../palette/index'
 
 /**
  * Drop Backgrounds UI элементы
@@ -6,8 +6,8 @@ import { palette } from '../palette'
  */
 export const dropBackgroundColors = {
   // Drop Backgrounds
-  'editorGroup.dropBackground': palette.backgroundPanelAlpha33, // Фон при перетаскивании в группу редакторов
-  'list.dropBackground': palette.backgroundPanelAlpha33, // Фон при перетаскивании в список
-  'panelSection.dropBackground': palette.backgroundPanelAlpha33, // Фон при перетаскивании в секцию панели
-  'terminal.dropBackground': palette.backgroundPanelAlpha33, // Фон при перетаскивании в терминал
+  'editorGroup.dropBackground': palette.special.highlight + '33', // Фон при перетаскивании в группу редакторов
+  'list.dropBackground': palette.special.highlight + '33', // Фон при перетаскивании в список
+  'panelSection.dropBackground': palette.special.highlight + '33', // Фон при перетаскивании в секцию панели
+  'terminal.dropBackground': palette.special.highlight + '33', // Фон при перетаскивании в терминал
 }

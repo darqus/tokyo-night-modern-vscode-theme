@@ -1,5 +1,5 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const jsonTokens: TokenColor[] = [
   {
@@ -14,73 +14,73 @@ export const jsonTokens: TokenColor[] = [
   {
     name: 'JSON key level 1',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel1,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 2',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel2,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 3',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel3,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 4',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel4,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 5',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel5,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 6',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel6,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 7',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel7,
+      foreground: palette.jsonKey,
     },
   },
   {
     name: 'JSON key level 8',
     scope: [
-      'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      'source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
     ],
     settings: {
-      foreground: palette.jsonKeyLevel8,
+      foreground: palette.jsonKey,
     },
   },
 ]

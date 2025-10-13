@@ -1,5 +1,5 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const cssTokens: TokenColor[] = [
   {
@@ -23,7 +23,7 @@ export const cssTokens: TokenColor[] = [
     name: 'CSS constant',
     scope: ['support.constant.font-name', 'meta.definition.variable'],
     settings: {
-      foreground: palette.cssConstant,
+      foreground: palette.constant,
     },
   },
   {
@@ -33,21 +33,21 @@ export const cssTokens: TokenColor[] = [
       'meta.at-rule.mixin.scss entity.name.function.scss',
     ],
     settings: {
-      foreground: palette.cssClass,
+      foreground: palette.attribute,
     },
   },
   {
     name: 'CSS id',
     scope: 'entity.other.attribute-name.id',
     settings: {
-      foreground: palette.cssId,
+      foreground: palette.attribute,
     },
   },
   {
     name: 'CSS tag',
     scope: 'entity.name.tag.css',
     settings: {
-      foreground: palette.cssTag,
+      foreground: palette.tag,
     },
   },
   {
@@ -66,7 +66,7 @@ export const cssTokens: TokenColor[] = [
     name: 'CSS property list',
     scope: 'meta.property-list',
     settings: {
-      foreground: palette.cssPropertyList,
+      foreground: palette.cssProperty,
     },
   },
   {
@@ -86,14 +86,14 @@ export const cssTokens: TokenColor[] = [
       'entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css',
     ],
     settings: {
-      foreground: palette.cssParentSelector,
+      foreground: palette.cssProperty,
     },
   },
   {
     name: 'CSS property list',
     scope: 'meta.property-list meta.property-list',
     settings: {
-      foreground: palette.cssPropertyList,
+      foreground: palette.cssProperty,
     },
   },
   {
@@ -104,7 +104,7 @@ export const cssTokens: TokenColor[] = [
       'meta.at-rule.include keyword.control.at-rule.include',
     ],
     settings: {
-      foreground: palette.cssMixin,
+      foreground: palette.cssProperty,
     },
   },
   {
@@ -122,28 +122,28 @@ export const cssTokens: TokenColor[] = [
       'keyword.control punctuation.definition.keyword',
     ],
     settings: {
-      foreground: palette.cssMixinKeyword,
+      foreground: palette.keyword,
     },
   },
   {
     name: 'CSS property list',
     scope: 'meta.property-list meta.at-rule.include',
     settings: {
-      foreground: palette.cssPropertyList,
+      foreground: palette.cssProperty,
     },
   },
   {
     name: 'CSS support',
     scope: 'support.constant.property-value',
     settings: {
-      foreground: palette.cssSupport,
+      foreground: palette.constant,
     },
   },
   {
     name: 'Sass keyword',
     scope: 'source.sass keyword.control',
     settings: {
-      foreground: palette.sassKeyword,
+      foreground: palette.keyword,
     },
   },
   {
@@ -162,7 +162,7 @@ export const cssTokens: TokenColor[] = [
     name: 'Unit',
     scope: 'keyword.other.unit',
     settings: {
-      foreground: palette.unit,
+      foreground: palette.keyword,
     },
   },
 ]

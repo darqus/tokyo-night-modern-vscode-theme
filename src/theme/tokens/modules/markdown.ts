@@ -1,19 +1,19 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const markdownTokens: TokenColor[] = [
   {
     name: 'MD list item',
     scope: 'punctuation.definition.list_item.markdown',
     settings: {
-      foreground: palette.mdListItemAlpha60,
+      foreground: palette.mdList,
     },
   },
   {
     name: 'MD raw',
     scope: 'text.html.markdown markup.inline.raw.markdown',
     settings: {
-      foreground: palette.mdRaw,
+      foreground: palette.mdCode,
     },
   },
   {
@@ -21,7 +21,7 @@ export const markdownTokens: TokenColor[] = [
     scope:
       'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
     settings: {
-      foreground: palette.mdRawPunctuation,
+      foreground: palette.mdCode,
     },
   },
   {
@@ -31,7 +31,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.1.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading1,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -41,7 +41,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.2.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading2,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -51,7 +51,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.3.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading3,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -61,7 +61,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.4.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading4,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -71,7 +71,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.5.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading5,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -81,7 +81,7 @@ export const markdownTokens: TokenColor[] = [
       'heading.6.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: palette.mdHeading6,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -158,7 +158,7 @@ export const markdownTokens: TokenColor[] = [
     name: 'MD separator',
     scope: 'meta.separator',
     settings: {
-      foreground: palette.mdSeparator,
+      foreground: palette.mdHeading,
       fontStyle: 'bold',
     },
   },
@@ -166,7 +166,7 @@ export const markdownTokens: TokenColor[] = [
     name: 'MD table',
     scope: 'markup.table',
     settings: {
-      foreground: palette.mdTable,
+      foreground: palette.mdCode,
     },
   },
 ]

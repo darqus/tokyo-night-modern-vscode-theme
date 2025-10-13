@@ -1,4 +1,4 @@
-import { palette } from '../palette'
+import { palette } from '../palette/index'
 
 /**
  * Activity Bar UI элементы
@@ -6,11 +6,11 @@ import { palette } from '../palette'
  */
 export const activityBarColors = {
   // Activity Bar
-  'activityBar.background': palette.backgroundAlt,
+  'activityBar.background': palette.backgrounds.secondary, // Замена для backgroundAlt
   'activityBar.foreground': palette.blue,
-  'activityBar.inactiveForeground': palette.foregroundAlt,
+  'activityBar.inactiveForeground': palette.textSecondary, // Замена для foregroundAlt
   'activityBar.activeBorder': palette.blue,
-  'activityBar.activeBackground': palette.backgroundAlt7,
-  'activityBar.border': palette.backgroundAlt,
+  'activityBar.activeBackground': palette.interactive.selected, // Замена для backgroundAlt7
+  'activityBar.border': palette.backgrounds.secondary, // Замена для backgroundAlt
   'activityBar.dropBorder': palette.blue,
 }
