@@ -1,5 +1,5 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const htmlTokens: TokenColor[] = [
   {
@@ -27,7 +27,7 @@ export const htmlTokens: TokenColor[] = [
       'meta.directive.vue entity.other.attribute-name.html',
     ],
     settings: {
-      foreground: palette.htmlId,
+      foreground: palette.attribute,
     },
   },
   {

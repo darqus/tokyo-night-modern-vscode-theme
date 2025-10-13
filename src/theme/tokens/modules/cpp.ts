@@ -1,12 +1,12 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const cppTokens: TokenColor[] = [
   {
     name: 'C++ variable',
     scope: 'source.cpp meta.block variable.other',
     settings: {
-      foreground: palette.variableAlt4,
+      foreground: palette.variable,
     },
   },
 ]

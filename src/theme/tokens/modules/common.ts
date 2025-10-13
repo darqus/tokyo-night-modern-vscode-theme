@@ -1,6 +1,6 @@
 // Общие токены синтаксиса (не зависящие от конкретного языка)
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const commonTokens: TokenColor[] = [
   {
@@ -87,7 +87,7 @@ export const commonTokens: TokenColor[] = [
       'constant.other.color.rgb-value.hex punctuation.definition.constant',
     ],
     settings: {
-      foreground: palette.constantColor,
+      foreground: palette.constant,
     },
   },
   {
@@ -108,14 +108,14 @@ export const commonTokens: TokenColor[] = [
     name: 'Storage type',
     scope: 'storage.type',
     settings: {
-      foreground: palette.storageType,
+      foreground: palette.type,
     },
   },
   {
     name: 'Storage modifier',
     scope: ['meta.var.expr storage.type', 'storage.modifier'],
     settings: {
-      foreground: palette.storageModifier,
+      foreground: palette.type,
     },
   },
   {
@@ -128,7 +128,7 @@ export const commonTokens: TokenColor[] = [
       'punctuation.section.tag.twig',
     ],
     settings: {
-      foreground: palette.templateExpression,
+      foreground: palette.keyword,
     },
   },
   {
@@ -171,14 +171,14 @@ export const commonTokens: TokenColor[] = [
       'meta.at-rule.function variable.parameter.url',
     ],
     settings: {
-      foreground: palette.keywordOperatorAlpha60,
+      foreground: palette.keywordOperator,
     },
   },
   {
     name: 'Spread, rest',
     scope: ['keyword.operator.spread', 'keyword.operator.rest'],
     settings: {
-      foreground: palette.keywordOperatorSpread,
+      foreground: palette.keywordOperator,
     },
   },
   {
@@ -194,14 +194,14 @@ export const commonTokens: TokenColor[] = [
       'keyword.operator.expression.keyof',
     ],
     settings: {
-      foreground: palette.keywordOperatorNew,
+      foreground: palette.keywordOperator,
     },
   },
   {
     name: 'Export/default',
     scope: ['keyword.control.export', 'keyword.control.default'],
     settings: {
-      foreground: palette.keywordControlExport,
+      foreground: palette.keywordControl,
     },
   },
   {
@@ -212,7 +212,7 @@ export const commonTokens: TokenColor[] = [
       'meta.import keyword.other',
     ],
     settings: {
-      foreground: palette.keywordControlImport,
+      foreground: palette.keywordControl,
     },
   },
   {
@@ -226,7 +226,7 @@ export const commonTokens: TokenColor[] = [
     name: 'DML',
     scope: 'keyword.other.DML',
     settings: {
-      foreground: palette.keywordDML,
+      foreground: palette.keyword,
     },
   },
   {
@@ -241,7 +241,7 @@ export const commonTokens: TokenColor[] = [
       'keyword.operator.or.regexp',
     ],
     settings: {
-      foreground: palette.keywordLogical,
+      foreground: palette.keyword,
     },
   },
   {
@@ -262,7 +262,7 @@ export const commonTokens: TokenColor[] = [
     name: 'Tag punctuation',
     scope: 'punctuation.definition.tag',
     settings: {
-      foreground: palette.tagPunctuationAlpha60,
+      foreground: palette.tag,
     },
   },
   {
@@ -276,7 +276,7 @@ export const commonTokens: TokenColor[] = [
       'constant.other',
     ],
     settings: {
-      foreground: palette.constantPhp,
+      foreground: palette.constant,
     },
   },
 ]

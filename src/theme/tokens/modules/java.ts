@@ -1,5 +1,5 @@
 import { TokenColor } from '../../token-utils'
-import { palette } from '../../palette'
+import { palette } from '../../palette/index'
 
 export const javaTokens: TokenColor[] = [
   {
@@ -9,7 +9,7 @@ export const javaTokens: TokenColor[] = [
       'storage.type.primitive.array.java',
     ],
     settings: {
-      foreground: palette.objectKey,
+      foreground: palette.type,
     },
   },
 ]

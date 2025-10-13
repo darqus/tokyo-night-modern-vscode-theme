@@ -10,10 +10,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.2.86](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.85...v2.2.86) (2025-10-12)
 
-
 ### Features
 
-* **theme:** add sticky scroll background colors ([919bfd9](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/919bfd93cf0c8b8fe5b41ccc40b8d24ab3222a89))
+- **theme:** add sticky scroll background colors ([919bfd9](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/919bfd93cf0c8b8fe5b41ccc40b8d24ab3222a89))
 
 ### [2.2.85](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.79...v2.2.85) (2025-10-12)
 
@@ -21,37 +20,34 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.2.78](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.4...v2.2.78) (2025-10-12)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **theme:** The theme's visual appearance has been completely changed. The new color palette is not backward-compatible with the previous design.
-* **theme:** The entire color palette and syntax highlighting rules have been replaced, resulting in a significant visual change to the theme.
-* **theme:** Color values have been updated across the entire theme, affecting visual appearance of syntax highlighting and UI elements.
+- **theme:** The theme's visual appearance has been completely changed. The new color palette is not backward-compatible with the previous design.
+- **theme:** The entire color palette and syntax highlighting rules have been replaced, resulting in a significant visual change to the theme.
+- **theme:** Color values have been updated across the entire theme, affecting visual appearance of syntax highlighting and UI elements.
 
 ### Features
 
-* **build:** dynamically read version from package.json for vsix name ([e8400fd](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e8400fd65035418af6c5ef7da864ae8e95716e65))
-* **tests:** add snapshot test for theme consistency ([205158f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/205158f4cc4050164ddd9569f803ccb8847d5c93))
-* **theme:** add comprehensive status bar color customization ([7e7890b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7e7890b1bd8612d5c20de89ee735ec1ca4f186be))
-* **theme:** add comprehensive syntax highlighting tokens for Tokyo Night theme ([e640ec3](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e640ec3b011a42d47ee70f3474c2f0e1956fd92d))
-* **theme:** add Go, Rust, Haskell support and enhance syntax highlighting ([6d6453e](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/6d6453eb0fcc58735a5695fd6ed11d4b811327fd))
-* **theme:** add new color variables for enhanced UI and syntax highlighting ([2a0d37a](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/2a0d37a1e2bd8b3019f2a2318caeaad22ab594ca))
-* **theme:** add semantic highlighting for Vue/Pinia ([295cbed](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/295cbed232aa2c9e29d86feee9b6e91a739d3ca9))
-* **theme:** add syntax highlighting for Vue.js ([a816548](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a816548e642b9f73567de171ad9259248cbf5dec))
-* **theme:** differentiate Pinia state, getters, and actions ([e006c55](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e006c55f4c0c0bf602239f3fc0a5cb08dd9d319d))
-* **theme:** enhance Vue and add Pinia syntax highlighting ([dfd9078](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/dfd9078ef45a331164bda1cb8c368b6512939e12))
-* **theme:** overhaul color palette and syntax highlighting ([50ccafb](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/50ccafbd8b30fcaac6ad2ce816eecbe5c92b6388))
-* **theme:** refactor UI color tokens into modular files ([a34064b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a34064b9c3f4835db68be7db9a252ca1c16fb6d4))
-
+- **build:** dynamically read version from package.json for vsix name ([e8400fd](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e8400fd65035418af6c5ef7da864ae8e95716e65))
+- **tests:** add snapshot test for theme consistency ([205158f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/205158f4cc4050164ddd9569f803ccb8847d5c93))
+- **theme:** add comprehensive status bar color customization ([7e7890b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7e7890b1bd8612d5c20de89ee735ec1ca4f186be))
+- **theme:** add comprehensive syntax highlighting tokens for Tokyo Night theme ([e640ec3](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e640ec3b011a42d47ee70f3474c2f0e1956fd92d))
+- **theme:** add Go, Rust, Haskell support and enhance syntax highlighting ([6d6453e](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/6d6453eb0fcc58735a5695fd6ed11d4b811327fd))
+- **theme:** add new color variables for enhanced UI and syntax highlighting ([2a0d37a](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/2a0d37a1e2bd8b3019f2a2318caeaad22ab594ca))
+- **theme:** add semantic highlighting for Vue/Pinia ([295cbed](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/295cbed232aa2c9e29d86feee9b6e91a739d3ca9))
+- **theme:** add syntax highlighting for Vue.js ([a816548](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a816548e642b9f73567de171ad9259248cbf5dec))
+- **theme:** differentiate Pinia state, getters, and actions ([e006c55](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e006c55f4c0c0bf602239f3fc0a5cb08dd9d319d))
+- **theme:** enhance Vue and add Pinia syntax highlighting ([dfd9078](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/dfd9078ef45a331164bda1cb8c368b6512939e12))
+- **theme:** overhaul color palette and syntax highlighting ([50ccafb](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/50ccafbd8b30fcaac6ad2ce816eecbe5c92b6388))
+- **theme:** refactor UI color tokens into modular files ([a34064b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a34064b9c3f4835db68be7db9a252ca1c16fb6d4))
 
 ### Bug Fixes
 
-* **theme:** adjust scrollbar color for better theme integration ([0364ac8](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/0364ac842e5cf5081dd1690ce14d6a22971335a2))
-* **theme:** adjust selection background color for better contrast ([8ecd898](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/8ecd898d21b920b442fd39fda55969f719b171a5)), closes [#a9b1d6](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/a9b1d6) [#4e6ab2](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/4e6ab2)
+- **theme:** adjust scrollbar color for better theme integration ([0364ac8](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/0364ac842e5cf5081dd1690ce14d6a22971335a2))
+- **theme:** adjust selection background color for better contrast ([8ecd898](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/8ecd898d21b920b442fd39fda55969f719b171a5)), closes [#a9b1d6](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/a9b1d6) [#4e6ab2](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/4e6ab2)
 
-
-* **theme:** overhaul color and token system ([e0e0c97](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e0e0c978bc0a4eed6b831a45165fb071346aa1b7))
-* **theme:** update color palette and syntax highlighting across all language modules ([7fb69b4](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7fb69b4d7015ea84668539ed95b1fd06f340ea13))
+- **theme:** overhaul color and token system ([e0e0c97](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e0e0c978bc0a4eed6b831a45165fb071346aa1b7))
+- **theme:** update color palette and syntax highlighting across all language modules ([7fb69b4](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7fb69b4d7015ea84668539ed95b1fd06f340ea13))
 
 ### [2.2.4](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.1.0...v2.2.4) (2025-10-10)
 

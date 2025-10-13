@@ -62,10 +62,10 @@
 Примеры:
 
 ```typescript
-blueLight: '#7dcfff'  // terminal.ansiBrightCyan
-cyan: '#7dcfff'       // terminal.ansiBrightCyan - ИДЕНТИЧНЫ
-pink: '#bb9af7'       // terminal.ansiBrightMagenta
-purple: '#bb9af7'     // ИДЕНТИЧНЫ
+blueLight: '#7dcfff' // terminal.ansiBrightCyan
+cyan: '#7dcfff' // terminal.ansiBrightCyan - ИДЕНТИЧНЫ
+pink: '#bb9af7' // terminal.ansiBrightMagenta
+purple: '#bb9af7' // ИДЕНТИЧНЫ
 ```
 
 **Влияние**:
@@ -134,11 +134,24 @@ editorFindMatchBg: '#4e6ab2'  // использует blueDark
 
 ```typescript
 const alphaValues: AlphaValues = {
-  '00': '00', '15': '15', '20': '20', '22': '22',
-  '30': '30', '34': '34', '33': '33', '40': '40',
-  '44': '44', '45': '45', '4A': '4A', '55': '55',
-  '60': '60', '66': '66', '8A': '8A', '90': '90',
-  'AA': 'AA', 'DD': 'DD',
+  '00': '00',
+  '15': '15',
+  '20': '20',
+  '22': '22',
+  '30': '30',
+  '34': '34',
+  '33': '33',
+  '40': '40',
+  '44': '44',
+  '45': '45',
+  '4A': '4A',
+  '55': '55',
+  '60': '60',
+  '66': '66',
+  '8A': '8A',
+  '90': '90',
+  AA: 'AA',
+  DD: 'DD',
 }
 ```
 
@@ -178,7 +191,7 @@ export const foundationColors = {
     blue50: '#...',
     blue100: '#...',
     // ...
-  }
+  },
 }
 
 // src/theme/palette/semantic.ts
@@ -209,7 +222,7 @@ export const uiColors = {
     default: '#4e6ab2',
     focus: '#6183bb',
     subtle: '#42465d',
-  }
+  },
 }
 
 // src/theme/palette/syntax.ts
@@ -267,10 +280,10 @@ export const semanticColors = {
 ```typescript
 // Определить только используемые альфа-уровни
 const commonAlphaValues = {
-  '20': '20',  // Subtle backgrounds
-  '40': '40',  // Hover states
-  '60': '60',  // Active states
-  '80': '80',  // Semi-opaque
+  '20': '20', // Subtle backgrounds
+  '40': '40', // Hover states
+  '60': '60', // Active states
+  '80': '80', // Semi-opaque
 }
 
 // Для специфических случаев создавать явно
@@ -369,7 +382,7 @@ export const stormVariant = createThemeVariant({
   overrides: {
     background: '#24283b',
     primary: '#7aa2f7',
-  }
+  },
 })
 ```
 
