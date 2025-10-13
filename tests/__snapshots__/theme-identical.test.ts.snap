@@ -204,7 +204,7 @@ exports[`Theme should match the snapshot 1`] = `
     "input.border": "#42465d",
     "input.foreground": "#a9b1d6",
     "input.placeholderForeground": "#494f678A",
-    "inputOption.activeBackground": "#7aa2f74",
+    "inputOption.activeBackground": "#7aa2f744",
     "inputOption.activeBorder": "#4e6ab2",
     "inputOption.activeForeground": {
       "disabled": "#515670",

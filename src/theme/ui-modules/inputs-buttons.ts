@@ -18,7 +18,7 @@ export const inputsButtonsColors = {
   'input.border': palette.borders.subtle, // Замена для borderAlt4
   'input.foreground': palette.foreground,
   'input.placeholderForeground': palette.textPlaceholder + '8A', // Замена для foregroundAlt3Alpha8A
-  'inputOption.activeBackground': palette.primary + '4', // Замена для blueDarkAlpha44
+  'inputOption.activeBackground': palette.primary + '44', // Замена для blueDarkAlpha44
   'inputOption.activeBorder': palette.border,
   'inputOption.activeForeground': palette.text, // Замена для foregroundAlt9
   'inputValidation.errorBackground': palette.error, // Замена для redDark8

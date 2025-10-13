@@ -196,7 +196,7 @@
     "input.border": "#42465d",
     "input.foreground": "#a9b1d6",
     "input.placeholderForeground": "#494f678A",
-    "inputOption.activeBackground": "#7aa2f74",
+    "inputOption.activeBackground": "#7aa2f744",
     "inputOption.activeBorder": "#4e6ab2",
     "inputOption.activeForeground": "#a9b1d6",
     "inputValidation.errorBackground": "#ff5370",
@@ -1332,10 +1332,10 @@
     "version": "2.3.0",
     "buildSystem": "semantic-color-system",
     "paletteOptimization": {
-      "totalColors": 265,
+      "totalColors": 271,
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-13T22:37:59.327Z"
+    "buildDate": "2025-10-13T23:01:10.749Z"
   }
 }

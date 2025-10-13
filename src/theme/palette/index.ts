@@ -151,6 +151,14 @@ export const palette = {
   specialSelection: uiColors.special.selection,
   specialFocusRing: uiColors.special.focusRing,
 
+  // Button colors - added to ensure consistent button theming
+  buttonBackground: semanticColors.secondary,
+  buttonForeground: uiColors.text.inverse,
+  buttonHoverBackground: uiColors.interactive.hover,
+  buttonActiveBackground: uiColors.interactive.active,
+  buttonDisabledBackground: uiColors.interactive.disabled,
+  buttonDisabledForeground: uiColors.text.disabled,
+
   // Utilities - утилиты
   colorValidation,
   optimizedAlphaValues,
