@@ -35,7 +35,7 @@ const baseColors: ColorPalette = {
   foregroundAlt5: '#484f70', // editorCodeLens.foreground
   foregroundAlt6: '#494f67', // editorLineNumber.foreground, terminal.ansiBlack
   foregroundAlt7: '#acb0d0', // editorLink.activeForeground, terminal.ansiBrightWhite
-  foregroundAlt8: '#d6e3d8', // editorLineNumber.activeForeground
+  foregroundAlt8: '#aabaff', // editorLineNumber.activeForeground
   foregroundAlt9: '#c0caf5', // inputOption.activeForeground
 
   // --- Common Colors ---

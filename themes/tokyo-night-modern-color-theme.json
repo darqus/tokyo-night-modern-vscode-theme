@@ -76,7 +76,7 @@
     "editorInfo.foreground": "#0da0ba",
     "editorLightBulb.foreground": "#e0af68",
     "editorLightBulbAutoFix.foreground": "#e0af68",
-    "editorLineNumber.activeForeground": "#d6e3d8",
+    "editorLineNumber.activeForeground": "#aabaff",
     "editorLineNumber.foreground": "#494f67",
     "editorLink.activeForeground": "#acb0d0",
     "editorMarkerNavigation.background": "#0f141c",
