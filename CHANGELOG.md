@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.109](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.92...v2.2.109) (2025-10-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **theme:** The theme's visual appearance has been completely changed. The new color palette is not backward-compatible with the previous design. Color values have been updated across the entire theme, affecting visual appearance of syntax highlighting and UI elements.
+
+- Implement semantic color system with primitive → semantic → UI → syntax hierarchy
+- Reduce color palette from 4503 to 174 colors (97% reduction)
+- Replace legacy color references with semantic tokens
+- Add comprehensive documentation for new color system
+- Update all UI modules to use new semantic color mapping
+- Improve theme performance and maintainability
+
+### Features
+
+* **theme:** add button color palette and fix input option alpha value ([a68e467](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a68e467c66bced68eef78c51288f427ca40eaf0f))
+* **theme:** add git decoration colors and update theme snapshot ([3579b86](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/3579b86b3f2ea697d12980d0cdeafab1a578652b))
+* **theme:** add scm graph colors and update theme snapshot ([5e6304f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5e6304f4c01cf6d42296f9f6ab50b66c1053629a))
+
+
+### Bug Fixes
+
+* **theme:** update git decoration colors and build timestamp ([4bab327](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/4bab32704069d18e7d80d6b9d2b7209b9bdbe670))
+
+
+* **theme:** overhaul color system with semantic architecture and optimize palette ([044af86](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/044af860f7b6baa8923294c66ee5b3a0c0367910))
+
 ### [2.2.92](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.90...v2.2.92) (2025-10-13)
 
 ### [2.2.90](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.87...v2.2.90) (2025-10-13)
