@@ -7,15 +7,15 @@ import { palette } from '../palette/index'
 export const generalUIColors = {
   'breadcrumb.activeSelectionForeground': palette.blue,
   'breadcrumb.focusForeground': palette.blue,
-  'breadcrumb.foreground': palette.textSecondary, // Замена для foregroundAlt
-  'breadcrumbPicker.background': palette.backgrounds.secondary, // Замена для backgroundAlt
-  descriptionForeground: palette.textDisabled, // Замена для foregroundAlt4
-  errorForeground: palette.textDisabled, // Замена для foregroundAlt4
+  'breadcrumb.foreground': palette.textSecondary,
+  'breadcrumbPicker.background': palette.backgrounds.secondary,
+  descriptionForeground: palette.textDisabled,
+  errorForeground: palette.textDisabled,
   focusBorder: palette.borderFocus,
-  foreground: palette.text, // Замена для foregroundAlt3
+  foreground: palette.text,
   'icon.foreground': palette.blue,
-  'sash.hoverBorder': palette.interactive.hover, // Замена для sashHoverBorder
-  'selection.background': palette.selection + '60', // Замена для selectionBgAlpha60
-  'widget.border': palette.borders.subtle + '40', // Замена для borderAltAlpha40
-  'widget.shadow': palette.special.shadow + '80', // Замена для widgetShadowAlpha
+  'sash.hoverBorder': palette.interactive.hover,
+  'selection.background': palette.selection + '60',
+  'widget.border': palette.borders.subtle + '40',
+  'widget.shadow': palette.special.shadow + '80',
 }
