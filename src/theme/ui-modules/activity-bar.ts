@@ -10,7 +10,7 @@ export const activityBarColors = {
   'activityBar.foreground': palette.blue,
   'activityBar.inactiveForeground': palette.textSecondary, // Замена для foregroundAlt
   'activityBar.activeBorder': palette.blue,
-  'activityBar.activeBackground': palette.interactive.selected, // Замена для backgroundAlt7
+  // 'activityBar.activeBackground': palette.interactive.selected,
   'activityBar.border': palette.backgrounds.secondary, // Замена для backgroundAlt
   'activityBar.dropBorder': palette.blue,
 }

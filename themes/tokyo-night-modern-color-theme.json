@@ -109,7 +109,6 @@
     "activityBar.foreground": "#7aa2f7",
     "activityBar.inactiveForeground": "#82859e",
     "activityBar.activeBorder": "#7aa2f7",
-    "activityBar.activeBackground": "#312a4d",
     "activityBar.border": "#0a1018",
     "activityBar.dropBorder": "#7aa2f7",
     "statusBar.background": "#0a1018",
@@ -1347,6 +1346,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T01:23:32.066Z"
+    "buildDate": "2025-10-14T01:27:17.663Z"
   }
 }
