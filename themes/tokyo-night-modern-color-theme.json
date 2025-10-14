@@ -207,11 +207,11 @@
     "inputValidation.warningBackground": "#e0af68",
     "inputValidation.warningBorder": "#e0af68",
     "inputValidation.warningForeground": "#000000",
-    "badge.background": "#7aa2f7",
+    "badge.background": "#5d3a87",
     "badge.foreground": "#ffffff",
-    "activityBarBadge.background": "#7aa2f7",
+    "activityBarBadge.background": "#5d3a87",
     "activityBarBadge.foreground": "#ffffff",
-    "extensionBadge.remoteBackground": "#7aa2f7",
+    "extensionBadge.remoteBackground": "#5d3a87",
     "extensionBadge.remoteForeground": "#ffffff",
     "dropdown.background": "#0a1018",
     "dropdown.border": "#42465d40",
@@ -1346,6 +1346,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T01:27:17.663Z"
+    "buildDate": "2025-10-14T01:32:02.038Z"
   }
 }
