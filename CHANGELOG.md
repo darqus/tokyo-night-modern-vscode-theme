@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.117](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.109...v2.2.117) (2025-10-14)
+
+
+### Features
+
+* **theme:** update text link colors to use semantic palette values ([1ef6094](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/1ef60949fe49d1d2ede1c0d86463097b4fd77e85))
+
 ### [2.2.109](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.92...v2.2.109) (2025-10-14)
 
 
