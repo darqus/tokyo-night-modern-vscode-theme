@@ -324,7 +324,9 @@
     "gitDecoration.untrackedResourceForeground": "#7BCCFC",
     "gitDecoration.conflictingResourceForeground": "#F2B04E",
     "gitDecoration.stageDeletedResourceForeground": "#FF5370",
-    "gitDecoration.stageModifiedResourceForeground": "#B79DFF"
+    "gitDecoration.stageModifiedResourceForeground": "#B79DFF",
+    "scmGraph.historyItemHoverDefaultLabelBackground": "#7aa2f7",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff"
   },
   "tokenColors": [
     {
@@ -1345,6 +1347,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T00:16:12.571Z"
+    "buildDate": "2025-10-14T00:29:09.297Z"
   }
 }
