@@ -15,6 +15,4 @@ export const notificationWidgetColors = {
   'notificationsErrorIcon.foreground': palette.error, // Замена для redDark2
   'notificationsInfoIcon.foreground': palette.info, // Замена для cyanDark3
   'notificationsWarningIcon.foreground': palette.warning, // Замена для purpleHover
-  'widget.border': palette.borders.subtle + '40', // Замена для borderAltAlpha40
-  'widget.shadow': palette.special.shadow + '80', // Замена для widgetShadowAlpha
 }
