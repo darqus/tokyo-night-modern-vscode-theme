@@ -5,15 +5,15 @@ import { palette } from '../palette/index'
  * Эти токены отвечают за оформление полей ввода и кнопок в VS Code
  */
 export const inputsButtonsColors = {
-  'button.background': palette.primary + 'AA', // Замена для blueDarkAlphaAA
+  'button.background': palette.blue800,
   'button.foreground': palette.white,
-  'button.hoverBackground': palette.primary + 'DD', // Замена для blueDarkAlphaDD
-  'button.secondaryBackground': palette.secondary + 'AA', // Замена для purpleDarkAlphaAA
+  'button.hoverBackground': palette.blue700,
+  'button.secondaryBackground': palette.cyan900,
   'button.secondaryForeground': palette.white,
-  'button.secondaryHoverBackground': palette.secondary, // Замена для purpleDark
-  'extensionButton.prominentBackground': palette.primary + 'DD', // Замена для blueDarkAlphaDD
+  'button.secondaryHoverBackground': palette.cyan800,
+  'extensionButton.prominentBackground': palette.blue700,
   'extensionButton.prominentForeground': palette.white,
-  'extensionButton.prominentHoverBackground': palette.primary + 'AA', // Замена для blueDarkAlphaAA
+  'extensionButton.prominentHoverBackground': palette.blue800,
   'input.background': palette.backgrounds.elevated, // Замена для backgroundAlt
   'input.border': palette.borders.subtle, // Замена для borderAlt4
   'input.foreground': palette.foreground,
