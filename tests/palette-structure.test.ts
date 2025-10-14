@@ -81,7 +81,7 @@ describe('Palette Structure Tests', () => {
         'text',
         'textSecondary',
         'textDisabled',
-        'textInverse',
+        'textWhite',
         'background',
         'backgroundSecondary',
         'backgroundElevated',
@@ -116,7 +116,7 @@ describe('Palette Structure Tests', () => {
     test('should have proper contrast relationships', () => {
       // Text should contrast well with background
       expect(semanticColors.text).not.toBe(semanticColors.background)
-      expect(semanticColors.textInverse).not.toBe(semanticColors.background)
+      expect(semanticColors.textWhite).not.toBe(semanticColors.background)
     })
   })
 

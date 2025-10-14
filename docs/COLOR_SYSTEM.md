@@ -59,7 +59,7 @@ blue700: '#394b70' // Темный синий
 - **Brand colors**: primary, secondary
 - **Status colors**: success, warning, error, info
 - **Interactive colors**: link, hover, active, focus
-- **Content colors**: text, textSecondary, textDisabled, textInverse
+- **Content colors**: text, textSecondary, textDisabled, textWhite
 - **Background colors**: background, backgroundSecondary, backgroundElevated, backgroundOverlay
 - **Border colors**: border, borderSecondary, borderFocus
 - **Special colors**: shadow, highlight, selection

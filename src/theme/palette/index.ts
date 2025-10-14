@@ -127,7 +127,7 @@ export const palette = {
   textSecondary: uiColors.text.secondary,
   textTertiary: uiColors.text.tertiary,
   textDisabled: uiColors.text.disabled,
-  textInverse: uiColors.text.inverse,
+  textWhite: uiColors.text.inverse,
   textPlaceholder: uiColors.text.placeholder,
   backgroundsPrimary: uiColors.backgrounds.primary,
   backgroundsSecondary: uiColors.backgrounds.secondary,

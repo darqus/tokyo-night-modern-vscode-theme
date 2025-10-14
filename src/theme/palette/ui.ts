@@ -77,7 +77,7 @@ export const uiColors: UIColors = {
     secondary: semanticColors.textSecondary, // #82859e - вторичный текст
     tertiary: '#9aa5ce', // третичный текст (из оригинальной палитры)
     disabled: semanticColors.textDisabled, // #515670 - отключенный текст
-    inverse: semanticColors.textInverse, // #ffffff - инверсный текст
+    inverse: semanticColors.textWhite, // #ffffff - инверсный текст
     placeholder: '#494f67', // placeholder текст (из оригинальной палитры)
   },
 
