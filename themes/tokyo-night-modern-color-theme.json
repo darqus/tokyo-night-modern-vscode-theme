@@ -316,15 +316,15 @@
     "scrollbarSlider.activeBackground": "#515c7e34",
     "scrollbarSlider.background": "#45496c34",
     "scrollbarSlider.hoverBackground": "#394b7034",
-    "gitDecoration.modifiedResourceForeground": "#B79DFF",
-    "gitDecoration.ignoredResourceForeground": "#515C7E",
-    "gitDecoration.deletedResourceForeground": "#FF5370",
-    "gitDecoration.renamedResourceForeground": "#A779F3",
-    "gitDecoration.addedResourceForeground": "#A779F3",
-    "gitDecoration.untrackedResourceForeground": "#7BCCFC",
-    "gitDecoration.conflictingResourceForeground": "#F2B04E",
-    "gitDecoration.stageDeletedResourceForeground": "#FF5370",
-    "gitDecoration.stageModifiedResourceForeground": "#B79DFF",
+    "gitDecoration.modifiedResourceForeground": "#bb9af7",
+    "gitDecoration.ignoredResourceForeground": "#515670",
+    "gitDecoration.deletedResourceForeground": "#ff5370",
+    "gitDecoration.renamedResourceForeground": "#bb9af7",
+    "gitDecoration.addedResourceForeground": "#bb9af7",
+    "gitDecoration.untrackedResourceForeground": "#7dcfff",
+    "gitDecoration.conflictingResourceForeground": "#e0af68",
+    "gitDecoration.stageDeletedResourceForeground": "#ff5370",
+    "gitDecoration.stageModifiedResourceForeground": "#bb9af7",
     "scmGraph.historyItemHoverDefaultLabelBackground": "#7aa2f7",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff"
   },
@@ -1347,6 +1347,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T00:29:09.297Z"
+    "buildDate": "2025-10-14T00:34:45.341Z"
   }
 }
