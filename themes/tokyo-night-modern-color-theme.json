@@ -142,8 +142,8 @@
     "textBlockQuote.background": "#1c1d29",
     "textBlockQuote.border": "#7aa2f7",
     "textCodeBlock.background": "#1c1d29",
-    "textLink.activeForeground": "#e0af68",
-    "textLink.foreground": "#7dcfff",
+    "textLink.activeForeground": "#42a5f5",
+    "textLink.foreground": "#4e6ab2",
     "textPreformat.background": "#1c1d29",
     "textPreformat.foreground": "#7aa2f7",
     "textSeparator.foreground": "#82859e",
@@ -1347,6 +1347,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T00:36:38.785Z"
+    "buildDate": "2025-10-14T00:56:18.974Z"
   }
 }
