@@ -183,15 +183,15 @@
     "list.inactiveSelectionIconForeground": "#7aa2f7",
     "list.invalidItemForeground": "#ff5370",
     "list.warningForeground": "#e0af68",
-    "button.background": "#7aa2f7AA",
+    "button.background": "#2c3e5a",
     "button.foreground": "#ffffff",
-    "button.hoverBackground": "#7aa2f7DD",
-    "button.secondaryBackground": "#bb9af7AA",
+    "button.hoverBackground": "#394b70",
+    "button.secondaryBackground": "#075e70",
     "button.secondaryForeground": "#ffffff",
-    "button.secondaryHoverBackground": "#bb9af7",
-    "extensionButton.prominentBackground": "#7aa2f7DD",
+    "button.secondaryHoverBackground": "#0a7f95",
+    "extensionButton.prominentBackground": "#394b70",
     "extensionButton.prominentForeground": "#ffffff",
-    "extensionButton.prominentHoverBackground": "#7aa2f7AA",
+    "extensionButton.prominentHoverBackground": "#2c3e5a",
     "input.background": "#1c1d29",
     "input.border": "#42465d",
     "input.foreground": "#a9b1d6",
@@ -1347,6 +1347,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T00:56:18.974Z"
+    "buildDate": "2025-10-14T01:23:32.066Z"
   }
 }
