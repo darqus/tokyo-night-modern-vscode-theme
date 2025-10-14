@@ -26,7 +26,7 @@ export interface SemanticColors {
   text: string
   textSecondary: string
   textDisabled: string
-  textInverse: string
+  textWhite: string
 
   // Background colors
   background: string
@@ -70,7 +70,7 @@ export const semanticColors: SemanticColors = {
   text: primitiveColors.gray500, // #a9b1d6 - основной текст
   textSecondary: primitiveColors.gray600, // #82859e - вторичный текст
   textDisabled: primitiveColors.gray700, // #515670 - отключенный текст
-  textInverse: primitiveColors.white, // #ffffff - инверсный текст
+  textWhite: primitiveColors.white, // #ffffff - белый текст
 
   // Background colors - цвета фона
   background: primitiveColors.gray900, // #10151d - основной фон
