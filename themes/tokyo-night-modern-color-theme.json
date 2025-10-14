@@ -92,7 +92,7 @@
     "editorSuggestWidget.border": "#42465d40",
     "editorSuggestWidget.foreground": "#a9b1d6",
     "editorSuggestWidget.highlightForeground": "#42465d",
-    "editorSuggestWidget.selectedBackground": "#312a4d",
+    "editorSuggestWidget.selectedBackground": "#1c202e",
     "editorWarning.foreground": "#e0af68",
     "editorWhitespace.foreground": "#82859e",
     "editorWidget.background": "#0a1018",
@@ -167,7 +167,7 @@
     "panelTitle.activeBorder": "#42465d40",
     "panelTitle.activeForeground": "#a9b1d6",
     "panelTitle.inactiveForeground": "#a9b1d6AA",
-    "list.activeSelectionBackground": "#312a4d90",
+    "list.activeSelectionBackground": "#1c202e90",
     "list.activeSelectionForeground": "#7aa2f7",
     "list.deemphasizedForeground": "#a9b1d6",
     "list.dropBackground": "#e0af6833",
@@ -177,7 +177,7 @@
     "list.highlightForeground": "#7aa2f7",
     "list.hoverBackground": "#45496c60",
     "list.hoverForeground": "#7aa2f7",
-    "list.inactiveSelectionBackground": "#312a4d",
+    "list.inactiveSelectionBackground": "#1c202e",
     "list.inactiveSelectionForeground": "#7aa2f7",
     "list.inactiveSelectionIconForeground": "#7aa2f7",
     "list.invalidItemForeground": "#ff5370",
@@ -220,10 +220,10 @@
     "menu.background": "#0a1018",
     "menu.border": "#42465d40",
     "menu.foreground": "#a9b1d6",
-    "menu.selectionBackground": "#312a4d",
+    "menu.selectionBackground": "#1c202e",
     "menu.selectionForeground": "#7aa2f7",
     "menu.separatorBackground": "#42465d40",
-    "menubar.selectionBackground": "#312a4d",
+    "menubar.selectionBackground": "#1c202e",
     "menubar.selectionForeground": "#a9b1d6",
     "terminal.ansiBlack": "#82859e",
     "terminal.ansiBlue": "#7aa2f7",
@@ -1346,6 +1346,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T01:32:02.038Z"
+    "buildDate": "2025-10-14T01:46:37.339Z"
   }
 }
