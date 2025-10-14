@@ -25,6 +25,7 @@ import { inlineChatColors } from './ui-modules/inline-chat'
 import { scrollbarMinimapColors } from './ui-modules/scrollbar-minimap'
 import { dropBackgroundColors } from './ui-modules/drop-backgrounds'
 import { gitDecorationTokens } from './ui-modules/git-decoration'
+import { scmGraphColors } from './ui-modules/scm-graph'
 
 /**
  * Объединенный объект цветов UI
@@ -63,4 +64,5 @@ export const colors = {
   ...scrollbarMinimapColors,
   ...dropBackgroundColors,
   ...gitDecorationTokens,
+  ...scmGraphColors,
 }

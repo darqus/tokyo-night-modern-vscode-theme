@@ -304,6 +304,8 @@ exports[`Theme should match the snapshot 1`] = `
     "peekViewTitleDescription.foreground": "#a9b1d6",
     "peekViewTitleLabel.foreground": "#7aa2f7",
     "sash.hoverBorder": "#45496c",
+    "scmGraph.historyItemHoverDefaultLabelBackground": "#7aa2f7",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff",
     "scrollbar.shadow": "#00000080",
     "scrollbarSlider.activeBackground": "#515c7e34",
     "scrollbarSlider.background": "#45496c34",
