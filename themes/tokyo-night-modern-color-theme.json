@@ -315,7 +315,16 @@
     "scrollbar.shadow": "#00000080",
     "scrollbarSlider.activeBackground": "#515c7e34",
     "scrollbarSlider.background": "#45496c34",
-    "scrollbarSlider.hoverBackground": "#394b7034"
+    "scrollbarSlider.hoverBackground": "#394b7034",
+    "gitDecoration.modifiedResourceForeground": "#B79DFF",
+    "gitDecoration.ignoredResourceForeground": "#515C7E",
+    "gitDecoration.deletedResourceForeground": "#FF5370",
+    "gitDecoration.renamedResourceForeground": "#A779F3",
+    "gitDecoration.addedResourceForeground": "#A779F3",
+    "gitDecoration.untrackedResourceForeground": "#7BCCFC",
+    "gitDecoration.conflictingResourceForeground": "#F2B04E",
+    "gitDecoration.stageDeletedResourceForeground": "#FF5370",
+    "gitDecoration.stageModifiedResourceForeground": "#B79DFF"
   },
   "tokenColors": [
     {
@@ -1336,6 +1345,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T00:00:39.496Z"
+    "buildDate": "2025-10-14T00:16:12.571Z"
   }
 }
