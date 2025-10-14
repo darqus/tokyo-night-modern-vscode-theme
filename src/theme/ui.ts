@@ -24,6 +24,7 @@ import { toolbarDebugColors } from './ui-modules/toolbar-debug'
 import { inlineChatColors } from './ui-modules/inline-chat'
 import { scrollbarMinimapColors } from './ui-modules/scrollbar-minimap'
 import { dropBackgroundColors } from './ui-modules/drop-backgrounds'
+import { gitDecorationTokens } from './ui-modules/git-decoration'
 
 /**
  * Объединенный объект цветов UI
@@ -61,4 +62,5 @@ export const colors = {
   ...inlineChatColors,
   ...scrollbarMinimapColors,
   ...dropBackgroundColors,
+  ...gitDecorationTokens,
 }
