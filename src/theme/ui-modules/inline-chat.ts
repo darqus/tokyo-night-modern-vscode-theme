@@ -8,7 +8,6 @@ export const inlineChatColors = {
   'inlineChat.background': palette.backgroundsPrimary,
   'inlineChat.border': palette.bordersSubtle,
   'inlineChat.shadow': palette.specialShadow,
-  'inlineChat.regionHighlight': palette.specialHighlight,
   'inlineChatDiff.inserted': palette.backgroundsElevated,
   'inlineChatDiff.removed': palette.backgroundsTertiary,
   'inlineChatInput.border': palette.bordersDefault,

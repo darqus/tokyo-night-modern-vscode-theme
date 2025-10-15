@@ -303,7 +303,6 @@
     "inlineChat.background": "#10151d",
     "inlineChat.border": "#42465d",
     "inlineChat.shadow": "#000000",
-    "inlineChat.regionHighlight": "#e0af68",
     "inlineChatDiff.inserted": "#1c1d29",
     "inlineChatDiff.removed": "#17233d",
     "inlineChatInput.border": "#4e6ab2",
@@ -3527,6 +3526,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T17:46:25.607Z"
+    "buildDate": "2025-10-15T17:52:14.630Z"
   }
 }

@@ -203,7 +203,6 @@ exports[`Theme should match the snapshot 1`] = `
     "icon.foreground": "#7aa2f7",
     "inlineChat.background": "#10151d",
     "inlineChat.border": "#42465d",
-    "inlineChat.regionHighlight": "#e0af68",
     "inlineChat.shadow": "#000000",
     "inlineChatDiff.inserted": "#1c1d29",
     "inlineChatDiff.removed": "#17233d",
