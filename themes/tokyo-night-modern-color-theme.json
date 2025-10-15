@@ -668,7 +668,8 @@
         "meta.field.declaration.ts variable.object.property"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#7dcfff",
+        "fontStyle": "bold"
       }
     },
     {
@@ -694,7 +695,8 @@
       "name": "JS nested object key",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#7dcfff"
+        "foreground": "#7dcfff",
+        "fontStyle": "italic"
       }
     },
     {
@@ -705,7 +707,7 @@
       }
     },
     {
-      "name": "JS function",
+      "name": "JS function declaration",
       "scope": [
         "meta.class-method.js entity.name.function.js",
         "entity.name.method.js",
@@ -714,11 +716,12 @@
         "storage.type.cs"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "JS function",
+      "name": "JS function call",
       "scope": [
         "entity.name.function",
         "meta.function-call",
@@ -758,7 +761,8 @@
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#bdbdbd",
+        "fontStyle": "italic"
       }
     },
     {
@@ -776,7 +780,8 @@
         "keyword.other.this"
       ],
       "settings": {
-        "foreground": "#fd86e1"
+        "foreground": "#fd86e1",
+        "fontStyle": "bold"
       }
     },
     {
@@ -786,7 +791,8 @@
         "tag.decorator.js punctuation.definition.tag.js"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
       }
     },
     {
@@ -818,14 +824,16 @@
       "name": "TS JSDoc tag",
       "scope": "punctuation.definition.block.tag.jsdoc",
       "settings": {
-        "foreground": "#bb9af7"
+        "foreground": "#bb9af7",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "TS JSDoc type",
       "scope": "comment storage.type",
       "settings": {
-        "foreground": "#bb9af7"
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
       }
     },
     {
@@ -842,7 +850,78 @@
       "name": "TS field declaration",
       "scope": "meta.field.declaration.ts variable.object.property",
       "settings": {
-        "foreground": "#7dcfff"
+        "foreground": "#7dcfff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TS type parameter",
+      "scope": [
+        "meta.type.parameters",
+        "variable.type.parameter",
+        "meta.type.annotation"
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "TS interface",
+      "scope": [
+        "entity.name.type.interface",
+        "support.type.primitive"
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TS enum",
+      "scope": "variable.other.enummember",
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TS namespace",
+      "scope": "entity.name.type.module",
+      "settings": {
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TS type annotation",
+      "scope": [
+        "meta.type.annotation",
+        "support.type.primitive",
+        "meta.return.type"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "TS constructor",
+      "scope": "meta.type.constructor",
+      "settings": {
+        "foreground": "#7aa2f7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TS generic type",
+      "scope": [
+        "meta.type.parameters",
+        "meta.type.annotation",
+        "support.type.primitive"
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
       }
     },
     {
@@ -3526,6 +3605,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T17:52:14.630Z"
+    "buildDate": "2025-10-15T17:56:39.901Z"
   }
 }

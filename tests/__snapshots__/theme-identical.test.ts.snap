@@ -746,7 +746,8 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.field.declaration.ts variable.object.property",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "fontStyle": "bold",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -772,6 +773,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS nested object key",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#7dcfff",
       },
     },
@@ -783,7 +785,7 @@ exports[`Theme should match the snapshot 1`] = `
       },
     },
     {
-      "name": "JS function",
+      "name": "JS function declaration",
       "scope": [
         "meta.class-method.js entity.name.function.js",
         "entity.name.method.js",
@@ -792,11 +794,12 @@ exports[`Theme should match the snapshot 1`] = `
         "storage.type.cs",
       ],
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#7aa2f7",
       },
     },
     {
-      "name": "JS function",
+      "name": "JS function call",
       "scope": [
         "entity.name.function",
         "meta.function-call",
@@ -836,6 +839,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#bdbdbd",
       },
     },
@@ -854,6 +858,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.this",
       ],
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#fd86e1",
       },
     },
@@ -864,6 +869,7 @@ exports[`Theme should match the snapshot 1`] = `
         "tag.decorator.js punctuation.definition.tag.js",
       ],
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#7aa2f7",
       },
     },
@@ -896,6 +902,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "TS JSDoc tag",
       "scope": "punctuation.definition.block.tag.jsdoc",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#bb9af7",
       },
     },
@@ -903,6 +910,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "TS JSDoc type",
       "scope": "comment storage.type",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -920,7 +928,78 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "TS field declaration",
       "scope": "meta.field.declaration.ts variable.object.property",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "TS type parameter",
+      "scope": [
+        "meta.type.parameters",
+        "variable.type.parameter",
+        "meta.type.annotation",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "TS interface",
+      "scope": [
+        "entity.name.type.interface",
+        "support.type.primitive",
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "TS enum",
+      "scope": "variable.other.enummember",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "TS namespace",
+      "scope": "entity.name.type.module",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "TS type annotation",
+      "scope": [
+        "meta.type.annotation",
+        "support.type.primitive",
+        "meta.return.type",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "TS constructor",
+      "scope": "meta.type.constructor",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "TS generic type",
+      "scope": [
+        "meta.type.parameters",
+        "meta.type.annotation",
+        "support.type.primitive",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bb9af7",
       },
     },
     {
