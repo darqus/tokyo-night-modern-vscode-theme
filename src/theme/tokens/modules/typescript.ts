@@ -15,7 +15,6 @@ export const typescriptTokens: TokenColor[] = [
     scope: 'comment storage.type',
     settings: {
       foreground: palette.type,
-      fontStyle: 'italic',
     },
   },
   {
@@ -42,7 +41,6 @@ export const typescriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.tsTypeParameter,
-      fontStyle: 'italic',
     },
   },
   {
@@ -100,7 +98,6 @@ export const typescriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.type,
-      fontStyle: 'italic',
     },
   },
 ]

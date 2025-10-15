@@ -89,7 +89,6 @@ export const markdownTokens: TokenColor[] = [
     scope: ['markup.italic', 'markup.italic punctuation'],
     settings: {
       foreground: palette.mdItalic,
-      fontStyle: 'italic',
     },
   },
   {
