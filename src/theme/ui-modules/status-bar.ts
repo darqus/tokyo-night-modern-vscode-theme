@@ -12,8 +12,8 @@ export const statusBarColors = {
   'statusBar.noFolderBackground': getToken('color.background.secondary'),
   'statusBarItem.activeBackground': getToken('color.interactive.active'),
   'statusBarItem.compactHoverBackground':
-    getToken('color.interactive.hover') + '90',
-  'statusBarItem.hoverBackground': getToken('color.interactive.hover') + 'AA',
+    getToken('color.background.elevated') + '90',
+  'statusBarItem.hoverBackground': getToken('color.background.elevated') + 'AA',
   'statusBarItem.hoverForeground': getToken('accent.primary'),
   'statusBarItem.prominentBackground': getToken('color.background.secondary'),
   'statusBarItem.prominentHoverBackground': getToken('color.interactive.hover'),

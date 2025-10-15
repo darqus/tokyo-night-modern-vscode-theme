@@ -117,8 +117,8 @@
     "statusBar.foreground": "#82859e",
     "statusBar.noFolderBackground": "#2a2f40",
     "statusBarItem.activeBackground": "#394b70",
-    "statusBarItem.compactHoverBackground": "#4e6ab290",
-    "statusBarItem.hoverBackground": "#4e6ab2AA",
+    "statusBarItem.compactHoverBackground": "#1a233290",
+    "statusBarItem.hoverBackground": "#1a2332AA",
     "statusBarItem.hoverForeground": "#7aa2f7",
     "statusBarItem.prominentBackground": "#2a2f40",
     "statusBarItem.prominentHoverBackground": "#4e6ab2",
@@ -3229,6 +3229,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T17:12:49.990Z"
+    "buildDate": "2025-10-15T17:23:20.103Z"
   }
 }
