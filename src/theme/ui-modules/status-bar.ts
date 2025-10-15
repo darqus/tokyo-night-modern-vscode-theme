@@ -1,23 +1,24 @@
-import { palette } from '../palette/index'
+import { getToken } from '../design-tokens'
 
 /**
  * Status Bar UI элементы
  * Эти токены отвечают за оформление строки состояния в VS Code
  */
 export const statusBarColors = {
-  'statusBar.background': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBar.debuggingBackground': palette.warning, // Замена для orange
-  'statusBar.debuggingForeground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBar.foreground': palette.textSecondary, // Замена для foregroundAlt
-  'statusBar.noFolderBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBarItem.activeBackground': palette.interactive.active, // Замена для backgroundAlt
-  'statusBarItem.compactHoverBackground': palette.interactive.hover + '90', // Замена для statusBarItemCompactHoverBgAlpha90
-  'statusBarItem.hoverBackground': palette.interactive.hover + 'AA', // Замена для statusBarItemHoverBgAlphaAA
-  'statusBarItem.hoverForeground': palette.blue,
-  'statusBarItem.prominentBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBarItem.prominentHoverBackground': palette.interactive.hover, // Замена для statusBarItemProminentHoverBg
-  'statusBarItem.remoteBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBarItem.remoteForeground': palette.blue,
-  'statusBarItem.remoteHoverBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'statusBarItem.remoteHoverForeground': palette.blue, // Замена для blueHover
+  'statusBar.background': getToken('color.background.primary'),
+  'statusBar.debuggingBackground': getToken('accent.warning'),
+  'statusBar.debuggingForeground': getToken('color.background.secondary'),
+  'statusBar.foreground': getToken('color.text.secondary'),
+  'statusBar.noFolderBackground': getToken('color.background.secondary'),
+  'statusBarItem.activeBackground': getToken('color.interactive.active'),
+  'statusBarItem.compactHoverBackground':
+    getToken('color.interactive.hover') + '90',
+  'statusBarItem.hoverBackground': getToken('color.interactive.hover') + 'AA',
+  'statusBarItem.hoverForeground': getToken('accent.primary'),
+  'statusBarItem.prominentBackground': getToken('color.background.secondary'),
+  'statusBarItem.prominentHoverBackground': getToken('color.interactive.hover'),
+  'statusBarItem.remoteBackground': getToken('color.background.secondary'),
+  'statusBarItem.remoteForeground': getToken('accent.primary'),
+  'statusBarItem.remoteHoverBackground': getToken('color.background.secondary'),
+  'statusBarItem.remoteHoverForeground': getToken('accent.primary'),
 }

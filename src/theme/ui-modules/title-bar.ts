@@ -5,8 +5,8 @@ import { palette } from '../palette/index'
  * Эти токены отвечают за оформление заголовка окна в VS Code
  */
 export const titleBarColors = {
-  'titleBar.activeBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'titleBar.activeForeground': palette.textSecondary, // Замена для foregroundAlt
-  'titleBar.inactiveBackground': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'titleBar.inactiveForeground': palette.textSecondary, // Замена для foregroundAlt
+  'titleBar.activeBackground': palette.backgrounds.secondary,
+  'titleBar.activeForeground': palette.textSecondary,
+  'titleBar.inactiveBackground': palette.backgrounds.secondary,
+  'titleBar.inactiveForeground': palette.textSecondary,
 }

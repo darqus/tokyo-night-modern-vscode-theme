@@ -5,14 +5,14 @@ import { palette } from '../palette/index'
  * Эти токены отвечают за оформление уведомлений и виджетов в VS Code
  */
 export const notificationWidgetColors = {
-  'debugExceptionWidget.background': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'debugExceptionWidget.border': palette.error, // Замена для redDark3
-  'notificationCenterHeader.background': palette.backgrounds.secondary, // Замена для backgroundAlt
+  'debugExceptionWidget.background': palette.backgrounds.secondary,
+  'debugExceptionWidget.border': palette.error,
+  'notificationCenterHeader.background': palette.backgrounds.secondary,
   'notificationCenterHeader.foreground': palette.foreground,
-  'notificationLink.foreground': palette.borders.subtle, // Замена для borderAlt
-  'notifications.background': palette.backgrounds.secondary, // Замена для backgroundAlt
+  'notificationLink.foreground': palette.borders.subtle,
+  'notifications.background': palette.backgrounds.secondary,
   'notifications.foreground': palette.foreground,
-  'notificationsErrorIcon.foreground': palette.error, // Замена для redDark2
-  'notificationsInfoIcon.foreground': palette.info, // Замена для cyanDark3
-  'notificationsWarningIcon.foreground': palette.warning, // Замена для purpleHover
+  'notificationsErrorIcon.foreground': palette.error,
+  'notificationsInfoIcon.foreground': palette.info,
+  'notificationsWarningIcon.foreground': palette.warning,
 }

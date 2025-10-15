@@ -5,12 +5,12 @@ import { palette } from '../palette/index'
  * Эти токены отвечают за оформление текстовых элементов в VS Code
  */
 export const textColors = {
-  'textBlockQuote.background': palette.backgrounds.elevated, // Замена для textBlockQuoteBg
+  'textBlockQuote.background': palette.backgrounds.elevated,
   'textBlockQuote.border': palette.blue,
-  'textCodeBlock.background': palette.backgrounds.elevated, // Замена для textCodeBlockBg
+  'textCodeBlock.background': palette.backgrounds.elevated,
   'textLink.activeForeground': palette.special.focusRing,
   'textLink.foreground': palette.special.selection,
-  'textPreformat.background': palette.backgrounds.elevated, // Замена для textPreformatBg
+  'textPreformat.background': palette.backgrounds.elevated,
   'textPreformat.foreground': palette.blue,
-  'textSeparator.foreground': palette.textSecondary, // Замена для foregroundAlt6
+  'textSeparator.foreground': palette.textSecondary,
 }

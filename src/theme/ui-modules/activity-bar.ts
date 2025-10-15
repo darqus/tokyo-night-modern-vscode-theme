@@ -1,4 +1,4 @@
-import { palette } from '../palette/index'
+import { getToken } from '../design-tokens'
 
 /**
  * Activity Bar UI элементы
@@ -6,11 +6,11 @@ import { palette } from '../palette/index'
  */
 export const activityBarColors = {
   // Activity Bar
-  'activityBar.background': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'activityBar.foreground': palette.blue,
-  'activityBar.inactiveForeground': palette.textSecondary, // Замена для foregroundAlt
-  'activityBar.activeBorder': palette.blue,
-  // 'activityBar.activeBackground': palette.interactive.selected,
-  'activityBar.border': palette.backgrounds.secondary, // Замена для backgroundAlt
-  'activityBar.dropBorder': palette.blue,
+  'activityBar.background': getToken('color.background.primary'),
+  'activityBar.foreground': getToken('accent.primary'),
+  'activityBar.inactiveForeground': getToken('color.text.secondary'),
+  'activityBar.activeBorder': getToken('accent.primary'),
+  // 'activityBar.activeBackground': getToken('color.interactive.selected'),
+  'activityBar.border': getToken('color.background.secondary'),
+  'activityBar.dropBorder': getToken('accent.primary'),
 }

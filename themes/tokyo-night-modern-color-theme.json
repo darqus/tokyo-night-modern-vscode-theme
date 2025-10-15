@@ -15,15 +15,15 @@
     "breadcrumb.activeSelectionForeground": "#7aa2f7",
     "breadcrumb.focusForeground": "#7aa2f7",
     "breadcrumb.foreground": "#82859e",
-    "breadcrumbPicker.background": "#0a1018",
+    "breadcrumbPicker.background": "#2a2f40",
     "descriptionForeground": "#515670",
     "errorForeground": "#515670",
     "focusBorder": "#42a5f5",
     "foreground": "#a9b1d6",
     "icon.foreground": "#7aa2f7",
-    "sash.hoverBorder": "#45496c",
+    "sash.hoverBorder": "#4e6ab2",
     "selection.background": "#4e6ab260",
-    "widget.border": "#42465d40",
+    "widget.border": "#51567040",
     "widget.shadow": "#00000080",
     "editor.background": "#10151d",
     "editor.findMatchBackground": "#4e6ab266",
@@ -105,26 +105,26 @@
     "sideBarSectionHeader.border": "#0a1018",
     "sideBarSectionHeader.foreground": "#a9b1d6",
     "sideBarTitle.foreground": "#7aa2f7",
-    "activityBar.background": "#0a1018",
+    "activityBar.background": "#10151d",
     "activityBar.foreground": "#7aa2f7",
     "activityBar.inactiveForeground": "#82859e",
     "activityBar.activeBorder": "#7aa2f7",
-    "activityBar.border": "#0a1018",
+    "activityBar.border": "#2a2f40",
     "activityBar.dropBorder": "#7aa2f7",
-    "statusBar.background": "#0a1018",
+    "statusBar.background": "#10151d",
     "statusBar.debuggingBackground": "#e0af68",
-    "statusBar.debuggingForeground": "#0a1018",
+    "statusBar.debuggingForeground": "#2a2f40",
     "statusBar.foreground": "#82859e",
-    "statusBar.noFolderBackground": "#0a1018",
-    "statusBarItem.activeBackground": "#515c7e",
-    "statusBarItem.compactHoverBackground": "#45496c90",
-    "statusBarItem.hoverBackground": "#45496cAA",
+    "statusBar.noFolderBackground": "#2a2f40",
+    "statusBarItem.activeBackground": "#394b70",
+    "statusBarItem.compactHoverBackground": "#4e6ab290",
+    "statusBarItem.hoverBackground": "#4e6ab2AA",
     "statusBarItem.hoverForeground": "#7aa2f7",
-    "statusBarItem.prominentBackground": "#0a1018",
-    "statusBarItem.prominentHoverBackground": "#45496c",
-    "statusBarItem.remoteBackground": "#0a1018",
+    "statusBarItem.prominentBackground": "#2a2f40",
+    "statusBarItem.prominentHoverBackground": "#4e6ab2",
+    "statusBarItem.remoteBackground": "#2a2f40",
     "statusBarItem.remoteForeground": "#7aa2f7",
-    "statusBarItem.remoteHoverBackground": "#0a1018",
+    "statusBarItem.remoteHoverBackground": "#2a2f40",
     "statusBarItem.remoteHoverForeground": "#7aa2f7",
     "tab.activeBackground": "#0a1018",
     "tab.activeBorder": "#7aa2f7",
@@ -300,6 +300,15 @@
     "debugToolBar.background": "#0a1018",
     "debugView.stateLabelBackground": "#0a1018",
     "debugView.stateLabelForeground": "#a9b1d6",
+    "inlineChat.background": "#10151d",
+    "inlineChat.border": "#42465d",
+    "inlineChat.shadow": "#000000",
+    "inlineChat.regionHighlight": "#e0af68",
+    "inlineChatDiff.inserted": "#1c1d29",
+    "inlineChatDiff.removed": "#17233d",
+    "inlineChatInput.border": "#4e6ab2",
+    "inlineChatInput.focusBorder": "#42a5f5",
+    "inlineChatInput.placeholderForeground": "#494f67",
     "editorOverviewRuler.addedForeground": "#9ece6a",
     "editorOverviewRuler.deletedForeground": "#ff5370",
     "editorOverviewRuler.errorForeground": "#ff5370",
@@ -1309,7 +1318,148 @@
       "name": "YAML flow control",
       "scope": "keyword.control.flow.block-scalar.literal",
       "settings": {
+        "foreground": "#bb9af7",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "YAML key",
+      "scope": [
+        "entity.name.tag.yaml",
+        "string.unquoted.plain.out.yaml",
+        "string.unquoted.yaml"
+      ],
+      "settings": {
+        "foreground": "#fd86e1"
+      }
+    },
+    {
+      "name": "YAML string",
+      "scope": [
+        "string.quoted.single.yaml",
+        "string.quoted.double.yaml",
+        "string.plain.out.yaml"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "YAML constant",
+      "scope": [
+        "constant.language.boolean.yaml",
+        "constant.numeric.yaml"
+      ],
+      "settings": {
+        "foreground": "#e55381"
+      }
+    },
+    {
+      "name": "YAML comment",
+      "scope": "comment.line.number-sign.yaml",
+      "settings": {
+        "foreground": "#696f87"
+      }
+    },
+    {
+      "name": "Python keyword",
+      "scope": [
+        "keyword.control.import.python",
+        "keyword.control.flow.python",
+        "keyword.operator.logical.python",
+        "storage.type.function.python",
+        "storage.modifier.global.python",
+        "keyword.control.flow.break.python",
+        "keyword.control.flow.continue.python",
+        "keyword.control.flow.conditional.python",
+        "keyword.control.flow.loop.python",
+        "keyword.control.flow.return.python",
+        "keyword.control.flow.raise.python",
+        "keyword.control.flow.try.python",
+        "keyword.control.flow.with.python",
+        "keyword.control.flow.yield.python",
+        "keyword.control.default.python",
+        "storage.type.class.python",
+        "storage.type.function.async.python",
+        "keyword.operator.word.python"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Python string",
+      "scope": [
+        "string.quoted.single.python",
+        "string.quoted.double.python",
+        "string.quoted.multi.python",
+        "string.interpolated.python"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Python number",
+      "scope": [
+        "constant.numeric.dec.python",
+        "constant.numeric.hex.python",
+        "constant.numeric.oct.python",
+        "constant.numeric.bin.python",
+        "constant.numeric.float.python"
+      ],
+      "settings": {
+        "foreground": "#e55381"
+      }
+    },
+    {
+      "name": "Python function",
+      "scope": [
+        "entity.name.function.python",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Python class",
+      "scope": [
+        "entity.name.type.class.python",
+        "meta.class.python"
+      ],
+      "settings": {
+        "foreground": "#0da0ba"
+      }
+    },
+    {
+      "name": "Python comment",
+      "scope": [
+        "comment.line.number-sign.python",
+        "punctuation.definition.comment.python"
+      ],
+      "settings": {
+        "foreground": "#696f87"
+      }
+    },
+    {
+      "name": "Python type",
+      "scope": [
+        "storage.type.hint.python",
+        "meta.function.parameters.python"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Python variable",
+      "scope": [
+        "variable.other.python",
+        "meta.function-call.arguments.python"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
       }
     },
     {
@@ -1327,6 +1477,331 @@
       "scope": "source.cpp meta.block variable.other",
       "settings": {
         "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Go keyword",
+      "scope": [
+        "keyword.control.import.go",
+        "keyword.control.flow.go",
+        "keyword.operator.logical.go",
+        "storage.type.go",
+        "storage.modifier.go",
+        "keyword.package.go",
+        "keyword.import.go",
+        "keyword.func.go",
+        "keyword.type.go",
+        "keyword.var.go",
+        "keyword.const.go",
+        "keyword.map.go",
+        "keyword.interface.go",
+        "keyword.struct.go",
+        "keyword.channel.go",
+        "keyword.select.go",
+        "keyword.case.go",
+        "keyword.default.go",
+        "keyword.defer.go",
+        "keyword.go.go",
+        "keyword.goto.go",
+        "keyword.fallthrough.go",
+        "keyword.range.go",
+        "keyword.return.go",
+        "keyword.break.go",
+        "keyword.continue.go"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Go built-in function",
+      "scope": [
+        "support.function.builtin.go"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Go type",
+      "scope": [
+        "support.type.primitive.go",
+        "entity.name.type.go"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Go string",
+      "scope": [
+        "string.quoted.double.go",
+        "string.quoted.raw.go"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Go number",
+      "scope": [
+        "constant.numeric.go"
+      ],
+      "settings": {
+        "foreground": "#e55381"
+      }
+    },
+    {
+      "name": "Go comment",
+      "scope": [
+        "comment.line.double-slash.go",
+        "comment.block.go"
+      ],
+      "settings": {
+        "foreground": "#696f87"
+      }
+    },
+    {
+      "name": "Go operator",
+      "scope": [
+        "keyword.operator.go"
+      ],
+      "settings": {
+        "foreground": "#bfd5de"
+      }
+    },
+    {
+      "name": "Haskell keyword",
+      "scope": [
+        "keyword.other.haskell",
+        "keyword.declaration.haskell",
+        "keyword.control.haskell",
+        "keyword.operator.haskell",
+        "keyword.other.arrow.haskell",
+        "keyword.other.big-arrow.haskell",
+        "keyword.other.forall.haskell",
+        "keyword.other.qualified.haskell",
+        "keyword.other.hiding.haskell",
+        "keyword.other.as.haskell",
+        "keyword.other.default.haskell",
+        "keyword.other.family.haskell",
+        "keyword.other.role.haskell",
+        "keyword.other.standalone.haskell",
+        "keyword.other.newtype.haskell",
+        "keyword.other.type.haskell",
+        "keyword.other.where.haskell",
+        "keyword.other.let.haskell",
+        "keyword.other.in.haskell",
+        "keyword.other.do.haskell",
+        "keyword.other.rec.haskell",
+        "keyword.other.package.haskell",
+        "keyword.other.signature.haskell",
+        "keyword.other.safe.haskell",
+        "keyword.other.unsafe.haskell"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Haskell operator",
+      "scope": [
+        "keyword.operator.haskell",
+        "keyword.other.arrow.haskell",
+        "keyword.other.big-arrow.haskell"
+      ],
+      "settings": {
+        "foreground": "#bfd5de"
+      }
+    },
+    {
+      "name": "Haskell type",
+      "scope": [
+        "entity.name.type.haskell",
+        "support.type.primitive.haskell",
+        "entity.name.type.class.haskell",
+        "entity.name.type.newtype.haskell",
+        "entity.name.type.data.haskell"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Haskell function",
+      "scope": [
+        "entity.name.function.haskell",
+        "support.function.prelude.haskell"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Haskell constructor",
+      "scope": [
+        "meta.declaration.class.haskell",
+        "meta.declaration.instance.haskell",
+        "meta.declaration.type-data.haskell"
+      ],
+      "settings": {
+        "foreground": "#0da0ba"
+      }
+    },
+    {
+      "name": "Haskell variable",
+      "scope": [
+        "variable.other.haskell",
+        "meta.declaration.function.haskell"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Haskell string",
+      "scope": [
+        "string.quoted.double.haskell",
+        "string.quoted.single.haskell"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Haskell number",
+      "scope": [
+        "constant.numeric.haskell"
+      ],
+      "settings": {
+        "foreground": "#e55381"
+      }
+    },
+    {
+      "name": "Haskell comment",
+      "scope": [
+        "comment.line.double-dash.haskell",
+        "comment.block.haskell"
+      ],
+      "settings": {
+        "foreground": "#696f87"
+      }
+    },
+    {
+      "name": "Rust keyword",
+      "scope": [
+        "keyword.control.rust",
+        "storage.type.rust",
+        "storage.modifier.rust",
+        "keyword.other.rust",
+        "keyword.unsafe.rust",
+        "keyword.async.rust",
+        "keyword.await.rust",
+        "keyword.const.rust",
+        "keyword.static.rust",
+        "keyword.mut.rust",
+        "keyword.ref.rust",
+        "keyword.crate.rust",
+        "keyword.mod.rust",
+        "keyword.use.rust",
+        "keyword.struct.rust",
+        "keyword.enum.rust",
+        "keyword.union.rust",
+        "keyword.impl.rust",
+        "keyword.trait.rust",
+        "keyword.fn.rust",
+        "keyword.extern.rust",
+        "keyword.pub.rust",
+        "keyword.type.rust",
+        "keyword.where.rust",
+        "keyword.for.rust",
+        "keyword.while.rust",
+        "keyword.loop.rust",
+        "keyword.if.rust",
+        "keyword.match.rust",
+        "keyword.else.rust",
+        "keyword.return.rust"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Rust lifetime",
+      "scope": [
+        "storage.modifier.lifetime.rust",
+        "punctuation.definition.lifetime.rust"
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Rust macro",
+      "scope": [
+        "entity.name.function.macro.rust",
+        "support.function.macro.rust",
+        "variable.other.metavariable.name.rust",
+        "punctuation.definition.metavariable.name.rust"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Rust string",
+      "scope": [
+        "string.quoted.double.rust",
+        "string.quoted.single.char.rust",
+        "string.quoted.raw.rust"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Rust number",
+      "scope": [
+        "constant.numeric.decimal.rust",
+        "constant.numeric.hex.rust",
+        "constant.numeric.octal.rust",
+        "constant.numeric.binary.rust",
+        "constant.numeric.float.rust"
+      ],
+      "settings": {
+        "foreground": "#e55381"
+      }
+    },
+    {
+      "name": "Rust type",
+      "scope": [
+        "entity.name.type.rust",
+        "storage.type.core.rust"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Rust variable",
+      "scope": [
+        "variable.other.rust"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Rust comment",
+      "scope": [
+        "comment.line.double-slash.rust",
+        "comment.block.rust",
+        "comment.block.documentation.rust"
+      ],
+      "settings": {
+        "foreground": "#696f87"
       }
     }
   ],
@@ -1346,6 +1821,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-14T01:49:21.767Z"
+    "buildDate": "2025-10-15T16:53:01.701Z"
   }
 }
