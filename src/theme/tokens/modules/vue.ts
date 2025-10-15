@@ -43,7 +43,6 @@ export const vueTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.keyword,
-      fontStyle: 'italic',
     },
   },
   {
@@ -160,7 +159,6 @@ export const vueTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.variable,
-      fontStyle: 'italic',
     },
   },
   {
@@ -211,7 +209,6 @@ export const vueTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.keyword,
-      fontStyle: 'italic',
     },
   },
   {

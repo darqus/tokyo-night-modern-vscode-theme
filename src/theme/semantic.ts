@@ -10,7 +10,6 @@ export const semanticTokenColors = {
   },
   'method.static': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'method.async': {
     foreground: palette.function,
@@ -20,11 +19,9 @@ export const semanticTokenColors = {
   },
   'method.private': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'method.protected': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'method.public': {
     foreground: palette.function,
@@ -39,7 +36,6 @@ export const semanticTokenColors = {
   },
   'function.static': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'function.async': {
     foreground: palette.function,
@@ -49,11 +45,9 @@ export const semanticTokenColors = {
   },
   'function.private': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'function.protected': {
     foreground: palette.function,
-    fontStyle: 'italic',
   },
   'function.public': {
     foreground: palette.function,
@@ -68,22 +62,18 @@ export const semanticTokenColors = {
   },
   'class.abstract': {
     foreground: palette.class,
-    fontStyle: 'italic',
   },
   'class.static': {
     foreground: palette.class,
-    fontStyle: 'italic',
   },
   'class.builtin': {
     foreground: palette.class,
   },
   'class.private': {
     foreground: palette.class,
-    fontStyle: 'italic',
   },
   'class.protected': {
     foreground: palette.class,
-    fontStyle: 'italic',
   },
   'class.public': {
     foreground: palette.class,
@@ -98,18 +88,15 @@ export const semanticTokenColors = {
   },
   'interface.abstract': {
     foreground: palette.interface,
-    fontStyle: 'italic',
   },
   'interface.builtin': {
     foreground: palette.interface,
   },
   'interface.private': {
     foreground: palette.interface,
-    fontStyle: 'italic',
   },
   'interface.protected': {
     foreground: palette.interface,
-    fontStyle: 'italic',
   },
   'interface.public': {
     foreground: palette.interface,
@@ -127,7 +114,6 @@ export const semanticTokenColors = {
   },
   'type.static': {
     foreground: palette.type,
-    fontStyle: 'italic',
   },
 
   // Enum-related tokens
@@ -142,7 +128,6 @@ export const semanticTokenColors = {
  },
   'enum.static': {
     foreground: palette.type,
-    fontStyle: 'italic',
   },
 
   // Enum member tokens
@@ -154,7 +139,6 @@ export const semanticTokenColors = {
   },
   'enum-member.static': {
     foreground: palette.type,
-    fontStyle: 'italic',
  },
 
   // Namespace-related tokens
@@ -166,7 +150,6 @@ export const semanticTokenColors = {
   },
   'namespace.static': {
     foreground: palette.type,
-    fontStyle: 'italic',
   },
 
   // Type parameter tokens
@@ -178,7 +161,6 @@ export const semanticTokenColors = {
   },
   'type-parameter.static': {
     foreground: palette.type,
-    fontStyle: 'italic',
  },
 
   // Variable-related tokens
@@ -193,7 +175,6 @@ export const semanticTokenColors = {
  },
   'variable.static': {
     foreground: palette.variable,
-    fontStyle: 'italic',
   },
   'variable.readonly': {
     foreground: palette.yellow,
@@ -275,7 +256,6 @@ export const semanticTokenColors = {
   },
   'macro.static': {
     foreground: palette.decorator,
-    fontStyle: 'italic',
   },
 
   // Label-related tokens
@@ -287,7 +267,6 @@ export const semanticTokenColors = {
  },
   'label.static': {
     foreground: palette.keyword,
-    fontStyle: 'italic',
   },
 
   // Decorator-related tokens
@@ -299,7 +278,6 @@ export const semanticTokenColors = {
   },
   'decorator.static': {
     foreground: palette.decorator,
-    fontStyle: 'italic',
   },
 
   // Comment-related tokens

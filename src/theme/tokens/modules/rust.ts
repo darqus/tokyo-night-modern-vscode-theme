@@ -49,7 +49,6 @@ export const rustTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.type,
-      fontStyle: 'italic',
     },
   },
  {
@@ -62,7 +61,6 @@ export const rustTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.function,
-      fontStyle: 'italic',
     },
   },
   {

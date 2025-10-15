@@ -69,7 +69,6 @@ export const javascriptTokens: TokenColor[] = [
       'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
     settings: {
       foreground: palette.property,
-      fontStyle: 'italic',
     },
   },
   {
@@ -135,7 +134,6 @@ export const javascriptTokens: TokenColor[] = [
     scope: 'variable.language',
     settings: {
       foreground: palette.variable,
-      fontStyle: 'italic',
     },
   },
   {
@@ -187,7 +185,6 @@ export const javascriptTokens: TokenColor[] = [
     scope: ['variable.parameter', 'parameters variable.function'],
     settings: {
       foreground: palette.parameter,
-      fontStyle: 'italic',
     },
   },
 ]
