@@ -1803,6 +1803,267 @@
       "settings": {
         "foreground": "#696f87"
       }
+    },
+    {
+      "name": "Vue component tag",
+      "scope": [
+        "meta.tag.other.html",
+        "meta.tag.template.html",
+        "meta.tag.script.html",
+        "meta.tag.style.html"
+      ],
+      "settings": {
+        "foreground": "#769df7"
+      }
+    },
+    {
+      "name": "Vue template interpolation",
+      "scope": [
+        "meta.embedded.expression.vue punctuation.definition.generic.begin.html",
+        "meta.embedded.expression.vue punctuation.definition.generic.end.html",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Vue template interpolation text",
+      "scope": "meta.embedded.expression.vue",
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Vue directive",
+      "scope": [
+        "entity.other.attribute-name.html.vue",
+        "meta.directive.vue entity.other.attribute-name.html",
+        "meta.directive.vue punctuation.separator.key-value.html"
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue directive value",
+      "scope": [
+        "meta.directive.vue string.quoted",
+        "meta.directive.vue meta.embedded.expression"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Vue directive argument",
+      "scope": [
+        "meta.directive.vue variable.parameter",
+        "meta.directive.vue variable.other.readwrite.js"
+      ],
+      "settings": {
+        "foreground": "#73daca"
+      }
+    },
+    {
+      "name": "Vue component name",
+      "scope": [
+        "support.class.component.html",
+        "entity.name.tag.custom",
+        "meta.tag.custom.start.html",
+        "meta.tag.custom.end.html"
+      ],
+      "settings": {
+        "foreground": "#fdc886"
+      }
+    },
+    {
+      "name": "Vue template attribute",
+      "scope": [
+        "text.html.vue meta.tag.block.any.html entity.other.attribute-name.html",
+        "text.html.vue meta.tag.start.html entity.other.attribute-name.html",
+        "text.html.vue meta.tag.end.html entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Vue template attribute value",
+      "scope": [
+        "text.html.vue meta.tag.any.html string.quoted",
+        "text.html.vue meta.tag.start.html string.quoted",
+        "text.html.vue meta.tag.end.html string.quoted"
+      ],
+      "settings": {
+        "foreground": "#fd86e1"
+      }
+    },
+    {
+      "name": "Vue style tag attribute",
+      "scope": [
+        "meta.tag.start.style.html entity.other.attribute-name.html",
+        "meta.tag.end.style.html entity.other.attribute-name.html",
+        "meta.tag.start.script.html entity.other.attribute-name.html",
+        "meta.tag.end.script.html entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Vue template tag",
+      "scope": [
+        "meta.tag.template.html entity.name.tag.html",
+        "meta.tag.start.template.html entity.name.tag.html",
+        "meta.tag.end.template.html entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#769df7"
+      }
+    },
+    {
+      "name": "Vue script tag",
+      "scope": [
+        "meta.tag.script.html entity.name.tag.html",
+        "meta.tag.start.script.html entity.name.tag.html",
+        "meta.tag.end.script.html entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#769df7"
+      }
+    },
+    {
+      "name": "Vue style tag",
+      "scope": [
+        "meta.tag.style.html entity.name.tag.html",
+        "meta.tag.start.style.html entity.name.tag.html",
+        "meta.tag.end.style.html entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#769df7"
+      }
+    },
+    {
+      "name": "Vue template expression",
+      "scope": "expression.embedded.vue",
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Vue v-for variable",
+      "scope": [
+        "meta.directive.vue variable.other.readwrite.js",
+        "meta.directive.vue variable.parameter.vue"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue template comment",
+      "scope": [
+        "text.html.vue comment.block.html",
+        "comment.line.double-slash.vue"
+      ],
+      "settings": {
+        "foreground": "#696f87"
+      }
+    },
+    {
+      "name": "Vue script setup",
+      "scope": [
+        "meta.tag.script.html meta.embedded.block.vue",
+        "meta.script.vue"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Vue style block",
+      "scope": [
+        "meta.tag.style.html meta.embedded.block.vue",
+        "meta.style.vue"
+      ],
+      "settings": {
+        "foreground": "#85d0b7"
+      }
+    },
+    {
+      "name": "Vue template element",
+      "scope": [
+        "meta.template.vue",
+        "text.html.vue"
+      ],
+      "settings": {
+        "foreground": "#769df7"
+      }
+    },
+    {
+      "name": "Vue v-if, v-for, v-show, v-else, v-bind, v-on, v-model, etc.",
+      "scope": [
+        "entity.other.attribute-name.html.vue",
+        "meta.directive.vue entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue slot",
+      "scope": [
+        "entity.name.tag.special.html",
+        "support.variable.property.vue"
+      ],
+      "settings": {
+        "foreground": "#7dcfff"
+      }
+    },
+    {
+      "name": "Vue slot name",
+      "scope": [
+        "meta.directive.vue entity.other.attribute-name.html",
+        "meta.directive.vue string"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Vue ref",
+      "scope": [
+        "variable.other.readwrite.js",
+        "meta.directive.vue variable.other.readwrite.js"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
+    },
+    {
+      "name": "Vue lifecycle hooks",
+      "scope": [
+        "support.function.builtin.vue",
+        "variable.other.readwrite.js"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Vue reactive variables",
+      "scope": [
+        "meta.embedded.expression.vue variable.other.readwrite.js",
+        "meta.embedded.expression.vue variable.other.object.js"
+      ],
+      "settings": {
+        "foreground": "#bdbdbd"
+      }
     }
   ],
   "semanticTokenColors": {
@@ -1821,6 +2082,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T16:53:01.701Z"
+    "buildDate": "2025-10-15T17:02:19.992Z"
   }
 }
