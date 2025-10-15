@@ -5,7 +5,6 @@ exports[`Theme should match the snapshot 1`] = `
   "colors": {
     "activityBar.activeBorder": "#7aa2f7",
     "activityBar.background": "#0f1722",
-    "activityBar.border": "#2a2f40",
     "activityBar.dropBorder": "#7aa2f7",
     "activityBar.foreground": "#7aa2f7",
     "activityBar.inactiveForeground": "#82859e",
@@ -773,7 +772,6 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS nested object key",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#7dcfff",
       },
     },
@@ -839,7 +837,6 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bdbdbd",
       },
     },
@@ -894,7 +891,6 @@ exports[`Theme should match the snapshot 1`] = `
         "parameters variable.function",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#73daca",
       },
     },
@@ -910,7 +906,6 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "TS JSDoc type",
       "scope": "comment storage.type",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -940,7 +935,6 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.type.annotation",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -998,7 +992,6 @@ exports[`Theme should match the snapshot 1`] = `
         "support.type.primitive",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -1222,6 +1215,26 @@ exports[`Theme should match the snapshot 1`] = `
       },
     },
     {
+      "name": "MD unnumbered list",
+      "scope": [
+        "markup.list.unnumbered",
+        "punctuation.definition.list.begin.markdown",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
+      "name": "MD numbered list",
+      "scope": [
+        "markup.list.numbered",
+        "punctuation.definition.list.begin.markdown",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
       "name": "MD raw",
       "scope": "text.html.markdown markup.inline.raw.markdown",
       "settings": {
@@ -1302,7 +1315,6 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.italic punctuation",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bdbdbd",
       },
     },
@@ -1889,7 +1901,6 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.lifetime.rust",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -1902,7 +1913,6 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.metavariable.name.rust",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#7aa2f7",
       },
     },
@@ -1999,7 +2009,6 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue punctuation.separator.key-value.html",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
@@ -2116,7 +2125,6 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.parameter.vue",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bdbdbd",
       },
     },
@@ -2167,7 +2175,6 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue entity.other.attribute-name.html",
       ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#bb9af7",
       },
     },
