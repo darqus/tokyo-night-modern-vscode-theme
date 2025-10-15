@@ -40,7 +40,8 @@ export const javascriptTokens: TokenColor[] = [
       'meta.field.declaration.ts variable.object.property',
     ],
     settings: {
-      foreground: palette.variable,
+      foreground: palette.property,
+      fontStyle: 'bold',
     },
   },
   {
@@ -68,6 +69,7 @@ export const javascriptTokens: TokenColor[] = [
       'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
     settings: {
       foreground: palette.property,
+      fontStyle: 'italic',
     },
   },
   {
@@ -78,7 +80,7 @@ export const javascriptTokens: TokenColor[] = [
     },
   },
   {
-    name: 'JS function',
+    name: 'JS function declaration',
     scope: [
       'meta.class-method.js entity.name.function.js',
       'entity.name.method.js',
@@ -88,10 +90,11 @@ export const javascriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.function,
+      fontStyle: 'bold',
     },
   },
   {
-    name: 'JS function',
+    name: 'JS function call',
     scope: [
       'entity.name.function',
       'meta.function-call',
@@ -132,6 +135,7 @@ export const javascriptTokens: TokenColor[] = [
     scope: 'variable.language',
     settings: {
       foreground: palette.variable,
+      fontStyle: 'italic',
     },
   },
   {
@@ -150,6 +154,7 @@ export const javascriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.jsThis,
+      fontStyle: 'bold',
     },
   },
   {
@@ -160,6 +165,7 @@ export const javascriptTokens: TokenColor[] = [
     ],
     settings: {
       foreground: palette.decorator,
+      fontStyle: 'bold',
     },
   },
   {
