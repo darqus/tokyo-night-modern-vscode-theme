@@ -4,7 +4,7 @@ exports[`Theme should match the snapshot 1`] = `
 {
   "colors": {
     "activityBar.activeBorder": "#7aa2f7",
-    "activityBar.background": "#2a2f40",
+    "activityBar.background": "#10151d",
     "activityBar.border": "#2a2f40",
     "activityBar.dropBorder": "#7aa2f7",
     "activityBar.foreground": "#7aa2f7",
@@ -320,7 +320,7 @@ exports[`Theme should match the snapshot 1`] = `
     "sideBarSectionHeader.border": "#0a1018",
     "sideBarSectionHeader.foreground": "#a9b1d6",
     "sideBarTitle.foreground": "#7aa2f7",
-    "statusBar.background": "#2a2f40",
+    "statusBar.background": "#10151d",
     "statusBar.debuggingBackground": "#e0af68",
     "statusBar.debuggingForeground": "#2a2f40",
     "statusBar.foreground": "#82859e",
@@ -1880,6 +1880,1414 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "Vue component tag",
+      "scope": [
+        "meta.tag.other.html",
+        "meta.tag.template.html",
+        "meta.tag.script.html",
+        "meta.tag.style.html",
+      ],
+      "settings": {
+        "foreground": "#769df7",
+      },
+    },
+    {
+      "name": "Vue template interpolation",
+      "scope": [
+        "meta.embedded.expression.vue punctuation.definition.generic.begin.html",
+        "meta.embedded.expression.vue punctuation.definition.generic.end.html",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue template interpolation text",
+      "scope": "meta.embedded.expression.vue",
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Vue directive",
+      "scope": [
+        "entity.other.attribute-name.html.vue",
+        "meta.directive.vue entity.other.attribute-name.html",
+        "meta.directive.vue punctuation.separator.key-value.html",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue directive value",
+      "scope": [
+        "meta.directive.vue string.quoted",
+        "meta.directive.vue meta.embedded.expression",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Vue directive argument",
+      "scope": [
+        "meta.directive.vue variable.parameter",
+        "meta.directive.vue variable.other.readwrite.js",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Vue component name",
+      "scope": [
+        "support.class.component.html",
+        "entity.name.tag.custom",
+        "meta.tag.custom.start.html",
+        "meta.tag.custom.end.html",
+      ],
+      "settings": {
+        "foreground": "#fdc886",
+      },
+    },
+    {
+      "name": "Vue template attribute",
+      "scope": [
+        "text.html.vue meta.tag.block.any.html entity.other.attribute-name.html",
+        "text.html.vue meta.tag.start.html entity.other.attribute-name.html",
+        "text.html.vue meta.tag.end.html entity.other.attribute-name.html",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue template attribute value",
+      "scope": [
+        "text.html.vue meta.tag.any.html string.quoted",
+        "text.html.vue meta.tag.start.html string.quoted",
+        "text.html.vue meta.tag.end.html string.quoted",
+      ],
+      "settings": {
+        "foreground": "#fd86e1",
+      },
+    },
+    {
+      "name": "Vue style tag attribute",
+      "scope": [
+        "meta.tag.start.style.html entity.other.attribute-name.html",
+        "meta.tag.end.style.html entity.other.attribute-name.html",
+        "meta.tag.start.script.html entity.other.attribute-name.html",
+        "meta.tag.end.script.html entity.other.attribute-name.html",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue template tag",
+      "scope": [
+        "meta.tag.template.html entity.name.tag.html",
+        "meta.tag.start.template.html entity.name.tag.html",
+        "meta.tag.end.template.html entity.name.tag.html",
+      ],
+      "settings": {
+        "foreground": "#769df7",
+      },
+    },
+    {
+      "name": "Vue script tag",
+      "scope": [
+        "meta.tag.script.html entity.name.tag.html",
+        "meta.tag.start.script.html entity.name.tag.html",
+        "meta.tag.end.script.html entity.name.tag.html",
+      ],
+      "settings": {
+        "foreground": "#769df7",
+      },
+    },
+    {
+      "name": "Vue style tag",
+      "scope": [
+        "meta.tag.style.html entity.name.tag.html",
+        "meta.tag.start.style.html entity.name.tag.html",
+        "meta.tag.end.style.html entity.name.tag.html",
+      ],
+      "settings": {
+        "foreground": "#769df7",
+      },
+    },
+    {
+      "name": "Vue template expression",
+      "scope": "expression.embedded.vue",
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Vue v-for variable",
+      "scope": [
+        "meta.directive.vue variable.other.readwrite.js",
+        "meta.directive.vue variable.parameter.vue",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Vue template comment",
+      "scope": [
+        "text.html.vue comment.block.html",
+        "comment.line.double-slash.vue",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "Vue script setup",
+      "scope": [
+        "meta.tag.script.html meta.embedded.block.vue",
+        "meta.script.vue",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Vue style block",
+      "scope": [
+        "meta.tag.style.html meta.embedded.block.vue",
+        "meta.style.vue",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Vue template element",
+      "scope": [
+        "meta.template.vue",
+        "text.html.vue",
+      ],
+      "settings": {
+        "foreground": "#769df7",
+      },
+    },
+    {
+      "name": "Vue v-if, v-for, v-show, v-else, v-bind, v-on, v-model, etc.",
+      "scope": [
+        "entity.other.attribute-name.html.vue",
+        "meta.directive.vue entity.other.attribute-name.html",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue slot",
+      "scope": [
+        "entity.name.tag.special.html",
+        "support.variable.property.vue",
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "Vue slot name",
+      "scope": [
+        "meta.directive.vue entity.other.attribute-name.html",
+        "meta.directive.vue string",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Vue ref",
+      "scope": [
+        "variable.other.readwrite.js",
+        "meta.directive.vue variable.other.readwrite.js",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Vue lifecycle hooks",
+      "scope": [
+        "support.function.builtin.vue",
+        "variable.other.readwrite.js",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Vue reactive variables",
+      "scope": [
+        "meta.embedded.expression.vue variable.other.readwrite.js",
+        "meta.embedded.expression.vue variable.other.object.js",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "C# keyword",
+      "scope": [
+        "keyword.control.cs",
+        "storage.type.cs",
+        "storage.modifier.cs",
+        "keyword.type.cs",
+        "keyword.operator.word.cs",
+        "keyword.other.this.cs",
+        "keyword.other.base.cs",
+        "keyword.other.namespace.cs",
+        "keyword.other.using.cs",
+        "keyword.other.class.cs",
+        "keyword.other.interface.cs",
+        "keyword.other.struct.cs",
+        "keyword.other.enum.cs",
+        "keyword.other.delegate.cs",
+        "keyword.other.event.cs",
+        "keyword.other.property.cs",
+        "keyword.other.get.cs",
+        "keyword.other.set.cs",
+        "keyword.other.add.cs",
+        "keyword.other.remove.cs",
+        "keyword.other.async.cs",
+        "keyword.other.await.cs",
+        "keyword.other.partial.cs",
+        "keyword.other.virtual.cs",
+        "keyword.other.override.cs",
+        "keyword.other.abstract.cs",
+        "keyword.other.sealed.cs",
+        "keyword.other.static.cs",
+        "keyword.other.internal.cs",
+        "keyword.other.public.cs",
+        "keyword.other.private.cs",
+        "keyword.other.protected.cs",
+        "keyword.other.extern.cs",
+        "keyword.other.ref.cs",
+        "keyword.other.out.cs",
+        "keyword.other.in.cs",
+        "keyword.other.optional.cs",
+        "keyword.other.params.cs",
+        "keyword.other.new.cs",
+        "keyword.other.return.cs",
+        "keyword.other.yield.cs",
+        "keyword.other.checked.cs",
+        "keyword.other.unchecked.cs",
+        "keyword.other.lock.cs",
+        "keyword.other.unsafe.cs",
+        "keyword.other.fixed.cs",
+        "keyword.other.try.cs",
+        "keyword.other.catch.cs",
+        "keyword.other.finally.cs",
+        "keyword.other.throw.cs",
+        "keyword.other.using.cs",
+        "keyword.other.do.cs",
+        "keyword.other.while.cs",
+        "keyword.other.for.cs",
+        "keyword.other.foreach.cs",
+        "keyword.other.in.cs",
+        "keyword.other.if.cs",
+        "keyword.other.else.cs",
+        "keyword.other.switch.cs",
+        "keyword.other.case.cs",
+        "keyword.other.default.cs",
+        "keyword.other.goto.cs",
+        "keyword.other.break.cs",
+        "keyword.other.continue.cs",
+        "keyword.other.goto.cs",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "C# built-in types",
+      "scope": [
+        "storage.type.primitive.cs",
+        "support.type.primitive.cs",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "C# class",
+      "scope": [
+        "entity.name.type.class.cs",
+        "entity.name.type.interface.cs",
+        "entity.name.type.struct.cs",
+        "entity.name.type.enum.cs",
+        "entity.name.type.delegate.cs",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "C# method",
+      "scope": [
+        "entity.name.function.cs",
+        "meta.method.identifier.cs",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "C# method call",
+      "scope": [
+        "meta.method-call.cs",
+        "entity.name.function.member.cs",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "C# namespace",
+      "scope": [
+        "entity.name.type.namespace.cs",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "C# property",
+      "scope": [
+        "entity.name.variable.property.cs",
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "C# field",
+      "scope": [
+        "entity.name.variable.field.cs",
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "C# parameter",
+      "scope": [
+        "variable.parameter.cs",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "C# variable",
+      "scope": [
+        "variable.other.readwrite.cs",
+        "variable.other.constant.cs",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "C# string",
+      "scope": [
+        "string.quoted.double.cs",
+        "string.quoted.single.cs",
+        "string.interpolated.cs",
+        "string.verbatim.cs",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "C# number",
+      "scope": [
+        "constant.numeric.cs",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "C# boolean",
+      "scope": [
+        "constant.language.boolean.cs",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "C# null value",
+      "scope": [
+        "constant.language.null.cs",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "C# comment",
+      "scope": [
+        "comment.line.double-slash.cs",
+        "comment.block.cs",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "C# preprocessor",
+      "scope": [
+        "keyword.preprocessor.cs",
+        "meta.preprocessor.cs",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "C# attribute",
+      "scope": [
+        "meta.attribute.cs",
+        "entity.name.type.attribute.cs",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "PHP keyword",
+      "scope": [
+        "keyword.control.php",
+        "storage.type.php",
+        "storage.modifier.php",
+        "keyword.operator.class.php",
+        "keyword.other.namespace.php",
+        "keyword.other.use.php",
+        "keyword.other.new.php",
+        "keyword.other.class.php",
+        "keyword.other.interface.php",
+        "keyword.other.trait.php",
+        "keyword.other.extends.php",
+        "keyword.other.implements.php",
+        "keyword.other.function.php",
+        "keyword.other.var.php",
+        "keyword.other.const.php",
+        "keyword.other.static.php",
+        "keyword.other.final.php",
+        "keyword.other.abstract.php",
+        "keyword.other.public.php",
+        "keyword.other.protected.php",
+        "keyword.other.private.php",
+        "keyword.other.include.php",
+        "keyword.other.include_once.php",
+        "keyword.other.require.php",
+        "keyword.other.require_once.php",
+        "keyword.other.return.php",
+        "keyword.other.yield.php",
+        "keyword.other.yield.from.php",
+        "keyword.other.goto.php",
+        "keyword.other.else.php",
+        "keyword.other.elseif.php",
+        "keyword.other.if.php",
+        "keyword.other.endif.php",
+        "keyword.other.for.php",
+        "keyword.other.foreach.php",
+        "keyword.other.endfor.php",
+        "keyword.other endforeach.php",
+        "keyword.other.while.php",
+        "keyword.other endwhile.php",
+        "keyword.other.do.php",
+        "keyword.other.switch.php",
+        "keyword.other.enddeclare.php",
+        "keyword.other.declare.php",
+        "keyword.other.case.php",
+        "keyword.other.default.php",
+        "keyword.other.break.php",
+        "keyword.other.continue.php",
+        "keyword.other.try.php",
+        "keyword.other.catch.php",
+        "keyword.other.finally.php",
+        "keyword.other.throw.php",
+        "keyword.other.echo.php",
+        "keyword.other.print.php",
+        "keyword.other.global.php",
+        "keyword.other.use-as.php",
+        "keyword.other.as.php",
+        "keyword.other.clone.php",
+        "keyword.other.unset.php",
+        "keyword.other.list.php",
+        "keyword.other.eval.php",
+        "keyword.other.exit.php",
+        "keyword.other.empty.php",
+        "keyword.other.isset.php",
+        "keyword.other.parent.php",
+        "keyword.other.self.php",
+        "keyword.other.static.php",
+        "keyword.other.namespace.php",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "PHP built-in types",
+      "scope": [
+        "storage.type.primitive.php",
+        "support.type.primitive.php",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "PHP class",
+      "scope": [
+        "entity.name.type.class.php",
+        "entity.name.type.interface.php",
+        "entity.name.type.trait.php",
+        "meta.class.php",
+        "meta.interface.php",
+        "meta.trait.php",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "PHP function",
+      "scope": [
+        "entity.name.function.php",
+        "support.function.php",
+        "meta.function-call.php",
+        "variable.function.php",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "PHP method",
+      "scope": [
+        "entity.name.function.member.php",
+        "variable.other.property.php",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "PHP variable",
+      "scope": [
+        "variable.other.php",
+        "variable.language.php",
+        "variable.other.global.php",
+        "variable.other.global.safer.php",
+        "variable.other.property.php",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "PHP parameter",
+      "scope": [
+        "variable.parameter.php",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "PHP string",
+      "scope": [
+        "string.quoted.single.php",
+        "string.quoted.double.php",
+        "string.quoted.triple.php",
+        "string.unquoted.php",
+        "string.interpolated.php",
+        "string.regexp.php",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "PHP number",
+      "scope": [
+        "constant.numeric.php",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "PHP boolean",
+      "scope": [
+        "constant.language.boolean.php",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "PHP null value",
+      "scope": [
+        "constant.language.null.php",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "PHP comment",
+      "scope": [
+        "comment.line.double-slash.php",
+        "comment.line.number-sign.php",
+        "comment.block.php",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "PHP variable punctuation",
+      "scope": [
+        "punctuation.definition.variable.php",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "PHP heredoc/nowdoc",
+      "scope": [
+        "string.unquoted.heredoc.php",
+        "string.unquoted.nowdoc.php",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "PHP constants",
+      "scope": [
+        "constant.other.php",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "PHP scope resolution",
+      "scope": [
+        "keyword.operator.class.php",
+        "punctuation.separator.inheritance.php",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
+      "name": "Ruby keyword",
+      "scope": [
+        "keyword.control.ruby",
+        "keyword.other.special-method.ruby",
+        "keyword.other.reserved.ruby",
+        "keyword.operator.logical.ruby",
+        "keyword.control.def.ruby",
+        "keyword.control.class.ruby",
+        "keyword.control.module.ruby",
+        "keyword.control.import.ruby",
+        "keyword.control.conditional.ruby",
+        "keyword.control.loop.ruby",
+        "keyword.control.return.ruby",
+        "keyword.control.exception.ruby",
+        "keyword.control.special-method.ruby",
+        "keyword.other.special-method.ruby",
+        "keyword.other.reserved.ruby",
+        "keyword.control.start-block.ruby",
+        "keyword.control.end-block.ruby",
+        "keyword.control.ruby",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Ruby class",
+      "scope": [
+        "entity.name.type.class.ruby",
+        "support.class.ruby",
+        "meta.class.ruby",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "Ruby method",
+      "scope": [
+        "entity.name.function.ruby",
+        "meta.function.method.ruby",
+        "variable.function.ruby",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Ruby method call",
+      "scope": [
+        "meta.method-call.ruby",
+        "support.function.builtin.ruby",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Ruby symbol",
+      "scope": [
+        "constant.other.symbol.ruby",
+        "constant.other.symbol.hashkey.ruby",
+        "punctuation.definition.constant.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby variable",
+      "scope": [
+        "variable.other.readwrite.instance.ruby",
+        "variable.other.readwrite.class.ruby",
+        "variable.other.readwrite.global.ruby",
+        "variable.other.constant.ruby",
+        "variable.other.ruby",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Ruby parameter",
+      "scope": [
+        "variable.parameter.ruby",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Ruby instance variable",
+      "scope": [
+        "variable.other.readwrite.instance.ruby",
+        "punctuation.definition.variable.ruby",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Ruby class variable",
+      "scope": [
+        "variable.other.readwrite.class.ruby",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Ruby global variable",
+      "scope": [
+        "variable.other.readwrite.global.ruby",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Ruby constant",
+      "scope": [
+        "constant.other.ruby",
+        "variable.other.constant.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby string",
+      "scope": [
+        "string.quoted.single.ruby",
+        "string.quoted.double.ruby",
+        "string.quoted.other.literal.upper.ruby",
+        "string.regexp.ruby",
+        "string.interpolated.ruby",
+        "string.other.ruby",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Ruby number",
+      "scope": [
+        "constant.numeric.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby boolean",
+      "scope": [
+        "constant.language.boolean.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby nil",
+      "scope": [
+        "constant.language.nil.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby comment",
+      "scope": [
+        "comment.line.number-sign.ruby",
+        "comment.block.documentation.ruby",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "Ruby block parameter",
+      "scope": [
+        "variable.parameter.block.ruby",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Ruby heredoc",
+      "scope": [
+        "string.unquoted.heredoc.ruby",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Ruby escape",
+      "scope": [
+        "constant.character.escape.ruby",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Ruby keyword operator",
+      "scope": [
+        "keyword.operator.arithmetic.ruby",
+        "keyword.operator.assignment.ruby",
+        "keyword.operator.comparison.ruby",
+        "keyword.operator.logical.ruby",
+        "keyword.operator.other.ruby",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
+      "name": "Kotlin keyword",
+      "scope": [
+        "keyword.control.kotlin",
+        "storage.type.kotlin",
+        "storage.modifier.kotlin",
+        "keyword.operator.kotlin",
+        "keyword.other.import.kotlin",
+        "keyword.other.package.kotlin",
+        "keyword.other.class.kotlin",
+        "keyword.other.interface.kotlin",
+        "keyword.other.object.kotlin",
+        "keyword.other.enum.kotlin",
+        "keyword.other.annotation.kotlin",
+        "keyword.other.fun.kotlin",
+        "keyword.other.val.kotlin",
+        "keyword.other.var.kotlin",
+        "keyword.other.vararg.kotlin",
+        "keyword.other.in.kotlin",
+        "keyword.other.out.kotlin",
+        "keyword.other.where.kotlin",
+        "keyword.other.constructor.kotlin",
+        "keyword.other.init.kotlin",
+        "keyword.other.this.kotlin",
+        "keyword.other.super.kotlin",
+        "keyword.other.import.kotlin",
+        "keyword.other.as.kotlin",
+        "keyword.other.is.kotlin",
+        "keyword.other.else.kotlin",
+        "keyword.other.if.kotlin",
+        "keyword.other.when.kotlin",
+        "keyword.other.for.kotlin",
+        "keyword.other.while.kotlin",
+        "keyword.other.do.kotlin",
+        "keyword.other.return.kotlin",
+        "keyword.other.continue.kotlin",
+        "keyword.other.break.kotlin",
+        "keyword.other.try.kotlin",
+        "keyword.other.catch.kotlin",
+        "keyword.other.finally.kotlin",
+        "keyword.other.throw.kotlin",
+        "keyword.other.await.kotlin",
+        "keyword.other.suspend.kotlin",
+        "keyword.other.inline.kotlin",
+        "keyword.other.reified.kotlin",
+        "keyword.other.tailrec.kotlin",
+        "keyword.other.operator.kotlin",
+        "keyword.other.infix.kotlin",
+        "keyword.other.data.kotlin",
+        "keyword.other.sealed.kotlin",
+        "keyword.other.internal.kotlin",
+        "keyword.other.private.kotlin",
+        "keyword.other.protected.kotlin",
+        "keyword.other.public.kotlin",
+        "keyword.other.actual.kotlin",
+        "keyword.other.expect.kotlin",
+        "keyword.other.const.kotlin",
+        "keyword.other.external.kotlin",
+        "keyword.other.override.kotlin",
+        "keyword.other.open.kotlin",
+        "keyword.other.abstract.kotlin",
+        "keyword.other.final.kotlin",
+        "keyword.other.lateinit.kotlin",
+        "keyword.other.noinline.kotlin",
+        "keyword.other.crossinline.kotlin",
+        "keyword.other.reified.kotlin",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Kotlin built-in types",
+      "scope": [
+        "storage.type.primitive.kotlin",
+        "support.type.primitive.kotlin",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Kotlin class",
+      "scope": [
+        "entity.name.type.class.kotlin",
+        "entity.name.type.interface.kotlin",
+        "entity.name.type.enum.kotlin",
+        "entity.name.type.annotation.kotlin",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "Kotlin function",
+      "scope": [
+        "entity.name.function.kotlin",
+        "meta.function.kotlin",
+        "support.function.kotlin",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Kotlin method call",
+      "scope": [
+        "meta.function-call.kotlin",
+        "entity.name.function.member.kotlin",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Kotlin property",
+      "scope": [
+        "variable.other.property.kotlin",
+        "entity.name.variable.property.kotlin",
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "Kotlin variable",
+      "scope": [
+        "variable.other.readwrite.kotlin",
+        "variable.other.constant.kotlin",
+        "variable.other.declaration.kotlin",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Kotlin parameter",
+      "scope": [
+        "variable.parameter.kotlin",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Kotlin string",
+      "scope": [
+        "string.quoted.single.kotlin",
+        "string.quoted.double.kotlin",
+        "string.template.kotlin",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Kotlin number",
+      "scope": [
+        "constant.numeric.kotlin",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Kotlin boolean",
+      "scope": [
+        "constant.language.boolean.kotlin",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Kotlin null value",
+      "scope": [
+        "constant.language.null.kotlin",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Kotlin comment",
+      "scope": [
+        "comment.line.double-slash.kotlin",
+        "comment.block.kotlin",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "Kotlin annotation",
+      "scope": [
+        "meta.annotation.kotlin",
+        "storage.type.annotation.kotlin",
+        "entity.name.type.annotation.kotlin",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Kotlin lambda parameter",
+      "scope": [
+        "variable.parameter.function.lambda.kotlin",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Kotlin operator",
+      "scope": [
+        "keyword.operator.arithmetic.kotlin",
+        "keyword.operator.assignment.kotlin",
+        "keyword.operator.comparison.kotlin",
+        "keyword.operator.logical.kotlin",
+        "keyword.operator.increment-decrement.kotlin",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
+      "name": "Swift keyword",
+      "scope": [
+        "keyword.control.swift",
+        "storage.type.swift",
+        "storage.modifier.swift",
+        "keyword.operator.word.swift",
+        "keyword.other.import.swift",
+        "keyword.other.class.swift",
+        "keyword.other.struct.swift",
+        "keyword.other.enum.swift",
+        "keyword.other.protocol.swift",
+        "keyword.other.extension.swift",
+        "keyword.other.func.swift",
+        "keyword.other.var.swift",
+        "keyword.other.let.swift",
+        "keyword.other.init.swift",
+        "keyword.other.deinit.swift",
+        "keyword.other.import.swift",
+        "keyword.other.typealias.swift",
+        "keyword.other.associatedtype.swift",
+        "keyword.other.for.swift",
+        "keyword.other.while.swift",
+        "keyword.other.repeat.swift",
+        "keyword.other.if.swift",
+        "keyword.other.guard.swift",
+        "keyword.other.else.swift",
+        "keyword.other.switch.swift",
+        "keyword.other.case.swift",
+        "keyword.other.default.swift",
+        "keyword.other.break.swift",
+        "keyword.other.continue.swift",
+        "keyword.other.fallthrough.swift",
+        "keyword.other.return.swift",
+        "keyword.other.yield.swift",
+        "keyword.other.await.swift",
+        "keyword.other.try.swift",
+        "keyword.other.catch.swift",
+        "keyword.other.throw.swift",
+        "keyword.other.inout.swift",
+        "keyword.other.in.swift",
+        "keyword.other.where.swift",
+        "keyword.other.dynamic.swift",
+        "keyword.other.final.swift",
+        "keyword.other.required.swift",
+        "keyword.other.optional.swift",
+        "keyword.other.some.swift",
+        "keyword.other.any.swift",
+        "keyword.other.is.swift",
+        "keyword.other.as.swift",
+        "keyword.other.open.swift",
+        "keyword.other.public.swift",
+        "keyword.other.internal.swift",
+        "keyword.other.fileprivate.swift",
+        "keyword.other.private.swift",
+        "keyword.other.static.swift",
+        "keyword.other.final.swift",
+        "keyword.other.dynamic.swift",
+        "keyword.other.lazy.swift",
+        "keyword.other.optional.swift",
+        "keyword.other.weak.swift",
+        "keyword.other.unowned.swift",
+        "keyword.other.rethrows.swift",
+        "keyword.other.indirect.swift",
+        "keyword.other.nonmutating.swift",
+        "keyword.other.mutating.swift",
+        "keyword.other.convenience.swift",
+        "keyword.other.override.swift",
+        "keyword.other.postfix.swift",
+        "keyword.other.prefix.swift",
+        "keyword.other.infix.swift",
+        "keyword.other.left.swift",
+        "keyword.other.right.swift",
+        "keyword.other.none.swift",
+        "keyword.other.precedencegroup.swift",
+        "keyword.other.assignment.swift",
+        "keyword.other.associativity.swift",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Swift built-in types",
+      "scope": [
+        "storage.type.primitive.swift",
+        "support.type.primitive.swift",
+      ],
+      "settings": {
+        "foreground": "#bb9af7",
+      },
+    },
+    {
+      "name": "Swift class",
+      "scope": [
+        "entity.name.type.class.swift",
+        "entity.name.type.struct.swift",
+        "entity.name.type.enum.swift",
+        "entity.name.type.protocol.swift",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
+      },
+    },
+    {
+      "name": "Swift function",
+      "scope": [
+        "entity.name.function.swift",
+        "meta.function.swift",
+        "support.function.swift",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Swift method call",
+      "scope": [
+        "meta.function-call.swift",
+        "entity.name.function.member.swift",
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+      },
+    },
+    {
+      "name": "Swift property",
+      "scope": [
+        "variable.other.property.swift",
+        "entity.name.variable.property.swift",
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+      },
+    },
+    {
+      "name": "Swift variable",
+      "scope": [
+        "variable.other.readwrite.swift",
+        "variable.other.constant.swift",
+        "variable.other.declaration.swift",
+      ],
+      "settings": {
+        "foreground": "#bdbdbd",
+      },
+    },
+    {
+      "name": "Swift parameter",
+      "scope": [
+        "variable.parameter.swift",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Swift string",
+      "scope": [
+        "string.quoted.single.swift",
+        "string.quoted.double.swift",
+        "string.interpolated.swift",
+      ],
+      "settings": {
+        "foreground": "#85d0b7",
+      },
+    },
+    {
+      "name": "Swift number",
+      "scope": [
+        "constant.numeric.swift",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Swift boolean",
+      "scope": [
+        "constant.language.boolean.swift",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Swift nil",
+      "scope": [
+        "constant.language.nil.swift",
+        "constant.language.swift",
+      ],
+      "settings": {
+        "foreground": "#e55381",
+      },
+    },
+    {
+      "name": "Swift comment",
+      "scope": [
+        "comment.line.double-slash.swift",
+        "comment.block.swift",
+      ],
+      "settings": {
+        "foreground": "#696f87",
+      },
+    },
+    {
+      "name": "Swift operator",
+      "scope": [
+        "keyword.operator.arithmetic.swift",
+        "keyword.operator.assignment.swift",
+        "keyword.operator.comparison.swift",
+        "keyword.operator.logical.swift",
+        "keyword.operator.increment-decrement.swift",
+        "keyword.operator.unary.swift",
+        "keyword.operator.binary.swift",
+        "keyword.operator.ternary.swift",
+      ],
+      "settings": {
+        "foreground": "#bfd5de",
+      },
+    },
+    {
+      "name": "Swift closure parameter",
+      "scope": [
+        "variable.parameter.closure.swift",
+      ],
+      "settings": {
+        "foreground": "#73daca",
+      },
+    },
+    {
+      "name": "Swift extension",
+      "scope": [
+        "meta.extension.swift",
+      ],
+      "settings": {
+        "foreground": "#0da0ba",
       },
     },
   ],

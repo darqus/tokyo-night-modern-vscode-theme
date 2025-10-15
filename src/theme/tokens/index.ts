@@ -14,6 +14,11 @@ import { vueTokens } from './modules/vue'
 import { rustTokens } from './modules/rust'
 import { haskellTokens } from './modules/haskell'
 import { goTokens } from './modules/go'
+import { csharpTokens } from './modules/csharp'
+import { phpTokens } from './modules/php'
+import { rubyTokens } from './modules/ruby'
+import { kotlinTokens } from './modules/kotlin'
+import { swiftTokens } from './modules/swift'
 
 // Объединение всех токенов в один массив для использования в теме
 export const allTokens: TokenColor[] = [
@@ -32,4 +37,9 @@ export const allTokens: TokenColor[] = [
   ...haskellTokens,
   ...rustTokens,
   ...vueTokens,
+  ...csharpTokens,
+  ...phpTokens,
+  ...rubyTokens,
+  ...kotlinTokens,
+  ...swiftTokens,
 ]
