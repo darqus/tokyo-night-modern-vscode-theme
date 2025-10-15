@@ -182,7 +182,7 @@ export const primitiveColors: PrimitiveColors = {
   gray600: '#82859e', // Medium gray - средний серый
   gray700: '#515670', // Dark gray - темный серый
   gray800: '#2a2f40', // Darker gray (not in original)
-  gray900: '#10151d', // Darkest gray - самый темный серый
+  gray900: '#0f1722', // Darkest gray - самый темный серый
 
   // Special colors
   white: '#ffffff',
