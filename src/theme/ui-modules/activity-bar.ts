@@ -11,6 +11,6 @@ export const activityBarColors = {
   'activityBar.inactiveForeground': getToken('color.text.secondary'),
   'activityBar.activeBorder': getToken('accent.primary'),
   // 'activityBar.activeBackground': getToken('color.interactive.selected'),
-  'activityBar.border': getToken('color.background.secondary'),
+  // 'activityBar.border': getToken('color.background.secondary'),
   'activityBar.dropBorder': getToken('accent.primary'),
 }
