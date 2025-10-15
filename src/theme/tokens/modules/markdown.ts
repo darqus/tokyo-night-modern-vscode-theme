@@ -10,6 +10,26 @@ export const markdownTokens: TokenColor[] = [
     },
   },
   {
+    name: 'MD unnumbered list',
+    scope: [
+      'markup.list.unnumbered',
+      'punctuation.definition.list.begin.markdown',
+    ],
+    settings: {
+      foreground: palette.mdList,
+    },
+  },
+  {
+    name: 'MD numbered list',
+    scope: [
+      'markup.list.numbered',
+      'punctuation.definition.list.begin.markdown',
+    ],
+    settings: {
+      foreground: palette.mdList,
+    },
+  },
+  {
     name: 'MD raw',
     scope: 'text.html.markdown markup.inline.raw.markdown',
     settings: {

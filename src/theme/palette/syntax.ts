@@ -172,7 +172,7 @@ export const syntaxColors: SyntaxColors = {
     code: primitiveColors.cyan500, // #7dcfff - код
     link: '#73daca', // ссылки (из оригинальной палитры)
     quote: '#4e5579', // цитаты (из оригинальной палитры)
-    list: '#bfd5de', // списки (из оригинальной палитры)
+    list: primitiveColors.cyan700, // списки (из оригинальной палитры)
   },
 
   json: {

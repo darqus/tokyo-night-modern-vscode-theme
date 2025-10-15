@@ -1133,7 +1133,27 @@
       "name": "MD list item",
       "scope": "punctuation.definition.list_item.markdown",
       "settings": {
-        "foreground": "#bfd5de"
+        "foreground": "#0da0ba"
+      }
+    },
+    {
+      "name": "MD unnumbered list",
+      "scope": [
+        "markup.list.unnumbered",
+        "punctuation.definition.list.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "#0da0ba"
+      }
+    },
+    {
+      "name": "MD numbered list",
+      "scope": [
+        "markup.list.numbered",
+        "punctuation.definition.list.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "#0da0ba"
       }
     },
     {
@@ -3570,6 +3590,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T22:30:34.418Z"
+    "buildDate": "2025-10-15T22:46:16.502Z"
   }
 }
