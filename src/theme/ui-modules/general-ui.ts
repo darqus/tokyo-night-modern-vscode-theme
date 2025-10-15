@@ -1,21 +1,21 @@
-import { palette } from '../palette/index'
+import { getToken } from '../design-tokens'
 
 /**
  * General UI элементы
  * Эти токены отвечают за общие элементы пользовательского интерфейса в VS Code
  */
 export const generalUIColors = {
-  'breadcrumb.activeSelectionForeground': palette.blue,
-  'breadcrumb.focusForeground': palette.blue,
-  'breadcrumb.foreground': palette.textSecondary,
-  'breadcrumbPicker.background': palette.backgrounds.secondary,
-  descriptionForeground: palette.textDisabled,
-  errorForeground: palette.textDisabled,
-  focusBorder: palette.borderFocus,
-  foreground: palette.text,
-  'icon.foreground': palette.blue,
-  'sash.hoverBorder': palette.interactive.hover,
-  'selection.background': palette.selection + '60',
-  'widget.border': palette.borders.subtle + '40',
-  'widget.shadow': palette.special.shadow + '80',
+  'breadcrumb.activeSelectionForeground': getToken('accent.primary'),
+  'breadcrumb.focusForeground': getToken('accent.primary'),
+  'breadcrumb.foreground': getToken('color.text.secondary'),
+  'breadcrumbPicker.background': getToken('color.background.secondary'),
+  descriptionForeground: getToken('color.text.disabled'),
+  errorForeground: getToken('color.text.disabled'),
+  focusBorder: getToken('color.border.focus'),
+  foreground: getToken('color.text.primary'),
+  'icon.foreground': getToken('accent.primary'),
+  'sash.hoverBorder': getToken('color.interactive.hover'),
+  'selection.background': getToken('color.special.selection') + '60',
+  'widget.border': getToken('color.border.subtle') + '40',
+  'widget.shadow': getToken('color.special.shadow') + '80',
 }
