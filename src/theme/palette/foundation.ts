@@ -101,88 +101,88 @@ export interface PrimitiveColors {
  */
 export const primitiveColors: PrimitiveColors = {
   // Blues - основные синие оттенки
-  blue50: '#e3f2fd', // Very light blue (not in original)
-  blue100: '#bbdefb', // Light blue (not in original)
-  blue200: '#90caf9', // Light blue (not in original)
-  blue300: '#64b5f6', // Light blue (not in original)
-  blue400: '#42a5f5', // Light blue (not in original)
-  blue500: '#7aa2f7', // Primary blue - основной синий
-  blue600: '#4e6ab2', // Medium blue - средний синий
-  blue700: '#394b70', // Dark blue - темный синий
-  blue800: '#2c3e5a', // Darker blue (not in original)
-  blue900: '#1a2332', // Darkest blue (not in original)
+  blue50: '#e3f2fd',
+  blue100: '#bbdefb',
+  blue200: '#90caf9',
+  blue300: '#64b5f6',
+  blue400: '#42a5f5',
+  blue500: '#7aa2f7',
+  blue600: '#4e6ab2',
+  blue700: '#394b70',
+  blue800: '#2c3e5a',
+  blue900: '#1a2332',
 
   // Purples - фиолетовые оттенки
-  purple50: '#f3e5f5', // Very light purple (not in original)
-  purple100: '#e1bee7', // Light purple (not in original)
-  purple200: '#ce93d8', // Light purple (not in original)
-  purple300: '#ba68c8', // Light purple (not in original)
-  purple400: '#ab47bc', // Light purple (not in original)
-  purple500: '#bb9af7', // Primary purple - основной фиолетовый
-  purple600: '#9d7cd8', // Medium purple - средний фиолетовый
-  purple700: '#7256a3', // Dark purple - темный фиолетовый
-  purple800: '#5d3a87', // Darker purple (not in original)
-  purple900: '#4a2c6b', // Darkest purple (not in original)
+  purple50: '#f3e5f5',
+  purple100: '#e1bee7',
+  purple200: '#ce93d8',
+  purple300: '#ba68c8',
+  purple400: '#ab47bc',
+  purple500: '#bb9af7',
+  purple600: '#9d7cd8',
+  purple700: '#7256a3',
+  purple800: '#5d3a87',
+  purple900: '#4a2c6b',
 
   // Greens - зеленые оттенки
-  green50: '#e8f5e8', // Very light green (not in original)
-  green100: '#c8e6c9', // Light green (not in original)
-  green200: '#a5d6a7', // Light green (not in original)
-  green300: '#81c784', // Light green (not in original)
-  green400: '#66bb6a', // Light green (not in original)
-  green500: '#9ece6a', // Primary green - основной зеленый
-  green600: '#80a856', // Medium green - средний зеленый
-  green700: '#164846', // Dark green - темный зеленый
-  green800: '#0f3634', // Darker green (not in original)
-  green900: '#0a2625', // Darkest green (not in original)
+  green50: '#e8f5e8',
+  green100: '#c8e6c9',
+  green200: '#a5d6a7',
+  green300: '#81c784',
+  green400: '#66bb6a',
+  green500: '#9ece6a',
+  green600: '#80a856',
+  green700: '#164846',
+  green800: '#0f3634',
+  green900: '#0a2625',
 
   // Yellows - желтые оттенки
-  yellow50: '#fffde7', // Very light yellow (not in original)
-  yellow100: '#fff9c4', // Light yellow (not in original)
-  yellow200: '#fff59d', // Light yellow (not in original)
-  yellow300: '#fff176', // Light yellow (not in original)
-  yellow400: '#ffee58', // Light yellow (not in original)
-  yellow500: '#e0af68', // Primary yellow - основной желтый
-  yellow600: '#c49a5a', // Medium yellow - средний желтый
-  yellow700: '#a67c3a', // Dark yellow (not in original)
-  yellow800: '#8b691f', // Darker yellow (not in original)
-  yellow900: '#6d4c0f', // Darkest yellow (not in original)
+  yellow50: '#fffde7',
+  yellow100: '#fff9c4',
+  yellow200: '#fff59d',
+  yellow300: '#fff176',
+  yellow400: '#ffee58',
+  yellow500: '#e0af68',
+  yellow600: '#c49a5a',
+  yellow700: '#a67c3a',
+  yellow800: '#8b691f',
+  yellow900: '#6d4c0f',
 
   // Reds - красные оттенки
-  red50: '#ffebee', // Very light red (not in original)
-  red100: '#ffcdd2', // Light red (not in original)
-  red200: '#ef9a9a', // Light red (not in original)
-  red300: '#e57373', // Light red (not in original)
-  red400: '#ef5350', // Light red (not in original)
-  red500: '#ff5370', // Primary red - основной красный
-  red600: '#db4b4b', // Medium red - средний красный
-  red700: '#963c47', // Dark red - темный красный
-  red800: '#7a3039', // Darker red (not in original)
-  red900: '#5e242c', // Darkest red (not in original)
+  red50: '#ffebee',
+  red100: '#ffcdd2',
+  red200: '#ef9a9a',
+  red300: '#e57373',
+  red400: '#ef5350',
+  red500: '#ff5370',
+  red600: '#db4b4b',
+  red700: '#963c47',
+  red800: '#7a3039',
+  red900: '#5e242c',
 
   // Cyans - голубые оттенки
-  cyan50: '#e0f7fa', // Very light cyan (not in original)
-  cyan100: '#b2ebf2', // Light cyan (not in original)
-  cyan200: '#80deea', // Light cyan (not in original)
-  cyan300: '#4dd0e1', // Light cyan (not in original)
-  cyan400: '#26c6da', // Light cyan (not in original)
-  cyan500: '#7dcfff', // Primary cyan - основной голубой
-  cyan600: '#41a6b5', // Medium cyan - средний голубой
-  cyan700: '#0da0ba', // Dark cyan - темный голубой
-  cyan800: '#0a7f95', // Darker cyan (not in original)
-  cyan900: '#075e70', // Darkest cyan (not in original)
+  cyan50: '#e0f7fa',
+  cyan100: '#b2ebf2',
+  cyan200: '#80deea',
+  cyan300: '#4dd0e1',
+  cyan400: '#26c6da',
+  cyan500: '#7dcfff',
+  cyan600: '#41a6b5',
+  cyan700: '#0da0ba',
+  cyan800: '#0a7f95',
+  cyan900: '#075e70',
 
   // Grays - серые оттенки
-  gray50: '#fafafa', // Very light gray (not in original)
-  gray100: '#f5f5f5', // Light gray (not in original)
-  gray200: '#eeeeee', // Light gray (not in original)
-  gray300: '#e0e0e0', // Light gray (not in original)
-  gray400: '#bdbdbd', // Light gray (not in original)
-  gray500: '#97a2d3', // Primary gray - основной серый
-  gray600: '#6c7097', // Medium gray - средний серый
-  gray700: '#4b5172', // Dark gray - темный серый
-  gray800: '#282e41', // Darker gray (not in original)
-  gray900: '#151b24', // Darkest gray - самый темный серый
+  gray50: '#fafafa',
+  gray100: '#f5f5f5',
+  gray200: '#eeeeee',
+  gray300: '#e0e0e0',
+  gray400: '#bdbdbd',
+  gray500: '#97a2d3',
+  gray600: '#6c7097',
+  gray700: '#4b5172',
+  gray800: '#282e41',
+  gray900: '#151b24',
 
   // Special colors
   white: '#ffffff',
