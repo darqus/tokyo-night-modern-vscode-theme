@@ -18,7 +18,7 @@ export const inputsButtonsColors = {
   'input.border': palette.borders.subtle,
   'input.foreground': palette.foreground,
   'input.placeholderForeground': palette.textPlaceholder + '8A',
-  'inputOption.activeBackground': palette.primary + '44',
+  'inputOption.activeBackground': palette.primary + '60',
   'inputOption.activeBorder': palette.border,
   'inputOption.activeForeground': palette.text,
   'inputValidation.errorBackground': palette.error,
