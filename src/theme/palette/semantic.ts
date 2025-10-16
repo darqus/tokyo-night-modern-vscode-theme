@@ -3,7 +3,7 @@
  * Семантические цвета, которые выражают назначение, а не внешний вид
  */
 
-import { primitiveColors } from './foundation'
+import { foundationColors as primitiveColors } from './foundation'
 
 export interface SemanticColors {
   // Primary brand colors

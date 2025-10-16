@@ -4,7 +4,7 @@
  */
 
 import { palette } from '../src/theme/palette/index'
-import { primitiveColors } from '../src/theme/palette/foundation'
+import { foundationColors as primitiveColors } from '../src/theme/palette/foundation'
 import { semanticColors } from '../src/theme/palette/semantic'
 import { uiColors } from '../src/theme/palette/ui'
 import { syntaxColors } from '../src/theme/palette/syntax'

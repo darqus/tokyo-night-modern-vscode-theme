@@ -1,18 +1,18 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
 
 /**
  * Notifications & Widgets UI элементы
  * Эти токены отвечают за оформление уведомлений и виджетов в VS Code
  */
 export const notificationWidgetColors = {
-  'debugExceptionWidget.background': palette.backgrounds.secondary,
-  'debugExceptionWidget.border': palette.error,
-  'notificationCenterHeader.background': palette.backgrounds.secondary,
-  'notificationCenterHeader.foreground': palette.foreground,
-  'notificationLink.foreground': palette.borders.subtle,
-  'notifications.background': palette.backgrounds.secondary,
-  'notifications.foreground': palette.foreground,
-  'notificationsErrorIcon.foreground': palette.error,
-  'notificationsInfoIcon.foreground': palette.info,
-  'notificationsWarningIcon.foreground': palette.warning,
+  'debugExceptionWidget.background': foundationColors.gray800,
+  'debugExceptionWidget.border': foundationColors.red500,
+  'notificationCenterHeader.background': foundationColors.gray800,
+  'notificationCenterHeader.foreground': foundationColors.gray100,
+  'notificationLink.foreground': foundationColors.gray600,
+  'notifications.background': foundationColors.gray800,
+  'notifications.foreground': foundationColors.gray100,
+  'notificationsErrorIcon.foreground': foundationColors.red500,
+  'notificationsInfoIcon.foreground': foundationColors.cyan500,
+  'notificationsWarningIcon.foreground': foundationColors.yellow500,
 }

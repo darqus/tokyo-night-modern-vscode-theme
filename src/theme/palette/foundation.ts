@@ -99,7 +99,7 @@ export interface PrimitiveColors {
  * Primitive color palette based on Tokyo Night Modern theme
  * Извлечены из оригинальной палитры и организованы в систематическом порядке
  */
-export const primitiveColors: PrimitiveColors = {
+export const foundationColors: PrimitiveColors = {
   // Blues - основные синие оттенки
   blue50: '#e3f2fd',
   blue100: '#bbdefb',
@@ -194,7 +194,7 @@ export const primitiveColors: PrimitiveColors = {
  * Utility function to get color by name
  */
 export function getPrimitiveColor(colorName: keyof PrimitiveColors): string {
-  return primitiveColors[colorName]
+  return foundationColors[colorName]
 }
 
 /**
@@ -204,5 +204,5 @@ export function getPrimitiveColorWithOpacity(
   colorName: keyof PrimitiveColors,
   opacity: string
 ): string {
-  return `${primitiveColors[colorName]}${opacity}`
+  return `${foundationColors[colorName]}${opacity}`
 }

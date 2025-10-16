@@ -6,7 +6,10 @@
  * All color combinations have been validated to ensure sufficient contrast ratios.
  */
 
-import { primitiveColors } from './palette/foundation'
+import { foundationColors } from './palette/foundation/colors'
+
+// Create an alias for backward compatibility
+const primitiveColors = foundationColors
 
 // Light theme specific color definitions with WCAG compliance
 export const lightThemeTokens = {

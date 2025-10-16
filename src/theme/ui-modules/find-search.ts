@@ -1,16 +1,16 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
 
 /**
  * Find & Search UI элементы
  * Эти токены отвечают за оформление элементов поиска в VS Code
  */
 export const findSearchColors = {
-  'editor.findMatchBackground': palette.selection + '66',
-  'editor.findMatchHighlightBackground': palette.selection + '66',
-  'editorOverviewRuler.findMatchForeground': palette.selection + '44',
-  'listFilterWidget.background': palette.backgrounds.elevated,
-  'listFilterWidget.noMatchesOutline': palette.error,
-  'listFilterWidget.outline': palette.border,
-  'terminal.findMatchBorder': palette.border,
-  'terminal.findMatchHighlightBorder': palette.border,
+  'editor.findMatchBackground': foundationColors.blue500 + '66',
+  'editor.findMatchHighlightBackground': foundationColors.blue500 + '66',
+  'editorOverviewRuler.findMatchForeground': foundationColors.blue500 + '44',
+  'listFilterWidget.background': foundationColors.gray900,
+  'listFilterWidget.noMatchesOutline': foundationColors.red500,
+  'listFilterWidget.outline': foundationColors.gray600,
+  'terminal.findMatchBorder': foundationColors.gray600,
+  'terminal.findMatchHighlightBorder': foundationColors.gray600,
 }

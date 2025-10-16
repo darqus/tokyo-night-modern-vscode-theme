@@ -15,10 +15,13 @@
  * or used within JavaScript/TypeScript-based styling solutions.
  */
 
-import { primitiveColors } from './palette/foundation'
+import { foundationColors } from './palette/foundation/colors'
 
 // Import light theme tokens
 import { lightThemeTokens } from './light-theme-tokens'
+
+// Create an alias for backward compatibility
+const primitiveColors = foundationColors
 
 // Export light theme tokens
 export { lightThemeTokens }

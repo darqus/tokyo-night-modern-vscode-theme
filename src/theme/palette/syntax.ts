@@ -3,7 +3,7 @@
  * Цвета для подсветки синтаксиса языков программирования
  */
 
-import { primitiveColors } from './foundation'
+import { foundationColors as primitiveColors } from './foundation'
 import { semanticColors } from './semantic'
 
 export interface SyntaxColors {

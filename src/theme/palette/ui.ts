@@ -3,7 +3,7 @@
  * UI-специфичные цвета для конкретных элементов интерфейса
  */
 
-import { primitiveColors } from './foundation'
+import { foundationColors as primitiveColors } from './foundation'
 import { semanticColors } from './semantic'
 
 export interface UIColors {
