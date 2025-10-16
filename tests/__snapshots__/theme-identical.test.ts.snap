@@ -145,7 +145,7 @@ exports[`Theme should match the snapshot 1`] = `
       "secondary": "#6c7097",
       "tertiary": "#9aa5ce",
     },
-    "editorLineNumber.foreground": "#6c7097",
+    "editorLineNumber.foreground": "#4b5172",
     "editorLink.activeForeground": {
       "disabled": "#4b5172",
       "inverse": "#ffffff",
