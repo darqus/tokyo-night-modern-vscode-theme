@@ -173,30 +173,21 @@ export const vueTokens: TokenColor[] = [
   },
   {
     name: 'Vue script setup',
-    scope: [
-      'meta.tag.script.html meta.embedded.block.vue',
-      'meta.script.vue',
-    ],
+    scope: ['meta.tag.script.html meta.embedded.block.vue', 'meta.script.vue'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'Vue style block',
-    scope: [
-      'meta.tag.style.html meta.embedded.block.vue',
-      'meta.style.vue',
-    ],
+    scope: ['meta.tag.style.html meta.embedded.block.vue', 'meta.style.vue'],
     settings: {
       foreground: palette.cssValue,
     },
   },
   {
     name: 'Vue template element',
-    scope: [
-      'meta.template.vue',
-      'text.html.vue',
-    ],
+    scope: ['meta.template.vue', 'text.html.vue'],
     settings: {
       foreground: palette.htmlTag,
     },
@@ -213,10 +204,7 @@ export const vueTokens: TokenColor[] = [
   },
   {
     name: 'Vue slot',
-    scope: [
-      'entity.name.tag.special.html',
-      'support.variable.property.vue',
-    ],
+    scope: ['entity.name.tag.special.html', 'support.variable.property.vue'],
     settings: {
       foreground: palette.property,
     },
@@ -243,10 +231,7 @@ export const vueTokens: TokenColor[] = [
   },
   {
     name: 'Vue lifecycle hooks',
-    scope: [
-      'support.function.builtin.vue',
-      'variable.other.readwrite.js',
-    ],
+    scope: ['support.function.builtin.vue', 'variable.other.readwrite.js'],
     settings: {
       foreground: palette.function,
     },

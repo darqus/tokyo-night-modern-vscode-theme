@@ -91,13 +91,13 @@
 Для доступа к значениям токенов была создана утилита `getToken()`.
 
 ```typescript
-import { getToken } from './theme/design-tokens';
+import { getToken } from './theme/design-tokens'
 
 // Получение основного цвета фона для темной темы (по умолчанию)
-const primaryBgColor = getToken('color.background.primary'); // -> '#10151d'
+const primaryBgColor = getToken('color.background.primary') // -> '#10151d'
 
 // Получение цвета текста для светлой темы
-const primaryTextColorLight = getToken('color.text.primary', 'light'); // -> '#10151d'
+const primaryTextColorLight = getToken('color.text.primary', 'light') // -> '#10151d'
 ```
 
 ## 5. Поддержка Тем (Светлая/Темная)

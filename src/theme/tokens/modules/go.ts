@@ -38,57 +38,42 @@ export const goTokens: TokenColor[] = [
   },
   {
     name: 'Go built-in function',
-    scope: [
-      'support.function.builtin.go',
-    ],
+    scope: ['support.function.builtin.go'],
     settings: {
       foreground: palette.function,
     },
   },
   {
     name: 'Go type',
-    scope: [
-      'support.type.primitive.go',
-      'entity.name.type.go',
-    ],
+    scope: ['support.type.primitive.go', 'entity.name.type.go'],
     settings: {
       foreground: palette.type,
     },
   },
   {
     name: 'Go string',
-    scope: [
-      'string.quoted.double.go',
-      'string.quoted.raw.go',
-    ],
+    scope: ['string.quoted.double.go', 'string.quoted.raw.go'],
     settings: {
       foreground: palette.string,
     },
   },
   {
     name: 'Go number',
-    scope: [
-      'constant.numeric.go',
-    ],
+    scope: ['constant.numeric.go'],
     settings: {
       foreground: palette.constant,
     },
   },
- {
+  {
     name: 'Go comment',
-    scope: [
-      'comment.line.double-slash.go',
-      'comment.block.go',
-    ],
+    scope: ['comment.line.double-slash.go', 'comment.block.go'],
     settings: {
       foreground: palette.comment,
     },
   },
   {
     name: 'Go operator',
-    scope: [
-      'keyword.operator.go',
-    ],
+    scope: ['keyword.operator.go'],
     settings: {
       foreground: palette.keywordOperator,
     },

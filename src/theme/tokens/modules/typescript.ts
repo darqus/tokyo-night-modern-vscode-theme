@@ -10,7 +10,7 @@ export const typescriptTokens: TokenColor[] = [
       fontStyle: 'bold',
     },
   },
- {
+  {
     name: 'TS JSDoc type',
     scope: 'comment storage.type',
     settings: {
@@ -45,10 +45,7 @@ export const typescriptTokens: TokenColor[] = [
   },
   {
     name: 'TS interface',
-    scope: [
-      'entity.name.type.interface',
-      'support.type.primitive',
-    ],
+    scope: ['entity.name.type.interface', 'support.type.primitive'],
     settings: {
       foreground: palette.tsInterface,
       fontStyle: 'bold',

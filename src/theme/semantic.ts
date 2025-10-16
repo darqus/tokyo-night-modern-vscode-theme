@@ -1,7 +1,7 @@
 import { palette } from './palette/index'
 
 export const semanticTokenColors = {
- // Method-related tokens
+  // Method-related tokens
   method: {
     foreground: palette.function,
   },
@@ -77,7 +77,7 @@ export const semanticTokenColors = {
   },
   'class.public': {
     foreground: palette.class,
- },
+  },
 
   // Interface-related tokens
   interface: {
@@ -119,13 +119,13 @@ export const semanticTokenColors = {
   // Enum-related tokens
   enum: {
     foreground: palette.type,
- },
+  },
   'enum.declaration': {
     foreground: palette.type,
- },
+  },
   'enum.builtin': {
     foreground: palette.type,
- },
+  },
   'enum.static': {
     foreground: palette.type,
   },
@@ -139,7 +139,7 @@ export const semanticTokenColors = {
   },
   'enum-member.static': {
     foreground: palette.type,
- },
+  },
 
   // Namespace-related tokens
   namespace: {
@@ -155,36 +155,36 @@ export const semanticTokenColors = {
   // Type parameter tokens
   'type-parameter': {
     foreground: palette.type,
- },
+  },
   'type-parameter.builtin': {
     foreground: palette.type,
   },
   'type-parameter.static': {
     foreground: palette.type,
- },
+  },
 
   // Variable-related tokens
   variable: {
     foreground: palette.variable,
- },
+  },
   'variable.declaration': {
     foreground: palette.variable,
- },
+  },
   'variable.builtin': {
     foreground: palette.variable,
- },
+  },
   'variable.static': {
     foreground: palette.variable,
   },
   'variable.readonly': {
     foreground: palette.yellow,
- },
+  },
   'variable.constant': {
     foreground: palette.constant,
- },
+  },
   'variable.local': {
     foreground: palette.variable,
- },
+  },
   'variable.global': {
     foreground: palette.variable,
   },
@@ -216,7 +216,7 @@ export const semanticTokenColors = {
   },
   'parameter.constant': {
     foreground: palette.constant,
- },
+  },
   'parameter.local': {
     foreground: palette.parameter,
   },
@@ -239,10 +239,10 @@ export const semanticTokenColors = {
   },
   'property.constant': {
     foreground: palette.constant,
- },
+  },
   'property.local': {
     foreground: palette.property,
- },
+  },
   'property.global': {
     foreground: palette.property,
   },
@@ -261,10 +261,10 @@ export const semanticTokenColors = {
   // Label-related tokens
   label: {
     foreground: palette.keyword,
- },
+  },
   'label.builtin': {
     foreground: palette.keyword,
- },
+  },
   'label.static': {
     foreground: palette.keyword,
   },
@@ -289,29 +289,29 @@ export const semanticTokenColors = {
   },
   'comment.block': {
     foreground: palette.comment,
- },
+  },
   'comment.line': {
     foreground: palette.comment,
- },
+  },
   'comment.todo': {
     foreground: palette.comment,
- },
+  },
   'comment.fixme': {
     foreground: palette.comment,
- },
+  },
   'comment.note': {
     foreground: palette.comment,
- },
+  },
   'comment.warning': {
     foreground: palette.comment,
   },
   'comment.error': {
     foreground: palette.comment,
- },
+  },
   'comment.info': {
     foreground: palette.comment,
- },
+  },
   'comment.hint': {
     foreground: palette.comment,
- },
+  },
 }

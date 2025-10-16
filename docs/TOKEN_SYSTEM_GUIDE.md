@@ -31,16 +31,16 @@
 Для получения значений токенов используется функция `getToken()`:
 
 ```typescript
-import { getToken } from './theme/design-tokens';
+import { getToken } from './theme/design-tokens'
 
 // Получение основного цвета фона для темной темы (по умолчанию)
-const primaryBgColor = getToken('color.background.primary'); // -> '#10151d'
+const primaryBgColor = getToken('color.background.primary') // -> '#10151d'
 
 // Получение цвета текста для светлой темы
-const primaryTextColorLight = getToken('color.text.primary', 'light'); // -> '#1a1a1a'
+const primaryTextColorLight = getToken('color.text.primary', 'light') // -> '#1a1a1a'
 
 // Получение размера отступа
-const mediumSpace = getToken('space.md', 'dark'); // -> '16px'
+const mediumSpace = getToken('space.md', 'dark') // -> '16px'
 ```
 
 ### В CSS
@@ -234,10 +234,10 @@ const mediumSpace = getToken('space.md', 'dark'); // -> '16px'
 
 ```typescript
 // Для темной темы
-const darkColor = getToken('color.background.primary', 'dark');
+const darkColor = getToken('color.background.primary', 'dark')
 
 // Для светлой темы
-const lightColor = getToken('color.background.primary', 'light');
+const lightColor = getToken('color.background.primary', 'light')
 ```
 
 ## Валидация токенов
@@ -245,17 +245,17 @@ const lightColor = getToken('color.background.primary', 'light');
 Система включает в себя инструменты для валидации токенов:
 
 ```typescript
-import { tokenValidation } from './theme/token-validation';
+import { tokenValidation } from './theme/token-validation'
 
 // Валидация всех токенов
-const result = tokenValidation.runAllValidations();
+const result = tokenValidation.runAllValidations()
 if (!result.isValid) {
-  console.error('Ошибки валидации:', result.errors);
-  console.warn('Предупреждения валидации:', result.warnings);
+  console.error('Ошибки валидации:', result.errors)
+  console.warn('Предупреждения валидации:', result.warnings)
 }
 
 // Валидация конкретного токена
-const tokenResult = tokenValidation.validateToken('color.text.primary', 'dark');
+const tokenResult = tokenValidation.validateToken('color.text.primary', 'dark')
 ```
 
 Валидация проверяет:
@@ -269,16 +269,16 @@ const tokenResult = tokenValidation.validateToken('color.text.primary', 'dark');
 Система позволяет генерировать CSS Custom Properties для использования в стилях:
 
 ```typescript
-import { cssGenerator } from './theme/token-utils';
+import { cssGenerator } from './theme/token-utils'
 
 // Генерация CSS для темной темы
-const darkCSS = cssGenerator.generateDarkThemeCSS();
+const darkCSS = cssGenerator.generateDarkThemeCSS()
 
 // Генерация CSS для светлой темы
-const lightCSS = cssGenerator.generateLightThemeCSS();
+const lightCSS = cssGenerator.generateLightThemeCSS()
 
 // Генерация полного CSS
-const completeCSS = cssGenerator.generateCompleteCSS();
+const completeCSS = cssGenerator.generateCompleteCSS()
 ```
 
 ## Расширение системы
@@ -324,6 +324,7 @@ npx tsx scripts/generate-css-variables.ts
 ```
 
 Скрипт генерирует:
+
 - `dist/theme-variables.css` - полный CSS с обеими темами
 - `dist/theme-variables-dark.css` - только темная тема
 - `dist/theme-variables-light.css` - только светлая тема
@@ -343,6 +344,7 @@ npx tsx scripts/export-tokens-json.ts
 ```
 
 Скрипт создает:
+
 - `dist/tokens-dark.json` - токены для темной темы в плоском формате
 - `dist/tokens-light.json` - токены для светлой темы в плоском формате
 - `dist/tokens-combined.json` - токены для обеих тем
@@ -364,6 +366,7 @@ npx tsx scripts/sync-tokens.ts
 ```
 
 Скрипт проверяет:
+
 - Соответствие исходных токенов экспортированным файлам
 - Структурную согласованность между темами
 - Наличие всех токенов в экспортированных форматах
@@ -383,6 +386,7 @@ npx tsx scripts/validate-tokens-generation.ts
 ```
 
 Скрипт:
+
 - Проверяет корректность всех значений токенов
 - Проверяет соответствие WCAG по контрастности
 - Проверяет структурную согласованность между темами

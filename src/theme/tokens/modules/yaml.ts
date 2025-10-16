@@ -20,7 +20,7 @@ export const yamlTokens: TokenColor[] = [
     settings: {
       foreground: palette.tag,
     },
- },
+  },
   {
     name: 'YAML string',
     scope: [
@@ -34,10 +34,7 @@ export const yamlTokens: TokenColor[] = [
   },
   {
     name: 'YAML constant',
-    scope: [
-      'constant.language.boolean.yaml',
-      'constant.numeric.yaml',
-    ],
+    scope: ['constant.language.boolean.yaml', 'constant.numeric.yaml'],
     settings: {
       foreground: palette.constant,
     },

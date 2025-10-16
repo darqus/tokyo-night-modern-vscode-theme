@@ -79,15 +79,12 @@ export const phpTokens: TokenColor[] = [
   },
   {
     name: 'PHP built-in types',
-    scope: [
-      'storage.type.primitive.php',
-      'support.type.primitive.php',
-    ],
+    scope: ['storage.type.primitive.php', 'support.type.primitive.php'],
     settings: {
       foreground: palette.type,
     },
   },
- {
+  {
     name: 'PHP class',
     scope: [
       'entity.name.type.class.php',
@@ -115,10 +112,7 @@ export const phpTokens: TokenColor[] = [
   },
   {
     name: 'PHP method',
-    scope: [
-      'entity.name.function.member.php',
-      'variable.other.property.php',
-    ],
+    scope: ['entity.name.function.member.php', 'variable.other.property.php'],
     settings: {
       foreground: palette.function,
     },
@@ -138,13 +132,11 @@ export const phpTokens: TokenColor[] = [
   },
   {
     name: 'PHP parameter',
-    scope: [
-      'variable.parameter.php',
-    ],
+    scope: ['variable.parameter.php'],
     settings: {
       foreground: palette.parameter,
     },
- },
+  },
   {
     name: 'PHP string',
     scope: [
@@ -161,27 +153,21 @@ export const phpTokens: TokenColor[] = [
   },
   {
     name: 'PHP number',
-    scope: [
-      'constant.numeric.php',
-    ],
+    scope: ['constant.numeric.php'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'PHP boolean',
-    scope: [
-      'constant.language.boolean.php',
-    ],
+    scope: ['constant.language.boolean.php'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'PHP null value',
-    scope: [
-      'constant.language.null.php',
-    ],
+    scope: ['constant.language.null.php'],
     settings: {
       foreground: palette.constant,
     },
@@ -199,28 +185,21 @@ export const phpTokens: TokenColor[] = [
   },
   {
     name: 'PHP variable punctuation',
-    scope: [
-      'punctuation.definition.variable.php',
-    ],
+    scope: ['punctuation.definition.variable.php'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'PHP heredoc/nowdoc',
-    scope: [
-      'string.unquoted.heredoc.php',
-      'string.unquoted.nowdoc.php',
-    ],
+    scope: ['string.unquoted.heredoc.php', 'string.unquoted.nowdoc.php'],
     settings: {
       foreground: palette.string,
     },
   },
   {
     name: 'PHP constants',
-    scope: [
-      'constant.other.php',
-    ],
+    scope: ['constant.other.php'],
     settings: {
       foreground: palette.constant,
     },

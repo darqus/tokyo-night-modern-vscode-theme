@@ -6,7 +6,7 @@
  * All color combinations have been validated to ensure sufficient contrast ratios.
  */
 
-import { primitiveColors } from './palette/foundation';
+import { primitiveColors } from './palette/foundation'
 
 // Light theme specific color definitions with WCAG compliance
 export const lightThemeTokens = {
@@ -116,4 +116,4 @@ export const lightThemeTokens = {
       highlight: '#fef9c3',
     },
   },
-};
+}

@@ -27,7 +27,7 @@ export const pythonTokens: TokenColor[] = [
     settings: {
       foreground: palette.keyword,
     },
- },
+  },
   {
     name: 'Python string',
     scope: [
@@ -55,20 +55,14 @@ export const pythonTokens: TokenColor[] = [
   },
   {
     name: 'Python function',
-    scope: [
-      'entity.name.function.python',
-      'meta.function-call.generic.python',
-    ],
+    scope: ['entity.name.function.python', 'meta.function-call.generic.python'],
     settings: {
       foreground: palette.function,
     },
   },
   {
     name: 'Python class',
-    scope: [
-      'entity.name.type.class.python',
-      'meta.class.python',
-    ],
+    scope: ['entity.name.type.class.python', 'meta.class.python'],
     settings: {
       foreground: palette.class,
     },
@@ -85,20 +79,14 @@ export const pythonTokens: TokenColor[] = [
   },
   {
     name: 'Python type',
-    scope: [
-      'storage.type.hint.python',
-      'meta.function.parameters.python',
-    ],
+    scope: ['storage.type.hint.python', 'meta.function.parameters.python'],
     settings: {
       foreground: palette.type,
     },
   },
   {
     name: 'Python variable',
-    scope: [
-      'variable.other.python',
-      'meta.function-call.arguments.python',
-    ],
+    scope: ['variable.other.python', 'meta.function-call.arguments.python'],
     settings: {
       foreground: palette.variable,
     },

@@ -49,13 +49,10 @@ export const rubyTokens: TokenColor[] = [
     settings: {
       foreground: palette.function,
     },
- },
+  },
   {
     name: 'Ruby method call',
-    scope: [
-      'meta.method-call.ruby',
-      'support.function.builtin.ruby',
-    ],
+    scope: ['meta.method-call.ruby', 'support.function.builtin.ruby'],
     settings: {
       foreground: palette.function,
     },
@@ -84,15 +81,13 @@ export const rubyTokens: TokenColor[] = [
       foreground: palette.variable,
     },
   },
- {
+  {
     name: 'Ruby parameter',
-    scope: [
-      'variable.parameter.ruby',
-    ],
+    scope: ['variable.parameter.ruby'],
     settings: {
       foreground: palette.parameter,
     },
- },
+  },
   {
     name: 'Ruby instance variable',
     scope: [
@@ -105,33 +100,26 @@ export const rubyTokens: TokenColor[] = [
   },
   {
     name: 'Ruby class variable',
-    scope: [
-      'variable.other.readwrite.class.ruby',
-    ],
+    scope: ['variable.other.readwrite.class.ruby'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'Ruby global variable',
-    scope: [
-      'variable.other.readwrite.global.ruby',
-    ],
+    scope: ['variable.other.readwrite.global.ruby'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'Ruby constant',
-    scope: [
-      'constant.other.ruby',
-      'variable.other.constant.ruby',
-    ],
+    scope: ['constant.other.ruby', 'variable.other.constant.ruby'],
     settings: {
       foreground: palette.constant,
     },
   },
- {
+  {
     name: 'Ruby string',
     scope: [
       'string.quoted.single.ruby',
@@ -147,27 +135,21 @@ export const rubyTokens: TokenColor[] = [
   },
   {
     name: 'Ruby number',
-    scope: [
-      'constant.numeric.ruby',
-    ],
+    scope: ['constant.numeric.ruby'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Ruby boolean',
-    scope: [
-      'constant.language.boolean.ruby',
-    ],
+    scope: ['constant.language.boolean.ruby'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Ruby nil',
-    scope: [
-      'constant.language.nil.ruby',
-    ],
+    scope: ['constant.language.nil.ruby'],
     settings: {
       foreground: palette.constant,
     },
@@ -184,27 +166,21 @@ export const rubyTokens: TokenColor[] = [
   },
   {
     name: 'Ruby block parameter',
-    scope: [
-      'variable.parameter.block.ruby',
-    ],
+    scope: ['variable.parameter.block.ruby'],
     settings: {
       foreground: palette.parameter,
     },
   },
   {
     name: 'Ruby heredoc',
-    scope: [
-      'string.unquoted.heredoc.ruby',
-    ],
+    scope: ['string.unquoted.heredoc.ruby'],
     settings: {
       foreground: palette.string,
     },
   },
   {
     name: 'Ruby escape',
-    scope: [
-      'constant.character.escape.ruby',
-    ],
+    scope: ['constant.character.escape.ruby'],
     settings: {
       foreground: palette.constant,
     },

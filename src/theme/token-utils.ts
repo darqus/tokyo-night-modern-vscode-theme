@@ -13,13 +13,13 @@ import { primitiveColors } from './palette/foundation'
 
 // Interface for token colors used in syntax highlighting
 export interface TokenColor {
- name?: string
+  name?: string
   scope: string | string[]
   settings: {
     foreground?: string
     background?: string
     fontStyle?: string
- }
+  }
 }
 
 // WCAG contrast checking utilities
