@@ -1,5 +1,6 @@
 import { foundationColors } from '../palette/foundation/colors'
 import { opacityLevels } from '../palette/foundation/opacity'
+import { typographyColors } from '../palette/semantic/typography'
 
 /**
  * Lists UI элементы
@@ -8,11 +9,11 @@ import { opacityLevels } from '../palette/foundation/opacity'
 export const listColors = {
   'list.activeSelectionBackground': foundationColors.gray700 + '90',
   'list.activeSelectionForeground': foundationColors.blue500,
-  'list.deemphasizedForeground': foundationColors.gray100,
+  'list.deemphasizedForeground': typographyColors.text.secondary,
   'list.dropBackground': foundationColors.blue500 + opacityLevels.light,
   'list.errorForeground': foundationColors.red500,
   'list.focusBackground': foundationColors.gray700,
-  'list.focusForeground': foundationColors.gray100,
+  'list.focusForeground': typographyColors.text.primary,
   'list.highlightForeground': foundationColors.blue500,
   'list.hoverBackground': foundationColors.gray700 + '60',
   'list.hoverForeground': foundationColors.blue500,

@@ -9,6 +9,7 @@ export const typographyColors = {
     tertiary: foundationColors.gray600,
     disabled: foundationColors.gray700,
     inverse: foundationColors.gray900,
+    onAccent: foundationColors.gray100,
  },
 
   // Heading colors
