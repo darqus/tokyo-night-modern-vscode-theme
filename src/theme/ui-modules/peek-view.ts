@@ -1,5 +1,6 @@
 import { foundationColors } from '../palette/foundation/colors'
 import { opacityLevels } from '../palette/foundation/opacity'
+import { typographyColors } from '../palette/semantic/typography'
 
 /**
  * Peek View UI элементы
@@ -11,12 +12,12 @@ export const peekViewColors = {
   'peekViewEditor.matchHighlightBackground':
     foundationColors.blue500 + opacityLevels.medium,
   'peekViewResult.background': foundationColors.gray800,
-  'peekViewResult.fileForeground': foundationColors.gray100,
+  'peekViewResult.fileForeground': typographyColors.text.primary,
   'peekViewResult.lineForeground': foundationColors.blue500,
   'peekViewResult.matchHighlightBackground': foundationColors.blue500 + '66',
   'peekViewResult.selectionBackground': foundationColors.blue500 + '40',
-  'peekViewResult.selectionForeground': foundationColors.gray100,
+  'peekViewResult.selectionForeground': typographyColors.text.primary,
   'peekViewTitle.background': foundationColors.gray800,
-  'peekViewTitleDescription.foreground': foundationColors.gray100,
+  'peekViewTitleDescription.foreground': typographyColors.text.primary,
   'peekViewTitleLabel.foreground': foundationColors.blue500,
 }
