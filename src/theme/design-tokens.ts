@@ -19,6 +19,7 @@ import { foundationColors } from './palette/foundation/colors'
 
 // Import light theme tokens
 import { lightThemeTokens } from './light-theme-tokens'
+import { opacityLevels } from './palette/foundation/opacity'
 
 // Create an alias for backward compatibility
 const primitiveColors = foundationColors
@@ -106,13 +107,13 @@ export const tokens = {
 
       // --- Secondary Button (Purple) ---
       /** The default background color for secondary buttons. */
-      secondary: primitiveColors.purple500,
+      secondary: primitiveColors.purple600,
       /** The background color for secondary buttons on hover. */
-      'secondary-hover': primitiveColors.purple600,
+      'secondary-hover': primitiveColors.purple600  + opacityLevels.light,
       /** The background color for secondary buttons when active/pressed. */
-      'secondary-active': primitiveColors.purple700,
+      'secondary-active': primitiveColors.purple600 + opacityLevels.light,
       /** The text color for secondary buttons. */
-      'secondary-text': primitiveColors.white,
+      'secondary-text': primitiveColors.purple50,
 
       // --- Disabled State ---
       /** The background color for disabled interactive elements. */

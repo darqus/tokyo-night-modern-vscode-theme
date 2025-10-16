@@ -206,12 +206,12 @@
     "inputValidation.warningBackground": "#e0af68",
     "inputValidation.warningBorder": "#e0af68",
     "inputValidation.warningForeground": "#97a2d3",
-    "badge.background": "#bb9af7",
-    "badge.foreground": "#ffffff",
-    "activityBarBadge.background": "#bb9af7",
-    "activityBarBadge.foreground": "#ffffff",
-    "extensionBadge.remoteBackground": "#bb9af7",
-    "extensionBadge.remoteForeground": "#ffffff",
+    "badge.background": "#9d7cd8",
+    "badge.foreground": "#f3e5f5",
+    "activityBarBadge.background": "#9d7cd8",
+    "activityBarBadge.foreground": "#f3e5f5",
+    "extensionBadge.remoteBackground": "#9d7cd8",
+    "extensionBadge.remoteForeground": "#f3e5f5",
     "dropdown.background": "#1e2333",
     "dropdown.border": "#6c709740",
     "dropdown.foreground": "#b2b8e0",
@@ -322,7 +322,7 @@
     "scrollbarSlider.activeBackground": "#6c709734",
     "scrollbarSlider.background": "#4b517234",
     "scrollbarSlider.hoverBackground": "#97a2d334",
-    "gitDecoration.modifiedResourceForeground": "#bb9af7",
+    "gitDecoration.modifiedResourceForeground": "#9d7cd8",
     "gitDecoration.ignoredResourceForeground": "#6c7097",
     "gitDecoration.deletedResourceForeground": "#ff5370",
     "gitDecoration.renamedResourceForeground": "#7aa2f7",
@@ -330,7 +330,7 @@
     "gitDecoration.untrackedResourceForeground": "#7dcfff",
     "gitDecoration.conflictingResourceForeground": "#e0af68",
     "gitDecoration.stageDeletedResourceForeground": "#ff5370",
-    "gitDecoration.stageModifiedResourceForeground": "#bb9af7",
+    "gitDecoration.stageModifiedResourceForeground": "#9d7cd8",
     "scmGraph.historyItemHoverDefaultLabelBackground": "#7aa2f7",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#151b24"
   },
@@ -3590,6 +3590,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-16T22:59:07.345Z"
+    "buildDate": "2025-10-16T23:21:36.084Z"
   }
 }
