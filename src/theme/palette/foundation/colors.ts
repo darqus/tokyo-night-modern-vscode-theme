@@ -111,5 +111,5 @@ export const foundationColors = {
 
   white: '#ffffff',
   black: '#000000',
-  transparent: '#00000',
+  transparent: '#00000000',
 } as const
