@@ -70,7 +70,7 @@ export const semanticColors: SemanticColors = {
   text: primitiveColors.gray500, // #a9b1d6 - основной текст
   textSecondary: primitiveColors.gray600, // #82859e - вторичный текст
   textDisabled: primitiveColors.gray700, // #515670 - отключенный текст
-  textWhite: primitiveColors.white, // #ffffff - белый текст
+  textWhite: primitiveColors.blue100, // #bbdefb - холодный светло-синий текст
 
   // Background colors - цвета фона
   background: primitiveColors.gray900, // #10151d - основной фон
