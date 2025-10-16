@@ -639,21 +639,21 @@
         "variable.parameter.handlebars"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
       "name": "JS object variable",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
       "name": "JS array variable",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -701,7 +701,7 @@
       "name": "JS support variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -752,21 +752,21 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
       "name": "JS variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -796,14 +796,14 @@
       "name": "JSX children",
       "scope": "meta.jsx.children",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
       "name": "JS variable name",
       "scope": "entity.name.variable",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -838,7 +838,7 @@
         "comment variable.other"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1133,7 +1133,7 @@
       "name": "MD list item",
       "scope": "punctuation.definition.list_item.markdown",
       "settings": {
-        "foreground": "#0da0ba"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1143,7 +1143,7 @@
         "punctuation.definition.list.begin.markdown"
       ],
       "settings": {
-        "foreground": "#0da0ba"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1153,7 +1153,7 @@
         "punctuation.definition.list.begin.markdown"
       ],
       "settings": {
-        "foreground": "#0da0ba"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1237,7 +1237,7 @@
         "markup.italic punctuation"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1247,7 +1247,7 @@
         "markup.bold punctuation"
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
         "fontStyle": "bold"
       }
     },
@@ -1258,7 +1258,7 @@
         "markup.bold markup.italic punctuation"
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
         "fontStyle": "bold italic"
       }
     },
@@ -1276,7 +1276,7 @@
       "name": "MD quote punctuation",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#4e5579"
+        "foreground": "#515670"
       }
     },
     {
@@ -1294,7 +1294,7 @@
         "string.other.link.description.title.markdown"
       ],
       "settings": {
-        "foreground": "#73daca"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -1549,7 +1549,7 @@
         "meta.function-call.arguments.python"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1566,7 +1566,7 @@
       "name": "C++ variable",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1745,7 +1745,7 @@
         "meta.declaration.function.haskell"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1878,7 +1878,7 @@
         "variable.other.rust"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1920,7 +1920,7 @@
       "name": "Vue template interpolation text",
       "scope": "meta.embedded.expression.vue",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2037,7 +2037,7 @@
       "name": "Vue template expression",
       "scope": "expression.embedded.vue",
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2047,7 +2047,7 @@
         "meta.directive.vue variable.parameter.vue"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2067,7 +2067,7 @@
         "meta.script.vue"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2127,7 +2127,7 @@
         "meta.directive.vue variable.other.readwrite.js"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2147,7 +2147,7 @@
         "meta.embedded.expression.vue variable.other.object.js"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2272,7 +2272,7 @@
         "entity.name.type.namespace.cs"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2309,7 +2309,7 @@
         "variable.other.constant.cs"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2512,7 +2512,7 @@
         "variable.other.property.php"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2582,7 +2582,7 @@
         "punctuation.definition.variable.php"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2693,7 +2693,7 @@
         "variable.other.ruby"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2712,7 +2712,7 @@
         "punctuation.definition.variable.ruby"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2721,7 +2721,7 @@
         "variable.other.readwrite.class.ruby"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2730,7 +2730,7 @@
         "variable.other.readwrite.global.ruby"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -2966,7 +2966,7 @@
         "variable.other.declaration.kotlin"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -3202,7 +3202,7 @@
         "variable.other.declaration.swift"
       ],
       "settings": {
-        "foreground": "#bdbdbd"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -3444,16 +3444,16 @@
       "foreground": "#bb9af7"
     },
     "variable": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.declaration": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.builtin": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.static": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.readonly": {
       "foreground": "#e0af68"
@@ -3462,10 +3462,10 @@
       "foreground": "#e55381"
     },
     "variable.local": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.global": {
-      "foreground": "#bdbdbd"
+      "foreground": "#c0caf5"
     },
     "variable.parameter": {
       "foreground": "#73daca"
@@ -3590,6 +3590,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-15T22:46:16.502Z"
+    "buildDate": "2025-10-16T08:49:19.288Z"
   }
 }

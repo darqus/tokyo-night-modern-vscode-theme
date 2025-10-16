@@ -717,21 +717,21 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.handlebars",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
       "name": "JS object variable",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
       "name": "JS array variable",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -779,7 +779,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS support variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -830,21 +830,21 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.class.js",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
       "name": "JS variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -874,14 +874,14 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JSX children",
       "scope": "meta.jsx.children",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
       "name": "JS variable name",
       "scope": "entity.name.variable",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -916,7 +916,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment variable.other",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1211,7 +1211,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "MD list item",
       "scope": "punctuation.definition.list_item.markdown",
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -1221,7 +1221,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.list.begin.markdown",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -1231,7 +1231,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.list.begin.markdown",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -1315,7 +1315,7 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.italic punctuation",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1326,7 +1326,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1337,7 +1337,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1354,7 +1354,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "MD quote punctuation",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#4e5579",
+        "foreground": "#515670",
       },
     },
     {
@@ -1372,7 +1372,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.other.link.description.title.markdown",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#7dcfff",
       },
     },
     {
@@ -1627,7 +1627,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.function-call.arguments.python",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1644,7 +1644,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "C++ variable",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1823,7 +1823,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.declaration.function.haskell",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1956,7 +1956,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.rust",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -1998,7 +1998,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Vue template interpolation text",
       "scope": "meta.embedded.expression.vue",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2115,7 +2115,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Vue template expression",
       "scope": "expression.embedded.vue",
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2125,7 +2125,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.parameter.vue",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2145,7 +2145,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.script.vue",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2205,7 +2205,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.other.readwrite.js",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2225,7 +2225,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.embedded.expression.vue variable.other.object.js",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2350,7 +2350,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.namespace.cs",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2387,7 +2387,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.constant.cs",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2590,7 +2590,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.property.php",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2660,7 +2660,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.variable.php",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2771,7 +2771,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.ruby",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2790,7 +2790,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.variable.ruby",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2799,7 +2799,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.readwrite.class.ruby",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -2808,7 +2808,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.readwrite.global.ruby",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -3044,7 +3044,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.declaration.kotlin",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
@@ -3280,7 +3280,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.declaration.swift",
       ],
       "settings": {
-        "foreground": "#bdbdbd",
+        "foreground": "#c0caf5",
       },
     },
     {
