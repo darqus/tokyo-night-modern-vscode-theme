@@ -182,13 +182,13 @@
     "list.invalidItemForeground": "#ff5370",
     "list.warningForeground": "#e0af68",
     "button.background": "#2c3e5a",
-    "button.foreground": "#ffffff",
+    "button.foreground": "#bbdefb",
     "button.hoverBackground": "#394b70",
-    "button.secondaryBackground": "#075e70",
-    "button.secondaryForeground": "#ffffff",
-    "button.secondaryHoverBackground": "#0a7f95",
+    "button.secondaryBackground": "#282e418A",
+    "button.secondaryForeground": "#bbdefb",
+    "button.secondaryHoverBackground": "#282e41",
     "extensionButton.prominentBackground": "#394b70",
-    "extensionButton.prominentForeground": "#ffffff",
+    "extensionButton.prominentForeground": "#bbdefb",
     "extensionButton.prominentHoverBackground": "#2c3e5a",
     "input.background": "#1c1d29",
     "input.border": "#42465d",
@@ -3590,6 +3590,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-16T09:14:42.487Z"
+    "buildDate": "2025-10-16T09:29:30.260Z"
   }
 }
