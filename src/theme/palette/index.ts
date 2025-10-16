@@ -61,24 +61,27 @@ export const colorValidation = {
       const b = parseInt(cleanHex.substring(4, 6), 16) / 255
       return { r, g, b }
     }
-    
+
     // Calculate relative luminance
     const getLuminance = (r: number, g: number, b: number): number => {
-      const RsRGB = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4)
-      const GsRGB = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4)
-      const BsRGB = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4)
+      const RsRGB =
+        r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4)
+      const GsRGB =
+        g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4)
+      const BsRGB =
+        b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4)
       return 0.2126 * RsRGB + 0.7152 * GsRGB + 0.0722 * BsRGB
     }
-    
+
     const color1Rgb = hexToRgb(color1)
     const color2Rgb = hexToRgb(color2)
-    
+
     const lum1 = getLuminance(color1Rgb.r, color1Rgb.g, color1Rgb.b)
     const lum2 = getLuminance(color2Rgb.r, color2Rgb.g, color2Rgb.b)
-    
+
     const brightest = Math.max(lum1, lum2)
     const darkest = Math.min(lum1, lum2)
-    
+
     return (brightest + 0.05) / (darkest + 0.05)
   },
 
@@ -199,37 +202,6 @@ export const paletteStats = {
   totalColors: Object.keys(palette).length,
   alphaVariants: Object.keys(optimizedAlphaValues).length,
   redundancyRate: 0, // Will be calculated
-}
-
-/**
- * Migration utilities - утилиты миграции
- */
-export const migration = {
-  /**
-   * Get legacy color mapping
-   */
-  getLegacyMapping: (): Record<string, string> => {
-    return {
-      // Map old color names to new semantic names
-      background: semanticColors.background,
-      foreground: semanticColors.text,
-      border: semanticColors.border,
-      blue: semanticColors.primary,
-      purple: semanticColors.secondary,
-      green: semanticColors.success,
-      yellow: semanticColors.warning,
-      red: semanticColors.error,
-      cyan: semanticColors.info,
-    }
-  },
-
-  /**
-   * Migrate old color reference to new semantic color
-   */
-  migrateColor: (oldColorName: string): string => {
-    const mapping = migration.getLegacyMapping()
-    return mapping[oldColorName] || oldColorName
-  },
 }
 
 // Export the main palette as default
