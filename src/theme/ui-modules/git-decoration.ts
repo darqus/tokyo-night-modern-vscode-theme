@@ -2,33 +2,33 @@
  * Git decoration colors - colors for Git status indicators in UI
  * These colors are used for Git decorations in the editor and file explorer
  */
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
 
 export const gitDecorationTokens = {
   // Modified resource - for files that have been modified
-  'gitDecoration.modifiedResourceForeground': palette.purple,
+  'gitDecoration.modifiedResourceForeground': foundationColors.purple500,
 
   // Ignored resource - for files that are ignored by Git
-  'gitDecoration.ignoredResourceForeground': palette.textDisabled,
+  'gitDecoration.ignoredResourceForeground': foundationColors.gray500,
 
   // Deleted resource - for files that have been deleted
-  'gitDecoration.deletedResourceForeground': palette.error,
+  'gitDecoration.deletedResourceForeground': foundationColors.red500,
 
   // Renamed resource - for files that have been renamed
-  'gitDecoration.renamedResourceForeground': palette.secondary,
+  'gitDecoration.renamedResourceForeground': foundationColors.blue500,
 
   // Added resource - for files that have been added
-  'gitDecoration.addedResourceForeground': palette.secondary,
+  'gitDecoration.addedResourceForeground': foundationColors.blue500,
 
   // Untracked resource - for files that are not tracked by Git
-  'gitDecoration.untrackedResourceForeground': palette.info,
+  'gitDecoration.untrackedResourceForeground': foundationColors.cyan500,
 
   // Conflicting resource - for files with merge conflicts
-  'gitDecoration.conflictingResourceForeground': palette.warning,
+  'gitDecoration.conflictingResourceForeground': foundationColors.yellow500,
 
   // Stage deleted resource - for deleted files in the staging area
-  'gitDecoration.stageDeletedResourceForeground': palette.error,
+  'gitDecoration.stageDeletedResourceForeground': foundationColors.red500,
 
   // Stage modified resource - for modified files in the staging area
-  'gitDecoration.stageModifiedResourceForeground': palette.purple,
+  'gitDecoration.stageModifiedResourceForeground': foundationColors.purple500,
 }

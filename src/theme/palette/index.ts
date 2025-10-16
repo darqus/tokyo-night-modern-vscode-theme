@@ -4,7 +4,7 @@
  */
 
 import {
-  primitiveColors,
+  foundationColors as primitiveColors,
   getPrimitiveColor,
   getPrimitiveColorWithOpacity,
 } from './foundation'

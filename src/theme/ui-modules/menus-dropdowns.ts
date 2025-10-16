@@ -1,20 +1,21 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
+import { opacityLevels } from '../palette/foundation/opacity'
 
 /**
  * Menus & Dropdowns UI элементы
  * Эти токены отвечают за оформление меню и выпадающих списков в VS Code
  */
 export const menuDropdownColors = {
-  'dropdown.background': palette.backgrounds.secondary,
-  'dropdown.border': palette.borders.subtle + '40',
-  'dropdown.foreground': palette.foreground,
-  'dropdown.listBackground': palette.backgrounds.elevated,
-  'menu.background': palette.backgrounds.secondary,
-  'menu.border': palette.borders.subtle + '40',
-  'menu.foreground': palette.foreground,
-  'menu.selectionBackground': palette.interactive.selected,
-  'menu.selectionForeground': palette.blue,
-  'menu.separatorBackground': palette.borders.subtle + '40',
-  'menubar.selectionBackground': palette.interactive.selected,
-  'menubar.selectionForeground': palette.foreground,
+  'dropdown.background': foundationColors.gray800,
+  'dropdown.border': foundationColors.gray600 + opacityLevels.medium,
+  'dropdown.foreground': foundationColors.gray100,
+  'dropdown.listBackground': foundationColors.gray800,
+  'menu.background': foundationColors.gray800,
+  'menu.border': foundationColors.gray600 + opacityLevels.medium,
+  'menu.foreground': foundationColors.gray100,
+  'menu.selectionBackground': foundationColors.gray700,
+  'menu.selectionForeground': foundationColors.blue500,
+  'menu.separatorBackground': foundationColors.gray600 + opacityLevels.medium,
+  'menubar.selectionBackground': foundationColors.gray700,
+  'menubar.selectionForeground': foundationColors.gray100,
 }

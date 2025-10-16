@@ -1,23 +1,24 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
+import { opacityLevels } from '../palette/foundation/opacity'
 
 /**
  * Lists UI элементы
  * Эти токены отвечают за оформление списков в VS Code
  */
 export const listColors = {
-  'list.activeSelectionBackground': palette.interactive.selected + '90',
-  'list.activeSelectionForeground': palette.blue,
-  'list.deemphasizedForeground': palette.text,
-  'list.dropBackground': palette.blue + '20',
-  'list.errorForeground': palette.error,
-  'list.focusBackground': palette.interactive.hover,
-  'list.focusForeground': palette.foreground,
-  'list.highlightForeground': palette.blue,
-  'list.hoverBackground': palette.interactive.hover + '60',
-  'list.hoverForeground': palette.blue,
-  'list.inactiveSelectionBackground': palette.interactive.selected,
-  'list.inactiveSelectionForeground': palette.blue,
-  'list.inactiveSelectionIconForeground': palette.blue,
-  'list.invalidItemForeground': palette.error,
-  'list.warningForeground': palette.warning,
+  'list.activeSelectionBackground': foundationColors.gray700 + '90',
+  'list.activeSelectionForeground': foundationColors.blue500,
+  'list.deemphasizedForeground': foundationColors.gray100,
+  'list.dropBackground': foundationColors.blue500 + opacityLevels.light,
+  'list.errorForeground': foundationColors.red500,
+  'list.focusBackground': foundationColors.gray700,
+  'list.focusForeground': foundationColors.gray100,
+  'list.highlightForeground': foundationColors.blue500,
+  'list.hoverBackground': foundationColors.gray700 + '60',
+  'list.hoverForeground': foundationColors.blue500,
+  'list.inactiveSelectionBackground': foundationColors.gray700,
+  'list.inactiveSelectionForeground': foundationColors.blue500,
+  'list.inactiveSelectionIconForeground': foundationColors.blue500,
+  'list.invalidItemForeground': foundationColors.red500,
+  'list.warningForeground': foundationColors.yellow500,
 }

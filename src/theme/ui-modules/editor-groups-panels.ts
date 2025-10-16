@@ -1,25 +1,26 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
+import { opacityLevels } from '../palette/foundation/opacity'
 
 /**
  * Editor Groups & Panels UI элементы
  * Эти токены отвечают за оформление групп редакторов и панелей в VS Code
  */
 export const editorGroupsPanelsColors = {
-  'editorGroup.border': palette.borders.subtle + '20',
-  'editorGroup.dropBackground': palette.blue + '20',
-  'editorGroup.dropIntoPromptBorder': palette.borders.subtle,
-  'editorGroupHeader.border': palette.backgrounds.secondary,
-  'editorGroupHeader.noTabsBackground': palette.backgrounds.secondary,
-  'editorGroupHeader.tabsBackground': palette.backgrounds.secondary,
-  'editorGroupHeader.tabsBorder': palette.backgrounds.secondary,
-  'editorPane.background': palette.backgrounds.secondary,
-  'panel.background': palette.backgrounds.secondary,
-  'panel.border': palette.borders.subtle + '40',
-  'panel.dropBorder': palette.borders.subtle + '40',
-  'panelInput.border': palette.borders.subtle + '40',
-  'panelSection.border': palette.border,
-  'panelSection.dropBackground': palette.blue + '20',
-  'panelTitle.activeBorder': palette.borders.subtle + '40',
-  'panelTitle.activeForeground': palette.foreground,
-  'panelTitle.inactiveForeground': palette.foreground + 'AA',
+  'editorGroup.border': foundationColors.gray600 + opacityLevels.light,
+  'editorGroup.dropBackground': foundationColors.blue500 + opacityLevels.light,
+  'editorGroup.dropIntoPromptBorder': foundationColors.gray600,
+  'editorGroupHeader.border': foundationColors.gray800,
+  'editorGroupHeader.noTabsBackground': foundationColors.gray800,
+  'editorGroupHeader.tabsBackground': foundationColors.gray800,
+  'editorGroupHeader.tabsBorder': foundationColors.gray800,
+  'editorPane.background': foundationColors.gray800,
+  'panel.background': foundationColors.gray800,
+  'panel.border': foundationColors.gray600 + opacityLevels.medium,
+  'panel.dropBorder': foundationColors.gray600 + opacityLevels.medium,
+  'panelInput.border': foundationColors.gray600 + opacityLevels.medium,
+  'panelSection.border': foundationColors.gray600,
+  'panelSection.dropBackground': foundationColors.blue500 + opacityLevels.light,
+  'panelTitle.activeBorder': foundationColors.gray600 + opacityLevels.medium,
+  'panelTitle.activeForeground': foundationColors.gray100,
+  'panelTitle.inactiveForeground': foundationColors.gray100 + 'AA',
 }

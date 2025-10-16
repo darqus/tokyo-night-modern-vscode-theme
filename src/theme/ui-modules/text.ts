@@ -1,16 +1,16 @@
-import { palette } from '../palette/index'
+import { foundationColors } from '../palette/foundation/colors'
 
 /**
  * Text UI элементы
  * Эти токены отвечают за оформление текстовых элементов в VS Code
  */
 export const textColors = {
-  'textBlockQuote.background': palette.backgrounds.elevated,
-  'textBlockQuote.border': palette.blue,
-  'textCodeBlock.background': palette.backgrounds.elevated,
-  'textLink.activeForeground': palette.special.focusRing,
-  'textLink.foreground': palette.special.selection,
-  'textPreformat.background': palette.backgrounds.elevated,
-  'textPreformat.foreground': palette.blue,
-  'textSeparator.foreground': palette.textSecondary,
+  'textBlockQuote.background': foundationColors.gray800,
+  'textBlockQuote.border': foundationColors.blue500,
+  'textCodeBlock.background': foundationColors.gray800,
+  'textLink.activeForeground': foundationColors.blue500,
+  'textLink.foreground': foundationColors.blue500,
+  'textPreformat.background': foundationColors.gray800,
+  'textPreformat.foreground': foundationColors.blue500,
+  'textSeparator.foreground': foundationColors.gray400,
 }
