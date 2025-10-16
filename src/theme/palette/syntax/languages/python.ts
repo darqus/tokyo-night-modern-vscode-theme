@@ -1,5 +1,5 @@
 import { baseSyntaxColors } from '../base'
-import { foundationColors } from '../../foundation/colors'
+import { semanticColors } from '../../semantic'
 
 export const pythonSyntaxColors = {
   // Inherit base colors
@@ -66,7 +66,7 @@ export const pythonSyntaxColors = {
   bytesString: foundationColors.yellow400,
 
   // Special Python tokens
-  parameter: foundationColors.paramColor,
+  parameter: semanticColors.textSecondary,
   typeHint: foundationColors.teal400,
   typeAnnotation: foundationColors.teal300,
 

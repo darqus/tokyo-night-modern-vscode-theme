@@ -134,22 +134,7 @@ export interface PrimitiveColors {
   black: string
   transparent: string
 
-  // Syntax-specific colors
-  opColor: string
-  strColor: string
-  numColor: string
-  commentColor: string
-  docCommentColor: string
-  docTagColor: string
-  paramColor: string
-  tagColor: string
-  constColor: string
-  regexColor: string
-  varColor: string
-  atRuleColor: string
-  htmlTagColor: string
-  htmlAttrColor: string
-  componentColor: string
+  
 }
 
 /**

@@ -42,7 +42,7 @@ export {
  * Color validation utilities - утилиты валидации цветов
  */
 export const colorValidation = {
-  /**
+ /**
    * Validate hex color format
    */
   isValidHex: (color: string): boolean => {
@@ -104,7 +104,7 @@ export const colorValidation = {
  */
 export const palette = {
   // Primitive colors - базовые цвета
-  ...primitiveColors,
+ ...primitiveColors,
 
   // Semantic colors - семантические цвета
   ...semanticColors,
@@ -115,80 +115,9 @@ export const palette = {
   // Syntax colors - синтаксические цвета
   ...flatSyntaxColors,
 
-  // Legacy colors - цвета для обратной совместимости
-  // Эти цвета будут постепенно заменены на семантические
-  background: semanticColors.background,
-  foreground: semanticColors.text,
-  border: semanticColors.border,
-
-  // Legacy accent colors
-  blue: semanticColors.primary,
-  purple: semanticColors.secondary,
-  green: semanticColors.success,
-  yellow: semanticColors.warning,
-  red: semanticColors.error,
-  cyan: semanticColors.info,
-
-  // Legacy syntax colors
-  function: syntaxColors.function,
-  keyword: syntaxColors.keyword,
-  string: syntaxColors.string,
-  comment: syntaxColors.comment,
-  variable: syntaxColors.variable,
-  type: syntaxColors.type,
-  class: syntaxColors.class,
-
-  // Legacy UI colors
-  editorBackground: uiColors.backgrounds.primary,
-  editorForeground: uiColors.text.primary,
-  editorForegroundPrimary: uiColors.text.primary,
-  editorForegroundSecondary: uiColors.text.secondary,
-  editorForegroundTertiary: uiColors.text.tertiary,
-  editorForegroundDisabled: uiColors.text.disabled,
-  editorForegroundInverse: uiColors.text.inverse,
-  editorForegroundPlaceholder: uiColors.text.placeholder,
-  sideBarBackground: uiColors.backgrounds.secondary,
-  statusBarBackground: uiColors.backgrounds.secondary,
-  activityBarBackground: uiColors.backgrounds.secondary,
-  textPrimary: uiColors.text.primary,
-  textSecondary: uiColors.text.secondary,
-  textTertiary: uiColors.text.tertiary,
-  textDisabled: uiColors.text.disabled,
-  textWhite: uiColors.text.inverse,
-  textPlaceholder: uiColors.text.placeholder,
-  backgroundsPrimary: uiColors.backgrounds.primary,
-  backgroundsSecondary: uiColors.backgrounds.secondary,
-  backgroundsTertiary: uiColors.backgrounds.tertiary,
-  backgroundsElevated: uiColors.backgrounds.elevated,
-  backgroundsOverlay: uiColors.backgrounds.overlay,
-  bordersDefault: uiColors.borders.default,
-  bordersSubtle: uiColors.borders.subtle,
-  bordersFocus: uiColors.borders.focus,
-  bordersError: uiColors.borders.error,
-  bordersWarning: uiColors.borders.warning,
-  bordersSuccess: uiColors.borders.success,
-  interactiveHover: uiColors.interactive.hover,
-  interactiveActive: uiColors.interactive.active,
-  interactiveSelected: uiColors.interactive.selected,
-  interactiveDisabled: uiColors.interactive.disabled,
-  interactivePressed: uiColors.interactive.pressed,
-  specialShadow: uiColors.special.shadow,
-  specialGlow: uiColors.special.glow,
-  specialHighlight: uiColors.special.highlight,
-  specialSelection: uiColors.special.selection,
-  specialFocusRing: uiColors.special.focusRing,
-
-  // Button colors - added to ensure consistent button theming
-  buttonBackground: semanticColors.secondary,
-  buttonForeground: uiColors.text.inverse,
-  buttonHoverBackground: uiColors.interactive.hover,
-  buttonActiveBackground: uiColors.interactive.active,
-  buttonDisabledBackground: uiColors.interactive.disabled,
-  buttonDisabledForeground: uiColors.text.disabled,
-
   // Utilities - утилиты
   colorValidation,
-  optimizedAlphaValues,
+ optimizedAlphaValues,
 }
 
 /**
@@ -197,7 +126,7 @@ export const palette = {
 export const paletteStats = {
   primitiveColors: Object.keys(primitiveColors).length,
   semanticColors: Object.keys(semanticColors).length,
-  uiColors: Object.keys(uiColorsWithAlpha).length,
+ uiColors: Object.keys(uiColorsWithAlpha).length,
   syntaxColors: Object.keys(flatSyntaxColors).length,
   totalColors: Object.keys(palette).length,
   alphaVariants: Object.keys(optimizedAlphaValues).length,

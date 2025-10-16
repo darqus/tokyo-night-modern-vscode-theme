@@ -58,7 +58,7 @@ exports[`Theme should match the snapshot 1`] = `
     "editor.foreground": "#f5f5f5",
     "editor.inactiveSelectionBackground": "#7aa2f745",
     "editor.lineHighlightBackground": "#1e2333",
-    "editor.lineHighlightBorder": "#00000000",
+    "editor.lineHighlightBorder": "#00000",
     "editor.rangeHighlightBackground": "#7aa2f720",
     "editor.selectionBackground": "#7aa2f760",
     "editor.selectionHighlightBackground": "#7aa2f744",
@@ -114,7 +114,7 @@ exports[`Theme should match the snapshot 1`] = `
     "editorLink.activeForeground": "#f5f5f5",
     "editorMarkerNavigation.background": "#1e2333",
     "editorOverviewRuler.addedForeground": "#9ece6a",
-    "editorOverviewRuler.border": "#00000000",
+    "editorOverviewRuler.border": "#00000",
     "editorOverviewRuler.bracketMatchForeground": "#1e2333",
     "editorOverviewRuler.deletedForeground": "#ff5370",
     "editorOverviewRuler.errorForeground": "#ff5370",
@@ -362,37 +362,37 @@ exports[`Theme should match the snapshot 1`] = `
       "foreground": "#0da0ba",
     },
     "comment": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.block": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.documentation": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.error": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.fixme": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.hint": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.info": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.line": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.note": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.todo": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "comment.warning": {
-      "foreground": "#696f87",
+      "foreground": "#6c7097",
     },
     "decorator": {
       "foreground": "#7aa2f7",
@@ -521,25 +521,25 @@ exports[`Theme should match the snapshot 1`] = `
       "foreground": "#bb9af7",
     },
     "parameter": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "parameter.builtin": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "parameter.constant": {
-      "foreground": "#e55381",
+      "foreground": "#e0af68",
     },
     "parameter.declaration": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "parameter.global": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "parameter.local": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "parameter.readonly": {
-      "foreground": "#e0af68",
+      "foreground": "#fffde7",
     },
     "property": {
       "foreground": "#7dcfff",
@@ -548,7 +548,7 @@ exports[`Theme should match the snapshot 1`] = `
       "foreground": "#7dcfff",
     },
     "property.constant": {
-      "foreground": "#e55381",
+      "foreground": "#e0af68",
     },
     "property.declaration": {
       "foreground": "#7dcfff",
@@ -560,7 +560,7 @@ exports[`Theme should match the snapshot 1`] = `
       "foreground": "#7dcfff",
     },
     "property.readonly": {
-      "foreground": "#e0af68",
+      "foreground": "#fffde7",
     },
     "type": {
       "foreground": "#bb9af7",
@@ -584,40 +584,40 @@ exports[`Theme should match the snapshot 1`] = `
       "foreground": "#bb9af7",
     },
     "variable": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
     "variable.builtin": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
     "variable.constant": {
-      "foreground": "#e55381",
+      "foreground": "#e0af68",
     },
     "variable.declaration": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
     "variable.field": {
       "foreground": "#7dcfff",
     },
     "variable.global": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
     "variable.local": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
     "variable.member": {
       "foreground": "#7dcfff",
     },
     "variable.parameter": {
-      "foreground": "#73daca",
+      "foreground": "#6c7097",
     },
     "variable.property": {
       "foreground": "#7dcfff",
     },
     "variable.readonly": {
-      "foreground": "#e0af68",
+      "foreground": "#fffde7",
     },
     "variable.static": {
-      "foreground": "#c0caf5",
+      "foreground": "#97a2d3",
     },
   },
   "tokenColors": [
@@ -637,7 +637,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.documentation punctuation",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -657,7 +657,7 @@ exports[`Theme should match the snapshot 1`] = `
         "log.date",
       ],
       "settings": {
-        "foreground": "#5a638c",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -669,7 +669,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.documentation entity.name.type.instance",
       ],
       "settings": {
-        "foreground": "#646e9c",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -682,7 +682,7 @@ exports[`Theme should match the snapshot 1`] = `
         "support.constant",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -695,7 +695,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -705,7 +705,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.other.color.rgb-value.hex punctuation.definition.constant",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -795,7 +795,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.at-rule.function variable.parameter.url",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -805,7 +805,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.rest",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -821,7 +821,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.expression.keyof",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -882,7 +882,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -892,14 +892,14 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag",
       ],
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "Tag punctuation",
       "scope": "punctuation.definition.tag",
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -913,7 +913,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.other",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -925,21 +925,21 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.handlebars",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
       "name": "JS object variable",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
       "name": "JS array variable",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -987,7 +987,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JS support variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1027,7 +1027,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.function.parameter variable",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -1038,21 +1038,21 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.class.js",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
       "name": "JS language variable",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
       "name": "JS variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1064,7 +1064,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1082,14 +1082,14 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "JSX children",
       "scope": "meta.jsx.children",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
       "name": "JS variable name",
       "scope": "entity.name.variable",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1099,7 +1099,7 @@ exports[`Theme should match the snapshot 1`] = `
         "parameters variable.function",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -1124,7 +1124,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment variable.other",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1211,7 +1211,7 @@ exports[`Theme should match the snapshot 1`] = `
         "text.html.basic entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#9a9af7",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1239,14 +1239,14 @@ exports[`Theme should match the snapshot 1`] = `
         "support.class.component.html",
       ],
       "settings": {
-        "foreground": "#fdc886",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "HTML tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1273,7 +1273,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.definition.variable",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1297,7 +1297,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "CSS tag",
       "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1327,7 +1327,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.property-list meta.at-rule.else",
       ],
       "settings": {
-        "foreground": "#ff9e64",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1386,7 +1386,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "CSS support",
       "scope": "support.constant.property-value",
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1523,7 +1523,7 @@ exports[`Theme should match the snapshot 1`] = `
         "markup.italic punctuation",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1534,7 +1534,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1545,7 +1545,7 @@ exports[`Theme should match the snapshot 1`] = `
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1706,7 +1706,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.unquoted.yaml",
       ],
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -1717,7 +1717,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.plain.out.yaml",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1727,14 +1727,14 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.yaml",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
       "name": "YAML comment",
       "scope": "comment.line.number-sign.yaml",
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -1772,7 +1772,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.interpolated.python",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1785,7 +1785,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.float.python",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1815,7 +1815,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.comment.python",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -1835,7 +1835,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.function-call.arguments.python",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1852,7 +1852,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "C++ variable",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1915,7 +1915,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.quoted.raw.go",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -1924,7 +1924,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.go",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -1934,7 +1934,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.go",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -1943,7 +1943,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.go",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -1987,7 +1987,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.other.big-arrow.haskell",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -2031,7 +2031,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.declaration.function.haskell",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2041,7 +2041,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.quoted.single.haskell",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2050,7 +2050,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.haskell",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2060,7 +2060,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.haskell",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2132,7 +2132,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.quoted.raw.rust",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2145,7 +2145,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.float.rust",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2164,7 +2164,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.rust",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2175,7 +2175,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.documentation.rust",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2187,7 +2187,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag.style.html",
       ],
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2206,7 +2206,7 @@ exports[`Theme should match the snapshot 1`] = `
       "name": "Vue template interpolation text",
       "scope": "meta.embedded.expression.vue",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2227,7 +2227,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue meta.embedded.expression",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2237,7 +2237,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.other.readwrite.js",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2249,7 +2249,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag.custom.end.html",
       ],
       "settings": {
-        "foreground": "#fdc886",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2271,7 +2271,7 @@ exports[`Theme should match the snapshot 1`] = `
         "text.html.vue meta.tag.end.html string.quoted",
       ],
       "settings": {
-        "foreground": "#fd86e1",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2294,7 +2294,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag.end.template.html entity.name.tag.html",
       ],
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2305,7 +2305,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag.end.script.html entity.name.tag.html",
       ],
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2316,14 +2316,14 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.tag.end.style.html entity.name.tag.html",
       ],
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
       "name": "Vue template expression",
       "scope": "expression.embedded.vue",
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2333,7 +2333,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.parameter.vue",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2343,7 +2343,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.line.double-slash.vue",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2353,7 +2353,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.script.vue",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2363,7 +2363,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.style.vue",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2373,7 +2373,7 @@ exports[`Theme should match the snapshot 1`] = `
         "text.html.vue",
       ],
       "settings": {
-        "foreground": "#769df7",
+        "foreground": "#7aa2f7",
       },
     },
     {
@@ -2413,7 +2413,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.directive.vue variable.other.readwrite.js",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2433,7 +2433,7 @@ exports[`Theme should match the snapshot 1`] = `
         "meta.embedded.expression.vue variable.other.object.js",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2558,7 +2558,7 @@ exports[`Theme should match the snapshot 1`] = `
         "entity.name.type.namespace.cs",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2585,7 +2585,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.cs",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2595,7 +2595,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.constant.cs",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2607,7 +2607,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.verbatim.cs",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2616,7 +2616,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.cs",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2625,7 +2625,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean.cs",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2634,7 +2634,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.null.cs",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2644,7 +2644,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.cs",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2798,7 +2798,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.property.php",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2807,7 +2807,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.php",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2821,7 +2821,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.regexp.php",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2830,7 +2830,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.php",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2839,7 +2839,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean.php",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2848,7 +2848,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.null.php",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2859,7 +2859,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.php",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2868,7 +2868,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.variable.php",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2878,7 +2878,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.unquoted.nowdoc.php",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2887,7 +2887,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.other.php",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2897,7 +2897,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.separator.inheritance.php",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -2966,7 +2966,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.constant.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -2979,7 +2979,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.ruby",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -2988,7 +2988,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.ruby",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -2998,7 +2998,7 @@ exports[`Theme should match the snapshot 1`] = `
         "punctuation.definition.variable.ruby",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3007,7 +3007,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.readwrite.class.ruby",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3016,7 +3016,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.readwrite.global.ruby",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3026,7 +3026,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.constant.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3040,7 +3040,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.other.ruby",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3049,7 +3049,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3058,7 +3058,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3067,7 +3067,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.nil.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3077,7 +3077,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.documentation.ruby",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3086,7 +3086,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.block.ruby",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3095,7 +3095,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.unquoted.heredoc.ruby",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3104,7 +3104,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.character.escape.ruby",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3117,7 +3117,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.other.ruby",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -3252,7 +3252,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.declaration.kotlin",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3261,7 +3261,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.kotlin",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3272,7 +3272,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.template.kotlin",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3281,7 +3281,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.kotlin",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3290,7 +3290,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean.kotlin",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3299,7 +3299,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.null.kotlin",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3309,7 +3309,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.kotlin",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3329,7 +3329,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.function.lambda.kotlin",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3342,7 +3342,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.increment-decrement.kotlin",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -3488,7 +3488,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.other.declaration.swift",
       ],
       "settings": {
-        "foreground": "#c0caf5",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3497,7 +3497,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.swift",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3508,7 +3508,7 @@ exports[`Theme should match the snapshot 1`] = `
         "string.interpolated.swift",
       ],
       "settings": {
-        "foreground": "#85d0b7",
+        "foreground": "#97a2d3",
       },
     },
     {
@@ -3517,7 +3517,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.numeric.swift",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3526,7 +3526,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.boolean.swift",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3536,7 +3536,7 @@ exports[`Theme should match the snapshot 1`] = `
         "constant.language.swift",
       ],
       "settings": {
-        "foreground": "#e55381",
+        "foreground": "#e0af68",
       },
     },
     {
@@ -3546,7 +3546,7 @@ exports[`Theme should match the snapshot 1`] = `
         "comment.block.swift",
       ],
       "settings": {
-        "foreground": "#696f87",
+        "foreground": "#6c7097",
       },
     },
     {
@@ -3562,7 +3562,7 @@ exports[`Theme should match the snapshot 1`] = `
         "keyword.operator.ternary.swift",
       ],
       "settings": {
-        "foreground": "#bfd5de",
+        "foreground": "#bb9af7",
       },
     },
     {
@@ -3571,7 +3571,7 @@ exports[`Theme should match the snapshot 1`] = `
         "variable.parameter.closure.swift",
       ],
       "settings": {
-        "foreground": "#73daca",
+        "foreground": "#6c7097",
       },
     },
     {

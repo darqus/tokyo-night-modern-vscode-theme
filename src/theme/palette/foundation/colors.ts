@@ -111,22 +111,5 @@ export const foundationColors = {
 
   white: '#ffffff',
   black: '#000000',
-  transparent: '#00000000',
-
-  // Syntax-specific colors
-  opColor: '#bfd5de',
-  strColor: '#85d0b7',
-  numColor: '#a492ff',
-  commentColor: '#696f87',
-  docCommentColor: '#5a638c',
-  docTagColor: '#646e9c',
-  paramColor: '#73daca',
-  tagColor: '#fd86e1',
-  constColor: '#e55381',
-  regexColor: '#b4f9f8',
-  varColor: '#c0caf5',
-  atRuleColor: '#ff9e64',
-  htmlTagColor: '#769df7',
-  htmlAttrColor: '#9a9af7',
-  componentColor: '#fdc886',
+  transparent: '#00000',
 } as const
