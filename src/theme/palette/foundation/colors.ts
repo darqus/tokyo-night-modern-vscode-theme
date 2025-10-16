@@ -9,6 +9,7 @@ export const foundationColors = {
   blue700: '#394b70',
   blue800: '#2c3e5a',
   blue900: '#1a2332',
+
   purple50: '#f3e5f5',
   purple100: '#e1bee7',
   purple200: '#ce93d8',
@@ -19,6 +20,7 @@ export const foundationColors = {
   purple700: '#7256a3',
   purple800: '#5d3a87',
   purple900: '#4a2c6b',
+
   green50: '#e8f5e8',
   green100: '#c8e6c9',
   green200: '#a5d6a7',
@@ -29,6 +31,7 @@ export const foundationColors = {
   green700: '#164846',
   green800: '#0f3634',
   green900: '#0a2625',
+
   yellow50: '#fffde7',
   yellow100: '#fff9c4',
   yellow200: '#fff59d',
@@ -39,6 +42,7 @@ export const foundationColors = {
   yellow700: '#a67c3a',
   yellow800: '#8b691f',
   yellow900: '#6d4c0f',
+
   red50: '#ffebee',
   red100: '#ffcdd2',
  red200: '#ef9a9a',
@@ -49,6 +53,7 @@ export const foundationColors = {
   red700: '#963c47',
   red800: '#7a3039',
   red900: '#5e242c',
+
   cyan50: '#e0f7fa',
   cyan100: '#b2ebf2',
   cyan200: '#80deea',
@@ -59,6 +64,7 @@ export const foundationColors = {
   cyan700: '#0da0ba',
   cyan800: '#0a7f95',
   cyan900: '#075e70',
+
   teal50: '#e0f2f1',
   teal100: '#b2dfdb',
   teal200: '#80cbc4',
@@ -69,6 +75,7 @@ export const foundationColors = {
   teal700: '#008b75',
   teal800: '#00705a',
   teal900: '#005743',
+
   orange50: '#fff3e0',
   orange100: '#ffe0b2',
   orange200: '#ffcc80',
@@ -79,6 +86,7 @@ export const foundationColors = {
   orange700: '#dc5800',
   orange800: '#c24a00',
   orange900: '#a63c00',
+
  magenta50: '#fce4ec',
   magenta100: '#f8bbd9',
   magenta200: '#f48fb1',
@@ -89,6 +97,7 @@ export const foundationColors = {
   magenta700: '#c2185b',
   magenta800: '#ad1457',
   magenta900: '#880e4f',
+
   gray50: '#fafafa',
   gray100: '#f5f5f5',
   gray200: '#eeeeee',
@@ -99,6 +108,7 @@ export const foundationColors = {
   gray700: '#4b5172',
   gray800: '#1e2333',
   gray900: '#151b24',
+
   white: '#ffffff',
   black: '#000000',
   transparent: '#00000000',
