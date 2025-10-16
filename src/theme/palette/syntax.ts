@@ -97,17 +97,35 @@ export interface SyntaxColors {
  * Syntax highlighting color palette
  * Цвета для подсветки синтаксиса, основанные на анализе использования
  */
+
+// Локальные константы для жестко закодированных цветов, чтобы избежать дублирования
+const opColor = '#bfd5de'
+const strColor = '#85d0b7'
+const numColor = '#a492ff'
+const commentColor = '#696f87'
+const docCommentColor = '#5a638c'
+const docTagColor = '#646e9c'
+const paramColor = '#73daca'
+const tagColor = '#fd86e1'
+const constColor = '#e55381'
+const regexColor = '#b4f9f8'
+const varColor = '#c0caf5'
+const atRuleColor = '#ff9e64'
+const htmlTagColor = '#769df7'
+const htmlAttrColor = '#9a9af7'
+const componentColor = '#fdc886'
+
 export const syntaxColors: SyntaxColors = {
   // Basic syntax elements - основные элементы синтаксиса
   keyword: semanticColors.secondary, // #bb9af7 - ключевые слова (фиолетовый)
   keywordControl: primitiveColors.cyan700, // #0da0ba - управляющие конструкции (темно-голубой)
-  keywordOperator: '#bfd5de', // операторы (из оригинальной палитры)
-  string: '#85d0b7', // строки (из оригинальной палитры)
+  keywordOperator: opColor, // операторы (из оригинальной палитры)
+  string: strColor, // строки (из оригинальной палитры)
   stringEscape: primitiveColors.cyan500, // #7dcfff - экранированные символы
-  number: '#a492ff', // числа (из оригинальной палитры)
-  comment: '#696f87', // комментарии (из оригинальной палитры)
-  commentDoc: '#5a638c', // документация (из оригинальной палитры)
-  commentDocTag: '#646e9c', // теги документации (из оригинальной палитры)
+  number: numColor, // числа (из оригинальной палитры)
+  comment: commentColor, // комментарии (из оригинальной палитры)
+  commentDoc: docCommentColor, // документация (из оригинальной палитры)
+  commentDocTag: docTagColor, // теги документации (из оригинальной палитры)
 
   // Language constructs - языковые конструкции
   function: semanticColors.primary, // #7aa2f7 - функции (синий)
@@ -115,19 +133,19 @@ export const syntaxColors: SyntaxColors = {
   class: primitiveColors.cyan700, // #0da0ba - классы (темно-голубой)
   interface: primitiveColors.cyan700, // #0da0ba - интерфейсы (темно-голубой)
   type: semanticColors.secondary, // #bb9af7 - типы (фиолетовый)
-  variable: primitiveColors.gray400, // #c0caf5 - переменные (светло-серый)
-  parameter: '#73daca', // параметры (из оригинальной палитры)
+  variable: varColor, // #c0caf5 - переменные (светло-серый)
+  parameter: paramColor, // параметры (из оригинальной палитры)
   property: primitiveColors.cyan500, // #7dcfff - свойства (голубой)
 
   // Markup languages - разметочные языки
-  tag: '#fd86e1', // теги (из оригинальной палитры)
+  tag: tagColor, // теги (из оригинальной палитры)
   attribute: semanticColors.secondary, // #bb9af7 - атрибуты (фиолетовый)
-  attributeValue: '#fd86e1', // значения атрибутов (из оригинальной палитры)
+  attributeValue: tagColor, // значения атрибутов (из оригинальной палитры)
   entity: primitiveColors.cyan700, // #0da0ba - HTML entities (темно-голубой)
 
   // Special tokens - специальные токены
-  constant: '#e55381', // константы (из оригинальной палитры)
-  regexp: '#b4f9f8', // регулярные выражения (из оригинальной палитры)
+  constant: constColor, // константы (из оригинальной палитры)
+  regexp: regexColor, // регулярные выражения (из оригинальной палитры)
   decorator: semanticColors.primary, // #7aa2f7 - декораторы (синий)
   annotation: semanticColors.secondary, // #bb9af7 - аннотации (фиолетовый)
 
@@ -137,8 +155,8 @@ export const syntaxColors: SyntaxColors = {
 
   // Language-specific - специфичные для языков
   javascript: {
-    module: primitiveColors.gray400, // #c0caf5 - модули
-    this: '#fd86e1', // this (из оригинальной палитры)
+    module: varColor, // #c0caf5 - модули
+    this: tagColor, // this (из оригинальной палитры)
     prototype: semanticColors.primary, // #7aa2f7 - прототипы
   },
 
@@ -151,34 +169,34 @@ export const syntaxColors: SyntaxColors = {
 
   css: {
     property: semanticColors.primary, // #7aa2f7 - CSS свойства
-    value: '#85d0b7', // CSS значения (из оригинальной палитры)
-    selector: '#c0caf5', // CSS селекторы (из оригинальной палитры)
+    value: strColor, // CSS значения (из оригинальной палитры)
+    selector: varColor, // CSS селекторы (из оригинальной палитры)
     pseudo: primitiveColors.cyan700, // #0da0ba - псевдо-селекторы
-    atRule: '#ff9e64', // at-rules (из оригинальной палитры)
+    atRule: atRuleColor, // at-rules (из оригинальной палитры)
   },
 
   html: {
-    tag: '#769df7', // HTML теги (из оригинальной палитры)
-    attribute: '#9a9af7', // HTML атрибуты (из оригинальной палитры)
-    attributeValue: '#fd86e1', // HTML значения атрибутов (из оригинальной палитры)
+    tag: htmlTagColor, // HTML теги (из оригинальной палитры)
+    attribute: htmlAttrColor, // HTML атрибуты (из оригинальной палитры)
+    attributeValue: tagColor, // HTML значения атрибутов (из оригинальной палитры)
     entity: primitiveColors.cyan700, // #0da0ba - HTML entities
-    component: '#fdc886', // компоненты (из оригинальной палитры)
+    component: componentColor, // компоненты (из оригинальной палитры)
   },
 
   markdown: {
     heading: primitiveColors.cyan500, // #7dcfff - заголовки
-    bold: primitiveColors.gray400, // #c0caf5 - жирный текст
-    italic: primitiveColors.gray400, // #c0caf5 - курсив
+    bold: varColor, // #c0caf5 - жирный текст
+    italic: varColor, // #c0caf5 - курсив
     code: primitiveColors.cyan500, // #7dcfff - код
-    link: '#73daca', // ссылки (из оригинальной палитры)
-    quote: '#4e5579', // цитаты (из оригинальной палитры)
+    link: semanticColors.info, // ссылки (голубой)
+    quote: semanticColors.textDisabled, // цитаты (темно-серый)
     list: primitiveColors.cyan700, // списки (из оригинальной палитры)
   },
 
   json: {
     key: semanticColors.primary, // #7aa2f7 - ключи JSON
-    string: '#85d0b7', // строки JSON (из оригинальной палитры)
-    number: '#a492ff', // числа JSON (из оригинальной палитры)
+    string: strColor, // строки JSON (из оригинальной палитры)
+    number: numColor, // числа JSON (из оригинальной палитры)
     boolean: semanticColors.warning, // #e0af68 - булевы значения
     null: semanticColors.textSecondary, // #82859e - null значения
   },
