@@ -6,7 +6,7 @@ export const markdownTokens: TokenColor[] = [
     name: 'MD list item',
     scope: 'punctuation.definition.list_item.markdown',
     settings: {
-      foreground: palette.mdList,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -16,7 +16,7 @@ export const markdownTokens: TokenColor[] = [
       'punctuation.definition.list.begin.markdown',
     ],
     settings: {
-      foreground: palette.mdList,
+      foreground: palette.mdHeading,
     },
   },
   {
@@ -26,7 +26,7 @@ export const markdownTokens: TokenColor[] = [
       'punctuation.definition.list.begin.markdown',
     ],
     settings: {
-      foreground: palette.mdList,
+      foreground: palette.mdHeading,
     },
   },
   {
