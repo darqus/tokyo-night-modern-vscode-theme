@@ -1,7 +1,7 @@
 import { interfaceColors } from '../palette/semantic/interface'
 import { typographyColors } from '../palette/semantic/typography'
 import { borderColors } from '../palette/semantic/borders'
-import { foundationColors } from '../palette/foundation/colors'
+import { semanticColors } from '../palette/semantic'
 import { ColorRoleDefinition } from './types'
 
 export const colorRoles: ColorRoleDefinition = {
@@ -95,21 +95,21 @@ export const colorRoles: ColorRoleDefinition = {
     name: 'Success',
     description: 'Color for success states and messages',
     category: 'status',
-    value: foundationColors.green500,
+    value: semanticColors.success,
     usage: ['success messages', 'checkmarks'],
   },
   'status.error': {
     name: 'Error',
     description: 'Color for error states and messages',
     category: 'status',
-    value: foundationColors.red500,
+    value: semanticColors.error,
     usage: ['error messages', 'validation errors'],
   },
   'status.warning': {
     name: 'Warning',
     description: 'Color for warning states and messages',
     category: 'status',
-    value: foundationColors.yellow500,
+    value: semanticColors.warning,
     usage: ['warning messages', 'caution indicators'],
   },
 
@@ -118,21 +118,21 @@ export const colorRoles: ColorRoleDefinition = {
     name: 'Syntax Keyword',
     description: 'Color for programming language keywords',
     category: 'syntax',
-    value: foundationColors.blue500,
+    value: semanticColors.primary,
     usage: ['keywords', 'control flow'],
   },
   'syntax.string': {
     name: 'Syntax String',
     description: 'Color for string literals',
     category: 'syntax',
-    value: foundationColors.strColor,
+    value: semanticColors.text,
     usage: ['strings', 'literals'],
   },
   'syntax.comment': {
     name: 'Syntax Comment',
     description: 'Color for comments',
     category: 'syntax',
-    value: foundationColors.commentColor,
+    value: semanticColors.textSecondary,
     usage: ['comments', 'documentation'],
   },
 }

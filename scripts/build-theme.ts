@@ -7,51 +7,6 @@ import { writeFileSync } from 'fs'
 import { join } from 'path'
 
 /**
- * Функция для преобразования вложенных объектов в строковые значения
- * Обходит все свойства объекта и преобразует вложенные объекты в строковые значения
- */
-function flattenThemeColors(obj: any): any {
-  const result: any = {}
-
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const value = obj[key]
-
-      if (
-        typeof value === 'object' &&
-        value !== null &&
-        !Array.isArray(value)
-      ) {
-        // Проверяем, является ли объект цветом (все свойства - строки в формате цветов)
-        const keys = Object.keys(value)
-        const allStringValues = keys.every((k) => typeof value[k] === 'string')
-        const allColors = keys.every(
-          (k) =>
-            typeof value[k] === 'string' &&
-            /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/.test(value[k])
-        )
-
-        if (allStringValues && allColors && keys.length > 0) {
-          // Если это объект с цветами, используем значение 'primary', 'DEFAULT' или первое доступное значение
-          result[key] = value['primary'] ?? value['DEFAULT'] ?? value[keys[0]] ?? '#000000'
-        } else if (allStringValues && keys.length > 0) {
-          // Если все значения строки, но не цвета, рекурсивно обрабатываем
-          result[key] = flattenThemeColors(value)
-        } else {
-          // Рекурсивно обрабатываем вложенные объекты
-          result[key] = flattenThemeColors(value)
-        }
-      } else {
-        // Простые значения (строки, числа и т.д.) сохраняем как есть
-        result[key] = value
-      }
-    }
-  }
-
-  return result
-}
-
-/**
  * @description Основной объект темы, который будет преобразован в JSON.
  * Использует новую семантическую цветовую систему Tokyo Night Modern.
  *
@@ -72,7 +27,7 @@ const theme = {
   name: 'Tokyo Night Modern',
   type: 'dark',
   semanticHighlighting: true,
-  colors: flattenThemeColors(colors),
+  colors,
   tokenColors,
   semanticTokenColors,
   // Метаданные о новой семантической системе

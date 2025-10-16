@@ -1,28 +1,28 @@
-import { foundationColors } from '../foundation/colors'
+import { semanticColors } from '../semantic'
 
 export const baseSyntaxColors = {
   // Basic tokens
   keyword: foundationColors.blue500,
-  operator: foundationColors.opColor,
+  operator: semanticColors.secondary,
   punctuation: foundationColors.gray400,
   delimiter: foundationColors.gray500,
 
   // Literals
-  string: foundationColors.strColor,
-  number: foundationColors.numColor,
+  string: semanticColors.text,
+  number: semanticColors.warning,
   boolean: foundationColors.purple500,
   null: foundationColors.red400,
 
   // Comments
-  comment: foundationColors.commentColor,
-  docComment: foundationColors.docCommentColor,
-  docTag: foundationColors.docTagColor,
+  comment: semanticColors.textSecondary,
+  docComment: semanticColors.textSecondary,
+  docTag: semanticColors.secondary,
 
   // Variables and identifiers
-  variable: foundationColors.varColor,
-  parameter: foundationColors.paramColor,
+  variable: semanticColors.text,
+  parameter: semanticColors.textSecondary,
   property: foundationColors.cyan500,
-  constant: foundationColors.constColor,
+  constant: semanticColors.warning,
 
   // Functions and methods
   function: foundationColors.blue400,
@@ -41,14 +41,14 @@ export const baseSyntaxColors = {
   loop: foundationColors.purple400,
 
   // Special tokens
-  regex: foundationColors.regexColor,
+  regex: semanticColors.info,
   escape: foundationColors.orange400,
   interpolation: foundationColors.orange300,
 
   // Markup (for HTML-like languages)
-  tag: foundationColors.htmlTagColor,
-  attribute: foundationColors.htmlAttrColor,
-  attributeValue: foundationColors.strColor,
+  tag: semanticColors.primary,
+  attribute: semanticColors.secondary,
+  attributeValue: semanticColors.text,
 
   // CSS-specific
   selector: foundationColors.blue300,

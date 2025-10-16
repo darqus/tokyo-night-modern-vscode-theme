@@ -177,7 +177,7 @@ export const semanticTokenColors = {
     foreground: palette.variable,
   },
   'variable.readonly': {
-    foreground: palette.yellow,
+    foreground: palette.yellow50,
   },
   'variable.constant': {
     foreground: palette.constant,
@@ -212,7 +212,7 @@ export const semanticTokenColors = {
     foreground: palette.parameter,
   },
   'parameter.readonly': {
-    foreground: palette.yellow,
+    foreground: palette.yellow50,
   },
   'parameter.constant': {
     foreground: palette.constant,
@@ -235,7 +235,7 @@ export const semanticTokenColors = {
     foreground: palette.property,
   },
   'property.readonly': {
-    foreground: palette.yellow,
+    foreground: palette.yellow50,
   },
   'property.constant': {
     foreground: palette.constant,

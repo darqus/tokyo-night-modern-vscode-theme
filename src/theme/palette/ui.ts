@@ -3,8 +3,10 @@
  * UI-специфичные цвета для конкретных элементов интерфейса
  */
 
-import { foundationColors as primitiveColors } from './foundation'
 import { semanticColors } from './semantic'
+import { interfaceColors } from './semantic/interface'
+import { borderColors } from './semantic/borders'
+import { typographyColors } from './semantic/typography'
 
 export interface UIColors {
   // Background variations
@@ -15,7 +17,7 @@ export interface UIColors {
     elevated: string
     overlay: string
     transparent: string
-  }
+ }
 
   // Text variations
   text: {
@@ -25,7 +27,7 @@ export interface UIColors {
     disabled: string
     inverse: string
     placeholder: string
-  }
+ }
 
   // Border variations
   borders: {
@@ -60,68 +62,54 @@ export interface UIColors {
  * UI-specific color palette
  * Специфичные цвета для UI элементов, основанные на анализе использования
  */
-// UI-specific colors that are not in foundation but derived from it
-const uiSecondaryBackground = primitiveColors.gray800 // '#2a2f40' - вторичный фон
-const uiTertiaryBackground = primitiveColors.gray700 // '#515670' - третичный фон
-const uiElevatedBackground = primitiveColors.gray700 // '#515670' - приподнятый фон
-const uiTertiaryText = primitiveColors.gray600 // '#9aa5ce' - третичный текст
-const uiPlaceholderText = primitiveColors.gray700 // '#494f67' - placeholder текст
-const uiSubtleBorder = primitiveColors.gray700 // '#42465d' - тонкая граница
-const uiErrorBorder = primitiveColors.red600 // '#db4b4b' - граница ошибки
-const uiHoverState = primitiveColors.blue600 // '#45496c' - наведение
-const uiActiveState = primitiveColors.blue700 // '#515c7e' - активное состояние
-const uiSelectedState = primitiveColors.gray800 // '#1c202e' - выбранное состояние
-const uiDisabledState = primitiveColors.gray800 // '#2a2f40' - отключенное состояние
-const uiPressedState = primitiveColors.blue700 // '#394b70' - нажатое состояние
-
 export const uiColors: UIColors = {
   // Background variations - вариации фонов
   backgrounds: {
     primary: semanticColors.background, // #10151d - основной фон
-    secondary: uiSecondaryBackground, // вторичный фон (из оригинальной палитры)
-    tertiary: uiTertiaryBackground, // третичный фон (из оригинальной палитры)
-    elevated: uiElevatedBackground, // приподнятый фон (из оригинальной палитры)
-    overlay: primitiveColors.black, // #000000 - оверлей
-    transparent: primitiveColors.transparent, // #000000 - прозрачный
+    secondary: semanticColors.backgroundSecondary, // вторичный фон
+    tertiary: semanticColors.backgroundElevated, // третичный фон
+    elevated: semanticColors.backgroundElevated, // приподнятый фон
+    overlay: semanticColors.backgroundOverlay, // #00000 - оверлей
+    transparent: interfaceColors.overlay.tooltip, // прозрачный
   },
 
   // Text variations - вариации текста
   text: {
     primary: semanticColors.text, // #a9b1d6 - основной текст
     secondary: semanticColors.textSecondary, // #82859e - вторичный текст
-    tertiary: uiTertiaryText, // третичный текст (из оригинальной палитры)
+    tertiary: typographyColors.text.tertiary, // третичный текст
     disabled: semanticColors.textDisabled, // #515670 - отключенный текст
     inverse: semanticColors.textWhite, // #ffffff - инверсный текст
-    placeholder: uiPlaceholderText, // placeholder текст (из оригинальной палитры)
-  },
+    placeholder: typographyColors.text.tertiary, // placeholder текст
+ },
 
   // Border variations - вариации границ
   borders: {
     default: semanticColors.border, // #4e6ab2 - основная граница
-    subtle: uiSubtleBorder, // тонкая граница (из оригинальной палитры)
+    subtle: borderColors.divider.default, // тонкая граница
     focus: semanticColors.borderFocus, // #42a5f5 - граница фокуса
-    error: uiErrorBorder, // граница ошибки (из оригинальной палитры)
-    warning: primitiveColors.yellow500, // '#e0af68' - граница предупреждения
-    success: primitiveColors.green500, // '#9ece6a' - граница успеха
+    error: borderColors.border.error, // граница ошибки
+    warning: borderColors.border.warning, // граница предупреждения
+    success: borderColors.border.success, // граница успеха
   },
 
   // Interactive states - интерактивные состояния
   interactive: {
-    hover: uiHoverState, // наведение (из оригинальной палитры)
-    active: uiActiveState, // активное состояние (из оригинальной палитры)
-    selected: uiSelectedState, // выбранное состояние (из оригинальной палитры)
-    disabled: uiDisabledState, // отключенное состояние (из оригинальной палитры)
-    pressed: uiPressedState, // нажатое состояние (из оригинальной палитры)
+    hover: semanticColors.hover, // наведение
+    active: semanticColors.active, // активное состояние
+    selected: interfaceColors.surface.active, // выбранное состояние
+    disabled: interfaceColors.background.tertiary, // отключенное состояние
+    pressed: semanticColors.active, // нажатое состояние
   },
 
   // Special UI elements - специальные UI элементы
   special: {
-    shadow: primitiveColors.black, // #000000 - тень
+    shadow: semanticColors.shadow, // #00000 - тень
     glow: semanticColors.primary, // #7aa2f7 - свечение
     highlight: semanticColors.highlight, // #e0af68 - подсветка
     selection: semanticColors.selection, // #4e6ab2 - выделение
     focusRing: semanticColors.focus, // #42a5f5 - кольцо фокуса
-  },
+ },
 }
 
 /**
@@ -142,14 +130,14 @@ export function createUIAlphaVariants() {
   const variants: Record<string, string> = {}
 
   // Create alpha variants for backgrounds
-  Object.entries(uiColors.backgrounds).forEach(([key, color]) => {
+ Object.entries(uiColors.backgrounds).forEach(([key, color]) => {
     Object.entries(optimizedAlphaValues).forEach(([alpha, alphaValue]) => {
       variants[`${key}Alpha${alpha}`] = `${color}${alphaValue}`
     })
   })
 
   // Create alpha variants for interactive states
-  Object.entries(uiColors.interactive).forEach(([key, color]) => {
+ Object.entries(uiColors.interactive).forEach(([key, color]) => {
     Object.entries(optimizedAlphaValues).forEach(([alpha, alphaValue]) => {
       variants[`${key}Alpha${alpha}`] = `${color}${alphaValue}`
     })
@@ -162,7 +150,7 @@ export function createUIAlphaVariants() {
     })
   })
 
-  return variants
+ return variants
 }
 
 /**

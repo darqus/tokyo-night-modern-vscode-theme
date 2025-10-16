@@ -4,7 +4,6 @@
  */
 
 import { foundationColors as primitiveColors } from './foundation'
-import { foundationColors } from './foundation/colors'
 import { semanticColors } from './semantic'
 
 export interface SyntaxColors {
@@ -99,34 +98,19 @@ export interface SyntaxColors {
  * Цвета для подсветки синтаксиса, основанные на анализе использования
  */
 
-// Цвета для синтаксиса, импортированные из foundation
-const opColor = foundationColors.opColor
-const strColor = foundationColors.strColor
-const numColor = foundationColors.numColor
-const commentColor = foundationColors.commentColor
-const docCommentColor = foundationColors.docCommentColor
-const docTagColor = foundationColors.docTagColor
-const paramColor = foundationColors.paramColor
-const tagColor = foundationColors.tagColor
-const constColor = foundationColors.constColor
-const regexColor = foundationColors.regexColor
-const varColor = foundationColors.varColor
-const atRuleColor = foundationColors.atRuleColor
-const htmlTagColor = foundationColors.htmlTagColor
-const htmlAttrColor = foundationColors.htmlAttrColor
-const componentColor = foundationColors.componentColor
+// Цвета для синтаксиса, импортированные из foundation (устаревшее определение)
 
 export const syntaxColors: SyntaxColors = {
   // Basic syntax elements - основные элементы синтаксиса
   keyword: semanticColors.secondary, // #bb9af7 - ключевые слова (фиолетовый)
   keywordControl: primitiveColors.cyan700, // #0da0ba - управляющие конструкции (темно-голубой)
-  keywordOperator: opColor, // операторы (из оригинальной палитры)
-  string: strColor, // строки (из оригинальной палитры)
+  keywordOperator: semanticColors.secondary, // операторы (из оригинальной палитры)
+  string: semanticColors.text, // строки (из оригинальной палитры)
   stringEscape: primitiveColors.cyan500, // #7dcfff - экранированные символы
-  number: numColor, // числа (из оригинальной палитры)
-  comment: commentColor, // комментарии (из оригинальной палитры)
-  commentDoc: docCommentColor, // документация (из оригинальной палитры)
-  commentDocTag: docTagColor, // теги документации (из оригинальной палитры)
+  number: semanticColors.warning, // числа (из оригинальной палитры)
+  comment: semanticColors.textSecondary, // комментарии (из оригинальной палитры)
+  commentDoc: semanticColors.textSecondary, // документация (из оригинальной палитры)
+  commentDocTag: semanticColors.secondary, // теги документации (из оригинальной палитры)
 
   // Language constructs - языковые конструкции
   function: semanticColors.primary, // #7aa2f7 - функции (синий)
@@ -134,19 +118,19 @@ export const syntaxColors: SyntaxColors = {
   class: primitiveColors.cyan700, // #0da0ba - классы (темно-голубой)
   interface: primitiveColors.cyan700, // #0da0ba - интерфейсы (темно-голубой)
   type: semanticColors.secondary, // #bb9af7 - типы (фиолетовый)
-  variable: varColor, // #c0caf5 - переменные (светло-серый)
-  parameter: paramColor, // параметры (из оригинальной палитры)
+  variable: semanticColors.text, // #c0caf5 - переменные (светло-серый)
+  parameter: semanticColors.textSecondary, // параметры (из оригинальной палитры)
   property: primitiveColors.cyan500, // #7dcfff - свойства (голубой)
 
   // Markup languages - разметочные языки
-  tag: tagColor, // теги (из оригинальной палитры)
+  tag: semanticColors.primary, // теги (из оригинальной палитры)
   attribute: semanticColors.secondary, // #bb9af7 - атрибуты (фиолетовый)
-  attributeValue: tagColor, // значения атрибутов (из оригинальной палитры)
+  attributeValue: semanticColors.primary, // значения атрибутов (из оригинальной палитры)
   entity: primitiveColors.cyan700, // #0da0ba - HTML entities (темно-голубой)
 
   // Special tokens - специальные токены
-  constant: constColor, // константы (из оригинальной палитры)
-  regexp: regexColor, // регулярные выражения (из оригинальной палитры)
+  constant: semanticColors.warning, // константы (из оригинальной палитры)
+  regexp: semanticColors.info, // регулярные выражения (из оригинальной палитры)
   decorator: semanticColors.primary, // #7aa2f7 - декораторы (синий)
   annotation: semanticColors.secondary, // #bb9af7 - аннотации (фиолетовый)
 
@@ -156,8 +140,8 @@ export const syntaxColors: SyntaxColors = {
 
   // Language-specific - специфичные для языков
   javascript: {
-    module: varColor, // #c0caf5 - модули
-    this: tagColor, // this (из оригинальной палитры)
+    module: semanticColors.text, // #c0caf5 - модули
+    this: semanticColors.primary, // this (из оригинальной палитры)
     prototype: semanticColors.primary, // #7aa2f7 - прототипы
   },
 
@@ -170,24 +154,24 @@ export const syntaxColors: SyntaxColors = {
 
   css: {
     property: semanticColors.primary, // #7aa2f7 - CSS свойства
-    value: strColor, // CSS значения (из оригинальной палитры)
-    selector: varColor, // CSS селекторы (из оригинальной палитры)
+    value: semanticColors.text, // CSS значения (из оригинальной палитры)
+    selector: semanticColors.text, // CSS селекторы (из оригинальной палитры)
     pseudo: primitiveColors.cyan700, // #0da0ba - псевдо-селекторы
-    atRule: atRuleColor, // at-rules (из оригинальной палитры)
+    atRule: semanticColors.secondary, // at-rules (из оригинальной палитры)
   },
 
   html: {
-    tag: htmlTagColor, // HTML теги (из оригинальной палитры)
-    attribute: htmlAttrColor, // HTML атрибуты (из оригинальной палитры)
-    attributeValue: tagColor, // HTML значения атрибутов (из оригинальной палитры)
+    tag: semanticColors.primary, // HTML теги (из оригинальной палитры)
+    attribute: semanticColors.secondary, // HTML атрибуты (из оригинальной палитры)
+    attributeValue: semanticColors.primary, // HTML значения атрибутов (из оригинальной палитры)
     entity: primitiveColors.cyan700, // #0da0ba - HTML entities
-    component: componentColor, // компоненты (из оригинальной палитры)
+    component: semanticColors.primary, // компоненты (из оригинальной палитры)
   },
 
   markdown: {
     heading: primitiveColors.cyan500, // #7dcfff - заголовки
-    bold: varColor, // #c0caf5 - жирный текст
-    italic: varColor, // #c0caf5 - курсив
+    bold: semanticColors.text, // #c0caf5 - жирный текст
+    italic: semanticColors.text, // #c0caf5 - курсив
     code: primitiveColors.cyan500, // #7dcfff - код
     link: semanticColors.info, // ссылки (голубой)
     quote: semanticColors.textDisabled, // цитаты (темно-серый)
@@ -196,8 +180,8 @@ export const syntaxColors: SyntaxColors = {
 
   json: {
     key: semanticColors.primary, // #7aa2f7 - ключи JSON
-    string: strColor, // строки JSON (из оригинальной палитры)
-    number: numColor, // числа JSON (из оригинальной палитры)
+    string: semanticColors.text, // строки JSON (из оригинальной палитры)
+    number: semanticColors.warning, // числа JSON (из оригинальной палитры)
     boolean: semanticColors.warning, // #e0af68 - булевы значения
     null: semanticColors.textSecondary, // #82859e - null значения
   },
