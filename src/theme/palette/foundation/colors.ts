@@ -67,7 +67,7 @@ export const foundationColors = {
   gray500: '#97a2d3',
   gray600: '#6c7097',
   gray700: '#4b5172',
-  gray800: '#282e41',
+  gray800: '#1e2333',
   gray900: '#151b24',
   white: '#ffffff',
   black: '#000000',
