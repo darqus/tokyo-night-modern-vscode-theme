@@ -6,13 +6,13 @@ import { palette } from '../palette/index'
  */
 export const inputsButtonsColors = {
   'button.background': palette.blue800,
-  'button.foreground': palette.white,
+  'button.foreground': palette.blue100,
   'button.hoverBackground': palette.blue700,
-  'button.secondaryBackground': palette.cyan900,
-  'button.secondaryForeground': palette.white,
-  'button.secondaryHoverBackground': palette.cyan800,
+  'button.secondaryBackground': palette.gray800 + '8A',
+  'button.secondaryForeground': palette.blue100,
+  'button.secondaryHoverBackground': palette.gray800,
   'extensionButton.prominentBackground': palette.blue700,
-  'extensionButton.prominentForeground': palette.white,
+  'extensionButton.prominentForeground': palette.blue100,
   'extensionButton.prominentHoverBackground': palette.blue800,
   'input.background': palette.backgrounds.elevated,
   'input.border': palette.borders.subtle,
