@@ -8,14 +8,14 @@ import { opacityLevels } from '../palette/foundation/opacity'
 export const menuDropdownColors = {
   'dropdown.background': foundationColors.gray800,
   'dropdown.border': foundationColors.gray600 + opacityLevels.medium,
-  'dropdown.foreground': foundationColors.gray100,
+  'dropdown.foreground': foundationColors.gray400,
   'dropdown.listBackground': foundationColors.gray800,
   'menu.background': foundationColors.gray800,
   'menu.border': foundationColors.gray600 + opacityLevels.medium,
-  'menu.foreground': foundationColors.gray100,
+  'menu.foreground': foundationColors.gray400,
   'menu.selectionBackground': foundationColors.gray700,
-  'menu.selectionForeground': foundationColors.blue500,
+  'menu.selectionForeground': foundationColors.gray400,
   'menu.separatorBackground': foundationColors.gray600 + opacityLevels.medium,
   'menubar.selectionBackground': foundationColors.gray700,
-  'menubar.selectionForeground': foundationColors.gray100,
+  'menubar.selectionForeground': foundationColors.gray400,
 }
