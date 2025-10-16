@@ -32,11 +32,11 @@ function flattenThemeColors(obj: any): any {
         )
 
         if (allStringValues && allColors && keys.length > 0) {
-          // Если это объект с цветами, используем значение 'primary', если оно есть, иначе первое значение
-          result[key] = value['primary'] || value[keys[0]] || '#000'
+          // Если это объект с цветами, используем значение 'primary', 'DEFAULT' или первое доступное значение
+          result[key] = value['primary'] ?? value['DEFAULT'] ?? value[keys[0]] ?? '#000000'
         } else if (allStringValues && keys.length > 0) {
-          // Если все значения строки, но не цвета, используем первое значение
-          result[key] = value[keys[0]] || '[object Object]'
+          // Если все значения строки, но не цвета, рекурсивно обрабатываем
+          result[key] = flattenThemeColors(value)
         } else {
           // Рекурсивно обрабатываем вложенные объекты
           result[key] = flattenThemeColors(value)

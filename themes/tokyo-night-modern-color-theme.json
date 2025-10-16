@@ -3586,10 +3586,10 @@
     "version": "2.3.0",
     "buildSystem": "semantic-color-system",
     "paletteOptimization": {
-      "totalColors": 271,
+      "totalColors": 316,
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-16T17:22:01.392Z"
+    "buildDate": "2025-10-16T19:53:37.546Z"
   }
 }
