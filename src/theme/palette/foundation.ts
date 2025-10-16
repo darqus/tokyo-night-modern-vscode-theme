@@ -4,12 +4,14 @@
  * НЕ используются напрямую в UI компонентах
  */
 
-import { foundationColors } from './foundation/colors'
+import { foundationColors as foundationColorsImport } from './foundation/colors'
+
+export const foundationColors = foundationColorsImport
 
 export interface PrimitiveColors {
   // Blues
   blue50: string
- blue100: string
+  blue100: string
   blue200: string
   blue300: string
   blue400: string
@@ -33,7 +35,7 @@ export interface PrimitiveColors {
 
   // Greens
   green50: string
- green100: string
+  green100: string
   green200: string
   green300: string
   green400: string
@@ -45,7 +47,7 @@ export interface PrimitiveColors {
 
   // Yellows
   yellow50: string
- yellow100: string
+  yellow100: string
   yellow200: string
   yellow300: string
   yellow400: string
@@ -57,7 +59,7 @@ export interface PrimitiveColors {
 
   // Reds
   red50: string
- red100: string
+  red100: string
   red200: string
   red300: string
   red400: string
@@ -79,22 +81,75 @@ export interface PrimitiveColors {
   cyan800: string
   cyan900: string
 
+  // Teals
+  teal50: string
+  teal100: string
+  teal200: string
+  teal300: string
+  teal400: string
+  teal500: string
+  teal600: string
+  teal700: string
+  teal800: string
+  teal900: string
+
+  // Oranges
+  orange50: string
+  orange100: string
+  orange200: string
+  orange300: string
+  orange400: string
+  orange500: string
+  orange600: string
+  orange700: string
+  orange800: string
+  orange900: string
+
+  // Magentas
+  magenta50: string
+  magenta100: string
+  magenta200: string
+  magenta300: string
+  magenta400: string
+  magenta500: string
+  magenta600: string
+  magenta700: string
+  magenta800: string
+  magenta900: string
+
   // Grays
   gray50: string
- gray100: string
+  gray100: string
   gray200: string
- gray300: string
+  gray300: string
   gray400: string
   gray500: string
   gray600: string
- gray700: string
+  gray700: string
   gray800: string
   gray900: string
 
- // Special
+  // Special
   white: string
- black: string
- transparent: string
+  black: string
+  transparent: string
+
+  // Syntax-specific colors
+  opColor: string
+  strColor: string
+  numColor: string
+  commentColor: string
+  docCommentColor: string
+  docTagColor: string
+  paramColor: string
+  tagColor: string
+  constColor: string
+  regexColor: string
+  varColor: string
+  atRuleColor: string
+  htmlTagColor: string
+  htmlAttrColor: string
+  componentColor: string
 }
 
 /**

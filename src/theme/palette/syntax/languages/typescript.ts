@@ -1,102 +1,35 @@
-import { getColor } from '../../foundation/colors'
+import { foundationColors } from '../../foundation/colors'
 import { baseSyntaxColors } from '../base'
-import { javascriptColors } from './javascript'
-import type { SemanticColor } from '../../semantic/types'
+import { javascriptSyntaxColors } from './javascript'
 
-/**
- * TypeScript-специфичные элементы
- */
-export interface TypeScriptSyntaxColors
-  extends Omit<typeof javascriptColors, 'prototype'> {
-  // Типы
-  interface: SemanticColor
-  type: SemanticColor
-  enum: SemanticColor
-  namespace: SemanticColor
-  typeParameter: SemanticColor
-
-  // Модификаторы
-  public: SemanticColor
-  private: SemanticColor
-  protected: SemanticColor
-  readonly: SemanticColor
-  abstract: SemanticColor
-
-  // Утилиты типов
-  keyof: SemanticColor
-  typeof: SemanticColor
-  infer: SemanticColor
-  extends: SemanticColor
-  implements: SemanticColor
-
-  // Декораторы
-  decorator: SemanticColor
-  decoratorParameter: SemanticColor
-}
-
-/**
- * Цвета синтаксиса TypeScript
- */
-export const typescriptColors: TypeScriptSyntaxColors = {
+export const typescriptSyntaxColors = {
   // Наследуем цвета JavaScript
-  ...javascriptColors,
+  ...javascriptSyntaxColors,
 
   // Типы
-  interface: {
-    base: getColor('cyan', '700'),
-  },
-  type: {
-    base: getColor('cyan', '700'),
-  },
-  enum: {
-    base: getColor('purple', '500'),
-  },
-  namespace: {
-    base: getColor('blue', '500'),
-  },
-  typeParameter: {
-    base: getColor('yellow', '500'),
-  },
+  interface: foundationColors.teal400,
+  type: foundationColors.teal500,
+  enum: foundationColors.orange500,
+  namespace: foundationColors.teal300,
+  typeParameter: foundationColors.yellow600,
 
   // Модификаторы
-  public: {
-    base: baseSyntaxColors.keyword.base,
-  },
-  private: {
-    base: baseSyntaxColors.keyword.base,
-  },
-  protected: {
-    base: baseSyntaxColors.keyword.base,
-  },
-  readonly: {
-    base: baseSyntaxColors.keyword.base,
-  },
-  abstract: {
-    base: baseSyntaxColors.keyword.base,
-  },
+  public: baseSyntaxColors.keyword,
+  private: baseSyntaxColors.keyword,
+  protected: baseSyntaxColors.keyword,
+  readonly: baseSyntaxColors.keyword,
+  abstract: baseSyntaxColors.keyword,
 
   // Утилиты типов
-  keyof: {
-    base: getColor('purple', '500'),
-  },
-  typeof: {
-    base: getColor('purple', '500'),
-  },
-  infer: {
-    base: getColor('purple', '500'),
-  },
-  extends: {
-    base: baseSyntaxColors.keyword.base,
-  },
-  implements: {
-    base: baseSyntaxColors.keyword.base,
-  },
+  keyof: foundationColors.purple500,
+  typeof: foundationColors.purple500,
+  infer: foundationColors.purple500,
+  extends: baseSyntaxColors.keyword,
+  implements: baseSyntaxColors.keyword,
 
   // Декораторы
-  decorator: {
-    base: getColor('yellow', '500'),
-  },
-  decoratorParameter: {
-    base: getColor('cyan', '700'),
-  },
-}
+  decorator: foundationColors.magenta500,
+  decoratorParameter: foundationColors.cyan700,
+} as const
+
+export type TypeScriptSyntaxToken = keyof typeof typescriptSyntaxColors

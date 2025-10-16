@@ -7,7 +7,6 @@ export const javascriptSyntaxColors = {
 
   // JavaScript-specific overrides and additions
   keyword: {
-    ...baseSyntaxColors.keyword,
     // Specific keywords
     const: foundationColors.blue600,
     let: foundationColors.blue600,
@@ -56,6 +55,10 @@ export const javascriptSyntaxColors = {
     attributeValue: foundationColors.green300,
     expression: foundationColors.orange400,
   },
+
+  // Decorators (for JavaScript/TypeScript decorators)
+  decorator: foundationColors.magenta500,
+  decoratorParameter: foundationColors.cyan700,
 
   // Special JavaScript constructs
   module: foundationColors.teal400,
