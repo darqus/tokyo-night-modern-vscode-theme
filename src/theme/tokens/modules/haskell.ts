@@ -61,10 +61,7 @@ export const haskellTokens: TokenColor[] = [
   },
   {
     name: 'Haskell function',
-    scope: [
-      'entity.name.function.haskell',
-      'support.function.prelude.haskell',
-    ],
+    scope: ['entity.name.function.haskell', 'support.function.prelude.haskell'],
     settings: {
       foreground: palette.function,
     },
@@ -82,39 +79,28 @@ export const haskellTokens: TokenColor[] = [
   },
   {
     name: 'Haskell variable',
-    scope: [
-      'variable.other.haskell',
-      'meta.declaration.function.haskell',
-    ],
+    scope: ['variable.other.haskell', 'meta.declaration.function.haskell'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'Haskell string',
-    scope: [
-      'string.quoted.double.haskell',
-      'string.quoted.single.haskell',
-    ],
+    scope: ['string.quoted.double.haskell', 'string.quoted.single.haskell'],
     settings: {
       foreground: palette.string,
     },
   },
   {
     name: 'Haskell number',
-    scope: [
-      'constant.numeric.haskell',
-    ],
+    scope: ['constant.numeric.haskell'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Haskell comment',
-    scope: [
-      'comment.line.double-dash.haskell',
-      'comment.block.haskell',
-    ],
+    scope: ['comment.line.double-dash.haskell', 'comment.block.haskell'],
     settings: {
       foreground: palette.comment,
     },

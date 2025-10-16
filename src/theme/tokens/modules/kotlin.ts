@@ -75,10 +75,7 @@ export const kotlinTokens: TokenColor[] = [
   },
   {
     name: 'Kotlin built-in types',
-    scope: [
-      'storage.type.primitive.kotlin',
-      'support.type.primitive.kotlin',
-    ],
+    scope: ['storage.type.primitive.kotlin', 'support.type.primitive.kotlin'],
     settings: {
       foreground: palette.type,
     },
@@ -108,10 +105,7 @@ export const kotlinTokens: TokenColor[] = [
   },
   {
     name: 'Kotlin method call',
-    scope: [
-      'meta.function-call.kotlin',
-      'entity.name.function.member.kotlin',
-    ],
+    scope: ['meta.function-call.kotlin', 'entity.name.function.member.kotlin'],
     settings: {
       foreground: palette.function,
     },
@@ -136,12 +130,10 @@ export const kotlinTokens: TokenColor[] = [
     settings: {
       foreground: palette.variable,
     },
- },
+  },
   {
     name: 'Kotlin parameter',
-    scope: [
-      'variable.parameter.kotlin',
-    ],
+    scope: ['variable.parameter.kotlin'],
     settings: {
       foreground: palette.parameter,
     },
@@ -159,37 +151,28 @@ export const kotlinTokens: TokenColor[] = [
   },
   {
     name: 'Kotlin number',
-    scope: [
-      'constant.numeric.kotlin',
-    ],
+    scope: ['constant.numeric.kotlin'],
     settings: {
       foreground: palette.constant,
     },
   },
- {
+  {
     name: 'Kotlin boolean',
-    scope: [
-      'constant.language.boolean.kotlin',
-    ],
+    scope: ['constant.language.boolean.kotlin'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Kotlin null value',
-    scope: [
-      'constant.language.null.kotlin',
-    ],
+    scope: ['constant.language.null.kotlin'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Kotlin comment',
-    scope: [
-      'comment.line.double-slash.kotlin',
-      'comment.block.kotlin',
-    ],
+    scope: ['comment.line.double-slash.kotlin', 'comment.block.kotlin'],
     settings: {
       foreground: palette.comment,
     },
@@ -205,11 +188,9 @@ export const kotlinTokens: TokenColor[] = [
       foreground: palette.decorator,
     },
   },
- {
+  {
     name: 'Kotlin lambda parameter',
-    scope: [
-      'variable.parameter.function.lambda.kotlin',
-    ],
+    scope: ['variable.parameter.function.lambda.kotlin'],
     settings: {
       foreground: palette.parameter,
     },

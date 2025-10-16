@@ -86,10 +86,7 @@ export const swiftTokens: TokenColor[] = [
   },
   {
     name: 'Swift built-in types',
-    scope: [
-      'storage.type.primitive.swift',
-      'support.type.primitive.swift',
-    ],
+    scope: ['storage.type.primitive.swift', 'support.type.primitive.swift'],
     settings: {
       foreground: palette.type,
     },
@@ -119,10 +116,7 @@ export const swiftTokens: TokenColor[] = [
   },
   {
     name: 'Swift method call',
-    scope: [
-      'meta.function-call.swift',
-      'entity.name.function.member.swift',
-    ],
+    scope: ['meta.function-call.swift', 'entity.name.function.member.swift'],
     settings: {
       foreground: palette.function,
     },
@@ -150,9 +144,7 @@ export const swiftTokens: TokenColor[] = [
   },
   {
     name: 'Swift parameter',
-    scope: [
-      'variable.parameter.swift',
-    ],
+    scope: ['variable.parameter.swift'],
     settings: {
       foreground: palette.parameter,
     },
@@ -170,38 +162,28 @@ export const swiftTokens: TokenColor[] = [
   },
   {
     name: 'Swift number',
-    scope: [
-      'constant.numeric.swift',
-    ],
+    scope: ['constant.numeric.swift'],
     settings: {
       foreground: palette.constant,
     },
   },
- {
+  {
     name: 'Swift boolean',
-    scope: [
-      'constant.language.boolean.swift',
-    ],
+    scope: ['constant.language.boolean.swift'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Swift nil',
-    scope: [
-      'constant.language.nil.swift',
-      'constant.language.swift',
-    ],
+    scope: ['constant.language.nil.swift', 'constant.language.swift'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'Swift comment',
-    scope: [
-      'comment.line.double-slash.swift',
-      'comment.block.swift',
-    ],
+    scope: ['comment.line.double-slash.swift', 'comment.block.swift'],
     settings: {
       foreground: palette.comment,
     },
@@ -224,18 +206,14 @@ export const swiftTokens: TokenColor[] = [
   },
   {
     name: 'Swift closure parameter',
-    scope: [
-      'variable.parameter.closure.swift',
-    ],
+    scope: ['variable.parameter.closure.swift'],
     settings: {
       foreground: palette.parameter,
     },
   },
   {
     name: 'Swift extension',
-    scope: [
-      'meta.extension.swift',
-    ],
+    scope: ['meta.extension.swift'],
     settings: {
       foreground: palette.class,
     },

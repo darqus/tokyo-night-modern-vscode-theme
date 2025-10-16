@@ -1,6 +1,6 @@
 /**
  * Скрипт для валидации токенов при генерации
- * 
+ *
  * Этот скрипт запускает валидацию дизайн-токенов во время процесса генерации
  * и проверяет корректность значений токенов перед их экспортом.
  */
@@ -20,12 +20,14 @@ if (validationResults.isValid) {
   console.log('✅ All tokens are valid!')
 } else {
   console.log('❌ Validation errors found:')
-  validationResults.errors.forEach(error => console.error(`  ❌ ${error}`))
+  validationResults.errors.forEach((error) => console.error(`  ❌ ${error}`))
 }
 
 if (validationResults.warnings.length > 0) {
   console.log('\n⚠️  Warnings:')
-  validationResults.warnings.forEach(warning => console.warn(`  ⚠️ ${warning}`))
+  validationResults.warnings.forEach((warning) =>
+    console.warn(`  ⚠️ ${warning}`)
+  )
 }
 
 console.log('='.repeat(50))
@@ -38,8 +40,8 @@ const validationReport = {
   warnings: validationResults.warnings,
   summary: {
     errorCount: validationResults.errors.length,
-    warningCount: validationResults.warnings.length
-  }
+    warningCount: validationResults.warnings.length,
+  },
 }
 
 const reportPath = join(__dirname, '../dist/validation-report.json')
@@ -50,14 +52,14 @@ console.log(`📊 Validation report saved to: ${reportPath}`)
 // Также генерируем CSS переменные только если валидация пройдена успешно
 if (validationResults.isValid) {
   console.log('\n🎨 Generating CSS variables...')
-  
+
   // Генерация CSS переменных для темной и светлой тем
- const completeCSS = cssGenerator.generateCompleteCSS()
-  
+  const completeCSS = cssGenerator.generateCompleteCSS()
+
   // Запись в файл
   const outputPath = join(__dirname, '../dist/theme-variables.css')
   writeFileSync(outputPath, completeCSS)
-  
+
   console.log(`✅ CSS variables generated: ${outputPath}`)
 } else {
   console.log('\n❌ Skipping CSS generation due to validation errors')

@@ -1,6 +1,6 @@
 /**
  * Скрипт для синхронизации дизайн-токенов между различными форматами
- * 
+ *
  * Этот скрипт проверяет синхронизацию между исходными дизайн-токенами
  * и их экспортированными версиями в различных форматах.
  */
@@ -12,7 +12,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 
 interface ValidationResult {
- isValid: boolean
+  isValid: boolean
   errors: string[]
   warnings: string[]
 }
@@ -30,16 +30,22 @@ function checkTokenSynchronization(): ValidationResult {
     // Проверяем наличие экспортированных токенов
     const exportedDarkPath = join(__dirname, '../dist/tokens-dark.json')
     const exportedLightPath = join(__dirname, '../dist/tokens-light.json')
-    
-    const exportedDarkTokens = JSON.parse(readFileSync(exportedDarkPath, 'utf8'))
-    const exportedLightTokens = JSON.parse(readFileSync(exportedLightPath, 'utf8'))
+
+    const exportedDarkTokens = JSON.parse(
+      readFileSync(exportedDarkPath, 'utf8')
+    )
+    const exportedLightTokens = JSON.parse(
+      readFileSync(exportedLightPath, 'utf8')
+    )
 
     // Проверяем, что все исходные токены присутствуют в экспортированных
     for (const [path, value] of Object.entries(sourceDarkTokens)) {
       if (!(path in exportedDarkTokens)) {
         errors.push(`Dark theme token missing in exported file: ${path}`)
       } else if (exportedDarkTokens[path] !== value) {
-        errors.push(`Dark theme token value mismatch for ${path}: source="${value}", exported="${exportedDarkTokens[path]}"`)
+        errors.push(
+          `Dark theme token value mismatch for ${path}: source="${value}", exported="${exportedDarkTokens[path]}"`
+        )
       }
     }
 
@@ -47,7 +53,9 @@ function checkTokenSynchronization(): ValidationResult {
       if (!(path in exportedLightTokens)) {
         errors.push(`Light theme token missing in exported file: ${path}`)
       } else if (exportedLightTokens[path] !== value) {
-        errors.push(`Light theme token value mismatch for ${path}: source="${value}", exported="${exportedLightTokens[path]}"`)
+        errors.push(
+          `Light theme token value mismatch for ${path}: source="${value}", exported="${exportedLightTokens[path]}"`
+        )
       }
     }
 
@@ -70,7 +78,7 @@ function checkTokenSynchronization(): ValidationResult {
   return {
     isValid: errors.length === 0,
     errors,
-    warnings
+    warnings,
   }
 }
 
@@ -97,7 +105,7 @@ function syncTokens(): ValidationResult {
   return {
     isValid: errors.length === 0,
     errors,
-    warnings
+    warnings,
   }
 }
 
@@ -111,12 +119,12 @@ if (syncResult.isValid) {
   console.log('✅ All tokens are synchronized!')
 } else {
   console.log('❌ Synchronization issues found:')
-  syncResult.errors.forEach(error => console.error(`  ❌ ${error}`))
+  syncResult.errors.forEach((error) => console.error(`  ❌ ${error}`))
 }
 
 if (syncResult.warnings.length > 0) {
   console.log('\n⚠️  Warnings:')
-  syncResult.warnings.forEach(warning => console.warn(`  ⚠️ ${warning}`))
+  syncResult.warnings.forEach((warning) => console.warn(`  ⚠️ ${warning}`))
 }
 
 console.log('='.repeat(50))
@@ -125,8 +133,10 @@ console.log('='.repeat(50))
 const validationResults = tokenValidation.runAllValidations()
 if (!validationResults.isValid) {
   console.log('\n🔍 Additional validation issues:')
-  validationResults.errors.forEach(error => console.error(`  ❌ ${error}`))
-  validationResults.warnings.forEach(warning => console.warn(`  ⚠️ ${warning}`))
+  validationResults.errors.forEach((error) => console.error(`  ❌ ${error}`))
+  validationResults.warnings.forEach((warning) =>
+    console.warn(`  ⚠️ ${warning}`)
+  )
 }
 
 // Возвращаем результат для возможного использования в CI/CD

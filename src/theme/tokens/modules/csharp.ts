@@ -74,13 +74,10 @@ export const csharpTokens: TokenColor[] = [
     settings: {
       foreground: palette.keyword,
     },
- },
+  },
   {
     name: 'C# built-in types',
-    scope: [
-      'storage.type.primitive.cs',
-      'support.type.primitive.cs',
-    ],
+    scope: ['storage.type.primitive.cs', 'support.type.primitive.cs'],
     settings: {
       foreground: palette.type,
     },
@@ -100,66 +97,49 @@ export const csharpTokens: TokenColor[] = [
   },
   {
     name: 'C# method',
-    scope: [
-      'entity.name.function.cs',
-      'meta.method.identifier.cs',
-    ],
+    scope: ['entity.name.function.cs', 'meta.method.identifier.cs'],
     settings: {
       foreground: palette.function,
     },
- },
+  },
   {
     name: 'C# method call',
-    scope: [
-      'meta.method-call.cs',
-      'entity.name.function.member.cs',
-    ],
+    scope: ['meta.method-call.cs', 'entity.name.function.member.cs'],
     settings: {
       foreground: palette.function,
     },
   },
   {
     name: 'C# namespace',
-    scope: [
-      'entity.name.type.namespace.cs',
-    ],
+    scope: ['entity.name.type.namespace.cs'],
     settings: {
       foreground: palette.variable,
     },
   },
   {
     name: 'C# property',
-    scope: [
-      'entity.name.variable.property.cs',
-    ],
+    scope: ['entity.name.variable.property.cs'],
     settings: {
       foreground: palette.property,
     },
   },
   {
     name: 'C# field',
-    scope: [
-      'entity.name.variable.field.cs',
-    ],
+    scope: ['entity.name.variable.field.cs'],
     settings: {
       foreground: palette.property,
     },
   },
   {
     name: 'C# parameter',
-    scope: [
-      'variable.parameter.cs',
-    ],
+    scope: ['variable.parameter.cs'],
     settings: {
       foreground: palette.parameter,
     },
   },
   {
     name: 'C# variable',
-    scope: [
-      'variable.other.readwrite.cs',
-      'variable.other.constant.cs',
-    ],
+    scope: ['variable.other.readwrite.cs', 'variable.other.constant.cs'],
     settings: {
       foreground: palette.variable,
     },
@@ -178,57 +158,42 @@ export const csharpTokens: TokenColor[] = [
   },
   {
     name: 'C# number',
-    scope: [
-      'constant.numeric.cs',
-    ],
+    scope: ['constant.numeric.cs'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'C# boolean',
-    scope: [
-      'constant.language.boolean.cs',
-    ],
+    scope: ['constant.language.boolean.cs'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'C# null value',
-    scope: [
-      'constant.language.null.cs',
-    ],
+    scope: ['constant.language.null.cs'],
     settings: {
       foreground: palette.constant,
     },
   },
   {
     name: 'C# comment',
-    scope: [
-      'comment.line.double-slash.cs',
-      'comment.block.cs',
-    ],
+    scope: ['comment.line.double-slash.cs', 'comment.block.cs'],
     settings: {
       foreground: palette.comment,
     },
   },
   {
     name: 'C# preprocessor',
-    scope: [
-      'keyword.preprocessor.cs',
-      'meta.preprocessor.cs',
-    ],
+    scope: ['keyword.preprocessor.cs', 'meta.preprocessor.cs'],
     settings: {
       foreground: palette.keyword,
     },
   },
   {
     name: 'C# attribute',
-    scope: [
-      'meta.attribute.cs',
-      'entity.name.type.attribute.cs',
-    ],
+    scope: ['meta.attribute.cs', 'entity.name.type.attribute.cs'],
     settings: {
       foreground: palette.decorator,
     },

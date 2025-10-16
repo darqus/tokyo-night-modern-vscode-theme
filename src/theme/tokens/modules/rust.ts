@@ -2,7 +2,7 @@ import { TokenColor } from '../../token-utils'
 import { palette } from '../../palette/index'
 
 export const rustTokens: TokenColor[] = [
- {
+  {
     name: 'Rust keyword',
     scope: [
       'keyword.control.rust',
@@ -51,7 +51,7 @@ export const rustTokens: TokenColor[] = [
       foreground: palette.type,
     },
   },
- {
+  {
     name: 'Rust macro',
     scope: [
       'entity.name.function.macro.rust',
@@ -89,19 +89,14 @@ export const rustTokens: TokenColor[] = [
   },
   {
     name: 'Rust type',
-    scope: [
-      'entity.name.type.rust',
-      'storage.type.core.rust',
-    ],
+    scope: ['entity.name.type.rust', 'storage.type.core.rust'],
     settings: {
       foreground: palette.type,
     },
   },
   {
     name: 'Rust variable',
-    scope: [
-      'variable.other.rust',
-    ],
+    scope: ['variable.other.rust'],
     settings: {
       foreground: palette.variable,
     },
