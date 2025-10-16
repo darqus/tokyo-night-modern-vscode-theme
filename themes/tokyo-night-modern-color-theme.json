@@ -78,8 +78,8 @@
     "editorInfo.foreground": "#7dcfff",
     "editorLightBulb.foreground": "#e0af68",
     "editorLightBulbAutoFix.foreground": "#e0af68",
-    "editorLineNumber.activeForeground": "#97a2d3",
-    "editorLineNumber.foreground": "#6c7097",
+    "editorLineNumber.activeForeground": "#6c7097",
+    "editorLineNumber.foreground": "#4b5172",
     "editorLink.activeForeground": "#97a2d3",
     "editorMarkerNavigation.background": "#0a1018",
     "editorOverviewRuler.border": "#000000",
@@ -3590,6 +3590,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-16T09:06:44.162Z"
+    "buildDate": "2025-10-16T09:14:42.487Z"
   }
 }
