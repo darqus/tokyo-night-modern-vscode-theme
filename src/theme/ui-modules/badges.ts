@@ -1,14 +1,14 @@
-import { foundationColors } from '../palette/foundation/colors'
+import { getToken } from '../design-tokens'
 
 /**
  * Badges UI элементы
  * Эти токены отвечают за оформление значков (badges) в VS Code
  */
 export const badgeColors = {
-  'badge.background': foundationColors.purple800,
-  'badge.foreground': foundationColors.white,
-  'activityBarBadge.background': foundationColors.purple800,
-  'activityBarBadge.foreground': foundationColors.white,
-  'extensionBadge.remoteBackground': foundationColors.purple800,
-  'extensionBadge.remoteForeground': foundationColors.white,
+  'badge.background': getToken('color.interactive.secondary'),
+  'badge.foreground': getToken('color.interactive.secondary-text'),
+  'activityBarBadge.background': getToken('color.interactive.secondary'),
+  'activityBarBadge.foreground': getToken('color.interactive.secondary-text'),
+  'extensionBadge.remoteBackground': getToken('color.interactive.secondary'),
+  'extensionBadge.remoteForeground': getToken('color.interactive.secondary-text'),
 }

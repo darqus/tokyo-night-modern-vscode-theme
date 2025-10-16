@@ -1,18 +1,18 @@
-import { foundationColors } from '../palette/foundation/colors'
+import { getToken } from '../design-tokens'
 
 /**
  * Notifications & Widgets UI элементы
  * Эти токены отвечают за оформление уведомлений и виджетов в VS Code
  */
 export const notificationWidgetColors = {
-  'debugExceptionWidget.background': foundationColors.gray800,
-  'debugExceptionWidget.border': foundationColors.red500,
-  'notificationCenterHeader.background': foundationColors.gray800,
-  'notificationCenterHeader.foreground': foundationColors.gray100,
-  'notificationLink.foreground': foundationColors.gray600,
-  'notifications.background': foundationColors.gray800,
-  'notifications.foreground': foundationColors.gray100,
-  'notificationsErrorIcon.foreground': foundationColors.red500,
-  'notificationsInfoIcon.foreground': foundationColors.cyan500,
-  'notificationsWarningIcon.foreground': foundationColors.yellow500,
+  'debugExceptionWidget.background': getToken('color.background.primary'),
+  'debugExceptionWidget.border': getToken('color.status.error'),
+  'notificationCenterHeader.background': getToken('color.background.primary'),
+  'notificationCenterHeader.foreground': getToken('color.text.primary'),
+  'notificationLink.foreground': getToken('color.text.secondary'),
+  'notifications.background': getToken('color.background.primary'),
+  'notifications.foreground': getToken('color.text.primary'),
+  'notificationsErrorIcon.foreground': getToken('color.status.error'),
+  'notificationsInfoIcon.foreground': getToken('color.status.info'),
+  'notificationsWarningIcon.foreground': getToken('color.status.warning'),
 }
