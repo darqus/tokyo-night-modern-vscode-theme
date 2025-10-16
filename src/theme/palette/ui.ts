@@ -44,7 +44,7 @@ export interface UIColors {
     selected: string
     disabled: string
     pressed: string
-  }
+ }
 
   // Special UI elements
   special: {
@@ -60,13 +60,27 @@ export interface UIColors {
  * UI-specific color palette
  * Специфичные цвета для UI элементов, основанные на анализе использования
  */
+// UI-specific colors that are not in foundation but derived from it
+const uiSecondaryBackground = primitiveColors.gray800 // '#2a2f40' - вторичный фон
+const uiTertiaryBackground = primitiveColors.gray700 // '#515670' - третичный фон
+const uiElevatedBackground = primitiveColors.gray700 // '#515670' - приподнятый фон
+const uiTertiaryText = primitiveColors.gray600 // '#9aa5ce' - третичный текст
+const uiPlaceholderText = primitiveColors.gray700 // '#494f67' - placeholder текст
+const uiSubtleBorder = primitiveColors.gray700 // '#42465d' - тонкая граница
+const uiErrorBorder = primitiveColors.red600 // '#db4b4b' - граница ошибки
+const uiHoverState = primitiveColors.blue600 // '#45496c' - наведение
+const uiActiveState = primitiveColors.blue700 // '#515c7e' - активное состояние
+const uiSelectedState = primitiveColors.gray800 // '#1c202e' - выбранное состояние
+const uiDisabledState = primitiveColors.gray800 // '#2a2f40' - отключенное состояние
+const uiPressedState = primitiveColors.blue700 // '#394b70' - нажатое состояние
+
 export const uiColors: UIColors = {
   // Background variations - вариации фонов
   backgrounds: {
     primary: semanticColors.background, // #10151d - основной фон
-    secondary: '#0a1018', // вторичный фон (из оригинальной палитры)
-    tertiary: '#17233d', // третичный фон (из оригинальной палитры)
-    elevated: '#1c1d29', // приподнятый фон (из оригинальной палитры)
+    secondary: uiSecondaryBackground, // вторичный фон (из оригинальной палитры)
+    tertiary: uiTertiaryBackground, // третичный фон (из оригинальной палитры)
+    elevated: uiElevatedBackground, // приподнятый фон (из оригинальной палитры)
     overlay: primitiveColors.black, // #000000 - оверлей
     transparent: primitiveColors.transparent, // #000000 - прозрачный
   },
@@ -75,29 +89,29 @@ export const uiColors: UIColors = {
   text: {
     primary: semanticColors.text, // #a9b1d6 - основной текст
     secondary: semanticColors.textSecondary, // #82859e - вторичный текст
-    tertiary: '#9aa5ce', // третичный текст (из оригинальной палитры)
+    tertiary: uiTertiaryText, // третичный текст (из оригинальной палитры)
     disabled: semanticColors.textDisabled, // #515670 - отключенный текст
     inverse: semanticColors.textWhite, // #ffffff - инверсный текст
-    placeholder: '#494f67', // placeholder текст (из оригинальной палитры)
+    placeholder: uiPlaceholderText, // placeholder текст (из оригинальной палитры)
   },
 
   // Border variations - вариации границ
   borders: {
     default: semanticColors.border, // #4e6ab2 - основная граница
-    subtle: '#42465d', // тонкая граница (из оригинальной палитры)
+    subtle: uiSubtleBorder, // тонкая граница (из оригинальной палитры)
     focus: semanticColors.borderFocus, // #42a5f5 - граница фокуса
-    error: '#db4b4b', // граница ошибки (из оригинальной палитры)
-    warning: '#e0af68', // граница предупреждения (из оригинальной палитры)
-    success: '#9ece6a', // граница успеха (из оригинальной палитры)
+    error: uiErrorBorder, // граница ошибки (из оригинальной палитры)
+    warning: primitiveColors.yellow500, // '#e0af68' - граница предупреждения
+    success: primitiveColors.green500, // '#9ece6a' - граница успеха
   },
 
   // Interactive states - интерактивные состояния
   interactive: {
-    hover: '#45496c', // наведение (из оригинальной палитры)
-    active: '#515c7e', // активное состояние (из оригинальной палитры)
-    selected: '#1c202e', // выбранное состояние (из оригинальной палитры)
-    disabled: '#2a2f40', // отключенное состояние (из оригинальной палитры)
-    pressed: '#394b70', // нажатое состояние (из оригинальной палитры)
+    hover: uiHoverState, // наведение (из оригинальной палитры)
+    active: uiActiveState, // активное состояние (из оригинальной палитры)
+    selected: uiSelectedState, // выбранное состояние (из оригинальной палитры)
+    disabled: uiDisabledState, // отключенное состояние (из оригинальной палитры)
+    pressed: uiPressedState, // нажатое состояние (из оригинальной палитры)
   },
 
   // Special UI elements - специальные UI элементы

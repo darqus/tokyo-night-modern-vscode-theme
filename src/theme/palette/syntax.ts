@@ -4,6 +4,7 @@
  */
 
 import { foundationColors as primitiveColors } from './foundation'
+import { foundationColors } from './foundation/colors'
 import { semanticColors } from './semantic'
 
 export interface SyntaxColors {
@@ -98,22 +99,22 @@ export interface SyntaxColors {
  * Цвета для подсветки синтаксиса, основанные на анализе использования
  */
 
-// Локальные константы для жестко закодированных цветов, чтобы избежать дублирования
-const opColor = '#bfd5de'
-const strColor = '#85d0b7'
-const numColor = '#a492ff'
-const commentColor = '#696f87'
-const docCommentColor = '#5a638c'
-const docTagColor = '#646e9c'
-const paramColor = '#73daca'
-const tagColor = '#fd86e1'
-const constColor = '#e55381'
-const regexColor = '#b4f9f8'
-const varColor = '#c0caf5'
-const atRuleColor = '#ff9e64'
-const htmlTagColor = '#769df7'
-const htmlAttrColor = '#9a9af7'
-const componentColor = '#fdc886'
+// Цвета для синтаксиса, импортированные из foundation
+const opColor = foundationColors.opColor
+const strColor = foundationColors.strColor
+const numColor = foundationColors.numColor
+const commentColor = foundationColors.commentColor
+const docCommentColor = foundationColors.docCommentColor
+const docTagColor = foundationColors.docTagColor
+const paramColor = foundationColors.paramColor
+const tagColor = foundationColors.tagColor
+const constColor = foundationColors.constColor
+const regexColor = foundationColors.regexColor
+const varColor = foundationColors.varColor
+const atRuleColor = foundationColors.atRuleColor
+const htmlTagColor = foundationColors.htmlTagColor
+const htmlAttrColor = foundationColors.htmlAttrColor
+const componentColor = foundationColors.componentColor
 
 export const syntaxColors: SyntaxColors = {
   // Basic syntax elements - основные элементы синтаксиса
