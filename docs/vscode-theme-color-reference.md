@@ -11,6 +11,7 @@
 Цвета редактора определяют внешний вид основной области редактирования кода, включая фоны, текст, подсветку синтаксиса и визуальные эффекты.
 
 **Основные цвета:**
+
 - `editor.background` - Цвет фона редактора
 - `editor.foreground` - Цвет переднего плана редактора (текст по умолчанию)
 - `editorLineNumber.foreground` - Цвет номеров строк
@@ -19,6 +20,7 @@
 - `editorCursor.background` - Цвет фона курсора редактора
 
 **Цвета выделения:**
+
 - `editor.selectionBackground` - Цвет выделенного текста
 - `editor.selectionForeground` - Цвет текста в выделении (если отличается)
 - `editor.inactiveSelectionBackground` - Цвет выделения в неактивном редакторе
@@ -27,12 +29,14 @@
 - `editor.wordHighlightStrongBackground` - Цвет фона символов, совпадающих с выбором курсора с жирным шрифтом
 
 **Цвета поиска:**
+
 - `editor.findMatchBackground` - Цвет фона текущего результата поиска
 - `editor.findMatchHighlightBackground` - Цвет фона других результатов поиска
 - `editor.findRangeHighlightBackground` - Цвет фона области, ограничивающей поиск
 - `editor.hoverHighlightBackground` - Цвет фона символа при наведении мыши
 
 **Цвета скобок:**
+
 - `editorBracketMatch.background` - Цвет фона парной скобки
 - `editorBracketMatch.border` - Цвет границы парной скобки
 - `editorBracketHighlight.foreground1` - Цвет скобки первого уровня
@@ -44,6 +48,7 @@
 - `editorBracketHighlight.unexpectedBracket.foreground` - Цвет неожиданной скобки
 
 **Цвета линеек и отступов:**
+
 - `editorRuler.foreground` - Цвет вертикальных линеек
 - `editorIndentGuide.background1` - Цвет направляющих отступа
 - `editorIndentGuide.activeBackground1` - Цвет активных направляющих отступа
@@ -51,16 +56,19 @@
 - `editorActiveLineNumber.foreground` - Цвет активного номера строки
 
 **Цвета подсветки скобок:**
+
 - `editorBracketPairGuide.activeBackground1` - Цвет активного руководства по скобкам
 - `editorBracketPairGuide.inactiveBackground1` - Цвет неактивного руководства по скобкам
 
 **Цвета фона и подсветки:**
+
 - `editor.lineHighlightBackground` - Цвет фона текущей строки
 - `editor.lineHighlightBorder` - Цвет границы текущей строки
 - `editor.rangeHighlightBackground` - Цвет фона выбранного диапазона
 - `editor.symbolHighlightBackground` - Цвет фона символа при навигации
 
 **Цвета ошибок и предупреждений:**
+
 - `editorError.foreground` - Цвет переднего плана диагностики ошибок
 - `editorError.background` - Цвет фона диагностики ошибок
 - `editorWarning.foreground` - Цвет переднего плана диагностики предупреждений
@@ -71,12 +79,14 @@
 - `editorHint.border` - Цвет границы диагностики подсказок
 
 **Цвета виджетов:**
+
 - `editorWidget.background` - Цвет фона виджетов редактора
 - `editorWidget.foreground` - Цвет переднего плана виджетов редактора
 - `editorWidget.border` - Цвет границы виджетов редактора
 - `editorWidget.resizeBorder` - Цвет границы изменения размера виджетов
 
 **Цвета подсказок:**
+
 - `editorSuggestWidget.background` - Цвет фона виджета подсказок
 - `editorSuggestWidget.border` - Цвет границы виджета подсказок
 - `editorSuggestWidget.foreground` - Цвет переднего плана виджета подсказок
@@ -84,18 +94,22 @@
 - `editorSuggestWidget.selectedBackground` - Цвет фона выбранного элемента в виджете подсказок
 
 **Цвета наведения:**
+
 - `editorHoverWidget.background` - Цвет фона виджета наведения
 - `editorHoverWidget.border` - Цвет границы виджета наведения
 
 **Цвета фолдинга:**
+
 - `editor.foldBackground` - Цвет фона свернутого диапазона
 
 **Цвета кода:**
+
 - `editorCodeLens.foreground` - Цвет переднего плана CodeLens
 - `editorLightBulb.foreground` - Цвет переднего плана лампочки кода
 - `editorLightBulbAutoFix.foreground` - Цвет переднего плана лампочки автоматического исправления
 
 **Цвета линейки символов:**
+
 - `editorOverviewRuler.border` - Цвет границы линейки символов
 - `editorOverviewRuler.errorForeground` - Цвет ошибок в линейке символов
 - `editorOverviewRuler.warningForeground` - Цвет предупреждений в линейке символов
@@ -106,20 +120,24 @@
 Цвета интерфейса определяют внешний вид различных элементов пользовательского интерфейса за пределами редактора, таких как боковая панель, панель статуса, вкладки и другие компоненты.
 
 **Цвета общей области:**
+
 - `foreground` - Цвет переднего плана по умолчанию
 - `errorForeground` - Цвет переднего плана для ошибок
 - `descriptionForeground` - Цвет переднего плана для описаний
 - `icon.foreground` - Цвет переднего плана для значков
 
 **Цвета окна:**
+
 - `window.activeBorder` - Цвет границы активного окна
 - `window.inactiveBorder` - Цвет границы неактивного окна
 
 **Цвета фокуса:**
+
 - `focusBorder` - Цвет границы фокуса
 - `selection.background` - Цвет фона элемента, находящегося в фокусе
 
 **Цвета текста:**
+
 - `textBlockQuote.background` - Цвет фона цитат
 - `textBlockQuote.border` - Цвет границы цитат
 - `textCodeBlock.background` - Цвет фона блоков кода
@@ -130,10 +148,12 @@
 - `textSeparator.foreground` - Цвет разделителей текста
 
 **Цвета виджетов:**
+
 - `widget.shadow` - Цвет тени виджетов
 - `widget.border` - Цвет границы виджетов
 
 **Цвета боковой панели:**
+
 - `sideBar.background` - Цвет фона боковой панели
 - `sideBar.foreground` - Цвет переднего плана боковой панели
 - `sideBar.border` - Цвет границы боковой панели
@@ -144,6 +164,7 @@
 - `sideBarSectionHeader.border` - Цвет границы заголовка секции боковой панели
 
 **Цвета панели действий:**
+
 - `activityBar.background` - Цвет фона панели действий
 - `activityBar.foreground` - Цвет переднего плана панели действий (активные элементы)
 - `activityBar.inactiveForeground` - Цвет переднего плана панели действий (неактивные элементы)
@@ -153,10 +174,12 @@
 - `activityBar.dropBorder` - Цвет границы при перетаскивании на панель действий
 
 **Цвета значков активности:**
+
 - `activityBarBadge.background` - Цвет фона значка активности
 - `activityBarBadge.foreground` - Цвет переднего плана значка активности
 
 **Цвета заголовка:**
+
 - `titleBar.activeBackground` - Цвет фона активной строки заголовка
 - `titleBar.activeForeground` - Цвет переднего плана активной строки заголовка
 - `titleBar.inactiveBackground` - Цвет фона неактивной строки заголовка
@@ -164,6 +187,7 @@
 - `titleBar.border` - Цвет границы строки заголовка
 
 **Цвета панели статуса:**
+
 - `statusBar.background` - Цвет фона панели статуса
 - `statusBar.foreground` - Цвет переднего плана панели статуса
 - `statusBar.border` - Цвет границы панели статуса
@@ -183,6 +207,7 @@
 - `statusBarItem.errorForeground` - Цвет переднего плана элемента с ошибкой
 
 **Цвета вкладок:**
+
 - `tab.activeBackground` - Цвет фона активной вкладки
 - `tab.activeForeground` - Цвет переднего плана активной вкладки
 - `tab.inactiveBackground` - Цвет фона неактивной вкладки
@@ -203,6 +228,7 @@
 - `tab.lastPinnedBorder` - Цвет границы последней закрепленной вкладки
 
 **Цвета групп редакторов:**
+
 - `editorGroup.background` - Цвет фона группы редакторов
 - `editorGroup.border` - Цвет границы между группами редакторов
 - `editorGroup.dropBackground` - Цвет фона при перетаскивании редактора
@@ -212,6 +238,7 @@
 - `editorGroupHeader.border` - Цвет границы заголовка группы редакторов
 
 **Цвета панелей:**
+
 - `panel.background` - Цвет фона панели
 - `panel.border` - Цвет границы панели
 - `panel.dropBorder` - Цвет границы при перетаскивании на панель
@@ -255,6 +282,7 @@
 Цвета кнопок и элементов ввода определяют внешний вид интерактивных элементов управления, таких как кнопки, поля ввода и переключатели.
 
 **Цвета кнопок:**
+
 - `button.background` - Цвет фона кнопки
 - `button.foreground` - Цвет переднего плана кнопки
 - `button.border` - Цвет границы кнопки
@@ -264,6 +292,7 @@
 - `button.secondaryHoverBackground` - Цвет фона вторичной кнопки при наведении
 
 **Цвета элементов ввода:**
+
 - `input.background` - Цвет фона элемента ввода
 - `input.foreground` - Цвет переднего плана элемента ввода
 - `input.border` - Цвет границы элемента ввода
@@ -283,12 +312,14 @@
 - `inputValidation.errorBorder` - Цвет границы ошибочной валидации ввода
 
 **Цвета выпадающих списков:**
+
 - `dropdown.background` - Цвет фона выпадающего списка
 - `dropdown.foreground` - Цвет переднего плана выпадающего списка
 - `dropdown.border` - Цвет границы выпадающего списка
 - `dropdown.listBackground` - Цвет фона списка выпадающего списка
 
 **Цвета переключателей:**
+
 - `checkbox.background` - Цвет фона переключателя
 - `checkbox.foreground` - Цвет переднего плана переключателя
 - `checkbox.border` - Цвет границы переключателя
@@ -313,6 +344,7 @@
 Цвета уведомлений определяют внешний вид всплывающих уведомлений и виджетов отладки.
 
 **Цвета уведомлений:**
+
 - `notifications.background` - Цвет фона уведомления
 - `notifications.foreground` - Цвет переднего плана уведомления
 - `notifications.border` - Цвет границы уведомления (если отличается от тени)
@@ -321,12 +353,14 @@
 - `notificationsInfoIcon.foreground` - Цвет значка информации в уведомлении
 
 **Цвета заголовка уведомлений:**
+
 - `notificationCenter.border` - Цвет границы центра уведомлений
 - `notificationCenterHeader.foreground` - Цвет переднего плана заголовка центра уведомлений
 - `notificationCenterHeader.background` - Цвет фона заголовка центра уведомлений
 - `notifications.border` - Цвет границы между уведомлениями
 
 **Цвета виджета отладки:**
+
 - `debugToolBar.background` - Цвет фона панели инструментов отладки
 - `debugToolBar.border` - Цвет границы панели инструментов отладки
 - `debugView.exceptionLabelForeground` - Цвет переднего плана метки исключения
@@ -342,10 +376,12 @@
 - `debugTokenExpression.error` - Цвет ошибок в выражениях отладки
 
 **Цвета виджета исключений:**
+
 - `debugExceptionWidget.border` - Цвет границы виджета исключений
 - `debugExceptionWidget.background` - Цвет фона виджета исключений
 
 **Цвета консоли отладки:**
+
 - `debugConsole.infoForeground` - Цвет переднего плана информационных сообщений в консоли отладки
 - `debugConsole.warningForeground` - Цвет переднего плана предупреждающих сообщений в консоли отладки
 - `debugConsole.errorForeground` - Цвет переднего плана ошибочных сообщений в консоли отладки
@@ -357,6 +393,7 @@
 Цвета терминала определяют внешний вид встроенного терминала VSCode.
 
 **Основные цвета терминала:**
+
 - `terminal.background` - Цвет фона терминала
 - `terminal.foreground` - Цвет переднего плана терминала
 - `terminal.border` - Цвет границы панели терминала
@@ -378,6 +415,7 @@
 - `terminal.ansiBrightWhite` - Цвет ANSI ярко-белого
 
 **Дополнительные цвета терминала:**
+
 - `terminal.selectionBackground` - Цвет фона выделения в терминале
 - `terminal.selectionForeground` - Цвет переднего плана выделения в терминале
 - `terminal.inactiveSelectionBackground` - Цвет фона неактивного выделения в терминале
@@ -496,6 +534,7 @@
 Цвета синтаксиса определяют внешний вид различных элементов кода, таких как ключевые слова, переменные, строки и комментарии. Эти цвета обычно устанавливаются через `tokenColors` в файле темы.
 
 **Основные категории синтаксиса:**
+
 - `comments` - Комментарии
 - `strings` - Строки
 - `numbers` - Числа
@@ -516,6 +555,7 @@
 Цвета семантического выделения позволяют точно настраивать внешний вид элементов кода на основе их семантического значения, а не только синтаксиса.
 
 **Типы семантического выделения:**
+
 - `class` - Классы
 - `enum` - Перечисления
 - `interface` - Интерфейсы
