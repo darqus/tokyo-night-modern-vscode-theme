@@ -167,10 +167,13 @@ export const uiColorsWithAlpha = {
  */
 export function getUIColor(path: string): string {
   const keys = path.split('.')
-  let current: any = uiColorsWithAlpha
+  let current: unknown = uiColorsWithAlpha
 
   for (const key of keys) {
-    current = current?.[key]
+    if (typeof current !== 'object' || current === null) {
+       throw new Error(`UI color not found: ${path}`)
+     }
+     current = (current as Record<string, unknown>)[key]
     if (current === undefined) {
       throw new Error(`UI color not found: ${path}`)
     }
