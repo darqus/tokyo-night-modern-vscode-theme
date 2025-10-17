@@ -2,6 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { palette } from '../src/theme/palette/index'
+import type { TokenColor } from '../src/theme/token-utils'
 
 const themePath = path.join(
   __dirname,
@@ -57,7 +58,7 @@ Object.entries(theme.colors).forEach(([key, value]) => {
 })
 
 // Сбор цветов из theme.tokenColors
-theme.tokenColors.forEach((token: any, index: number) => {
+theme.tokenColors.forEach((token: TokenColor, index: number) => {
   if (token.settings && typeof token.settings.foreground === 'string') {
     const color = token.settings.foreground
     if (!colorValues.has(color)) {
@@ -75,8 +76,19 @@ theme.tokenColors.forEach((token: any, index: number) => {
 })
 
 // Сбор цветов из theme.semanticTokenColors
-Object.entries(theme.semanticTokenColors).forEach(
-  ([key, rule]: [string, any]) => {
+interface SemanticTokenColorRule {
+  foreground?: string
+  background?: string
+}
+
+// Явно указываем тип для theme.semanticTokenColors
+const semanticTokenColors = theme.semanticTokenColors as Record<
+  string,
+  string | SemanticTokenColorRule
+>
+
+Object.entries(semanticTokenColors).forEach(
+  ([key, rule]: [string, string | SemanticTokenColorRule]) => {
     if (typeof rule === 'string') {
       if (!colorValues.has(rule)) {
         colorValues.set(rule, [])
@@ -131,7 +143,7 @@ Object.values(theme.colors).forEach((color) => {
 })
 
 // Сбор используемых цветов из theme.tokenColors
-theme.tokenColors.forEach((token: any) => {
+theme.tokenColors.forEach((token: TokenColor) => {
   if (token.settings && typeof token.settings.foreground === 'string') {
     usedColors.add(token.settings.foreground.toLowerCase())
   }
@@ -141,19 +153,21 @@ theme.tokenColors.forEach((token: any) => {
 })
 
 // Сбор используемых цветов из theme.semanticTokenColors
-Object.values(theme.semanticTokenColors).forEach((rule: any) => {
-  if (typeof rule === 'string') {
-    usedColors.add(rule.toLowerCase())
-  } else if (rule && typeof rule.foreground === 'string') {
-    usedColors.add(rule.foreground.toLowerCase())
-  } else if (rule && typeof rule.background === 'string') {
-    usedColors.add(rule.background.toLowerCase())
+Object.values(semanticTokenColors).forEach(
+  (rule: string | SemanticTokenColorRule) => {
+    if (typeof rule === 'string') {
+      usedColors.add(rule.toLowerCase())
+    } else if (rule && typeof rule.foreground === 'string') {
+      usedColors.add(rule.foreground.toLowerCase())
+    } else if (rule && typeof rule.background === 'string') {
+      usedColors.add(rule.background.toLowerCase())
+    }
   }
-})
+)
 
 // Функция для извлечения только строковых значений из палитры
 function extractStringColors(
-  obj: any,
+  obj: Record<string, unknown>,
   prefix: string = ''
 ): Record<string, string> {
   const result: Record<string, string> = {}
@@ -169,7 +183,10 @@ function extractStringColors(
       !Array.isArray(value)
     ) {
       // Это объект, рекурсивно обрабатываем его
-      Object.assign(result, extractStringColors(value, fullKey))
+      Object.assign(
+        result,
+        extractStringColors(value as Record<string, unknown>, fullKey)
+      )
     }
   }
 
@@ -199,21 +216,16 @@ const acceptableUnusedColors = [
   'blue50',
   'blue100',
   'blue200',
-  'blue30',
   'cyan50',
   'cyan100',
   'cyan200',
-  'cyan300',
   'cyan400',
   'cyan600',
   'gray50',
-  'gray100',
   'gray200',
   'gray300',
   'green50',
-  'green100',
   'green200',
-  'green300',
   'green400',
   'green600',
   'green700',
@@ -241,7 +253,6 @@ const acceptableUnusedColors = [
   'yellow200',
   'yellow300',
   'yellow400',
-  'yellow600',
   'yellow700',
   'yellow800',
   'yellow900',
@@ -284,9 +295,9 @@ if (filteredUnusedKeys.length > 0) {
       filteredUnusedKeys.length
     } потенциально неиспользуемых цветов в палитре (возможно, это часть расширенной палитры):`
   )
-  filteredUnusedKeys
-    .sort()
-    .forEach((key) => console.warn(`  - ${key}: "${paletteAsRecord[key]}"`))
+  filteredUnusedKeys.sort().forEach((key) => {
+    console.warn(`  - ${key}: "${paletteAsRecord[key]}"`)
+  })
 } else {
   console.log(
     '[validate-theme] Все цвета в палитре используются или являются допустимыми "неиспользуемыми"'

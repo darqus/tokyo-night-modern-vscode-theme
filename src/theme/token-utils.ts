@@ -34,8 +34,8 @@ export const contrastUtils = {
     const hex = color.replace('#', '')
 
     // Convert hex to RGB
-    const r = parseInt(hex.substr(0, 2), 16) / 25
-    const g = parseInt(hex.substr(2, 2), 16) / 25
+    const r = parseInt(hex.substr(0, 2), 16) / 255
+    const g = parseInt(hex.substr(2, 2), 16) / 255
     const b = parseInt(hex.substr(4, 2), 16) / 255
 
     // Apply gamma correction
@@ -99,9 +99,9 @@ export const tokenValidator = {
     try {
       // Check in dark theme tokens
       const darkKeys = path.split('.')
-      let current: any = tokens
+      let current: Record<string, unknown> = tokens
       for (const key of darkKeys) {
-        current = current?.[key]
+        current = current?.[key] as Record<string, unknown>
         if (current === undefined) {
           break
         }
@@ -112,9 +112,9 @@ export const tokenValidator = {
       }
 
       // Check in light theme tokens
-      let currentLight: any = lightThemeTokens
+      let currentLight: Record<string, unknown> = lightThemeTokens
       for (const key of darkKeys) {
-        currentLight = currentLight?.[key]
+        currentLight = currentLight?.[key] as Record<string, unknown>
         if (currentLight === undefined) {
           return false
         }
@@ -166,7 +166,7 @@ export const cssGenerator = {
    * @returns Array of CSS custom property strings
    */
   tokensToCSSVars: (
-    obj: any,
+    obj: Record<string, unknown>,
     prefix: string = '--theme',
     parentKey: string = ''
   ): string[] => {
@@ -178,9 +178,15 @@ export const cssGenerator = {
       if (typeof value === 'string') {
         // It's a token value, create CSS variable
         vars.push(`  ${prefix}-${newKey}: ${value};`)
-      } else if (typeof value === 'object') {
+      } else if (typeof value === 'object' && value !== null) {
         // It's a nested object, recurse
-        vars.push(...cssGenerator.tokensToCSSVars(value, prefix, newKey))
+        vars.push(
+          ...cssGenerator.tokensToCSSVars(
+            value as Record<string, unknown>,
+            prefix,
+            newKey
+          )
+        )
       }
     }
 
@@ -227,7 +233,7 @@ export const tokenConverter = {
    * @returns Flattened token object
    */
   flattenTokens: (
-    obj: any,
+    obj: Record<string, unknown>,
     parentKey: string = '',
     result: Record<string, string> = {}
   ): Record<string, string> => {
@@ -236,8 +242,12 @@ export const tokenConverter = {
 
       if (typeof value === 'string') {
         result[newKey] = value
-      } else if (typeof value === 'object') {
-        tokenConverter.flattenTokens(value, newKey, result)
+      } else if (typeof value === 'object' && value !== null) {
+        tokenConverter.flattenTokens(
+          value as Record<string, unknown>,
+          newKey,
+          result
+        )
       }
     }
 
@@ -259,11 +269,13 @@ export const tokenConverter = {
    * @param theme - Theme to convert ('dark' or 'light')
    * @returns Object with Figma-compatible token structure
    */
-  tokensToFigma: (theme: 'dark' | 'light' = 'dark'): any => {
+  tokensToFigma: (
+    theme: 'dark' | 'light' = 'dark'
+  ): Record<string, unknown> => {
     const themeTokens = theme === 'dark' ? tokens : lightThemeTokens
     const flatTokens = tokenConverter.flattenTokens(themeTokens)
 
-    const figmaTokens: any = {}
+    const figmaTokens: Record<string, unknown> = {}
     for (const [key, value] of Object.entries(flatTokens)) {
       const path = key.split('.')
       let current = figmaTokens
@@ -272,7 +284,7 @@ export const tokenConverter = {
         if (!current[path[i]]) {
           current[path[i]] = {}
         }
-        current = current[path[i]]
+        current = current[path[i]] as Record<string, unknown>
       }
 
       const lastKey = path[path.length - 1]

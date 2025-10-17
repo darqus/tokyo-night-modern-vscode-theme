@@ -128,8 +128,11 @@ export const tokenValidation = {
   /**
    * Flatten a nested object for easier validation
    */
-  flattenObject: (obj: any, prefix: string = ''): Record<string, any> => {
-    const flattened: Record<string, any> = {}
+  flattenObject: (
+    obj: Record<string, unknown>,
+    prefix: string = ''
+  ): Record<string, unknown> => {
+    const flattened: Record<string, unknown> = {}
 
     for (const [key, value] of Object.entries(obj)) {
       const newKey = prefix ? `${prefix}.${key}` : key
@@ -139,7 +142,13 @@ export const tokenValidation = {
         value !== null &&
         !Array.isArray(value)
       ) {
-        Object.assign(flattened, tokenValidation.flattenObject(value, newKey))
+        Object.assign(
+          flattened,
+          tokenValidation.flattenObject(
+            value as Record<string, unknown>,
+            newKey
+          )
+        )
       } else {
         flattened[newKey] = value
       }

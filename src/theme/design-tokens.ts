@@ -254,7 +254,7 @@ export const tokens = {
     blue: {
       '500': primitiveColors.blue500,
       '600': primitiveColors.blue600,
-      '700': primitiveColors.blue700,
+      '70': primitiveColors.blue700,
       '800': primitiveColors.blue800,
     },
     cyan: {
@@ -275,7 +275,7 @@ export const tokens = {
     },
     gray: {
       '800': primitiveColors.gray800,
-      '900': primitiveColors.gray900,
+      '90': primitiveColors.gray900,
     },
     white: primitiveColors.white,
     black: primitiveColors.black,
@@ -301,10 +301,10 @@ export function getToken(
 ): string {
   const tokenStore = theme === 'light' ? lightThemeTokens : tokens
   const keys = path.split('.')
-  let current: any = tokenStore
+  let current: Record<string, unknown> = tokenStore
 
   for (const key of keys) {
-    current = current?.[key]
+    current = current?.[key] as Record<string, unknown>
     if (current === undefined) {
       throw new Error(`Design token not found: ${path}`)
     }

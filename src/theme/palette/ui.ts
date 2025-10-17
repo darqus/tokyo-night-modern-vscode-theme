@@ -104,7 +104,7 @@ export const uiColors: UIColors = {
 
   // Special UI elements - специальные UI элементы
   special: {
-    shadow: semanticColors.shadow, // #00000 - тень
+    shadow: semanticColors.shadow, // #0000 - тень
     glow: semanticColors.primary, // #7aa2f7 - свечение
     highlight: semanticColors.highlight, // #e0af68 - подсветка
     selection: semanticColors.selection, // #4e6ab2 - выделение
@@ -174,6 +174,12 @@ export function getUIColor(path: string): string {
     if (current === undefined) {
       throw new Error(`UI color not found: ${path}`)
     }
+  }
+
+  if (typeof current !== 'string') {
+    throw new Error(
+      `UI color path ${path} does not resolve to a string value: ${typeof current}`
+    )
   }
 
   return current

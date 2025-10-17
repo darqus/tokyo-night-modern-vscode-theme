@@ -20,14 +20,16 @@ if (validationResults.isValid) {
   console.log('✅ All tokens are valid!')
 } else {
   console.log('❌ Validation errors found:')
-  validationResults.errors.forEach((error) => console.error(`  ❌ ${error}`))
+  validationResults.errors.forEach((error) => {
+    console.error(`  ❌ ${error}`)
+  })
 }
 
 if (validationResults.warnings.length > 0) {
   console.log('\n⚠️  Warnings:')
-  validationResults.warnings.forEach((warning) =>
+  validationResults.warnings.forEach((warning) => {
     console.warn(`  ⚠️ ${warning}`)
-  )
+  })
 }
 
 console.log('='.repeat(50))
