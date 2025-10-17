@@ -24,9 +24,6 @@ THEME_SUMMARY.md
 # Configuration files
 tsconfig.json
 commitlint.config.js
-.prettierignore
-.prettierrc
-.eslintrc*
 .npmignore
 jest.config.js
 .releaserc.json
