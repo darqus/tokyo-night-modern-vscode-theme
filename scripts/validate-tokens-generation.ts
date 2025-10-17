@@ -5,10 +5,10 @@
  * и проверяет корректность значений токенов перед их экспортом.
  */
 
-import { tokenValidation } from '../src/theme/token-validation'
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { cssGenerator } from '../src/theme/token-utils'
-import { writeFileSync } from 'fs'
-import { join } from 'path'
+import { tokenValidation } from '../src/theme/token-validation'
 
 // Запускаем валидацию всех токенов
 const validationResults = tokenValidation.runAllValidations()

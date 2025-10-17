@@ -1,4 +1,4 @@
-import { OpacityLevel } from '../foundation/opacity'
+import type { OpacityLevel } from '../foundation/opacity'
 
 /**
  * Базовый интерфейс для семантических цветов с поддержкой прозрачности

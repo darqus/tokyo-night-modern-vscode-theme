@@ -4,23 +4,23 @@
  */
 
 import {
-  foundationColors as primitiveColors,
   getPrimitiveColor,
   getPrimitiveColorWithOpacity,
+  foundationColors as primitiveColors,
 } from './foundation'
 import {
-  semanticColors,
+  colorRoles,
   getSemanticColor,
   getSemanticColorWithOpacity,
-  colorRoles,
+  semanticColors,
 } from './semantic'
+import { flatSyntaxColors, getSyntaxColor, syntaxColors } from './syntax'
 import {
-  uiColors,
   getUIColor,
-  uiColorsWithAlpha,
   optimizedAlphaValues,
+  uiColors,
+  uiColorsWithAlpha,
 } from './ui'
-import { syntaxColors, getSyntaxColor, flatSyntaxColors } from './syntax'
 
 // Re-export all utilities
 export {
@@ -42,7 +42,7 @@ export {
  * Color validation utilities - утилиты валидации цветов
  */
 export const colorValidation = {
- /**
+  /**
    * Validate hex color format
    */
   isValidHex: (color: string): boolean => {
@@ -64,12 +64,9 @@ export const colorValidation = {
 
     // Calculate relative luminance
     const getLuminance = (r: number, g: number, b: number): number => {
-      const RsRGB =
-        r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4)
-      const GsRGB =
-        g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4)
-      const BsRGB =
-        b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4)
+      const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.055) ** 2.4
+      const GsRGB = g <= 0.03928 ? g / 12.92 : ((g + 0.055) / 1.055) ** 2.4
+      const BsRGB = b <= 0.03928 ? b / 12.92 : ((b + 0.055) / 1.055) ** 2.4
       return 0.2126 * RsRGB + 0.7152 * GsRGB + 0.0722 * BsRGB
     }
 
@@ -104,7 +101,7 @@ export const colorValidation = {
  */
 export const palette = {
   // Primitive colors - базовые цвета
- ...primitiveColors,
+  ...primitiveColors,
 
   // Semantic colors - семантические цвета
   ...semanticColors,
@@ -117,7 +114,7 @@ export const palette = {
 
   // Utilities - утилиты
   colorValidation,
- optimizedAlphaValues,
+  optimizedAlphaValues,
 }
 
 /**
@@ -126,7 +123,7 @@ export const palette = {
 export const paletteStats = {
   primitiveColors: Object.keys(primitiveColors).length,
   semanticColors: Object.keys(semanticColors).length,
- uiColors: Object.keys(uiColorsWithAlpha).length,
+  uiColors: Object.keys(uiColorsWithAlpha).length,
   syntaxColors: Object.keys(flatSyntaxColors).length,
   totalColors: Object.keys(palette).length,
   alphaVariants: Object.keys(optimizedAlphaValues).length,

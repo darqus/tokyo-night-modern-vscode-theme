@@ -11,34 +11,34 @@ export interface SemanticColors {
   primary: string
   secondary: string
 
- // Status colors
- success: string
- warning: string
- error: string
- info: string
+  // Status colors
+  success: string
+  warning: string
+  error: string
+  info: string
 
   // Interactive colors
   link: string
   hover: string
   active: string
- focus: string
+  focus: string
 
- // Content colors
- text: string
+  // Content colors
+  text: string
   textSecondary: string
   textDisabled: string
- textWhite: string
+  textWhite: string
 
   // Background colors
- background: string
+  background: string
   backgroundSecondary: string
   backgroundElevated: string
   backgroundOverlay: string
 
- // Border colors
- border: string
+  // Border colors
+  border: string
   borderSecondary: string
- borderFocus: string
+  borderFocus: string
 
   // Special colors
   shadow: string
@@ -46,7 +46,7 @@ export interface SemanticColors {
   selection: string
 
   // Terminal colors
- terminal: {
+  terminal: {
     ansi: {
       black: string
       blue: string
@@ -96,7 +96,7 @@ export interface SemanticColors {
     conflicting: string
     stageDeleted: string
     stageModified: string
- }
+  }
 
   // Badge colors
   badge: {
@@ -105,7 +105,7 @@ export interface SemanticColors {
   }
 
   // Syntax colors
- syntax: {
+  syntax: {
     brackets: {
       '1': string
       '2': string
@@ -135,13 +135,13 @@ export const semanticColors: SemanticColors = {
 
   // Interactive colors - интерактивные цвета
   link: primitiveColors.cyan500, // #7dcfff - ссылки
- hover: primitiveColors.blue600, // #4e6ab2 - наведение
- active: primitiveColors.blue700, // #394b70 - активное состояние
+  hover: primitiveColors.blue600, // #4e6ab2 - наведение
+  active: primitiveColors.blue700, // #394b70 - активное состояние
   focus: primitiveColors.blue400, // #42a5f5 - фокус (новый цвет)
 
   // Content colors - цвета контента
   text: primitiveColors.gray500, // #a9b1d6 - основной текст
- textSecondary: primitiveColors.gray600, // #82859e - вторичный текст
+  textSecondary: primitiveColors.gray600, // #82859e - вторичный текст
   textDisabled: primitiveColors.gray700, // #515670 - отключенный текст
   textWhite: primitiveColors.blue100, // #bbdefb - холодный светло-синий текст
 
@@ -149,17 +149,17 @@ export const semanticColors: SemanticColors = {
   background: primitiveColors.gray900, // #10151d - основной фон
   backgroundSecondary: primitiveColors.gray800, // #2a2f40 - вторичный фон
   backgroundElevated: primitiveColors.gray700, // #515670 - приподнятый фон
- backgroundOverlay: primitiveColors.black, // #0000 - оверлей
+  backgroundOverlay: primitiveColors.black, // #0000 - оверлей
 
   // Border colors - цвета границ
   border: primitiveColors.blue600, // #4e6ab2 - основная граница
   borderSecondary: primitiveColors.gray700, // #515670 - вторичная граница
- borderFocus: primitiveColors.blue400, // #42a5f5 - граница фокуса
+  borderFocus: primitiveColors.blue400, // #42a5f5 - граница фокуса
 
   // Special colors - специальные цвета
   shadow: primitiveColors.black, // #00 - тень
   highlight: primitiveColors.yellow500, // #e0af68 - подсветка
- selection: primitiveColors.blue600, // #4e6ab2 - выделение
+  selection: primitiveColors.blue600, // #4e6ab2 - выделение
 
   // Terminal colors
   terminal: {
@@ -198,7 +198,7 @@ export const semanticColors: SemanticColors = {
     },
     overviewRuler: {
       cursorForeground: primitiveColors.yellow500,
-    }
+    },
   },
 
   // Git decoration colors
@@ -218,10 +218,10 @@ export const semanticColors: SemanticColors = {
   badge: {
     background: primitiveColors.purple800,
     foreground: primitiveColors.gray100, // Замена foundationColors.white
- },
+  },
 
   // Syntax colors
- syntax: {
+  syntax: {
     brackets: {
       '1': primitiveColors.blue500,
       '2': primitiveColors.blue500,
@@ -230,8 +230,8 @@ export const semanticColors: SemanticColors = {
       '5': primitiveColors.green500,
       '6': primitiveColors.yellow500,
       unexpected: primitiveColors.red500,
-    }
-  }
+    },
+  },
 }
 
 /**
@@ -239,9 +239,9 @@ export const semanticColors: SemanticColors = {
  */
 export function getSemanticColor(colorName: keyof SemanticColors): string {
   if (typeof semanticColors[colorName] === 'string') {
-    return semanticColors[colorName] as string;
+    return semanticColors[colorName] as string
   }
-  throw new Error(`Semantic color ${colorName} is not a string value`);
+  throw new Error(`Semantic color ${colorName} is not a string value`)
 }
 
 /**
@@ -251,7 +251,7 @@ export function getSemanticColorWithOpacity(
   colorName: keyof SemanticColors,
   opacity: string
 ): string {
- return `${semanticColors[colorName] as string}${opacity}`
+  return `${semanticColors[colorName] as string}${opacity}`
 }
 
 /**
@@ -260,7 +260,7 @@ export function getSemanticColorWithOpacity(
  */
 export const colorRoles = {
   // UI Background roles
- 'editor.background': semanticColors.background,
+  'editor.background': semanticColors.background,
   'sideBar.background': semanticColors.backgroundSecondary,
   'panel.background': semanticColors.backgroundSecondary,
   'statusBar.background': semanticColors.backgroundSecondary,
@@ -276,18 +276,18 @@ export const colorRoles = {
   'sideBar.border': semanticColors.borderSecondary,
 
   // Interactive roles
- 'button.background': semanticColors.primary,
- 'input.background': semanticColors.backgroundElevated,
+  'button.background': semanticColors.primary,
+  'input.background': semanticColors.backgroundElevated,
   'input.border': semanticColors.border,
 
   // Selection roles
- 'editor.selectionBackground': semanticColors.selection,
- 'editor.selectionHighlightBackground': semanticColors.highlight,
+  'editor.selectionBackground': semanticColors.selection,
+  'editor.selectionHighlightBackground': semanticColors.highlight,
 
   // Status roles
- 'editorError.foreground': semanticColors.error,
- 'editorWarning.foreground': semanticColors.warning,
- 'editorInfo.foreground': semanticColors.info,
+  'editorError.foreground': semanticColors.error,
+  'editorWarning.foreground': semanticColors.warning,
+  'editorInfo.foreground': semanticColors.info,
 } as const
 
 export type ColorRole = keyof typeof colorRoles

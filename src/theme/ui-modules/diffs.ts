@@ -8,5 +8,5 @@ import { opacityLevels } from '../palette/foundation/opacity'
 export const diffColors = {
   'diffEditor.insertedTextBackground':
     foundationColors.green500 + opacityLevels.light, // Зеленый цвет с 20% прозрачности
-  'diffEditor.removedTextBackground': foundationColors.red500 + '22', // Красный цвет с 22% прозрачности
+  'diffEditor.removedTextBackground': `${foundationColors.red500}22`, // Красный цвет с 22% прозрачности
 }

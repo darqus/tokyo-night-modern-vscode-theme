@@ -1,19 +1,19 @@
-import { baseSyntaxColors, BaseSyntaxToken } from './base'
+import { type BaseSyntaxToken, baseSyntaxColors } from './base'
 import {
+  type JavaScriptSyntaxToken,
   javascriptSyntaxColors,
-  JavaScriptSyntaxToken,
 } from './languages/javascript'
-import { pythonSyntaxColors, PythonSyntaxToken } from './languages/python'
+import { type PythonSyntaxToken, pythonSyntaxColors } from './languages/python'
 
 // Re-export base syntax colors
-export { baseSyntaxColors, type BaseSyntaxToken } from './base'
+export { type BaseSyntaxToken, baseSyntaxColors } from './base'
 
 // Re-export language-specific syntax colors
 export {
-  javascriptSyntaxColors,
   type JavaScriptSyntaxToken,
+  javascriptSyntaxColors,
 } from './languages/javascript'
-export { pythonSyntaxColors, type PythonSyntaxToken } from './languages/python'
+export { type PythonSyntaxToken, pythonSyntaxColors } from './languages/python'
 
 // Common interfaces for language syntax
 export interface LanguageSyntaxColors {

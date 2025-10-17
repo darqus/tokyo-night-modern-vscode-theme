@@ -3,11 +3,11 @@
  * Тесты для новой семантической структуры палитры
  */
 
-import { palette } from '../src/theme/palette/index'
 import { foundationColors as primitiveColors } from '../src/theme/palette/foundation'
+import { palette } from '../src/theme/palette/index'
 import { semanticColors } from '../src/theme/palette/semantic'
-import { uiColors } from '../src/theme/palette/ui'
 import { syntaxColors } from '../src/theme/palette/syntax'
+import { uiColors } from '../src/theme/palette/ui'
 
 describe('Palette Structure Tests', () => {
   describe('Primitive Colors', () => {

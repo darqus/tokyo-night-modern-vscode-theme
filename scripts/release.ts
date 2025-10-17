@@ -1,8 +1,8 @@
 #!/usr/bin/env ts-node
 
-import { execSync } from 'child_process'
-import { readFileSync, writeFileSync } from 'fs'
-import { join } from 'path'
+import { execSync } from 'node:child_process'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { computeVersion } from './versioning'
 
 interface ReleaseOptions {
@@ -109,7 +109,7 @@ class ReleaseManager {
         console.log('🔧 Bug fixes/improvements detected → PATCH release')
         return 'patch'
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('⚠️  Could not analyze commits, defaulting to patch release')
       return 'patch'
     }
@@ -123,7 +123,7 @@ class ReleaseManager {
         console.error(status)
         throw new Error('Please commit or stash your changes before releasing')
       }
-    } catch (error) {
+    } catch (_error) {
       throw new Error('Failed to check git status')
     }
   }
@@ -138,7 +138,7 @@ class ReleaseManager {
           throw new Error('Use --force to release from non-main branch')
         }
       }
-    } catch (error) {
+    } catch (_error) {
       throw new Error('Failed to check current branch')
     }
   }
@@ -191,7 +191,7 @@ class ReleaseManager {
       // Используем standard-version для генерации changelog без поднятия версии
       this.exec('npx standard-version --skip.tag --skip.commit --skip.bump')
       console.log('✅ Changelog updated')
-    } catch (error) {
+    } catch (_error) {
       console.warn('⚠️  Could not generate changelog automatically')
     }
   }
@@ -215,24 +215,6 @@ class ReleaseManager {
     console.log('✅ Pushed to remote repository')
   }
 
-  private publishToMarketplace(): void {
-    console.log('📦 Skipping VS Code Marketplace publishing (no key)...')
-
-    try {
-      this.exec('npm run build:vsix')
-      // this.exec('npm run publish')
-      console.log(
-        '⚠️  Marketplace publishing skipped. To publish, configure VSCE token.'
-      )
-    } catch (error) {
-      console.error('❌ Failed to create package')
-      console.error('Please check your setup and try manually:')
-      console.error('  npm run build:vsix')
-      // console.error('  npm run publish')
-      throw error
-    }
-  }
-
   private createGitHubRelease(version: string): void {
     console.log('🎉 Creating GitHub release...')
 
@@ -248,7 +230,7 @@ class ReleaseManager {
         if (versionSection) {
           releaseNotes = versionSection[0].replace(`## [${version}]`, '').trim()
         }
-      } catch (error) {
+      } catch (_error) {
         console.warn('⚠️  Could not extract release notes from changelog')
       }
 
@@ -258,7 +240,7 @@ class ReleaseManager {
           `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}"`
         )
         console.log('✅ GitHub release created')
-      } catch (error) {
+      } catch (_error) {
         console.warn(
           '⚠️  Could not create GitHub release (gh CLI not available)'
         )
@@ -266,7 +248,7 @@ class ReleaseManager {
           `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
         )
       }
-    } catch (error) {
+    } catch (_error) {
       console.warn('⚠️  Could not create GitHub release')
     }
   }

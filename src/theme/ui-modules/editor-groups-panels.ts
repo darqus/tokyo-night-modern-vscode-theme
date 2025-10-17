@@ -22,5 +22,5 @@ export const editorGroupsPanelsColors = {
   'panelSection.dropBackground': foundationColors.blue500 + opacityLevels.light,
   'panelTitle.activeBorder': foundationColors.gray600 + opacityLevels.medium,
   'panelTitle.activeForeground': foundationColors.gray400,
-  'panelTitle.inactiveForeground': foundationColors.gray400 + 'AA',
+  'panelTitle.inactiveForeground': `${foundationColors.gray400}AA`,
 }

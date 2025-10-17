@@ -2,6 +2,7 @@
  * Foundation layer - базовый слой цветовой системы
  */
 import { foundationColors } from './colors'
+
 export * from './colors'
 export * from './opacity'
 

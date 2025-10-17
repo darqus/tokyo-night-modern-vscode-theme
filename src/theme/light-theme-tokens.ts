@@ -25,7 +25,7 @@ export const lightThemeTokens = {
       /** Elevated surfaces like modals, cards - #ffffff */
       elevated: primitiveColors.white,
       /** Overlay background for modals - rgba(0, 0, 0, 0.5) */
-      overlay: primitiveColors.black + '80', // 50% opacity
+      overlay: `${primitiveColors.black}80`, // 50% opacity
     },
 
     // Text colors - optimized for light backgrounds with WCAG compliance
@@ -110,7 +110,7 @@ export const lightThemeTokens = {
     // Special UI colors - optimized for light theme
     special: {
       /** Shadow color - rgba(0, 0, 0, 0.1) */
-      shadow: primitiveColors.black + '1a', // 10% opacity
+      shadow: `${primitiveColors.black}1a`, // 10% opacity
       /** Focus ring color - #3b82f6 */
       focusRing: '#3b82f6',
       /** Selection background - #dbeafe (light blue) */

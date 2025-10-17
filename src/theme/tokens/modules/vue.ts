@@ -1,6 +1,7 @@
 // Токены синтаксиса для Vue
-import { TokenColor } from '../../token-utils'
+
 import { palette } from '../../palette/index'
+import type { TokenColor } from '../../token-utils'
 
 export const vueTokens: TokenColor[] = [
   {

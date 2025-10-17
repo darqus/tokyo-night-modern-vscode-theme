@@ -5,7 +5,7 @@
  * to ensure consistency, accessibility, and correctness.
  */
 
-import { tokens, lightThemeTokens, getToken } from './design-tokens'
+import { getToken, lightThemeTokens, tokens } from './design-tokens'
 import { contrastUtils, tokenValidator } from './token-utils'
 
 // Interface for validation results
@@ -170,7 +170,7 @@ export const tokenValidation = {
           `Invalid color value at ${path} in ${theme} theme: ${value}`
         )
       }
-    } catch (e) {
+    } catch (_e) {
       errors.push(`Token not found: ${path} in ${theme} theme`)
     }
 

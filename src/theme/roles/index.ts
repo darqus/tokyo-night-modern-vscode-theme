@@ -1,8 +1,8 @@
+import { semanticColors } from '../palette/semantic'
+import { borderColors } from '../palette/semantic/borders'
 import { interfaceColors } from '../palette/semantic/interface'
 import { typographyColors } from '../palette/semantic/typography'
-import { borderColors } from '../palette/semantic/borders'
-import { semanticColors } from '../palette/semantic'
-import { ColorRoleDefinition } from './types'
+import type { ColorRoleDefinition } from './types'
 
 export const colorRoles: ColorRoleDefinition = {
   // Background roles

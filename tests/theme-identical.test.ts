@@ -1,6 +1,6 @@
-import { colors } from '../src/theme/ui'
-import { tokenColors } from '../src/theme/tokens'
 import { semanticTokenColors } from '../src/theme/semantic'
+import { tokenColors } from '../src/theme/tokens'
+import { colors } from '../src/theme/ui'
 
 describe('Theme', () => {
   it('should match the snapshot', () => {

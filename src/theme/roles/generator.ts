@@ -1,8 +1,8 @@
 import {
   ColorCategory,
-  ColorRole,
+  type ColorRole,
   ColorSubcategories,
-  SubcategoryType,
+  type SubcategoryType,
 } from './types'
 
 /**

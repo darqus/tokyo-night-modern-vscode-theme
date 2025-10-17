@@ -15,10 +15,9 @@
  * or used within JavaScript/TypeScript-based styling solutions.
  */
 
-import { foundationColors } from './palette/foundation/colors'
-
 // Import light theme tokens
 import { lightThemeTokens } from './light-theme-tokens'
+import { foundationColors } from './palette/foundation/colors'
 import { opacityLevels } from './palette/foundation/opacity'
 
 // Create an alias for backward compatibility
@@ -109,7 +108,7 @@ export const tokens = {
       /** The default background color for secondary buttons. */
       secondary: primitiveColors.purple600,
       /** The background color for secondary buttons on hover. */
-      'secondary-hover': primitiveColors.purple600  + opacityLevels.light,
+      'secondary-hover': primitiveColors.purple600 + opacityLevels.light,
       /** The background color for secondary buttons when active/pressed. */
       'secondary-active': primitiveColors.purple600 + opacityLevels.light,
       /** The text color for secondary buttons. */

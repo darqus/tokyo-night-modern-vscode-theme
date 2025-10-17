@@ -7,7 +7,7 @@ import { foundationColors } from '../palette/foundation/colors'
 export const sideBarColors = {
   'sideBar.background': foundationColors.gray900,
   'sideBar.border': foundationColors.gray800,
-  'sideBar.dropBackground': foundationColors.blue500 + '20',
+  'sideBar.dropBackground': `${foundationColors.blue500}20`,
   'sideBar.foreground': foundationColors.gray400,
   'sideBarSectionHeader.background': foundationColors.gray800,
   'sideBarSectionHeader.border': foundationColors.gray800,

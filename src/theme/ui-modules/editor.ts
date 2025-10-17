@@ -6,22 +6,21 @@ import { getToken } from '../design-tokens'
  */
 export const editorColors = {
   'editor.background': getToken('color.background.primary'),
-  'editor.findMatchBackground': getToken('accent.primary') + '66',
-  'editor.findMatchHighlightBackground': getToken('accent.primary') + '66',
-  'editor.findRangeHighlightBackground': getToken('accent.primary') + '33',
-  'editor.focusedStackFrameHighlightBackground':
-    getToken('accent.primary') + '20',
-  'editor.foldBackground': getToken('color.background.secondary') + '4A',
+  'editor.findMatchBackground': `${getToken('accent.primary')}66`,
+  'editor.findMatchHighlightBackground': `${getToken('accent.primary')}66`,
+  'editor.findRangeHighlightBackground': `${getToken('accent.primary')}33`,
+  'editor.focusedStackFrameHighlightBackground': `${getToken('accent.primary')}20`,
+  'editor.foldBackground': `${getToken('color.background.secondary')}4A`,
   'editor.foreground': getToken('color.text.primary'),
-  'editor.inactiveSelectionBackground': getToken('accent.primary') + '45',
+  'editor.inactiveSelectionBackground': `${getToken('accent.primary')}45`,
   'editor.lineHighlightBackground': getToken('color.background.secondary'),
   'editor.lineHighlightBorder': getToken('color.legacy.transparent'),
-  'editor.rangeHighlightBackground': getToken('accent.primary') + '20',
-  'editor.selectionBackground': getToken('accent.primary') + '60',
-  'editor.selectionHighlightBackground': getToken('accent.primary') + '44',
-  'editor.stackFrameHighlightBackground': getToken('accent.primary') + '20',
-  'editor.wordHighlightBackground': getToken('accent.primary') + '44',
-  'editor.wordHighlightStrongBackground': getToken('accent.primary') + '55',
+  'editor.rangeHighlightBackground': `${getToken('accent.primary')}20`,
+  'editor.selectionBackground': `${getToken('accent.primary')}60`,
+  'editor.selectionHighlightBackground': `${getToken('accent.primary')}44`,
+  'editor.stackFrameHighlightBackground': `${getToken('accent.primary')}20`,
+  'editor.wordHighlightBackground': `${getToken('accent.primary')}44`,
+  'editor.wordHighlightStrongBackground': `${getToken('accent.primary')}55`,
   'editorBracketHighlight.foreground1': getToken('accent.primary'),
   'editorBracketHighlight.foreground2': getToken('accent.primary'),
   'editorBracketHighlight.foreground3': getToken('accent.secondary'),
@@ -45,30 +44,18 @@ export const editorColors = {
   'editorHint.foreground': getToken('accent.info'),
   'editorHoverWidget.background': getToken('color.background.secondary'),
   'editorHoverWidget.border': getToken('color.border.default'),
-  'editorIndentGuide.activeBackground1':
-    getToken('color.border.default'),
-  'editorIndentGuide.activeBackground2':
-    getToken('color.border.default'),
-  'editorIndentGuide.activeBackground3':
-    getToken('color.border.default'),
-  'editorIndentGuide.activeBackground4':
-    getToken('color.border.default'),
-  'editorIndentGuide.activeBackground5':
-    getToken('color.border.default'),
-  'editorIndentGuide.activeBackground6':
-    getToken('color.border.default'),
-  'editorIndentGuide.background1':
-    getToken('color.border.default'),
-  'editorIndentGuide.background2':
-    getToken('color.border.default'),
-  'editorIndentGuide.background3':
-    getToken('color.border.default'),
-  'editorIndentGuide.background4':
-    getToken('color.border.default'),
-  'editorIndentGuide.background5':
-    getToken('color.border.default'),
-  'editorIndentGuide.background6':
-    getToken('color.border.default'),
+  'editorIndentGuide.activeBackground1': getToken('color.border.default'),
+  'editorIndentGuide.activeBackground2': getToken('color.border.default'),
+  'editorIndentGuide.activeBackground3': getToken('color.border.default'),
+  'editorIndentGuide.activeBackground4': getToken('color.border.default'),
+  'editorIndentGuide.activeBackground5': getToken('color.border.default'),
+  'editorIndentGuide.activeBackground6': getToken('color.border.default'),
+  'editorIndentGuide.background1': getToken('color.border.default'),
+  'editorIndentGuide.background2': getToken('color.border.default'),
+  'editorIndentGuide.background3': getToken('color.border.default'),
+  'editorIndentGuide.background4': getToken('color.border.default'),
+  'editorIndentGuide.background5': getToken('color.border.default'),
+  'editorIndentGuide.background6': getToken('color.border.default'),
   'editorInfo.foreground': getToken('accent.info'),
   'editorLightBulb.foreground': getToken('accent.warning'),
   'editorLightBulbAutoFix.foreground': getToken('accent.warning'),
@@ -77,7 +64,9 @@ export const editorColors = {
   'editorLink.activeForeground': getToken('color.text.primary'),
   'editorMarkerNavigation.background': getToken('color.background.secondary'),
   'editorOverviewRuler.border': getToken('color.legacy.transparent'),
-  'editorOverviewRuler.bracketMatchForeground': getToken('color.background.secondary'),
+  'editorOverviewRuler.bracketMatchForeground': getToken(
+    'color.background.secondary'
+  ),
   'editorRuler.foreground': getToken('color.border.default'),
   'editorStickyScroll.background': getToken('color.background.secondary'),
   'editorStickyScroll.shadow': getToken('color.legacy.transparent'),
@@ -86,9 +75,11 @@ export const editorColors = {
   'editorSuggestWidget.border': getToken('color.border.default'),
   'editorSuggestWidget.foreground': getToken('color.text.primary'),
   'editorSuggestWidget.highlightForeground': getToken('color.text.secondary'),
-  'editorSuggestWidget.selectedBackground': getToken('color.background.tertiary'),
+  'editorSuggestWidget.selectedBackground': getToken(
+    'color.background.tertiary'
+  ),
   'editorWarning.foreground': getToken('accent.warning'),
   'editorWhitespace.foreground': getToken('color.text.tertiary'),
   'editorWidget.background': getToken('color.background.secondary'),
-  'editorWidget.resizeBorder': getToken('accent.primary') + '33',
+  'editorWidget.resizeBorder': `${getToken('accent.primary')}33`,
 }

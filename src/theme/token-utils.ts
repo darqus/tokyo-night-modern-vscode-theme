@@ -8,7 +8,7 @@
  * - WCAG contrast checking
  */
 
-import { tokens, lightThemeTokens } from './design-tokens'
+import { lightThemeTokens, tokens } from './design-tokens'
 import { primitiveColors } from './palette/foundation'
 
 // Interface for token colors used in syntax highlighting
@@ -39,12 +39,9 @@ export const contrastUtils = {
     const b = parseInt(hex.substr(4, 2), 16) / 255
 
     // Apply gamma correction
-    const correctedR =
-      r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4)
-    const correctedG =
-      g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4)
-    const correctedB =
-      b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4)
+    const correctedR = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.055) ** 2.4
+    const correctedG = g <= 0.03928 ? g / 12.92 : ((g + 0.055) / 1.055) ** 2.4
+    const correctedB = b <= 0.03928 ? b / 12.92 : ((b + 0.055) / 1.055) ** 2.4
 
     // Calculate luminance
     return 0.2126 * correctedR + 0.7152 * correctedG + 0.0722 * correctedB
@@ -124,7 +121,7 @@ export const tokenValidator = {
       }
 
       return typeof currentLight === 'string'
-    } catch (e) {
+    } catch (_e) {
       return false
     }
   },

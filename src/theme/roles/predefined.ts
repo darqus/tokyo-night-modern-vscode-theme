@@ -1,6 +1,6 @@
-import { ColorCategory } from './types'
-import { createColorRole } from './generator'
 import { semantic } from '../palette/semantic'
+import { createColorRole } from './generator'
+import { ColorCategory } from './types'
 
 /**
  * Предопределенные роли для интерфейса

@@ -41,11 +41,11 @@ export function calculateLuminance(color: string): number {
 
   // Apply gamma correction to convert to linear RGB
   const correctedR =
-    rSRGB <= 0.03928 ? rSRGB / 12.92 : Math.pow((rSRGB + 0.055) / 1.055, 2.4)
+    rSRGB <= 0.03928 ? rSRGB / 12.92 : ((rSRGB + 0.055) / 1.055) ** 2.4
   const correctedG =
-    gSRGB <= 0.03928 ? gSRGB / 12.92 : Math.pow((gSRGB + 0.055) / 1.05, 2.4)
+    gSRGB <= 0.03928 ? gSRGB / 12.92 : ((gSRGB + 0.055) / 1.05) ** 2.4
   const correctedB =
-    bSRGB <= 0.03928 ? bSRGB / 12.92 : Math.pow((bSRGB + 0.055) / 1.055, 2.4)
+    bSRGB <= 0.03928 ? bSRGB / 12.92 : ((bSRGB + 0.055) / 1.055) ** 2.4
 
   // Calculate and return luminance
   return 0.2126 * correctedR + 0.7152 * correctedG + 0.0722 * correctedB
@@ -103,8 +103,8 @@ export function checkWCAGCompliance(
   const compliant = ratio >= requiredRatio
 
   // Create a descriptive message
-  let levelDescription = `${level} level (${size} text)`
-  let message = compliant
+  const levelDescription = `${level} level (${size} text)`
+  const message = compliant
     ? `✅ Compliant with ${levelDescription}: Contrast ratio is ${ratio.toFixed(2)}:1 (requires ${requiredRatio}:1)`
     : `❌ Not compliant with ${levelDescription}: Contrast ratio is ${ratio.toFixed(2)}:1 (requires ${requiredRatio}:1)`
 

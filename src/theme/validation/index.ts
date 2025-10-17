@@ -1,23 +1,23 @@
 // Contrast validation
-export {
-  validateContrast,
-  getContrastRatio,
-  type ContrastResult,
-} from './contrast'
 
 // Accessibility validation
 export {
+  type AccessibilityIssue,
+  type ColorPalette,
+  type ValidationResult,
   validateAccessibility,
   validateColorPair,
-  type AccessibilityIssue,
-  type ValidationResult,
-  type ColorPalette,
 } from './accessibility'
+export {
+  type ContrastResult,
+  getContrastRatio,
+  validateContrast,
+} from './contrast'
 
 // Usage validation
 export {
-  validateColorUsage,
-  validateColorUsageRule,
   type ColorUsageRule,
   type ThemeDefinition,
+  validateColorUsage,
+  validateColorUsageRule,
 } from './usage'

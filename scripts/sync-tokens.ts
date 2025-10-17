@@ -5,11 +5,11 @@
  * и их экспортированными версиями в различных форматах.
  */
 
-import { tokens, lightThemeTokens } from '../src/theme/design-tokens'
-import { tokenConverter, tokenValidator } from '../src/theme/token-utils'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { lightThemeTokens, tokens } from '../src/theme/design-tokens'
+import { tokenConverter } from '../src/theme/token-utils'
 import { tokenValidation } from '../src/theme/token-validation'
-import { readFileSync } from 'fs'
-import { join } from 'path'
 
 interface ValidationResult {
   isValid: boolean

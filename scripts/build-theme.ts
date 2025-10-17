@@ -1,10 +1,11 @@
 // Генератор итогового JSON-файла темы VS Code с новой семантической системой
-import { colors } from '../src/theme/ui'
-import { tokenColors } from '../src/theme/tokens'
-import { semanticTokenColors } from '../src/theme/semantic'
+
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { palette } from '../src/theme/palette/index'
-import { writeFileSync } from 'fs'
-import { join } from 'path'
+import { semanticTokenColors } from '../src/theme/semantic'
+import { tokenColors } from '../src/theme/tokens'
+import { colors } from '../src/theme/ui'
 
 /**
  * @description Основной объект темы, который будет преобразован в JSON.
@@ -44,7 +45,7 @@ const theme = {
 }
 
 const outPath = join(__dirname, '../themes/tokyo-night-modern-color-theme.json')
-writeFileSync(outPath, JSON.stringify(theme, null, 2) + '\n')
+writeFileSync(outPath, `${JSON.stringify(theme, null, 2)}\n`)
 
 console.log('🎨 Tokyo Night Modern Theme Generated!')
 console.log('='.repeat(50))

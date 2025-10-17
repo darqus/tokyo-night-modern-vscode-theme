@@ -6,7 +6,9 @@ import { getToken } from '../design-tokens'
 
 export const gitDecorationTokens = {
   // Modified resource - for files that have been modified
-  'gitDecoration.modifiedResourceForeground': getToken('color.interactive.secondary'),
+  'gitDecoration.modifiedResourceForeground': getToken(
+    'color.interactive.secondary'
+  ),
 
   // Ignored resource - for files that are ignored by Git
   'gitDecoration.ignoredResourceForeground': getToken('color.text.secondary'),
@@ -21,7 +23,7 @@ export const gitDecorationTokens = {
   'gitDecoration.addedResourceForeground': getToken('accent.primary'),
 
   // Untracked resource - for files that are not tracked by Git
- 'gitDecoration.untrackedResourceForeground': getToken('accent.info'),
+  'gitDecoration.untrackedResourceForeground': getToken('accent.info'),
 
   // Conflicting resource - for files with merge conflicts
   'gitDecoration.conflictingResourceForeground': getToken('accent.warning'),
@@ -30,5 +32,7 @@ export const gitDecorationTokens = {
   'gitDecoration.stageDeletedResourceForeground': getToken('accent.error'),
 
   // Stage modified resource - for modified files in the staging area
-  'gitDecoration.stageModifiedResourceForeground': getToken('color.interactive.secondary'),
+  'gitDecoration.stageModifiedResourceForeground': getToken(
+    'color.interactive.secondary'
+  ),
 }

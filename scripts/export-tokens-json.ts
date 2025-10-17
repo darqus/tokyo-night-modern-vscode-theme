@@ -5,9 +5,9 @@
  * использоваться в других системах и платформах (Figma, React, и т.д.).
  */
 
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { tokenConverter } from '../src/theme/token-utils'
-import { writeFileSync } from 'fs'
-import { join } from 'path'
 
 // Экспорт токенов для темной темы
 const darkTokensJSON = tokenConverter.tokensToJSON('dark')

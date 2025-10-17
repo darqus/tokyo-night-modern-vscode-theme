@@ -4,8 +4,8 @@
  */
 
 import { semanticColors } from './semantic'
-import { interfaceColors } from './semantic/interface'
 import { borderColors } from './semantic/borders'
+import { interfaceColors } from './semantic/interface'
 import { typographyColors } from './semantic/typography'
 
 export interface UIColors {
@@ -17,7 +17,7 @@ export interface UIColors {
     elevated: string
     overlay: string
     transparent: string
- }
+  }
 
   // Text variations
   text: {
@@ -27,7 +27,7 @@ export interface UIColors {
     disabled: string
     inverse: string
     placeholder: string
- }
+  }
 
   // Border variations
   borders: {
@@ -46,7 +46,7 @@ export interface UIColors {
     selected: string
     disabled: string
     pressed: string
- }
+  }
 
   // Special UI elements
   special: {
@@ -81,7 +81,7 @@ export const uiColors: UIColors = {
     disabled: semanticColors.textDisabled, // #515670 - отключенный текст
     inverse: semanticColors.textWhite, // #ffffff - инверсный текст
     placeholder: typographyColors.text.tertiary, // placeholder текст
- },
+  },
 
   // Border variations - вариации границ
   borders: {
@@ -109,7 +109,7 @@ export const uiColors: UIColors = {
     highlight: semanticColors.highlight, // #e0af68 - подсветка
     selection: semanticColors.selection, // #4e6ab2 - выделение
     focusRing: semanticColors.focus, // #42a5f5 - кольцо фокуса
- },
+  },
 }
 
 /**
@@ -130,14 +130,14 @@ export function createUIAlphaVariants() {
   const variants: Record<string, string> = {}
 
   // Create alpha variants for backgrounds
- Object.entries(uiColors.backgrounds).forEach(([key, color]) => {
+  Object.entries(uiColors.backgrounds).forEach(([key, color]) => {
     Object.entries(optimizedAlphaValues).forEach(([alpha, alphaValue]) => {
       variants[`${key}Alpha${alpha}`] = `${color}${alphaValue}`
     })
   })
 
   // Create alpha variants for interactive states
- Object.entries(uiColors.interactive).forEach(([key, color]) => {
+  Object.entries(uiColors.interactive).forEach(([key, color]) => {
     Object.entries(optimizedAlphaValues).forEach(([alpha, alphaValue]) => {
       variants[`${key}Alpha${alpha}`] = `${color}${alphaValue}`
     })
@@ -150,7 +150,7 @@ export function createUIAlphaVariants() {
     })
   })
 
- return variants
+  return variants
 }
 
 /**
