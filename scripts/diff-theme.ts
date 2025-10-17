@@ -10,10 +10,11 @@
 import { execSync } from 'node:child_process'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
+import type { TokenColor } from '../src/theme/token-utils'
 
 interface ThemeFile {
   colors?: Record<string, string>
-  tokenColors?: any
+  tokenColors?: TokenColor[]
 }
 
 interface Args {
@@ -92,16 +93,16 @@ function main() {
       process.exit(1)
       return
     }
-  } catch (e: any) {
-    console.error('Ошибка чтения старой версии:', e.message)
+  } catch (e: unknown) {
+    console.error('Ошибка чтения старой версии:', (e as Error).message)
     process.exit(1)
     return
   }
   let newTheme: ThemeFile
   try {
     newTheme = readTheme(newPath)
-  } catch (e: any) {
-    console.error('Ошибка чтения новой версии:', e.message)
+  } catch (e: unknown) {
+    console.error('Ошибка чтения новой версии:', (e as Error).message)
     process.exit(1)
     return
   }
@@ -117,7 +118,7 @@ function main() {
     `Источник старой версии: ${gitRef ? `git ref \`${gitRef}\`` : oldPath}`
   )
   md.push(`Новая версия: \
-\`${newPath}\``)
+ \`${newPath}\``)
   md.push('')
   md.push(
     `Всего токенов (стар): **${Object.keys(oldColors).length}**, (нов): **${
@@ -133,8 +134,8 @@ function main() {
     md.push('')
     for (const k of added)
       md.push(`- \
-\`${k}\`: \
-\`${newColors[k]}\``)
+ \`${k}\`: \
+ \`${newColors[k]}\``)
     md.push('</details>')
     md.push('')
   }
@@ -143,7 +144,7 @@ function main() {
     md.push('')
     for (const k of removed)
       md.push(`- \
-\`${k}\``)
+ \`${k}\``)
     md.push('</details>')
     md.push('')
   }
@@ -152,9 +153,9 @@ function main() {
     md.push('')
     for (const c of changed) {
       md.push(`- \
-\`${c.key}\`: \
-\`${c.oldVal}\` → \
-\`${c.newVal}\`${colorDelta(c.oldVal, c.newVal)}`)
+ \`${c.key}\`: \
+ \`${c.oldVal}\` → \
+ \`${c.newVal}\`${colorDelta(c.oldVal, c.newVal)}`)
     }
     md.push('</details>')
     md.push('')

@@ -122,7 +122,9 @@ export function checkWCAGCompliance(
  * @param lightThemeTokens - The light theme tokens to validate
  * @returns Array of compliance results
  */
-export function validateLightThemeContrast(lightThemeTokens: any): Array<{
+export function validateLightThemeContrast(
+  lightThemeTokens: Record<string, unknown>
+): Array<{
   name: string
   foreground: string
   background: string
@@ -147,86 +149,86 @@ export function validateLightThemeContrast(lightThemeTokens: any): Array<{
   const checks = [
     {
       name: 'Primary text on primary background',
-      fg: lightThemeTokens.color.text.primary,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.text.primary as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Secondary text on primary background',
-      fg: lightThemeTokens.color.text.secondary,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.text.secondary as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Tertiary text on primary background',
-      fg: lightThemeTokens.color.text.tertiary,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.text.tertiary as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Primary text on secondary background',
-      fg: lightThemeTokens.color.text.primary,
-      bg: lightThemeTokens.color.background.secondary,
+      fg: lightThemeTokens.color.text.primary as string,
+      bg: lightThemeTokens.color.background.secondary as string,
       size: 'small' as const,
     },
     {
       name: 'Secondary text on secondary background',
-      fg: lightThemeTokens.color.text.secondary,
-      bg: lightThemeTokens.color.background.secondary,
+      fg: lightThemeTokens.color.text.secondary as string,
+      bg: lightThemeTokens.color.background.secondary as string,
       size: 'small' as const,
     },
     {
       name: 'Placeholder text on primary background',
-      fg: lightThemeTokens.color.text.placeholder,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.text.placeholder as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Primary button text on primary button',
-      fg: lightThemeTokens.color.interactive['primary-text'],
-      bg: lightThemeTokens.color.interactive.primary,
+      fg: lightThemeTokens.color.interactive['primary-text'] as string,
+      bg: lightThemeTokens.color.interactive.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Secondary button text on secondary button',
-      fg: lightThemeTokens.color.interactive['secondary-text'],
-      bg: lightThemeTokens.color.interactive.secondary,
+      fg: lightThemeTokens.color.interactive['secondary-text'] as string,
+      bg: lightThemeTokens.color.interactive.secondary as string,
       size: 'small' as const,
     },
     {
       name: 'Link text on primary background',
-      fg: lightThemeTokens.color.interactive.link,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.interactive.link as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Success text on primary background',
-      fg: lightThemeTokens.color.status.success,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.status.success as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Warning text on primary background',
-      fg: lightThemeTokens.color.status.warning,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.status.warning as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Error text on primary background',
-      fg: lightThemeTokens.color.status.error,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.status.error as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Info text on primary background',
-      fg: lightThemeTokens.color.status.info,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.status.info as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'small' as const,
     },
     {
       name: 'Large text (heading) on primary background',
-      fg: lightThemeTokens.color.text.primary,
-      bg: lightThemeTokens.color.background.primary,
+      fg: lightThemeTokens.color.text.primary as string,
+      bg: lightThemeTokens.color.background.primary as string,
       size: 'large' as const,
     },
   ]
@@ -256,7 +258,9 @@ export function validateLightThemeContrast(lightThemeTokens: any): Array<{
  * @param lightThemeTokens - The light theme tokens to validate
  * @returns Detailed compliance report
  */
-export function generateContrastReport(lightThemeTokens: any): {
+export function generateContrastReport(
+  lightThemeTokens: Record<string, unknown>
+): {
   totalChecks: number
   compliantAA: number
   compliantAAA: number
@@ -292,9 +296,9 @@ console.log('Example WCAG check:', exampleResult);
 */
 
   const totalChecks = details.length
-  const compliantAA = details.filter((d) => d.aaCompliant).length
-  const compliantAAA = details.filter((d) => d.aaaCompliant).length
-  const nonCompliant = details.filter((d) => !d.aaCompliant).length
+  const compliantAA = details.filter((d) => d.aaCompliant).number
+  const compliantAAA = details.filter((d) => d.aaaCompliant).number
+  const nonCompliant = details.filter((d) => !d.aaCompliant).number
 
   const summary = `WCAG Contrast Compliance Report:
   - Total checks: ${totalChecks}

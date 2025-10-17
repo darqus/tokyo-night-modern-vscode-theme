@@ -20,7 +20,7 @@ export interface AlphaValues {
  * @param {AlphaValues} alphaValues - Объект с альфа-значениями (например, { '1f': '1f', '33': '33' }).
  * @returns {ColorPalette} Объект, содержащий как базовые цвета, так и их альфа-варианты.
  * @example
- * const colors = { red: '#ff0000' };
+ * const colors = { red: '#ff00' };
  * const alphas = { '50': '80' };
  * const result = generateAlphaVariants(colors, alphas);
  * // result.redAlpha50 === '#ff000080'
@@ -56,10 +56,10 @@ export function createColorPalette(
   sources: ColorPalette[],
   alphaValues: AlphaValues
 ): ColorPalette {
-  const combinedColors = sources.reduce(
-    (acc, current) => ({ ...acc, ...current }),
-    {}
-  )
+  const combinedColors: ColorPalette = {}
+  for (const source of sources) {
+    Object.assign(combinedColors, source)
+  }
   return generateAlphaVariants(combinedColors, alphaValues)
 }
 

@@ -14,12 +14,14 @@ export function createColorRole<C extends ColorCategory>({
   category,
   subcategory,
   value,
+  usage = [],
 }: {
   name: string
   description: string
   category: C
   subcategory: SubcategoryType<C>
   value: string
+  usage?: string[]
 }): ColorRole {
   // Создаем уникальный ID из категории и имени
   const id = `${category}.${subcategory}.${name}`
@@ -33,6 +35,8 @@ export function createColorRole<C extends ColorCategory>({
     category,
     subcategory,
     value,
+    usage,
+    accessibility: undefined,
   }
 }
 
@@ -52,7 +56,7 @@ export function validateColorRole(role: ColorRole): boolean {
 
   // Проверяем корректность подкатегории
   const validSubcategories = ColorSubcategories[role.category]
-  if (!validSubcategories.includes(role.subcategory as any)) {
+  if (!validSubcategories.includes(role.subcategory as never)) {
     return false
   }
 
@@ -71,10 +75,13 @@ export function groupColorRoles(
   roles: ColorRole[]
 ): Record<ColorCategory, Record<string, ColorRole[]>> {
   const grouped: Record<ColorCategory, Record<string, ColorRole[]>> = {
-    [ColorCategory.Interface]: {},
-    [ColorCategory.Typography]: {},
-    [ColorCategory.Border]: {},
-    [ColorCategory.Syntax]: {},
+    [ColorCategory.background]: {},
+    [ColorCategory.surface]: {},
+    [ColorCategory.text]: {},
+    [ColorCategory.border]: {},
+    [ColorCategory.interactive]: {},
+    [ColorCategory.syntax]: {},
+    [ColorCategory.status]: {},
   }
 
   roles.forEach((role) => {
@@ -99,7 +106,10 @@ export function findColorRoleConflicts(
   const idMap = new Map<string, ColorRole>()
   roles.forEach((role) => {
     if (idMap.has(role.id)) {
-      conflicts.push([idMap.get(role.id)!, role])
+      const existingRole = idMap.get(role.id)
+      if (existingRole) {
+        conflicts.push([existingRole, role])
+      }
     }
     idMap.set(role.id, role)
   })

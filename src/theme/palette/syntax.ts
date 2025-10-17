@@ -202,6 +202,12 @@ export function getSyntaxColor(path: string): string {
     }
   }
 
+  if (typeof current !== 'string') {
+    throw new Error(
+      `Syntax color path ${path} does not resolve to a string value: ${typeof current}`
+    )
+  }
+
   return current
 }
 

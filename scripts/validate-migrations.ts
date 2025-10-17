@@ -1,5 +1,6 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
+import type { TokenColor } from '../src/theme/token-utils'
 import { validateColorUsage } from '../src/theme/validation'
 
 interface ValidationResult {
@@ -51,7 +52,7 @@ export async function validateMigration(): Promise<ValidationResult> {
     })
 
     // Проверяем токены цветов
-    theme.tokenColors?.forEach((token: any) => {
+    theme.tokenColors?.forEach((token: TokenColor) => {
       if (token.settings?.foreground) {
         if (
           !/^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$/.test(token.settings.foreground)
@@ -91,9 +92,9 @@ export async function validateMigration(): Promise<ValidationResult> {
     ) {
       result.success = false
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     result.success = false
-    result.warnings.push(`Validation failed: ${error.message}`)
+    result.warnings.push(`Validation failed: ${(error as Error).message}`)
   }
 
   return result

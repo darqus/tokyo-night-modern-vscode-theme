@@ -119,12 +119,16 @@ if (syncResult.isValid) {
   console.log('✅ All tokens are synchronized!')
 } else {
   console.log('❌ Synchronization issues found:')
-  syncResult.errors.forEach((error) => console.error(`  ❌ ${error}`))
+  syncResult.errors.forEach((error) => {
+    console.error(`  ❌ ${error}`)
+  })
 }
 
 if (syncResult.warnings.length > 0) {
-  console.log('\n⚠️  Warnings:')
-  syncResult.warnings.forEach((warning) => console.warn(`  ⚠️ ${warning}`))
+  console.log('\n⚠️ Warnings:')
+  syncResult.warnings.forEach((warning) => {
+    console.warn(`  ⚠️ ${warning}`)
+  })
 }
 
 console.log('='.repeat(50))
@@ -133,10 +137,12 @@ console.log('='.repeat(50))
 const validationResults = tokenValidation.runAllValidations()
 if (!validationResults.isValid) {
   console.log('\n🔍 Additional validation issues:')
-  validationResults.errors.forEach((error) => console.error(`  ❌ ${error}`))
-  validationResults.warnings.forEach((warning) =>
+  validationResults.errors.forEach((error) => {
+    console.error(`  ❌ ${error}`)
+  })
+  validationResults.warnings.forEach((warning) => {
     console.warn(`  ⚠️ ${warning}`)
-  )
+  })
 }
 
 // Возвращаем результат для возможного использования в CI/CD

@@ -6,18 +6,18 @@ import {
 import { type PythonSyntaxToken, pythonSyntaxColors } from './languages/python'
 
 // Re-export base syntax colors
-export { type BaseSyntaxToken, baseSyntaxColors } from './base'
+export { baseSyntaxColors, type BaseSyntaxToken } from './base'
 
 // Re-export language-specific syntax colors
 export {
-  type JavaScriptSyntaxToken,
   javascriptSyntaxColors,
+  type JavaScriptSyntaxToken,
 } from './languages/javascript'
-export { type PythonSyntaxToken, pythonSyntaxColors } from './languages/python'
+export { pythonSyntaxColors, type PythonSyntaxToken } from './languages/python'
 
 // Common interfaces for language syntax
 export interface LanguageSyntaxColors {
-  [key: string]: string | object
+  [key: string]: string | Record<string, unknown>
 }
 
 export interface SyntaxLanguage {
@@ -53,11 +53,11 @@ export function getSyntaxColor(language: string, token: string): string | null {
 
   // Handle nested objects (like keyword.const, object.key, etc.)
   const keys = token.split('.')
-  let value: any = langSyntax
+  let value: string | Record<string, unknown> = langSyntax
 
   for (const key of keys) {
     if (value && typeof value === 'object' && key in value) {
-      value = value[key]
+      value = value[key] as string | Record<string, unknown>
     } else {
       return null
     }
