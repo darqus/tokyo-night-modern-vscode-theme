@@ -35,7 +35,6 @@ export function computeVersion(
       minor += 1
       patch = count
       break
-    case 'patch':
     default:
       patch += count
       break

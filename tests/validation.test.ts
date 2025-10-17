@@ -1,9 +1,9 @@
-import { describe, it, expect } from '@jest/globals'
+import { describe, expect, it } from '@jest/globals'
 import {
-  validateContrast,
   getContrastRatio,
   validateAccessibility,
   validateColorUsage,
+  validateContrast,
 } from '../src/theme/validation'
 
 describe('Color Validation', () => {

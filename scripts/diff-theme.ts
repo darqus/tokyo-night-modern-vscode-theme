@@ -1,4 +1,5 @@
 #!/usr/bin/env ts-node
+
 /**
  * Скрипт сравнения двух theme JSON и генерации Markdown diff для CHANGELOG.
  * Использование:
@@ -6,9 +7,9 @@
  * Если не указан --old, можно передать --git-ref v1.18.19 (будет считан файл из git show).
  */
 
+import { execSync } from 'node:child_process'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
-import { execSync } from 'node:child_process'
 
 interface ThemeFile {
   colors?: Record<string, string>
@@ -66,7 +67,7 @@ function diffObjects(
 }
 
 function colorDelta(oldVal: string, newVal: string): string {
-  const normalize = (v: string) => v.toLowerCase()
+  const _normalize = (v: string) => v.toLowerCase()
   if (!oldVal || !newVal) return ''
   if (oldVal.length === 9 && newVal.length === 9) {
     // #rrggbbaa
@@ -113,7 +114,7 @@ function main() {
   md.push('### Theme Color Diff')
   md.push('')
   md.push(
-    `Источник старой версии: ${gitRef ? 'git ref `' + gitRef + '`' : oldPath}`
+    `Источник старой версии: ${gitRef ? `git ref \`${gitRef}\`` : oldPath}`
   )
   md.push(`Новая версия: \
 \`${newPath}\``)

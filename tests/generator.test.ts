@@ -1,7 +1,7 @@
 import { generateTheme } from '../src/theme/generator'
-import { validateColorUsage } from '../src/theme/validation'
 import { semantic } from '../src/theme/palette/semantic/index'
 import { nestedSyntaxColors as syntax } from '../src/theme/palette/syntax/nested'
+import { validateColorUsage } from '../src/theme/validation'
 
 describe('Theme Generator', () => {
   describe('generateTheme', () => {

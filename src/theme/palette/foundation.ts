@@ -133,8 +133,6 @@ export interface PrimitiveColors {
   white: string
   black: string
   transparent: string
-
-  
 }
 
 /**

@@ -1,5 +1,5 @@
-import { baseSyntaxColors } from '../base'
 import { foundationColors } from '../../foundation/colors'
+import { baseSyntaxColors } from '../base'
 
 export const javascriptSyntaxColors = {
   // Inherit base colors

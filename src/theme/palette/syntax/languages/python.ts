@@ -1,5 +1,5 @@
-import { baseSyntaxColors } from '../base'
 import { semanticColors } from '../../semantic'
+import { baseSyntaxColors } from '../base'
 
 export const pythonSyntaxColors = {
   // Inherit base colors

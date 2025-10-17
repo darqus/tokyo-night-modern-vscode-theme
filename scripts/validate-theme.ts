@@ -1,6 +1,6 @@
 // Валидация структуры темы VS Code
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 import { palette } from '../src/theme/palette/index'
 
 const themePath = path.join(
@@ -41,7 +41,7 @@ Object.entries(theme.colors).forEach(([key, value]) => {
     if (!colorValues.has(value)) {
       colorValues.set(value, [])
     }
-    colorValues.get(value)!.push(key)
+    colorValues.get(value)?.push(key)
   } else if (typeof value === 'object' && value !== null) {
     // Если это объект с цветами, извлекаем все цвета
     Object.entries(value).forEach(([subKey, subValue]) => {
@@ -50,7 +50,7 @@ Object.entries(theme.colors).forEach(([key, value]) => {
         if (!colorValues.has(subValue)) {
           colorValues.set(subValue, [])
         }
-        colorValues.get(subValue)!.push(fullKey)
+        colorValues.get(subValue)?.push(fullKey)
       }
     })
   }
@@ -63,14 +63,14 @@ theme.tokenColors.forEach((token: any, index: number) => {
     if (!colorValues.has(color)) {
       colorValues.set(color, [])
     }
-    colorValues.get(color)!.push(`tokenColors[${index}].settings.foreground`)
+    colorValues.get(color)?.push(`tokenColors[${index}].settings.foreground`)
   }
   if (token.settings && typeof token.settings.background === 'string') {
     const color = token.settings.background
     if (!colorValues.has(color)) {
       colorValues.set(color, [])
     }
-    colorValues.get(color)!.push(`tokenColors[${index}].settings.background`)
+    colorValues.get(color)?.push(`tokenColors[${index}].settings.background`)
   }
 })
 
@@ -81,19 +81,19 @@ Object.entries(theme.semanticTokenColors).forEach(
       if (!colorValues.has(rule)) {
         colorValues.set(rule, [])
       }
-      colorValues.get(rule)!.push(`semanticTokenColors.${key}`)
+      colorValues.get(rule)?.push(`semanticTokenColors.${key}`)
     } else if (rule && typeof rule.foreground === 'string') {
       const color = rule.foreground
       if (!colorValues.has(color)) {
         colorValues.set(color, [])
       }
-      colorValues.get(color)!.push(`semanticTokenColors.${key}.foreground`)
+      colorValues.get(color)?.push(`semanticTokenColors.${key}.foreground`)
     } else if (rule && typeof rule.background === 'string') {
       const color = rule.background
       if (!colorValues.has(color)) {
         colorValues.set(color, [])
       }
-      colorValues.get(color)!.push(`semanticTokenColors.${key}.background`)
+      colorValues.get(color)?.push(`semanticTokenColors.${key}.background`)
     }
   }
 )

@@ -79,7 +79,7 @@ export function getLuminance(color: string): number {
   // Convert to linear RGB values
   const toLinear = (val: number) => {
     val = val / 255
-    return val <= 0.03928 ? val / 12.92 : Math.pow((val + 0.055) / 1.055, 2.4)
+    return val <= 0.03928 ? val / 12.92 : ((val + 0.055) / 1.055) ** 2.4
   }
 
   const rLinear = toLinear(r)

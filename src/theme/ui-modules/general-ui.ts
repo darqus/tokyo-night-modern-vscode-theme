@@ -15,7 +15,7 @@ export const generalUIColors = {
   foreground: getToken('color.text.primary'),
   'icon.foreground': getToken('accent.primary'),
   'sash.hoverBorder': getToken('color.interactive.hover'),
-  'selection.background': getToken('color.special.selection') + '60',
-  'widget.border': getToken('color.border.subtle') + '40',
-  'widget.shadow': getToken('color.special.shadow') + '80',
+  'selection.background': `${getToken('color.special.selection')}60`,
+  'widget.border': `${getToken('color.border.subtle')}40`,
+  'widget.shadow': `${getToken('color.special.shadow')}80`,
 }

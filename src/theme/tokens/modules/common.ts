@@ -1,6 +1,7 @@
 // Общие токены синтаксиса (не зависящие от конкретного языка)
-import { TokenColor } from '../../token-utils'
+
 import { palette } from '../../palette/index'
+import type { TokenColor } from '../../token-utils'
 
 export const commonTokens: TokenColor[] = [
   {

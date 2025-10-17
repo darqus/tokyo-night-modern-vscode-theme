@@ -5,9 +5,9 @@
  * который может использоваться в веб-приложениях для темизации.
  */
 
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { cssGenerator } from '../src/theme/token-utils'
-import { writeFileSync } from 'fs'
-import { join } from 'path'
 
 // Генерация CSS переменных для темной и светлой тем
 const completeCSS = cssGenerator.generateCompleteCSS()

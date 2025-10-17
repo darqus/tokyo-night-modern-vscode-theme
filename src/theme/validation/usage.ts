@@ -1,4 +1,4 @@
-import { ColorPalette } from './accessibility'
+import type { ColorPalette } from './accessibility'
 
 export interface UsageIssue {
   type: 'usage' | 'naming' | 'format' | 'consistency' | 'duplicate'

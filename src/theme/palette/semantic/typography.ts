@@ -10,7 +10,7 @@ export const typographyColors = {
     disabled: foundationColors.gray700,
     inverse: foundationColors.gray900,
     onAccent: foundationColors.gray100,
- },
+  },
 
   // Heading colors
   heading: {

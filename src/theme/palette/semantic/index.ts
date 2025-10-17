@@ -2,11 +2,11 @@
  * Semantic layer - семантический слой цветовой системы
  */
 
-import { interfaceColors } from './interface'
-import { typographyColors } from './typography'
-import { borderColors } from './borders'
 import { foundationColors } from '../foundation/colors'
 import { getColorWithOpacity } from '../foundation/opacity'
+import { borderColors } from './borders'
+import { interfaceColors } from './interface'
+import { typographyColors } from './typography'
 
 export * from './types'
 
@@ -30,7 +30,7 @@ export const surfaces = {
 } as const
 
 export const elevation = {
- base: {
+  base: {
     base: interfaceColors.surface.primary,
   },
   raised: {
@@ -48,7 +48,7 @@ export const interactive = {
   active: {
     base: interfaceColors.surface.active,
   },
- focus: {
+  focus: {
     base: interfaceColors.ui.input.focus,
   },
   disabled: {
@@ -63,7 +63,7 @@ export const interactive = {
 } as const
 
 export const effects = {
- shadow: {
+  shadow: {
     base: borderColors.shadow.default,
   },
   glow: {
@@ -72,7 +72,7 @@ export const effects = {
 } as const
 
 export const text = {
- primary: {
+  primary: {
     base: typographyColors.text.primary,
   },
   secondary: {
@@ -90,12 +90,12 @@ export const text = {
 } as const
 
 export const typography = {
- heading: {
+  heading: {
     default: {
       base: typographyColors.heading.h1,
     },
   },
- code: {
+  code: {
     default: {
       base: typographyColors.code.text,
     },
@@ -111,7 +111,7 @@ export const typography = {
 } as const
 
 export const borders = {
- structural: {
+  structural: {
     default: {
       base: borderColors.border.default,
     },

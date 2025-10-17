@@ -10,5 +10,7 @@ export const badgeColors = {
   'activityBarBadge.background': getToken('color.interactive.secondary'),
   'activityBarBadge.foreground': getToken('color.interactive.secondary-text'),
   'extensionBadge.remoteBackground': getToken('color.interactive.secondary'),
-  'extensionBadge.remoteForeground': getToken('color.interactive.secondary-text'),
+  'extensionBadge.remoteForeground': getToken(
+    'color.interactive.secondary-text'
+  ),
 }
