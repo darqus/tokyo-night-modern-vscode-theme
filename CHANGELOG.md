@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.166](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.165...v2.2.166) (2025-10-17)
+
 ### [2.2.165](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.117...v2.2.165) (2025-10-17)
 
 
