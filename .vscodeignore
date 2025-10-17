@@ -27,6 +27,7 @@ commitlint.config.js
 .npmignore
 jest.config.js
 .releaserc.json
+biome.json
 
 # Development tools
 .env*
