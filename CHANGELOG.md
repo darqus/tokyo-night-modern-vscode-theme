@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.165](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.117...v2.2.165) (2025-10-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **theme:** Direct usage of `foundationColors` in UI modules is deprecated. All UI components must now use semantic tokens via the `getToken()` utility to ensure architectural consistency.
+* **theme:** Legacy color references replaced with semantic color system
+* **theme:** The structure of TypeScript syntax color definitions has been refactored. Colors are now defined as direct string values instead of nested objects with a 'base' property. This simplifies the theme structure but may affect integrations that relied on the previous object shape.
+* **theme:** primitiveColors has been renamed to foundationColors
+* **theme:** The 'migration' utility object, including 'getLegacyMapping' and 'migrateColor' functions, has been removed from the theme palette.
+* **theme:** Token access now requires using getToken() function instead of direct palette access
+
+### Features
+
+* **theme:** add comprehensive colors for SCM Graph view ([61ca65b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/61ca65b0900082c2502790bcf813c6b833440388))
+* **theme:** add comprehensive semantic token color definitions for enhanced syntax highlighting ([ac0d1fd](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/ac0d1fd696dbe2f1d7018c9152417e5fea1891e8))
+* **theme:** add comprehensive Vue syntax highlighting support ([233b882](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/233b882ac3f1c6f95508777bcf21bf5f7cc8be44))
+* **theme:** add design tokens for consistent UI styling ([5220a14](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5220a141c530abd12fa00e39db5fdf61838b2786))
+* **theme:** add new color palettes and enhance syntax highlighting ([75232d0](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/75232d0d76be4f0a34d210acf32bae0fb9d1a9d8))
+* **theme:** add syntax highlighting support for C#, PHP, Ruby, Kotlin, and Swift ([211b06c](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/211b06c46cef13f8f2cdad2dd501531736685c49))
+* **theme:** enhance JavaScript and TypeScript syntax highlighting with new token definitions and styling ([cd873d9](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/cd873d92bf9b399c2c9242349a0550e33051ebb5))
+* **theme:** enhance markdown list highlighting ([e629f4d](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e629f4dd4272bbaa12a9a1b4d5226cd862ddd29a))
+* **theme:** enhance validation script with duplicate color detection and improved unused color filtering ([e041277](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e0412776e2097701d408e4272160e916347cd179))
+* **theme:** expand semantic color system and refactor UI modules ([2f0cd74](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/2f0cd741bfc6f71157cd18afefef1541bb30cbb8))
+* **theme:** export PrimitiveColors type from foundation palette ([db9d9ca](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/db9d9ca83feae8ea331730200bd63d80dc065511))
+* **theme:** implement comprehensive design token system with light theme support ([2b2d9af](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/2b2d9af3c08f90baca109500ab4195bbf0417369))
+* **theme:** improve type safety and refactor theme validation scripts ([bd6c5d7](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/bd6c5d727b4fb398f5972714be291f5787a9479f))
+* **theme:** introduce onAccent text color and adopt semantic typography ([e20d270](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/e20d270ac1ffa554923c1fb5128b5c62917f8a01))
+* **theme:** replace bright text colors with cooler, subdued tones ([eed7ea1](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/eed7ea1dbdf6af9af4bf99f507ced5b70d3470af)), closes [#97a2d3](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/97a2d3) [#6c7097](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/6c7097)
+* **theme:** update primitive color palette values ([7b6194d](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7b6194d8f0cc6e0092b7052cfca683915231c4f1))
+* **tsconfig:** enable stricter TypeScript compiler options ([9d24f1b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/9d24f1b1ede3acd780c7296a0f0bbfd01ea11441))
+
+
+### Bug Fixes
+
+* **theme:** исправить значение прозрачного цвета ([ad84897](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/ad8489708d6fb741357a2c4d9bd3548e046d46b7)), closes [#00000](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/00000) [#00000000](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/00000000)
+* **theme:** update darkest gray color to [#0](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/0)f1722 across palette and theme files ([c3f3bb4](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/c3f3bb42d54db1cf5c50c4d0e3f6e1b38ee754dd)), closes [#0f1722](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/0f1722)
+* **theme:** update status bar item hover background colors ([7cdc67e](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7cdc67e92aa6b93dc1872c672a0c6e7dc4f69acf))
+
+
+* **theme:** clean up palette and syntax color definitions ([c42182f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/c42182fc53880235586f62c1834763ae5387a979))
+* **theme:** migrate to semantic color system and remove legacy scripts ([089aa0c](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/089aa0c772dc36332f800865870b8c17408636c3))
+* **theme:** rename primitiveColors to foundationColors and update imports ([af7b398](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/af7b398fa32a4c5088dda58f955cf15784d67d89))
+
 ### [2.2.117](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.109...v2.2.117) (2025-10-14)
 
 ### Features
