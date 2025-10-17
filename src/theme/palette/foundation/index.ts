@@ -8,3 +8,6 @@ export * from './opacity'
 
 // Create an alias for backward compatibility
 export const primitiveColors = foundationColors
+
+// Export the PrimitiveColors interface
+export { PrimitiveColors } from '../foundation'

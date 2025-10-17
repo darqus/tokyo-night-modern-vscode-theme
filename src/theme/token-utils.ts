@@ -9,7 +9,7 @@
  */
 
 import { lightThemeTokens, tokens } from './design-tokens'
-import { primitiveColors } from './palette/foundation'
+import { primitiveColors } from './palette/foundation/index'
 
 // Interface for token colors used in syntax highlighting
 export interface TokenColor {
