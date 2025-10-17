@@ -1,0 +1,2681 @@
+{
+  "Activity Bar": {
+    "colors": [
+      {
+        "token": "activityBar.background",
+        "description": "фон панели активности, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "activityBar.foreground",
+        "description": "цвет активных иконок, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "activityBar.inactiveForeground",
+        "description": "цвет неактивных иконок, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "activityBar.activeBorder",
+        "description": "цвет активной границы, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "activityBar.dropBorder",
+        "description": "цвет границы при перетаскивании, использует `accent.primary`",
+        "palette": "accent.primary"
+      }
+    ]
+  },
+  "Badges": {
+    "colors": [
+      {
+        "token": "badge.background",
+        "description": "фон значка, использует `color.interactive.secondary`",
+        "palette": "color.interactive.secondary"
+      },
+      {
+        "token": "badge.foreground",
+        "description": "текст на значке, использует `color.interactive.secondary-text`",
+        "palette": "color.interactive.secondary-text"
+      },
+      {
+        "token": "activityBarBadge.background",
+        "description": "фон значка активности, использует `color.interactive.secondary`",
+        "palette": "color.interactive.secondary"
+      },
+      {
+        "token": "activityBarBadge.foreground",
+        "description": "текст значка активности, использует `color.interactive.secondary-text`",
+        "palette": "color.interactive.secondary-text"
+      },
+      {
+        "token": "extensionBadge.remoteBackground",
+        "description": "фон значка удаленного расширения, использует `color.interactive.secondary`",
+        "palette": "color.interactive.secondary"
+      },
+      {
+        "token": "extensionBadge.remoteForeground",
+        "description": "текст значка удаленного расширения, использует `color.interactive.secondary-text`",
+        "palette": "color.interactive.secondary-text"
+      }
+    ]
+  },
+  "Command Center": {
+    "colors": [
+      {
+        "token": "commandCenter.background",
+        "description": "фон командного центра, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "commandCenter.activeBackground",
+        "description": "фон активного элемента в командном центре, использует `foundationColors.gray900`",
+        "palette": "foundationColors.gray900"
+      },
+      {
+        "token": "commandCenter.border",
+        "description": "граница командного центра, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray700"
+      }
+    ]
+  },
+  "Diffs": {
+    "colors": [
+      {
+        "token": "diffEditor.insertedTextBackground",
+        "description": "фон вставленного текста, использует `foundationColors.green500` с 20% прозрачностью",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "diffEditor.removedTextBackground",
+        "description": "фон удаленного текста, использует `foundationColors.red500` с 22% прозрачностью",
+        "palette": "foundationColors.red500"
+      }
+    ]
+  },
+  "Drop Backgrounds": {
+    "colors": [
+      {
+        "token": "editorGroup.dropBackground",
+        "description": "фон при перетаскивании в группу редакторов, использует `foundationColors.blue500` с 33% прозрачностью",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.dropBackground",
+        "description": "фон при перетаскивании в список, использует `foundationColors.blue500` с 33% прозрачностью",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "panelSection.dropBackground",
+        "description": "фон при перетаскивании в секцию панели, использует `foundationColors.blue500` с 33% прозрачностью",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "terminal.dropBackground",
+        "description": "фон при перетаскивании в терминал, использует `foundationColors.blue500` с 33% прозрачностью",
+        "palette": "foundationColors.blue500"
+      }
+    ]
+  },
+  "Editor Groups & Panels": {
+    "colors": [
+      {
+        "token": "editorGroup.border",
+        "description": "граница между группами редакторов, использует `foundationColors.gray600` с 20% прозрачностью",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "editorGroup.dropBackground",
+        "description": "фон при перетаскивании редактора, использует `foundationColors.blue500` с 20% прозрачностью",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorGroup.dropIntoPromptBorder",
+        "description": "граница при перетаскивании в группу, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "editorGroupHeader.border",
+        "description": "граница заголовка группы редакторов, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "editorGroupHeader.noTabsBackground",
+        "description": "фон заголовка группы без вкладок, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "editorGroupHeader.tabsBackground",
+        "description": "фон заголовка группы с вкладками, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "editorGroupHeader.tabsBorder",
+        "description": "граница заголовка группы с вкладками, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "editorPane.background",
+        "description": "фон панели редактора, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "panel.background",
+        "description": "фон панели, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "panel.border",
+        "description": "граница панели, использует `foundationColors.gray600` с 40% прозрачностью",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "panel.dropBorder",
+        "description": "граница при перетаскивании на панель, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "panelInput.border",
+        "description": "граница ввода на панели, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "panelSection.border",
+        "description": "граница секции панели, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "panelSection.dropBackground",
+        "description": "фон при перетаскивании в секцию панели, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "panelTitle.activeBorder",
+        "description": "активная граница заголовка панели, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "panelTitle.activeForeground",
+        "description": "активный заголовок панели, использует `foundationColors.gray40`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "panelTitle.inactiveForeground",
+        "description": "неактивный заголовок панели, использует `foundationColors.gray400` с 67% прозрачности",
+        "palette": "foundationColors.gray400"
+      }
+    ]
+  },
+  "Editor": {
+    "colors": [
+      {
+        "token": "editor.background",
+        "description": "фон редактора, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "editor.findMatchBackground",
+        "description": "фон текущего результата поиска, использует `accent.primary` с 66% прозрачностью",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.findMatchHighlightBackground",
+        "description": "фон других результатов поиска, использует `accent.primary` с 66% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.findRangeHighlightBackground",
+        "description": "фон области, ограничивающей поиск, использует `accent.primary` с 33% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.focusedStackFrameHighlightBackground",
+        "description": "фон выделенного стека фокуса, использует `accent.primary` с 20% прозрачностью",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.foldBackground",
+        "description": "фон свернутого диапазона, использует `color.background.secondary` с 4A прозрачности",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editor.foreground",
+        "description": "цвет текста редактора, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "editor.inactiveSelectionBackground",
+        "description": "фон неактивного выделения, использует `accent.primary` с 45% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.lineHighlightBackground",
+        "description": "фон текущей строки, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editor.lineHighlightBorder",
+        "description": "граница текущей строки, использует `color.legacy.transparent`",
+        "palette": "color.legacy.transparent"
+      },
+      {
+        "token": "editor.rangeHighlightBackground",
+        "description": "фон выбранного диапазона, использует `accent.primary` с 20% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.selectionBackground",
+        "description": "фон выделенного текста, использует `accent.primary` с 60% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.selectionHighlightBackground",
+        "description": "фон других вхождений выделенного слова, использует `accent.primary` с 44% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.stackFrameHighlightBackground",
+        "description": "фон выделенного стека, использует `accent.primary` с 20% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.wordHighlightBackground",
+        "description": "фон совпадающих слов, использует `accent.primary` с 44% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editor.wordHighlightStrongBackground",
+        "description": "фон совпадающих слов с сильным выделением, использует `accent.primary` с 55% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editorBracketHighlight.foreground1",
+        "description": "цвет скобки первого уровня, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editorBracketHighlight.foreground2",
+        "description": "цвет скобки второго уровня, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editorBracketHighlight.foreground3",
+        "description": "цвет скобки третьего уровня, использует `accent.secondary`",
+        "palette": "accent.secondary"
+      },
+      {
+        "token": "editorBracketHighlight.foreground4",
+        "description": "цвет скобки четвертого уровня, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "editorBracketHighlight.foreground5",
+        "description": "цвет скобки пятого уровня, использует `accent.success`",
+        "palette": "accent.success"
+      },
+      {
+        "token": "editorBracketHighlight.foreground6",
+        "description": "цвет скобки шестого уровня, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorBracketHighlight.unexpectedBracket.foreground",
+        "description": "цвет неожиданной скобки, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "editorBracketMatch.background",
+        "description": "фон парной скобки, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorBracketMatch.border",
+        "description": "граница парной скобки, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground1",
+        "description": "активное руководство по скобкам 1, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground2",
+        "description": "активное руководство по скобкам 2, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground3",
+        "description": "активное руководство по скобкам 3, использует `accent.secondary`",
+        "palette": "accent.secondary"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground4",
+        "description": "активное руководство по скобкам 4, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground5",
+        "description": "активное руководство по скобкам 5, использует `accent.success`",
+        "palette": "accent.success"
+      },
+      {
+        "token": "editorBracketPairGuide.activeBackground6",
+        "description": "активное руководство по скобкам 6, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorCodeLens.foreground",
+        "description": "цвет CodeLens, использует `color.text.tertiary`",
+        "palette": "color.text.tertiary"
+      },
+      {
+        "token": "editorCursor.background",
+        "description": "фон курсора редактора, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorCursor.foreground",
+        "description": "цвет курсора редактора, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorError.foreground",
+        "description": "цвет ошибок, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "editorHint.foreground",
+        "description": "цвет подсказок, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "editorHoverWidget.background",
+        "description": "фон виджета наведения, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorHoverWidget.border",
+        "description": "граница виджета наведения, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground1",
+        "description": "активный отступ 1, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground2",
+        "description": "активный отступ 2, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground3",
+        "description": "активный отступ 3, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground4",
+        "description": "активный отступ 4, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground5",
+        "description": "активный отступ 5, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.activeBackground6",
+        "description": "активный отступ 6, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background1",
+        "description": "отступ 1, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background2",
+        "description": "отступ 2, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background3",
+        "description": "отступ 3, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background4",
+        "description": "отступ 4, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background5",
+        "description": "отступ 5, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorIndentGuide.background6",
+        "description": "отступ 6, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorInfo.foreground",
+        "description": "цвет информации, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "editorLightBulb.foreground",
+        "description": "цвет лампочки кода, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorLightBulbAutoFix.foreground",
+        "description": "цвет лампочки автозамены, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorLineNumber.activeForeground",
+        "description": "цвет активной строки с номером, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "editorLineNumber.foreground",
+        "description": "цвет номеров строк, использует `color.text.disabled`",
+        "palette": "color.text.disabled"
+      },
+      {
+        "token": "editorLink.activeForeground",
+        "description": "цвет активных ссылок, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "editorMarkerNavigation.background",
+        "description": "фон навигации маркеров, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorOverviewRuler.border",
+        "description": "граница линейки обзора, использует `color.legacy.transparent`",
+        "palette": "color.legacy.transparent"
+      },
+      {
+        "token": "editorOverviewRuler.bracketMatchForeground",
+        "description": "цвет скобок в линейке обзора, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorRuler.foreground",
+        "description": "цвет вертикальных линеек, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorStickyScroll.background",
+        "description": "фон прилипающего скролла, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorStickyScroll.shadow",
+        "description": "тень прилипающего скролла, использует `color.legacy.transparent`",
+        "palette": "color.legacy.transparent"
+      },
+      {
+        "token": "editorStickyScrollHover.background",
+        "description": "фон при наведении на прилипающий скролл, использует `color.background.tertiary`",
+        "palette": "color.background.tertiary"
+      },
+      {
+        "token": "editorSuggestWidget.background",
+        "description": "фон виджета подсказок, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorSuggestWidget.border",
+        "description": "граница виджета подсказок, использует `color.border.default`",
+        "palette": "color.border.default"
+      },
+      {
+        "token": "editorSuggestWidget.foreground",
+        "description": "цвет виджета подсказок, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "editorSuggestWidget.highlightForeground",
+        "description": "цвет выделения виджете подсказок, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "editorSuggestWidget.selectedBackground",
+        "description": "фон выбранного элемента виджете подсказок, использует `color.background.tertiary`",
+        "palette": "color.background.tertiary"
+      },
+      {
+        "token": "editorWarning.foreground",
+        "description": "цвет предупреждений, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "editorWhitespace.foreground",
+        "description": "цвет пробелов, использует `color.text.tertiary`",
+        "palette": "color.text.tertiary"
+      },
+      {
+        "token": "editorWidget.background",
+        "description": "фон виджета редактора, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "editorWidget.resizeBorder",
+        "description": "граница изменения размера виджета, использует `accent.primary` с 33% прозрачности",
+        "palette": "accent.primary"
+      }
+    ]
+  },
+  "Find & Search": {
+    "colors": [
+      {
+        "token": "editor.findMatchBackground",
+        "description": "фон текущего результата поиска, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.findMatchHighlightBackground",
+        "description": "фон других результатов поиска, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.findMatchForeground",
+        "description": "цвет результатов поиска в линейке обзора, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "listFilterWidget.background",
+        "description": "фон виджета фильтрации списков, использует `foundationColors.gray900`",
+        "palette": "foundationColors.gray900"
+      },
+      {
+        "token": "listFilterWidget.noMatchesOutline",
+        "description": "контур при отсутствии совпадений, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "listFilterWidget.outline",
+        "description": "контур виджета фильтрации, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "terminal.findMatchBorder",
+        "description": "граница результатов поиска в терминале, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "terminal.findMatchHighlightBorder",
+        "description": "граница выделенных результатов поиска в терминале, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      }
+    ]
+  },
+  "General UI": {
+    "colors": [
+      {
+        "token": "breadcrumb.activeSelectionForeground",
+        "description": "цвет активного элемента навигации, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "breadcrumb.focusForeground",
+        "description": "цвет элемента навигации в фокусе, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "breadcrumb.foreground",
+        "description": "цвет элемента навигации, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "breadcrumbPicker.background",
+        "description": "фон выбора навигации, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "descriptionForeground",
+        "description": "цвет описаний, использует `color.text.disabled`",
+        "palette": "color.text.disabled"
+      },
+      {
+        "token": "errorForeground",
+        "description": "цвет ошибок, использует `color.text.disabled`",
+        "palette": "color.text.disabled"
+      },
+      {
+        "token": "focusBorder",
+        "description": "цвет границы фокуса, использует `color.border.focus`",
+        "palette": "color.border.focus"
+      },
+      {
+        "token": "foreground",
+        "description": "цвет переднего плана по умолчанию, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "icon.foreground",
+        "description": "цвет иконок, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "sash.hoverBorder",
+        "description": "граница при наведении на разделитель, использует `color.interactive.hover`",
+        "palette": "color.interactive.hover"
+      },
+      {
+        "token": "selection.background",
+        "description": "цвет фона выделения, использует `color.special.selection` с 60% прозрачности",
+        "palette": "color.special.selection"
+      },
+      {
+        "token": "widget.border",
+        "description": "граница виджетов, использует `color.border.subtle` с 40% прозрачности",
+        "palette": "color.border.subtle"
+      },
+      {
+        "token": "widget.shadow",
+        "description": "тень виджетов, использует `color.special.shadow` с 80% прозрачности",
+        "palette": "color.special.shadow"
+      }
+    ]
+  },
+  "Git Decoration": {
+    "colors": [
+      {
+        "token": "gitDecoration.modifiedResourceForeground",
+        "description": "цвет измененных ресурсов, использует `color.interactive.secondary`",
+        "palette": "color.interactive.secondary"
+      },
+      {
+        "token": "gitDecoration.ignoredResourceForeground",
+        "description": "цвет игнорируемых ресурсов, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "gitDecoration.deletedResourceForeground",
+        "description": "цвет удаленных ресурсов, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "gitDecoration.renamedResourceForeground",
+        "description": "цвет переименованных ресурсов, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "gitDecoration.addedResourceForeground",
+        "description": "цвет добавленных ресурсов, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "gitDecoration.untrackedResourceForeground",
+        "description": "цвет неподслеживаемых ресурсов, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "gitDecoration.conflictingResourceForeground",
+        "description": "цвет конфликтующих ресурсов, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "gitDecoration.stageDeletedResourceForeground",
+        "description": "цвет удаленных ресурсов в stage, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "gitDecoration.stageModifiedResourceForeground",
+        "description": "цвет измененных ресурсов в stage, использует `color.interactive.secondary`",
+        "palette": "color.interactive.secondary"
+      }
+    ]
+  },
+  "Highlights": {
+    "colors": [
+      {
+        "token": "debugView.valueChangedHighlight",
+        "description": "подсветка измененных значений в отладке, использует `foundationColors.blue500` с AA прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.findMatchHighlightBackground",
+        "description": "фон других результатов поиска, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.findRangeHighlightBackground",
+        "description": "фон области поиска, использует `foundationColors.blue500` с 33% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.focusedStackFrameHighlightBackground",
+        "description": "фон выделенного стека фокуса, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.rangeHighlightBackground",
+        "description": "фон выбранного диапазона, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.selectionHighlightBackground",
+        "description": "фон других вхождений выделенного слова, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.stackFrameHighlightBackground",
+        "description": "фон выделенного стека, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.wordHighlightBackground",
+        "description": "фон совпадающих слов, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editor.wordHighlightStrongBackground",
+        "description": "фон совпадающих слов с сильным выделением, использует `foundationColors.blue500` с 55% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.rangeHighlightForeground",
+        "description": "цвет выделенного диапазона в линейке обзора, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.selectionHighlightForeground",
+        "description": "цвет выделения в линейке обзора, использует `foundationColors.blue500` с 30% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.wordHighlightForeground",
+        "description": "цвет выделения слов в линейке обзора, использует `foundationColors.blue500` с 55% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.wordHighlightStrongForeground",
+        "description": "цвет сильного выделения слов в линейке обзора, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewEditor.matchHighlightBackground",
+        "description": "фон совпадений в редакторе просмотра, использует `foundationColors.blue500` с 40% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewResult.matchHighlightBackground",
+        "description": "фон совпадений в результатах просмотра, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      }
+    ]
+  },
+  "Inline Chat": {
+    "colors": [
+      {
+        "token": "inlineChat.background",
+        "description": "фон встроенного чата, использует `foundationColors.gray900`",
+        "palette": "foundationColors.gray900"
+      },
+      {
+        "token": "inlineChat.border",
+        "description": "граница встроенного чата, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "inlineChat.shadow",
+        "description": "тень встроенного чата, использует `foundationColors.black` с 80% прозрачности",
+        "palette": "foundationColors.black"
+      },
+      {
+        "token": "inlineChatDiff.inserted",
+        "description": "фон вставленного текста в чате, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "inlineChatDiff.removed",
+        "description": "фон удаленного текста в чате, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray70"
+      },
+      {
+        "token": "inlineChatInput.border",
+        "description": "граница ввода в чате, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "inlineChatInput.focusBorder",
+        "description": "граница ввода в чате в фокусе, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "inlineChatInput.placeholderForeground",
+        "description": "цвет плейсхолдера в чате, использует `foundationColors.gray500`",
+        "palette": "foundationColors.gray500"
+      }
+    ]
+  },
+  "Inputs & Buttons": {
+    "colors": [
+      {
+        "token": "button.background",
+        "description": "фон кнопки, использует `foundationColors.blue800`",
+        "palette": "foundationColors.blue800"
+      },
+      {
+        "token": "button.foreground",
+        "description": "цвет текста кнопки, использует `typographyColors.text.onAccent`",
+        "palette": "typographyColors.text.onAccent"
+      },
+      {
+        "token": "button.hoverBackground",
+        "description": "фон кнопки при наведении, использует `foundationColors.blue700`",
+        "palette": "foundationColors.blue700"
+      },
+      {
+        "token": "button.secondaryBackground",
+        "description": "фон вторичной кнопки, использует `foundationColors.gray800` с 54% прозрачности",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "button.secondaryForeground",
+        "description": "цвет текста вторичной кнопки, использует `typographyColors.text.onAccent`",
+        "palette": "typographyColors.text.onAccent"
+      },
+      {
+        "token": "button.secondaryHoverBackground",
+        "description": "фон вторичной кнопки при наведении, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "extensionButton.prominentBackground",
+        "description": "фон выделенной кнопки расширения, использует `foundationColors.blue700`",
+        "palette": "foundationColors.blue700"
+      },
+      {
+        "token": "extensionButton.prominentForeground",
+        "description": "цвет текста выделенной кнопки расширения, использует `typographyColors.text.onAccent`",
+        "palette": "typographyColors.text.onAccent"
+      },
+      {
+        "token": "extensionButton.prominentHoverBackground",
+        "description": "фон выделенной кнопки расширения при наведении, использует `foundationColors.blue800`",
+        "palette": "foundationColors.blue800"
+      },
+      {
+        "token": "input.background",
+        "description": "фон поля ввода, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "input.border",
+        "description": "граница поля ввода, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "input.foreground",
+        "description": "цвет текста поля ввода, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "input.placeholderForeground",
+        "description": "цвет плейсхолдера поля ввода, использует `foundationColors.gray500` с 54% прозрачности",
+        "palette": "foundationColors.gray500"
+      },
+      {
+        "token": "inputOption.activeBackground",
+        "description": "фон активной опции ввода, использует `foundationColors.blue500` с 60% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "inputOption.activeBorder",
+        "description": "граница активной опции ввода, использует `foundationColors.gray600`",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "inputOption.activeForeground",
+        "description": "цвет активной опции ввода, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "inputValidation.errorBackground",
+        "description": "фон ошибки валидации ввода, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "inputValidation.errorBorder",
+        "description": "граница ошибки валидации ввода, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "inputValidation.errorForeground",
+        "description": "цвет ошибки валидации ввода, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "inputValidation.infoBackground",
+        "description": "фон информации валидации ввода, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "inputValidation.infoBorder",
+        "description": "граница информации валидации ввода, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "inputValidation.infoForeground",
+        "description": "цвет информации валидации ввода, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "inputValidation.warningBackground",
+        "description": "фон предупреждения валидации ввода, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "inputValidation.warningBorder",
+        "description": "граница предупреждения валидации ввода, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "inputValidation.warningForeground",
+        "description": "цвет предупреждения валидации ввода, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      }
+    ]
+  },
+  "Lists": {
+    "colors": [
+      {
+        "token": "list.activeSelectionBackground",
+        "description": "фон активного выделения в списке, использует `foundationColors.gray700` с 56% прозрачности",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "list.activeSelectionForeground",
+        "description": "цвет активного выделения в списке, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.deemphasizedForeground",
+        "description": "цвет невыделенного элемента в списке, использует `typographyColors.text.secondary`",
+        "palette": "typographyColors.text.secondary"
+      },
+      {
+        "token": "list.dropBackground",
+        "description": "фон при перетаскивании в список, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.errorForeground",
+        "description": "цвет ошибки в списке, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "list.focusBackground",
+        "description": "фон элемента в фокусе в списке, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "list.focusForeground",
+        "description": "цвет элемента в фокусе в списке, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "list.highlightForeground",
+        "description": "цвет выделения в списке, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.hoverBackground",
+        "description": "фон при наведении на элемент списка, использует `foundationColors.gray700` с 38% прозрачности",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "list.hoverForeground",
+        "description": "цвет при наведении на элемент списка, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.inactiveSelectionBackground",
+        "description": "фон неактивного выделения в списке, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "list.inactiveSelectionForeground",
+        "description": "цвет неактивного выделения в списке, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.inactiveSelectionIconForeground",
+        "description": "цвет иконки неактивного выделения в списке, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "list.invalidItemForeground",
+        "description": "цвет недействительного элемента в списке, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "list.warningForeground",
+        "description": "цвет предупреждения в списке, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      }
+    ]
+  },
+  "Menus & Dropdowns": {
+    "colors": [
+      {
+        "token": "dropdown.background",
+        "description": "фон выпадающего списка, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "dropdown.border",
+        "description": "граница выпадающего списка, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "dropdown.foreground",
+        "description": "цвет выпадающего списка, использует `foundationColors.gray40`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "dropdown.listBackground",
+        "description": "фон списка в выпадающем списке, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "menu.background",
+        "description": "фон меню, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "menu.border",
+        "description": "граница меню, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "menu.foreground",
+        "description": "цвет меню, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "menu.selectionBackground",
+        "description": "фон выбранного элемента в меню, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "menu.selectionForeground",
+        "description": "цвет выбранного элемента в меню, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "menu.separatorBackground",
+        "description": "фон разделителя в меню, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "menubar.selectionBackground",
+        "description": "фон выбранного элемента в строке меню, использует `foundationColors.gray700`",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "menubar.selectionForeground",
+        "description": "цвет выбранного элемента в строке меню, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      }
+    ]
+  },
+  "Merges": {
+    "colors": [
+      {
+        "token": "merge.currentContentBackground",
+        "description": "фон текущего содержимого при слиянии, использует `accent.primary` с 44% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "merge.currentHeaderBackground",
+        "description": "фон заголовка текущего при слиянии, использует `accent.primary` с AA прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "merge.incomingContentBackground",
+        "description": "фон входящего содержимого при слиянии, использует `accent.secondary` с 44% прозрачности",
+        "palette": "accent.secondary"
+      },
+      {
+        "token": "merge.incomingHeaderBackground",
+        "description": "фон заголовка входящего при слиянии, использует `accent.secondary` с AA прозрачности",
+        "palette": "accent.secondary"
+      }
+    ]
+  },
+  "Notifications & Widgets": {
+    "colors": [
+      {
+        "token": "debugExceptionWidget.background",
+        "description": "фон виджета исключений отладки, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "debugExceptionWidget.border",
+        "description": "граница виджета исключений отладки, использует `color.status.error`",
+        "palette": "color.status.error"
+      },
+      {
+        "token": "notificationCenterHeader.background",
+        "description": "фон заголовка центра уведомлений, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "notificationCenterHeader.foreground",
+        "description": "цвет заголовка центра уведомлений, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "notificationLink.foreground",
+        "description": "цвет ссылки уведомления, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "notifications.background",
+        "description": "фон уведомлений, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "notifications.foreground",
+        "description": "цвет уведомлений, использует `color.text.primary`",
+        "palette": "color.text.primary"
+      },
+      {
+        "token": "notificationsErrorIcon.foreground",
+        "description": "цвет иконки ошибки уведомления, использует `color.status.error`",
+        "palette": "color.status.error"
+      },
+      {
+        "token": "notificationsInfoIcon.foreground",
+        "description": "цвет иконки информации уведомления, использует `color.status.info`",
+        "palette": "color.status.info"
+      },
+      {
+        "token": "notificationsWarningIcon.foreground",
+        "description": "цвет иконки предупреждения уведомления, использует `color.status.warning`",
+        "palette": "color.status.warning"
+      }
+    ]
+  },
+  "Peek View": {
+    "colors": [
+      {
+        "token": "peekView.border",
+        "description": "граница просмотра, использует `foundationColors.gray600` с 40% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "peekViewEditor.background",
+        "description": "фон редактора просмотра, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "peekViewEditor.matchHighlightBackground",
+        "description": "фон совпадений в редакторе просмотра, использует `foundationColors.blue500` с 40% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewResult.background",
+        "description": "фон результатов просмотра, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "peekViewResult.fileForeground",
+        "description": "цвет файла в результатах просмотра, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "peekViewResult.lineForeground",
+        "description": "цвет строки в результатах просмотра, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewResult.matchHighlightBackground",
+        "description": "фон совпадений в результатах просмотра, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewResult.selectionBackground",
+        "description": "фон выбранного элемента в результатах просмотра, использует `foundationColors.blue500` с 40% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "peekViewResult.selectionForeground",
+        "description": "цвет выбранного элемента в результатах просмотра, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "peekViewTitle.background",
+        "description": "фон заголовка просмотра, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "peekViewTitleDescription.foreground",
+        "description": "цвет описания заголовка просмотра, использует `typographyColors.text.primary`",
+        "palette": "typographyColors.text.primary"
+      },
+      {
+        "token": "peekViewTitleLabel.foreground",
+        "description": "цвет метки заголовка просмотра, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      }
+    ]
+  },
+  "SCM Graph": {
+    "colors": [
+      {
+        "token": "scmGraph.historyItemHoverLabelForeground",
+        "description": "цвет метки истории при наведении, использует `foundationColors.white`",
+        "palette": "foundationColors.white"
+      },
+      {
+        "token": "scmGraph.foreground1",
+        "description": "цвет 1 графа SCM, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "scmGraph.foreground2",
+        "description": "цвет 2 графа SCM, использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "scmGraph.foreground3",
+        "description": "цвет 3 графа SCM, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "scmGraph.foreground4",
+        "description": "цвет 4 графа SCM, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "scmGraph.foreground5",
+        "description": "цвет 5 графа SCM, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "scmGraph.historyItemHoverAdditionsForeground",
+        "description": "цвет добавлений в истории при наведении, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "scmGraph.historyItemHoverDeletionsForeground",
+        "description": "цвет удалений в истории при наведении, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "scmGraph.historyItemRefColor",
+        "description": "цвет ссылки истории SCM, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "scmGraph.historyItemRemoteRefColor",
+        "description": "цвет удаленной ссылки истории SCM, использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "scmGraph.historyItemBaseRefColor",
+        "description": "цвет базовой ссылки истории SCM, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "scmGraph.historyItemHoverDefaultLabelBackground",
+        "description": "фон метки истории по умолчанию при наведении, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "scmGraph.historyItemHoverDefaultLabelForeground",
+        "description": "цвет метки истории по умолчанию при наведении, использует `foundationColors.white`",
+        "palette": "foundationColors.white"
+      }
+    ]
+  },
+  "Scrollbar & Minimap": {
+    "colors": [
+      {
+        "token": "editorOverviewRuler.addedForeground",
+        "description": "цвет добавленных элементов в линейке обзора, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "editorOverviewRuler.border",
+        "description": "граница линейки обзора, использует `foundationColors.transparent`",
+        "palette": "foundationColors.transparent"
+      },
+      {
+        "token": "editorOverviewRuler.bracketMatchForeground",
+        "description": "цвет скобок в линейке обзора, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "editorOverviewRuler.deletedForeground",
+        "description": "цвет удаленных элементов в линейке обзора, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "editorOverviewRuler.errorForeground",
+        "description": "цвет ошибок в линейке обзора, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "editorOverviewRuler.findMatchForeground",
+        "description": "цвет результатов поиска в линейке обзора, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.infoForeground",
+        "description": "цвет информации в линейке обзора, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "editorOverviewRuler.modifiedForeground",
+        "description": "цвет измененных элементов в линейке обзора, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.rangeHighlightForeground",
+        "description": "цвет выделенных диапазонов в линейке обзора, использует `foundationColors.blue500` с 44% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.selectionHighlightForeground",
+        "description": "цвет выделений в линейке обзора, использует `foundationColors.blue500` с 30% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.wordHighlightForeground",
+        "description": "цвет выделений слов в линейке обзора, использует `foundationColors.blue500` с 55% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "editorOverviewRuler.wordHighlightStrongForeground",
+        "description": "цвет сильных выделений слов в линейке обзора, использует `foundationColors.blue500` с 66% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "minimap.findMatchHighlight",
+        "description": "выделение результатов поиска в миникарте, использует `foundationColors.purple500` с 80% прозрачности",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "minimap.selectionHighlight",
+        "description": "выделение в миникарте, использует `foundationColors.blue500` с 33% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "minimapGutter.addedBackground",
+        "description": "фон добавленных строк в миникарте, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "minimapGutter.deletedBackground",
+        "description": "фон удаленных строк в миникарте, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "minimapGutter.modifiedBackground",
+        "description": "фон измененных строк в миникарте, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "scrollbar.shadow",
+        "description": "тень полосы прокрутки, использует `foundationColors.black` с 80% прозрачности",
+        "palette": "foundationColors.black"
+      },
+      {
+        "token": "scrollbarSlider.activeBackground",
+        "description": "фон активного ползунка полосы прокрутки, использует `foundationColors.gray600` с 34% прозрачности",
+        "palette": "foundationColors.gray600"
+      },
+      {
+        "token": "scrollbarSlider.background",
+        "description": "фон ползунка полосы прокрутки, использует `foundationColors.gray700` с 34% прозрачности",
+        "palette": "foundationColors.gray700"
+      },
+      {
+        "token": "scrollbarSlider.hoverBackground",
+        "description": "фон ползунка полосы прокрутки при наведении, использует `foundationColors.gray500` с 34% прозрачности",
+        "palette": "foundationColors.gray500"
+      }
+    ]
+  },
+  "Side Bar": {
+    "colors": [
+      {
+        "token": "sideBar.background",
+        "description": "фон боковой панели, использует `foundationColors.gray900`",
+        "palette": "foundationColors.gray900"
+      },
+      {
+        "token": "sideBar.border",
+        "description": "граница боковой панели, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "sideBar.dropBackground",
+        "description": "фон при перетаскивании на боковую панель, использует `foundationColors.blue500` с 20% прозрачности",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "sideBar.foreground",
+        "description": "цвет боковой панели, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "sideBarSectionHeader.background",
+        "description": "фон заголовка секции боковой панели, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "sideBarSectionHeader.border",
+        "description": "граница заголовка секции боковой панели, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "sideBarSectionHeader.foreground",
+        "description": "цвет заголовка секции боковой панели, использует `foundationColors.gray500`",
+        "palette": "foundationColors.gray500"
+      },
+      {
+        "token": "sideBarTitle.foreground",
+        "description": "цвет заголовка боковой панели, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      }
+    ]
+  },
+  "Status Bar": {
+    "colors": [
+      {
+        "token": "statusBar.background",
+        "description": "фон строки состояния, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "statusBar.debuggingBackground",
+        "description": "фон строки состояния в режиме отладки, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "statusBar.debuggingForeground",
+        "description": "цвет строки состояния в режиме отладки, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "statusBar.foreground",
+        "description": "цвет строки состояния, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "statusBar.noFolderBackground",
+        "description": "фон строки состояния без папки, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "statusBarItem.activeBackground",
+        "description": "фон активного элемента строки состояния, использует `color.interactive.active`",
+        "palette": "color.interactive.active"
+      },
+      {
+        "token": "statusBarItem.compactHoverBackground",
+        "description": "фон элемента строки состояния при компактном наведении, использует `color.background.elevated` с 90% прозрачности",
+        "palette": "color.background.elevated"
+      },
+      {
+        "token": "statusBarItem.hoverBackground",
+        "description": "фон элемента строки состояния при наведении, использует `color.background.elevated` с AA прозрачности",
+        "palette": "color.background.elevated"
+      },
+      {
+        "token": "statusBarItem.hoverForeground",
+        "description": "цвет элемента строки состояния при наведении, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "statusBarItem.prominentBackground",
+        "description": "фон выделенного элемента строки состояния, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "statusBarItem.prominentHoverBackground",
+        "description": "фон выделенного элемента строки состояния при наведении, использует `color.interactive.hover`",
+        "palette": "color.interactive.hover"
+      },
+      {
+        "token": "statusBarItem.remoteBackground",
+        "description": "фон элемента удаленного подключения строки состояния, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "statusBarItem.remoteForeground",
+        "description": "цвет элемента удаленного подключения строки состояния, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "statusBarItem.remoteHoverBackground",
+        "description": "фон элемента удаленного подключения строки состояния при наведении, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "statusBarItem.remoteHoverForeground",
+        "description": "цвет элемента удаленного подключения строки состояния при наведении, использует `accent.primary`",
+        "palette": "accent.primary"
+      }
+    ]
+  },
+  "Tabs": {
+    "colors": [
+      {
+        "token": "tab.activeBackground",
+        "description": "фон активной вкладки, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.activeBorder",
+        "description": "граница активной вкладки, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "tab.activeForeground",
+        "description": "цвет активной вкладки, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "tab.border",
+        "description": "граница вкладок, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.inactiveBackground",
+        "description": "фон неактивной вкладки, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.inactiveForeground",
+        "description": "цвет неактивной вкладки, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "tab.inactiveModifiedBorder",
+        "description": "граница измененной неактивной вкладки, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.lastPinnedBorder",
+        "description": "граница последней закрепленной вкладки, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.unfocusedActiveBorder",
+        "description": "граница активной вкладки без фокуса, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "tab.unfocusedActiveForeground",
+        "description": "цвет активной вкладки без фокуса, использует `foundationColors.gray100`",
+        "palette": "foundationColors.gray100"
+      },
+      {
+        "token": "tab.unfocusedHoverForeground",
+        "description": "цвет вкладки при наведении без фокуса, использует `foundationColors.gray500`",
+        "palette": "foundationColors.gray500"
+      },
+      {
+        "token": "tab.unfocusedInactiveForeground",
+        "description": "цвет неактивной вкладки без фокуса, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      }
+    ]
+  },
+  "Terminal": {
+    "colors": [
+      {
+        "token": "terminal.ansiBlack",
+        "description": "черный цвет ANSI терминала, использует `color.text.tertiary`",
+        "palette": "color.text.tertiary"
+      },
+      {
+        "token": "terminal.ansiBlue",
+        "description": "синий цвет ANSI терминала, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "terminal.ansiBrightBlack",
+        "description": "ярко-черный цвет ANSI терминала, использует `color.text.tertiary`",
+        "palette": "color.text.tertiary"
+      },
+      {
+        "token": "terminal.ansiBrightBlue",
+        "description": "ярко-синий цвет ANSI терминала, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "terminal.ansiBrightCyan",
+        "description": "ярко-голубой цвет ANSI терминала, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "terminal.ansiBrightGreen",
+        "description": "ярко-зеленый цвет ANSI терминала, использует `accent.success`",
+        "palette": "accent.success"
+      },
+      {
+        "token": "terminal.ansiBrightMagenta",
+        "description": "ярко-пурпурный цвет ANSI терминала, использует `accent.secondary`",
+        "palette": "accent.secondary"
+      },
+      {
+        "token": "terminal.ansiBrightRed",
+        "description": "ярко-красный цвет ANSI терминала, использует `color.text.disabled`",
+        "palette": "color.text.disabled"
+      },
+      {
+        "token": "terminal.ansiBrightWhite",
+        "description": "ярко-белый цвет ANSI терминала, использует `color.text.inverse`",
+        "palette": "color.text.inverse"
+      },
+      {
+        "token": "terminal.ansiBrightYellow",
+        "description": "ярко-желтый цвет ANSI терминала, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "terminal.ansiCyan",
+        "description": "голубой цвет ANSI терминала, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "terminal.ansiGreen",
+        "description": "зеленый цвет ANSI терминала, использует `accent.success`",
+        "palette": "accent.success"
+      },
+      {
+        "token": "terminal.ansiMagenta",
+        "description": "пурпурный цвет ANSI терминала, использует `accent.secondary`",
+        "palette": "accent.secondary"
+      },
+      {
+        "token": "terminal.ansiRed",
+        "description": "красный цвет ANSI терминала, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "terminal.ansiWhite",
+        "description": "белый цвет ANSI терминала, использует `color.text.inverse`",
+        "palette": "color.text.inverse"
+      },
+      {
+        "token": "terminal.ansiYellow",
+        "description": "желтый цвет ANSI терминала, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "terminal.background",
+        "description": "фон терминала, использует `color.background.primary`",
+        "palette": "color.background.primary"
+      },
+      {
+        "token": "terminal.border",
+        "description": "граница терминала, использует `color.border.subtle` с 40% прозрачности",
+        "palette": "color.border.subtle"
+      },
+      {
+        "token": "terminal.dropBackground",
+        "description": "фон при перетаскивании в терминал, использует `accent.primary` с 33% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "terminal.foreground",
+        "description": "цвет текста терминала, использует `color.text.secondary`",
+        "palette": "color.text.secondary"
+      },
+      {
+        "token": "terminal.selectionBackground",
+        "description": "фон выделения в терминале, использует `accent.primary` с 30% прозрачности",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "terminal.tab.activeBorder",
+        "description": "активная граница вкладки терминала, использует `accent.primary`",
+        "palette": "accent.primary"
+      },
+      {
+        "token": "terminalCommandDecoration.defaultBackground",
+        "description": "фон декорации команды терминала по умолчанию, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "terminalCommandDecoration.errorBackground",
+        "description": "фон декорации ошибки команды терминала, использует `accent.error`",
+        "palette": "accent.error"
+      },
+      {
+        "token": "terminalCommandDecoration.successBackground",
+        "description": "фон декорации успеха команды терминала, использует `accent.info`",
+        "palette": "accent.info"
+      },
+      {
+        "token": "terminalCursor.background",
+        "description": "фон курсора терминала, использует `color.background.secondary`",
+        "palette": "color.background.secondary"
+      },
+      {
+        "token": "terminalCursor.foreground",
+        "description": "цвет курсора терминала, использует `accent.warning`",
+        "palette": "accent.warning"
+      },
+      {
+        "token": "terminalOverviewRuler.cursorForeground",
+        "description": "цвет курсора в линейке обзора терминала, использует `accent.warning`",
+        "palette": "accent.warning"
+      }
+    ]
+  },
+  "Text": {
+    "colors": [
+      {
+        "token": "textBlockQuote.background",
+        "description": "фон цитаты, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "textBlockQuote.border",
+        "description": "граница цитаты, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "textCodeBlock.background",
+        "description": "фон блока кода, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "textLink.activeForeground",
+        "description": "цвет активной ссылки, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "textLink.foreground",
+        "description": "цвет ссылки, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "textPreformat.background",
+        "description": "фон предварительно отформатированного текста, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "textPreformat.foreground",
+        "description": "цвет предварительно отформатированного текста, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "textSeparator.foreground",
+        "description": "цвет разделителя текста, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      }
+    ]
+  },
+  "Title Bar": {
+    "colors": [
+      {
+        "token": "titleBar.activeBackground",
+        "description": "фон активного заголовка окна, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "titleBar.activeForeground",
+        "description": "цвет активного заголовка окна, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "titleBar.inactiveBackground",
+        "description": "фон неактивного заголовка окна, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "titleBar.inactiveForeground",
+        "description": "цвет неактивного заголовка окна, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      }
+    ]
+  },
+  "Toolbar & Debug": {
+    "colors": [
+      {
+        "token": "debugConsole.errorForeground",
+        "description": "цвет ошибок в консоли отладки, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "debugConsole.infoForeground",
+        "description": "цвет информации в консоли отладки, использует `foundationColors.gray100`",
+        "palette": "foundationColors.gray100"
+      },
+      {
+        "token": "debugConsole.sourceForeground",
+        "description": "цвет исходного кода в консоли отладки, использует `foundationColors.gray100`",
+        "palette": "foundationColors.gray100"
+      },
+      {
+        "token": "debugConsole.warningForeground",
+        "description": "цвет предупреждений в консоли отладки, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "debugConsoleInputIcon.foreground",
+        "description": "цвет иконки ввода в консоли отладки, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "debugTokenExpression.boolean",
+        "description": "цвет булевых значений в выражениях отладки, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "debugTokenExpression.error",
+        "description": "цвет ошибок в выражениях отладки, использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "debugTokenExpression.name",
+        "description": "цвет имен в выражениях отладки, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "debugTokenExpression.number",
+        "description": "цвет чисел в выражениях отладки, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "debugTokenExpression.string",
+        "description": "цвет строк в выражениях отладки, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "debugTokenExpression.value",
+        "description": "цвет значений в выражениях отладки, использует `foundationColors.gray100`",
+        "palette": "foundationColors.gray100"
+      },
+      {
+        "token": "debugToolBar.background",
+        "description": "фон панели инструментов отладки, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "debugView.stateLabelBackground",
+        "description": "фон метки состояния в отладке, использует `foundationColors.gray800`",
+        "palette": "foundationColors.gray800"
+      },
+      {
+        "token": "debugView.stateLabelForeground",
+        "description": "цвет метки состояния в отладке, использует `foundationColors.gray10`",
+        "palette": "foundationColors.gray10"
+      }
+    ]
+  },
+  "Base Syntax Tokens": {
+    "colors": [
+      {
+        "token": "keyword",
+        "description": "ключевые слова языка, использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "operator",
+        "description": "операторы, использует `semanticColors.secondary`",
+        "palette": "semanticColors.secondary"
+      },
+      {
+        "token": "punctuation",
+        "description": "пунктуация, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "delimiter",
+        "description": "разделители, использует `foundationColors.gray500`",
+        "palette": "foundationColors.gray500"
+      },
+      {
+        "token": "string",
+        "description": "строковые литералы, использует `semanticColors.text`",
+        "palette": "semanticColors.text"
+      },
+      {
+        "token": "number",
+        "description": "числовые литералы, использует `semanticColors.warning`",
+        "palette": "semanticColors.warning"
+      },
+      {
+        "token": "boolean",
+        "description": "булевые значения, использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "null",
+        "description": "нулевые значения, использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "comment",
+        "description": "комментарии, использует `semanticColors.textSecondary`",
+        "palette": "semanticColors.textSecondary"
+      },
+      {
+        "token": "docComment",
+        "description": "документационные комментарии, использует `semanticColors.textSecondary`",
+        "palette": "semanticColors.textSecondary"
+      },
+      {
+        "token": "docTag",
+        "description": "теги документации, использует `semanticColors.secondary`",
+        "palette": "semanticColors.secondary"
+      },
+      {
+        "token": "variable",
+        "description": "переменные, использует `semanticColors.text`",
+        "palette": "semanticColors.text"
+      },
+      {
+        "token": "parameter",
+        "description": "параметры, использует `semanticColors.textSecondary`",
+        "palette": "semanticColors.textSecondary"
+      },
+      {
+        "token": "property",
+        "description": "свойства, использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "constant",
+        "description": "константы, использует `semanticColors.warning`",
+        "palette": "semanticColors.warning"
+      },
+      {
+        "token": "function",
+        "description": "функции, использует `foundationColors.blue400`",
+        "palette": "foundationColors.blue400"
+      },
+      {
+        "token": "method",
+        "description": "методы, использует `foundationColors.blue400`",
+        "palette": "foundationColors.blue400"
+      },
+      {
+        "token": "constructor",
+        "description": "конструкторы, использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "type",
+        "description": "типы данных, использует `foundationColors.teal500`",
+        "palette": "foundationColors.teal500"
+      },
+      {
+        "token": "interface",
+        "description": "интерфейсы, использует `foundationColors.teal400`",
+        "palette": "foundationColors.teal400"
+      },
+      {
+        "token": "enum",
+        "description": "перечисления, использует `foundationColors.orange500`",
+        "palette": "foundationColors.orange500"
+      },
+      {
+        "token": "class",
+        "description": "классы, использует `foundationColors.yellow400`",
+        "palette": "foundationColors.yellow400"
+      },
+      {
+        "token": "control",
+        "description": "управляющие конструкции, использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "conditional",
+        "description": "условные операторы, использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "loop",
+        "description": "циклы, использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "regex",
+        "description": "регулярные выражения, использует `semanticColors.info`",
+        "palette": "semanticColors.info"
+      },
+      {
+        "token": "escape",
+        "description": "escape-последовательности, использует `foundationColors.orange400`",
+        "palette": "foundationColors.orange400"
+      },
+      {
+        "token": "interpolation",
+        "description": "интерполяция, использует `foundationColors.orange300`",
+        "palette": "foundationColors.orange300"
+      },
+      {
+        "token": "tag",
+        "description": "теги, использует `semanticColors.primary`",
+        "palette": "semanticColors.primary"
+      },
+      {
+        "token": "attribute",
+        "description": "атрибуты, использует `semanticColors.secondary`",
+        "palette": "semanticColors.secondary"
+      },
+      {
+        "token": "attributeValue",
+        "description": "значения атрибутов, использует `semanticColors.text`",
+        "palette": "semanticColors.text"
+      },
+      {
+        "token": "selector",
+        "description": "селекторы, использует `foundationColors.blue300`",
+        "palette": "foundationColors.blue300"
+      },
+      {
+        "token": "propertyName",
+        "description": "имена свойств, использует `foundationColors.cyan400`",
+        "palette": "foundationColors.cyan400"
+      },
+      {
+        "token": "unit",
+        "description": "единицы измерения, использует `foundationColors.orange500`",
+        "palette": "foundationColors.orange500"
+      },
+      {
+        "token": "namespace",
+        "description": "пространства имен, использует `foundationColors.teal300`",
+        "palette": "foundationColors.teal30"
+      },
+      {
+        "token": "decorator",
+        "description": "декораторы, использует `foundationColors.magenta500`",
+        "palette": "foundationColors.magenta500"
+      },
+      {
+        "token": "annotation",
+        "description": "аннотации, использует `foundationColors.magenta400`",
+        "palette": "foundationColors.magenta400"
+      }
+    ]
+  },
+  "JavaScript Syntax Tokens": {
+    "colors": [
+      {
+        "token": "const",
+        "description": "использует `foundationColors.blue600`",
+        "palette": "foundationColors.blue600"
+      },
+      {
+        "token": "let",
+        "description": "использует `foundationColors.blue600`",
+        "palette": "foundationColors.blue600"
+      },
+      {
+        "token": "var",
+        "description": "использует `foundationColors.blue500`",
+        "palette": "foundationColors.blue500"
+      },
+      {
+        "token": "function",
+        "description": "использует `foundationColors.yellow400`",
+        "palette": "foundationColors.yellow400"
+      },
+      {
+        "token": "class",
+        "description": "использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "extends",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "import",
+        "description": "использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "export",
+        "description": "использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "from",
+        "description": "использует `foundationColors.cyan400`",
+        "palette": "foundationColors.cyan400"
+      },
+      {
+        "token": "async",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "await",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "try",
+        "description": "использует `foundationColors.red40`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "catch",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "finally",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "throw",
+        "description": "использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "return",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "yield",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "new",
+        "description": "использует `foundationColors.yellow400`",
+        "palette": "foundationColors.yellow400"
+      },
+      {
+        "token": "this",
+        "description": "использует `foundationColors.red30`",
+        "palette": "foundationColors.red30"
+      },
+      {
+        "token": "super",
+        "description": "использует `foundationColors.red300`",
+        "palette": "foundationColors.red300"
+      },
+      {
+        "token": "object.key",
+        "description": "ключи объекта, использует `foundationColors.cyan400`",
+        "palette": "foundationColors.cyan400"
+      },
+      {
+        "token": "object.value",
+        "description": "значения объекта, использует `baseSyntaxColors.string`",
+        "palette": "baseSyntaxColors.string"
+      },
+      {
+        "token": "object.bracket",
+        "description": "скобки объекта, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "array.bracket",
+        "description": "скобки массива, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "template.string",
+        "description": "шаблонные строки, использует `foundationColors.green400`",
+        "palette": "foundationColors.green400"
+      },
+      {
+        "token": "template.interpolation",
+        "description": "интерполяция в шаблонах, использует `foundationColors.orange300`",
+        "palette": "foundationColors.orange300"
+      },
+      {
+        "token": "template.bracket",
+        "description": "скобки в шаблонах, использует `foundationColors.orange40`",
+        "palette": "foundationColors.orange400"
+      },
+      {
+        "token": "jsx.tag",
+        "description": "JSX-теги, использует `foundationColors.blue300`",
+        "palette": "foundationColors.blue300"
+      },
+      {
+        "token": "jsx.attribute",
+        "description": "JSX-атрибуты, использует `foundationColors.cyan300`",
+        "palette": "foundationColors.cyan300"
+      },
+      {
+        "token": "jsx.attributeValue",
+        "description": "значения JSX-атрибутов, использует `foundationColors.green300`",
+        "palette": "foundationColors.green300"
+      },
+      {
+        "token": "jsx.expression",
+        "description": "выражения в JSX, использует `foundationColors.orange400`",
+        "palette": "foundationColors.orange400"
+      },
+      {
+        "token": "decorator",
+        "description": "декораторы, использует `foundationColors.magenta500`",
+        "palette": "foundationColors.magenta500"
+      },
+      {
+        "token": "decoratorParameter",
+        "description": "параметры декораторов, использует `foundationColors.cyan700`",
+        "palette": "foundationColors.cyan700"
+      },
+      {
+        "token": "module",
+        "description": "модули, использует `foundationColors.teal400`",
+        "palette": "foundationColors.teal400"
+      },
+      {
+        "token": "global",
+        "description": "глобальные переменные, использует `foundationColors.red20`",
+        "palette": "foundationColors.red20"
+      },
+      {
+        "token": "builtin",
+        "description": "встроенные функции, использует `foundationColors.blue400`",
+        "palette": "foundationColors.blue400"
+      }
+    ]
+  },
+  "TypeScript Syntax Tokens": {
+    "colors": [
+      {
+        "token": "interface",
+        "description": "интерфейсы, использует `foundationColors.teal400`",
+        "palette": "foundationColors.teal400"
+      },
+      {
+        "token": "type",
+        "description": "типы, использует `foundationColors.teal500`",
+        "palette": "foundationColors.teal500"
+      },
+      {
+        "token": "enum",
+        "description": "перечисления, использует `foundationColors.orange500`",
+        "palette": "foundationColors.orange500"
+      },
+      {
+        "token": "namespace",
+        "description": "пространства имен, использует `foundationColors.teal300`",
+        "palette": "foundationColors.teal300"
+      },
+      {
+        "token": "typeParameter",
+        "description": "параметры типа, использует `foundationColors.yellow600`",
+        "palette": "foundationColors.yellow600"
+      },
+      {
+        "token": "keyof",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "typeof",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "infer",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "decorator",
+        "description": "декораторы, использует `foundationColors.magenta500`",
+        "palette": "foundationColors.magenta500"
+      },
+      {
+        "token": "decoratorParameter",
+        "description": "параметры декораторов, использует `foundationColors.cyan700`",
+        "palette": "foundationColors.cyan700"
+      }
+    ]
+  },
+  "Python Syntax Tokens": {
+    "colors": [
+      {
+        "token": "def",
+        "description": "использует `foundationColors.blue600`",
+        "palette": "foundationColors.blue600"
+      },
+      {
+        "token": "class",
+        "description": "использует `foundationColors.yellow500`",
+        "palette": "foundationColors.yellow500"
+      },
+      {
+        "token": "lambda",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "if",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "elif",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "else",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "for",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "while",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "try",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "except",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "finally",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "with",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "as",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "import",
+        "description": "использует `foundationColors.cyan500`",
+        "palette": "foundationColors.cyan500"
+      },
+      {
+        "token": "from",
+        "description": "использует `foundationColors.cyan400`",
+        "palette": "foundationColors.cyan400"
+      },
+      {
+        "token": "return",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "yield",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "raise",
+        "description": "использует `foundationColors.red500`",
+        "palette": "foundationColors.red500"
+      },
+      {
+        "token": "pass",
+        "description": "использует `foundationColors.gray500`",
+        "palette": "foundationColors.gray500"
+      },
+      {
+        "token": "break",
+        "description": "использует `foundationColors.red40`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "continue",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "global",
+        "description": "использует `foundationColors.red300`",
+        "palette": "foundationColors.red300"
+      },
+      {
+        "token": "nonlocal",
+        "description": "использует `foundationColors.red300`",
+        "palette": "foundationColors.red300"
+      },
+      {
+        "token": "assert",
+        "description": "использует `foundationColors.orange500`",
+        "palette": "foundationColors.orange500"
+      },
+      {
+        "token": "del",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "async",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "await",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "in",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "is",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "not",
+        "description": "использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "and",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "or",
+        "description": "использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "None",
+        "description": "использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "True",
+        "description": "использует `foundationColors.green400`",
+        "palette": "foundationColors.green400"
+      },
+      {
+        "token": "False",
+        "description": "использует `foundationColors.green400`",
+        "palette": "foundationColors.green400"
+      },
+      {
+        "token": "decorator",
+        "description": "декораторы, использует `foundationColors.magenta500`",
+        "palette": "foundationColors.magenta500"
+      },
+      {
+        "token": "decoratorParameter",
+        "description": "параметры декораторов, использует `foundationColors.cyan700`",
+        "palette": "foundationColors.cyan700"
+      },
+      {
+        "token": "self",
+        "description": "использует `foundationColors.red300`",
+        "palette": "foundationColors.red300"
+      },
+      {
+        "token": "cls",
+        "description": "использует `foundationColors.red300`",
+        "palette": "foundationColors.red300"
+      },
+      {
+        "token": "builtin.function",
+        "description": "встроенные функции, использует `foundationColors.blue400`",
+        "palette": "foundationColors.blue400"
+      },
+      {
+        "token": "builtin.type",
+        "description": "встроенные типы, использует `foundationColors.teal500`",
+        "palette": "foundationColors.teal50"
+      },
+      {
+        "token": "builtin.exception",
+        "description": "встроенные исключения, использует `foundationColors.red400`",
+        "palette": "foundationColors.red400"
+      },
+      {
+        "token": "builtin.constant",
+        "description": "встроенные константы, использует `foundationColors.orange500`",
+        "palette": "foundationColors.orange500"
+      },
+      {
+        "token": "stringPrefix",
+        "description": "префиксы строк, использует `foundationColors.orange400`",
+        "palette": "foundationColors.orange400"
+      },
+      {
+        "token": "fString",
+        "description": "f-строки, использует `foundationColors.green400`",
+        "palette": "foundationColors.green400"
+      },
+      {
+        "token": "rawString",
+        "description": "сырые строки, использует `foundationColors.green500`",
+        "palette": "foundationColors.green500"
+      },
+      {
+        "token": "bytesString",
+        "description": "байтовые строки, использует `foundationColors.yellow400`",
+        "palette": "foundationColors.yellow400"
+      },
+      {
+        "token": "parameter",
+        "description": "параметры, использует `semanticColors.textSecondary`",
+        "palette": "semanticColors.textSecondary"
+      },
+      {
+        "token": "typeHint",
+        "description": "подсказки типов, использует `foundationColors.teal400`",
+        "palette": "foundationColors.teal400"
+      },
+      {
+        "token": "typeAnnotation",
+        "description": "аннотации типов, использует `foundationColors.teal300`",
+        "palette": "foundationColors.teal300"
+      },
+      {
+        "token": "docstring",
+        "description": "строка документации, использует `foundationColors.docCommentColor`",
+        "palette": "foundationColors.docCommentColor"
+      },
+      {
+        "token": "dunder",
+        "description": "специальные методы, использует `foundationColors.magenta400`",
+        "palette": "foundationColors.magenta400"
+      },
+      {
+        "token": "magic",
+        "description": "специальные методы, использует `foundationColors.magenta400`",
+        "palette": "foundationColors.magenta400"
+      },
+      {
+        "token": "comparisonOperator",
+        "description": "операторы сравнения, использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "arithmeticOperator",
+        "description": "арифметические операторы, использует `foundationColors.blue400`",
+        "palette": "foundationColors.blue400"
+      },
+      {
+        "token": "logicalOperator",
+        "description": "логические операторы, использует `foundationColors.purple500`",
+        "palette": "foundationColors.purple500"
+      },
+      {
+        "token": "assignmentOperator",
+        "description": "операторы присваивания, использует `foundationColors.purple400`",
+        "palette": "foundationColors.purple400"
+      },
+      {
+        "token": "list.bracket",
+        "description": "скобки списка, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "dict.key",
+        "description": "ключи словаря, использует `foundationColors.cyan400`",
+        "palette": "foundationColors.cyan400"
+      },
+      {
+        "token": "dict.value",
+        "description": "значения словаря, использует `baseSyntaxColors.string`",
+        "palette": "baseSyntaxColors.string"
+      },
+      {
+        "token": "dict.bracket",
+        "description": "скобки словаря, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "tuple.bracket",
+        "description": "скобки кортежа, использует `foundationColors.gray400`",
+        "palette": "foundationColors.gray400"
+      },
+      {
+        "token": "comment",
+        "description": "комментарии, использует `foundationColors.commentColor`",
+        "palette": "foundationColors.commentColor"
+      },
+      {
+        "token": "docComment",
+        "description": "документационные комментарии, использует `foundationColors.docCommentColor`",
+        "palette": "foundationColors.docCommentColor"
+      },
+      {
+        "token": "docTag",
+        "description": "теги документации, использует `foundationColors.docTagColor`",
+        "palette": "foundationColors.docTagColor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2412 @@
+{
+  "missing_tokens_analysis": {
+    "summary": {
+      "total_missing_tokens": 491,
+      "categories_affected": 18,
+      "suggested_ui_modules": [
+        "activity-bar",
+        "badges",
+        "command-center",
+        "diffs",
+        "drop-backgrounds",
+        "editor-groups-panels",
+        "editor",
+        "find-search",
+        "general-ui",
+        "git-decoration",
+        "highlights",
+        "inline-chat",
+        "inputs-buttons",
+        "lists",
+        "menus-dropdowns",
+        "merges",
+        "notifications-widgets",
+        "peek-view",
+        "scm-graph",
+        "scrollbar-minimap",
+        "side-bar",
+        "status-bar",
+        "tabs",
+        "terminal",
+        "text",
+        "title-bar",
+        "toolbar-debug"
+      ]
+    },
+    "tokens_by_category": {
+      "Editor Colors": {
+        "Основные цвета": [
+          {
+            "token": "editorLineNumber.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет для номеров строк в редакторе",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "editorLineNumber.activeForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет активной строки с номером",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "editorCursor.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет курсора редактора",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "editorCursor.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон курсора редактора",
+            "palette_reference": "color.background.secondary"
+          }
+        ],
+        "Цвета выделения": [
+          {
+            "token": "editor.selectionForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет текста в выделенной области",
+            "palette_reference": "color.text.inverse"
+          },
+          {
+            "token": "editor.inactiveSelectionBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон неактивного выделения",
+            "palette_reference": "accent.primary with 45% opacity"
+          },
+          {
+            "token": "editor.selectionHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон других вхождений выделенного слова",
+            "palette_reference": "accent.primary with 44% opacity"
+          },
+          {
+            "token": "editor.wordHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон совпадающих слов",
+            "palette_reference": "accent.primary with 44% opacity"
+          },
+          {
+            "token": "editor.wordHighlightStrongBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон совпадающих слов с сильным выделением",
+            "palette_reference": "accent.primary with 55% opacity"
+          }
+        ],
+        "Цвета поиска": [
+          {
+            "token": "editor.findMatchBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон текущего результата поиска",
+            "palette_reference": "accent.primary with 66% opacity"
+          },
+          {
+            "token": "editor.findMatchHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон других результатов поиска",
+            "palette_reference": "accent.primary with 66% opacity"
+          },
+          {
+            "token": "editor.findRangeHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон области, ограничивающей поиск",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "editor.hoverHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон при наведении в редакторе",
+            "palette_reference": "accent.primary with 33% opacity"
+          }
+        ],
+        "Цвета скобок": [
+          {
+            "token": "editorBracketMatch.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон парной скобки",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorBracketMatch.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница парной скобки",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorBracketHighlight.foreground1",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки первого уровня",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "editorBracketHighlight.foreground2",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки второго уровня",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "editorBracketHighlight.foreground3",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки третьего уровня",
+            "palette_reference": "accent.secondary"
+          },
+          {
+            "token": "editorBracketHighlight.foreground4",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки четвертого уровня",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "editorBracketHighlight.foreground5",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки пятого уровня",
+            "palette_reference": "accent.success"
+          },
+          {
+            "token": "editorBracketHighlight.foreground6",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет скобки шестого уровня",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "editorBracketHighlight.unexpectedBracket.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет неожиданной скобки",
+            "palette_reference": "accent.error"
+          }
+        ],
+        "Цвета линек и отступов": [
+          {
+            "token": "editorRuler.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет вертикальных линеек",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorIndentGuide.background1",
+            "suggested_module": "editor",
+            "implementation_notes": "Отступ 1",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorIndentGuide.activeBackground1",
+            "suggested_module": "editor",
+            "implementation_notes": "Активный отступ 1",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorLineNumbers.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет номеров строк",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "editorActiveLineNumber.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет активной строки с номером",
+            "palette_reference": "color.text.secondary"
+          }
+        ],
+        "Цвета подсветки скобок": [
+          {
+            "token": "editorBracketPairGuide.activeBackground1",
+            "suggested_module": "editor",
+            "implementation_notes": "Активное руководство по скобкам 1",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "editorBracketPairGuide.inactiveBackground1",
+            "suggested_module": "editor",
+            "implementation_notes": "Неактивное руководство по скобкам 1",
+            "palette_reference": "accent.primary"
+          }
+        ],
+        "Цвета фона и подсветки": [
+          {
+            "token": "editor.lineHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон текущей строки",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editor.lineHighlightBorder",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница текущей строки",
+            "palette_reference": "color.legacy.transparent"
+          },
+          {
+            "token": "editor.rangeHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон выбранного диапазона",
+            "palette_reference": "accent.primary with 20% opacity"
+          },
+          {
+            "token": "editor.symbolHighlightBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон выделенного символа",
+            "palette_reference": "accent.primary with 20% opacity"
+          }
+        ],
+        "Цвета ошибок и предупреждений": [
+          {
+            "token": "editorError.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет ошибок",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "editorError.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон ошибок",
+            "palette_reference": "accent.error with 20% opacity"
+          },
+          {
+            "token": "editorWarning.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет предупреждений",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "editorWarning.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон предупреждений",
+            "palette_reference": "accent.warning with 20% opacity"
+          },
+          {
+            "token": "editorInfo.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет информации",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "editorInfo.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон информации",
+            "palette_reference": "accent.info with 20% opacity"
+          },
+          {
+            "token": "editorHint.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет подсказок",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "editorHint.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница подсказок",
+            "palette_reference": "accent.info"
+          }
+        ],
+        "Цвета виджетов": [
+          {
+            "token": "editorWidget.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон виджета редактора",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorWidget.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет виджета редактора",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "editorWidget.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница виджета редактора",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorWidget.resizeBorder",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница изменения размера виджета",
+            "palette_reference": "accent.primary with 33% opacity"
+          }
+        ],
+        "Цвета подсказок": [
+          {
+            "token": "editorSuggestWidget.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон виджета подсказок",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorSuggestWidget.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница виджета подсказок",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorSuggestWidget.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет виджета подсказок",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "editorSuggestWidget.highlightForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет выделения виджете подсказок",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "editorSuggestWidget.selectedBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон выбранного элемента виджете подсказок",
+            "palette_reference": "color.background.tertiary"
+          }
+        ],
+        "Цвета наведения": [
+          {
+            "token": "editorHoverWidget.background",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон виджета наведения",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorHoverWidget.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница виджета наведения",
+            "palette_reference": "color.border.default"
+          }
+        ],
+        "Цвета фолдинга": [
+          {
+            "token": "editor.foldBackground",
+            "suggested_module": "editor",
+            "implementation_notes": "Фон свернутого диапазона",
+            "palette_reference": "color.background.secondary with 4A opacity"
+          }
+        ],
+        "Цвета кода": [
+          {
+            "token": "editorCodeLens.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет CodeLens",
+            "palette_reference": "color.text.tertiary"
+          },
+          {
+            "token": "editorLightBulb.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет лампочки кода",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "editorLightBulbAutoFix.foreground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет лампочки автозамены",
+            "palette_reference": "accent.warning"
+          }
+        ],
+        "Цвета линейки символов": [
+          {
+            "token": "editorOverviewRuler.border",
+            "suggested_module": "editor",
+            "implementation_notes": "Граница линейки обзора",
+            "palette_reference": "color.legacy.transparent"
+          },
+          {
+            "token": "editorOverviewRuler.errorForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет ошибок в линейке обзора",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "editorOverviewRuler.warningForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет предупреждений в линейке обзора",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "editorOverviewRuler.infoForeground",
+            "suggested_module": "editor",
+            "implementation_notes": "Цвет информации в линейке обзора",
+            "palette_reference": "accent.info"
+          }
+        ]
+      },
+      "UI Colors": {
+        "Цвета общей области": [
+          {
+            "token": "foreground",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет переднего плана по умолчанию",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "errorForeground",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет ошибок",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "descriptionForeground",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет описаний",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "icon.foreground",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет иконок",
+            "palette_reference": "accent.primary"
+          }
+        ],
+        "Цвета окна": [
+          {
+            "token": "window.activeBorder",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Граница активного окна",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "window.inactiveBorder",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Граница неактивного окна",
+            "palette_reference": "color.border.subtle"
+          }
+        ],
+        "Цвета фокуса": [
+          {
+            "token": "focusBorder",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет границы фокуса",
+            "palette_reference": "color.border.focus"
+          },
+          {
+            "token": "selection.background",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Цвет фона выделения",
+            "palette_reference": "color.special.selection with 60% opacity"
+          }
+        ],
+        "Цвета текста": [
+          {
+            "token": "textBlockQuote.background",
+            "suggested_module": "text",
+            "implementation_notes": "Фон цитаты",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "textBlockQuote.border",
+            "suggested_module": "text",
+            "implementation_notes": "Граница цитаты",
+            "palette_reference": "color.border.accent"
+          },
+          {
+            "token": "textCodeBlock.background",
+            "suggested_module": "text",
+            "implementation_notes": "Фон блока кода",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "textLink.activeForeground",
+            "suggested_module": "text",
+            "implementation_notes": "Цвет активной ссылки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "textLink.foreground",
+            "suggested_module": "text",
+            "implementation_notes": "Цвет ссылки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "textPreformat.foreground",
+            "suggested_module": "text",
+            "implementation_notes": "Цвет предварительно отформатированного текста",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "textPreformat.background",
+            "suggested_module": "text",
+            "implementation_notes": "Фон предварительно отформатированного текста",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "textSeparator.foreground",
+            "suggested_module": "text",
+            "implementation_notes": "Цвет разделителя текста",
+            "palette_reference": "color.border.subtle"
+          }
+        ],
+        "Цвета виджетов": [
+          {
+            "token": "widget.shadow",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Тень виджетов",
+            "palette_reference": "color.special.shadow with 80% opacity"
+          },
+          {
+            "token": "widget.border",
+            "suggested_module": "general-ui",
+            "implementation_notes": "Граница виджетов",
+            "palette_reference": "color.border.subtle with 40% opacity"
+          }
+        ],
+        "Цвета боковой панели": [
+          {
+            "token": "sideBar.background",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Фон боковой панели",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "sideBar.foreground",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Цвет боковой панели",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "sideBar.border",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Граница боковой панели",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "sideBar.dropBackground",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Фон при перетаскивании на боковую панель",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "sideBarTitle.foreground",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Цвет заголовка боковой панели",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "sideBarSectionHeader.background",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Фон заголовка секции боковой панели",
+            "palette_reference": "color.background.tertiary"
+          },
+          {
+            "token": "sideBarSectionHeader.foreground",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Цвет заголовка секции боковой панели",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "sideBarSectionHeader.border",
+            "suggested_module": "side-bar",
+            "implementation_notes": "Граница заголовка секции боковой панели",
+            "palette_reference": "color.border.default"
+          }
+        ],
+        "Цвета панели действий": [
+          {
+            "token": "activityBar.background",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Фон панели активности",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "activityBar.foreground",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Цвет активных иконок",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "activityBar.inactiveForeground",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Цвет неактивных иконок",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "activityBar.border",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Граница панели активности",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "activityBar.activeBorder",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Цвет активной границы",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "activityBar.activeBackground",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Фон активной иконки",
+            "palette_reference": "accent.primary with 15% opacity"
+          },
+          {
+            "token": "activityBar.dropBorder",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Цвет границы при перетаскивании",
+            "palette_reference": "accent.primary"
+          }
+        ],
+        "Цвета значков активности": [
+          {
+            "token": "activityBarBadge.background",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Фон значка активности",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "activityBarBadge.foreground",
+            "suggested_module": "activity-bar",
+            "implementation_notes": "Текст значка активности",
+            "palette_reference": "color.text.onAccent"
+          }
+        ],
+        "Цвета заголовка": [
+          {
+            "token": "titleBar.activeBackground",
+            "suggested_module": "title-bar",
+            "implementation_notes": "Фон активного заголовка окна",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "titleBar.activeForeground",
+            "suggested_module": "title-bar",
+            "implementation_notes": "Цвет активного заголовка окна",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "titleBar.inactiveBackground",
+            "suggested_module": "title-bar",
+            "implementation_notes": "Фон неактивного заголовка окна",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "titleBar.inactiveForeground",
+            "suggested_module": "title-bar",
+            "implementation_notes": "Цвет неактивного заголовка окна",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "titleBar.border",
+            "suggested_module": "title-bar",
+            "implementation_notes": "Граница заголовка окна",
+            "palette_reference": "color.border.default"
+          }
+        ],
+        "Цвета панели статуса": [
+          {
+            "token": "statusBar.background",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон строки состояния",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "statusBar.foreground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Цвет строки состояния",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "statusBar.border",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Граница строки состояния",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "statusBar.debuggingBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон строки состояния в режиме отладки",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "statusBar.debuggingForeground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Цвет строки состояния в режиме отладки",
+            "palette_reference": "color.text.onAccent"
+          },
+          {
+            "token": "statusBar.debuggingBorder",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Граница строки состояния в режиме отладки",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "statusBar.noFolderBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон строки состояния без папки",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "statusBar.noFolderForeground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Цвет строки состояния без папки",
+            "palette_reference": "color.text.secondary"
+          },
+          {
+            "token": "statusBar.noFolderBorder",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Граница строки состояния без папки",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "statusBarItem.activeBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон активного элемента строки состояния",
+            "palette_reference": "color.interactive.active"
+          },
+          {
+            "token": "statusBarItem.hoverBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон элемента строки состояния при наведении",
+            "palette_reference": "color.interactive.hover"
+          },
+          {
+            "token": "statusBarItem.prominentBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон выделенного элемента строки состояния",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "statusBarItem.prominentHoverBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон выделенного элемента строки состояния при наведении",
+            "palette_reference": "color.interactive.hover"
+          },
+          {
+            "token": "statusBarItem.remoteBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон элемента удаленного подключения строки состояния",
+            "palette_reference": "accent.secondary"
+          },
+          {
+            "token": "statusBarItem.remoteForeground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Цвет элемента удаленного подключения строки состояния",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "statusBarItem.errorBackground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Фон элемента строки состояния с ошибкой",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "statusBarItem.errorForeground",
+            "suggested_module": "status-bar",
+            "implementation_notes": "Цвет элемента строки состояния с ошибкой",
+            "palette_reference": "color.text.onAccent"
+          }
+        ],
+        "Цвета вкладок": [
+          {
+            "token": "tab.activeBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон активной вкладки",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "tab.activeForeground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Цвет активной вкладки",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "tab.inactiveBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон неактивной вкладки",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "tab.inactiveForeground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Цвет неактивной вкладки",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "tab.unfocusedActiveBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон активной вкладки без фокуса",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "tab.unfocusedActiveForeground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Цвет активной вкладки без фокуса",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "tab.unfocusedInactiveBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон неактивной вкладки без фокуса",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "tab.unfocusedInactiveForeground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Цвет неактивной вкладки без фокуса",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "tab.border",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница вкладок",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "tab.activeBorder",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница активной вкладки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "tab.unfocusedActiveBorder",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница активной вкладки без фокуса",
+            "palette_reference": "color.border.subtle"
+          },
+          {
+            "token": "tab.activeBorderTop",
+            "suggested_module": "tabs",
+            "implementation_notes": "Верхняя граница активной вкладки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "tab.unfocusedActiveBorderTop",
+            "suggested_module": "tabs",
+            "implementation_notes": "Верхняя граница активной вкладки без фокуса",
+            "palette_reference": "color.border.subtle"
+          },
+          {
+            "token": "tab.hoverBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон при наведении на вкладку",
+            "palette_reference": "color.interactive.hover"
+          },
+          {
+            "token": "tab.unfocusedHoverBackground",
+            "suggested_module": "tabs",
+            "implementation_notes": "Фон при наведении на вкладку без фокуса",
+            "palette_reference": "color.interactive.hover"
+          },
+          {
+            "token": "tab.hoverBorder",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница при наведении на вкладку",
+            "palette_reference": "color.border.subtle"
+          },
+          {
+            "token": "tab.unfocusedHoverBorder",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница при наведении на вкладку без фокуса",
+            "palette_reference": "color.border.subtle"
+          },
+          {
+            "token": "tab.lastPinnedBorder",
+            "suggested_module": "tabs",
+            "implementation_notes": "Граница последней закрепленной вкладки",
+            "palette_reference": "color.border.subtle"
+          }
+        ],
+        "Цвета групп редакторов": [
+          {
+            "token": "editorGroup.background",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Фон группы редакторов",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "editorGroup.border",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница между группами редакторов",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorGroup.dropBackground",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Фон при перетаскивании редактора",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "editorGroupHeader.noTabsBackground",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Фон заголовка группы без вкладок",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorGroupHeader.tabsBackground",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Фон заголовка группы с вкладками",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "editorGroupHeader.tabsBorder",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница заголовка группы с вкладками",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "editorGroupHeader.border",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница заголовка группы редакторов",
+            "palette_reference": "color.border.default"
+          }
+        ],
+        "Цвета панелей": [
+          {
+            "token": "panel.background",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Фон панели",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "panel.border",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница панели",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "panel.dropBorder",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница при перетаскивании на панель",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "panelTitle.activeBorder",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Активная граница заголовка панели",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "panelTitle.activeForeground",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Активный заголовок панели",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "panelTitle.inactiveForeground",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Неактивный заголовок панели",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "panelTitle.inactiveBorder",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Неактивная граница заголовка панели",
+            "palette_reference": "color.border.subtle"
+          },
+          {
+            "token": "panelInput.border",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница ввода на панели",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "panelSection.border",
+            "suggested_module": "editor-groups-panels",
+            "implementation_notes": "Граница секции панели",
+            "palette_reference": "color.border.default"
+          }
+        ]
+      },
+      "Lists and Trees": [
+        {
+          "token": "list.focusBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон элемента в фокусе в списке",
+          "palette_reference": "color.interactive.active"
+        },
+        {
+          "token": "list.focusForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет элемента в фокусе в списке",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "list.activeSelectionBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон активного выделения в списке",
+          "palette_reference": "color.interactive.active"
+        },
+        {
+          "token": "list.activeSelectionForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет активного выделения в списке",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "list.inactiveSelectionBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон неактивного выделения в списке",
+          "palette_reference": "color.background.tertiary"
+        },
+        {
+          "token": "list.inactiveSelectionForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет неактивного выделения в списке",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "list.inactiveFocusBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон неактивного фокуса в списке",
+          "palette_reference": "color.background.tertiary"
+        },
+        {
+          "token": "list.inactiveFocusOutline",
+          "suggested_module": "lists",
+          "implementation_notes": "Контур неактивного фокуса в списке",
+          "palette_reference": "color.border.subtle"
+        },
+        {
+          "token": "list.hoverBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон при наведении на элемент списка",
+          "palette_reference": "color.interactive.hover"
+        },
+        {
+          "token": "list.hoverForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет при наведении на элемент списка",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "list.dropBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон при перетаскивании в список",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "list.highlightForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет выделения в списке",
+          "palette_reference": "accent.primary"
+        },
+        {
+          "token": "list.focusHighlightForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет выделения в фокусе списка",
+          "palette_reference": "accent.primary"
+        },
+        {
+          "token": "list.invalidItemForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет недействительного элемента в списке",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "list.errorForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет ошибки в списке",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "list.warningForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет предупреждения в списке",
+          "palette_reference": "accent.warning"
+        },
+        {
+          "token": "list.filterMatchBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон совпадения фильтра в списке",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "list.filterMatchBorder",
+          "suggested_module": "lists",
+          "implementation_notes": "Граница совпадения фильтра в списке",
+          "palette_reference": "accent.primary"
+        },
+        {
+          "token": "list.deemphasizedForeground",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет невыделенного элемента в списке",
+          "palette_reference": "color.text.disabled"
+        },
+        {
+          "token": "list.dropBetweenBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон между элементами при перетаскивании",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "tree.indentGuidesStroke",
+          "suggested_module": "lists",
+          "implementation_notes": "Цвет линий дерева отступов",
+          "palette_reference": "color.border.subtle"
+        },
+        {
+          "token": "tree.tableColumnsBorder",
+          "suggested_module": "lists",
+          "implementation_notes": "Граница столбцов таблицы дерева",
+          "palette_reference": "color.border.subtle"
+        },
+        {
+          "token": "tree.tableOddRowsBackground",
+          "suggested_module": "lists",
+          "implementation_notes": "Фон нечетных строк таблицы дерева",
+          "palette_reference": "color.background.tertiary"
+        }
+      ],
+      "Buttons and Input Controls": {
+        "Цвета кнопок": [
+          {
+            "token": "button.background",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон кнопки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "button.foreground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет текста кнопки",
+            "palette_reference": "color.text.onAccent"
+          },
+          {
+            "token": "button.border",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница кнопки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "button.hoverBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон кнопки при наведении",
+            "palette_reference": "accent.primary with 10% darker"
+          },
+          {
+            "token": "button.secondaryBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон вторичной кнопки",
+            "palette_reference": "color.background.tertiary"
+          },
+          {
+            "token": "button.secondaryForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет текста вторичной кнопки",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "button.secondaryHoverBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон вторичной кнопки при наведении",
+            "palette_reference": "color.background.elevated"
+          }
+        ],
+        "Цвета элементов ввода": [
+          {
+            "token": "input.background",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон поля ввода",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "input.foreground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет текста поля ввода",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "input.border",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница поля ввода",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "input.placeholderForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет плейсхолдера поля ввода",
+            "palette_reference": "color.text.disabled"
+          },
+          {
+            "token": "inputOption.activeBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон активной опции ввода",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "inputOption.activeBorder",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница активной опции ввода",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "inputOption.activeForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет активной опции ввода",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "inputOption.hoverBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон опции ввода при наведении",
+            "palette_reference": "color.interactive.hover"
+          },
+          {
+            "token": "inputValidation.infoBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон информации валидации ввода",
+            "palette_reference": "accent.info with 20% opacity"
+          },
+          {
+            "token": "inputValidation.infoForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет информации валидации ввода",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "inputValidation.infoBorder",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница информации валидации ввода",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "inputValidation.warningBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон предупреждения валидации ввода",
+            "palette_reference": "accent.warning with 20% opacity"
+          },
+          {
+            "token": "inputValidation.warningForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет предупреждения валидации ввода",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "inputValidation.warningBorder",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница предупреждения валидации ввода",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "inputValidation.errorBackground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон ошибки валидации ввода",
+            "palette_reference": "accent.error with 20% opacity"
+          },
+          {
+            "token": "inputValidation.errorForeground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет ошибки валидации ввода",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "inputValidation.errorBorder",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница ошибки валидации ввода",
+            "palette_reference": "accent.error"
+          }
+        ],
+        "Цвета выпадающих списков": [
+          {
+            "token": "dropdown.background",
+            "suggested_module": "menus-dropdowns",
+            "implementation_notes": "Фон выпадающего списка",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "dropdown.foreground",
+            "suggested_module": "menus-dropdowns",
+            "implementation_notes": "Цвет выпадающего списка",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "dropdown.border",
+            "suggested_module": "menus-dropdowns",
+            "implementation_notes": "Граница выпадающего списка",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "dropdown.listBackground",
+            "suggested_module": "menus-dropdowns",
+            "implementation_notes": "Фон списка в выпадающем списке",
+            "palette_reference": "color.background.secondary"
+          }
+        ],
+        "Цвета переключателей": [
+          {
+            "token": "checkbox.background",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Фон чекбокса",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "checkbox.foreground",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Цвет чекбокса",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "checkbox.border",
+            "suggested_module": "inputs-buttons",
+            "implementation_notes": "Граница чекбокса",
+            "palette_reference": "color.border.default"
+          }
+        ]
+      },
+      "Menus": [
+        {
+          "token": "menu.border",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Граница меню",
+          "palette_reference": "color.border.default"
+        },
+        {
+          "token": "menu.foreground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Цвет меню",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "menu.background",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Фон меню",
+          "palette_reference": "color.background.secondary"
+        },
+        {
+          "token": "menu.selectionForeground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Цвет выбранного элемента в меню",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "menu.selectionBackground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Фон выбранного элемента в меню",
+          "palette_reference": "color.interactive.active"
+        },
+        {
+          "token": "menu.selectionBorder",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Граница выбранного элемента в меню",
+          "palette_reference": "accent.primary"
+        },
+        {
+          "token": "menu.separatorBackground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Фон разделителя в меню",
+          "palette_reference": "color.border.default"
+        },
+        {
+          "token": "menubar.selectionForeground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Цвет выбранного элемента в строке меню",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "menubar.selectionBackground",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Фон выбранного элемента в строке меню",
+          "palette_reference": "color.interactive.active"
+        },
+        {
+          "token": "menubar.selectionBorder",
+          "suggested_module": "menus-dropdowns",
+          "implementation_notes": "Граница выбранного элемента в строке меню",
+          "palette_reference": "accent.primary"
+        }
+      ],
+      "Notifications": {
+        "Цвета уведомлений": [
+          {
+            "token": "notifications.background",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Фон уведомлений",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "notifications.foreground",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Цвет уведомлений",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "notifications.border",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Граница уведомлений",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "notificationsErrorIcon.foreground",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Цвет иконки ошибки уведомления",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "notificationsWarningIcon.foreground",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Цвет иконки предупреждения уведомления",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "notificationsInfoIcon.foreground",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Цвет иконки информации уведомления",
+            "palette_reference": "accent.info"
+          }
+        ],
+        "Цвета заголовка уведомлений": [
+          {
+            "token": "notificationCenter.border",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Граница центра уведомлений",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "notificationCenterHeader.foreground",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Цвет заголовка центра уведомлений",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "notificationCenterHeader.background",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Фон заголовка центра уведомлений",
+            "palette_reference": "color.background.tertiary"
+          },
+          {
+            "token": "notifications.border",
+            "suggested_module": "notifications-widgets",
+            "implementation_notes": "Граница уведомлений",
+            "palette_reference": "color.border.default"
+          }
+        ],
+        "Цвета виджета отладки": [
+          {
+            "token": "debugToolBar.background",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Фон панели инструментов отладки",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "debugToolBar.border",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Граница панели инструментов отладки",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "debugView.exceptionLabelForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет метки исключения в отладке",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "debugView.exceptionLabelBackground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Фон метки исключения в отладке",
+            "palette_reference": "accent.error with 20% opacity"
+          },
+          {
+            "token": "debugView.stateLabelForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет метки состояния в отладке",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "debugView.stateLabelBackground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Фон метки состояния в отладке",
+            "palette_reference": "color.background.tertiary"
+          },
+          {
+            "token": "debugView.valueChangedHighlight",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Подсветка измененных значений в отладке",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "debugTokenExpression.name",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет имен в выражениях отладки",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "debugTokenExpression.value",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет значений в выражениях отладки",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "debugTokenExpression.string",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет строк в выражениях отладки",
+            "palette_reference": "accent.secondary"
+          },
+          {
+            "token": "debugTokenExpression.boolean",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет булевых значений в выражениях отладки",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "debugTokenExpression.number",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет чисел в выражениях отладки",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "debugTokenExpression.error",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет ошибок в выражениях отладки",
+            "palette_reference": "accent.error"
+          }
+        ],
+        "Цвета виджета исключений": [
+          {
+            "token": "debugExceptionWidget.border",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Граница виджета исключений отладки",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "debugExceptionWidget.background",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Фон виджета исключений отладки",
+            "palette_reference": "color.background.secondary"
+          }
+        ],
+        "Цвета консоли отладки": [
+          {
+            "token": "debugConsole.infoForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет информации в консоли отладки",
+            "palette_reference": "accent.info"
+          },
+          {
+            "token": "debugConsole.warningForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет предупреждений в консоли отладки",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "debugConsole.errorForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет ошибок в консоли отладки",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "debugConsole.sourceForeground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет исходного кода в консоли отладки",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "debugConsoleInputIcon.foreground",
+            "suggested_module": "toolbar-debug",
+            "implementation_notes": "Цвет иконки ввода в консоли отладки",
+            "palette_reference": "accent.primary"
+          }
+        ]
+      },
+      "Terminal": {
+        "Основные цвета терминала": [
+          {
+            "token": "terminal.background",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон терминала",
+            "palette_reference": "color.background.primary"
+          },
+          {
+            "token": "terminal.foreground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Цвет текста терминала",
+            "palette_reference": "color.text.primary"
+          },
+          {
+            "token": "terminal.border",
+            "suggested_module": "terminal",
+            "implementation_notes": "Граница терминала",
+            "palette_reference": "color.border.default"
+          },
+          {
+            "token": "terminal.ansiBlack",
+            "suggested_module": "terminal",
+            "implementation_notes": "Черный цвет ANSI терминала",
+            "palette_reference": "foundationColors.gray500"
+          },
+          {
+            "token": "terminal.ansiRed",
+            "suggested_module": "terminal",
+            "implementation_notes": "Красный цвет ANSI терминала",
+            "palette_reference": "foundationColors.red500"
+          },
+          {
+            "token": "terminal.ansiGreen",
+            "suggested_module": "terminal",
+            "implementation_notes": "Зеленый цвет ANSI терминала",
+            "palette_reference": "foundationColors.green500"
+          },
+          {
+            "token": "terminal.ansiYellow",
+            "suggested_module": "terminal",
+            "implementation_notes": "Желтый цвет ANSI терминала",
+            "palette_reference": "foundationColors.yellow500"
+          },
+          {
+            "token": "terminal.ansiBlue",
+            "suggested_module": "terminal",
+            "implementation_notes": "Синий цвет ANSI терминала",
+            "palette_reference": "foundationColors.blue500"
+          },
+          {
+            "token": "terminal.ansiMagenta",
+            "suggested_module": "terminal",
+            "implementation_notes": "Пурпурный цвет ANSI терминала",
+            "palette_reference": "foundationColors.magenta500"
+          },
+          {
+            "token": "terminal.ansiCyan",
+            "suggested_module": "terminal",
+            "implementation_notes": "Голубой цвет ANSI терминала",
+            "palette_reference": "foundationColors.cyan500"
+          },
+          {
+            "token": "terminal.ansiWhite",
+            "suggested_module": "terminal",
+            "implementation_notes": "Белый цвет ANSI терминала",
+            "palette_reference": "foundationColors.gray200"
+          },
+          {
+            "token": "terminal.ansiBrightBlack",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-черный цвет ANSI терминала",
+            "palette_reference": "foundationColors.gray400"
+          },
+          {
+            "token": "terminal.ansiBrightRed",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-красный цвет ANSI терминала",
+            "palette_reference": "foundationColors.red400"
+          },
+          {
+            "token": "terminal.ansiBrightGreen",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-зеленый цвет ANSI терминала",
+            "palette_reference": "foundationColors.green400"
+          },
+          {
+            "token": "terminal.ansiBrightYellow",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-желтый цвет ANSI терминала",
+            "palette_reference": "foundationColors.yellow400"
+          },
+          {
+            "token": "terminal.ansiBrightBlue",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-синий цвет ANSI терминала",
+            "palette_reference": "foundationColors.blue400"
+          },
+          {
+            "token": "terminal.ansiBrightMagenta",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-пурпурный цвет ANSI терминала",
+            "palette_reference": "foundationColors.magenta400"
+          },
+          {
+            "token": "terminal.ansiBrightCyan",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-голубой цвет ANSI терминала",
+            "palette_reference": "foundationColors.cyan400"
+          },
+          {
+            "token": "terminal.ansiBrightWhite",
+            "suggested_module": "terminal",
+            "implementation_notes": "Ярко-белый цвет ANSI терминала",
+            "palette_reference": "foundationColors.gray100"
+          }
+        ],
+        "Дополнительные цвета терминала": [
+          {
+            "token": "terminal.selectionBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон выделения в терминале",
+            "palette_reference": "accent.primary with 30% opacity"
+          },
+          {
+            "token": "terminal.selectionForeground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Цвет текста выделения в терминале",
+            "palette_reference": "color.text.inverse"
+          },
+          {
+            "token": "terminal.inactiveSelectionBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон неактивного выделения в терминале",
+            "palette_reference": "accent.primary with 15% opacity"
+          },
+          {
+            "token": "terminal.cursorBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон курсора терминала",
+            "palette_reference": "color.background.secondary"
+          },
+          {
+            "token": "terminal.cursorForeground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Цвет курсора терминала",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "terminal.overviewRulerCursorForeground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Цвет курсора в линейке обзора терминала",
+            "palette_reference": "accent.warning"
+          },
+          {
+            "token": "terminalCommandDecoration.defaultBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон декорации команды терминала по умолчанию",
+            "palette_reference": "accent.primary"
+          },
+          {
+            "token": "terminalCommandDecoration.successBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон декорации успеха команды терминала",
+            "palette_reference": "accent.success"
+          },
+          {
+            "token": "terminalCommandDecoration.errorBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон декорации ошибки команды терминала",
+            "palette_reference": "accent.error"
+          },
+          {
+            "token": "terminal.dropBackground",
+            "suggested_module": "terminal",
+            "implementation_notes": "Фон при перетаскивании в терминал",
+            "palette_reference": "accent.primary with 33% opacity"
+          },
+          {
+            "token": "terminal.tab.activeBorder",
+            "suggested_module": "terminal",
+            "implementation_notes": "Активная граница вкладки терминала",
+            "palette_reference": "accent.primary"
+          }
+        ]
+      },
+      "Peek View": [
+        {
+          "token": "peekView.border",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Граница просмотра",
+          "palette_reference": "color.border.default"
+        },
+        {
+          "token": "peekViewEditor.background",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон редактора просмотра",
+          "palette_reference": "color.background.secondary"
+        },
+        {
+          "token": "peekViewEditorGutter.background",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон боковой панели редактора просмотра",
+          "palette_reference": "color.background.tertiary"
+        },
+        {
+          "token": "peekViewEditor.matchHighlightBackground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон совпадений в редакторе просмотра",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "peekViewEditor.matchHighlightBorder",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Граница совпадений в редакторе просмотра",
+          "palette_reference": "accent.primary"
+        },
+        {
+          "token": "peekViewResult.background",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон результатов просмотра",
+          "palette_reference": "color.background.secondary"
+        },
+        {
+          "token": "peekViewResult.lineForeground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Цвет строки в результатах просмотра",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "peekViewResult.fileForeground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Цвет файла в результатах просмотра",
+          "palette_reference": "color.text.secondary"
+        },
+        {
+          "token": "peekViewResult.matchHighlightBackground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон совпадений в результатах просмотра",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "peekViewResult.selectionBackground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон выбранного элемента в результатах просмотра",
+          "palette_reference": "color.interactive.active"
+        },
+        {
+          "token": "peekViewResult.selectionForeground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Цвет выбранного элемента в результатах просмотра",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "peekViewTitle.background",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Фон заголовка просмотра",
+          "palette_reference": "color.background.primary"
+        },
+        {
+          "token": "peekViewTitleDescription.foreground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Цвет описания заголовка просмотра",
+          "palette_reference": "color.text.secondary"
+        },
+        {
+          "token": "peekViewTitleLabel.foreground",
+          "suggested_module": "peek-view",
+          "implementation_notes": "Цвет метки заголовка просмотра",
+          "palette_reference": "color.text.primary"
+        }
+      ],
+      "Diff Editor": [
+        {
+          "token": "diffEditor.insertedTextBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон вставленного текста",
+          "palette_reference": "accent.success with 20% opacity"
+        },
+        {
+          "token": "diffEditor.insertedTextBorder",
+          "suggested_module": "diffs",
+          "implementation_notes": "Граница вставленного текста",
+          "palette_reference": "accent.success"
+        },
+        {
+          "token": "diffEditor.removedTextBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон удаленного текста",
+          "palette_reference": "accent.error with 20% opacity"
+        },
+        {
+          "token": "diffEditor.removedTextBorder",
+          "suggested_module": "diffs",
+          "implementation_notes": "Граница удаленного текста",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "diffEditor.border",
+          "suggested_module": "diffs",
+          "implementation_notes": "Граница редактора сравнения",
+          "palette_reference": "color.border.default"
+        },
+        {
+          "token": "diffEditor.diagonalFill",
+          "suggested_module": "diffs",
+          "implementation_notes": "Диагональная заливка редактора сравнения",
+          "palette_reference": "color.border.subtle"
+        },
+        {
+          "token": "diffEditor.insertedLineBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон вставленной строки",
+          "palette_reference": "accent.success with 10% opacity"
+        },
+        {
+          "token": "diffEditor.removedLineBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон удаленной строки",
+          "palette_reference": "accent.error with 10% opacity"
+        },
+        {
+          "token": "diffEditorGutter.insertedLineBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон вставленной строки в боковой панели",
+          "palette_reference": "accent.success with 20% opacity"
+        },
+        {
+          "token": "diffEditorGutter.removedLineBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон удаленной строки в боковой панели",
+          "palette_reference": "accent.error with 20% opacity"
+        },
+        {
+          "token": "diffEditorOverview.insertedForeground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Цвет вставленного текста в обзоре",
+          "palette_reference": "accent.success"
+        },
+        {
+          "token": "diffEditorOverview.removedForeground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Цвет удаленного текста в обзоре",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "diffEditor.unchangedRegionBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон неизмененной области",
+          "palette_reference": "color.background.tertiary"
+        },
+        {
+          "token": "diffEditor.unchangedRegionForeground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Цвет неизмененной области",
+          "palette_reference": "color.text.disabled"
+        },
+        {
+          "token": "diffEditor.unchangedCodeBackground",
+          "suggested_module": "diffs",
+          "implementation_notes": "Фон неизмененного кода",
+          "palette_reference": "color.background.primary"
+        }
+      ],
+      "Git Decorations": [
+        {
+          "token": "gitDecoration.addedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет добавленных ресурсов",
+          "palette_reference": "accent.success"
+        },
+        {
+          "token": "gitDecoration.modifiedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет измененных ресурсов",
+          "palette_reference": "accent.warning"
+        },
+        {
+          "token": "gitDecoration.deletedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет удаленных ресурсов",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "gitDecoration.renamedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет переименованных ресурсов",
+          "palette_reference": "accent.info"
+        },
+        {
+          "token": "gitDecoration.stageModifiedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет измененных ресурсов в stage",
+          "palette_reference": "accent.secondary"
+        },
+        {
+          "token": "gitDecoration.stageDeletedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет удаленных ресурсов в stage",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "gitDecoration.untrackedResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет неподслеживаемых ресурсов",
+          "palette_reference": "accent.info"
+        },
+        {
+          "token": "gitDecoration.ignoredResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет игнорируемых ресурсов",
+          "palette_reference": "color.text.disabled"
+        },
+        {
+          "token": "gitDecoration.conflictingResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет конфликтующих ресурсов",
+          "palette_reference": "accent.error"
+        },
+        {
+          "token": "gitDecoration.submoduleResourceForeground",
+          "suggested_module": "git-decoration",
+          "implementation_notes": "Цвет ресурсов подмодуля",
+          "palette_reference": "accent.secondary"
+        }
+      ],
+      "Minimap": [
+        {
+          "token": "minimap.findMatchHighlight",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Выделение результатов поиска в миникарте",
+          "palette_reference": "accent.primary with 80% opacity"
+        },
+        {
+          "token": "minimap.selectionHighlight",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Выделение в миникарте",
+          "palette_reference": "accent.primary with 33% opacity"
+        },
+        {
+          "token": "minimap.errorHighlight",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Выделение ошибок в миникарте",
+          "palette_reference": "accent.error with 80% opacity"
+        },
+        {
+          "token": "minimap.warningHighlight",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Выделение предупреждений в миникарте",
+          "palette_reference": "accent.warning with 80% opacity"
+        },
+        {
+          "token": "minimap.background",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон миникарты",
+          "palette_reference": "color.background.secondary"
+        },
+        {
+          "token": "minimap.foregroundOpacity",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Прозрачность переднего плана миникарты",
+          "palette_reference": "0.6 (default)"
+        },
+        {
+          "token": "minimapSlider.background",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон ползунка миникарты",
+          "palette_reference": "color.interactive.hover with 30% opacity"
+        },
+        {
+          "token": "minimapSlider.hoverBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон ползунка миникарты при наведении",
+          "palette_reference": "color.interactive.hover with 40% opacity"
+        },
+        {
+          "token": "minimapSlider.activeBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон активного ползунка миникарты",
+          "palette_reference": "color.interactive.active with 30% opacity"
+        },
+        {
+          "token": "minimapGutter.addedBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон добавленных строк в миникарте",
+          "palette_reference": "accent.success"
+        },
+        {
+          "token": "minimapGutter.modifiedBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон измененных строк в миникарте",
+          "palette_reference": "accent.warning"
+        },
+        {
+          "token": "minimapGutter.deletedBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон удаленных строк в миникарте",
+          "palette_reference": "accent.error"
+        }
+      ],
+      "Scrollbar": [
+        {
+          "token": "scrollbar.shadow",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Тень полосы прокрутки",
+          "palette_reference": "color.special.shadow with 80% opacity"
+        },
+        {
+          "token": "scrollbarSlider.background",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон ползунка полосы прокрутки",
+          "palette_reference": "color.interactive.hover with 30% opacity"
+        },
+        {
+          "token": "scrollbarSlider.hoverBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон ползунка полосы прокрутки при наведении",
+          "palette_reference": "color.interactive.hover with 40% opacity"
+        },
+        {
+          "token": "scrollbarSlider.activeBackground",
+          "suggested_module": "scrollbar-minimap",
+          "implementation_notes": "Фон активного ползунка полосы прокрутки",
+          "palette_reference": "color.interactive.active with 30% opacity"
+        }
+      ],
+      "Badges": [
+        {
+          "token": "badge.foreground",
+          "suggested_module": "badges",
+          "implementation_notes": "Текст на значке",
+          "palette_reference": "color.text.onAccent"
+        },
+        {
+          "token": "badge.background",
+          "suggested_module": "badges",
+          "implementation_notes": "Фон значка",
+          "palette_reference": "accent.primary"
+        }
+      ],
+      "Progress Bar": [
+        {
+          "token": "progressBar.background",
+          "suggested_module": "general-ui",
+          "implementation_notes": "Фон индикатора прогресса",
+          "palette_reference": "accent.primary"
+        }
+      ],
+      "Call Stack": [
+        {
+          "token": "debugView.stateLabelBackground",
+          "suggested_module": "toolbar-debug",
+          "implementation_notes": "Фон метки состояния в отладке",
+          "palette_reference": "color.background.tertiary"
+        },
+        {
+          "token": "debugView.stateLabelForeground",
+          "suggested_module": "toolbar-debug",
+          "implementation_notes": "Цвет метки состояния в отладке",
+          "palette_reference": "color.text.primary"
+        },
+        {
+          "token": "debugView.valueChangedHighlight",
+          "suggested_module": "toolbar-debug",
+          "implementation_notes": "Подсветка измененных значений в отладке",
+          "palette_reference": "accent.primary with 33% opacity"
+        }
+      ],
+      "Syntax Highlighting": [
+        {
+          "token": "comments",
+          "suggested_module": "editor",
+          "implementation_notes": "Комментарии в синтаксисе",
+          "palette_reference": "semanticColors.textSecondary"
+        },
+        {
+          "token": "strings",
+          "suggested_module": "editor",
+          "implementation_notes": "Строковые значения в синтаксисе",
+          "palette_reference": "semanticColors.text"
+        },
+        {
+          "token": "numbers",
+          "suggested_module": "editor",
+          "implementation_notes": "Числовые значения в синтаксисе",
+          "palette_reference": "semanticColors.warning"
+        },
+        {
+          "token": "keywords",
+          "suggested_module": "editor",
+          "implementation_notes": "Ключевые слова в синтаксисе",
+          "palette_reference": "foundationColors.blue500"
+        },
+        {
+          "token": "types",
+          "suggested_module": "editor",
+          "implementation_notes": "Типы данных в синтаксисе",
+          "palette_reference": "foundationColors.teal500"
+        },
+        {
+          "token": "functions",
+          "suggested_module": "editor",
+          "implementation_notes": "Функции в синтаксисе",
+          "palette_reference": "foundationColors.blue400"
+        },
+        {
+          "token": "variables",
+          "suggested_module": "editor",
+          "implementation_notes": "Переменные в синтаксисе",
+          "palette_reference": "semanticColors.text"
+        },
+        {
+          "token": "parameters",
+          "suggested_module": "editor",
+          "implementation_notes": "Параметры в синтаксисе",
+          "palette_reference": "semanticColors.textSecondary"
+        },
+        {
+          "token": "properties",
+          "suggested_module": "editor",
+          "implementation_notes": "Свойства в синтаксисе",
+          "palette_reference": "foundationColors.cyan500"
+        },
+        {
+          "token": "classes",
+          "suggested_module": "editor",
+          "implementation_notes": "Классы в синтаксисе",
+          "palette_reference": "foundationColors.yellow400"
+        },
+        {
+          "token": "interfaces",
+          "suggested_module": "editor",
+          "implementation_notes": "Интерфейсы в синтаксисе",
+          "palette_reference": "foundationColors.teal400"
+        },
+        {
+          "token": "methods",
+          "suggested_module": "editor",
+          "implementation_notes": "Методы в синтаксисе",
+          "palette_reference": "foundationColors.blue400"
+        },
+        {
+          "token": "decorators",
+          "suggested_module": "editor",
+          "implementation_notes": "Декораторы в синтаксисе",
+          "palette_reference": "foundationColors.magenta500"
+        },
+        {
+          "token": "labels",
+          "suggested_module": "editor",
+          "implementation_notes": "Метки в синтаксисе",
+          "palette_reference": "foundationColors.purple500"
+        }
+      ],
+      "Semantic Highlighting": [
+        {
+          "token": "class",
+          "suggested_module": "editor",
+          "implementation_notes": "Классы в семантическом выделении",
+          "palette_reference": "foundationColors.yellow400"
+        },
+        {
+          "token": "enum",
+          "suggested_module": "editor",
+          "implementation_notes": "Перечисления в семантическом выделении",
+          "palette_reference": "foundationColors.orange500"
+        },
+        {
+          "token": "interface",
+          "suggested_module": "editor",
+          "implementation_notes": "Интерфейсы в семантическом выделении",
+          "palette_reference": "foundationColors.teal400"
+        },
+        {
+          "token": "namespace",
+          "suggested_module": "editor",
+          "implementation_notes": "Пространства имен в семантическом выделении",
+          "palette_reference": "foundationColors.teal300"
+        },
+        {
+          "token": "typeParameter",
+          "suggested_module": "editor",
+          "implementation_notes": "Параметры типа в семантическом выделении",
+          "palette_reference": "foundationColors.yellow600"
+        },
+        {
+          "token": "type",
+          "suggested_module": "editor",
+          "implementation_notes": "Типы данных в семантическом выделении",
+          "palette_reference": "foundationColors.teal500"
+        },
+        {
+          "token": "parameter",
+          "suggested_module": "editor",
+          "implementation_notes": "Параметры в семантическом выделении",
+          "palette_reference": "semanticColors.textSecondary"
+        },
+        {
+          "token": "variable",
+          "suggested_module": "editor",
+          "implementation_notes": "Переменные в семантическом выделении",
+          "palette_reference": "semanticColors.text"
+        },
+        {
+          "token": "property",
+          "suggested_module": "editor",
+          "implementation_notes": "Свойства в семантическом выделении",
+          "palette_reference": "foundationColors.cyan500"
+        },
+        {
+          "token": "enumMember",
+          "suggested_module": "editor",
+          "implementation_notes": "Элементы перечисления в семантическом выделении",
+          "palette_reference": "foundationColors.orange400"
+        },
+        {
+          "token": "decorator",
+          "suggested_module": "editor",
+          "implementation_notes": "Декораторы в семантическом выделении",
+          "palette_reference": "foundationColors.magenta500"
+        },
+        {
+          "token": "event",
+          "suggested_module": "editor",
+          "implementation_notes": "События в семантическом выделении",
+          "palette_reference": "foundationColors.purple500"
+        },
+        {
+          "token": "function",
+          "suggested_module": "editor",
+          "implementation_notes": "Функции в семантическом выделении",
+          "palette_reference": "foundationColors.blue400"
+        },
+        {
+          "token": "method",
+          "suggested_module": "editor",
+          "implementation_notes": "Методы в семантическом выделении",
+          "palette_reference": "foundationColors.blue400"
+        },
+        {
+          "token": "macro",
+          "suggested_module": "editor",
+          "implementation_notes": "Макросы в семантическом выделении",
+          "palette_reference": "foundationColors.magenta400"
+        },
+        {
+          "token": "label",
+          "suggested_module": "editor",
+          "implementation_notes": "Метки в семантическом выделении",
+          "palette_reference": "foundationColors.purple500"
+        },
+        {
+          "token": "comment",
+          "suggested_module": "editor",
+          "implementation_notes": "Комментарии в семантическом выделении",
+          "palette_reference": "semanticColors.textSecondary"
+        },
+        {
+          "token": "string",
+          "suggested_module": "editor",
+          "implementation_notes": "Строки в семантическом выделении",
+          "palette_reference": "semanticColors.text"
+        },
+        {
+          "token": "keyword",
+          "suggested_module": "editor",
+          "implementation_notes": "Ключевые слова в семантическом выделении",
+          "palette_reference": "foundationColors.blue500"
+        },
+        {
+          "token": "number",
+          "suggested_module": "editor",
+          "implementation_notes": "Числа в семантическом выделении",
+          "palette_reference": "semanticColors.warning"
+        },
+        {
+          "token": "regexp",
+          "suggested_module": "editor",
+          "implementation_notes": "Регулярные выражения в семантическом выделении",
+          "palette_reference": "semanticColors.info"
+        },
+        {
+          "token": "operator",
+          "suggested_module": "editor",
+          "implementation_notes": "Операторы в семантическом выделении",
+          "palette_reference": "semanticColors.secondary"
+        }
+      ]
+    },
+    "recommendations": {
+      "implementation_priority": [
+        "editor",
+        "general-ui",
+        "activity-bar",
+        "status-bar",
+        "side-bar",
+        "tabs",
+        "terminal",
+        "editor-groups-panels",
+        "lists",
+        "menus-dropdowns",
+        "inputs-buttons",
+        "notifications-widgets",
+        "toolbar-debug",
+        "diffs",
+        "git-decoration",
+        "scrollbar-minimap",
+        "badges",
+        "peek-view",
+        "text",
+        "title-bar",
+        "command-center",
+        "highlights",
+        "inline-chat",
+        "scm-graph",
+        "merges",
+        "drop-backgrounds"
+      ],
+      "implementation_notes": "Для каждого отсутствующего токена необходимо создать соответствующее определение в файле ui-modules, связанном с предложенным модулем. При реализации следует учитывать уже существующие токены и палитру цветов, чтобы обеспечить согласованность темы."
+    }
+  }
+}
