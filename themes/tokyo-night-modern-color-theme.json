@@ -331,8 +331,19 @@
     "gitDecoration.conflictingResourceForeground": "#e0af68",
     "gitDecoration.stageDeletedResourceForeground": "#ff5370",
     "gitDecoration.stageModifiedResourceForeground": "#9d7cd8",
+    "scmGraph.historyItemHoverLabelForeground": "#ffffff",
+    "scmGraph.foreground1": "#7aa2f7",
+    "scmGraph.foreground2": "#bb9af7",
+    "scmGraph.foreground3": "#9ece6a",
+    "scmGraph.foreground4": "#e0af68",
+    "scmGraph.foreground5": "#7dcfff",
+    "scmGraph.historyItemHoverAdditionsForeground": "#9ece6a",
+    "scmGraph.historyItemHoverDeletionsForeground": "#ff5370",
+    "scmGraph.historyItemRefColor": "#7aa2f7",
+    "scmGraph.historyItemRemoteRefColor": "#bb9af7",
+    "scmGraph.historyItemBaseRefColor": "#ff5370",
     "scmGraph.historyItemHoverDefaultLabelBackground": "#7aa2f7",
-    "scmGraph.historyItemHoverDefaultLabelForeground": "#151b24"
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff"
   },
   "tokenColors": [
     {
@@ -3590,6 +3601,6 @@
       "reduction": "97%",
       "structure": "primitive → semantic → UI → syntax"
     },
-    "buildDate": "2025-10-17T13:33:45.581Z"
+    "buildDate": "2025-10-17T14:17:09.294Z"
   }
 }
