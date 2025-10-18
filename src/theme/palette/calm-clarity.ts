@@ -10,7 +10,7 @@
 
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
- workbench: {
+  workbench: {
     // Фон: Очень темный, но не абсолютно черный цвет с холодным или нейтральным оттенком
     background: string // Темно-синий/графитовый фон
     backgroundSecondary: string // Немного светлее для иерархии
@@ -51,7 +51,7 @@ export interface CalmClarityPalette {
     subtle: string // Более приглушенный оттенок
   }
 
- // Syntax highlighting colors - цвета подсветки синтаксиса
+  // Syntax highlighting colors - цвета подсветки синтаксиса
   syntax: {
     // Основные цвета
     text: string // Основной цвет текста
@@ -139,13 +139,13 @@ export const calmClarityPalette: CalmClarityPalette = {
 
   button: {
     // Цвета для primary кнопок - ярче чем accentPrimary для лучшей видимости
-    primaryBackground: '#6a8bbf', // Ярче, чем accentPrimary (#5a7b9e)
+    primaryBackground: '#37516b', // Ярче, чем accentPrimary
     primaryForeground: '#ffffff', // Белый текст для лучшей читаемости
-    primaryHoverBackground: '#7a9bd0', // Ярче, чем accentHover (#6d8aab)
+    primaryHoverBackground: '#3d5a77', // Ярче, чем accentHover
     // Цвета для secondary кнопок - контрастные, но не отвлекающие
-    secondaryBackground: '#1f2a3a', // Темно-синий фон, контрастный с основным фоном
+    secondaryBackground: '#2c3a4f', // Темно-синий фон, контрастный с основным фоном
     secondaryForeground: '#a2acbd', // Текст близкий к основному цвету текста
-    secondaryHoverBackground: '#2a364a', // Более светлый фон при наведении
+    secondaryHoverBackground: '#3c4a5f', // Более светлый фон при наведении
     border: '#40506a', // Нейтральный цвет для границы кнопок
   },
 
@@ -262,6 +262,6 @@ export function meetsWCAGContrast(
   background: string,
   level: 'AA' | 'AAA' = 'AA'
 ): boolean {
- const ratio = getContrastRatio(foreground, background)
+  const ratio = getContrastRatio(foreground, background)
   return level === 'AA' ? ratio >= 4.5 : ratio >= 7.0
 }
