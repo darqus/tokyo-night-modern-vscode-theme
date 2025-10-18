@@ -31,7 +31,7 @@ interface VSCodeTheme {
  * Генерация цветов интерфейса (workbench colors) на основе палитры
  */
 function generateWorkbenchColors() {
-  const { workbench, syntax } = calmClarityPalette
+  const { workbench, button, syntax } = calmClarityPalette
 
   return {
     // Activity Bar
@@ -174,9 +174,13 @@ function generateWorkbenchColors() {
     'terminal.ansiBrightWhite': syntax.text,
 
     // Buttons and Inputs
-    'button.background': workbench.accentPrimary,
-    'button.foreground': workbench.background,
-    'button.hoverBackground': workbench.accentHover,
+    'button.background': button.primaryBackground,
+    'button.foreground': button.primaryForeground,
+    'button.hoverBackground': button.primaryHoverBackground,
+    'button.secondaryBackground': button.secondaryBackground,
+    'button.secondaryForeground': button.secondaryForeground,
+    'button.secondaryHoverBackground': button.secondaryHoverBackground,
+    'button.border': button.border,
     'input.background': workbench.backgroundSecondary,
     'input.border': workbench.border,
     'input.foreground': syntax.text,

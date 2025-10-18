@@ -10,7 +10,7 @@
 
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
-  workbench: {
+ workbench: {
     // Фон: Очень темный, но не абсолютно черный цвет с холодным или нейтральным оттенком
     background: string // Темно-синий/графитовый фон
     backgroundSecondary: string // Немного светлее для иерархии
@@ -31,6 +31,17 @@ export interface CalmClarityPalette {
     accentFocus: string // Цвет фокуса ввода
   }
 
+  // Button colors - цвета кнопок
+  button: {
+    primaryBackground: string // Основной цвет фона для primary кнопок
+    primaryForeground: string // Основной цвет текста для primary кнопок
+    primaryHoverBackground: string // Цвет фона при наведении для primary кнопок
+    secondaryBackground: string // Цвет фона для secondary кнопок
+    secondaryForeground: string // Цвет текста для secondary кнопок
+    secondaryHoverBackground: string // Цвет фона при наведении для secondary кнопок
+    border: string // Цвет границы для кнопок
+  }
+
   // Neutral colors - нейтральные холодно-серо-голубые оттенки для вспомогательных элементов
   neutral: {
     // Cool gray-blue shades for subtle UI elements
@@ -40,7 +51,7 @@ export interface CalmClarityPalette {
     subtle: string // Более приглушенный оттенок
   }
 
-  // Syntax highlighting colors - цвета подсветки синтаксиса
+ // Syntax highlighting colors - цвета подсветки синтаксиса
   syntax: {
     // Основные цвета
     text: string // Основной цвет текста
@@ -126,6 +137,18 @@ export const calmClarityPalette: CalmClarityPalette = {
     accentFocus: '#8ca0bf', // Фокус ввода (немного ярче для четкого выделения, но все еще приглушенный)
   },
 
+  button: {
+    // Цвета для primary кнопок - ярче чем accentPrimary для лучшей видимости
+    primaryBackground: '#6a8bbf', // Ярче, чем accentPrimary (#5a7b9e)
+    primaryForeground: '#ffffff', // Белый текст для лучшей читаемости
+    primaryHoverBackground: '#7a9bd0', // Ярче, чем accentHover (#6d8aab)
+    // Цвета для secondary кнопок - контрастные, но не отвлекающие
+    secondaryBackground: '#1f2a3a', // Темно-синий фон, контрастный с основным фоном
+    secondaryForeground: '#a2acbd', // Текст близкий к основному цвету текста
+    secondaryHoverBackground: '#2a364a', // Более светлый фон при наведении
+    border: '#40506a', // Нейтральный цвет для границы кнопок
+  },
+
   syntax: {
     // Основные цвета - скорректированы для лучшей гармонии с новым фоном
     text: '#a2acbd', // Основной текст (светлее для лучшей читаемости на более темном фоне)
@@ -139,12 +162,12 @@ export const calmClarityPalette: CalmClarityPalette = {
     // Типы и классы (холодные оттенки)
     type: '#6a8ab8', // Типы данных (ярче для лучшей видимости)
     class: '#5d7daa', // Классы (ярче для лучшей видимости)
-    interface: '#6c8db8', // Интерфейсы (ярче для лучшей видимости)
+    interface: '#6c8db8', // Интерфейсы (ярче для лучей видимости)
     enum: '#7d9fb0', // Перечисления (ярче для лучшей видимости)
 
     // Переменные и константы (нейтральные оттенки)
     variable: '#b8c8e8', // Переменные (ярче для лучшей видимости)
-    parameter: '#9aadc9', // Параметры функций (ярче для лучшей видимости)
+    parameter: '#9adc9', // Параметры функций (ярче для лучшей видимости)
     constant: '#8a92d4', // Константы (ярче для лучшей видимости)
 
     // Функции и методы (холодные оттенки)
@@ -173,7 +196,7 @@ export const calmClarityPalette: CalmClarityPalette = {
 
   // Альфа-варианты для полупрозрачности
   alpha: {
-    subtle: '33', // 20% прозрачность (0x33)
+    subtle: '33', // 20% прозрачность (0x3)
     hover: '66', // 40% прозрачность (0x66)
     active: '99', // 60% прозрачность (0x99)
     semiOpaque: 'cc', // 80% прозрачность (0xcc)
@@ -213,7 +236,7 @@ export function getContrastRatio(color1: string, color2: string): number {
 
   // Вычисление относительной яркости
   const getLuminance = (r: number, g: number, b: number): number => {
-    const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.055) ** 2.4
+    const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.05) ** 2.4
     const GsRGB = g <= 0.03928 ? g / 12.92 : ((g + 0.055) / 1.055) ** 2.4
     const BsRGB = b <= 0.03928 ? b / 12.92 : ((b + 0.055) / 1.055) ** 2.4
     return 0.2126 * RsRGB + 0.7152 * GsRGB + 0.0722 * BsRGB
@@ -239,6 +262,6 @@ export function meetsWCAGContrast(
   background: string,
   level: 'AA' | 'AAA' = 'AA'
 ): boolean {
-  const ratio = getContrastRatio(foreground, background)
+ const ratio = getContrastRatio(foreground, background)
   return level === 'AA' ? ratio >= 4.5 : ratio >= 7.0
 }
