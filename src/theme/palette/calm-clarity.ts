@@ -29,6 +29,7 @@ export interface CalmClarityPalette {
     accentSecondary: string // Приглушенный лавандовый
     accentHover: string // Цвет для hover состояний
     accentFocus: string // Цвет фокуса ввода
+    badgeForeground: string // Цвет текста для бейджей
   }
 
   // Button colors - цвета кнопок
@@ -131,10 +132,11 @@ export const calmClarityPalette: CalmClarityPalette = {
     tabbar: '#141923', // Панель вкладок (очень близок к основному фону, но чуть светлее)
 
     // Акценты: более приглушенные, но выделяющиеся цвета
-    accentPrimary: '#5a7b9e', // Приглушенный бирюзово-синий (более сдержанный)
+    accentPrimary: '#70b4ec', // Яркий сине-голубой акцентный цвет
     accentSecondary: '#7a8da8', // Приглушенный лавандовый (холодный сине-серый)
     accentHover: '#6d8aab', // Hover вариант (между основным и фокусным акцентом)
     accentFocus: '#8ca0bf', // Фокус ввода (немного ярче для четкого выделения, но все еще приглушенный)
+    badgeForeground: '#10121a', // Цвет текста для бейджей
   },
 
   button: {
