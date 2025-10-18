@@ -1,5 +1,6 @@
 import { calmClarityPalette } from '../palette/calm-clarity'
 import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
+import { generateSemanticTokenColors } from './semantic-token-colors'
 
 /**
  * Генератор темы "Спокойная Четкость" для VS Code
@@ -25,6 +26,7 @@ interface VSCodeTheme {
     }
   }>
   semanticHighlighting: boolean
+  semanticTokenColors?: Record<string, unknown>
 }
 
 /**
@@ -1115,5 +1117,6 @@ export function generateCalmClarityTheme(): VSCodeTheme {
     semanticHighlighting: true,
     colors: generateWorkbenchColors(),
     tokenColors: generateTokenColors(),
+    semanticTokenColors: generateSemanticTokenColors(),
   }
 }
