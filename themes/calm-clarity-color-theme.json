@@ -85,9 +85,9 @@
     "button.background": "#284479",
     "button.foreground": "#ffffff",
     "button.hoverBackground": "#2b4c8a",
-    "button.secondaryBackground": "#40567e",
-    "button.secondaryForeground": "#a2acbd",
-    "button.secondaryHoverBackground": "#48608d",
+    "button.secondaryBackground": "#67407e",
+    "button.secondaryForeground": "#ffffff",
+    "button.secondaryHoverBackground": "#72468b",
     "button.border": "#2b4c8a",
     "input.background": "#12161e",
     "input.border": "#1f242f",
@@ -894,12 +894,30 @@
       }
     }
   ],
+  "semanticTokenColors": {
+    "namespace": {
+      "foreground": "#7a9bd6"
+    },
+    "type": {
+      "foreground": "#6a8fd8"
+    },
+    "class": {
+      "foreground": "#6a8fd8"
+    },
+    "interface": {
+      "foreground": "#7c9ed4",
+      "fontStyle": "italic"
+    },
+    "variable.readonly": {
+      "foreground": "#e6ae89"
+    }
+  },
   "_metadata": {
     "name": "Calm Clarity",
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T22:24:34.012Z",
+    "date": "2025-10-18T22:41:15.586Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
