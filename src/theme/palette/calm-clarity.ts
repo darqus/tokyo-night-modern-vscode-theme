@@ -148,7 +148,7 @@ export const calmClarityPalette: CalmClarityPalette = {
 
   button: {
     // Цвета для primary кнопок - ярче чем accentPrimary для лучшей видимости
-    primaryBackground: '#37516b', // Ярче, чем accentPrimary
+    primaryBackground: '#37516b',
     primaryForeground: '#ffffff', // Белый текст для лучшей читаемости
     primaryHoverBackground: '#3d5a77', // Ярче, чем accentHover
     // Цвета для secondary кнопок - контрастные, но не отвлекающие
