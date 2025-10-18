@@ -140,10 +140,7 @@ function generateWorkbenchColors() {
     'statusBar.debuggingBackground': syntax.warning,
     'statusBar.debuggingForeground': workbench.background,
     'statusBar.noFolderBackground': workbench.backgroundSecondary,
-    'statusBarItem.hoverBackground': calmClarityPalette.getColorWithAlpha(
-      workbench.accentPrimary,
-      'subtle'
-    ),
+    'statusBarItem.hoverBackground': calmClarityPalette.workbench.backgroundTertiary,
     'statusBarItem.activeBackground': calmClarityPalette.getColorWithAlpha(
       workbench.accentHover,
       'hover'

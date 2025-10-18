@@ -57,7 +57,7 @@
     "statusBar.debuggingBackground": "#8a9ab8",
     "statusBar.debuggingForeground": "#141820",
     "statusBar.noFolderBackground": "#12161e",
-    "statusBarItem.hoverBackground": "#8ac7ff33",
+    "statusBarItem.hoverBackground": "#1a1f2a",
     "statusBarItem.activeBackground": "#6d8aab66",
     "panel.background": "#141820",
     "panel.border": "#1f242f",
@@ -885,7 +885,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T19:33:54.116Z",
+    "date": "2025-10-18T19:37:27.528Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
