@@ -463,7 +463,7 @@ function generateTokenColors() {
       ],
       settings: {
         foreground: syntaxTokenPalette.comments,
-        fontStyle: 'italic',
+        fontStyle: '',
       },
     },
 
