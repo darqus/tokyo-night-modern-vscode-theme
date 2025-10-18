@@ -237,7 +237,7 @@ class ReleaseManager {
       // Создаем релиз через GitHub CLI если доступен
       try {
         this.exec(
-          `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}"`
+          `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}" --label "release"`
         )
         console.log('✅ GitHub release created')
       } catch (_error) {
