@@ -38,8 +38,8 @@ function generateWorkbenchColors() {
     'activityBar.background': workbench.activityBar,
     'activityBar.foreground': workbench.accentPrimary,
     'activityBar.inactiveForeground': calmClarityPalette.getColorWithAlpha(
-      workbench.accentSecondary,
-      'hover'
+      syntax.text,
+      'active'
     ),
     'activityBar.border': workbench.border,
     'activityBar.activeBorder': workbench.border,
@@ -133,7 +133,10 @@ function generateWorkbenchColors() {
 
     // Status Bar
     'statusBar.background': workbench.statusbar,
-    'statusBar.foreground': syntax.text,
+    'statusBar.foreground': calmClarityPalette.getColorWithAlpha(
+      syntax.text,
+      'semiOpaque'
+    ),
     'statusBar.debuggingBackground': syntax.warning,
     'statusBar.debuggingForeground': workbench.background,
     'statusBar.noFolderBackground': workbench.backgroundSecondary,
