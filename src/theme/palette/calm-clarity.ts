@@ -174,10 +174,10 @@ export const calmClarityPalette: CalmClarityPalette = {
     primaryForeground: '#ffffff', // Белый текст для лучшей читаемости
     primaryHoverBackground: '#2b4c8a', // Ярче, чем accentHover
     // Цвета для secondary кнопок - контрастные, но не отвлекающие
-    secondaryBackground: '#67407e', // Темно-синий фон, контрастный с основным фоном
+    secondaryBackground: '#233b69', // Темно-синий фон, контрастный с основным фоном
     secondaryForeground: '#ffffff', // Текст близкий к основному цвету текста
-    secondaryHoverBackground: '#72468b', // Более светлый фон при наведении
-    border: '#2b4c8a', // Нейтральный цвет для границы кнопок
+    secondaryHoverBackground: '#233b69', // Более светлый фон при наведении
+    border: '#233b69', // Нейтральный цвет для границы кнопок
   },
 
   syntax: {
