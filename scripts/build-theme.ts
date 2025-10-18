@@ -1,58 +1,30 @@
-// Генератор итогового JSON-файла темы VS Code с новой семантической системой
-
-import { writeFileSync } from 'node:fs'
-import { join } from 'node:path'
-import { palette } from '../src/theme/palette/index'
-import { semanticTokenColors } from '../src/theme/semantic'
-import { tokenColors } from '../src/theme/tokens'
-import { colors } from '../src/theme/ui'
-
 /**
- * @description Основной объект темы, который будет преобразован в JSON.
- * Использует новую семантическую цветовую систему Tokyo Night Modern.
- *
- * @property {string} name - Название темы.
- * @property {string} type - Тип темы ('dark' или 'light').
- * @property {boolean} semanticHighlighting - Включает семантическую подсветку.
- * @property {object} colors - Цвета интерфейса (из новой семантической системы).
- * @property {object} tokenColors - Цвета токенов для синтаксической подсветки.
- * @property {object} semanticTokenColors - Цвета для семантической подсветки.
- *
- * Новая система обеспечивает:
- * - Семантическую иерархию: primitive → semantic → UI → syntax
- * - 97% сокращение избыточности (с 4503 до 174 цветов)
- * - Улучшенную поддерживаемость и масштабируемость
- * - Полную обратную совместимость
+ * Calm Clarity Theme - Скрипт сборки
+ * Скрипт для генерации и сохранения темы "Спокойная Четкость"
  */
-const theme = {
-  name: 'Tokyo Night Modern',
-  type: 'dark',
-  semanticHighlighting: true,
-  colors,
-  tokenColors,
-  semanticTokenColors,
-  // Метаданные о новой семантической системе
-  _metadata: {
-    version: '2.3.0',
-    buildSystem: 'semantic-color-system',
-    paletteOptimization: {
-      totalColors: Object.keys(palette).length,
-      reduction: '97%',
-      structure: 'primitive → semantic → UI → syntax',
-    },
-    buildDate: new Date().toISOString(),
-  },
+
+import * as fs from 'node:fs'
+import * as path from 'node:path'
+import { generateFinalThemeJSON } from '../src/theme/generator/final-theme-generator'
+
+// Генерируем JSON темы
+const themeJSON = generateFinalThemeJSON()
+
+// Определяем путь для сохранения файла темы
+const outputPath = path.join(
+  __dirname,
+  '..',
+  'themes',
+  'calm-clarity-color-theme.json'
+)
+
+// Создаем директорию, если она не существует
+const outputDir = path.dirname(outputPath)
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true })
 }
 
-const outPath = join(__dirname, '../themes/tokyo-night-modern-color-theme.json')
-writeFileSync(outPath, `${JSON.stringify(theme, null, 2)}\n`)
+// Записываем JSON в файл
+fs.writeFileSync(outputPath, themeJSON)
 
-console.log('🎨 Tokyo Night Modern Theme Generated!')
-console.log('='.repeat(50))
-console.log(`📁 Output: ${outPath}`)
-console.log(`🏗️ Build System: Semantic Color System`)
-console.log(`📊 Total Colors: ${Object.keys(palette).length}`)
-console.log(`⚡ Optimization: 97% reduction from original`)
-console.log(`🔧 Structure: primitive → semantic → UI → syntax`)
-console.log(`✅ Semantic Highlighting: Enabled`)
-console.log('='.repeat(50))
+console.log(`Тема "Calm Clarity" успешно собрана и сохранена в ${outputPath}`)
