@@ -4,7 +4,13 @@ import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
 interface SemanticTokenStyle {
   foreground?: string
   background?: string
- fontStyle?: 'normal' | 'italic' | 'bold italic' | 'underline' | 'strikethrough' | ''
+  fontStyle?:
+    | 'normal'
+    | 'italic'
+    | 'bold italic'
+    | 'underline'
+    | 'strikethrough'
+    | ''
 }
 
 // Тип для семантических токенов - используем Record для возможности указания произвольных токенов
