@@ -5,7 +5,7 @@
   "colors": {
     "activityBar.background": "#0d1015",
     "activityBar.foreground": "#8ac7ff",
-    "activityBar.inactiveForeground": "#7a8da866",
+    "activityBar.inactiveForeground": "#a2acbd99",
     "activityBar.border": "#1f242f",
     "activityBar.activeBorder": "#1f242f",
     "activityBarBadge.background": "#8ac7ff",
@@ -53,7 +53,7 @@
     "editorSuggestWidget.foreground": "#a2acbd",
     "editorSuggestWidget.selectedBackground": "#8ac7ff33",
     "statusBar.background": "#131720",
-    "statusBar.foreground": "#a2acbd",
+    "statusBar.foreground": "#a2acbdcc",
     "statusBar.debuggingBackground": "#8a9ab8",
     "statusBar.debuggingForeground": "#141820",
     "statusBar.noFolderBackground": "#12161e",
@@ -885,7 +885,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T19:25:46.672Z",
+    "date": "2025-10-18T19:33:54.116Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
