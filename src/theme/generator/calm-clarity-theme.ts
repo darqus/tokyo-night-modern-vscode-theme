@@ -44,7 +44,7 @@ function generateWorkbenchColors() {
     'activityBar.border': workbench.border,
     'activityBar.activeBorder': workbench.border,
     'activityBarBadge.background': workbench.accentPrimary,
-    'activityBarBadge.foreground': workbench.background,
+    'activityBarBadge.foreground': workbench.badgeForeground,
 
     // Side Bar
     'sideBar.background': workbench.sidebar,
@@ -114,11 +114,11 @@ function generateWorkbenchColors() {
       'subtle'
     ),
     'editorBracketMatch.border': workbench.border,
-    'editorIndentGuide.background': calmClarityPalette.getColorWithAlpha(
+    'editorIndentGuide.background1': calmClarityPalette.getColorWithAlpha(
       calmClarityPalette.neutral.subtle,
       'subtle'
     ),
-    'editorIndentGuide.activeBackground': calmClarityPalette.getColorWithAlpha(
+    'editorIndentGuide.activeBackground1': calmClarityPalette.getColorWithAlpha(
       calmClarityPalette.neutral.highlight,
       'subtle'
     ),
@@ -213,7 +213,7 @@ function generateWorkbenchColors() {
 
     // Badges
     'badge.background': workbench.accentPrimary,
-    'badge.foreground': workbench.background,
+    'badge.foreground': workbench.badgeForeground,
 
     // Scrollbar
     'scrollbarSlider.background': calmClarityPalette.getColorWithAlpha(
