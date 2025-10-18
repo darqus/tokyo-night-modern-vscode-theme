@@ -446,6 +446,20 @@ function generateWorkbenchColors() {
     'charts.yellow': syntax.warning,
     'charts.orange': syntax.warning,
     'charts.green': syntax.success,
+    // SCM Graph
+    'scmGraph.historyItemHoverLabelForeground': calmClarityPalette.scmGraph.historyItemHoverLabelForeground,
+    'scmGraph.foreground1': calmClarityPalette.scmGraph.foreground1,
+    'scmGraph.foreground2': calmClarityPalette.scmGraph.foreground2,
+    'scmGraph.foreground3': calmClarityPalette.scmGraph.foreground3,
+    'scmGraph.foreground4': calmClarityPalette.scmGraph.foreground4,
+    'scmGraph.foreground5': calmClarityPalette.scmGraph.foreground5,
+    'scmGraph.historyItemHoverAdditionsForeground': calmClarityPalette.scmGraph.historyItemHoverAdditionsForeground,
+    'scmGraph.historyItemHoverDeletionsForeground': calmClarityPalette.scmGraph.historyItemHoverDeletionsForeground,
+    'scmGraph.historyItemRefColor': calmClarityPalette.scmGraph.historyItemRefColor,
+    'scmGraph.historyItemRemoteRefColor': calmClarityPalette.scmGraph.historyItemRemoteRefColor,
+    'scmGraph.historyItemBaseRefColor': calmClarityPalette.scmGraph.historyItemBaseRefColor,
+    'scmGraph.historyItemHoverDefaultLabelBackground': calmClarityPalette.scmGraph.historyItemHoverDefaultLabelBackground,
+    'scmGraph.historyItemHoverDefaultLabelForeground': calmClarityPalette.scmGraph.historyItemHoverDefaultLabelForeground,
     'charts.purple': syntax.boolean,
   }
 }

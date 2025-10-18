@@ -244,6 +244,19 @@
     "charts.yellow": "#b35abe",
     "charts.orange": "#b35abe",
     "charts.green": "#638dc4",
+    "scmGraph.historyItemHoverLabelForeground": "#ffffff",
+    "scmGraph.foreground1": "#3089bd",
+    "scmGraph.foreground2": "#9534c2",
+    "scmGraph.foreground3": "#6caa29",
+    "scmGraph.foreground4": "#d6912a",
+    "scmGraph.foreground5": "#bd27b5",
+    "scmGraph.historyItemHoverAdditionsForeground": "#9ece6a",
+    "scmGraph.historyItemHoverDeletionsForeground": "#df215a",
+    "scmGraph.historyItemRefColor": "#3089bd",
+    "scmGraph.historyItemRemoteRefColor": "#9534c2",
+    "scmGraph.historyItemBaseRefColor": "#bd27b5",
+    "scmGraph.historyItemHoverDefaultLabelBackground": "#40506a",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff",
     "charts.purple": "#e04965"
   },
   "tokenColors": [
@@ -885,7 +898,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T21:22:23.906Z",
+    "date": "2025-10-18T22:00:05.149Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
@@ -894,7 +907,7 @@
           "element": "Основной текст",
           "foreground": "#a2acbd",
           "background": "#141820",
-          "ratio": 7.78,
+          "ratio": 7.76,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -912,7 +925,7 @@
           "element": "Ключевые слова",
           "foreground": "#bb9af7",
           "background": "#141820",
-          "ratio": 7.7,
+          "ratio": 7.69,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -921,7 +934,7 @@
           "element": "Строки",
           "foreground": "#9ece6a",
           "background": "#141820",
-          "ratio": 9.74,
+          "ratio": 9.73,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -930,7 +943,7 @@
           "element": "Числа",
           "foreground": "#fa7c5d",
           "background": "#141820",
-          "ratio": 6.9,
+          "ratio": 6.86,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": false
@@ -939,7 +952,7 @@
           "element": "Активная панель активности",
           "foreground": "#8ac7ff",
           "background": "#0d1015",
-          "ratio": 10.62,
+          "ratio": 10.61,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -948,7 +961,7 @@
           "element": "Активная вкладка",
           "foreground": "#8ac7ff",
           "background": "#141923",
-          "ratio": 9.81,
+          "ratio": 9.8,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -957,7 +970,7 @@
           "element": "Текст сайдбара",
           "foreground": "#a2acbd",
           "background": "#11151d",
-          "ratio": 8,
+          "ratio": 7.98,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true

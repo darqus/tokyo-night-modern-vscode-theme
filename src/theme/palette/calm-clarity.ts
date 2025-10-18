@@ -105,6 +105,28 @@ export interface CalmClarityPalette {
     success: string // Успешные операции
   }
 
+  // SCM Graph colors - цвета для графа системы контроль версий
+  scmGraph: {
+    // Цвета для элементов графа
+    foreground1: string // Цвет для первой ветки
+    foreground2: string // Цвет для второй ветки
+    foreground3: string // Цвет для третьей ветки
+    foreground4: string // Цвет для четвертой ветки
+    foreground5: string // Цвет для пятой ветки
+
+    // Цвета для элементов при наведении
+    historyItemHoverLabelForeground: string // Цвет текста метки при наведении
+    historyItemHoverAdditionsForeground: string // Цвет добавлений при наведении
+    historyItemHoverDeletionsForeground: string // Цвет удалений при наведении
+    historyItemHoverDefaultLabelBackground: string // Фон метки по умолчанию при наведении
+    historyItemHoverDefaultLabelForeground: string // Текст метки по умолчанию при наведении
+
+    // Цвета для ссылок
+    historyItemRefColor: string // Цвет ссылки
+    historyItemRemoteRefColor: string // Цвет удаленной ссылки
+    historyItemBaseRefColor: string // Цвет базовой ссылки
+  }
+
   // Alpha variants - альфа-варианты для полупрозрачности
   alpha: {
     subtle: string // 20% прозрачность - для тонких фонов
@@ -205,9 +227,9 @@ export const calmClarityPalette: CalmClarityPalette = {
 
     // Ошибки и предупреждения (теплые оттенки для контраста с холодной палитрой)
     error: '#df215a', // Ошибки (ярче для лучшей видимости)
-    warning: '#b35abe', // Предупреждения (ярче для лучшей видимости)
-    info: '#7a9ad8', // Информационные сообщения (ярче для лучшей видимости)
-    success: '#638dc4', // Успешные операции (ярче для лучшей видимости)
+    warning: '#b35abe', // Предупреждения (ярче для лучей видимости)
+    info: '#7a9ad8', // Информационные сообщения (ярче для лучей видимости)
+    success: '#638dc4', // Успешные операции (ярче для лучей видимости)
   },
 
   // Альфа-варианты для полупрозрачности
@@ -225,6 +247,28 @@ export const calmClarityPalette: CalmClarityPalette = {
     surface: '#1a202a', // Поверхностный цвет (более темный холодно-серо-голубой для фона заголовков панелей)
     highlight: '#40506a', // Цвет подсветки (нейтральный для границ или акцентов)
     subtle: '#5a709a', // Более приглушенный холодный оттенок для неактивных элементов
+  },
+
+  // SCM Graph colors - цвета для графа системы контроля версий
+  scmGraph: {
+    // Цвета для элементов графа (разные цвета для веток)
+    foreground1: '#3089bd', // cyan - для первой ветки
+    foreground2: '#9534c2', // purple - для второй ветки
+    foreground3: '#6caa29', // green - для третьей ветки
+    foreground4: '#d6912a', // yellow - для четвертой ветки
+    foreground5: '#bd27b5', // magenta - для пятой ветки
+
+    // Цвета для элементов при наведении
+    historyItemHoverLabelForeground: '#ffffff', // основной цвет текста
+    historyItemHoverAdditionsForeground: '#9ece6a', // green - цвет добавлений
+    historyItemHoverDeletionsForeground: '#df215a', // red - цвет удалений
+    historyItemHoverDefaultLabelBackground: '#40506a', // нейтральный цвет для фона метки
+    historyItemHoverDefaultLabelForeground: '#ffffff', // белый цвет текста для контраста
+
+    // Цвета для ссылок
+    historyItemRefColor: '#3089bd', // primary accent - цвет ссылки
+    historyItemRemoteRefColor: '#9534c2', // secondary accent - цвет удаленной ссылки
+    historyItemBaseRefColor: '#bd27b5', // hover accent - цвет базовой ссылки
   },
 
   // Метод для получения цвета с альфа-каналом
@@ -252,8 +296,8 @@ export function getContrastRatio(color1: string, color2: string): number {
 
   // Вычисление относительной яркости
   const getLuminance = (r: number, g: number, b: number): number => {
-    const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.05) ** 2.4
-    const GsRGB = g <= 0.03928 ? g / 12.92 : ((g + 0.055) / 1.055) ** 2.4
+    const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.055) ** 2.4
+    const GsRGB = g <= 0.03928 ? g / 1.055 : ((g + 0.055) / 1.055) ** 2.4
     const BsRGB = b <= 0.03928 ? b / 12.92 : ((b + 0.055) / 1.055) ** 2.4
     return 0.2126 * RsRGB + 0.7152 * GsRGB + 0.0722 * BsRGB
   }
