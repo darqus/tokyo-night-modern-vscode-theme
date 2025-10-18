@@ -252,8 +252,8 @@ export const calmClarityPalette: CalmClarityPalette = {
   // SCM Graph colors - цвета для графа системы контроля версий
   scmGraph: {
     // Цвета для элементов графа (разные цвета для веток)
-    foreground1: '#3089bd', // cyan - для первой ветки
-    foreground2: '#9534c2', // purple - для второй ветки
+    foreground1: '#27729e', // cyan - для первой ветки
+    foreground2: '#9a58a3', // purple - для второй ветки
     foreground3: '#6caa29', // green - для третьей ветки
     foreground4: '#d6912a', // yellow - для четвертой ветки
     foreground5: '#bd27b5', // magenta - для пятой ветки
@@ -266,9 +266,9 @@ export const calmClarityPalette: CalmClarityPalette = {
     historyItemHoverDefaultLabelForeground: '#ffffff', // белый цвет текста для контраста
 
     // Цвета для ссылок
-    historyItemRefColor: '#3089bd', // primary accent - цвет ссылки
-    historyItemRemoteRefColor: '#9534c2', // secondary accent - цвет удаленной ссылки
-    historyItemBaseRefColor: '#bd27b5', // hover accent - цвет базовой ссылки
+    historyItemRefColor: '#27729e', // primary accent - цвет ссылки
+    historyItemRemoteRefColor: '#9a58a3', // secondary accent - цвет удаленной ссылки
+    historyItemBaseRefColor: '#1f3f7a', // hover accent - цвет базовой ссылки
   },
 
   // Метод для получения цвета с альфа-каналом
