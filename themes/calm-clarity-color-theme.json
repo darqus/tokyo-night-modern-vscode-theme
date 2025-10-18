@@ -54,7 +54,7 @@
     "editorSuggestWidget.selectedBackground": "#8ac7ff33",
     "statusBar.background": "#131720",
     "statusBar.foreground": "#a2acbdcc",
-    "statusBar.debuggingBackground": "#f5bf2c",
+    "statusBar.debuggingBackground": "#b35abe",
     "statusBar.debuggingForeground": "#141820",
     "statusBar.noFolderBackground": "#12161e",
     "statusBarItem.hoverBackground": "#1a1f2a",
@@ -68,16 +68,16 @@
     "terminal.foreground": "#a2acbd",
     "terminal.ansiBlack": "#7a8da8",
     "terminal.ansiRed": "#df215a",
-    "terminal.ansiGreen": "#2de255",
-    "terminal.ansiYellow": "#f5bf2c",
+    "terminal.ansiGreen": "#638dc4",
+    "terminal.ansiYellow": "#b35abe",
     "terminal.ansiBlue": "#8ac7ff",
     "terminal.ansiMagenta": "#e04965",
     "terminal.ansiCyan": "#7a8da8",
     "terminal.ansiWhite": "#a2acbd",
     "terminal.ansiBrightBlack": "#7a8da8",
     "terminal.ansiBrightRed": "#df215a",
-    "terminal.ansiBrightGreen": "#2de255",
-    "terminal.ansiBrightYellow": "#f5bf2c",
+    "terminal.ansiBrightGreen": "#638dc4",
+    "terminal.ansiBrightYellow": "#b35abe",
     "terminal.ansiBrightBlue": "#8ac7ff",
     "terminal.ansiBrightMagenta": "#e04965",
     "terminal.ansiBrightCyan": "#7a8da8",
@@ -128,19 +128,19 @@
     "notificationLink.foreground": "#8ac7ff",
     "peekView.border": "#1f242f",
     "peekViewEditor.background": "#12161e",
-    "peekViewEditor.matchHighlightBackground": "#f5bf2c66",
+    "peekViewEditor.matchHighlightBackground": "#b35abe66",
     "peekViewResult.background": "#12161e",
     "peekViewResult.fileForeground": "#a2acbd",
     "peekViewResult.lineForeground": "#7a8da8",
     "peekViewTitle.background": "#12161e",
     "peekViewTitleDescription.foreground": "#7a8da8",
     "peekViewTitleLabel.foreground": "#8ac7ff",
-    "gitDecoration.addedResourceForeground": "#2de255",
+    "gitDecoration.addedResourceForeground": "#638dc4",
     "gitDecoration.modifiedResourceForeground": "#7a9ad8",
     "gitDecoration.deletedResourceForeground": "#df215a",
     "gitDecoration.untrackedResourceForeground": "#6d8aab",
     "gitDecoration.ignoredResourceForeground": "#7a8da8",
-    "gitDecoration.conflictingResourceForeground": "#f5bf2c",
+    "gitDecoration.conflictingResourceForeground": "#b35abe",
     "gitDecoration.submoduleResourceForeground": "#7a8da8",
     "menu.background": "#12161e",
     "menu.foreground": "#a2acbd",
@@ -160,26 +160,26 @@
     "editorWidget.background": "#12161e",
     "editorWidget.border": "#1f242f",
     "editorMarkerNavigation.background": "#12161e",
-    "minimap.findMatchHighlight": "#f5bf2c66",
+    "minimap.findMatchHighlight": "#b35abe66",
     "minimap.selectionHighlight": "#8ac7ff33",
     "minimap.errorHighlight": "#df215a",
-    "minimap.warningHighlight": "#f5bf2c",
+    "minimap.warningHighlight": "#b35abe",
     "minimap.background": "#141820",
     "symbolIcon.arrayForeground": "#e0af68",
     "symbolIcon.booleanForeground": "#e04965",
     "symbolIcon.classForeground": "#6d8aab",
     "symbolIcon.colorForeground": "#9ece6a",
-    "symbolIcon.constantForeground": "#e072af",
+    "symbolIcon.constantForeground": "#e6ae89",
     "symbolIcon.constructorForeground": "#8ca0bf",
     "symbolIcon.enumeratorForeground": "#7d9fb0",
     "symbolIcon.enumeratorMemberForeground": "#7d9fb0",
     "symbolIcon.eventForeground": "#6d8aab",
-    "symbolIcon.fieldForeground": "#899ec2",
+    "symbolIcon.fieldForeground": "#ba8cc0",
     "symbolIcon.fileForeground": "#7a8da8",
     "symbolIcon.folderForeground": "#7a8da8",
     "symbolIcon.functionForeground": "#7dcfff",
     "symbolIcon.interfaceForeground": "#e0af68",
-    "symbolIcon.keyForeground": "#899ec2",
+    "symbolIcon.keyForeground": "#ba8cc0",
     "symbolIcon.keywordForeground": "#bb9af7",
     "symbolIcon.methodForeground": "#7dcfff",
     "symbolIcon.moduleForeground": "#7a8da8",
@@ -189,7 +189,7 @@
     "symbolIcon.objectForeground": "#7aabc8",
     "symbolIcon.operatorForeground": "#f14565",
     "symbolIcon.packageForeground": "#7a8da8",
-    "symbolIcon.propertyForeground": "#899ec2",
+    "symbolIcon.propertyForeground": "#ba8cc0",
     "symbolIcon.referenceForeground": "#7a8da8",
     "symbolIcon.snippetForeground": "#9ece6a",
     "symbolIcon.stringForeground": "#9ece6a",
@@ -197,7 +197,7 @@
     "symbolIcon.textForeground": "#a2acbd",
     "symbolIcon.typeParameterForeground": "#e0af68",
     "symbolIcon.unitForeground": "#fa7c5d",
-    "symbolIcon.variableForeground": "#b8c8e8",
+    "symbolIcon.variableForeground": "#d369bc",
     "debugToolBar.background": "#12161e",
     "debugExceptionWidget.background": "#12161e",
     "debugExceptionWidget.border": "#df215a",
@@ -208,7 +208,7 @@
     "debugTokenExpression.number": "#fa7c5d",
     "debugTokenExpression.error": "#df215a",
     "settings.headerForeground": "#8ac7ff",
-    "settings.modifiedItemIndicator": "#f5bf2c",
+    "settings.modifiedItemIndicator": "#b35abe",
     "settings.dropdownBackground": "#12161e",
     "settings.dropdownForeground": "#a2acbd",
     "settings.dropdownBorder": "#1f242f",
@@ -223,7 +223,7 @@
     "settings.numberInputForeground": "#a2acbd",
     "settings.numberInputBorder": "#1f242f",
     "problemsErrorIcon.foreground": "#df215a",
-    "problemsWarningIcon.foreground": "#f5bf2c",
+    "problemsWarningIcon.foreground": "#b35abe",
     "problemsInfoIcon.foreground": "#7a9ad8",
     "inlineChat.background": "#12161e",
     "inlineChat.border": "#1f242f",
@@ -231,19 +231,19 @@
     "inlineChat.regionHighlight": "#8ac7ff33",
     "diffEditor.border": "#1f242f",
     "diffEditor.diagonalFill": "#7a8da8",
-    "diffEditor.insertedLineBackground": "#2de25533",
+    "diffEditor.insertedLineBackground": "#638dc433",
     "diffEditor.removedLineBackground": "#df215a33",
-    "diffEditor.insertedTextBackground": "#2de25533",
+    "diffEditor.insertedTextBackground": "#638dc433",
     "diffEditor.removedTextBackground": "#df215a33",
-    "diffEditorOverview.insertedForeground": "#2de25566",
+    "diffEditorOverview.insertedForeground": "#638dc466",
     "diffEditorOverview.removedForeground": "#df215a66",
     "charts.foreground": "#a2acbd",
     "charts.lines": "#7a8da8",
     "charts.red": "#df215a",
     "charts.blue": "#8ac7ff",
-    "charts.yellow": "#f5bf2c",
-    "charts.orange": "#f5bf2c",
-    "charts.green": "#2de255",
+    "charts.yellow": "#b35abe",
+    "charts.orange": "#b35abe",
+    "charts.green": "#638dc4",
     "charts.purple": "#e04965"
   },
   "tokenColors": [
@@ -454,7 +454,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#e072af"
+        "foreground": "#e6ae89"
       }
     },
     {
@@ -465,7 +465,7 @@
         "meta.object-literal.key"
       ],
       "settings": {
-        "foreground": "#899ec2"
+        "foreground": "#ba8cc0"
       }
     },
     {
@@ -520,7 +520,7 @@
         "markup.warning"
       ],
       "settings": {
-        "foreground": "#f5bf2c"
+        "foreground": "#b35abe"
       }
     },
     {
@@ -542,7 +542,7 @@
         "markup.success"
       ],
       "settings": {
-        "foreground": "#2de255"
+        "foreground": "#638dc4"
       }
     },
     {
@@ -656,7 +656,7 @@
         "support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#899ec2"
+        "foreground": "#ba8cc0"
       }
     },
     {
@@ -676,7 +676,7 @@
         "support.type.property-name.css"
       ],
       "settings": {
-        "foreground": "#899ec2"
+        "foreground": "#ba8cc0"
       }
     },
     {
@@ -818,7 +818,7 @@
         "constant.other.symbol"
       ],
       "settings": {
-        "foreground": "#e072af"
+        "foreground": "#e6ae89"
       }
     },
     {
@@ -866,7 +866,7 @@
         "entity.name.tag.yaml"
       ],
       "settings": {
-        "foreground": "#899ec2"
+        "foreground": "#ba8cc0"
       }
     },
     {
@@ -885,7 +885,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T19:56:31.800Z",
+    "date": "2025-10-18T21:22:23.906Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
