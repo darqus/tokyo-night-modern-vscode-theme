@@ -22,7 +22,7 @@ export interface SyntaxTokenGroups {
 
   // Идентификаторы
   variables: string // Переменные
- constants: string // Константы
+  constants: string // Константы
   parameters: string // Параметры функций
   properties: string // Свойства объектов
 
@@ -206,7 +206,7 @@ export const contrastChecks = [
  */
 export const syntaxHighlightingRules = {
   // JavaScript/TypeScript
- javascript: {
+  javascript: {
     // Ключевые слова
     keyword: syntaxTokenPalette.keywords,
     'keyword.control': syntaxTokenPalette.keywords,

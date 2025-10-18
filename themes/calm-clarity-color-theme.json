@@ -289,30 +289,21 @@
     },
     {
       "name": "Numbers",
-      "scope": [
-        "constant.numeric",
-        "variable.other.constant.number"
-      ],
+      "scope": ["constant.numeric", "variable.other.constant.number"],
       "settings": {
         "foreground": "#e8b892"
       }
     },
     {
       "name": "Booleans",
-      "scope": [
-        "constant.language.boolean",
-        "keyword.constant"
-      ],
+      "scope": ["constant.language.boolean", "keyword.constant"],
       "settings": {
         "foreground": "#d5a8d6"
       }
     },
     {
       "name": "Null and Undefined",
-      "scope": [
-        "constant.language.null",
-        "constant.language.undefined"
-      ],
+      "scope": ["constant.language.null", "constant.language.undefined"],
       "settings": {
         "foreground": "#d5a8b6"
       }
@@ -398,20 +389,14 @@
     },
     {
       "name": "Interfaces",
-      "scope": [
-        "entity.name.type.interface",
-        "support.type.interface"
-      ],
+      "scope": ["entity.name.type.interface", "support.type.interface"],
       "settings": {
         "foreground": "#7c9ed4"
       }
     },
     {
       "name": "Enums",
-      "scope": [
-        "entity.name.type.enum",
-        "support.type.enum"
-      ],
+      "scope": ["entity.name.type.enum", "support.type.enum"],
       "settings": {
         "foreground": "#8d91e0"
       }
@@ -430,10 +415,7 @@
     },
     {
       "name": "Methods",
-      "scope": [
-        "entity.name.function.member",
-        "variable.other.method"
-      ],
+      "scope": ["entity.name.function.member", "variable.other.method"],
       "settings": {
         "foreground": "#7cb9d9"
       }
@@ -452,10 +434,7 @@
     },
     {
       "name": "Parameters",
-      "scope": [
-        "variable.parameter",
-        "meta.function.parameters"
-      ],
+      "scope": ["variable.parameter", "meta.function.parameters"],
       "settings": {
         "foreground": "#a4b4d9"
       }
@@ -484,20 +463,14 @@
     },
     {
       "name": "Tags",
-      "scope": [
-        "entity.name.tag",
-        "meta.tag"
-      ],
+      "scope": ["entity.name.tag", "meta.tag"],
       "settings": {
         "foreground": "#7dcfff"
       }
     },
     {
       "name": "Attributes",
-      "scope": [
-        "entity.other.attribute-name",
-        "meta.attribute"
-      ],
+      "scope": ["entity.other.attribute-name", "meta.attribute"],
       "settings": {
         "foreground": "#9ab8d1"
       }
@@ -539,11 +512,7 @@
     },
     {
       "name": "Info",
-      "scope": [
-        "message.info",
-        "punctuation.definition.info",
-        "markup.info"
-      ],
+      "scope": ["message.info", "punctuation.definition.info", "markup.info"],
       "settings": {
         "foreground": "#7a9ad8"
       }
@@ -561,21 +530,14 @@
     },
     {
       "name": "Decorators",
-      "scope": [
-        "meta.decorator",
-        "punctuation.decorator",
-        "tag.decorator"
-      ],
+      "scope": ["meta.decorator", "punctuation.decorator", "tag.decorator"],
       "settings": {
         "foreground": "#9ad5de"
       }
     },
     {
       "name": "Annotations",
-      "scope": [
-        "storage.type.annotation",
-        "meta.annotation.identifier"
-      ],
+      "scope": ["storage.type.annotation", "meta.annotation.identifier"],
       "settings": {
         "foreground": "#b8b2e6"
       }
@@ -593,10 +555,7 @@
     },
     {
       "name": "Escape Characters",
-      "scope": [
-        "constant.character.escape",
-        "constant.other.character"
-      ],
+      "scope": ["constant.character.escape", "constant.other.character"],
       "settings": {
         "foreground": "#9ece6a"
       }
@@ -626,49 +585,35 @@
     },
     {
       "name": "Markdown Code",
-      "scope": [
-        "markup.inline.raw",
-        "markup.fenced_code.block"
-      ],
+      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
       "settings": {
         "foreground": "#9ece6a"
       }
     },
     {
       "name": "Markdown Lists",
-      "scope": [
-        "markup.list",
-        "beginning.punctuation.definition.list"
-      ],
+      "scope": ["markup.list", "beginning.punctuation.definition.list"],
       "settings": {
         "foreground": "#6d8aab"
       }
     },
     {
       "name": "Markdown Bold",
-      "scope": [
-        "markup.bold",
-        "punctuation.definition.bold"
-      ],
+      "scope": ["markup.bold", "punctuation.definition.bold"],
       "settings": {
         "fontStyle": "bold"
       }
     },
     {
       "name": "Markdown Italic",
-      "scope": [
-        "markup.italic",
-        "punctuation.definition.italic"
-      ],
+      "scope": ["markup.italic", "punctuation.definition.italic"],
       "settings": {
         "fontStyle": "italic"
       }
     },
     {
       "name": "JSON Keys",
-      "scope": [
-        "support.type.property-name.json"
-      ],
+      "scope": ["support.type.property-name.json"],
       "settings": {
         "foreground": "#ba8cc0"
       }
@@ -686,9 +631,7 @@
     },
     {
       "name": "CSS Properties",
-      "scope": [
-        "support.type.property-name.css"
-      ],
+      "scope": ["support.type.property-name.css"],
       "settings": {
         "foreground": "#ba8cc0"
       }
@@ -705,27 +648,21 @@
     },
     {
       "name": "HTML Tags",
-      "scope": [
-        "entity.name.tag.html"
-      ],
+      "scope": ["entity.name.tag.html"],
       "settings": {
         "foreground": "#7dcfff"
       }
     },
     {
       "name": "HTML Attributes",
-      "scope": [
-        "entity.other.attribute-name.html"
-      ],
+      "scope": ["entity.other.attribute-name.html"],
       "settings": {
         "foreground": "#9ab8d1"
       }
     },
     {
       "name": "TS Type Parameters",
-      "scope": [
-        "meta.type.parameters"
-      ],
+      "scope": ["meta.type.parameters"],
       "settings": {
         "foreground": "#6a8fd8"
       }
@@ -764,18 +701,14 @@
     },
     {
       "name": "Python Builtin Functions",
-      "scope": [
-        "support.function.builtin.python"
-      ],
+      "scope": ["support.function.builtin.python"],
       "settings": {
         "foreground": "#7ab8e6"
       }
     },
     {
       "name": "Java Imports",
-      "scope": [
-        "storage.modifier.import.java"
-      ],
+      "scope": ["storage.modifier.import.java"],
       "settings": {
         "foreground": "#bb9af7"
       }
@@ -792,64 +725,49 @@
     },
     {
       "name": "C# Attributes",
-      "scope": [
-        "meta.attribute.cs"
-      ],
+      "scope": ["meta.attribute.cs"],
       "settings": {
         "foreground": "#9ad5de"
       }
     },
     {
       "name": "C# Preprocessor",
-      "scope": [
-        "keyword.preprocessor"
-      ],
+      "scope": ["keyword.preprocessor"],
       "settings": {
         "foreground": "#bb9af7"
       }
     },
     {
       "name": "Go Package",
-      "scope": [
-        "entity.name.type.package.go"
-      ],
+      "scope": ["entity.name.type.package.go"],
       "settings": {
         "foreground": "#7a9bd6"
       }
     },
     {
       "name": "Go Receiver",
-      "scope": [
-        "meta.function.receiver.go"
-      ],
+      "scope": ["meta.function.receiver.go"],
       "settings": {
         "foreground": "#b0c0e0"
       }
     },
     {
       "name": "Ruby Symbols",
-      "scope": [
-        "constant.other.symbol"
-      ],
+      "scope": ["constant.other.symbol"],
       "settings": {
         "foreground": "#e6ae89"
       }
     },
     {
       "name": "Ruby Punctuation Separator",
-      "scope": [
-        "punctuation.separator"
-      ],
+      "scope": ["punctuation.separator"],
       "settings": {
         "foreground": "#f14565"
       }
     },
     {
       "name": "PHP Variables",
-      "scope": [
-        "variable.other.php",
-        "variable.other.property.php"
-      ],
+      "scope": ["variable.other.php", "variable.other.property.php"],
       "settings": {
         "foreground": "#b0c0e0"
       }
@@ -867,28 +785,21 @@
     },
     {
       "name": "SQL Functions",
-      "scope": [
-        "support.function.aggregate.sql"
-      ],
+      "scope": ["support.function.aggregate.sql"],
       "settings": {
         "foreground": "#7ab8e6"
       }
     },
     {
       "name": "YAML Keys",
-      "scope": [
-        "entity.name.tag.yaml"
-      ],
+      "scope": ["entity.name.tag.yaml"],
       "settings": {
         "foreground": "#ba8cc0"
       }
     },
     {
       "name": "YAML Values",
-      "scope": [
-        "string.unquoted.yaml",
-        "string.quoted.yaml"
-      ],
+      "scope": ["string.unquoted.yaml", "string.quoted.yaml"],
       "settings": {
         "foreground": "#9ece6a"
       }
