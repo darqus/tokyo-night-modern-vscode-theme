@@ -187,7 +187,7 @@
     "symbolIcon.nullForeground": "#e04965",
     "symbolIcon.numberForeground": "#fa7c5d",
     "symbolIcon.objectForeground": "#7aabc8",
-    "symbolIcon.operatorForeground": "#f7768e",
+    "symbolIcon.operatorForeground": "#f14565",
     "symbolIcon.packageForeground": "#7a8da8",
     "symbolIcon.propertyForeground": "#899ec2",
     "symbolIcon.referenceForeground": "#7a8da8",
@@ -339,7 +339,7 @@
         "punctuation.terminator"
       ],
       "settings": {
-        "foreground": "#f7768e"
+        "foreground": "#f14565"
       }
     },
     {
@@ -827,7 +827,7 @@
         "punctuation.separator"
       ],
       "settings": {
-        "foreground": "#f7768e"
+        "foreground": "#f14565"
       }
     },
     {
@@ -885,7 +885,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-18T19:54:22.201Z",
+    "date": "2025-10-18T19:56:31.800Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
