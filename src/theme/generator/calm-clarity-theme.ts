@@ -87,7 +87,7 @@ function generateWorkbenchColors() {
       'subtle'
     ),
     'editor.selectionHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+      calmClarityPalette.syntax.yellow,
       'subtle'
     ),
     'editor.wordHighlightBackground': calmClarityPalette.getColorWithAlpha(
@@ -100,11 +100,11 @@ function generateWorkbenchColors() {
         'subtle'
       ),
     'editor.findMatchBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+      calmClarityPalette.syntax.cyan,
       'hover'
     ),
     'editor.findMatchHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+      calmClarityPalette.syntax.purple,
       'subtle'
     ),
     'editor.lineHighlightBackground': calmClarityPalette.getColorWithAlpha(
