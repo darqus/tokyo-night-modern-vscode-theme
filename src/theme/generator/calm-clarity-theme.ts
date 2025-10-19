@@ -326,7 +326,7 @@ function generateWorkbenchColors() {
     'breadcrumbPicker.background': workbench.backgroundSecondary,
 
     // Widget
-    'widget.shadow': '#00000080',
+    'widget.shadow': calmClarityPalette.shadow.widget,
     'editorWidget.background': workbench.backgroundSecondary,
     'editorWidget.border': workbench.border,
     'editorMarkerNavigation.background': workbench.backgroundSecondary,
@@ -415,7 +415,7 @@ function generateWorkbenchColors() {
     // Inline Chat
     'inlineChat.background': workbench.backgroundSecondary,
     'inlineChat.border': workbench.border,
-    'inlineChat.shadow': '#000080',
+    'inlineChat.shadow': calmClarityPalette.shadow.inlineChat,
     'inlineChat.regionHighlight': calmClarityPalette.getColorWithAlpha(
       workbench.accentPrimary,
       'subtle'
