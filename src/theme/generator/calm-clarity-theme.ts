@@ -235,6 +235,13 @@ function generateWorkbenchColors() {
       workbench.background,
       'active'
     ),
+    'scrollbar.shadow': calmClarityPalette.shadow.scrollbar,
+
+    // Sticky Scroll Shadows
+    'editorStickyScroll.shadow': calmClarityPalette.shadow.editorStickyScroll,
+    'panelStickyScroll.shadow': calmClarityPalette.shadow.panelStickyScroll,
+    'sideBarStickyScroll.shadow': calmClarityPalette.shadow.sideBarStickyScroll,
+    'listFilterWidget.shadow': calmClarityPalette.shadow.listFilterWidget,
 
     // Progress Bar
     'progressBar.background': workbench.accentPrimary,
