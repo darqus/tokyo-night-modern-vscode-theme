@@ -135,6 +135,12 @@ export interface CalmClarityPalette {
     semiOpaque: string // 80% прозрачность (0xcc)
   }
 
+  // Shadow colors - цвета теней для элементов интерфейса
+  shadow: {
+    inlineChat: string // Цвет тени для встроенного чата
+    widget: string // Цвет тени для виджетов
+  }
+
   // Методы
   getColorWithAlpha: (
     color: string,
@@ -238,6 +244,12 @@ export const calmClarityPalette: CalmClarityPalette = {
     hover: '66', // 40% прозрачность (0x66)
     active: '99', // 60% прозрачность (0x99)
     semiOpaque: 'cc', // 80% прозрачность (0xcc)
+  },
+
+  // Цвета теней
+  shadow: {
+    inlineChat: '#000080', // Темно-синий цвет тени для встроенного чата, соответствующий палитре
+    widget: '#00000080', // Полупрозрачный черный цвет тени для виджетов, адаптированный к теме
   },
 
   // Нейтральные холодно-серо-голубые оттенки для вспомогательных элементов
