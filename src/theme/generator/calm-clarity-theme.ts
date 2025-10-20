@@ -1081,7 +1081,7 @@ export const generateCalmClarityTheme = (): VSCodeTheme => {
 /**
  * Генерация оригинальной темы Tokyo Night
  */
-export const generateTokyoNightClarityTheme = (): VSCodeTheme => {
+export const generateTokyoNightTheme = (): VSCodeTheme => {
   return {
     name: 'Tokyo Night',
     author: 'Enkia',
