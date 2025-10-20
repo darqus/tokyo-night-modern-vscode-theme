@@ -10,7 +10,7 @@
 
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
-  workbench: {
+ workbench: {
     // Фон: Очень темный, но не абсолютно черный цвет с холодным или нейтральным оттенком
     background: string // Темно-синий/графитовый фон
     backgroundSecondary: string // Немного светлее для иерархии
@@ -33,7 +33,7 @@ export interface CalmClarityPalette {
   }
 
   // Button colors - цвета кнопок
-  button: {
+ button: {
     primaryBackground: string // Основной цвет фона для primary кнопок
     primaryForeground: string // Основной цвет текста для primary кнопок
     primaryHoverBackground: string // Цвет фона при наведении для primary кнопок
@@ -52,7 +52,7 @@ export interface CalmClarityPalette {
     subtle: string // Более приглушенный оттенок
   }
 
-  // Syntax highlighting colors - цвета подсветки синтаксиса
+ // Syntax highlighting colors - цвета подсветки синтаксиса
   syntax: {
     // Основные цвета
     text: string // Основной цвет текста
@@ -136,7 +136,7 @@ export interface CalmClarityPalette {
   }
 
   // Shadow colors - цвета теней для элементов интерфейса
-  shadow: {
+ shadow: {
     inlineChat: string // Цвет тени для встроенного чата
     widget: string // Цвет тени для виджетов
     scrollbar: string // Цвет тени для полосы прокрутки
@@ -159,41 +159,41 @@ export interface CalmClarityPalette {
 export const calmClarityPalette: CalmClarityPalette = {
   workbench: {
     // Темно-синий/графитовый фон, не абсолютно черный для уменьшения усталости глаз
-    background: '#141820', // Основной фон (немного светлее для уменьшения контраста)
-    backgroundSecondary: '#12161e', // Вторичный фон (немного темнее основного фона для границ)
-    border: '#1f242f', // Цвет для границ (чуть светлее фона)
-    backgroundTertiary: '#1a1f2a', // Третичный фон (еще немного светлее)
+    background: '#10141a', // Основной фон (более темный для уменьшения контраста)
+    backgroundSecondary: '#0f1319', // Вторичный фон (немного темнее основного фона для границ)
+    border: '#1a1f2a', // Цвет для границ (чуть темнее фона)
+    backgroundTertiary: '#151a24', // Третичный фон (немного темнее)
 
     // Элементы интерфейса - теперь ближе к новому фону для создания едва заметной иерархии
-    sidebar: '#11151d', // Сайдбар (очень близок к основному фону)
-    activityBar: '#171c25', // Панель активности
-    statusbar: '#131720', // Статус-бар (очень близок к основному фону)
-    titlebar: '#10141c', // Заголовок окна (очень близок к основному фону)
-    tabbar: '#141923', // Панель вкладок (очень близок к основному фону, но чуть светлее)
+    sidebar: '#0e1218', // Сайдбар (очень близок к основному фону)
+    activityBar: '#121720', // Панель активности
+    statusbar: '#0f131b', // Статус-бар (очень близок к основному фону)
+    titlebar: '#0d1117', // Заголовок окна (очень близок к основному фону)
+    tabbar: '#10151f', // Панель вкладок (очень близок к основному фону, но чуть темнее)
 
     // Акценты: более приглушенные, но выделяющиеся цвета
-    accentPrimary: '#8ac7ff', // Яркий сине-голубой акцентный цвет
-    accentSecondary: '#7a8da8', // Приглушенный лавандовый (холодный сине-серый)
-    accentHover: '#85c4ff', // Hover вариант (между основным и фокусным акцентом)
-    accentFocus: '#8ca0bf', // Фокус ввода (немного ярче для четкого выделения, но все еще приглушенный)
-    badgeForeground: '#10121a', // Цвет текста для бейджей
+    accentPrimary: '#7ab4e6', // Более приглушенный сине-голубой акцентный цвет
+    accentSecondary: '#6a7d9a', // Приглушенный лавандовый (холодный сине-серый)
+    accentHover: '#75b0e2', // Hover вариант (между основным и фокусным акцентом)
+    accentFocus: '#7ca0c2', // Фокус ввода (немного темнее для лучшей интеграции с темной темой)
+    badgeForeground: '#e0efff', // Цвет текста для бейджей (наоборот, светлее для лучшей видимости на темном фоне)
   },
 
   button: {
-    // Цвета для primary кнопок - ярче чем accentPrimary для лучшей видимости
-    primaryBackground: '#284479',
-    primaryForeground: '#ffffff', // Белый текст для лучшей читаемости
-    primaryHoverBackground: '#2b4c8a', // Ярче, чем accentHover
+    // Цвета для primary кнопок - темнее для лучшего соответствия темной теме
+    primaryBackground: '#1a2a4a',
+    primaryForeground: '#d0e0ff', // Более темный белый для лучшей интеграции с темной темой
+    primaryHoverBackground: '#1f355a', // Темнее, чем accentHover
     // Цвета для secondary кнопок - контрастные, но не отвлекающие
-    secondaryBackground: '#233b69', // Темно-синий фон, контрастный с основным фоном
-    secondaryForeground: '#ffffff', // Текст близкий к основному цвету текста
-    secondaryHoverBackground: '#233b69', // Более светлый фон при наведении
-    border: '#233b69', // Нейтральный цвет для границы кнопок
+    secondaryBackground: '#182a45', // Темно-синий фон, контрастный с основным фоном
+    secondaryForeground: '#b0c4e0', // Текст близкий к основному цвету текста
+    secondaryHoverBackground: '#1c3252', // Более темный фон при наведении
+    border: '#253a5a', // Нейтральный цвет для границы кнопок
   },
 
   syntax: {
     // Основные цвета - скорректированы для лучшей гармонии с новым фоном
-    text: '#8e9fbd', // Основной текст (светлее для лучшей читаемости на более темном фоне)
+    text: '#7a8ca0', // Основной текст (теперь темнее для лучшей интеграции с боковой панелью)
     comment: '#4a5a70', // Комментарии (более приглушенные, серо-голубые)
 
     // Цвета для улучшенной контрастности
@@ -263,15 +263,15 @@ export const calmClarityPalette: CalmClarityPalette = {
   },
 
   // Нейтральные холодно-серо-голубые оттенки для вспомогательных элементов
-  neutral: {
+ neutral: {
     // Cool gray-blue shades for subtle UI elements
-    base: '#50607a', // Основной нейтральный цвет (холодно-сине-серый для номеров строк и активных заголовков панелей)
-    surface: '#1a202a', // Поверхностный цвет (более темный холодно-серо-голубой для фона заголовков панелей)
-    highlight: '#40506a', // Цвет подсветки (нейтральный для границ или акцентов)
-    subtle: '#5a709a', // Более приглушенный холодный оттенок для неактивных элементов
+    base: '#3a4a60', // Основной нейтральный цвет (более темный холодно-сине-серый для номеров строк и активных заголовков панелей)
+    surface: '#151a25', // Поверхностный цвет (более темный холодно-серо-голубой для фона заголовков панелей)
+    highlight: '#2f3f5a', // Цвет подсветки (нейтральный для границ или акцентов)
+    subtle: '#455570', // Более приглушенный холодный оттенок для неактивных элементов
   },
 
-  // SCM Graph colors - цвета для графа системы контроля версий
+  // SCM Graph colors - цвета для графа системы контроль версий
   scmGraph: {
     // Цвета для элементов графа (разные цвета для веток)
     foreground1: '#27729e', // cyan - для первой ветки
@@ -311,24 +311,24 @@ export function getContrastRatio(color1: string, color2: string): number {
   const hexToRgb = (hex: string): { r: number; g: number; b: number } => {
     const cleanHex = hex.replace('#', '')
     const r = parseInt(cleanHex.substring(0, 2), 16) / 255
-    const g = parseInt(cleanHex.substring(2, 4), 16) / 255
-    const b = parseInt(cleanHex.substring(4, 6), 16) / 255
+    const g = parseInt(cleanHex.substring(2, 4), 16) / 25
+    const b = parseInt(cleanHex.substring(4, 6), 16) / 25
     return { r, g, b }
   }
 
-  // Вычисление относительной яркости
+ // Вычисление относительной яркости
   const getLuminance = (r: number, g: number, b: number): number => {
     const RsRGB = r <= 0.03928 ? r / 12.92 : ((r + 0.055) / 1.055) ** 2.4
     const GsRGB = g <= 0.03928 ? g / 1.055 : ((g + 0.055) / 1.055) ** 2.4
     const BsRGB = b <= 0.03928 ? b / 12.92 : ((b + 0.055) / 1.055) ** 2.4
     return 0.2126 * RsRGB + 0.7152 * GsRGB + 0.0722 * BsRGB
-  }
+ }
 
   const color1Rgb = hexToRgb(color1)
   const color2Rgb = hexToRgb(color2)
 
   const lum1 = getLuminance(color1Rgb.r, color1Rgb.g, color1Rgb.b)
-  const lum2 = getLuminance(color2Rgb.r, color2Rgb.g, color2Rgb.b)
+ const lum2 = getLuminance(color2Rgb.r, color2Rgb.g, color2Rgb.b)
 
   const brightest = Math.max(lum1, lum2)
   const darkest = Math.min(lum1, lum2)
