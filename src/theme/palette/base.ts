@@ -21,11 +21,9 @@ export interface BasePalette {
 }
 
 /**
- * Интерфейс для генерации цветов на основе базовой палитры
+ * Тип для генерации цветов на основе базовой палитры
  */
-export interface PaletteGenerator<T> {
-  (base: BasePalette): T
-}
+export type PaletteGenerator<T> = (base: BasePalette) => T
 
 /**
  * Стандартная базовая палитра для темы "Спокойная Четкость"
