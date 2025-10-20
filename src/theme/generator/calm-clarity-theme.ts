@@ -62,6 +62,8 @@ const generateWorkbenchColors = () => {
     'titleBar.inactiveBackground': workbench.background,
     'titleBar.inactiveForeground': syntax.text,
 
+    // Icon Foreground
+    'icon.foreground': workbench.secondaryForeground,
     // Tab Bar
     'tab.activeBackground': workbench.tabbar,
     'tab.activeForeground': workbench.accentPrimary,
@@ -127,6 +129,8 @@ const generateWorkbenchColors = () => {
     'editorGutter.background': workbench.background,
     'editorHoverWidget.background': workbench.backgroundSecondary,
     'editorHoverWidget.border': workbench.border,
+
+    'editorHoverWidget.foreground': workbench.secondaryForeground,
     'editorSuggestWidget.background': workbench.backgroundSecondary,
     'editorSuggestWidget.border': workbench.border,
     'editorSuggestWidget.foreground': syntax.text,
@@ -192,9 +196,12 @@ const generateWorkbenchColors = () => {
     'inputOption.activeBorder': workbench.accentPrimary,
 
     // Input & Validation
-    'inputValidation.infoBorder': calmClarityPalette.controls.inputValidationInfoBorder,
-    'inputValidation.warningBorder': calmClarityPalette.controls.inputValidationWarningBorder,
-    'inputValidation.errorBorder': calmClarityPalette.controls.inputValidationErrorBorder,
+    'inputValidation.infoBorder':
+      calmClarityPalette.controls.inputValidationInfoBorder,
+    'inputValidation.warningBorder':
+      calmClarityPalette.controls.inputValidationWarningBorder,
+    'inputValidation.errorBorder':
+      calmClarityPalette.controls.inputValidationErrorBorder,
     'inputValidation.infoBackground': workbench.background,
     'inputValidation.warningBackground': workbench.background,
     'inputValidation.errorBackground': workbench.background,
@@ -209,16 +216,24 @@ const generateWorkbenchColors = () => {
 
     // Minimap
     'minimapSlider.background': calmClarityPalette.minimap.sliderBackground,
-    'minimapSlider.hoverBackground': calmClarityPalette.minimap.sliderHoverBackground,
-    'minimapSlider.activeBackground': calmClarityPalette.minimap.sliderActiveBackground,
-    'minimapGutter.addedBackground': calmClarityPalette.minimap.gutterAddedBackground,
-    'minimapGutter.modifiedBackground': calmClarityPalette.minimap.gutterModifiedBackground,
-    'minimapGutter.deletedBackground': calmClarityPalette.minimap.gutterDeletedBackground,
-    
+    'minimapSlider.hoverBackground':
+      calmClarityPalette.minimap.sliderHoverBackground,
+    'minimapSlider.activeBackground':
+      calmClarityPalette.minimap.sliderActiveBackground,
+    'minimapGutter.addedBackground':
+      calmClarityPalette.minimap.gutterAddedBackground,
+    'minimapGutter.modifiedBackground':
+      calmClarityPalette.minimap.gutterModifiedBackground,
+    'minimapGutter.deletedBackground':
+      calmClarityPalette.minimap.gutterDeletedBackground,
+
     // Editor Overview Ruler
-    'editorOverviewRuler.errorForeground': calmClarityPalette.overviewRuler.errorForeground,
-    'editorOverviewRuler.warningForeground': calmClarityPalette.overviewRuler.warningForeground,
-    'editorOverviewRuler.infoForeground': calmClarityPalette.overviewRuler.infoForeground,
+    'editorOverviewRuler.errorForeground':
+      calmClarityPalette.overviewRuler.errorForeground,
+    'editorOverviewRuler.warningForeground':
+      calmClarityPalette.overviewRuler.warningForeground,
+    'editorOverviewRuler.infoForeground':
+      calmClarityPalette.overviewRuler.infoForeground,
 
     // Panels
     'panelSection.border': workbench.border,
@@ -229,7 +244,8 @@ const generateWorkbenchColors = () => {
     'list.invalidItemForeground': syntax.error,
 
     // Diff Editor
-    'diffEditor.unchangedRegionBackground': calmClarityPalette.getColorWithAlpha(workbench.background, 'subtle'),
+    'diffEditor.unchangedRegionBackground':
+      calmClarityPalette.getColorWithAlpha(workbench.background, 'subtle'),
     'diffEditor.unchangedRegionForeground': workbench.accentSecondary,
     // Lists and Trees
     'list.focusBackground': calmClarityPalette.getColorWithAlpha(

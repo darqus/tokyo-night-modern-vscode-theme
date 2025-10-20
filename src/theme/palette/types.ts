@@ -20,6 +20,9 @@ export interface CalmClarityPalette {
     accentHover: string // Цвет для hover состояний
     accentFocus: string // Цвет фокуса ввода
     badgeForeground: string // Цвет текста для бейджей
+
+    primaryForeground: string
+    secondaryForeground: string
   }
 
   // Button colors - цвета кнопок
