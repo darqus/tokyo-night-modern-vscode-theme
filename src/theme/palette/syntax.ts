@@ -1,5 +1,5 @@
 import type { BasePalette, PaletteGenerator } from './base'
-import { lighten, darken } from './generators'
+import { darken, lighten } from './generators'
 
 /**
  * Интерфейс для цветов подсветки синтаксиса
@@ -65,7 +65,7 @@ export const generateSyntaxColors: PaletteGenerator<SyntaxColors> = (
   return {
     // Основные цвета
     text: lighten(base.neutral, 0.3), // #7a8ca0 - светлый нейтральный
-    comment: darken(base.neutral, 0.2), // #4a5a70 - темный нейтральный
+    comment: lighten(base.neutral, 0.25), // #4a5a70 - светлый нейтральный
 
     // Цвета для улучшенной контрастности
     purple: base.syntaxPurple, // #bb9af7 - оригинальный пурпур

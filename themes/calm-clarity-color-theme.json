@@ -302,7 +302,7 @@
         "comment.line.number-sign"
       ],
       "settings": {
-        "foreground": "#131820",
+        "foreground": "#7087a9",
         "fontStyle": ""
       }
     },
@@ -859,12 +859,12 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T19:02:17.847Z",
+    "date": "2025-10-20T19:08:26.662Z",
     "contrastValidation": {
       "totalChecks": 10,
-      "passedChecks": 6,
-      "failedChecks": 4,
-      "validationDate": "2025-10-20T19:02:17.848Z"
+      "passedChecks": 7,
+      "failedChecks": 3,
+      "validationDate": "2025-10-20T19:08:26.663Z"
     }
   }
 }
