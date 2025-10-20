@@ -12,6 +12,7 @@
 
 import { calmClarityPalette } from './calm-clarity'
 import { meetsWCAGContrast } from './utils'
+import { lighten, darken } from './generators'
 
 // Определяем семантические группы токенов
 export interface SyntaxTokenGroups {
@@ -62,55 +63,55 @@ export const syntaxTokenPalette: SyntaxTokenGroups = {
   keywords: calmClarityPalette.syntax.control, // Используем существующий холодный оттенок
 
   // Ключевые слова объявления - более насыщенный холодный оттенок для контраста
-  storage: '#7a9bd6', // Ярче для лучшей видимости
+  storage: lighten(calmClarityPalette.syntax.control, 0.1), // Ярче для лучшей видимости
 
   // Операторы - нейтральные оттенки для минимального отвлечения
   operators: calmClarityPalette.syntax.operator,
 
   // Знаки препинания - близки к цвету текста для минимального отвлечения
-  punctuation: '#9aa4c5', // Ярче для лучшей видимости
+  punctuation: lighten(calmClarityPalette.syntax.text, 0.15), // Ярче для лучшей видимости
 
   // Переменные - нейтральные теплые оттенки
-  variables: '#b0c0e0', // Ярче для лучшей видимости
+  variables: lighten(calmClarityPalette.neutral.subtle, 0.3), // Ярче для лучшей видимости
 
   // Константы - теплые оттенки для отличия от переменных
   constants: calmClarityPalette.syntax.constant, // Используем теплый оттенок
 
   // Параметры - оттенок между переменными и константами
-  parameters: '#a4b4d9', // Ярче для лучшей видимости
+  parameters: lighten(calmClarityPalette.neutral.subtle, 0.25), // Ярче для лучшей видимости
 
   // Свойства - холодные оттенки для отличия от переменных
   properties: calmClarityPalette.syntax.property, // Используем существующий холодный оттенок
 
   // Типы данных - холодные оттенки для отличия от значений
-  types: '#6a8fd8', // Ярче для лучшей видимости
+  types: darken(calmClarityPalette.syntax.type, 0.1), // Ярче для лучшей видимости
 
   // Классы - оттенок близкий к типам, но с отличием
-  classes: '#6a8fd8', // Используем тот же холодный оттенок, что и типы
+  classes: darken(calmClarityPalette.syntax.type, 0.05), // Используем тот же холодный оттенок, что и типы
 
   // Интерфейсы - оттенок близкий к классам, но с отличием
-  interfaces: '#7c9ed4', // Ярче для лучшей видимости
+  interfaces: lighten(calmClarityPalette.syntax.type, 0.05), // Ярче для лучшей видимости
 
   // Перечисления - оттенок близкий к типам, но с отличием
-  enums: '#8d91e0', // Ярче для лучшей видимости
+  enums: lighten(calmClarityPalette.syntax.enum, 0.1), // Ярче для лучшей видимости
 
   // Функции - холодные оттенки для отличия от значений
-  functions: '#7ab8e6', // Ярче для лучшей видимости
+  functions: lighten(calmClarityPalette.syntax.function, 0.05), // Ярче для лучшей видимости
 
   // Методы - оттенок близкий к функциям, но с отличием
-  methods: '#7cb9d9', // Ярче для лучшей видимости
+  methods: lighten(calmClarityPalette.syntax.method, 0.05), // Ярче для лучшей видимости
 
   // Строки - теплые оттенки для отличия от кода
   strings: calmClarityPalette.syntax.string, // Используем теплый зеленоватый оттенок
 
   // Числа - теплые оттенки, отличные от строк
-  numbers: '#e8b892', // Ярче для лучшей видимости
+  numbers: lighten(calmClarityPalette.syntax.number, 0.15), // Ярче для лучшей видимости
 
   // Булевые значения - отдельная категория для отличия
-  booleans: '#d5a8d6', // Ярче для лучшей видимости
+  booleans: lighten(calmClarityPalette.syntax.boolean, 0.1), // Ярче для лучшей видимости
 
   // null и undefined - отдельная категория
-  nullUndefined: '#d5a8b6', // Ярче для лучшей видимости
+  nullUndefined: darken(calmClarityPalette.syntax.boolean, 0.1), // Ярче для лучшей видимости
 
   // Комментарии - приглушенные оттенки для минимального отвлечения
   comments: calmClarityPalette.syntax.comment, // Используем существующий приглушенный оттенок
@@ -119,13 +120,13 @@ export const syntaxTokenPalette: SyntaxTokenGroups = {
   tags: calmClarityPalette.syntax.tag, // Используем холодный оттенок
 
   // Атрибуты - оттенок, отличный от тегов
-  attributes: '#9ab8d1', // Ярче для лучшей видимости
+  attributes: lighten(calmClarityPalette.syntax.attribute, 0.1), // Ярче для лучшей видимости
 
   // Декораторы - специальная категория
-  decorators: '#9ad5de', // Ярче для лучшей видимости
+  decorators: lighten(calmClarityPalette.syntax.keyword, 0.2), // Ярче для лучшей видимости
 
   // Аннотации - специальная категория
-  annotations: '#b8b2e6', // Ярче для лучшей видимости
+  annotations: lighten(calmClarityPalette.syntax.keyword, 0.15), // Ярче для лучшей видимости
 }
 
 /**
