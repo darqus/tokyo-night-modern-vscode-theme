@@ -1,3 +1,23 @@
+export type VSCodeTheme = {
+  name: string
+  type: 'dark' | 'light'
+  colors: Record<string, string>
+  author: string
+  maintainers: string[]
+  semanticClass: string
+  tokenColors: Array<{
+    name?: string
+    scope: string | string[]
+    settings: {
+      foreground?: string
+      background?: string
+      fontStyle?: string
+    }
+  }>
+  semanticHighlighting: boolean
+  semanticTokenColors?: Record<string, unknown>
+}
+
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
   workbench: {
