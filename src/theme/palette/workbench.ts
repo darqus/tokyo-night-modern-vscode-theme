@@ -1,9 +1,9 @@
 import type { BasePalette, PaletteGenerator } from './base'
 import {
-  lighten,
-  darken,
   createAlphaSystem,
+  darken,
   getColorWithAlpha,
+  lighten,
 } from './generators'
 
 /**
@@ -109,6 +109,9 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
 ): WorkbenchColors => {
   const alphaSystem = createAlphaSystem()
 
+  // Вычисляем акцентный цвет на основе syntaxCyan, если он не определен
+  const accentColor = base.syntaxCyan || '#7dcfff'
+
   return {
     background: {
       base: base.background,
@@ -129,19 +132,19 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       main: lighten(base.background, 0.08), // #1a1f2a - светлее фона на 8%
     },
     accent: {
-      primary: base.accent,
-      secondary: lighten(base.neutral, 0.15), // #6a7d9a - темный нейтральный оттенок
-      hover: lighten(base.accent, 0.05), // #75b0e2 - светлее акцента
-      focus: lighten(base.accent, 0.15), // #7ca0c2 - еще светлее акцента
+      primary: accentColor,
+      secondary: darken(accentColor, 0.2), // #6a7d9a - темнее акцента
+      hover: lighten(accentColor, 0.05), // #75b0e2 - светлее акцента
+      focus: lighten(accentColor, 0.15), // #7ca0c2 - еще светлее акцента
     },
     button: {
-      primaryBackground: darken(base.accent, 0.4), // #1a2a4a - темный акцент
+      primaryBackground: darken(accentColor, 0.4), // #1a2a4a - темный акцент
       primaryForeground: lighten(base.neutral, 0.6), // #d0e0ff - светлый нейтральный
-      primaryHoverBackground: darken(base.accent, 0.35), // #1f355a - чуть светлее
-      secondaryBackground: lighten(darken(base.accent, 0.4), 0.05), // #182a45 - темный акцент с коррекцией
+      primaryHoverBackground: darken(accentColor, 0.35), // #1f355a - чуть светлее
+      secondaryBackground: lighten(darken(accentColor, 0.4), 0.05), // #182a45 - темный акцент с коррекцией
       secondaryForeground: lighten(base.neutral, 0.4), // #b0c4e0 - средний нейтральный
-      secondaryHoverBackground: lighten(darken(base.accent, 0.4), 0.1), // #1c3252 - чуть светлее
-      border: darken(base.accent, 0.25), // #253a5a - средний акцент
+      secondaryHoverBackground: lighten(darken(accentColor, 0.4), 0.1), // #1c3252 - чуть светлее
+      border: darken(accentColor, 0.25), // #253a5a - средний акцент
     },
     neutral: {
       base: base.neutral, // #3a4a60 - базовый нейтральный
@@ -185,7 +188,7 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       infoForeground: lighten(base.neutral, 0.3), // #7a9ad8 - светлый нейтральный
     },
     scmGraph: {
-      foreground1: darken(base.accent, 0.35), // #27729e - темный акцент
+      foreground1: darken(accentColor, 0.35), // #27729e - темный акцент
       foreground2: lighten(darken(base.syntaxPurple, 0.2), 0.1), // #9a58a3 - фиолетовый с коррекцией
       foreground3: lighten(darken(base.syntaxGreen, 0.1), 0.2), // #6caa29 - зеленый с коррекцией
       foreground4: lighten(darken(base.syntaxYellow || '#e0af68', 0.1), 0.15), // #d6912a - желтый с коррекцией
@@ -195,7 +198,7 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       historyItemHoverDeletionsForeground: darken(base.syntaxGreen, 0.4), // #df215a - зеленый с инверсией
       historyItemHoverDefaultLabelBackground: lighten(base.neutral, 0.15), // #40506a - нейтральный с коррекцией
       historyItemHoverDefaultLabelForeground: lighten(base.neutral, 0.7), // #ffffff - белый
-      historyItemRefColor: darken(base.accent, 0.35), // #27729e - как foreground1
+      historyItemRefColor: darken(accentColor, 0.35), // #27729e - как foreground1
       historyItemRemoteRefColor: lighten(darken(base.syntaxPurple, 0.2), 0.1), // #9a58a3 - как foreground2
       historyItemBaseRefColor: darken(base.neutral, 0.2), // #1f3f7a - темный нейтральный
     },
