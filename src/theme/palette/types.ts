@@ -2,9 +2,6 @@ export type VSCodeTheme = {
   name: string
   type: 'dark' | 'light'
   colors: Record<string, string>
-  author: string
-  maintainers: string[]
-  semanticClass: string
   tokenColors: Array<{
     name?: string
     scope: string | string[]
@@ -14,13 +11,19 @@ export type VSCodeTheme = {
       fontStyle?: string
     }
   }>
-  semanticHighlighting: boolean
-  semanticTokenColors?: Record<string, unknown>
+  semanticHighlighting?: boolean
+  semanticTokenColors?: {
+    [key: string]: string | { foreground?: string; fontStyle?: string }
+  }
+ include?: string
+ settings?: {
+    [key: string]: string | number | boolean | Record<string, unknown>
+  }
 }
 
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
-  workbench: {
+ workbench: {
     background: {
       base: string
       secondary: string
@@ -48,7 +51,7 @@ export interface CalmClarityPalette {
   }
 
   // Button colors - цвета кнопок
-  button: {
+ button: {
     primaryBackground: string // Основной цвет фона для primary кнопок
     primaryForeground: string // Основной цвет текста для primary кнопок
     primaryHoverBackground: string // Цвет фона при наведении для primary кнопок
@@ -58,7 +61,7 @@ export interface CalmClarityPalette {
     border: string // Цвет границы для кнопок
   }
 
-  // Neutral colors - нейтральные холодно-серо-голубые оттенки для вспомогательных элементов
+ // Neutral colors - нейтральные холодно-серо-голубые оттенки для вспомогательных элементов
   neutral: {
     // Cool gray-blue shades for subtle UI elements
     base: string // Основной нейтральный цвет (например, для номеров строк)
@@ -120,7 +123,7 @@ export interface CalmClarityPalette {
     success: string // Успешные операции
   }
   // Controls colors - цвета элементов управления
-  controls: {
+ controls: {
     /** Фон для чекбоксов. */
     checkboxBackground: string
     /** Граница для чекбоксов. */
@@ -187,7 +190,7 @@ export interface CalmClarityPalette {
     semiOpaque: string // 80% прозрачность (0xcc)
   }
 
-  // Shadow colors - цвета теней для элементов интерфейса
+ // Shadow colors - цвета теней для элементов интерфейса
   shadow: {
     inlineChat: string // Цвет тени для встроенного чата
     widget: string // Цвет тени для виджетов
