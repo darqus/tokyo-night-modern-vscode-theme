@@ -1069,7 +1069,7 @@ export const generateCalmClarityTheme = (): VSCodeTheme => {
     name: 'Calm Clarity',
     author: 'darqus',
     maintainers: ['darqus <voladores@inbox.ru>'],
-    semanticClass: 'tokyo-night',
+    semanticClass: 'calm-clarity',
     type: 'dark',
     semanticHighlighting: true,
     colors: generateWorkbenchColors(),
