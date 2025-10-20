@@ -69,7 +69,7 @@
     "terminal.background": "#10141a",
     "terminal.foreground": "#8095b3",
     "terminal.ansiBlack": "#1aabff",
-    "terminal.ansiRed": "#1d2a0e",
+    "terminal.ansiRed": "#df215a",
     "terminal.ansiGreen": "#607a9f",
     "terminal.ansiYellow": "#dccbfb",
     "terminal.ansiBlue": "#7dcfff",
@@ -77,7 +77,7 @@
     "terminal.ansiCyan": "#1aabff",
     "terminal.ansiWhite": "#8095b3",
     "terminal.ansiBrightBlack": "#1aabff",
-    "terminal.ansiBrightRed": "#1d2a0e",
+    "terminal.ansiBrightRed": "#df215a",
     "terminal.ansiBrightGreen": "#607a9f",
     "terminal.ansiBrightYellow": "#dccbfb",
     "terminal.ansiBrightBlue": "#7dcfff",
@@ -99,7 +99,7 @@
     "inputOption.activeBorder": "#7dcfff",
     "inputValidation.infoBorder": "#8095b3",
     "inputValidation.warningBorder": "#dccbfb",
-    "inputValidation.errorBorder": "#36511a",
+    "inputValidation.errorBorder": "#df215a",
     "inputValidation.infoBackground": "#10141a",
     "inputValidation.warningBackground": "#10141a",
     "inputValidation.errorBackground": "#10141a",
@@ -112,14 +112,14 @@
     "minimapSlider.activeBackground": "#1f273399",
     "minimapGutter.addedBackground": "#7087a9",
     "minimapGutter.modifiedBackground": "#8095b3",
-    "minimapGutter.deletedBackground": "#36511a",
-    "editorOverviewRuler.errorForeground": "#36511a",
+    "minimapGutter.deletedBackground": "#df215a",
+    "editorOverviewRuler.errorForeground": "#df215a",
     "editorOverviewRuler.warningForeground": "#dccbfb",
     "editorOverviewRuler.infoForeground": "#8095b3",
     "panelSection.border": "#1f2733",
     "panelInput.border": "#1f2733",
     "tree.indentGuidesStroke": "#1f2733",
-    "list.invalidItemForeground": "#1d2a0e",
+    "list.invalidItemForeground": "#df215a",
     "diffEditor.unchangedRegionBackground": "#10141a33",
     "diffEditor.unchangedRegionForeground": "#1aabff",
     "list.focusBackground": "#7dcfff33",
@@ -170,7 +170,7 @@
     "peekViewTitleLabel.foreground": "#7dcfff",
     "gitDecoration.addedResourceForeground": "#607a9f",
     "gitDecoration.modifiedResourceForeground": "#7087a9",
-    "gitDecoration.deletedResourceForeground": "#1d2a0e",
+    "gitDecoration.deletedResourceForeground": "#df215a",
     "gitDecoration.untrackedResourceForeground": "#99daff",
     "gitDecoration.ignoredResourceForeground": "#1aabff",
     "gitDecoration.conflictingResourceForeground": "#dccbfb",
@@ -195,7 +195,7 @@
     "editorMarkerNavigation.background": "#192029",
     "minimap.findMatchHighlight": "#dccbfb66",
     "minimap.selectionHighlight": "#7dcfff33",
-    "minimap.errorHighlight": "#1d2a0e",
+    "minimap.errorHighlight": "#df215a",
     "minimap.warningHighlight": "#dccbfb",
     "minimap.background": "#10141a",
     "symbolIcon.arrayForeground": "#e0af68",
@@ -233,13 +233,13 @@
     "symbolIcon.variableForeground": "#fcfaff",
     "debugToolBar.background": "#192029",
     "debugExceptionWidget.background": "#192029",
-    "debugExceptionWidget.border": "#1d2a0e",
+    "debugExceptionWidget.border": "#df215a",
     "debugTokenExpression.name": "#7dcfff",
     "debugTokenExpression.value": "#8095b3",
     "debugTokenExpression.string": "#9ece6a",
     "debugTokenExpression.boolean": "#90621d",
     "debugTokenExpression.number": "#f1dcbb",
-    "debugTokenExpression.error": "#1d2a0e",
+    "debugTokenExpression.error": "#df215a",
     "settings.headerForeground": "#7dcfff",
     "settings.modifiedItemIndicator": "#dccbfb",
     "settings.dropdownBackground": "#192029",
@@ -255,7 +255,7 @@
     "settings.numberInputBackground": "#192029",
     "settings.numberInputForeground": "#8095b3",
     "settings.numberInputBorder": "#1f2733",
-    "problemsErrorIcon.foreground": "#1d2a0e",
+    "problemsErrorIcon.foreground": "#df215a",
     "problemsWarningIcon.foreground": "#dccbfb",
     "problemsInfoIcon.foreground": "#7087a9",
     "inlineChat.background": "#192029",
@@ -264,14 +264,14 @@
     "diffEditor.border": "#1f2733",
     "diffEditor.diagonalFill": "#1aabff",
     "diffEditor.insertedLineBackground": "#607a9f33",
-    "diffEditor.removedLineBackground": "#1d2a0e33",
+    "diffEditor.removedLineBackground": "#df215a33",
     "diffEditor.insertedTextBackground": "#607a9f33",
-    "diffEditor.removedTextBackground": "#1d2a0e33",
+    "diffEditor.removedTextBackground": "#df215a33",
     "diffEditorOverview.insertedForeground": "#607a9f66",
-    "diffEditorOverview.removedForeground": "#1d2a0e66",
+    "diffEditorOverview.removedForeground": "#df215a66",
     "charts.foreground": "#8095b3",
     "charts.lines": "#1aabff",
-    "charts.red": "#1d2a0e",
+    "charts.red": "#df215a",
     "charts.blue": "#7dcfff",
     "charts.yellow": "#dccbfb",
     "charts.orange": "#dccbfb",
@@ -283,7 +283,7 @@
     "scmGraph.foreground4": "#e4ba7c",
     "scmGraph.foreground5": "#bc9cf7",
     "scmGraph.historyItemHoverAdditionsForeground": "#9ece6a",
-    "scmGraph.historyItemHoverDeletionsForeground": "#36511a",
+    "scmGraph.historyItemHoverDeletionsForeground": "#df215a",
     "scmGraph.historyItemRefColor": "#0081cc",
     "scmGraph.historyItemRemoteRefColor": "#9c6df3",
     "scmGraph.historyItemBaseRefColor": "#131820",
@@ -543,7 +543,7 @@
         "invalid.unimplemented"
       ],
       "settings": {
-        "foreground": "#1d2a0e"
+        "foreground": "#df215a"
       }
     },
     {
@@ -554,7 +554,7 @@
         "markup.error"
       ],
       "settings": {
-        "foreground": "#1d2a0e"
+        "foreground": "#df215a"
       }
     },
     {
@@ -948,12 +948,12 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T20:33:25.099Z",
+    "date": "2025-10-20T20:45:13.451Z",
     "contrastValidation": {
       "totalChecks": 10,
       "passedChecks": 7,
       "failedChecks": 3,
-      "validationDate": "2025-10-20T20:33:25.099Z"
+      "validationDate": "2025-10-20T20:45:13.452Z"
     }
   }
 }

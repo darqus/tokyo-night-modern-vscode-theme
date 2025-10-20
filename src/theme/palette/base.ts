@@ -17,13 +17,13 @@ export interface BasePalette {
   neutral: string
 
   /** Синтаксический желтый (#e0af68) - опционально для предупреждений */
-  syntaxYellow?: string
+  syntaxYellow: string
 
   /** Синтаксический красный (#df215a) - опционально для ошибок */
-  syntaxRed?: string
+  syntaxRed: string
 
   /** Синтаксический голубой (#7dcfff) - опционально для функций */
-  syntaxCyan?: string
+  syntaxCyan: string
 }
 
 /**
