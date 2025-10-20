@@ -108,7 +108,7 @@ export const generateSyntaxColors: PaletteGenerator<SyntaxColors> = (
     attribute: base.syntaxYellow || '#e0af68', // #e0af68 - желтый
 
     // Ошибки и предупреждения
-    error: darken(base.syntaxGreen, 0.5), // #df215a - зеленый с инверсией
+    error: base.syntaxRed, // #df215a - красный
     warning: lighten(darken(base.syntaxPurple, 0.2), 0.3), // #b35abe - фиолетовый с коррекцией
     info: lighten(base.neutral, 0.25), // #7a9ad8 - нейтральный с коррекцией
     success: lighten(base.neutral, 0.2), // #638dc4 - нейтральный с коррекцией

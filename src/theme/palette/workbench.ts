@@ -160,7 +160,7 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
         darken(base.syntaxPurple, 0.2),
         0.3
       ), // #b35abe - фиолетовый с коррекцией
-      inputValidationErrorBorder: darken(base.syntaxGreen, 0.4), // #df215a - зеленый с инверсией
+      inputValidationErrorBorder: base.syntaxRed, // #df215a - красный
     },
     minimap: {
       sliderBackground: getColorWithAlpha(
@@ -180,10 +180,10 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       ), // #151a24C0
       gutterAddedBackground: lighten(base.neutral, 0.25), // #638dc4 - светлый нейтральный
       gutterModifiedBackground: lighten(base.neutral, 0.3), // #7a9ad8 - более светлый нейтральный
-      gutterDeletedBackground: darken(base.syntaxGreen, 0.4), // #df215a - зеленый с инверсией
+      gutterDeletedBackground: base.syntaxRed, // #df215a - красный
     },
     overviewRuler: {
-      errorForeground: darken(base.syntaxGreen, 0.4), // #df215a - зеленый с инверсией
+      errorForeground: base.syntaxRed, // #df215a - красный
       warningForeground: lighten(darken(base.syntaxPurple, 0.2), 0.3), // #b35abe - фиолетовый с коррекцией
       infoForeground: lighten(base.neutral, 0.3), // #7a9ad8 - светлый нейтральный
     },
@@ -195,7 +195,7 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       foreground5: lighten(darken(base.syntaxPurple, 0.1), 0.1), // #bd27b5 - фиолетовый с коррекцией
       historyItemHoverLabelForeground: lighten(base.neutral, 0.7), // #ffffff - белый
       historyItemHoverAdditionsForeground: base.syntaxGreen, // #9ece6a - оригинальный зеленый
-      historyItemHoverDeletionsForeground: darken(base.syntaxGreen, 0.4), // #df215a - зеленый с инверсией
+      historyItemHoverDeletionsForeground: base.syntaxRed, // #df215a - красный
       historyItemHoverDefaultLabelBackground: lighten(base.neutral, 0.15), // #40506a - нейтральный с коррекцией
       historyItemHoverDefaultLabelForeground: lighten(base.neutral, 0.7), // #ffffff - белый
       historyItemRefColor: darken(accentColor, 0.35), // #27729e - как foreground1
