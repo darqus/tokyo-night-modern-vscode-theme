@@ -423,10 +423,6 @@ function generateWorkbenchColors() {
     'inlineChat.background': workbench.backgroundSecondary,
     'inlineChat.border': workbench.border,
     'inlineChat.shadow': calmClarityPalette.shadow.inlineChat,
-    'inlineChat.regionHighlight': calmClarityPalette.getColorWithAlpha(
-      workbench.accentPrimary,
-      'subtle'
-    ),
 
     // Diff Editor v2
     'diffEditor.border': workbench.border,
