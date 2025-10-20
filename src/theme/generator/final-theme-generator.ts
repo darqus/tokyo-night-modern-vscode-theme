@@ -9,7 +9,7 @@ import { generateCalmClarityTheme } from './calm-clarity-theme'
 /**
  * Генерация финального JSON-представления темы
  */
-export function generateFinalThemeJSON(): string {
+export const generateFinalThemeJSON = (): string => {
   const theme = generateCalmClarityTheme()
 
   // Добавим метаданные к теме
@@ -33,7 +33,7 @@ export function generateFinalThemeJSON(): string {
 /**
  * Генерация финальной темы как объекта
  */
-export function generateFinalThemeObject() {
+export const generateFinalThemeObject = () => {
   const theme = generateCalmClarityTheme()
 
   // Добавим метаданные к теме

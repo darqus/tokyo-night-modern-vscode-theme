@@ -3,7 +3,7 @@
  * Функции для проверки контрастности цветов по стандартам WCAG
  */
 
-import { getContrastRatio, meetsWCAGContrast } from '../palette/calm-clarity'
+import { getContrastRatio, meetsWCAGContrast } from '../palette/utils'
 
 // Импортируем палитру для проверки контрастности
 import { calmClarityPalette } from '../palette/calm-clarity'
@@ -28,7 +28,7 @@ interface ContrastReport {
 /**
  * Генерация отчета о контрастности для основных элементов темы
  */
-export function getContrastReport(): ContrastReport {
+export const getContrastReport = (): ContrastReport => {
   // Основные проверки контрастности для элементов интерфейса
   const contrastChecks = [
     {

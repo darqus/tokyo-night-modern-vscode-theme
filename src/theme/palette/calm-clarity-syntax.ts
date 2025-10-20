@@ -10,7 +10,8 @@
  * - Проверка соответствия минимальным требованиям контрастности WCAG AA
  */
 
-import { calmClarityPalette, meetsWCAGContrast } from './calm-clarity'
+import { calmClarityPalette } from './calm-clarity'
+import { meetsWCAGContrast } from './utils'
 
 // Определяем семантические группы токенов
 export interface SyntaxTokenGroups {
@@ -327,17 +328,17 @@ export const syntaxHighlightingRules = {
 /**
  * Функция для проверки соответствия WCAG контрастности
  */
-export function checkWCAGContrast(
+export const checkWCAGContrast = (
   foreground: string,
   background: string,
   level: 'AA' | 'AAA' = 'AA'
-): boolean {
+): boolean => {
   return meetsWCAGContrast(foreground, background, level)
 }
 
 /**
  * Функция для получения цвета токена по его типу
  */
-export function getTokenColor(tokenType: keyof SyntaxTokenGroups): string {
+export const getTokenColor = (tokenType: keyof SyntaxTokenGroups): string => {
   return syntaxTokenPalette[tokenType]
 }

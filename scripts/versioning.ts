@@ -11,12 +11,12 @@ export type ReleaseType = 'patch' | 'minor' | 'major'
  * - patch → patch += count
  * - prerelease → append -beta.<count>
  */
-export function computeVersion(
+export const computeVersion = (
   currentVersion: string,
   releaseType: ReleaseType,
   commitCount: number,
   prerelease: boolean
-): string {
+): string => {
   const base = currentVersion.split('-')[0]
   const [majS, minS, patS] = base.split('.')
   let major = parseInt(majS || '0', 10) || 0

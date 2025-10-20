@@ -32,7 +32,7 @@ interface VSCodeTheme {
 /**
  * Генерация цветов интерфейса (workbench colors) на основе палитры
  */
-function generateWorkbenchColors() {
+const generateWorkbenchColors = () => {
   const { workbench, button, syntax } = calmClarityPalette
 
   return {
@@ -191,6 +191,46 @@ function generateWorkbenchColors() {
     'inputOption.activeBackground': workbench.accentPrimary,
     'inputOption.activeBorder': workbench.accentPrimary,
 
+    // Input & Validation
+    'inputValidation.infoBorder': calmClarityPalette.controls.inputValidationInfoBorder,
+    'inputValidation.warningBorder': calmClarityPalette.controls.inputValidationWarningBorder,
+    'inputValidation.errorBorder': calmClarityPalette.controls.inputValidationErrorBorder,
+    'inputValidation.infoBackground': workbench.background,
+    'inputValidation.warningBackground': workbench.background,
+    'inputValidation.errorBackground': workbench.background,
+
+    // Checkbox
+    'checkbox.background': calmClarityPalette.controls.checkboxBackground,
+    'checkbox.foreground': syntax.text,
+    'checkbox.border': calmClarityPalette.controls.checkboxBorder,
+
+    // Dropdown
+    'dropdown.listBackground': workbench.backgroundSecondary,
+
+    // Minimap
+    'minimapSlider.background': calmClarityPalette.minimap.sliderBackground,
+    'minimapSlider.hoverBackground': calmClarityPalette.minimap.sliderHoverBackground,
+    'minimapSlider.activeBackground': calmClarityPalette.minimap.sliderActiveBackground,
+    'minimapGutter.addedBackground': calmClarityPalette.minimap.gutterAddedBackground,
+    'minimapGutter.modifiedBackground': calmClarityPalette.minimap.gutterModifiedBackground,
+    'minimapGutter.deletedBackground': calmClarityPalette.minimap.gutterDeletedBackground,
+    
+    // Editor Overview Ruler
+    'editorOverviewRuler.errorForeground': calmClarityPalette.overviewRuler.errorForeground,
+    'editorOverviewRuler.warningForeground': calmClarityPalette.overviewRuler.warningForeground,
+    'editorOverviewRuler.infoForeground': calmClarityPalette.overviewRuler.infoForeground,
+
+    // Panels
+    'panelSection.border': workbench.border,
+    'panelInput.border': workbench.border,
+
+    // Lists & Trees
+    'tree.indentGuidesStroke': workbench.border,
+    'list.invalidItemForeground': syntax.error,
+
+    // Diff Editor
+    'diffEditor.unchangedRegionBackground': calmClarityPalette.getColorWithAlpha(workbench.background, 'subtle'),
+    'diffEditor.unchangedRegionForeground': workbench.accentSecondary,
     // Lists and Trees
     'list.focusBackground': calmClarityPalette.getColorWithAlpha(
       workbench.accentPrimary,
@@ -485,7 +525,7 @@ function generateWorkbenchColors() {
 /**
  * Генерация токенов подсветки синтаксиса
  */
-function generateTokenColors() {
+const generateTokenColors = () => {
   return [
     // Comments
     {
@@ -1113,7 +1153,7 @@ function generateTokenColors() {
 /**
  * Генерация полной темы "Спокойная Четкость"
  */
-export function generateCalmClarityTheme(): VSCodeTheme {
+export const generateCalmClarityTheme = (): VSCodeTheme => {
   return {
     name: 'Calm Clarity',
     type: 'dark',
