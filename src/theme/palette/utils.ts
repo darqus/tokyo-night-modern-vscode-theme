@@ -1,9 +1,9 @@
-import type { CalmClarityPalette } from './types'
 import { standardBasePalette } from './base'
-import { generateWorkbenchColors } from './workbench'
-import { generateSyntaxColors } from './syntax'
-import { createAlphaSystem, getColorWithAlpha } from './generators'
 import { getContrastRatio, meetsWCAGContrast } from './color-utils'
+import { createAlphaSystem, getColorWithAlpha } from './generators'
+import { generateSyntaxColors } from './syntax'
+import type { CalmClarityPalette } from './types'
+import { generateWorkbenchColors } from './workbench'
 
 /**
  * Создает и возвращает объект палитры "Спокойная Четкость".
