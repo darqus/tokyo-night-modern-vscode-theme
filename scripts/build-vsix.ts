@@ -11,7 +11,7 @@ const VSIX_NAME = `tokyo-night-modern-${pkg.version}.vsix`
 // Путь к папке с расширением (предполагается, что build-theme уже сгенерировал нужные файлы)
 const EXT_DIR = path.resolve(__dirname, '../')
 
-function buildVsix() {
+const buildVsix = () => {
   try {
     // Проверяем, что установлен vsce
     execSync('npx vsce --version', { stdio: 'ignore' })

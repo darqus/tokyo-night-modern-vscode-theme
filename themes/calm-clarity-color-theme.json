@@ -95,6 +95,31 @@
     "input.placeholderForeground": "#6a7d9a",
     "inputOption.activeBackground": "#7ab4e6",
     "inputOption.activeBorder": "#7ab4e6",
+    "inputValidation.infoBorder": "#7a9ad8",
+    "inputValidation.warningBorder": "#b35abe",
+    "inputValidation.errorBorder": "#df215a",
+    "inputValidation.infoBackground": "#10141a",
+    "inputValidation.warningBackground": "#10141a",
+    "inputValidation.errorBackground": "#10141a",
+    "checkbox.background": "#10141a",
+    "checkbox.foreground": "#7a8ca0",
+    "checkbox.border": "#1a1f2a",
+    "dropdown.listBackground": "#0f1319",
+    "minimapSlider.background": "#151a2480",
+    "minimapSlider.hoverBackground": "#151a24A0",
+    "minimapSlider.activeBackground": "#151a24C0",
+    "minimapGutter.addedBackground": "#638dc4",
+    "minimapGutter.modifiedBackground": "#7a9ad8",
+    "minimapGutter.deletedBackground": "#df215a",
+    "editorOverviewRuler.errorForeground": "#df215a",
+    "editorOverviewRuler.warningForeground": "#b35abe",
+    "editorOverviewRuler.infoForeground": "#7a9ad8",
+    "panelSection.border": "#1a1f2a",
+    "panelInput.border": "#1a1f2a",
+    "tree.indentGuidesStroke": "#1a1f2a",
+    "list.invalidItemForeground": "#df215a",
+    "diffEditor.unchangedRegionBackground": "#10141a33",
+    "diffEditor.unchangedRegionForeground": "#6a7d9a",
     "list.focusBackground": "#7ab4e633",
     "list.focusForeground": "#7a8ca0",
     "list.activeSelectionBackground": "#7ab4e633",
@@ -921,34 +946,34 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T14:51:20.094Z",
+    "date": "2025-10-20T17:32:06.933Z",
     "contrastValidation": {
-      "status": "pass",
-      "message": "Все основные элементы соответствуют стандарту контрастности WCAG AA",
+      "status": "fail",
+      "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
       "details": [
         {
           "element": "Основной текст",
           "foreground": "#7a8ca0",
           "background": "#10141a",
-          "ratio": 81.67,
+          "ratio": 5.35,
           "required": "AA",
           "meetsAA": true,
-          "meetsAAA": true
+          "meetsAAA": false
         },
         {
           "element": "Комментарии",
           "foreground": "#4a5a70",
           "background": "#10141a",
-          "ratio": 29.48,
+          "ratio": 2.63,
           "required": "AA",
-          "meetsAA": true,
-          "meetsAAA": true
+          "meetsAA": false,
+          "meetsAAA": false
         },
         {
           "element": "Ключевые слова",
           "foreground": "#bb9af7",
           "background": "#10141a",
-          "ratio": 118.01,
+          "ratio": 7.98,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -957,7 +982,7 @@
           "element": "Строки",
           "foreground": "#9ece6a",
           "background": "#10141a",
-          "ratio": 183.47,
+          "ratio": 10.11,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -966,7 +991,7 @@
           "element": "Числа",
           "foreground": "#fa7c5d",
           "background": "#10141a",
-          "ratio": 56.85,
+          "ratio": 7.13,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -975,7 +1000,7 @@
           "element": "Активная панель активности",
           "foreground": "#7ab4e6",
           "background": "#121720",
-          "ratio": 112.28,
+          "ratio": 8.12,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -984,7 +1009,7 @@
           "element": "Активная вкладка",
           "foreground": "#7ab4e6",
           "background": "#10151f",
-          "ratio": 132.81,
+          "ratio": 8.27,
           "required": "AA",
           "meetsAA": true,
           "meetsAAA": true
@@ -993,10 +1018,10 @@
           "element": "Текст сайдбара",
           "foreground": "#7a8ca0",
           "background": "#0e1218",
-          "ratio": 100.22,
+          "ratio": 5.44,
           "required": "AA",
           "meetsAA": true,
-          "meetsAAA": true
+          "meetsAAA": false
         }
       ]
     }

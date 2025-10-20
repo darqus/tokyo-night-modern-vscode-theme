@@ -336,7 +336,7 @@ class ReleaseManager {
 export { ReleaseManager }
 
 // CLI интерфейс
-async function main() {
+const main = async () => {
   const args = process.argv.slice(2)
 
   const options: ReleaseOptions = {

@@ -16,7 +16,7 @@ interface SemanticTokenStyle {
 // Тип для семантических токенов - используем Record для возможности указания произвольных токенов
 type SemanticTokenColors = Record<string, SemanticTokenStyle>
 
-export function generateSemanticTokenColors(): SemanticTokenColors {
+export const generateSemanticTokenColors = (): SemanticTokenColors => {
   return {
     namespace: { foreground: syntaxTokenPalette.storage },
     type: { foreground: syntaxTokenPalette.types },
