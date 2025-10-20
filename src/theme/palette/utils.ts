@@ -1,6 +1,5 @@
 import { standardBasePalette } from './base'
 import { getContrastRatio, meetsWCAGContrast } from './color-utils'
-import { createAlphaSystem, getColorWithAlpha } from './generators'
 import { generateSyntaxColors } from './syntax'
 import type { CalmClarityPalette } from './types'
 import { generateWorkbenchColors } from './workbench'
@@ -13,7 +12,6 @@ export const createCalmClarityPalette = (): CalmClarityPalette => {
   // Генерация всех цветов на основе базовой палитры
   const workbenchColors = generateWorkbenchColors(standardBasePalette)
   const syntaxColors = generateSyntaxColors(standardBasePalette)
-  const alphaSystem = createAlphaSystem()
 
   const palette: CalmClarityPalette = {
     workbench: {
@@ -31,12 +29,6 @@ export const createCalmClarityPalette = (): CalmClarityPalette => {
     minimap: workbenchColors.minimap,
     overviewRuler: workbenchColors.overviewRuler,
     scmGraph: workbenchColors.scmGraph,
-    getColorWithAlpha: (
-      color: string,
-      alpha: keyof CalmClarityPalette['alpha']
-    ): string => {
-      return getColorWithAlpha(color, alpha, alphaSystem)
-    },
   }
   return palette
 }

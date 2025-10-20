@@ -948,12 +948,12 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T20:49:57.075Z",
+    "date": "2025-10-20T21:24:44.257Z",
     "contrastValidation": {
       "totalChecks": 10,
       "passedChecks": 7,
       "failedChecks": 3,
-      "validationDate": "2025-10-20T20:49:57.076Z"
+      "validationDate": "2025-10-20T21:24:44.258Z"
     }
   }
 }

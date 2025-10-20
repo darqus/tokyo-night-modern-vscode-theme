@@ -6,7 +6,7 @@
 /**
  * Преобразует HEX цвет в HSL
  */
-function hexToHsl(hex: string): { h: number; s: number; l: number } {
+const hexToHsl = (hex: string): { h: number; s: number; l: number } => {
   // Удаление символа # и разбиение на компоненты
   const cleanHex = hex.replace('#', '')
   const r = parseInt(cleanHex.substring(0, 2), 16) / 255
@@ -50,7 +50,7 @@ function hexToHsl(hex: string): { h: number; s: number; l: number } {
 /**
  * Преобразует HSL цвет в HEX
  */
-function hslToHex(h: number, s: number, l: number): string {
+const hslToHex = (h: number, s: number, l: number): string => {
   h = h / 360
   s = s / 100
   l = l / 100
@@ -89,7 +89,7 @@ function hslToHex(h: number, s: number, l: number): string {
  * @param color - исходный цвет в формате HEX
  * @param amount - величина изменения яркости от -1 до 1 (0.1 = +10% яркости)
  */
-export function adjustBrightness(color: string, amount: number): string {
+export const adjustBrightness = (color: string, amount: number): string => {
   const hsl = hexToHsl(color)
   let newL = hsl.l + amount * 100
   newL = Math.max(0, Math.min(100, newL)) // Ограничение от 0 до 100
@@ -101,7 +101,7 @@ export function adjustBrightness(color: string, amount: number): string {
  * @param color - исходный цвет в формате HEX
  * @param amount - величина осветления от 0 до 1 (0.1 = +10% яркости)
  */
-export function lighten(color: string, amount: number): string {
+export const lighten = (color: string, amount: number): string => {
   return adjustBrightness(color, Math.abs(amount))
 }
 
@@ -110,7 +110,7 @@ export function lighten(color: string, amount: number): string {
  * @param color - исходный цвет в формате HEX
  * @param amount - величина затемнения от 0 до 1 (0.1 = -10% яркости)
  */
-export function darken(color: string, amount: number): string {
+export const darken = (color: string, amount: number): string => {
   return adjustBrightness(color, -Math.abs(amount))
 }
 
@@ -119,47 +119,10 @@ export function darken(color: string, amount: number): string {
  * @param color - исходный цвет в формате HEX
  * @param alpha - значение прозрачности от 0 до 1 (0.5 = 50% прозрачности)
  */
-export function withAlpha(color: string, alpha: number): string {
+export const withAlpha = (color: string, alpha: number): string => {
   const cleanHex = color.replace('#', '')
   const alphaHex = Math.round(alpha * 255)
     .toString(16)
     .padStart(2, '0')
   return `#${cleanHex}${alphaHex}`
-}
-
-/**
- * Интерфейс для системы прозрачности
- */
-export interface AlphaSystem {
-  subtle: string // 20% (33)
-  hover: string // 40% (66)
-  active: string // 60% (99)
-  semiOpaque: string // 80% (cc)
-}
-
-/**
- * Создает систему прозрачности на основе значений в шестнадцатеричном формате
- */
-export function createAlphaSystem(): AlphaSystem {
-  return {
-    subtle: '33', // 20% прозрачности
-    hover: '66', // 40% прозрачности
-    active: '99', // 60% прозрачности
-    semiOpaque: 'cc', // 80% прозрачности
-  }
-}
-
-/**
- * Возвращает цвет с заданным уровнем прозрачности из системы
- * @param color - исходный цвет в формате HEX
- * @param alphaKey - ключ уровня прозрачности
- * @param alphaSystem - система прозрачности
- */
-export function getColorWithAlpha(
-  color: string,
-  alphaKey: keyof AlphaSystem,
-  alphaSystem: AlphaSystem = createAlphaSystem()
-): string {
-  const hex = color.replace('#', '')
-  return `#${hex}${alphaSystem[alphaKey]}`
 }

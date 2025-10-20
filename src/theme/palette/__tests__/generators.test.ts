@@ -1,11 +1,4 @@
-import {
-  adjustBrightness,
-  lighten,
-  darken,
-  withAlpha,
-  getColorWithAlpha,
-  createAlphaSystem,
-} from '../generators'
+import { adjustBrightness, darken, lighten, withAlpha } from '../generators'
 
 describe('Generators', () => {
   describe('adjustBrightness', () => {
@@ -66,29 +59,6 @@ describe('Generators', () => {
     test('should handle zero opacity', () => {
       const result = withAlpha('#10141a', 0)
       expect(result).toBe('#10141a00')
-    })
-  })
-
-  describe('getColorWithAlpha', () => {
-    test('should apply alpha value from alpha system', () => {
-      const alphaSystem = createAlphaSystem()
-      const result = getColorWithAlpha('#10141a', 'hover', alphaSystem)
-      expect(result).toBe('#10141a66') // hover = '66'
-    })
-
-    test('should work with default alpha system', () => {
-      const result = getColorWithAlpha('#10141a', 'subtle')
-      expect(result).toBe('#10141a33') // subtle = '33'
-    })
-  })
-
-  describe('createAlphaSystem', () => {
-    test('should return correct alpha values', () => {
-      const alphaSystem = createAlphaSystem()
-      expect(alphaSystem.subtle).toBe('33') // 20%
-      expect(alphaSystem.hover).toBe('66') // 40%
-      expect(alphaSystem.active).toBe('99') // 60%
-      expect(alphaSystem.semiOpaque).toBe('cc') // 80%
     })
   })
 })
