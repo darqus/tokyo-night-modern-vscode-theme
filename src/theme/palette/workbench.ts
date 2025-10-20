@@ -1,10 +1,5 @@
 import type { BasePalette, PaletteGenerator } from './base'
-import {
-  createAlphaSystem,
-  darken,
-  getColorWithAlpha,
-  lighten,
-} from './generators'
+import { darken, lighten, withAlpha } from './generators'
 
 /**
  * Интерфейс для цветов интерфейса (workbench)
@@ -107,8 +102,6 @@ export interface WorkbenchColors {
 export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
   base: BasePalette
 ): WorkbenchColors => {
-  const alphaSystem = createAlphaSystem()
-
   // Вычисляем акцентный цвет на основе syntaxCyan, если он не определен
   const accentColor = base.syntaxCyan || '#7dcfff'
 
@@ -163,21 +156,9 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       inputValidationErrorBorder: base.syntaxRed, // #df215a - красный
     },
     minimap: {
-      sliderBackground: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #151a2480
-      sliderHoverBackground: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'hover',
-        alphaSystem
-      ), // #151a24A0
-      sliderActiveBackground: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'active',
-        alphaSystem
-      ), // #151a24C0
+      sliderBackground: withAlpha(lighten(base.background, 0.08), 0.2), // #151a2480
+      sliderHoverBackground: withAlpha(lighten(base.background, 0.08), 0.4), // #151a24A0
+      sliderActiveBackground: withAlpha(lighten(base.background, 0.08), 0.6), // #151a24C0
       gutterAddedBackground: lighten(base.neutral, 0.25), // #638dc4 - светлый нейтральный
       gutterModifiedBackground: lighten(base.neutral, 0.3), // #7a9ad8 - более светлый нейтральный
       gutterDeletedBackground: base.syntaxRed, // #df215a - красный
@@ -203,47 +184,19 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       historyItemBaseRefColor: darken(base.syntaxGreen, 0.3),
     },
     alpha: {
-      subtle: alphaSystem.subtle,
-      hover: alphaSystem.hover,
-      active: alphaSystem.active,
-      semiOpaque: alphaSystem.semiOpaque,
+      subtle: '33',
+      hover: '66',
+      active: '99',
+      semiOpaque: 'cc',
     },
     shadow: {
-      inlineChat: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - с коррекцией
-      widget: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
-      scrollbar: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
-      editorStickyScroll: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
-      panelStickyScroll: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
-      sideBarStickyScroll: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
-      listFilterWidget: getColorWithAlpha(
-        lighten(base.background, 0.08),
-        'subtle',
-        alphaSystem
-      ), // #171c2585 - как inlineChat
+      inlineChat: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - с коррекцией
+      widget: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
+      scrollbar: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
+      editorStickyScroll: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
+      panelStickyScroll: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
+      sideBarStickyScroll: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
+      listFilterWidget: withAlpha(lighten(base.background, 0.08), 0.2), // #171c2585 - как inlineChat
     },
   }
 }

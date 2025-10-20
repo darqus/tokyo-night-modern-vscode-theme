@@ -1,6 +1,6 @@
 import { calmClarityPalette } from '../palette/calm-clarity'
 import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
-import { darken } from '../palette/generators'
+import { darken, withAlpha } from '../palette/generators'
 import { generateSemanticTokenColors } from './semantic-token-colors'
 
 /**
@@ -34,16 +34,23 @@ interface VSCodeTheme {
  * Генерация цветов интерфейса (workbench colors) на основе палитры
  */
 const generateWorkbenchColors = () => {
-  const { workbench, button, syntax, getColorWithAlpha, neutral, controls, minimap, overviewRuler, scmGraph, shadow } = calmClarityPalette
+  const {
+    workbench,
+    button,
+    syntax,
+    neutral,
+    controls,
+    minimap,
+    overviewRuler,
+    scmGraph,
+    shadow,
+  } = calmClarityPalette
 
   return {
     // Activity Bar
     'activityBar.background': workbench.background.activityBar,
     'activityBar.foreground': workbench.accent.primary,
-    'activityBar.inactiveForeground': getColorWithAlpha(
-      syntax.text,
-      'active'
-    ),
+    'activityBar.inactiveForeground': withAlpha(syntax.text, 0.6),
     'activityBar.border': workbench.border.main,
     'activityBar.activeBorder': workbench.border.main,
     'activityBarBadge.background': darken(workbench.accent.primary, 0.2),
@@ -79,58 +86,21 @@ const generateWorkbenchColors = () => {
     // Editor
     'editor.background': workbench.background.base,
     'editor.foreground': syntax.text,
-    'editorLineNumber.foreground': darken(
-      neutral.subtle,
-      0.1
-    ),
+    'editorLineNumber.foreground': darken(neutral.subtle, 0.1),
     'editorLineNumber.activeForeground': neutral.subtle,
     'editorCursor.foreground': workbench.accent.primary,
-    'editor.selectionBackground': getColorWithAlpha(
-      neutral.highlight,
-      'subtle'
-    ),
-    'editor.inactiveSelectionBackground': getColorWithAlpha(
-      neutral.subtle,
-      'subtle'
-    ),
-    'editor.selectionHighlightBackground': getColorWithAlpha(
-      syntax.yellow,
-      'subtle'
-    ),
-    'editor.wordHighlightBackground': getColorWithAlpha(
-      neutral.subtle,
-      'subtle'
-    ),
-    'editor.wordHighlightStrongBackground':
-      getColorWithAlpha(
-        neutral.highlight,
-        'subtle'
-      ),
-    'editor.findMatchBackground': getColorWithAlpha(
-      syntax.cyan,
-      'hover'
-    ),
-    'editor.findMatchHighlightBackground': getColorWithAlpha(
-      syntax.purple,
-      'subtle'
-    ),
-    'editor.lineHighlightBackground': getColorWithAlpha(
-      neutral.surface,
-      'hover'
-    ),
-    'editorBracketMatch.background': getColorWithAlpha(
-      neutral.highlight,
-      'subtle'
-    ),
+    'editor.selectionBackground': withAlpha(neutral.highlight, 0.2),
+    'editor.inactiveSelectionBackground': withAlpha(neutral.subtle, 0.2),
+    'editor.selectionHighlightBackground': withAlpha(syntax.yellow, 0.2),
+    'editor.wordHighlightBackground': withAlpha(neutral.subtle, 0.2),
+    'editor.wordHighlightStrongBackground': withAlpha(neutral.highlight, 0.2),
+    'editor.findMatchBackground': withAlpha(syntax.cyan, 0.4),
+    'editor.findMatchHighlightBackground': withAlpha(syntax.purple, 0.2),
+    'editor.lineHighlightBackground': withAlpha(neutral.surface, 0.4),
+    'editorBracketMatch.background': withAlpha(neutral.highlight, 0.2),
     'editorBracketMatch.border': workbench.border.main,
-    'editorIndentGuide.background1': getColorWithAlpha(
-      neutral.subtle,
-      'subtle'
-    ),
-    'editorIndentGuide.activeBackground1': getColorWithAlpha(
-      neutral.highlight,
-      'subtle'
-    ),
+    'editorIndentGuide.background1': withAlpha(neutral.subtle, 0.2),
+    'editorIndentGuide.activeBackground1': withAlpha(neutral.highlight, 0.2),
     'editorGutter.background': workbench.background.base,
     'editorHoverWidget.background': workbench.background.secondary,
     'editorHoverWidget.border': workbench.border.main,
@@ -139,24 +109,19 @@ const generateWorkbenchColors = () => {
     'editorSuggestWidget.background': workbench.background.secondary,
     'editorSuggestWidget.border': workbench.border.main,
     'editorSuggestWidget.foreground': syntax.text,
-    'editorSuggestWidget.selectedBackground':
-      getColorWithAlpha(workbench.accent.primary, 'subtle'),
+    'editorSuggestWidget.selectedBackground': withAlpha(
+      workbench.accent.primary,
+      0.2
+    ),
 
     // Status Bar
     'statusBar.background': workbench.background.statusbar,
-    'statusBar.foreground': getColorWithAlpha(
-      syntax.text,
-      'semiOpaque'
-    ),
+    'statusBar.foreground': withAlpha(syntax.text, 0.8),
     'statusBar.debuggingBackground': syntax.warning,
     'statusBar.debuggingForeground': workbench.background.base,
     'statusBar.noFolderBackground': workbench.background.secondary,
-    'statusBarItem.hoverBackground':
-      workbench.background.tertiary,
-    'statusBarItem.activeBackground': getColorWithAlpha(
-      workbench.accent.hover,
-      'hover'
-    ),
+    'statusBarItem.hoverBackground': workbench.background.tertiary,
+    'statusBarItem.activeBackground': withAlpha(workbench.accent.hover, 0.4),
 
     // Panels
     'panel.background': workbench.background.base,
@@ -201,12 +166,9 @@ const generateWorkbenchColors = () => {
     'inputOption.activeBorder': workbench.accent.primary,
 
     // Input & Validation
-    'inputValidation.infoBorder':
-      controls.inputValidationInfoBorder,
-    'inputValidation.warningBorder':
-      controls.inputValidationWarningBorder,
-    'inputValidation.errorBorder':
-      controls.inputValidationErrorBorder,
+    'inputValidation.infoBorder': controls.inputValidationInfoBorder,
+    'inputValidation.warningBorder': controls.inputValidationWarningBorder,
+    'inputValidation.errorBorder': controls.inputValidationErrorBorder,
     'inputValidation.infoBackground': workbench.background.base,
     'inputValidation.warningBackground': workbench.background.base,
     'inputValidation.errorBackground': workbench.background.base,
@@ -221,24 +183,16 @@ const generateWorkbenchColors = () => {
 
     // Minimap
     'minimapSlider.background': minimap.sliderBackground,
-    'minimapSlider.hoverBackground':
-      minimap.sliderHoverBackground,
-    'minimapSlider.activeBackground':
-      minimap.sliderActiveBackground,
-    'minimapGutter.addedBackground':
-      minimap.gutterAddedBackground,
-    'minimapGutter.modifiedBackground':
-      minimap.gutterModifiedBackground,
-    'minimapGutter.deletedBackground':
-      minimap.gutterDeletedBackground,
+    'minimapSlider.hoverBackground': minimap.sliderHoverBackground,
+    'minimapSlider.activeBackground': minimap.sliderActiveBackground,
+    'minimapGutter.addedBackground': minimap.gutterAddedBackground,
+    'minimapGutter.modifiedBackground': minimap.gutterModifiedBackground,
+    'minimapGutter.deletedBackground': minimap.gutterDeletedBackground,
 
     // Editor Overview Ruler
-    'editorOverviewRuler.errorForeground':
-      overviewRuler.errorForeground,
-    'editorOverviewRuler.warningForeground':
-      overviewRuler.warningForeground,
-    'editorOverviewRuler.infoForeground':
-      overviewRuler.infoForeground,
+    'editorOverviewRuler.errorForeground': overviewRuler.errorForeground,
+    'editorOverviewRuler.warningForeground': overviewRuler.warningForeground,
+    'editorOverviewRuler.infoForeground': overviewRuler.infoForeground,
 
     // Panels
     'panelSection.border': workbench.border.main,
@@ -249,53 +203,40 @@ const generateWorkbenchColors = () => {
     'list.invalidItemForeground': syntax.error,
 
     // Diff Editor
-    'diffEditor.unchangedRegionBackground':
-      getColorWithAlpha(workbench.background.base, 'subtle'),
+    'diffEditor.unchangedRegionBackground': withAlpha(
+      workbench.background.base,
+      0.2
+    ),
     'diffEditor.unchangedRegionForeground': workbench.accent.secondary,
 
     // Lists and Trees
-    'list.focusBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
+    'list.focusBackground': withAlpha(workbench.accent.primary, 0.2),
     'list.focusForeground': syntax.text,
-    'list.activeSelectionBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
+    'list.activeSelectionBackground': withAlpha(workbench.accent.primary, 0.2),
     'list.activeSelectionForeground': workbench.accent.primary,
-    'list.inactiveSelectionBackground': getColorWithAlpha(
+    'list.inactiveSelectionBackground': withAlpha(
       workbench.accent.secondary,
-      'subtle'
+      0.2
     ),
     'list.inactiveSelectionForeground': workbench.accent.secondary,
-    'list.hoverBackground': getColorWithAlpha(
-      workbench.accent.hover,
-      'subtle'
-    ),
+    'list.hoverBackground': withAlpha(workbench.accent.hover, 0.2),
     'list.hoverForeground': syntax.text,
     'list.highlightForeground': workbench.accent.primary,
-    'list.dropBackground': getColorWithAlpha(
-      workbench.background.base,
-      'subtle'
-    ),
+    'list.dropBackground': withAlpha(workbench.background.base, 0.2),
 
     // Badges
     'badge.background': darken(workbench.accent.primary, 0.2),
     'badge.foreground': workbench.foreground.badge,
 
     // Scrollbar
-    'scrollbarSlider.background': getColorWithAlpha(
+    'scrollbarSlider.background': withAlpha(workbench.background.base, 0.2),
+    'scrollbarSlider.hoverBackground': withAlpha(
       workbench.background.base,
-      'subtle'
+      0.4
     ),
-    'scrollbarSlider.hoverBackground': getColorWithAlpha(
+    'scrollbarSlider.activeBackground': withAlpha(
       workbench.background.base,
-      'hover'
-    ),
-    'scrollbarSlider.activeBackground': getColorWithAlpha(
-      workbench.background.base,
-      'active'
+      0.6
     ),
     'scrollbar.shadow': shadow.scrollbar,
 
@@ -310,10 +251,7 @@ const generateWorkbenchColors = () => {
 
     // Focus and Selection
     focusBorder: workbench.accent.focus,
-    'selection.background': getColorWithAlpha(
-      workbench.accent.primary,
-      'hover'
-    ),
+    'selection.background': withAlpha(workbench.accent.primary, 0.4),
 
     // Text Colors
     'textLink.foreground': workbench.accent.primary,
@@ -324,21 +262,15 @@ const generateWorkbenchColors = () => {
     'textCodeBlock.background': workbench.background.secondary,
 
     // Merge Conflicts
-    'merge.currentHeaderBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
-    'merge.currentContentBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
-    'merge.incomingHeaderBackground': getColorWithAlpha(
+    'merge.currentHeaderBackground': withAlpha(workbench.accent.primary, 0.2),
+    'merge.currentContentBackground': withAlpha(workbench.accent.primary, 0.2),
+    'merge.incomingHeaderBackground': withAlpha(
       workbench.accent.secondary,
-      'subtle'
+      0.2
     ),
-    'merge.incomingContentBackground': getColorWithAlpha(
+    'merge.incomingContentBackground': withAlpha(
       workbench.accent.secondary,
-      'subtle'
+      0.2
     ),
 
     // Notifications
@@ -350,8 +282,7 @@ const generateWorkbenchColors = () => {
     // Peek View
     'peekView.border': workbench.border.main,
     'peekViewEditor.background': workbench.background.secondary,
-    'peekViewEditor.matchHighlightBackground':
-      getColorWithAlpha(syntax.warning, 'hover'),
+    'peekViewEditor.matchHighlightBackground': withAlpha(syntax.warning, 0.4),
     'peekViewResult.background': workbench.background.secondary,
     'peekViewResult.fileForeground': syntax.text,
     'peekViewResult.lineForeground': workbench.accent.secondary,
@@ -371,16 +302,10 @@ const generateWorkbenchColors = () => {
     // Menu
     'menu.background': workbench.background.secondary,
     'menu.foreground': syntax.text,
-    'menu.selectionBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
+    'menu.selectionBackground': withAlpha(workbench.accent.primary, 0.2),
     'menu.selectionForeground': workbench.accent.primary,
     'menu.separatorBackground': workbench.border.main,
-    'menubar.selectionBackground': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
+    'menubar.selectionBackground': withAlpha(workbench.accent.primary, 0.2),
     'menubar.selectionForeground': workbench.accent.primary,
 
     // Dropdown
@@ -401,14 +326,8 @@ const generateWorkbenchColors = () => {
     'editorMarkerNavigation.background': workbench.background.secondary,
 
     // Minimap
-    'minimap.findMatchHighlight': getColorWithAlpha(
-      syntax.warning,
-      'hover'
-    ),
-    'minimap.selectionHighlight': getColorWithAlpha(
-      workbench.accent.primary,
-      'subtle'
-    ),
+    'minimap.findMatchHighlight': withAlpha(syntax.warning, 0.4),
+    'minimap.selectionHighlight': withAlpha(workbench.accent.primary, 0.2),
     'minimap.errorHighlight': syntax.error,
     'minimap.warningHighlight': syntax.warning,
     'minimap.background': workbench.background.base,
@@ -489,26 +408,12 @@ const generateWorkbenchColors = () => {
     // Diff Editor v2
     'diffEditor.border': workbench.border.main,
     'diffEditor.diagonalFill': workbench.accent.secondary,
-    'diffEditor.insertedLineBackground': getColorWithAlpha(
-      syntax.success,
-      'subtle'
-    ),
-    'diffEditor.removedLineBackground': getColorWithAlpha(
-      syntax.error,
-      'subtle'
-    ),
-    'diffEditor.insertedTextBackground': getColorWithAlpha(
-      syntax.success,
-      'subtle'
-    ),
-    'diffEditor.removedTextBackground': getColorWithAlpha(
-      syntax.error,
-      'subtle'
-    ),
-    'diffEditorOverview.insertedForeground':
-      getColorWithAlpha(syntax.success, 'hover'),
-    'diffEditorOverview.removedForeground':
-      getColorWithAlpha(syntax.error, 'hover'),
+    'diffEditor.insertedLineBackground': withAlpha(syntax.success, 0.2),
+    'diffEditor.removedLineBackground': withAlpha(syntax.error, 0.2),
+    'diffEditor.insertedTextBackground': withAlpha(syntax.success, 0.2),
+    'diffEditor.removedTextBackground': withAlpha(syntax.error, 0.2),
+    'diffEditorOverview.insertedForeground': withAlpha(syntax.success, 0.4),
+    'diffEditorOverview.removedForeground': withAlpha(syntax.error, 0.4),
 
     // Chart
     'charts.foreground': syntax.text,
@@ -530,12 +435,9 @@ const generateWorkbenchColors = () => {
       scmGraph.historyItemHoverAdditionsForeground,
     'scmGraph.historyItemHoverDeletionsForeground':
       scmGraph.historyItemHoverDeletionsForeground,
-    'scmGraph.historyItemRefColor':
-      scmGraph.historyItemRefColor,
-    'scmGraph.historyItemRemoteRefColor':
-      scmGraph.historyItemRemoteRefColor,
-    'scmGraph.historyItemBaseRefColor':
-      scmGraph.historyItemBaseRefColor,
+    'scmGraph.historyItemRefColor': scmGraph.historyItemRefColor,
+    'scmGraph.historyItemRemoteRefColor': scmGraph.historyItemRemoteRefColor,
+    'scmGraph.historyItemBaseRefColor': scmGraph.historyItemBaseRefColor,
     'scmGraph.historyItemHoverDefaultLabelBackground':
       scmGraph.historyItemHoverDefaultLabelBackground,
     'scmGraph.historyItemHoverDefaultLabelForeground':
@@ -549,7 +451,7 @@ const generateWorkbenchColors = () => {
  */
 const generateTokenColors = () => {
   const { workbench, syntax } = calmClarityPalette
-  
+
   return [
     // Comments
     {

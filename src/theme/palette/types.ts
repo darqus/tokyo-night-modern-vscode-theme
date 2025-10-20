@@ -177,10 +177,4 @@ export interface CalmClarityPalette {
     sideBarStickyScroll: string // Цвет тени для фиксированной прокрутки боковой панели
     listFilterWidget: string // Цвет тени для виджета фильтрации списка
   }
-
-  // Методы
-  getColorWithAlpha: (
-    color: string,
-    alpha: keyof CalmClarityPalette['alpha']
-  ) => string
 }
