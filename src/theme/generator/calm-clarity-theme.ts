@@ -1067,9 +1067,6 @@ const generateTokenColors = () => {
 export const generateCalmClarityTheme = (): VSCodeTheme => {
   return {
     name: 'Calm Clarity',
-    author: 'darqus',
-    maintainers: ['darqus <voladores@inbox.ru>'],
-    semanticClass: 'calm-clarity',
     type: 'dark',
     semanticHighlighting: true,
     colors: generateWorkbenchColors(),
@@ -1084,8 +1081,6 @@ export const generateCalmClarityTheme = (): VSCodeTheme => {
 export const generateTokyoNightTheme = (): VSCodeTheme => {
   return {
     name: 'Tokyo Night',
-    author: 'Enkia',
-    maintainers: ['Enkia <enki77@gmail.com>'],
     type: 'dark',
     semanticHighlighting: true,
     semanticTokenColors: {
@@ -1114,7 +1109,6 @@ export const generateTokyoNightTheme = (): VSCodeTheme => {
         foreground: '#c0caf5',
       },
     },
-    semanticClass: 'tokyo-night',
     colors: {
       foreground: '#787c99',
       descriptionForeground: '#515670',
