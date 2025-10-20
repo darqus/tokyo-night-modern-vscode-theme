@@ -31,8 +31,8 @@
     "editorGroupHeader.tabsBackground": "#10141a",
     "editor.background": "#10141a",
     "editor.foreground": "#8095b3",
-    "editorLineNumber.foreground": "#566e8f",
-    "editorLineNumber.activeForeground": "#3a4a60",
+    "editorLineNumber.foreground": "#394960",
+    "editorLineNumber.activeForeground": "#4d6280",
     "editorCursor.foreground": "#7ab4e6",
     "editor.selectionBackground": "#566e8f33",
     "editor.inactiveSelectionBackground": "#4d628033",
@@ -948,12 +948,12 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T19:33:14.888Z",
+    "date": "2025-10-20T19:41:29.942Z",
     "contrastValidation": {
       "totalChecks": 10,
       "passedChecks": 7,
       "failedChecks": 3,
-      "validationDate": "2025-10-20T19:33:14.889Z"
+      "validationDate": "2025-10-20T19:41:29.942Z"
     }
   }
 }
