@@ -8,22 +8,30 @@ import type { CalmClarityPalette } from './types'
 export const createCalmClarityPalette = (): CalmClarityPalette => {
   const palette: CalmClarityPalette = {
     workbench: {
-      background: '#10141a',
-      backgroundSecondary: '#0f1319',
-      backgroundTertiary: '#151a24',
-      border: '#1a1f2a',
-      sidebar: '#0e1218',
-      activityBar: '#121720',
-      statusbar: '#0f131b',
-      titlebar: '#0d1117',
-      tabbar: '#10151f',
-      primaryForeground: '#d0e0ff',
-      secondaryForeground: '#b0c4e0',
-      accentPrimary: '#7ab4e6',
-      accentSecondary: '#6a7d9a',
-      accentHover: '#75b0e2',
-      accentFocus: '#7ca0c2',
-      badgeForeground: '#e0efff',
+      background: {
+        base: '#10141a',
+        secondary: '#0f1319',
+        tertiary: '#151a24',
+        sidebar: '#0e1218',
+        activityBar: '#121720',
+        statusbar: '#0f131b',
+        titlebar: '#0d1117',
+        tabbar: '#10151f',
+      },
+      foreground: {
+        primary: '#d0e0ff',
+        secondary: '#b0c4e0',
+        badge: '#e0efff',
+      },
+      border: {
+        main: '#1a1f2a',
+      },
+      accent: {
+        primary: '#7ab4e6',
+        secondary: '#6a7d9a',
+        hover: '#75b0e2',
+        focus: '#7ca0c2',
+      },
     },
     button: {
       primaryBackground: '#1a2a4a',

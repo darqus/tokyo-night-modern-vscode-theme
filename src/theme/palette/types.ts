@@ -1,28 +1,30 @@
 export interface CalmClarityPalette {
   // Workbench colors - основные цвета интерфейса
   workbench: {
-    // Фон: Очень темный, но не абсолютно черный цвет с холодным или нейтральным оттенком
-    background: string // Темно-синий/графитовый фон
-    backgroundSecondary: string // Немного светлее для иерархии
-    backgroundTertiary: string // Еще немного светлее для элементов интерфейса
-
-    border: string // Цвет для границ
-    // Элементы интерфейса: Панели, сайдбар, статус-бар
-    sidebar: string
-    activityBar: string
-    statusbar: string
-    titlebar: string
-    tabbar: string
-
-    // Акценты: Для активных элементов, фокуса ввода и уведомлений
-    accentPrimary: string // Приглушенный бирюзовый
-    accentSecondary: string // Приглушенный лавандовый
-    accentHover: string // Цвет для hover состояний
-    accentFocus: string // Цвет фокуса ввода
-    badgeForeground: string // Цвет текста для бейджей
-
-    primaryForeground: string
-    secondaryForeground: string
+    background: {
+      base: string
+      secondary: string
+      tertiary: string
+      sidebar: string
+      activityBar: string
+      statusbar: string
+      titlebar: string
+      tabbar: string
+    }
+    foreground: {
+      primary: string
+      secondary: string
+      badge: string
+    }
+    border: {
+      main: string
+    }
+    accent: {
+      primary: string
+      secondary: string
+      hover: string
+      focus: string
+    }
   }
 
   // Button colors - цвета кнопок
