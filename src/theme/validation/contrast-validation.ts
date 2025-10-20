@@ -1,99 +1,59 @@
-/**
- * Calm Clarity Theme - Валидация контрастности
- * Функции для проверки контрастности цветов по стандартам WCAG
- */
-
-import { getContrastRatio, meetsWCAGContrast } from '../palette/utils'
-
-// Импортируем палитру для проверки контрастности
 import { calmClarityPalette } from '../palette/calm-clarity'
+import { getContrastValidationReport } from '../palette/validation'
 
 /**
- * Тип для отчета о контрастности
+ * Возвращает отчет о контрастности для включения в метаданные темы
  */
-interface ContrastReport {
-  status: 'pass' | 'fail'
-  message: string
-  details: Array<{
-    element: string
-    foreground: string
-    background: string
-    ratio: number
-    required: 'AA' | 'AAA'
-    meetsAA: boolean
-    meetsAAA: boolean
-  }>
+export const getContrastReport = () => {
+  const report = getContrastValidationReport(calmClarityPalette)
+
+  return {
+    totalChecks: report.totalChecks,
+    passedChecks: report.passedChecks,
+    failedChecks: report.failedChecks,
+    validationDate: new Date().toISOString(),
+  }
 }
 
 /**
- * Генерация отчета о контрастности для основных элементов темы
+ * Проверка контрастности палитры при сборке темы
+ * Используется для автоматической валидации соответствия WCAG
  */
-export const getContrastReport = (): ContrastReport => {
-  // Основные проверки контрастности для элементов интерфейса
-  const contrastChecks = [
-    {
-      element: 'Основной текст',
-      fg: calmClarityPalette.syntax.text,
-      bg: calmClarityPalette.workbench.background.base,
-    },
-    {
-      element: 'Комментарии',
-      fg: calmClarityPalette.syntax.comment,
-      bg: calmClarityPalette.workbench.background.base,
-    },
-    {
-      element: 'Ключевые слова',
-      fg: calmClarityPalette.syntax.keyword,
-      bg: calmClarityPalette.workbench.background.base,
-    },
-    {
-      element: 'Строки',
-      fg: calmClarityPalette.syntax.string,
-      bg: calmClarityPalette.workbench.background.base,
-    },
-    {
-      element: 'Числа',
-      fg: calmClarityPalette.syntax.number,
-      bg: calmClarityPalette.workbench.background.base,
-    },
-    {
-      element: 'Активная панель активности',
-      fg: calmClarityPalette.workbench.accent.primary,
-      bg: calmClarityPalette.workbench.background.activityBar,
-    },
-    {
-      element: 'Активная вкладка',
-      fg: calmClarityPalette.workbench.accent.primary,
-      bg: calmClarityPalette.workbench.background.tabbar,
-    },
-    {
-      element: 'Текст сайдбара',
-      fg: calmClarityPalette.syntax.text,
-      bg: calmClarityPalette.workbench.background.sidebar,
-    },
-  ]
+export const validatePaletteContrastOnBuild = () => {
+  console.log('Проверка контрастности палитры...')
 
-  const details = contrastChecks.map((check) => {
-    const ratio = getContrastRatio(check.fg, check.bg)
-    return {
-      element: check.element,
-      foreground: check.fg,
-      background: check.bg,
-      ratio: parseFloat(ratio.toFixed(2)),
-      required: 'AA' as const,
-      meetsAA: meetsWCAGContrast(check.fg, check.bg, 'AA'),
-      meetsAAA: meetsWCAGContrast(check.fg, check.bg, 'AAA'),
-    }
-  })
+  const report = getContrastValidationReport(calmClarityPalette)
 
-  // Проверяем, все ли элементы соответствуют стандарту AA
-  const allPassAA = details.every((detail) => detail.meetsAA)
+  console.log(`Всего проверок: ${report.totalChecks}`)
+  console.log(`Пройдено: ${report.passedChecks}`)
+  console.log(`Провалено: ${report.failedChecks}`)
 
-  return {
-    status: allPassAA ? 'pass' : 'fail',
-    message: allPassAA
-      ? 'Все основные элементы соответствуют стандарту контрастности WCAG AA'
-      : 'Некоторые элементы не соответствуют стандарту контрастности WCAG AA',
-    details,
+  if (report.violations.length > 0) {
+    console.log('\nНарушения контрастности:')
+    report.violations.forEach((violation) => {
+      console.log(
+        `  - ${violation.element1} (${violation.color1}) vs ${violation.element2} (${violation.color2}): ` +
+          `контраст ${violation.contrastRatio}:1, требуется ${violation.required} (${violation.required === 'AA' ? '4.5:1' : '7:1'})`
+      )
+    })
+
+    console.log('\nРекомендации:')
+    report.suggestions.forEach((suggestion) => {
+      console.log(`  - ${suggestion}`)
+    })
+
+    // В зависимости от настроек, можно сделать разные действия:
+    // - выбросить ошибку для CI/CD
+    // - вывести предупреждение
+    // - просто логировать
+
+    // В текущей реализации просто выводим в консоль
+    console.warn(
+      `Найдено ${report.failedChecks} нарушений контрастности. Проверьте палитру на соответствие WCAG.`
+    )
+  } else {
+    console.log('✅ Все проверки контрастности пройдены успешно.')
   }
+
+  return report
 }

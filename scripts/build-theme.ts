@@ -6,6 +6,10 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { generateFinalThemeJSON } from '../src/theme/generator/final-theme-generator'
+import { validatePaletteContrastOnBuild } from '../src/theme/validation/contrast-validation'
+
+// Проверяем контрастность палитры перед сборкой
+validatePaletteContrastOnBuild()
 
 // Генерируем JSON темы
 const themeJSON = generateFinalThemeJSON()
