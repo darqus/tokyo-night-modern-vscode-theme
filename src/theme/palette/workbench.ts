@@ -200,7 +200,7 @@ export const generateWorkbenchColors: PaletteGenerator<WorkbenchColors> = (
       historyItemHoverDefaultLabelForeground: lighten(base.neutral, 0.7), // #ffffff - белый
       historyItemRefColor: darken(accentColor, 0.35), // #27729e - как foreground1
       historyItemRemoteRefColor: lighten(darken(base.syntaxPurple, 0.2), 0.1), // #9a58a3 - как foreground2
-      historyItemBaseRefColor: darken(base.neutral, 0.2), // #1f3f7a - темный нейтральный
+      historyItemBaseRefColor: darken(base.syntaxGreen, 0.3),
     },
     alpha: {
       subtle: alphaSystem.subtle,
