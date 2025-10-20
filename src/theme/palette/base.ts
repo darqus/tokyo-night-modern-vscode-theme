@@ -6,16 +6,25 @@
 export interface BasePalette {
   /** Основной цвет фона (#10141a) */
   background: string
+
   /** Основной акцентный цвет (#7ab4e6) */
   accent: string
+
   /** Синтаксический пурпур (#bb9af7) - для ключевых слов и типов */
   syntaxPurple: string
+
   /** Синтаксический зеленый (#9ece6a) - для строк и успехов */
   syntaxGreen: string
+
   /** Нейтральный серо-голубой (#3a4a60) - для вспомогательных элементов */
   neutral: string
+
   /** Синтаксический желтый (#e0af68) - опционально для предупреждений */
   syntaxYellow?: string
+
+  /** Синтаксический красный (#df215a) - опционально для ошибок */
+  syntaxRed?: string
+
   /** Синтаксический голубой (#7dcfff) - опционально для функций */
   syntaxCyan?: string
 }
@@ -35,5 +44,6 @@ export const standardBasePalette: BasePalette = {
   syntaxGreen: '#9ece6a',
   neutral: '#3a4a60',
   syntaxYellow: '#e0af68',
+  syntaxRed: '#df215a',
   syntaxCyan: '#7dcfff',
 }
