@@ -7,9 +7,6 @@ export interface BasePalette {
   /** Основной цвет фона (#10141a) */
   background: string
 
-  /** Основной акцентный цвет (#7ab4e6) */
-  accent: string
-
   /** Синтаксический пурпур (#bb9af7) - для ключевых слов и типов */
   syntaxPurple: string
 
@@ -39,7 +36,6 @@ export type PaletteGenerator<T> = (base: BasePalette) => T
  */
 export const standardBasePalette: BasePalette = {
   background: '#10141a',
-  accent: '#7ab4e6',
   syntaxPurple: '#bb9af7',
   syntaxGreen: '#9ece6a',
   neutral: '#3a4a60',
