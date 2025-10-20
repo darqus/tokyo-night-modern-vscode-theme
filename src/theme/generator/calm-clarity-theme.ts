@@ -1,3 +1,4 @@
+import { darken } from '../palette/generators'
 import { calmClarityPalette } from '../palette/calm-clarity'
 import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
 import { generateSemanticTokenColors } from './semantic-token-colors'
@@ -45,7 +46,7 @@ const generateWorkbenchColors = () => {
     ),
     'activityBar.border': workbench.border.main,
     'activityBar.activeBorder': workbench.border.main,
-    'activityBarBadge.background': workbench.accent.primary,
+    'activityBarBadge.background': darken(workbench.accent.primary, 0.2),
     'activityBarBadge.foreground': workbench.foreground.badge,
 
     // Side Bar
@@ -64,6 +65,7 @@ const generateWorkbenchColors = () => {
 
     // Icon Foreground
     'icon.foreground': workbench.foreground.secondary,
+
     // Tab Bar
     'tab.activeBackground': workbench.background.tabbar,
     'tab.activeForeground': workbench.accent.primary,
@@ -247,6 +249,7 @@ const generateWorkbenchColors = () => {
     'diffEditor.unchangedRegionBackground':
       calmClarityPalette.getColorWithAlpha(workbench.background.base, 'subtle'),
     'diffEditor.unchangedRegionForeground': workbench.accent.secondary,
+
     // Lists and Trees
     'list.focusBackground': calmClarityPalette.getColorWithAlpha(
       workbench.accent.primary,
@@ -275,7 +278,7 @@ const generateWorkbenchColors = () => {
     ),
 
     // Badges
-    'badge.background': workbench.accent.primary,
+    'badge.background': darken(workbench.accent.primary, 0.2),
     'badge.foreground': workbench.foreground.badge,
 
     // Scrollbar
