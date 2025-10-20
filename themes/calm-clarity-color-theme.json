@@ -286,7 +286,7 @@
     "scmGraph.historyItemHoverDeletionsForeground": "#df215a",
     "scmGraph.historyItemRefColor": "#0081cc",
     "scmGraph.historyItemRemoteRefColor": "#9c6df3",
-    "scmGraph.historyItemBaseRefColor": "#131820",
+    "scmGraph.historyItemBaseRefColor": "#507727",
     "scmGraph.historyItemHoverDefaultLabelBackground": "#566e8f",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#ffffff",
     "charts.purple": "#90621d"
@@ -948,12 +948,12 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T20:45:13.451Z",
+    "date": "2025-10-20T20:49:57.075Z",
     "contrastValidation": {
       "totalChecks": 10,
       "passedChecks": 7,
       "failedChecks": 3,
-      "validationDate": "2025-10-20T20:45:13.452Z"
+      "validationDate": "2025-10-20T20:49:57.076Z"
     }
   }
 }
