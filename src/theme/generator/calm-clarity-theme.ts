@@ -1,6 +1,6 @@
-import { darken } from '../palette/generators'
 import { calmClarityPalette } from '../palette/calm-clarity'
 import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
+import { darken } from '../palette/generators'
 import { generateSemanticTokenColors } from './semantic-token-colors'
 
 /**
@@ -34,13 +34,13 @@ interface VSCodeTheme {
  * Генерация цветов интерфейса (workbench colors) на основе палитры
  */
 const generateWorkbenchColors = () => {
-  const { workbench, button, syntax } = calmClarityPalette
+  const { workbench, button, syntax, getColorWithAlpha, neutral, controls, minimap, overviewRuler, scmGraph, shadow } = calmClarityPalette
 
   return {
     // Activity Bar
     'activityBar.background': workbench.background.activityBar,
     'activityBar.foreground': workbench.accent.primary,
-    'activityBar.inactiveForeground': calmClarityPalette.getColorWithAlpha(
+    'activityBar.inactiveForeground': getColorWithAlpha(
       syntax.text,
       'active'
     ),
@@ -79,53 +79,56 @@ const generateWorkbenchColors = () => {
     // Editor
     'editor.background': workbench.background.base,
     'editor.foreground': syntax.text,
-    'editorLineNumber.foreground': calmClarityPalette.neutral.highlight,
-    'editorLineNumber.activeForeground': calmClarityPalette.neutral.base,
+    'editorLineNumber.foreground': darken(
+      neutral.subtle,
+      0.1
+    ),
+    'editorLineNumber.activeForeground': neutral.subtle,
     'editorCursor.foreground': workbench.accent.primary,
-    'editor.selectionBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+    'editor.selectionBackground': getColorWithAlpha(
+      neutral.highlight,
       'subtle'
     ),
-    'editor.inactiveSelectionBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.subtle,
+    'editor.inactiveSelectionBackground': getColorWithAlpha(
+      neutral.subtle,
       'subtle'
     ),
-    'editor.selectionHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.syntax.yellow,
+    'editor.selectionHighlightBackground': getColorWithAlpha(
+      syntax.yellow,
       'subtle'
     ),
-    'editor.wordHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.subtle,
+    'editor.wordHighlightBackground': getColorWithAlpha(
+      neutral.subtle,
       'subtle'
     ),
     'editor.wordHighlightStrongBackground':
-      calmClarityPalette.getColorWithAlpha(
-        calmClarityPalette.neutral.highlight,
+      getColorWithAlpha(
+        neutral.highlight,
         'subtle'
       ),
-    'editor.findMatchBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.syntax.cyan,
+    'editor.findMatchBackground': getColorWithAlpha(
+      syntax.cyan,
       'hover'
     ),
-    'editor.findMatchHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.syntax.purple,
+    'editor.findMatchHighlightBackground': getColorWithAlpha(
+      syntax.purple,
       'subtle'
     ),
-    'editor.lineHighlightBackground': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.surface,
+    'editor.lineHighlightBackground': getColorWithAlpha(
+      neutral.surface,
       'hover'
     ),
-    'editorBracketMatch.background': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+    'editorBracketMatch.background': getColorWithAlpha(
+      neutral.highlight,
       'subtle'
     ),
     'editorBracketMatch.border': workbench.border.main,
-    'editorIndentGuide.background1': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.subtle,
+    'editorIndentGuide.background1': getColorWithAlpha(
+      neutral.subtle,
       'subtle'
     ),
-    'editorIndentGuide.activeBackground1': calmClarityPalette.getColorWithAlpha(
-      calmClarityPalette.neutral.highlight,
+    'editorIndentGuide.activeBackground1': getColorWithAlpha(
+      neutral.highlight,
       'subtle'
     ),
     'editorGutter.background': workbench.background.base,
@@ -137,11 +140,11 @@ const generateWorkbenchColors = () => {
     'editorSuggestWidget.border': workbench.border.main,
     'editorSuggestWidget.foreground': syntax.text,
     'editorSuggestWidget.selectedBackground':
-      calmClarityPalette.getColorWithAlpha(workbench.accent.primary, 'subtle'),
+      getColorWithAlpha(workbench.accent.primary, 'subtle'),
 
     // Status Bar
     'statusBar.background': workbench.background.statusbar,
-    'statusBar.foreground': calmClarityPalette.getColorWithAlpha(
+    'statusBar.foreground': getColorWithAlpha(
       syntax.text,
       'semiOpaque'
     ),
@@ -149,8 +152,8 @@ const generateWorkbenchColors = () => {
     'statusBar.debuggingForeground': workbench.background.base,
     'statusBar.noFolderBackground': workbench.background.secondary,
     'statusBarItem.hoverBackground':
-      calmClarityPalette.workbench.background.tertiary,
-    'statusBarItem.activeBackground': calmClarityPalette.getColorWithAlpha(
+      workbench.background.tertiary,
+    'statusBarItem.activeBackground': getColorWithAlpha(
       workbench.accent.hover,
       'hover'
     ),
@@ -158,9 +161,9 @@ const generateWorkbenchColors = () => {
     // Panels
     'panel.background': workbench.background.base,
     'panel.border': workbench.border.main,
-    'panelTitle.activeForeground': calmClarityPalette.neutral.base,
-    'panelTitle.inactiveForeground': calmClarityPalette.neutral.subtle,
-    'panelTitle.activeBorder': calmClarityPalette.neutral.highlight,
+    'panelTitle.activeForeground': neutral.base,
+    'panelTitle.inactiveForeground': neutral.subtle,
+    'panelTitle.activeBorder': neutral.highlight,
 
     // Terminal
     'terminal.background': workbench.background.base,
@@ -199,43 +202,43 @@ const generateWorkbenchColors = () => {
 
     // Input & Validation
     'inputValidation.infoBorder':
-      calmClarityPalette.controls.inputValidationInfoBorder,
+      controls.inputValidationInfoBorder,
     'inputValidation.warningBorder':
-      calmClarityPalette.controls.inputValidationWarningBorder,
+      controls.inputValidationWarningBorder,
     'inputValidation.errorBorder':
-      calmClarityPalette.controls.inputValidationErrorBorder,
+      controls.inputValidationErrorBorder,
     'inputValidation.infoBackground': workbench.background.base,
     'inputValidation.warningBackground': workbench.background.base,
     'inputValidation.errorBackground': workbench.background.base,
 
     // Checkbox
-    'checkbox.background': calmClarityPalette.controls.checkboxBackground,
+    'checkbox.background': controls.checkboxBackground,
     'checkbox.foreground': syntax.text,
-    'checkbox.border': calmClarityPalette.controls.checkboxBorder,
+    'checkbox.border': controls.checkboxBorder,
 
     // Dropdown
     'dropdown.listBackground': workbench.background.secondary,
 
     // Minimap
-    'minimapSlider.background': calmClarityPalette.minimap.sliderBackground,
+    'minimapSlider.background': minimap.sliderBackground,
     'minimapSlider.hoverBackground':
-      calmClarityPalette.minimap.sliderHoverBackground,
+      minimap.sliderHoverBackground,
     'minimapSlider.activeBackground':
-      calmClarityPalette.minimap.sliderActiveBackground,
+      minimap.sliderActiveBackground,
     'minimapGutter.addedBackground':
-      calmClarityPalette.minimap.gutterAddedBackground,
+      minimap.gutterAddedBackground,
     'minimapGutter.modifiedBackground':
-      calmClarityPalette.minimap.gutterModifiedBackground,
+      minimap.gutterModifiedBackground,
     'minimapGutter.deletedBackground':
-      calmClarityPalette.minimap.gutterDeletedBackground,
+      minimap.gutterDeletedBackground,
 
     // Editor Overview Ruler
     'editorOverviewRuler.errorForeground':
-      calmClarityPalette.overviewRuler.errorForeground,
+      overviewRuler.errorForeground,
     'editorOverviewRuler.warningForeground':
-      calmClarityPalette.overviewRuler.warningForeground,
+      overviewRuler.warningForeground,
     'editorOverviewRuler.infoForeground':
-      calmClarityPalette.overviewRuler.infoForeground,
+      overviewRuler.infoForeground,
 
     // Panels
     'panelSection.border': workbench.border.main,
@@ -247,32 +250,32 @@ const generateWorkbenchColors = () => {
 
     // Diff Editor
     'diffEditor.unchangedRegionBackground':
-      calmClarityPalette.getColorWithAlpha(workbench.background.base, 'subtle'),
+      getColorWithAlpha(workbench.background.base, 'subtle'),
     'diffEditor.unchangedRegionForeground': workbench.accent.secondary,
 
     // Lists and Trees
-    'list.focusBackground': calmClarityPalette.getColorWithAlpha(
+    'list.focusBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
     'list.focusForeground': syntax.text,
-    'list.activeSelectionBackground': calmClarityPalette.getColorWithAlpha(
+    'list.activeSelectionBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
     'list.activeSelectionForeground': workbench.accent.primary,
-    'list.inactiveSelectionBackground': calmClarityPalette.getColorWithAlpha(
+    'list.inactiveSelectionBackground': getColorWithAlpha(
       workbench.accent.secondary,
       'subtle'
     ),
     'list.inactiveSelectionForeground': workbench.accent.secondary,
-    'list.hoverBackground': calmClarityPalette.getColorWithAlpha(
+    'list.hoverBackground': getColorWithAlpha(
       workbench.accent.hover,
       'subtle'
     ),
     'list.hoverForeground': syntax.text,
     'list.highlightForeground': workbench.accent.primary,
-    'list.dropBackground': calmClarityPalette.getColorWithAlpha(
+    'list.dropBackground': getColorWithAlpha(
       workbench.background.base,
       'subtle'
     ),
@@ -282,32 +285,32 @@ const generateWorkbenchColors = () => {
     'badge.foreground': workbench.foreground.badge,
 
     // Scrollbar
-    'scrollbarSlider.background': calmClarityPalette.getColorWithAlpha(
+    'scrollbarSlider.background': getColorWithAlpha(
       workbench.background.base,
       'subtle'
     ),
-    'scrollbarSlider.hoverBackground': calmClarityPalette.getColorWithAlpha(
+    'scrollbarSlider.hoverBackground': getColorWithAlpha(
       workbench.background.base,
       'hover'
     ),
-    'scrollbarSlider.activeBackground': calmClarityPalette.getColorWithAlpha(
+    'scrollbarSlider.activeBackground': getColorWithAlpha(
       workbench.background.base,
       'active'
     ),
-    'scrollbar.shadow': calmClarityPalette.shadow.scrollbar,
+    'scrollbar.shadow': shadow.scrollbar,
 
     // Sticky Scroll Shadows
-    'editorStickyScroll.shadow': calmClarityPalette.shadow.editorStickyScroll,
-    'panelStickyScroll.shadow': calmClarityPalette.shadow.panelStickyScroll,
-    'sideBarStickyScroll.shadow': calmClarityPalette.shadow.sideBarStickyScroll,
-    'listFilterWidget.shadow': calmClarityPalette.shadow.listFilterWidget,
+    'editorStickyScroll.shadow': shadow.editorStickyScroll,
+    'panelStickyScroll.shadow': shadow.panelStickyScroll,
+    'sideBarStickyScroll.shadow': shadow.sideBarStickyScroll,
+    'listFilterWidget.shadow': shadow.listFilterWidget,
 
     // Progress Bar
     'progressBar.background': workbench.accent.primary,
 
     // Focus and Selection
     focusBorder: workbench.accent.focus,
-    'selection.background': calmClarityPalette.getColorWithAlpha(
+    'selection.background': getColorWithAlpha(
       workbench.accent.primary,
       'hover'
     ),
@@ -321,19 +324,19 @@ const generateWorkbenchColors = () => {
     'textCodeBlock.background': workbench.background.secondary,
 
     // Merge Conflicts
-    'merge.currentHeaderBackground': calmClarityPalette.getColorWithAlpha(
+    'merge.currentHeaderBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
-    'merge.currentContentBackground': calmClarityPalette.getColorWithAlpha(
+    'merge.currentContentBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
-    'merge.incomingHeaderBackground': calmClarityPalette.getColorWithAlpha(
+    'merge.incomingHeaderBackground': getColorWithAlpha(
       workbench.accent.secondary,
       'subtle'
     ),
-    'merge.incomingContentBackground': calmClarityPalette.getColorWithAlpha(
+    'merge.incomingContentBackground': getColorWithAlpha(
       workbench.accent.secondary,
       'subtle'
     ),
@@ -348,7 +351,7 @@ const generateWorkbenchColors = () => {
     'peekView.border': workbench.border.main,
     'peekViewEditor.background': workbench.background.secondary,
     'peekViewEditor.matchHighlightBackground':
-      calmClarityPalette.getColorWithAlpha(syntax.warning, 'hover'),
+      getColorWithAlpha(syntax.warning, 'hover'),
     'peekViewResult.background': workbench.background.secondary,
     'peekViewResult.fileForeground': syntax.text,
     'peekViewResult.lineForeground': workbench.accent.secondary,
@@ -368,13 +371,13 @@ const generateWorkbenchColors = () => {
     // Menu
     'menu.background': workbench.background.secondary,
     'menu.foreground': syntax.text,
-    'menu.selectionBackground': calmClarityPalette.getColorWithAlpha(
+    'menu.selectionBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
     'menu.selectionForeground': workbench.accent.primary,
     'menu.separatorBackground': workbench.border.main,
-    'menubar.selectionBackground': calmClarityPalette.getColorWithAlpha(
+    'menubar.selectionBackground': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
@@ -392,17 +395,17 @@ const generateWorkbenchColors = () => {
     'breadcrumbPicker.background': workbench.background.secondary,
 
     // Widget
-    'widget.shadow': calmClarityPalette.shadow.widget,
+    'widget.shadow': shadow.widget,
     'editorWidget.background': workbench.background.secondary,
     'editorWidget.border': workbench.border.main,
     'editorMarkerNavigation.background': workbench.background.secondary,
 
     // Minimap
-    'minimap.findMatchHighlight': calmClarityPalette.getColorWithAlpha(
+    'minimap.findMatchHighlight': getColorWithAlpha(
       syntax.warning,
       'hover'
     ),
-    'minimap.selectionHighlight': calmClarityPalette.getColorWithAlpha(
+    'minimap.selectionHighlight': getColorWithAlpha(
       workbench.accent.primary,
       'subtle'
     ),
@@ -481,31 +484,31 @@ const generateWorkbenchColors = () => {
     // Inline Chat
     'inlineChat.background': workbench.background.secondary,
     'inlineChat.border': workbench.border.main,
-    'inlineChat.shadow': calmClarityPalette.shadow.inlineChat,
+    'inlineChat.shadow': shadow.inlineChat,
 
     // Diff Editor v2
     'diffEditor.border': workbench.border.main,
     'diffEditor.diagonalFill': workbench.accent.secondary,
-    'diffEditor.insertedLineBackground': calmClarityPalette.getColorWithAlpha(
+    'diffEditor.insertedLineBackground': getColorWithAlpha(
       syntax.success,
       'subtle'
     ),
-    'diffEditor.removedLineBackground': calmClarityPalette.getColorWithAlpha(
+    'diffEditor.removedLineBackground': getColorWithAlpha(
       syntax.error,
       'subtle'
     ),
-    'diffEditor.insertedTextBackground': calmClarityPalette.getColorWithAlpha(
+    'diffEditor.insertedTextBackground': getColorWithAlpha(
       syntax.success,
       'subtle'
     ),
-    'diffEditor.removedTextBackground': calmClarityPalette.getColorWithAlpha(
+    'diffEditor.removedTextBackground': getColorWithAlpha(
       syntax.error,
       'subtle'
     ),
     'diffEditorOverview.insertedForeground':
-      calmClarityPalette.getColorWithAlpha(syntax.success, 'hover'),
+      getColorWithAlpha(syntax.success, 'hover'),
     'diffEditorOverview.removedForeground':
-      calmClarityPalette.getColorWithAlpha(syntax.error, 'hover'),
+      getColorWithAlpha(syntax.error, 'hover'),
 
     // Chart
     'charts.foreground': syntax.text,
@@ -517,26 +520,26 @@ const generateWorkbenchColors = () => {
     'charts.green': syntax.success,
     // SCM Graph
     'scmGraph.historyItemHoverLabelForeground':
-      calmClarityPalette.scmGraph.historyItemHoverLabelForeground,
-    'scmGraph.foreground1': calmClarityPalette.scmGraph.foreground1,
-    'scmGraph.foreground2': calmClarityPalette.scmGraph.foreground2,
-    'scmGraph.foreground3': calmClarityPalette.scmGraph.foreground3,
-    'scmGraph.foreground4': calmClarityPalette.scmGraph.foreground4,
-    'scmGraph.foreground5': calmClarityPalette.scmGraph.foreground5,
+      scmGraph.historyItemHoverLabelForeground,
+    'scmGraph.foreground1': scmGraph.foreground1,
+    'scmGraph.foreground2': scmGraph.foreground2,
+    'scmGraph.foreground3': scmGraph.foreground3,
+    'scmGraph.foreground4': scmGraph.foreground4,
+    'scmGraph.foreground5': scmGraph.foreground5,
     'scmGraph.historyItemHoverAdditionsForeground':
-      calmClarityPalette.scmGraph.historyItemHoverAdditionsForeground,
+      scmGraph.historyItemHoverAdditionsForeground,
     'scmGraph.historyItemHoverDeletionsForeground':
-      calmClarityPalette.scmGraph.historyItemHoverDeletionsForeground,
+      scmGraph.historyItemHoverDeletionsForeground,
     'scmGraph.historyItemRefColor':
-      calmClarityPalette.scmGraph.historyItemRefColor,
+      scmGraph.historyItemRefColor,
     'scmGraph.historyItemRemoteRefColor':
-      calmClarityPalette.scmGraph.historyItemRemoteRefColor,
+      scmGraph.historyItemRemoteRefColor,
     'scmGraph.historyItemBaseRefColor':
-      calmClarityPalette.scmGraph.historyItemBaseRefColor,
+      scmGraph.historyItemBaseRefColor,
     'scmGraph.historyItemHoverDefaultLabelBackground':
-      calmClarityPalette.scmGraph.historyItemHoverDefaultLabelBackground,
+      scmGraph.historyItemHoverDefaultLabelBackground,
     'scmGraph.historyItemHoverDefaultLabelForeground':
-      calmClarityPalette.scmGraph.historyItemHoverDefaultLabelForeground,
+      scmGraph.historyItemHoverDefaultLabelForeground,
     'charts.purple': syntax.boolean,
   }
 }
@@ -545,6 +548,8 @@ const generateWorkbenchColors = () => {
  * Генерация токенов подсветки синтаксиса
  */
 const generateTokenColors = () => {
+  const { workbench, syntax } = calmClarityPalette
+  
   return [
     // Comments
     {
@@ -809,7 +814,7 @@ const generateTokenColors = () => {
         'invalid.unimplemented',
       ],
       settings: {
-        foreground: calmClarityPalette.syntax.error,
+        foreground: syntax.error,
       },
     },
 
@@ -818,7 +823,7 @@ const generateTokenColors = () => {
       name: 'Errors',
       scope: ['message.error', 'punctuation.definition.error', 'markup.error'],
       settings: {
-        foreground: calmClarityPalette.syntax.error,
+        foreground: syntax.error,
       },
     },
 
@@ -831,7 +836,7 @@ const generateTokenColors = () => {
         'markup.warning',
       ],
       settings: {
-        foreground: calmClarityPalette.syntax.warning,
+        foreground: syntax.warning,
       },
     },
 
@@ -840,7 +845,7 @@ const generateTokenColors = () => {
       name: 'Info',
       scope: ['message.info', 'punctuation.definition.info', 'markup.info'],
       settings: {
-        foreground: calmClarityPalette.syntax.info,
+        foreground: syntax.info,
       },
     },
 
@@ -853,7 +858,7 @@ const generateTokenColors = () => {
         'markup.success',
       ],
       settings: {
-        foreground: calmClarityPalette.syntax.success,
+        foreground: syntax.success,
       },
     },
 
@@ -906,7 +911,7 @@ const generateTokenColors = () => {
         'punctuation.definition.heading.markdown',
       ],
       settings: {
-        foreground: calmClarityPalette.workbench.accent.primary,
+        foreground: workbench.accent.primary,
         fontStyle: 'bold',
       },
     },
@@ -918,7 +923,7 @@ const generateTokenColors = () => {
         'constant.other.reference.link',
       ],
       settings: {
-        foreground: calmClarityPalette.workbench.accent.primary,
+        foreground: workbench.accent.primary,
       },
     },
     {
@@ -932,7 +937,7 @@ const generateTokenColors = () => {
       name: 'Markdown Lists',
       scope: ['markup.list', 'beginning.punctuation.definition.list'],
       settings: {
-        foreground: calmClarityPalette.workbench.accent.hover,
+        foreground: workbench.accent.hover,
       },
     },
     {
