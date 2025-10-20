@@ -234,7 +234,6 @@
     "inlineChat.background": "#12161e",
     "inlineChat.border": "#1f242f",
     "inlineChat.shadow": "#171c2585",
-    "inlineChat.regionHighlight": "#8ac7ff33",
     "diffEditor.border": "#1f242f",
     "diffEditor.diagonalFill": "#7a8da8",
     "diffEditor.insertedLineBackground": "#638dc433",
@@ -922,7 +921,7 @@
     "version": "1.0.0",
     "description": "Темная тема с приглушенной, но не блеклой цветовой палитрой, спроектированная с акцентом на эргономику, читаемость и долгосрочный комфорт, минимизируя зрительное напряжение.",
     "author": "Calm Clarity Theme Generator",
-    "date": "2025-10-20T14:04:16.106Z",
+    "date": "2025-10-20T14:22:12.416Z",
     "contrastValidation": {
       "status": "fail",
       "message": "Некоторые элементы не соответствуют стандарту контрастности WCAG AA",
