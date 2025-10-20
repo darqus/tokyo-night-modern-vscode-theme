@@ -34,42 +34,42 @@ export const getContrastReport = (): ContrastReport => {
     {
       element: 'Основной текст',
       fg: calmClarityPalette.syntax.text,
-      bg: calmClarityPalette.workbench.background,
+      bg: calmClarityPalette.workbench.background.base,
     },
     {
       element: 'Комментарии',
       fg: calmClarityPalette.syntax.comment,
-      bg: calmClarityPalette.workbench.background,
+      bg: calmClarityPalette.workbench.background.base,
     },
     {
       element: 'Ключевые слова',
       fg: calmClarityPalette.syntax.keyword,
-      bg: calmClarityPalette.workbench.background,
+      bg: calmClarityPalette.workbench.background.base,
     },
     {
       element: 'Строки',
       fg: calmClarityPalette.syntax.string,
-      bg: calmClarityPalette.workbench.background,
+      bg: calmClarityPalette.workbench.background.base,
     },
     {
       element: 'Числа',
       fg: calmClarityPalette.syntax.number,
-      bg: calmClarityPalette.workbench.background,
+      bg: calmClarityPalette.workbench.background.base,
     },
     {
       element: 'Активная панель активности',
-      fg: calmClarityPalette.workbench.accentPrimary,
-      bg: calmClarityPalette.workbench.activityBar,
+      fg: calmClarityPalette.workbench.accent.primary,
+      bg: calmClarityPalette.workbench.background.activityBar,
     },
     {
       element: 'Активная вкладка',
-      fg: calmClarityPalette.workbench.accentPrimary,
-      bg: calmClarityPalette.workbench.tabbar,
+      fg: calmClarityPalette.workbench.accent.primary,
+      bg: calmClarityPalette.workbench.background.tabbar,
     },
     {
       element: 'Текст сайдбара',
       fg: calmClarityPalette.syntax.text,
-      bg: calmClarityPalette.workbench.sidebar,
+      bg: calmClarityPalette.workbench.background.sidebar,
     },
   ]
 
