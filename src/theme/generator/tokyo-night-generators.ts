@@ -1,6 +1,123 @@
 import type { VSCodeTheme } from '../palette/types'
 
 /**
+ * Генератор семантических токенов для Tokyo Night
+ */
+export const generateTokyoNightSemanticTokenColors = () => {
+  return {
+    'parameter.declaration': {
+      foreground: '#e0af68',
+    },
+    parameter: {
+      foreground: '#d9d4cd',
+    },
+    'property.declaration': {
+      foreground: '#73daca',
+    },
+    'property.defaultLibrary': {
+      foreground: '#2ac3de',
+    },
+    '*.defaultLibrary': {
+      foreground: '#2ac3de',
+    },
+    'variable.defaultLibrary': {
+      foreground: '#2ac3de',
+    },
+    'variable.declaration': {
+      foreground: '#bb9af7',
+    },
+    variable: {
+      foreground: '#c0caf5',
+    },
+    namespace: {
+      foreground: '#0db9d7',
+    },
+    type: {
+      foreground: '#0db9d7',
+    },
+    class: {
+      foreground: '#0db9d7',
+    },
+    interface: {
+      foreground: '#0db9d7',
+      fontStyle: 'italic',
+    },
+    'variable.readonly': {
+      foreground: '#41a6b5',
+    },
+    method: {
+      foreground: '#7aa2f7',
+    },
+    function: {
+      foreground: '#7aa2f7',
+    },
+    enum: {
+      foreground: '#0db9d7',
+    },
+    enumMember: {
+      foreground: '#41a6b5',
+    },
+    struct: {
+      foreground: '#0db9d7',
+    },
+    typeParameter: {
+      foreground: '#0db9d7',
+    },
+    macro: {
+      foreground: '#7aa2f7',
+    },
+    label: {
+      foreground: '#c0caf5',
+    },
+    comment: {
+      foreground: '#51597d',
+    },
+    string: {
+      foreground: '#9ece6a',
+    },
+    number: {
+      foreground: '#ff9e64',
+    },
+    boolean: {
+      foreground: '#ff9e64',
+    },
+    regexp: {
+      foreground: '#b4f9f8',
+    },
+    operator: {
+      foreground: '#89ddff',
+    },
+    keyword: {
+      foreground: '#bb9af7',
+    },
+    modifier: {
+      foreground: '#9d7cd8',
+    },
+    decorator: {
+      foreground: '#7aa2f7',
+    },
+    selfKeyword: {
+      foreground: '#f7768e',
+    },
+    selfTypeKeyword: {
+      foreground: '#2ac3de',
+    },
+    this: {
+      foreground: '#f7768e',
+    },
+    nil: {
+      foreground: '#ff9e64',
+    },
+    null: {
+      foreground: '#ff9e64',
+    },
+    undefined: {
+      foreground: '#ff9e64',
+    },
+  }
+}
+
+/**
  * Генератор цветов интерфейса (workbench colors) для Tokyo Night
  */
 export const generateTokyoNightWorkbenchColors = () => {
@@ -1516,123 +1633,6 @@ export const generateTokyoNightTokenColors = () => {
 }
 
 /**
- * Генератор семантических токенов для Tokyo Night
- */
-export const generateTokyoNightSemanticTokenColors = () => {
-  return {
-    'parameter.declaration': {
-      foreground: '#e0af68',
-    },
-    parameter: {
-      foreground: '#d9d4cd',
-    },
-    'property.declaration': {
-      foreground: '#73daca',
-    },
-    'property.defaultLibrary': {
-      foreground: '#2ac3de',
-    },
-    '*.defaultLibrary': {
-      foreground: '#2ac3de',
-    },
-    'variable.defaultLibrary': {
-      foreground: '#2ac3de',
-    },
-    'variable.declaration': {
-      foreground: '#bb9af7',
-    },
-    variable: {
-      foreground: '#c0caf5',
-    },
-    namespace: {
-      foreground: '#0db9d7',
-    },
-    type: {
-      foreground: '#0db9d7',
-    },
-    class: {
-      foreground: '#0db9d7',
-    },
-    interface: {
-      foreground: '#0db9d7',
-      fontStyle: 'italic',
-    },
-    'variable.readonly': {
-      foreground: '#41a6b5',
-    },
-    method: {
-      foreground: '#7aa2f7',
-    },
-    function: {
-      foreground: '#7aa2f7',
-    },
-    enum: {
-      foreground: '#0db9d7',
-    },
-    enumMember: {
-      foreground: '#41a6b5',
-    },
-    struct: {
-      foreground: '#0db9d7',
-    },
-    typeParameter: {
-      foreground: '#0db9d7',
-    },
-    macro: {
-      foreground: '#7aa2f7',
-    },
-    label: {
-      foreground: '#c0caf5',
-    },
-    comment: {
-      foreground: '#51597d',
-    },
-    string: {
-      foreground: '#9ece6a',
-    },
-    number: {
-      foreground: '#ff9e64',
-    },
-    boolean: {
-      foreground: '#ff9e64',
-    },
-    regexp: {
-      foreground: '#b4f9f8',
-    },
-    operator: {
-      foreground: '#89ddff',
-    },
-    keyword: {
-      foreground: '#bb9af7',
-    },
-    modifier: {
-      foreground: '#9d7cd8',
-    },
-    decorator: {
-      foreground: '#7aa2f7',
-    },
-    selfKeyword: {
-      foreground: '#f7768e',
-    },
-    selfTypeKeyword: {
-      foreground: '#2ac3de',
-    },
-    this: {
-      foreground: '#f7768e',
-    },
-    nil: {
-      foreground: '#ff9e64',
-    },
-    null: {
-      foreground: '#ff9e64',
-    },
-    undefined: {
-      foreground: '#ff9e64',
-    },
-  }
-}
-
-/**
  * Генерация полной темы Tokyo Night
  */
 export const generateTokyoNightTheme = (): VSCodeTheme => {
@@ -1640,8 +1640,8 @@ export const generateTokyoNightTheme = (): VSCodeTheme => {
     name: 'Tokyo Night',
     type: 'dark',
     semanticHighlighting: true,
+    semanticTokenColors: generateTokyoNightSemanticTokenColors(),
     colors: generateTokyoNightWorkbenchColors(),
     tokenColors: generateTokyoNightTokenColors(),
-    semanticTokenColors: generateTokyoNightSemanticTokenColors(),
   }
 }
