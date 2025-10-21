@@ -58,7 +58,7 @@ export const baseColors = {
     errorSecondary: '#bb616b', // Вторичный цвет ошибки
     warning: '#e0af68', // Предупреждение
     warningSecondary: '#c49a5a', // Вторичный цвет предупреждения
-    critical: '#ff768e', // Критическая ошибка
+    critical: '#f7768e', // Критическая ошибка
     success: '#41a6b5', // Успех
     successSecondary: '#73daca', // Вторичный цвет успеха
   },
@@ -146,7 +146,7 @@ export const baseColors = {
     editorBracketHighlightForeground6: '#c49a5a',
     editorBracketHighlightUnexpected: '#db4b4b',
     selectionBackground: '#515c7e40',
-    editorFoldBackground: '#111174a',
+    editorFoldBackground: '#1111174a',
     editorLinkActive: '#acb0d0',
     editorFindMatchBorder: '#e0af68',
     editorFindMatchHighlight: '#3d59a1666',

@@ -61,7 +61,7 @@ export const baseTokenColors = {
     number: '#ff9e64', // Числа
     boolean: '#ff9e64', // Булевы значения
     null: '#ff9e64', // Null/undefined
-    tag: '#ff768e', // HTML теги
+    tag: '#f7768e', // HTML теги
     attribute: '#bb9af7', // Атрибуты
     constant: '#e0af68', // Специальные константы
     invalid: '#ff5370', // Невалидные токены
@@ -134,7 +134,7 @@ export const generateTokenPalette = () => {
     },
   }
 
- // Создаем варианты для строк
+  // Создаем варианты для строк
   const stringVariants = {
     primary: {
       base: baseTokenColors.strings.primary,
@@ -252,7 +252,7 @@ export const generateTokenPalette = () => {
     },
   }
 
- // Создаем варианты для переменных
+  // Создаем варианты для переменных
   const variableVariants = {
     primary: {
       base: baseTokenColors.variables.primary,
@@ -287,7 +287,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для операторов
- const operatorVariants = {
+  const operatorVariants = {
     primary: {
       base: baseTokenColors.operators.primary,
       lighter: lighten(baseTokenColors.operators.primary, 0.1),
@@ -321,7 +321,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для пунктуации
- const punctuationVariants = {
+  const punctuationVariants = {
     primary: {
       base: baseTokenColors.punctuation.primary,
       lighter: lighten(baseTokenColors.punctuation.primary, 0.1),
@@ -448,7 +448,10 @@ export const generateTokenPalette = () => {
       base: baseTokenColors.semantic['variable.readonly'],
       lighter: lighten(baseTokenColors.semantic['variable.readonly'], 0.1),
       darker: darken(baseTokenColors.semantic['variable.readonly'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['variable.readonly'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['variable.readonly'],
+        0.7
+      ),
     },
     enumMember: {
       base: baseTokenColors.semantic.enumMember,
@@ -464,15 +467,24 @@ export const generateTokenPalette = () => {
     },
     'variable.defaultLibrary': {
       base: baseTokenColors.semantic['variable.defaultLibrary'],
-      lighter: lighten(baseTokenColors.semantic['variable.defaultLibrary'], 0.1),
+      lighter: lighten(
+        baseTokenColors.semantic['variable.defaultLibrary'],
+        0.1
+      ),
       darker: darken(baseTokenColors.semantic['variable.defaultLibrary'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['variable.defaultLibrary'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['variable.defaultLibrary'],
+        0.7
+      ),
     },
     'variable.declaration': {
       base: baseTokenColors.semantic['variable.declaration'],
       lighter: lighten(baseTokenColors.semantic['variable.declaration'], 0.1),
       darker: darken(baseTokenColors.semantic['variable.declaration'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['variable.declaration'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['variable.declaration'],
+        0.7
+      ),
     },
     parameter: {
       base: baseTokenColors.semantic.parameter,
@@ -484,7 +496,10 @@ export const generateTokenPalette = () => {
       base: baseTokenColors.semantic['parameter.declaration'],
       lighter: lighten(baseTokenColors.semantic['parameter.declaration'], 0.1),
       darker: darken(baseTokenColors.semantic['parameter.declaration'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['parameter.declaration'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['parameter.declaration'],
+        0.7
+      ),
     },
     property: {
       base: baseTokenColors.semantic.property,
@@ -496,13 +511,22 @@ export const generateTokenPalette = () => {
       base: baseTokenColors.semantic['property.declaration'],
       lighter: lighten(baseTokenColors.semantic['property.declaration'], 0.1),
       darker: darken(baseTokenColors.semantic['property.declaration'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['property.declaration'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['property.declaration'],
+        0.7
+      ),
     },
     'property.defaultLibrary': {
       base: baseTokenColors.semantic['property.defaultLibrary'],
-      lighter: lighten(baseTokenColors.semantic['property.defaultLibrary'], 0.1),
+      lighter: lighten(
+        baseTokenColors.semantic['property.defaultLibrary'],
+        0.1
+      ),
       darker: darken(baseTokenColors.semantic['property.defaultLibrary'], 0.1),
-      transparent: withAlpha(baseTokenColors.semantic['property.defaultLibrary'], 0.7),
+      transparent: withAlpha(
+        baseTokenColors.semantic['property.defaultLibrary'],
+        0.7
+      ),
     },
     method: {
       base: baseTokenColors.semantic.method,
