@@ -232,7 +232,7 @@ export const generateTokyoNightWorkbenchColors = () => {
     'statusBar.debuggingBackground': '#16161e',
     'statusBar.debuggingForeground': '#787c99',
     'statusBarItem.activeBackground': '#101014',
-    'statusBarItem.hoverBackground': '#2022c',
+    'statusBarItem.hoverBackground': '#20222c',
     'statusBarItem.prominentBackground': '#101014',
     'statusBarItem.prominentHoverBackground': '#20222c',
     'titleBar.activeForeground': '#787c99',
