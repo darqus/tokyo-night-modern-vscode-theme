@@ -3,7 +3,7 @@
  * Сгруппированная по логическим категориям
  */
 
-import { adjustBrightness, withAlpha, lighten, darken } from './generators'
+import { darken, lighten, withAlpha } from './generators'
 
 // Базовые цвета для каждой группы
 export const baseColors = {
@@ -16,7 +16,7 @@ export const baseColors = {
     borderSecondary: '#2b2b3b', // Вторичные границы
     overlay: '#0f0f14', // Оверлеи и модальные окна
   },
- foreground: {
+  foreground: {
     primary: '#a9b1d6', // Основной текст
     secondary: '#787c99', // Вторичный текст
     disabled: '#545c7e', // Отключенный текст
@@ -30,7 +30,7 @@ export const baseColors = {
     info: '#0da0ba', // Информация
     warning: '#e0af68', // Предупреждение
     error: '#db4b4b', // Ошибка
- },
+  },
   neutral: {
     gray: '#565f89', // Нейтральный серый
     blueGray: '#515c7e', // Сине-серый
@@ -58,7 +58,7 @@ export const baseColors = {
     errorSecondary: '#bb616b', // Вторичный цвет ошибки
     warning: '#e0af68', // Предупреждение
     warningSecondary: '#c49a5a', // Вторичный цвет предупреждения
-    critical: '#f768e', // Критическая ошибка
+    critical: '#ff768e', // Критическая ошибка
     success: '#41a6b5', // Успех
     successSecondary: '#73daca', // Вторичный цвет успеха
   },
