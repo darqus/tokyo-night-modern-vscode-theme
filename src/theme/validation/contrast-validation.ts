@@ -1,11 +1,11 @@
-import { calmClarityPalette } from '../palette/calm-clarity'
+import { tokyoNightPalette } from '../palette/tokyo-night'
 import { getContrastValidationReport } from '../palette/validation'
 
 /**
  * Возвращает отчет о контрастности для включения в метаданные темы
  */
 export const getContrastReport = () => {
-  const report = getContrastValidationReport(calmClarityPalette)
+  const report = getContrastValidationReport(tokyoNightPalette)
 
   return {
     totalChecks: report.totalChecks,
@@ -22,7 +22,7 @@ export const getContrastReport = () => {
 export const validatePaletteContrastOnBuild = () => {
   console.log('Проверка контрастности палитры...')
 
-  const report = getContrastValidationReport(calmClarityPalette)
+  const report = getContrastValidationReport(tokyoNightPalette)
 
   console.log(`Всего проверок: ${report.totalChecks}`)
   console.log(`Пройдено: ${report.passedChecks}`)

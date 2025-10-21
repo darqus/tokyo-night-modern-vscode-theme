@@ -1,4 +1,4 @@
-import { syntaxTokenPalette } from '../palette/calm-clarity-syntax'
+
 
 // Тип для описания цвета и стиля токена
 interface SemanticTokenStyle {
@@ -18,13 +18,13 @@ type SemanticTokenColors = Record<string, SemanticTokenStyle>
 
 export const generateSemanticTokenColors = (): SemanticTokenColors => {
   return {
-    namespace: { foreground: syntaxTokenPalette.storage },
-    type: { foreground: syntaxTokenPalette.types },
-    class: { foreground: syntaxTokenPalette.classes },
+    namespace: { foreground: undefined },
+    type: { foreground: undefined },
+    class: { foreground: undefined },
     interface: {
-      foreground: syntaxTokenPalette.interfaces,
+      foreground: undefined,
       fontStyle: 'italic',
     },
-    'variable.readonly': { foreground: syntaxTokenPalette.constants },
+    'variable.readonly': { foreground: undefined },
   }
 }
