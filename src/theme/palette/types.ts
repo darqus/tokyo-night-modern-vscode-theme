@@ -5,7 +5,7 @@ export type VSCodeTheme = {
   tokenColors: Array<{
     name?: string
     scope: string | string[]
-    settings: {
+    settings?: {
       foreground?: string
       background?: string
       fontStyle?: string
@@ -182,8 +182,6 @@ export type Palette = {
     listFilterWidget: string // Цвет тени для виджета фильтрации списка
   }
 }
-
-
 
 export type SyntaxTokenPalette = {
   // Основные токены синтаксиса
