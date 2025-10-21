@@ -1,8 +1,8 @@
 import {
   getContrastRatio,
-  meetsWCAGContrast,
-  isLightColor,
   isDarkColor,
+  isLightColor,
+  meetsWCAGContrast,
   normalizeHexColor,
 } from '../color-utils'
 
@@ -10,7 +10,7 @@ describe('Color Utils', () => {
   describe('getContrastRatio', () => {
     test('should calculate correct contrast ratio', () => {
       // Белый и черный должны иметь соотношение 21:1
-      expect(getContrastRatio('#ffffff', '#000')).toBe(21)
+      expect(getContrastRatio('#ffffff', '#000000')).toBe(21)
       expect(getContrastRatio('#000000', '#ffffff')).toBe(21)
     })
 
@@ -36,7 +36,7 @@ describe('Color Utils', () => {
     })
 
     test('should return true for sufficient AAA contrast', () => {
-      expect(meetsWCAGContrast('#ffffff', '#0000', 'AAA')).toBe(true)
+      expect(meetsWCAGContrast('#ffffff', '#000000', 'AAA')).toBe(true)
     })
 
     test('should return false for insufficient AAA contrast', () => {
@@ -52,7 +52,7 @@ describe('Color Utils', () => {
     })
 
     test('should correctly identify dark colors', () => {
-      expect(isDarkColor('#00000')).toBe(true)
+      expect(isDarkColor('#000000')).toBe(true)
       expect(isDarkColor('#10141a')).toBe(true)
       expect(isDarkColor('#333333')).toBe(true)
     })
@@ -68,7 +68,7 @@ describe('Color Utils', () => {
   describe('normalizeHexColor', () => {
     test('should normalize short hex format', () => {
       expect(normalizeHexColor('#fff')).toBe('#ffffff')
-      expect(normalizeHexColor('#000')).toBe('#0000')
+      expect(normalizeHexColor('#000')).toBe('#000000')
       expect(normalizeHexColor('#abc')).toBe('#aabbcc')
     })
 
