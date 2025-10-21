@@ -1,3 +1,6 @@
+import { baseColors } from '../palette/base-colors'
+import { withAlpha } from '../palette/generators'
+import { baseTokenColors } from '../palette/token-colors'
 import type { VSCodeTheme } from '../palette/types'
 
 /**
@@ -6,113 +9,113 @@ import type { VSCodeTheme } from '../palette/types'
 export const generateTokyoNightSemanticTokenColors = () => {
   return {
     'parameter.declaration': {
-      foreground: '#e0af68',
+      foreground: baseTokenColors.semantic['parameter.declaration'],
     },
     parameter: {
-      foreground: '#d9d4cd',
+      foreground: baseTokenColors.semantic.parameter,
     },
     'property.declaration': {
-      foreground: '#73daca',
+      foreground: baseTokenColors.semantic['property.declaration'],
     },
     'property.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: baseTokenColors.semantic['property.defaultLibrary'],
     },
     '*.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: baseTokenColors.semantic['variable.defaultLibrary'],
     },
     'variable.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: baseTokenColors.semantic['variable.defaultLibrary'],
     },
     'variable.declaration': {
-      foreground: '#bb9af7',
+      foreground: baseTokenColors.semantic['variable.declaration'],
     },
     variable: {
-      foreground: '#c0caf5',
+      foreground: baseTokenColors.semantic.variable,
     },
     namespace: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.namespace,
     },
     type: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.type,
     },
     class: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.class,
     },
     interface: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.interface,
       fontStyle: 'italic',
     },
     'variable.readonly': {
-      foreground: '#41a6b5',
+      foreground: baseTokenColors.semantic['variable.readonly'],
     },
     method: {
-      foreground: '#7aa2f7',
+      foreground: baseTokenColors.semantic.method,
     },
     function: {
-      foreground: '#7aa2f7',
+      foreground: baseTokenColors.semantic.function,
     },
     enum: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.enum,
     },
     enumMember: {
-      foreground: '#41a6b5',
+      foreground: baseTokenColors.semantic.enumMember,
     },
     struct: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.struct,
     },
     typeParameter: {
-      foreground: '#0db9d7',
+      foreground: baseTokenColors.semantic.typeParameter,
     },
     macro: {
-      foreground: '#7aa2f7',
+      foreground: baseTokenColors.semantic.macro,
     },
     label: {
-      foreground: '#c0caf5',
+      foreground: baseTokenColors.semantic.label,
     },
     comment: {
-      foreground: '#51597d',
+      foreground: baseTokenColors.semantic.comment,
     },
     string: {
-      foreground: '#9ece6a',
+      foreground: baseTokenColors.semantic.string,
     },
     number: {
-      foreground: '#ff9e64',
+      foreground: baseTokenColors.semantic.number,
     },
     boolean: {
-      foreground: '#ff9e64',
+      foreground: baseTokenColors.semantic.boolean,
     },
     regexp: {
-      foreground: '#b4f9f8',
+      foreground: baseTokenColors.semantic.regexp,
     },
     operator: {
-      foreground: '#89ddff',
+      foreground: baseTokenColors.semantic.operator,
     },
     keyword: {
-      foreground: '#bb9af7',
+      foreground: baseTokenColors.semantic.keyword,
     },
     modifier: {
-      foreground: '#9d7cd8',
+      foreground: baseTokenColors.semantic.modifier,
     },
     decorator: {
-      foreground: '#7aa2f7',
+      foreground: baseTokenColors.semantic.decorator,
     },
     selfKeyword: {
-      foreground: '#f7768e',
+      foreground: baseTokenColors.semantic.selfKeyword,
     },
     selfTypeKeyword: {
-      foreground: '#2ac3de',
+      foreground: baseTokenColors.semantic.selfTypeKeyword,
     },
     this: {
-      foreground: '#f7768e',
+      foreground: baseTokenColors.semantic.this,
     },
     nil: {
-      foreground: '#ff9e64',
+      foreground: baseTokenColors.semantic.nil,
     },
     null: {
-      foreground: '#ff9e64',
+      foreground: baseTokenColors.semantic.null,
     },
     undefined: {
-      foreground: '#ff9e64',
+      foreground: baseTokenColors.semantic.undefined,
     },
   }
 }
@@ -123,359 +126,477 @@ export const generateTokyoNightSemanticTokenColors = () => {
 export const generateTokyoNightWorkbenchColors = () => {
   // Используем точные цвета из оригинальной темы
   return {
-    foreground: '#787c99',
-    descriptionForeground: '#515670',
-    disabledForeground: '#545c7e',
-    focusBorder: '#545c7e33',
-    errorForeground: '#515670',
-    'widget.shadow': '#ffffff00',
-    'scrollbar.shadow': '#00000033',
-    'badge.background': '#7e83b230',
-    'badge.foreground': '#acb0d0',
-    'icon.foreground': '#787c99',
+    foreground: baseColors.foreground.secondary,
+    descriptionForeground: baseColors.foreground.hint,
+    disabledForeground: baseColors.foreground.disabled,
+    focusBorder: withAlpha(baseColors.foreground.disabled, 0.2),
+    errorForeground: baseColors.foreground.hint,
+    'widget.shadow': '#ffffff0',
+    'scrollbar.shadow': '#0003',
+    'badge.background': withAlpha(baseColors.accent.primary, 0.19),
+    'badge.foreground': baseColors.neutral.light,
+    'icon.foreground': baseColors.foreground.secondary,
     'settings.headerForeground': '#6183bb',
-    'window.activeBorder': '#0d0f17',
-    'window.inactiveBorder': '#0d0f17',
+    'window.activeBorder': baseColors.neutral.dark,
+    'window.inactiveBorder': baseColors.neutral.dark,
     'sash.hoverBorder': '#29355a',
     'toolbar.activeBackground': '#202330',
     'toolbar.hoverBackground': '#202330',
-    'extensionButton.prominentBackground': '#3d59a1DD',
-    'extensionButton.prominentHoverBackground': '#3d59a1AA',
+    'extensionButton.prominentBackground': withAlpha(
+      baseColors.accent.primary,
+      0.87
+    ),
+    'extensionButton.prominentHoverBackground': withAlpha(
+      baseColors.accent.primary,
+      0.67
+    ),
     'extensionButton.prominentForeground': '#ffffff',
-    'extensionBadge.remoteBackground': '#3d59a1',
+    'extensionBadge.remoteBackground': baseColors.accent.primary,
     'extensionBadge.remoteForeground': '#ffffff',
-    'button.background': '#3d59a1dd',
-    'button.hoverBackground': '#3d59a1AA',
-    'button.secondaryBackground': '#3b3e52',
+    'button.background': withAlpha(baseColors.accent.primary, 0.87),
+    'button.hoverBackground': withAlpha(baseColors.accent.primary, 0.67),
+    'button.secondaryBackground':
+      baseColors.uiComponents.buttonSecondaryBackground,
     'button.foreground': '#ffffff',
-    'progressBar.background': '#3d59a1',
-    'input.background': '#14141b',
-    'input.foreground': '#a9b1d6',
+    'progressBar.background': baseColors.accent.primary,
+    'input.background': baseColors.background.tertiary,
+    'input.foreground': baseColors.foreground.primary,
     'input.border': '#0f0f14',
-    'input.placeholderForeground': '#787c998A',
-    'inputOption.activeForeground': '#c0caf5',
-    'inputOption.activeBackground': '#3d59a144',
-    'inputValidation.infoForeground': '#bbc2e0',
-    'inputValidation.infoBackground': '#3d59a15c',
-    'inputValidation.infoBorder': '#3d59a1',
-    'inputValidation.warningForeground': '#000000',
+    'input.placeholderForeground': baseColors.uiComponents.inputPlaceholder,
+    'inputOption.activeForeground': baseColors.foreground.emphasis,
+    'inputOption.activeBackground': withAlpha(baseColors.accent.primary, 0.27),
+    'inputValidation.infoForeground':
+      baseColors.uiComponents.inputValidationInfo,
+    'inputValidation.infoBackground': withAlpha(
+      baseColors.accent.primary,
+      0.36
+    ),
+    'inputValidation.infoBorder': baseColors.accent.primary,
+    'inputValidation.warningForeground': '#000',
     'inputValidation.warningBackground': '#c2985b',
-    'inputValidation.warningBorder': '#e0af68',
-    'inputValidation.errorForeground': '#bbc2e0',
+    'inputValidation.warningBorder': baseColors.errorWarning.warning,
+    'inputValidation.errorForeground':
+      baseColors.uiComponents.inputValidationInfo,
     'inputValidation.errorBackground': '#85353e',
     'inputValidation.errorBorder': '#963c47',
-    'dropdown.foreground': '#787c99',
-    'dropdown.background': '#14141b',
-    'dropdown.listBackground': '#14141b',
-    'activityBar.background': '#16161e',
-    'activityBar.foreground': '#787c99',
-    'activityBar.inactiveForeground': '#3b3e52',
-    'activityBar.border': '#16161e',
-    'activityBarBadge.background': '#3d59a1',
+    'dropdown.foreground': baseColors.foreground.secondary,
+    'dropdown.background': baseColors.background.tertiary,
+    'dropdown.listBackground': baseColors.background.tertiary,
+    'activityBar.background': baseColors.background.secondary,
+    'activityBar.foreground': baseColors.foreground.secondary,
+    'activityBar.inactiveForeground':
+      baseColors.uiComponents.activityBarInactiveForeground,
+    'activityBar.border': baseColors.background.secondary,
+    'activityBarBadge.background': baseColors.accent.primary,
     'activityBarBadge.foreground': '#fff',
-    'activityBarTop.foreground': '#787c99',
-    'activityBarTop.inactiveForeground': '#3b3e52',
-    'tree.indentGuidesStroke': '#2b2b3b',
-    'sideBar.foreground': '#787c99',
-    'sideBar.background': '#16161e',
-    'sideBar.border': '#101014',
-    'sideBarTitle.foreground': '#787c99',
-    'sideBarSectionHeader.background': '#16161e',
-    'sideBarSectionHeader.foreground': '#a9b1d6',
-    'sideBarSectionHeader.border': '#101014',
+    'activityBarTop.foreground': baseColors.foreground.secondary,
+    'activityBarTop.inactiveForeground':
+      baseColors.uiComponents.activityBarInactiveForeground,
+    'tree.indentGuidesStroke': baseColors.uiComponents.treeIndentGuidesStroke,
+    'sideBar.foreground': baseColors.foreground.secondary,
+    'sideBar.background': baseColors.background.secondary,
+    'sideBar.border': baseColors.background.border,
+    'sideBarTitle.foreground': baseColors.foreground.secondary,
+    'sideBarSectionHeader.background': baseColors.background.secondary,
+    'sideBarSectionHeader.foreground': baseColors.foreground.primary,
+    'sideBarSectionHeader.border': baseColors.background.border,
     'sideBar.dropBackground': '#1e202e',
     'list.dropBackground': '#1e202e',
-    'list.deemphasizedForeground': '#787c99',
+    'list.deemphasizedForeground':
+      baseColors.uiComponents.listDeemphasizedForeground,
     'list.activeSelectionBackground': '#202330',
-    'list.activeSelectionForeground': '#a9b1d6',
+    'list.activeSelectionForeground': baseColors.foreground.primary,
     'list.inactiveSelectionBackground': '#1c1d29',
-    'list.inactiveSelectionForeground': '#a9b1d6',
+    'list.inactiveSelectionForeground': baseColors.foreground.primary,
     'list.focusBackground': '#1c1d29',
-    'list.focusForeground': '#a9b1d6',
-    'list.hoverBackground': '#13131a',
-    'list.hoverForeground': '#a9b1d6',
+    'list.focusForeground': baseColors.foreground.primary,
+    'list.hoverBackground': '#131a',
+    'list.hoverForeground': baseColors.foreground.primary,
     'list.highlightForeground': '#668ac4',
-    'list.invalidItemForeground': '#c97018',
-    'list.errorForeground': '#bb616b',
-    'list.warningForeground': '#c49a5a',
-    'listFilterWidget.background': '#101014',
-    'listFilterWidget.outline': '#3d59a1',
-    'listFilterWidget.noMatchesOutline': '#a6333f',
-    'pickerGroup.foreground': '#a9b1d6',
-    'pickerGroup.border': '#101014',
-    'scrollbarSlider.background': '#868bc415',
-    'scrollbarSlider.hoverBackground': '#868bc410',
-    'scrollbarSlider.activeBackground': '#868bc422',
-    'editorBracketHighlight.foreground1': '#698cd6',
-    'editorBracketHighlight.foreground2': '#68b3de',
-    'editorBracketHighlight.foreground3': '#9a7ecc',
-    'editorBracketHighlight.foreground4': '#25aac2',
-    'editorBracketHighlight.foreground5': '#80a856',
-    'editorBracketHighlight.foreground6': '#c49a5a',
-    'editorBracketHighlight.unexpectedBracket.foreground': '#db4b4b',
-    'editorBracketPairGuide.activeBackground1': '#698cd6',
-    'editorBracketPairGuide.activeBackground2': '#68b3de',
-    'editorBracketPairGuide.activeBackground3': '#9a7ecc',
-    'editorBracketPairGuide.activeBackground4': '#25aac2',
-    'editorBracketPairGuide.activeBackground5': '#80a856',
-    'editorBracketPairGuide.activeBackground6': '#c49a5a',
-    'selection.background': '#515c7e40',
-    'editor.background': '#1a1b26',
-    'editor.foreground': '#a9b1d6',
-    'editor.foldBackground': '#1111174a',
-    'editorLink.activeForeground': '#acb0d0',
+    'list.invalidItemForeground':
+      baseColors.uiComponents.listInvalidItemForeground,
+    'list.errorForeground': baseColors.uiComponents.listError,
+    'list.warningForeground': baseColors.uiComponents.listWarning,
+    'listFilterWidget.background': baseColors.background.border,
+    'listFilterWidget.outline': baseColors.accent.primary,
+    'listFilterWidget.noMatchesOutline': '#a633f',
+    'pickerGroup.foreground': baseColors.foreground.primary,
+    'pickerGroup.border': baseColors.background.border,
+    'scrollbarSlider.background':
+      baseColors.uiComponents.scrollbarSliderBackground,
+    'scrollbarSlider.hoverBackground':
+      baseColors.uiComponents.scrollbarSliderHoverBackground,
+    'scrollbarSlider.activeBackground':
+      baseColors.uiComponents.scrollbarSliderActiveBackground,
+    'editorBracketHighlight.foreground1':
+      baseColors.uiComponents.editorBracketHighlightForeground1,
+    'editorBracketHighlight.foreground2':
+      baseColors.uiComponents.editorBracketHighlightForeground2,
+    'editorBracketHighlight.foreground3':
+      baseColors.uiComponents.editorBracketHighlightForeground3,
+    'editorBracketHighlight.foreground4':
+      baseColors.uiComponents.editorBracketHighlightForeground4,
+    'editorBracketHighlight.foreground5':
+      baseColors.uiComponents.editorBracketHighlightForeground5,
+    'editorBracketHighlight.foreground6':
+      baseColors.uiComponents.editorBracketHighlightForeground6,
+    'editorBracketHighlight.unexpectedBracket.foreground':
+      baseColors.uiComponents.editorBracketHighlightUnexpected,
+    'editorBracketPairGuide.activeBackground1':
+      baseColors.uiComponents.editorBracketHighlightForeground1,
+    'editorBracketPairGuide.activeBackground2':
+      baseColors.uiComponents.editorBracketHighlightForeground2,
+    'editorBracketPairGuide.activeBackground3':
+      baseColors.uiComponents.editorBracketHighlightForeground3,
+    'editorBracketPairGuide.activeBackground4':
+      baseColors.uiComponents.editorBracketHighlightForeground4,
+    'editorBracketPairGuide.activeBackground5':
+      baseColors.uiComponents.editorBracketHighlightForeground5,
+    'editorBracketPairGuide.activeBackground6':
+      baseColors.uiComponents.editorBracketHighlightForeground6,
+    'selection.background': baseColors.uiComponents.selectionBackground,
+    'editor.background': baseColors.background.primary,
+    'editor.foreground': baseColors.foreground.primary,
+    'editor.foldBackground': baseColors.uiComponents.editorFoldBackground,
+    'editorLink.activeForeground': baseColors.uiComponents.editorLinkActive,
     'editor.selectionBackground': '#515c7e4d',
     'editor.inactiveSelectionBackground': '#515c7e25',
-    'editor.findMatchBackground': '#3d59a166',
-    'editor.findMatchBorder': '#e0af68',
-    'editor.findMatchHighlightBackground': '#3d59a166',
+    'editor.findMatchBackground':
+      baseColors.uiComponents.editorFindMatchHighlight,
+    'editor.findMatchBorder': baseColors.uiComponents.editorFindMatchBorder,
+    'editor.findMatchHighlightBackground':
+      baseColors.uiComponents.editorFindMatchHighlight,
     'editor.findRangeHighlightBackground': '#515c7e33',
-    'editor.rangeHighlightBackground': '#515c7e20',
-    'editor.wordHighlightBackground': '#515c7e44',
-    'editor.wordHighlightStrongBackground': '#515c7e55',
-    'editor.selectionHighlightBackground': '#515c7e44',
-    'editorCursor.foreground': '#c0caf5',
-    'editorIndentGuide.background1': '#232433',
-    'editorIndentGuide.activeBackground1': '#363b54',
-    'editorLineNumber.foreground': '#363b54',
-    'editorLineNumber.activeForeground': '#787c99',
+    'editor.rangeHighlightBackground':
+      baseColors.uiComponents.editorRangeHighlight,
+    'editor.wordHighlightBackground':
+      baseColors.uiComponents.editorWordHighlight,
+    'editor.wordHighlightStrongBackground':
+      baseColors.uiComponents.editorWordHighlightStrong,
+    'editor.selectionHighlightBackground':
+      baseColors.uiComponents.editorSelectionHighlight,
+    'editorCursor.foreground': baseColors.foreground.emphasis,
+    'editorIndentGuide.background1':
+      baseColors.uiComponents.editorIndentGuideBackground,
+    'editorIndentGuide.activeBackground1':
+      baseColors.uiComponents.editorIndentGuideActiveBackground,
+    'editorLineNumber.foreground':
+      baseColors.uiComponents.editorIndentGuideActiveBackground,
+    'editorLineNumber.activeForeground': baseColors.foreground.secondary,
     'editor.lineHighlightBackground': '#1e202e',
-    'editorWhitespace.foreground': '#363b54',
-    'editorMarkerNavigation.background': '#16161e',
-    'editorHoverWidget.background': '#16161e',
-    'editorHoverWidget.border': '#101014',
-    'editorBracketMatch.background': '#16161e',
+    'editorWhitespace.foreground':
+      baseColors.uiComponents.editorIndentGuideActiveBackground,
+    'editorMarkerNavigation.background': baseColors.background.secondary,
+    'editorHoverWidget.background': baseColors.background.secondary,
+    'editorHoverWidget.border': baseColors.background.border,
+    'editorBracketMatch.background': baseColors.background.secondary,
     'editorBracketMatch.border': '#42465d',
-    'editorOverviewRuler.border': '#101014',
-    'editorOverviewRuler.errorForeground': '#db4b4b',
-    'editorOverviewRuler.warningForeground': '#e0af68',
+    'editorOverviewRuler.border': baseColors.background.border,
+    'editorOverviewRuler.errorForeground': baseColors.errorWarning.error,
+    'editorOverviewRuler.warningForeground': baseColors.errorWarning.warning,
     'editorOverviewRuler.infoForeground': '#1abc9c',
-    'editorOverviewRuler.bracketMatchForeground': '#101014',
-    'editorOverviewRuler.findMatchForeground': '#a9b1d644',
-    'editorOverviewRuler.rangeHighlightForeground': '#a9b1d644',
-    'editorOverviewRuler.selectionHighlightForeground': '#a9b1d622',
-    'editorOverviewRuler.wordHighlightForeground': '#bb9af755',
-    'editorOverviewRuler.wordHighlightStrongForeground': '#bb9af766',
-    'editorOverviewRuler.modifiedForeground': '#394b70',
-    'editorOverviewRuler.addedForeground': '#164846',
-    'editorOverviewRuler.deletedForeground': '#703438',
-    'editorRuler.foreground': '#101014',
-    'editorError.foreground': '#db4b4b',
-    'editorWarning.foreground': '#e0af68',
-    'editorInfo.foreground': '#0da0ba',
-    'editorHint.foreground': '#0da0ba',
-    'editorGutter.modifiedBackground': '#394b70',
-    'editorGutter.addedBackground': '#164846',
-    'editorGutter.deletedBackground': '#823c41',
-    'editorGhostText.foreground': '#646e9c',
-    'minimapGutter.modifiedBackground': '#425882',
-    'minimapGutter.addedBackground': '#1C5957',
-    'minimapGutter.deletedBackground': '#944449',
-    'editorGroup.border': '#101014',
+    'editorOverviewRuler.bracketMatchForeground': baseColors.background.border,
+    'editorOverviewRuler.findMatchForeground': withAlpha(
+      baseColors.foreground.primary,
+      0.27
+    ),
+    'editorOverviewRuler.rangeHighlightForeground': withAlpha(
+      baseColors.foreground.primary,
+      0.27
+    ),
+    'editorOverviewRuler.selectionHighlightForeground': withAlpha(
+      baseColors.foreground.primary,
+      0.13
+    ),
+    'editorOverviewRuler.wordHighlightForeground': withAlpha(
+      baseColors.syntax.keyword,
+      0.33
+    ),
+    'editorOverviewRuler.wordHighlightStrongForeground': withAlpha(
+      baseColors.syntax.keyword,
+      0.4
+    ),
+    'editorOverviewRuler.modifiedForeground':
+      baseColors.uiComponents.editorOverviewRulerModified,
+    'editorOverviewRuler.addedForeground':
+      baseColors.uiComponents.editorOverviewRulerAdded,
+    'editorOverviewRuler.deletedForeground':
+      baseColors.uiComponents.editorOverviewRulerDeleted,
+    'editorRuler.foreground': baseColors.background.border,
+    'editorError.foreground': baseColors.errorWarning.error,
+    'editorWarning.foreground': baseColors.errorWarning.warning,
+    'editorInfo.foreground': baseColors.accent.info,
+    'editorHint.foreground': baseColors.accent.info,
+    'editorGutter.modifiedBackground':
+      baseColors.uiComponents.editorGutterModified,
+    'editorGutter.addedBackground': baseColors.uiComponents.editorGutterAdded,
+    'editorGutter.deletedBackground':
+      baseColors.uiComponents.editorGutterDeleted,
+    'editorGhostText.foreground': baseColors.uiComponents.editorGhostText,
+    'minimapGutter.modifiedBackground':
+      baseColors.uiComponents.minimapGutterModified,
+    'minimapGutter.addedBackground': baseColors.uiComponents.minimapGutterAdded,
+    'minimapGutter.deletedBackground':
+      baseColors.uiComponents.minimapGutterDeleted,
+    'editorGroup.border': baseColors.background.border,
     'editorGroup.dropBackground': '#1e202e',
-    'editorGroupHeader.tabsBorder': '#101014',
-    'editorGroupHeader.tabsBackground': '#16161e',
-    'editorGroupHeader.noTabsBackground': '#16161e',
-    'editorGroupHeader.border': '#101014',
-    'editorPane.background': '#1a1b26',
-    'editorWidget.foreground': '#787c99',
-    'editorWidget.background': '#16161e',
-    'editorWidget.border': '#101014',
-    'editorWidget.resizeBorder': '#545c7e33',
-    'editorSuggestWidget.background': '#16161e',
-    'editorSuggestWidget.border': '#101014',
-    'editorSuggestWidget.selectedBackground': '#20222c',
+    'editorGroupHeader.tabsBorder': baseColors.background.border,
+    'editorGroupHeader.tabsBackground': baseColors.background.secondary,
+    'editorGroupHeader.noTabsBackground': baseColors.background.secondary,
+    'editorGroupHeader.border': baseColors.background.border,
+    'editorPane.background': baseColors.background.primary,
+    'editorWidget.foreground': baseColors.foreground.secondary,
+    'editorWidget.background': baseColors.background.secondary,
+    'editorWidget.border': baseColors.background.border,
+    'editorWidget.resizeBorder': withAlpha(baseColors.foreground.disabled, 0.2),
+    'editorSuggestWidget.background': baseColors.background.secondary,
+    'editorSuggestWidget.border': baseColors.background.border,
+    'editorSuggestWidget.selectedBackground': '#2022c',
     'editorSuggestWidget.highlightForeground': '#6183bb',
-    'editorCodeLens.foreground': '#51597d',
-    'editorLightBulb.foreground': '#e0af68',
-    'editorLightBulbAutoFix.foreground': '#e0af68',
-    'editorInlayHint.foreground': '#646e9c',
-    'peekView.border': '#101014',
-    'peekViewEditor.background': '#16161e',
-    'peekViewEditor.matchHighlightBackground': '#3d59a166',
-    'peekViewTitle.background': '#101014',
-    'peekViewTitleLabel.foreground': '#a9b1d6',
-    'peekViewTitleDescription.foreground': '#787c99',
-    'peekViewResult.background': '#101014',
-    'peekViewResult.selectionForeground': '#a9b1d6',
-    'peekViewResult.selectionBackground': '#3d59a133',
-    'peekViewResult.lineForeground': '#a9b1d6',
-    'peekViewResult.fileForeground': '#787c99',
-    'peekViewResult.matchHighlightBackground': '#3d59a166',
-    'diffEditor.insertedTextBackground': '#41a6b520',
-    'diffEditor.removedTextBackground': '#db4b4b22',
-    'diffEditor.insertedLineBackground': '#41a6b520',
-    'diffEditor.removedLineBackground': '#db4b4b22',
-    'diffEditorGutter.insertedLineBackground': '#41a6b525',
-    'diffEditorGutter.removedLineBackground': '#db4b4b22',
-    'diffEditorOverview.insertedForeground': '#41a6b525',
-    'diffEditorOverview.removedForeground': '#db4b4b22',
+    'editorCodeLens.foreground': baseColors.uiComponents.editorCodeLens,
+    'editorLightBulb.foreground': baseColors.errorWarning.warning,
+    'editorLightBulbAutoFix.foreground': baseColors.errorWarning.warning,
+    'editorInlayHint.foreground': baseColors.uiComponents.editorInlayHint,
+    'peekView.border': baseColors.background.border,
+    'peekViewEditor.background': baseColors.background.secondary,
+    'peekViewEditor.matchHighlightBackground':
+      baseColors.uiComponents.peekViewEditorMatchHighlight,
+    'peekViewTitle.background': baseColors.background.border,
+    'peekViewTitleLabel.foreground': baseColors.foreground.primary,
+    'peekViewTitleDescription.foreground': baseColors.foreground.secondary,
+    'peekViewResult.background': baseColors.background.border,
+    'peekViewResult.selectionForeground': baseColors.foreground.primary,
+    'peekViewResult.selectionBackground': withAlpha(
+      baseColors.accent.primary,
+      0.2
+    ),
+    'peekViewResult.lineForeground': baseColors.foreground.primary,
+    'peekViewResult.fileForeground': baseColors.foreground.secondary,
+    'peekViewResult.matchHighlightBackground':
+      baseColors.uiComponents.peekViewResultMatchHighlight,
+    'diffEditor.insertedTextBackground':
+      baseColors.uiComponents.diffEditorInsertedText,
+    'diffEditor.removedTextBackground':
+      baseColors.uiComponents.diffEditorRemovedText,
+    'diffEditor.insertedLineBackground':
+      baseColors.uiComponents.diffEditorInsertedLine,
+    'diffEditor.removedLineBackground':
+      baseColors.uiComponents.diffEditorRemovedLine,
+    'diffEditorGutter.insertedLineBackground':
+      baseColors.uiComponents.diffEditorGutterInserted,
+    'diffEditorGutter.removedLineBackground':
+      baseColors.uiComponents.diffEditorGutterRemoved,
+    'diffEditorOverview.insertedForeground':
+      baseColors.uiComponents.diffEditorOverviewInserted,
+    'diffEditorOverview.removedForeground':
+      baseColors.uiComponents.diffEditorOverviewRemoved,
     'diffEditor.diagonalFill': '#292e42',
     'diffEditor.unchangedCodeBackground': '#282a3b66',
-    'multiDiffEditor.headerBackground': '#1a1b26',
-    'multiDiffEditor.border': '#1a1b26',
-    'breadcrumb.background': '#16161e',
-    'breadcrumbPicker.background': '#16161e',
-    'breadcrumb.foreground': '#515670',
-    'breadcrumb.focusForeground': '#a9b1d6',
-    'breadcrumb.activeSelectionForeground': '#a9b1d6',
-    'tab.activeBackground': '#16161e',
-    'tab.inactiveBackground': '#16161e',
-    'tab.activeForeground': '#a9b1d6',
-    'tab.hoverForeground': '#a9b1d6',
-    'tab.activeBorder': '#3d59a1',
-    'tab.inactiveForeground': '#787c99',
-    'tab.border': '#101014',
-    'tab.unfocusedActiveForeground': '#a9b1d6',
-    'tab.unfocusedInactiveForeground': '#787c99',
-    'tab.unfocusedHoverForeground': '#a9b1d6',
-    'tab.activeModifiedBorder': '#1a1b26',
+    'multiDiffEditor.headerBackground': baseColors.background.primary,
+    'multiDiffEditor.border': baseColors.background.primary,
+    'breadcrumb.background': baseColors.background.secondary,
+    'breadcrumbPicker.background': baseColors.background.secondary,
+    'breadcrumb.foreground': baseColors.foreground.hint,
+    'breadcrumb.focusForeground': baseColors.foreground.primary,
+    'breadcrumb.activeSelectionForeground': baseColors.foreground.primary,
+    'tab.activeBackground': baseColors.background.secondary,
+    'tab.inactiveBackground': baseColors.background.secondary,
+    'tab.activeForeground': baseColors.foreground.primary,
+    'tab.hoverForeground': baseColors.uiComponents.tabHoverForeground,
+    'tab.activeBorder': baseColors.accent.primary,
+    'tab.inactiveForeground': baseColors.foreground.secondary,
+    'tab.border': baseColors.background.border,
+    'tab.unfocusedActiveForeground':
+      baseColors.uiComponents.tabUnfocusedActiveForeground,
+    'tab.unfocusedInactiveForeground':
+      baseColors.uiComponents.tabUnfocusedInactiveForeground,
+    'tab.unfocusedHoverForeground':
+      baseColors.uiComponents.tabUnfocusedHoverForeground,
+    'tab.activeModifiedBorder': baseColors.background.primary,
     'tab.inactiveModifiedBorder': '#1f202e',
     'tab.unfocusedActiveBorder': '#1f202e',
-    'tab.lastPinnedBorder': '#222333',
-    'panel.background': '#16161e',
-    'panel.border': '#101014',
-    'panelTitle.activeForeground': '#787c99',
+    'tab.lastPinnedBorder': '#233',
+    'panel.background': baseColors.background.secondary,
+    'panel.border': baseColors.background.border,
+    'panelTitle.activeForeground': baseColors.foreground.secondary,
     'panelTitle.inactiveForeground': '#42465d',
-    'panelTitle.activeBorder': '#16161e',
-    'panelInput.border': '#16161e',
-    'statusBar.foreground': '#787c99',
-    'statusBar.background': '#16161e',
-    'statusBar.border': '#101014',
-    'statusBar.noFolderBackground': '#16161e',
-    'statusBar.debuggingBackground': '#16161e',
-    'statusBar.debuggingForeground': '#787c99',
-    'statusBarItem.activeBackground': '#101014',
+    'panelTitle.activeBorder': baseColors.background.secondary,
+    'panelInput.border': baseColors.background.secondary,
+    'statusBar.foreground': baseColors.foreground.secondary,
+    'statusBar.background': baseColors.background.secondary,
+    'statusBar.border': baseColors.background.border,
+    'statusBar.noFolderBackground': baseColors.background.secondary,
+    'statusBar.debuggingBackground': baseColors.background.secondary,
+    'statusBar.debuggingForeground': baseColors.foreground.secondary,
+    'statusBarItem.activeBackground': baseColors.background.border,
     'statusBarItem.hoverBackground': '#20222c',
-    'statusBarItem.prominentBackground': '#101014',
+    'statusBarItem.prominentBackground': baseColors.background.border,
     'statusBarItem.prominentHoverBackground': '#20222c',
-    'titleBar.activeForeground': '#787c99',
-    'titleBar.inactiveForeground': '#787c99',
-    'titleBar.activeBackground': '#16161e',
-    'titleBar.inactiveBackground': '#16161e',
-    'titleBar.border': '#101014',
-    'walkThrough.embeddedEditorBackground': '#16161e',
+    'titleBar.activeForeground': baseColors.foreground.secondary,
+    'titleBar.inactiveForeground': baseColors.foreground.secondary,
+    'titleBar.activeBackground': baseColors.background.secondary,
+    'titleBar.inactiveBackground': baseColors.background.secondary,
+    'titleBar.border': baseColors.background.border,
+    'walkThrough.embeddedEditorBackground': baseColors.background.secondary,
     'textLink.foreground': '#6183bb',
     'textLink.activeForeground': '#7dcfff',
     'textPreformat.foreground': '#9699a8',
-    'textBlockQuote.background': '#16161e',
-    'textCodeBlock.background': '#16161e',
-    'textSeparator.foreground': '#363b54',
-    'debugExceptionWidget.border': '#963c47',
-    'debugExceptionWidget.background': '#101014',
-    'debugToolBar.background': '#101014',
-    'debugConsole.infoForeground': '#787c99',
-    'debugConsole.errorForeground': '#bb616b',
-    'debugConsole.sourceForeground': '#787c99',
-    'debugConsole.warningForeground': '#c49a5a',
-    'debugConsoleInputIcon.foreground': '#73daca',
+    'textBlockQuote.background': baseColors.background.secondary,
+    'textCodeBlock.background': baseColors.background.secondary,
+    'textSeparator.foreground': baseColors.uiComponents.textSeparator,
+    'debugExceptionWidget.border':
+      baseColors.uiComponents.debugExceptionWidgetBorder,
+    'debugExceptionWidget.background': baseColors.background.border,
+    'debugToolBar.background': baseColors.background.border,
+    'debugConsole.infoForeground': baseColors.uiComponents.debugConsoleInfo,
+    'debugConsole.errorForeground': baseColors.uiComponents.debugConsoleError,
+    'debugConsole.sourceForeground': baseColors.uiComponents.debugConsoleSource,
+    'debugConsole.warningForeground':
+      baseColors.uiComponents.debugConsoleWarning,
+    'debugConsoleInputIcon.foreground':
+      baseColors.uiComponents.debugConsoleInputIcon,
     'editor.stackFrameHighlightBackground': '#E2BD3A20',
-    'editor.focusedStackFrameHighlightBackground': '#73daca20',
-    'debugView.stateLabelForeground': '#787c99',
-    'debugView.stateLabelBackground': '#14141b',
-    'debugView.valueChangedHighlight': '#3d59a1aa',
-    'debugTokenExpression.name': '#7dcfff',
-    'debugTokenExpression.value': '#9aa5ce',
-    'debugTokenExpression.string': '#9ece6a',
-    'debugTokenExpression.boolean': '#ff9e64',
-    'debugTokenExpression.number': '#ff9e64',
-    'debugTokenExpression.error': '#bb616b',
-    'debugIcon.breakpointForeground': '#db4b4b',
+    'editor.focusedStackFrameHighlightBackground':
+      baseColors.uiComponents.editorFocusedStackFrameHighlight,
+    'debugView.stateLabelForeground': baseColors.foreground.secondary,
+    'debugView.stateLabelBackground': baseColors.background.tertiary,
+    'debugView.valueChangedHighlight':
+      baseColors.uiComponents.debugViewValueChangedHighlight,
+    'debugTokenExpression.name': baseTokenColors.variables.primary,
+    'debugTokenExpression.value': baseTokenColors.special.constant,
+    'debugTokenExpression.string': baseTokenColors.strings.primary,
+    'debugTokenExpression.boolean': baseTokenColors.special.boolean,
+    'debugTokenExpression.number': baseTokenColors.special.number,
+    'debugTokenExpression.error': baseTokenColors.special.invalid,
+    'debugIcon.breakpointForeground': baseColors.errorWarning.error,
     'debugIcon.breakpointDisabledForeground': '#414761',
-    'debugIcon.breakpointUnverifiedForeground': '#c24242',
-    'terminal.background': '#16161e',
-    'terminal.foreground': '#787c99',
+    'debugIcon.breakpointUnverifiedForeground':
+      baseColors.uiComponents.debugIconBreakpointUnverified,
+    'terminal.background': baseColors.background.secondary,
+    'terminal.foreground': baseColors.foreground.secondary,
     'terminal.selectionBackground': '#515c7e4d',
-    'terminal.ansiBlack': '#363b54',
-    'terminal.ansiRed': '#f7768e',
-    'terminal.ansiGreen': '#73daca',
-    'terminal.ansiYellow': '#e0af68',
-    'terminal.ansiBlue': '#7aa2f7',
-    'terminal.ansiMagenta': '#bb9af7',
-    'terminal.ansiCyan': '#7dcfff',
-    'terminal.ansiWhite': '#787c99',
-    'terminal.ansiBrightBlack': '#363b54',
-    'terminal.ansiBrightRed': '#f7768e',
-    'terminal.ansiBrightGreen': '#73daca',
-    'terminal.ansiBrightYellow': '#e0af68',
-    'terminal.ansiBrightBlue': '#7aa2f7',
-    'terminal.ansiBrightMagenta': '#bb9af7',
-    'terminal.ansiBrightCyan': '#7dcfff',
-    'terminal.ansiBrightWhite': '#acb0d0',
-    'gitDecoration.modifiedResourceForeground': '#6183bb',
-    'gitDecoration.ignoredResourceForeground': '#515670',
-    'gitDecoration.deletedResourceForeground': '#914c54',
-    'gitDecoration.renamedResourceForeground': '#449dab',
-    'gitDecoration.addedResourceForeground': '#449dab',
-    'gitDecoration.untrackedResourceForeground': '#449dab',
-    'gitDecoration.conflictingResourceForeground': '#e0af68cc',
-    'gitDecoration.stageDeletedResourceForeground': '#914c54',
-    'gitDecoration.stageModifiedResourceForeground': '#6183bb',
-    'notebook.editorBackground': '#1a1b26',
-    'notebook.cellEditorBackground': '#16161e',
-    'notebook.cellBorderColor': '#101014',
-    'notebook.focusedCellBorder': '#29355a',
-    'notebook.cellStatusBarItemHoverBackground': '#1c1d29',
-    'charts.red': '#f7768e',
-    'charts.blue': '#7aa2f7',
-    'charts.yellow': '#e0af68',
-    'charts.orange': '#ff9e64',
-    'charts.green': '#41a6b5',
-    'charts.purple': '#9d7cd8',
-    'charts.foreground': '#9AA5CE',
-    'charts.lines': '#16161e',
-    'scmGraph.historyItemHoverLabelForeground': '#1b1e2e',
-    'scmGraph.foreground1': '#ff9e64',
-    'scmGraph.foreground2': '#e0af68',
-    'scmGraph.foreground3': '#41a6b5',
-    'scmGraph.foreground4': '#7aa2f7',
-    'scmGraph.foreground5': '#bb9af7',
-    'scmGraph.historyItemHoverAdditionsForeground': '#41a6b5',
-    'scmGraph.historyItemHoverDeletionsForeground': '#f7768e',
+    'terminal.ansiBlack': baseColors.terminal.black,
+    'terminal.ansiRed': baseColors.terminal.red,
+    'terminal.ansiGreen': baseColors.terminal.green,
+    'terminal.ansiYellow': baseColors.terminal.yellow,
+    'terminal.ansiBlue': baseColors.terminal.blue,
+    'terminal.ansiMagenta': baseColors.terminal.magenta,
+    'terminal.ansiCyan': baseColors.terminal.cyan,
+    'terminal.ansiWhite': baseColors.terminal.white,
+    'terminal.ansiBrightBlack': baseColors.terminal.brightBlack,
+    'terminal.ansiBrightRed': baseColors.terminal.brightRed,
+    'terminal.ansiBrightGreen': baseColors.terminal.brightGreen,
+    'terminal.ansiBrightYellow': baseColors.terminal.brightYellow,
+    'terminal.ansiBrightBlue': baseColors.terminal.brightBlue,
+    'terminal.ansiBrightMagenta': baseColors.terminal.brightMagenta,
+    'terminal.ansiBrightCyan': baseColors.terminal.brightCyan,
+    'terminal.ansiBrightWhite': baseColors.terminal.brightWhite,
+    'gitDecoration.modifiedResourceForeground':
+      baseColors.uiComponents.gitDecorationModified,
+    'gitDecoration.ignoredResourceForeground':
+      baseColors.uiComponents.gitDecorationIgnored,
+    'gitDecoration.deletedResourceForeground':
+      baseColors.uiComponents.gitDecorationDeleted,
+    'gitDecoration.renamedResourceForeground':
+      baseColors.uiComponents.gitDecorationRenamed,
+    'gitDecoration.addedResourceForeground':
+      baseColors.uiComponents.gitDecorationAdded,
+    'gitDecoration.untrackedResourceForeground':
+      baseColors.uiComponents.gitDecorationUntracked,
+    'gitDecoration.conflictingResourceForeground': withAlpha(
+      baseColors.errorWarning.warning,
+      0.8
+    ),
+    'gitDecoration.stageDeletedResourceForeground':
+      baseColors.uiComponents.gitDecorationDeleted,
+    'gitDecoration.stageModifiedResourceForeground':
+      baseColors.uiComponents.gitDecorationModified,
+    'notebook.editorBackground': baseColors.background.primary,
+    'notebook.cellEditorBackground': baseColors.background.secondary,
+    'notebook.cellBorderColor': baseColors.background.border,
+    'notebook.focusedCellBorder': '#2935a',
+    'notebook.cellStatusBarItemHoverBackground':
+      baseColors.uiComponents.notebookCellStatusBarItemHoverBackground,
+    'charts.red': baseColors.terminal.red,
+    'charts.blue': baseColors.terminal.blue,
+    'charts.yellow': baseColors.terminal.yellow,
+    'charts.orange': baseColors.charts.orange,
+    'charts.green': baseColors.terminal.green,
+    'charts.purple': baseColors.charts.purple,
+    'charts.foreground': baseColors.charts.foreground,
+    'charts.lines': baseColors.uiComponents.chartsLines,
+    'scmGraph.historyItemHoverLabelForeground':
+      baseColors.uiComponents.scmGraphHistoryItemHoverLabel,
+    'scmGraph.foreground1': baseColors.uiComponents.scmGraphForeground1,
+    'scmGraph.foreground2': baseColors.uiComponents.scmGraphForeground2,
+    'scmGraph.foreground3': baseColors.uiComponents.scmGraphForeground3,
+    'scmGraph.foreground4': baseColors.uiComponents.scmGraphForeground4,
+    'scmGraph.foreground5': baseColors.uiComponents.scmGraphForeground5,
+    'scmGraph.historyItemHoverAdditionsForeground':
+      baseColors.uiComponents.scmGraphHistoryItemHoverAdditions,
+    'scmGraph.historyItemHoverDeletionsForeground':
+      baseColors.uiComponents.scmGraphHistoryItemHoverDeletions,
     'scmGraph.historyItemRefColor': '#506FCA',
-    'scmGraph.historyItemRemoteRefColor': '#41a6b5',
-    'scmGraph.historyItemBaseRefColor': '#9d7cd8',
-    'scmGraph.historyItemHoverDefaultLabelForeground': '#a9b1d6',
-    'merge.currentHeaderBackground': '#41a6b525',
-    'merge.currentContentBackground': '#007a7544',
-    'merge.incomingHeaderBackground': '#3d59a1aa',
-    'merge.incomingContentBackground': '#3d59a144',
-    'mergeEditor.change.background': '#41a6b525',
-    'mergeEditor.change.word.background': '#41a6b540',
-    'mergeEditor.conflict.unhandledUnfocused.border': '#e0af6888',
-    'mergeEditor.conflict.unhandledFocused.border': '#e0af68b0',
-    'mergeEditor.conflict.handledUnfocused.border': '#41a6b525',
-    'mergeEditor.conflict.handledFocused.border': '#41a6b565',
-    'mergeEditor.conflict.handled.minimapOverViewRuler': '#449dab',
-    'mergeEditor.conflict.unhandled.minimapOverViewRuler': '#e0af68',
-    'gitlens.trailingLineForegroundColor': '#646e9c',
-    'gitlens.gutterUncommittedForegroundColor': '#7aa2f7',
-    'gitlens.gutterForegroundColor': '#787c99',
-    'gitlens.gutterBackgroundColor': '#16161e',
-    'notificationCenterHeader.background': '#101014',
-    'notifications.background': '#101014',
+    'scmGraph.historyItemRemoteRefColor':
+      baseColors.uiComponents.scmGraphHistoryItemHoverAdditions,
+    'scmGraph.historyItemBaseRefColor':
+      baseColors.uiComponents.scmGraphHistoryItemBaseRef,
+    'scmGraph.historyItemHoverDefaultLabelForeground':
+      baseColors.foreground.primary,
+    'merge.currentHeaderBackground':
+      baseColors.uiComponents.mergeCurrentHeaderBackground,
+    'merge.currentContentBackground':
+      baseColors.uiComponents.mergeCurrentContentBackground,
+    'merge.incomingHeaderBackground':
+      baseColors.uiComponents.mergeIncomingHeaderBackground,
+    'merge.incomingContentBackground':
+      baseColors.uiComponents.mergeIncomingContentBackground,
+    'mergeEditor.change.background':
+      baseColors.uiComponents.mergeEditorChangeBackground,
+    'mergeEditor.change.word.background':
+      baseColors.uiComponents.mergeEditorChangeWordBackground,
+    'mergeEditor.conflict.unhandledUnfocused.border':
+      baseColors.uiComponents.mergeEditorConflictUnhandledUnfocusedBorder,
+    'mergeEditor.conflict.unhandledFocused.border':
+      baseColors.uiComponents.mergeEditorConflictUnhandledFocusedBorder,
+    'mergeEditor.conflict.handledUnfocused.border':
+      baseColors.uiComponents.mergeEditorConflictHandledUnfocusedBorder,
+    'mergeEditor.conflict.handledFocused.border':
+      baseColors.uiComponents.mergeEditorConflictHandledFocusedBorder,
+    'mergeEditor.conflict.handled.minimapOverViewRuler': '#49dab',
+    'mergeEditor.conflict.unhandled.minimapOverViewRuler':
+      baseColors.errorWarning.warning,
+    'gitlens.trailingLineForegroundColor':
+      baseColors.uiComponents.gitlensTrailingLine,
+    'gitlens.gutterUncommittedForegroundColor': baseColors.terminal.blue,
+    'gitlens.gutterForegroundColor': baseColors.foreground.secondary,
+    'gitlens.gutterBackgroundColor': baseColors.background.secondary,
+    'notificationCenterHeader.background': baseColors.background.border,
+    'notifications.background': baseColors.background.border,
     'notificationLink.foreground': '#6183bb',
-    'notificationsErrorIcon.foreground': '#bb616b',
-    'notificationsWarningIcon.foreground': '#bba461',
-    'notificationsInfoIcon.foreground': '#0da0ba',
-    'menubar.selectionForeground': '#a9b1d6',
+    'notificationsErrorIcon.foreground':
+      baseColors.uiComponents.notificationsErrorIcon,
+    'notificationsWarningIcon.foreground':
+      baseColors.uiComponents.notificationsWarningIcon,
+    'notificationsInfoIcon.foreground': baseColors.accent.info,
+    'menubar.selectionForeground': baseColors.foreground.primary,
     'menubar.selectionBackground': '#1e202e',
-    'menubar.selectionBorder': '#1b1e2e',
-    'menu.foreground': '#787c99',
-    'menu.background': '#16161e',
-    'menu.selectionForeground': '#a9b1d6',
+    'menubar.selectionBorder': baseColors.uiComponents.menubarSelectionBorder,
+    'menu.foreground': baseColors.foreground.secondary,
+    'menu.background': baseColors.background.secondary,
+    'menu.selectionForeground': baseColors.foreground.primary,
     'menu.selectionBackground': '#1e202e',
-    'menu.separatorBackground': '#101014',
-    'menu.border': '#101014',
-    'chat.requestBorder': '#0f0f14',
-    'chat.avatarBackground': '#3d59a1',
-    'chat.avatarForeground': '#a9b1d6',
-    'chat.slashCommandBackground': '#14141b',
-    'chat.slashCommandForeground': '#7aa2f7',
-    'inlineChat.foreground': '#a9b1d6',
-    'inlineChatInput.background': '#14141b',
-    'inlineChatDiff.inserted': '#41a6b540',
-    'inlineChatDiff.removed': '#db4b4b42',
+    'menu.separatorBackground': baseColors.background.border,
+    'menu.border': baseColors.background.border,
+    'chat.requestBorder': baseColors.uiComponents.chatRequestBorder,
+    'chat.avatarBackground': baseColors.uiComponents.chatAvatarBackground,
+    'chat.avatarForeground': baseColors.uiComponents.chatAvatarForeground,
+    'chat.slashCommandBackground': baseColors.background.tertiary,
+    'chat.slashCommandForeground': baseColors.terminal.blue,
+    'inlineChat.foreground': baseColors.foreground.primary,
+    'inlineChatInput.background': baseColors.background.tertiary,
+    'inlineChatDiff.inserted': baseColors.uiComponents.inlineChatDiffInserted,
+    'inlineChatDiff.removed': baseColors.uiComponents.inlineChatDiffRemoved,
   }
 }
 
@@ -525,7 +646,7 @@ export const generateTokyoNightTokenColors = () => {
         'string.quoted.docstring.multi.python constant.character.escape',
       ],
       settings: {
-        foreground: '#51597d',
+        foreground: baseTokenColors.comments.primary,
       },
     },
     {
@@ -546,7 +667,7 @@ export const generateTokyoNightTokenColors = () => {
         'log.date',
       ],
       settings: {
-        foreground: '#5a638c',
+        foreground: baseTokenColors.comments.doc,
       },
     },
     {
@@ -558,7 +679,7 @@ export const generateTokyoNightTokenColors = () => {
         'comment.block.documentation entity.name.type.instance',
       ],
       settings: {
-        foreground: '#646e9c',
+        foreground: baseTokenColors.comments.emphasized,
       },
     },
     {
@@ -572,7 +693,7 @@ export const generateTokyoNightTokenColors = () => {
         'constant.other.caps',
       ],
       settings: {
-        foreground: '#ff9e64',
+        foreground: baseTokenColors.special.number,
       },
     },
     {
@@ -585,7 +706,7 @@ export const generateTokyoNightTokenColors = () => {
         'string constant.character',
       ],
       settings: {
-        foreground: '#9ece6a',
+        foreground: baseTokenColors.strings.primary,
       },
     },
     {
@@ -595,35 +716,35 @@ export const generateTokyoNightTokenColors = () => {
         'constant.other.color.rgb-value.hex punctuation.definition.constant',
       ],
       settings: {
-        foreground: '#9aa5ce',
+        foreground: baseTokenColors.special.constant,
       },
     },
     {
       name: 'Invalid',
       scope: ['invalid', 'invalid.illegal'],
       settings: {
-        foreground: '#ff5370',
+        foreground: baseTokenColors.special.invalid,
       },
     },
     {
       name: 'Invalid deprecated',
       scope: 'invalid.deprecated',
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.special.deprecated,
       },
     },
     {
       name: 'Storage Type',
       scope: 'storage.type',
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.keywords.declaration,
       },
     },
     {
       name: 'Storage - modifier, var, const, let',
       scope: ['meta.var.expr storage.type', 'storage.modifier'],
       settings: {
-        foreground: '#9d7cd8',
+        foreground: baseTokenColors.keywords.declaration,
       },
     },
     {
@@ -636,7 +757,7 @@ export const generateTokyoNightTokenColors = () => {
         'punctuation.section.tag.twig',
       ],
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
@@ -651,14 +772,14 @@ export const generateTokyoNightTokenColors = () => {
         'meta.tag.blade keyword.other.type.php',
       ],
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
       name: 'Spread',
       scope: ['keyword.operator.spread', 'keyword.operator.rest'],
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
         fontStyle: 'bold',
       },
     },
@@ -693,7 +814,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.embedded.inline.phpx punctuation.definition.tag.end.html',
       ],
       settings: {
-        foreground: '#89ddff',
+        foreground: baseTokenColors.operators.primary,
       },
     },
     {
@@ -707,21 +828,21 @@ export const generateTokyoNightTokenColors = () => {
         'meta.import keyword.other',
       ],
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
       name: 'Keyword',
       scope: ['keyword', 'keyword.control', 'keyword.other.important'],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.keywords.primary,
       },
     },
     {
       name: 'Keyword SQL',
       scope: 'keyword.other.DML',
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
@@ -736,14 +857,14 @@ export const generateTokyoNightTokenColors = () => {
         'keyword.operator.or.regexp',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.keywords.operator,
       },
     },
     {
       name: 'Tag',
       scope: 'entity.name.tag',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
@@ -755,7 +876,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.tag',
       ],
       settings: {
-        foreground: '#de5971',
+        foreground: baseColors.tokenColors.tagCustom,
       },
     },
     {
@@ -765,7 +886,7 @@ export const generateTokyoNightTokenColors = () => {
         'text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic',
       ],
       settings: {
-        foreground: '#ba3c97',
+        foreground: baseColors.tokenColors.tagPunctuation,
       },
     },
     {
@@ -779,7 +900,7 @@ export const generateTokyoNightTokenColors = () => {
         'constant.other',
       ],
       settings: {
-        foreground: '#e0af68',
+        foreground: baseTokenColors.special.constant,
       },
     },
     {
@@ -795,14 +916,14 @@ export const generateTokyoNightTokenColors = () => {
         'meta.embedded.inline.phpx constant.other.php',
       ],
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
       name: 'Variable Array Key',
       scope: 'meta.array.literal variable',
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
@@ -818,7 +939,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.block entity.name.label',
       ],
       settings: {
-        foreground: '#73daca',
+        foreground: baseTokenColors.variables.property,
       },
     },
     {
@@ -830,14 +951,14 @@ export const generateTokyoNightTokenColors = () => {
         'meta.function-call variable.other.object.property',
       ],
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
       name: 'Object Property',
       scope: 'variable.other.object.property',
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -845,21 +966,21 @@ export const generateTokyoNightTokenColors = () => {
       scope:
         'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
       settings: {
-        foreground: '#41a6b5',
+        foreground: baseColors.tokenColors.objectLiteralMemberLvl3,
       },
     },
     {
       name: 'C-related Block Level Variables',
       scope: 'source.cpp meta.block variable.other',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseColors.tokenColors.cBlockLevelVariables,
       },
     },
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseColors.tokenColors.otherVariable,
       },
     },
     {
@@ -872,7 +993,7 @@ export const generateTokyoNightTokenColors = () => {
         'storage.type.cs',
       ],
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.method,
       },
     },
     {
@@ -887,7 +1008,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.object-literal entity.name.function',
       ],
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
     {
@@ -899,7 +1020,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.function.parameter variable',
       ],
       settings: {
-        foreground: '#e0af68',
+        foreground: baseTokenColors.variables.parameter,
       },
     },
     {
@@ -912,7 +1033,7 @@ export const generateTokyoNightTokenColors = () => {
         'keyword.other.unit',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -925,14 +1046,14 @@ export const generateTokyoNightTokenColors = () => {
         'variable.other.declaration',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
       name: 'Inherited Class',
       scope: 'entity.other.inherited-class',
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -954,21 +1075,21 @@ export const generateTokyoNightTokenColors = () => {
         'variable.other.constant.object',
       ],
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseTokenColors.types.class,
       },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
       name: 'Support Function',
       scope: 'support.function',
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseTokenColors.types.class,
       },
     },
     {
@@ -985,14 +1106,14 @@ export const generateTokyoNightTokenColors = () => {
         'support.type.map.key',
       ],
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
     {
       name: 'CSS Font',
       scope: ['support.constant.font-name', 'meta.definition.variable'],
       settings: {
-        foreground: '#9ece6a',
+        foreground: baseColors.tokenColors.cssFont,
       },
     },
     {
@@ -1002,21 +1123,21 @@ export const generateTokyoNightTokenColors = () => {
         'meta.at-rule.mixin.scss entity.name.function.scss',
       ],
       settings: {
-        foreground: '#9ece6a',
+        foreground: baseColors.tokenColors.cssFont,
       },
     },
     {
       name: 'CSS ID',
       scope: 'entity.other.attribute-name.id',
       settings: {
-        foreground: '#fc7b7b',
+        foreground: baseColors.tokenColors.cssId,
       },
     },
     {
       name: 'CSS Tag',
       scope: 'entity.name.tag.css',
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseColors.tokenColors.cssTag,
       },
     },
     {
@@ -1028,14 +1149,14 @@ export const generateTokyoNightTokenColors = () => {
         'entity.name.tag.reference',
       ],
       settings: {
-        foreground: '#e0af68',
+        foreground: baseColors.tokenColors.cssTagReference,
       },
     },
     {
       name: 'CSS Punctuation',
       scope: 'meta.property-list',
       settings: {
-        foreground: '#9abdf5',
+        foreground: baseColors.tokenColors.cssPunctuation,
       },
     },
     {
@@ -1046,7 +1167,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.property-list meta.at-rule.else',
       ],
       settings: {
-        foreground: '#ff9e64',
+        foreground: baseColors.tokenColors.cssAtRule,
       },
     },
     {
@@ -1055,14 +1176,14 @@ export const generateTokyoNightTokenColors = () => {
         'entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css',
       ],
       settings: {
-        foreground: '#73daca',
+        foreground: baseTokenColors.variables.property,
       },
     },
     {
       name: 'CSS Punctuation comma fix',
       scope: 'meta.property-list meta.property-list',
       settings: {
-        foreground: '#9abdf5',
+        foreground: baseColors.tokenColors.cssPunctuation,
       },
     },
     {
@@ -1073,7 +1194,7 @@ export const generateTokyoNightTokenColors = () => {
         'meta.at-rule.include keyword.control.at-rule.include',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -1091,21 +1212,21 @@ export const generateTokyoNightTokenColors = () => {
         'keyword.control punctuation.definition.keyword',
       ],
       settings: {
-        foreground: '#9d7cd8',
+        foreground: baseColors.tokenColors.scssMixinExtend,
       },
     },
     {
       name: 'SCSS Include Mixin Argument',
       scope: 'meta.property-list meta.at-rule.include',
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
       name: 'CSS value',
       scope: 'support.constant.property-value',
       settings: {
-        foreground: '#ff9e64',
+        foreground: baseTokenColors.special.number,
       },
     },
     {
@@ -1116,21 +1237,21 @@ export const generateTokyoNightTokenColors = () => {
         'variable.other.class.js',
       ],
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
       name: 'Language methods',
       scope: 'variable.language',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseColors.tokenColors.languageMethods,
       },
     },
     {
       name: 'Variable punctuation',
       scope: 'variable.other punctuation.definition.variable',
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -1141,7 +1262,7 @@ export const generateTokyoNightTokenColors = () => {
         'keyword.other.this',
       ],
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
@@ -1152,14 +1273,14 @@ export const generateTokyoNightTokenColors = () => {
         'text.html.basic entity.other.attribute-name',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
       name: 'HTML Character Entity',
       scope: 'text.html constant.character.entity',
       settings: {
-        foreground: '#0DB9D7',
+        foreground: baseColors.tokenColors.htmlCharacterEntity,
       },
     },
     {
@@ -1169,14 +1290,14 @@ export const generateTokyoNightTokenColors = () => {
         'meta.directive.vue entity.other.attribute-name.html',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
       name: "CSS ID's",
       scope: 'source.sass keyword.control',
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
     {
@@ -1188,49 +1309,49 @@ export const generateTokyoNightTokenColors = () => {
         'meta.property-list meta.property-value',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
       name: 'Inserted',
       scope: 'markup.inserted',
       settings: {
-        foreground: '#449dab',
+        foreground: baseColors.uiComponents.listDeemphasizedForeground,
       },
     },
     {
       name: 'Deleted',
       scope: 'markup.deleted',
       settings: {
-        foreground: '#914c54',
+        foreground: baseColors.uiComponents.gitDecorationDeleted,
       },
     },
     {
       name: 'Changed',
       scope: 'markup.changed',
       settings: {
-        foreground: '#6183bb',
+        foreground: baseColors.uiComponents.gitDecorationModified,
       },
     },
     {
       name: 'Regular Expressions',
       scope: 'string.regexp',
       settings: {
-        foreground: '#b4f9f8',
+        foreground: baseTokenColors.strings.regex,
       },
     },
     {
       name: 'Regular Expressions - Punctuation',
       scope: 'punctuation.definition.group',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
       name: 'Regular Expressions - Character Class',
       scope: ['constant.other.character-class.regexp'],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -1240,28 +1361,28 @@ export const generateTokyoNightTokenColors = () => {
         'punctuation.definition.character-class.regexp',
       ],
       settings: {
-        foreground: '#e0af68',
+        foreground: baseTokenColors.special.constant,
       },
     },
     {
       name: 'Regular Expressions - Quantifier',
       scope: 'keyword.operator.quantifier.regexp',
       settings: {
-        foreground: '#89ddff',
+        foreground: baseTokenColors.operators.primary,
       },
     },
     {
       name: 'Regular Expressions - Backslash',
       scope: 'constant.character.escape.backslash',
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
       name: 'Escape Characters',
       scope: 'constant.character.escape',
       settings: {
-        foreground: '#89ddff',
+        foreground: baseTokenColors.operators.primary,
       },
     },
     {
@@ -1271,14 +1392,14 @@ export const generateTokyoNightTokenColors = () => {
         'tag.decorator.js punctuation.definition.tag.js',
       ],
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
     {
       name: 'CSS Units',
       scope: 'keyword.other.unit',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
@@ -1287,7 +1408,7 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
     {
@@ -1296,7 +1417,7 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseTokenColors.types.class,
       },
     },
     {
@@ -1305,7 +1426,7 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#7dcfff',
+        foreground: baseTokenColors.keywords.importExport,
       },
     },
     {
@@ -1314,7 +1435,7 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -1323,7 +1444,7 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#e0af68',
+        foreground: baseTokenColors.special.constant,
       },
     },
     {
@@ -1332,25 +1453,25 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseTokenColors.types.class,
       },
     },
     {
       name: 'JSON Key - Level 6',
       scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+        'source.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#73daca',
+        foreground: baseTokenColors.variables.property,
       },
     },
     {
       name: 'JSON Key - Level 7',
       scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#f7768e',
+        foreground: baseTokenColors.special.tag,
       },
     },
     {
@@ -1359,14 +1480,14 @@ export const generateTokyoNightTokenColors = () => {
         'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
-        foreground: '#9ece6a',
+        foreground: baseTokenColors.strings.primary,
       },
     },
     {
       name: 'Plain Punctuation',
       scope: 'punctuation.definition.list_item.markdown',
       settings: {
-        foreground: '#9abdf5',
+        foreground: baseColors.tokenColors.cssPunctuation,
       },
     },
     {
@@ -1391,14 +1512,14 @@ export const generateTokyoNightTokenColors = () => {
         'punctuation.section',
       ],
       settings: {
-        foreground: '#9abdf5',
+        foreground: baseColors.tokenColors.cssPunctuation,
       },
     },
     {
       name: 'Markdown - Plain',
       scope: ['meta.embedded.block'],
       settings: {
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -1410,14 +1531,14 @@ export const generateTokyoNightTokenColors = () => {
         'text.log',
       ],
       settings: {
-        foreground: '#9aa5ce',
+        foreground: baseTokenColors.special.constant,
       },
     },
     {
       name: 'Markdown - Markup Raw Inline',
       scope: 'text.html.markdown markup.inline.raw.markdown',
       settings: {
-        foreground: '#bb9af7',
+        foreground: baseTokenColors.variables.constant,
       },
     },
     {
@@ -1425,7 +1546,7 @@ export const generateTokyoNightTokenColors = () => {
       scope:
         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
       settings: {
-        foreground: '#4E5579',
+        foreground: baseTokenColors.comments.doc,
       },
     },
     {
@@ -1436,7 +1557,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#89ddff',
+        foreground: baseColors.tokenColors.markdownHeading1,
       },
     },
     {
@@ -1447,7 +1568,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#61bdf2',
+        foreground: baseColors.tokenColors.markdownHeading2,
       },
     },
     {
@@ -1458,7 +1579,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#7aa2f7',
+        foreground: baseColors.tokenColors.markdownHeading3,
       },
     },
     {
@@ -1469,7 +1590,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#6d91de',
+        foreground: baseColors.tokenColors.markdownHeading4,
       },
     },
     {
@@ -1480,7 +1601,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#9aa5ce',
+        foreground: baseColors.tokenColors.markdownHeading5,
       },
     },
     {
@@ -1491,7 +1612,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold',
-        foreground: '#747ca1',
+        foreground: baseColors.tokenColors.markdownHeading6,
       },
     },
     {
@@ -1499,7 +1620,7 @@ export const generateTokyoNightTokenColors = () => {
       scope: ['markup.italic', 'markup.italic punctuation'],
       settings: {
         fontStyle: 'italic',
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -1507,7 +1628,7 @@ export const generateTokyoNightTokenColors = () => {
       scope: ['markup.bold', 'markup.bold punctuation'],
       settings: {
         fontStyle: 'bold',
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -1518,7 +1639,7 @@ export const generateTokyoNightTokenColors = () => {
       ],
       settings: {
         fontStyle: 'bold italic',
-        foreground: '#c0caf5',
+        foreground: baseTokenColors.variables.primary,
       },
     },
     {
@@ -1532,7 +1653,7 @@ export const generateTokyoNightTokenColors = () => {
       name: 'Markdown - Blockquote',
       scope: 'markup.quote punctuation.definition.blockquote.markdown',
       settings: {
-        foreground: '#4e5579',
+        foreground: baseTokenColors.comments.doc,
       },
     },
     {
@@ -1551,7 +1672,7 @@ export const generateTokyoNightTokenColors = () => {
         'string.other.link.description.title.markdown',
       ],
       settings: {
-        foreground: '#73daca',
+        foreground: baseTokenColors.variables.property,
       },
     },
     {
@@ -1562,7 +1683,7 @@ export const generateTokyoNightTokenColors = () => {
         'variable.language.fenced.markdown',
       ],
       settings: {
-        foreground: '#89ddff',
+        foreground: baseTokenColors.operators.primary,
       },
     },
     {
@@ -1570,63 +1691,63 @@ export const generateTokyoNightTokenColors = () => {
       scope: 'meta.separator',
       settings: {
         fontStyle: 'bold',
-        foreground: '#51597d',
+        foreground: baseColors.tokenColors.markdownSeparator,
       },
     },
     {
       name: 'Markup - Table',
       scope: 'markup.table',
       settings: {
-        foreground: '#c0cefc',
+        foreground: baseColors.tokenColors.markupTable,
       },
     },
     {
       name: 'Token - Info',
       scope: 'token.info-token',
       settings: {
-        foreground: '#0db9d7',
+        foreground: baseColors.tokenColors.tokenInfo,
       },
     },
     {
       name: 'Token - Warn',
       scope: 'token.warn-token',
       settings: {
-        foreground: '#ffdb69',
+        foreground: baseColors.tokenColors.tokenWarn,
       },
     },
     {
       name: 'Token - Error',
       scope: 'token.error-token',
       settings: {
-        foreground: '#db4b4b',
+        foreground: baseColors.tokenColors.tokenError,
       },
     },
     {
       name: 'Token - Debug',
       scope: 'token.debug-token',
       settings: {
-        foreground: '#b267e6',
+        foreground: baseColors.tokenColors.tokenDebug,
       },
     },
     {
       name: 'Apache Tag',
       scope: 'entity.tag.apacheconf',
       settings: {
-        foreground: '#f7768e',
+        foreground: baseColors.tokenColors.apacheTag,
       },
     },
     {
       name: 'Preprocessor',
       scope: ['meta.preprocessor'],
       settings: {
-        foreground: '#73daca',
+        foreground: baseColors.tokenColors.preprocessor,
       },
     },
     {
       name: 'ENV value',
       scope: 'source.env',
       settings: {
-        foreground: '#7aa2f7',
+        foreground: baseTokenColors.functions.primary,
       },
     },
   ]
