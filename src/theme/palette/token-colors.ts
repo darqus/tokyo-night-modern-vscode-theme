@@ -67,6 +67,44 @@ export const baseTokenColors = {
     invalid: '#ff5370', // Невалидные токены
     deprecated: '#bb9af7', // Устаревшие токены
   },
+  semantic: {
+    namespace: '#0db9d7',
+    type: '#0db9d7',
+    class: '#0db9d7',
+    interface: '#0db9d7',
+    typeParameter: '#0db9d7',
+    enum: '#0db9d7',
+    struct: '#0db9d7',
+    'variable.readonly': '#41a6b5',
+    enumMember: '#41a6b5',
+    variable: '#c0caf5',
+    'variable.defaultLibrary': '#2ac3de',
+    'variable.declaration': '#bb9af7',
+    parameter: '#d9d4cd',
+    'parameter.declaration': '#e0af68',
+    property: '#73daca',
+    'property.declaration': '#73daca',
+    'property.defaultLibrary': '#2ac3de',
+    method: '#7aa2f7',
+    function: '#7aa2f7',
+    decorator: '#7aa2f7',
+    macro: '#7aa2f7',
+    label: '#c0caf5',
+    comment: '#51597d',
+    string: '#9ece6a',
+    number: '#ff9e64',
+    boolean: '#ff9e64',
+    regexp: '#b4f9f8',
+    operator: '#89ddff',
+    keyword: '#bb9af7',
+    modifier: '#9d7cd8',
+    selfKeyword: '#f7768e',
+    selfTypeKeyword: '#2ac3de',
+    this: '#f7768e',
+    nil: '#ff9e64',
+    null: '#ff9e64',
+    undefined: '#ff9e64',
+  },
 }
 
 /**
@@ -96,7 +134,7 @@ export const generateTokenPalette = () => {
     },
   }
 
-  // Создаем варианты для строк
+ // Создаем варианты для строк
   const stringVariants = {
     primary: {
       base: baseTokenColors.strings.primary,
@@ -214,7 +252,7 @@ export const generateTokenPalette = () => {
     },
   }
 
-  // Создаем варианты для переменных
+ // Создаем варианты для переменных
   const variableVariants = {
     primary: {
       base: baseTokenColors.variables.primary,
@@ -249,7 +287,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для операторов
-  const operatorVariants = {
+ const operatorVariants = {
     primary: {
       base: baseTokenColors.operators.primary,
       lighter: lighten(baseTokenColors.operators.primary, 0.1),
@@ -283,7 +321,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для пунктуации
-  const punctuationVariants = {
+ const punctuationVariants = {
     primary: {
       base: baseTokenColors.punctuation.primary,
       lighter: lighten(baseTokenColors.punctuation.primary, 0.1),
@@ -362,6 +400,226 @@ export const generateTokenPalette = () => {
     },
   }
 
+  // Создаем варианты для семантических токенов
+  const semanticVariants = {
+    namespace: {
+      base: baseTokenColors.semantic.namespace,
+      lighter: lighten(baseTokenColors.semantic.namespace, 0.1),
+      darker: darken(baseTokenColors.semantic.namespace, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.namespace, 0.7),
+    },
+    type: {
+      base: baseTokenColors.semantic.type,
+      lighter: lighten(baseTokenColors.semantic.type, 0.1),
+      darker: darken(baseTokenColors.semantic.type, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.type, 0.7),
+    },
+    class: {
+      base: baseTokenColors.semantic.class,
+      lighter: lighten(baseTokenColors.semantic.class, 0.1),
+      darker: darken(baseTokenColors.semantic.class, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.class, 0.7),
+    },
+    interface: {
+      base: baseTokenColors.semantic.interface,
+      lighter: lighten(baseTokenColors.semantic.interface, 0.1),
+      darker: darken(baseTokenColors.semantic.interface, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.interface, 0.7),
+    },
+    typeParameter: {
+      base: baseTokenColors.semantic.typeParameter,
+      lighter: lighten(baseTokenColors.semantic.typeParameter, 0.1),
+      darker: darken(baseTokenColors.semantic.typeParameter, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.typeParameter, 0.7),
+    },
+    enum: {
+      base: baseTokenColors.semantic.enum,
+      lighter: lighten(baseTokenColors.semantic.enum, 0.1),
+      darker: darken(baseTokenColors.semantic.enum, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.enum, 0.7),
+    },
+    struct: {
+      base: baseTokenColors.semantic.struct,
+      lighter: lighten(baseTokenColors.semantic.struct, 0.1),
+      darker: darken(baseTokenColors.semantic.struct, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.struct, 0.7),
+    },
+    'variable.readonly': {
+      base: baseTokenColors.semantic['variable.readonly'],
+      lighter: lighten(baseTokenColors.semantic['variable.readonly'], 0.1),
+      darker: darken(baseTokenColors.semantic['variable.readonly'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['variable.readonly'], 0.7),
+    },
+    enumMember: {
+      base: baseTokenColors.semantic.enumMember,
+      lighter: lighten(baseTokenColors.semantic.enumMember, 0.1),
+      darker: darken(baseTokenColors.semantic.enumMember, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.enumMember, 0.7),
+    },
+    variable: {
+      base: baseTokenColors.semantic.variable,
+      lighter: lighten(baseTokenColors.semantic.variable, 0.1),
+      darker: darken(baseTokenColors.semantic.variable, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.variable, 0.7),
+    },
+    'variable.defaultLibrary': {
+      base: baseTokenColors.semantic['variable.defaultLibrary'],
+      lighter: lighten(baseTokenColors.semantic['variable.defaultLibrary'], 0.1),
+      darker: darken(baseTokenColors.semantic['variable.defaultLibrary'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['variable.defaultLibrary'], 0.7),
+    },
+    'variable.declaration': {
+      base: baseTokenColors.semantic['variable.declaration'],
+      lighter: lighten(baseTokenColors.semantic['variable.declaration'], 0.1),
+      darker: darken(baseTokenColors.semantic['variable.declaration'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['variable.declaration'], 0.7),
+    },
+    parameter: {
+      base: baseTokenColors.semantic.parameter,
+      lighter: lighten(baseTokenColors.semantic.parameter, 0.1),
+      darker: darken(baseTokenColors.semantic.parameter, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.parameter, 0.7),
+    },
+    'parameter.declaration': {
+      base: baseTokenColors.semantic['parameter.declaration'],
+      lighter: lighten(baseTokenColors.semantic['parameter.declaration'], 0.1),
+      darker: darken(baseTokenColors.semantic['parameter.declaration'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['parameter.declaration'], 0.7),
+    },
+    property: {
+      base: baseTokenColors.semantic.property,
+      lighter: lighten(baseTokenColors.semantic.property, 0.1),
+      darker: darken(baseTokenColors.semantic.property, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.property, 0.7),
+    },
+    'property.declaration': {
+      base: baseTokenColors.semantic['property.declaration'],
+      lighter: lighten(baseTokenColors.semantic['property.declaration'], 0.1),
+      darker: darken(baseTokenColors.semantic['property.declaration'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['property.declaration'], 0.7),
+    },
+    'property.defaultLibrary': {
+      base: baseTokenColors.semantic['property.defaultLibrary'],
+      lighter: lighten(baseTokenColors.semantic['property.defaultLibrary'], 0.1),
+      darker: darken(baseTokenColors.semantic['property.defaultLibrary'], 0.1),
+      transparent: withAlpha(baseTokenColors.semantic['property.defaultLibrary'], 0.7),
+    },
+    method: {
+      base: baseTokenColors.semantic.method,
+      lighter: lighten(baseTokenColors.semantic.method, 0.1),
+      darker: darken(baseTokenColors.semantic.method, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.method, 0.7),
+    },
+    function: {
+      base: baseTokenColors.semantic.function,
+      lighter: lighten(baseTokenColors.semantic.function, 0.1),
+      darker: darken(baseTokenColors.semantic.function, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.function, 0.7),
+    },
+    decorator: {
+      base: baseTokenColors.semantic.decorator,
+      lighter: lighten(baseTokenColors.semantic.decorator, 0.1),
+      darker: darken(baseTokenColors.semantic.decorator, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.decorator, 0.7),
+    },
+    macro: {
+      base: baseTokenColors.semantic.macro,
+      lighter: lighten(baseTokenColors.semantic.macro, 0.1),
+      darker: darken(baseTokenColors.semantic.macro, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.macro, 0.7),
+    },
+    label: {
+      base: baseTokenColors.semantic.label,
+      lighter: lighten(baseTokenColors.semantic.label, 0.1),
+      darker: darken(baseTokenColors.semantic.label, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.label, 0.7),
+    },
+    comment: {
+      base: baseTokenColors.semantic.comment,
+      lighter: lighten(baseTokenColors.semantic.comment, 0.1),
+      darker: darken(baseTokenColors.semantic.comment, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.comment, 0.7),
+    },
+    string: {
+      base: baseTokenColors.semantic.string,
+      lighter: lighten(baseTokenColors.semantic.string, 0.1),
+      darker: darken(baseTokenColors.semantic.string, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.string, 0.7),
+    },
+    number: {
+      base: baseTokenColors.semantic.number,
+      lighter: lighten(baseTokenColors.semantic.number, 0.1),
+      darker: darken(baseTokenColors.semantic.number, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.number, 0.7),
+    },
+    boolean: {
+      base: baseTokenColors.semantic.boolean,
+      lighter: lighten(baseTokenColors.semantic.boolean, 0.1),
+      darker: darken(baseTokenColors.semantic.boolean, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.boolean, 0.7),
+    },
+    regexp: {
+      base: baseTokenColors.semantic.regexp,
+      lighter: lighten(baseTokenColors.semantic.regexp, 0.1),
+      darker: darken(baseTokenColors.semantic.regexp, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.regexp, 0.7),
+    },
+    operator: {
+      base: baseTokenColors.semantic.operator,
+      lighter: lighten(baseTokenColors.semantic.operator, 0.1),
+      darker: darken(baseTokenColors.semantic.operator, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.operator, 0.7),
+    },
+    keyword: {
+      base: baseTokenColors.semantic.keyword,
+      lighter: lighten(baseTokenColors.semantic.keyword, 0.1),
+      darker: darken(baseTokenColors.semantic.keyword, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.keyword, 0.7),
+    },
+    modifier: {
+      base: baseTokenColors.semantic.modifier,
+      lighter: lighten(baseTokenColors.semantic.modifier, 0.1),
+      darker: darken(baseTokenColors.semantic.modifier, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.modifier, 0.7),
+    },
+    selfKeyword: {
+      base: baseTokenColors.semantic.selfKeyword,
+      lighter: lighten(baseTokenColors.semantic.selfKeyword, 0.1),
+      darker: darken(baseTokenColors.semantic.selfKeyword, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.selfKeyword, 0.7),
+    },
+    selfTypeKeyword: {
+      base: baseTokenColors.semantic.selfTypeKeyword,
+      lighter: lighten(baseTokenColors.semantic.selfTypeKeyword, 0.1),
+      darker: darken(baseTokenColors.semantic.selfTypeKeyword, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.selfTypeKeyword, 0.7),
+    },
+    this: {
+      base: baseTokenColors.semantic.this,
+      lighter: lighten(baseTokenColors.semantic.this, 0.1),
+      darker: darken(baseTokenColors.semantic.this, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.this, 0.7),
+    },
+    nil: {
+      base: baseTokenColors.semantic.nil,
+      lighter: lighten(baseTokenColors.semantic.nil, 0.1),
+      darker: darken(baseTokenColors.semantic.nil, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.nil, 0.7),
+    },
+    null: {
+      base: baseTokenColors.semantic.null,
+      lighter: lighten(baseTokenColors.semantic.null, 0.1),
+      darker: darken(baseTokenColors.semantic.null, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.null, 0.7),
+    },
+    undefined: {
+      base: baseTokenColors.semantic.undefined,
+      lighter: lighten(baseTokenColors.semantic.undefined, 0.1),
+      darker: darken(baseTokenColors.semantic.undefined, 0.1),
+      transparent: withAlpha(baseTokenColors.semantic.undefined, 0.7),
+    },
+  }
+
   return {
     base: baseTokenColors,
     comments: commentVariants,
@@ -373,6 +631,7 @@ export const generateTokenPalette = () => {
     operators: operatorVariants,
     punctuation: punctuationVariants,
     special: specialVariants,
+    semantic: semanticVariants,
   }
 }
 
