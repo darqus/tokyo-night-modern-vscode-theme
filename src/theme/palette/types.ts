@@ -21,8 +21,7 @@ export type VSCodeTheme = {
   }
 }
 
-export type CalmClarityPalette = {
-  // Workbench colors - основные цвета интерфейса
+export type Palette = {
   workbench: {
     background: {
       base: string
@@ -35,7 +34,7 @@ export type CalmClarityPalette = {
       tabbar: string
     }
     foreground: {
-      primary: string
+      base: string
       secondary: string
       badge: string
     }
@@ -50,7 +49,6 @@ export type CalmClarityPalette = {
     }
   }
 
-  // Button colors - цвета кнопок
   button: {
     primaryBackground: string // Основной цвет фона для primary кнопок
     primaryForeground: string // Основной цвет текста для primary кнопок
@@ -74,54 +72,37 @@ export type CalmClarityPalette = {
   syntax: {
     // Основные цвета
     text: string // Основной цвет текста
-    comment: string // Комментарии (серо-голубые, легко читаемые но не отвлекающие)
-
-    // Цвета для улучшенной контрастности
-    purple: string
-    green: string
-    yellow: string
-    magenta: string
-    cyan: string
-
-    // Ключевые слова и операторы
-    keyword: string // Ключевые слова (холодные оттенки)
-    operator: string // Операторы
-    control: string // Контрольные операторы
-
-    // Типы и классы
-    type: string // Типы данных (холодные оттенки)
-    class: string // Классы
-    interface: string // Интерфейсы
-    enum: string // Перечисления
-
-    // Переменные и константы
-    variable: string // Переменные (нейтральные оттенки)
-    parameter: string // Параметры функций
-    constant: string // Константы (теплые оттенки)
-
-    // Функции и методы
-    function: string // Объявления функций (холодные оттенки)
-    method: string // Методы
-
-    // Строки и числа
-    string: string // Строки (теплые оттенки)
-    number: string // Числа
-    boolean: string // Логические значения
-
-    // Свойства и объекты
-    property: string // Свойства объектов
-    object: string // Объекты
-
-    // Теги и атрибуты (для разметки)
-    tag: string // Теги
-    attribute: string // Атрибуты
-
-    // Ошибки и предупреждения
+    comments: string // Комментарии (серо-голубые, легко читаемые но не отвлекающие)
+    strings: string // Строки (теплые оттенки)
+    keywords: string // Ключевые слова (холодные оттенки)
+    types: string // Типы данных (холодные оттенки)
+    numbers: string // Числа
+    booleans: string // Логические значения
+    functions: string // Функции (холодные оттенки)
+    methods: string // Методы
+    properties: string // Свойства объектов
+    variables: string // Переменные (нейтральные оттенки)
+    constants: string // Константы (теплые оттенки)
+    parameters: string // Параметры функций
+    classes: string // Классы
+    interfaces: string // Интерфейсы
+    enums: string // Перечисления
+    operators: string // Операторы
+    punctuation: string // Знаки препинания
+    tags: string // Теги
+    attributes: string // Атрибуты
     error: string // Ошибки
     warning: string // Предупреждения
     info: string // Информационные сообщения
     success: string // Успешные операции
+    object: string // Объекты
+    storage: string // Storage ключевые слова
+    decorator: string // Декораторы
+    annotation: string // Аннотации
+    module: string // Модули
+    namespace: string // Пространства имен
   }
+
   // Controls colors - цвета элементов управления
   controls: {
     /** Фон для чекбоксов. */
@@ -200,4 +181,196 @@ export type CalmClarityPalette = {
     sideBarStickyScroll: string // Цвет тени для фиксированной прокрутки боковой панели
     listFilterWidget: string // Цвет тени для виджета фильтрации списка
   }
+}
+
+
+
+export type SyntaxTokenPalette = {
+  // Основные токены синтаксиса
+  comments: string
+  strings: string
+  numbers: string
+  booleans: string
+  keywords: string
+  storage: string
+  operators: string
+  punctuation: string
+  types: string
+  classes: string
+  interfaces: string
+  enums: string
+  functions: string
+  methods: string
+  variables: string
+  parameters: string
+  constants: string
+  properties: string
+  tags: string
+  attributes: string
+  decorators: string
+  annotations: string
+  nullUndefined: string
+  regex: string
+  escape: string
+  invalid: string
+  deprecated: string
+  brackets: string
+  bracketGuides: string
+  diffAdded: string
+  diffDeleted: string
+  diffModified: string
+  jsonKeyLevel0: string
+  jsonKeyLevel1: string
+  jsonKeyLevel2: string
+  jsonKeyLevel3: string
+  jsonKeyLevel4: string
+  jsonKeyLevel5: string
+  jsonKeyLevel6: string
+  jsonKeyLevel7: string
+  jsonKeyLevel8: string
+  markdownHeading: string
+  markdownLink: string
+  markdownCode: string
+  markdownQuote: string
+  markupItalic: string
+  markupBold: string
+  markupUnderline: string
+  tokenInfo: string
+  tokenWarn: string
+  tokenError: string
+  tokenDebug: string
+  cssClass: string
+  cssId: string
+  cssTag: string
+  cssPseudo: string
+  cssProperty: string
+  cssValue: string
+  cssUnit: string
+  cssVariable: string
+  htmlAttribute: string
+  htmlEntity: string
+  vueAttribute: string
+  phpVariable: string
+  phpConstant: string
+  pythonBuiltin: string
+  pythonDecorator: string
+  sqlKeyword: string
+  sqlFunction: string
+  javaModifier: string
+  javaImport: string
+  javaStorage: string
+  csharpModifier: string
+  csharpKeyword: string
+  csharpType: string
+  goPackage: string
+  goBuiltins: string
+  goKeywords: string
+  rustKeyword: string
+  rustType: string
+  rubySymbol: string
+  rubyConstant: string
+  shellVariable: string
+  yamlKey: string
+  yamlString: string
+  jsonProperty: string
+  xmlTag: string
+  xmlAttribute: string
+  xmlString: string
+  jsxTag: string
+  jsxAttribute: string
+  jsxText: string
+  tsType: string
+  tsInterface: string
+  tsEnum: string
+  tsNamespace: string
+  tsTypeParameter: string
+  tsDecorators: string
+  tsKeywords: string
+  tsStorage: string
+  tsModule: string
+  jsImportExport: string
+  jsSpecialIdentifiers: string
+  jsTemplateExpression: string
+  jsSpreadOperator: string
+  jsDestructuring: string
+  jsControlFlow: string
+  jsOperators: string
+  jsMethod: string
+  jsProp: string
+  jsGlobal: string
+  jsUndefined: string
+  jsNull: string
+  jsRegexp: string
+  jsEval: string
+  jsPrototype: string
+  jsScope: string
+  jsBuiltins: string
+  jsConsole: string
+  jsLabel: string
+  jsModuleExports: string
+  jsRequire: string
+  jsJson: string
+  jsStorage: string
+  jsDecorator: string
+  jsAsync: string
+  jsPromise: string
+  jsError: string
+  jsException: string
+  jsDebug: string
+  jsTodo: string
+  jsCommentTags: string
+  jsDocTags: string
+  jsDocComments: string
+  jsDocTypes: string
+  jsDocValues: string
+  jsDocVariables: string
+  jsDocFunctions: string
+  jsDocKeywords: string
+  semanticParameter: string
+  semanticParameterDeclaration: string
+  semanticProperty: string
+  semanticPropertyDeclaration: string
+  semanticMethod: string
+  semanticMethodDeclaration: string
+  semanticFunction: string
+  semanticFunctionDeclaration: string
+  semanticVariable: string
+  semanticVariableDeclaration: string
+  semanticType: string
+  semanticTypeDeclaration: string
+  semanticClass: string
+  semanticClassDeclaration: string
+  semanticInterface: string
+  semanticInterfaceDeclaration: string
+  semanticNamespace: string
+  semanticNamespaceDeclaration: string
+  semanticEnum: string
+  semanticEnumDeclaration: string
+  semanticEnumMember: string
+  semanticStruct: string
+  semanticStructDeclaration: string
+  semanticTypeParameter: string
+  semanticTypeParameterDeclaration: string
+  semanticMacro: string
+  semanticMacroDeclaration: string
+  semanticLabel: string
+  semanticLabelDeclaration: string
+  semanticComment: string
+  semanticString: string
+  semanticNumber: string
+  semanticBoolean: string
+  semanticRegexp: string
+  semanticOperator: string
+  semanticKeyword: string
+  semanticModifier: string
+  semanticDecorator: string
+  semanticBuiltIn: string
+  semanticDefaultLibrary: string
+  semanticSelf: string
+  semanticSuper: string
+  semanticThis: string
+  semanticNil: string
+  semanticNull: string
+  semanticUndefined: string
+  semanticSelfType: string
 }

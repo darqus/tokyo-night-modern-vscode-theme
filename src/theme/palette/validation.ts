@@ -1,4 +1,4 @@
-import type { CalmClarityPalette } from './types'
+import type { Palette } from './types'
 import { getContrastRatio, meetsWCAGContrast } from './color-utils'
 
 /**
@@ -33,7 +33,7 @@ export interface ContrastValidationConfig {
  * Проверяет контрастность между парами элементов
  */
 export function validateContrastPairs(
-  _palette: CalmClarityPalette,
+  _palette: Palette,
   pairs: Array<{
     element1: string
     color1: string
@@ -66,7 +66,7 @@ export function validateContrastPairs(
  * Проверяет контрастность всех элементов с фоном
  */
 export function validateContrastWithBackground(
-  _palette: CalmClarityPalette,
+  _palette: Palette,
   backgroundColor: string,
   elements: Array<{ element: string; color: string; required: 'AA' | 'AAA' }>
 ): ContrastCheckResult[] {
@@ -94,7 +94,7 @@ export function validateContrastWithBackground(
  * Проверяет общую контрастность палитры
  */
 export function validatePaletteContrast(
-  palette: CalmClarityPalette
+  palette: Palette
 ): ContrastCheckResult[] {
   const results: ContrastCheckResult[] = []
 
@@ -105,8 +105,8 @@ export function validatePaletteContrast(
       palette.workbench.background.base,
       [
         {
-          element: 'foreground.primary',
-          color: palette.workbench.foreground.primary,
+          element: 'foreground.base',
+          color: palette.workbench.foreground.base,
           required: 'AA',
         },
         {
@@ -116,8 +116,8 @@ export function validatePaletteContrast(
         },
         { element: 'syntax.text', color: palette.syntax.text, required: 'AA' },
         {
-          element: 'syntax.comment',
-          color: palette.syntax.comment,
+          element: 'syntax.comments',
+          color: palette.syntax.comments,
           required: 'AA',
         },
       ]
@@ -148,8 +148,8 @@ export function validatePaletteContrast(
   results.push(
     ...validateContrastPairs(palette, [
       {
-        element1: 'foreground.primary',
-        color1: palette.workbench.foreground.primary,
+        element1: 'foreground.base',
+        color1: palette.workbench.foreground.base,
         element2: 'workbench.background.secondary',
         color2: palette.workbench.background.secondary,
         required: 'AA',
@@ -162,17 +162,17 @@ export function validatePaletteContrast(
         required: 'AA',
       },
       {
-        element1: 'syntax.keyword',
-        color1: palette.syntax.keyword,
-        element2: 'syntax.variable',
-        color2: palette.syntax.variable,
+        element1: 'syntax.keywords',
+        color1: palette.syntax.keywords,
+        element2: 'syntax.variables',
+        color2: palette.syntax.variables,
         required: 'AA',
       },
       {
-        element1: 'syntax.string',
-        color1: palette.syntax.string,
-        element2: 'syntax.number',
-        color2: palette.syntax.number,
+        element1: 'syntax.strings',
+        color1: palette.syntax.strings,
+        element2: 'syntax.numbers',
+        color2: palette.syntax.numbers,
         required: 'AA',
       },
     ])
@@ -184,7 +184,7 @@ export function validatePaletteContrast(
 /**
  * Возвращает отчет о проверке контрастности
  */
-export function getContrastValidationReport(palette: CalmClarityPalette): {
+export function getContrastValidationReport(palette: Palette): {
   totalChecks: number
   passedChecks: number
   failedChecks: number

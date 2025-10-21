@@ -1,6 +1,6 @@
 /**
- * Calm Clarity Theme - Скрипт сборки
- * Скрипт для генерации и сохранения темы "Спокойная Четкость"
+ * Calm Clarity и Tokyo Night Темы - Скрипт сборки
+ * Скрипт для генерации и сохранения тем "Спокойная Четкость" и "Tokyo Night"
  */
 
 import * as fs from 'node:fs'
@@ -11,24 +11,31 @@ import { validatePaletteContrastOnBuild } from '../src/theme/validation/contrast
 // Проверяем контрастность палитры перед сборкой
 validatePaletteContrastOnBuild()
 
-// Генерируем JSON темы
-const themeJSON = generateFinalThemeJSON()
+// Функция для создания директории, если она не существует
+const ensureDirectoryExists = (dirPath: string) => {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true })
+  }
+}
 
-// Определяем путь для сохранения файла темы
-const outputPath = path.join(
+// Генерируем JSON темы Tokyo Night
+const tokyoNightThemeJSON = generateFinalThemeJSON()
+
+// Определяем путь для сохранения файла темы Tokyo Night
+const tokyoNightOutputPath = path.join(
   __dirname,
   '..',
   'themes',
-  'calm-clarity-color-theme.json'
+  'tokyo-night-color-theme.json'
 )
 
-// Создаем директорию, если она не существует
-const outputDir = path.dirname(outputPath)
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true })
-}
+// Создаем директорию для темы Tokyo Night, если она не существует
+const tokyoNightOutputDir = path.dirname(tokyoNightOutputPath)
+ensureDirectoryExists(tokyoNightOutputDir)
 
-// Записываем JSON в файл
-fs.writeFileSync(outputPath, themeJSON)
+// Записываем JSON темы Tokyo Night в файл
+fs.writeFileSync(tokyoNightOutputPath, tokyoNightThemeJSON)
 
-console.log(`Тема "Calm Clarity" успешно собрана и сохранена в ${outputPath}`)
+console.log(
+  `Тема "Tokyo Night" успешно собрана и сохранена в ${tokyoNightOutputPath}`
+)
