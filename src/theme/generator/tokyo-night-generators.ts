@@ -51,259 +51,478 @@ export const generateTokyoNightWorkbenchColors = () => {
     'badge.background': tokyoNightColors.workbench['badge.background'],
     'badge.foreground': tokyoNightColors.workbench['badge.foreground'],
     'icon.foreground': tokyoNightColors.workbench['icon.foreground'],
-    'settings.headerForeground': tokyoNightColors.workbench['settings.headerForeground'],
+    'settings.headerForeground':
+      tokyoNightColors.workbench['settings.headerForeground'],
     'window.activeBorder': tokyoNightColors.workbench['window.activeBorder'],
-    'window.inactiveBorder': tokyoNightColors.workbench['window.inactiveBorder'],
+    'window.inactiveBorder':
+      tokyoNightColors.workbench['window.inactiveBorder'],
     'sash.hoverBorder': tokyoNightColors.workbench['sash.hoverBorder'],
-    'toolbar.activeBackground': tokyoNightColors.workbench['toolbar.activeBackground'],
-    'toolbar.hoverBackground': tokyoNightColors.workbench['toolbar.hoverBackground'],
-    'extensionButton.prominentBackground': tokyoNightColors.workbench['extensionButton.prominentBackground'],
-    'extensionButton.prominentHoverBackground': tokyoNightColors.workbench['extensionButton.prominentHoverBackground'],
-    'extensionButton.prominentForeground': tokyoNightColors.workbench['extensionButton.prominentForeground'],
-    'extensionBadge.remoteBackground': tokyoNightColors.workbench['extensionBadge.remoteBackground'],
-    'extensionBadge.remoteForeground': tokyoNightColors.workbench['extensionBadge.remoteForeground'],
+    'toolbar.activeBackground':
+      tokyoNightColors.workbench['toolbar.activeBackground'],
+    'toolbar.hoverBackground':
+      tokyoNightColors.workbench['toolbar.hoverBackground'],
+    'extensionButton.prominentBackground':
+      tokyoNightColors.workbench['extensionButton.prominentBackground'],
+    'extensionButton.prominentHoverBackground':
+      tokyoNightColors.workbench['extensionButton.prominentHoverBackground'],
+    'extensionButton.prominentForeground':
+      tokyoNightColors.workbench['extensionButton.prominentForeground'],
+    'extensionBadge.remoteBackground':
+      tokyoNightColors.workbench['extensionBadge.remoteBackground'],
+    'extensionBadge.remoteForeground':
+      tokyoNightColors.workbench['extensionBadge.remoteForeground'],
     'button.background': tokyoNightColors.workbench['button.background'],
-    'button.hoverBackground': tokyoNightColors.workbench['button.hoverBackground'],
-    'button.secondaryBackground': tokyoNightColors.workbench['button.secondaryBackground'],
+    'button.hoverBackground':
+      tokyoNightColors.workbench['button.hoverBackground'],
+    'button.secondaryBackground':
+      tokyoNightColors.workbench['button.secondaryBackground'],
     'button.foreground': tokyoNightColors.workbench['button.foreground'],
-    'progressBar.background': tokyoNightColors.workbench['progressBar.background'],
+    'progressBar.background':
+      tokyoNightColors.workbench['progressBar.background'],
     'input.background': tokyoNightColors.workbench['input.background'],
     'input.foreground': tokyoNightColors.workbench['input.foreground'],
     'input.border': tokyoNightColors.workbench['input.border'],
-    'input.placeholderForeground': tokyoNightColors.workbench['input.placeholderForeground'],
-    'inputOption.activeForeground': tokyoNightColors.workbench['inputOption.activeForeground'],
-    'inputOption.activeBackground': tokyoNightColors.workbench['inputOption.activeBackground'],
-    'inputValidation.infoForeground': tokyoNightColors.workbench['inputValidation.infoForeground'],
-    'inputValidation.infoBackground': tokyoNightColors.workbench['inputValidation.infoBackground'],
-    'inputValidation.infoBorder': tokyoNightColors.workbench['inputValidation.infoBorder'],
-    'inputValidation.warningForeground': tokyoNightColors.workbench['inputValidation.warningForeground'],
-    'inputValidation.warningBackground': tokyoNightColors.workbench['inputValidation.warningBackground'],
-    'inputValidation.warningBorder': tokyoNightColors.workbench['inputValidation.warningBorder'],
-    'inputValidation.errorForeground': tokyoNightColors.workbench['inputValidation.errorForeground'],
-    'inputValidation.errorBackground': tokyoNightColors.workbench['inputValidation.errorBackground'],
-    'inputValidation.errorBorder': tokyoNightColors.workbench['inputValidation.errorBorder'],
+    'input.placeholderForeground':
+      tokyoNightColors.workbench['input.placeholderForeground'],
+    'inputOption.activeForeground':
+      tokyoNightColors.workbench['inputOption.activeForeground'],
+    'inputOption.activeBackground':
+      tokyoNightColors.workbench['inputOption.activeBackground'],
+    'inputValidation.infoForeground':
+      tokyoNightColors.workbench['inputValidation.infoForeground'],
+    'inputValidation.infoBackground':
+      tokyoNightColors.workbench['inputValidation.infoBackground'],
+    'inputValidation.infoBorder':
+      tokyoNightColors.workbench['inputValidation.infoBorder'],
+    'inputValidation.warningForeground':
+      tokyoNightColors.workbench['inputValidation.warningForeground'],
+    'inputValidation.warningBackground':
+      tokyoNightColors.workbench['inputValidation.warningBackground'],
+    'inputValidation.warningBorder':
+      tokyoNightColors.workbench['inputValidation.warningBorder'],
+    'inputValidation.errorForeground':
+      tokyoNightColors.workbench['inputValidation.errorForeground'],
+    'inputValidation.errorBackground':
+      tokyoNightColors.workbench['inputValidation.errorBackground'],
+    'inputValidation.errorBorder':
+      tokyoNightColors.workbench['inputValidation.errorBorder'],
     'dropdown.foreground': tokyoNightColors.workbench['dropdown.foreground'],
     'dropdown.background': tokyoNightColors.workbench['dropdown.background'],
-    'dropdown.listBackground': tokyoNightColors.workbench['dropdown.listBackground'],
-    'activityBar.background': tokyoNightColors.workbench['activityBar.background'],
-    'activityBar.foreground': tokyoNightColors.workbench['activityBar.foreground'],
-    'activityBar.inactiveForeground': tokyoNightColors.workbench['activityBar.inactiveForeground'],
+    'dropdown.listBackground':
+      tokyoNightColors.workbench['dropdown.listBackground'],
+    'activityBar.background':
+      tokyoNightColors.workbench['activityBar.background'],
+    'activityBar.foreground':
+      tokyoNightColors.workbench['activityBar.foreground'],
+    'activityBar.inactiveForeground':
+      tokyoNightColors.workbench['activityBar.inactiveForeground'],
     'activityBar.border': tokyoNightColors.workbench['activityBar.border'],
-    'activityBarBadge.background': tokyoNightColors.workbench['activityBarBadge.background'],
-    'activityBarBadge.foreground': tokyoNightColors.workbench['activityBarBadge.foreground'],
-    'activityBarTop.foreground': tokyoNightColors.workbench['activityBarTop.foreground'],
-    'activityBarTop.inactiveForeground': tokyoNightColors.workbench['activityBarTop.inactiveForeground'],
-    'tree.indentGuidesStroke': tokyoNightColors.workbench['tree.indentGuidesStroke'],
+    'activityBarBadge.background':
+      tokyoNightColors.workbench['activityBarBadge.background'],
+    'activityBarBadge.foreground':
+      tokyoNightColors.workbench['activityBarBadge.foreground'],
+    'activityBarTop.foreground':
+      tokyoNightColors.workbench['activityBarTop.foreground'],
+    'activityBarTop.inactiveForeground':
+      tokyoNightColors.workbench['activityBarTop.inactiveForeground'],
+    'tree.indentGuidesStroke':
+      tokyoNightColors.workbench['tree.indentGuidesStroke'],
     'sideBar.foreground': tokyoNightColors.workbench['sideBar.foreground'],
     'sideBar.background': tokyoNightColors.workbench['sideBar.background'],
     'sideBar.border': tokyoNightColors.workbench['sideBar.border'],
-    'sideBarTitle.foreground': tokyoNightColors.workbench['sideBarTitle.foreground'],
-    'sideBarSectionHeader.background': tokyoNightColors.workbench['sideBarSectionHeader.background'],
-    'sideBarSectionHeader.foreground': tokyoNightColors.workbench['sideBarSectionHeader.foreground'],
-    'sideBarSectionHeader.border': tokyoNightColors.workbench['sideBarSectionHeader.border'],
-    'sideBar.dropBackground': tokyoNightColors.workbench['sideBar.dropBackground'],
+    'sideBarTitle.foreground':
+      tokyoNightColors.workbench['sideBarTitle.foreground'],
+    'sideBarSectionHeader.background':
+      tokyoNightColors.workbench['sideBarSectionHeader.background'],
+    'sideBarSectionHeader.foreground':
+      tokyoNightColors.workbench['sideBarSectionHeader.foreground'],
+    'sideBarSectionHeader.border':
+      tokyoNightColors.workbench['sideBarSectionHeader.border'],
+    'sideBar.dropBackground':
+      tokyoNightColors.workbench['sideBar.dropBackground'],
     'list.dropBackground': tokyoNightColors.workbench['list.dropBackground'],
-    'list.deemphasizedForeground': tokyoNightColors.workbench['list.deemphasizedForeground'],
-    'list.activeSelectionBackground': tokyoNightColors.workbench['list.activeSelectionBackground'],
-    'list.activeSelectionForeground': tokyoNightColors.workbench['list.activeSelectionForeground'],
-    'list.inactiveSelectionBackground': tokyoNightColors.workbench['list.inactiveSelectionBackground'],
-    'list.inactiveSelectionForeground': tokyoNightColors.workbench['list.inactiveSelectionForeground'],
+    'list.deemphasizedForeground':
+      tokyoNightColors.workbench['list.deemphasizedForeground'],
+    'list.activeSelectionBackground':
+      tokyoNightColors.workbench['list.activeSelectionBackground'],
+    'list.activeSelectionForeground':
+      tokyoNightColors.workbench['list.activeSelectionForeground'],
+    'list.inactiveSelectionBackground':
+      tokyoNightColors.workbench['list.inactiveSelectionBackground'],
+    'list.inactiveSelectionForeground':
+      tokyoNightColors.workbench['list.inactiveSelectionForeground'],
     'list.focusBackground': tokyoNightColors.workbench['list.focusBackground'],
     'list.focusForeground': tokyoNightColors.workbench['list.focusForeground'],
     'list.hoverBackground': tokyoNightColors.workbench['list.hoverBackground'],
     'list.hoverForeground': tokyoNightColors.workbench['list.hoverForeground'],
-    'list.highlightForeground': tokyoNightColors.workbench['list.highlightForeground'],
-    'list.invalidItemForeground': tokyoNightColors.workbench['list.invalidItemForeground'],
+    'list.highlightForeground':
+      tokyoNightColors.workbench['list.highlightForeground'],
+    'list.invalidItemForeground':
+      tokyoNightColors.workbench['list.invalidItemForeground'],
     'list.errorForeground': tokyoNightColors.workbench['list.errorForeground'],
-    'list.warningForeground': tokyoNightColors.workbench['list.warningForeground'],
-    'listFilterWidget.background': tokyoNightColors.workbench['listFilterWidget.background'],
-    'listFilterWidget.outline': tokyoNightColors.workbench['listFilterWidget.outline'],
-    'listFilterWidget.noMatchesOutline': tokyoNightColors.workbench['listFilterWidget.noMatchesOutline'],
-    'pickerGroup.foreground': tokyoNightColors.workbench['pickerGroup.foreground'],
+    'list.warningForeground':
+      tokyoNightColors.workbench['list.warningForeground'],
+    'listFilterWidget.background':
+      tokyoNightColors.workbench['listFilterWidget.background'],
+    'listFilterWidget.outline':
+      tokyoNightColors.workbench['listFilterWidget.outline'],
+    'listFilterWidget.noMatchesOutline':
+      tokyoNightColors.workbench['listFilterWidget.noMatchesOutline'],
+    'pickerGroup.foreground':
+      tokyoNightColors.workbench['pickerGroup.foreground'],
     'pickerGroup.border': tokyoNightColors.workbench['pickerGroup.border'],
-    'scrollbarSlider.background': tokyoNightColors.workbench['scrollbarSlider.background'],
-    'scrollbarSlider.hoverBackground': tokyoNightColors.workbench['scrollbarSlider.hoverBackground'],
-    'scrollbarSlider.activeBackground': tokyoNightColors.workbench['scrollbarSlider.activeBackground'],
-    'editorBracketHighlight.foreground1': tokyoNightColors.workbench['editorBracketHighlight.foreground1'],
-    'editorBracketHighlight.foreground2': tokyoNightColors.workbench['editorBracketHighlight.foreground2'],
-    'editorBracketHighlight.foreground3': tokyoNightColors.workbench['editorBracketHighlight.foreground3'],
-    'editorBracketHighlight.foreground4': tokyoNightColors.workbench['editorBracketHighlight.foreground4'],
-    'editorBracketHighlight.foreground5': tokyoNightColors.workbench['editorBracketHighlight.foreground5'],
-    'editorBracketHighlight.foreground6': tokyoNightColors.workbench['editorBracketHighlight.foreground6'],
-    'editorBracketHighlight.unexpectedBracket.foreground': tokyoNightColors.workbench['editorBracketHighlight.unexpectedBracket.foreground'],
-    'editorBracketPairGuide.activeBackground1': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground1'],
-    'editorBracketPairGuide.activeBackground2': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground2'],
-    'editorBracketPairGuide.activeBackground3': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground3'],
-    'editorBracketPairGuide.activeBackground4': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground4'],
-    'editorBracketPairGuide.activeBackground5': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground5'],
-    'editorBracketPairGuide.activeBackground6': tokyoNightColors.workbench['editorBracketPairGuide.activeBackground6'],
+    'scrollbarSlider.background':
+      tokyoNightColors.workbench['scrollbarSlider.background'],
+    'scrollbarSlider.hoverBackground':
+      tokyoNightColors.workbench['scrollbarSlider.hoverBackground'],
+    'scrollbarSlider.activeBackground':
+      tokyoNightColors.workbench['scrollbarSlider.activeBackground'],
+    'editorBracketHighlight.foreground1':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground1'],
+    'editorBracketHighlight.foreground2':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground2'],
+    'editorBracketHighlight.foreground3':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground3'],
+    'editorBracketHighlight.foreground4':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground4'],
+    'editorBracketHighlight.foreground5':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground5'],
+    'editorBracketHighlight.foreground6':
+      tokyoNightColors.workbench['editorBracketHighlight.foreground6'],
+    'editorBracketHighlight.unexpectedBracket.foreground':
+      tokyoNightColors.workbench[
+        'editorBracketHighlight.unexpectedBracket.foreground'
+      ],
+    'editorBracketPairGuide.activeBackground1':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground1'],
+    'editorBracketPairGuide.activeBackground2':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground2'],
+    'editorBracketPairGuide.activeBackground3':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground3'],
+    'editorBracketPairGuide.activeBackground4':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground4'],
+    'editorBracketPairGuide.activeBackground5':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground5'],
+    'editorBracketPairGuide.activeBackground6':
+      tokyoNightColors.workbench['editorBracketPairGuide.activeBackground6'],
     'selection.background': tokyoNightColors.workbench['selection.background'],
     'editor.background': tokyoNightColors.workbench['editor.background'],
     'editor.foreground': tokyoNightColors.workbench['editor.foreground'],
-    'editor.foldBackground': tokyoNightColors.workbench['editor.foldBackground'],
-    'editorLink.activeForeground': tokyoNightColors.workbench['editorLink.activeForeground'],
-    'editor.selectionBackground': tokyoNightColors.workbench['editor.selectionBackground'],
-    'editor.inactiveSelectionBackground': tokyoNightColors.workbench['editor.inactiveSelectionBackground'],
-    'editor.findMatchBackground': tokyoNightColors.workbench['editor.findMatchBackground'],
-    'editor.findMatchBorder': tokyoNightColors.workbench['editor.findMatchBorder'],
-    'editor.findMatchHighlightBackground': tokyoNightColors.workbench['editor.findMatchHighlightBackground'],
-    'editor.findRangeHighlightBackground': tokyoNightColors.workbench['editor.findRangeHighlightBackground'],
-    'editor.rangeHighlightBackground': tokyoNightColors.workbench['editor.rangeHighlightBackground'],
-    'editor.wordHighlightBackground': tokyoNightColors.workbench['editor.wordHighlightBackground'],
-    'editor.wordHighlightStrongBackground': tokyoNightColors.workbench['editor.wordHighlightStrongBackground'],
-    'editor.selectionHighlightBackground': tokyoNightColors.workbench['editor.selectionHighlightBackground'],
-    'editorCursor.foreground': tokyoNightColors.workbench['editorCursor.foreground'],
-    'editorIndentGuide.background1': tokyoNightColors.workbench['editorIndentGuide.background1'],
-    'editorIndentGuide.activeBackground1': tokyoNightColors.workbench['editorIndentGuide.activeBackground1'],
-    'editorLineNumber.foreground': tokyoNightColors.workbench['editorLineNumber.foreground'],
-    'editorLineNumber.activeForeground': tokyoNightColors.workbench['editorLineNumber.activeForeground'],
-    'editor.lineHighlightBackground': tokyoNightColors.workbench['editor.lineHighlightBackground'],
-    'editorWhitespace.foreground': tokyoNightColors.workbench['editorWhitespace.foreground'],
-    'editorMarkerNavigation.background': tokyoNightColors.workbench['editorMarkerNavigation.background'],
-    'editorHoverWidget.background': tokyoNightColors.workbench['editorHoverWidget.background'],
-    'editorHoverWidget.border': tokyoNightColors.workbench['editorHoverWidget.border'],
-    'editorBracketMatch.background': tokyoNightColors.workbench['editorBracketMatch.background'],
-    'editorBracketMatch.border': tokyoNightColors.workbench['editorBracketMatch.border'],
-    'editorOverviewRuler.border': tokyoNightColors.workbench['editorOverviewRuler.border'],
-    'editorOverviewRuler.errorForeground': tokyoNightColors.workbench['editorOverviewRuler.errorForeground'],
-    'editorOverviewRuler.warningForeground': tokyoNightColors.workbench['editorOverviewRuler.warningForeground'],
-    'editorOverviewRuler.infoForeground': tokyoNightColors.workbench['editorOverviewRuler.infoForeground'],
-    'editorOverviewRuler.bracketMatchForeground': tokyoNightColors.workbench['editorOverviewRuler.bracketMatchForeground'],
-    'editorOverviewRuler.findMatchForeground': tokyoNightColors.workbench['editorOverviewRuler.findMatchForeground'],
-    'editorOverviewRuler.rangeHighlightForeground': tokyoNightColors.workbench['editorOverviewRuler.rangeHighlightForeground'],
-    'editorOverviewRuler.selectionHighlightForeground': tokyoNightColors.workbench['editorOverviewRuler.selectionHighlightForeground'],
-    'editorOverviewRuler.wordHighlightForeground': tokyoNightColors.workbench['editorOverviewRuler.wordHighlightForeground'],
-    'editorOverviewRuler.wordHighlightStrongForeground': tokyoNightColors.workbench['editorOverviewRuler.wordHighlightStrongForeground'],
-    'editorOverviewRuler.modifiedForeground': tokyoNightColors.workbench['editorOverviewRuler.modifiedForeground'],
-    'editorOverviewRuler.addedForeground': tokyoNightColors.workbench['editorOverviewRuler.addedForeground'],
-    'editorOverviewRuler.deletedForeground': tokyoNightColors.workbench['editorOverviewRuler.deletedForeground'],
-    'editorRuler.foreground': tokyoNightColors.workbench['editorRuler.foreground'],
-    'editorError.foreground': tokyoNightColors.workbench['editorError.foreground'],
-    'editorWarning.foreground': tokyoNightColors.workbench['editorWarning.foreground'],
-    'editorInfo.foreground': tokyoNightColors.workbench['editorInfo.foreground'],
-    'editorHint.foreground': tokyoNightColors.workbench['editorHint.foreground'],
-    'editorGutter.modifiedBackground': tokyoNightColors.workbench['editorGutter.modifiedBackground'],
-    'editorGutter.addedBackground': tokyoNightColors.workbench['editorGutter.addedBackground'],
-    'editorGutter.deletedBackground': tokyoNightColors.workbench['editorGutter.deletedBackground'],
-    'editorGhostText.foreground': tokyoNightColors.workbench['editorGhostText.foreground'],
-    'minimapGutter.modifiedBackground': tokyoNightColors.workbench['minimapGutter.modifiedBackground'],
-    'minimapGutter.addedBackground': tokyoNightColors.workbench['minimapGutter.addedBackground'],
-    'minimapGutter.deletedBackground': tokyoNightColors.workbench['minimapGutter.deletedBackground'],
+    'editor.foldBackground':
+      tokyoNightColors.workbench['editor.foldBackground'],
+    'editorLink.activeForeground':
+      tokyoNightColors.workbench['editorLink.activeForeground'],
+    'editor.selectionBackground':
+      tokyoNightColors.workbench['editor.selectionBackground'],
+    'editor.inactiveSelectionBackground':
+      tokyoNightColors.workbench['editor.inactiveSelectionBackground'],
+    'editor.findMatchBackground':
+      tokyoNightColors.workbench['editor.findMatchBackground'],
+    'editor.findMatchBorder':
+      tokyoNightColors.workbench['editor.findMatchBorder'],
+    'editor.findMatchHighlightBackground':
+      tokyoNightColors.workbench['editor.findMatchHighlightBackground'],
+    'editor.findRangeHighlightBackground':
+      tokyoNightColors.workbench['editor.findRangeHighlightBackground'],
+    'editor.rangeHighlightBackground':
+      tokyoNightColors.workbench['editor.rangeHighlightBackground'],
+    'editor.wordHighlightBackground':
+      tokyoNightColors.workbench['editor.wordHighlightBackground'],
+    'editor.wordHighlightStrongBackground':
+      tokyoNightColors.workbench['editor.wordHighlightStrongBackground'],
+    'editor.selectionHighlightBackground':
+      tokyoNightColors.workbench['editor.selectionHighlightBackground'],
+    'editorCursor.foreground':
+      tokyoNightColors.workbench['editorCursor.foreground'],
+    'editorIndentGuide.background1':
+      tokyoNightColors.workbench['editorIndentGuide.background1'],
+    'editorIndentGuide.activeBackground1':
+      tokyoNightColors.workbench['editorIndentGuide.activeBackground1'],
+    'editorLineNumber.foreground':
+      tokyoNightColors.workbench['editorLineNumber.foreground'],
+    'editorLineNumber.activeForeground':
+      tokyoNightColors.workbench['editorLineNumber.activeForeground'],
+    'editor.lineHighlightBackground':
+      tokyoNightColors.workbench['editor.lineHighlightBackground'],
+    'editorWhitespace.foreground':
+      tokyoNightColors.workbench['editorWhitespace.foreground'],
+    'editorMarkerNavigation.background':
+      tokyoNightColors.workbench['editorMarkerNavigation.background'],
+    'editorHoverWidget.background':
+      tokyoNightColors.workbench['editorHoverWidget.background'],
+    'editorHoverWidget.border':
+      tokyoNightColors.workbench['editorHoverWidget.border'],
+    'editorBracketMatch.background':
+      tokyoNightColors.workbench['editorBracketMatch.background'],
+    'editorBracketMatch.border':
+      tokyoNightColors.workbench['editorBracketMatch.border'],
+    'editorOverviewRuler.border':
+      tokyoNightColors.workbench['editorOverviewRuler.border'],
+    'editorOverviewRuler.errorForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.errorForeground'],
+    'editorOverviewRuler.warningForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.warningForeground'],
+    'editorOverviewRuler.infoForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.infoForeground'],
+    'editorOverviewRuler.bracketMatchForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.bracketMatchForeground'],
+    'editorOverviewRuler.findMatchForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.findMatchForeground'],
+    'editorOverviewRuler.rangeHighlightForeground':
+      tokyoNightColors.workbench[
+        'editorOverviewRuler.rangeHighlightForeground'
+      ],
+    'editorOverviewRuler.selectionHighlightForeground':
+      tokyoNightColors.workbench[
+        'editorOverviewRuler.selectionHighlightForeground'
+      ],
+    'editorOverviewRuler.wordHighlightForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.wordHighlightForeground'],
+    'editorOverviewRuler.wordHighlightStrongForeground':
+      tokyoNightColors.workbench[
+        'editorOverviewRuler.wordHighlightStrongForeground'
+      ],
+    'editorOverviewRuler.modifiedForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.modifiedForeground'],
+    'editorOverviewRuler.addedForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.addedForeground'],
+    'editorOverviewRuler.deletedForeground':
+      tokyoNightColors.workbench['editorOverviewRuler.deletedForeground'],
+    'editorRuler.foreground':
+      tokyoNightColors.workbench['editorRuler.foreground'],
+    'editorError.foreground':
+      tokyoNightColors.workbench['editorError.foreground'],
+    'editorWarning.foreground':
+      tokyoNightColors.workbench['editorWarning.foreground'],
+    'editorInfo.foreground':
+      tokyoNightColors.workbench['editorInfo.foreground'],
+    'editorHint.foreground':
+      tokyoNightColors.workbench['editorHint.foreground'],
+    'editorGutter.modifiedBackground':
+      tokyoNightColors.workbench['editorGutter.modifiedBackground'],
+    'editorGutter.addedBackground':
+      tokyoNightColors.workbench['editorGutter.addedBackground'],
+    'editorGutter.deletedBackground':
+      tokyoNightColors.workbench['editorGutter.deletedBackground'],
+    'editorGhostText.foreground':
+      tokyoNightColors.workbench['editorGhostText.foreground'],
+    'minimapGutter.modifiedBackground':
+      tokyoNightColors.workbench['minimapGutter.modifiedBackground'],
+    'minimapGutter.addedBackground':
+      tokyoNightColors.workbench['minimapGutter.addedBackground'],
+    'minimapGutter.deletedBackground':
+      tokyoNightColors.workbench['minimapGutter.deletedBackground'],
     'editorGroup.border': tokyoNightColors.workbench['editorGroup.border'],
-    'editorGroup.dropBackground': tokyoNightColors.workbench['editorGroup.dropBackground'],
-    'editorGroupHeader.tabsBorder': tokyoNightColors.workbench['editorGroupHeader.tabsBorder'],
-    'editorGroupHeader.tabsBackground': tokyoNightColors.workbench['editorGroupHeader.tabsBackground'],
-    'editorGroupHeader.noTabsBackground': tokyoNightColors.workbench['editorGroupHeader.noTabsBackground'],
-    'editorGroupHeader.border': tokyoNightColors.workbench['editorGroupHeader.border'],
-    'editorPane.background': tokyoNightColors.workbench['editorPane.background'],
-    'editorWidget.foreground': tokyoNightColors.workbench['editorWidget.foreground'],
-    'editorWidget.background': tokyoNightColors.workbench['editorWidget.background'],
+    'editorGroup.dropBackground':
+      tokyoNightColors.workbench['editorGroup.dropBackground'],
+    'editorGroupHeader.tabsBorder':
+      tokyoNightColors.workbench['editorGroupHeader.tabsBorder'],
+    'editorGroupHeader.tabsBackground':
+      tokyoNightColors.workbench['editorGroupHeader.tabsBackground'],
+    'editorGroupHeader.noTabsBackground':
+      tokyoNightColors.workbench['editorGroupHeader.noTabsBackground'],
+    'editorGroupHeader.border':
+      tokyoNightColors.workbench['editorGroupHeader.border'],
+    'editorPane.background':
+      tokyoNightColors.workbench['editorPane.background'],
+    'editorWidget.foreground':
+      tokyoNightColors.workbench['editorWidget.foreground'],
+    'editorWidget.background':
+      tokyoNightColors.workbench['editorWidget.background'],
     'editorWidget.border': tokyoNightColors.workbench['editorWidget.border'],
-    'editorWidget.resizeBorder': tokyoNightColors.workbench['editorWidget.resizeBorder'],
-    'editorSuggestWidget.background': tokyoNightColors.workbench['editorSuggestWidget.background'],
-    'editorSuggestWidget.border': tokyoNightColors.workbench['editorSuggestWidget.border'],
-    'editorSuggestWidget.selectedBackground': tokyoNightColors.workbench['editorSuggestWidget.selectedBackground'],
-    'editorSuggestWidget.highlightForeground': tokyoNightColors.workbench['editorSuggestWidget.highlightForeground'],
-    'editorCodeLens.foreground': tokyoNightColors.workbench['editorCodeLens.foreground'],
-    'editorLightBulb.foreground': tokyoNightColors.workbench['editorLightBulb.foreground'],
-    'editorLightBulbAutoFix.foreground': tokyoNightColors.workbench['editorLightBulbAutoFix.foreground'],
-    'editorInlayHint.foreground': tokyoNightColors.workbench['editorInlayHint.foreground'],
+    'editorWidget.resizeBorder':
+      tokyoNightColors.workbench['editorWidget.resizeBorder'],
+    'editorSuggestWidget.background':
+      tokyoNightColors.workbench['editorSuggestWidget.background'],
+    'editorSuggestWidget.border':
+      tokyoNightColors.workbench['editorSuggestWidget.border'],
+    'editorSuggestWidget.selectedBackground':
+      tokyoNightColors.workbench['editorSuggestWidget.selectedBackground'],
+    'editorSuggestWidget.highlightForeground':
+      tokyoNightColors.workbench['editorSuggestWidget.highlightForeground'],
+    'editorCodeLens.foreground':
+      tokyoNightColors.workbench['editorCodeLens.foreground'],
+    'editorLightBulb.foreground':
+      tokyoNightColors.workbench['editorLightBulb.foreground'],
+    'editorLightBulbAutoFix.foreground':
+      tokyoNightColors.workbench['editorLightBulbAutoFix.foreground'],
+    'editorInlayHint.foreground':
+      tokyoNightColors.workbench['editorInlayHint.foreground'],
     'peekView.border': tokyoNightColors.workbench['peekView.border'],
-    'peekViewEditor.background': tokyoNightColors.workbench['peekViewEditor.background'],
-    'peekViewEditor.matchHighlightBackground': tokyoNightColors.workbench['peekViewEditor.matchHighlightBackground'],
-    'peekViewTitle.background': tokyoNightColors.workbench['peekViewTitle.background'],
-    'peekViewTitleLabel.foreground': tokyoNightColors.workbench['peekViewTitleLabel.foreground'],
-    'peekViewTitleDescription.foreground': tokyoNightColors.workbench['peekViewTitleDescription.foreground'],
-    'peekViewResult.background': tokyoNightColors.workbench['peekViewResult.background'],
-    'peekViewResult.selectionForeground': tokyoNightColors.workbench['peekViewResult.selectionForeground'],
-    'peekViewResult.selectionBackground': tokyoNightColors.workbench['peekViewResult.selectionBackground'],
-    'peekViewResult.lineForeground': tokyoNightColors.workbench['peekViewResult.lineForeground'],
-    'peekViewResult.fileForeground': tokyoNightColors.workbench['peekViewResult.fileForeground'],
-    'peekViewResult.matchHighlightBackground': tokyoNightColors.workbench['peekViewResult.matchHighlightBackground'],
-    'diffEditor.insertedTextBackground': tokyoNightColors.workbench['diffEditor.insertedTextBackground'],
-    'diffEditor.removedTextBackground': tokyoNightColors.workbench['diffEditor.removedTextBackground'],
-    'diffEditor.insertedLineBackground': tokyoNightColors.workbench['diffEditor.insertedLineBackground'],
-    'diffEditor.removedLineBackground': tokyoNightColors.workbench['diffEditor.removedLineBackground'],
-    'diffEditorGutter.insertedLineBackground': tokyoNightColors.workbench['diffEditorGutter.insertedLineBackground'],
-    'diffEditorGutter.removedLineBackground': tokyoNightColors.workbench['diffEditorGutter.removedLineBackground'],
-    'diffEditorOverview.insertedForeground': tokyoNightColors.workbench['diffEditorOverview.insertedForeground'],
-    'diffEditorOverview.removedForeground': tokyoNightColors.workbench['diffEditorOverview.removedForeground'],
-    'diffEditor.diagonalFill': tokyoNightColors.workbench['diffEditor.diagonalFill'],
-    'diffEditor.unchangedCodeBackground': tokyoNightColors.workbench['diffEditor.unchangedCodeBackground'],
-    'multiDiffEditor.headerBackground': tokyoNightColors.workbench['multiDiffEditor.headerBackground'],
-    'multiDiffEditor.border': tokyoNightColors.workbench['multiDiffEditor.border'],
-    'breadcrumb.background': tokyoNightColors.workbench['breadcrumb.background'],
-    'breadcrumbPicker.background': tokyoNightColors.workbench['breadcrumbPicker.background'],
-    'breadcrumb.foreground': tokyoNightColors.workbench['breadcrumb.foreground'],
-    'breadcrumb.focusForeground': tokyoNightColors.workbench['breadcrumb.focusForeground'],
-    'breadcrumb.activeSelectionForeground': tokyoNightColors.workbench['breadcrumb.activeSelectionForeground'],
+    'peekViewEditor.background':
+      tokyoNightColors.workbench['peekViewEditor.background'],
+    'peekViewEditor.matchHighlightBackground':
+      tokyoNightColors.workbench['peekViewEditor.matchHighlightBackground'],
+    'peekViewTitle.background':
+      tokyoNightColors.workbench['peekViewTitle.background'],
+    'peekViewTitleLabel.foreground':
+      tokyoNightColors.workbench['peekViewTitleLabel.foreground'],
+    'peekViewTitleDescription.foreground':
+      tokyoNightColors.workbench['peekViewTitleDescription.foreground'],
+    'peekViewResult.background':
+      tokyoNightColors.workbench['peekViewResult.background'],
+    'peekViewResult.selectionForeground':
+      tokyoNightColors.workbench['peekViewResult.selectionForeground'],
+    'peekViewResult.selectionBackground':
+      tokyoNightColors.workbench['peekViewResult.selectionBackground'],
+    'peekViewResult.lineForeground':
+      tokyoNightColors.workbench['peekViewResult.lineForeground'],
+    'peekViewResult.fileForeground':
+      tokyoNightColors.workbench['peekViewResult.fileForeground'],
+    'peekViewResult.matchHighlightBackground':
+      tokyoNightColors.workbench['peekViewResult.matchHighlightBackground'],
+    'diffEditor.insertedTextBackground':
+      tokyoNightColors.workbench['diffEditor.insertedTextBackground'],
+    'diffEditor.removedTextBackground':
+      tokyoNightColors.workbench['diffEditor.removedTextBackground'],
+    'diffEditor.insertedLineBackground':
+      tokyoNightColors.workbench['diffEditor.insertedLineBackground'],
+    'diffEditor.removedLineBackground':
+      tokyoNightColors.workbench['diffEditor.removedLineBackground'],
+    'diffEditorGutter.insertedLineBackground':
+      tokyoNightColors.workbench['diffEditorGutter.insertedLineBackground'],
+    'diffEditorGutter.removedLineBackground':
+      tokyoNightColors.workbench['diffEditorGutter.removedLineBackground'],
+    'diffEditorOverview.insertedForeground':
+      tokyoNightColors.workbench['diffEditorOverview.insertedForeground'],
+    'diffEditorOverview.removedForeground':
+      tokyoNightColors.workbench['diffEditorOverview.removedForeground'],
+    'diffEditor.diagonalFill':
+      tokyoNightColors.workbench['diffEditor.diagonalFill'],
+    'diffEditor.unchangedCodeBackground':
+      tokyoNightColors.workbench['diffEditor.unchangedCodeBackground'],
+    'multiDiffEditor.headerBackground':
+      tokyoNightColors.workbench['multiDiffEditor.headerBackground'],
+    'multiDiffEditor.border':
+      tokyoNightColors.workbench['multiDiffEditor.border'],
+    'breadcrumb.background':
+      tokyoNightColors.workbench['breadcrumb.background'],
+    'breadcrumbPicker.background':
+      tokyoNightColors.workbench['breadcrumbPicker.background'],
+    'breadcrumb.foreground':
+      tokyoNightColors.workbench['breadcrumb.foreground'],
+    'breadcrumb.focusForeground':
+      tokyoNightColors.workbench['breadcrumb.focusForeground'],
+    'breadcrumb.activeSelectionForeground':
+      tokyoNightColors.workbench['breadcrumb.activeSelectionForeground'],
     'tab.activeBackground': tokyoNightColors.workbench['tab.activeBackground'],
-    'tab.inactiveBackground': tokyoNightColors.workbench['tab.inactiveBackground'],
+    'tab.inactiveBackground':
+      tokyoNightColors.workbench['tab.inactiveBackground'],
     'tab.activeForeground': tokyoNightColors.workbench['tab.activeForeground'],
     'tab.hoverForeground': tokyoNightColors.workbench['tab.hoverForeground'],
     'tab.activeBorder': tokyoNightColors.workbench['tab.activeBorder'],
-    'tab.inactiveForeground': tokyoNightColors.workbench['tab.inactiveForeground'],
+    'tab.inactiveForeground':
+      tokyoNightColors.workbench['tab.inactiveForeground'],
     'tab.border': tokyoNightColors.workbench['tab.border'],
-    'tab.unfocusedActiveForeground': tokyoNightColors.workbench['tab.unfocusedActiveForeground'],
-    'tab.unfocusedInactiveForeground': tokyoNightColors.workbench['tab.unfocusedInactiveForeground'],
-    'tab.unfocusedHoverForeground': tokyoNightColors.workbench['tab.unfocusedHoverForeground'],
-    'tab.activeModifiedBorder': tokyoNightColors.workbench['tab.activeModifiedBorder'],
-    'tab.inactiveModifiedBorder': tokyoNightColors.workbench['tab.inactiveModifiedBorder'],
-    'tab.unfocusedActiveBorder': tokyoNightColors.workbench['tab.unfocusedActiveBorder'],
+    'tab.unfocusedActiveForeground':
+      tokyoNightColors.workbench['tab.unfocusedActiveForeground'],
+    'tab.unfocusedInactiveForeground':
+      tokyoNightColors.workbench['tab.unfocusedInactiveForeground'],
+    'tab.unfocusedHoverForeground':
+      tokyoNightColors.workbench['tab.unfocusedHoverForeground'],
+    'tab.activeModifiedBorder':
+      tokyoNightColors.workbench['tab.activeModifiedBorder'],
+    'tab.inactiveModifiedBorder':
+      tokyoNightColors.workbench['tab.inactiveModifiedBorder'],
+    'tab.unfocusedActiveBorder':
+      tokyoNightColors.workbench['tab.unfocusedActiveBorder'],
     'tab.lastPinnedBorder': tokyoNightColors.workbench['tab.lastPinnedBorder'],
     'panel.background': tokyoNightColors.workbench['panel.background'],
     'panel.border': tokyoNightColors.workbench['panel.border'],
-    'panelTitle.activeForeground': tokyoNightColors.workbench['panelTitle.activeForeground'],
-    'panelTitle.inactiveForeground': tokyoNightColors.workbench['panelTitle.inactiveForeground'],
-    'panelTitle.activeBorder': tokyoNightColors.workbench['panelTitle.activeBorder'],
+    'panelTitle.activeForeground':
+      tokyoNightColors.workbench['panelTitle.activeForeground'],
+    'panelTitle.inactiveForeground':
+      tokyoNightColors.workbench['panelTitle.inactiveForeground'],
+    'panelTitle.activeBorder':
+      tokyoNightColors.workbench['panelTitle.activeBorder'],
     'panelInput.border': tokyoNightColors.workbench['panelInput.border'],
     'statusBar.foreground': tokyoNightColors.workbench['statusBar.foreground'],
     'statusBar.background': tokyoNightColors.workbench['statusBar.background'],
     'statusBar.border': tokyoNightColors.workbench['statusBar.border'],
-    'statusBar.noFolderBackground': tokyoNightColors.workbench['statusBar.noFolderBackground'],
-    'statusBar.debuggingBackground': tokyoNightColors.workbench['statusBar.debuggingBackground'],
-    'statusBar.debuggingForeground': tokyoNightColors.workbench['statusBar.debuggingForeground'],
-    'statusBarItem.activeBackground': tokyoNightColors.workbench['statusBarItem.activeBackground'],
-    'statusBarItem.hoverBackground': tokyoNightColors.workbench['statusBarItem.hoverBackground'],
-    'statusBarItem.prominentBackground': tokyoNightColors.workbench['statusBarItem.prominentBackground'],
-    'statusBarItem.prominentHoverBackground': tokyoNightColors.workbench['statusBarItem.prominentHoverBackground'],
-    'titleBar.activeForeground': tokyoNightColors.workbench['titleBar.activeForeground'],
-    'titleBar.inactiveForeground': tokyoNightColors.workbench['titleBar.inactiveForeground'],
-    'titleBar.activeBackground': tokyoNightColors.workbench['titleBar.activeBackground'],
-    'titleBar.inactiveBackground': tokyoNightColors.workbench['titleBar.inactiveBackground'],
+    'statusBar.noFolderBackground':
+      tokyoNightColors.workbench['statusBar.noFolderBackground'],
+    'statusBar.debuggingBackground':
+      tokyoNightColors.workbench['statusBar.debuggingBackground'],
+    'statusBar.debuggingForeground':
+      tokyoNightColors.workbench['statusBar.debuggingForeground'],
+    'statusBarItem.activeBackground':
+      tokyoNightColors.workbench['statusBarItem.activeBackground'],
+    'statusBarItem.hoverBackground':
+      tokyoNightColors.workbench['statusBarItem.hoverBackground'],
+    'statusBarItem.prominentBackground':
+      tokyoNightColors.workbench['statusBarItem.prominentBackground'],
+    'statusBarItem.prominentHoverBackground':
+      tokyoNightColors.workbench['statusBarItem.prominentHoverBackground'],
+    'titleBar.activeForeground':
+      tokyoNightColors.workbench['titleBar.activeForeground'],
+    'titleBar.inactiveForeground':
+      tokyoNightColors.workbench['titleBar.inactiveForeground'],
+    'titleBar.activeBackground':
+      tokyoNightColors.workbench['titleBar.activeBackground'],
+    'titleBar.inactiveBackground':
+      tokyoNightColors.workbench['titleBar.inactiveBackground'],
     'titleBar.border': tokyoNightColors.workbench['titleBar.border'],
-    'walkThrough.embeddedEditorBackground': tokyoNightColors.workbench['walkThrough.embeddedEditorBackground'],
+    'walkThrough.embeddedEditorBackground':
+      tokyoNightColors.workbench['walkThrough.embeddedEditorBackground'],
     'textLink.foreground': tokyoNightColors.workbench['textLink.foreground'],
-    'textLink.activeForeground': tokyoNightColors.workbench['textLink.activeForeground'],
-    'textPreformat.foreground': tokyoNightColors.workbench['textPreformat.foreground'],
-    'textBlockQuote.background': tokyoNightColors.workbench['textBlockQuote.background'],
-    'textCodeBlock.background': tokyoNightColors.workbench['textCodeBlock.background'],
-    'textSeparator.foreground': tokyoNightColors.workbench['textSeparator.foreground'],
-    'debugExceptionWidget.border': tokyoNightColors.workbench['debugExceptionWidget.border'],
-    'debugExceptionWidget.background': tokyoNightColors.workbench['debugExceptionWidget.background'],
-    'debugToolBar.background': tokyoNightColors.workbench['debugToolBar.background'],
-    'debugConsole.infoForeground': tokyoNightColors.workbench['debugConsole.infoForeground'],
-    'debugConsole.errorForeground': tokyoNightColors.workbench['debugConsole.errorForeground'],
-    'debugConsole.sourceForeground': tokyoNightColors.workbench['debugConsole.sourceForeground'],
-    'debugConsole.warningForeground': tokyoNightColors.workbench['debugConsole.warningForeground'],
-    'debugConsoleInputIcon.foreground': tokyoNightColors.workbench['debugConsoleInputIcon.foreground'],
-    'editor.stackFrameHighlightBackground': tokyoNightColors.workbench['editor.stackFrameHighlightBackground'],
-    'editor.focusedStackFrameHighlightBackground': tokyoNightColors.workbench['editor.focusedStackFrameHighlightBackground'],
-    'debugView.stateLabelForeground': tokyoNightColors.workbench['debugView.stateLabelForeground'],
-    'debugView.stateLabelBackground': tokyoNightColors.workbench['debugView.stateLabelBackground'],
-    'debugView.valueChangedHighlight': tokyoNightColors.workbench['debugView.valueChangedHighlight'],
-    'debugTokenExpression.name': tokyoNightColors.workbench['debugTokenExpression.name'],
-    'debugTokenExpression.value': tokyoNightColors.workbench['debugTokenExpression.value'],
-    'debugTokenExpression.string': tokyoNightColors.workbench['debugTokenExpression.string'],
-    'debugTokenExpression.boolean': tokyoNightColors.workbench['debugTokenExpression.boolean'],
-    'debugTokenExpression.number': tokyoNightColors.workbench['debugTokenExpression.number'],
-    'debugTokenExpression.error': tokyoNightColors.workbench['debugTokenExpression.error'],
-    'debugIcon.breakpointForeground': tokyoNightColors.workbench['debugIcon.breakpointForeground'],
-    'debugIcon.breakpointDisabledForeground': tokyoNightColors.workbench['debugIcon.breakpointDisabledForeground'],
-    'debugIcon.breakpointUnverifiedForeground': tokyoNightColors.workbench['debugIcon.breakpointUnverifiedForeground'],
+    'textLink.activeForeground':
+      tokyoNightColors.workbench['textLink.activeForeground'],
+    'textPreformat.foreground':
+      tokyoNightColors.workbench['textPreformat.foreground'],
+    'textBlockQuote.background':
+      tokyoNightColors.workbench['textBlockQuote.background'],
+    'textCodeBlock.background':
+      tokyoNightColors.workbench['textCodeBlock.background'],
+    'textSeparator.foreground':
+      tokyoNightColors.workbench['textSeparator.foreground'],
+    'debugExceptionWidget.border':
+      tokyoNightColors.workbench['debugExceptionWidget.border'],
+    'debugExceptionWidget.background':
+      tokyoNightColors.workbench['debugExceptionWidget.background'],
+    'debugToolBar.background':
+      tokyoNightColors.workbench['debugToolBar.background'],
+    'debugConsole.infoForeground':
+      tokyoNightColors.workbench['debugConsole.infoForeground'],
+    'debugConsole.errorForeground':
+      tokyoNightColors.workbench['debugConsole.errorForeground'],
+    'debugConsole.sourceForeground':
+      tokyoNightColors.workbench['debugConsole.sourceForeground'],
+    'debugConsole.warningForeground':
+      tokyoNightColors.workbench['debugConsole.warningForeground'],
+    'debugConsoleInputIcon.foreground':
+      tokyoNightColors.workbench['debugConsoleInputIcon.foreground'],
+    'editor.stackFrameHighlightBackground':
+      tokyoNightColors.workbench['editor.stackFrameHighlightBackground'],
+    'editor.focusedStackFrameHighlightBackground':
+      tokyoNightColors.workbench['editor.focusedStackFrameHighlightBackground'],
+    'debugView.stateLabelForeground':
+      tokyoNightColors.workbench['debugView.stateLabelForeground'],
+    'debugView.stateLabelBackground':
+      tokyoNightColors.workbench['debugView.stateLabelBackground'],
+    'debugView.valueChangedHighlight':
+      tokyoNightColors.workbench['debugView.valueChangedHighlight'],
+    'debugTokenExpression.name':
+      tokyoNightColors.workbench['debugTokenExpression.name'],
+    'debugTokenExpression.value':
+      tokyoNightColors.workbench['debugTokenExpression.value'],
+    'debugTokenExpression.string':
+      tokyoNightColors.workbench['debugTokenExpression.string'],
+    'debugTokenExpression.boolean':
+      tokyoNightColors.workbench['debugTokenExpression.boolean'],
+    'debugTokenExpression.number':
+      tokyoNightColors.workbench['debugTokenExpression.number'],
+    'debugTokenExpression.error':
+      tokyoNightColors.workbench['debugTokenExpression.error'],
+    'debugIcon.breakpointForeground':
+      tokyoNightColors.workbench['debugIcon.breakpointForeground'],
+    'debugIcon.breakpointDisabledForeground':
+      tokyoNightColors.workbench['debugIcon.breakpointDisabledForeground'],
+    'debugIcon.breakpointUnverifiedForeground':
+      tokyoNightColors.workbench['debugIcon.breakpointUnverifiedForeground'],
     'terminal.background': tokyoNightColors.workbench['terminal.background'],
     'terminal.foreground': tokyoNightColors.workbench['terminal.foreground'],
-    'terminal.selectionBackground': tokyoNightColors.workbench['terminal.selectionBackground'],
+    'terminal.selectionBackground':
+      tokyoNightColors.workbench['terminal.selectionBackground'],
     'terminal.ansiBlack': tokyoNightColors.workbench['terminal.ansiBlack'],
     'terminal.ansiRed': tokyoNightColors.workbench['terminal.ansiRed'],
     'terminal.ansiGreen': tokyoNightColors.workbench['terminal.ansiGreen'],
@@ -312,28 +531,54 @@ export const generateTokyoNightWorkbenchColors = () => {
     'terminal.ansiMagenta': tokyoNightColors.workbench['terminal.ansiMagenta'],
     'terminal.ansiCyan': tokyoNightColors.workbench['terminal.ansiCyan'],
     'terminal.ansiWhite': tokyoNightColors.workbench['terminal.ansiWhite'],
-    'terminal.ansiBrightBlack': tokyoNightColors.workbench['terminal.ansiBrightBlack'],
-    'terminal.ansiBrightRed': tokyoNightColors.workbench['terminal.ansiBrightRed'],
-    'terminal.ansiBrightGreen': tokyoNightColors.workbench['terminal.ansiBrightGreen'],
-    'terminal.ansiBrightYellow': tokyoNightColors.workbench['terminal.ansiBrightYellow'],
-    'terminal.ansiBrightBlue': tokyoNightColors.workbench['terminal.ansiBrightBlue'],
-    'terminal.ansiBrightMagenta': tokyoNightColors.workbench['terminal.ansiBrightMagenta'],
-    'terminal.ansiBrightCyan': tokyoNightColors.workbench['terminal.ansiBrightCyan'],
-    'terminal.ansiBrightWhite': tokyoNightColors.workbench['terminal.ansiBrightWhite'],
-    'gitDecoration.modifiedResourceForeground': tokyoNightColors.workbench['gitDecoration.modifiedResourceForeground'],
-    'gitDecoration.ignoredResourceForeground': tokyoNightColors.workbench['gitDecoration.ignoredResourceForeground'],
-    'gitDecoration.deletedResourceForeground': tokyoNightColors.workbench['gitDecoration.deletedResourceForeground'],
-    'gitDecoration.renamedResourceForeground': tokyoNightColors.workbench['gitDecoration.renamedResourceForeground'],
-    'gitDecoration.addedResourceForeground': tokyoNightColors.workbench['gitDecoration.addedResourceForeground'],
-    'gitDecoration.untrackedResourceForeground': tokyoNightColors.workbench['gitDecoration.untrackedResourceForeground'],
-    'gitDecoration.conflictingResourceForeground': tokyoNightColors.workbench['gitDecoration.conflictingResourceForeground'],
-    'gitDecoration.stageDeletedResourceForeground': tokyoNightColors.workbench['gitDecoration.stageDeletedResourceForeground'],
-    'gitDecoration.stageModifiedResourceForeground': tokyoNightColors.workbench['gitDecoration.stageModifiedResourceForeground'],
-    'notebook.editorBackground': tokyoNightColors.workbench['notebook.editorBackground'],
-    'notebook.cellEditorBackground': tokyoNightColors.workbench['notebook.cellEditorBackground'],
-    'notebook.cellBorderColor': tokyoNightColors.workbench['notebook.cellBorderColor'],
-    'notebook.focusedCellBorder': tokyoNightColors.workbench['notebook.focusedCellBorder'],
-    'notebook.cellStatusBarItemHoverBackground': tokyoNightColors.workbench['notebook.cellStatusBarItemHoverBackground'],
+    'terminal.ansiBrightBlack':
+      tokyoNightColors.workbench['terminal.ansiBrightBlack'],
+    'terminal.ansiBrightRed':
+      tokyoNightColors.workbench['terminal.ansiBrightRed'],
+    'terminal.ansiBrightGreen':
+      tokyoNightColors.workbench['terminal.ansiBrightGreen'],
+    'terminal.ansiBrightYellow':
+      tokyoNightColors.workbench['terminal.ansiBrightYellow'],
+    'terminal.ansiBrightBlue':
+      tokyoNightColors.workbench['terminal.ansiBrightBlue'],
+    'terminal.ansiBrightMagenta':
+      tokyoNightColors.workbench['terminal.ansiBrightMagenta'],
+    'terminal.ansiBrightCyan':
+      tokyoNightColors.workbench['terminal.ansiBrightCyan'],
+    'terminal.ansiBrightWhite':
+      tokyoNightColors.workbench['terminal.ansiBrightWhite'],
+    'gitDecoration.modifiedResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.modifiedResourceForeground'],
+    'gitDecoration.ignoredResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.ignoredResourceForeground'],
+    'gitDecoration.deletedResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.deletedResourceForeground'],
+    'gitDecoration.renamedResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.renamedResourceForeground'],
+    'gitDecoration.addedResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.addedResourceForeground'],
+    'gitDecoration.untrackedResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.untrackedResourceForeground'],
+    'gitDecoration.conflictingResourceForeground':
+      tokyoNightColors.workbench['gitDecoration.conflictingResourceForeground'],
+    'gitDecoration.stageDeletedResourceForeground':
+      tokyoNightColors.workbench[
+        'gitDecoration.stageDeletedResourceForeground'
+      ],
+    'gitDecoration.stageModifiedResourceForeground':
+      tokyoNightColors.workbench[
+        'gitDecoration.stageModifiedResourceForeground'
+      ],
+    'notebook.editorBackground':
+      tokyoNightColors.workbench['notebook.editorBackground'],
+    'notebook.cellEditorBackground':
+      tokyoNightColors.workbench['notebook.cellEditorBackground'],
+    'notebook.cellBorderColor':
+      tokyoNightColors.workbench['notebook.cellBorderColor'],
+    'notebook.focusedCellBorder':
+      tokyoNightColors.workbench['notebook.focusedCellBorder'],
+    'notebook.cellStatusBarItemHoverBackground':
+      tokyoNightColors.workbench['notebook.cellStatusBarItemHoverBackground'],
     'charts.red': tokyoNightColors.workbench['charts.red'],
     'charts.blue': tokyoNightColors.workbench['charts.blue'],
     'charts.yellow': tokyoNightColors.workbench['charts.yellow'],
@@ -342,58 +587,117 @@ export const generateTokyoNightWorkbenchColors = () => {
     'charts.purple': tokyoNightColors.workbench['charts.purple'],
     'charts.foreground': tokyoNightColors.workbench['charts.foreground'],
     'charts.lines': tokyoNightColors.workbench['charts.lines'],
-    'scmGraph.historyItemHoverLabelForeground': tokyoNightColors.workbench['scmGraph.historyItemHoverLabelForeground'],
+    'scmGraph.historyItemHoverLabelForeground':
+      tokyoNightColors.workbench['scmGraph.historyItemHoverLabelForeground'],
     'scmGraph.foreground1': tokyoNightColors.workbench['scmGraph.foreground1'],
     'scmGraph.foreground2': tokyoNightColors.workbench['scmGraph.foreground2'],
     'scmGraph.foreground3': tokyoNightColors.workbench['scmGraph.foreground3'],
     'scmGraph.foreground4': tokyoNightColors.workbench['scmGraph.foreground4'],
     'scmGraph.foreground5': tokyoNightColors.workbench['scmGraph.foreground5'],
-    'scmGraph.historyItemHoverAdditionsForeground': tokyoNightColors.workbench['scmGraph.historyItemHoverAdditionsForeground'],
-    'scmGraph.historyItemHoverDeletionsForeground': tokyoNightColors.workbench['scmGraph.historyItemHoverDeletionsForeground'],
-    'scmGraph.historyItemRefColor': tokyoNightColors.workbench['scmGraph.historyItemRefColor'],
-    'scmGraph.historyItemRemoteRefColor': tokyoNightColors.workbench['scmGraph.historyItemRemoteRefColor'],
-    'scmGraph.historyItemBaseRefColor': tokyoNightColors.workbench['scmGraph.historyItemBaseRefColor'],
-    'scmGraph.historyItemHoverDefaultLabelForeground': tokyoNightColors.workbench['scmGraph.historyItemHoverDefaultLabelForeground'],
-    'merge.currentHeaderBackground': tokyoNightColors.workbench['merge.currentHeaderBackground'],
-    'merge.currentContentBackground': tokyoNightColors.workbench['merge.currentContentBackground'],
-    'merge.incomingHeaderBackground': tokyoNightColors.workbench['merge.incomingHeaderBackground'],
-    'merge.incomingContentBackground': tokyoNightColors.workbench['merge.incomingContentBackground'],
-    'mergeEditor.change.background': tokyoNightColors.workbench['mergeEditor.change.background'],
-    'mergeEditor.change.word.background': tokyoNightColors.workbench['mergeEditor.change.word.background'],
-    'mergeEditor.conflict.unhandledUnfocused.border': tokyoNightColors.workbench['mergeEditor.conflict.unhandledUnfocused.border'],
-    'mergeEditor.conflict.unhandledFocused.border': tokyoNightColors.workbench['mergeEditor.conflict.unhandledFocused.border'],
-    'mergeEditor.conflict.handledUnfocused.border': tokyoNightColors.workbench['mergeEditor.conflict.handledUnfocused.border'],
-    'mergeEditor.conflict.handledFocused.border': tokyoNightColors.workbench['mergeEditor.conflict.handledFocused.border'],
-    'mergeEditor.conflict.handled.minimapOverViewRuler': tokyoNightColors.workbench['mergeEditor.conflict.handled.minimapOverViewRuler'],
-    'mergeEditor.conflict.unhandled.minimapOverViewRuler': tokyoNightColors.workbench['mergeEditor.conflict.unhandled.minimapOverViewRuler'],
-    'gitlens.trailingLineForegroundColor': tokyoNightColors.workbench['gitlens.trailingLineForegroundColor'],
-    'gitlens.gutterUncommittedForegroundColor': tokyoNightColors.workbench['gitlens.gutterUncommittedForegroundColor'],
-    'gitlens.gutterForegroundColor': tokyoNightColors.workbench['gitlens.gutterForegroundColor'],
-    'gitlens.gutterBackgroundColor': tokyoNightColors.workbench['gitlens.gutterBackgroundColor'],
-    'notificationCenterHeader.background': tokyoNightColors.workbench['notificationCenterHeader.background'],
-    'notifications.background': tokyoNightColors.workbench['notifications.background'],
-    'notificationLink.foreground': tokyoNightColors.workbench['notificationLink.foreground'],
-    'notificationsErrorIcon.foreground': tokyoNightColors.workbench['notificationsErrorIcon.foreground'],
-    'notificationsWarningIcon.foreground': tokyoNightColors.workbench['notificationsWarningIcon.foreground'],
-    'notificationsInfoIcon.foreground': tokyoNightColors.workbench['notificationsInfoIcon.foreground'],
-    'menubar.selectionForeground': tokyoNightColors.workbench['menubar.selectionForeground'],
-    'menubar.selectionBackground': tokyoNightColors.workbench['menubar.selectionBackground'],
-    'menubar.selectionBorder': tokyoNightColors.workbench['menubar.selectionBorder'],
+    'scmGraph.historyItemHoverAdditionsForeground':
+      tokyoNightColors.workbench[
+        'scmGraph.historyItemHoverAdditionsForeground'
+      ],
+    'scmGraph.historyItemHoverDeletionsForeground':
+      tokyoNightColors.workbench[
+        'scmGraph.historyItemHoverDeletionsForeground'
+      ],
+    'scmGraph.historyItemRefColor':
+      tokyoNightColors.workbench['scmGraph.historyItemRefColor'],
+    'scmGraph.historyItemRemoteRefColor':
+      tokyoNightColors.workbench['scmGraph.historyItemRemoteRefColor'],
+    'scmGraph.historyItemBaseRefColor':
+      tokyoNightColors.workbench['scmGraph.historyItemBaseRefColor'],
+    'scmGraph.historyItemHoverDefaultLabelForeground':
+      tokyoNightColors.workbench[
+        'scmGraph.historyItemHoverDefaultLabelForeground'
+      ],
+    'merge.currentHeaderBackground':
+      tokyoNightColors.workbench['merge.currentHeaderBackground'],
+    'merge.currentContentBackground':
+      tokyoNightColors.workbench['merge.currentContentBackground'],
+    'merge.incomingHeaderBackground':
+      tokyoNightColors.workbench['merge.incomingHeaderBackground'],
+    'merge.incomingContentBackground':
+      tokyoNightColors.workbench['merge.incomingContentBackground'],
+    'mergeEditor.change.background':
+      tokyoNightColors.workbench['mergeEditor.change.background'],
+    'mergeEditor.change.word.background':
+      tokyoNightColors.workbench['mergeEditor.change.word.background'],
+    'mergeEditor.conflict.unhandledUnfocused.border':
+      tokyoNightColors.workbench[
+        'mergeEditor.conflict.unhandledUnfocused.border'
+      ],
+    'mergeEditor.conflict.unhandledFocused.border':
+      tokyoNightColors.workbench[
+        'mergeEditor.conflict.unhandledFocused.border'
+      ],
+    'mergeEditor.conflict.handledUnfocused.border':
+      tokyoNightColors.workbench[
+        'mergeEditor.conflict.handledUnfocused.border'
+      ],
+    'mergeEditor.conflict.handledFocused.border':
+      tokyoNightColors.workbench['mergeEditor.conflict.handledFocused.border'],
+    'mergeEditor.conflict.handled.minimapOverViewRuler':
+      tokyoNightColors.workbench[
+        'mergeEditor.conflict.handled.minimapOverViewRuler'
+      ],
+    'mergeEditor.conflict.unhandled.minimapOverViewRuler':
+      tokyoNightColors.workbench[
+        'mergeEditor.conflict.unhandled.minimapOverViewRuler'
+      ],
+    'gitlens.trailingLineForegroundColor':
+      tokyoNightColors.workbench['gitlens.trailingLineForegroundColor'],
+    'gitlens.gutterUncommittedForegroundColor':
+      tokyoNightColors.workbench['gitlens.gutterUncommittedForegroundColor'],
+    'gitlens.gutterForegroundColor':
+      tokyoNightColors.workbench['gitlens.gutterForegroundColor'],
+    'gitlens.gutterBackgroundColor':
+      tokyoNightColors.workbench['gitlens.gutterBackgroundColor'],
+    'notificationCenterHeader.background':
+      tokyoNightColors.workbench['notificationCenterHeader.background'],
+    'notifications.background':
+      tokyoNightColors.workbench['notifications.background'],
+    'notificationLink.foreground':
+      tokyoNightColors.workbench['notificationLink.foreground'],
+    'notificationsErrorIcon.foreground':
+      tokyoNightColors.workbench['notificationsErrorIcon.foreground'],
+    'notificationsWarningIcon.foreground':
+      tokyoNightColors.workbench['notificationsWarningIcon.foreground'],
+    'notificationsInfoIcon.foreground':
+      tokyoNightColors.workbench['notificationsInfoIcon.foreground'],
+    'menubar.selectionForeground':
+      tokyoNightColors.workbench['menubar.selectionForeground'],
+    'menubar.selectionBackground':
+      tokyoNightColors.workbench['menubar.selectionBackground'],
+    'menubar.selectionBorder':
+      tokyoNightColors.workbench['menubar.selectionBorder'],
     'menu.foreground': tokyoNightColors.workbench['menu.foreground'],
     'menu.background': tokyoNightColors.workbench['menu.background'],
-    'menu.selectionForeground': tokyoNightColors.workbench['menu.selectionForeground'],
-    'menu.selectionBackground': tokyoNightColors.workbench['menu.selectionBackground'],
-    'menu.separatorBackground': tokyoNightColors.workbench['menu.separatorBackground'],
+    'menu.selectionForeground':
+      tokyoNightColors.workbench['menu.selectionForeground'],
+    'menu.selectionBackground':
+      tokyoNightColors.workbench['menu.selectionBackground'],
+    'menu.separatorBackground':
+      tokyoNightColors.workbench['menu.separatorBackground'],
     'menu.border': tokyoNightColors.workbench['menu.border'],
     'chat.requestBorder': tokyoNightColors.workbench['chat.requestBorder'],
-    'chat.avatarBackground': tokyoNightColors.workbench['chat.avatarBackground'],
-    'chat.avatarForeground': tokyoNightColors.workbench['chat.avatarForeground'],
-    'chat.slashCommandBackground': tokyoNightColors.workbench['chat.slashCommandBackground'],
-    'chat.slashCommandForeground': tokyoNightColors.workbench['chat.slashCommandForeground'],
-    'inlineChat.foreground': tokyoNightColors.workbench['inlineChat.foreground'],
-    'inlineChatInput.background': tokyoNightColors.workbench['inlineChatInput.background'],
-    'inlineChatDiff.inserted': tokyoNightColors.workbench['inlineChatDiff.inserted'],
-    'inlineChatDiff.removed': tokyoNightColors.workbench['inlineChatDiff.removed'],
+    'chat.avatarBackground':
+      tokyoNightColors.workbench['chat.avatarBackground'],
+    'chat.avatarForeground':
+      tokyoNightColors.workbench['chat.avatarForeground'],
+    'chat.slashCommandBackground':
+      tokyoNightColors.workbench['chat.slashCommandBackground'],
+    'chat.slashCommandForeground':
+      tokyoNightColors.workbench['chat.slashCommandForeground'],
+    'inlineChat.foreground':
+      tokyoNightColors.workbench['inlineChat.foreground'],
+    'inlineChatInput.background':
+      tokyoNightColors.workbench['inlineChatInput.background'],
+    'inlineChatDiff.inserted':
+      tokyoNightColors.workbench['inlineChatDiff.inserted'],
+    'inlineChatDiff.removed':
+      tokyoNightColors.workbench['inlineChatDiff.removed'],
   }
 }
 
@@ -1111,9 +1415,9 @@ export const generateTokyoNightTokenColors = () => {
     },
     {
       name: 'Inserted',
-       scope: 'markup.inserted',
-       settings: {
-         foreground: '#449dab',
+      scope: 'markup.inserted',
+      settings: {
+        foreground: '#449dab',
       },
     },
     {
@@ -1256,7 +1560,7 @@ export const generateTokyoNightTokenColors = () => {
     {
       name: 'JSON Key - Level 6',
       scope: [
-        'source.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
         foreground: baseTokenColors.variables.property,
@@ -1265,7 +1569,7 @@ export const generateTokyoNightTokenColors = () => {
     {
       name: 'JSON Key - Level 7',
       scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
       ],
       settings: {
         foreground: baseTokenColors.special.tag,
@@ -1321,14 +1625,14 @@ export const generateTokyoNightTokenColors = () => {
     },
     {
       name: 'HTML text',
-       scope: [
-         'meta.tag JSXNested',
-         'meta.jsx.children',
-         'text.html',
-         'text.log',
-       ],
-       settings: {
-         foreground: '#9aa5ce',
+      scope: [
+        'meta.tag JSXNested',
+        'meta.jsx.children',
+        'text.html',
+        'text.log',
+      ],
+      settings: {
+        foreground: '#9aa5ce',
       },
     },
     {
@@ -1340,10 +1644,10 @@ export const generateTokyoNightTokenColors = () => {
     },
     {
       name: 'Markdown - Markup Raw Inline Punctuation',
-       scope:
-         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-       settings: {
-         foreground: '#4E5579',
+      scope:
+        'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
+      settings: {
+        foreground: '#4E5579',
       },
     },
     {
@@ -1448,9 +1752,9 @@ export const generateTokyoNightTokenColors = () => {
     },
     {
       name: 'Markdown - Blockquote',
-       scope: 'markup.quote punctuation.definition.blockquote.markdown',
-       settings: {
-         foreground: '#4e5579',
+      scope: 'markup.quote punctuation.definition.blockquote.markdown',
+      settings: {
+        foreground: '#4e5579',
       },
     },
     {
