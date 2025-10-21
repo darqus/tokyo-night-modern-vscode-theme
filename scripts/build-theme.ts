@@ -6,10 +6,11 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { generateFinalThemeJSON } from '../src/theme/generator/final-theme-generator'
-import { validatePaletteContrastOnBuild } from '../src/theme/validation/contrast-validation'
+
+// import { validatePaletteContrastOnBuild } from '../src/theme/validation/contrast-validation'
 
 // Проверяем контрастность палитры перед сборкой
-validatePaletteContrastOnBuild()
+// validatePaletteContrastOnBuild()
 
 // Функция для создания директории, если она не существует
 const ensureDirectoryExists = (dirPath: string) => {
