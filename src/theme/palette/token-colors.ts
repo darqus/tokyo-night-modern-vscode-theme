@@ -3,15 +3,15 @@
  * Сгруппированная по категориям с использованием утилит генерации цветов
  */
 
-import { adjustBrightness, withAlpha, lighten, darken } from './generators'
+import { darken, lighten, withAlpha } from './generators'
 
 // Базовые цвета для токенов
 export const baseTokenColors = {
- comments: {
+  comments: {
     primary: '#51597d', // Основной цвет комментариев
-    doc: '#5a638c',     // Документационные комментарии
+    doc: '#5a638c', // Документационные комментарии
     emphasized: '#646e9c', // Выделенные элементы в комментариях
- },
+  },
   strings: {
     primary: '#9ece6a', // Обычные строки
     template: '#9aa5ce', // Шаблонные строки
@@ -61,7 +61,7 @@ export const baseTokenColors = {
     number: '#ff9e64', // Числа
     boolean: '#ff9e64', // Булевы значения
     null: '#ff9e64', // Null/undefined
-    tag: '#f768e', // HTML теги
+    tag: '#ff768e', // HTML теги
     attribute: '#bb9af7', // Атрибуты
     constant: '#e0af68', // Специальные константы
     invalid: '#ff5370', // Невалидные токены
@@ -74,8 +74,8 @@ export const baseTokenColors = {
  * с использованием утилит изменения яркости и прозрачности
  */
 export const generateTokenPalette = () => {
- // Создаем варианты для комментариев
- const commentVariants = {
+  // Создаем варианты для комментариев
+  const commentVariants = {
     primary: {
       base: baseTokenColors.comments.primary,
       lighter: lighten(baseTokenColors.comments.primary, 0.1),
@@ -125,7 +125,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для ключевых слов
- const keywordVariants = {
+  const keywordVariants = {
     primary: {
       base: baseTokenColors.keywords.primary,
       lighter: lighten(baseTokenColors.keywords.primary, 0.1),
@@ -249,7 +249,7 @@ export const generateTokenPalette = () => {
   }
 
   // Создаем варианты для операторов
- const operatorVariants = {
+  const operatorVariants = {
     primary: {
       base: baseTokenColors.operators.primary,
       lighter: lighten(baseTokenColors.operators.primary, 0.1),
