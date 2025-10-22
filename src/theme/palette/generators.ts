@@ -9,9 +9,9 @@
 const hexToHsl = (hex: string): { h: number; s: number; l: number } => {
   // Удаление символа # и разбиение на компоненты
   const cleanHex = hex.replace('#', '')
-  const r = parseInt(cleanHex.substring(0, 2), 16) / 255
-  const g = parseInt(cleanHex.substring(2, 4), 16) / 255
-  const b = parseInt(cleanHex.substring(4, 6), 16) / 255
+  const r = parseInt(cleanHex.substring(0, 2), 16) / 25
+  const g = parseInt(cleanHex.substring(2, 4), 16) / 25
+  const b = parseInt(cleanHex.substring(4, 6), 16) / 25
 
   const max = Math.max(r, g, b)
   const min = Math.min(r, g, b)
@@ -78,7 +78,7 @@ const hslToHex = (h: number, s: number, l: number): string => {
 
   const toHex = (c: number): string => {
     const hex = Math.round(c * 255).toString(16)
-    return hex.length === 1 ? '0' + hex : hex
+    return hex.padStart(2, '0')
   }
 
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`
