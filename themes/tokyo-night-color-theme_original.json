@@ -1325,7 +1325,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#4E5579"
+        "foreground": "#4e5579"
       }
     },
     {

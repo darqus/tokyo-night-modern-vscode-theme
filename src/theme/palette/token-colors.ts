@@ -68,7 +68,7 @@ export const baseTokenColors = {
     deprecated: '#bb9af7', // Устаревшие токены
     insertedText: '#449dab', // Цвет для вставленного текста
     htmlText: '#9aa5ce', // Цвет для HTML текста
-    markdownPunctuation: '#4E5579', // Пунктуация в Markdown
+    markdownPunctuation: '#4e5579', // Пунктуация в Markdown
     markdownBlockquotePunctuation: '#4e5579', // Пунктуация для блоков цитирования в Markdown
   },
   semantic: {
