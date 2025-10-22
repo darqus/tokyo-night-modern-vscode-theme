@@ -101,18 +101,16 @@ export const adjustBrightness = (color: string, amount: number): string => {
  * @param color - исходный цвет в формате HEX
  * @param amount - величина осветления от 0 до 1 (0.1 = +10% яркости)
  */
-export const lighten = (color: string, amount: number): string => {
-  return adjustBrightness(color, Math.abs(amount))
-}
+export const lighten = (color: string, amount: number): string =>
+  adjustBrightness(color, Math.abs(amount))
 
 /**
  * Делает цвет темнее
  * @param color - исходный цвет в формате HEX
  * @param amount - величина затемнения от 0 до 1 (0.1 = -10% яркости)
  */
-export const darken = (color: string, amount: number): string => {
-  return adjustBrightness(color, -Math.abs(amount))
-}
+export const darken = (color: string, amount: number): string =>
+  adjustBrightness(color, -Math.abs(amount))
 
 /**
  * Добавляет прозрачность к цвету
