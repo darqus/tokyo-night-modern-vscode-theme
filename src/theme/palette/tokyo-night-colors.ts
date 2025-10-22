@@ -68,7 +68,7 @@ export const tokyoNightColors = {
     'activityBar.inactiveForeground': '#3b3e52',
     'activityBar.border': '#16161e',
     'activityBarBadge.background': '#3d59a1',
-    'activityBarBadge.foreground': '#fff',
+    'activityBarBadge.foreground': '#ffffff',
     'activityBarTop.foreground': '#787c99',
     'activityBarTop.inactiveForeground': '#3b3e52',
     'tree.indentGuidesStroke': '#2b2b3b',
