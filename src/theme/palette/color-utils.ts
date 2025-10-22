@@ -6,8 +6,8 @@
 /**
  * Преобразует HEX цвет в RGB
  */
-export function hexToRgb(hex: string): { r: number; g: number; b: number } {
-  const cleanHex = hex.replace('#', '')
+export const hexToRgb = (hex: string): { r: number; g: number; b: number } => {
+ const cleanHex = hex.replace('#', '')
   const r = parseInt(cleanHex.substring(0, 2), 16)
   const g = parseInt(cleanHex.substring(2, 4), 16)
   const b = parseInt(cleanHex.substring(4, 6), 16)
@@ -18,14 +18,14 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } {
  * Вычисляет относительную яркость цвета по формуле WCAG
  * https://www.w3.org/TR/WCAG20-TECHS/G17.html
  */
-export function getLuminance(r: number, g: number, b: number): number {
+export const getLuminance = (r: number, g: number, b: number): number => {
   // Нормализация значений RGB
   const RsRGB = r / 255
   const GsRGB = g / 255
   const BsRGB = b / 255
 
   // Преобразование в линейную светимость
-  const R = RsRGB <= 0.03928 ? RsRGB / 12.92 : ((RsRGB + 0.055) / 1.055) ** 2.4
+ const R = RsRGB <= 0.03928 ? RsRGB / 12.92 : ((RsRGB + 0.055) / 1.055) ** 2.4
   const G = GsRGB <= 0.03928 ? GsRGB / 12.92 : ((GsRGB + 0.055) / 1.055) ** 2.4
   const B = BsRGB <= 0.03928 ? BsRGB / 12.92 : ((BsRGB + 0.055) / 1.055) ** 2.4
 
@@ -37,7 +37,7 @@ export function getLuminance(r: number, g: number, b: number): number {
  * Вычисляет коэффициент контрастности между двумя цветами по WCAG
  * https://www.w3.org/TR/WCAG20-TECHS/G17.html
  */
-export function getContrastRatio(color1: string, color2: string): number {
+export const getContrastRatio = (color1: string, color2: string): number => {
   const rgb1 = hexToRgb(color1)
   const rgb2 = hexToRgb(color2)
 
@@ -57,11 +57,11 @@ export function getContrastRatio(color1: string, color2: string): number {
  * @param level - уровень (AA или AAA)
  * @returns true, если контрастность соответствует требованиям
  */
-export function meetsWCAGContrast(
+export const meetsWCAGContrast = (
   foreground: string,
   background: string,
   level: 'AA' | 'AAA' = 'AA'
-): boolean {
+): boolean => {
   const ratio = getContrastRatio(foreground, background)
   return level === 'AA' ? ratio >= 4.5 : ratio >= 7.0
 }
@@ -71,9 +71,9 @@ export function meetsWCAGContrast(
  * @param color - цвет в формате HEX
  * @returns true, если цвет светлый
  */
-export function isLightColor(color: string): boolean {
+export const isLightColor = (color: string): boolean => {
   const rgb = hexToRgb(color)
-  const luminance = getLuminance(rgb.r, rgb.g, rgb.b)
+ const luminance = getLuminance(rgb.r, rgb.g, rgb.b)
   return luminance > 0.5
 }
 
@@ -82,8 +82,8 @@ export function isLightColor(color: string): boolean {
  * @param color - цвет в формате HEX
  * @returns true, если цвет темный
  */
-export function isDarkColor(color: string): boolean {
-  return !isLightColor(color)
+export const isDarkColor = (color: string): boolean => {
+ return !isLightColor(color)
 }
 
 /**
@@ -91,7 +91,7 @@ export function isDarkColor(color: string): boolean {
  * @param color - цвет в формате HEX
  * @returns нормализованный цвет в формате #rrggbb
  */
-export function normalizeHexColor(color: string): string {
+export const normalizeHexColor = (color: string): string => {
   let cleanColor = color.replace('#', '').toLowerCase()
 
   // Проверка, является ли строка действительным шестнадцатеричным значением
@@ -125,5 +125,5 @@ export function normalizeHexColor(color: string): string {
     cleanColor = cleanColor.substring(0, 6)
   }
 
-  return `#${cleanColor}`
+ return `#${cleanColor}`
 }
