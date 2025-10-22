@@ -1387,7 +1387,7 @@ export const generateTokyoNightTokenColors = () => [
     name: 'Inserted',
     scope: 'markup.inserted',
     settings: {
-      foreground: '#449dab',
+      foreground: baseTokenColors.special.insertedText,
     },
   },
   {
@@ -1597,7 +1597,7 @@ export const generateTokyoNightTokenColors = () => [
     name: 'HTML text',
     scope: ['meta.tag JSXNested', 'meta.jsx.children', 'text.html', 'text.log'],
     settings: {
-      foreground: '#9aa5ce',
+      foreground: baseTokenColors.special.htmlText,
     },
   },
   {
@@ -1612,7 +1612,7 @@ export const generateTokyoNightTokenColors = () => [
     scope:
       'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
     settings: {
-      foreground: '#4E5579',
+      foreground: baseTokenColors.special.markdownPunctuation,
     },
   },
   {
@@ -1719,7 +1719,7 @@ export const generateTokyoNightTokenColors = () => [
     name: 'Markdown - Blockquote',
     scope: 'markup.quote punctuation.definition.blockquote.markdown',
     settings: {
-      foreground: '#4e5579',
+      foreground: baseTokenColors.special.markdownBlockquotePunctuation,
     },
   },
   {

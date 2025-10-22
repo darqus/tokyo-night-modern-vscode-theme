@@ -66,6 +66,10 @@ export const baseTokenColors = {
     constant: '#e0af68', // Специальные константы
     invalid: '#ff5370', // Невалидные токены
     deprecated: '#bb9af7', // Устаревшие токены
+    insertedText: '#449dab', // Цвет для вставленного текста
+    htmlText: '#9aa5ce', // Цвет для HTML текста
+    markdownPunctuation: '#4E5579', // Пунктуация в Markdown
+    markdownBlockquotePunctuation: '#4e5579', // Пунктуация для блоков цитирования в Markdown
   },
   semantic: {
     namespace: '#0db9d7',
@@ -397,6 +401,30 @@ export const generateTokenPalette = () => {
       lighter: lighten(baseTokenColors.special.deprecated, 0.1),
       darker: darken(baseTokenColors.special.deprecated, 0.1),
       transparent: withAlpha(baseTokenColors.special.deprecated, 0.7),
+    },
+    insertedText: {
+      base: baseTokenColors.special.insertedText,
+      lighter: lighten(baseTokenColors.special.insertedText, 0.1),
+      darker: darken(baseTokenColors.special.insertedText, 0.1),
+      transparent: withAlpha(baseTokenColors.special.insertedText, 0.7),
+    },
+    htmlText: {
+      base: baseTokenColors.special.htmlText,
+      lighter: lighten(baseTokenColors.special.htmlText, 0.1),
+      darker: darken(baseTokenColors.special.htmlText, 0.1),
+      transparent: withAlpha(baseTokenColors.special.htmlText, 0.7),
+    },
+    markdownPunctuation: {
+      base: baseTokenColors.special.markdownPunctuation,
+      lighter: lighten(baseTokenColors.special.markdownPunctuation, 0.1),
+      darker: darken(baseTokenColors.special.markdownPunctuation, 0.1),
+      transparent: withAlpha(baseTokenColors.special.markdownPunctuation, 0.7),
+    },
+    markdownBlockquotePunctuation: {
+      base: baseTokenColors.special.markdownBlockquotePunctuation,
+      lighter: lighten(baseTokenColors.special.markdownBlockquotePunctuation, 0.1),
+      darker: darken(baseTokenColors.special.markdownBlockquotePunctuation, 0.1),
+      transparent: withAlpha(baseTokenColors.special.markdownBlockquotePunctuation, 0.7),
     },
   }
 
