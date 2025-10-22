@@ -1,5 +1,3 @@
-
-
 // Тип для описания цвета и стиля токена
 interface SemanticTokenStyle {
   foreground?: string

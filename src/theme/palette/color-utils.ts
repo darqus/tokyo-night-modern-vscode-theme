@@ -7,7 +7,7 @@
  * Преобразует HEX цвет в RGB
  */
 export const hexToRgb = (hex: string): { r: number; g: number; b: number } => {
- const cleanHex = hex.replace('#', '')
+  const cleanHex = hex.replace('#', '')
   const r = parseInt(cleanHex.substring(0, 2), 16)
   const g = parseInt(cleanHex.substring(2, 4), 16)
   const b = parseInt(cleanHex.substring(4, 6), 16)
@@ -25,7 +25,7 @@ export const getLuminance = (r: number, g: number, b: number): number => {
   const BsRGB = b / 255
 
   // Преобразование в линейную светимость
- const R = RsRGB <= 0.03928 ? RsRGB / 12.92 : ((RsRGB + 0.055) / 1.055) ** 2.4
+  const R = RsRGB <= 0.03928 ? RsRGB / 12.92 : ((RsRGB + 0.055) / 1.055) ** 2.4
   const G = GsRGB <= 0.03928 ? GsRGB / 12.92 : ((GsRGB + 0.055) / 1.055) ** 2.4
   const B = BsRGB <= 0.03928 ? BsRGB / 12.92 : ((BsRGB + 0.055) / 1.055) ** 2.4
 
@@ -73,7 +73,7 @@ export const meetsWCAGContrast = (
  */
 export const isLightColor = (color: string): boolean => {
   const rgb = hexToRgb(color)
- const luminance = getLuminance(rgb.r, rgb.g, rgb.b)
+  const luminance = getLuminance(rgb.r, rgb.g, rgb.b)
   return luminance > 0.5
 }
 
@@ -83,7 +83,7 @@ export const isLightColor = (color: string): boolean => {
  * @returns true, если цвет темный
  */
 export const isDarkColor = (color: string): boolean => {
- return !isLightColor(color)
+  return !isLightColor(color)
 }
 
 /**
@@ -125,5 +125,5 @@ export const normalizeHexColor = (color: string): string => {
     cleanColor = cleanColor.substring(0, 6)
   }
 
- return `#${cleanColor}`
+  return `#${cleanColor}`
 }
