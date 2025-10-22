@@ -1250,3 +1250,151 @@ export type SyntaxTokenPalette = {
   semanticUndefined: string
   semanticSelfType: string
 }
+
+export type NestedTokens = {
+  workbench: {
+    editor: {
+      base: {
+        background: string
+        foreground: string
+      }
+      selection: {
+        background: string
+        inactiveBackground: string
+        highlight: string
+      }
+      find: {
+        match: {
+          background: string
+          border: string
+        }
+        highlight: {
+          background: string
+        }
+        rangeHighlight: {
+          background: string
+        }
+      }
+      cursor: {
+        foreground: string
+      }
+      whitespace: {
+        foreground: string
+      }
+      lineHighlight: {
+        background: string
+      }
+      indentGuide: {
+        background1: string
+        activeBackground1: string
+      }
+      lineNumber: {
+        foreground: string
+        activeForeground: string
+      }
+      hoverWidget: {
+        background: string
+        border: string
+      }
+      bracketMatch: {
+        background: string
+        border: string
+      }
+    }
+    terminal: {
+      background: string
+      foreground: string
+      selectionBackground: string
+      ansi: {
+        black: string
+        red: string
+        green: string
+        yellow: string
+        blue: string
+        magenta: string
+        cyan: string
+        white: string
+        brightBlack: string
+        brightRed: string
+        brightGreen: string
+        brightYellow: string
+        brightBlue: string
+        brightMagenta: string
+        brightCyan: string
+        brightWhite: string
+      }
+    }
+    peekView: {
+      title: {
+        background: string
+        label: string
+        description: string
+      }
+      result: {
+        background: string
+        selectionForeground: string
+        selectionBackground: string
+        lineForeground: string
+        fileForeground: string
+        matchHighlightBackground: string
+      }
+      editor: {
+        background: string
+        matchHighlightBackground: string
+      }
+      border: string
+    }
+  }
+  semantic: {
+    tokens: {
+      parameter: {
+        base: string
+        declaration: string
+      }
+      property: {
+        base: string
+        declaration: string
+        defaultLibrary: string
+      }
+      variable: {
+        base: string
+        declaration: string
+        defaultLibrary: string
+      }
+    }
+  }
+  tokens: {
+    textmate: {
+      comments: {
+        primary: string
+      }
+      strings: {
+        primary: string
+      }
+      keywords: {
+        primary: string
+      }
+      numbers: {
+        primary: string
+      }
+      functions: {
+        primary: string
+      }
+      variables: {
+        primary: string
+      }
+      punctuation: {
+        primary: string
+      }
+      operators: {
+        primary: string
+      }
+      types: {
+        primary: string
+      }
+      tags: {
+        primary: string
+      }
+    }
+  }
+}

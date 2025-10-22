@@ -206,7 +206,6 @@ export type PrimitiveVariants = ReturnType<typeof buildVariants>
  * Пока включает несколько ключевых групп как стартовую точку.
  */
 export const buildNestedTokens = () => {
-  const v = buildVariants()
   return {
     workbench: {
       editor: {
@@ -215,9 +214,9 @@ export const buildNestedTokens = () => {
           foreground: primitives.foreground.primary,
         },
         selection: {
-          background: v.accent.primary.selection,
-          inactiveBackground: withAlpha(primitives.neutral.blueGray, 0.15),
-          highlight: withAlpha(primitives.accent.primary, 0.4),
+          background: withAlpha(primitives.neutral.blueGray, 0.3),
+          inactiveBackground: withAlpha(primitives.neutral.blueGray, 0.145),
+          highlight: withAlpha(primitives.neutral.blueGray, 0.267),
         },
         find: {
           match: {
@@ -256,6 +255,26 @@ export const buildNestedTokens = () => {
         foreground: primitives.foreground.secondary,
         selectionBackground: withAlpha(primitives.neutral.blueGray, 0.3),
         ansi: { ...primitives.terminalAnsi },
+      },
+      peekView: {
+        title: {
+          background: primitives.background.border,
+          label: primitives.foreground.primary,
+          description: primitives.foreground.secondary,
+        },
+        result: {
+          background: primitives.background.border,
+          selectionForeground: primitives.foreground.primary,
+          selectionBackground: withAlpha(primitives.accent.primary, 0.2),
+          lineForeground: primitives.foreground.primary,
+          fileForeground: primitives.foreground.secondary,
+          matchHighlightBackground: withAlpha(primitives.accent.primary, 0.4),
+        },
+        editor: {
+          background: primitives.background.secondary,
+          matchHighlightBackground: withAlpha(primitives.accent.primary, 0.4),
+        },
+        border: primitives.background.border
       },
     },
     semantic: {
