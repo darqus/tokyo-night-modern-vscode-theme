@@ -23,7 +23,7 @@ export function generateListColors(): Record<string, string> {
     'listFilterWidget.outline': blue.primary,
     'listFilterWidget.noMatchesOutline': interactive.errorOutline,
     'pickerGroup.foreground': fg.brighter,
-    'pickerGroup.border': bg.darker,
+    'pickerGroup.border': alpha(special.border, 0.5),
     'scrollbarSlider.background': alpha(special.scrollbar, 0.08),
     'scrollbarSlider.hoverBackground': alpha(special.scrollbar, 0.06),
     'scrollbarSlider.activeBackground': alpha(special.scrollbar, 0.13),

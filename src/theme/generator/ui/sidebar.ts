@@ -1,4 +1,5 @@
 import { palette } from '../../palette'
+import { alpha } from '../../utils'
 
 export function generateSidebarColors(): Record<string, string> {
   const { bg, fg, blue, special, ui, elements } = palette
@@ -15,11 +16,11 @@ export function generateSidebarColors(): Record<string, string> {
     'tree.indentGuidesStroke': elements.indentGuides,
     'sideBar.foreground': fg.medium,
     'sideBar.background': bg.main,
-    'sideBar.border': bg.darker,
+    'sideBar.border': alpha(special.border, 0.5),
     'sideBarTitle.foreground': fg.medium,
     'sideBarSectionHeader.background': bg.main,
     'sideBarSectionHeader.foreground': fg.brighter,
-    'sideBarSectionHeader.border': bg.darker,
+    'sideBarSectionHeader.border': alpha(special.border, 0.5),
     'sideBar.dropBackground': bg.lighter,
   }
 }
