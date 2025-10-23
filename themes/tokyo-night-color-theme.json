@@ -109,7 +109,7 @@
     "editor.lineHighlightBackground": "#2d2f44",
     "editorWhitespace.foreground": "#42465d",
     "editorMarkerNavigation.background": "#101018",
-    "editorHoverWidget.background": "#101018",
+    "editorHoverWidget.background": "#15151d",
     "editorHoverWidget.border": "#29355a80",
     "editorBracketMatch.background": "#101018",
     "editorBracketMatch.border": "#42465d",
