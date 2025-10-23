@@ -1,36 +1,9 @@
-import { palette } from '../palette'
-import type { SemanticTokenStyle } from '../types'
+import { generateSemanticTokenColors as generateExpandedSemanticTokenColors } from './semantic/index'
 
-export function generateSemanticTokenColors(): Record<
-  string,
-  SemanticTokenStyle
-> {
-  const { yellow, fg, teal, purple } = palette
-
-  return {
-    'parameter.declaration': {
-      foreground: yellow.main,
-    },
-    parameter: {
-      foreground: palette.ui.parameter,
-    },
-    'property.declaration': {
-      foreground: teal.main,
-    },
-    'property.defaultLibrary': {
-      foreground: palette.ui.defaultLibrary,
-    },
-    '*.defaultLibrary': {
-      foreground: palette.ui.defaultLibrary,
-    },
-    'variable.defaultLibrary': {
-      foreground: palette.ui.defaultLibrary,
-    },
-    'variable.declaration': {
-      foreground: purple.light,
-    },
-    variable: {
-      foreground: fg.brightest,
-    },
-  }
+// Сохраняем обратную совместимость с текущей реализацией
+export function generateSemanticTokenColors() {
+  return generateExpandedSemanticTokenColors()
 }
+
+// Экспортируем расширенную функцию для прямого использования
+export { generateExpandedSemanticTokenColors }

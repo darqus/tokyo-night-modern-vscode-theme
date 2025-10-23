@@ -1686,29 +1686,132 @@
     }
   ],
   "semanticTokenColors": {
-    "parameter.declaration": {
-      "foreground": "#e0af68"
+    "variable": {
+      "foreground": "#7aa2f7"
+    },
+    "variable.readonly": {
+      "foreground": "#6183bb",
+      "fontStyle": "italic"
+    },
+    "variable.readonly.default": {
+      "foreground": "#6183bb",
+      "background": "#3d59a11a",
+      "fontStyle": "italic"
     },
     "parameter": {
       "foreground": "#d9d4cd"
     },
-    "property.declaration": {
+    "parameter.readonly": {
+      "foreground": "#d9d4cd",
+      "fontStyle": "italic"
+    },
+    "parameter.type": {
+      "foreground": "#7dcfff"
+    },
+    "property": {
       "foreground": "#73daca"
     },
-    "property.defaultLibrary": {
-      "foreground": "#2ac3de"
+    "property.readonly": {
+      "foreground": "#449dab",
+      "fontStyle": "italic"
     },
-    "*.defaultLibrary": {
+    "property.static": {
+      "foreground": "#3d59a1",
+      "fontStyle": "bold"
+    },
+    "property.declaration": {
+      "foreground": "#73daca",
+      "fontStyle": "bold"
+    },
+    "property.defaultLibrary": {
       "foreground": "#2ac3de"
     },
     "variable.defaultLibrary": {
       "foreground": "#2ac3de"
     },
-    "variable.declaration": {
+    "*.defaultLibrary": {
+      "foreground": "#2ac3de"
+    },
+    "function": {
       "foreground": "#bb9af7"
     },
-    "variable": {
-      "foreground": "#c0caf5"
+    "function.declaration": {
+      "foreground": "#b267e6",
+      "fontStyle": "bold"
+    },
+    "function.defaultLibrary": {
+      "foreground": "#2ac3de"
+    },
+    "method": {
+      "foreground": "#bb9af7"
+    },
+    "method.declaration": {
+      "foreground": "#b267e6",
+      "fontStyle": "bold"
+    },
+    "method.static": {
+      "foreground": "#9d7cd8",
+      "fontStyle": "bold"
+    },
+    "method.readonly": {
+      "foreground": "#bb9af7",
+      "fontStyle": "italic"
+    },
+    "constructor": {
+      "foreground": "#b267e6",
+      "fontStyle": "bold"
+    },
+    "function.async": {
+      "foreground": "#bb9af7",
+      "fontStyle": "italic"
+    },
+    "method.async": {
+      "foreground": "#bb9af7",
+      "fontStyle": "italic"
+    },
+    "react.hook": {
+      "foreground": "#b267e6",
+      "fontStyle": "bold"
+    },
+    "react.component": {
+      "foreground": "#7dcfff",
+      "fontStyle": "bold"
+    },
+    "react.props": {
+      "foreground": "#73daca"
+    },
+    "vue.composable": {
+      "foreground": "#9ece6a",
+      "fontStyle": "bold"
+    },
+    "vue.directive": {
+      "foreground": "#ff9e64",
+      "fontStyle": "italic"
+    },
+    "typescript.generic": {
+      "foreground": "#89ddff"
+    },
+    "typescript.utility": {
+      "foreground": "#bb9af7",
+      "fontStyle": "italic"
+    },
+    "graphql.type": {
+      "foreground": "#0db9d7",
+      "fontStyle": "bold"
+    },
+    "graphql.field": {
+      "foreground": "#73daca"
+    },
+    "test.describe": {
+      "foreground": "#9ece6a",
+      "fontStyle": "bold"
+    },
+    "test.assertion": {
+      "foreground": "#e0af68"
+    },
+    "test.mock": {
+      "foreground": "#de5971",
+      "fontStyle": "italic"
     }
   }
 }
