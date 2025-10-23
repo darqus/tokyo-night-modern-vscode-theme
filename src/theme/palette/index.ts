@@ -13,12 +13,12 @@ export const palette: Palette = {
   },
 
   fg: {
-    dim: '#515670',
-    muted: '#51597d',
-    medium: '#787c99',
-    bright: '#9aa5ce',
-    brighter: '#a9b1d6',
-    brightest: '#c0caf5',
+    dim: '#6a718d',
+    muted: '#6d7597',
+    medium: '#747b9c',
+    bright: '#a9b4d9',
+    brighter: '#b8c0e5',
+    brightest: '#d0d9ff',
   },
 
   blue: {
@@ -86,12 +86,12 @@ export const palette: Palette = {
 
   ui: {
     white: '#ffffff',
-    badgeForeground: '#acb0d0',
-    linkActive: '#acb0d0',
-    codeLens: '#51597d',
-    brightWhite: '#acb0d0',
+    badgeForeground: '#b9c0e0',
+    linkActive: '#b9c0e0',
+    codeLens: '#6d7597',
+    brightWhite: '#b9c0e0',
     // Новые цвета из UI модулей
-    preformat: '#9699a8',
+    preformat: '#a9adbd',
     debugException: '#963c47',
     debugError: '#bb616b',
     debugBreakpointDisabled: '#414761',
@@ -102,7 +102,7 @@ export const palette: Palette = {
     menubarSelection: '#1b1e2e',
     notificationError: '#bb616b',
     notificationWarning: '#bba461',
-    inputInfo: '#bbc2e0',
+    inputInfo: '#c9d0f0',
     inputWarningBg: '#c2985b',
     inputErrorBg: '#85353e',
     inputErrorBorder: '#963c47',
@@ -144,7 +144,7 @@ export const palette: Palette = {
   interactive: {
     hover: '#13131a',
     selected: '#20222c',
-    highlight: '#668ac4',
+    highlight: '#7da0dc',
     invalid: '#c97018',
     error: '#bb616b',
     errorOutline: '#a6333f',
@@ -165,11 +165,11 @@ export const palette: Palette = {
   // Высококонтрастные цвета
   highContrast: {
     fg: {
-      dim: '#b0b8d0',
-      muted: '#c0c8e0',
-      medium: '#d0d8f0',
-      bright: '#e0e8ff',
-      brighter: '#f0f8ff',
+      dim: '#b1bcdf',
+      muted: '#c3cef0',
+      medium: '#cdd9fd',
+      bright: '#dcefff',
+      brighter: '#ffffff',
       brightest: '#ffffff',
     },
     bg: {
