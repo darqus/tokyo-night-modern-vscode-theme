@@ -10,7 +10,7 @@ export interface VSCodeTheme {
 export interface TokenColor {
   name?: string
   scope: string | string[]
-  settings: {
+  settings?: {
     foreground?: string
     background?: string
     fontStyle?: string
