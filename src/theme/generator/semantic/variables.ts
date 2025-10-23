@@ -1,6 +1,6 @@
 import { palette } from '../../palette'
 import type { SemanticTokenStyle } from '../../types'
-import { alpha, createSemanticToken } from '../../utils/semantic-tokens'
+import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
   return {
@@ -17,7 +17,6 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     'variable.readonly.default': createSemanticToken({
       foreground: palette.blue.light,
       fontStyle: 'italic',
-      background: alpha(palette.blue.primary, 0.1),
     }),
 
     // Параметры функций
