@@ -36,7 +36,7 @@
     ]
   },
   "scripts": {
-    "build:theme": "tsx scripts/build-theme.ts && biome format --write themes/tokyo-night-color-theme.json",
+    "build:theme": "ts-node scripts/build-theme.ts && biome format --write themes/tokyo-night-color-theme.json",
     "build:vsix": "ts-node scripts/build-vsix.ts",
     "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts",
