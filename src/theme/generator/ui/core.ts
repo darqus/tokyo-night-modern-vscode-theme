@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export function generateCoreColors(): Record<string, string> {
-  const { fg, bg, special, blue } = palette
+  const { fg, bg, special, blue, ui } = palette
 
   return {
     foreground: fg.medium,
@@ -10,10 +10,10 @@ export function generateCoreColors(): Record<string, string> {
     disabledForeground: special.disabled,
     focusBorder: alpha(special.disabled, 0.2),
     errorForeground: fg.dim,
-    'widget.shadow': alpha('#ffffff', 0),
+    'widget.shadow': alpha(ui.white, 0),
     'scrollbar.shadow': alpha('#000000', 0.2),
     'badge.background': alpha(special.badge, 0.19),
-    'badge.foreground': '#acb0d0',
+    'badge.foreground': ui.badgeForeground,
     'icon.foreground': fg.medium,
     'settings.headerForeground': blue.light,
     'window.activeBorder': bg.darkest,

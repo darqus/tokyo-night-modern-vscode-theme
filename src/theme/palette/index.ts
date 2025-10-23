@@ -83,4 +83,47 @@ export const palette: Palette = {
     ghostText: '#646e9c',
     inactive: '#3b3e52',
   },
+
+  ui: {
+    white: '#ffffff',
+    badgeForeground: '#acb0d0',
+    linkActive: '#acb0d0',
+    codeLens: '#51597d',
+    brightWhite: '#acb0d0',
+  },
+
+  brackets: {
+    blue: '#698cd6',
+    cyan: '#68b3de',
+    purple: '#9a7ecc',
+    teal: '#25aac2',
+    green: '#80a856',
+  },
+
+  git: {
+    modified: '#394b70',
+    added: '#164846',
+    deleted: '#703438',
+    deletedDark: '#823c41',
+    modifiedMinimap: '#425882',
+    addedMinimap: '#1c5957',
+    deletedMinimap: '#944449',
+  },
+
+  interactive: {
+    hover: '#13131a',
+    selected: '#20222c',
+    highlight: '#668ac4',
+    invalid: '#c97018',
+    error: '#bb616b',
+    errorOutline: '#a6333f',
+  },
+
+  elements: {
+    indentGuides: '#2b2b3b',
+    indentGuidesBackground: '#232433',
+    foldBackground: '#111117',
+    cssPunctuation: '#9abdf5',
+    info: '#1abc9c',
+  },
 }

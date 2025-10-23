@@ -36,6 +36,11 @@ export interface Palette {
   red: RedPalette
   pink: PinkPalette
   special: SpecialPalette
+  ui: UIPalette
+  brackets: BracketsPalette
+  git: GitPalette
+  interactive: InteractivePalette
+  elements: ElementsPalette
 }
 
 export interface BackgroundPalette {
@@ -117,4 +122,47 @@ export interface SpecialPalette {
   scrollbar: string
   ghostText: string
   inactive: string
+}
+
+export interface UIPalette {
+  white: string
+  badgeForeground: string
+  linkActive: string
+  codeLens: string
+  brightWhite: string
+}
+
+export interface BracketsPalette {
+  blue: string
+  cyan: string
+  purple: string
+  teal: string
+  green: string
+}
+
+export interface GitPalette {
+  modified: string
+  added: string
+  deleted: string
+  deletedDark: string
+  modifiedMinimap: string
+  addedMinimap: string
+  deletedMinimap: string
+}
+
+export interface InteractivePalette {
+  hover: string
+  selected: string
+  highlight: string
+  invalid: string
+  error: string
+  errorOutline: string
+}
+
+export interface ElementsPalette {
+  indentGuides: string
+  indentGuidesBackground: string
+  foldBackground: string
+  cssPunctuation: string
+  info: string
 }

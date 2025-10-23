@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, blue, yellow } = palette
+  const { bg, fg, blue, yellow, special, interactive } = palette
 
   return {
     'list.dropBackground': bg.lighter,
@@ -13,19 +13,19 @@ export function generateListColors(): Record<string, string> {
     'list.inactiveSelectionForeground': fg.brighter,
     'list.focusBackground': bg.light,
     'list.focusForeground': fg.brighter,
-    'list.hoverBackground': '#13131a',
+    'list.hoverBackground': interactive.hover,
     'list.hoverForeground': fg.brighter,
-    'list.highlightForeground': '#668ac4',
-    'list.invalidItemForeground': '#c97018',
-    'list.errorForeground': '#bb616b',
+    'list.highlightForeground': interactive.highlight,
+    'list.invalidItemForeground': interactive.invalid,
+    'list.errorForeground': interactive.error,
     'list.warningForeground': yellow.muted,
     'listFilterWidget.background': bg.darker,
     'listFilterWidget.outline': blue.primary,
-    'listFilterWidget.noMatchesOutline': '#a6333f',
+    'listFilterWidget.noMatchesOutline': interactive.errorOutline,
     'pickerGroup.foreground': fg.brighter,
     'pickerGroup.border': bg.darker,
-    'scrollbarSlider.background': alpha(palette.special.scrollbar, 0.08),
-    'scrollbarSlider.hoverBackground': alpha(palette.special.scrollbar, 0.06),
-    'scrollbarSlider.activeBackground': alpha(palette.special.scrollbar, 0.13),
+    'scrollbarSlider.background': alpha(special.scrollbar, 0.08),
+    'scrollbarSlider.hoverBackground': alpha(special.scrollbar, 0.06),
+    'scrollbarSlider.activeBackground': alpha(special.scrollbar, 0.13),
   }
 }
