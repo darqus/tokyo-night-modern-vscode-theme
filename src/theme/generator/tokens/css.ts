@@ -1,8 +1,19 @@
-import type { TokenColor } from '../../types'
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
 export function generateCssTokens(): TokenColor[] {
-  const { blue, green, pink, cyan, yellow, purple, orange, fg, teal } = palette
+  const {
+    blue,
+    green,
+    pink,
+    cyan,
+    yellow,
+    purple,
+    orange,
+    fg,
+    teal,
+    elements,
+  } = palette
 
   return [
     {
@@ -56,7 +67,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Punctuation',
       scope: 'meta.property-list',
-      settings: { foreground: '#9abdf5' },
+      settings: { foreground: elements.cssPunctuation },
     },
     {
       name: 'CSS at-rule fix',
@@ -77,7 +88,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Punctuation comma fix',
       scope: 'meta.property-list meta.property-list',
-      settings: { foreground: '#9abdf5' },
+      settings: { foreground: elements.cssPunctuation },
     },
     {
       name: 'SCSS @',
