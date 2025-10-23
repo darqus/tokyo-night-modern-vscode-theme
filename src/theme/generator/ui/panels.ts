@@ -10,7 +10,7 @@ export function generatePanelColors(): Record<string, string> {
     'panelTitle.activeForeground': fg.medium,
     'panelTitle.inactiveForeground': palette.special.indentActive,
     'panelTitle.activeBorder': bg.main,
-    'panelInput.border': bg.main,
+    'panelInput.border': alpha(special.border, 0.5),
     'statusBar.foreground': fg.medium,
     'statusBar.background': bg.main,
     'statusBar.border': alpha(special.border, 0.5),
