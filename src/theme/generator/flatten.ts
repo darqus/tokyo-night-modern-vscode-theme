@@ -1,4 +1,4 @@
-import { NestedTokens } from '../palette/types'
+import type { NestedTokens } from '../palette/types'
 
 /**
  * Разворачивает вложенную модель workbench в плоскую карту цветов VS Code.
@@ -58,6 +58,42 @@ export function flattenWorkbenchToColors(n: NestedTokens['workbench']): Record<s
     'peekViewResult.fileForeground': n.peekView.result.fileForeground,
     'peekViewResult.matchHighlightBackground': n.peekView.result.matchHighlightBackground,
     'terminal.ansiBrightWhite': n.terminal.ansi.brightWhite,
+    'debugToolBar.background': n.debug?.toolBarBackground || '#101014',
+    'debugExceptionWidget.background': n.debug?.exceptionWidgetBackground || '#101014',
+    'debugExceptionWidget.border': n.debug?.exceptionWidgetBorder || '#963c47',
+    'debugConsole.infoForeground': n.debug?.consoleInfoForeground || '#787c99',
+    'debugConsole.errorForeground': n.debug?.consoleErrorForeground || '#bb616b',
+    'debugConsole.sourceForeground': n.debug?.consoleSourceForeground || '#787c99',
+    'debugConsole.warningForeground': n.debug?.consoleWarningForeground || '#c49a5a',
+    'debugConsoleInputIcon.foreground': n.debug?.consoleInputIconForeground || '#73daca',
+    'editor.stackFrameHighlightBackground': n.debug?.editorStackFrameHighlightBackground || '#E2BD3A20',
+    'editor.focusedStackFrameHighlightBackground': n.debug?.editorFocusedStackFrameHighlightBackground || '#73daca20',
+    'debugView.stateLabelForeground': n.debug?.stateLabelForeground || '#787c99',
+    'debugView.stateLabelBackground': n.debug?.stateLabelBackground || '#14141b',
+    'debugView.valueChangedHighlight': n.debug?.valueChangedHighlight || '#3d59a1aa',
+    'debugTokenExpression.name': n.debug?.tokenExpressionName || '#7dcfff',
+    'debugTokenExpression.value': n.debug?.tokenExpressionValue || '#9aa5ce',
+    'debugTokenExpression.string': n.debug?.tokenExpressionString || '#9ece6a',
+    'debugTokenExpression.boolean': n.debug?.tokenExpressionBoolean || '#ff9e64',
+    'debugTokenExpression.number': n.debug?.tokenExpressionNumber || '#ff9e64',
+    'debugTokenExpression.error': n.debug?.tokenExpressionError || '#bb616b',
+    'debugIcon.breakpointForeground': n.debug?.iconBreakpointForeground || '#db4b4b',
+    'debugIcon.breakpointDisabledForeground': n.debug?.iconBreakpointDisabledForeground || '#414761',
+    'debugIcon.breakpointUnverifiedForeground': n.debug?.iconBreakpointUnverifiedForeground || '#c24242',
+     'gitDecoration.modifiedResourceForeground': n.gitDecoration?.modifiedResourceForeground || '#6183bb',
+     'gitDecoration.ignoredResourceForeground': n.gitDecoration?.ignoredResourceForeground || '#515670',
+     'gitDecoration.deletedResourceForeground': n.gitDecoration?.deletedResourceForeground || '#914c54',
+     'gitDecoration.renamedResourceForeground': n.gitDecoration?.renamedResourceForeground || '#449dab',
+     'gitDecoration.addedResourceForeground': n.gitDecoration?.addedResourceForeground || '#449dab',
+     'gitDecoration.untrackedResourceForeground': n.gitDecoration?.untrackedResourceForeground || '#449dab',
+     'gitDecoration.conflictingResourceForeground': n.gitDecoration?.conflictingResourceForeground || '#e0af68cc',
+     'gitDecoration.stageDeletedResourceForeground': n.gitDecoration?.stageDeletedResourceForeground || '#914c54',
+     'gitDecoration.stageModifiedResourceForeground': n.gitDecoration?.stageModifiedResourceForeground || '#6183bb',
+     'notebook.editorBackground': n.notebook?.editorBackground || '#1a1b26',
+     'notebook.cellEditorBackground': n.notebook?.cellEditorBackground || '#16161e',
+     'notebook.cellBorderColor': n.notebook?.cellBorderColor || '#101014',
+     'notebook.focusedCellBorder': n.notebook?.focusedCellBorder || '#29355a',
+     'notebook.cellStatusBarItemHoverBackground': n.notebook?.cellStatusBarItemHoverBackground || '#1c1d29',
   }
 }
 

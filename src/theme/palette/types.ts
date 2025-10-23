@@ -192,9 +192,6 @@ export type WorkbenchColorKey =
   | 'merge.border'
   | 'merge.commonContentBackground'
   | 'merge.commonHeaderBackground'
-  | 'editorOverviewRuler.currentContentForeground'
-  | 'editorOverviewRuler.incomingContentForeground'
-  | 'editorOverviewRuler.commonContentForeground'
   | 'panel.background'
   | 'panel.border'
   | 'panelTitle.activeBorder'
@@ -778,9 +775,33 @@ export type PunctuationPalette = {
   /** Цвет других знаков препинания */
   other: string
 }
+// Палитра ноутбука
+export type NotebookPalette = {
+  /** Фон редактора ноутбука */
+  editorBackground?: string
+  /** Фон редактора ячейки ноутбука */
+  cellEditorBackground?: string
+  /** Граница ячейки ноутбука */
+  cellBorderColor?: string
+  /** Граница сфокусированной ячейки ноутбука */
+  focusedCellBorder?: string
+  /** Фон элемента строки состояния ячейки при наведении */
+  cellStatusBarItemHoverBackground?: string
+}
 
-// Расширенная палитра с новыми категориями
 export type ExtendedPalette = {
+  gitDecoration?: {
+    modifiedResourceForeground?: string
+    ignoredResourceForeground?: string
+    deletedResourceForeground?: string
+    renamedResourceForeground?: string
+    addedResourceForeground?: string
+    untrackedResourceForeground?: string
+    conflictingResourceForeground?: string
+    stageDeletedResourceForeground?: string
+    stageModifiedResourceForeground?: string
+  }
+  notebook?: NotebookPalette
   workbench: {
     background: SurfacePalette
     foreground: {
@@ -900,6 +921,18 @@ export type ExtendedPalette = {
 }
 
 export type Palette = {
+  gitDecoration?: {
+    modifiedResourceForeground?: string
+    ignoredResourceForeground?: string
+    deletedResourceForeground?: string
+    renamedResourceForeground?: string
+    addedResourceForeground?: string
+    untrackedResourceForeground?: string
+    conflictingResourceForeground?: string
+    stageDeletedResourceForeground?: string
+    stageModifiedResourceForeground?: string
+  }
+  notebook?: NotebookPalette
   workbench: {
     background: {
       base: string
@@ -1237,6 +1270,7 @@ export type SyntaxTokenPalette = {
   semanticBoolean: string
   semanticRegexp: string
   semanticOperator: string
+  notebook?: NotebookPalette
   semanticKeyword: string
   semanticModifier: string
   semanticDecorator: string
@@ -1253,6 +1287,18 @@ export type SyntaxTokenPalette = {
 
 export type NestedTokens = {
   workbench: {
+    notebook?: NotebookPalette
+    gitDecoration?: {
+      modifiedResourceForeground?: string
+      ignoredResourceForeground?: string
+      deletedResourceForeground?: string
+      renamedResourceForeground?: string
+      addedResourceForeground?: string
+      untrackedResourceForeground?: string
+      conflictingResourceForeground?: string
+      stageDeletedResourceForeground?: string
+      stageModifiedResourceForeground?: string
+    }
     editor: {
       base: {
         background: string
@@ -1343,6 +1389,190 @@ export type NestedTokens = {
         matchHighlightBackground: string
       }
       border: string
+    }
+    debug?: {
+      /** Фон панели отладки */
+      background: string
+      /** Цвет текста панели отладки */
+      foreground: string
+      /** Фон панели инструментов отладки */
+      toolBarBackground: string
+      /** Граница панели инструментов отладки */
+      toolBarBorder: string
+      /** Цвет иконки в панели отладки */
+      iconForeground: string
+      /** Фон элемента списка при отладке */
+      listBackground: string
+      /** Фон выбранного элемента списка при отладке */
+      listActiveBackground: string
+      /** Цвет текста выбранного элемента списка при отладке */
+      listActiveForeground: string
+      /** Цвет текста заголовка сеанса отладки */
+      sessionForeground: string
+      /** Фон элемента сеанса отладки */
+      sessionBackground: string
+      /** Цвет границы разделителя в панели отладки */
+      separatorBackground: string
+      /** Цвет значка точки останова */
+      breakpointForeground: string
+      /** Цвет фона точки останова */
+      breakpointBackground: string
+      /** Цвет фона неактивной точки останова */
+      breakpointDisabledForeground: string
+      /** Цвет фона непроверенной точки останова */
+      breakpointUnverifiedBackground: string
+      /** Цвет фона текущей точки останова */
+      breakpointCurrentStackframeBackground: string
+      /** Цвет фона выбранной точки останова */
+      breakpointStackframeBackground: string
+      /** Фон виджета исключения отладки */
+      exceptionWidgetBackground: string
+      /** Граница виджета исключения отладки */
+      exceptionWidgetBorder: string
+      /** Цвет текста метки состояния отладки */
+      stateLabelForeground: string
+      /** Фон метки состояния отладки */
+      stateLabelBackground: string
+      /** Цвет фона консоли отладки */
+      consoleBackground: string
+      /** Цвет текста консоли отладки */
+      consoleForeground: string
+      /** Цвет текста информационных сообщений в консоли отладки */
+      consoleInfoForeground: string
+      /** Цвет текста сообщений об ошибках в консоли отладки */
+      consoleErrorForeground: string
+      /** Цвет текста сообщений об источнике в консоли отладки */
+      consoleSourceForeground: string
+      /** Цвет текста предупреждений в консоли отладки */
+      consoleWarningForeground: string
+      /** Цвет иконки ввода в консоли отладки */
+      consoleInputIconForeground: string
+      /** Фон подсветки текущего стека в редакторе во время отладки */
+      editorStackFrameHighlightBackground: string
+      /** Фон подсветки сфокусированного стека в редакторе во время отладки */
+      editorFocusedStackFrameHighlightBackground: string
+      /** Цвет фона измененного значения в панели отладки */
+      valueChangedHighlight: string
+      /** Цвет имени выражения отладки */
+      tokenExpressionName: string
+      /** Цвет значения выражения отладки */
+      tokenExpressionValue: string
+      /** Цвет строкового значения выражения отладки */
+      tokenExpressionString: string
+      /** Цвет булевого значения выражения отладки */
+      tokenExpressionBoolean: string
+      /** Цвет числового значения выражения отладки */
+      tokenExpressionNumber: string
+      /** Цвет ошибки в выражении отладки */
+      tokenExpressionError: string
+      /** Цвет значка точки останова */
+      iconBreakpointForeground: string
+      /** Цвет значка отключенной точки останова */
+      iconBreakpointDisabledForeground: string
+      /** Цвет значка непроверенной точки останова */
+      iconBreakpointUnverifiedForeground: string
+      /** Цвет значка текущей точки останова */
+      iconBreakpointCurrentStackframeForeground: string
+      /** Цвет значка выбранной точки останова */
+      iconBreakpointStackframeForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointDisabledForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointUnverifiedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCurrentStackframeForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointStackframeForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointErrorForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointInfoForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointWarningForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointSuccessForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointDebugForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDisabledForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomUnverifiedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomCurrentStackframeForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomStackframeForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomErrorForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInfoForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomWarningForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomSuccessForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDebugForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomActiveForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInactiveForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomFocusForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDisabledHoverForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDisabledFocusForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDisabledSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomDisabledPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomActiveHoverForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomActiveFocusForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomActiveSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomActivePressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInactiveHoverForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInactiveFocusForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInactiveSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomInactivePressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverFocusForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomFocusSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomFocusPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomSelectedPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverFocusSelectedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverFocusPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverSelectedPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomFocusSelectedPressedForeground: string
+      /** Цвет значка точки останова в вызове */
+      iconBreakpointLogpointCustomHoverFocusSelectedPressedForeground: string
     }
   }
   semantic: {
