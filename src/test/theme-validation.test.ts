@@ -38,7 +38,7 @@ describe('Theme Validation Tests', () => {
     ]
 
     requiredColors.forEach((color) => {
-      expect(theme.colors.hasOwnProperty(color)).toBe(true)
+      expect(color in theme.colors).toBe(true)
       expect(typeof theme.colors[color]).toBe('string')
       expect(theme.colors[color]).toMatch(/^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$/)
     })
@@ -51,17 +51,14 @@ describe('Theme Validation Tests', () => {
       expect(token).toHaveProperty('scope')
 
       // Проверяем, что у токена есть либо settings, либо он просто определяет scope
-      if (token.hasOwnProperty('settings')) {
+      if ('settings' in token) {
         // Если у токена есть настройки, то проверяем их структуру
         expect(token.settings).toBeDefined()
 
         // Проверяем, что у токена есть хотя бы одно из свойств: foreground, fontStyle или background
-        const hasForeground =
-          token.settings && token.settings.hasOwnProperty('foreground')
-        const hasFontStyle =
-          token.settings && token.settings.hasOwnProperty('fontStyle')
-        const hasBackground =
-          token.settings && token.settings.hasOwnProperty('background')
+        const hasForeground = token.settings && 'foreground' in token.settings
+        const hasFontStyle = token.settings && 'fontStyle' in token.settings
+        const hasBackground = token.settings && 'background' in token.settings
         const hasValidSetting = hasForeground || hasFontStyle || hasBackground
         expect(hasValidSetting).toBe(true)
 
@@ -146,7 +143,7 @@ describe('Theme Validation Tests', () => {
     ]
 
     terminalColors.forEach((color) => {
-      expect(theme.colors.hasOwnProperty(color)).toBe(true)
+      expect(color in theme.colors).toBe(true)
       expect(typeof theme.colors[color]).toBe('string')
     })
   })
@@ -163,9 +160,7 @@ describe('Theme Validation Tests', () => {
     ]
 
     // Проверяем наличие хотя бы части Git-цветов, а не всех сразу
-    const existingGitColors = gitColors.filter((color) =>
-      theme.colors.hasOwnProperty(color)
-    )
+    const existingGitColors = gitColors.filter((color) => color in theme.colors)
     expect(existingGitColors.length).toBeGreaterThan(0) // Должен быть хотя бы один Git-цвет
     expect(existingGitColors.length).toBeGreaterThanOrEqual(
       gitColors.length / 2
