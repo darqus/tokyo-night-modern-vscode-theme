@@ -14,10 +14,10 @@ export const palette: Palette = {
 
   fg: {
     dim: '#6a718d',
-    muted: '#6d7597',
-    medium: '#747b9c',
+    muted: '#7f87a8',
+    medium: '#8a90af',
     bright: '#a9b4d9',
-    brighter: '#b8c0e5',
+    brighter: '#c2c9eb',
     brightest: '#d0d9ff',
   },
 
@@ -73,15 +73,15 @@ export const palette: Palette = {
   special: {
     regex: '#b4f9f8',
     invalid: '#ff5370',
-    selection: '#515c7e',
+    selection: '#636e90',
     indentGuide: '#363b54',
     indentActive: '#42465d',
     border: '#29355a',
-    disabled: '#545c7e',
+    disabled: '#666e90',
     badge: '#7e83b2',
     scrollbar: '#868bc4',
-    ghostText: '#646e9c',
-    inactive: '#3b3e52',
+    ghostText: '#7680ad',
+    inactive: '#4d5064',
   },
 
   ui: {
@@ -113,13 +113,13 @@ export const palette: Palette = {
     // Семантические цвета
     parameter: '#d9d4cd',
     defaultLibrary: '#2ac3de',
-    commentDoc: '#5a638c',
+    commentDoc: '#6c759d',
     // Markdown цвета
     plainPunctuation: '#9abdf5',
     rawInlinePunctuation: '#4e5579',
     heading2: '#61bdf2',
     heading4: '#6d91de',
-    heading6: '#747ca1',
+    heading6: '#868eb3',
     table: '#c0cefc',
   },
 
