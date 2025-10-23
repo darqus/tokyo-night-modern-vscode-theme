@@ -347,7 +347,7 @@
     "menu.background": "#101018",
     "menu.selectionForeground": "#c2c9eb",
     "menu.selectionBackground": "#2d2f44",
-    "menu.separatorBackground": "#101014",
+    "menu.separatorBackground": "#29355a80",
     "menu.border": "#29355a80",
     "chat.requestBorder": "#2d2f44",
     "chat.avatarBackground": "#3d59a1",
