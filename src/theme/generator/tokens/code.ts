@@ -1,9 +1,8 @@
-import type { TokenColor } from '../../types'
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { red, pink, orange, blue, cyan, purple, yellow, green, fg, teal } =
-    palette
+  const { red, pink, blue, cyan, purple, yellow, green, fg, teal } = palette
 
   return [
     {

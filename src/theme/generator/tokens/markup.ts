@@ -1,8 +1,8 @@
-import type { TokenColor } from '../../types'
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, green, fg, yellow } = palette
+  const { red, blue, cyan, teal, fg, yellow } = palette
 
   return [
     {
