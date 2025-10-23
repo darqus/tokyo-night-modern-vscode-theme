@@ -41,6 +41,16 @@ export interface Palette {
   git: GitPalette
   interactive: InteractivePalette
   elements: ElementsPalette
+  highContrast: HighContrastPalette
+  accessibility: AccessibilityPalette
+}
+
+export interface HighContrastPalette {
+  fg: ForegroundPalette
+  bg: BackgroundPalette
+  blue: BluePalette
+  red: RedPalette
+  green: GreenPalette
 }
 
 export interface BackgroundPalette {
@@ -130,6 +140,34 @@ export interface UIPalette {
   linkActive: string
   codeLens: string
   brightWhite: string
+  preformat: string
+  debugException: string
+  debugError: string
+  debugBreakpointDisabled: string
+  debugBreakpointUnverified: string
+  stackFrameHighlight: string
+  scmGraphHover: string
+  scmGraphRef: string
+  menubarSelection: string
+  notificationError: string
+  notificationWarning: string
+  inputInfo: string
+  inputWarningBg: string
+  inputErrorBg: string
+  inputErrorBorder: string
+  diffDiagonal: string
+  diffUnchanged: string
+  scrollbarShadow: string
+  black: string
+  parameter: string
+  defaultLibrary: string
+  commentDoc: string
+  plainPunctuation: string
+  rawInlinePunctuation: string
+  heading2: string
+  heading4: string
+  heading6: string
+  table: string
 }
 
 export interface BracketsPalette {
@@ -157,6 +195,9 @@ export interface InteractivePalette {
   invalid: string
   error: string
   errorOutline: string
+  tabInactiveModified: string
+  tabUnfocusedActive: string
+  tabLastPinned: string
 }
 
 export interface ElementsPalette {
@@ -165,4 +206,37 @@ export interface ElementsPalette {
   foldBackground: string
   cssPunctuation: string
   info: string
+}
+
+export interface AccessibilityPalette {
+  contrast: {
+    high: string
+    medium: string
+    low: string
+  }
+  semantic: {
+    success: string
+    warning: string
+    error: string
+    info: string
+  }
+  enhanced: {
+    text: {
+      primary: string
+      secondary: string
+      tertiary: string
+      disabled: string
+    }
+    background: {
+      elevated: string
+      surface: string
+      overlay: string
+    }
+    interactive: {
+      hover: string
+      active: string
+      selected: string
+      focused: string
+    }
+  }
 }

@@ -12,19 +12,19 @@ export function generateSemanticTokenColors(): Record<
       foreground: yellow.main,
     },
     parameter: {
-      foreground: '#d9d4cd',
+      foreground: palette.ui.parameter,
     },
     'property.declaration': {
       foreground: teal.main,
     },
     'property.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: palette.ui.defaultLibrary,
     },
     '*.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: palette.ui.defaultLibrary,
     },
     'variable.defaultLibrary': {
-      foreground: '#2ac3de',
+      foreground: palette.ui.defaultLibrary,
     },
     'variable.declaration': {
       foreground: purple.light,

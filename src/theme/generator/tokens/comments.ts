@@ -1,5 +1,5 @@
-import type { TokenColor } from '../../types'
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
 export function generateCommentTokens(): TokenColor[] {
   const { fg, special } = palette
@@ -62,7 +62,7 @@ export function generateCommentTokens(): TokenColor[] {
         'keyword.other.phpdoc.php',
         'log.date',
       ],
-      settings: { foreground: '#5a638c' },
+      settings: { foreground: palette.ui.commentDoc },
     },
     {
       name: 'Comment Doc Emphasized',

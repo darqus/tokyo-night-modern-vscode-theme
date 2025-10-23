@@ -168,40 +168,13 @@ function generateHighContrastTheme(): VSCodeTheme {
   const highContrastPalette = {
     ...palette,
     // Увеличиваем контрастность текста
-    fg: {
-      dim: '#b0b8d0',
-      muted: '#c0c8e0',
-      medium: '#d0d8f0',
-      bright: '#e0e8ff',
-      brighter: '#f0f8ff',
-      brightest: '#ffffff',
-    },
+    fg: palette.highContrast.fg,
     // Углубляем фоны
-    bg: {
-      darkest: '#000000',
-      darker: '#0a0a0f',
-      dark: '#0f0f1a',
-      main: '#141420',
-      editor: '#1a1a2a',
-      light: '#202030',
-      lighter: '#252535',
-      lightest: '#2a2a40',
-    },
+    bg: palette.highContrast.bg,
     // Усиливаем акцентные цвета
-    blue: {
-      primary: '#4a6bc0',
-      light: '#7a9cd0',
-      medium: '#8ab4f7',
-    },
-    red: {
-      main: '#ff6b8a',
-      dark: '#ff4b6b',
-      muted: '#d03b5b',
-    },
-    green: {
-      main: '#6bd96a',
-      dark: '#4bc94b',
-    },
+    blue: palette.highContrast.blue,
+    red: palette.highContrast.red,
+    green: palette.highContrast.green,
   }
 
   return generateThemeFromPalette(highContrastPalette)

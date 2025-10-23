@@ -1,5 +1,5 @@
-import type { TokenColor } from '../../types'
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
 export function generateMarkdownTokens(): TokenColor[] {
   const { fg, cyan, blue, teal } = palette
@@ -71,7 +71,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Plain Punctuation',
       scope: 'punctuation.definition.list_item.markdown',
-      settings: { foreground: '#9abdf5' },
+      settings: { foreground: palette.ui.plainPunctuation },
     },
     {
       name: 'Block Punctuation',
@@ -94,7 +94,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'punctuation.definition.array',
         'punctuation.section',
       ],
-      settings: { foreground: '#9abdf5' },
+      settings: { foreground: palette.ui.plainPunctuation },
     },
     {
       name: 'Markdown - Plain',
@@ -120,7 +120,7 @@ export function generateMarkdownTokens(): TokenColor[] {
       name: 'Markdown - Markup Raw Inline Punctuation',
       scope:
         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-      settings: { foreground: '#4e5579' },
+      settings: { foreground: palette.ui.rawInlinePunctuation },
     },
     {
       name: 'Markdown - Heading 1',
@@ -136,7 +136,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.2.markdown entity.name',
         'heading.2.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: '#61bdf2' },
+      settings: { fontStyle: 'bold', foreground: palette.ui.heading2 },
     },
     {
       name: 'Markdown - Heading 3',
@@ -152,7 +152,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.4.markdown entity.name',
         'heading.4.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: '#6d91de' },
+      settings: { fontStyle: 'bold', foreground: palette.ui.heading4 },
     },
     {
       name: 'Markdown - Heading 5',
@@ -168,7 +168,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.6.markdown entity.name',
         'heading.6.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: '#747ca1' },
+      settings: { fontStyle: 'bold', foreground: palette.ui.heading6 },
     },
     {
       name: 'Markup - Italic',
@@ -196,7 +196,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markdown - Blockquote',
       scope: 'markup.quote punctuation.definition.blockquote.markdown',
-      settings: { foreground: '#4e5579' },
+      settings: { foreground: palette.ui.rawInlinePunctuation },
     },
     {
       name: 'Markup - Quote',
@@ -230,7 +230,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markup - Table',
       scope: 'markup.table',
-      settings: { foreground: '#c0cefc' },
+      settings: { foreground: palette.ui.table },
     },
     {
       name: 'Token - Info',
