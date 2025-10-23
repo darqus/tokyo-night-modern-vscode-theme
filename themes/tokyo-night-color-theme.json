@@ -317,7 +317,7 @@
     "scmGraph.historyItemBaseRefColor": "#9d7cd8",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#a9b1d6",
     "merge.currentHeaderBackground": "#41a6b526",
-    "merge.currentContentBackground": "#007a7545",
+    "merge.currentContentBackground": "#449dab45",
     "merge.incomingHeaderBackground": "#3d59a1ab",
     "merge.incomingContentBackground": "#3d59a145",
     "mergeEditor.change.background": "#41a6b526",

@@ -13,8 +13,8 @@ export function generateDiffColors(): Record<string, string> {
     'diffEditorGutter.removedLineBackground': alpha(red.dark, 0.13),
     'diffEditorOverview.insertedForeground': alpha(green.dark, 0.15),
     'diffEditorOverview.removedForeground': alpha(red.dark, 0.13),
-    'diffEditor.diagonalFill': '#292e42',
-    'diffEditor.unchangedCodeBackground': alpha('#282a3b', 0.4),
+    'diffEditor.diagonalFill': palette.ui.diffDiagonal,
+    'diffEditor.unchangedCodeBackground': alpha(palette.ui.diffUnchanged, 0.4),
     'multiDiffEditor.headerBackground': palette.bg.editor,
     'multiDiffEditor.border': palette.bg.editor,
   }

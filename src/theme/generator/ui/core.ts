@@ -11,7 +11,7 @@ export function generateCoreColors(): Record<string, string> {
     focusBorder: alpha(special.disabled, 0.2),
     errorForeground: fg.dim,
     'widget.shadow': alpha(ui.white, 0),
-    'scrollbar.shadow': alpha('#000000', 0.2),
+    'scrollbar.shadow': alpha(palette.ui.scrollbarShadow, 0.2),
     'badge.background': alpha(special.badge, 0.19),
     'badge.foreground': ui.badgeForeground,
     'icon.foreground': fg.medium,

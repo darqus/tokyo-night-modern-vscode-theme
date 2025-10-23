@@ -90,6 +90,37 @@ export const palette: Palette = {
     linkActive: '#acb0d0',
     codeLens: '#51597d',
     brightWhite: '#acb0d0',
+    // Новые цвета из UI модулей
+    preformat: '#9699a8',
+    debugException: '#963c47',
+    debugError: '#bb616b',
+    debugBreakpointDisabled: '#414761',
+    debugBreakpointUnverified: '#c24242',
+    stackFrameHighlight: '#e2bd3a',
+    scmGraphHover: '#1b1e2e',
+    scmGraphRef: '#506fca',
+    menubarSelection: '#1b1e2e',
+    notificationError: '#bb616b',
+    notificationWarning: '#bba461',
+    inputInfo: '#bbc2e0',
+    inputWarningBg: '#c2985b',
+    inputErrorBg: '#85353e',
+    inputErrorBorder: '#963c47',
+    diffDiagonal: '#292e42',
+    diffUnchanged: '#282a3b',
+    scrollbarShadow: '#000000',
+    black: '#000000',
+    // Семантические цвета
+    parameter: '#d9d4cd',
+    defaultLibrary: '#2ac3de',
+    commentDoc: '#5a638c',
+    // Markdown цвета
+    plainPunctuation: '#9abdf5',
+    rawInlinePunctuation: '#4e5579',
+    heading2: '#61bdf2',
+    heading4: '#6d91de',
+    heading6: '#747ca1',
+    table: '#c0cefc',
   },
 
   brackets: {
@@ -117,6 +148,10 @@ export const palette: Palette = {
     invalid: '#c97018',
     error: '#bb616b',
     errorOutline: '#a6333f',
+    // Дополнительные состояния
+    tabInactiveModified: '#1f202e',
+    tabUnfocusedActive: '#1f202e',
+    tabLastPinned: '#222333',
   },
 
   elements: {
@@ -125,5 +160,75 @@ export const palette: Palette = {
     foldBackground: '#111117',
     cssPunctuation: '#9abdf5',
     info: '#1abc9c',
+  },
+
+  // Высококонтрастные цвета
+  highContrast: {
+    fg: {
+      dim: '#b0b8d0',
+      muted: '#c0c8e0',
+      medium: '#d0d8f0',
+      bright: '#e0e8ff',
+      brighter: '#f0f8ff',
+      brightest: '#ffffff',
+    },
+    bg: {
+      darkest: '#000000',
+      darker: '#0a0a0f',
+      dark: '#0f0f1a',
+      main: '#141420',
+      editor: '#1a1a2a',
+      light: '#202030',
+      lighter: '#252535',
+      lightest: '#2a2a40',
+    },
+    blue: {
+      primary: '#4a6bc0',
+      light: '#7a9cd0',
+      medium: '#8ab4f7',
+    },
+    red: {
+      main: '#ff6b8a',
+      dark: '#ff4b6b',
+      muted: '#d03b5b',
+    },
+    green: {
+      main: '#6bd96a',
+      dark: '#4bc94b',
+    },
+  },
+
+  // Цвета для доступности
+  accessibility: {
+    contrast: {
+      high: '#d4d8f0', // WCAG AAA compliant
+      medium: '#b8c0e0', // WCAG AA compliant
+      low: '#9ca6d0', // Minimum contrast
+    },
+    semantic: {
+      success: '#4ade80', // Яркий green для success states
+      warning: '#fbbf24', // Яркий yellow для warnings
+      error: '#f87171', // Яркий red для errors
+      info: '#60a5fa', // Яркий blue для info
+    },
+    enhanced: {
+      text: {
+        primary: '#e2e5f0', // Улучшенный основной текст
+        secondary: '#c5cae5', // Улучшенный вторичный текст
+        tertiary: '#a8aedd', // Улучшенный третичный текст
+        disabled: '#6b7280', // Отключенные элементы
+      },
+      background: {
+        elevated: '#1f2937', // Повышенные элементы
+        surface: '#111827', // Поверхности
+        overlay: '#00000080', // Оверлеи с прозрачностью
+      },
+      interactive: {
+        hover: '#374151', // Hover состояния
+        active: '#4b5563', // Active состояния
+        selected: '#1e40af', // Выбранные элементы
+        focused: '#1d4ed8', // Фокус
+      },
+    },
   },
 }

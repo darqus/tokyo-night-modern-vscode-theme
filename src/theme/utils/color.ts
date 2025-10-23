@@ -6,11 +6,11 @@ export function alpha(hex: string, opacity: number): string {
 }
 
 export function lighten(hex: string, amount: number): string {
-  return mix(hex, '#ffffff', amount)
+  return mix(hex, '#ffffff', amount) // Используем белый для осветления
 }
 
 export function darken(hex: string, amount: number): string {
-  return mix(hex, '#000000', amount)
+  return mix(hex, '#000000', amount) // Используем черный для затемнения
 }
 
 export function mix(hex1: string, hex2: string, ratio: number): string {

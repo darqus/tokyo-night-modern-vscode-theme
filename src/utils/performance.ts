@@ -137,3 +137,17 @@ export function validateThemePerformance(theme: VSCodeTheme) {
     metrics,
   }
 }
+
+export function measureThemeGeneration<T>(fn: () => T): {
+  result: T
+  duration: number
+} {
+  const startTime = performance.now()
+  const result = fn()
+  const endTime = performance.now()
+
+  return {
+    result,
+    duration: endTime - startTime,
+  }
+}

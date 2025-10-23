@@ -25,7 +25,7 @@ export function getLuminance(rgb: { r: number; g: number; b: number }): number {
   const { r, g, b } = rgb
   const [rs, gs, bs] = [r, g, b].map((c) => {
     c = c / 255
-    return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4)
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4
   })
   return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs
 }
@@ -36,23 +36,36 @@ function adjustForContrast(
   minRatio: number
 ): string {
   const bgLuminance = getLuminance(hexToRgb(background))
-  const fgRgb = hexToRgb(foreground)
+  let fgRgb = hexToRgb(foreground)
+  let adjustedColor = foreground
+  const maxIterations = 10
+  const step = 15
 
-  if (bgLuminance > 0.5) {
-    // Осветляем для тёмного фона
-    return rgbToHex(
-      Math.min(255, fgRgb.r + 50),
-      Math.min(255, fgRgb.g + 50),
-      Math.min(255, fgRgb.b + 50)
-    )
-  } else {
-    // Затемняем для светлого фона
-    return rgbToHex(
-      Math.max(0, fgRgb.r - 50),
-      Math.max(0, fgRgb.g - 50),
-      Math.max(0, fgRgb.b - 50)
-    )
+  for (let i = 0; i < maxIterations; i++) {
+    if (getContrastRatio(adjustedColor, background) >= minRatio) {
+      return adjustedColor
+    }
+
+    if (bgLuminance > 0.5) {
+      // Осветляем для тёмного фона
+      fgRgb = {
+        r: Math.min(255, fgRgb.r + step),
+        g: Math.min(255, fgRgb.g + step),
+        b: Math.min(255, fgRgb.b + step),
+      }
+    } else {
+      // Затемняем для светлого фона
+      fgRgb = {
+        r: Math.max(0, fgRgb.r - step),
+        g: Math.max(0, fgRgb.g - step),
+        b: Math.max(0, fgRgb.b - step),
+      }
+    }
+
+    adjustedColor = rgbToHex(fgRgb.r, fgRgb.g, fgRgb.b)
   }
+
+  return adjustedColor
 }
 
 function hexToRgb(hex: string): { r: number; g: number; b: number } {

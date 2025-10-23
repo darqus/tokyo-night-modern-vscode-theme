@@ -20,8 +20,8 @@ export function generateTabColors(): Record<string, string> {
     'tab.unfocusedInactiveForeground': fg.medium,
     'tab.unfocusedHoverForeground': fg.brighter,
     'tab.activeModifiedBorder': bg.editor,
-    'tab.inactiveModifiedBorder': '#1f202e',
-    'tab.unfocusedActiveBorder': '#1f202e',
-    'tab.lastPinnedBorder': '#222333',
+    'tab.inactiveModifiedBorder': palette.interactive.tabInactiveModified,
+    'tab.unfocusedActiveBorder': palette.interactive.tabUnfocusedActive,
+    'tab.lastPinnedBorder': palette.interactive.tabLastPinned,
   }
 }
