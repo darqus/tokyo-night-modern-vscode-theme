@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateInputColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, red } = palette;
+  const { bg, fg, blue, yellow } = palette
 
   return {
     'input.background': bg.dark,
@@ -23,5 +23,5 @@ export function generateInputColors(): Record<string, string> {
     'dropdown.foreground': fg.medium,
     'dropdown.background': bg.dark,
     'dropdown.listBackground': bg.dark,
-  };
+  }
 }

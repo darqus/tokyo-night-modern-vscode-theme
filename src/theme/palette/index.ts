@@ -1,4 +1,4 @@
-import type { Palette } from '../types';
+import type { Palette } from '../types'
 
 export const palette: Palette = {
   bg: {
@@ -83,4 +83,4 @@ export const palette: Palette = {
     ghostText: '#646e9c',
     inactive: '#3b3e52',
   },
-};
+}

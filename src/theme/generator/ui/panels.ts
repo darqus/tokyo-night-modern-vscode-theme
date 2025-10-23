@@ -1,7 +1,7 @@
-import { palette } from '../../palette';
+import { palette } from '../../palette'
 
 export function generatePanelColors(): Record<string, string> {
-  const { bg, fg } = palette;
+  const { bg, fg } = palette
 
   return {
     'panel.background': bg.main,
@@ -25,5 +25,5 @@ export function generatePanelColors(): Record<string, string> {
     'titleBar.activeBackground': bg.main,
     'titleBar.inactiveBackground': bg.main,
     'titleBar.border': bg.darker,
-  };
+  }
 }

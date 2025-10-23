@@ -1,8 +1,8 @@
-import type { TokenColor } from '../../types';
-import { palette } from '../../palette';
+import type { TokenColor } from '../../types'
+import { palette } from '../../palette'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, green, fg, yellow } = palette;
+  const { red, blue, cyan, teal, green, fg, yellow } = palette
 
   return [
     {
@@ -37,7 +37,10 @@ export function generateMarkupTokens(): TokenColor[] {
     },
     {
       name: 'Regular Expressions - Character Class Set',
-      scope: ['constant.other.character-class.set.regexp', 'punctuation.definition.character-class.regexp'],
+      scope: [
+        'constant.other.character-class.set.regexp',
+        'punctuation.definition.character-class.regexp',
+      ],
       settings: { foreground: yellow.main },
     },
     {
@@ -57,7 +60,10 @@ export function generateMarkupTokens(): TokenColor[] {
     },
     {
       name: 'Decorators',
-      scope: ['tag.decorator.js entity.name.tag.js', 'tag.decorator.js punctuation.definition.tag.js'],
+      scope: [
+        'tag.decorator.js entity.name.tag.js',
+        'tag.decorator.js punctuation.definition.tag.js',
+      ],
       settings: { foreground: blue.medium },
     },
     {
@@ -67,7 +73,11 @@ export function generateMarkupTokens(): TokenColor[] {
     },
     {
       name: 'HTML Attributes',
-      scope: ['entity.other.attribute-name', 'text.html.basic entity.other.attribute-name.html', 'text.html.basic entity.other.attribute-name'],
+      scope: [
+        'entity.other.attribute-name',
+        'text.html.basic entity.other.attribute-name.html',
+        'text.html.basic entity.other.attribute-name',
+      ],
       settings: { foreground: palette.purple.light },
     },
     {
@@ -77,8 +87,11 @@ export function generateMarkupTokens(): TokenColor[] {
     },
     {
       name: 'Vue (Vetur / deprecated) Template attributes',
-      scope: ['entity.other.attribute-name.id.html', 'meta.directive.vue entity.other.attribute-name.html'],
+      scope: [
+        'entity.other.attribute-name.id.html',
+        'meta.directive.vue entity.other.attribute-name.html',
+      ],
       settings: { foreground: palette.purple.light },
     },
-  ];
+  ]
 }

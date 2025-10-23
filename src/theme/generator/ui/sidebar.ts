@@ -1,7 +1,7 @@
-import { palette } from '../../palette';
+import { palette } from '../../palette'
 
 export function generateSidebarColors(): Record<string, string> {
-  const { bg, fg } = palette;
+  const { bg, fg } = palette
 
   return {
     'activityBar.background': bg.main,
@@ -21,5 +21,5 @@ export function generateSidebarColors(): Record<string, string> {
     'sideBarSectionHeader.foreground': fg.brighter,
     'sideBarSectionHeader.border': bg.darker,
     'sideBar.dropBackground': bg.lighter,
-  };
+  }
 }

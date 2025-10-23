@@ -1,14 +1,17 @@
-import type { SemanticTokenStyle } from '../types';
-import { palette } from '../palette';
+import { palette } from '../palette'
+import type { SemanticTokenStyle } from '../types'
 
-export function generateSemanticTokenColors(): Record<string, SemanticTokenStyle> {
-  const { yellow, fg, teal, purple } = palette;
+export function generateSemanticTokenColors(): Record<
+  string,
+  SemanticTokenStyle
+> {
+  const { yellow, fg, teal, purple } = palette
 
   return {
     'parameter.declaration': {
       foreground: yellow.main,
     },
-    'parameter': {
+    parameter: {
       foreground: '#d9d4cd',
     },
     'property.declaration': {
@@ -26,8 +29,8 @@ export function generateSemanticTokenColors(): Record<string, SemanticTokenStyle
     'variable.declaration': {
       foreground: purple.light,
     },
-    'variable': {
+    variable: {
       foreground: fg.brightest,
     },
-  };
+  }
 }

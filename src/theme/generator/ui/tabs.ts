@@ -1,7 +1,7 @@
-import { palette } from '../../palette';
+import { palette } from '../../palette'
 
 export function generateTabColors(): Record<string, string> {
-  const { bg, fg, blue } = palette;
+  const { bg, fg, blue } = palette
 
   return {
     'breadcrumb.background': bg.main,
@@ -23,5 +23,5 @@ export function generateTabColors(): Record<string, string> {
     'tab.inactiveModifiedBorder': '#1f202e',
     'tab.unfocusedActiveBorder': '#1f202e',
     'tab.lastPinnedBorder': '#222333',
-  };
+  }
 }

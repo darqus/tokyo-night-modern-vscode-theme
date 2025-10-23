@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateDiffColors(): Record<string, string> {
-  const { green, red } = palette;
+  const { green, red } = palette
 
   return {
     'diffEditor.insertedTextBackground': alpha(green.dark, 0.125),
@@ -14,8 +14,8 @@ export function generateDiffColors(): Record<string, string> {
     'diffEditorOverview.insertedForeground': alpha(green.dark, 0.15),
     'diffEditorOverview.removedForeground': alpha(red.dark, 0.13),
     'diffEditor.diagonalFill': '#292e42',
-    'diffEditor.unchangedCodeBackground': alpha('#282a3b', 0.40),
+    'diffEditor.unchangedCodeBackground': alpha('#282a3b', 0.4),
     'multiDiffEditor.headerBackground': palette.bg.editor,
     'multiDiffEditor.border': palette.bg.editor,
-  };
+  }
 }

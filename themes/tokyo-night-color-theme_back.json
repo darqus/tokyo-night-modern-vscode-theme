@@ -474,10 +474,7 @@
     },
     {
       "name": "Invalid",
-      "scope": [
-        "invalid",
-        "invalid.illegal"
-      ],
+      "scope": ["invalid", "invalid.illegal"],
       "settings": {
         "foreground": "#ff5370"
       }
@@ -498,10 +495,7 @@
     },
     {
       "name": "Storage - modifier, var, const, let",
-      "scope": [
-        "meta.var.expr storage.type",
-        "storage.modifier"
-      ],
+      "scope": ["meta.var.expr storage.type", "storage.modifier"],
       "settings": {
         "foreground": "#9d7cd8"
       }
@@ -536,10 +530,7 @@
     },
     {
       "name": "Spread",
-      "scope": [
-        "keyword.operator.spread",
-        "keyword.operator.rest"
-      ],
+      "scope": ["keyword.operator.spread", "keyword.operator.rest"],
       "settings": {
         "foreground": "#f7768e",
         "fontStyle": "bold"
@@ -595,11 +586,7 @@
     },
     {
       "name": "Keyword",
-      "scope": [
-        "keyword",
-        "keyword.control",
-        "keyword.other.important"
-      ],
+      "scope": ["keyword", "keyword.control", "keyword.other.important"],
       "settings": {
         "foreground": "#bb9af7"
       }
@@ -876,10 +863,7 @@
     },
     {
       "name": "CSS Font",
-      "scope": [
-        "support.constant.font-name",
-        "meta.definition.variable"
-      ],
+      "scope": ["support.constant.font-name", "meta.definition.variable"],
       "settings": {
         "foreground": "#9ece6a"
       }
@@ -1053,9 +1037,7 @@
     },
     {
       "name": "Regular Expressions - Character Class",
-      "scope": [
-        "constant.other.character-class.regexp"
-      ],
+      "scope": ["constant.other.character-class.regexp"],
       "settings": {
         "foreground": "#bb9af7"
       }
@@ -1251,9 +1233,7 @@
     },
     {
       "name": "Markdown - Plain",
-      "scope": [
-        "meta.embedded.block"
-      ],
+      "scope": ["meta.embedded.block"],
       "settings": {
         "foreground": "#c0caf5"
       }
@@ -1352,10 +1332,7 @@
     },
     {
       "name": "Markup - Italic",
-      "scope": [
-        "markup.italic",
-        "markup.italic punctuation"
-      ],
+      "scope": ["markup.italic", "markup.italic punctuation"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#c0caf5"
@@ -1363,10 +1340,7 @@
     },
     {
       "name": "Markup - Bold",
-      "scope": [
-        "markup.bold",
-        "markup.bold punctuation"
-      ],
+      "scope": ["markup.bold", "markup.bold punctuation"],
       "settings": {
         "fontStyle": "bold",
         "foreground": "#c0caf5"
@@ -1385,10 +1359,7 @@
     },
     {
       "name": "Markup - Underline",
-      "scope": [
-        "markup.underline",
-        "markup.underline punctuation"
-      ],
+      "scope": ["markup.underline", "markup.underline punctuation"],
       "settings": {
         "fontStyle": "underline"
       }
@@ -1482,9 +1453,7 @@
     },
     {
       "name": "Preprocessor",
-      "scope": [
-        "meta.preprocessor"
-      ],
+      "scope": ["meta.preprocessor"],
       "settings": {
         "foreground": "#73daca"
       }

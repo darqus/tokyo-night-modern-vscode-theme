@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateGitColors(): Record<string, string> {
-  const { blue, fg, red, teal, yellow } = palette;
+  const { blue, fg, red, teal, yellow } = palette
 
   return {
     'gitDecoration.modifiedResourceForeground': blue.light,
@@ -11,8 +11,8 @@ export function generateGitColors(): Record<string, string> {
     'gitDecoration.renamedResourceForeground': teal.dark,
     'gitDecoration.addedResourceForeground': teal.dark,
     'gitDecoration.untrackedResourceForeground': teal.dark,
-    'gitDecoration.conflictingResourceForeground': alpha(yellow.main, 0.80),
+    'gitDecoration.conflictingResourceForeground': alpha(yellow.main, 0.8),
     'gitDecoration.stageDeletedResourceForeground': red.muted,
     'gitDecoration.stageModifiedResourceForeground': blue.light,
-  };
+  }
 }
