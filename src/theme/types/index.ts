@@ -19,7 +19,6 @@ export interface TokenColor {
 
 export interface SemanticTokenStyle {
   foreground?: string
-  background?: string
   fontStyle?: string
 }
 

@@ -2,7 +2,6 @@ import type { SemanticTokenStyle } from '../types'
 
 export interface SemanticTokenConfig {
   foreground?: string
-  background?: string
   fontStyle?: 'italic' | 'bold'
   underline?: boolean
   strikethrough?: boolean
@@ -14,7 +13,6 @@ export function createSemanticToken(
   const token: SemanticTokenStyle = {}
 
   if (config.foreground) token.foreground = config.foreground
-  if (config.background) token.background = config.background
   if (config.fontStyle) token.fontStyle = config.fontStyle
   if (config.underline) token.fontStyle = `${token.fontStyle || ''} underline`
   if (config.strikethrough)

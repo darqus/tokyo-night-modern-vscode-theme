@@ -1695,7 +1695,6 @@
     },
     "variable.readonly.default": {
       "foreground": "#6183bb",
-      "background": "#3d59a11a",
       "fontStyle": "italic"
     },
     "parameter": {
