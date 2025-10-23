@@ -132,4 +132,33 @@ describe('Accessibility Tests', () => {
     expect(warningContrast).toBeGreaterThanOrEqual(3.0)
     expect(infoContrast).toBeGreaterThanOrEqual(3.0)
   })
+
+  test('SCM Graph colors meet WCAG AA contrast ratio', () => {
+    const theme = generateTheme()
+    const violations: string[] = []
+
+    // Проверка контрастности цветов scmGraph с основным фоном
+    const scmGraphChecks = [
+      'scmGraph.foreground1',
+      'scmGraph.foreground2',
+      'scmGraph.foreground3',
+      'scmGraph.foreground4',
+      'scmGraph.foreground5',
+    ]
+
+    scmGraphChecks.forEach((color) => {
+      const contrast = getContrastRatio(
+        theme.colors[color],
+        theme.colors['activityBar.background'] ||
+          theme.colors['sideBar.background'] ||
+          '#101018'
+      )
+
+      if (contrast < 4.5) {
+        violations.push(`${color}: ${contrast.toFixed(2)}:1`)
+      }
+    })
+
+    expect(violations).toHaveLength(0)
+  })
 })

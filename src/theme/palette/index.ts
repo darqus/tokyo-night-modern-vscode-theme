@@ -97,7 +97,7 @@ export const palette: Palette = {
     debugBreakpointDisabled: '#414761',
     debugBreakpointUnverified: '#c24242',
     stackFrameHighlight: '#e2bd3a',
-    scmGraphHover: '#1b1e2e',
+    scmGraphHover: '#ffffff',
     scmGraphRef: '#506fca',
     menubarSelection: '#1b1e2e',
     notificationError: '#bb616b',
