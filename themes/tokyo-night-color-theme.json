@@ -306,7 +306,7 @@
     "charts.purple": "#9d7cd8",
     "charts.foreground": "#a2add2",
     "charts.lines": "#101018",
-    "scmGraph.historyItemHoverLabelForeground": "#1b1e2e",
+    "scmGraph.historyItemHoverLabelForeground": "#ffffff",
     "scmGraph.foreground1": "#ff9e64",
     "scmGraph.foreground2": "#e0af68",
     "scmGraph.foreground3": "#41a6b5",
