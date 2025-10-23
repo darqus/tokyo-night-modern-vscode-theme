@@ -1,5 +1,5 @@
 import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { alpha, lighten } from '../../utils/color'
 
 export function generateMiscColors(): Record<string, string> {
   const {
@@ -18,8 +18,8 @@ export function generateMiscColors(): Record<string, string> {
 
   return {
     'walkThrough.embeddedEditorBackground': bg.main,
-    'textLink.foreground': blue.light,
-    'textLink.activeForeground': cyan.light,
+    'textLink.foreground': cyan.light,
+    'textLink.activeForeground': lighten(cyan.light, 0.2),
     'textPreformat.foreground': palette.ui.preformat,
     'textBlockQuote.background': bg.main,
     'textCodeBlock.background': bg.main,
