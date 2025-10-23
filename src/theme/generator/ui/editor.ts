@@ -68,7 +68,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorGutter.deletedBackground': '#823c41',
     'editorGhostText.foreground': special.ghostText,
     'minimapGutter.modifiedBackground': '#425882',
-    'minimapGutter.addedBackground': '#1C5957',
+    'minimapGutter.addedBackground': '#1c5957',
     'minimapGutter.deletedBackground': '#944449',
     'editorGroup.border': bg.darker,
     'editorGroup.dropBackground': bg.lighter,
