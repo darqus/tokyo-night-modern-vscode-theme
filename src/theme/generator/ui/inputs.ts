@@ -2,12 +2,12 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export function generateInputColors(): Record<string, string> {
-  const { bg, fg, blue, yellow } = palette
+  const { bg, fg, blue, yellow, special } = palette
 
   return {
     'input.background': bg.dark,
     'input.foreground': fg.brighter,
-    'input.border': bg.darker,
+    'input.border': alpha(special.border, 0.5),
     'input.placeholderForeground': alpha(fg.medium, 0.54),
     'inputOption.activeForeground': fg.brightest,
     'inputOption.activeBackground': alpha(blue.primary, 0.27),

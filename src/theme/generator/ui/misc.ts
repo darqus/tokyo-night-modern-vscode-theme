@@ -2,8 +2,19 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export function generateMiscColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, red, cyan, green, purple, orange, teal } =
-    palette
+  const {
+    bg,
+    fg,
+    blue,
+    yellow,
+    red,
+    cyan,
+    green,
+    purple,
+    orange,
+    teal,
+    special,
+  } = palette
 
   return {
     'walkThrough.embeddedEditorBackground': bg.main,
@@ -95,8 +106,8 @@ export function generateMiscColors(): Record<string, string> {
     'menu.selectionForeground': fg.brighter,
     'menu.selectionBackground': bg.lighter,
     'menu.separatorBackground': bg.darker,
-    'menu.border': bg.darker,
-    'chat.requestBorder': bg.darker,
+    'menu.border': alpha(special.border, 0.5),
+    'chat.requestBorder': bg.lighter,
     'chat.avatarBackground': blue.primary,
     'chat.avatarForeground': fg.brighter,
     'chat.slashCommandBackground': bg.dark,
