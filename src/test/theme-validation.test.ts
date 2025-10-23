@@ -1,7 +1,85 @@
 import { generateTheme } from '../theme/generator'
+import { palette } from '../theme/palette'
+import { alpha, darken, lighten, normalizeHex } from '../theme/utils/color'
 
 describe('Theme Validation Tests', () => {
-  // Удаляем дублирующийся тест
+  // Функция для извлечения всех значений цветов из палитры
+  function extractPaletteColors(obj: unknown, prefix: string = ''): string[] {
+    const colors: string[] = []
+
+    if (typeof obj === 'string') {
+      colors.push(obj)
+      return colors
+    }
+
+    if (typeof obj === 'object' && obj !== null && !Array.isArray(obj)) {
+      for (const [key, value] of Object.entries(obj)) {
+        const newKey = prefix ? `${prefix}.${key}` : key
+        if (typeof value === 'string') {
+          colors.push(value)
+        } else if (typeof value === 'object' && value !== null) {
+          colors.push(...extractPaletteColors(value, newKey))
+        }
+      }
+    }
+
+    return colors
+  }
+
+  const allPaletteColors = new Set(extractPaletteColors(palette))
+
+  // Функция для проверки, является ли цвет производным от палитры
+  function isColorFromPalette(color: string): boolean {
+    // Проверяем, есть ли базовый цвет (без альфа-канала) в палитре
+    const baseColor = color.length === 9 ? color.substring(0, 7) : color
+    if (allPaletteColors.has(baseColor)) {
+      return true
+    }
+
+    // Проверяем, является ли цвет результатом преобразования палитры
+    // Для этого ищем в палитре цвет, который при применении к нему функций
+    // alpha, lighten или darken даст искомый цвет
+    for (const paletteColor of allPaletteColors) {
+      // Проверяем alpha - пробуем стандартные значения прозрачности
+      const standardOpacities = [
+        0.1, 0.2, 0.25, 0.3, 0.3, 0.4, 0.5, 0.6, 0.66, 0.7, 0.75, 0.8, 0.9, 1.0,
+      ]
+      for (const opacity of standardOpacities) {
+        if (
+          normalizeHex(alpha(paletteColor, opacity)) === normalizeHex(color)
+        ) {
+          return true
+        }
+      }
+
+      // Проверяем lighten - пробуем стандартные значения осветления
+      const standardLightens = [
+        0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5,
+      ]
+      for (const lightAmount of standardLightens) {
+        if (
+          normalizeHex(lighten(paletteColor, lightAmount)) ===
+          normalizeHex(color)
+        ) {
+          return true
+        }
+      }
+
+      // Проверяем darken - пробуем стандартные значения затемнения
+      const standardDarkens = [
+        0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5,
+      ]
+      for (const darkAmount of standardDarkens) {
+        if (
+          normalizeHex(darken(paletteColor, darkAmount)) === normalizeHex(color)
+        ) {
+          return true
+        }
+      }
+    }
+
+    return false
+  }
 
   test('Standard theme should have valid structure', () => {
     const theme = generateTheme()
@@ -44,6 +122,16 @@ describe('Theme Validation Tests', () => {
     })
   })
 
+  test('All theme colors should use palette variables instead of hardcoded values', () => {
+    const theme = generateTheme()
+    const themeColors = Object.values(theme.colors)
+
+    // Проверяем, что каждый цвет из темы происходит от палитры
+    for (const color of themeColors) {
+      expect(isColorFromPalette(color)).toBe(true)
+    }
+  })
+
   test('Token colors should have valid structure', () => {
     const theme = generateTheme()
 
@@ -83,6 +171,19 @@ describe('Theme Validation Tests', () => {
     })
   })
 
+  test('All token colors should use palette variables instead of hardcoded values', () => {
+    const theme = generateTheme()
+
+    theme.tokenColors.forEach((token) => {
+      if (token.settings?.foreground) {
+        expect(isColorFromPalette(token.settings.foreground)).toBe(true)
+      }
+      if (token.settings?.background) {
+        expect(isColorFromPalette(token.settings.background)).toBe(true)
+      }
+    })
+  })
+
   test('Semantic token colors should have valid structure', () => {
     const theme = generateTheme()
 
@@ -104,6 +205,16 @@ describe('Theme Validation Tests', () => {
           'italic underline',
           'bold italic underline',
         ]).toContain(value.fontStyle)
+      }
+    })
+  })
+
+  test('All semantic token colors should use palette variables instead of hardcoded values', () => {
+    const theme = generateTheme()
+
+    Object.values(theme.semanticTokenColors).forEach((value) => {
+      if (value.foreground) {
+        expect(isColorFromPalette(value.foreground)).toBe(true)
       }
     })
   })
