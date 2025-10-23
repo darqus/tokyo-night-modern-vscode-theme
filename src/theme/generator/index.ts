@@ -14,7 +14,6 @@ import {
   generateCoreColors,
   generateDiffColors,
   generateEditorColors,
-  generateEnhancedTerminalColors,
   generateGitColors,
   generateInputColors,
   generateListColors,
@@ -52,38 +51,6 @@ export function generateTheme(): VSCodeTheme {
       ...generateMarkupTokens(),
       ...generateMarkdownTokens(),
       ...generateModernTokens(),
-    ],
-    semanticTokenColors: generateSemanticTokenColors(),
-  }
-}
-
-export function generateEnhancedTheme(): VSCodeTheme {
-  return {
-    name: 'Tokyo Night Enhanced',
-    type: 'dark',
-    semanticHighlighting: true,
-    colors: {
-      ...generateCoreColors(),
-      ...generateButtonColors(),
-      ...generateInputColors(),
-      ...generateSidebarColors(),
-      ...generateListColors(),
-      ...generateEditorColors(),
-      ...generateDiffColors(),
-      ...generateTabColors(),
-      ...generatePanelColors(),
-      ...generateEnhancedTerminalColors(), // Используем улучшенные терминальные цвета
-      ...generateGitColors(),
-      ...generateMiscColors(),
-    },
-    tokenColors: [
-      ...generateCommentTokens(),
-      ...generateBasicTokens(),
-      ...generateCodeTokens(),
-      ...generateCssTokens(),
-      ...generateMarkupTokens(),
-      ...generateMarkdownTokens(),
-      ...generateModernTokens(), // Включаем современные токены
     ],
     semanticTokenColors: generateSemanticTokenColors(),
   }
