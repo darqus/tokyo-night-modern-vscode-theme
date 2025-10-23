@@ -81,7 +81,7 @@ export const palette: Palette = {
     badge: '#7e83b2',
     scrollbar: '#868bc4',
     ghostText: '#687198',
-    inactive: '#4d5064',
+    inactive: '#363b54',
   },
 
   ui: {
