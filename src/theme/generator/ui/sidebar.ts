@@ -8,7 +8,7 @@ export function generateSidebarColors(): Record<string, string> {
     'activityBar.background': bg.main,
     'activityBar.foreground': fg.medium,
     'activityBar.inactiveForeground': special.inactive,
-    'activityBar.border': bg.main,
+    'activityBar.border': alpha(special.border, 0.5),
     'activityBarBadge.background': blue.primary,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
