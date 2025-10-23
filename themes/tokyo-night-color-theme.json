@@ -1500,6 +1500,189 @@
       "settings": {
         "foreground": "#f7768e"
       }
+    },
+    {
+      "name": "React/Vue Components",
+      "scope": [
+        "entity.name.component",
+        "support.class.component",
+        "meta.component.tsx entity.name.class",
+        "entity.name.tag.jsx",
+        "meta.jsx.children.jsx entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "#7dcfff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Types",
+      "scope": [
+        "keyword.type.ts",
+        "storage.type.interface",
+        "entity.name.type",
+        "type.alias",
+        "type.parameter",
+        "type.argument"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "GraphQL Schema",
+      "scope": [
+        "type.name.graphql",
+        "field.name.graphql",
+        "enum.name.graphql",
+        "interface.name.graphql",
+        "union.name.graphql"
+      ],
+      "settings": {
+        "foreground": "#0db9d7"
+      }
+    },
+    {
+      "name": "Tailwind Classes",
+      "scope": [
+        "string.quoted.other.tailwind",
+        "entity.other.attribute-name.class.tailwind",
+        "meta.attribute-with-value.class.html string.quoted.single.tailwind"
+      ],
+      "settings": {
+        "foreground": "#73daca"
+      }
+    },
+    {
+      "name": "Routing Components",
+      "scope": [
+        "entity.name.tag.custom",
+        "meta.import.react entity.name.tag",
+        "support.component.react"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "State Management",
+      "scope": [
+        "variable.other.object.state",
+        "entity.name.function.state",
+        "support.function.state"
+      ],
+      "settings": {
+        "foreground": "#ff9e64"
+      }
+    },
+    {
+      "name": "React Hooks",
+      "scope": [
+        "support.function.react-hooks",
+        "entity.name.function.hook",
+        "variable.other.hook"
+      ],
+      "settings": {
+        "foreground": "#b267e6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Generics",
+      "scope": [
+        "meta.generic.ts",
+        "type.parameter.generic",
+        "storage.type.generic"
+      ],
+      "settings": {
+        "foreground": "#89ddff"
+      }
+    },
+    {
+      "name": "Prisma Schema",
+      "scope": [
+        "keyword.model.prisma",
+        "entity.name.type.prisma",
+        "support.type.prisma",
+        "variable.other.property.prisma"
+      ],
+      "settings": {
+        "foreground": "#73daca",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Testing Frameworks",
+      "scope": [
+        "support.function.test",
+        "keyword.control.test",
+        "entity.name.function.test",
+        "variable.other.test"
+      ],
+      "settings": {
+        "foreground": "#9ece6a",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS-in-JS",
+      "scope": [
+        "entity.name.tag.styled",
+        "support.function.styled",
+        "keyword.control.template.styled",
+        "string.template.styled"
+      ],
+      "settings": {
+        "foreground": "#de5971"
+      }
+    },
+    {
+      "name": "Astro/Svelte Components",
+      "scope": [
+        "entity.name.tag.astro",
+        "entity.name.tag.svelte",
+        "meta.component.astro",
+        "meta.component.svelte"
+      ],
+      "settings": {
+        "foreground": "#f7768e",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "API Resolvers",
+      "scope": [
+        "entity.name.function.resolver",
+        "support.function.resolver",
+        "variable.function.resolver"
+      ],
+      "settings": {
+        "foreground": "#e0af68"
+      }
+    },
+    {
+      "name": "Validation Schemas",
+      "scope": [
+        "support.function.validation",
+        "entity.name.type.validation",
+        "keyword.control.validation"
+      ],
+      "settings": {
+        "foreground": "#0db9d7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Data Fetching",
+      "scope": [
+        "support.function.query",
+        "entity.name.function.query",
+        "variable.other.query"
+      ],
+      "settings": {
+        "foreground": "#6183bb"
+      }
     }
   ],
   "semanticTokenColors": {
