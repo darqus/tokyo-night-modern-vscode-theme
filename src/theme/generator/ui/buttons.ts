@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateButtonColors(): Record<string, string> {
-  const { blue, special } = palette;
+  const { blue, special } = palette
 
   return {
     'extensionButton.prominentBackground': alpha(blue.primary, 0.87),
@@ -15,5 +15,5 @@ export function generateButtonColors(): Record<string, string> {
     'button.secondaryBackground': special.inactive,
     'button.foreground': '#ffffff',
     'progressBar.background': blue.primary,
-  };
+  }
 }

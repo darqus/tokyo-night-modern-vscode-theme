@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, blue, red, yellow } = palette;
+  const { bg, fg, blue, yellow } = palette
 
   return {
     'list.dropBackground': bg.lighter,
@@ -27,5 +27,5 @@ export function generateListColors(): Record<string, string> {
     'scrollbarSlider.background': alpha(palette.special.scrollbar, 0.08),
     'scrollbarSlider.hoverBackground': alpha(palette.special.scrollbar, 0.06),
     'scrollbarSlider.activeBackground': alpha(palette.special.scrollbar, 0.13),
-  };
+  }
 }

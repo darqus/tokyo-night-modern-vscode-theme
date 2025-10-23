@@ -1,8 +1,8 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
-  const { bg, fg, special, blue, cyan, yellow, red, purple, green, orange, teal } = palette;
+  const { bg, fg, special, blue, cyan, yellow, red, purple } = palette
 
   return {
     'selection.background': alpha(special.selection, 0.25),
@@ -10,12 +10,12 @@ export function generateEditorColors(): Record<string, string> {
     'editor.foreground': fg.brighter,
     'editor.foldBackground': alpha('#111117', 0.29),
     'editorLink.activeForeground': '#acb0d0',
-    'editor.selectionBackground': alpha(special.selection, 0.30),
+    'editor.selectionBackground': alpha(special.selection, 0.3),
     'editor.inactiveSelectionBackground': alpha(special.selection, 0.15),
-    'editor.findMatchBackground': alpha(blue.primary, 0.40),
+    'editor.findMatchBackground': alpha(blue.primary, 0.4),
     'editor.findMatchBorder': yellow.main,
-    'editor.findMatchHighlightBackground': alpha(blue.primary, 0.40),
-    'editor.findRangeHighlightBackground': alpha(special.selection, 0.20),
+    'editor.findMatchHighlightBackground': alpha(blue.primary, 0.4),
+    'editor.findRangeHighlightBackground': alpha(special.selection, 0.2),
     'editor.rangeHighlightBackground': alpha(special.selection, 0.125),
     'editor.wordHighlightBackground': alpha(special.selection, 0.27),
     'editor.wordHighlightStrongBackground': alpha(special.selection, 0.33),
@@ -52,9 +52,15 @@ export function generateEditorColors(): Record<string, string> {
     'editorOverviewRuler.bracketMatchForeground': bg.darker,
     'editorOverviewRuler.findMatchForeground': alpha(fg.brighter, 0.27),
     'editorOverviewRuler.rangeHighlightForeground': alpha(fg.brighter, 0.27),
-    'editorOverviewRuler.selectionHighlightForeground': alpha(fg.brighter, 0.13),
+    'editorOverviewRuler.selectionHighlightForeground': alpha(
+      fg.brighter,
+      0.13
+    ),
     'editorOverviewRuler.wordHighlightForeground': alpha(purple.light, 0.33),
-    'editorOverviewRuler.wordHighlightStrongForeground': alpha(purple.light, 0.40),
+    'editorOverviewRuler.wordHighlightStrongForeground': alpha(
+      purple.light,
+      0.4
+    ),
     'editorOverviewRuler.modifiedForeground': '#394b70',
     'editorOverviewRuler.addedForeground': '#164846',
     'editorOverviewRuler.deletedForeground': '#703438',
@@ -80,7 +86,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorWidget.foreground': fg.medium,
     'editorWidget.background': bg.main,
     'editorWidget.border': bg.darker,
-    'editorWidget.resizeBorder': alpha(special.disabled, 0.20),
+    'editorWidget.resizeBorder': alpha(special.disabled, 0.2),
     'editorSuggestWidget.background': bg.main,
     'editorSuggestWidget.border': bg.darker,
     'editorSuggestWidget.selectedBackground': '#20222c',
@@ -91,15 +97,15 @@ export function generateEditorColors(): Record<string, string> {
     'editorInlayHint.foreground': special.ghostText,
     'peekView.border': bg.darker,
     'peekViewEditor.background': bg.main,
-    'peekViewEditor.matchHighlightBackground': alpha(blue.primary, 0.40),
+    'peekViewEditor.matchHighlightBackground': alpha(blue.primary, 0.4),
     'peekViewTitle.background': bg.darker,
     'peekViewTitleLabel.foreground': fg.brighter,
     'peekViewTitleDescription.foreground': fg.medium,
     'peekViewResult.background': bg.darker,
     'peekViewResult.selectionForeground': fg.brighter,
-    'peekViewResult.selectionBackground': alpha(blue.primary, 0.20),
+    'peekViewResult.selectionBackground': alpha(blue.primary, 0.2),
     'peekViewResult.lineForeground': fg.brighter,
     'peekViewResult.fileForeground': fg.medium,
-    'peekViewResult.matchHighlightBackground': alpha(blue.primary, 0.40),
-  };
+    'peekViewResult.matchHighlightBackground': alpha(blue.primary, 0.4),
+  }
 }

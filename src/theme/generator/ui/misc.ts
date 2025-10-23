@@ -1,8 +1,9 @@
-import { palette } from '../../palette';
-import { alpha } from '../../utils/color';
+import { palette } from '../../palette'
+import { alpha } from '../../utils/color'
 
 export function generateMiscColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, red, cyan, green, purple, orange, teal } = palette;
+  const { bg, fg, blue, yellow, red, cyan, green, purple, orange, teal } =
+    palette
 
   return {
     'walkThrough.embeddedEditorBackground': bg.main,
@@ -68,7 +69,7 @@ export function generateMiscColors(): Record<string, string> {
     'mergeEditor.conflict.unhandledUnfocused.border': alpha(yellow.main, 0.53),
     'mergeEditor.conflict.unhandledFocused.border': alpha(yellow.main, 0.69),
     'mergeEditor.conflict.handledUnfocused.border': alpha(green.dark, 0.15),
-    'mergeEditor.conflict.handledFocused.border': alpha(green.dark, 0.40),
+    'mergeEditor.conflict.handledFocused.border': alpha(green.dark, 0.4),
     'mergeEditor.conflict.handled.minimapOverViewRuler': teal.dark,
     'mergeEditor.conflict.unhandled.minimapOverViewRuler': yellow.main,
     'gitlens.trailingLineForegroundColor': palette.special.ghostText,
@@ -99,5 +100,5 @@ export function generateMiscColors(): Record<string, string> {
     'inlineChatInput.background': bg.dark,
     'inlineChatDiff.inserted': alpha(green.dark, 0.25),
     'inlineChatDiff.removed': alpha(red.dark, 0.26),
-  };
+  }
 }

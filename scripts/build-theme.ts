@@ -1,21 +1,23 @@
-import { generateTheme } from '../src/theme';
-import { writeFileSync } from 'fs';
-import { join } from 'path';
+import { generateTheme } from '../src/theme'
+import { writeFileSync } from 'fs'
+import { join } from 'path'
 
 function buildTheme() {
-  console.log('🎨 Generating Tokyo Night theme...');
+  console.log('🎨 Generating Tokyo Night theme...')
 
-  const theme = generateTheme();
-  const outputPath = join(__dirname, '../themes/tokyo-night-color-theme.json');
+  const theme = generateTheme()
+  const outputPath = join(__dirname, '../themes/tokyo-night-color-theme.json')
 
-  writeFileSync(outputPath, JSON.stringify(theme, null, 2));
+  writeFileSync(outputPath, JSON.stringify(theme, null, 2))
 
-  console.log('✅ Theme generated successfully!');
-  console.log(`📁 Output: ${outputPath}`);
-  console.log(`📊 Stats:`);
-  console.log(`   - UI Colors: ${Object.keys(theme.colors).length}`);
-  console.log(`   - Token Rules: ${theme.tokenColors.length}`);
-  console.log(`   - Semantic Tokens: ${Object.keys(theme.semanticTokenColors).length}`);
+  console.log('✅ Theme generated successfully!')
+  console.log(`📁 Output: ${outputPath}`)
+  console.log(`📊 Stats:`)
+  console.log(`   - UI Colors: ${Object.keys(theme.colors).length}`)
+  console.log(`   - Token Rules: ${theme.tokenColors.length}`)
+  console.log(
+    `   - Semantic Tokens: ${Object.keys(theme.semanticTokenColors).length}`
+  )
 }
 
-buildTheme();
+buildTheme()

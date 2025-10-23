@@ -1,53 +1,71 @@
-import type { TokenColor } from '../../types';
-import { palette } from '../../palette';
+import type { TokenColor } from '../../types'
+import { palette } from '../../palette'
 
 export function generateMarkdownTokens(): TokenColor[] {
-  const { fg, cyan, blue, teal } = palette;
+  const { fg, cyan, blue, teal } = palette
 
   return [
     {
       name: 'JSON Key - Level 0',
-      scope: ['source.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: blue.medium },
     },
     {
       name: 'JSON Key - Level 1',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: cyan.dark },
     },
     {
       name: 'JSON Key - Level 2',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: cyan.light },
     },
     {
       name: 'JSON Key - Level 3',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: palette.purple.light },
     },
     {
       name: 'JSON Key - Level 4',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: palette.yellow.main },
     },
     {
       name: 'JSON Key - Level 5',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: cyan.dark },
     },
     {
       name: 'JSON Key - Level 6',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: teal.main },
     },
     {
       name: 'JSON Key - Level 7',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: palette.red.main },
     },
     {
       name: 'JSON Key - Level 8',
-      scope: ['source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'],
+      scope: [
+        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
+      ],
       settings: { foreground: palette.green.main },
     },
     {
@@ -57,7 +75,25 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Block Punctuation',
-      scope: ['meta.block', 'meta.brace', 'punctuation.definition.block', 'punctuation.definition.use', 'punctuation.definition.class', 'punctuation.definition.begin.bracket', 'punctuation.definition.end.bracket', 'punctuation.definition.switch-expression.begin.bracket', 'punctuation.definition.switch-expression.end.bracket', 'punctuation.definition.section.switch-block.begin.bracket', 'punctuation.definition.section.switch-block.end.bracket', 'punctuation.definition.group.shell', 'punctuation.definition.parameters', 'punctuation.definition.arguments', 'punctuation.definition.dictionary', 'punctuation.definition.array', 'punctuation.section'],
+      scope: [
+        'meta.block',
+        'meta.brace',
+        'punctuation.definition.block',
+        'punctuation.definition.use',
+        'punctuation.definition.class',
+        'punctuation.definition.begin.bracket',
+        'punctuation.definition.end.bracket',
+        'punctuation.definition.switch-expression.begin.bracket',
+        'punctuation.definition.switch-expression.end.bracket',
+        'punctuation.definition.section.switch-block.begin.bracket',
+        'punctuation.definition.section.switch-block.end.bracket',
+        'punctuation.definition.group.shell',
+        'punctuation.definition.parameters',
+        'punctuation.definition.arguments',
+        'punctuation.definition.dictionary',
+        'punctuation.definition.array',
+        'punctuation.section',
+      ],
       settings: { foreground: '#9abdf5' },
     },
     {
@@ -67,7 +103,12 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'HTML text',
-      scope: ['meta.tag JSXNested', 'meta.jsx.children', 'text.html', 'text.log'],
+      scope: [
+        'meta.tag JSXNested',
+        'meta.jsx.children',
+        'text.html',
+        'text.log',
+      ],
       settings: { foreground: fg.bright },
     },
     {
@@ -77,37 +118,56 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Markdown - Markup Raw Inline Punctuation',
-      scope: 'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
+      scope:
+        'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
       settings: { foreground: '#4e5579' },
     },
     {
       name: 'Markdown - Heading 1',
-      scope: ['heading.1.markdown entity.name', 'heading.1.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.1.markdown entity.name',
+        'heading.1.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: cyan.bright },
     },
     {
       name: 'Markdown - Heading 2',
-      scope: ['heading.2.markdown entity.name', 'heading.2.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.2.markdown entity.name',
+        'heading.2.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: '#61bdf2' },
     },
     {
       name: 'Markdown - Heading 3',
-      scope: ['heading.3.markdown entity.name', 'heading.3.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.3.markdown entity.name',
+        'heading.3.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: blue.medium },
     },
     {
       name: 'Markdown - Heading 4',
-      scope: ['heading.4.markdown entity.name', 'heading.4.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.4.markdown entity.name',
+        'heading.4.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: '#6d91de' },
     },
     {
       name: 'Markdown - Heading 5',
-      scope: ['heading.5.markdown entity.name', 'heading.5.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.5.markdown entity.name',
+        'heading.5.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: fg.bright },
     },
     {
       name: 'Markdown - Heading 6',
-      scope: ['heading.6.markdown entity.name', 'heading.6.markdown punctuation.definition.heading.markdown'],
+      scope: [
+        'heading.6.markdown entity.name',
+        'heading.6.markdown punctuation.definition.heading.markdown',
+      ],
       settings: { fontStyle: 'bold', foreground: '#747ca1' },
     },
     {
@@ -122,7 +182,10 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Markup - Bold-Italic',
-      scope: ['markup.bold markup.italic', 'markup.bold markup.italic punctuation'],
+      scope: [
+        'markup.bold markup.italic',
+        'markup.bold markup.italic punctuation',
+      ],
       settings: { fontStyle: 'bold italic', foreground: fg.brightest },
     },
     {
@@ -142,12 +205,21 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Markdown - Link',
-      scope: ['string.other.link', 'markup.underline.link', 'constant.other.reference.link.markdown', 'string.other.link.description.title.markdown'],
+      scope: [
+        'string.other.link',
+        'markup.underline.link',
+        'constant.other.reference.link.markdown',
+        'string.other.link.description.title.markdown',
+      ],
       settings: { foreground: teal.main },
     },
     {
       name: 'Markdown - Fenced Code Block',
-      scope: ['markup.fenced_code.block.markdown', 'markup.inline.raw.string.markdown', 'variable.language.fenced.markdown'],
+      scope: [
+        'markup.fenced_code.block.markdown',
+        'markup.inline.raw.string.markdown',
+        'variable.language.fenced.markdown',
+      ],
       settings: { foreground: cyan.bright },
     },
     {
@@ -197,7 +269,11 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Sub-methods',
-      scope: ['entity.name.module.js', 'variable.import.parameter.js', 'variable.other.class.js'],
+      scope: [
+        'entity.name.module.js',
+        'variable.import.parameter.js',
+        'variable.other.class.js',
+      ],
       settings: { foreground: fg.brightest },
     },
     {
@@ -212,8 +288,12 @@ export function generateMarkdownTokens(): TokenColor[] {
     },
     {
       name: 'Keyword this with Punctuation, ES7 Bind Operator',
-      scope: ['source.js constant.other.object.key.js string.unquoted.label.js', 'variable.language.this punctuation.definition.variable', 'keyword.other.this'],
+      scope: [
+        'source.js constant.other.object.key.js string.unquoted.label.js',
+        'variable.language.this punctuation.definition.variable',
+        'keyword.other.this',
+      ],
       settings: { foreground: palette.red.main },
     },
-  ];
+  ]
 }

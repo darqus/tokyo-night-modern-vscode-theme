@@ -1,27 +1,27 @@
-import type { VSCodeTheme } from '../types';
+import type { VSCodeTheme } from '../types'
+import { generateSemanticTokenColors } from './semantic'
 import {
-  generateCoreColors,
-  generateButtonColors,
-  generateInputColors,
-  generateSidebarColors,
-  generateListColors,
-  generateEditorColors,
-  generateDiffColors,
-  generateTabColors,
-  generatePanelColors,
-  generateTerminalColors,
-  generateGitColors,
-  generateMiscColors,
-} from './ui';
-import {
-  generateCommentTokens,
   generateBasicTokens,
   generateCodeTokens,
+  generateCommentTokens,
   generateCssTokens,
-  generateMarkupTokens,
   generateMarkdownTokens,
-} from './tokens';
-import { generateSemanticTokenColors } from './semantic';
+  generateMarkupTokens,
+} from './tokens'
+import {
+  generateButtonColors,
+  generateCoreColors,
+  generateDiffColors,
+  generateEditorColors,
+  generateGitColors,
+  generateInputColors,
+  generateListColors,
+  generateMiscColors,
+  generatePanelColors,
+  generateSidebarColors,
+  generateTabColors,
+  generateTerminalColors,
+} from './ui'
 
 export function generateTheme(): VSCodeTheme {
   return {
@@ -51,5 +51,5 @@ export function generateTheme(): VSCodeTheme {
       ...generateMarkdownTokens(),
     ],
     semanticTokenColors: generateSemanticTokenColors(),
-  };
+  }
 }
