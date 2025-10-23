@@ -73,7 +73,7 @@ export const palette: Palette = {
   special: {
     regex: '#b4f9f8',
     invalid: '#ff5370',
-    selection: '#636e90',
+    selection: '#bbc2e4',
     indentGuide: '#363b54',
     indentActive: '#42465d',
     border: '#29355a',
