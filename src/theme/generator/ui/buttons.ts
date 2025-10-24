@@ -32,8 +32,8 @@ export function generateButtonColors(): Record<string, string> {
     ),
     'button.background': alpha(enhancedPrimaryBackground, 0.8), // Увеличил непрозрачность
     'button.hoverBackground': alpha(enhancedPrimaryBackground, 0.9), // Увеличил непрозрачность
-    'button.secondaryBackground': enhancedSecondaryBackground,
-    'button.secondaryHoverBackground': alpha(enhancedSecondaryBackground, 0.8), // Hover состояние для вторичной кнопки
+    'button.secondaryBackground': alpha(enhancedSecondaryBackground, 0.8), // Hover состояние для вторичной кнопки
+    'button.secondaryHoverBackground': enhancedSecondaryBackground,
     'button.foreground': ensureContrast(
       ui.white,
       enhancedPrimaryBackground,
