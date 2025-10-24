@@ -1,7 +1,7 @@
 import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
-export function generateInputColors(): Record<string, string> {
+export const generateInputColors = (): Record<string, string> => {
   const { bg, fg, blue, yellow, special } = palette
 
   return {
@@ -23,5 +23,15 @@ export function generateInputColors(): Record<string, string> {
     'dropdown.foreground': fg.medium,
     'dropdown.background': bg.dark,
     'dropdown.listBackground': bg.dark,
+  }
+}
+
+export const generateCheckboxColors = (): Record<string, string> => {
+  const { bg, fg, special } = palette
+
+  return {
+    'checkbox.background': bg.light,
+    'checkbox.foreground': fg.brightest,
+    'checkbox.border': alpha(special.border, 0.7),
   }
 }

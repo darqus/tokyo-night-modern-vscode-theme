@@ -11,6 +11,7 @@ import {
 } from './tokens'
 import {
   generateButtonColors,
+  generateCheckboxColors,
   generateCoreColors,
   generateDiffColors,
   generateEditorColors,
@@ -21,7 +22,7 @@ import {
   generatePanelColors,
   generateSidebarColors,
   generateTabColors,
-  generateTerminalColors,
+  generateTerminalColors
 } from './ui'
 
 export function generateTheme(): VSCodeTheme {
@@ -33,6 +34,7 @@ export function generateTheme(): VSCodeTheme {
       ...generateCoreColors(),
       ...generateButtonColors(),
       ...generateInputColors(),
+      ...generateCheckboxColors(),
       ...generateSidebarColors(),
       ...generateListColors(),
       ...generateEditorColors(),
