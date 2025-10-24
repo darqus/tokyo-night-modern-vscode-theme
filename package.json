@@ -54,7 +54,7 @@
     "test:theme:full": "ts-node scripts/test-theme.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.7",
+    "@biomejs/biome": "^2.3.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.9.1",
     "@vscode/vsce": "^3.6.2",

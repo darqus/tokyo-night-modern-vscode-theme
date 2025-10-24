@@ -1,6 +1,8 @@
 import { palette } from '../palette'
 import type { VSCodeTheme } from '../types'
 import { darken, lighten } from '../utils/color'
+import { generateTheme } from './index'
+import { generateThemeFromPalette } from './theme-factory'
 
 export function generateThemeVariants() {
   return {
@@ -25,8 +27,7 @@ export function generateThemeVariants() {
 }
 
 function generateStandardTheme(): VSCodeTheme {
-  // Возвращаем текущую тему как сандарт
-  return {} as VSCodeTheme // Будет заменено на основной генератор
+  return generateTheme()
 }
 
 function generateBrightTheme(): VSCodeTheme {
@@ -178,10 +179,4 @@ function generateHighContrastTheme(): VSCodeTheme {
   }
 
   return generateThemeFromPalette(highContrastPalette)
-}
-
-// Вспомогательная функция для генерации темы из палитры
-function generateThemeFromPalette(customPalette: typeof palette): VSCodeTheme {
-  // Эта функция будет имплементирована при интеграции с основным генератором
-  return {} as VSCodeTheme
 }
