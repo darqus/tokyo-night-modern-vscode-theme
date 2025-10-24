@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, fg, yellow } = palette
+  const { red, blue, cyan, teal, fg, yellow, special } = palette
 
   return [
     {
@@ -23,7 +23,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions',
       scope: 'string.regexp',
-      settings: { foreground: palette.special.regex },
+      settings: { foreground: special.regex },
     },
     {
       name: 'Regular Expressions - Punctuation',

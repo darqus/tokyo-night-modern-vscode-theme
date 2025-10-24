@@ -42,6 +42,7 @@ export interface Palette {
   elements: ElementsPalette
   highContrast: HighContrastPalette
   accessibility: AccessibilityPalette
+  border: BorderPalette
 }
 
 export interface HighContrastPalette {
@@ -123,9 +124,7 @@ export interface SpecialPalette {
   regex: string
   invalid: string
   selection: string
-  indentGuide: string
   indentActive: string
-  border: string
   disabled: string
   badge: string
   scrollbar: string
@@ -238,4 +237,15 @@ export interface AccessibilityPalette {
       focused: string
     }
   }
+}
+
+export interface BorderPalette {
+  primary: string
+  primary50: string
+  primary70: string
+  ui: string
+  panel: string
+  widget: string
+  input: string
+  subtle: string
 }
