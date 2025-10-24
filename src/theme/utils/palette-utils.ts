@@ -160,7 +160,7 @@ export function validatePaletteAccessibility(palette: Palette): {
     {
       element: 'badge.foreground',
       fg: palette.ui.badgeForeground,
-      bg: palette.bg.light,
+      bg: palette.special.badge,
       ratio: 4.5,
     },
   ]

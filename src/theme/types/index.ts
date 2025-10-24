@@ -51,6 +51,8 @@ export interface HighContrastPalette {
   blue: BluePalette
   red: RedPalette
   green: GreenPalette
+  badge: string
+  badgeForeground: string
 }
 
 export interface BackgroundPalette {
@@ -130,6 +132,11 @@ export interface SpecialPalette {
   scrollbar: string
   ghostText: string
   inactive: string
+  // Новые цвета для улучшенного выделения
+  selectionBright: string // Яркий голубой для активного выделения
+  searchMatch: string // Синий для найденных совпадений
+  searchCurrent: string // Бирюзовый для текущего совпадения
+  wordHighlight: string // Фиолетовый для подсветки слов
 }
 
 export interface UIPalette {

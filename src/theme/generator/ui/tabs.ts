@@ -1,4 +1,5 @@
 import { palette } from '../../palette'
+import { ensureContrast } from '../../utils/contrast'
 
 export function generateTabColors(): Record<string, string> {
   const { bg, fg, blue, border } = palette
@@ -6,24 +7,56 @@ export function generateTabColors(): Record<string, string> {
   return {
     'breadcrumb.background': bg.main,
     'breadcrumbPicker.background': bg.main,
-    'breadcrumb.foreground': fg.dim,
-    'breadcrumb.focusForeground': fg.brighter,
-    'breadcrumb.activeSelectionForeground': fg.brighter,
+    'breadcrumb.foreground': ensureContrast(fg.dim, bg.main, 3.0),
+    'breadcrumb.focusForeground': ensureContrast(fg.brighter, bg.main, 4.5),
+    'breadcrumb.activeSelectionForeground': ensureContrast(
+      fg.brighter,
+      bg.main,
+      4.5
+    ),
     'tab.activeBackground': bg.main,
     'tab.inactiveBackground': bg.main,
-    'tab.activeForeground': fg.brighter,
-    'tab.hoverForeground': fg.brighter,
-    'tab.activeBorder': blue.primary,
-    'tab.inactiveForeground': fg.medium,
-    'tab.border': border.ui,
-    'tab.unfocusedActiveForeground': fg.brighter,
-    'tab.unfocusedInactiveForeground': fg.medium,
-    'tab.unfocusedHoverForeground': fg.brighter,
-    'tab.activeModifiedBorder': bg.editor,
-    'tab.inactiveModifiedBorder': palette.interactive.tabInactiveModified,
-    'tab.unfocusedActiveModifiedBorder': blue.primary,
-    'tab.unfocusedInactiveModifiedBorder': border.ui,
-    'tab.unfocusedActiveBorder': palette.interactive.tabUnfocusedActive,
-    'tab.lastPinnedBorder': palette.interactive.tabLastPinned,
+    'tab.activeForeground': ensureContrast(fg.brighter, bg.main, 4.5),
+    'tab.hoverForeground': ensureContrast(fg.brighter, bg.main, 4.5),
+    'tab.activeBorder': ensureContrast(blue.primary, bg.main, 3.0),
+    'tab.inactiveForeground': ensureContrast(
+      palette.accessibility.contrast.medium,
+      bg.main,
+      4.5
+    ),
+    'tab.border': ensureContrast(border.ui, bg.main, 2.0),
+    'tab.unfocusedActiveForeground': ensureContrast(fg.brighter, bg.main, 4.0),
+    'tab.unfocusedInactiveForeground': ensureContrast(
+      palette.accessibility.contrast.medium,
+      bg.main,
+      4.5
+    ),
+    'tab.unfocusedHoverForeground': ensureContrast(fg.brighter, bg.main, 4.0),
+    'tab.activeModifiedBorder': ensureContrast(bg.editor, bg.main, 2.0),
+    'tab.inactiveModifiedBorder': ensureContrast(
+      palette.interactive.tabInactiveModified,
+      bg.main,
+      2.5
+    ),
+    'tab.unfocusedActiveModifiedBorder': ensureContrast(
+      blue.primary,
+      bg.main,
+      3.0
+    ),
+    'tab.unfocusedInactiveModifiedBorder': ensureContrast(
+      border.ui,
+      bg.main,
+      2.0
+    ),
+    'tab.unfocusedActiveBorder': ensureContrast(
+      palette.interactive.tabUnfocusedActive,
+      bg.main,
+      2.5
+    ),
+    'tab.lastPinnedBorder': ensureContrast(
+      palette.interactive.tabLastPinned,
+      bg.main,
+      2.5
+    ),
   }
 }

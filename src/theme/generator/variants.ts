@@ -176,6 +176,15 @@ function generateHighContrastTheme(): VSCodeTheme {
     blue: palette.highContrast.blue,
     red: palette.highContrast.red,
     green: palette.highContrast.green,
+    // Используем высококонтрастные цвета баджей
+    special: {
+      ...palette.special,
+      badge: palette.highContrast.badge,
+    },
+    ui: {
+      ...palette.ui,
+      badgeForeground: palette.highContrast.badgeForeground,
+    },
   }
 
   return generateThemeFromPalette(highContrastPalette)

@@ -1,5 +1,6 @@
 import { palette } from '../../palette'
 import { alpha, lighten } from '../../utils/color'
+import { ensureContrast } from '../../utils/contrast'
 
 export function generateEditorColors(): Record<string, string> {
   const {
@@ -19,109 +20,273 @@ export function generateEditorColors(): Record<string, string> {
     border,
   } = palette
 
+  // Улучшенные цвета с обеспечением контрастности
+  const enhancedSelection = ensureContrast(special.selection, bg.editor, 3.0)
+  const enhancedSelectionBright = ensureContrast(
+    special.selectionBright,
+    bg.editor,
+    4.5
+  )
+  const enhancedSearchMatch = ensureContrast(
+    special.searchMatch,
+    bg.editor,
+    3.5
+  )
+  const enhancedWordHighlight = ensureContrast(
+    special.wordHighlight,
+    bg.editor,
+    3.0
+  )
+
   return {
-    'selection.background': alpha(special.selection, 0.25),
+    'selection.background': alpha(enhancedSelectionBright, 0.4), // Увеличил непрозрачность
     'editor.background': bg.editor,
-    'editor.foreground': fg.brighter,
-    'editor.foldBackground': alpha(elements.foldBackground, 0.29),
-    'editorLink.activeForeground': ui.linkActive,
-    'editor.selectionBackground': alpha(special.selection, 0.3),
-    'editor.inactiveSelectionBackground': alpha(special.selection, 0.15),
-    'editor.findMatchBackground': alpha(blue.primary, 0.4),
-    'editor.findMatchBorder': yellow.main,
-    'editor.findMatchHighlightBackground': alpha(blue.primary, 0.4),
-    'editor.findRangeHighlightBackground': alpha(special.selection, 0.2),
-    'editor.rangeHighlightBackground': alpha(special.selection, 0.125),
-    'editor.wordHighlightBackground': alpha(special.selection, 0.27),
-    'editor.wordHighlightStrongBackground': alpha(special.selection, 0.33),
-    'editor.selectionHighlightBackground': alpha(special.selection, 0.27),
-    'editorCursor.foreground': fg.brightest,
-    'editorIndentGuide.background1': elements.indentGuidesBackground,
-    'editorIndentGuide.activeBackground1': special.indentActive,
-    'editorLineNumber.foreground': special.indentActive,
-    'editorLineNumber.activeForeground': fg.medium,
-    'editor.lineHighlightBackground': bg.lighter,
-    'editorWhitespace.foreground': special.indentActive,
+    'editor.foreground': ensureContrast(fg.brighter, bg.editor, 4.5), // Обеспечиваем WCAG AA
+    'editor.foldBackground': alpha(elements.foldBackground, 0.35), // Увеличил контрастность
+    'editorLink.activeForeground': ensureContrast(
+      ui.linkActive,
+      bg.editor,
+      4.5
+    ),
+    'editor.selectionBackground': alpha(enhancedSelection, 0.6), // Увеличил непрозрачность
+    'editor.inactiveSelectionBackground': alpha(enhancedSelection, 0.3), // Увеличил непрозрачность
+    'editor.findMatchBackground': alpha(enhancedSearchMatch, 0.7), // Увеличил непрозрачность
+    'editor.findMatchBorder': ensureContrast(
+      special.searchCurrent,
+      bg.editor,
+      3.0
+    ),
+    'editor.findMatchHighlightBackground': alpha(enhancedSearchMatch, 0.4), // Увеличил непрозрачность
+    'editor.findRangeHighlightBackground': alpha(enhancedSelection, 0.35), // Увеличил непрозрачность
+    'editor.rangeHighlightBackground': alpha(enhancedSelection, 0.25), // Увеличил непрозрачность
+    'editor.wordHighlightBackground': alpha(enhancedWordHighlight, 0.5), // Увеличил непрозрачность
+    'editor.wordHighlightStrongBackground': alpha(enhancedWordHighlight, 0.7), // Увеличил непрозрачность
+    'editor.selectionHighlightBackground': alpha(enhancedSelectionBright, 0.35), // Увеличил непрозрачность
+    'editorCursor.foreground': ensureContrast(fg.brightest, bg.editor, 4.5),
+    'editorIndentGuide.background1': ensureContrast(
+      elements.indentGuidesBackground,
+      bg.editor,
+      1.5
+    ),
+    'editorIndentGuide.activeBackground1': ensureContrast(
+      special.indentActive,
+      bg.editor,
+      2.0
+    ),
+    'editorLineNumber.foreground': ensureContrast(
+      special.indentActive,
+      bg.editor,
+      2.0
+    ),
+    'editorLineNumber.activeForeground': ensureContrast(
+      fg.medium,
+      bg.editor,
+      3.0
+    ),
+    'editor.lineHighlightBackground': alpha(bg.lighter, 0.15), // Сделал более заметным
+    'editorWhitespace.foreground': ensureContrast(
+      special.indentActive,
+      bg.editor,
+      1.8
+    ),
     'editorMarkerNavigation.background': bg.main,
     'editorHoverWidget.background': lighten(bg.main, 0.02),
-    'editorHoverWidget.border': border.ui,
-    'editorBracketMatch.background': bg.main,
-    'editorBracketMatch.border': special.indentActive,
-    'editorBracketHighlight.foreground1': brackets.blue,
-    'editorBracketHighlight.foreground2': brackets.cyan,
-    'editorBracketHighlight.foreground3': brackets.purple,
-    'editorBracketHighlight.foreground4': brackets.teal,
-    'editorBracketHighlight.foreground5': brackets.green,
-    'editorBracketHighlight.foreground6': yellow.muted,
-    'editorBracketHighlight.unexpectedBracket.foreground': red.dark,
-    'editorBracketPairGuide.activeBackground1': brackets.blue,
-    'editorBracketPairGuide.activeBackground2': brackets.cyan,
-    'editorBracketPairGuide.activeBackground3': brackets.purple,
-    'editorBracketPairGuide.activeBackground4': brackets.teal,
-    'editorBracketPairGuide.activeBackground5': brackets.green,
-    'editorBracketPairGuide.activeBackground6': yellow.muted,
-    'editorOverviewRuler.border': border.ui,
-    'editorOverviewRuler.errorForeground': red.dark,
-    'editorOverviewRuler.warningForeground': yellow.main,
-    'editorOverviewRuler.infoForeground': elements.info,
-    'editorOverviewRuler.bracketMatchForeground': bg.darker,
-    'editorOverviewRuler.findMatchForeground': alpha(fg.brighter, 0.27),
-    'editorOverviewRuler.rangeHighlightForeground': alpha(fg.brighter, 0.27),
-    'editorOverviewRuler.selectionHighlightForeground': alpha(
-      fg.brighter,
-      0.13
+    'editorHoverWidget.border': ensureContrast(border.ui, bg.main, 2.0),
+    'editorBracketMatch.background': alpha(bg.main, 0.8),
+    'editorBracketMatch.border': ensureContrast(
+      special.indentActive,
+      bg.main,
+      3.0
     ),
-    'editorOverviewRuler.wordHighlightForeground': alpha(purple.light, 0.33),
-    'editorOverviewRuler.wordHighlightStrongForeground': alpha(
-      purple.light,
+    'editorBracketHighlight.foreground1': ensureContrast(
+      brackets.blue,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.foreground2': ensureContrast(
+      brackets.cyan,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.foreground3': ensureContrast(
+      brackets.purple,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.foreground4': ensureContrast(
+      brackets.teal,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.foreground5': ensureContrast(
+      brackets.green,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.foreground6': ensureContrast(
+      yellow.muted,
+      bg.editor,
+      3.0
+    ),
+    'editorBracketHighlight.unexpectedBracket.foreground': ensureContrast(
+      red.dark,
+      bg.editor,
+      4.5
+    ),
+    'editorBracketPairGuide.activeBackground1': alpha(
+      ensureContrast(brackets.blue, bg.editor, 2.5),
+      0.6
+    ),
+    'editorBracketPairGuide.activeBackground2': alpha(
+      ensureContrast(brackets.cyan, bg.editor, 2.5),
+      0.6
+    ),
+    'editorBracketPairGuide.activeBackground3': alpha(
+      ensureContrast(brackets.purple, bg.editor, 2.5),
+      0.6
+    ),
+    'editorBracketPairGuide.activeBackground4': alpha(
+      ensureContrast(brackets.teal, bg.editor, 2.5),
+      0.6
+    ),
+    'editorBracketPairGuide.activeBackground5': alpha(
+      ensureContrast(brackets.green, bg.editor, 2.5),
+      0.6
+    ),
+    'editorBracketPairGuide.activeBackground6': alpha(
+      ensureContrast(yellow.muted, bg.editor, 2.5),
+      0.6
+    ),
+    'editorOverviewRuler.border': ensureContrast(border.ui, bg.main, 2.0),
+    'editorOverviewRuler.errorForeground': ensureContrast(
+      red.dark,
+      bg.main,
+      3.0
+    ),
+    'editorOverviewRuler.warningForeground': ensureContrast(
+      yellow.main,
+      bg.main,
+      3.0
+    ),
+    'editorOverviewRuler.infoForeground': ensureContrast(
+      elements.info,
+      bg.main,
+      3.0
+    ),
+    'editorOverviewRuler.bracketMatchForeground': alpha(bg.darker, 0.5),
+    'editorOverviewRuler.findMatchForeground': alpha(
+      ensureContrast(fg.brighter, bg.main, 2.0),
       0.4
+    ),
+    'editorOverviewRuler.rangeHighlightForeground': alpha(
+      ensureContrast(fg.brighter, bg.main, 2.0),
+      0.4
+    ),
+    'editorOverviewRuler.selectionHighlightForeground': alpha(
+      ensureContrast(fg.brighter, bg.main, 2.0),
+      0.2
+    ),
+    'editorOverviewRuler.wordHighlightForeground': alpha(
+      ensureContrast(purple.light, bg.main, 2.5),
+      0.4
+    ),
+    'editorOverviewRuler.wordHighlightStrongForeground': alpha(
+      ensureContrast(purple.light, bg.main, 3.0),
+      0.5
     ),
     'editorOverviewRuler.modifiedForeground': git.modified,
     'editorOverviewRuler.addedForeground': git.added,
     'editorOverviewRuler.deletedForeground': git.deleted,
     'editorRuler.foreground': bg.darker,
-    'editorError.foreground': red.dark,
-    'editorWarning.foreground': yellow.main,
-    'editorInfo.foreground': cyan.medium,
-    'editorHint.foreground': cyan.medium,
-    'editorGutter.modifiedBackground': git.modified,
-    'editorGutter.addedBackground': git.added,
-    'editorGutter.deletedBackground': git.deletedDark,
-    'editorGhostText.foreground': special.ghostText,
+    'editorError.foreground': ensureContrast(red.dark, bg.editor, 4.5),
+    'editorWarning.foreground': ensureContrast(yellow.main, bg.editor, 4.5),
+    'editorInfo.foreground': ensureContrast(cyan.medium, bg.editor, 4.5),
+    'editorHint.foreground': ensureContrast(cyan.medium, bg.editor, 3.0),
+    'editorGutter.modifiedBackground': ensureContrast(
+      git.modified,
+      bg.editor,
+      2.5
+    ),
+    'editorGutter.addedBackground': ensureContrast(git.added, bg.editor, 2.5),
+    'editorGutter.deletedBackground': ensureContrast(
+      git.deletedDark,
+      bg.editor,
+      2.5
+    ),
+    'editorGhostText.foreground': ensureContrast(
+      special.ghostText,
+      bg.editor,
+      2.0
+    ),
     'minimapGutter.modifiedBackground': git.modifiedMinimap,
     'minimapGutter.addedBackground': git.addedMinimap,
     'minimapGutter.deletedBackground': git.deletedMinimap,
-    'sideBySideEditor.border': border.ui,
-    'editorGroup.border': border.ui,
-    'editorGroup.dropBackground': bg.lighter,
-    'editorGroupHeader.tabsBorder': bg.darker,
+    'sideBySideEditor.border': ensureContrast(border.ui, bg.editor, 2.0),
+    'editorGroup.border': ensureContrast(border.ui, bg.editor, 2.0),
+    'editorGroup.dropBackground': alpha(bg.lighter, 0.3),
+    'editorGroupHeader.tabsBorder': ensureContrast(bg.darker, bg.main, 1.5),
     'editorGroupHeader.tabsBackground': bg.main,
     'editorGroupHeader.noTabsBackground': bg.main,
-    'editorGroupHeader.border': border.ui,
+    'editorGroupHeader.border': ensureContrast(border.ui, bg.main, 2.0),
     'editorPane.background': bg.editor,
-    'editorWidget.foreground': fg.medium,
+    'editorWidget.foreground': ensureContrast(fg.medium, bg.main, 4.5),
     'editorWidget.background': bg.main,
-    'editorWidget.border': border.ui,
-    'editorWidget.resizeBorder': alpha(special.disabled, 0.4),
+    'editorWidget.border': ensureContrast(border.ui, bg.main, 2.0),
+    'editorWidget.resizeBorder': alpha(
+      ensureContrast(special.disabled, bg.main, 2.0),
+      0.5
+    ),
     'editorSuggestWidget.background': bg.main,
-    'editorSuggestWidget.border': border.ui,
-    'editorSuggestWidget.selectedBackground': interactive.selected,
-    'editorSuggestWidget.highlightForeground': blue.light,
-    'editorCodeLens.foreground': ui.codeLens,
-    'editorLightBulb.foreground': yellow.main,
-    'editorLightBulbAutoFix.foreground': yellow.main,
-    'editorInlayHint.foreground': special.ghostText,
-    'peekView.border': border.ui,
+    'editorSuggestWidget.border': ensureContrast(border.ui, bg.main, 2.0),
+    'editorSuggestWidget.selectedBackground': ensureContrast(
+      interactive.selected,
+      bg.main,
+      2.0
+    ),
+    'editorSuggestWidget.highlightForeground': ensureContrast(
+      blue.light,
+      bg.main,
+      4.5
+    ),
+    'editorCodeLens.foreground': ensureContrast(ui.codeLens, bg.editor, 2.5),
+    'editorLightBulb.foreground': ensureContrast(yellow.main, bg.editor, 4.5),
+    'editorLightBulbAutoFix.foreground': ensureContrast(
+      yellow.main,
+      bg.editor,
+      4.5
+    ),
+    'editorInlayHint.foreground': ensureContrast(
+      special.ghostText,
+      bg.editor,
+      2.5
+    ),
+    'peekView.border': ensureContrast(border.ui, bg.main, 2.0),
     'peekViewEditor.background': bg.main,
-    'peekViewEditor.matchHighlightBackground': alpha(blue.primary, 0.4),
+    'peekViewEditor.matchHighlightBackground': alpha(enhancedSearchMatch, 0.7),
     'peekViewTitle.background': bg.darker,
-    'peekViewTitleLabel.foreground': fg.brighter,
-    'peekViewTitleDescription.foreground': fg.medium,
+    'peekViewTitleLabel.foreground': ensureContrast(
+      fg.brighter,
+      bg.darker,
+      4.5
+    ),
+    'peekViewTitleDescription.foreground': ensureContrast(
+      fg.medium,
+      bg.darker,
+      3.0
+    ),
     'peekViewResult.background': bg.darker,
-    'peekViewResult.selectionForeground': fg.brighter,
-    'peekViewResult.selectionBackground': alpha(blue.primary, 0.4),
-    'peekViewResult.lineForeground': fg.brighter,
-    'peekViewResult.fileForeground': fg.medium,
-    'peekViewResult.matchHighlightBackground': alpha(blue.primary, 0.4),
+    'peekViewResult.selectionForeground': ensureContrast(
+      fg.brighter,
+      enhancedSearchMatch,
+      4.5
+    ),
+    'peekViewResult.selectionBackground': alpha(enhancedSearchMatch, 0.5),
+    'peekViewResult.lineForeground': ensureContrast(
+      fg.brighter,
+      bg.darker,
+      4.5
+    ),
+    'peekViewResult.fileForeground': ensureContrast(fg.medium, bg.darker, 3.0),
+    'peekViewResult.matchHighlightBackground': alpha(enhancedSearchMatch, 0.5),
   }
 }

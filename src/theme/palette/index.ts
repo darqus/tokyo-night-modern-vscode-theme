@@ -84,18 +84,23 @@ export const palette: Palette = {
   special: {
     regex: '#b4f9f8',
     invalid: '#ff5370',
-    selection: '#bbc2e4',
+    selection: '#7aa2f7', // Более контрастный синий для выделения
     indentActive: '#42465d',
     disabled: '#666e90',
-    badge: '#7e83b2',
+    badge: '#0066ff', // Ярко-синий для лучшего контраста
     scrollbar: '#868bc4',
     ghostText: '#687198',
-    inactive: '#363b54',
+    inactive: '#5a617e',
+    // Новые цвета для улучшенного выделения
+    selectionBright: '#89ddff', // Яркий голубой для активного выделения
+    searchMatch: '#6183bb', // Синий для найденных совпадений
+    searchCurrent: '#73daca', // Бирюзовый для текущего совпадения
+    wordHighlight: '#bb9af7', // Фиолетовый для подсветки слов
   },
 
   ui: {
     white: '#ffffff',
-    badgeForeground: '#b9c0e0',
+    badgeForeground: '#ffffff', // Белый текст для лучшего контраста
     linkActive: '#b9c0e0',
     codeLens: '#6d7597',
     brightWhite: '#b9c0e0',
@@ -205,6 +210,9 @@ export const palette: Palette = {
       main: '#6bd96a',
       dark: '#4bc94b',
     },
+    // Цвета баджей для высококонтрастной темы
+    badge: '#0080ff', // Еще более яркий синий для высококонтрастной темы
+    badgeForeground: '#ffffff', // Белый текст для максимального контраста
   },
 
   // Цвета для доступности
