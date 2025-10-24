@@ -2,12 +2,12 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export const generateInputColors = (): Record<string, string> => {
-  const { bg, fg, blue, yellow, special } = palette
+  const { bg, fg, blue, yellow, border } = palette
 
   return {
     'input.background': bg.dark,
     'input.foreground': fg.brighter,
-    'input.border': alpha(special.border, 0.5),
+    'input.border': border.ui,
     'input.placeholderForeground': alpha(fg.medium, 0.54),
     'inputOption.activeForeground': fg.brightest,
     'inputOption.activeBackground': alpha(blue.primary, 0.27),
@@ -27,11 +27,11 @@ export const generateInputColors = (): Record<string, string> => {
 }
 
 export const generateCheckboxColors = (): Record<string, string> => {
-  const { bg, fg, special } = palette
+  const { bg, fg, border } = palette
 
   return {
     'checkbox.background': bg.light,
     'checkbox.foreground': fg.brightest,
-    'checkbox.border': alpha(special.border, 0.7),
+    'checkbox.border': border.primary70,
   }
 }

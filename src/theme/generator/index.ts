@@ -22,7 +22,7 @@ import {
   generatePanelColors,
   generateSidebarColors,
   generateTabColors,
-  generateTerminalColors
+  generateTerminalColors,
 } from './ui'
 
 export function generateTheme(): VSCodeTheme {

@@ -1,8 +1,7 @@
 import { palette } from '../../palette'
-import { alpha } from '../../utils'
 
 export function generateTabColors(): Record<string, string> {
-  const { bg, fg, blue, special } = palette
+  const { bg, fg, blue, border } = palette
 
   return {
     'breadcrumb.background': bg.main,
@@ -16,12 +15,14 @@ export function generateTabColors(): Record<string, string> {
     'tab.hoverForeground': fg.brighter,
     'tab.activeBorder': blue.primary,
     'tab.inactiveForeground': fg.medium,
-    'tab.border': alpha(special.border, 0.5),
+    'tab.border': border.ui,
     'tab.unfocusedActiveForeground': fg.brighter,
     'tab.unfocusedInactiveForeground': fg.medium,
     'tab.unfocusedHoverForeground': fg.brighter,
     'tab.activeModifiedBorder': bg.editor,
     'tab.inactiveModifiedBorder': palette.interactive.tabInactiveModified,
+    'tab.unfocusedActiveModifiedBorder': blue.primary,
+    'tab.unfocusedInactiveModifiedBorder': border.ui,
     'tab.unfocusedActiveBorder': palette.interactive.tabUnfocusedActive,
     'tab.lastPinnedBorder': palette.interactive.tabLastPinned,
   }

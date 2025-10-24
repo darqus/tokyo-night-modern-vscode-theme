@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { alpha } from '../../utils/color'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, special, interactive } = palette
+  const { bg, fg, blue, yellow, interactive, special, border } = palette
 
   return {
     'list.dropBackground': bg.lighter,
@@ -23,7 +23,7 @@ export function generateListColors(): Record<string, string> {
     'listFilterWidget.outline': blue.primary,
     'listFilterWidget.noMatchesOutline': interactive.errorOutline,
     'pickerGroup.foreground': fg.brighter,
-    'pickerGroup.border': alpha(special.border, 0.5),
+    'pickerGroup.border': border.ui,
     'scrollbarSlider.background': alpha(special.scrollbar, 0.08),
     'scrollbarSlider.hoverBackground': alpha(special.scrollbar, 0.06),
     'scrollbarSlider.activeBackground': alpha(special.scrollbar, 0.13),

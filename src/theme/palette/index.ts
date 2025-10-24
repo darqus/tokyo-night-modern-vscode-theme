@@ -12,6 +12,17 @@ export const palette: Palette = {
     lightest: '#353852',
   },
 
+  border: {
+    primary: '#29355aff',
+    primary50: '#29355a80',
+    primary70: '#29355ab3',
+    ui: '#29355a99',
+    panel: '#29355a73',
+    widget: '#29355a66',
+    input: '#29355a8c',
+    subtle: '#29355a4d',
+  },
+
   fg: {
     dim: '#636a84',
     muted: '#6a718c',
@@ -74,9 +85,7 @@ export const palette: Palette = {
     regex: '#b4f9f8',
     invalid: '#ff5370',
     selection: '#bbc2e4',
-    indentGuide: '#363b54',
     indentActive: '#42465d',
-    border: '#29355a',
     disabled: '#666e90',
     badge: '#7e83b2',
     scrollbar: '#868bc4',
