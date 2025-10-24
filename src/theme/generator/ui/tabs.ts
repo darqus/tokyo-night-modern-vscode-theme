@@ -1,4 +1,5 @@
 import { palette } from '../../palette'
+import { lighten } from '../../utils/color'
 import { ensureContrast } from '../../utils/contrast'
 
 export function generateTabColors(): Record<string, string> {
@@ -14,8 +15,8 @@ export function generateTabColors(): Record<string, string> {
       bg.main,
       4.5
     ),
-    'tab.activeBackground': bg.main,
-    'tab.inactiveBackground': bg.main,
+    'tab.activeBackground': bg.editor,
+    'tab.inactiveBackground': lighten(bg.main, 0.08),
     'tab.activeForeground': ensureContrast(fg.brighter, bg.main, 4.5),
     'tab.hoverForeground': ensureContrast(fg.brighter, bg.main, 4.5),
     'tab.activeBorder': ensureContrast(blue.primary, bg.main, 3.0),
