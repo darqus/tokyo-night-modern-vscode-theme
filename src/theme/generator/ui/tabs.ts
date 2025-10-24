@@ -16,7 +16,7 @@ export function generateTabColors(): Record<string, string> {
       4.5
     ),
     'tab.activeBackground': bg.editor,
-    'tab.inactiveBackground': lighten(bg.main, 0.08),
+    'tab.inactiveBackground': lighten(bg.main, 0.04),
     'tab.activeForeground': ensureContrast(fg.brighter, bg.main, 4.5),
     'tab.hoverForeground': ensureContrast(fg.brighter, bg.main, 4.5),
     'tab.activeBorder': ensureContrast(blue.primary, bg.main, 3.0),
