@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.10](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.312...v2.3.10) (2025-10-27)
+
+
+### Features
+
+* add screenshot of tokyo night modern theme ([5ba40cf](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5ba40cf7b7b54a3c2434c20dfb5c90e896bda720))
+* **theme:** adjust background colors for better contrast and visibility ([bbafb1b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/bbafb1b07a60d866aae701322e3afd54c5e98ac3))
+* **theme:** adjust border colors and lighten sidebar foreground ([06dffca](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/06dffca7138ce175f5351df21440ee73f3005749))
+
+
+### Bug Fixes
+
+* **theme:** remove sideBySideEditor.border color definition ([5f6d479](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/5f6d479fd7cfad5ce6f4b77429c06a5a7eca05ed))
+
 ### [2.2.312](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.166...v2.2.312) (2025-10-27)
 
 
