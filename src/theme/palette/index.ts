@@ -1,6 +1,7 @@
 import type { Palette } from '../types'
 
 export const palette: Palette = {
+  // Фоновые цвета - упорядочены от темного к светлому
   bg: {
     darkest: '#0d0f17',
     darker: '#101014',
@@ -12,17 +13,19 @@ export const palette: Palette = {
     lightest: '#353852',
   },
 
+  // Границы - упорядочены по прозрачности
   border: {
     primary: '#1e2338ff',
-    primary50: '#1e233880',
     primary70: '#1e2338b3',
-    ui: '#1a1d3099', // Еще темнее
-    panel: '#1a1d3073', // Еще темнее
-    widget: '#1a1d3066', // Еще темнее
-    input: '#1a1d308c', // Еще темнее
-    subtle: '#1a1d304d', // Еще темнее
+    primary50: '#1e233880',
+    ui: '#1a1d3099',
+    panel: '#1a1d3073',
+    widget: '#1a1d3066',
+    input: '#1a1d308c',
+    subtle: '#1a1d304d',
   },
 
+  // Текстовые цвета - упорядочены от тусклого к яркому
   fg: {
     dim: '#636a84',
     muted: '#6a718c',
@@ -32,6 +35,7 @@ export const palette: Palette = {
     brightest: '#c9d2f8',
   },
 
+  // Основные акцентные цвета
   blue: {
     primary: '#3d59a1',
     light: '#6183bb',
@@ -81,57 +85,78 @@ export const palette: Palette = {
     bright: '#fc7b7b',
   },
 
+  // Специальные цвета для UI элементов
   special: {
     regex: '#b4f9f8',
     invalid: '#ff5370',
     selection: '#bbc2e4',
     indentActive: '#42465d',
     disabled: '#666e90',
-    badge: '#0078d4', // Ярко-синий как в dark modern
+    badge: '#0078d4',
     scrollbar: '#868bc4',
     ghostText: '#687198',
     inactive: '#363b54',
   },
 
+  // UI специфичные цвета - сгруппированы по назначению
   ui: {
+    // Базовые цвета
     white: '#ffffff',
-    badgeForeground: '#ffffff', // Белый текст для ярко-синего фона
+    black: '#000000',
+    brightWhite: '#b9c0e0',
+
+    // Интерактивные элементы
     linkActive: '#b9c0e0',
     codeLens: '#6d7597',
-    brightWhite: '#b9c0e0',
-    // Новые цвета из UI модулей
-    preformat: '#a9adbd',
+    badgeForeground: '#ffffff',
+
+    // Отладка
     debugException: '#963c47',
     debugError: '#bb616b',
     debugBreakpointDisabled: '#414761',
     debugBreakpointUnverified: '#c24242',
     stackFrameHighlight: '#e2bd3a',
+
+    // SCM (Source Control Management)
     scmGraphHover: '#ffffff',
     scmGraphRef: '#506fca',
+
+    // Уведомления и меню
     menubarSelection: '#1b1e2e',
     notificationError: '#bb616b',
     notificationWarning: '#bba461',
+
+    // Инпуты и валидация
     inputInfo: '#c9d0f0',
     inputWarningBg: '#c2985b',
     inputErrorBg: '#85353e',
     inputErrorBorder: '#963c47',
+
+    // Diff
     diffDiagonal: '#292e42',
     diffUnchanged: '#282a3b',
+
+    // Скроллбары
     scrollbarShadow: '#000000',
-    black: '#000000',
+
     // Семантические цвета
     parameter: '#d9d4cd',
     defaultLibrary: '#2ac3de',
     commentDoc: '#596184',
-    // Markdown цвета
+
+    // Markdown
     plainPunctuation: '#9abdf5',
     rawInlinePunctuation: '#4e5579',
     heading2: '#61bdf2',
     heading4: '#6d91de',
     heading6: '#868eb3',
     table: '#c0cefc',
+
+    // Форматирование
+    preformat: '#a9adbd',
   },
 
+  // Цвета для скобок
   brackets: {
     blue: '#698cd6',
     cyan: '#68b3de',
@@ -140,6 +165,7 @@ export const palette: Palette = {
     green: '#80a856',
   },
 
+  // Git цвета
   git: {
     modified: '#394b70',
     added: '#164846',
@@ -150,6 +176,7 @@ export const palette: Palette = {
     deletedMinimap: '#944449',
   },
 
+  // Интерактивные состояния
   interactive: {
     hover: '#13131a',
     selected: '#20222c',
@@ -157,12 +184,12 @@ export const palette: Palette = {
     invalid: '#c97018',
     error: '#bb616b',
     errorOutline: '#a6333f',
-    // Дополнительные состояния
     tabInactiveModified: '#1f202e',
     tabUnfocusedActive: '#1f202e',
     tabLastPinned: '#222333',
   },
 
+  // Элементы редактора
   elements: {
     indentGuides: '#2b2b3b',
     indentGuidesBackground: '#232433',
@@ -171,7 +198,7 @@ export const palette: Palette = {
     info: '#1abc9c',
   },
 
-  // Высококонтрастные цвета
+  // Высококонтрастная тема
   highContrast: {
     fg: {
       dim: '#b1bcdf',
@@ -222,21 +249,21 @@ export const palette: Palette = {
     },
     enhanced: {
       text: {
-        primary: '#e2e5f0', // Улучшенный основной текст
-        secondary: '#c5cae5', // Улучшенный вторичный текст
-        tertiary: '#a8aedd', // Улучшенный третичный текст
-        disabled: '#6b7280', // Отключенные элементы
+        primary: '#e2e5f0',
+        secondary: '#c5cae5',
+        tertiary: '#a8aedd',
+        disabled: '#6b7280',
       },
       background: {
-        elevated: '#1f2937', // Повышенные элементы
-        surface: '#111827', // Поверхности
-        overlay: '#00000080', // Оверлеи с прозрачностью
+        elevated: '#1f2937',
+        surface: '#111827',
+        overlay: '#00000080',
       },
       interactive: {
-        hover: '#374151', // Hover состояния
-        active: '#4b5563', // Active состояния
-        selected: '#1e40af', // Выбранные элементы
-        focused: '#1d4ed8', // Фокус
+        hover: '#374151',
+        active: '#4b5563',
+        selected: '#1e40af',
+        focused: '#1d4ed8',
       },
     },
   },
