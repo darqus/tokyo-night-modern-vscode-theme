@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { lighten } from '../../utils'
 
 export function generateTabColors(): Record<string, string> {
-  const { bg, fg, blue, border } = palette
+  const { bg, fg, blue } = palette
 
   return {
     'breadcrumb.background': bg.main,
@@ -23,7 +23,7 @@ export function generateTabColors(): Record<string, string> {
     'tab.activeModifiedBorder': bg.editor,
     'tab.inactiveModifiedBorder': palette.interactive.tabInactiveModified,
     'tab.unfocusedActiveModifiedBorder': blue.primary,
-    'tab.unfocusedInactiveModifiedBorder': border.ui,
+    'tab.unfocusedInactiveModifiedBorder': lighten(bg.light, 0.04),
     'tab.unfocusedActiveBorder': palette.interactive.tabUnfocusedActive,
     'tab.lastPinnedBorder': palette.interactive.tabLastPinned,
   }
