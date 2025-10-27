@@ -1,4 +1,5 @@
 import { palette } from '../../palette'
+import { lighten } from '../../utils'
 
 export function generateTabColors(): Record<string, string> {
   const { bg, fg, blue, border } = palette
@@ -15,7 +16,7 @@ export function generateTabColors(): Record<string, string> {
     'tab.hoverForeground': fg.brighter,
     'tab.activeBorder': blue.primary,
     'tab.inactiveForeground': fg.medium,
-    'tab.border': border.ui,
+    'tab.border': lighten(bg.light, 0.04),
     'tab.unfocusedActiveForeground': fg.brighter,
     'tab.unfocusedInactiveForeground': fg.medium,
     'tab.unfocusedHoverForeground': fg.brighter,

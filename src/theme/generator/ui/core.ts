@@ -8,7 +8,7 @@ export function generateCoreColors(): Record<string, string> {
     foreground: fg.medium,
     descriptionForeground: fg.dim,
     disabledForeground: special.disabled,
-    focusBorder: palette.border.ui,
+    focusBorder: lighten(bg.light, 0.04),
     errorForeground: fg.dim,
     'widget.shadow': alpha(ui.white, 0),
     'scrollbar.shadow': alpha(palette.ui.scrollbarShadow, 0.2),
