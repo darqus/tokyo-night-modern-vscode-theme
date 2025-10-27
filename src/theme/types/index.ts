@@ -240,12 +240,5 @@ export interface AccessibilityPalette {
 }
 
 export interface BorderPalette {
-  primary: string
-  primary50: string
-  primary70: string
   ui: string
-  panel: string
-  widget: string
-  input: string
-  subtle: string
 }

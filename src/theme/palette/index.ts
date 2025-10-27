@@ -15,14 +15,7 @@ export const palette: Palette = {
 
   // Границы - упорядочены по прозрачности
   border: {
-    primary: '#1c2138ff',
-    primary70: '#191e31b3',
-    primary50: '#191e3380',
     ui: '#1a1d3099',
-    panel: '#25283d73',
-    widget: '#25283d66',
-    input: '#1a1d308c',
-    subtle: '#1a1d304d',
   },
 
   // Текстовые цвета - упорядочены от тусклого к яркому
