@@ -3,21 +3,21 @@ import type { Palette } from '../types'
 export const palette: Palette = {
   // Фоновые цвета - упорядочены от темного к светлому
   bg: {
-    darkest: '#0d0f17',
-    darker: '#101014',
-    dark: '#14141b',
-    main: '#101018',
-    editor: '#13121b',
-    light: '#242536',
-    lighter: '#2d2f44',
-    lightest: '#353852',
+    darkest: '#0d1016',
+    darker: '#0f0f14',
+    dark: '#11111a',
+    main: '#10101a',
+    editor: '#11101a',
+    light: '#1e1f33',
+    lighter: '#272942',
+    lightest: '#2e314b',
   },
 
   // Границы - упорядочены по прозрачности
   border: {
-    primary: '#1e2338ff',
-    primary70: '#1e2338b3',
-    primary50: '#1e233880',
+    primary: '#1c2138ff',
+    primary70: '#191e31b3',
+    primary50: '#191e3380',
     ui: '#1a1d3099',
     panel: '#1a1d3073',
     widget: '#1a1d3066',
@@ -27,12 +27,12 @@ export const palette: Palette = {
 
   // Текстовые цвета - упорядочены от тусклого к яркому
   fg: {
-    dim: '#636a84',
-    muted: '#6a718c',
-    medium: '#8389a8',
-    bright: '#a2add2',
-    brighter: '#bbc2e4',
-    brightest: '#c9d2f8',
+    dim: '#5c6481',
+    muted: '#666e8d',
+    medium: '#7e85aa',
+    bright: '#9aa8d4',
+    brighter: '#b3bbe4',
+    brightest: '#bdc7f7',
   },
 
   // Основные акцентные цвета

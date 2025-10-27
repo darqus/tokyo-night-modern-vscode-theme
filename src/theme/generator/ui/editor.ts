@@ -1,5 +1,5 @@
 import { palette } from '../../palette'
-import { alpha, lighten } from '../../utils/color'
+import { alpha } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
   const {
@@ -44,7 +44,7 @@ export function generateEditorColors(): Record<string, string> {
     'editor.lineHighlightBackground': bg.lighter,
     'editorWhitespace.foreground': special.indentActive,
     'editorMarkerNavigation.background': bg.main,
-    'editorHoverWidget.background': lighten(bg.main, 0.02),
+    'editorHoverWidget.background': bg.light,
     'editorHoverWidget.border': border.ui,
     'editorBracketMatch.background': bg.main,
     'editorBracketMatch.border': special.indentActive,
