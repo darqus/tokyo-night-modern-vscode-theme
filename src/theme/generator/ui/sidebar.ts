@@ -1,13 +1,14 @@
 import { palette } from '../../palette'
+import { lighten } from '../../utils/color'
 
 export function generateSidebarColors(): Record<string, string> {
-  const { bg, fg, ui, elements, special, border } = palette
+  const { bg, fg, ui, elements, special } = palette
 
   return {
     'activityBar.background': bg.light,
-    'activityBar.foreground': fg.medium,
+    'activityBar.foreground': fg.bright,
     'activityBar.inactiveForeground': special.inactive,
-    'activityBar.border': border.ui,
+    'activityBar.border': lighten(bg.light, 0.08),
     'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
@@ -15,11 +16,11 @@ export function generateSidebarColors(): Record<string, string> {
     'tree.indentGuidesStroke': elements.indentGuides,
     'sideBar.foreground': fg.medium,
     'sideBar.background': bg.darkest,
-    'sideBar.border': border.ui,
+    'sideBar.border': lighten(bg.light, 0.08),
     'sideBarTitle.foreground': fg.medium,
     'sideBarSectionHeader.background': bg.main,
     'sideBarSectionHeader.foreground': fg.brighter,
-    'sideBarSectionHeader.border': border.ui,
+    'sideBarSectionHeader.border': lighten(bg.light, 0.08),
     'sideBar.dropBackground': bg.lighter,
   }
 }

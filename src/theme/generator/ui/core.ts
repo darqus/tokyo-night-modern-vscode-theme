@@ -1,14 +1,14 @@
 import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { alpha, lighten } from '../../utils/color'
 
 export function generateCoreColors(): Record<string, string> {
-  const { fg, bg, special, blue, ui, border } = palette
+  const { fg, bg, special, blue, ui } = palette
 
   return {
     foreground: fg.medium,
     descriptionForeground: fg.dim,
     disabledForeground: special.disabled,
-    focusBorder: border.ui,
+    focusBorder: palette.border.ui,
     errorForeground: fg.dim,
     'widget.shadow': alpha(ui.white, 0),
     'scrollbar.shadow': alpha(palette.ui.scrollbarShadow, 0.2),
@@ -18,7 +18,7 @@ export function generateCoreColors(): Record<string, string> {
     'settings.headerForeground': blue.light,
     'window.activeBorder': bg.darkest,
     'window.inactiveBorder': bg.darkest,
-    'sash.hoverBorder': border.ui,
+    'sash.hoverBorder': lighten(bg.light, 0.08),
     'toolbar.activeBackground': bg.lightest,
     'toolbar.hoverBackground': bg.lightest,
   }
