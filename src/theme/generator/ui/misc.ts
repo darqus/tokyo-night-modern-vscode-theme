@@ -14,7 +14,6 @@ export function generateMiscColors(): Record<string, string> {
     orange,
     teal,
     special,
-    border,
   } = palette
 
   return {
@@ -55,7 +54,7 @@ export function generateMiscColors(): Record<string, string> {
     'notebook.editorBackground': bg.editor,
     'notebook.cellEditorBackground': bg.main,
     'notebook.cellBorderColor': bg.darker,
-    'notebook.focusedCellBorder': border.ui,
+    'notebook.focusedCellBorder': lighten(bg.light, 0.08),
     'notebook.cellStatusBarItemHoverBackground': bg.light,
     'charts.red': red.main,
     'charts.blue': blue.medium,
@@ -106,8 +105,8 @@ export function generateMiscColors(): Record<string, string> {
     'menu.background': bg.light,
     'menu.selectionForeground': fg.brighter,
     'menu.selectionBackground': bg.lighter,
-    'menu.separatorBackground': border.ui,
-    'menu.border': border.ui,
+    'menu.separatorBackground': lighten(bg.light, 0.08),
+    'menu.border': lighten(bg.light, 0.08),
     'chat.requestBorder': bg.lighter,
     'chat.avatarBackground': blue.primary,
     'chat.avatarForeground': fg.brighter,

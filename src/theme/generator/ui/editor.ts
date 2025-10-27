@@ -1,5 +1,5 @@
 import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { alpha, lighten } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
   const {
@@ -17,7 +17,6 @@ export function generateEditorColors(): Record<string, string> {
     interactive,
     elements,
     special,
-    border,
   } = palette
 
   return {
@@ -45,7 +44,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorWhitespace.foreground': special.indentActive,
     'editorMarkerNavigation.background': bg.main,
     'editorHoverWidget.background': bg.light,
-    'editorHoverWidget.border': border.ui,
+    'editorHoverWidget.border': lighten(bg.light, 0.08),
     'editorBracketMatch.background': bg.main,
     'editorBracketMatch.border': special.indentActive,
     'editorBracketHighlight.foreground1': brackets.blue,
@@ -61,7 +60,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorBracketPairGuide.activeBackground4': brackets.teal,
     'editorBracketPairGuide.activeBackground5': brackets.green,
     'editorBracketPairGuide.activeBackground6': yellow.muted,
-    'editorOverviewRuler.border': border.ui,
+    'editorOverviewRuler.border': lighten(bg.light, 0.08),
     'editorOverviewRuler.errorForeground': red.dark,
     'editorOverviewRuler.warningForeground': yellow.main,
     'editorOverviewRuler.infoForeground': elements.info,
@@ -92,26 +91,26 @@ export function generateEditorColors(): Record<string, string> {
     'minimapGutter.modifiedBackground': git.modifiedMinimap,
     'minimapGutter.addedBackground': git.addedMinimap,
     'minimapGutter.deletedBackground': git.deletedMinimap,
-    'editorGroup.border': border.ui,
+    'editorGroup.border': lighten(bg.light, 0.08),
     'editorGroup.dropBackground': bg.lighter,
     'editorGroupHeader.tabsBorder': bg.darker,
     'editorGroupHeader.tabsBackground': bg.main,
     'editorGroupHeader.noTabsBackground': bg.main,
-    'editorGroupHeader.border': border.ui,
+    'editorGroupHeader.border': lighten(bg.light, 0.08),
     'editorPane.background': bg.editor,
     'editorWidget.foreground': fg.medium,
     'editorWidget.background': bg.light,
-    'editorWidget.border': border.ui,
+    'editorWidget.border': lighten(bg.light, 0.08),
     'editorWidget.resizeBorder': alpha(special.disabled, 0.4),
     'editorSuggestWidget.background': bg.light,
-    'editorSuggestWidget.border': border.ui,
+    'editorSuggestWidget.border': lighten(bg.light, 0.08),
     'editorSuggestWidget.selectedBackground': interactive.selected,
     'editorSuggestWidget.highlightForeground': blue.light,
     'editorCodeLens.foreground': ui.codeLens,
     'editorLightBulb.foreground': yellow.main,
     'editorLightBulbAutoFix.foreground': yellow.main,
     'editorInlayHint.foreground': special.ghostText,
-    'peekView.border': border.ui,
+    'peekView.border': lighten(bg.light, 0.08),
     'peekViewEditor.background': bg.light,
     'peekViewEditor.matchHighlightBackground': alpha(blue.light, 0.4),
     'peekViewTitle.background': bg.light,
