@@ -15,12 +15,12 @@ export const palette: Palette = {
 
   // Текстовые цвета - упорядочены от тусклого к яркому
   fg: {
-    dim: '#5c6481',
-    muted: '#666e8d',
-    medium: '#7e85aa',
+    dim: '#576081',
+    muted: '#5f688d',
+    medium: '#767ea8',
     bright: '#9aa8d4',
-    brighter: '#b3bbe4',
-    brightest: '#bdc7f7',
+    brighter: '#a0abe0',
+    brightest: '#a8b5f3',
   },
 
   // Основные акцентные цвета
@@ -79,11 +79,11 @@ export const palette: Palette = {
     invalid: '#ff5370',
     selection: '#bbc2e4',
     indentActive: '#42465d',
-    disabled: '#666e90',
+    disabled: '#5d668f',
     badge: '#0078d4',
     scrollbar: '#868bc4',
-    ghostText: '#687198',
-    inactive: '#363b54',
+    ghostText: '#606a97',
+    inactive: '#333957',
   },
 
   // UI специфичные цвета - сгруппированы по назначению
@@ -115,7 +115,7 @@ export const palette: Palette = {
     notificationWarning: '#bba461',
 
     // Инпуты и валидация
-    inputInfo: '#c9d0f0',
+    inputInfo: '#a9b5ee',
     inputWarningBg: '#c2985b',
     inputErrorBg: '#85353e',
     inputErrorBorder: '#963c47',
@@ -137,11 +137,11 @@ export const palette: Palette = {
     rawInlinePunctuation: '#4e5579',
     heading2: '#61bdf2',
     heading4: '#6d91de',
-    heading6: '#868eb3',
-    table: '#c0cefc',
+    heading6: '#7580b1',
+    table: '#a2b7fa',
 
     // Форматирование
-    preformat: '#a9adbd',
+    preformat: '#7f8cbe',
   },
 
   // Цвета для скобок
@@ -237,10 +237,10 @@ export const palette: Palette = {
     },
     enhanced: {
       text: {
-        primary: '#e2e5f0',
-        secondary: '#c5cae5',
-        tertiary: '#a8aedd',
-        disabled: '#6b7280',
+        primary: '#bcc6ec',
+        secondary: '#a3ace4',
+        tertiary: '#9ca3dd',
+        disabled: '#546585',
       },
       background: {
         elevated: '#1f2937',
@@ -248,8 +248,8 @@ export const palette: Palette = {
         overlay: '#00000080',
       },
       interactive: {
-        hover: '#374151',
-        active: '#4b5563',
+        hover: '#333f52',
+        active: '#425064',
         selected: '#1e40af',
         focused: '#1d4ed8',
       },
