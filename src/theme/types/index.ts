@@ -40,16 +40,6 @@ export interface Palette {
   git: GitPalette
   interactive: InteractivePalette
   elements: ElementsPalette
-  highContrast: HighContrastPalette
-  accessibility: AccessibilityPalette
-}
-
-export interface HighContrastPalette {
-  fg: ForegroundPalette
-  bg: BackgroundPalette
-  blue: BluePalette
-  red: RedPalette
-  green: GreenPalette
 }
 
 export interface BackgroundPalette {
@@ -203,37 +193,4 @@ export interface ElementsPalette {
   foldBackground: string
   cssPunctuation: string
   info: string
-}
-
-export interface AccessibilityPalette {
-  contrast: {
-    high: string
-    medium: string
-    low: string
-  }
-  semantic: {
-    success: string
-    warning: string
-    error: string
-    info: string
-  }
-  enhanced: {
-    text: {
-      primary: string
-      secondary: string
-      tertiary: string
-      disabled: string
-    }
-    background: {
-      elevated: string
-      surface: string
-      overlay: string
-    }
-    interactive: {
-      hover: string
-      active: string
-      selected: string
-      focused: string
-    }
-  }
 }
