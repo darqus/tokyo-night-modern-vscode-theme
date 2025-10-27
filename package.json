@@ -46,11 +46,10 @@
     "deps:update": "ncu -u",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "test:theme": "jest --testPathPattern=theme",
     "test:accessibility": "jest --testNamePattern=\"Accessibility\"",
     "test:performance": "jest --testNamePattern=\"Performance\"",
-    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:ci": "jest --ci --watchAll=false",
     "test:theme:full": "ts-node scripts/test-theme.ts"
   },
   "devDependencies": {
