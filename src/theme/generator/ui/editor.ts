@@ -92,7 +92,6 @@ export function generateEditorColors(): Record<string, string> {
     'minimapGutter.modifiedBackground': git.modifiedMinimap,
     'minimapGutter.addedBackground': git.addedMinimap,
     'minimapGutter.deletedBackground': git.deletedMinimap,
-    'sideBySideEditor.border': border.ui,
     'editorGroup.border': border.ui,
     'editorGroup.dropBackground': bg.lighter,
     'editorGroupHeader.tabsBorder': bg.darker,
