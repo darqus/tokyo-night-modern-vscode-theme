@@ -43,14 +43,7 @@
     "lint": "biome lint .",
     "format": "biome format --write .",
     "deps:check": "ncu",
-    "deps:update": "ncu -u",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:theme": "jest --testPathPattern=theme",
-    "test:accessibility": "jest --testNamePattern=\"Accessibility\"",
-    "test:performance": "jest --testNamePattern=\"Performance\"",
-    "test:ci": "jest --ci --watchAll=false",
-    "test:theme:full": "ts-node scripts/test-theme.ts"
+    "deps:update": "ncu -u"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
