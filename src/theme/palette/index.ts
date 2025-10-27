@@ -13,14 +13,14 @@ export const palette: Palette = {
   },
 
   border: {
-    primary: '#29355aff',
-    primary50: '#29355a80',
-    primary70: '#29355ab3',
-    ui: '#29355a99',
-    panel: '#29355a73',
-    widget: '#29355a66',
-    input: '#29355a8c',
-    subtle: '#29355a4d',
+    primary: '#1e2338ff',
+    primary50: '#1e233880',
+    primary70: '#1e2338b3',
+    ui: '#1a1d3099', // Еще темнее
+    panel: '#1a1d3073', // Еще темнее
+    widget: '#1a1d3066', // Еще темнее
+    input: '#1a1d308c', // Еще темнее
+    subtle: '#1a1d304d', // Еще темнее
   },
 
   fg: {
