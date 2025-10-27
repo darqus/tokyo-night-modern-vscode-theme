@@ -18,7 +18,7 @@ export function generateCoreColors(): Record<string, string> {
     'settings.headerForeground': blue.light,
     'window.activeBorder': bg.darkest,
     'window.inactiveBorder': bg.darkest,
-    'sash.hoverBorder': lighten(bg.light, 0.08),
+    'sash.hoverBorder': lighten(bg.light, 0.04),
     'toolbar.activeBackground': bg.lightest,
     'toolbar.hoverBackground': bg.lightest,
   }
