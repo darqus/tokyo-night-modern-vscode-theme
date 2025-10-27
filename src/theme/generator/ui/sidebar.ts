@@ -14,7 +14,7 @@ export function generateSidebarColors(): Record<string, string> {
     'activityBarTop.inactiveForeground': special.inactive,
     'tree.indentGuidesStroke': elements.indentGuides,
     'sideBar.foreground': fg.medium,
-    'sideBar.background': bg.main,
+    'sideBar.background': bg.darkest,
     'sideBar.border': border.ui,
     'sideBarTitle.foreground': fg.medium,
     'sideBarSectionHeader.background': bg.main,
