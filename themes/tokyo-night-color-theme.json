@@ -52,7 +52,7 @@
     "checkbox.border": "#191e31b3",
     "activityBar.background": "#1e1f33",
     "activityBar.foreground": "#9aa8d4",
-    "activityBar.inactiveForeground": "#363b54",
+    "activityBar.inactiveForeground": "#666e8d",
     "activityBar.border": "#27283b",
     "activityBarBadge.background": "#0078d4",
     "activityBarBadge.foreground": "#ffffff",
