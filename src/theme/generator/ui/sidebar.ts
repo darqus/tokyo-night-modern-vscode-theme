@@ -1,14 +1,14 @@
 import { palette } from '../../palette'
 
 export function generateSidebarColors(): Record<string, string> {
-  const { bg, fg, blue, ui, elements, special, border } = palette
+  const { bg, fg, ui, elements, special, border } = palette
 
   return {
     'activityBar.background': bg.main,
     'activityBar.foreground': fg.medium,
     'activityBar.inactiveForeground': special.inactive,
     'activityBar.border': border.ui,
-    'activityBarBadge.background': blue.primary,
+    'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
     'activityBarTop.inactiveForeground': special.inactive,
