@@ -4,14 +4,14 @@ export function generatePanelColors(): Record<string, string> {
   const { bg, fg, special, border } = palette
 
   return {
-    'panel.background': bg.main,
+    'panel.background': bg.light,
     'panel.border': border.ui,
     'panelTitle.activeForeground': fg.medium,
     'panelTitle.inactiveForeground': special.indentActive,
     'panelTitle.activeBorder': bg.main,
     'panelInput.border': border.ui,
     'statusBar.foreground': fg.medium,
-    'statusBar.background': bg.main,
+    'statusBar.background': bg.light,
     'statusBar.border': border.ui,
     'statusBar.focusBorder': border.ui,
     'statusBar.noFolderBackground': bg.main,
@@ -24,8 +24,8 @@ export function generatePanelColors(): Record<string, string> {
     'statusBarItem.focusBorder': border.ui,
     'titleBar.activeForeground': fg.medium,
     'titleBar.inactiveForeground': fg.medium,
-    'titleBar.activeBackground': bg.main,
-    'titleBar.inactiveBackground': bg.main,
+    'titleBar.activeBackground': bg.light,
+    'titleBar.inactiveBackground': bg.light,
     'titleBar.border': border.ui,
   }
 }
