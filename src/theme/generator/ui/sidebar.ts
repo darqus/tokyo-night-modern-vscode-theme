@@ -4,7 +4,7 @@ export function generateSidebarColors(): Record<string, string> {
   const { bg, fg, ui, elements, special, border } = palette
 
   return {
-    'activityBar.background': bg.main,
+    'activityBar.background': bg.light,
     'activityBar.foreground': fg.medium,
     'activityBar.inactiveForeground': special.inactive,
     'activityBar.border': border.ui,
