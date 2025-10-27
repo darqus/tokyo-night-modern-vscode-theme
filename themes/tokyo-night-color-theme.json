@@ -50,7 +50,7 @@
     "checkbox.background": "#1e1f33",
     "checkbox.foreground": "#bdc7f7",
     "checkbox.border": "#191e31b3",
-    "activityBar.background": "#10101a",
+    "activityBar.background": "#1e1f33",
     "activityBar.foreground": "#7e85aa",
     "activityBar.inactiveForeground": "#363b54",
     "activityBar.border": "#1a1d3099",
