@@ -42,7 +42,6 @@ export interface Palette {
   elements: ElementsPalette
   highContrast: HighContrastPalette
   accessibility: AccessibilityPalette
-  border: BorderPalette
 }
 
 export interface HighContrastPalette {
@@ -237,8 +236,4 @@ export interface AccessibilityPalette {
       focused: string
     }
   }
-}
-
-export interface BorderPalette {
-  ui: string
 }
