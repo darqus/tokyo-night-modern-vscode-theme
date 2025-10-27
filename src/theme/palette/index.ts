@@ -87,7 +87,7 @@ export const palette: Palette = {
     selection: '#bbc2e4',
     indentActive: '#42465d',
     disabled: '#666e90',
-    badge: '#7e83b2',
+    badge: '#0078d4', // Ярко-синий как в dark modern
     scrollbar: '#868bc4',
     ghostText: '#687198',
     inactive: '#363b54',
@@ -95,7 +95,7 @@ export const palette: Palette = {
 
   ui: {
     white: '#ffffff',
-    badgeForeground: '#b9c0e0',
+    badgeForeground: '#ffffff', // Белый текст для ярко-синего фона
     linkActive: '#b9c0e0',
     codeLens: '#6d7597',
     brightWhite: '#b9c0e0',

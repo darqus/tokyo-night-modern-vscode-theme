@@ -12,7 +12,7 @@ export function generateCoreColors(): Record<string, string> {
     errorForeground: fg.dim,
     'widget.shadow': alpha(ui.white, 0),
     'scrollbar.shadow': alpha(palette.ui.scrollbarShadow, 0.2),
-    'badge.background': alpha(special.badge, 0.19),
+    'badge.background': special.badge,
     'badge.foreground': ui.badgeForeground,
     'icon.foreground': fg.medium,
     'settings.headerForeground': blue.light,

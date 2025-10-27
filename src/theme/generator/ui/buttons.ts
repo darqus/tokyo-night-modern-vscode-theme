@@ -8,7 +8,7 @@ export function generateButtonColors(): Record<string, string> {
     'extensionButton.prominentBackground': alpha(blue.primary, 0.87),
     'extensionButton.prominentHoverBackground': alpha(blue.primary, 0.67),
     'extensionButton.prominentForeground': ui.white,
-    'extensionBadge.remoteBackground': blue.primary,
+    'extensionBadge.remoteBackground': special.badge,
     'extensionBadge.remoteForeground': ui.white,
     'button.background': alpha(blue.primary, 0.67),
     'button.hoverBackground': alpha(blue.primary, 0.87),
