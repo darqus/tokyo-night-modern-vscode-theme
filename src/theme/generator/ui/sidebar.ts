@@ -8,7 +8,7 @@ export function generateSidebarColors(): Record<string, string> {
     'activityBar.background': bg.light,
     'activityBar.foreground': fg.bright,
     'activityBar.inactiveForeground': special.inactive,
-    'activityBar.border': lighten(bg.light, 0.08),
+    'activityBar.border': lighten(bg.light, 0.04),
     'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
@@ -16,11 +16,11 @@ export function generateSidebarColors(): Record<string, string> {
     'tree.indentGuidesStroke': elements.indentGuides,
     'sideBar.foreground': fg.medium,
     'sideBar.background': bg.darkest,
-    'sideBar.border': lighten(bg.light, 0.08),
+    'sideBar.border': lighten(bg.light, 0.04),
     'sideBarTitle.foreground': fg.medium,
     'sideBarSectionHeader.background': bg.main,
     'sideBarSectionHeader.foreground': fg.brighter,
-    'sideBarSectionHeader.border': lighten(bg.light, 0.08),
+    'sideBarSectionHeader.border': lighten(bg.light, 0.04),
     'sideBar.dropBackground': bg.lighter,
   }
 }
