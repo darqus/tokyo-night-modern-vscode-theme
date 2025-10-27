@@ -3,14 +3,14 @@ import type { Palette } from '../types'
 export const palette: Palette = {
   // Фоновые цвета - упорядочены от темного к светлому
   bg: {
-    darkest: '#0d1016',
-    darker: '#0f0f14',
-    dark: '#11111a',
-    main: '#10101a',
-    editor: '#11101a',
-    light: '#1e1f33',
-    lighter: '#272942',
-    lightest: '#2e314b',
+    darkest: '#0f0f1a',
+    darker: '#10101b',
+    dark: '#131320',
+    main: '#171727',
+    editor: '#19192b',
+    light: '#1e1e33',
+    lighter: '#212138',
+    lightest: '#272742',
   },
 
   // Границы - упорядочены по прозрачности
