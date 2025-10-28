@@ -143,12 +143,6 @@ class ReleaseManager {
     }
   }
 
-  /* private runTests(): void {
-    console.log('🧪 Running validation and tests...')
-    this.exec('npm run validate:all')
-    console.log('✅ All validation and tests passed')
-  } */
-
   private buildProject(): void {
     console.log('🏗️  Building project...')
     this.exec('npm run build')
@@ -283,11 +277,6 @@ class ReleaseManager {
         console.log(`Would bump to: ${previewVersion}`)
         return
       }
-
-      // Тестирование
-      /* if (!options.skipTests) {
-        this.runTests()
-      } */
 
       // Сборка
       if (!options.skipBuild) {
