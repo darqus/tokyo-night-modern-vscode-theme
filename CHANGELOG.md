@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.51](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.50...v2.3.51) (2025-10-28)
+
+
+### Bug Fixes
+
+* **theme:** update statusBar debugging background and pink color value ([a1b00e0](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a1b00e09c90caedfe753d87190be88a58d14f251)), closes [#e047e0](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/e047e0)
+
 ### [2.3.50](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.49...v2.3.50) (2025-10-28)
 
 
