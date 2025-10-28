@@ -10,7 +10,7 @@ export const basePalette = {
   orange: '#ff9e64',
   yellow: '#e0af68',
   red: '#f7768e',
-  pink: '#de5971',
+  pink: '#e047e0',
 
   white: '#ffffff',
   black: '#000000',
