@@ -1,51 +1,26 @@
 # Использование генераторов цветов
 
-## Функция deriveColor()
+## Функция mix()
 
 ```typescript
-deriveColor(base: string, target: string): string
+mix(color1: string, color2: string, ratio: number): string
 ```
 
-Связывает производный цвет с базовым для документации и будущей автоматизации.
+Смешивает два цвета в заданной пропорции.
 
 **Параметры:**
+- `color1` - первый цвет
+- `color2` - второй цвет
+- `ratio` - коэффициент смешивания (0-1)
 
-- `base` - базовый цвет из палитры (для документации)
-- `target` - целевой цвет (возвращается как есть)
-
-**Назначение:**
-
-1. Документирование связи между цветами
-2. Упрощение поиска всех производных от базового
-3. Подготовка к автоматической генерации
-
-## Примеры
-
-### Фоновые цвета
-
-```typescript
-const bg = {
-  main: basePalette.background,
-  light: deriveColor(basePalette.background, '#1e1e33'),
-  lighter: deriveColor(basePalette.background, '#212138'),
-}
-```
-
-### Акцентные цвета
-
-```typescript
-blue: {
-  primary: deriveColor(basePalette.blue, '#3d59a1'),
-  medium: basePalette.blue,
-  light: deriveColor(basePalette.blue, '#6183bb'),
-}
-```
-
-### Смешанные цвета
-
+**Пример:**
 ```typescript
 ui: {
   scmGraphRef: mix(basePalette.blue, basePalette.purple, 0.3),
+}
+
+brackets: {
+  cyan: mix(basePalette.cyan, basePalette.blue, 0.3),
 }
 ```
 
@@ -62,14 +37,34 @@ generateForegroundScale(base: string)
 generateColorVariants(base: string)
 ```
 
-## Будущие улучшения
+## Текущая реализация
 
-Возможна замена `deriveColor()` на автоматическую генерацию после калибровки коэффициентов:
+Все цвета в `generated.ts` используют прямые значения для гарантии 100% совпадения:
 
 ```typescript
-// Текущий подход
-darkest: deriveColor(basePalette.background, '#0f0f1a')
+const bg = {
+  darkest: '#0f0f1a',
+  main: basePalette.background,
+  light: '#1e1e33',
+}
+```
 
-// Будущий подход
-darkest: darken(basePalette.background, 0.15)
+Для смешивания цветов используется `mix()`:
+
+```typescript
+ui: {
+  scmGraphRef: mix(basePalette.blue, basePalette.purple, 0.3),
+}
+```
+
+## Будущие улучшения
+
+Возможна автоматическая генерация после калибровки:
+
+```typescript
+// Вместо прямых значений
+const bg = { darkest: '#0f0f1a', ... }
+
+// Можно использовать
+const bg = generateBackgroundScale(basePalette.background)
 ```
