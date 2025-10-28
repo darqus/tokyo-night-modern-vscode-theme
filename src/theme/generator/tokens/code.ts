@@ -52,7 +52,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.function-call meta.function-call.arguments',
         'meta.embedded.inline.phpx constant.other.php',
       ],
-      settings: { foreground: fg.brightest },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Variable Array Key',
@@ -86,7 +86,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Object Property',
       scope: 'variable.other.object.property',
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.brighter },
     },
     {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
@@ -188,7 +188,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: fg.brightest },
+      settings: { foreground: yellow.main },
     },
     {
       name: 'Support Function',
