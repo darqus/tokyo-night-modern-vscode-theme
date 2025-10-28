@@ -193,11 +193,15 @@ class ReleaseManager {
   private commitAndTag(version: string): void {
     console.log('📦 Committing changes and creating tag...')
 
-    this.exec('git add .')
-    this.exec(`git commit -m "chore(release): ${version}"`)
-    this.exec(`git tag -a v${version} -m "Release v${version}"`)
-
-    console.log(`✅ Created commit and tag v${version}`)
+    try {
+      this.exec('git add .')
+      this.exec(`git commit -m "chore(release): v${version}"`)
+      this.exec(`git tag v${version} -m "Release v${version}"`)
+      console.log(`✅ Created commit and tag v${version}`)
+    } catch (error) {
+      console.error('❌ Failed to create commit or tag')
+      throw error
+    }
   }
 
   private pushToRemote(): void {
