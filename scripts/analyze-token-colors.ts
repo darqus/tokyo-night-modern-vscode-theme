@@ -57,7 +57,9 @@ if (similarPairs.length > 0) {
     .sort((a, b) => a.distance - b.distance)
     .slice(0, 15)
     .forEach((pair) => {
-      console.log(`  ${pair.color1} ↔ ${pair.color2} (расстояние: ${pair.distance})`)
+      console.log(
+        `  ${pair.color1} ↔ ${pair.color2} (расстояние: ${pair.distance})`
+      )
       console.log(`    ${pair.token1}`)
       console.log(`    ${pair.token2}\n`)
     })
@@ -68,12 +70,12 @@ if (similarPairs.length > 0) {
 // Анализ основных категорий
 console.log('\n📊 Основные категории токенов:\n')
 const categories = {
-  'Переменные': ['variable', 'Variable'],
-  'Функции': ['function', 'Function', 'method', 'Method'],
+  Переменные: ['variable', 'Variable'],
+  Функции: ['function', 'Function', 'method', 'Method'],
   'Ключевые слова': ['keyword', 'Keyword'],
-  'Строки': ['string', 'String'],
-  'Комментарии': ['comment', 'Comment'],
-  'Типы': ['type', 'Type', 'class', 'Class'],
+  Строки: ['string', 'String'],
+  Комментарии: ['comment', 'Comment'],
+  Типы: ['type', 'Type', 'class', 'Class'],
 }
 
 Object.entries(categories).forEach(([category, keywords]) => {
@@ -81,5 +83,7 @@ Object.entries(categories).forEach(([category, keywords]) => {
     keywords.some((k) => c.name.toLowerCase().includes(k.toLowerCase()))
   )
   const uniqueColors = new Set(tokens.map((t) => t.color))
-  console.log(`  ${category}: ${uniqueColors.size} цветов для ${tokens.length} токенов`)
+  console.log(
+    `  ${category}: ${uniqueColors.size} цветов для ${tokens.length} токенов`
+  )
 })

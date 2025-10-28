@@ -214,5 +214,150 @@ export function generateModernTokens() {
         foreground: palette.blue.light,
       },
     },
+
+    // Rust
+    {
+      name: 'Rust Macros',
+      scope: [
+        'entity.name.function.macro.rust',
+        'support.function.macro.rust',
+        'meta.macro.rust',
+      ],
+      settings: {
+        foreground: palette.cyan.bright,
+        fontStyle: 'bold',
+      },
+    },
+    {
+      name: 'Rust Lifetime',
+      scope: [
+        'storage.modifier.lifetime.rust',
+        'entity.name.type.lifetime.rust',
+      ],
+      settings: {
+        foreground: palette.orange,
+        fontStyle: 'italic',
+      },
+    },
+
+    // Go
+    {
+      name: 'Go Functions',
+      scope: ['entity.name.function.go', 'support.function.go'],
+      settings: {
+        foreground: palette.blue.medium,
+      },
+    },
+
+    // Python Modern (Type Hints)
+    {
+      name: 'Python Type Hints',
+      scope: [
+        'meta.function.parameters.python support.type.python',
+        'meta.function.return-type.python',
+      ],
+      settings: {
+        foreground: palette.purple.light,
+      },
+    },
+    {
+      name: 'Python Decorators',
+      scope: [
+        'entity.name.function.decorator.python',
+        'meta.function.decorator.python',
+      ],
+      settings: {
+        foreground: palette.yellow.main,
+        fontStyle: 'italic',
+      },
+    },
+
+    // Bun/Deno
+    {
+      name: 'Bun/Deno APIs',
+      scope: [
+        'support.variable.bun',
+        'support.variable.deno',
+        'support.class.bun',
+        'support.class.deno',
+      ],
+      settings: {
+        foreground: palette.cyan.dark,
+      },
+    },
+
+    // Solid.js
+    {
+      name: 'Solid.js Signals',
+      scope: ['support.function.solid', 'entity.name.function.signal'],
+      settings: {
+        foreground: palette.blue.light,
+        fontStyle: 'bold',
+      },
+    },
+
+    // Qwik Framework
+    {
+      name: 'Qwik Components',
+      scope: ['entity.name.tag.qwik', 'support.class.component.qwik'],
+      settings: {
+        foreground: palette.purple.bright,
+        fontStyle: 'bold',
+      },
+    },
+
+    // HTMX Attributes
+    {
+      name: 'HTMX Attributes',
+      scope: ['entity.other.attribute-name.html.htmx', 'meta.attribute.htmx'],
+      settings: {
+        foreground: palette.cyan.light,
+      },
+    },
+
+    // Drizzle ORM
+    {
+      name: 'Drizzle ORM',
+      scope: ['support.function.drizzle', 'entity.name.type.drizzle'],
+      settings: {
+        foreground: palette.green.main,
+      },
+    },
+
+    // Hono Framework
+    {
+      name: 'Hono Routes',
+      scope: ['support.function.hono', 'entity.name.function.route.hono'],
+      settings: {
+        foreground: palette.orange,
+      },
+    },
+
+    // Biome/Oxc
+    {
+      name: 'Biome Config',
+      scope: ['support.type.property-name.biome', 'entity.name.tag.biome'],
+      settings: {
+        foreground: palette.yellow.main,
+      },
+    },
+
+    // WebAssembly
+    {
+      name: 'WebAssembly',
+      scope: ['storage.type.wasm', 'keyword.control.wasm'],
+      settings: {
+        foreground: palette.purple.dark,
+      },
+    },
+
+    // Zig
+    {
+      name: 'Zig Language',
+      scope: ['storage.type.zig', 'keyword.control.zig'],
+      settings: {
+        foreground: palette.orange,
+      },
+    },
   ]
 }
