@@ -1,5 +1,5 @@
 export const basePalette = {
-  background: '#171727',
+  background: '#1a1727',
   foreground: '#767ea8',
 
   blue: '#7aa2f7',
