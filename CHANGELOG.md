@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.45](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.36...v2.3.45) (2025-10-28)
+
+
+### Features
+
+* **theme:** add contrast check script and improve color contrast ([873e400](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/873e400e0d9918b25a9061604f9b073d857dd124))
+* **theme:** improve syntax highlighting color diversity ([fb2d0ec](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/fb2d0ecd85769315855cfd493e3eb8f8d12edcea))
+
+
+### Bug Fixes
+
+* **theme:** improve syntax contrast and update colors ([1ff2071](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/1ff20712c6b62cff56b3b3c82bc1925b629e5f8e))
+
 ### [2.3.36](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.21...v2.3.36) (2025-10-28)
 
 
