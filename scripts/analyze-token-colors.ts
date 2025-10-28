@@ -1,9 +1,11 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import type { TokenColor, VSCodeTheme } from '../src/theme/types'
 import { getColorDistance } from '../src/theme/utils/contrast'
 
 const themePath = join(__dirname, '../themes/tokyo-night-color-theme.json')
-const theme = JSON.parse(readFileSync(themePath, 'utf8'))
+
+const theme: VSCodeTheme = JSON.parse(readFileSync(themePath, 'utf8'))
 
 interface TokenPair {
   token1: string
@@ -16,10 +18,12 @@ interface TokenPair {
 const colors: Array<{ name: string; color: string }> = []
 
 // Собираем все цвета токенов
-theme.tokenColors.forEach((token: any) => {
+theme.tokenColors.forEach((token: TokenColor) => {
   if (token.settings?.foreground) {
     colors.push({
-      name: token.name || token.scope,
+      name:
+        token.name ||
+        (typeof token.scope === 'string' ? token.scope : token.scope[0] || ''),
       color: token.settings.foreground,
     })
   }
