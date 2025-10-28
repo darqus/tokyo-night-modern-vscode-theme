@@ -13,7 +13,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Deleted',
       scope: 'markup.deleted',
-      settings: { foreground: red.muted },
+      settings: { foreground: red.main },
     },
     {
       name: 'Changed',

@@ -43,6 +43,7 @@
     "lint": "biome lint .",
     "format": "biome format --write .",
     "check:contrast": "ts-node scripts/check-contrast.ts",
+    "check:syntax": "ts-node scripts/check-syntax-contrast.ts",
     "deps:check": "ncu",
     "deps:update": "ncu -u"
   },

@@ -408,7 +408,7 @@
         "string.quoted.docstring.multi.python constant.character.escape"
       ],
       "settings": {
-        "foreground": "#5f688d"
+        "foreground": "#767ea8"
       }
     },
     {
@@ -429,7 +429,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#596184"
+        "foreground": "#7d85a8"
       }
     },
     {
@@ -441,7 +441,7 @@
         "comment.block.documentation entity.name.type.instance"
       ],
       "settings": {
-        "foreground": "#606a97"
+        "foreground": "#7d85a8"
       }
     },
     {
@@ -648,7 +648,7 @@
         "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic"
       ],
       "settings": {
-        "foreground": "#ba3c97"
+        "foreground": "#de5971"
       }
     },
     {
@@ -1020,7 +1020,7 @@
       "name": "Deleted",
       "scope": "markup.deleted",
       "settings": {
-        "foreground": "#914c54"
+        "foreground": "#f7768e"
       }
     },
     {
@@ -1270,7 +1270,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#4e5579"
+        "foreground": "#7d85a8"
       }
     },
     {
@@ -1377,7 +1377,7 @@
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#4e5579"
+        "foreground": "#7d85a8"
       }
     },
     {
@@ -1415,7 +1415,7 @@
       "scope": "meta.separator",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#5f688d"
+        "foreground": "#767ea8"
       }
     },
     {
@@ -1696,14 +1696,14 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "foreground": "#7aa2f7"
+      "foreground": "#7dcfff"
     },
     "variable.readonly": {
-      "foreground": "#6183bb",
+      "foreground": "#7dcfff",
       "fontStyle": "italic"
     },
     "variable.readonly.default": {
-      "foreground": "#6183bb",
+      "foreground": "#7dcfff",
       "fontStyle": "italic"
     },
     "parameter": {
@@ -1724,7 +1724,7 @@
       "fontStyle": "italic"
     },
     "property.static": {
-      "foreground": "#3d59a1",
+      "foreground": "#6183bb",
       "fontStyle": "bold"
     },
     "property.declaration": {
