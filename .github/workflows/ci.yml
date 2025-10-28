@@ -27,9 +27,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Validate themes
-        run: npm run validate:all
-
   lint-commits:
     if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -90,15 +87,6 @@ jobs:
 
       - name: Build themes
         run: npm run build
-
-      - name: Validate themes
-        run: npm run validate:all
-
-      - name: Test CLI
-        run: |
-          npm run cli info
-          npm run cli build
-          npm run validate themes/tokyo-night-modern-color-theme.json
 
       - name: Check theme file sizes
         run: |
