@@ -1,2 +1,2 @@
-export { palette } from './generated'
 export { basePalette } from './base'
+export { palette } from './generated'
