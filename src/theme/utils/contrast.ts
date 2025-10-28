@@ -1,83 +1,45 @@
-export function getContrastRatio(color1: string, color2: string): number {
-  const rgb1 = hexToRgb(color1)
-  const rgb2 = hexToRgb(color2)
-
-  const l1 = getLuminance(rgb1)
-  const l2 = getLuminance(rgb2)
-
-  return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)
+export function hexToRgb(hex: string): { r: number; g: number; b: number } {
+  const normalized = hex.replace('#', '')
+  const r = parseInt(normalized.slice(0, 2), 16)
+  const g = parseInt(normalized.slice(2, 4), 16)
+  const b = parseInt(normalized.slice(4, 6), 16)
+  return { r, g, b }
 }
 
-export function ensureContrast(
-  foreground: string,
-  background: string,
-  minRatio: number = 4.5
-): string {
-  if (getContrastRatio(foreground, background) >= minRatio) {
-    return foreground
-  }
-
-  // Автоматическое осветление или затемнение для обеспечения контраста
-  return adjustForContrast(foreground, background, minRatio)
-}
-
-export function getLuminance(rgb: { r: number; g: number; b: number }): number {
-  const { r, g, b } = rgb
+export function getLuminance(hex: string): number {
+  const { r, g, b } = hexToRgb(hex)
   const [rs, gs, bs] = [r, g, b].map((c) => {
-    c = c / 255
-    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4
+    const s = c / 255
+    return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4
   })
   return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs
 }
 
-function adjustForContrast(
-  foreground: string,
-  background: string,
-  minRatio: number
-): string {
-  const bgLuminance = getLuminance(hexToRgb(background))
-  let fgRgb = hexToRgb(foreground)
-  let adjustedColor = foreground
-  const maxIterations = 10
-  const step = 15
+export function getContrastRatio(color1: string, color2: string): number {
+  const l1 = getLuminance(color1)
+  const l2 = getLuminance(color2)
+  const lighter = Math.max(l1, l2)
+  const darker = Math.min(l1, l2)
+  return (lighter + 0.05) / (darker + 0.05)
+}
 
-  for (let i = 0; i < maxIterations; i++) {
-    if (getContrastRatio(adjustedColor, background) >= minRatio) {
-      return adjustedColor
-    }
+export function meetsWCAG(
+  fg: string,
+  bg: string,
+  level: 'AA' | 'AAA' = 'AA'
+): boolean {
+  const ratio = getContrastRatio(fg, bg)
+  return level === 'AAA' ? ratio >= 7 : ratio >= 4.5
+}
 
-    if (bgLuminance > 0.5) {
-      // Осветляем для тёмного фона
-      fgRgb = {
-        r: Math.min(255, fgRgb.r + step),
-        g: Math.min(255, fgRgb.g + step),
-        b: Math.min(255, fgRgb.b + step),
-      }
-    } else {
-      // Затемняем для светлого фона
-      fgRgb = {
-        r: Math.max(0, fgRgb.r - step),
-        g: Math.max(0, fgRgb.g - step),
-        b: Math.max(0, fgRgb.b - step),
-      }
-    }
-
-    adjustedColor = rgbToHex(fgRgb.r, fgRgb.g, fgRgb.b)
+export function checkContrast(
+  fg: string,
+  bg: string
+): { ratio: number; aa: boolean; aaa: boolean } {
+  const ratio = getContrastRatio(fg, bg)
+  return {
+    ratio: Math.round(ratio * 100) / 100,
+    aa: ratio >= 4.5,
+    aaa: ratio >= 7,
   }
-
-  return adjustedColor
-}
-
-function hexToRgb(hex: string): { r: number; g: number; b: number } {
-  const normalized = hex.startsWith('#') ? hex : `#${hex}`
-  const r = Number.parseInt(normalized.slice(1, 3), 16)
-  const g = Number.parseInt(normalized.slice(3, 5), 16)
-  const b = Number.parseInt(normalized.slice(5, 7), 16)
-  return { r, g, b }
-}
-
-function rgbToHex(r: number, g: number, b: number): string {
-  const toHex = (n: number) =>
-    Math.max(0, Math.min(255, n)).toString(16).padStart(2, '0')
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`
 }
