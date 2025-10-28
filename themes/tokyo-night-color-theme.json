@@ -353,7 +353,7 @@
     "menu.foreground": "#767ea8",
     "menu.background": "#1e1e33",
     "menu.selectionForeground": "#a0abe0",
-    "menu.selectionBackground": "#212138",
+    "menu.selectionBackground": "#333957",
     "menu.separatorBackground": "#27273b",
     "menu.border": "#27273b",
     "chat.requestBorder": "#212138",

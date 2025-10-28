@@ -104,7 +104,7 @@ export function generateMiscColors(): Record<string, string> {
     'menu.foreground': fg.medium,
     'menu.background': bg.light,
     'menu.selectionForeground': fg.brighter,
-    'menu.selectionBackground': bg.lighter,
+    'menu.selectionBackground': special.inactive,
     'menu.separatorBackground': lighten(bg.light, 0.04),
     'menu.border': lighten(bg.light, 0.04),
     'chat.requestBorder': bg.lighter,
