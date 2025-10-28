@@ -1,5 +1,5 @@
-import { readFileSync } from 'fs'
-import { join } from 'path'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { getColorDistance } from '../src/theme/utils/contrast'
 
 const themePath = join(__dirname, '../themes/tokyo-night-color-theme.json')

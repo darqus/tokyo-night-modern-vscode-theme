@@ -1,6 +1,6 @@
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { generateTheme } from '../src/theme'
-import { writeFileSync } from 'fs'
-import { join } from 'path'
 
 function buildTheme() {
   console.log('🎨 Generating Tokyo Night theme...')
