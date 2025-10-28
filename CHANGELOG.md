@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.48](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.47...v2.3.48) (2025-10-28)
+
+
+### Features
+
+* **theme:** add sticky scroll colors for editor and panel ([db4b45f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/db4b45f4d03357204104443c69401b667535092a))
+
 ### [2.3.47](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.46...v2.3.47) (2025-10-28)
 
 
