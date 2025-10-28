@@ -142,7 +142,7 @@ export const palette: Palette = {
   },
 
   interactive: {
-    hover: '#13131a',
+    hover: '#1f1f33',
     selected: '#20222c',
     highlight: '#7da0dc',
     invalid: '#c97018',
