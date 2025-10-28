@@ -678,7 +678,7 @@
         "meta.embedded.inline.phpx constant.other.php"
       ],
       "settings": {
-        "foreground": "#a8b5f3"
+        "foreground": "#7dcfff"
       }
     },
     {
@@ -720,7 +720,7 @@
       "name": "Object Property",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#a8b5f3"
+        "foreground": "#a0abe0"
       }
     },
     {
@@ -843,7 +843,7 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#a8b5f3"
+        "foreground": "#e0af68"
       }
     },
     {

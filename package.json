@@ -44,6 +44,7 @@
     "format": "biome format --write .",
     "check:contrast": "ts-node scripts/check-contrast.ts",
     "check:syntax": "ts-node scripts/check-syntax-contrast.ts",
+    "analyze:colors": "ts-node scripts/analyze-token-colors.ts",
     "deps:check": "ncu",
     "deps:update": "ncu -u"
   },

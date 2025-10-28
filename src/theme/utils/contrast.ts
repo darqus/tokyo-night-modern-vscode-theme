@@ -43,3 +43,20 @@ export function checkContrast(
     aaa: ratio >= 7,
   }
 }
+
+export function getColorDistance(color1: string, color2: string): number {
+  const rgb1 = hexToRgb(color1)
+  const rgb2 = hexToRgb(color2)
+  const rDiff = rgb1.r - rgb2.r
+  const gDiff = rgb1.g - rgb2.g
+  const bDiff = rgb1.b - rgb2.b
+  return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff)
+}
+
+export function areColorsSimilar(
+  color1: string,
+  color2: string,
+  threshold = 50
+): boolean {
+  return getColorDistance(color1, color2) < threshold
+}
