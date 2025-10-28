@@ -120,7 +120,7 @@ export function generateMarkdownTokens(): TokenColor[] {
       name: 'Markdown - Markup Raw Inline Punctuation',
       scope:
         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-      settings: { foreground: palette.ui.rawInlinePunctuation },
+      settings: { foreground: fg.dim },
     },
     {
       name: 'Markdown - Heading 1',
@@ -196,7 +196,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markdown - Blockquote',
       scope: 'markup.quote punctuation.definition.blockquote.markdown',
-      settings: { foreground: palette.ui.rawInlinePunctuation },
+      settings: { foreground: fg.dim },
     },
     {
       name: 'Markup - Quote',
@@ -225,7 +225,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markdown - Separator',
       scope: 'meta.separator',
-      settings: { fontStyle: 'bold', foreground: fg.muted },
+      settings: { fontStyle: 'bold', foreground: fg.medium },
     },
     {
       name: 'Markup - Table',

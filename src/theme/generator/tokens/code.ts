@@ -26,7 +26,7 @@ export function generateCodeTokens(): TokenColor[] {
         'punctuation.definition.tag',
         'text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic',
       ],
-      settings: { foreground: pink.main },
+      settings: { foreground: pink.light },
     },
     {
       name: 'Globals, PHP Constants, etc',

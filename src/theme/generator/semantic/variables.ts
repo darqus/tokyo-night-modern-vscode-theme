@@ -6,16 +6,16 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
   return {
     // Базовые переменные
     variable: createSemanticToken({
-      foreground: palette.blue.medium,
+      foreground: palette.cyan.light,
     }),
 
     'variable.readonly': createSemanticToken({
-      foreground: palette.blue.light,
+      foreground: palette.cyan.light,
       fontStyle: 'italic',
     }),
 
     'variable.readonly.default': createSemanticToken({
-      foreground: palette.blue.light,
+      foreground: palette.cyan.light,
       fontStyle: 'italic',
     }),
 
@@ -44,7 +44,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'property.static': createSemanticToken({
-      foreground: palette.blue.primary,
+      foreground: palette.blue.light,
       fontStyle: 'bold',
     }),
 
