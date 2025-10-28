@@ -5,13 +5,13 @@ export function generateListColors(): Record<string, string> {
   const { bg, fg, blue, yellow, interactive, special } = palette
 
   return {
-    'list.dropBackground': bg.lighter,
+    'list.dropBackground': bg.lightest,
     'list.deemphasizedForeground': fg.medium,
     'list.activeSelectionBackground': bg.lightest,
     'list.activeSelectionForeground': fg.brighter,
-    'list.inactiveSelectionBackground': bg.light,
+    'list.inactiveSelectionBackground': bg.lightest,
     'list.inactiveSelectionForeground': fg.brighter,
-    'list.focusBackground': bg.light,
+    'list.focusBackground': bg.lightest,
     'list.focusForeground': fg.brighter,
     'list.hoverBackground': interactive.hover,
     'list.hoverForeground': fg.brighter,
@@ -23,7 +23,7 @@ export function generateListColors(): Record<string, string> {
     'listFilterWidget.outline': blue.primary,
     'listFilterWidget.noMatchesOutline': interactive.errorOutline,
     'pickerGroup.foreground': fg.brighter,
-    'pickerGroup.border': lighten(bg.light, 0.04),
+    'pickerGroup.border': lighten(bg.lightest, 0.04),
     'scrollbarSlider.background': alpha(special.scrollbar, 0.04),
     'scrollbarSlider.hoverBackground': alpha(special.scrollbar, 0.06),
     'scrollbarSlider.activeBackground': alpha(special.scrollbar, 0.13),

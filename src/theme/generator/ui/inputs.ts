@@ -22,7 +22,7 @@ export const generateInputColors = (): Record<string, string> => {
     'inputValidation.errorBorder': palette.ui.inputErrorBorder,
     'dropdown.foreground': fg.medium,
     'dropdown.background': bg.dark,
-    'dropdown.listBackground': bg.dark,
+    'dropdown.listBackground': bg.lighter,
   }
 }
 
