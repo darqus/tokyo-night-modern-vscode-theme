@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { lighten } from '../../utils/color'
 
 export function generatePanelColors(): Record<string, string> {
-  const { bg, fg, blue } = palette
+  const { bg, fg, blue, red } = palette
 
   return {
     'panel.background': bg.main,
@@ -17,13 +17,14 @@ export function generatePanelColors(): Record<string, string> {
     'statusBar.border': lighten(bg.light, 0.04),
     'statusBar.focusBorder': lighten(bg.light, 0.04),
     'statusBar.noFolderBackground': bg.main,
-    'statusBar.debuggingBackground': bg.main,
+    'statusBar.debuggingBackground': red.muted,
     'statusBar.debuggingForeground': fg.medium,
     'statusBarItem.activeBackground': bg.darker,
     'statusBarItem.hoverBackground': bg.main,
-    'statusBarItem.prominentBackground': bg.darker,
+    'statusBarItem.prominentBackground': blue.primary,
     'statusBarItem.prominentHoverBackground': bg.main,
     'statusBarItem.focusBorder': lighten(bg.light, 0.04),
+    'statusBarItem.remoteBackground': blue.primary,
     'titleBar.activeForeground': fg.medium,
     'titleBar.inactiveForeground': fg.medium,
     'titleBar.activeBackground': bg.main,
