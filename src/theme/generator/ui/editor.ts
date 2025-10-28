@@ -35,6 +35,7 @@ export function generateEditorColors(): Record<string, string> {
     'editor.wordHighlightBackground': alpha(purple.light, 0.2),
     'editor.wordHighlightStrongBackground': alpha(purple.bright, 0.2),
     'editor.selectionHighlightBackground': alpha(cyan.medium, 0.2),
+    'editorStickyScrollHover.background': alpha(interactive.highlight, 0.2),
     'editorCursor.foreground': fg.brightest,
     'editorIndentGuide.background1': elements.indentGuidesBackground,
     'editorIndentGuide.activeBackground1': special.indentActive,
