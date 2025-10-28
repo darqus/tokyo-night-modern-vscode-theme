@@ -42,6 +42,7 @@
     "release": "ts-node scripts/release.ts",
     "lint": "biome lint .",
     "format": "biome format --write .",
+    "check:contrast": "ts-node scripts/check-contrast.ts",
     "deps:check": "ncu",
     "deps:update": "ncu -u"
   },

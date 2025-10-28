@@ -14,7 +14,7 @@ const bg = {
 }
 
 const fg = {
-  dim: '#576081',
+  dim: '#7d85a8',
   muted: '#5f688d',
   medium: basePalette.foreground,
   bright: '#9aa8d4',
