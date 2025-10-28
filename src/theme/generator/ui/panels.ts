@@ -11,6 +11,7 @@ export function generatePanelColors(): Record<string, string> {
     'panelTitle.inactiveForeground': fg.medium,
     'panelTitle.activeBorder': blue.light,
     'panelInput.border': lighten(bg.light, 0.04),
+    'panelStickyScroll.background': bg.light,
     'statusBar.foreground': fg.medium,
     'statusBar.background': bg.light,
     'statusBar.border': lighten(bg.light, 0.04),
