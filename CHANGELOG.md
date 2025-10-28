@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.50](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.49...v2.3.50) (2025-10-28)
+
+
+### Features
+
+* **theme:** update status bar and panel colors ([0c98e10](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/0c98e10285dea7c0f8748b5afed6158345d8ce5d))
+
 ### [2.3.49](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.48...v2.3.49) (2025-10-28)
 
 ### [2.3.48](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.47...v2.3.48) (2025-10-28)
