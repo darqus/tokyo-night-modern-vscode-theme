@@ -1,5 +1,4 @@
 import { palette } from '../../palette'
-import { lighten } from '../../utils/color'
 
 export function generateSidebarColors(): Record<string, string> {
   const { bg, fg, ui, elements, special } = palette
@@ -8,7 +7,7 @@ export function generateSidebarColors(): Record<string, string> {
     'activityBar.background': bg.light,
     'activityBar.foreground': fg.bright,
     'activityBar.inactiveForeground': fg.muted,
-    'activityBar.border': lighten(bg.light, 0.04),
+    'activityBar.border': bg.lighter,
     'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
@@ -16,11 +15,11 @@ export function generateSidebarColors(): Record<string, string> {
     'tree.indentGuidesStroke': elements.indentGuides,
     'sideBar.foreground': fg.medium,
     'sideBar.background': bg.darkest,
-    'sideBar.border': lighten(bg.light, 0.04),
+    'sideBar.border': bg.lighter,
     'sideBarTitle.foreground': fg.medium,
     'sideBarSectionHeader.background': bg.main,
     'sideBarSectionHeader.foreground': fg.brighter,
-    'sideBarSectionHeader.border': lighten(bg.light, 0.04),
+    'sideBarSectionHeader.border': bg.lighter,
     'sideBar.dropBackground': bg.lighter,
   }
 }
