@@ -5,7 +5,7 @@ export function generatePanelColors(): Record<string, string> {
   const { bg, fg, blue } = palette
 
   return {
-    'panel.background': bg.light,
+    'panel.background': bg.main,
     'panel.border': lighten(bg.light, 0.04),
     'panelTitle.activeForeground': fg.brighter,
     'panelTitle.inactiveForeground': fg.medium,
@@ -13,7 +13,7 @@ export function generatePanelColors(): Record<string, string> {
     'panelInput.border': lighten(bg.light, 0.04),
     'panelStickyScroll.background': bg.light,
     'statusBar.foreground': fg.medium,
-    'statusBar.background': bg.light,
+    'statusBar.background': bg.lighter,
     'statusBar.border': lighten(bg.light, 0.04),
     'statusBar.focusBorder': lighten(bg.light, 0.04),
     'statusBar.noFolderBackground': bg.main,
@@ -26,8 +26,8 @@ export function generatePanelColors(): Record<string, string> {
     'statusBarItem.focusBorder': lighten(bg.light, 0.04),
     'titleBar.activeForeground': fg.medium,
     'titleBar.inactiveForeground': fg.medium,
-    'titleBar.activeBackground': bg.light,
-    'titleBar.inactiveBackground': bg.light,
+    'titleBar.activeBackground': bg.main,
+    'titleBar.inactiveBackground': bg.darker,
     'titleBar.border': lighten(bg.light, 0.04),
   }
 }
