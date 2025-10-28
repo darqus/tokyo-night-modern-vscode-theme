@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.21](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.10...v2.3.21) (2025-10-28)
+
+
+### Features
+
+* **theme:** lighten input, tab, and checkbox border colors ([f88d0d0](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/f88d0d0cdaa69cc2c906d8fb1cdcedee22a54483))
+* **theme:** update panel title active border and input border colors ([1c000e5](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/1c000e502845f6b6c12143628342052873466583))
+
+
+### Bug Fixes
+
+* **theme:** adjust unfocused inactive modified border color ([b69f195](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/b69f19526f594ef0555e461192259a8a9ad54d1e))
+
 ### [2.3.10](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.2.312...v2.3.10) (2025-10-27)
 
 
