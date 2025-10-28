@@ -1692,6 +1692,127 @@
       "settings": {
         "foreground": "#6183bb"
       }
+    },
+    {
+      "name": "Rust Macros",
+      "scope": [
+        "entity.name.function.macro.rust",
+        "support.function.macro.rust",
+        "meta.macro.rust"
+      ],
+      "settings": {
+        "foreground": "#89ddff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Rust Lifetime",
+      "scope": [
+        "storage.modifier.lifetime.rust",
+        "entity.name.type.lifetime.rust"
+      ],
+      "settings": {
+        "foreground": "#ff9e64",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Go Functions",
+      "scope": ["entity.name.function.go", "support.function.go"],
+      "settings": {
+        "foreground": "#7aa2f7"
+      }
+    },
+    {
+      "name": "Python Type Hints",
+      "scope": [
+        "meta.function.parameters.python support.type.python",
+        "meta.function.return-type.python"
+      ],
+      "settings": {
+        "foreground": "#bb9af7"
+      }
+    },
+    {
+      "name": "Python Decorators",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "meta.function.decorator.python"
+      ],
+      "settings": {
+        "foreground": "#e0af68",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Bun/Deno APIs",
+      "scope": [
+        "support.variable.bun",
+        "support.variable.deno",
+        "support.class.bun",
+        "support.class.deno"
+      ],
+      "settings": {
+        "foreground": "#0db9d7"
+      }
+    },
+    {
+      "name": "Solid.js Signals",
+      "scope": ["support.function.solid", "entity.name.function.signal"],
+      "settings": {
+        "foreground": "#6183bb",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Qwik Components",
+      "scope": ["entity.name.tag.qwik", "support.class.component.qwik"],
+      "settings": {
+        "foreground": "#b267e6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "HTMX Attributes",
+      "scope": ["entity.other.attribute-name.html.htmx", "meta.attribute.htmx"],
+      "settings": {
+        "foreground": "#7dcfff"
+      }
+    },
+    {
+      "name": "Drizzle ORM",
+      "scope": ["support.function.drizzle", "entity.name.type.drizzle"],
+      "settings": {
+        "foreground": "#9ece6a"
+      }
+    },
+    {
+      "name": "Hono Routes",
+      "scope": ["support.function.hono", "entity.name.function.route.hono"],
+      "settings": {
+        "foreground": "#ff9e64"
+      }
+    },
+    {
+      "name": "Biome Config",
+      "scope": ["support.type.property-name.biome", "entity.name.tag.biome"],
+      "settings": {
+        "foreground": "#e0af68"
+      }
+    },
+    {
+      "name": "WebAssembly",
+      "scope": ["storage.type.wasm", "keyword.control.wasm"],
+      "settings": {
+        "foreground": "#9d7cd8"
+      }
+    },
+    {
+      "name": "Zig Language",
+      "scope": ["storage.type.zig", "keyword.control.zig"],
+      "settings": {
+        "foreground": "#ff9e64"
+      }
     }
   ],
   "semanticTokenColors": {
@@ -1820,6 +1941,62 @@
     "test.mock": {
       "foreground": "#de5971",
       "fontStyle": "italic"
+    },
+    "macro.rust": {
+      "foreground": "#89ddff",
+      "fontStyle": "bold"
+    },
+    "lifetime.rust": {
+      "foreground": "#ff9e64",
+      "fontStyle": "italic"
+    },
+    "trait.rust": {
+      "foreground": "#bb9af7"
+    },
+    "interface.go": {
+      "foreground": "#0db9d7"
+    },
+    "goroutine.go": {
+      "foreground": "#7aa2f7",
+      "fontStyle": "italic"
+    },
+    "decorator.python": {
+      "foreground": "#e0af68",
+      "fontStyle": "italic"
+    },
+    "typeParameter.python": {
+      "foreground": "#bb9af7"
+    },
+    "signal.solid": {
+      "foreground": "#6183bb",
+      "fontStyle": "bold"
+    },
+    "store.solid": {
+      "foreground": "#7dcfff"
+    },
+    "store.svelte": {
+      "foreground": "#ff9e64",
+      "fontStyle": "bold"
+    },
+    "action.svelte": {
+      "foreground": "#f7768e"
+    },
+    "component.astro": {
+      "foreground": "#f7768e",
+      "fontStyle": "bold"
+    },
+    "model.orm": {
+      "foreground": "#73daca",
+      "fontStyle": "bold"
+    },
+    "relation.orm": {
+      "foreground": "#0db9d7"
+    },
+    "procedure.trpc": {
+      "foreground": "#6183bb"
+    },
+    "middleware.framework": {
+      "foreground": "#e0af68"
     }
   }
 }
