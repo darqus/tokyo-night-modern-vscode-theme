@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.36](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.21...v2.3.36) (2025-10-28)
+
+
+### Features
+
+* **static:** add screenshot of tokyo night modern theme ([3c9170f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/3c9170f4116a3fa45c6216d04e6e11d9eac5b20c))
+* **theme:** implement color derivation functions and update palette ([be16a54](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/be16a548aa9a5c45ac88a076b4e4908d0901645a))
+* **theme:** update tab colors and adjust active border position ([eab6254](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/eab625480d9a06fbf592e630e440ef6313f773bd)), closes [#202030](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/202030)
+* **ui:** adjust tab inactive background color ([24c3480](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/24c3480a82ab967c93ceb1c9ed628fa26aae1d8a))
+
+
+### Bug Fixes
+
+* correct palette exports and formatting ([c2ca16e](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/c2ca16e7470549ac5755669b192926a972ffbf0f))
+* correct the use of process.nextTick in message handling ([996a4db](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/996a4db1a08947e3fda13d5ac613426903d18a92))
+* **theme:** update tab active border style ([bcd0bf4](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/bcd0bf40a129be497eb3949c1a5bf680cdf99ff8))
+
 ### [2.3.21](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.10...v2.3.21) (2025-10-28)
 
 
