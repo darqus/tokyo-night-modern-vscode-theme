@@ -7,7 +7,7 @@ export const generateInputColors = (): Record<string, string> => {
   return {
     'input.background': bg.dark,
     'input.foreground': fg.brighter,
-    'input.border': lighten(bg.light, 0.04),
+    'input.border': lighten(bg.dark, 0.02),
     'input.placeholderForeground': alpha(fg.medium, 0.54),
     'inputOption.activeForeground': fg.brightest,
     'inputOption.activeBackground': alpha(blue.primary, 0.27),
