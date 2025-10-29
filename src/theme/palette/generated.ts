@@ -1,16 +1,16 @@
 import type { Palette } from '../types'
-import { mix } from '../utils/color'
+import { darken, lighten, mix } from '../utils/color'
 import { basePalette } from './base'
 
 const bg = {
-  darkest: mix(basePalette.background, basePalette.black, 0.06),
-  darker: mix(basePalette.background, basePalette.black, 0.04),
-  dark: mix(basePalette.background, basePalette.black, 0.02),
+  darkest: darken(basePalette.background, 0.06),
+  darker: darken(basePalette.background, 0.04),
+  dark: darken(basePalette.background, 0.02),
   main: basePalette.background,
-  editor: mix(basePalette.background, basePalette.white, 0.02),
-  light: mix(basePalette.background, basePalette.white, 0.04),
-  lighter: mix(basePalette.background, basePalette.white, 0.06),
-  lightest: mix(basePalette.background, basePalette.white, 0.08),
+  editor: lighten(basePalette.background, 0.02),
+  light: lighten(basePalette.background, 0.04),
+  lighter: lighten(basePalette.background, 0.06),
+  lightest: lighten(basePalette.background, 0.08),
 }
 
 const fg = {
