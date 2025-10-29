@@ -3,23 +3,23 @@ import { darken, lighten, mix } from '../utils/color'
 import { basePalette } from './base'
 
 const bg = {
-  darkest: darken(basePalette.background, 0.06),
-  darker: darken(basePalette.background, 0.04),
-  dark: darken(basePalette.background, 0.02),
+  darkest: darken(basePalette.background, 0.08),
+  darker: darken(basePalette.background, 0.05),
+  dark: darken(basePalette.background, 0.03),
   main: basePalette.background,
-  editor: lighten(basePalette.background, 0.02),
-  light: lighten(basePalette.background, 0.04),
-  lighter: lighten(basePalette.background, 0.06),
-  lightest: lighten(basePalette.background, 0.08),
+  editor: lighten(basePalette.background, 0.015),
+  light: lighten(basePalette.background, 0.035),
+  lighter: lighten(basePalette.background, 0.055),
+  lightest: lighten(basePalette.background, 0.075),
 }
 
 const fg = {
-  dim: lighten(basePalette.foreground, 0.08),
-  muted: darken(basePalette.foreground, 0.08),
+  dim: lighten(basePalette.foreground, 0.1),
+  muted: darken(basePalette.foreground, 0.12),
   medium: basePalette.foreground,
-  bright: lighten(basePalette.foreground, 0.2),
-  brighter: lighten(basePalette.foreground, 0.25),
-  brightest: lighten(basePalette.foreground, 0.32),
+  bright: lighten(basePalette.foreground, 0.18),
+  brighter: lighten(basePalette.foreground, 0.22),
+  brightest: lighten(basePalette.foreground, 0.28),
 }
 
 export const palette: Palette = {
@@ -79,12 +79,12 @@ export const palette: Palette = {
     regex: lighten(basePalette.cyan, 0.25),
     invalid: mix(basePalette.red, basePalette.orange, 0.3),
     selection: lighten(basePalette.blue, 0.3),
-    indentActive: lighten(basePalette.background, 0.18),
-    disabled: mix(basePalette.foreground, basePalette.background, 0.35),
-    badge: darken(basePalette.blue, 0.4),
-    scrollbar: lighten(basePalette.foreground, 0.15),
-    ghostText: mix(basePalette.foreground, basePalette.background, 0.45),
-    inactive: lighten(basePalette.background, 0.12),
+    indentActive: lighten(basePalette.background, 0.15),
+    disabled: mix(basePalette.foreground, basePalette.background, 0.4),
+    badge: darken(basePalette.blue, 0.35),
+    scrollbar: lighten(basePalette.foreground, 0.12),
+    ghostText: mix(basePalette.foreground, basePalette.background, 0.5),
+    inactive: lighten(basePalette.background, 0.1),
   },
 
   ui: {
@@ -142,21 +142,21 @@ export const palette: Palette = {
   },
 
   interactive: {
-    hover: lighten(basePalette.background, 0.04),
-    selected: lighten(basePalette.background, 0.05),
+    hover: mix(basePalette.background, basePalette.blue, 0.08),
+    selected: mix(basePalette.background, basePalette.blue, 0.12),
     highlight: lighten(basePalette.blue, 0.05),
     invalid: mix(basePalette.orange, basePalette.yellow, 0.3),
     error: darken(basePalette.red, 0.15),
     errorOutline: darken(basePalette.red, 0.3),
-    tabInactiveModified: lighten(basePalette.background, 0.045),
-    tabUnfocusedActive: lighten(basePalette.background, 0.045),
-    tabLastPinned: lighten(basePalette.background, 0.055),
+    tabInactiveModified: lighten(basePalette.background, 0.04),
+    tabUnfocusedActive: lighten(basePalette.background, 0.04),
+    tabLastPinned: lighten(basePalette.background, 0.05),
   },
 
   elements: {
-    indentGuides: lighten(basePalette.background, 0.09),
-    indentGuidesBackground: lighten(basePalette.background, 0.055),
-    foldBackground: darken(basePalette.background, 0.05),
+    indentGuides: lighten(basePalette.background, 0.08),
+    indentGuidesBackground: lighten(basePalette.background, 0.05),
+    foldBackground: darken(basePalette.background, 0.04),
     cssPunctuation: lighten(basePalette.blue, 0.2),
     info: mix(basePalette.teal, basePalette.green, 0.3),
   },

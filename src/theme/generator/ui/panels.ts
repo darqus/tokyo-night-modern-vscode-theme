@@ -12,7 +12,7 @@ export function generatePanelColors(): Record<string, string> {
     'panelTitle.activeBorder': blue.light,
     'panelInput.border': bg.lighter,
     'panelStickyScroll.background': bg.light,
-    'statusBar.foreground': fg.medium,
+    'statusBar.foreground': fg.bright,
     'statusBar.background': bg.lighter,
     'statusBar.border': bg.lighter,
     'statusBar.focusBorder': bg.lighter,
