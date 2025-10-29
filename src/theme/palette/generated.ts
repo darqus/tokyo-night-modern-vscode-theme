@@ -81,7 +81,7 @@ export const palette: Palette = {
     selection: lighten(basePalette.blue, 0.3),
     indentActive: lighten(basePalette.background, 0.15),
     disabled: mix(basePalette.foreground, basePalette.background, 0.4),
-    badge: darken(basePalette.blue, 0.35),
+    badge: '#007acc',
     scrollbar: lighten(basePalette.foreground, 0.12),
     ghostText: mix(basePalette.foreground, basePalette.background, 0.5),
     inactive: lighten(basePalette.background, 0.1),
@@ -115,7 +115,11 @@ export const palette: Palette = {
     defaultLibrary: mix(basePalette.cyan, basePalette.teal, 0.4),
     commentDoc: mix(basePalette.foreground, basePalette.background, 0.3),
     plainPunctuation: lighten(basePalette.blue, 0.2),
-    rawInlinePunctuation: mix(basePalette.foreground, basePalette.background, 0.4),
+    rawInlinePunctuation: mix(
+      basePalette.foreground,
+      basePalette.background,
+      0.4
+    ),
     heading2: lighten(basePalette.cyan, 0.05),
     heading4: darken(basePalette.blue, 0.08),
     heading6: mix(basePalette.blue, basePalette.foreground, 0.4),
