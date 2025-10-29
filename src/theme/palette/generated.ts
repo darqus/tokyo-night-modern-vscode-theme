@@ -3,14 +3,14 @@ import { mix } from '../utils/color'
 import { basePalette } from './base'
 
 const bg = {
-  darkest: '#121220',
-  darker: '#11111f',
-  dark: '#141423',
+  darkest: mix(basePalette.background, basePalette.black, 0.06),
+  darker: mix(basePalette.background, basePalette.black, 0.04),
+  dark: mix(basePalette.background, basePalette.black, 0.02),
   main: basePalette.background,
-  editor: '#1a1a2e',
-  light: '#1f1f33',
-  lighter: '#24243a',
-  lightest: '#2a2a44',
+  editor: mix(basePalette.background, basePalette.white, 0.02),
+  light: mix(basePalette.background, basePalette.white, 0.04),
+  lighter: mix(basePalette.background, basePalette.white, 0.06),
+  lightest: mix(basePalette.background, basePalette.white, 0.08),
 }
 
 const fg = {
