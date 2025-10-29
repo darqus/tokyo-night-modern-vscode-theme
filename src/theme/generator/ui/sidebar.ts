@@ -1,14 +1,14 @@
 import { palette } from '../../palette'
-import { lighten } from '../../utils'
+import { lighten, mix } from '../../utils'
 
 export function generateSidebarColors(): Record<string, string> {
-  const { bg, fg, ui, elements, special } = palette
+  const { bg, fg, ui, elements, special, blue } = palette
 
   return {
-    'activityBar.background': bg.light,
+    'activityBar.background': mix(bg.darkest, blue.primary, 0.1),
     'activityBar.foreground': fg.bright,
     'activityBar.inactiveForeground': fg.muted,
-    'activityBar.border': lighten(bg.light, 0.02),
+    'activityBar.border': lighten(mix(bg.darkest, blue.primary, 0.1), 0.02),
     'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.medium,
