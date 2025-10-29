@@ -100,7 +100,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorGroupHeader.border': lighten(bg.main, 0.02),
     'editorPane.background': bg.editor,
     'editorWidget.foreground': fg.bright,
-    'editorWidget.background': mix(bg.darkest, blue.primary, 0.1),
+    'editorWidget.background': mix(bg.main, blue.primary, 0.15),
     'editorWidget.border': lighten(bg.main, 0.02),
     'editorWidget.resizeBorder': alpha(special.disabled, 0.2),
     'editorSuggestWidget.background': bg.main,
