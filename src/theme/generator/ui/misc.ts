@@ -1,5 +1,5 @@
 import { palette } from '../../palette'
-import { alpha, lighten } from '../../utils/color'
+import { alpha, lighten, mix } from '../../utils/color'
 
 export function generateMiscColors(): Record<string, string> {
   const {
@@ -99,14 +99,17 @@ export function generateMiscColors(): Record<string, string> {
     'notificationsWarningIcon.foreground': palette.ui.notificationWarning,
     'notificationsInfoIcon.foreground': cyan.medium,
     'menubar.selectionForeground': fg.brighter,
-    'menubar.selectionBackground': bg.lighter,
-    'menubar.selectionBorder': palette.ui.menubarSelection,
+    'menubar.selectionBackground': alpha(blue.primary, 0.2),
+    'menubar.selectionBorder': lighten(
+      mix(bg.darkest, blue.primary, 0.1),
+      0.04
+    ),
     'menu.foreground': fg.medium,
-    'menu.background': bg.lighter,
-    'menu.selectionForeground': fg.brighter,
-    'menu.selectionBackground': special.inactive,
+    'menu.background': mix(bg.darkest, blue.primary, 0.1),
+    'menu.selectionForeground': fg.brightest,
+    'menu.selectionBackground': alpha(blue.primary, 0.4),
     'menu.separatorBackground': lighten(bg.lighter, 0.04),
-    'menu.border': lighten(bg.light, 0.04),
+    'menu.border': lighten(mix(bg.darkest, blue.primary, 0.1), 0.04),
     'chat.requestBorder': bg.lighter,
     'chat.avatarBackground': blue.primary,
     'chat.avatarForeground': fg.brighter,
