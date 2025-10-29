@@ -104,11 +104,14 @@ export function generateMiscColors(): Record<string, string> {
       mix(bg.darkest, blue.primary, 0.1),
       0.04
     ),
-    'menu.foreground': fg.medium,
+    'menu.foreground': fg.bright,
     'menu.background': mix(bg.darkest, blue.primary, 0.1),
     'menu.selectionForeground': fg.brightest,
     'menu.selectionBackground': alpha(blue.primary, 0.4),
-    'menu.separatorBackground': lighten(mix(bg.darkest, blue.primary, 0.1), 0.02),
+    'menu.separatorBackground': lighten(
+      mix(bg.darkest, blue.primary, 0.1),
+      0.06
+    ),
     'menu.border': lighten(mix(bg.darkest, blue.primary, 0.1), 0.02),
     'chat.requestBorder': bg.lighter,
     'chat.avatarBackground': blue.primary,
