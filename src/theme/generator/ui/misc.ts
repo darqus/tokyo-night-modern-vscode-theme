@@ -64,7 +64,7 @@ export function generateMiscColors(): Record<string, string> {
     'charts.purple': purple.dark,
     'charts.foreground': fg.bright,
     'charts.lines': bg.main,
-    'scmGraph.historyItemHoverLabelForeground': palette.ui.scmGraphHover,
+    'scmGraph.historyItemHoverLabelForeground': bg.darkest,
     'scmGraph.foreground1': orange,
     'scmGraph.foreground2': yellow.main,
     'scmGraph.foreground3': green.dark,
