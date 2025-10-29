@@ -9,8 +9,8 @@ export const basePalette = {
   purple: '#bb9af7',
   orange: '#ff9e64',
   yellow: '#e0af68',
-  red: '#f7768e',
-  pink: '#e047e0',
+  red: '#f38c9f',
+  pink: '#d86bd8',
 
   white: '#ffffff',
   black: '#000000',
