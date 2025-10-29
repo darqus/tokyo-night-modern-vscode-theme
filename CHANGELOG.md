@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.71](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.55...v2.3.71) (2025-10-29)
+
+
+### Features
+
+* **theme:** add frosty glass effect to hover widget and notifications ([d3d0ff2](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/d3d0ff22932a51988d86afb9fdd95a009a7a78f8))
+* **theme:** enhance menu and menubar selection colors ([3343bc1](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/3343bc1924194d6f6619436a1a2966803bcf7ed7))
+* **theme:** enhance menu colors and contrast in tokyo-night ([d0eec5b](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/d0eec5b080fd880d84de14ff0ec22f6282fde6f7))
+* **theme:** mix blue into status bar and activity bar backgrounds ([898dd7a](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/898dd7a53f686f6fb65636bf382be2d41b95015e))
+
+
+### Bug Fixes
+
+* **theme:** adjust SCM graph hover label color for better visibility ([56f849f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/56f849f47d2ecf542359e8b2985bd9f68e255a46))
+* **theme:** update hover background color in tokyo night theme ([571f7ea](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/571f7ea7c6cd270d383fd6f0cdcc5ad7ea8bc159)), closes [#13131](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/13131) [#1f1f33](https://github.com/darqus/tokyo-night-modern-vscode-theme/issues/1f1f33)
+
 ### [2.3.55](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.53...v2.3.55) (2025-10-28)
 
 ### [2.3.53](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.51...v2.3.53) (2025-10-28)
