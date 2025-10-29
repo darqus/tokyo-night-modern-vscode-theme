@@ -355,7 +355,7 @@
     "menubar.selectionBorder": "#272639",
     "menu.foreground": "#8f95b8",
     "menu.background": "#1e1d31",
-    "menu.selectionForeground": "#9ca2c0",
+    "menu.selectionForeground": "#ffffff",
     "menu.selectionBackground": "#4f69a166",
     "menu.separatorBackground": "#2c2b3d",
     "menu.border": "#232235",
