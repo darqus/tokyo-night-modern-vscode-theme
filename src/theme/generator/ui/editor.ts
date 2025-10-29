@@ -42,7 +42,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorLineNumber.foreground': special.disabled,
     'editorLineNumber.activeForeground': fg.bright,
     'editor.lineHighlightBackground': bg.light,
-    'editorWhitespace.foreground': special.indentActive,
+    'editorWhitespace.foreground': lighten(special.badge, 0.08),
     'editorMarkerNavigation.background': bg.main,
     'editorHoverWidget.background': bg.main,
     'editorHoverWidget.border': lighten(bg.main, 0.02),
