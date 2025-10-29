@@ -1,5 +1,5 @@
 import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { alpha, mix } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
   const {
@@ -38,10 +38,10 @@ export function generateEditorColors(): Record<string, string> {
     'editorStickyScrollHover.background': alpha(interactive.highlight, 0.2),
     'editorCursor.foreground': fg.brightest,
     'editorIndentGuide.background1': elements.indentGuidesBackground,
-    'editorIndentGuide.activeBackground1': special.indentActive,
-    'editorLineNumber.foreground': special.indentActive,
-    'editorLineNumber.activeForeground': fg.medium,
-    'editor.lineHighlightBackground': bg.lighter,
+    'editorIndentGuide.activeBackground1': mix(blue.primary, bg.main, 0.7),
+    'editorLineNumber.foreground': special.disabled,
+    'editorLineNumber.activeForeground': fg.bright,
+    'editor.lineHighlightBackground': bg.light,
     'editorWhitespace.foreground': special.indentActive,
     'editorMarkerNavigation.background': bg.main,
     'editorHoverWidget.background': bg.main,
