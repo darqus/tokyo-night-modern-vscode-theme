@@ -20,7 +20,7 @@ export function generatePanelColors(): Record<string, string> {
     'statusBar.debuggingBackground': darken(purple.bright, 0.8),
     'statusBar.debuggingForeground': fg.medium,
     'statusBarItem.activeBackground': bg.darker,
-    'statusBarItem.hoverBackground': bg.main,
+    'statusBarItem.hoverBackground': mix(bg.darkest, blue.primary, 0.45),
     'statusBarItem.prominentBackground': blue.primary,
     'statusBarItem.prominentHoverBackground': bg.main,
     'statusBarItem.focusBorder': lighten(bg.lighter, 0.02),
