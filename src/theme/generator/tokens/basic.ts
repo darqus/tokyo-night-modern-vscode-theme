@@ -3,7 +3,8 @@ import type { TokenColor } from '../../types'
 import { lighten, mix } from '../../utils/color'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, purple, cyan, red, yellow, pink, teal, special, fg } = palette
+  const { orange, green, purple, cyan, red, yellow, pink, teal, special, fg } =
+    palette
 
   return [
     {
@@ -142,7 +143,10 @@ export function generateBasicTokens(): TokenColor[] {
         'keyword.control.default',
         'meta.import keyword.other',
       ],
-      settings: { foreground: mix(pink.light, purple.light, 0.4), fontStyle: 'italic' },
+      settings: {
+        foreground: mix(pink.light, purple.light, 0.4),
+        fontStyle: 'italic',
+      },
     },
     {
       name: 'Destructuring Variables',
