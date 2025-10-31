@@ -235,9 +235,9 @@ class ReleaseManager {
       // Создаем релиз через GitHub CLI если доступен
       try {
         this.exec(
-          `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}" --label "release"`
+          `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}" --latest`
         )
-        console.log('✅ GitHub release created')
+        console.log('✅ GitHub release created and set as latest')
       } catch (_error) {
         console.warn(
           '⚠️  Could not create GitHub release (gh CLI not available)'
