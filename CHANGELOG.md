@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.79](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.78...v2.3.79) (2025-10-31)
+
+
+### Features
+
+* **theme:** adjust dropdown and debug view background colors ([bb29567](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/bb2956794bbc8a9610d506199ddb2d6a1ef97f1e))
+
 ### [2.3.78](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.77...v2.3.78) (2025-10-31)
 
 ### [2.3.77](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.74...v2.3.77) (2025-10-31)
