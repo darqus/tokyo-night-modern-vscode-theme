@@ -1,5 +1,6 @@
 import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
+import { lighten, mix } from '../../utils/color'
 
 export function generateCssTokens(): TokenColor[] {
   const {
@@ -10,6 +11,7 @@ export function generateCssTokens(): TokenColor[] {
     yellow,
     purple,
     orange,
+    red,
     fg,
     teal,
     elements,
@@ -29,12 +31,12 @@ export function generateCssTokens(): TokenColor[] {
         'support.type.vendored.property-name',
         'support.type.map.key',
       ],
-      settings: { foreground: blue.medium },
+      settings: { foreground: lighten(blue.medium, 0.1) },
     },
     {
       name: 'CSS Font',
       scope: ['support.constant.font-name', 'meta.definition.variable'],
-      settings: { foreground: green.main },
+      settings: { foreground: mix(green.main, yellow.main, 0.2) },
     },
     {
       name: 'CSS Class',
@@ -42,17 +44,17 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class',
         'meta.at-rule.mixin.scss entity.name.function.scss',
       ],
-      settings: { foreground: green.main },
+      settings: { foreground: lighten(yellow.main, 0.1) },
     },
     {
       name: 'CSS ID',
       scope: 'entity.other.attribute-name.id',
-      settings: { foreground: pink.bright },
+      settings: { foreground: mix(pink.bright, red.main, 0.3) },
     },
     {
       name: 'CSS Tag',
       scope: 'entity.name.tag.css',
-      settings: { foreground: cyan.dark },
+      settings: { foreground: mix(cyan.dark, teal.main, 0.3) },
     },
     {
       name: 'CSS Tag Reference, Pseudo & Class Punctuation',
@@ -62,7 +64,7 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class punctuation.definition.entity',
         'entity.name.tag.reference',
       ],
-      settings: { foreground: yellow.main },
+      settings: { foreground: mix(yellow.main, orange, 0.25) },
     },
     {
       name: 'CSS Punctuation',

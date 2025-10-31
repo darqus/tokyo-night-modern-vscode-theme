@@ -1,14 +1,15 @@
 import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
+import { lighten, mix } from '../../utils/color'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { red, pink, blue, cyan, purple, yellow, green, fg, teal } = palette
+  const { red, pink, blue, cyan, purple, yellow, green, orange, fg, teal } = palette
 
   return [
     {
       name: 'Tag',
       scope: 'entity.name.tag',
-      settings: { foreground: red.main },
+      settings: { foreground: lighten(red.main, 0.08) },
     },
     {
       name: 'Tag - Custom / Unrecognized',
@@ -18,7 +19,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.tag.other.unrecognized.html.derivative entity.name.tag',
         'meta.tag',
       ],
-      settings: { foreground: pink.light },
+      settings: { foreground: mix(pink.light, purple.light, 0.3) },
     },
     {
       name: 'Tag Punctuation',
@@ -26,7 +27,7 @@ export function generateCodeTokens(): TokenColor[] {
         'punctuation.definition.tag',
         'text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic',
       ],
-      settings: { foreground: pink.light },
+      settings: { foreground: mix(pink.light, red.main, 0.2) },
     },
     {
       name: 'Globals, PHP Constants, etc',
@@ -38,7 +39,7 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global punctuation.definition.variable',
         'constant.other',
       ],
-      settings: { foreground: yellow.main },
+      settings: { foreground: mix(yellow.main, orange, 0.3) },
     },
     {
       name: 'Variables',
@@ -71,7 +72,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.field.declaration.ts variable.object.property',
         'meta.block entity.name.label',
       ],
-      settings: { foreground: teal.main },
+      settings: { foreground: lighten(teal.main, 0.12) },
     },
     {
       name: 'Object Property',
@@ -97,12 +98,12 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'C-related Block Level Variables',
       scope: 'source.cpp meta.block variable.other',
-      settings: { foreground: red.main },
+      settings: { foreground: mix(red.main, pink.light, 0.3) },
     },
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
-      settings: { foreground: red.main },
+      settings: { foreground: mix(red.main, orange, 0.25) },
     },
     {
       name: 'Methods',
@@ -183,17 +184,17 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: cyan.dark },
+      settings: { foreground: mix(cyan.dark, blue.primary, 0.3) },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: yellow.main },
+      settings: { foreground: mix(yellow.main, green.main, 0.2) },
     },
     {
       name: 'Support Function',
       scope: 'support.function',
-      settings: { foreground: cyan.dark },
+      settings: { foreground: mix(cyan.dark, teal.main, 0.35) },
     },
   ]
 }

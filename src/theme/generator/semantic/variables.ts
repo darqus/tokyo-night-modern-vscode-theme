@@ -1,5 +1,6 @@
 import { palette } from '../../palette'
 import type { SemanticTokenStyle } from '../../types'
+import { darken, lighten, mix } from '../../utils/color'
 import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
@@ -10,27 +11,27 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'variable.readonly': createSemanticToken({
-      foreground: palette.cyan.light,
+      foreground: mix(palette.cyan.light, palette.purple.light, 0.2),
       fontStyle: 'italic',
     }),
 
     'variable.readonly.default': createSemanticToken({
-      foreground: palette.cyan.light,
+      foreground: lighten(palette.cyan.light, 0.08),
       fontStyle: 'italic',
     }),
 
     // Параметры функций
     parameter: createSemanticToken({
-      foreground: palette.ui.parameter,
+      foreground: mix(palette.yellow.main, palette.orange, 0.3),
     }),
 
     'parameter.readonly': createSemanticToken({
-      foreground: palette.ui.parameter,
+      foreground: darken(palette.yellow.main, 0.1),
       fontStyle: 'italic',
     }),
 
     'parameter.type': createSemanticToken({
-      foreground: palette.cyan.light,
+      foreground: mix(palette.cyan.light, palette.blue.medium, 0.4),
     }),
 
     // Свойства
@@ -39,17 +40,17 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'property.readonly': createSemanticToken({
-      foreground: palette.teal.dark,
+      foreground: mix(palette.teal.dark, palette.cyan.dark, 0.3),
       fontStyle: 'italic',
     }),
 
     'property.static': createSemanticToken({
-      foreground: palette.blue.light,
+      foreground: mix(palette.blue.light, palette.cyan.light, 0.4),
       fontStyle: 'bold',
     }),
 
     'property.declaration': createSemanticToken({
-      foreground: palette.teal.main,
+      foreground: lighten(palette.teal.main, 0.1),
       fontStyle: 'bold',
     }),
 
