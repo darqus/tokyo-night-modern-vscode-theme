@@ -14,7 +14,6 @@ export function generateMiscColors(): Record<string, string> {
     orange,
     teal,
     special,
-    ui,
   } = palette
 
   return {
@@ -107,7 +106,7 @@ export function generateMiscColors(): Record<string, string> {
     ),
     'menu.foreground': fg.medium,
     'menu.background': mix(bg.darkest, blue.primary, 0.1),
-    'menu.selectionForeground': ui.white,
+    'menu.selectionForeground': lighten(fg.brightest, 0.4),
     'menu.selectionBackground': alpha(blue.primary, 0.4),
     'menu.separatorBackground': lighten(
       mix(bg.darkest, blue.primary, 0.1),
