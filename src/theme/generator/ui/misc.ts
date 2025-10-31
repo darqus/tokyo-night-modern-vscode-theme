@@ -39,7 +39,7 @@ export function generateMiscColors(): Record<string, string> {
     ),
     'editor.focusedStackFrameHighlightBackground': alpha(teal.main, 0.125),
     'debugView.stateLabelForeground': fg.medium,
-    'debugView.stateLabelBackground': bg.dark,
+    'debugView.stateLabelBackground': mix(bg.darkest, blue.primary, 0.1),
     'debugView.valueChangedHighlight': alpha(blue.primary, 0.67),
     'debugTokenExpression.name': cyan.light,
     'debugTokenExpression.value': fg.bright,
