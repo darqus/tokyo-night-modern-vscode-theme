@@ -105,7 +105,7 @@ export function generateMiscColors(): Record<string, string> {
       mix(bg.darkest, blue.primary, 0.1),
       0.04
     ),
-    'menu.foreground': fg.bright,
+    'menu.foreground': fg.medium,
     'menu.background': mix(bg.darkest, blue.primary, 0.1),
     'menu.selectionForeground': ui.white,
     'menu.selectionBackground': alpha(blue.primary, 0.4),
