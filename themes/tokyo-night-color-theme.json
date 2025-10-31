@@ -117,19 +117,19 @@
     "editorHoverWidget.border": "#1f1c2b",
     "editorBracketMatch.background": "#1a1727",
     "editorBracketMatch.border": "#1f1c2b",
-    "editorBracketHighlight.foreground1": "#6e92de",
-    "editorBracketHighlight.foreground2": "#7cc1fd",
-    "editorBracketHighlight.foreground3": "#a588d9",
-    "editorBracketHighlight.foreground4": "#51998d",
-    "editorBracketHighlight.foreground5": "#7ea555",
-    "editorBracketHighlight.foreground6": "#be9558",
+    "editorBracketHighlight.foreground1": "#8eb0f8",
+    "editorBracketHighlight.foreground2": "#94d8ff",
+    "editorBracketHighlight.foreground3": "#c3a6f8",
+    "editorBracketHighlight.foreground4": "#e2b370",
+    "editorBracketHighlight.foreground5": "#81decf",
+    "editorBracketHighlight.foreground6": "#a6d276",
     "editorBracketHighlight.unexpectedBracket.foreground": "#d67b8c",
-    "editorBracketPairGuide.activeBackground1": "#6e92de",
-    "editorBracketPairGuide.activeBackground2": "#7cc1fd",
-    "editorBracketPairGuide.activeBackground3": "#a588d9",
-    "editorBracketPairGuide.activeBackground4": "#51998d",
-    "editorBracketPairGuide.activeBackground5": "#7ea555",
-    "editorBracketPairGuide.activeBackground6": "#be9558",
+    "editorBracketPairGuide.activeBackground1": "#8eb0f8",
+    "editorBracketPairGuide.activeBackground2": "#94d8ff",
+    "editorBracketPairGuide.activeBackground3": "#c3a6f8",
+    "editorBracketPairGuide.activeBackground4": "#e2b370",
+    "editorBracketPairGuide.activeBackground5": "#81decf",
+    "editorBracketPairGuide.activeBackground6": "#a6d276",
     "editorOverviewRuler.border": "#221f2e",
     "editorOverviewRuler.errorForeground": "#d67b8c",
     "editorOverviewRuler.warningForeground": "#e0af68",
@@ -549,37 +549,56 @@
       }
     },
     {
-      "name": "Operator, Misc",
+      "name": "Operators",
       "scope": [
         "keyword.operator",
+        "keyword.operator.arithmetic",
+        "keyword.operator.assignment",
+        "keyword.operator.bitwise.shift",
+        "entity.name.operator"
+      ],
+      "settings": {
+        "foreground": "#f59dad",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation",
+        "punctuation.definition.string",
+        "punctuation.definition.constant.markdown",
+        "punctuation.terminator.rule",
+        "punctuation.definition.entity",
+        "meta.property-list punctuation.separator.key-value",
+        "meta.at-rule.mixin punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "#8eafd4"
+      }
+    },
+    {
+      "name": "Template & Misc",
+      "scope": [
         "keyword.control.as",
         "keyword.other",
-        "keyword.operator.bitwise.shift",
-        "punctuation",
         "expression.embbeded.vue punctuation.definition.tag",
         "text.html.twig meta.tag.inline.any.html",
         "meta.tag.template.value.twig meta.function.arguments.twig",
         "meta.directive.vue punctuation.separator.key-value.html",
-        "punctuation.definition.constant.markdown",
-        "punctuation.definition.string",
         "punctuation.support.type.property-name",
         "text.html.vue-html meta.tag",
         "meta.attribute.directive",
         "punctuation.definition.keyword",
-        "punctuation.terminator.rule",
-        "punctuation.definition.entity",
         "punctuation.separator.inheritance.php",
         "keyword.other.template",
         "keyword.other.substitution",
-        "entity.name.operator",
-        "meta.property-list punctuation.separator.key-value",
-        "meta.at-rule.mixin punctuation.separator.key-value",
         "meta.at-rule.function variable.parameter.url",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
         "meta.embedded.inline.phpx punctuation.definition.tag.end.html"
       ],
       "settings": {
-        "foreground": "#8dd5ff"
+        "foreground": "#9bc3fd"
       }
     },
     {
@@ -593,7 +612,20 @@
         "meta.import keyword.other"
       ],
       "settings": {
-        "foreground": "#7dcfff"
+        "foreground": "#cc7ee4",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Destructuring Variables",
+      "scope": [
+        "meta.object-binding-pattern-variable.js variable.other.readwrite",
+        "meta.object-binding-pattern-variable.ts variable.other.readwrite",
+        "meta.array-binding-pattern-variable variable.other.readwrite",
+        "variable.other.object.property"
+      ],
+      "settings": {
+        "foreground": "#94cdad"
       }
     },
     {
@@ -622,14 +654,15 @@
         "keyword.operator.or.regexp"
       ],
       "settings": {
-        "foreground": "#bb9af7"
+        "foreground": "#f49aab",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#f38c9f"
+        "foreground": "#f495a7"
       }
     },
     {
@@ -641,7 +674,7 @@
         "meta.tag"
       ],
       "settings": {
-        "foreground": "#d86bd8"
+        "foreground": "#cf79e1"
       }
     },
     {
@@ -651,7 +684,7 @@
         "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic"
       ],
       "settings": {
-        "foreground": "#d86bd8"
+        "foreground": "#dd72cd"
       }
     },
     {
@@ -665,7 +698,7 @@
         "constant.other"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#e9aa67"
       }
     },
     {
@@ -704,7 +737,7 @@
         "meta.block entity.name.label"
       ],
       "settings": {
-        "foreground": "#73daca"
+        "foreground": "#84ded0"
       }
     },
     {
@@ -737,14 +770,14 @@
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#f38c9f"
+        "foreground": "#eb82b0"
       }
     },
     {
       "name": "Other Variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#f38c9f"
+        "foreground": "#f69190"
       }
     },
     {
@@ -839,21 +872,21 @@
         "variable.other.constant.object"
       ],
       "settings": {
-        "foreground": "#6eb6e0"
+        "foreground": "#659fcd"
       }
     },
     {
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#d3b568"
       }
     },
     {
       "name": "Support Function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#6eb6e0"
+        "foreground": "#70c3d8"
       }
     },
     {
@@ -870,14 +903,14 @@
         "support.type.map.key"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#87abf8"
       }
     },
     {
       "name": "CSS Font",
       "scope": ["support.constant.font-name", "meta.definition.variable"],
       "settings": {
-        "foreground": "#9ece6a"
+        "foreground": "#abc86a"
       }
     },
     {
@@ -887,21 +920,21 @@
         "meta.at-rule.mixin.scss entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#9ece6a"
+        "foreground": "#e3b777"
       }
     },
     {
       "name": "CSS ID",
       "scope": "entity.other.attribute-name.id",
       "settings": {
-        "foreground": "#eb82b0"
+        "foreground": "#ed85ab"
       }
     },
     {
       "name": "CSS Tag",
       "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#6eb6e0"
+        "foreground": "#70c1d9"
       }
     },
     {
@@ -913,7 +946,7 @@
         "entity.name.tag.reference"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#e8ab67"
       }
     },
     {
@@ -1823,36 +1856,36 @@
       "foreground": "#7dcfff"
     },
     "variable.readonly": {
-      "foreground": "#7dcfff",
+      "foreground": "#89c4fd",
       "fontStyle": "italic"
     },
     "variable.readonly.default": {
-      "foreground": "#7dcfff",
+      "foreground": "#87d3ff",
       "fontStyle": "italic"
     },
     "parameter": {
-      "foreground": "#faf3e8"
+      "foreground": "#e9aa67"
     },
     "parameter.readonly": {
-      "foreground": "#faf3e8",
+      "foreground": "#ca9e5e",
       "fontStyle": "italic"
     },
     "parameter.type": {
-      "foreground": "#7dcfff"
+      "foreground": "#7cbdfc"
     },
     "property": {
       "foreground": "#73daca"
     },
     "property.readonly": {
-      "foreground": "#56a498",
+      "foreground": "#5da9ae",
       "fontStyle": "italic"
     },
     "property.static": {
-      "foreground": "#688ad2",
+      "foreground": "#70a6e4",
       "fontStyle": "bold"
     },
     "property.declaration": {
-      "foreground": "#73daca",
+      "foreground": "#81decf",
       "fontStyle": "bold"
     },
     "property.defaultLibrary": {
@@ -1865,141 +1898,203 @@
       "foreground": "#79d3ea"
     },
     "function": {
-      "foreground": "#bb9af7"
+      "foreground": "#7aa2f7"
     },
     "function.declaration": {
-      "foreground": "#c0a2f8",
+      "foreground": "#87abf8",
       "fontStyle": "bold"
     },
     "function.defaultLibrary": {
-      "foreground": "#79d3ea"
+      "foreground": "#7dcfff"
     },
     "method": {
-      "foreground": "#bb9af7"
+      "foreground": "#7bb0f9"
     },
     "method.declaration": {
-      "foreground": "#c0a2f8",
+      "foreground": "#85a9f8",
       "fontStyle": "bold"
     },
     "method.static": {
-      "foreground": "#9f83d2",
+      "foreground": "#798dd9",
       "fontStyle": "bold"
     },
     "method.readonly": {
-      "foreground": "#bb9af7",
+      "foreground": "#78b0ec",
       "fontStyle": "italic"
     },
     "constructor": {
-      "foreground": "#c0a2f8",
+      "foreground": "#8ccae8",
       "fontStyle": "bold"
     },
     "function.async": {
-      "foreground": "#bb9af7",
+      "foreground": "#7db0e5",
       "fontStyle": "italic"
     },
     "method.async": {
-      "foreground": "#bb9af7",
+      "foreground": "#70c1d9",
       "fontStyle": "italic"
     },
     "react.hook": {
-      "foreground": "#c0a2f8",
+      "foreground": "#c792ee",
       "fontStyle": "bold"
     },
     "react.component": {
-      "foreground": "#7dcfff",
+      "foreground": "#8ad4ff",
       "fontStyle": "bold"
     },
     "react.props": {
-      "foreground": "#73daca"
+      "foreground": "#76d7da"
+    },
+    "react.state": {
+      "foreground": "#a19df7",
+      "fontStyle": "italic"
     },
     "vue.composable": {
-      "foreground": "#9ece6a",
+      "foreground": "#a8d379",
       "fontStyle": "bold"
     },
     "vue.directive": {
-      "foreground": "#ff9e64",
+      "foreground": "#f6a365",
       "fontStyle": "italic"
+    },
+    "vue.ref": {
+      "foreground": "#8dd390"
     },
     "typescript.generic": {
-      "foreground": "#8dd5ff"
+      "foreground": "#87c6fd"
     },
     "typescript.utility": {
-      "foreground": "#bb9af7",
+      "foreground": "#aca7f9",
       "fontStyle": "italic"
     },
+    "typescript.mapped": {
+      "foreground": "#c597f2"
+    },
     "graphql.type": {
-      "foreground": "#6eb6e0",
+      "foreground": "#70c3d8",
       "fontStyle": "bold"
     },
     "graphql.field": {
-      "foreground": "#73daca"
+      "foreground": "#7eddce"
+    },
+    "graphql.directive": {
+      "foreground": "#c48cee",
+      "fontStyle": "italic"
     },
     "test.describe": {
-      "foreground": "#9ece6a",
+      "foreground": "#94ce97",
       "fontStyle": "bold"
     },
     "test.assertion": {
-      "foreground": "#e0af68"
+      "foreground": "#e8ab67"
     },
     "test.mock": {
-      "foreground": "#d86bd8",
+      "foreground": "#ce7be3",
       "fontStyle": "italic"
     },
+    "test.fixture": {
+      "foreground": "#79d3ea"
+    },
     "macro.rust": {
-      "foreground": "#8dd5ff",
+      "foreground": "#96d8ff",
       "fontStyle": "bold"
     },
     "lifetime.rust": {
-      "foreground": "#ff9e64",
+      "foreground": "#fd9a70",
       "fontStyle": "italic"
     },
     "trait.rust": {
-      "foreground": "#bb9af7"
+      "foreground": "#a89cf7"
     },
-    "interface.go": {
-      "foreground": "#6eb6e0"
-    },
-    "goroutine.go": {
-      "foreground": "#7aa2f7",
+    "derive.rust": {
+      "foreground": "#ccb869",
       "fontStyle": "italic"
     },
+    "interface.go": {
+      "foreground": "#639bca"
+    },
+    "goroutine.go": {
+      "foreground": "#7bb0f9",
+      "fontStyle": "italic"
+    },
+    "channel.go": {
+      "foreground": "#71ccd3"
+    },
     "decorator.python": {
-      "foreground": "#e0af68",
+      "foreground": "#eba967",
       "fontStyle": "italic"
     },
     "typeParameter.python": {
-      "foreground": "#bb9af7"
+      "foreground": "#a8aaf9"
+    },
+    "async.python": {
+      "foreground": "#85aee7",
+      "fontStyle": "italic"
     },
     "signal.solid": {
-      "foreground": "#688ad2",
+      "foreground": "#70a6e4",
       "fontStyle": "bold"
     },
     "store.solid": {
-      "foreground": "#7dcfff"
+      "foreground": "#8ad4ff"
+    },
+    "effect.solid": {
+      "foreground": "#a49df7",
+      "fontStyle": "italic"
     },
     "store.svelte": {
-      "foreground": "#ff9e64",
+      "foreground": "#f6a365",
       "fontStyle": "bold"
     },
     "action.svelte": {
-      "foreground": "#f38c9f"
+      "foreground": "#eb82b0"
+    },
+    "transition.svelte": {
+      "foreground": "#c787eb",
+      "fontStyle": "italic"
     },
     "component.astro": {
-      "foreground": "#f38c9f",
+      "foreground": "#f7918d",
       "fontStyle": "bold"
     },
+    "island.astro": {
+      "foreground": "#7cbffc"
+    },
     "model.orm": {
-      "foreground": "#73daca",
+      "foreground": "#81decf",
       "fontStyle": "bold"
     },
     "relation.orm": {
-      "foreground": "#6eb6e0"
+      "foreground": "#70c4d7"
+    },
+    "migration.orm": {
+      "foreground": "#c9ba69"
     },
     "procedure.trpc": {
-      "foreground": "#688ad2"
+      "foreground": "#6fa2e2"
     },
     "middleware.framework": {
-      "foreground": "#e0af68"
+      "foreground": "#e9aa67"
+    },
+    "router.framework": {
+      "foreground": "#a89cf7"
+    },
+    "schema.validation": {
+      "foreground": "#6297c7",
+      "fontStyle": "bold"
+    },
+    "query.tanstack": {
+      "foreground": "#818fdd"
+    },
+    "mutation.tanstack": {
+      "foreground": "#f7928a"
+    },
+    "utility.css": {
+      "foreground": "#77d6dd"
+    },
+    "runtime.modern": {
+      "foreground": "#70c1d9",
+      "fontStyle": "bold"
     }
   }
 }

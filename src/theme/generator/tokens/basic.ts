@@ -1,8 +1,9 @@
 import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
+import { lighten, mix } from '../../utils/color'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, purple, cyan, red, special, fg } = palette
+  const { orange, green, purple, cyan, red, yellow, pink, teal, special, fg } = palette
 
   return [
     {
@@ -86,36 +87,50 @@ export function generateBasicTokens(): TokenColor[] {
       settings: { foreground: red.main, fontStyle: 'bold' },
     },
     {
-      name: 'Operator, Misc',
+      name: 'Operators',
       scope: [
         'keyword.operator',
+        'keyword.operator.arithmetic',
+        'keyword.operator.assignment',
+        'keyword.operator.bitwise.shift',
+        'entity.name.operator',
+      ],
+      settings: { foreground: lighten(red.main, 0.15), fontStyle: 'bold' },
+    },
+    {
+      name: 'Punctuation',
+      scope: [
+        'punctuation',
+        'punctuation.definition.string',
+        'punctuation.definition.constant.markdown',
+        'punctuation.terminator.rule',
+        'punctuation.definition.entity',
+        'meta.property-list punctuation.separator.key-value',
+        'meta.at-rule.mixin punctuation.separator.key-value',
+      ],
+      settings: { foreground: mix(fg.bright, cyan.bright, 0.4) },
+    },
+    {
+      name: 'Template & Misc',
+      scope: [
         'keyword.control.as',
         'keyword.other',
-        'keyword.operator.bitwise.shift',
-        'punctuation',
         'expression.embbeded.vue punctuation.definition.tag',
         'text.html.twig meta.tag.inline.any.html',
         'meta.tag.template.value.twig meta.function.arguments.twig',
         'meta.directive.vue punctuation.separator.key-value.html',
-        'punctuation.definition.constant.markdown',
-        'punctuation.definition.string',
         'punctuation.support.type.property-name',
         'text.html.vue-html meta.tag',
         'meta.attribute.directive',
         'punctuation.definition.keyword',
-        'punctuation.terminator.rule',
-        'punctuation.definition.entity',
         'punctuation.separator.inheritance.php',
         'keyword.other.template',
         'keyword.other.substitution',
-        'entity.name.operator',
-        'meta.property-list punctuation.separator.key-value',
-        'meta.at-rule.mixin punctuation.separator.key-value',
         'meta.at-rule.function variable.parameter.url',
         'meta.embedded.inline.phpx punctuation.definition.tag.begin.html',
         'meta.embedded.inline.phpx punctuation.definition.tag.end.html',
       ],
-      settings: { foreground: cyan.bright },
+      settings: { foreground: mix(cyan.bright, purple.light, 0.3) },
     },
     {
       name: 'Import, Export, From, Default',
@@ -127,7 +142,17 @@ export function generateBasicTokens(): TokenColor[] {
         'keyword.control.default',
         'meta.import keyword.other',
       ],
-      settings: { foreground: cyan.light },
+      settings: { foreground: mix(pink.light, purple.light, 0.4), fontStyle: 'italic' },
+    },
+    {
+      name: 'Destructuring Variables',
+      scope: [
+        'meta.object-binding-pattern-variable.js variable.other.readwrite',
+        'meta.object-binding-pattern-variable.ts variable.other.readwrite',
+        'meta.array-binding-pattern-variable variable.other.readwrite',
+        'variable.other.object.property',
+      ],
+      settings: { foreground: mix(teal.main, yellow.main, 0.3) },
     },
     {
       name: 'Keyword',
@@ -150,7 +175,7 @@ export function generateBasicTokens(): TokenColor[] {
         'keyword.operator.relational',
         'keyword.operator.or.regexp',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: lighten(red.main, 0.12), fontStyle: 'bold' },
     },
   ]
 }

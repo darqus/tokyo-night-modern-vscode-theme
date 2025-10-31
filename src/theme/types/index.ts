@@ -163,6 +163,7 @@ export interface BracketsPalette {
   purple: string
   teal: string
   green: string
+  yellow: string
 }
 
 export interface GitPalette {

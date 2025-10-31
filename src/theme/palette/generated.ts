@@ -128,11 +128,12 @@ export const palette: Palette = {
   },
 
   brackets: {
-    blue: darken(basePalette.blue, 0.1),
-    cyan: mix(basePalette.cyan, basePalette.blue, 0.3),
-    purple: darken(basePalette.purple, 0.12),
-    teal: darken(basePalette.teal, 0.3),
-    green: darken(basePalette.green, 0.2),
+    blue: lighten(basePalette.blue, 0.15),
+    cyan: lighten(basePalette.cyan, 0.18),
+    purple: lighten(basePalette.purple, 0.12),
+    teal: lighten(basePalette.teal, 0.1),
+    green: lighten(basePalette.green, 0.08),
+    yellow: lighten(basePalette.yellow, 0.05),
   },
 
   git: {
