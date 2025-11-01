@@ -416,18 +416,32 @@ class ReleaseManager {
       writeFileSync(notesFile, releaseNotes, 'utf8')
 
       try {
-        // Создаем релиз через GitHub CLI
-        const command = `gh release create v${version} --title "Release v${version}" --notes-file "${notesFile}" --latest --attach "${vsixPath}"`
+        // Создаем релиз через GitHub CLI (без файла)
+        const createCommand = `gh release create v${version} --title "Release v${version}" --notes-file "${notesFile}" --latest`
 
-        const result = this.execSafe(command)
+        const createResult = this.execSafe(createCommand)
 
-        if (result.success) {
-          console.log(`✅ GitHub release created with ${vsixFileName} attached`)
+        if (createResult.success) {
+          console.log(`✅ GitHub release created`)
+          // Загружаем файл в созданный релиз
+          const uploadCommand = `gh release upload v${version} "${vsixPath}" --clobber`
+          const uploadResult = this.execSafe(uploadCommand)
+
+          if (uploadResult.success) {
+            console.log(`✅ Successfully uploaded ${vsixFileName} to release`)
+          } else {
+            console.error(
+              `❌ Failed to upload ${vsixFileName}: ${uploadResult.error}`
+            )
+            console.log(
+              `📝 Manual upload: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/edit/v${version}`
+            )
+          }
         } else {
           // Проверяем, может релиз уже существует
           if (
-            result.error?.includes('already exists') ||
-            result.error?.includes('release exists')
+            createResult.error?.includes('already exists') ||
+            createResult.error?.includes('release exists')
           ) {
             console.warn(
               `⚠️  Release v${version} already exists, attempting to upload asset...`
@@ -448,7 +462,9 @@ class ReleaseManager {
               )
             }
           } else {
-            console.error(`❌ Failed to create GitHub release: ${result.error}`)
+            console.error(
+              `❌ Failed to create GitHub release: ${createResult.error}`
+            )
             console.log(
               `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
             )
