@@ -237,42 +237,36 @@ class ReleaseManager {
       const repoUrl =
         'https://github.com/darqus/tokyo-night-modern-vscode-theme'
       const downloadLink = `[${vsixFileName}](${repoUrl}/releases/download/v${version}/${vsixFileName})`
-
-      // Проверяем, есть ли уже секция Downloads
-      const downloadsSectionRegex = /## 📦 Downloads[\s\S]*?(?=## |$)/
-      const hasDownloadsSection = downloadsSectionRegex.test(readme)
+      const githubReleasesLink = `[GitHub Releases](${repoUrl}/releases)`
 
       let updatedReadme = readme
 
-      if (hasDownloadsSection) {
-        // Обновляем существующую секцию Downloads
-        updatedReadme = readme.replace(
-          downloadsSectionRegex,
-          `## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+      // Удаляем секцию Downloads, если она есть
+      const downloadsSectionRegex = /## 📦 Downloads[\s\S]*?(?=## |$)/
+      if (downloadsSectionRegex.test(readme)) {
+        updatedReadme = updatedReadme.replace(downloadsSectionRegex, '')
+      }
+
+      // Обновляем ссылку в первом пункте раздела "From .vsix File"
+      // Ищем паттерн: "1. Download the `.vsix` file: [ссылка] or [GitHub Releases]"
+      const vsixSectionRegex =
+        /(### From \.vsix File[^\n]*\n\n1\.\s*Download the `\.vsix` file:\s*)(\[.*?\]\([^)]+\))(\s+or\s+\[GitHub Releases\]\([^)]+\))/m
+
+      if (vsixSectionRegex.test(updatedReadme)) {
+        // Заменяем ссылку в существующем формате
+        updatedReadme = updatedReadme.replace(
+          vsixSectionRegex,
+          `$1${downloadLink} or ${githubReleasesLink}`
         )
       } else {
-        // Добавляем новую секцию Downloads после Installation
-        const installationSectionRegex = /(## 🚀 Installation[\s\S]*?\n\n)/m
-        if (installationSectionRegex.test(readme)) {
-          updatedReadme = readme.replace(
-            installationSectionRegex,
-            `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+        // Альтернативный паттерн для случая без "or [GitHub Releases]"
+        const alternativeRegex =
+          /(### From \.vsix File[^\n]*\n\n1\.\s*Download the `\.vsix` file:\s*)(\[.*?\]\([^)]+\))/m
+        if (alternativeRegex.test(updatedReadme)) {
+          updatedReadme = updatedReadme.replace(
+            alternativeRegex,
+            `$1${downloadLink} or ${githubReleasesLink}`
           )
-        } else {
-          // Если нет секции Installation, добавляем в конец Features
-          const featuresSectionRegex = /(## 🎨 Features[\s\S]*?\n\n)/m
-          if (featuresSectionRegex.test(readme)) {
-            updatedReadme = readme.replace(
-              featuresSectionRegex,
-              `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
-            )
-          } else {
-            // В крайнем случае добавляем в начало файла после заголовка
-            updatedReadme = readme.replace(
-              /(## 🌎 Live Preview[\s\S]*?\n\n)/m,
-              `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
-            )
-          }
         }
       }
 

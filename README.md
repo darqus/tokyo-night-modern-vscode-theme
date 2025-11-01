@@ -19,10 +19,6 @@
 - **Vibrant UI**: Bright borders, high-contrast selections, and consistent color palette
 - **Zero Hardcoded Values**: Every color is computed from base palette
 
-## 📦 Downloads
-
-Download the latest release: [tokyo-night-modern-2.3.1178.vsix](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/download/v2.3.1178/tokyo-night-modern-2.3.1178.vsix)
-
 ## 🚀 Installation
 
 ### From Marketplace
@@ -34,7 +30,7 @@ Download the latest release: [tokyo-night-modern-2.3.1178.vsix](https://github.c
 
 ### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, ect.)
 
-1. Download the `.vsix` file from the [Downloads](#-downloads) section or [GitHub Releases](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases)
+1. Download the `.vsix` file: [tokyo-night-modern-2.3.1178.vsix](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/download/v2.3.1178/tokyo-night-modern-2.3.1178.vsix) or [GitHub Releases](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases)
 2. Open VS Code
 3. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 4. Type "Extensions: Install from VSIX..." and select it
