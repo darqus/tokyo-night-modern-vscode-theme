@@ -320,22 +320,51 @@ class ReleaseManager {
         console.warn('⚠️  Could not extract release notes from changelog')
       }
 
+      // Путь к .vsix файлу
+      const vsixFileName = `tokyo-night-modern-${version}.vsix`
+      const vsixPath = join(process.cwd(), vsixFileName)
+
+      // Проверяем, что файл существует
+      if (!existsSync(vsixPath)) {
+        console.error(`❌ .vsix file not found: ${vsixPath}`)
+        throw new Error(`VSIX file not found: ${vsixFileName}`)
+      }
+
       // Создаем релиз через GitHub CLI если доступен
       try {
-        this.exec(
-          `gh release create v${version} --title "Release v${version}" --notes "${releaseNotes}" --latest`
-        )
-        console.log('✅ GitHub release created and set as latest')
+        // Создаем временный файл для release notes
+        const notesFile = join(process.cwd(), `.release-notes-${version}.tmp`)
+        writeFileSync(notesFile, releaseNotes, 'utf8')
+
+        try {
+          this.exec(
+            `gh release create v${version} --title "Release v${version}" --notes-file "${notesFile}" --latest --attach "${vsixPath}"`
+          )
+          console.log(`✅ GitHub release created with ${vsixFileName} attached`)
+        } finally {
+          // Удаляем временный файл
+          try {
+            if (existsSync(notesFile)) {
+              unlinkSync(notesFile)
+            }
+          } catch {
+            // Игнорируем ошибки удаления временного файла
+          }
+        }
       } catch (_error) {
         console.warn(
-          '⚠️  Could not create GitHub release (gh CLI not available)'
+          '⚠️  Could not create GitHub release (gh CLI not available or not authenticated)'
         )
         console.log(
           `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
         )
+        console.log(`📦 Don't forget to attach ${vsixFileName} to the release`)
       }
     } catch (_error) {
       console.warn('⚠️  Could not create GitHub release')
+      if (_error instanceof Error) {
+        console.warn(`   Error: ${_error.message}`)
+      }
     }
   }
 
