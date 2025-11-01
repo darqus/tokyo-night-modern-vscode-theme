@@ -34,7 +34,47 @@ class ReleaseManager {
       return result ? result.toString().trim() : ''
     } catch (error) {
       console.error(`❌ Command failed: ${command}`)
+      // Выводим stderr если есть
+      if (error instanceof Error && 'stderr' in error) {
+        const stderr = (error as { stderr?: Buffer }).stderr
+        if (stderr) {
+          console.error(`   Error output: ${stderr.toString()}`)
+        }
+      }
       throw error
+    }
+  }
+
+  private execSafe(command: string): {
+    success: boolean
+    output: string
+    error?: string
+  } {
+    try {
+      const output = execSync(command, {
+        encoding: 'utf8',
+        stdio: 'pipe',
+      })
+      return {
+        success: true,
+        output: output ? output.toString().trim() : '',
+      }
+    } catch (error) {
+      let errorMessage = 'Unknown error'
+      if (error instanceof Error) {
+        errorMessage = error.message
+        if ('stderr' in error) {
+          const stderr = (error as { stderr?: Buffer }).stderr
+          if (stderr) {
+            errorMessage = stderr.toString().trim() || errorMessage
+          }
+        }
+      }
+      return {
+        success: false,
+        output: '',
+        error: errorMessage,
+      }
     }
   }
 
@@ -301,10 +341,51 @@ class ReleaseManager {
     console.log('✅ Pushed to remote repository')
   }
 
+  private checkGitHubCLI(): boolean {
+    try {
+      execSync('gh --version', { stdio: 'pipe' })
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  private checkGitHubAuth(): boolean {
+    try {
+      const result = execSync('gh auth status', {
+        stdio: 'pipe',
+        encoding: 'utf8',
+      })
+      return result.includes('Logged in')
+    } catch {
+      return false
+    }
+  }
+
   private createGitHubRelease(version: string): void {
     console.log('🎉 Creating GitHub release...')
 
     try {
+      // Проверяем наличие GitHub CLI
+      if (!this.checkGitHubCLI()) {
+        console.warn('⚠️  GitHub CLI (gh) is not installed')
+        console.log('   Install it: https://cli.github.com/')
+        console.log(
+          `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+        )
+        return
+      }
+
+      // Проверяем авторизацию
+      if (!this.checkGitHubAuth()) {
+        console.warn('⚠️  GitHub CLI is not authenticated')
+        console.log('   Run: gh auth login')
+        console.log(
+          `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+        )
+        return
+      }
+
       // Извлекаем changelog для этой версии
       let releaseNotes = `Release v${version}`
 
@@ -330,40 +411,66 @@ class ReleaseManager {
         throw new Error(`VSIX file not found: ${vsixFileName}`)
       }
 
-      // Создаем релиз через GitHub CLI если доступен
-      try {
-        // Создаем временный файл для release notes
-        const notesFile = join(process.cwd(), `.release-notes-${version}.tmp`)
-        writeFileSync(notesFile, releaseNotes, 'utf8')
+      // Создаем временный файл для release notes
+      const notesFile = join(process.cwd(), `.release-notes-${version}.tmp`)
+      writeFileSync(notesFile, releaseNotes, 'utf8')
 
-        try {
-          this.exec(
-            `gh release create v${version} --title "Release v${version}" --notes-file "${notesFile}" --latest --attach "${vsixPath}"`
-          )
+      try {
+        // Создаем релиз через GitHub CLI
+        const command = `gh release create v${version} --title "Release v${version}" --notes-file "${notesFile}" --latest --attach "${vsixPath}"`
+
+        const result = this.execSafe(command)
+
+        if (result.success) {
           console.log(`✅ GitHub release created with ${vsixFileName} attached`)
-        } finally {
-          // Удаляем временный файл
-          try {
-            if (existsSync(notesFile)) {
-              unlinkSync(notesFile)
+        } else {
+          // Проверяем, может релиз уже существует
+          if (
+            result.error?.includes('already exists') ||
+            result.error?.includes('release exists')
+          ) {
+            console.warn(
+              `⚠️  Release v${version} already exists, attempting to upload asset...`
+            )
+            // Пытаемся загрузить файл в существующий релиз
+            const uploadCommand = `gh release upload v${version} "${vsixPath}" --clobber`
+            const uploadResult = this.execSafe(uploadCommand)
+            if (uploadResult.success) {
+              console.log(
+                `✅ Successfully uploaded ${vsixFileName} to existing release`
+              )
+            } else {
+              console.error(
+                `❌ Failed to upload to existing release: ${uploadResult.error}`
+              )
+              console.log(
+                `📝 Manual release: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/edit/v${version}`
+              )
             }
-          } catch {
-            // Игнорируем ошибки удаления временного файла
+          } else {
+            console.error(`❌ Failed to create GitHub release: ${result.error}`)
+            console.log(
+              `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+            )
+            console.log(
+              `📦 Don't forget to attach ${vsixFileName} to the release`
+            )
           }
         }
-      } catch (_error) {
-        console.warn(
-          '⚠️  Could not create GitHub release (gh CLI not available or not authenticated)'
-        )
-        console.log(
-          `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
-        )
-        console.log(`📦 Don't forget to attach ${vsixFileName} to the release`)
+      } finally {
+        // Удаляем временный файл
+        try {
+          if (existsSync(notesFile)) {
+            unlinkSync(notesFile)
+          }
+        } catch {
+          // Игнорируем ошибки удаления временного файла
+        }
       }
-    } catch (_error) {
+    } catch (error) {
       console.warn('⚠️  Could not create GitHub release')
-      if (_error instanceof Error) {
-        console.warn(`   Error: ${_error.message}`)
+      if (error instanceof Error) {
+        console.warn(`   Error: ${error.message}`)
       }
     }
   }
