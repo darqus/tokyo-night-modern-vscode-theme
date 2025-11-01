@@ -21,10 +21,21 @@
 
 ## 🚀 Installation
 
+### From Marketplace
+
 1. Open VS Code
 2. Press `Ctrl+Shift+X` (Extensions)
 3. Search "Tokyo Night Modern"
 4. Click Install
+
+### From .vsix File
+
+1. Download the `.vsix` file from the [Downloads](#-downloads) section or [GitHub Releases](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases)
+2. Open VS Code
+3. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+4. Type "Extensions: Install from VSIX..." and select it
+5. Navigate to and select the downloaded `.vsix` file
+6. Reload VS Code if prompted
 
 ## 📄 License
 

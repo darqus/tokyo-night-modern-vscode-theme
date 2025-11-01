@@ -1,7 +1,13 @@
 #!/usr/bin/env ts-node
 
 import { execSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  unlinkSync,
+  writeFileSync,
+} from 'node:fs'
 import { join } from 'node:path'
 import { computeVersion } from './versioning'
 
@@ -16,6 +22,7 @@ interface ReleaseOptions {
 class ReleaseManager {
   private packagePath = join(process.cwd(), 'package.json')
   private changelogPath = join(process.cwd(), 'CHANGELOG.md')
+  private readmePath = join(process.cwd(), 'README.md')
 
   private exec(command: string, options: { silent?: boolean } = {}): string {
     console.log(`🔧 ${command}`)
@@ -149,10 +156,91 @@ class ReleaseManager {
     console.log('✅ Build completed')
   }
 
+  private removeOldVsixFiles(): void {
+    console.log('🗑️  Removing old .vsix files...')
+    try {
+      const files = readdirSync(process.cwd())
+      const vsixFiles = files.filter((file) => file.endsWith('.vsix'))
+      for (const file of vsixFiles) {
+        const filePath = join(process.cwd(), file)
+        unlinkSync(filePath)
+        console.log(`  ✓ Removed ${file}`)
+      }
+      if (vsixFiles.length > 0) {
+        console.log(`✅ Removed ${vsixFiles.length} old .vsix file(s)`)
+      } else {
+        console.log('ℹ️  No old .vsix files found')
+      }
+    } catch (error) {
+      console.warn('⚠️  Could not remove old .vsix files:', error)
+    }
+  }
+
   private generatePackage(): void {
     console.log('📦 Generating .vsix package...')
+    // Удаляем старые .vsix файлы перед созданием нового
+    this.removeOldVsixFiles()
     this.exec('npm run build:vsix')
     console.log('✅ Package generated')
+  }
+
+  private updateReadmeWithVsixLink(version: string): void {
+    console.log('📝 Updating README with .vsix download link...')
+    try {
+      if (!existsSync(this.readmePath)) {
+        console.warn('⚠️  README.md not found, skipping update')
+        return
+      }
+
+      const readme = readFileSync(this.readmePath, 'utf8')
+      const vsixFileName = `tokyo-night-modern-${version}.vsix`
+      const repoUrl =
+        'https://github.com/darqus/tokyo-night-modern-vscode-theme'
+      const downloadLink = `[${vsixFileName}](${repoUrl}/releases/download/v${version}/${vsixFileName})`
+
+      // Проверяем, есть ли уже секция Downloads
+      const downloadsSectionRegex = /## 📦 Downloads[\s\S]*?(?=## |$)/
+      const hasDownloadsSection = downloadsSectionRegex.test(readme)
+
+      let updatedReadme = readme
+
+      if (hasDownloadsSection) {
+        // Обновляем существующую секцию Downloads
+        updatedReadme = readme.replace(
+          downloadsSectionRegex,
+          `## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+        )
+      } else {
+        // Добавляем новую секцию Downloads после Installation
+        const installationSectionRegex = /(## 🚀 Installation[\s\S]*?\n\n)/m
+        if (installationSectionRegex.test(readme)) {
+          updatedReadme = readme.replace(
+            installationSectionRegex,
+            `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+          )
+        } else {
+          // Если нет секции Installation, добавляем в конец Features
+          const featuresSectionRegex = /(## 🎨 Features[\s\S]*?\n\n)/m
+          if (featuresSectionRegex.test(readme)) {
+            updatedReadme = readme.replace(
+              featuresSectionRegex,
+              `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+            )
+          } else {
+            // В крайнем случае добавляем в начало файла после заголовка
+            updatedReadme = readme.replace(
+              /(## 🌎 Live Preview[\s\S]*?\n\n)/m,
+              `$1## 📦 Downloads\n\nDownload the latest release: ${downloadLink}\n\n`
+            )
+          }
+        }
+      }
+
+      writeFileSync(this.readmePath, updatedReadme, 'utf8')
+      console.log('✅ README updated with download link')
+    } catch (error) {
+      console.warn('⚠️  Could not update README:', error)
+    }
   }
 
   private bumpVersion(
@@ -295,6 +383,9 @@ class ReleaseManager {
 
       // Генерация .vsix пакета с новой версией
       this.generatePackage()
+
+      // Обновление README со ссылкой на .vsix файл
+      this.updateReadmeWithVsixLink(newVersion)
 
       // Генерация changelog
       this.generateChangelog()
