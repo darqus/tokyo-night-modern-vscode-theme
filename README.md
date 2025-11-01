@@ -21,6 +21,10 @@
 
 ## 🚀 Installation
 
+## 📦 Downloads
+
+Download the latest release: [tokyo-night-modern-2.3.1175.vsix](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/download/v2.3.1175/tokyo-night-modern-2.3.1175.vsix)
+
 ### From Marketplace
 
 1. Open VS Code
