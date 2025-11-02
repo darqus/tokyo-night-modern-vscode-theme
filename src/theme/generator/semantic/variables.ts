@@ -5,7 +5,7 @@ import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
   return {
-    // Базовые переменные
+    // Base variables
     variable: createSemanticToken({
       foreground: palette.cyan.light,
     }),
@@ -20,7 +20,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'italic',
     }),
 
-    // Параметры функций
+    // Function parameters
     parameter: createSemanticToken({
       foreground: mix(palette.yellow.main, palette.orange, 0.3),
     }),
@@ -34,7 +34,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
       foreground: mix(palette.cyan.light, palette.blue.medium, 0.4),
     }),
 
-    // Свойства
+    // Properties
     property: createSemanticToken({
       foreground: palette.teal.main,
     }),
@@ -54,7 +54,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'bold',
     }),
 
-    // Стандартная библиотека
+    // Standard library
     'property.defaultLibrary': createSemanticToken({
       foreground: palette.ui.defaultLibrary,
     }),

@@ -39,6 +39,7 @@ export const COLOR_MIXES = {
 
   // Teal color adjustments
   TEAL_DARK_DARKEN: 0.25,
+  TEAL_BRACKETS_LIGHTEN: 0.1,
 
   // Green color adjustments
   GREEN_CYAN_MIX: 0.4,

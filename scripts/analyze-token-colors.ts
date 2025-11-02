@@ -3,9 +3,23 @@ import { join } from 'node:path'
 import type { TokenColor, VSCodeTheme } from '../src/theme/types'
 import { getColorDistance } from '../src/theme/utils/contrast'
 
+function sanitizeOutput(text: string): string {
+  // Remove control characters
+  return text.replace(/[\x00-\x1F\x7F-\x9F]/g, '')
+}
+
 const themePath = join(__dirname, '../themes/tokyo-night-color-theme.json')
 
-const theme: VSCodeTheme = JSON.parse(readFileSync(themePath, 'utf8'))
+let theme: VSCodeTheme
+try {
+  theme = JSON.parse(readFileSync(themePath, 'utf8'))
+} catch (error) {
+  console.error(
+    'Failed to read theme file:',
+    error instanceof Error ? error.message : error
+  )
+  process.exit(1)
+}
 
 interface TokenPair {
   token1: string
@@ -18,34 +32,52 @@ interface TokenPair {
 const colors: Array<{ name: string; color: string }> = []
 
 // Собираем все цвета токенов
-theme.tokenColors.forEach((token: TokenColor) => {
-  if (token.settings?.foreground) {
-    colors.push({
-      name:
-        token.name ||
-        (typeof token.scope === 'string' ? token.scope : token.scope[0] || ''),
-      color: token.settings.foreground,
-    })
-  }
-})
+try {
+  theme.tokenColors.forEach((token: TokenColor) => {
+    if (token.settings?.foreground) {
+      colors.push({
+        name:
+          token.name ||
+          (typeof token.scope === 'string'
+            ? token.scope
+            : token.scope[0] || ''),
+        color: token.settings.foreground,
+      })
+    }
+  })
+} catch (error) {
+  console.error(
+    'Error processing token colors:',
+    error instanceof Error ? error.message : error
+  )
+  process.exit(1)
+}
 
 // Находим похожие цвета
 const similarPairs: TokenPair[] = []
 const SIMILARITY_THRESHOLD = 50
 
-for (let i = 0; i < colors.length; i++) {
-  for (let j = i + 1; j < colors.length; j++) {
-    const distance = getColorDistance(colors[i].color, colors[j].color)
-    if (distance < SIMILARITY_THRESHOLD && distance > 0) {
-      similarPairs.push({
-        token1: colors[i].name,
-        token2: colors[j].name,
-        color1: colors[i].color,
-        color2: colors[j].color,
-        distance: Math.round(distance),
-      })
+try {
+  for (let i = 0; i < colors.length; i++) {
+    for (let j = i + 1; j < colors.length; j++) {
+      const distance = getColorDistance(colors[i].color, colors[j].color)
+      if (distance < SIMILARITY_THRESHOLD && distance > 0) {
+        similarPairs.push({
+          token1: colors[i].name,
+          token2: colors[j].name,
+          color1: colors[i].color,
+          color2: colors[j].color,
+          distance: Math.round(distance),
+        })
+      }
     }
   }
+} catch (error) {
+  console.error(
+    'Error calculating color distances:',
+    error instanceof Error ? error.message : error
+  )
+  process.exit(1)
 }
 
 console.log('🎨 Анализ цветового разнообразия токенов\n')
@@ -62,10 +94,10 @@ if (similarPairs.length > 0) {
     .slice(0, 15)
     .forEach((pair) => {
       console.log(
-        `  ${pair.color1} ↔ ${pair.color2} (расстояние: ${pair.distance})`
+        `  ${sanitizeOutput(pair.color1)} ↔ ${sanitizeOutput(pair.color2)} (расстояние: ${pair.distance})`
       )
-      console.log(`    ${pair.token1}`)
-      console.log(`    ${pair.token2}\n`)
+      console.log(`    ${sanitizeOutput(pair.token1)}`)
+      console.log(`    ${sanitizeOutput(pair.token2)}\n`)
     })
 } else {
   console.log('✅ Все цвета достаточно различимы')
@@ -73,21 +105,25 @@ if (similarPairs.length > 0) {
 
 // Анализ основных категорий
 console.log('\n📊 Основные категории токенов:\n')
-const categories = {
-  Переменные: ['variable', 'Variable'],
-  Функции: ['function', 'Function', 'method', 'Method'],
-  'Ключевые слова': ['keyword', 'Keyword'],
-  Строки: ['string', 'String'],
-  Комментарии: ['comment', 'Comment'],
-  Типы: ['type', 'Type', 'class', 'Class'],
+const tokenCategories = {
+  Variables: ['variable', 'Variable'],
+  Functions: ['function', 'Function', 'method', 'Method'],
+  Keywords: ['keyword', 'Keyword'],
+  Strings: ['string', 'String'],
+  Comments: ['comment', 'Comment'],
+  Types: ['type', 'Type', 'class', 'Class'],
 }
 
-Object.entries(categories).forEach(([category, keywords]) => {
-  const tokens = colors.filter((c) =>
-    keywords.some((k) => c.name.toLowerCase().includes(k.toLowerCase()))
+Object.entries(tokenCategories).forEach(([categoryName, searchKeywords]) => {
+  const categoryTokens = colors.filter((tokenEntry) =>
+    searchKeywords.some((keyword) =>
+      tokenEntry.name.toLowerCase().includes(keyword.toLowerCase())
+    )
   )
-  const uniqueColors = new Set(tokens.map((t) => t.color))
+  const categoryColors = new Set(
+    categoryTokens.map((tokenEntry) => tokenEntry.color)
+  )
   console.log(
-    `  ${category}: ${uniqueColors.size} цветов для ${tokens.length} токенов`
+    `  ${categoryName}: ${categoryColors.size} цветов для ${categoryTokens.length} токенов`
   )
 })

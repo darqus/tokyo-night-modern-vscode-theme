@@ -1,8 +1,11 @@
 import { palette } from '../../palette'
+import type { TokenColor } from '../../types'
 
-export function generateModernTokens() {
+export function generateModernTokens(): TokenColor[] {
+  const { cyan, purple, teal, blue, orange, green, pink, red, yellow } = palette
+
   return [
-    // React/Vue компоненты
+    // React/Vue Components
     {
       name: 'React/Vue Components',
       scope: [
@@ -13,7 +16,7 @@ export function generateModernTokens() {
         'meta.jsx.children.jsx entity.name.tag',
       ],
       settings: {
-        foreground: palette.cyan.light,
+        foreground: cyan.light,
         fontStyle: 'bold',
       },
     },
@@ -30,7 +33,7 @@ export function generateModernTokens() {
         'type.argument',
       ],
       settings: {
-        foreground: palette.purple.light,
+        foreground: purple.light,
       },
     },
 
@@ -45,11 +48,11 @@ export function generateModernTokens() {
         'union.name.graphql',
       ],
       settings: {
-        foreground: palette.cyan.dark,
+        foreground: cyan.dark,
       },
     },
 
-    // Tailwind CSS классы
+    // Tailwind CSS Classes
     {
       name: 'Tailwind Classes',
       scope: [
@@ -58,7 +61,7 @@ export function generateModernTokens() {
         'meta.attribute-with-value.class.html string.quoted.single.tailwind',
       ],
       settings: {
-        foreground: palette.teal.main,
+        foreground: teal.main,
       },
     },
 
@@ -71,7 +74,7 @@ export function generateModernTokens() {
         'support.component.react',
       ],
       settings: {
-        foreground: palette.blue.medium,
+        foreground: blue.medium,
         fontStyle: 'italic',
       },
     },
@@ -85,7 +88,7 @@ export function generateModernTokens() {
         'support.function.state',
       ],
       settings: {
-        foreground: palette.orange,
+        foreground: orange,
       },
     },
 
@@ -98,7 +101,7 @@ export function generateModernTokens() {
         'variable.other.hook',
       ],
       settings: {
-        foreground: palette.purple.bright,
+        foreground: purple.bright,
         fontStyle: 'bold',
       },
     },
@@ -112,7 +115,7 @@ export function generateModernTokens() {
         'storage.type.generic',
       ],
       settings: {
-        foreground: palette.cyan.bright,
+        foreground: cyan.bright,
       },
     },
 
@@ -126,7 +129,7 @@ export function generateModernTokens() {
         'variable.other.property.prisma',
       ],
       settings: {
-        foreground: palette.teal.main,
+        foreground: teal.main,
         fontStyle: 'italic',
       },
     },
@@ -141,7 +144,7 @@ export function generateModernTokens() {
         'variable.other.test',
       ],
       settings: {
-        foreground: palette.green.main,
+        foreground: green.main,
         fontStyle: 'bold',
       },
     },
@@ -156,7 +159,7 @@ export function generateModernTokens() {
         'string.template.styled',
       ],
       settings: {
-        foreground: palette.pink.light,
+        foreground: pink.light,
       },
     },
 
@@ -170,7 +173,7 @@ export function generateModernTokens() {
         'meta.component.svelte',
       ],
       settings: {
-        foreground: palette.red.main,
+        foreground: red.main,
         fontStyle: 'bold',
       },
     },
@@ -184,7 +187,7 @@ export function generateModernTokens() {
         'variable.function.resolver',
       ],
       settings: {
-        foreground: palette.yellow.main,
+        foreground: yellow.main,
       },
     },
 
@@ -197,7 +200,7 @@ export function generateModernTokens() {
         'keyword.control.validation',
       ],
       settings: {
-        foreground: palette.cyan.dark,
+        foreground: cyan.dark,
         fontStyle: 'italic',
       },
     },
@@ -211,7 +214,7 @@ export function generateModernTokens() {
         'variable.other.query',
       ],
       settings: {
-        foreground: palette.blue.light,
+        foreground: blue.light,
       },
     },
 
@@ -224,7 +227,7 @@ export function generateModernTokens() {
         'meta.macro.rust',
       ],
       settings: {
-        foreground: palette.cyan.bright,
+        foreground: cyan.bright,
         fontStyle: 'bold',
       },
     },
@@ -235,7 +238,7 @@ export function generateModernTokens() {
         'entity.name.type.lifetime.rust',
       ],
       settings: {
-        foreground: palette.orange,
+        foreground: orange,
         fontStyle: 'italic',
       },
     },
@@ -245,7 +248,7 @@ export function generateModernTokens() {
       name: 'Go Functions',
       scope: ['entity.name.function.go', 'support.function.go'],
       settings: {
-        foreground: palette.blue.medium,
+        foreground: blue.medium,
       },
     },
 
@@ -257,7 +260,7 @@ export function generateModernTokens() {
         'meta.function.return-type.python',
       ],
       settings: {
-        foreground: palette.purple.light,
+        foreground: purple.light,
       },
     },
     {
@@ -267,7 +270,7 @@ export function generateModernTokens() {
         'meta.function.decorator.python',
       ],
       settings: {
-        foreground: palette.yellow.main,
+        foreground: yellow.main,
         fontStyle: 'italic',
       },
     },
@@ -282,7 +285,7 @@ export function generateModernTokens() {
         'support.class.deno',
       ],
       settings: {
-        foreground: palette.cyan.dark,
+        foreground: cyan.dark,
       },
     },
 
@@ -291,7 +294,7 @@ export function generateModernTokens() {
       name: 'Solid.js Signals',
       scope: ['support.function.solid', 'entity.name.function.signal'],
       settings: {
-        foreground: palette.blue.light,
+        foreground: blue.light,
         fontStyle: 'bold',
       },
     },
@@ -301,7 +304,7 @@ export function generateModernTokens() {
       name: 'Qwik Components',
       scope: ['entity.name.tag.qwik', 'support.class.component.qwik'],
       settings: {
-        foreground: palette.purple.bright,
+        foreground: purple.bright,
         fontStyle: 'bold',
       },
     },
@@ -311,7 +314,7 @@ export function generateModernTokens() {
       name: 'HTMX Attributes',
       scope: ['entity.other.attribute-name.html.htmx', 'meta.attribute.htmx'],
       settings: {
-        foreground: palette.cyan.light,
+        foreground: cyan.light,
       },
     },
 
@@ -320,7 +323,7 @@ export function generateModernTokens() {
       name: 'Drizzle ORM',
       scope: ['support.function.drizzle', 'entity.name.type.drizzle'],
       settings: {
-        foreground: palette.green.main,
+        foreground: green.main,
       },
     },
 
@@ -329,7 +332,7 @@ export function generateModernTokens() {
       name: 'Hono Routes',
       scope: ['support.function.hono', 'entity.name.function.route.hono'],
       settings: {
-        foreground: palette.orange,
+        foreground: orange,
       },
     },
 
@@ -338,7 +341,7 @@ export function generateModernTokens() {
       name: 'Biome Config',
       scope: ['support.type.property-name.biome', 'entity.name.tag.biome'],
       settings: {
-        foreground: palette.yellow.main,
+        foreground: yellow.main,
       },
     },
 
@@ -347,7 +350,7 @@ export function generateModernTokens() {
       name: 'WebAssembly',
       scope: ['storage.type.wasm', 'keyword.control.wasm'],
       settings: {
-        foreground: palette.purple.dark,
+        foreground: purple.dark,
       },
     },
 
@@ -356,7 +359,7 @@ export function generateModernTokens() {
       name: 'Zig Language',
       scope: ['storage.type.zig', 'keyword.control.zig'],
       settings: {
-        foreground: palette.orange,
+        foreground: orange,
       },
     },
   ]

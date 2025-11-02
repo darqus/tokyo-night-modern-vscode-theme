@@ -1,5 +1,15 @@
 import { hexToRgb, normalizeHex, rgbToHex } from './rgb'
 
+export class ColorError extends Error {
+  constructor(
+    message: string,
+    public readonly input?: string
+  ) {
+    super(message)
+    this.name = 'ColorError'
+  }
+}
+
 /**
  * Добавляет альфа-канал к HEX цвету
  *
@@ -13,6 +23,13 @@ import { hexToRgb, normalizeHex, rgbToHex } from './rgb'
  * ```
  */
 export function alpha(hex: string, opacity: number): string {
+  if (!isValidHex(hex)) {
+    throw new ColorError(`Invalid hex color: ${hex}`, hex)
+  }
+  if (typeof opacity !== 'number' || !Number.isFinite(opacity)) {
+    throw new ColorError(`Invalid opacity: ${opacity}`)
+  }
+
   const normalized = normalizeHex(hex)
   const alphaValue = Math.round(Math.max(0, Math.min(1, opacity)) * 255)
   const alphaHex = alphaValue.toString(16).padStart(2, '0')
@@ -32,7 +49,13 @@ export function alpha(hex: string, opacity: number): string {
  * ```
  */
 export function lighten(hex: string, amount: number): string {
-  return mix(hex, '#ffffff', amount) // Используем белый для осветления
+  if (!isValidHex(hex)) {
+    throw new ColorError(`Invalid hex color: ${hex}`, hex)
+  }
+  if (typeof amount !== 'number' || !Number.isFinite(amount)) {
+    throw new ColorError(`Invalid amount: ${amount}`)
+  }
+  return mix(hex, '#ffffff', amount)
 }
 
 /**
@@ -48,7 +71,13 @@ export function lighten(hex: string, amount: number): string {
  * ```
  */
 export function darken(hex: string, amount: number): string {
-  return mix(hex, '#000000', amount) // Используем черный для затемнения
+  if (!isValidHex(hex)) {
+    throw new ColorError(`Invalid hex color: ${hex}`, hex)
+  }
+  if (typeof amount !== 'number' || !Number.isFinite(amount)) {
+    throw new ColorError(`Invalid amount: ${amount}`)
+  }
+  return mix(hex, '#000000', amount)
 }
 
 /**
@@ -65,6 +94,16 @@ export function darken(hex: string, amount: number): string {
  * ```
  */
 export function mix(hex1: string, hex2: string, ratio: number): string {
+  if (!isValidHex(hex1)) {
+    throw new ColorError(`Invalid hex color: ${hex1}`, hex1)
+  }
+  if (!isValidHex(hex2)) {
+    throw new ColorError(`Invalid hex color: ${hex2}`, hex2)
+  }
+  if (typeof ratio !== 'number' || !Number.isFinite(ratio)) {
+    throw new ColorError(`Invalid ratio: ${ratio}`)
+  }
+
   const rgb1 = hexToRgb(hex1)
   const rgb2 = hexToRgb(hex2)
   const clampedRatio = Math.max(0, Math.min(1, ratio))

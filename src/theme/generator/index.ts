@@ -27,19 +27,19 @@ import {
 } from './ui'
 
 /**
- * Генерирует полную тему VS Code Tokyo Night
+ * Generates complete VS Code Tokyo Night theme
  *
- * Объединяет все компоненты темы:
- * - UI цвета (кнопки, панели, редактор и т.д.)
- * - Токены для подсветки синтаксиса (TextMate)
- * - Семантические токены для семантической подсветки
+ * Combines all theme components:
+ * - UI colors (buttons, panels, editor, etc.)
+ * - Syntax highlighting tokens (TextMate)
+ * - Semantic tokens for semantic highlighting
  *
- * @returns Полная структура темы VS Code
+ * @returns Complete VS Code theme structure
  *
  * @example
  * ```ts
  * const theme = generateTheme()
- * // theme содержит все цвета и правила подсветки
+ * // theme contains all colors and highlighting rules
  * ```
  */
 export function generateTheme(): VSCodeTheme {

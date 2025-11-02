@@ -1,20 +1,33 @@
 import { hexToRgb } from './rgb'
 
+const WCAG_AA_RATIO = 4.5
+const WCAG_AAA_RATIO = 7
+
 export function getLuminance(hex: string): number {
-  const { r, g, b } = hexToRgb(hex)
-  const [rs, gs, bs] = [r, g, b].map((c) => {
-    const s = c / 255
-    return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4
-  })
-  return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs
+  try {
+    const { r, g, b } = hexToRgb(hex)
+    const [rs, gs, bs] = [r, g, b].map((c) => {
+      const s = c / 255
+      return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4
+    })
+    return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs
+  } catch (error) {
+    throw new Error(
+      `Failed to calculate luminance for ${hex}: ${error instanceof Error ? error.message : error}`
+    )
+  }
 }
 
 export function getContrastRatio(color1: string, color2: string): number {
-  const l1 = getLuminance(color1)
-  const l2 = getLuminance(color2)
-  const lighter = Math.max(l1, l2)
-  const darker = Math.min(l1, l2)
-  return (lighter + 0.05) / (darker + 0.05)
+  try {
+    const l1 = getLuminance(color1)
+    const l2 = getLuminance(color2)
+    const lighter = Math.max(l1, l2)
+    const darker = Math.min(l1, l2)
+    return (lighter + 0.05) / (darker + 0.05)
+  } catch {
+    return 0
+  }
 }
 
 export function meetsWCAG(
@@ -23,7 +36,7 @@ export function meetsWCAG(
   level: 'AA' | 'AAA' = 'AA'
 ): boolean {
   const ratio = getContrastRatio(fg, bg)
-  return level === 'AAA' ? ratio >= 7 : ratio >= 4.5
+  return level === 'AAA' ? ratio >= WCAG_AAA_RATIO : ratio >= WCAG_AA_RATIO
 }
 
 export function checkContrast(
@@ -33,8 +46,8 @@ export function checkContrast(
   const ratio = getContrastRatio(fg, bg)
   return {
     ratio: Math.round(ratio * 100) / 100,
-    aa: ratio >= 4.5,
-    aaa: ratio >= 7,
+    aa: ratio >= WCAG_AA_RATIO,
+    aaa: ratio >= WCAG_AAA_RATIO,
   }
 }
 

@@ -5,7 +5,7 @@ import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
   return {
-    // Функции
+    // Functions
     function: createSemanticToken({
       foreground: palette.blue.medium,
     }),
@@ -19,7 +19,7 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
       foreground: palette.cyan.light,
     }),
 
-    // Методы
+    // Methods
     method: createSemanticToken({
       foreground: mix(palette.blue.medium, palette.cyan.light, 0.3),
     }),
@@ -39,13 +39,13 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'italic',
     }),
 
-    // Конструкторы
+    // Constructors
     constructor: createSemanticToken({
       foreground: mix(palette.cyan.light, palette.yellow.main, 0.15),
       fontStyle: 'bold',
     }),
 
-    // Асинхронные функции
+    // Async functions
     'function.async': createSemanticToken({
       foreground: mix(palette.cyan.dark, palette.purple.light, 0.2),
       fontStyle: 'italic',

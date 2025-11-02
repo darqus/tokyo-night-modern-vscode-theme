@@ -3,7 +3,7 @@ import { isValidHex } from './color'
 import { getContrastRatio } from './contrast'
 
 /**
- * Результат валидации темы
+ * Theme validation result
  */
 export interface ValidationResult {
   valid: boolean
@@ -12,13 +12,13 @@ export interface ValidationResult {
 }
 
 /**
- * Валидация темы VS Code
+ * VS Code theme validation
  */
 export function validateTheme(theme: VSCodeTheme): ValidationResult {
   const errors: string[] = []
   const warnings: string[] = []
 
-  // Проверка обязательных полей
+  // Check required fields
   if (!theme.name) {
     errors.push('Theme name is required')
   }
@@ -35,12 +35,12 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
     errors.push('Theme tokenColors must be an array')
   }
 
-  // Валидация цветов UI
+  // Validate UI colors
   if (theme.colors) {
     validateColors(theme.colors, errors, 'UI colors')
   }
 
-  // Валидация токенов
+  // Validate tokens
   if (Array.isArray(theme.tokenColors)) {
     theme.tokenColors.forEach((token, index) => {
       if (token.settings) {
@@ -64,7 +64,7 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
     })
   }
 
-  // Валидация семантических токенов
+  // Validate semantic tokens
   if (theme.semanticTokenColors) {
     Object.entries(theme.semanticTokenColors).forEach(([key, style]) => {
       if (style.foreground && !isValidHex(style.foreground)) {
@@ -75,17 +75,23 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
     })
   }
 
-  // Проверка критичных комбинаций контрастности
+  // Check critical contrast combinations
   if (theme.colors && theme.type === 'dark') {
     const foreground = theme.colors['foreground']
     const background =
       theme.colors['editor.background'] || theme.colors['editor.foreground']
 
     if (foreground && background) {
-      const contrast = getContrastRatio(foreground, background)
-      if (contrast < 4.5) {
-        warnings.push(
-          `Low contrast ratio between foreground and background: ${contrast.toFixed(2)}:1 (minimum 4.5:1 for WCAG AA)`
+      try {
+        const contrast = getContrastRatio(foreground, background)
+        if (contrast < 4.5) {
+          warnings.push(
+            `Low contrast ratio between foreground and background: ${contrast.toFixed(2)}:1 (minimum 4.5:1 for WCAG AA)`
+          )
+        }
+      } catch (error) {
+        errors.push(
+          `Failed to calculate contrast ratio: ${error instanceof Error ? error.message : String(error)}`
         )
       }
     }
@@ -99,7 +105,7 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
 }
 
 /**
- * Валидация объекта цветов
+ * Validate colors object
  */
 function validateColors(
   colors: Record<string, string>,
@@ -121,7 +127,7 @@ function validateColors(
       errors.push(`${context}: Invalid hex color for "${key}": ${value}`)
     }
 
-    // Проверка на undefined/null строки
+    // Check for undefined/null strings
     if (value === 'undefined' || value === 'null') {
       errors.push(`${context}: "${key}" has invalid value: ${value}`)
     }
@@ -129,7 +135,7 @@ function validateColors(
 }
 
 /**
- * Проверка критичных цветов для контрастности
+ * Check critical colors for contrast
  */
 export function validateCriticalContrast(theme: VSCodeTheme): ValidationResult {
   const errors: string[] = []
@@ -150,14 +156,20 @@ export function validateCriticalContrast(theme: VSCodeTheme): ValidationResult {
     const bg = theme.colors[bgKey]
 
     if (fg && bg) {
-      const ratio = getContrastRatio(fg, bg)
-      if (ratio < 4.5) {
+      try {
+        const ratio = getContrastRatio(fg, bg)
+        if (ratio < 4.5) {
+          errors.push(
+            `${name}: Contrast ratio ${ratio.toFixed(2)}:1 is below WCAG AA minimum (4.5:1)`
+          )
+        } else if (ratio < 7) {
+          warnings.push(
+            `${name}: Contrast ratio ${ratio.toFixed(2)}:1 meets AA but not AAA (7:1)`
+          )
+        }
+      } catch (error) {
         errors.push(
-          `${name}: Contrast ratio ${ratio.toFixed(2)}:1 is below WCAG AA minimum (4.5:1)`
-        )
-      } else if (ratio < 7) {
-        warnings.push(
-          `${name}: Contrast ratio ${ratio.toFixed(2)}:1 meets AA but not AAA (7:1)`
+          `${name}: Failed to calculate contrast ratio: ${error instanceof Error ? error.message : String(error)}`
         )
       }
     }

@@ -10,13 +10,21 @@ export interface SemanticTokenConfig {
 export function createSemanticToken(
   config: SemanticTokenConfig
 ): SemanticTokenStyle {
+  if (!config || typeof config !== 'object') {
+    throw new Error('Invalid semantic token config provided')
+  }
+
   const token: SemanticTokenStyle = {}
+  const fontStyles: string[] = []
 
   if (config.foreground) token.foreground = config.foreground
-  if (config.fontStyle) token.fontStyle = config.fontStyle
-  if (config.underline) token.fontStyle = `${token.fontStyle || ''} underline`
-  if (config.strikethrough)
-    token.fontStyle = `${token.fontStyle || ''} strikethrough`
+  if (config.fontStyle) fontStyles.push(config.fontStyle)
+  if (config.underline) fontStyles.push('underline')
+  if (config.strikethrough) fontStyles.push('strikethrough')
+
+  if (fontStyles.length > 0) {
+    token.fontStyle = fontStyles.join(' ')
+  }
 
   return token
 }
@@ -34,9 +42,9 @@ export function createSemanticTokenGroup(
   return result
 }
 
-// Вспомогательная функция для добавления прозрачности
+// Helper function for adding transparency
 export function alpha(color: string, opacity: number): string {
-  // Упрощённая реализация - в реальном проекте нужна полноценная функция
+  // Simplified implementation - a full function is needed in a real project
   return (
     color +
     Math.round(opacity * 255)

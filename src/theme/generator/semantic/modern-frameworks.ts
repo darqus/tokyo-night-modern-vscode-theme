@@ -8,7 +8,7 @@ export function generateModernFrameworkTokens(): Record<
   SemanticTokenStyle
 > {
   return {
-    // React хуки и компоненты
+    // React hooks and components
     'react.hook': createSemanticToken({
       foreground: mix(palette.purple.bright, palette.pink.light, 0.3),
       fontStyle: 'bold',
@@ -28,7 +28,7 @@ export function generateModernFrameworkTokens(): Record<
       fontStyle: 'italic',
     }),
 
-    // Vue композиция API
+    // Vue Composition API
     'vue.composable': createSemanticToken({
       foreground: lighten(palette.green.main, 0.1),
       fontStyle: 'bold',
@@ -43,7 +43,7 @@ export function generateModernFrameworkTokens(): Record<
       foreground: mix(palette.green.main, palette.teal.main, 0.4),
     }),
 
-    // TypeScript типы
+    // TypeScript types
     'typescript.generic': createSemanticToken({
       foreground: mix(palette.cyan.bright, palette.blue.medium, 0.3),
     }),
@@ -57,7 +57,7 @@ export function generateModernFrameworkTokens(): Record<
       foreground: mix(palette.purple.bright, palette.pink.light, 0.2),
     }),
 
-    // GraphQL схемы
+    // GraphQL schemas
     'graphql.type': createSemanticToken({
       foreground: mix(palette.cyan.dark, palette.teal.main, 0.35),
       fontStyle: 'bold',
@@ -72,7 +72,7 @@ export function generateModernFrameworkTokens(): Record<
       fontStyle: 'italic',
     }),
 
-    // Тестирование
+    // Testing
     'test.describe': createSemanticToken({
       foreground: mix(palette.green.main, palette.cyan.light, 0.3),
       fontStyle: 'bold',
@@ -91,7 +91,7 @@ export function generateModernFrameworkTokens(): Record<
       foreground: mix(palette.cyan.light, palette.teal.main, 0.4),
     }),
 
-    // Rust семантика
+    // Rust semantics
     'macro.rust': createSemanticToken({
       foreground: lighten(palette.cyan.bright, 0.08),
       fontStyle: 'bold',
@@ -111,7 +111,7 @@ export function generateModernFrameworkTokens(): Record<
       fontStyle: 'italic',
     }),
 
-    // Go семантика
+    // Go semantics
     'interface.go': createSemanticToken({
       foreground: mix(palette.cyan.dark, palette.blue.primary, 0.35),
     }),
@@ -125,7 +125,7 @@ export function generateModernFrameworkTokens(): Record<
       foreground: mix(palette.teal.main, palette.cyan.dark, 0.4),
     }),
 
-    // Python современный
+    // Modern Python
     'decorator.python': createSemanticToken({
       foreground: mix(palette.yellow.main, palette.orange, 0.35),
       fontStyle: 'italic',
@@ -207,7 +207,7 @@ export function generateModernFrameworkTokens(): Record<
       foreground: mix(palette.purple.light, palette.blue.medium, 0.3),
     }),
 
-    // Zod/Yup валидация
+    // Zod/Yup validation
     'schema.validation': createSemanticToken({
       foreground: mix(palette.cyan.dark, palette.blue.primary, 0.4),
       fontStyle: 'bold',

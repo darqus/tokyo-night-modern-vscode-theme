@@ -8,7 +8,7 @@ import {
 describe('Color Generator', () => {
   describe('generateBackgroundScale', () => {
     it('should generate background scale', () => {
-      const scale = generateBackgroundScale('#1a1b26')
+      const scale = generateBackgroundScale('#1a1b26') as Record<string, string>
 
       expect(scale.darkest).toBeDefined()
       expect(scale.main).toBe('#1a1b26')
@@ -16,7 +16,7 @@ describe('Color Generator', () => {
     })
 
     it('should generate valid hex colors', () => {
-      const scale = generateBackgroundScale('#1a1b26')
+      const scale = generateBackgroundScale('#1a1b26') as Record<string, string>
 
       for (const value of Object.values(scale)) {
         expect(isValidHex(value)).toBe(true)
@@ -26,7 +26,7 @@ describe('Color Generator', () => {
 
   describe('generateForegroundScale', () => {
     it('should generate foreground scale', () => {
-      const scale = generateForegroundScale('#a9b1d6')
+      const scale = generateForegroundScale('#a9b1d6') as Record<string, string>
 
       expect(scale.dim).toBeDefined()
       expect(scale.medium).toBe('#a9b1d6')
@@ -34,7 +34,7 @@ describe('Color Generator', () => {
     })
 
     it('should generate valid hex colors', () => {
-      const scale = generateForegroundScale('#a9b1d6')
+      const scale = generateForegroundScale('#a9b1d6') as Record<string, string>
 
       for (const value of Object.values(scale)) {
         expect(isValidHex(value)).toBe(true)
@@ -44,7 +44,10 @@ describe('Color Generator', () => {
 
   describe('generateColorVariants', () => {
     it('should generate color variants', () => {
-      const variants = generateColorVariants('#7aa2f7')
+      const variants = generateColorVariants('#7aa2f7') as Record<
+        string,
+        string
+      >
 
       expect(variants.dark).toBeDefined()
       expect(variants.main).toBe('#7aa2f7')
@@ -52,7 +55,10 @@ describe('Color Generator', () => {
     })
 
     it('should generate valid hex colors', () => {
-      const variants = generateColorVariants('#7aa2f7')
+      const variants = generateColorVariants('#7aa2f7') as Record<
+        string,
+        string
+      >
 
       for (const value of Object.values(variants)) {
         expect(isValidHex(value)).toBe(true)

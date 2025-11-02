@@ -76,7 +76,7 @@ export function generateCodeTokens(): TokenColor[] {
       settings: { foreground: lighten(teal.main, 0.12) },
     },
     {
-      name: 'Object Property',
+      name: 'Object Property - General',
       scope: [
         'variable.other.property',
         'support.variable.property',
@@ -86,7 +86,7 @@ export function generateCodeTokens(): TokenColor[] {
       settings: { foreground: cyan.light },
     },
     {
-      name: 'Object Property',
+      name: 'Object Property - Specific',
       scope: 'variable.other.object.property',
       settings: { foreground: fg.brighter },
     },
@@ -173,7 +173,7 @@ export function generateCodeTokens(): TokenColor[] {
         'support.class',
         'support.type',
         'variable.other.readwrite.alias',
-        'support.orther.namespace.use.php',
+        'support.other.namespace.use.php',
         'meta.use.php',
         'support.other.namespace.php',
         'support.type.sys-types',

@@ -116,7 +116,7 @@ export function generateBasicTokens(): TokenColor[] {
       scope: [
         'keyword.control.as',
         'keyword.other',
-        'expression.embbeded.vue punctuation.definition.tag',
+        'expression.embedded.vue punctuation.definition.tag',
         'text.html.twig meta.tag.inline.any.html',
         'meta.tag.template.value.twig meta.function.arguments.twig',
         'meta.directive.vue punctuation.separator.key-value.html',

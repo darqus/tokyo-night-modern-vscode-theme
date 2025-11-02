@@ -17,29 +17,37 @@ export const computeVersion = (
   commitCount: number,
   prerelease: boolean
 ): string => {
+  if (!currentVersion || typeof currentVersion !== 'string') {
+    throw new Error('Invalid version string')
+  }
+
   const base = currentVersion.split('-')[0]
   const [majS, minS, patS] = base.split('.')
-  let major = parseInt(majS || '0', 10) || 0
-  let minor = parseInt(minS || '0', 10) || 0
-  let patch = parseInt(patS || '0', 10) || 0
+  const major = Number.parseInt(majS || '0', 10) || 0
+  const minor = Number.parseInt(minS || '0', 10) || 0
+  const patch = Number.parseInt(patS || '0', 10) || 0
 
   const count = Math.max(commitCount, 1)
 
+  let newMajor = major
+  let newMinor = minor
+  let newPatch = patch
+
   switch (releaseType) {
     case 'major':
-      major += 1
-      minor = 0
-      patch = count
+      newMajor += 1
+      newMinor = 0
+      newPatch = count
       break
     case 'minor':
-      minor += 1
-      patch = count
+      newMinor += 1
+      newPatch = count
       break
     default:
-      patch += count
+      newPatch += count
       break
   }
 
-  const next = `${major}.${minor}.${patch}`
+  const next = `${newMajor}.${newMinor}.${newPatch}`
   return prerelease ? `${next}-beta.${count}` : next
 }

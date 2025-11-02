@@ -1,5 +1,6 @@
 import { palette } from '../src/theme/palette'
 import { checkContrast } from '../src/theme/utils/contrast'
+import { sanitizeLogOutput } from '../src/theme/utils/logger'
 
 interface ContrastIssue {
   name: string
@@ -11,8 +12,10 @@ interface ContrastIssue {
 }
 
 const issues: ContrastIssue[] = []
+let totalChecks = 0
 
 function check(name: string, fg: string, bg: string) {
+  totalChecks++
   const result = checkContrast(fg, bg)
   if (!result.aa) {
     issues.push({ name, fg, bg, ...result })
@@ -20,85 +23,81 @@ function check(name: string, fg: string, bg: string) {
   return result
 }
 
-console.log('🔍 Проверка контрастности темы Tokyo Modern\n')
+function logContrastResult(
+  name: string,
+  result: { ratio: number; aa: boolean; aaa: boolean },
+  fg?: string,
+  bg?: string
+) {
+  const colorInfo =
+    fg && bg ? ` (${sanitizeLogOutput(fg)} on ${sanitizeLogOutput(bg)})` : ''
+  console.log(
+    `  ${sanitizeLogOutput(name)}: ${result.ratio}:1 ${result.aa ? '✅ AA' : '❌'} ${result.aaa ? '✅ AAA' : '❌'}${colorInfo}`
+  )
+}
 
-// Основные комбинации
-console.log('📊 Основные комбинации:')
-const mainFg = check('Основной текст', palette.fg.brighter, palette.bg.editor)
-console.log(
-  `  Основной текст: ${mainFg.ratio}:1 ${mainFg.aa ? '✅ AA' : '❌'} ${mainFg.aaa ? '✅ AAA' : '❌'}`
-)
+console.log('🔍 Tokyo Modern theme contrast check\n')
 
-const dimFg = check('Тусклый текст', palette.fg.dim, palette.bg.editor)
-console.log(
-  `  Тусклый текст: ${dimFg.ratio}:1 ${dimFg.aa ? '✅ AA' : '❌'} ${dimFg.aaa ? '✅ AAA' : '❌'}`
-)
+// Main combinations
+console.log('📊 Main combinations:')
+const mainFg = check('Main text', palette.fg.brighter, palette.bg.editor)
+logContrastResult('Main text', mainFg)
 
-const brightFg = check('Яркий текст', palette.fg.brightest, palette.bg.editor)
-console.log(
-  `  Яркий текст: ${brightFg.ratio}:1 ${brightFg.aa ? '✅ AA' : '❌'} ${brightFg.aaa ? '✅ AAA' : '❌'}`
-)
+const dimFg = check('Dim text', palette.fg.dim, palette.bg.editor)
+logContrastResult('Dim text', dimFg)
 
-// Акцентные цвета
-console.log('\n🎨 Акцентные цвета на фоне:')
+const brightFg = check('Bright text', palette.fg.brightest, palette.bg.editor)
+logContrastResult('Bright text', brightFg)
+
+// Accent colors
+console.log('\n🎨 Accent colors on background:')
 const blue = check('Blue', palette.blue.medium, palette.bg.editor)
-console.log(
-  `  Blue: ${blue.ratio}:1 ${blue.aa ? '✅ AA' : '❌'} ${blue.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Blue', blue)
 
 const cyan = check('Cyan', palette.cyan.light, palette.bg.editor)
-console.log(
-  `  Cyan: ${cyan.ratio}:1 ${cyan.aa ? '✅ AA' : '❌'} ${cyan.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Cyan', cyan)
 
 const green = check('Green', palette.green.main, palette.bg.editor)
-console.log(
-  `  Green: ${green.ratio}:1 ${green.aa ? '✅ AA' : '❌'} ${green.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Green', green)
 
 const yellow = check('Yellow', palette.yellow.main, palette.bg.editor)
-console.log(
-  `  Yellow: ${yellow.ratio}:1 ${yellow.aa ? '✅ AA' : '❌'} ${yellow.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Yellow', yellow)
 
 const red = check('Red', palette.red.main, palette.bg.editor)
-console.log(
-  `  Red: ${red.ratio}:1 ${red.aa ? '✅ AA' : '❌'} ${red.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Red', red)
 
 const purple = check('Purple', palette.purple.light, palette.bg.editor)
-console.log(
-  `  Purple: ${purple.ratio}:1 ${purple.aa ? '✅ AA' : '❌'} ${purple.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Purple', purple)
 
-// UI элементы
-console.log('\n🖥️  UI элементы:')
+// UI elements
+console.log('\n🖥️  UI elements:')
 const sidebarFg = check('Sidebar', palette.fg.medium, palette.bg.darkest)
-console.log(
-  `  Sidebar: ${sidebarFg.ratio}:1 ${sidebarFg.aa ? '✅ AA' : '❌'} ${sidebarFg.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Sidebar', sidebarFg)
 
 const tabActive = check('Active Tab', palette.fg.brighter, palette.bg.main)
-console.log(
-  `  Active Tab: ${tabActive.ratio}:1 ${tabActive.aa ? '✅ AA' : '❌'} ${tabActive.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Active Tab', tabActive)
 
 const tabInactive = check('Inactive Tab', palette.fg.medium, palette.bg.light)
-console.log(
-  `  Inactive Tab: ${tabInactive.ratio}:1 ${tabInactive.aa ? '✅ AA' : '❌'} ${tabInactive.aaa ? '✅ AAA' : '❌'}`
-)
+logContrastResult('Inactive Tab', tabInactive)
 
-// Итоги
-console.log('\n📋 Итоги:')
-console.log(`  Всего проверено: ${issues.length + 10}`)
-console.log(`  Проблем с AA: ${issues.length}`)
+// Summary
+const compliancePercentage =
+  issues.length === 0
+    ? 100
+    : Math.round(((totalChecks - issues.length) / totalChecks) * 100)
+
+console.log('\n📋 Summary:')
+console.log(`  Total checked: ${totalChecks}`)
+console.log(`  AA issues: ${issues.length}`)
 console.log(
-  `  Соответствие WCAG AA: ${issues.length === 0 ? '✅ 100%' : `❌ ${Math.round((1 - issues.length / 10) * 100)}%`}`
+  `  WCAG AA compliance: ${issues.length === 0 ? '✅' : '❌'} ${sanitizeLogOutput(String(compliancePercentage))}%`
 )
 
 if (issues.length > 0) {
-  console.log('\n⚠️  Проблемы с контрастностью:')
+  console.log('\n⚠️  Contrast issues:')
   issues.forEach((issue) => {
-    console.log(`  ${issue.name}: ${issue.ratio}:1 (нужно ≥4.5:1)`)
+    console.log(
+      `  ${sanitizeLogOutput(issue.name)}: ${sanitizeLogOutput(String(issue.ratio))}:1 (needs ≥4.5:1)`
+    )
   })
 }

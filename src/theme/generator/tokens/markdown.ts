@@ -1,73 +1,34 @@
 import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
+function buildJsonKeyScopeSelector(level: number): string {
+  const base = 'source.json meta.structure.dictionary.json'
+  const nestingPattern =
+    ' meta.structure.dictionary.value.json meta.structure.dictionary.json'
+  return `${base}${nestingPattern.repeat(level)} support.type.property-name.json`
+}
+
 export function generateMarkdownTokens(): TokenColor[] {
   const { fg, cyan, blue, teal } = palette
 
+  const jsonKeyLevelColors = [
+    blue.medium,
+    cyan.dark,
+    cyan.light,
+    palette.purple.light,
+    palette.yellow.main,
+    palette.orange,
+    teal.main,
+    palette.red.main,
+    palette.green.main,
+  ]
+
   return [
-    {
-      name: 'JSON Key - Level 0',
-      scope: [
-        'source.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: blue.medium },
-    },
-    {
-      name: 'JSON Key - Level 1',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: cyan.dark },
-    },
-    {
-      name: 'JSON Key - Level 2',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: cyan.light },
-    },
-    {
-      name: 'JSON Key - Level 3',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: palette.purple.light },
-    },
-    {
-      name: 'JSON Key - Level 4',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: palette.yellow.main },
-    },
-    {
-      name: 'JSON Key - Level 5',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: cyan.dark },
-    },
-    {
-      name: 'JSON Key - Level 6',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: teal.main },
-    },
-    {
-      name: 'JSON Key - Level 7',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: palette.red.main },
-    },
-    {
-      name: 'JSON Key - Level 8',
-      scope: [
-        'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
-      ],
-      settings: { foreground: palette.green.main },
-    },
+    ...jsonKeyLevelColors.map((color, level) => ({
+      name: `JSON Key - Level ${level}`,
+      scope: [buildJsonKeyScopeSelector(level)],
+      settings: { foreground: color },
+    })),
     {
       name: 'Plain Punctuation',
       scope: 'punctuation.definition.list_item.markdown',

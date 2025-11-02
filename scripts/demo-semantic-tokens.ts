@@ -1,9 +1,8 @@
 import { generateSemanticTokenColors } from '../src/theme/generator/semantic'
 
-console.log(
-  '🎨 Демонстрация расширенных семантических токенов Tokyo Modern\n'
-)
+console.log('🎨 Демонстрация расширенных семантических токенов Tokyo Modern\n')
 
+const ORIGINAL_TOKEN_COUNT = 8
 const tokens = generateSemanticTokenColors()
 const tokenCount = Object.keys(tokens).length
 
@@ -65,7 +64,21 @@ Object.entries(categories).forEach(([category, tokenNames]) => {
     if (token) {
       const color = token.foreground || 'N/A'
       const style = token.fontStyle || 'normal'
-      console.log(`  ${tokenName.padEnd(25)} ${color.padEnd(10)} ${style}`)
+      const sanitizedTokenName = tokenName
+        .split('')
+        .filter((c) => c.charCodeAt(0) > 31 && c.charCodeAt(0) < 127)
+        .join('')
+      const sanitizedColor = color
+        .split('')
+        .filter((c) => c.charCodeAt(0) > 31 && c.charCodeAt(0) < 127)
+        .join('')
+      const sanitizedStyle = style
+        .split('')
+        .filter((c) => c.charCodeAt(0) > 31 && c.charCodeAt(0) < 127)
+        .join('')
+      console.log(
+        `  ${sanitizedTokenName.padEnd(25)} ${sanitizedColor.padEnd(10)} ${sanitizedStyle}`
+      )
     }
   })
   console.log()
@@ -73,23 +86,31 @@ Object.entries(categories).forEach(([category, tokenNames]) => {
 
 // Сравнение с оригинальной реализацией
 console.log('📈 Сравнение с оригинальной реализацией:')
-console.log(`  Оригинал: 8 токенов`)
+console.log(`  Оригинал: ${ORIGINAL_TOKEN_COUNT} токенов`)
 console.log(`  Расширенная: ${tokenCount} токенов`)
-console.log(`  Увеличение: +${Math.round(((tokenCount - 8) / 8) * 100)}%\n`)
+console.log(
+  `  Увеличение: +${Math.round(((tokenCount - ORIGINAL_TOKEN_COUNT) / ORIGINAL_TOKEN_COUNT) * 100)}%\n`
+)
 
 // Пример использования в коде
 console.log('🎯 Пример визуального различия:')
-console.log(`
-  const userName: string = 'Tokyo'     // variable + string
-  readonly config: Config = {}          // variable.readonly + type
-  static API_URL = 'https://api.dev'    // property.static
-
-  async function fetchData(): Promise<Data> {  // function.async + typescript.generic
-    const response = await fetch(API_URL)      // variable + function.defaultLibrary
-    return response.json()                     // method
-  }
-
-  const [data, setData] = useState<Data>()     // react.hook + typescript.generic
-`)
+console.log("\n  const userName: string = 'Tokyo'     // variable + string")
+console.log(
+  '  readonly config: Config = {}          // variable.readonly + type'
+)
+console.log("  static API_URL = 'https://api.dev'    // property.static")
+console.log('')
+console.log(
+  '  async function fetchData(): Promise<Data> {  // function.async + typescript.generic'
+)
+console.log(
+  '    const response = await fetch(API_URL)      // variable + function.defaultLibrary'
+)
+console.log('    return response.json()                     // method')
+console.log('  }')
+console.log('')
+console.log(
+  '  const [data, setData] = useState<Data>()     // react.hook + typescript.generic'
+)
 
 console.log('✨ Расширенные семантические токены успешно интегрированы!')

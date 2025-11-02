@@ -1,31 +1,31 @@
 /**
- * Централизованная конфигурация темы
+ * Centralized theme configuration
  *
- * Все параметры генерации темы собраны здесь для удобного управления
- * и потенциального расширения функционала (например, генерация нескольких вариантов)
+ * All theme generation parameters are collected here for convenient management
+ * and potential functionality expansion (e.g., generating multiple variants)
  */
 
 /**
- * Конфигурация темы Tokyo Modern
+ * Tokyo Modern theme configuration
  */
 export const THEME_CONFIG = {
   /**
-   * Название темы
+   * Theme name
    */
   name: 'Tokyo Modern',
 
   /**
-   * Тип темы (dark/light)
+   * Theme type (dark/light)
    */
   type: 'dark' as const,
 
   /**
-   * Включить семантическую подсветку синтаксиса
+   * Enable semantic syntax highlighting
    */
   semanticHighlighting: true,
 } as const
 
 /**
- * Тип конфигурации темы
+ * Theme configuration type
  */
 export type ThemeConfig = typeof THEME_CONFIG

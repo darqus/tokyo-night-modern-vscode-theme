@@ -128,12 +128,12 @@ export function generateCssTokens(): TokenColor[] {
       settings: { foreground: orange },
     },
     {
-      name: "CSS ID's",
+      name: 'CSS IDs',
       scope: 'source.sass keyword.control',
       settings: { foreground: blue.medium },
     },
     {
-      name: 'CSS psuedo selectors',
+      name: 'CSS pseudo selectors',
       scope: [
         'entity.other.attribute-name.pseudo-class',
         'entity.other.attribute-name.pseudo-element',

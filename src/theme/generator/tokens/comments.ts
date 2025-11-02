@@ -30,6 +30,7 @@ export function generateCommentTokens(): TokenColor[] {
         'keyword.control.flow.block-scalar.literal',
         'keyword.control.flow.python',
       ],
+      settings: { fontStyle: 'normal' },
     },
     {
       name: 'Comment',
@@ -58,7 +59,6 @@ export function generateCommentTokens(): TokenColor[] {
         'meta.other.type.phpdoc.php keyword.other.type.php',
         'meta.other.type.phpdoc.php support.other.namespace.php',
         'meta.other.type.phpdoc.php punctuation.separator.inheritance.php',
-        'meta.other.type.phpdoc.php support.class',
         'keyword.other.phpdoc.php',
         'log.date',
       ],

@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, fg, yellow, special } = palette
+  const { red, blue, cyan, teal, fg, yellow, special, purple } = palette
 
   return [
     {
@@ -33,7 +33,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions - Character Class',
       scope: ['constant.other.character-class.regexp'],
-      settings: { foreground: palette.purple.light },
+      settings: { foreground: purple.light },
     },
     {
       name: 'Regular Expressions - Character Class Set',
@@ -78,7 +78,7 @@ export function generateMarkupTokens(): TokenColor[] {
         'text.html.basic entity.other.attribute-name.html',
         'text.html.basic entity.other.attribute-name',
       ],
-      settings: { foreground: palette.purple.light },
+      settings: { foreground: purple.light },
     },
     {
       name: 'HTML Character Entity',
@@ -91,7 +91,7 @@ export function generateMarkupTokens(): TokenColor[] {
         'entity.other.attribute-name.id.html',
         'meta.directive.vue entity.other.attribute-name.html',
       ],
-      settings: { foreground: palette.purple.light },
+      settings: { foreground: purple.light },
     },
   ]
 }

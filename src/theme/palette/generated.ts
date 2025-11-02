@@ -226,7 +226,7 @@ export const palette: Palette = {
     blue: lighten(basePalette.blue, COLOR_MIXES.BLUE_BRACKETS_LIGHTEN),
     cyan: lighten(basePalette.cyan, COLOR_MIXES.CYAN_BRACKETS_LIGHTEN),
     purple: lighten(basePalette.purple, COLOR_MIXES.PURPLE_BRACKETS_LIGHTEN),
-    teal: lighten(basePalette.teal, 0.1),
+    teal: lighten(basePalette.teal, COLOR_MIXES.TEAL_BRACKETS_LIGHTEN),
     green: lighten(basePalette.green, COLOR_MIXES.GREEN_BRACKETS_LIGHTEN),
     yellow: lighten(basePalette.yellow, COLOR_MIXES.YELLOW_BRACKETS_LIGHTEN),
   },

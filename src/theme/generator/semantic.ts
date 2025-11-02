@@ -1,9 +1,9 @@
 import { generateSemanticTokenColors as generateExpandedSemanticTokenColors } from './semantic/index'
 
-// Сохраняем обратную совместимость с текущей реализацией
+// Maintain backward compatibility with current implementation
 export function generateSemanticTokenColors() {
   return generateExpandedSemanticTokenColors()
 }
 
-// Экспортируем расширенную функцию для прямого использования
+// Export expanded function for direct usage
 export { generateExpandedSemanticTokenColors }

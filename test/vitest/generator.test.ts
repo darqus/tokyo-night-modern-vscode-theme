@@ -11,7 +11,7 @@ describe('Theme Generator', () => {
 
   it('should generate valid theme structure', () => {
     expect(theme).toBeDefined()
-    expect(theme.name).toBe('Tokyo Night')
+    expect(theme.name).toBe('Tokyo Modern')
     expect(theme.type).toBe('dark')
     expect(theme.colors).toBeDefined()
     expect(theme.tokenColors).toBeDefined()
@@ -26,9 +26,15 @@ describe('Theme Generator', () => {
   it('should generate valid hex colors', () => {
     for (const [key, value] of Object.entries(theme.colors)) {
       if (typeof value === 'string') {
-        expect(isValidHex(value), `Invalid color at ${key}: ${value}`).toBe(
-          true
-        )
+        try {
+          expect(isValidHex(value), `Invalid color at ${key}: ${value}`).toBe(
+            true
+          )
+        } catch (error) {
+          throw new Error(
+            `Failed to validate color at ${key}: ${value} - ${error instanceof Error ? error.message : String(error)}`
+          )
+        }
       }
     }
   })
@@ -39,6 +45,9 @@ describe('Theme Generator', () => {
   })
 
   it('should have valid token color structure', () => {
+    if (theme.tokenColors.length === 0) {
+      throw new Error('No token colors found in theme')
+    }
     const token = theme.tokenColors[0]
     expect(token).toHaveProperty('scope')
     expect(token).toHaveProperty('settings')

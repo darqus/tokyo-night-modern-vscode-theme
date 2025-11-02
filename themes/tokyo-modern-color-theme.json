@@ -396,7 +396,10 @@
       "scope": [
         "keyword.control.flow.block-scalar.literal",
         "keyword.control.flow.python"
-      ]
+      ],
+      "settings": {
+        "fontStyle": "normal"
+      }
     },
     {
       "name": "Comment",
@@ -427,7 +430,6 @@
         "meta.other.type.phpdoc.php keyword.other.type.php",
         "meta.other.type.phpdoc.php support.other.namespace.php",
         "meta.other.type.phpdoc.php punctuation.separator.inheritance.php",
-        "meta.other.type.phpdoc.php support.class",
         "keyword.other.phpdoc.php",
         "log.date"
       ],
@@ -582,7 +584,7 @@
       "scope": [
         "keyword.control.as",
         "keyword.other",
-        "expression.embbeded.vue punctuation.definition.tag",
+        "expression.embedded.vue punctuation.definition.tag",
         "text.html.twig meta.tag.inline.any.html",
         "meta.tag.template.value.twig meta.function.arguments.twig",
         "meta.directive.vue punctuation.separator.key-value.html",
@@ -741,7 +743,7 @@
       }
     },
     {
-      "name": "Object Property",
+      "name": "Object Property - General",
       "scope": [
         "variable.other.property",
         "support.variable.property",
@@ -753,7 +755,7 @@
       }
     },
     {
-      "name": "Object Property",
+      "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
         "foreground": "#949abb"
@@ -859,7 +861,7 @@
         "support.class",
         "support.type",
         "variable.other.readwrite.alias",
-        "support.orther.namespace.use.php",
+        "support.other.namespace.use.php",
         "meta.use.php",
         "support.other.namespace.php",
         "support.type.sys-types",
@@ -1027,14 +1029,14 @@
       }
     },
     {
-      "name": "CSS ID's",
+      "name": "CSS IDs",
       "scope": "source.sass keyword.control",
       "settings": {
         "foreground": "#7aa2f7"
       }
     },
     {
-      "name": "CSS psuedo selectors",
+      "name": "CSS pseudo selectors",
       "scope": [
         "entity.other.attribute-name.pseudo-class",
         "entity.other.attribute-name.pseudo-element",
@@ -1214,7 +1216,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#6eb6e0"
+        "foreground": "#ff9e64"
       }
     },
     {
@@ -2095,6 +2097,103 @@
     "runtime.modern": {
       "foreground": "#70c1d9",
       "fontStyle": "bold"
+    },
+    "type": {
+      "foreground": "#bb9af7"
+    },
+    "interface": {
+      "foreground": "#bb9af7",
+      "fontStyle": "italic"
+    },
+    "class": {
+      "foreground": "#8dd5ff",
+      "fontStyle": "bold"
+    },
+    "enum": {
+      "foreground": "#9f83d2"
+    },
+    "typeParameter": {
+      "foreground": "#c0a2f8"
+    },
+    "struct": {
+      "foreground": "#7dcfff"
+    },
+    "public": {
+      "foreground": "#9ece6a"
+    },
+    "private": {
+      "foreground": "#f38c9f"
+    },
+    "protected": {
+      "foreground": "#e0af68"
+    },
+    "static": {
+      "foreground": "#7aa2f7",
+      "fontStyle": "italic"
+    },
+    "readonly": {
+      "foreground": "#6eb6e0",
+      "fontStyle": "italic"
+    },
+    "abstract": {
+      "foreground": "#9f83d2",
+      "fontStyle": "italic"
+    },
+    "async": {
+      "foreground": "#73daca",
+      "fontStyle": "italic"
+    },
+    "string": {
+      "foreground": "#9ece6a"
+    },
+    "number": {
+      "foreground": "#ff9e64"
+    },
+    "boolean": {
+      "foreground": "#f38c9f"
+    },
+    "regexp": {
+      "foreground": "#9edbff"
+    },
+    "null": {
+      "foreground": "#d67b8c"
+    },
+    "undefined": {
+      "foreground": "#d67b8c"
+    },
+    "comment": {
+      "foreground": "#5a5f81",
+      "fontStyle": "italic"
+    },
+    "comment.documentation": {
+      "foreground": "#5a5f81"
+    },
+    "comment.line": {
+      "foreground": "#848bb1",
+      "fontStyle": "italic"
+    },
+    "comment.block": {
+      "foreground": "#848bb1",
+      "fontStyle": "italic"
+    },
+    "keyword.try": {
+      "foreground": "#e0af68",
+      "fontStyle": "bold"
+    },
+    "keyword.catch": {
+      "foreground": "#f38c9f",
+      "fontStyle": "bold"
+    },
+    "keyword.throw": {
+      "foreground": "#f38c9f",
+      "fontStyle": "bold"
+    },
+    "keyword.finally": {
+      "foreground": "#7aa2f7",
+      "fontStyle": "bold"
+    },
+    "exception": {
+      "foreground": "#f38c9f"
     }
   }
 }

@@ -7,17 +7,29 @@ describe('Palette Generation', () => {
       for (const [key, value] of Object.entries(obj)) {
         const currentPath = path ? `${path}.${key}` : key
         if (typeof value === 'string') {
-          expect(
-            isValidHex(value),
-            `Invalid color at ${currentPath}: ${value}`
-          ).toBe(true)
+          try {
+            expect(
+              isValidHex(value),
+              `Invalid color at ${currentPath}: ${value}`
+            ).toBe(true)
+          } catch (error) {
+            throw new Error(
+              `Failed to validate color at ${currentPath}: ${value} - ${error instanceof Error ? error.message : String(error)}`
+            )
+          }
         } else if (typeof value === 'object' && value !== null) {
           checkColors(value as Record<string, unknown>, currentPath)
         }
       }
     }
 
-    checkColors(palette as unknown as Record<string, unknown>)
+    try {
+      checkColors(palette as unknown as Record<string, unknown>)
+    } catch (error) {
+      throw new Error(
+        `Palette validation failed: ${error instanceof Error ? error.message : String(error)}`
+      )
+    }
   })
 
   it('should have all required color groups', () => {
