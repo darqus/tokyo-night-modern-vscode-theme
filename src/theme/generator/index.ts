@@ -26,6 +26,22 @@ import {
   generateTerminalColors,
 } from './ui'
 
+/**
+ * Генерирует полную тему VS Code Tokyo Night
+ *
+ * Объединяет все компоненты темы:
+ * - UI цвета (кнопки, панели, редактор и т.д.)
+ * - Токены для подсветки синтаксиса (TextMate)
+ * - Семантические токены для семантической подсветки
+ *
+ * @returns Полная структура темы VS Code
+ *
+ * @example
+ * ```ts
+ * const theme = generateTheme()
+ * // theme содержит все цвета и правила подсветки
+ * ```
+ */
 export function generateTheme(): VSCodeTheme {
   return {
     name: THEME_CONFIG.name,

@@ -5,6 +5,16 @@
 
 /**
  * Нормализует HEX цвет к формату #rrggbb (нижний регистр)
+ *
+ * @param hex - HEX цвет в любом формате (#RGB, #RRGGBB, RRGGBB)
+ * @returns Нормализованный HEX цвет (#rrggbb)
+ *
+ * @example
+ * ```ts
+ * normalizeHex('f00') // '#ff0000'
+ * normalizeHex('#F00') // '#ff0000'
+ * normalizeHex('ff0000') // '#ff0000'
+ * ```
  */
 export function normalizeHex(hex: string): string {
   let normalized = hex.startsWith('#') ? hex : `#${hex}`
@@ -17,6 +27,15 @@ export function normalizeHex(hex: string): string {
 
 /**
  * Преобразует HEX цвет в RGB
+ *
+ * @param hex - HEX цвет в любом формате (#RGB, #RRGGBB, RRGGBB)
+ * @returns Объект с компонентами RGB (r, g, b от 0 до 255)
+ *
+ * @example
+ * ```ts
+ * hexToRgb('#ff0000') // { r: 255, g: 0, b: 0 }
+ * hexToRgb('00ff00') // { r: 0, g: 255, b: 0 }
+ * ```
  */
 export function hexToRgb(hex: string): { r: number; g: number; b: number } {
   const normalized = normalizeHex(hex)
@@ -28,6 +47,16 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } {
 
 /**
  * Преобразует RGB в HEX цвет
+ *
+ * @param r - Красный компонент (0-255)
+ * @param g - Зеленый компонент (0-255)
+ * @param b - Синий компонент (0-255)
+ * @returns HEX цвет в формате #rrggbb
+ *
+ * @example
+ * ```ts
+ * rgbToHex(255, 0, 0) // '#ff0000'
+ * ```
  */
 export function rgbToHex(r: number, g: number, b: number): string {
   const toHex = (n: number) =>
