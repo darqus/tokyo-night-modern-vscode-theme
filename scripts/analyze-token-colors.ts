@@ -2,13 +2,9 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { TokenColor, VSCodeTheme } from '../src/theme/types'
 import { getColorDistance } from '../src/theme/utils/contrast'
+import { sanitizeLogOutput } from '../src/theme/utils/logger'
 
-function sanitizeOutput(text: string): string {
-  // Remove control characters
-  return text.replace(/[\x00-\x1F\x7F-\x9F]/g, '')
-}
-
-const themePath = join(__dirname, '../themes/tokyo-night-color-theme.json')
+const themePath = join(__dirname, '../themes/tokyo-modern-color-theme.json')
 
 let theme: VSCodeTheme
 try {
@@ -94,10 +90,10 @@ if (similarPairs.length > 0) {
     .slice(0, 15)
     .forEach((pair) => {
       console.log(
-        `  ${sanitizeOutput(pair.color1)} ↔ ${sanitizeOutput(pair.color2)} (расстояние: ${pair.distance})`
+        `  ${sanitizeLogOutput(pair.color1)} ↔ ${sanitizeLogOutput(pair.color2)} (расстояние: ${pair.distance})`
       )
-      console.log(`    ${sanitizeOutput(pair.token1)}`)
-      console.log(`    ${sanitizeOutput(pair.token2)}\n`)
+      console.log(`    ${sanitizeLogOutput(pair.token1)}`)
+      console.log(`    ${sanitizeLogOutput(pair.token2)}\n`)
     })
 } else {
   console.log('✅ Все цвета достаточно различимы')
