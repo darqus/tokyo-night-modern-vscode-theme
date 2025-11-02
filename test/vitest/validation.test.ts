@@ -10,6 +10,7 @@ describe('Validation Utils', () => {
       'editor.background': '#000000',
     },
     tokenColors: [],
+    semanticTokenColors: {},
   }
 
   describe('validateTheme', () => {
@@ -138,6 +139,7 @@ describe('Validation Utils', () => {
         tokenColors: [
           { scope: 'comment', settings: { foreground: '#888888' } }
         ],
+        semanticTokenColors: {},
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(true)
@@ -196,7 +198,7 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: null as any
+          foreground: null as unknown as string
         }
       }
       const result = validateTheme(theme)
@@ -207,7 +209,7 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: 123 as any
+          foreground: 123 as unknown as string
         }
       }
       const result = validateTheme(theme)
