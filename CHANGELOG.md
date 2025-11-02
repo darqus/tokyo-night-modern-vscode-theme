@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1190](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.1179...v2.3.1190) (2025-11-02)
+
+
+### Features
+
+* **theme:** enhance theme validation and color palette management ([7ff310f](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/7ff310f169bae0e46d3747a32c3b8d10a6110ba4))
+* **theme:** implement color constants and enhance documentation ([a991afa](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/a991afa723653ef63a66c41f83108012c8fe9330))
+* **theme:** rename Tokyo Night theme to Tokyo Night Modern ([f3f5b13](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/f3f5b13f8552cef36fe3674e2d3927d4f05dfedf))
+
+
+### Bug Fixes
+
+* **vitest:** add missing semanticTokenColors property in validation tests ([09f89b9](https://github.com/darqus/tokyo-night-modern-vscode-theme/commit/09f89b9dfd78635c01470c45138e386b1af0cc09))
+
 ### [2.3.1179](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.1178...v2.3.1179) (2025-11-01)
 
 ### [2.3.1178](https://github.com/darqus/tokyo-night-modern-vscode-theme/compare/v2.3.1177...v2.3.1178) (2025-11-01)
