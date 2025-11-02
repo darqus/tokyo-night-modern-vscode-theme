@@ -1,6 +1,6 @@
 {
-  "name": "tokyo-night-modern",
-  "displayName": "Tokyo Night Modern",
+  "name": "tokyo-modern",
+  "displayName": "Tokyo Modern",
   "description": "Beautiful modern dark theme for VS Code with carefully crafted colors and contemporary design",
   "version": "2.3.1193",
   "author": "lod",
@@ -12,10 +12,10 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darqus/tokyo-night-modern-vscode-theme"
+    "url": "https://github.com/darqus/tokyo-modern-vscode-theme"
   },
   "bugs": {
-    "url": "https://github.com/darqus/tokyo-night-modern-vscode-theme/issues"
+    "url": "https://github.com/darqus/tokyo-modern-vscode-theme/issues"
   },
   "categories": [
     "Themes"
@@ -29,14 +29,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Tokyo Night Modern",
+        "label": "Tokyo Modern",
         "uiTheme": "vs-dark",
-        "path": "./themes/tokyo-night-color-theme.json"
+        "path": "./themes/tokyo-modern-color-theme.json"
       }
     ]
   },
   "scripts": {
-    "build": "ts-node scripts/build-theme.ts && biome format --write themes/tokyo-night-color-theme.json",
+    "build": "ts-node scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
     "build:vsix": "ts-node scripts/build-vsix.ts",
     "package": "npm run build:vsix",
     "release": "ts-node scripts/release.ts",

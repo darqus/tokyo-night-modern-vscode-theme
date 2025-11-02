@@ -1,7 +1,7 @@
 import { generateSemanticTokenColors } from '../src/theme/generator/semantic'
 
 console.log(
-  '🎨 Демонстрация расширенных семантических токенов Tokyo Night Modern\n'
+  '🎨 Демонстрация расширенных семантических токенов Tokyo Modern\n'
 )
 
 const tokens = generateSemanticTokenColors()

@@ -46,7 +46,7 @@ function buildTheme() {
     })
   }
 
-  const outputPath = join(__dirname, '../themes/tokyo-night-color-theme.json')
+  const outputPath = join(__dirname, '../themes/tokyo-modern-color-theme.json')
 
   writeFileSync(outputPath, JSON.stringify(theme, null, 2))
 

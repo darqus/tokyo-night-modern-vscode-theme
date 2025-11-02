@@ -6,13 +6,13 @@
  */
 
 /**
- * Конфигурация темы Tokyo Night Modern
+ * Конфигурация темы Tokyo Modern
  */
 export const THEME_CONFIG = {
   /**
    * Название темы
    */
-  name: 'Tokyo Night Modern',
+  name: 'Tokyo Modern',
 
   /**
    * Тип темы (dark/light)

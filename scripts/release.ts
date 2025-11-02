@@ -233,9 +233,9 @@ class ReleaseManager {
       }
 
       const readme = readFileSync(this.readmePath, 'utf8')
-      const vsixFileName = `tokyo-night-modern-${version}.vsix`
+      const vsixFileName = `tokyo-modern-${version}.vsix`
       const repoUrl =
-        'https://github.com/darqus/tokyo-night-modern-vscode-theme'
+        'https://github.com/darqus/tokyo-modern-vscode-theme'
       const downloadLink = `[${vsixFileName}](${repoUrl}/releases/download/v${version}/${vsixFileName})`
       const githubReleasesLink = `[GitHub Releases](${repoUrl}/releases)`
 
@@ -365,7 +365,7 @@ class ReleaseManager {
         console.warn('⚠️  GitHub CLI (gh) is not installed')
         console.log('   Install it: https://cli.github.com/')
         console.log(
-          `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+          `📝 Manual release creation: https://github.com/darqus/tokyo-modern-vscode-theme/releases/new?tag=v${version}`
         )
         return
       }
@@ -375,7 +375,7 @@ class ReleaseManager {
         console.warn('⚠️  GitHub CLI is not authenticated')
         console.log('   Run: gh auth login')
         console.log(
-          `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+          `📝 Manual release creation: https://github.com/darqus/tokyo-modern-vscode-theme/releases/new?tag=v${version}`
         )
         return
       }
@@ -396,7 +396,7 @@ class ReleaseManager {
       }
 
       // Путь к .vsix файлу
-      const vsixFileName = `tokyo-night-modern-${version}.vsix`
+      const vsixFileName = `tokyo-modern-${version}.vsix`
       const vsixPath = join(process.cwd(), vsixFileName)
 
       // Проверяем, что файл существует
@@ -428,7 +428,7 @@ class ReleaseManager {
               `❌ Failed to upload ${vsixFileName}: ${uploadResult.error}`
             )
             console.log(
-              `📝 Manual upload: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/edit/v${version}`
+              `📝 Manual upload: https://github.com/darqus/tokyo-modern-vscode-theme/releases/edit/v${version}`
             )
           }
         } else {
@@ -452,7 +452,7 @@ class ReleaseManager {
                 `❌ Failed to upload to existing release: ${uploadResult.error}`
               )
               console.log(
-                `📝 Manual release: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/edit/v${version}`
+                `📝 Manual release: https://github.com/darqus/tokyo-modern-vscode-theme/releases/edit/v${version}`
               )
             }
           } else {
@@ -460,7 +460,7 @@ class ReleaseManager {
               `❌ Failed to create GitHub release: ${createResult.error}`
             )
             console.log(
-              `📝 Manual release creation: https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/new?tag=v${version}`
+              `📝 Manual release creation: https://github.com/darqus/tokyo-modern-vscode-theme/releases/new?tag=v${version}`
             )
             console.log(
               `📦 Don't forget to attach ${vsixFileName} to the release`
@@ -585,7 +585,7 @@ const main = async () => {
 
   if (args.includes('--help') || args.includes('-h')) {
     console.log(`
-🚀 Tokyo Night Modern Release Manager
+🚀 Tokyo Modern Release Manager
 
 Usage: npm run release [options]
 

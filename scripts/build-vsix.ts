@@ -6,7 +6,7 @@ import path from 'node:path'
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf-8')
 )
-const VSIX_NAME = `tokyo-night-modern-${pkg.version}.vsix`
+const VSIX_NAME = `tokyo-modern-${pkg.version}.vsix`
 
 // Путь к папке с расширением (предполагается, что build-theme уже сгенерировал нужные файлы)
 const EXT_DIR = path.resolve(__dirname, '../')

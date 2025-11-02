@@ -20,7 +20,7 @@ function check(name: string, fg: string, bg: string) {
   return result
 }
 
-console.log('🔍 Проверка контрастности темы Tokyo Night Modern\n')
+console.log('🔍 Проверка контрастности темы Tokyo Modern\n')
 
 // Основные комбинации
 console.log('📊 Основные комбинации:')
