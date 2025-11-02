@@ -28,7 +28,7 @@
 3. Search "Tokyo Night Modern"
 4. Click Install
 
-### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, ect.)
+### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, etc.)
 
 1. Download the `.vsix` file from [GitHub Releases](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/latest)
 2. Open VS Code
