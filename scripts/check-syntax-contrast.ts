@@ -12,26 +12,34 @@ console.log('🔍 Анализ контрастности токенов син�
 console.log(`Фон редактора: ${editorBg}\n`)
 
 // Анализируем tokenColors
-theme.tokenColors.forEach((token: any) => {
-  if (token.settings?.foreground) {
-    const fg = token.settings.foreground
-    const result = checkContrast(fg, editorBg)
+theme.tokenColors.forEach(
+  (token: {
+    name?: string
+    scope?: string | string[]
+    settings?: { foreground?: string }
+  }) => {
+    if (token.settings?.foreground) {
+      const fg = token.settings.foreground
+      const result = checkContrast(fg, editorBg)
 
-    if (!result.aa) {
-      issues.push({
-        name: token.name || token.scope,
-        color: fg,
-        ratio: result.ratio,
-      })
+      if (!result.aa) {
+        const scopeName = Array.isArray(token.scope) ? token.scope[0] : token.scope
+        issues.push({
+          name: token.name || scopeName || 'unknown',
+          color: fg,
+          ratio: result.ratio,
+        })
+      }
     }
   }
-})
+)
 
 // Анализируем semanticTokenColors
 Object.entries(theme.semanticTokenColors || {}).forEach(
-  ([name, settings]: [string, any]) => {
-    if (settings?.foreground) {
-      const fg = settings.foreground
+  ([name, settings]) => {
+    const tokenSettings = settings as { foreground?: string }
+    if (tokenSettings?.foreground) {
+      const fg = tokenSettings.foreground
       const result = checkContrast(fg, editorBg)
 
       if (!result.aa) {

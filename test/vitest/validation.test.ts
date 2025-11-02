@@ -31,7 +31,7 @@ describe('Validation Utils', () => {
     })
 
     it('should detect invalid type', () => {
-      const theme = { ...validTheme, type: 'invalid' as any }
+      const theme = { ...validTheme, type: 'invalid' as 'dark' | 'light' }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
       expect(result.errors.some((e) => e.includes('type'))).toBe(true)
@@ -50,7 +50,7 @@ describe('Validation Utils', () => {
     it('should handle missing colors object', () => {
       const theme = {
         ...validTheme,
-        colors: null as any,
+        colors: null as unknown as Record<string, string>,
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
@@ -101,7 +101,7 @@ describe('Validation Utils', () => {
     })
 
     it('should handle theme without tokenColors', () => {
-      const theme = { ...validTheme, tokenColors: undefined as any }
+      const theme = { ...validTheme, tokenColors: undefined as unknown as [] }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
     })
@@ -285,7 +285,7 @@ describe('Validation Utils', () => {
     it('should handle theme without colors object', () => {
       const theme = {
         ...validTheme,
-        colors: null as any,
+        colors: null as unknown as Record<string, string>,
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)

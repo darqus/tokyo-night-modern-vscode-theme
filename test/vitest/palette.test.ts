@@ -3,7 +3,7 @@ import { isValidHex } from '../../src/theme/utils/color'
 
 describe('Palette Generation', () => {
   it('should generate valid hex colors', () => {
-    const checkColors = (obj: any, path = ''): void => {
+    const checkColors = (obj: Record<string, unknown>, path = ''): void => {
       for (const [key, value] of Object.entries(obj)) {
         const currentPath = path ? `${path}.${key}` : key
         if (typeof value === 'string') {
@@ -12,12 +12,12 @@ describe('Palette Generation', () => {
             `Invalid color at ${currentPath}: ${value}`
           ).toBe(true)
         } else if (typeof value === 'object' && value !== null) {
-          checkColors(value, currentPath)
+          checkColors(value as Record<string, unknown>, currentPath)
         }
       }
     }
 
-    checkColors(palette)
+    checkColors(palette as unknown as Record<string, unknown>)
   })
 
   it('should have all required color groups', () => {
