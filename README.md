@@ -1,11 +1,11 @@
-# 🌆 Tokyo Night Modern
+# 🌆 Tokyo Modern
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 > A modern, balanced dark theme for VS Code with declarative color generation and utility-based palette.
 
-![Tokyo Night Modern](static/ss_tokyo_night_modern.png)
+![Tokyo Modern](static/ss_tokyo_modern.png)
 
 ## 🌎 Live Preview
 
@@ -25,7 +25,7 @@
 
 1. Open VS Code
 2. Press `Ctrl+Shift+X` (Extensions)
-3. Search "Tokyo Night Modern"
+3. Search "Tokyo Modern"
 4. Click Install
 
 ### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, etc.)
