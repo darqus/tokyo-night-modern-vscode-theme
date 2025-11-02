@@ -62,7 +62,3 @@ yarn-error.log*
 *.md
 cspell.json
 firebase-debug.log
-
-# Exclude backup and original theme files
-themes/*_back.json
-themes/*_original.json
