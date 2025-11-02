@@ -1,3 +1,4 @@
+import { THEME_CONFIG } from '../config'
 import type { VSCodeTheme } from '../types'
 import { generateSemanticTokenColors } from './semantic'
 import {
@@ -27,9 +28,9 @@ import {
 
 export function generateTheme(): VSCodeTheme {
   return {
-    name: 'Tokyo Night',
-    type: 'dark',
-    semanticHighlighting: true,
+    name: THEME_CONFIG.name,
+    type: THEME_CONFIG.type,
+    semanticHighlighting: THEME_CONFIG.semanticHighlighting,
     colors: {
       ...generateCoreColors(),
       ...generateButtonColors(),
