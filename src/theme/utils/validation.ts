@@ -44,12 +44,18 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
   if (Array.isArray(theme.tokenColors)) {
     theme.tokenColors.forEach((token, index) => {
       if (token.settings) {
-        if (token.settings.foreground && !isValidHex(token.settings.foreground)) {
+        if (
+          token.settings.foreground &&
+          !isValidHex(token.settings.foreground)
+        ) {
           errors.push(
             `Token ${index} (${token.name || 'unnamed'}): Invalid foreground color: ${token.settings.foreground}`
           )
         }
-        if (token.settings.background && !isValidHex(token.settings.background)) {
+        if (
+          token.settings.background &&
+          !isValidHex(token.settings.background)
+        ) {
           errors.push(
             `Token ${index} (${token.name || 'unnamed'}): Invalid background color: ${token.settings.background}`
           )
@@ -60,19 +66,20 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
 
   // Валидация семантических токенов
   if (theme.semanticTokenColors) {
-    Object.entries(theme.semanticTokenColors).forEach(
-      ([key, style]) => {
-        if (style.foreground && !isValidHex(style.foreground)) {
-          errors.push(`Semantic token "${key}": Invalid foreground color: ${style.foreground}`)
-        }
+    Object.entries(theme.semanticTokenColors).forEach(([key, style]) => {
+      if (style.foreground && !isValidHex(style.foreground)) {
+        errors.push(
+          `Semantic token "${key}": Invalid foreground color: ${style.foreground}`
+        )
       }
-    )
+    })
   }
 
   // Проверка критичных комбинаций контрастности
   if (theme.colors && theme.type === 'dark') {
     const foreground = theme.colors['foreground']
-    const background = theme.colors['editor.background'] || theme.colors['editor.foreground']
+    const background =
+      theme.colors['editor.background'] || theme.colors['editor.foreground']
 
     if (foreground && background) {
       const contrast = getContrastRatio(foreground, background)

@@ -8,7 +8,9 @@ describe('Palette Constants', () => {
 
   it('should have values between 0 and 1', () => {
     for (const [key, value] of Object.entries(COLOR_MIXES)) {
-      expect(value, `${key} should be between 0 and 1`).toBeGreaterThanOrEqual(0)
+      expect(value, `${key} should be between 0 and 1`).toBeGreaterThanOrEqual(
+        0
+      )
       expect(value, `${key} should be between 0 and 1`).toBeLessThanOrEqual(1)
     }
   })

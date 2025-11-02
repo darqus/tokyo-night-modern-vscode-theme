@@ -1,4 +1,8 @@
-import { alpha, createSemanticToken, createSemanticTokenGroup } from '../../src/theme/utils/semantic-tokens'
+import {
+  alpha,
+  createSemanticToken,
+  createSemanticTokenGroup,
+} from '../../src/theme/utils/semantic-tokens'
 
 describe('Semantic Tokens', () => {
   describe('createSemanticToken', () => {
@@ -26,7 +30,7 @@ describe('Semantic Tokens', () => {
       const token = createSemanticToken({
         foreground: '#ff0000',
         fontStyle: 'bold',
-        underline: true
+        underline: true,
       })
       expect(token.foreground).toBe('#ff0000')
       expect(token.fontStyle).toContain('bold')
@@ -40,7 +44,7 @@ describe('Semantic Tokens', () => {
         { foreground: '#ff0000' },
         {
           variant1: { fontStyle: 'italic' },
-          variant2: { fontStyle: 'bold' }
+          variant2: { fontStyle: 'bold' },
         }
       )
 

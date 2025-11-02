@@ -1,8 +1,9 @@
+import type { VSCodeTheme } from '../../src/theme'
 import { generateTheme } from '../../src/theme/generator'
 import { isValidHex } from '../../src/theme/utils/color'
 
 describe('Theme Generator', () => {
-  let theme: any
+  let theme: VSCodeTheme
 
   beforeAll(() => {
     theme = generateTheme()
@@ -25,7 +26,9 @@ describe('Theme Generator', () => {
   it('should generate valid hex colors', () => {
     for (const [key, value] of Object.entries(theme.colors)) {
       if (typeof value === 'string') {
-        expect(isValidHex(value), `Invalid color at ${key}: ${value}`).toBe(true)
+        expect(isValidHex(value), `Invalid color at ${key}: ${value}`).toBe(
+          true
+        )
       }
     }
   })

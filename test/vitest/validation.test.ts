@@ -1,5 +1,8 @@
 import type { VSCodeTheme } from '../../src/theme/types'
-import { validateCriticalContrast, validateTheme } from '../../src/theme/utils/validation'
+import {
+  validateCriticalContrast,
+  validateTheme,
+} from '../../src/theme/utils/validation'
 
 describe('Validation Utils', () => {
   const validTheme: VSCodeTheme = {
@@ -31,7 +34,7 @@ describe('Validation Utils', () => {
       const theme = { ...validTheme, type: 'invalid' as any }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('type'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('type'))).toBe(true)
     })
 
     it('should detect invalid hex colors', () => {
@@ -41,17 +44,17 @@ describe('Validation Utils', () => {
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('Invalid hex'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('Invalid hex'))).toBe(true)
     })
 
     it('should handle missing colors object', () => {
       const theme = {
         ...validTheme,
-        colors: null as any
+        colors: null as any,
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('colors object'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('colors object'))).toBe(true)
     })
 
     it('should detect low contrast', () => {
@@ -63,7 +66,7 @@ describe('Validation Utils', () => {
         },
       }
       const result = validateTheme(theme)
-      expect(result.warnings.some(w => w.includes('contrast'))).toBe(true)
+      expect(result.warnings.some((w) => w.includes('contrast'))).toBe(true)
     })
   })
 
@@ -137,7 +140,7 @@ describe('Validation Utils', () => {
           'editor.foreground': '#cccccc',
         },
         tokenColors: [
-          { scope: 'comment', settings: { foreground: '#888888' } }
+          { scope: 'comment', settings: { foreground: '#888888' } },
         ],
         semanticTokenColors: {},
       }
@@ -149,36 +152,40 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         tokenColors: [
-          { name: 'test', scope: 'test', settings: { foreground: 'invalid' } }
-        ]
+          { name: 'test', scope: 'test', settings: { foreground: 'invalid' } },
+        ],
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('Invalid foreground'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('Invalid foreground'))).toBe(
+        true
+      )
     })
 
     it('should validate token colors with invalid background', () => {
       const theme = {
         ...validTheme,
         tokenColors: [
-          { name: 'test', scope: 'test', settings: { background: 'invalid' } }
-        ]
+          { name: 'test', scope: 'test', settings: { background: 'invalid' } },
+        ],
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('Invalid background'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('Invalid background'))).toBe(
+        true
+      )
     })
 
     it('should validate semantic token colors', () => {
       const theme = {
         ...validTheme,
         semanticTokenColors: {
-          'variable': { foreground: 'invalid' }
-        }
+          variable: { foreground: 'invalid' },
+        },
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
-      expect(result.errors.some(e => e.includes('Semantic token'))).toBe(true)
+      expect(result.errors.some((e) => e.includes('Semantic token'))).toBe(true)
     })
 
     it('should check contrast for light theme', () => {
@@ -188,7 +195,7 @@ describe('Validation Utils', () => {
         colors: {
           foreground: '#000000',
           'editor.background': '#ffffff',
-        }
+        },
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(true)
@@ -198,8 +205,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: null as unknown as string
-        }
+          foreground: null as unknown as string,
+        },
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
@@ -209,8 +216,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: 123 as unknown as string
-        }
+          foreground: 123 as unknown as string,
+        },
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
@@ -220,8 +227,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: 'undefined'
-        }
+          foreground: 'undefined',
+        },
       }
       const result = validateTheme(theme)
       expect(result.valid).toBe(false)
@@ -232,7 +239,7 @@ describe('Validation Utils', () => {
     it('should skip validation for light theme', () => {
       const theme = {
         ...validTheme,
-        type: 'light' as const
+        type: 'light' as const,
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)
@@ -244,7 +251,7 @@ describe('Validation Utils', () => {
         colors: {
           'button.foreground': '#ffffff',
           'button.background': '#000000',
-        }
+        },
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)
@@ -256,7 +263,7 @@ describe('Validation Utils', () => {
         colors: {
           'input.foreground': '#ffffff',
           'input.background': '#000000',
-        }
+        },
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)
@@ -268,7 +275,7 @@ describe('Validation Utils', () => {
         colors: {
           foreground: '#999999',
           'editor.background': '#000000',
-        }
+        },
       }
       const result = validateCriticalContrast(theme)
       expect(result).toBeDefined()
@@ -278,7 +285,7 @@ describe('Validation Utils', () => {
     it('should handle theme without colors object', () => {
       const theme = {
         ...validTheme,
-        colors: null as any
+        colors: null as any,
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)
@@ -290,7 +297,7 @@ describe('Validation Utils', () => {
         colors: {
           'button.foreground': '#888888',
           'button.background': '#000000',
-        }
+        },
       }
       const result = validateCriticalContrast(theme)
       expect(result.valid).toBe(true)

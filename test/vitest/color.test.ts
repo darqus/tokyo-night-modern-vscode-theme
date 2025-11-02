@@ -1,4 +1,10 @@
-import { alpha, darken, isValidHex, lighten, mix } from '../../src/theme/utils/color'
+import {
+  alpha,
+  darken,
+  isValidHex,
+  lighten,
+  mix,
+} from '../../src/theme/utils/color'
 
 describe('Color Utils', () => {
   describe('alpha', () => {
