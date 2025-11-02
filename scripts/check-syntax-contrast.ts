@@ -18,7 +18,7 @@ function sanitizeOutput(text: string): string {
     .join('')
 }
 
-const themePath = join(__dirname, '../themes/tokyo-night-color-theme.json')
+const themePath = join(__dirname, '../themes/tokyo-modern-color-theme.json')
 let theme: {
   colors: Record<string, string>
   tokenColors: Array<{
