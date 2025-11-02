@@ -16,13 +16,17 @@ node_modules/**
 src/**
 scripts/**
 docs/**
+test/**
 tests/**
 coverage/**
 static/**
+tools/**
 THEME_SUMMARY.md
 
 # Configuration files
 tsconfig.json
+tsconfig.test.json
+vitest.config.ts
 commitlint.config.js
 .npmignore
 jest.config.js
@@ -59,6 +63,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Custom project files to exclude from VSIX
-*.md
+CHANGELOG.md
 cspell.json
 firebase-debug.log
