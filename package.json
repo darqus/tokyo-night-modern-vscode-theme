@@ -42,6 +42,10 @@
     "release": "ts-node scripts/release.ts",
     "lint": "biome lint .",
     "format": "biome format --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "check:contrast": "ts-node scripts/check-contrast.ts",
     "check:syntax": "ts-node scripts/check-syntax-contrast.ts",
     "analyze:colors": "ts-node scripts/analyze-token-colors.ts",
@@ -51,11 +55,14 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.2",
     "@types/node": "^24.9.2",
+    "@vitest/coverage-v8": "^4.0.6",
+    "@vitest/ui": "^4.0.6",
     "@vscode/vsce": "^3.6.2",
     "npm-check-updates": "^19.1.2",
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
   }
 }
