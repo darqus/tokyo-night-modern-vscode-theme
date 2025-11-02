@@ -32,7 +32,3 @@ export function generateColorVariants(base: string) {
     bright: lighten(base, 0.25),
   }
 }
-
-export function deriveColor(_base: string, target: string): string {
-  return target
-}

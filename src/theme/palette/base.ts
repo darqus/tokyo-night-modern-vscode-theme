@@ -15,5 +15,5 @@ export const basePalette = {
   white: '#ffffff',
   black: '#000000',
 
-  border: '#27273b',
+  badge: '#007acc',
 } as const

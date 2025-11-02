@@ -81,7 +81,7 @@ export const palette: Palette = {
     selection: lighten(basePalette.blue, 0.3),
     indentActive: lighten(basePalette.background, 0.15),
     disabled: mix(basePalette.foreground, basePalette.background, 0.4),
-    badge: '#007acc',
+    badge: basePalette.badge,
     scrollbar: lighten(basePalette.foreground, 0.12),
     ghostText: mix(basePalette.foreground, basePalette.background, 0.5),
     inactive: lighten(basePalette.background, 0.1),
