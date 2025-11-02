@@ -6,7 +6,15 @@ export function sanitizeLogOutput(text: unknown): string {
   if (typeof text !== 'string') {
     text = String(text)
   }
-  return (text as string).replace(/[\x00-\x1f\x7f-\x9f]/g, '').trim()
+  return (text as string)
+    .split('')
+    .filter((char) => {
+      const code = char.charCodeAt(0)
+      return !(code >= 0 && code <= 31) && !(code >= 127 && code <= 159)
+    })
+    .join('')
+    .replace(/[\r\n]/g, '')
+    .trim()
 }
 
 export const logger = {
