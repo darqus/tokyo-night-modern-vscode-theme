@@ -12,7 +12,7 @@ export const THEME_CONFIG = {
   /**
    * Название темы
    */
-  name: 'Tokyo Night',
+  name: 'Tokyo Night Modern',
 
   /**
    * Тип темы (dark/light)
