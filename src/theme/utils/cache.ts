@@ -4,7 +4,7 @@
 
 const cache = new Map<string, unknown>()
 
-export function memoize<T extends (...args: unknown[]) => unknown>(
+export function memoize<T extends (...args: any[]) => any>(
   fn: T,
   keyGenerator?: (...args: Parameters<T>) => string
 ): T {
