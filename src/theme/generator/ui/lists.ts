@@ -1,31 +1,31 @@
 import { palette } from '../../palette'
-import { alpha, lighten } from '../../utils/color'
+import { alpha, lighten, mix } from '../../utils/color'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, interactive, special, purple } = palette
+  const { bg, fg, blue, yellow, purple, orange, red } = palette
 
   return {
-    'list.dropBackground': bg.lightest,
-    'list.deemphasizedForeground': fg.medium,
+    'list.dropBackground': bg.light,
+    'list.deemphasizedForeground': fg.main,
     'list.activeSelectionBackground': alpha(purple.dark, 0.35),
-    'list.activeSelectionForeground': fg.brightest,
+    'list.activeSelectionForeground': fg.light,
     'list.inactiveSelectionBackground': alpha(purple.dark, 0.2),
-    'list.inactiveSelectionForeground': fg.bright,
+    'list.inactiveSelectionForeground': fg.light,
     'list.focusBackground': alpha(purple.dark, 0.35),
-    'list.focusForeground': fg.brightest,
+    'list.focusForeground': fg.light,
     'list.hoverBackground': alpha(purple.dark, 0.15),
-    'list.hoverForeground': fg.bright,
-    'list.highlightForeground': fg.brightest,
-    'list.invalidItemForeground': interactive.invalid,
-    'list.errorForeground': interactive.error,
-    'list.warningForeground': yellow.muted,
-    'listFilterWidget.background': bg.darker,
-    'listFilterWidget.outline': blue.primary,
-    'listFilterWidget.noMatchesOutline': interactive.errorOutline,
-    'pickerGroup.foreground': fg.brighter,
-    'pickerGroup.border': lighten(bg.lightest, 0.02),
-    'scrollbarSlider.background': alpha(special.scrollbar, 0.04),
-    'scrollbarSlider.hoverBackground': alpha(special.scrollbar, 0.06),
-    'scrollbarSlider.activeBackground': alpha(special.scrollbar, 0.13),
+    'list.hoverForeground': fg.light,
+    'list.highlightForeground': fg.light,
+    'list.invalidItemForeground': mix(orange.main, yellow.main, 0.3),
+    'list.errorForeground': red.dark,
+    'list.warningForeground': yellow.dark,
+    'listFilterWidget.background': bg.dark,
+    'listFilterWidget.outline': blue.dark,
+    'listFilterWidget.noMatchesOutline': red.dark,
+    'pickerGroup.foreground': fg.light,
+    'pickerGroup.border': lighten(bg.light, 0.02),
+    'scrollbarSlider.background': alpha(fg.main, 0.04),
+    'scrollbarSlider.hoverBackground': alpha(fg.main, 0.06),
+    'scrollbarSlider.activeBackground': alpha(fg.main, 0.13),
   }
 }

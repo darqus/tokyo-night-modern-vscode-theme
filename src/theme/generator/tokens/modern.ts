@@ -74,7 +74,7 @@ export function generateModernTokens(): TokenColor[] {
         'support.component.react',
       ],
       settings: {
-        foreground: blue.medium,
+        foreground: blue.main,
         fontStyle: 'italic',
       },
     },
@@ -101,7 +101,7 @@ export function generateModernTokens(): TokenColor[] {
         'variable.other.hook',
       ],
       settings: {
-        foreground: purple.bright,
+        foreground: purple.light,
         fontStyle: 'bold',
       },
     },
@@ -115,7 +115,7 @@ export function generateModernTokens(): TokenColor[] {
         'storage.type.generic',
       ],
       settings: {
-        foreground: cyan.bright,
+        foreground: cyan.light,
       },
     },
 
@@ -227,7 +227,7 @@ export function generateModernTokens(): TokenColor[] {
         'meta.macro.rust',
       ],
       settings: {
-        foreground: cyan.bright,
+        foreground: cyan.light,
         fontStyle: 'bold',
       },
     },
@@ -248,7 +248,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Go Functions',
       scope: ['entity.name.function.go', 'support.function.go'],
       settings: {
-        foreground: blue.medium,
+        foreground: blue.main,
       },
     },
 
@@ -304,7 +304,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Qwik Components',
       scope: ['entity.name.tag.qwik', 'support.class.component.qwik'],
       settings: {
-        foreground: purple.bright,
+        foreground: purple.light,
         fontStyle: 'bold',
       },
     },

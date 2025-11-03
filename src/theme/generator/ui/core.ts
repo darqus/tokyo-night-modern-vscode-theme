@@ -2,24 +2,24 @@ import { palette } from '../../palette'
 import { alpha, lighten } from '../../utils/color'
 
 export function generateCoreColors(): Record<string, string> {
-  const { fg, bg, special, blue, ui } = palette
+  const { fg, bg, blue, ui, neutral } = palette
 
   return {
-    foreground: fg.bright,
-    descriptionForeground: fg.medium,
-    disabledForeground: special.disabled,
+    foreground: fg.light,
+    descriptionForeground: fg.main,
+    disabledForeground: neutral.main,
     focusBorder: alpha(blue.light, 0.3),
-    errorForeground: fg.dim,
+    errorForeground: fg.dark,
     'widget.shadow': alpha(ui.white, 0),
-    'scrollbar.shadow': alpha(palette.ui.scrollbarShadow, 0.2),
-    'badge.background': special.badge,
-    'badge.foreground': ui.badgeForeground,
-    'icon.foreground': fg.bright,
+    'scrollbar.shadow': alpha(ui.black, 0.2),
+    'badge.background': ui.badge,
+    'badge.foreground': ui.white,
+    'icon.foreground': fg.light,
     'settings.headerForeground': blue.light,
-    'window.activeBorder': bg.darkest,
-    'window.inactiveBorder': bg.darkest,
+    'window.activeBorder': bg.dark,
+    'window.inactiveBorder': bg.dark,
     'sash.hoverBorder': lighten(bg.light, 0.02),
-    'toolbar.activeBackground': bg.lightest,
-    'toolbar.hoverBackground': bg.lightest,
+    'toolbar.activeBackground': bg.light,
+    'toolbar.hoverBackground': bg.light,
   }
 }

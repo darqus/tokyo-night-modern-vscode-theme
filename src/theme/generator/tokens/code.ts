@@ -88,7 +88,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Object Property - Specific',
       scope: 'variable.other.object.property',
-      settings: { foreground: fg.brighter },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
@@ -115,7 +115,7 @@ export function generateCodeTokens(): TokenColor[] {
         'keyword.other.special-method',
         'storage.type.cs',
       ],
-      settings: { foreground: blue.medium },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Function Definition',
@@ -128,7 +128,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.definition.method entity.name.function',
         'meta.object-literal entity.name.function',
       ],
-      settings: { foreground: blue.medium },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Function Argument',
@@ -185,7 +185,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: mix(cyan.dark, blue.primary, 0.3) },
+      settings: { foreground: mix(cyan.dark, blue.dark, 0.3) },
     },
     {
       name: 'Class Name',

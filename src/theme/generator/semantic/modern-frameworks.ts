@@ -11,7 +11,7 @@ export function generateModernFrameworkTokens(): Record<
   return {
     // React hooks and components
     'react.hook': createSemanticToken({
-      foreground: mix(purple.bright, pink.light, 0.3),
+      foreground: mix(purple.light, pink.light, 0.3),
       fontStyle: 'bold',
     }),
 
@@ -25,7 +25,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'react.state': createSemanticToken({
-      foreground: mix(purple.light, blue.medium, 0.4),
+      foreground: mix(purple.light, blue.main, 0.4),
       fontStyle: 'italic',
     }),
 
@@ -46,7 +46,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // TypeScript types
     'typescript.generic': createSemanticToken({
-      foreground: mix(cyan.bright, blue.medium, 0.3),
+      foreground: mix(cyan.light, blue.main, 0.3),
     }),
 
     'typescript.utility': createSemanticToken({
@@ -55,7 +55,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'typescript.mapped': createSemanticToken({
-      foreground: mix(purple.bright, pink.light, 0.2),
+      foreground: mix(purple.light, pink.light, 0.2),
     }),
 
     // GraphQL schemas
@@ -94,7 +94,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // Rust semantics
     'macro.rust': createSemanticToken({
-      foreground: lighten(cyan.bright, 0.08),
+      foreground: lighten(cyan.light, 0.08),
       fontStyle: 'bold',
     }),
 
@@ -104,7 +104,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'trait.rust': createSemanticToken({
-      foreground: mix(purple.light, blue.medium, 0.3),
+      foreground: mix(purple.light, blue.main, 0.3),
     }),
 
     'derive.rust': createSemanticToken({
@@ -114,11 +114,11 @@ export function generateModernFrameworkTokens(): Record<
 
     // Go semantics
     'interface.go': createSemanticToken({
-      foreground: mix(cyan.dark, blue.primary, 0.35),
+      foreground: mix(cyan.dark, blue.dark, 0.35),
     }),
 
     'goroutine.go': createSemanticToken({
-      foreground: mix(blue.medium, cyan.light, 0.3),
+      foreground: mix(blue.main, cyan.light, 0.3),
       fontStyle: 'italic',
     }),
 
@@ -152,7 +152,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'effect.solid': createSemanticToken({
-      foreground: mix(purple.light, blue.medium, 0.35),
+      foreground: mix(purple.light, blue.main, 0.35),
       fontStyle: 'italic',
     }),
 
@@ -178,7 +178,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'island.astro': createSemanticToken({
-      foreground: mix(cyan.light, blue.medium, 0.35),
+      foreground: mix(cyan.light, blue.main, 0.35),
     }),
 
     // Prisma/Drizzle ORM
@@ -205,12 +205,12 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'router.framework': createSemanticToken({
-      foreground: mix(purple.light, blue.medium, 0.3),
+      foreground: mix(purple.light, blue.main, 0.3),
     }),
 
     // Zod/Yup validation
     'schema.validation': createSemanticToken({
-      foreground: mix(cyan.dark, blue.primary, 0.4),
+      foreground: mix(cyan.dark, blue.dark, 0.4),
       fontStyle: 'bold',
     }),
 

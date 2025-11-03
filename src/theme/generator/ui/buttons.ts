@@ -2,22 +2,18 @@ import { palette } from '../../palette'
 import { mix } from '../../utils/color'
 
 export function generateButtonColors(): Record<string, string> {
-  const { blue, special, ui } = palette
+  const { blue, ui, bg } = palette
 
   return {
-    'extensionButton.prominentBackground': special.badge,
-    'extensionButton.prominentHoverBackground': mix(
-      special.badge,
-      blue.medium,
-      0.3
-    ),
+    'extensionButton.prominentBackground': ui.badge,
+    'extensionButton.prominentHoverBackground': mix(ui.badge, blue.main, 0.3),
     'extensionButton.prominentForeground': ui.white,
-    'extensionBadge.remoteBackground': special.badge,
+    'extensionBadge.remoteBackground': ui.badge,
     'extensionBadge.remoteForeground': ui.white,
-    'button.background': special.badge,
-    'button.hoverBackground': mix(special.badge, blue.medium, 0.3),
-    'button.secondaryBackground': special.inactive,
+    'button.background': ui.badge,
+    'button.hoverBackground': mix(ui.badge, blue.main, 0.3),
+    'button.secondaryBackground': bg.light,
     'button.foreground': ui.white,
-    'progressBar.background': blue.primary,
+    'progressBar.background': blue.dark,
   }
 }

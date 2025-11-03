@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, fg, yellow, special, purple } = palette
+  const { red, blue, cyan, teal, fg, yellow, purple } = palette
 
   return [
     {
@@ -23,7 +23,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions',
       scope: 'string.regexp',
-      settings: { foreground: special.regex },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Regular Expressions - Punctuation',
@@ -46,17 +46,17 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions - Quantifier',
       scope: 'keyword.operator.quantifier.regexp',
-      settings: { foreground: cyan.bright },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Regular Expressions - Backslash',
       scope: 'constant.character.escape.backslash',
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Escape Characters',
       scope: 'constant.character.escape',
-      settings: { foreground: cyan.bright },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Decorators',
@@ -64,7 +64,7 @@ export function generateMarkupTokens(): TokenColor[] {
         'tag.decorator.js entity.name.tag.js',
         'tag.decorator.js punctuation.definition.tag.js',
       ],
-      settings: { foreground: blue.medium },
+      settings: { foreground: blue.main },
     },
     {
       name: 'CSS Units',

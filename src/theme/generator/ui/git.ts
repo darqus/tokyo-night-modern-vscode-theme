@@ -6,13 +6,13 @@ export function generateGitColors(): Record<string, string> {
 
   return {
     'gitDecoration.modifiedResourceForeground': blue.light,
-    'gitDecoration.ignoredResourceForeground': fg.dim,
-    'gitDecoration.deletedResourceForeground': red.muted,
+    'gitDecoration.ignoredResourceForeground': fg.dark,
+    'gitDecoration.deletedResourceForeground': red.dark,
     'gitDecoration.renamedResourceForeground': teal.dark,
     'gitDecoration.addedResourceForeground': teal.dark,
     'gitDecoration.untrackedResourceForeground': teal.dark,
     'gitDecoration.conflictingResourceForeground': alpha(yellow.main, 0.8),
-    'gitDecoration.stageDeletedResourceForeground': red.muted,
+    'gitDecoration.stageDeletedResourceForeground': red.dark,
     'gitDecoration.stageModifiedResourceForeground': blue.light,
   }
 }

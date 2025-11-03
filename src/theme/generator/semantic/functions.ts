@@ -9,11 +9,11 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
   return {
     // Functions
     function: createSemanticToken({
-      foreground: blue.medium,
+      foreground: blue.main,
     }),
 
     'function.declaration': createSemanticToken({
-      foreground: lighten(blue.medium, 0.1),
+      foreground: lighten(blue.main, 0.1),
       fontStyle: 'bold',
     }),
 
@@ -23,11 +23,11 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
 
     // Methods
     method: createSemanticToken({
-      foreground: mix(blue.medium, cyan.light, 0.3),
+      foreground: mix(blue.main, cyan.light, 0.3),
     }),
 
     'method.declaration': createSemanticToken({
-      foreground: lighten(blue.medium, 0.08),
+      foreground: lighten(blue.main, 0.08),
       fontStyle: 'bold',
     }),
 
@@ -37,7 +37,7 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'method.readonly': createSemanticToken({
-      foreground: mix(blue.medium, teal.main, 0.25),
+      foreground: mix(blue.main, teal.main, 0.25),
       fontStyle: 'italic',
     }),
 

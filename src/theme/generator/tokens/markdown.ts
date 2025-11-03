@@ -1,6 +1,7 @@
 import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
+import { darken, lighten, mix } from '../../utils/color'
 function buildJsonKeyScopeSelector(level: number): string {
   const base = 'source.json meta.structure.dictionary.json'
   const nestingPattern =
@@ -12,7 +13,7 @@ export function generateMarkdownTokens(): TokenColor[] {
   const { fg, cyan, blue, teal } = palette
 
   const jsonKeyLevelColors = [
-    blue.medium,
+    blue.main,
     cyan.dark,
     cyan.light,
     palette.purple.light,
@@ -32,7 +33,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Plain Punctuation',
       scope: 'punctuation.definition.list_item.markdown',
-      settings: { foreground: palette.ui.plainPunctuation },
+      settings: { foreground: lighten(blue.main, 0.2) },
     },
     {
       name: 'Block Punctuation',
@@ -55,12 +56,12 @@ export function generateMarkdownTokens(): TokenColor[] {
         'punctuation.definition.array',
         'punctuation.section',
       ],
-      settings: { foreground: palette.ui.plainPunctuation },
+      settings: { foreground: lighten(blue.main, 0.2) },
     },
     {
       name: 'Markdown - Plain',
       scope: ['meta.embedded.block'],
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.light },
     },
     {
       name: 'HTML text',
@@ -70,7 +71,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'text.html',
         'text.log',
       ],
-      settings: { foreground: fg.bright },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Markdown - Markup Raw Inline',
@@ -81,7 +82,7 @@ export function generateMarkdownTokens(): TokenColor[] {
       name: 'Markdown - Markup Raw Inline Punctuation',
       scope:
         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-      settings: { foreground: fg.dim },
+      settings: { foreground: fg.dark },
     },
     {
       name: 'Markdown - Heading 1',
@@ -89,7 +90,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.1.markdown entity.name',
         'heading.1.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: cyan.bright },
+      settings: { fontStyle: 'bold', foreground: cyan.light },
     },
     {
       name: 'Markdown - Heading 2',
@@ -97,7 +98,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.2.markdown entity.name',
         'heading.2.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: palette.ui.heading2 },
+      settings: { fontStyle: 'bold', foreground: lighten(cyan.main, 0.05) },
     },
     {
       name: 'Markdown - Heading 3',
@@ -105,7 +106,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.3.markdown entity.name',
         'heading.3.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: blue.medium },
+      settings: { fontStyle: 'bold', foreground: blue.main },
     },
     {
       name: 'Markdown - Heading 4',
@@ -113,7 +114,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.4.markdown entity.name',
         'heading.4.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: palette.ui.heading4 },
+      settings: { fontStyle: 'bold', foreground: darken(blue.main, 0.08) },
     },
     {
       name: 'Markdown - Heading 5',
@@ -121,7 +122,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.5.markdown entity.name',
         'heading.5.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: fg.bright },
+      settings: { fontStyle: 'bold', foreground: fg.light },
     },
     {
       name: 'Markdown - Heading 6',
@@ -129,17 +130,17 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.6.markdown entity.name',
         'heading.6.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: palette.ui.heading6 },
+      settings: { fontStyle: 'bold', foreground: mix(blue.main, fg.main, 0.4) },
     },
     {
       name: 'Markup - Italic',
       scope: ['markup.italic', 'markup.italic punctuation'],
-      settings: { fontStyle: 'italic', foreground: fg.brightest },
+      settings: { fontStyle: 'italic', foreground: fg.light },
     },
     {
       name: 'Markup - Bold',
       scope: ['markup.bold', 'markup.bold punctuation'],
-      settings: { fontStyle: 'bold', foreground: fg.brightest },
+      settings: { fontStyle: 'bold', foreground: fg.light },
     },
     {
       name: 'Markup - Bold-Italic',
@@ -147,7 +148,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'markup.bold markup.italic',
         'markup.bold markup.italic punctuation',
       ],
-      settings: { fontStyle: 'bold italic', foreground: fg.brightest },
+      settings: { fontStyle: 'bold italic', foreground: fg.light },
     },
     {
       name: 'Markup - Underline',
@@ -157,7 +158,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markdown - Blockquote',
       scope: 'markup.quote punctuation.definition.blockquote.markdown',
-      settings: { foreground: fg.dim },
+      settings: { foreground: fg.dark },
     },
     {
       name: 'Markup - Quote',
@@ -181,17 +182,17 @@ export function generateMarkdownTokens(): TokenColor[] {
         'markup.inline.raw.string.markdown',
         'variable.language.fenced.markdown',
       ],
-      settings: { foreground: cyan.bright },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Markdown - Separator',
       scope: 'meta.separator',
-      settings: { fontStyle: 'bold', foreground: fg.medium },
+      settings: { fontStyle: 'bold', foreground: fg.main },
     },
     {
       name: 'Markup - Table',
       scope: 'markup.table',
-      settings: { foreground: palette.ui.table },
+      settings: { foreground: lighten(blue.main, 0.25) },
     },
     {
       name: 'Token - Info',
@@ -211,7 +212,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Token - Debug',
       scope: 'token.debug-token',
-      settings: { foreground: palette.purple.bright },
+      settings: { foreground: palette.purple.light },
     },
     {
       name: 'Apache Tag',
@@ -226,7 +227,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'ENV value',
       scope: 'source.env',
-      settings: { foreground: blue.medium },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Sub-methods',
@@ -235,7 +236,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'variable.import.parameter.js',
         'variable.other.class.js',
       ],
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Language methods',
@@ -245,7 +246,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Variable punctuation',
       scope: 'variable.other punctuation.definition.variable',
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Keyword this with Punctuation, ES7 Bind Operator',

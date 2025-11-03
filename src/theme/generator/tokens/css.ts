@@ -14,7 +14,6 @@ export function generateCssTokens(): TokenColor[] {
     red,
     fg,
     teal,
-    elements,
   } = palette
 
   return [
@@ -31,7 +30,7 @@ export function generateCssTokens(): TokenColor[] {
         'support.type.vendored.property-name',
         'support.type.map.key',
       ],
-      settings: { foreground: lighten(blue.medium, 0.1) },
+      settings: { foreground: lighten(blue.main, 0.1) },
     },
     {
       name: 'CSS Font',
@@ -49,7 +48,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS ID',
       scope: 'entity.other.attribute-name.id',
-      settings: { foreground: mix(pink.bright, red.main, 0.3) },
+      settings: { foreground: mix(pink.light, red.main, 0.3) },
     },
     {
       name: 'CSS Tag',
@@ -69,7 +68,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Punctuation',
       scope: 'meta.property-list',
-      settings: { foreground: elements.cssPunctuation },
+      settings: { foreground: lighten(blue.main, 0.2) },
     },
     {
       name: 'CSS at-rule fix',
@@ -90,7 +89,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Punctuation comma fix',
       scope: 'meta.property-list meta.property-list',
-      settings: { foreground: elements.cssPunctuation },
+      settings: { foreground: lighten(blue.main, 0.2) },
     },
     {
       name: 'SCSS @',
@@ -120,7 +119,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'SCSS Include Mixin Argument',
       scope: 'meta.property-list meta.at-rule.include',
-      settings: { foreground: fg.brightest },
+      settings: { foreground: fg.light },
     },
     {
       name: 'CSS value',
@@ -130,7 +129,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS IDs',
       scope: 'source.sass keyword.control',
-      settings: { foreground: blue.medium },
+      settings: { foreground: blue.main },
     },
     {
       name: 'CSS pseudo selectors',

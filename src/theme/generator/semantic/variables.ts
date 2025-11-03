@@ -4,7 +4,7 @@ import { darken, lighten, mix } from '../../utils/color'
 import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
-  const { cyan, purple, yellow, orange, teal, blue, ui } = palette
+  const { cyan, purple, yellow, orange, teal, blue } = palette
 
   return {
     // Base variables
@@ -33,7 +33,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'parameter.type': createSemanticToken({
-      foreground: mix(cyan.light, blue.medium, 0.4),
+      foreground: mix(cyan.light, blue.main, 0.4),
     }),
 
     // Properties
@@ -58,15 +58,15 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
 
     // Standard library
     'property.defaultLibrary': createSemanticToken({
-      foreground: ui.defaultLibrary,
+      foreground: mix(cyan.main, teal.main, 0.4),
     }),
 
     'variable.defaultLibrary': createSemanticToken({
-      foreground: ui.defaultLibrary,
+      foreground: mix(cyan.main, teal.main, 0.4),
     }),
 
     '*.defaultLibrary': createSemanticToken({
-      foreground: ui.defaultLibrary,
+      foreground: mix(cyan.main, teal.main, 0.4),
     }),
   }
 }

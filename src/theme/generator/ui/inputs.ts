@@ -3,25 +3,25 @@ import { alpha, lighten, mix } from '../../utils/color'
 
 export const generateInputColors = (): Record<string, string> => {
   const { bg, fg, blue, yellow } = palette
-  const menuBg = mix(bg.darkest, blue.primary, 0.1)
+  const menuBg = mix(bg.dark, blue.dark, 0.1)
 
   return {
     'input.background': bg.dark,
-    'input.foreground': fg.brighter,
+    'input.foreground': fg.light,
     'input.border': lighten(bg.dark, 0.02),
-    'input.placeholderForeground': alpha(fg.medium, 0.54),
-    'inputOption.activeForeground': fg.brightest,
-    'inputOption.activeBackground': alpha(blue.primary, 0.27),
-    'inputValidation.infoForeground': palette.ui.inputInfo,
-    'inputValidation.infoBackground': alpha(blue.primary, 0.36),
-    'inputValidation.infoBorder': blue.primary,
+    'input.placeholderForeground': alpha(fg.main, 0.54),
+    'inputOption.activeForeground': fg.light,
+    'inputOption.activeBackground': alpha(blue.dark, 0.27),
+    'inputValidation.infoForeground': palette.blue.light,
+    'inputValidation.infoBackground': alpha(blue.dark, 0.36),
+    'inputValidation.infoBorder': blue.dark,
     'inputValidation.warningForeground': palette.ui.black,
-    'inputValidation.warningBackground': palette.ui.inputWarningBg,
+    'inputValidation.warningBackground': palette.yellow.dark,
     'inputValidation.warningBorder': yellow.main,
-    'inputValidation.errorForeground': palette.ui.inputInfo,
-    'inputValidation.errorBackground': palette.ui.inputErrorBg,
-    'inputValidation.errorBorder': palette.ui.inputErrorBorder,
-    'dropdown.foreground': fg.medium,
+    'inputValidation.errorForeground': palette.blue.light,
+    'inputValidation.errorBackground': palette.red.dark,
+    'inputValidation.errorBorder': palette.red.dark,
+    'dropdown.foreground': fg.main,
     'dropdown.background': menuBg,
     'dropdown.listBackground': menuBg,
   }
@@ -32,7 +32,7 @@ export const generateCheckboxColors = (): Record<string, string> => {
 
   return {
     'checkbox.background': bg.light,
-    'checkbox.foreground': fg.brightest,
+    'checkbox.foreground': fg.light,
     'checkbox.border': blue.light,
   }
 }

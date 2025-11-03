@@ -3,8 +3,7 @@ import type { TokenColor } from '../../types'
 import { lighten, mix } from '../../utils/color'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, purple, cyan, red, yellow, pink, teal, special, fg } =
-    palette
+  const { orange, green, purple, cyan, red, yellow, pink, teal, fg } = palette
 
   return [
     {
@@ -36,12 +35,12 @@ export function generateBasicTokens(): TokenColor[] {
         'constant.other.color',
         'constant.other.color.rgb-value.hex punctuation.definition.constant',
       ],
-      settings: { foreground: fg.bright },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Invalid',
       scope: ['invalid', 'invalid.illegal'],
-      settings: { foreground: special.invalid },
+      settings: { foreground: mix(red.main, orange.main, 0.3) },
     },
     {
       name: 'Invalid deprecated',
@@ -109,7 +108,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.property-list punctuation.separator.key-value',
         'meta.at-rule.mixin punctuation.separator.key-value',
       ],
-      settings: { foreground: mix(fg.bright, cyan.bright, 0.4) },
+      settings: { foreground: mix(fg.light, cyan.light, 0.4) },
     },
     {
       name: 'Template & Misc',
@@ -131,7 +130,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.embedded.inline.phpx punctuation.definition.tag.begin.html',
         'meta.embedded.inline.phpx punctuation.definition.tag.end.html',
       ],
-      settings: { foreground: mix(cyan.bright, purple.light, 0.3) },
+      settings: { foreground: mix(cyan.light, purple.light, 0.3) },
     },
     {
       name: 'Import, Export, From, Default',
