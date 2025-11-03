@@ -96,7 +96,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorCodeLens.foreground': fg.dark,
     'editorLightBulb.foreground': yellow.main,
     'editorLightBulbAutoFix.foreground': yellow.main,
-    'editorInlayHint.foreground': neutral.dark,
+    'editorInlayHint.foreground': neutral.main,
     'peekView.border': lighten(bg.main, 0.08),
     'peekViewEditor.background': bg.main,
     'peekViewEditor.matchHighlightBackground': alpha(blue.light, 0.4),

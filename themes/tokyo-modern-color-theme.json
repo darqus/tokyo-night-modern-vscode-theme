@@ -175,7 +175,7 @@
     "editorCodeLens.foreground": "#565f89",
     "editorLightBulb.foreground": "#e0af68",
     "editorLightBulbAutoFix.foreground": "#e0af68",
-    "editorInlayHint.foreground": "#32344a",
+    "editorInlayHint.foreground": "#565f89",
     "peekView.border": "#2c2936",
     "peekViewEditor.background": "#1a1625",
     "peekViewEditor.matchHighlightBackground": "#7dcfff66",
