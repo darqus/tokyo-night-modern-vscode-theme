@@ -8,6 +8,8 @@ export function generateSidebarColors(): Record<string, string> {
     'activityBar.background': mix(bg.darkest, blue.primary, 0.1),
     'activityBar.foreground': fg.bright,
     'activityBar.inactiveForeground': fg.muted,
+    'activityBar.activeBorder': blue.primary,
+    'activityBar.activeBackground': mix(bg.darkest, blue.primary, 0.1),
     'activityBar.border': lighten(mix(bg.darkest, blue.primary, 0.1), 0.02),
     'activityBarBadge.background': special.badge,
     'activityBarBadge.foreground': ui.white,

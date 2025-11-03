@@ -14,15 +14,13 @@ describe('Base Palette', () => {
   })
 
   it('should have valid hex colors', () => {
-    for (const [key, value] of Object.entries(basePalette)) {
-      try {
-        expect(isValidHex(value), `Invalid color at ${key}: ${value}`).toBe(
-          true
-        )
-      } catch (error) {
-        throw new Error(
-          `Failed to validate color at ${key}: ${value} - ${error instanceof Error ? error.message : String(error)}`
-        )
+    for (const [key, colorVariant] of Object.entries(basePalette)) {
+      if (typeof colorVariant === 'object' && colorVariant !== null) {
+        for (const [variantKey, value] of Object.entries(colorVariant)) {
+          if (value && typeof value === 'string') {
+            expect(isValidHex(value), `Invalid color at ${key}.${variantKey}: ${value}`).toBe(true)
+          }
+        }
       }
     }
   })

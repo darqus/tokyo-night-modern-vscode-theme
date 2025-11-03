@@ -1,20 +1,13 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 describe('Missing Coverage Tests', () => {
-  describe('Theme Files Coverage', () => {
-    it('should import light theme', async () => {
-      const lightTheme = await import('../../src/light-theme')
-      expect(lightTheme).toBeDefined()
-    })
-
-    it('should import simple theme', async () => {
-      const simpleTheme = await import('../../src/simple-theme')
-      expect(simpleTheme).toBeDefined()
-    })
-
-    it('should import unified palette', async () => {
-      const unifiedPalette = await import('../../src/unified-palette')
-      expect(unifiedPalette).toBeDefined()
+  describe('Palette Coverage', () => {
+    it('should import unified palette from base', async () => {
+      const { basePalette } = await import('../../src/theme/palette/base')
+      expect(basePalette).toBeDefined()
+      expect(basePalette.background).toHaveProperty('dark')
+      expect(basePalette.background).toHaveProperty('main')
+      expect(basePalette.background).toHaveProperty('light')
     })
   })
 
@@ -147,6 +140,8 @@ describe('Missing Coverage Tests', () => {
           'editor.background': '#1a1a1a',
           'editor.foreground': '#ffffff',
         },
+        tokenColors: [],
+        semanticTokenColors: {},
       }
 
       expect(() => validateTheme(validTheme)).not.toThrow()

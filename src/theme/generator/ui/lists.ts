@@ -13,7 +13,7 @@ export function generateListColors(): Record<string, string> {
     'list.inactiveSelectionForeground': fg.bright,
     'list.focusBackground': alpha(blue.light, 0.3),
     'list.focusForeground': fg.brightest,
-    'list.hoverBackground': alpha(blue.light, 0.15),
+    'list.hoverBackground': lighten(bg.main, 0.03),
     'list.hoverForeground': fg.brightest,
     'list.highlightForeground': fg.brightest,
     'list.invalidItemForeground': interactive.invalid,
