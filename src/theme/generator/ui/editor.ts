@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { alpha, lighten, mix } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
-  const { bg, fg, blue, cyan, yellow, red, purple, teal, ui, neutral } = palette
+  const { bg, fg, blue, cyan, yellow, red, purple, teal, green, ui, neutral } = palette
 
   return {
     'selection.background': alpha(purple.dark, 0.2),
@@ -38,18 +38,18 @@ export function generateEditorColors(): Record<string, string> {
     'editorBracketHighlight.foreground3': purple.light,
     'editorBracketHighlight.foreground4': yellow.light,
     'editorBracketHighlight.foreground5': teal.light,
-    'editorBracketHighlight.foreground6': '#9ece6a',
+    'editorBracketHighlight.foreground6': green.main,
     'editorBracketHighlight.unexpectedBracket.foreground': red.dark,
     'editorBracketPairGuide.activeBackground1': blue.light,
     'editorBracketPairGuide.activeBackground2': cyan.light,
     'editorBracketPairGuide.activeBackground3': purple.light,
     'editorBracketPairGuide.activeBackground4': yellow.light,
     'editorBracketPairGuide.activeBackground5': teal.light,
-    'editorBracketPairGuide.activeBackground6': '#9ece6a',
+    'editorBracketPairGuide.activeBackground6': green.main,
     'editorOverviewRuler.border': lighten(bg.light, 0.02),
     'editorOverviewRuler.errorForeground': red.dark,
     'editorOverviewRuler.warningForeground': yellow.main,
-    'editorOverviewRuler.infoForeground': mix(teal.main, '#9ece6a', 0.3),
+    'editorOverviewRuler.infoForeground': mix(teal.main, green.main, 0.3),
     'editorOverviewRuler.bracketMatchForeground': bg.dark,
     'editorOverviewRuler.findMatchForeground': alpha(blue.light, 0.4),
     'editorOverviewRuler.rangeHighlightForeground': alpha(teal.main, 0.3),
