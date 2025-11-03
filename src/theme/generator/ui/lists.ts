@@ -2,19 +2,19 @@ import { palette } from '../../palette'
 import { alpha, lighten } from '../../utils/color'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, interactive, special } = palette
+  const { bg, fg, blue, yellow, interactive, special, purple } = palette
 
   return {
     'list.dropBackground': bg.lightest,
     'list.deemphasizedForeground': fg.medium,
-    'list.activeSelectionBackground': alpha(blue.light, 0.3),
+    'list.activeSelectionBackground': alpha(purple.dark, 0.35),
     'list.activeSelectionForeground': fg.brightest,
-    'list.inactiveSelectionBackground': interactive.hover,
+    'list.inactiveSelectionBackground': alpha(purple.dark, 0.2),
     'list.inactiveSelectionForeground': fg.bright,
-    'list.focusBackground': alpha(blue.light, 0.3),
+    'list.focusBackground': alpha(purple.dark, 0.35),
     'list.focusForeground': fg.brightest,
-    'list.hoverBackground': lighten(bg.main, 0.03),
-    'list.hoverForeground': fg.brightest,
+    'list.hoverBackground': alpha(purple.dark, 0.15),
+    'list.hoverForeground': fg.bright,
     'list.highlightForeground': fg.brightest,
     'list.invalidItemForeground': interactive.invalid,
     'list.errorForeground': interactive.error,
