@@ -3,8 +3,6 @@
  * Light variant with consistent color structure
  */
 
-import { UNIFIED_PALETTE } from './unified-palette'
-
 // Light theme palette - inverted structure
 const LIGHT_PALETTE = {
   background: {
