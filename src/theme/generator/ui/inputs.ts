@@ -28,11 +28,11 @@ export const generateInputColors = (): Record<string, string> => {
 }
 
 export const generateCheckboxColors = (): Record<string, string> => {
-  const { bg, fg, blue } = palette
+  const { bg, fg, neutral } = palette
 
   return {
-    'checkbox.background': bg.light,
+    'checkbox.background': bg.main,
     'checkbox.foreground': fg.light,
-    'checkbox.border': blue.light,
+    'checkbox.border': neutral.main,
   }
 }
