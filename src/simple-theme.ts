@@ -10,13 +10,11 @@ const {
   foreground,
   blue,
   cyan,
-  teal,
   green,
   purple,
   orange,
   yellow,
   red,
-  pink,
   neutral,
 } = UNIFIED_PALETTE
 
