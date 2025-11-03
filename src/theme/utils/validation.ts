@@ -77,7 +77,7 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
 
   // Check critical contrast combinations
   if (theme.colors && theme.type === 'dark') {
-    const foreground = theme.colors['foreground']
+    const foreground = theme.colors.foreground
     const background =
       theme.colors['editor.background'] || theme.colors['editor.foreground']
 
