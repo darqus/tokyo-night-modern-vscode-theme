@@ -3,6 +3,7 @@
 ## Обзор
 
 Тема Tokyo Modern включает специализированную подсветку для современных языков программирования и фреймворков 2024-2025.
+Дата последнего обновления: 2025-11-03
 
 ## Поддерживаемые технологии
 
@@ -35,10 +36,29 @@
 
 ### Фреймворки
 
-#### Next.js/Astro
+#### Next.js
 
 - **Routing**: `#7aa2f7` (blue, italic)
-- **Astro компоненты**: `#f7768e` (red, bold)
+- **Components**: `#f7768e` (red, bold)
+- **Server Actions**: `#e0af68` (yellow, italic)
+
+#### Astro
+
+- **Routing**: `#7aa2f7` (blue, italic)
+- **Components**: `#f7768e` (red, bold)
+- **Frontmatter**: `#bb9af7` (purple)
+
+#### Nuxt.js
+
+- **Composables**: `#9ece6a` (green, bold)
+- **Components**: `#7dcfff` (cyan, bold)
+- **Middleware**: `#e0af68` (yellow, italic)
+
+#### Remix
+
+- **Loaders**: `#6183bb` (blue light, italic)
+- **Actions**: `#e0af68` (yellow, italic)
+- **Components**: `#f7768e` (red, bold)
 
 #### Hono
 
@@ -80,6 +100,7 @@
 
 - **Models**: `#73daca` (teal, italic)
 - **Relations**: `#0db9d7` (cyan dark)
+- **Config**: `#e0af68` (yellow)
 
 #### Drizzle ORM
 
@@ -97,6 +118,7 @@
 
 - **Procedures**: `#6183bb` (blue light)
 - **Resolvers**: `#e0af68` (yellow)
+- **Routers**: `#73daca` (teal, italic)
 
 ### Стилизация
 
@@ -129,9 +151,10 @@
 
 ### Инструменты
 
-#### Biome
+#### TanStack Query (React Query)
 
-- **Config**: `#e0af68` (yellow)
+- **Hooks**: `#6183bb` (blue light, bold) - useQuery, useMutation
+- **Query Keys**: `#73daca` (teal, italic)
 
 ## Семантические токены
 
@@ -145,7 +168,7 @@
 
 ## Статистика
 
-- **Токенов подсветки**: 140+
-- **Семантических токенов**: 50+
+- **Токенов подсветки**: 160+
+- **Семантических токенов**: 60+
 - **Поддерживаемых языков**: 15+
-- **Фреймворков**: 12+
+- **Фреймворков**: 18+

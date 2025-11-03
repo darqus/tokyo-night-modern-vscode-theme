@@ -1,5 +1,7 @@
 # Цветовое разнообразие токенов
 
+Дата последнего обновления: 2025-11-03
+
 ## Анализ
 
 Проведен анализ цветового разнообразия токенов подсветки синтаксиса для улучшения различимости соседних элементов кода.
@@ -58,6 +60,54 @@ areColorsSimilar(color1: string, color2: string, threshold = 50): boolean
 ```
 
 Определяет, являются ли цвета слишком похожими (расстояние < порога).
+
+### Генерация цветовых вариантов
+
+Файл [`color-generator.ts`](../src/theme/utils/color-generator.ts:1) содержит утилиты для создания цветовых шкал:
+
+```typescript
+generateBackgroundScale(base: string): {
+  darkest: string
+  darker: string
+  dark: string
+  main: string
+  editor: string
+  light: string
+  lighter: string
+  lightest: string
+}
+
+generateForegroundScale(base: string): {
+  dim: string
+  muted: string
+  medium: string
+  bright: string
+  brighter: string
+  brightest: string
+}
+
+generateColorVariants(base: string): {
+  dark: string
+  main: string
+  light: string
+  bright: string
+}
+```
+
+### Работа с семантическими токенами
+
+Файл [`semantic-tokens.ts`](../src/theme/utils/semantic-tokens.ts:1) предоставляет утилиты для создания семантических токенов:
+
+```typescript
+createSemanticToken(config: SemanticTokenConfig): SemanticTokenStyle
+
+createSemanticTokenGroup(
+  baseConfig: SemanticTokenConfig,
+  variants: Record<string, Partial<SemanticTokenConfig>>
+): Record<string, SemanticTokenStyle>
+
+alpha(color: string, opacity: number): string
+```
 
 ## Скрипты
 
