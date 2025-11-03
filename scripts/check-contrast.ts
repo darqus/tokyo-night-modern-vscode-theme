@@ -40,44 +40,48 @@ console.log('🔍 Tokyo Modern theme contrast check\n')
 
 // Main combinations
 console.log('📊 Main combinations:')
-const mainFg = check('Main text', palette.fg.brighter, palette.bg.editor)
+const mainFg = check('Main text', palette.fg.light, palette.bg.light)
 logContrastResult('Main text', mainFg)
 
-const dimFg = check('Dim text', palette.fg.dim, palette.bg.editor)
+const dimFg = check('Dim text', palette.fg.dark, palette.bg.light)
 logContrastResult('Dim text', dimFg)
 
-const brightFg = check('Bright text', palette.fg.brightest, palette.bg.editor)
+const brightFg = check(
+  'Bright text',
+  palette.fg.bright ?? palette.fg.light,
+  palette.bg.light
+)
 logContrastResult('Bright text', brightFg)
 
 // Accent colors
 console.log('\n🎨 Accent colors on background:')
-const blue = check('Blue', palette.blue.medium, palette.bg.editor)
+const blue = check('Blue', palette.blue.main, palette.bg.light)
 logContrastResult('Blue', blue)
 
-const cyan = check('Cyan', palette.cyan.light, palette.bg.editor)
+const cyan = check('Cyan', palette.cyan.light, palette.bg.light)
 logContrastResult('Cyan', cyan)
 
-const green = check('Green', palette.green.main, palette.bg.editor)
+const green = check('Green', palette.green.main, palette.bg.light)
 logContrastResult('Green', green)
 
-const yellow = check('Yellow', palette.yellow.main, palette.bg.editor)
+const yellow = check('Yellow', palette.yellow.main, palette.bg.light)
 logContrastResult('Yellow', yellow)
 
-const red = check('Red', palette.red.main, palette.bg.editor)
+const red = check('Red', palette.red.main, palette.bg.light)
 logContrastResult('Red', red)
 
-const purple = check('Purple', palette.purple.light, palette.bg.editor)
+const purple = check('Purple', palette.purple.light, palette.bg.light)
 logContrastResult('Purple', purple)
 
 // UI elements
 console.log('\n🖥️  UI elements:')
-const sidebarFg = check('Sidebar', palette.fg.medium, palette.bg.darkest)
+const sidebarFg = check('Sidebar', palette.fg.main, palette.bg.dark)
 logContrastResult('Sidebar', sidebarFg)
 
-const tabActive = check('Active Tab', palette.fg.brighter, palette.bg.main)
+const tabActive = check('Active Tab', palette.fg.light, palette.bg.main)
 logContrastResult('Active Tab', tabActive)
 
-const tabInactive = check('Inactive Tab', palette.fg.medium, palette.bg.light)
+const tabInactive = check('Inactive Tab', palette.fg.main, palette.bg.light)
 logContrastResult('Inactive Tab', tabInactive)
 
 // Summary
