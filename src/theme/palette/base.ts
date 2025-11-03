@@ -18,6 +18,11 @@ export interface UnifiedPalette {
   red: ColorVariant
   pink: ColorVariant
   neutral: ColorVariant
+  ui: {
+    white: string
+    black: string
+    badge: string
+  }
 }
 
 export const basePalette: UnifiedPalette = {
@@ -92,5 +97,10 @@ export const basePalette: UnifiedPalette = {
     main: '#565f89',
     light: '#9699a3',
     bright: '#c0caf5',
+  },
+  ui: {
+    white: '#ffffff',
+    black: '#000000',
+    badge: '#007acc',
   },
 } as const

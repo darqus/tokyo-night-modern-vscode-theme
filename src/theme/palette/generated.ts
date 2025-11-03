@@ -14,11 +14,7 @@ export interface SimplifiedPalette {
   red: ColorVariant
   pink: ColorVariant
   neutral: ColorVariant
-  ui: {
-    white: string
-    black: string
-    badge: string
-  }
+  ui: typeof basePalette.ui
 }
 
 export const palette: SimplifiedPalette = {
@@ -34,9 +30,5 @@ export const palette: SimplifiedPalette = {
   red: basePalette.red,
   pink: basePalette.pink,
   neutral: basePalette.neutral,
-  ui: {
-    white: '#ffffff',
-    black: '#000000',
-    badge: '#007acc',
-  },
+  ui: basePalette.ui,
 }
