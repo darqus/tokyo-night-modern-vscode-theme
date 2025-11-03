@@ -2,7 +2,7 @@ import { palette } from '../../palette'
 import { darken, lighten, mix } from '../../utils/color'
 
 export function generatePanelColors(): Record<string, string> {
-  const { bg, fg, purple } = palette
+  const { bg, fg, purple, ui } = palette
 
   return {
     'panel.background': darken(bg.main, 0.02),
@@ -15,7 +15,7 @@ export function generatePanelColors(): Record<string, string> {
     'statusBar.foreground': fg.light,
     'statusBar.background': bg.dark,
     'statusBar.border': lighten(bg.dark, 0.02),
-    'statusBar.focusBorder': purple.main,
+    'statusBar.focusBorder': ui.badge,
     'statusBar.noFolderBackground': bg.dark,
     'statusBar.debuggingBackground': mix(purple.dark, bg.dark, 0.5),
     'statusBar.debuggingForeground': fg.light,
@@ -23,7 +23,7 @@ export function generatePanelColors(): Record<string, string> {
     'statusBarItem.hoverBackground': lighten(bg.dark, 0.08),
     'statusBarItem.prominentBackground': purple.dark,
     'statusBarItem.prominentHoverBackground': purple.main,
-    'statusBarItem.focusBorder': purple.main,
+    'statusBarItem.focusBorder': ui.badge,
     'statusBarItem.remoteBackground': purple.dark,
     'titleBar.activeForeground': fg.light,
     'titleBar.inactiveForeground': fg.dark,
