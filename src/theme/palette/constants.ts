@@ -60,6 +60,11 @@ export const COLOR_MIXES = {
   YELLOW_BRACKETS_LIGHTEN: 0.05,
   YELLOW_WHITE_MIX: 0.15,
 
+  // Orange color adjustments
+  ORANGE_DARK_DARKEN: 0.1,
+  ORANGE_LIGHT_LIGHTEN: 0.15,
+  ORANGE_BRIGHT_LIGHTEN: 0.25,
+
   // Red color adjustments
   RED_DARK_DARKEN: 0.12,
   RED_MUTED_BG_MIX: 0.5,

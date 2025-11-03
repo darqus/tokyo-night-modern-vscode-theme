@@ -4,67 +4,69 @@ import { darken, lighten, mix } from '../../utils/color'
 import { createSemanticToken } from '../../utils/semantic-tokens'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
+  const { cyan, purple, yellow, orange, teal, blue, ui } = palette
+
   return {
     // Base variables
     variable: createSemanticToken({
-      foreground: palette.cyan.light,
+      foreground: cyan.light,
     }),
 
     'variable.readonly': createSemanticToken({
-      foreground: mix(palette.cyan.light, palette.purple.light, 0.2),
+      foreground: mix(cyan.light, purple.light, 0.2),
       fontStyle: 'italic',
     }),
 
     'variable.readonly.default': createSemanticToken({
-      foreground: lighten(palette.cyan.light, 0.08),
+      foreground: lighten(cyan.light, 0.08),
       fontStyle: 'italic',
     }),
 
     // Function parameters
     parameter: createSemanticToken({
-      foreground: mix(palette.yellow.main, palette.orange, 0.3),
+      foreground: mix(yellow.main, orange.main, 0.3),
     }),
 
     'parameter.readonly': createSemanticToken({
-      foreground: darken(palette.yellow.main, 0.1),
+      foreground: darken(yellow.main, 0.1),
       fontStyle: 'italic',
     }),
 
     'parameter.type': createSemanticToken({
-      foreground: mix(palette.cyan.light, palette.blue.medium, 0.4),
+      foreground: mix(cyan.light, blue.medium, 0.4),
     }),
 
     // Properties
     property: createSemanticToken({
-      foreground: palette.teal.main,
+      foreground: teal.main,
     }),
 
     'property.readonly': createSemanticToken({
-      foreground: mix(palette.teal.dark, palette.cyan.dark, 0.3),
+      foreground: mix(teal.dark, cyan.dark, 0.3),
       fontStyle: 'italic',
     }),
 
     'property.static': createSemanticToken({
-      foreground: mix(palette.blue.light, palette.cyan.light, 0.4),
+      foreground: mix(blue.light, cyan.light, 0.4),
       fontStyle: 'bold',
     }),
 
     'property.declaration': createSemanticToken({
-      foreground: lighten(palette.teal.main, 0.1),
+      foreground: lighten(teal.main, 0.1),
       fontStyle: 'bold',
     }),
 
     // Standard library
     'property.defaultLibrary': createSemanticToken({
-      foreground: palette.ui.defaultLibrary,
+      foreground: ui.defaultLibrary,
     }),
 
     'variable.defaultLibrary': createSemanticToken({
-      foreground: palette.ui.defaultLibrary,
+      foreground: ui.defaultLibrary,
     }),
 
     '*.defaultLibrary': createSemanticToken({
-      foreground: palette.ui.defaultLibrary,
+      foreground: ui.defaultLibrary,
     }),
   }
 }

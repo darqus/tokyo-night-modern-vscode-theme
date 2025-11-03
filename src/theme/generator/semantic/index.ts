@@ -30,7 +30,7 @@ function generateModifierTokens(): Record<string, SemanticTokenStyle> {
 function generateLiteralTokens(): Record<string, SemanticTokenStyle> {
   return {
     string: { foreground: palette.green.main },
-    number: { foreground: palette.orange },
+    number: { foreground: palette.orange.main },
     boolean: { foreground: palette.red.main },
     regexp: { foreground: palette.special.regex },
     null: { foreground: palette.red.dark },

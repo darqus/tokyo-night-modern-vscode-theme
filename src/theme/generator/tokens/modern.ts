@@ -88,7 +88,7 @@ export function generateModernTokens(): TokenColor[] {
         'support.function.state',
       ],
       settings: {
-        foreground: orange,
+        foreground: orange.main,
       },
     },
 
@@ -238,7 +238,7 @@ export function generateModernTokens(): TokenColor[] {
         'entity.name.type.lifetime.rust',
       ],
       settings: {
-        foreground: orange,
+        foreground: orange.main,
         fontStyle: 'italic',
       },
     },
@@ -332,7 +332,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Hono Routes',
       scope: ['support.function.hono', 'entity.name.function.route.hono'],
       settings: {
-        foreground: orange,
+        foreground: orange.main,
       },
     },
 
@@ -359,7 +359,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Zig Language',
       scope: ['storage.type.zig', 'keyword.control.zig'],
       settings: {
-        foreground: orange,
+        foreground: orange.main,
       },
     },
   ]

@@ -56,7 +56,12 @@ export const palette: Palette = {
     bright: lighten(basePalette.purple, COLOR_MIXES.PURPLE_BRIGHT_LIGHTEN),
   },
 
-  orange: basePalette.orange,
+  orange: {
+    dark: darken(basePalette.orange, COLOR_MIXES.ORANGE_DARK_DARKEN),
+    main: basePalette.orange,
+    light: lighten(basePalette.orange, COLOR_MIXES.ORANGE_LIGHT_LIGHTEN),
+    bright: lighten(basePalette.orange, COLOR_MIXES.ORANGE_BRIGHT_LIGHTEN),
+  },
 
   yellow: {
     main: basePalette.yellow,

@@ -13,7 +13,7 @@ export interface Palette {
   teal: TealPalette
   green: GreenPalette
   purple: PurplePalette
-  orange: string
+  orange: OrangePalette
   yellow: YellowPalette
   red: RedPalette
   pink: PinkPalette
@@ -92,6 +92,16 @@ export interface GreenPalette {
 export interface PurplePalette {
   light: string
   dark: string
+  bright: string
+}
+
+/**
+ * Палитра оранжевых цветов
+ */
+export interface OrangePalette {
+  dark: string
+  main: string
+  light: string
   bright: string
 }
 

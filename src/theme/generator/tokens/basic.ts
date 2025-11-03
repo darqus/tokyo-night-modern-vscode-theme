@@ -17,7 +17,7 @@ export function generateBasicTokens(): TokenColor[] {
         'support.constant',
         'constant.other.caps',
       ],
-      settings: { foreground: orange },
+      settings: { foreground: orange.main },
     },
     {
       name: 'String, Symbols',

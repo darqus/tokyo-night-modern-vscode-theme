@@ -40,7 +40,7 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global punctuation.definition.variable',
         'constant.other',
       ],
-      settings: { foreground: mix(yellow.main, orange, 0.3) },
+      settings: { foreground: mix(yellow.main, orange.main, 0.3) },
     },
     {
       name: 'Variables',
@@ -104,7 +104,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
-      settings: { foreground: mix(red.main, orange, 0.25) },
+      settings: { foreground: mix(red.main, orange.main, 0.25) },
     },
     {
       name: 'Methods',

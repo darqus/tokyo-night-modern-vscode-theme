@@ -1,16 +1,17 @@
+// Updated base palette to match unified structure
 export const basePalette = {
-  background: '#1a1727',
-  foreground: '#767ea8',
+  background: '#1a1b26', // Unified main background
+  foreground: '#a9b1d6', // Unified main foreground
 
-  blue: '#7aa2f7',
-  cyan: '#7dcfff',
-  teal: '#73daca',
-  green: '#9ece6a',
-  purple: '#bb9af7',
-  orange: '#ff9e64',
-  yellow: '#e0af68',
-  red: '#f38c9f',
-  pink: '#d86bd8',
+  blue: '#7aa2f7', // Unified main blue
+  cyan: '#7dcfff', // Unified main cyan
+  teal: '#73daca', // Unified main teal
+  green: '#9ece6a', // Unified main green
+  purple: '#bb9af7', // Unified main purple
+  orange: '#ff9e64', // Unified main orange
+  yellow: '#e0af68', // Unified main yellow
+  red: '#f7768e', // Unified main red
+  pink: '#bb9af7', // Unified main pink
 
   white: '#ffffff',
   black: '#000000',

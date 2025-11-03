@@ -17,7 +17,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     cyan.light,
     palette.purple.light,
     palette.yellow.main,
-    palette.orange,
+    palette.orange.main,
     teal.main,
     palette.red.main,
     palette.green.main,

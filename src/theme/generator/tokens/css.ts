@@ -64,7 +64,7 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class punctuation.definition.entity',
         'entity.name.tag.reference',
       ],
-      settings: { foreground: mix(yellow.main, orange, 0.25) },
+      settings: { foreground: mix(yellow.main, orange.main, 0.25) },
     },
     {
       name: 'CSS Punctuation',
@@ -78,7 +78,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.return variable.parameter.url',
         'meta.property-list meta.at-rule.else',
       ],
-      settings: { foreground: orange },
+      settings: { foreground: orange.main },
     },
     {
       name: 'CSS Parent Selector Entity',
@@ -125,7 +125,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS value',
       scope: 'support.constant.property-value',
-      settings: { foreground: orange },
+      settings: { foreground: orange.main },
     },
     {
       name: 'CSS IDs',
