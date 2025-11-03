@@ -1,6 +1,6 @@
 /**
- * Константы для генерации цветовой палитры.
- * Все магические числа для lighten/darken/mix вынесены сюда для централизованного управления.
+ * Constants for color palette generation.
+ * All magic numbers for lighten/darken/mix are extracted here for centralized management.
  */
 
 export const COLOR_MIXES = {
@@ -129,6 +129,6 @@ export const COLOR_MIXES = {
   // Default library mix
   DEFAULT_LIBRARY_MIX: 0.4,
 
-  // Badge color - вычисляется как смесь синего и циана
-  BADGE_BLUE_CYAN_MIX: 0.55, // Оригинальный #007acc ближе к синему с небольшим цианом
+  // Badge color - calculated as mix of blue and cyan
+  BADGE_BLUE_CYAN_MIX: 0.55, // Original #007acc is closer to blue with slight cyan
 } as const

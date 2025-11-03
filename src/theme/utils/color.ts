@@ -11,11 +11,11 @@ export class ColorError extends Error {
 }
 
 /**
- * Добавляет альфа-канал к HEX цвету
+ * Adds alpha channel to HEX color
  *
- * @param hex - HEX цвет (например, '#ff0000')
- * @param opacity - Прозрачность от 0 до 1
- * @returns HEX цвет с альфа-каналом (например, '#ff0000ff')
+ * @param hex - HEX color (e.g., '#ff0000')
+ * @param opacity - Opacity from 0 to 1
+ * @returns HEX color with alpha channel (e.g., '#ff0000ff')
  *
  * @example
  * ```ts
@@ -37,11 +37,11 @@ export function alpha(hex: string, opacity: number): string {
 }
 
 /**
- * Осветляет HEX цвет на указанное количество
+ * Lightens HEX color by specified amount
  *
- * @param hex - HEX цвет для осветления
- * @param amount - Коэффициент осветления от 0 до 1 (0 - без изменений, 1 - белый)
- * @returns Осветленный HEX цвет
+ * @param hex - HEX color to lighten
+ * @param amount - Lightening coefficient from 0 to 1 (0 - no change, 1 - white)
+ * @returns Lightened HEX color
  *
  * @example
  * ```ts
@@ -59,11 +59,11 @@ export function lighten(hex: string, amount: number): string {
 }
 
 /**
- * Затемняет HEX цвет на указанное количество
+ * Darkens HEX color by specified amount
  *
- * @param hex - HEX цвет для затемнения
- * @param amount - Коэффициент затемнения от 0 до 1 (0 - без изменений, 1 - черный)
- * @returns Затемненный HEX цвет
+ * @param hex - HEX color to darken
+ * @param amount - Darkening coefficient from 0 to 1 (0 - no change, 1 - black)
+ * @returns Darkened HEX color
  *
  * @example
  * ```ts
@@ -81,16 +81,16 @@ export function darken(hex: string, amount: number): string {
 }
 
 /**
- * Смешивает два HEX цвета в заданной пропорции
+ * Mixes two HEX colors in specified proportion
  *
- * @param hex1 - Первый HEX цвет
- * @param hex2 - Второй HEX цвет
- * @param ratio - Пропорция смешивания от 0 до 1 (0 - первый цвет, 1 - второй цвет)
- * @returns Смешанный HEX цвет
+ * @param hex1 - First HEX color
+ * @param hex2 - Second HEX color
+ * @param ratio - Mixing ratio from 0 to 1 (0 - first color, 1 - second color)
+ * @returns Mixed HEX color
  *
  * @example
  * ```ts
- * mix('#ff0000', '#0000ff', 0.5) // '#800080' (фиолетовый)
+ * mix('#ff0000', '#0000ff', 0.5) // '#800080' (purple)
  * ```
  */
 export function mix(hex1: string, hex2: string, ratio: number): string {
@@ -116,10 +116,10 @@ export function mix(hex1: string, hex2: string, ratio: number): string {
 }
 
 /**
- * Проверяет, является ли строка валидным HEX цветом
+ * Checks if string is a valid HEX color
  *
- * @param hex - Строка для проверки
- * @returns true, если строка является валидным HEX цветом
+ * @param hex - String to check
+ * @returns true if string is a valid HEX color
  *
  * @example
  * ```ts
@@ -133,5 +133,5 @@ export function isValidHex(hex: string): boolean {
   return /^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$/.test(hex)
 }
 
-// Реэкспортируем для обратной совместимости
+// Re-export for backward compatibility
 export { hexToRgb, normalizeHex, rgbToHex } from './rgb'
