@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2351](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2332...v2.3.2351) (2025-11-03)
+
+
+### Features
+
+* **list:** update list selection and hover colors ([b1625c8](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b1625c8a431d1901eb00025e548c6e64eab925a5))
+* **static:** add tokyo modern screenshot ([d03e82c](https://github.com/darqus/tokyo-modern-vscode-theme/commit/d03e82ca15040f9d338d687407fa5e8d34753b6d))
+* **statusBarItem:** update hover background color ([34b0ed0](https://github.com/darqus/tokyo-modern-vscode-theme/commit/34b0ed00a93dd5681ded16baae563e3b7018ac5f))
+* **theme:** enhance widget shadows and adjust border colors ([bf54c9d](https://github.com/darqus/tokyo-modern-vscode-theme/commit/bf54c9d5d5de56e83b739a8a1b1d8e996dc14777))
+
+
+### Bug Fixes
+
+* **theme:** correct theme color key access for dark themes ([5855897](https://github.com/darqus/tokyo-modern-vscode-theme/commit/5855897ff62c8b077916d34af23bd65bd4c75827))
+* update editor inlay hint color for better visibility ([7355334](https://github.com/darqus/tokyo-modern-vscode-theme/commit/735533460c5034ed14223ff817c7695022cea817))
+
 ### [2.3.2332](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2330...v2.3.2332) (2025-11-03)
 
 ### [2.3.2330](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2323...v2.3.2330) (2025-11-03)
