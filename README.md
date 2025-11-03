@@ -1,6 +1,6 @@
 # 🌆 Tokyo Modern
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-night-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-night-modern)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 > A modern, balanced dark theme for VS Code with declarative color generation and utility-based palette.
@@ -9,7 +9,7 @@
 
 ## 🌎 Live Preview
 
-🔮 [Open in vscode.dev](https://vscode.dev/theme/lod-inc.tokyo-night-modern)
+🔮 [Open in vscode.dev](https://vscode.dev/theme/lod-inc.tokyo-modern)
 
 ## 🎨 Features
 
@@ -30,7 +30,7 @@
 
 ### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, etc.)
 
-1. Download the `.vsix` file from [GitHub Releases](https://github.com/darqus/tokyo-night-modern-vscode-theme/releases/latest)
+1. Download the `.vsix` file from [GitHub Releases](https://github.com/darqus/tokyo-modern-vscode-theme/releases/latest)
 2. Open VS Code
 3. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 4. Type "Extensions: Install from VSIX..." and select it
