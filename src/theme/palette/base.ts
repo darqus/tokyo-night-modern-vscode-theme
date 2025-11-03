@@ -1,6 +1,6 @@
 // Updated base palette to match unified structure
 export const basePalette = {
-  background: '#1a1b26', // Unified main background
+  background: '#1f1b2c', // Unified main background
   foreground: '#a9b1d6', // Unified main foreground
 
   blue: '#7aa2f7', // Unified main blue
