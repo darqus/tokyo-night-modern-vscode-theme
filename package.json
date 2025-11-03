@@ -53,8 +53,8 @@
     "deps:update": "ncu -u"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.2",
-    "@types/node": "^24.9.2",
+    "@biomejs/biome": "^2.3.3",
+    "@types/node": "^24.10.0",
     "@vitest/coverage-v8": "^4.0.6",
     "@vitest/ui": "^4.0.6",
     "@vscode/vsce": "^3.6.2",
