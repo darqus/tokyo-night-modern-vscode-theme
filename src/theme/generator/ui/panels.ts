@@ -2,33 +2,33 @@ import { palette } from '../../palette'
 import { darken, lighten, mix } from '../../utils/color'
 
 export function generatePanelColors(): Record<string, string> {
-  const { bg, fg, blue, purple } = palette
+  const { bg, fg, purple } = palette
 
   return {
-    'panel.background': bg.main,
+    'panel.background': darken(bg.main, 0.02),
     'panel.border': lighten(bg.main, 0.02),
     'panelTitle.activeForeground': fg.light,
-    'panelTitle.inactiveForeground': fg.main,
-    'panelTitle.activeBorder': blue.light,
+    'panelTitle.inactiveForeground': fg.dark,
+    'panelTitle.activeBorder': purple.main,
     'panelInput.border': lighten(bg.main, 0.02),
     'panelStickyScroll.background': bg.light,
     'statusBar.foreground': fg.light,
-    'statusBar.background': mix(bg.dark, blue.dark, 0.25),
-    'statusBar.border': lighten(mix(bg.dark, blue.dark, 0.25), 0.02),
-    'statusBar.focusBorder': lighten(mix(bg.dark, blue.dark, 0.25), 0.02),
-    'statusBar.noFolderBackground': bg.main,
-    'statusBar.debuggingBackground': darken(purple.light, 0.8),
-    'statusBar.debuggingForeground': fg.main,
-    'statusBarItem.activeBackground': bg.dark,
-    'statusBarItem.hoverBackground': mix(bg.dark, blue.dark, 0.45),
-    'statusBarItem.prominentBackground': blue.dark,
-    'statusBarItem.prominentHoverBackground': bg.main,
-    'statusBarItem.focusBorder': lighten(bg.light, 0.02),
-    'statusBarItem.remoteBackground': blue.dark,
-    'titleBar.activeForeground': fg.main,
-    'titleBar.inactiveForeground': fg.main,
+    'statusBar.background': bg.dark,
+    'statusBar.border': lighten(bg.dark, 0.02),
+    'statusBar.focusBorder': purple.main,
+    'statusBar.noFolderBackground': bg.dark,
+    'statusBar.debuggingBackground': mix(purple.dark, bg.dark, 0.5),
+    'statusBar.debuggingForeground': fg.light,
+    'statusBarItem.activeBackground': lighten(bg.dark, 0.05),
+    'statusBarItem.hoverBackground': lighten(bg.dark, 0.08),
+    'statusBarItem.prominentBackground': purple.dark,
+    'statusBarItem.prominentHoverBackground': purple.main,
+    'statusBarItem.focusBorder': purple.main,
+    'statusBarItem.remoteBackground': purple.dark,
+    'titleBar.activeForeground': fg.light,
+    'titleBar.inactiveForeground': fg.dark,
     'titleBar.activeBackground': bg.main,
-    'titleBar.inactiveBackground': bg.dark,
+    'titleBar.inactiveBackground': darken(bg.main, 0.03),
     'titleBar.border': lighten(bg.main, 0.02),
   }
 }

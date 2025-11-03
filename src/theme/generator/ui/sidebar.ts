@@ -1,28 +1,28 @@
 import { palette } from '../../palette'
-import { lighten, mix } from '../../utils'
+import { lighten } from '../../utils'
 
 export function generateSidebarColors(): Record<string, string> {
-  const { bg, fg, ui, blue } = palette
+  const { bg, fg, ui, purple } = palette
 
   return {
-    'activityBar.background': mix(bg.dark, blue.dark, 0.1),
+    'activityBar.background': bg.dark,
     'activityBar.foreground': fg.light,
     'activityBar.inactiveForeground': fg.dark,
-    'activityBar.activeBorder': blue.dark,
-    'activityBar.activeBackground': mix(bg.dark, blue.dark, 0.1),
-    'activityBar.border': lighten(mix(bg.dark, blue.dark, 0.1), 0.02),
+    'activityBar.activeBorder': purple.main,
+    'activityBar.activeBackground': lighten(bg.dark, 0.03),
+    'activityBar.border': lighten(bg.dark, 0.02),
     'activityBarBadge.background': ui.badge,
     'activityBarBadge.foreground': ui.white,
     'activityBarTop.foreground': fg.main,
-    'activityBarTop.inactiveForeground': bg.light,
+    'activityBarTop.inactiveForeground': fg.dark,
     'tree.indentGuidesStroke': lighten(bg.main, 0.08),
     'sideBar.foreground': fg.main,
-    'sideBar.background': bg.dark,
-    'sideBar.border': lighten(bg.dark, 0.02),
-    'sideBarTitle.foreground': fg.main,
-    'sideBarSectionHeader.background': bg.main,
+    'sideBar.background': lighten(bg.dark, 0.02),
+    'sideBar.border': lighten(bg.dark, 0.04),
+    'sideBarTitle.foreground': fg.light,
+    'sideBarSectionHeader.background': lighten(bg.dark, 0.04),
     'sideBarSectionHeader.foreground': fg.light,
-    'sideBarSectionHeader.border': lighten(bg.main, 0.02),
+    'sideBarSectionHeader.border': lighten(bg.dark, 0.06),
     'sideBar.dropBackground': bg.light,
   }
 }
