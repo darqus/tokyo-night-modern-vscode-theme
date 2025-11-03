@@ -25,7 +25,7 @@
 
 1. Open VS Code
 2. Press `Ctrl+Shift+X` (Extensions)
-3. Search "Tokyo Modern"
+3. Search `Tokyo Modern` or filter by `@id:lod-inc.tokyo-modern`
 4. Click Install
 
 ### From .vsix File (VSCodium, Cursor, Void, TRAE, Windsurf, etc.)
