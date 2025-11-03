@@ -122,7 +122,6 @@ src/theme/
 │   └── ui/                ✅ Без изменений
 ├── palette/
 │   ├── base.ts            ✅ Обновлен - добавлен badge
-│   ├── constants.ts       ✅ Новый - константы
 │   ├── generated.ts       ✅ Без изменений
 │   └── index.ts           ✅ Обновлен
 ├── types/

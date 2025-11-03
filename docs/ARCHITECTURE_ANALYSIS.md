@@ -50,7 +50,6 @@ src/theme/
 ├── generator/             # Генераторы UI/tokens/semantic
 ├── palette/
 │   ├── base.ts           # Базовая палитра
-│   ├── constants.ts      # Константы COLOR_MIXES
 │   └── generated.ts      # Генерация палитры
 ├── types/
 │   ├── theme.ts          # Типы темы
