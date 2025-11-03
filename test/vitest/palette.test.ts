@@ -41,19 +41,18 @@ describe('Palette Generation', () => {
     expect(palette.purple).toBeDefined()
     expect(palette.red).toBeDefined()
     expect(palette.yellow).toBeDefined()
-    expect(palette.special).toBeDefined()
     expect(palette.ui).toBeDefined()
   })
 
   it('should have background variants', () => {
-    expect(palette.bg.darkest).toBeDefined()
+    expect(palette.bg.dark).toBeDefined()
     expect(palette.bg.main).toBeDefined()
-    expect(palette.bg.lightest).toBeDefined()
+    expect(palette.bg.light).toBeDefined()
   })
 
   it('should have foreground variants', () => {
-    expect(palette.fg.dim).toBeDefined()
-    expect(palette.fg.medium).toBeDefined()
-    expect(palette.fg.brightest).toBeDefined()
+    expect(palette.fg.dark).toBeDefined()
+    expect(palette.fg.main).toBeDefined()
+    expect(palette.fg.light).toBeDefined()
   })
 })
