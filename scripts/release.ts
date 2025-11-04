@@ -6,8 +6,8 @@ import {
   writeFileSync,
 } from 'node:fs'
 import { join } from 'node:path'
-import { SafeExecError, safeExec } from '../src/theme/utils/safe-exec'
-import { computeVersion } from './versioning'
+import { SafeExecError, safeExec } from '../src/theme/utils/safe-exec.js'
+import { computeVersion } from './versioning.js'
 
 class ReleaseManager {
   private readonly readmePath = join(process.cwd(), 'README.md')

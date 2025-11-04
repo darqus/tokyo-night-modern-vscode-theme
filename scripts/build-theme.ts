@@ -1,11 +1,11 @@
 import { writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { generateTheme } from '../src/theme'
-import { sanitizeLogOutput } from '../src/theme/utils/logger'
+import { generateTheme } from '../src/theme/index.js'
+import { sanitizeLogOutput } from '../src/theme/utils/logger.js'
 import {
   validateCriticalContrast,
   validateTheme,
-} from '../src/theme/utils/validation'
+} from '../src/theme/utils/validation.js'
 
 async function buildTheme(): Promise<void> {
   try {

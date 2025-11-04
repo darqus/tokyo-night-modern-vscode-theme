@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { checkContrast } from '../src/theme/utils/contrast'
+import { checkContrast } from '../src/theme/utils/contrast.js'
 
 function sanitizeOutput(text: string): string {
   // Remove control characters and newlines

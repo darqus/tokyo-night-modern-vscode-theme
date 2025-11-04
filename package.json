@@ -37,12 +37,12 @@
     ]
   },
   "scripts": {
-    "build": "ts-node scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
-    "build:vsix": "ts-node scripts/build-vsix.ts",
+    "build": "ts-node --esm scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
+    "build:vsix": "ts-node --esm scripts/build-vsix.ts",
     "package": "npm run build:vsix",
-    "release": "ts-node scripts/release.ts",
+    "release": "ts-node --esm scripts/release.ts",
     "lint": "biome lint .",
-    "format": "biome format --write .",
+    "format": "biome check --fix src/ scripts/ && biome format --write src/ scripts/",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",

@@ -1,4 +1,4 @@
-import { generateSemanticTokenColors } from '../src/theme/generator/semantic'
+import { generateSemanticTokenColors } from '../src/theme/generator/semantic/index.js'
 
 console.log('🎨 Демонстрация расширенных семантических токенов Tokyo Modern\n')
 

@@ -1,6 +1,6 @@
-import { palette } from '../src/theme/palette'
-import { checkContrast } from '../src/theme/utils/contrast'
-import { sanitizeLogOutput } from '../src/theme/utils/logger'
+import { palette } from '../src/theme/palette/index.js'
+import { checkContrast } from '../src/theme/utils/contrast.js'
+import { sanitizeLogOutput } from '../src/theme/utils/logger.js'
 
 interface ContrastIssue {
   name: string

@@ -2,6 +2,7 @@ import { palette } from '../../palette'
 import type { TokenColor } from '../../types'
 
 import { darken, lighten, mix } from '../../utils/color'
+
 function buildJsonKeyScopeSelector(level: number): string {
   const base = 'source.json meta.structure.dictionary.json'
   const nestingPattern =
