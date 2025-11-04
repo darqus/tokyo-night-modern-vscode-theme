@@ -1,4 +1,4 @@
-import { hexToRgb, normalizeHex, rgbToHex } from './rgb'
+import { hexToRgb, normalizeHex, rgbToHex } from './rgb.js'
 
 export class ColorError extends Error {
   constructor(
@@ -157,4 +157,4 @@ export function isValidHex(hex: string): boolean {
 }
 
 // Re-export for backward compatibility
-export { hexToRgb, normalizeHex, rgbToHex } from './rgb'
+export { hexToRgb, normalizeHex, rgbToHex } from './rgb.js'

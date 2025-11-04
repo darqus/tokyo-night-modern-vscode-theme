@@ -1,5 +1,4 @@
-export * from './cache'
-// Explicit exports to avoid conflicts
+export * from './cache.js'
 export {
   alpha,
   ColorError,
@@ -7,8 +6,9 @@ export {
   isValidHex,
   lighten,
   mix,
-} from './color'
-export * from './color-generator'
+} from './color.js'
+// Explicit exports to avoid conflicts
+export * from './color-generator.js'
 export {
   areColorsSimilar,
   checkContrast,
@@ -16,9 +16,9 @@ export {
   getContrastRatio,
   getLuminance,
   meetsWCAG,
-} from './contrast'
-export * from './logger'
-export * from './rgb'
-export * from './safe-exec'
-export * from './semantic-tokens'
-export * from './validation'
+} from './contrast.js'
+export * from './logger.js'
+export * from './rgb.js'
+export * from './safe-exec.js'
+export * from './semantic-tokens.js'
+export * from './validation.js'

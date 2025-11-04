@@ -1,7 +1,7 @@
-import { palette } from '../../palette'
-import type { SemanticTokenStyle } from '../../types'
-import { lighten, mix } from '../../utils/color'
-import { createSemanticToken } from '../../utils/semantic-tokens'
+import { palette } from '../../palette/index.js'
+import type { SemanticTokenStyle } from '../../types/index.js'
+import { lighten, mix } from '../../utils/color.js'
+import { createSemanticToken } from '../../utils/semantic-tokens.js'
 
 export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
   const { blue, cyan, purple, teal, yellow } = palette

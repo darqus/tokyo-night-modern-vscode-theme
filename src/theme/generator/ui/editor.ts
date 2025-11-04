@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { alpha, lighten, mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { alpha, lighten, mix } from '../../utils/color.js'
 
 export function generateEditorColors(): Record<string, string> {
   const { bg, fg, blue, cyan, yellow, red, purple, teal, green, ui, neutral } =

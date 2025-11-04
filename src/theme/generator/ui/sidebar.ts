@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { lighten } from '../../utils'
+import { palette } from '../../palette/index.js'
+import { lighten } from '../../utils/index.js'
 
 export function generateSidebarColors(): Record<string, string> {
   const { bg, fg, ui, blue } = palette

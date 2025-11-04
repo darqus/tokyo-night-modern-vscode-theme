@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { alpha, lighten, mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { alpha, lighten, mix } from '../../utils/color.js'
 
 export const generateInputColors = (): Record<string, string> => {
   const { bg, fg, blue, yellow } = palette

@@ -1,4 +1,4 @@
-import { palette } from '../../palette'
+import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types'
 
 export function generateModernTokens(): TokenColor[] {

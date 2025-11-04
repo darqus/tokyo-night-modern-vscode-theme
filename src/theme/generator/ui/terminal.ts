@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { alpha } from '../../utils/color.js'
 
 export function generateTerminalColors(): Record<string, string> {
   const { bg, fg, red, green, yellow, blue, purple, cyan, neutral } = palette

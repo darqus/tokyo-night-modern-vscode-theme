@@ -1,6 +1,6 @@
-import { palette } from '../../palette'
-import type { TokenColor } from '../../types'
-import { lighten, mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import type { TokenColor } from '../../types/index.js'
+import { lighten, mix } from '../../utils/color.js'
 
 export function generateBasicTokens(): TokenColor[] {
   const { orange, green, purple, cyan, red, yellow, pink, teal, fg } = palette

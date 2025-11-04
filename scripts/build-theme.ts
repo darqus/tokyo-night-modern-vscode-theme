@@ -1,11 +1,15 @@
 import { writeFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { generateTheme } from '../src/theme/index.js'
 import { sanitizeLogOutput } from '../src/theme/utils/logger.js'
 import {
   validateCriticalContrast,
   validateTheme,
 } from '../src/theme/utils/validation.js'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 async function buildTheme(): Promise<void> {
   try {

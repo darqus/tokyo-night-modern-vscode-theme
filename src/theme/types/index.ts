@@ -6,5 +6,5 @@
  * - palette.ts - типы цветовой палитры
  */
 
-export * from './palette'
-export * from './theme'
+export * from './palette.js'
+export * from './theme.js'

@@ -1,7 +1,7 @@
-import { palette } from '../../palette'
-import type { SemanticTokenStyle } from '../../types'
-import { darken, lighten, mix } from '../../utils/color'
-import { createSemanticToken } from '../../utils/semantic-tokens'
+import { palette } from '../../palette/index.js'
+import type { SemanticTokenStyle } from '../../types/index.js'
+import { darken, lighten, mix } from '../../utils/color.js'
+import { createSemanticToken } from '../../utils/semantic-tokens.js'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
   const { cyan, purple, yellow, orange, teal, blue } = palette

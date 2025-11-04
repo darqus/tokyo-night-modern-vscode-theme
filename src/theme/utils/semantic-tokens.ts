@@ -1,4 +1,4 @@
-import type { SemanticTokenStyle } from '../types'
+import type { SemanticTokenStyle } from '../types/index.js'
 
 export interface SemanticTokenConfig {
   foreground?: string

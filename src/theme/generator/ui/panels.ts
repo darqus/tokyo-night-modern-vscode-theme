@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { darken, lighten, mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { darken, lighten, mix } from '../../utils/color.js'
 
 export function generatePanelColors(): Record<string, string> {
   const { bg, fg, purple, blue, ui } = palette

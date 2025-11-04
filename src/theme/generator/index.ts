@@ -1,7 +1,7 @@
-import { THEME_CONFIG } from '../config'
-import type { VSCodeTheme } from '../types'
-import { withConcurrencyLimit } from '../utils/parallel-utils'
-import { generateSemanticTokenColors } from './semantic'
+import { THEME_CONFIG } from '../config.js'
+import type { VSCodeTheme } from '../types/index.js'
+import { withConcurrencyLimit } from '../utils/parallel-utils.js'
+import { generateSemanticTokenColors } from './semantic/index.js'
 import {
   generateBasicTokens,
   generateCodeTokens,
@@ -10,7 +10,7 @@ import {
   generateMarkdownTokens,
   generateMarkupTokens,
   generateModernTokens,
-} from './tokens'
+} from './tokens/index.js'
 import {
   generateButtonColors,
   generateCheckboxColors,
@@ -25,7 +25,7 @@ import {
   generateSidebarColors,
   generateTabColors,
   generateTerminalColors,
-} from './ui'
+} from './ui/index.js'
 
 /**
  * Generates complete VS Code Tokyo Night theme

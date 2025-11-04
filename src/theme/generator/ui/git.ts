@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { alpha } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { alpha } from '../../utils/color.js'
 
 export function generateGitColors(): Record<string, string> {
   const { blue, fg, red, teal, yellow } = palette

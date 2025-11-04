@@ -1,7 +1,7 @@
-import { palette } from '../../palette'
-import type { TokenColor } from '../../types'
+import { palette } from '../../palette/index.js'
+import type { TokenColor } from '../../types/index.js'
 
-import { darken, lighten, mix } from '../../utils/color'
+import { darken, lighten, mix } from '../../utils/color.js'
 
 function buildJsonKeyScopeSelector(level: number): string {
   const base = 'source.json meta.structure.dictionary.json'

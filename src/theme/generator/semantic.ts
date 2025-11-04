@@ -1,4 +1,4 @@
-import { generateSemanticTokenColors as generateExpandedSemanticTokenColors } from './semantic/index'
+import { generateSemanticTokenColors as generateExpandedSemanticTokenColors } from './semantic/index.js'
 
 // Maintain backward compatibility with current implementation
 export function generateSemanticTokenColors() {

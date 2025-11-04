@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { darken, lighten } from '../../utils'
+import { palette } from '../../palette/index.js'
+import { darken, lighten } from '../../utils/index.js'
 
 export function generateTabColors(): Record<string, string> {
   const { bg, fg, purple } = palette

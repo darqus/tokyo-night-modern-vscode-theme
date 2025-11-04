@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { alpha, lighten } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { alpha, lighten } from '../../utils/color.js'
 
 export function generateCoreColors(): Record<string, string> {
   const { fg, bg, blue, ui, neutral } = palette

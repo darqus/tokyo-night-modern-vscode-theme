@@ -1,7 +1,7 @@
 /**
  * LRU memoization cache for color operations
  */
-import { LRUCache } from './lru-cache'
+import { LRUCache } from './lru-cache.js'
 
 // Define a type alias to avoid direct use of 'any' in the generic constraint
 type MemoizableFunction = (...args: readonly unknown[]) => unknown

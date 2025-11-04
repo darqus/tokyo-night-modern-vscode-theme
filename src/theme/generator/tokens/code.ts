@@ -1,6 +1,6 @@
-import { palette } from '../../palette'
-import type { TokenColor } from '../../types'
-import { lighten, mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import type { TokenColor } from '../../types/index.js'
+import { lighten, mix } from '../../utils/color.js'
 
 export function generateCodeTokens(): TokenColor[] {
   const { red, pink, blue, cyan, purple, yellow, green, orange, fg, teal } =

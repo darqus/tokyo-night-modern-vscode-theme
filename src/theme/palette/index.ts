@@ -1,3 +1,3 @@
-export type { ColorVariant, UnifiedPalette } from './base'
-export { basePalette } from './base'
-export { palette } from './generated'
+export type { ColorVariant, UnifiedPalette } from './base.js'
+export { basePalette } from './base.js'
+export { palette } from './generated.js'

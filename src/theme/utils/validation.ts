@@ -1,6 +1,6 @@
-import type { VSCodeTheme } from '../types'
-import { isValidHex } from './color'
-import { getContrastRatio } from './contrast'
+import type { VSCodeTheme } from '../types/index.js'
+import { isValidHex } from './color.js'
+import { getContrastRatio } from './contrast.js'
 
 /**
  * Theme validation result

@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import type { TokenColor } from '../../types'
+import { palette } from '../../palette/index.js'
+import type { TokenColor } from '../../types/index.js'
 
 export function generateCommentTokens(): TokenColor[] {
   const { fg } = palette

@@ -1,5 +1,5 @@
-import { palette } from '../../palette'
-import { mix } from '../../utils/color'
+import { palette } from '../../palette/index.js'
+import { mix } from '../../utils/color.js'
 
 export function generateButtonColors(): Record<string, string> {
   const { blue, ui, bg } = palette

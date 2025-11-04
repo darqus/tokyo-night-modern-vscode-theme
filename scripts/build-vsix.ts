@@ -1,12 +1,16 @@
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Получаем версию из package.json
 let pkg: { version: string }
 try {
   const packageContent = fs.readFileSync(
-    path.resolve(__dirname, '../package.json'),
+    path.join(__dirname, '../package.json'),
     'utf-8'
   )
   pkg = JSON.parse(packageContent)
@@ -26,7 +30,7 @@ try {
 const VSIX_NAME = `tokyo-modern-${pkg.version}.vsix`
 
 // Путь к папке с расширением (предполагается, что build-theme уже сгенерировал нужные файлы)
-const EXT_DIR = path.resolve(__dirname, '../')
+const EXT_DIR = path.join(__dirname, '../')
 
 const buildVsix = () => {
   try {

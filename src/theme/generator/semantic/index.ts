@@ -1,8 +1,8 @@
-import { palette } from '../../palette'
-import type { SemanticTokenStyle } from '../../types'
-import { generateFunctionTokens } from './functions'
-import { generateModernFrameworkTokens } from './modern-frameworks'
-import { generateVariableTokens } from './variables'
+import { palette } from '../../palette/index.js'
+import type { SemanticTokenStyle } from '../../types/index.js'
+import { generateFunctionTokens } from './functions.js'
+import { generateModernFrameworkTokens } from './modern-frameworks.js'
+import { generateVariableTokens } from './variables.js'
 
 function generateTypeTokens(): Record<string, SemanticTokenStyle> {
   return {

@@ -1,5 +1,5 @@
-import type { ColorVariant } from './base'
-import { basePalette } from './base'
+import type { ColorVariant } from './base.js'
+import { basePalette } from './base.js'
 
 export interface SimplifiedPalette {
   bg: ColorVariant

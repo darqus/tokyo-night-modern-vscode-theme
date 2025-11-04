@@ -11,15 +11,39 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "warn",
+        "useKeyWithMouseEvents": "warn",
+        "useValidAnchor": "warn"
+      },
+      "complexity": {
+        "noForEach": "off"
+      },
       "style": {
         "useConst": "error",
         "useShorthandFunctionType": "error"
       },
       "suspicious": {
-        "noExplicitAny": "warn"
+        "noExplicitAny": "warn",
+        "noArrayIndexKey": "warn",
+        "noAssignInExpressions": "warn",
+        "noDoubleEquals": "warn",
+        "noDuplicateElseIf": "error",
+        "noEmptyBlockStatements": "warn",
+        "noRedundantUseStrict": "warn",
+        "noSelfCompare": "warn",
+        "noUnsafeDeclarationMerging": "warn"
       },
       "correctness": {
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error"
+      },
+      "performance": {
+        "noDelete": "warn"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn",
+        "noDangerouslySetInnerHtmlWithChildren": "warn"
       }
     }
   },

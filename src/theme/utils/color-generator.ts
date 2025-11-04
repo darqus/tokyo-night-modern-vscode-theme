@@ -1,5 +1,5 @@
-import { memoize } from './cache'
-import { ColorError, darken, lighten } from './color'
+import { memoize } from './cache.js'
+import { ColorError, darken, lighten } from './color.js'
 
 export const generateBackgroundScale = memoize(((base: string) => {
   try {

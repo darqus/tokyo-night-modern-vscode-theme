@@ -1,4 +1,4 @@
-import { hexToRgb } from './rgb'
+import { hexToRgb } from './rgb.js'
 
 const WCAG_AA_RATIO = 4.5
 const WCAG_AAA_RATIO = 7
