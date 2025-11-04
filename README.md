@@ -9,7 +9,8 @@
 
 ## 🌎 Live Preview
 
-🔮 [Open in vscode.dev](https://vscode.dev/theme/lod-inc.tokyo-modern)
+🔮 [Open in VS Code](https://vscode.dev/theme/lod-inc.tokyo-modern) |
+🔮 [Open in VS Code Insiders](https://insiders.vscode.dev/editor/theme/lod-inc.tokyo-modern)
 
 ## 🎨 Features
 
