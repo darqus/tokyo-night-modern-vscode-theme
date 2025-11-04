@@ -95,15 +95,15 @@ jobs:
     - name: Build VSIX package
       run: npm run build:vsix
 
-    - name: Publish to VS Code Marketplace
-      run: npx vsce publish -p ${{ secrets.VSCE_PAT }}
-      env:
-        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+    # - name: Publish to VS Code Marketplace
+    #   run: npx vsce publish -p ${{ secrets.VSCE_PAT }}
+    #   env:
+    #     VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
-    - name: Publish to Open VSX Registry
-      run: npx ovsx publish --pat ${{ secrets.OVSX_PAT }}
-      env:
-        OVSX_PAT: ${{ secrets.OVSX_PAT }}
+    # - name: Publish to Open VSX Registry
+    #   run: npx ovsx publish --pat ${{ secrets.OVSX_PAT }}
+    #   env:
+    #     OVSX_PAT: ${{ secrets.OVSX_PAT }}
 
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
