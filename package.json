@@ -6,6 +6,7 @@
   "author": "lod",
   "publisher": "lod-inc",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "vscode": "^1.74.0"
   },
