@@ -18,7 +18,10 @@ describe('Base Palette', () => {
       if (typeof colorVariant === 'object' && colorVariant !== null) {
         for (const [variantKey, value] of Object.entries(colorVariant)) {
           if (value && typeof value === 'string') {
-            expect(isValidHex(value), `Invalid color at ${key}.${variantKey}: ${value}`).toBe(true)
+            expect(
+              isValidHex(value),
+              `Invalid color at ${key}.${variantKey}: ${value}`
+            ).toBe(true)
           }
         }
       }
