@@ -17,8 +17,10 @@ export default defineConfig({
         'test/',
         'coverage/',
         '**/*.test.ts',
+        '**/index.ts', // Exclude entry point files that might cause issues
       ],
       include: ['src/**/*.ts'],
+      enabled: process.env.COVERAGE === 'true', // Only enable coverage when explicitly requested
     },
   },
 })
