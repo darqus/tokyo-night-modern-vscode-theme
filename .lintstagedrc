@@ -1,4 +1,20 @@
 {
-  "*.{ts,tsx,js,jsx,json,css,md}": ["biome check", "biome format --write"],
-  "*.{ts,tsx,js,jsx}": ["npm run test"]
+  "src/**/*.{ts,tsx,js,jsx,json,css,md}": [
+    "biome check",
+    "biome format --write"
+  ],
+  "scripts/**/*.{ts,tsx,js,jsx,json,css,md}": [
+    "biome check",
+    "biome format --write"
+  ],
+  "test/**/*.{ts,tsx,js,jsx,json,css,md}": [
+    "biome check",
+    "biome format --write"
+  ],
+  "themes/**/*.{ts,tsx,js,jsx,json,css,md}": [
+    "biome check",
+    "biome format --write"
+  ],
+  "*.json": ["biome check", "biome format --write"],
+  "*.md": ["biome check", "biome format --write"]
 }

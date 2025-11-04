@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { checkContrast } from '../src/theme/utils/contrast.js'
 
 function sanitizeOutput(text: string): string {
@@ -18,6 +19,8 @@ function sanitizeOutput(text: string): string {
     .join('')
 }
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = join(__filename, '..')
 const themePath = join(__dirname, '../themes/tokyo-modern-color-theme.json')
 let theme: {
   colors: Record<string, string>
