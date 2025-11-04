@@ -5,8 +5,8 @@ import { isValidHex } from '../../src/theme/utils/color'
 describe('Theme Generator', () => {
   let theme: VSCodeTheme
 
-  beforeAll(() => {
-    theme = generateTheme()
+  beforeAll(async () => {
+    theme = await generateTheme()
   })
 
   it('should generate valid theme structure', () => {
