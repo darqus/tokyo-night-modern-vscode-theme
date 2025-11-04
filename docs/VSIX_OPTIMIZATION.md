@@ -56,7 +56,7 @@ vitest.config.ts
   - `package.json` ✅
   - `LICENSE` ✅
   - `icon.png` ✅
-  - `themes/tokyo-night-color-theme.json` ✅
+  - `themes/tokyo-color-theme.json` ✅
 
 ## Проверка
 
@@ -66,10 +66,10 @@ npx @vscode/vsce ls
 # package.json
 # LICENSE
 # icon.png
-# themes/tokyo-night-color-theme.json
+# themes/tokyo-color-theme.json
 
 npx @vscode/vsce package
-# DONE Packaged: tokyo-night-modern-2.3.1179.vsix (7 files, 34.04 KB)
+# DONE Packaged: tokyo-modern-2.3.1179.vsix (7 files, 34.04 KB)
 ```
 
 ## Соответствие документации
