@@ -31,7 +31,7 @@ jobs:
       run: npm run lint
 
     - name: Format check
-      run: npx biome check --write=false .
+      run: npx biome check .
 
     - name: Run unit tests
       run: npm run test
