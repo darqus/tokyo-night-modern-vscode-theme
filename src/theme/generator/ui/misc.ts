@@ -2,12 +2,24 @@ import { palette } from '../../palette'
 import { alpha, lighten, mix } from '../../utils/color'
 
 export function generateMiscColors(): Record<string, string> {
-  const { bg, fg, blue, yellow, red, cyan, green, purple, orange, teal, neutral } = palette
+  const {
+    bg,
+    fg,
+    blue,
+    yellow,
+    red,
+    cyan,
+    green,
+    purple,
+    orange,
+    teal,
+    neutral,
+  } = palette
 
   return {
     'walkThrough.embeddedEditorBackground': bg.main,
-    'textLink.foreground': cyan.light,
-    'textLink.activeForeground': lighten(cyan.light, 0.2),
+    'textLink.foreground': blue.light,
+    'textLink.activeForeground': lighten(blue.light, 0.2),
     'textPreformat.foreground': fg.main,
     'textBlockQuote.background': bg.main,
     'textCodeBlock.background': bg.main,
@@ -83,18 +95,12 @@ export function generateMiscColors(): Record<string, string> {
     'notificationsInfoIcon.foreground': cyan.main,
     'menubar.selectionForeground': fg.light,
     'menubar.selectionBackground': alpha(blue.dark, 0.2),
-    'menubar.selectionBorder': lighten(
-      mix(bg.dark, blue.dark, 0.1),
-      0.04
-    ),
+    'menubar.selectionBorder': lighten(mix(bg.dark, blue.dark, 0.1), 0.04),
     'menu.foreground': fg.main,
     'menu.background': mix(bg.dark, blue.dark, 0.1),
     'menu.selectionForeground': lighten(fg.light, 0.4),
     'menu.selectionBackground': alpha(blue.dark, 0.4),
-    'menu.separatorBackground': lighten(
-      mix(bg.dark, blue.dark, 0.1),
-      0.06
-    ),
+    'menu.separatorBackground': lighten(mix(bg.dark, blue.dark, 0.1), 0.06),
     'menu.border': lighten(mix(bg.dark, blue.dark, 0.1), 0.02),
     'chat.requestBorder': bg.light,
     'chat.avatarBackground': blue.dark,
