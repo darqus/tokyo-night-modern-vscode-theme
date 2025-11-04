@@ -2,7 +2,8 @@ import { palette } from '../../palette'
 import { alpha, lighten, mix } from '../../utils/color'
 
 export function generateEditorColors(): Record<string, string> {
-  const { bg, fg, blue, cyan, yellow, red, purple, teal, green, ui, neutral } = palette
+  const { bg, fg, blue, cyan, yellow, red, purple, teal, green, ui, neutral } =
+    palette
 
   return {
     'selection.background': alpha(purple.dark, 0.2),
@@ -53,10 +54,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorOverviewRuler.bracketMatchForeground': bg.dark,
     'editorOverviewRuler.findMatchForeground': alpha(blue.light, 0.4),
     'editorOverviewRuler.rangeHighlightForeground': alpha(teal.main, 0.3),
-    'editorOverviewRuler.selectionHighlightForeground': alpha(
-      cyan.main,
-      0.25
-    ),
+    'editorOverviewRuler.selectionHighlightForeground': alpha(cyan.main, 0.25),
     'editorOverviewRuler.wordHighlightForeground': alpha(purple.light, 0.35),
     'editorOverviewRuler.wordHighlightStrongForeground': alpha(
       purple.light,
