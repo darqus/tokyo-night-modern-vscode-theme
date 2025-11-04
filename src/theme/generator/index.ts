@@ -1,5 +1,6 @@
 import { THEME_CONFIG } from '../config'
 import type { VSCodeTheme } from '../types'
+import { withConcurrencyLimit } from '../utils/parallel-utils'
 import { generateSemanticTokenColors } from './semantic'
 import {
   generateBasicTokens,
@@ -42,35 +43,85 @@ import {
  * // theme contains all colors and highlighting rules
  * ```
  */
-export function generateTheme(): VSCodeTheme {
+export async function generateTheme(): Promise<VSCodeTheme> {
+  // Generate UI colors in parallel
+  const [
+    coreColors,
+    buttonColors,
+    inputColors,
+    checkboxColors,
+    sidebarColors,
+    listColors,
+    editorColors,
+    diffColors,
+    tabColors,
+    panelColors,
+    terminalColors,
+    gitColors,
+    miscColors,
+  ] = await withConcurrencyLimit([
+    () => Promise.resolve(generateCoreColors()),
+    () => Promise.resolve(generateButtonColors()),
+    () => Promise.resolve(generateInputColors()),
+    () => Promise.resolve(generateCheckboxColors()),
+    () => Promise.resolve(generateSidebarColors()),
+    () => Promise.resolve(generateListColors()),
+    () => Promise.resolve(generateEditorColors()),
+    () => Promise.resolve(generateDiffColors()),
+    () => Promise.resolve(generateTabColors()),
+    () => Promise.resolve(generatePanelColors()),
+    () => Promise.resolve(generateTerminalColors()),
+    () => Promise.resolve(generateGitColors()),
+    () => Promise.resolve(generateMiscColors()),
+  ])
+
+  // Generate token colors in parallel
+  const [
+    commentTokens,
+    basicTokens,
+    codeTokens,
+    cssTokens,
+    markupTokens,
+    markdownTokens,
+    modernTokens,
+  ] = await withConcurrencyLimit([
+    () => Promise.resolve(generateCommentTokens()),
+    () => Promise.resolve(generateBasicTokens()),
+    () => Promise.resolve(generateCodeTokens()),
+    () => Promise.resolve(generateCssTokens()),
+    () => Promise.resolve(generateMarkupTokens()),
+    () => Promise.resolve(generateMarkdownTokens()),
+    () => Promise.resolve(generateModernTokens()),
+  ])
+
   return {
     name: THEME_CONFIG.name,
     type: THEME_CONFIG.type,
     semanticHighlighting: THEME_CONFIG.semanticHighlighting,
     colors: {
-      ...generateCoreColors(),
-      ...generateButtonColors(),
-      ...generateInputColors(),
-      ...generateCheckboxColors(),
-      ...generateSidebarColors(),
-      ...generateListColors(),
-      ...generateEditorColors(),
-      ...generateDiffColors(),
-      ...generateTabColors(),
-      ...generatePanelColors(),
-      ...generateTerminalColors(),
-      ...generateGitColors(),
-      ...generateMiscColors(),
+      ...coreColors,
+      ...buttonColors,
+      ...inputColors,
+      ...checkboxColors,
+      ...sidebarColors,
+      ...listColors,
+      ...editorColors,
+      ...diffColors,
+      ...tabColors,
+      ...panelColors,
+      ...terminalColors,
+      ...gitColors,
+      ...miscColors,
     },
     tokenColors: [
-      ...generateCommentTokens(),
-      ...generateBasicTokens(),
-      ...generateCodeTokens(),
-      ...generateCssTokens(),
-      ...generateMarkupTokens(),
-      ...generateMarkdownTokens(),
-      ...generateModernTokens(),
+      ...commentTokens,
+      ...basicTokens,
+      ...codeTokens,
+      ...cssTokens,
+      ...markupTokens,
+      ...markdownTokens,
+      ...modernTokens,
     ],
-    semanticTokenColors: generateSemanticTokenColors(),
+    semanticTokenColors: await Promise.resolve(generateSemanticTokenColors()),
   }
 }

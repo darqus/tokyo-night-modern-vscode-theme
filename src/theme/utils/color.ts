@@ -55,7 +55,17 @@ export function lighten(hex: string, amount: number): string {
   if (typeof amount !== 'number' || !Number.isFinite(amount)) {
     throw new ColorError(`Invalid amount: ${amount}`)
   }
-  return mix(hex, '#ffffff', amount)
+
+  // Direct calculation instead of using mix for better performance
+  const rgb = hexToRgb(hex)
+  const clampedAmount = Math.max(0, Math.min(1, amount))
+  const factor = 1 - clampedAmount
+
+  const r = Math.round(rgb.r * factor + 255 * clampedAmount)
+  const g = Math.round(rgb.g * factor + 255 * clampedAmount)
+  const b = Math.round(rgb.b * factor + 255 * clampedAmount)
+
+  return rgbToHex(r, g, b)
 }
 
 /**
@@ -77,7 +87,17 @@ export function darken(hex: string, amount: number): string {
   if (typeof amount !== 'number' || !Number.isFinite(amount)) {
     throw new ColorError(`Invalid amount: ${amount}`)
   }
-  return mix(hex, '#000000', amount)
+
+  // Direct calculation instead of using mix for better performance
+  const rgb = hexToRgb(hex)
+  const clampedAmount = Math.max(0, Math.min(1, amount))
+  const factor = 1 - clampedAmount
+
+  const r = Math.round(rgb.r * factor)
+  const g = Math.round(rgb.g * factor)
+  const b = Math.round(rgb.b * factor)
+
+  return rgbToHex(r, g, b)
 }
 
 /**
@@ -108,9 +128,12 @@ export function mix(hex1: string, hex2: string, ratio: number): string {
   const rgb2 = hexToRgb(hex2)
   const clampedRatio = Math.max(0, Math.min(1, ratio))
 
-  const r = Math.round(rgb1.r * (1 - clampedRatio) + rgb2.r * clampedRatio)
-  const g = Math.round(rgb1.g * (1 - clampedRatio) + rgb2.g * clampedRatio)
-  const b = Math.round(rgb1.b * (1 - clampedRatio) + rgb2.b * clampedRatio)
+  // Pre-calculate the inverse ratio to avoid repeated calculation
+  const invRatio = 1 - clampedRatio
+
+  const r = Math.round(rgb1.r * invRatio + rgb2.r * clampedRatio)
+  const g = Math.round(rgb1.g * invRatio + rgb2.g * clampedRatio)
+  const b = Math.round(rgb1.b * invRatio + rgb2.b * clampedRatio)
 
   return rgbToHex(r, g, b)
 }

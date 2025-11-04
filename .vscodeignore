@@ -11,6 +11,8 @@ node_modules/**
 .cache/**
 .temp/**
 .tmp/**
+dist/**
+build/**
 
 # Development files
 src/**
@@ -19,7 +21,6 @@ docs/**
 test/**
 tests/**
 coverage/**
-static/**
 tools/**
 THEME_SUMMARY.md
 
@@ -35,6 +36,7 @@ biome.json
 
 # Development tools
 .env*
+.env.example
 .DS_Store
 Thumbs.db
 
@@ -42,7 +44,6 @@ Thumbs.db
 .git/**
 .gitignore
 .gitattributes
-.github
 
 # Package management
 package.json
@@ -52,6 +53,7 @@ pnpm-lock.yaml
 
 # IDE files
 .idea/**
+.vscode/**
 *.swp
 *.swo
 *~
@@ -66,3 +68,9 @@ yarn-error.log*
 CHANGELOG.md
 cspell.json
 firebase-debug.log
+
+# Explicit exclusions
+.github/**
+.husky/**
+.lintstagedrc
+static/**

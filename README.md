@@ -1,7 +1,11 @@
 # 🌆 Tokyo Modern
 
+[![CI/CD Pipeline](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/ci-cd.yml)
+[![Tests](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/test.yml/badge.svg)](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/test.yml)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/lod-inc.tokyo-modern?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/lod-inc.tokyo-modern?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
 
 > A modern, balanced dark theme for VS Code with declarative color generation and utility-based palette.
 

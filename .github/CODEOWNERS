@@ -1,0 +1,23 @@
+# Code owners for the Tokyo Modern VS Code theme
+
+# Core maintainers - responsible for reviewing all changes
+
+* @darqus
+
+# Theme-specific changes
+
+src/theme/ @darqus
+
+# Test files
+
+test/ @darqus
+
+# Configuration files
+
+package.json @darqus
+tsconfig.json @darqus
+biome.json @darqus
+
+# GitHub Actions workflows
+
+.github/workflows/ @darqus
