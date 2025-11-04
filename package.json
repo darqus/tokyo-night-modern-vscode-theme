@@ -45,7 +45,6 @@
     "format": "biome check --fix src/ scripts/ && biome format --write src/ scripts/",
     "test": "vitest run",
     "test:run": "vitest run",
-    "test:coverage": "COVERAGE=true vitest run --coverage",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:no-coverage": "COVERAGE=false vitest run --coverage=false",

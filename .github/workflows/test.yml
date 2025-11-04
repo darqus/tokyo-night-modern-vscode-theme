@@ -36,8 +36,8 @@ jobs:
     - name: Run unit tests
       run: npm run test
 
-    - name: Run tests with coverage
-      run: npm run test:coverage
+    - name: Run unit tests
+      run: npm run test
 
     - name: Build theme
       run: npm run build
