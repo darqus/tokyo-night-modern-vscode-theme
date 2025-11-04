@@ -47,7 +47,6 @@
     "test:run": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "COVERAGE=true vitest run --coverage",
     "test:no-coverage": "COVERAGE=false vitest run --coverage=false",
     "check:contrast": "node --loader ts-node/esm --no-warnings scripts/check-contrast.ts",
     "check:syntax": "node --loader ts-node/esm --no-warnings scripts/check-syntax-contrast.ts",
