@@ -55,6 +55,34 @@
     }
   },
   "files": {
+    "include": ["**/*"],
+    "ignore": [
+      "CHANGELOG.md",
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "coverage/**",
+      "*.min.js",
+      "*.min.css",
+      "!.vscode/**",
+      "!.github/**",
+      "!.husky/**",
+      "!.git/**",
+      "!.gitignore",
+      "!.gitattributes",
+      "!.npmignore",
+      "!.prettierignore",
+      "!.biomeignore",
+      "package-lock.json",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "!.env",
+      "!.env.local",
+      "!.env.development.local",
+      "!.env.test.local",
+      "!.env.production.local",
+      "!.env.example"
+    ],
     "maxSize": 1048576
   }
 }
