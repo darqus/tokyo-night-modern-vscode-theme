@@ -64,7 +64,7 @@ jobs:
       run: npm run build:vsix
 
     - name: Upload VSIX artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: tokyo-modern-vsix
         path: tokyo-modern-*.vsix
