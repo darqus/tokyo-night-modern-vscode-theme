@@ -1,11 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import {
   alpha,
-  lighten,
-  darken,
-  mix,
-  isValidHex,
   ColorError,
+  darken,
+  isValidHex,
+  lighten,
+  mix,
 } from '../../src/theme/utils/color'
 
 describe('Color Utils Edge Cases', () => {
@@ -33,7 +33,9 @@ describe('Color Utils Edge Cases', () => {
     it('should throw error for invalid opacity', () => {
       expect(() => alpha('#ff0000', NaN)).toThrow(ColorError)
       expect(() => alpha('#ff0000', Infinity)).toThrow(ColorError)
-      expect(() => alpha('#ff0000', 'invalid' as any)).toThrow(ColorError)
+      expect(() => alpha('#ff0000', 'invalid' as unknown as number)).toThrow(
+        ColorError
+      )
     })
 
     it('should clamp opacity values', () => {

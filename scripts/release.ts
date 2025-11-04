@@ -6,7 +6,7 @@ import {
   writeFileSync,
 } from 'node:fs'
 import { join } from 'node:path'
-import { safeExec, SafeExecError } from '../src/theme/utils/safe-exec'
+import { SafeExecError, safeExec } from '../src/theme/utils/safe-exec'
 import { computeVersion } from './versioning'
 
 class ReleaseManager {
@@ -33,7 +33,7 @@ class ReleaseManager {
     try {
       const packageJson = JSON.parse(readFileSync('package.json', 'utf8'))
       return packageJson.version || '0.0.0'
-    } catch (error) {
+    } catch (_error) {
       console.warn('Could not read package.json version, using 0.0.0')
       return '0.0.0'
     }
@@ -355,7 +355,17 @@ class ReleaseManager {
   }
 
   private sanitizeOutput(text: string): string {
-    return text.replace(/[\x00-\x1f\x7f-\x9f]/g, '').trim()
+    // Удаляем управляющие символы (0x00-0x1F и 0x7F-0x9F)
+    return text
+      .split('')
+      .filter((char) => {
+        const code = char.charCodeAt(0)
+        return (
+          !(code >= 0x00 && code <= 0x1f) && !(code >= 0x7f && code <= 0x9f)
+        )
+      })
+      .join('')
+      .trim()
   }
 
   async release(

@@ -74,7 +74,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateBasicTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('Number, Boolean, Undefined, Null')
       expect(tokenNames).toContain('String, Symbols')
@@ -153,7 +153,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateCodeTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('Tag')
       expect(tokenNames).toContain('Variables')
@@ -232,7 +232,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateCommentTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain(
         'Italics - Comments, Storage, Keyword Flow, Vue attributes, Decorators'
@@ -310,7 +310,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateCssTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('CSS Class and Support')
       expect(tokenNames).toContain('CSS Font')
@@ -399,7 +399,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateMarkdownTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('JSON Key - Level 0')
       expect(tokenNames).toContain('Plain Punctuation')
@@ -506,7 +506,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateMarkupTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('Inserted')
       expect(tokenNames).toContain('Deleted')
@@ -594,7 +594,7 @@ describe('Token Generator Tests', () => {
 
     it('should include expected token types', () => {
       const tokens = generateModernTokens()
-      const tokenNames = tokens.map((token: any) => token.name)
+      const tokenNames = tokens.map((token) => token.name)
 
       expect(tokenNames).toContain('React/Vue Components')
       expect(tokenNames).toContain('TypeScript Types')
