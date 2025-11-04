@@ -27,6 +27,7 @@ THEME_SUMMARY.md
 # Configuration files
 tsconfig.json
 tsconfig.test.json
+tsconfig.node.json
 vitest.config.ts
 commitlint.config.js
 .npmignore
