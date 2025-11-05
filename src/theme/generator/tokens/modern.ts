@@ -3,18 +3,19 @@ import type { TokenColor } from '../../types'
 
 export function generateModernTokens(): TokenColor[] {
   const {
-    cyan,
-    purple,
     teal,
     blue,
     orange,
     green,
-    pink,
     red,
     yellow,
     indigo,
     lime,
     magenta,
+    violet,
+    rose,
+    amber,
+    emerald,
   } = palette
 
   return [
@@ -29,7 +30,7 @@ export function generateModernTokens(): TokenColor[] {
         'meta.jsx.children.jsx entity.name.tag',
       ],
       settings: {
-        foreground: cyan.light,
+        foreground: violet.light,
         fontStyle: 'bold',
       },
     },
@@ -46,7 +47,7 @@ export function generateModernTokens(): TokenColor[] {
         'type.argument',
       ],
       settings: {
-        foreground: purple.light,
+        foreground: magenta.light,
       },
     },
 
@@ -61,7 +62,7 @@ export function generateModernTokens(): TokenColor[] {
         'union.name.graphql',
       ],
       settings: {
-        foreground: cyan.main,
+        foreground: magenta.main,
       },
     },
 
@@ -114,7 +115,7 @@ export function generateModernTokens(): TokenColor[] {
         'variable.other.hook',
       ],
       settings: {
-        foreground: purple.light,
+        foreground: rose.main,
         fontStyle: 'bold',
       },
     },
@@ -128,7 +129,7 @@ export function generateModernTokens(): TokenColor[] {
         'storage.type.generic',
       ],
       settings: {
-        foreground: cyan.light,
+        foreground: magenta.light,
       },
     },
 
@@ -172,7 +173,7 @@ export function generateModernTokens(): TokenColor[] {
         'string.template.styled',
       ],
       settings: {
-        foreground: pink.light,
+        foreground: amber.main,
       },
     },
 
@@ -213,7 +214,7 @@ export function generateModernTokens(): TokenColor[] {
         'keyword.control.validation',
       ],
       settings: {
-        foreground: cyan.main,
+        foreground: magenta.main,
         fontStyle: 'italic',
       },
     },
@@ -240,7 +241,7 @@ export function generateModernTokens(): TokenColor[] {
         'meta.macro.rust',
       ],
       settings: {
-        foreground: cyan.light,
+        foreground: magenta.light,
         fontStyle: 'bold',
       },
     },
@@ -273,7 +274,7 @@ export function generateModernTokens(): TokenColor[] {
         'meta.function.return-type.python',
       ],
       settings: {
-        foreground: purple.light,
+        foreground: magenta.light,
       },
     },
     {
@@ -298,7 +299,7 @@ export function generateModernTokens(): TokenColor[] {
         'support.class.deno',
       ],
       settings: {
-        foreground: cyan.main,
+        foreground: magenta.main,
       },
     },
 
@@ -317,7 +318,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Qwik Components',
       scope: ['entity.name.tag.qwik', 'support.class.component.qwik'],
       settings: {
-        foreground: purple.light,
+        foreground: magenta.light,
         fontStyle: 'bold',
       },
     },
@@ -327,7 +328,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'HTMX Attributes',
       scope: ['entity.other.attribute-name.html.htmx', 'meta.attribute.htmx'],
       settings: {
-        foreground: cyan.light,
+        foreground: magenta.light,
       },
     },
 
@@ -336,7 +337,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'Drizzle ORM',
       scope: ['support.function.drizzle', 'entity.name.type.drizzle'],
       settings: {
-        foreground: green.main,
+        foreground: emerald.main,
       },
     },
 
@@ -363,7 +364,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'WebAssembly',
       scope: ['storage.type.wasm', 'keyword.control.wasm'],
       settings: {
-        foreground: purple.light,
+        foreground: magenta.light,
       },
     },
 

@@ -1,9 +1,11 @@
 import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type { TokenColor, VSCodeTheme } from '../src/theme/types/index.js'
 import { getColorDistance } from '../src/theme/utils/contrast.js'
 import { sanitizeLogOutput } from '../src/theme/utils/logger.js'
 
+const __dirname = dirname(fileURLToPath(import.meta.url))
 const themePath = join(__dirname, '../themes/tokyo-modern-color-theme.json')
 
 let theme: VSCodeTheme

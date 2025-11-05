@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateMarkupTokens(): TokenColor[] {
-  const { red, blue, cyan, teal, fg, yellow, purple } = palette
+  const { red, blue, teal, fg, yellow, lime, magenta } = palette
 
   return [
     {
@@ -23,7 +23,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions',
       scope: 'string.regexp',
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Regular Expressions - Punctuation',
@@ -33,7 +33,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions - Character Class',
       scope: ['constant.other.character-class.regexp'],
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'Regular Expressions - Character Class Set',
@@ -46,7 +46,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Regular Expressions - Quantifier',
       scope: 'keyword.operator.quantifier.regexp',
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Regular Expressions - Backslash',
@@ -56,7 +56,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Escape Characters',
       scope: 'constant.character.escape',
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Decorators',
@@ -78,12 +78,12 @@ export function generateMarkupTokens(): TokenColor[] {
         'text.html.basic entity.other.attribute-name.html',
         'text.html.basic entity.other.attribute-name',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'HTML Character Entity',
       scope: 'text.html constant.character.entity',
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Vue (Vetur / deprecated) Template attributes',
@@ -91,7 +91,7 @@ export function generateMarkupTokens(): TokenColor[] {
         'entity.other.attribute-name.id.html',
         'meta.directive.vue entity.other.attribute-name.html',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
   ]
 }

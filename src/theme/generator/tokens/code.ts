@@ -1,15 +1,14 @@
 import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
-// ...existing code...
 
 export function generateCodeTokens(): TokenColor[] {
-  const { cyan, purple, fg, indigo, lime, magenta } = palette
+  const { fg, indigo, lime, magenta } = palette
 
   return [
     {
       name: 'Tag',
       scope: 'entity.name.tag',
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Tag - Custom / Unrecognized',
@@ -39,26 +38,32 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global punctuation.definition.variable',
         'constant.other',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: lime.main },
     },
     {
-      name: 'Variables',
+      name: 'Local Variables',
       scope: [
         'variable',
         'support.variable',
         'string constant.other.placeholder',
-        'variable.parameter.handlebars',
         'variable.other.object',
         'meta.fstring',
-        'meta.function-call meta.function-call.arguments',
         'meta.embedded.inline.phpx constant.other.php',
       ],
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
+    },
+    {
+      name: 'Function Arguments',
+      scope: [
+        'variable.parameter.handlebars',
+        'meta.function-call meta.function-call.arguments',
+      ],
+      settings: { foreground: indigo.main },
     },
     {
       name: 'Variable Array Key',
       scope: 'meta.array.literal variable',
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Object Key',
@@ -72,7 +77,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.field.declaration.ts variable.object.property',
         'meta.block entity.name.label',
       ],
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Object Property - General',
@@ -82,28 +87,28 @@ export function generateCodeTokens(): TokenColor[] {
         'support.variable.property.dom',
         'meta.function-call variable.other.object.property',
       ],
-      settings: { foreground: fg.light },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Object Property - Specific',
       scope: 'variable.other.object.property',
-      settings: { foreground: fg.light },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
       scope:
         'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'C-related Block Level Variables',
       scope: 'source.cpp meta.block variable.other',
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Methods',
@@ -114,7 +119,7 @@ export function generateCodeTokens(): TokenColor[] {
         'keyword.other.special-method',
         'storage.type.cs',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Function Definition',
@@ -127,7 +132,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.definition.method entity.name.function',
         'meta.object-literal entity.name.function',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Function Argument',
@@ -137,7 +142,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.function.parameters punctuation.definition.variable',
         'meta.function.parameter variable',
       ],
-      settings: { foreground: fg.light },
+      settings: { foreground: indigo.main },
     },
     {
       name: 'Constant, Tag Attribute',
@@ -148,7 +153,7 @@ export function generateCodeTokens(): TokenColor[] {
         'constant.escape',
         'keyword.other.unit',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Variable Definition',
@@ -159,12 +164,12 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.mapping.key.hcl variable.other.readwrite.hcl',
         'variable.other.declaration',
       ],
-      settings: { foreground: fg.light },
+      settings: { foreground: lime.main },
     },
     {
       name: 'Inherited Class',
       scope: 'entity.other.inherited-class',
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Class, Support, DOM, etc',
@@ -184,17 +189,17 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Support Function',
       scope: 'support.function',
-      settings: { foreground: cyan.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'Indigo Color Usage',

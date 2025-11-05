@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateCssTokens(): TokenColor[] {
-  const { blue, cyan, purple, fg, teal } = palette
+  const { blue, fg, teal, lime, magenta } = palette
 
   return [
     {
@@ -31,7 +31,7 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class',
         'meta.at-rule.mixin.scss entity.name.function.scss',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: lime.main },
     },
     {
       name: 'CSS ID',
@@ -65,7 +65,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.return variable.parameter.url',
         'meta.property-list meta.at-rule.else',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: lime.main },
     },
     {
       name: 'CSS Parent Selector Entity',
@@ -86,7 +86,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.include entity.name.function.scss',
         'meta.at-rule.include keyword.control.at-rule.include',
       ],
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'SCSS Mixins, Extends, Include Keyword',
@@ -102,7 +102,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.function keyword.control.at-rule.function',
         'keyword.control punctuation.definition.keyword',
       ],
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
     {
       name: 'SCSS Include Mixin Argument',
@@ -112,7 +112,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS value',
       scope: 'support.constant.property-value',
-      settings: { foreground: cyan.main },
+      settings: { foreground: lime.main },
     },
     {
       name: 'CSS IDs',
@@ -127,7 +127,7 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.placeholder',
         'meta.property-list meta.property-value',
       ],
-      settings: { foreground: purple.main },
+      settings: { foreground: magenta.main },
     },
   ]
 }

@@ -3,7 +3,7 @@ import type { TokenColor } from '../../types/index.js'
 import { lighten, mix } from '../../utils/color.js'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, purple, cyan, red, pink, teal, fg } = palette
+  const { orange, green, red, pink, teal, fg, lime, magenta, indigo } = palette
 
   return [
     {
@@ -45,17 +45,17 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Invalid deprecated',
       scope: 'invalid.deprecated',
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'Storage Type',
       scope: 'storage.type',
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'Storage - modifier, var, const, let',
       scope: ['meta.var.expr storage.type', 'storage.modifier'],
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'Interpolation, PHP tags, Smarty tags',
@@ -66,7 +66,7 @@ export function generateBasicTokens(): TokenColor[] {
         'support.constant.handlebars',
         'punctuation.section.tag.twig',
       ],
-      settings: { foreground: cyan.light },
+      settings: { foreground: indigo.light },
     },
     {
       name: 'Blade, Twig, Smarty Handlebars keywords',
@@ -79,7 +79,7 @@ export function generateBasicTokens(): TokenColor[] {
         'entity.name.function.blade',
         'meta.tag.blade keyword.other.type.php',
       ],
-      settings: { foreground: cyan.main },
+      settings: { foreground: indigo.main },
     },
     {
       name: 'Spread',
@@ -108,7 +108,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.property-list punctuation.separator.key-value',
         'meta.at-rule.mixin punctuation.separator.key-value',
       ],
-      settings: { foreground: mix(fg.light, cyan.light, 0.4) },
+      settings: { foreground: mix(fg.light, indigo.light, 0.4) },
     },
     {
       name: 'Template & Misc',
@@ -130,7 +130,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.embedded.inline.phpx punctuation.definition.tag.begin.html',
         'meta.embedded.inline.phpx punctuation.definition.tag.end.html',
       ],
-      settings: { foreground: mix(cyan.light, purple.light, 0.3) },
+      settings: { foreground: mix(lime.light, magenta.light, 0.3) },
     },
     {
       name: 'Import, Export, From, Default',
@@ -143,7 +143,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.import keyword.other',
       ],
       settings: {
-        foreground: mix(pink.light, purple.light, 0.4),
+        foreground: mix(pink.light, magenta.light, 0.4),
         fontStyle: 'italic',
       },
     },
@@ -155,17 +155,17 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.array-binding-pattern-variable variable.other.readwrite',
         'variable.other.object.property',
       ],
-      settings: { foreground: mix(teal.main, pink.main, 0.3) },
+      settings: { foreground: mix(teal.main, lime.main, 0.3) },
     },
     {
       name: 'Keyword',
       scope: ['keyword', 'keyword.control', 'keyword.other.important'],
-      settings: { foreground: purple.light },
+      settings: { foreground: magenta.light },
     },
     {
       name: 'Keyword SQL',
       scope: 'keyword.other.DML',
-      settings: { foreground: cyan.light },
+      settings: { foreground: indigo.light },
     },
     {
       name: 'Keyword Operator Logical, Arrow, Ternary, Comparison',

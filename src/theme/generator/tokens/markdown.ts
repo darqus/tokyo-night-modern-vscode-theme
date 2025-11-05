@@ -11,13 +11,13 @@ function buildJsonKeyScopeSelector(level: number): string {
 }
 
 export function generateMarkdownTokens(): TokenColor[] {
-  const { fg, cyan, blue, teal } = palette
+  const { fg, blue, teal, lime } = palette
 
   const jsonKeyLevelColors = [
     blue.main,
-    cyan.dark,
-    cyan.light,
-    palette.purple.light,
+    lime.dark,
+    lime.light,
+    palette.magenta.light,
     palette.yellow.main,
     palette.orange.main,
     teal.main,
@@ -91,7 +91,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.1.markdown entity.name',
         'heading.1.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: cyan.light },
+      settings: { fontStyle: 'bold', foreground: lime.light },
     },
     {
       name: 'Markdown - Heading 2',
@@ -99,7 +99,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'heading.2.markdown entity.name',
         'heading.2.markdown punctuation.definition.heading.markdown',
       ],
-      settings: { fontStyle: 'bold', foreground: lighten(cyan.main, 0.05) },
+      settings: { fontStyle: 'bold', foreground: lighten(lime.main, 0.05) },
     },
     {
       name: 'Markdown - Heading 3',
@@ -183,7 +183,7 @@ export function generateMarkdownTokens(): TokenColor[] {
         'markup.inline.raw.string.markdown',
         'variable.language.fenced.markdown',
       ],
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Markdown - Separator',
@@ -198,7 +198,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Token - Info',
       scope: 'token.info-token',
-      settings: { foreground: cyan.light },
+      settings: { foreground: lime.light },
     },
     {
       name: 'Token - Warn',

@@ -27,6 +27,10 @@ export interface UnifiedPalette {
   indigo: ColorVariant
   lime: ColorVariant
   magenta: ColorVariant
+  violet: ColorVariant
+  rose: ColorVariant
+  amber: ColorVariant
+  emerald: ColorVariant
   ui: ColorsUI
 }
 
@@ -57,7 +61,7 @@ export const basePalette: UnifiedPalette = {
   },
   magenta: {
     dark: '#a6296a',
-    main: '#cc4099',
+    main: '#e666b3',
     light: '#e666b3',
     bright: '#f08ccc',
   },
@@ -116,10 +120,34 @@ export const basePalette: UnifiedPalette = {
     bright: '#f8c6d0',
   },
   neutral: {
-    dark: '#4a4f74',
-    main: '#7a82ad',
+    dark: '#7284a6',
+    main: '#939bc4',
     light: '#aabdc9',
     bright: '#d0d9f3',
+  },
+  violet: {
+    dark: '#7b3eea',
+    main: '#8b5cf6',
+    light: '#a78bfa',
+    bright: '#c4b5fd',
+  },
+  rose: {
+    dark: '#d94665',
+    main: '#f43f5e',
+    light: '#fb7185',
+    bright: '#fda4af',
+  },
+  amber: {
+    dark: '#b45309',
+    main: '#f59e0b',
+    light: '#fbbf24',
+    bright: '#fcd34d',
+  },
+  emerald: {
+    dark: '#047857',
+    main: '#10b981',
+    light: '#34d399',
+    bright: '#6ee7b7',
   },
   ui: {
     white: '#ffffff',
