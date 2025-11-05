@@ -25,6 +25,7 @@ export const generatePanelColors = (): Record<string, string> => {
     'statusBarItem.prominentHoverBackground': alpha(blue.main, 0.3),
     'statusBarItem.focusBorder': blue.main,
     'statusBarItem.remoteBackground': alpha(blue.main, 0.25),
+    'statusBarItem.remoteHoverForeground': fg.bright,
     'titleBar.activeForeground': fg.dark,
     'titleBar.inactiveForeground': darken(fg.dark, 0.4),
     'titleBar.activeBackground': bg.main,

@@ -242,6 +242,7 @@
     "statusBarItem.prominentHoverBackground": "#66a9ff4d",
     "statusBarItem.focusBorder": "#66a9ff",
     "statusBarItem.remoteBackground": "#66a9ff40",
+    "statusBarItem.remoteHoverForeground": "#e6eeff",
     "titleBar.activeForeground": "#8fa5cf",
     "titleBar.inactiveForeground": "#56637c",
     "titleBar.activeBackground": "#18162c",
