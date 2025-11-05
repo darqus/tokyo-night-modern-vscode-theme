@@ -1,5 +1,5 @@
 import { palette } from '../../palette/index.js'
-import { mix } from '../../utils/color.js'
+import { lighten, mix } from '../../utils/color.js'
 
 export function generateButtonColors(): Record<string, string> {
   const { blue, ui, bg } = palette
@@ -12,7 +12,7 @@ export function generateButtonColors(): Record<string, string> {
     'extensionBadge.remoteForeground': ui.white,
     'button.background': blue.dark,
     'button.hoverBackground': mix(blue.dark, blue.main, 0.2),
-    'button.secondaryBackground': bg.light,
+    'button.secondaryBackground': lighten(bg.main, 0.05),
     'button.foreground': ui.white,
     'progressBar.background': blue.dark,
   }
