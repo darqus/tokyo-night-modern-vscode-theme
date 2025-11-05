@@ -666,7 +666,7 @@
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#7fb5ff"
+        "foreground": "#9976db"
       }
     },
     {
@@ -702,7 +702,7 @@
         "constant.other"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -725,7 +725,7 @@
       "name": "Variable Array Key",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#4dd8f0"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -741,7 +741,7 @@
         "meta.block entity.name.label"
       ],
       "settings": {
-        "foreground": "#4de0d8"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -753,35 +753,35 @@
         "meta.function-call variable.other.object.property"
       ],
       "settings": {
-        "foreground": "#4dd8f0"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#a4bce6"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "Other Variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#4dd8f0"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -794,7 +794,7 @@
         "storage.type.cs"
       ],
       "settings": {
-        "foreground": "#7fb5ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -834,7 +834,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#80e6ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -854,7 +854,7 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#9976db"
       }
     },
     {
@@ -883,14 +883,14 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#9976db"
       }
     },
     {
       "name": "Support Function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#80e6ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
