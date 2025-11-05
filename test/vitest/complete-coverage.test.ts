@@ -135,14 +135,18 @@ describe('Complete Coverage Tests', () => {
 
       expect(() => normalizeHex('invalid')).toThrow()
       expect(() => normalizeHex('#ff')).toThrow()
-      expect(() => normalizeHex('#ffff')).toThrow()
+      // 4-digit hex with alpha (like #ffff) is now valid and should not throw
+      expect(() => normalizeHex('#ffff')).not.toThrow()
     })
 
     it('should test hexToRgb error cases', async () => {
       const { hexToRgb } = await import('../../src/theme/utils/rgb')
 
       expect(() => hexToRgb('#gggggg')).toThrow()
-      expect(() => hexToRgb('#ff0000ff')).toThrow()
+      // hexToRgb now accepts 8-digit hex colors (with alpha), so this should not throw
+      expect(() => hexToRgb('#ff0000ff')).not.toThrow()
+      const result = hexToRgb('#ff0000ff')
+      expect(result).toEqual({ r: 255, g: 0, b: 0 })
     })
   })
 

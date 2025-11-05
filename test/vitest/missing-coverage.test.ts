@@ -67,9 +67,15 @@ describe('Missing Coverage Tests', () => {
     it('should test normalizeHex edge cases', async () => {
       const { normalizeHex } = await import('../../src/theme/utils/rgb')
 
-      // Test 8-digit hex should throw
-      expect(() => normalizeHex('ff0000ff')).toThrow()
-      expect(() => normalizeHex('#ff0000ff')).toThrow()
+      // Test 8-digit hex should now be accepted (with alpha channel)
+      expect(() => normalizeHex('ff0000ff')).not.toThrow()
+      expect(() => normalizeHex('#ff0000ff')).not.toThrow()
+      expect(normalizeHex('ff0000ff')).toBe('#ff0000ff')
+      expect(normalizeHex('#ff0000ff')).toBe('#ff0000ff')
+
+      // Test 4-digit hex with alpha should also work
+      expect(() => normalizeHex('f00f')).not.toThrow()
+      expect(normalizeHex('f00f')).toBe('#ff0000ff')
     })
 
     it('should test rgbToHex validation', async () => {
