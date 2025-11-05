@@ -42,6 +42,15 @@
 5. Navigate to and select the downloaded `.vsix` file
 6. Reload VS Code if prompted
 
+### Recommended configuration
+
+```json
+"window.density.editorTabHeight": "compact",
+"workbench.colorTheme": "Tokyo Modern",
+"workbench.preferredDarkColorTheme": "Tokyo Modern",
+"workbench.preferredLightColorTheme": "Tokyo Modern",
+```
+
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file
