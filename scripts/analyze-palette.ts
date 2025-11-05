@@ -118,7 +118,11 @@ function generateDetailedReport(analysis: PaletteAnalysis): void {
   )
 
   let totalIssues = 0
-  const allIssues: { color: string; issue: string; values: any }[] = []
+  const allIssues: {
+    color: string
+    issue: string
+    values: Record<string, { hex: string; luminance: number }>
+  }[] = []
 
   for (const [colorName, variants] of Object.entries(analysis)) {
     const { dark, main, light, bright } = variants

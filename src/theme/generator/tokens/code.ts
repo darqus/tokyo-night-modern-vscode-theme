@@ -1,29 +1,15 @@
 import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
-import { lighten, mix } from '../../utils/color.js'
+// ...existing code...
 
 export function generateCodeTokens(): TokenColor[] {
-  const {
-    red,
-    pink,
-    blue,
-    cyan,
-    purple,
-    yellow,
-    green,
-    orange,
-    fg,
-    teal,
-    indigo,
-    lime,
-    magenta,
-  } = palette
+  const { blue, cyan, purple, fg, teal, indigo, lime, magenta } = palette
 
   return [
     {
       name: 'Tag',
       scope: 'entity.name.tag',
-      settings: { foreground: lighten(red.main, 0.08) },
+      settings: { foreground: blue.light },
     },
     {
       name: 'Tag - Custom / Unrecognized',
@@ -33,7 +19,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.tag.other.unrecognized.html.derivative entity.name.tag',
         'meta.tag',
       ],
-      settings: { foreground: mix(pink.light, purple.light, 0.3) },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Tag Punctuation',
@@ -41,7 +27,7 @@ export function generateCodeTokens(): TokenColor[] {
         'punctuation.definition.tag',
         'text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic',
       ],
-      settings: { foreground: mix(pink.light, red.main, 0.2) },
+      settings: { foreground: fg.main },
     },
     {
       name: 'Globals, PHP Constants, etc',
@@ -53,7 +39,7 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global punctuation.definition.variable',
         'constant.other',
       ],
-      settings: { foreground: mix(pink.light, purple.light, 0.3) },
+      settings: { foreground: purple.light },
     },
     {
       name: 'Variables',
@@ -67,12 +53,12 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.function-call meta.function-call.arguments',
         'meta.embedded.inline.phpx constant.other.php',
       ],
-      settings: { foreground: cyan.light },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Variable Array Key',
       scope: 'meta.array.literal variable',
-      settings: { foreground: cyan.light },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'Object Key',
@@ -86,7 +72,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.field.declaration.ts variable.object.property',
         'meta.block entity.name.label',
       ],
-      settings: { foreground: lighten(teal.main, 0.12) },
+      settings: { foreground: teal.main },
     },
     {
       name: 'Object Property - General',
@@ -96,28 +82,28 @@ export function generateCodeTokens(): TokenColor[] {
         'support.variable.property.dom',
         'meta.function-call variable.other.object.property',
       ],
-      settings: { foreground: cyan.light },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'Object Property - Specific',
       scope: 'variable.other.object.property',
-      settings: { foreground: fg.light },
+      settings: { foreground: fg.main },
     },
     {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
       scope:
         'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
-      settings: { foreground: green.light },
+      settings: { foreground: blue.main },
     },
     {
       name: 'C-related Block Level Variables',
       scope: 'source.cpp meta.block variable.other',
-      settings: { foreground: mix(red.main, pink.light, 0.3) },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
-      settings: { foreground: mix(red.light, orange.light, 0.6) },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'Methods',
@@ -128,7 +114,7 @@ export function generateCodeTokens(): TokenColor[] {
         'keyword.other.special-method',
         'storage.type.cs',
       ],
-      settings: { foreground: blue.main },
+      settings: { foreground: blue.light },
     },
     {
       name: 'Function Definition',
@@ -141,7 +127,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.definition.method entity.name.function',
         'meta.object-literal entity.name.function',
       ],
-      settings: { foreground: blue.main },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'Function Argument',
@@ -151,7 +137,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.function.parameters punctuation.definition.variable',
         'meta.function.parameter variable',
       ],
-      settings: { foreground: mix(pink.light, purple.light, 0.3) },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Constant, Tag Attribute',
@@ -162,7 +148,7 @@ export function generateCodeTokens(): TokenColor[] {
         'constant.escape',
         'keyword.other.unit',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Variable Definition',
@@ -173,12 +159,12 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.mapping.key.hcl variable.other.readwrite.hcl',
         'variable.other.declaration',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: fg.light },
     },
     {
       name: 'Inherited Class',
       scope: 'entity.other.inherited-class',
-      settings: { foreground: purple.light },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Class, Support, DOM, etc',
@@ -198,17 +184,17 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: mix(cyan.main, blue.main, 0.3) },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: mix(yellow.main, green.main, 0.2) },
+      settings: { foreground: blue.main },
     },
     {
       name: 'Support Function',
       scope: 'support.function',
-      settings: { foreground: mix(cyan.main, teal.main, 0.35) },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Indigo Color Usage',

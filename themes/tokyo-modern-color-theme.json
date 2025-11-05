@@ -666,7 +666,7 @@
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#ff7785"
+        "foreground": "#7fb5ff"
       }
     },
     {
@@ -678,7 +678,7 @@
         "meta.tag"
       ],
       "settings": {
-        "foreground": "#dbb1f2"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -688,7 +688,7 @@
         "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic"
       ],
       "settings": {
-        "foreground": "#eba5d5"
+        "foreground": "#a4bce6"
       }
     },
     {
@@ -702,7 +702,7 @@
         "constant.other"
       ],
       "settings": {
-        "foreground": "#dbb1f2"
+        "foreground": "#c2a9ff"
       }
     },
     {
@@ -718,14 +718,14 @@
         "meta.embedded.inline.phpx constant.other.php"
       ],
       "settings": {
-        "foreground": "#80e6ff"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "Variable Array Key",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#80e6ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -741,7 +741,7 @@
         "meta.block entity.name.label"
       ],
       "settings": {
-        "foreground": "#62e4dd"
+        "foreground": "#4de0d8"
       }
     },
     {
@@ -753,35 +753,35 @@
         "meta.function-call variable.other.object.property"
       ],
       "settings": {
-        "foreground": "#80e6ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
       "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#cbd9ff"
+        "foreground": "#a4bce6"
       }
     },
     {
       "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#99e6a9"
+        "foreground": "#66a9ff"
       }
     },
     {
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#f8819c"
+        "foreground": "#66a9ff"
       }
     },
     {
       "name": "Other Variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#eea78c"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -794,7 +794,7 @@
         "storage.type.cs"
       ],
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#7fb5ff"
       }
     },
     {
@@ -809,7 +809,7 @@
         "meta.object-literal entity.name.function"
       ],
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -821,7 +821,7 @@
         "meta.function.parameter variable"
       ],
       "settings": {
-        "foreground": "#dbb1f2"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -834,7 +834,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#80e6ff"
       }
     },
     {
@@ -847,14 +847,14 @@
         "variable.other.declaration"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#cbd9ff"
       }
     },
     {
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#66a9ff"
       }
     },
     {
@@ -876,21 +876,21 @@
         "variable.other.constant.object"
       ],
       "settings": {
-        "foreground": "#55caf5"
+        "foreground": "#9976db"
       }
     },
     {
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#d8d44f"
+        "foreground": "#66a9ff"
       }
     },
     {
       "name": "Support Function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#4ddbe8"
+        "foreground": "#80e6ff"
       }
     },
     {
@@ -940,14 +940,14 @@
         "support.type.map.key"
       ],
       "settings": {
-        "foreground": "#75b2ff"
+        "foreground": "#66a9ff"
       }
     },
     {
       "name": "CSS Font",
       "scope": ["support.constant.font-name", "meta.definition.variable"],
       "settings": {
-        "foreground": "#91d67d"
+        "foreground": "#cbd9ff"
       }
     },
     {
@@ -957,21 +957,21 @@
         "meta.at-rule.mixin.scss entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#f2d853"
+        "foreground": "#4dd8f0"
       }
     },
     {
       "name": "CSS ID",
       "scope": "entity.other.attribute-name.id",
       "settings": {
-        "foreground": "#ee9eca"
+        "foreground": "#7fb5ff"
       }
     },
     {
       "name": "CSS Tag",
       "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#5cdfed"
+        "foreground": "#4de0d8"
       }
     },
     {
@@ -983,14 +983,14 @@
         "entity.name.tag.reference"
       ],
       "settings": {
-        "foreground": "#ecc447"
+        "foreground": "#a4bce6"
       }
     },
     {
       "name": "CSS Punctuation",
       "scope": "meta.property-list",
       "settings": {
-        "foreground": "#85baff"
+        "foreground": "#66a9ff"
       }
     },
     {
@@ -1001,7 +1001,7 @@
         "meta.property-list meta.at-rule.else"
       ],
       "settings": {
-        "foreground": "#e0945a"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -1017,7 +1017,7 @@
       "name": "CSS Punctuation comma fix",
       "scope": "meta.property-list meta.property-list",
       "settings": {
-        "foreground": "#85baff"
+        "foreground": "#66a9ff"
       }
     },
     {
@@ -1028,7 +1028,7 @@
         "meta.at-rule.include keyword.control.at-rule.include"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#9976db"
       }
     },
     {
@@ -1046,21 +1046,21 @@
         "keyword.control punctuation.definition.keyword"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#9976db"
       }
     },
     {
       "name": "SCSS Include Mixin Argument",
       "scope": "meta.property-list meta.at-rule.include",
       "settings": {
-        "foreground": "#cbd9ff"
+        "foreground": "#a4bce6"
       }
     },
     {
       "name": "CSS value",
       "scope": "support.constant.property-value",
       "settings": {
-        "foreground": "#e0945a"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -1079,7 +1079,7 @@
         "meta.property-list meta.property-value"
       ],
       "settings": {
-        "foreground": "#c2a9ff"
+        "foreground": "#9976db"
       }
     },
     {

@@ -1,10 +1,8 @@
 import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
-import { lighten, mix } from '../../utils/color.js'
 
 export function generateCssTokens(): TokenColor[] {
-  const { blue, green, pink, cyan, yellow, purple, orange, red, fg, teal } =
-    palette
+  const { blue, cyan, purple, fg, teal } = palette
 
   return [
     {
@@ -20,12 +18,12 @@ export function generateCssTokens(): TokenColor[] {
         'support.type.vendored.property-name',
         'support.type.map.key',
       ],
-      settings: { foreground: lighten(blue.main, 0.1) },
+      settings: { foreground: blue.main },
     },
     {
       name: 'CSS Font',
       scope: ['support.constant.font-name', 'meta.definition.variable'],
-      settings: { foreground: mix(green.main, yellow.main, 0.2) },
+      settings: { foreground: fg.light },
     },
     {
       name: 'CSS Class',
@@ -33,17 +31,17 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class',
         'meta.at-rule.mixin.scss entity.name.function.scss',
       ],
-      settings: { foreground: lighten(yellow.main, 0.1) },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'CSS ID',
       scope: 'entity.other.attribute-name.id',
-      settings: { foreground: mix(pink.light, red.main, 0.3) },
+      settings: { foreground: blue.light },
     },
     {
       name: 'CSS Tag',
       scope: 'entity.name.tag.css',
-      settings: { foreground: mix(cyan.main, teal.light, 0.3) },
+      settings: { foreground: teal.main },
     },
     {
       name: 'CSS Tag Reference, Pseudo & Class Punctuation',
@@ -53,12 +51,12 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.class punctuation.definition.entity',
         'entity.name.tag.reference',
       ],
-      settings: { foreground: mix(yellow.main, orange.main, 0.25) },
+      settings: { foreground: fg.main },
     },
     {
       name: 'CSS Punctuation',
       scope: 'meta.property-list',
-      settings: { foreground: lighten(blue.main, 0.2) },
+      settings: { foreground: blue.main },
     },
     {
       name: 'CSS at-rule fix',
@@ -67,7 +65,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.return variable.parameter.url',
         'meta.property-list meta.at-rule.else',
       ],
-      settings: { foreground: orange.main },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'CSS Parent Selector Entity',
@@ -79,7 +77,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Punctuation comma fix',
       scope: 'meta.property-list meta.property-list',
-      settings: { foreground: lighten(blue.main, 0.2) },
+      settings: { foreground: blue.main },
     },
     {
       name: 'SCSS @',
@@ -88,7 +86,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.include entity.name.function.scss',
         'meta.at-rule.include keyword.control.at-rule.include',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: purple.main },
     },
     {
       name: 'SCSS Mixins, Extends, Include Keyword',
@@ -104,17 +102,17 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.function keyword.control.at-rule.function',
         'keyword.control punctuation.definition.keyword',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: purple.main },
     },
     {
       name: 'SCSS Include Mixin Argument',
       scope: 'meta.property-list meta.at-rule.include',
-      settings: { foreground: fg.light },
+      settings: { foreground: fg.main },
     },
     {
       name: 'CSS value',
       scope: 'support.constant.property-value',
-      settings: { foreground: orange.main },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'CSS IDs',
@@ -129,7 +127,7 @@ export function generateCssTokens(): TokenColor[] {
         'entity.other.attribute-name.placeholder',
         'meta.property-list meta.property-value',
       ],
-      settings: { foreground: purple.light },
+      settings: { foreground: purple.main },
     },
   ]
 }
