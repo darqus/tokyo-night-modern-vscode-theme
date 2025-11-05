@@ -2,13 +2,13 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { fg, indigo, lime, magenta } = palette
+  const { fg, indigo, lime, purple } = palette
 
   return [
     {
       name: 'Tag',
       scope: 'entity.name.tag',
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Tag - Custom / Unrecognized',
@@ -37,6 +37,18 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global',
         'variable.other.global punctuation.definition.variable',
         'constant.other',
+      ],
+      settings: { foreground: lime.main },
+    },
+    {
+      name: 'Variables',
+      scope: [
+        'variable',
+        'support.variable',
+        'string constant.other.placeholder',
+        'variable.other.object',
+        'meta.fstring',
+        'meta.embedded.inline.phpx constant.other.php',
       ],
       settings: { foreground: lime.main },
     },
@@ -87,12 +99,12 @@ export function generateCodeTokens(): TokenColor[] {
         'support.variable.property.dom',
         'meta.function-call variable.other.object.property',
       ],
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Object Property - Specific',
       scope: 'variable.other.object.property',
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
@@ -119,7 +131,7 @@ export function generateCodeTokens(): TokenColor[] {
         'keyword.other.special-method',
         'storage.type.cs',
       ],
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Function Definition',
@@ -132,7 +144,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.definition.method entity.name.function',
         'meta.object-literal entity.name.function',
       ],
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Function Argument',
@@ -169,7 +181,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Inherited Class',
       scope: 'entity.other.inherited-class',
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Class, Support, DOM, etc',
@@ -189,17 +201,17 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main, fontStyle: 'bold' },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Support Function',
       scope: 'support.function',
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Indigo Color Usage',
@@ -220,13 +232,13 @@ export function generateCodeTokens(): TokenColor[] {
       settings: { foreground: lime.main },
     },
     {
-      name: 'Magenta Color Usage',
+      name: 'purple Color Usage',
       scope: [
-        'entity.name.type.magenta',
-        'support.type.magenta',
-        'variable.other.magenta',
+        'entity.name.type.purple',
+        'support.type.purple',
+        'variable.other.purple',
       ],
-      settings: { foreground: magenta.main },
+      settings: { foreground: purple.main },
     },
   ]
 }

@@ -513,7 +513,7 @@
       "name": "Storage - modifier, var, const, let",
       "scope": ["meta.var.expr storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -562,7 +562,7 @@
         "entity.name.operator"
       ],
       "settings": {
-        "foreground": "#eea6b6",
+        "foreground": "#ff6b7a",
         "fontStyle": "bold"
       }
     },
@@ -616,7 +616,7 @@
         "meta.import keyword.other"
       ],
       "settings": {
-        "foreground": "#e695d5",
+        "foreground": "#4de0d8",
         "fontStyle": "italic"
       }
     },
@@ -636,7 +636,7 @@
       "name": "Keyword",
       "scope": ["keyword", "keyword.control", "keyword.other.important"],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#c2a9ff"
       }
     },
     {
@@ -666,7 +666,7 @@
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -700,6 +700,20 @@
         "variable.other.global",
         "variable.other.global punctuation.definition.variable",
         "constant.other"
+      ],
+      "settings": {
+        "foreground": "#99cc40"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "support.variable",
+        "string constant.other.placeholder",
+        "variable.other.object",
+        "meta.fstring",
+        "meta.embedded.inline.phpx constant.other.php"
       ],
       "settings": {
         "foreground": "#99cc40"
@@ -761,14 +775,14 @@
         "meta.function-call variable.other.object.property"
       ],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
       "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -802,7 +816,7 @@
         "storage.type.cs"
       ],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -817,7 +831,7 @@
         "meta.object-literal entity.name.function"
       ],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -862,7 +876,7 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -884,21 +898,22 @@
         "variable.other.constant.object"
       ],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
       "name": "Support Function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {
@@ -924,14 +939,14 @@
       }
     },
     {
-      "name": "Magenta Color Usage",
+      "name": "purple Color Usage",
       "scope": [
-        "entity.name.type.magenta",
-        "support.type.magenta",
-        "variable.other.magenta"
+        "entity.name.type.purple",
+        "support.type.purple",
+        "variable.other.purple"
       ],
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#9976db"
       }
     },
     {

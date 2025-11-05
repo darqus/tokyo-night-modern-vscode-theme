@@ -3,7 +3,8 @@ import type { TokenColor } from '../../types/index.js'
 import { lighten, mix } from '../../utils/color.js'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, red, pink, teal, fg, lime, magenta, indigo } = palette
+  const { orange, green, red, teal, fg, lime, magenta, indigo, purple } =
+    palette
 
   return [
     {
@@ -55,7 +56,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Storage - modifier, var, const, let',
       scope: ['meta.var.expr storage.type', 'storage.modifier'],
-      settings: { foreground: magenta.light },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Interpolation, PHP tags, Smarty tags',
@@ -95,7 +96,7 @@ export function generateBasicTokens(): TokenColor[] {
         'keyword.operator.bitwise.shift',
         'entity.name.operator',
       ],
-      settings: { foreground: red.light, fontStyle: 'bold' },
+      settings: { foreground: red.main, fontStyle: 'bold' },
     },
     {
       name: 'Punctuation',
@@ -143,7 +144,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.import keyword.other',
       ],
       settings: {
-        foreground: mix(pink.light, magenta.light, 0.4),
+        foreground: teal.main,
         fontStyle: 'italic',
       },
     },
@@ -160,7 +161,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Keyword',
       scope: ['keyword', 'keyword.control', 'keyword.other.important'],
-      settings: { foreground: magenta.light },
+      settings: { foreground: purple.light },
     },
     {
       name: 'Keyword SQL',
