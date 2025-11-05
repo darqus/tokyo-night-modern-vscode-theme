@@ -20,6 +20,7 @@ export const generateInputColors = (): Record<string, string> => {
     'inputValidation.errorForeground': palette.blue.light,
     'inputValidation.errorBackground': palette.red.dark,
     'inputValidation.errorBorder': palette.red.dark,
+    'quickInput.background': bg.main,
     'dropdown.foreground': fg.main,
     'dropdown.background': bg.main,
     'dropdown.listBackground': bg.main,

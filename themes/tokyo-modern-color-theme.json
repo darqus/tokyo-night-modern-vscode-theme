@@ -44,6 +44,7 @@
     "inputValidation.errorForeground": "#7fb5ff",
     "inputValidation.errorBackground": "#7a3a4a",
     "inputValidation.errorBorder": "#7a3a4a",
+    "quickInput.background": "#18162c",
     "dropdown.foreground": "#a8bee4",
     "dropdown.background": "#18162c",
     "dropdown.listBackground": "#18162c",
