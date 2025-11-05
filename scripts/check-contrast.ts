@@ -84,6 +84,13 @@ logContrastResult('Active Tab', tabActive)
 const tabInactive = check('Inactive Tab', palette.fg.main, palette.bg.light)
 logContrastResult('Inactive Tab', tabInactive)
 
+// Hover tooltips
+// Using the same text color but with the new mixed background
+const { mix } = await import('../src/theme/utils/color.js')
+const newTooltipBg = mix(palette.bg.light, palette.blue.main, 0.1)
+const tooltipFg = check('Tooltip text', palette.fg.light, newTooltipBg)
+logContrastResult('Tooltip text', tooltipFg, palette.fg.light, newTooltipBg)
+
 // Summary
 const compliancePercentage =
   issues.length === 0
