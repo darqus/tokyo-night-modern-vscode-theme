@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2437](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2436...v2.3.2437) (2025-11-05)
+
+
+### Features
+
+* **ui:** update button secondary background color ([20b9290](https://github.com/darqus/tokyo-modern-vscode-theme/commit/20b92905e98b5ea449c7bbe469fe68145992a678))
+
 ### [2.3.2436](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2435...v2.3.2436) (2025-11-05)
 
 ### [2.3.2435](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2427...v2.3.2435) (2025-11-05)
