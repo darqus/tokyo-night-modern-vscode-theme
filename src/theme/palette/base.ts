@@ -124,6 +124,6 @@ export const basePalette: UnifiedPalette = {
   ui: {
     white: '#ffffff',
     black: '#000000',
-    badge: '#4089ff',
+    badge: '#007acc',
   },
 } as const
