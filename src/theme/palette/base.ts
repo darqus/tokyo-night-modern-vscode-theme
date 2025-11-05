@@ -5,6 +5,12 @@ export interface ColorVariant {
   bright: string
 }
 
+interface ColorsUI {
+  white: string
+  black: string
+  badge: string
+}
+
 export interface UnifiedPalette {
   background: ColorVariant
   foreground: ColorVariant
@@ -21,11 +27,7 @@ export interface UnifiedPalette {
   indigo: ColorVariant
   lime: ColorVariant
   magenta: ColorVariant
-  ui: {
-    white: string
-    black: string
-    badge: string
-  }
+  ui: ColorsUI
 }
 
 export const basePalette: UnifiedPalette = {
