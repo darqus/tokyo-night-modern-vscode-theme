@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2435](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2427...v2.3.2435) (2025-11-05)
+
+
+### Features
+
+* **analyze-token-colors:** add properties and values analysis ([eadb965](https://github.com/darqus/tokyo-modern-vscode-theme/commit/eadb965f9406d1e227092f5204b5b35ae8bb22a8))
+* **theme:** add quickInput.background color ([aa1a0cf](https://github.com/darqus/tokyo-modern-vscode-theme/commit/aa1a0cf02ba6035b11cf6df2a990d24df25fb263)), closes [#18162](https://github.com/darqus/tokyo-modern-vscode-theme/issues/18162)
+
 ### [2.3.2427](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2416...v2.3.2427) (2025-11-05)
 
 
