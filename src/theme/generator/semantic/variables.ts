@@ -42,7 +42,7 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
     }),
 
     'property.readonly': createSemanticToken({
-      foreground: mix(teal.dark, cyan.dark, 0.3),
+      foreground: mix(teal.main, cyan.main, 0.3),
       fontStyle: 'italic',
     }),
 

@@ -43,7 +43,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS Tag',
       scope: 'entity.name.tag.css',
-      settings: { foreground: mix(cyan.dark, teal.main, 0.3) },
+      settings: { foreground: mix(cyan.main, teal.light, 0.3) },
     },
     {
       name: 'CSS Tag Reference, Pseudo & Class Punctuation',
@@ -104,7 +104,7 @@ export function generateCssTokens(): TokenColor[] {
         'meta.at-rule.function keyword.control.at-rule.function',
         'keyword.control punctuation.definition.keyword',
       ],
-      settings: { foreground: purple.dark },
+      settings: { foreground: purple.light },
     },
     {
       name: 'SCSS Include Mixin Argument',

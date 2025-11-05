@@ -18,6 +18,9 @@ export interface UnifiedPalette {
   red: ColorVariant
   pink: ColorVariant
   neutral: ColorVariant
+  indigo: ColorVariant
+  lime: ColorVariant
+  magenta: ColorVariant
   ui: {
     white: string
     black: string
@@ -27,80 +30,98 @@ export interface UnifiedPalette {
 
 export const basePalette: UnifiedPalette = {
   background: {
-    dark: '#16141f',
-    main: '#1a1625',
-    light: '#221e33',
-    bright: '#352f47',
+    dark: '#151127',
+    main: '#18162c',
+    light: '#1d1931',
+    bright: '#1d1a33',
   },
   foreground: {
-    dark: '#565f89',
-    main: '#a9b1d6',
-    light: '#c0caf5',
-    bright: '#ffffff',
+    dark: '#8da4d6',
+    main: '#a4bce6',
+    light: '#cbd9ff',
+    bright: '#e6eeff',
   },
   blue: {
-    dark: '#3d59a1',
-    main: '#7aa2f7',
-    light: '#7dcfff',
-    bright: '#b4f9f8',
+    dark: '#2a5db4',
+    main: '#66a9ff',
+    light: '#7fb5ff',
+    bright: '#d6e6ff',
   },
   cyan: {
-    dark: '#449dab',
-    main: '#7dcfff',
-    light: '#b4f9f8',
-    bright: '#cdf5f6',
+    dark: '#208ab0',
+    main: '#4dd8f0',
+    light: '#80e6ff',
+    bright: '#b3f6ff',
   },
   teal: {
-    dark: '#4fd6be',
-    main: '#73daca',
-    light: '#95e6cb',
-    bright: '#b7f0d1',
+    dark: '#20a09d',
+    main: '#4de0d8',
+    light: '#80f0e6',
+    bright: '#b3f8f6',
   },
   green: {
-    dark: '#73a373',
-    main: '#9ece6a',
-    light: '#b9f27c',
-    bright: '#c3f584',
+    dark: '#2a9657',
+    main: '#79d68c',
+    light: '#99e6a9',
+    bright: '#ccf8d4',
   },
-  purple: {
-    dark: '#9d7cd8',
-    main: '#bb9af7',
-    light: '#c0a7f7',
-    bright: '#d0bfff',
-  },
-  orange: {
-    dark: '#f7768e',
-    main: '#ff9e64',
-    light: '#ffb86c',
-    bright: '#ffc777',
+  lime: {
+    dark: '#6aa629',
+    main: '#99cc40',
+    light: '#b3e666',
+    bright: '#ccf08c',
   },
   yellow: {
-    dark: '#d18616',
-    main: '#e0af68',
-    light: '#e7c787',
-    bright: '#ffc777',
+    dark: '#cccc22',
+    main: '#f0d440',
+    light: '#ffe766',
+    bright: '#ffed8c',
+  },
+  orange: {
+    dark: '#a66a29',
+    main: '#e0945a',
+    light: '#eea870',
+    bright: '#ffd9a3',
   },
   red: {
-    dark: '#db4b4b',
-    main: '#f7768e',
-    light: '#ff9cac',
-    bright: '#ffb3ba',
+    dark: '#7a3a4a',
+    main: '#ff6b7a',
+    light: '#eea6b6',
+    bright: '#f8c6d0',
   },
   pink: {
-    dark: '#ad8ee6',
-    main: '#bb9af7',
-    light: '#c0a7f7',
-    bright: '#d0bfff',
+    dark: '#754da0',
+    main: '#d48ae0',
+    light: '#e6b4ec',
+    bright: '#f0c4f1',
+  },
+  purple: {
+    dark: '#7a4db4',
+    main: '#9976db',
+    light: '#c2a9ff',
+    bright: '#e6ccff',
+  },
+  indigo: {
+    dark: '#4a4db4',
+    main: '#7a7aff',
+    light: '#a0a0ff',
+    bright: '#d6d6ff',
+  },
+  magenta: {
+    dark: '#a6296a',
+    main: '#cc4099',
+    light: '#e666b3',
+    bright: '#f08ccc',
   },
   neutral: {
-    dark: '#32344a',
-    main: '#565f89',
-    light: '#9699a3',
-    bright: '#c0caf5',
+    dark: '#4a4f74',
+    main: '#7a82ad',
+    light: '#aabdc9',
+    bright: '#d0d9f3',
   },
   ui: {
     white: '#ffffff',
     black: '#000000',
-    badge: '#007acc',
+    badge: '#4089ff',
   },
 } as const

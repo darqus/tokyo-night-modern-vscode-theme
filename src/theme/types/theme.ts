@@ -2,6 +2,8 @@
  * Основные типы для темы VS Code
  */
 
+import type { FontStyle } from './index.js'
+
 /**
  * Полная структура темы VS Code
  */
@@ -23,7 +25,7 @@ export interface TokenColor {
   settings?: {
     foreground?: string
     background?: string
-    fontStyle?: string
+    fontStyle?: FontStyle
   }
 }
 
@@ -32,5 +34,5 @@ export interface TokenColor {
  */
 export interface SemanticTokenStyle {
   foreground?: string
-  fontStyle?: string
+  fontStyle?: FontStyle
 }

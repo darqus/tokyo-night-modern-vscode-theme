@@ -83,7 +83,7 @@ export function generateMarkdownTokens(): TokenColor[] {
       name: 'Markdown - Markup Raw Inline Punctuation',
       scope:
         'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-      settings: { foreground: fg.dark },
+      settings: { foreground: fg.main },
     },
     {
       name: 'Markdown - Heading 1',
@@ -159,7 +159,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Markdown - Blockquote',
       scope: 'markup.quote punctuation.definition.blockquote.markdown',
-      settings: { foreground: fg.dark },
+      settings: { foreground: fg.main },
     },
     {
       name: 'Markup - Quote',
@@ -198,7 +198,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Token - Info',
       scope: 'token.info-token',
-      settings: { foreground: cyan.dark },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Token - Warn',
@@ -208,7 +208,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     {
       name: 'Token - Error',
       scope: 'token.error-token',
-      settings: { foreground: palette.red.dark },
+      settings: { foreground: palette.red.light },
     },
     {
       name: 'Token - Debug',

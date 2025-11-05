@@ -60,7 +60,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // GraphQL schemas
     'graphql.type': createSemanticToken({
-      foreground: mix(cyan.dark, teal.main, 0.35),
+      foreground: mix(cyan.main, teal.main, 0.35),
       fontStyle: 'bold',
     }),
 
@@ -114,7 +114,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // Go semantics
     'interface.go': createSemanticToken({
-      foreground: mix(cyan.dark, blue.dark, 0.35),
+      foreground: mix(cyan.main, blue.main, 0.35),
     }),
 
     'goroutine.go': createSemanticToken({
@@ -123,7 +123,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'channel.go': createSemanticToken({
-      foreground: mix(teal.main, cyan.dark, 0.4),
+      foreground: mix(teal.main, cyan.main, 0.4),
     }),
 
     // Modern Python
@@ -137,7 +137,7 @@ export function generateModernFrameworkTokens(): Record<
     }),
 
     'async.python': createSemanticToken({
-      foreground: mix(cyan.dark, purple.light, 0.3),
+      foreground: mix(cyan.main, purple.light, 0.3),
       fontStyle: 'italic',
     }),
 
@@ -210,7 +210,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // Zod/Yup validation
     'schema.validation': createSemanticToken({
-      foreground: mix(cyan.dark, blue.dark, 0.4),
+      foreground: mix(cyan.main, blue.main, 0.4),
       fontStyle: 'bold',
     }),
 
@@ -230,7 +230,7 @@ export function generateModernFrameworkTokens(): Record<
 
     // Bun/Deno
     'runtime.modern': createSemanticToken({
-      foreground: mix(cyan.dark, teal.main, 0.3),
+      foreground: mix(cyan.main, teal.main, 0.3),
       fontStyle: 'bold',
     }),
   }

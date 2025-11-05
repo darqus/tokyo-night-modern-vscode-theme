@@ -2,7 +2,20 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types'
 
 export function generateModernTokens(): TokenColor[] {
-  const { cyan, purple, teal, blue, orange, green, pink, red, yellow } = palette
+  const {
+    cyan,
+    purple,
+    teal,
+    blue,
+    orange,
+    green,
+    pink,
+    red,
+    yellow,
+    indigo,
+    lime,
+    magenta,
+  } = palette
 
   return [
     // React/Vue Components
@@ -48,7 +61,7 @@ export function generateModernTokens(): TokenColor[] {
         'union.name.graphql',
       ],
       settings: {
-        foreground: cyan.dark,
+        foreground: cyan.main,
       },
     },
 
@@ -200,7 +213,7 @@ export function generateModernTokens(): TokenColor[] {
         'keyword.control.validation',
       ],
       settings: {
-        foreground: cyan.dark,
+        foreground: cyan.main,
         fontStyle: 'italic',
       },
     },
@@ -285,7 +298,7 @@ export function generateModernTokens(): TokenColor[] {
         'support.class.deno',
       ],
       settings: {
-        foreground: cyan.dark,
+        foreground: cyan.main,
       },
     },
 
@@ -350,7 +363,7 @@ export function generateModernTokens(): TokenColor[] {
       name: 'WebAssembly',
       scope: ['storage.type.wasm', 'keyword.control.wasm'],
       settings: {
-        foreground: purple.dark,
+        foreground: purple.light,
       },
     },
 
@@ -360,6 +373,39 @@ export function generateModernTokens(): TokenColor[] {
       scope: ['storage.type.zig', 'keyword.control.zig'],
       settings: {
         foreground: orange.main,
+      },
+    },
+    {
+      name: 'Modern Framework Indigo',
+      scope: [
+        'support.type.indigo.modern',
+        'entity.name.type.indigo.modern',
+        'variable.other.indigo.modern',
+      ],
+      settings: {
+        foreground: indigo.main,
+      },
+    },
+    {
+      name: 'Modern Framework Lime',
+      scope: [
+        'support.type.lime.modern',
+        'entity.name.type.lime.modern',
+        'variable.other.lime.modern',
+      ],
+      settings: {
+        foreground: lime.main,
+      },
+    },
+    {
+      name: 'Modern Framework Magenta',
+      scope: [
+        'support.type.magenta.modern',
+        'entity.name.type.magenta.modern',
+        'variable.other.magenta.modern',
+      ],
+      settings: {
+        foreground: magenta.main,
       },
     },
   ]

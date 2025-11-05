@@ -40,7 +40,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Invalid',
       scope: ['invalid', 'invalid.illegal'],
-      settings: { foreground: mix(red.main, orange.main, 0.3) },
+      settings: { foreground: mix(red.main, orange.main, 0.7) },
     },
     {
       name: 'Invalid deprecated',
@@ -55,7 +55,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Storage - modifier, var, const, let',
       scope: ['meta.var.expr storage.type', 'storage.modifier'],
-      settings: { foreground: purple.dark },
+      settings: { foreground: purple.light },
     },
     {
       name: 'Interpolation, PHP tags, Smarty tags',
@@ -79,12 +79,12 @@ export function generateBasicTokens(): TokenColor[] {
         'entity.name.function.blade',
         'meta.tag.blade keyword.other.type.php',
       ],
-      settings: { foreground: cyan.dark },
+      settings: { foreground: cyan.main },
     },
     {
       name: 'Spread',
       scope: ['keyword.operator.spread', 'keyword.operator.rest'],
-      settings: { foreground: red.main, fontStyle: 'bold' },
+      settings: { foreground: red.light, fontStyle: 'bold' },
     },
     {
       name: 'Operators',
@@ -95,7 +95,7 @@ export function generateBasicTokens(): TokenColor[] {
         'keyword.operator.bitwise.shift',
         'entity.name.operator',
       ],
-      settings: { foreground: lighten(red.main, 0.15), fontStyle: 'bold' },
+      settings: { foreground: red.light, fontStyle: 'bold' },
     },
     {
       name: 'Punctuation',

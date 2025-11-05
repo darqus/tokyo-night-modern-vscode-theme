@@ -79,7 +79,7 @@ const backgroundColors = {
   'sideBar.background': '#1b1923',
   'list.focusBackground': '#3d59a159',
   'list.hoverBackground': '#3d59a126',
-  'list.inactiveSelectionBackground': '#3d59a13',
+  'list.inactiveSelectionBackground': '#2a4d8e66',
   'list.activeSelectionBackground': '#3d59a159',
   'dropdown.background': '#1a1b2c',
   'input.background': '#16141f',
@@ -100,7 +100,7 @@ const backgroundColors = {
   'debugExceptionWidget.background': '#16141f',
   'debugView.stateLabelBackground': '#1a1b2c',
   'notebook.cellEditorBackground': '#1a1625',
-  'chat.avatarBackground': '#3d59a1',
+  'chat.avatarBackground': '#2a4d8e',
   'inlineChatInput.background': '#221e33',
 }
 

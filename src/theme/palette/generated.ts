@@ -14,6 +14,9 @@ export interface SimplifiedPalette {
   red: ColorVariant
   pink: ColorVariant
   neutral: ColorVariant
+  indigo: ColorVariant
+  lime: ColorVariant
+  magenta: ColorVariant
   ui: typeof basePalette.ui
 }
 
@@ -30,5 +33,8 @@ export const palette: SimplifiedPalette = {
   red: basePalette.red,
   pink: basePalette.pink,
   neutral: basePalette.neutral,
+  indigo: basePalette.indigo,
+  lime: basePalette.lime,
+  magenta: basePalette.magenta,
   ui: basePalette.ui,
 }

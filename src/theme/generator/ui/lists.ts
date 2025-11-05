@@ -9,7 +9,7 @@ export function generateListColors(): Record<string, string> {
     'list.deemphasizedForeground': fg.main,
     'list.activeSelectionBackground': alpha(blue.dark, 0.35),
     'list.activeSelectionForeground': fg.light,
-    'list.inactiveSelectionBackground': alpha(blue.dark, 0.2),
+    'list.inactiveSelectionBackground': alpha(blue.dark, 0.4),
     'list.inactiveSelectionForeground': fg.light,
     'list.focusBackground': alpha(blue.dark, 0.35),
     'list.focusForeground': fg.light,

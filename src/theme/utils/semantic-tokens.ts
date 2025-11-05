@@ -1,8 +1,8 @@
-import type { SemanticTokenStyle } from '../types/index.js'
+import type { FontStyle, SemanticTokenStyle } from '../types/index.js'
 
 export interface SemanticTokenConfig {
   foreground?: string
-  fontStyle?: 'italic' | 'bold'
+  fontStyle?: FontStyle
   underline?: boolean
   strikethrough?: boolean
 }
@@ -23,7 +23,7 @@ export function createSemanticToken(
   if (config.strikethrough) fontStyles.push('strikethrough')
 
   if (fontStyles.length > 0) {
-    token.fontStyle = fontStyles.join(' ')
+    token.fontStyle = fontStyles.join(' ') as FontStyle
   }
 
   return token

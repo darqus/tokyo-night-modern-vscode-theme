@@ -8,7 +8,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'Inserted',
       scope: 'markup.inserted',
-      settings: { foreground: teal.dark },
+      settings: { foreground: teal.light },
     },
     {
       name: 'Deleted',
@@ -83,7 +83,7 @@ export function generateMarkupTokens(): TokenColor[] {
     {
       name: 'HTML Character Entity',
       scope: 'text.html constant.character.entity',
-      settings: { foreground: cyan.dark },
+      settings: { foreground: cyan.light },
     },
     {
       name: 'Vue (Vetur / deprecated) Template attributes',

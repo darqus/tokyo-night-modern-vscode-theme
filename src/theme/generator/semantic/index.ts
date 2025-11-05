@@ -9,7 +9,7 @@ function generateTypeTokens(): Record<string, SemanticTokenStyle> {
     type: { foreground: palette.purple.light },
     interface: { foreground: palette.purple.light, fontStyle: 'italic' },
     class: { foreground: palette.cyan.light, fontStyle: 'bold' },
-    enum: { foreground: palette.purple.dark },
+    enum: { foreground: palette.purple.main },
     typeParameter: { foreground: palette.purple.light },
     struct: { foreground: palette.cyan.light },
   }
@@ -21,8 +21,8 @@ function generateModifierTokens(): Record<string, SemanticTokenStyle> {
     private: { foreground: palette.red.main },
     protected: { foreground: palette.yellow.main },
     static: { foreground: palette.blue.main, fontStyle: 'italic' },
-    readonly: { foreground: palette.cyan.dark, fontStyle: 'italic' },
-    abstract: { foreground: palette.purple.dark, fontStyle: 'italic' },
+    readonly: { foreground: palette.cyan.main, fontStyle: 'italic' },
+    abstract: { foreground: palette.purple.main, fontStyle: 'italic' },
     async: { foreground: palette.teal.main, fontStyle: 'italic' },
   }
 }
@@ -33,17 +33,17 @@ function generateLiteralTokens(): Record<string, SemanticTokenStyle> {
     number: { foreground: palette.orange.main },
     boolean: { foreground: palette.red.main },
     regexp: { foreground: palette.cyan.light },
-    null: { foreground: palette.red.dark },
-    undefined: { foreground: palette.red.dark },
+    null: { foreground: palette.red.main },
+    undefined: { foreground: palette.red.main },
   }
 }
 
 function generateCommentTokens(): Record<string, SemanticTokenStyle> {
   return {
-    comment: { foreground: palette.neutral.main, fontStyle: 'italic' },
-    'comment.documentation': { foreground: palette.neutral.main },
-    'comment.line': { foreground: palette.fg.dark, fontStyle: 'italic' },
-    'comment.block': { foreground: palette.fg.dark, fontStyle: 'italic' },
+    comment: { foreground: palette.fg.main, fontStyle: 'italic' },
+    'comment.documentation': { foreground: palette.fg.main },
+    'comment.line': { foreground: palette.fg.main, fontStyle: 'italic' },
+    'comment.block': { foreground: palette.fg.main, fontStyle: 'italic' },
   }
 }
 

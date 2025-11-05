@@ -30,7 +30,7 @@ export function generateCommentTokens(): TokenColor[] {
         'keyword.control.flow.block-scalar.literal',
         'keyword.control.flow.python',
       ],
-      settings: { fontStyle: 'normal' },
+      settings: { fontStyle: '' },
     },
     {
       name: 'Comment',
@@ -44,7 +44,7 @@ export function generateCommentTokens(): TokenColor[] {
         'string.quoted.docstring.multi.python punctuation.definition.string.end',
         'string.quoted.docstring.multi.python constant.character.escape',
       ],
-      settings: { foreground: fg.main },
+      settings: { foreground: fg.dark },
     },
     {
       name: 'Comment Doc',

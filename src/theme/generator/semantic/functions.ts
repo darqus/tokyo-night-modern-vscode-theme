@@ -49,12 +49,12 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
 
     // Async functions
     'function.async': createSemanticToken({
-      foreground: mix(cyan.dark, purple.light, 0.2),
+      foreground: mix(cyan.main, purple.light, 0.2),
       fontStyle: 'italic',
     }),
 
     'method.async': createSemanticToken({
-      foreground: mix(cyan.dark, teal.main, 0.3),
+      foreground: mix(cyan.main, teal.main, 0.3),
       fontStyle: 'italic',
     }),
   }

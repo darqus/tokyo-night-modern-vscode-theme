@@ -3,8 +3,21 @@ import type { TokenColor } from '../../types/index.js'
 import { lighten, mix } from '../../utils/color.js'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { red, pink, blue, cyan, purple, yellow, green, orange, fg, teal } =
-    palette
+  const {
+    red,
+    pink,
+    blue,
+    cyan,
+    purple,
+    yellow,
+    green,
+    orange,
+    fg,
+    teal,
+    indigo,
+    lime,
+    magenta,
+  } = palette
 
   return [
     {
@@ -94,7 +107,7 @@ export function generateCodeTokens(): TokenColor[] {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
       scope:
         'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
-      settings: { foreground: green.dark },
+      settings: { foreground: green.light },
     },
     {
       name: 'C-related Block Level Variables',
@@ -104,7 +117,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Other Variable',
       scope: 'support.other.variable',
-      settings: { foreground: mix(red.main, orange.main, 0.25) },
+      settings: { foreground: mix(red.light, orange.light, 0.6) },
     },
     {
       name: 'Methods',
@@ -185,7 +198,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: mix(cyan.dark, blue.dark, 0.3) },
+      settings: { foreground: mix(cyan.main, blue.main, 0.3) },
     },
     {
       name: 'Class Name',
@@ -195,7 +208,34 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Support Function',
       scope: 'support.function',
-      settings: { foreground: mix(cyan.dark, teal.main, 0.35) },
+      settings: { foreground: mix(cyan.main, teal.main, 0.35) },
+    },
+    {
+      name: 'Indigo Color Usage',
+      scope: [
+        'entity.name.type.indigo',
+        'support.type.indigo',
+        'variable.other.indigo',
+      ],
+      settings: { foreground: indigo.main },
+    },
+    {
+      name: 'Lime Color Usage',
+      scope: [
+        'entity.name.type.lime',
+        'support.type.lime',
+        'variable.other.lime',
+      ],
+      settings: { foreground: lime.main },
+    },
+    {
+      name: 'Magenta Color Usage',
+      scope: [
+        'entity.name.type.magenta',
+        'support.type.magenta',
+        'variable.other.magenta',
+      ],
+      settings: { foreground: magenta.main },
     },
   ]
 }
