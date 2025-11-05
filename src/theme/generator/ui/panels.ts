@@ -1,11 +1,14 @@
 import { palette } from '../../palette/index.js'
-import { darken, lighten, mix } from '../../utils/color.js'
+import { alpha, darken, lighten, mix } from '../../utils/color.js'
 
 export function generatePanelColors(): Record<string, string> {
   const { bg, fg, purple, neutral, ui } = palette
 
   return {
     'panel.background': darken(bg.main, 0.02),
+    'panel.activeBackground': mix(bg.main, fg.dark, 0.05),
+    'panel.hoverBackground': alpha(bg.main, 0.92),
+    'panel.shadow': alpha(bg.dark, 0.12),
     'panel.border': lighten(bg.main, 0.02),
     'panelTitle.activeForeground': fg.dark,
     'panelTitle.inactiveForeground': darken(fg.dark, 0.5),
@@ -28,6 +31,8 @@ export function generatePanelColors(): Record<string, string> {
     'titleBar.activeForeground': fg.dark,
     'titleBar.inactiveForeground': darken(fg.dark, 0.5),
     'titleBar.activeBackground': bg.main,
+    'titleBar.hoverBackground': alpha(bg.main, 0.96),
+    'titleBar.shadow': alpha(bg.dark, 0.1),
     'titleBar.inactiveBackground': darken(bg.main, 0.03),
     'titleBar.border': lighten(bg.main, 0.02),
   }
