@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import { alpha, darken, lighten, mix } from '../../utils/color.js'
 
 export function generatePanelColors(): Record<string, string> {
-  const { bg, fg, purple, neutral, ui } = palette
+  const { bg, fg, purple, blue, ui } = palette
 
   return {
     'panel.background': darken(bg.main, 0.02),
@@ -23,7 +23,7 @@ export function generatePanelColors(): Record<string, string> {
     'statusBar.debuggingBackground': mix(purple.dark, bg.dark, 0.5),
     'statusBar.debuggingForeground': fg.dark,
     'statusBarItem.activeBackground': lighten(bg.dark, 0.05),
-    'statusBarItem.hoverBackground': mix(bg.dark, neutral.dark, 0.15),
+    'statusBarItem.hoverBackground': alpha(blue.light, 0.18),
     'statusBarItem.prominentBackground': purple.dark,
     'statusBarItem.prominentHoverBackground': purple.main,
     'statusBarItem.focusBorder': ui.badge,
