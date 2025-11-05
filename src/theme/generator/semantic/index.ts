@@ -6,12 +6,12 @@ import { generateVariableTokens } from './variables.js'
 
 function generateTypeTokens(): Record<string, SemanticTokenStyle> {
   return {
-    type: { foreground: palette.violet.main },
-    interface: { foreground: palette.violet.main, fontStyle: 'italic' },
-    class: { foreground: palette.violet.main, fontStyle: 'bold' },
-    enum: { foreground: palette.violet.main },
-    typeParameter: { foreground: palette.violet.main },
-    struct: { foreground: palette.violet.main },
+    type: { foreground: palette.peach.main },
+    interface: { foreground: palette.peach.main, fontStyle: 'italic' },
+    class: { foreground: palette.peach.main, fontStyle: 'bold' },
+    enum: { foreground: palette.peach.main },
+    typeParameter: { foreground: palette.peach.main },
+    struct: { foreground: palette.peach.main },
   }
 }
 

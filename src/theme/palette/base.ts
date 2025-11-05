@@ -22,12 +22,12 @@ export interface UnifiedPalette {
   orange: ColorVariant
   yellow: ColorVariant
   red: ColorVariant
+  peach: ColorVariant
   pink: ColorVariant
   neutral: ColorVariant
   indigo: ColorVariant
   lime: ColorVariant
   magenta: ColorVariant
-  violet: ColorVariant
   rose: ColorVariant
   amber: ColorVariant
   emerald: ColorVariant
@@ -113,6 +113,12 @@ export const basePalette: UnifiedPalette = {
     light: '#eea870',
     bright: '#ffd9a3',
   },
+  peach: {
+    dark: '#ff826c',
+    main: '#f88d7a',
+    light: '#f39686',
+    bright: '#ffc9c0',
+  },
   red: {
     dark: '#7a3a4a',
     main: '#ff6b7a',
@@ -124,12 +130,6 @@ export const basePalette: UnifiedPalette = {
     main: '#939bc4',
     light: '#aabdc9',
     bright: '#d0d9f3',
-  },
-  violet: {
-    dark: '#7b3eea',
-    main: '#8b5cf6',
-    light: '#a78bfa',
-    bright: '#c4b5fd',
   },
   rose: {
     dark: '#d94665',

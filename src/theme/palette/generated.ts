@@ -17,7 +17,7 @@ export interface SimplifiedPalette {
   indigo: ColorVariant
   lime: ColorVariant
   magenta: ColorVariant
-  violet: ColorVariant
+  peach: ColorVariant
   rose: ColorVariant
   amber: ColorVariant
   emerald: ColorVariant
@@ -40,7 +40,7 @@ export const palette: SimplifiedPalette = {
   indigo: basePalette.indigo,
   lime: basePalette.lime,
   magenta: basePalette.magenta,
-  violet: basePalette.violet,
+  peach: basePalette.peach,
   rose: basePalette.rose,
   amber: basePalette.amber,
   emerald: basePalette.emerald,

@@ -507,7 +507,7 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#8b5cf6"
+        "foreground": "#f88d7a"
       }
     },
     {
@@ -1239,7 +1239,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#7b3eea"
+        "foreground": "#ff826c"
       }
     },
     {
@@ -1617,7 +1617,7 @@
         "meta.jsx.children.jsx entity.name.tag"
       ],
       "settings": {
-        "foreground": "#a78bfa",
+        "foreground": "#f39686",
         "fontStyle": "bold"
       }
     },
@@ -2191,24 +2191,24 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#8b5cf6"
+      "foreground": "#f88d7a"
     },
     "interface": {
-      "foreground": "#8b5cf6",
+      "foreground": "#f88d7a",
       "fontStyle": "italic"
     },
     "class": {
-      "foreground": "#8b5cf6",
+      "foreground": "#f88d7a",
       "fontStyle": "bold"
     },
     "enum": {
-      "foreground": "#8b5cf6"
+      "foreground": "#f88d7a"
     },
     "typeParameter": {
-      "foreground": "#8b5cf6"
+      "foreground": "#f88d7a"
     },
     "struct": {
-      "foreground": "#8b5cf6"
+      "foreground": "#f88d7a"
     },
     "public": {
       "foreground": "#79d68c"

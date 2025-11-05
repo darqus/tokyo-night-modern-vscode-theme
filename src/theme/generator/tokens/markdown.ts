@@ -15,7 +15,7 @@ export function generateMarkdownTokens(): TokenColor[] {
 
   const jsonKeyLevelColors = [
     palette.purple.main, // Вместо blue.main - для различия с ENV value (#66a9ff)
-    palette.violet.dark, // Вместо lime.dark - для различия
+    palette.peach.dark, // Вместо lime.dark - для различия
     palette.lime.light,
     palette.magenta.light,
     palette.yellow.main,

@@ -12,7 +12,7 @@ export function generateModernTokens(): TokenColor[] {
     indigo,
     lime,
     magenta,
-    violet,
+    peach,
     rose,
     amber,
     emerald,
@@ -30,7 +30,7 @@ export function generateModernTokens(): TokenColor[] {
         'meta.jsx.children.jsx entity.name.tag',
       ],
       settings: {
-        foreground: violet.light,
+        foreground: peach.light,
         fontStyle: 'bold',
       },
     },
