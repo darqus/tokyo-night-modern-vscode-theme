@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2416](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2399...v2.3.2416) (2025-11-05)
+
+
+### Features
+
+* **theme:** add panel and title bar hover effects and shadows ([01137be](https://github.com/darqus/tokyo-modern-vscode-theme/commit/01137be4ad51b8a7f9de2e7f02f39e6b40a24618))
+* **theme:** extend hexToRgb to support 8-digit hex colors ([8e68035](https://github.com/darqus/tokyo-modern-vscode-theme/commit/8e680350d4a6a545f806dad4d91d4f85ed4df561))
+* **theme:** update color scheme and remove panel effects ([b4a52d3](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b4a52d3218b6717e5234815b7225e69839ad1633))
+* **theme:** update status bar item hover background color ([f09a096](https://github.com/darqus/tokyo-modern-vscode-theme/commit/f09a0963a696521fcfc3efbbfa2ea86ccb439c22))
+
+
+### Bug Fixes
+
+* correct indentation in code block ([16a0dd1](https://github.com/darqus/tokyo-modern-vscode-theme/commit/16a0dd1f7f97a7db6d48f3d605213ef6a6a8e180))
+* **theme:** update comment token colors ([b829969](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b829969ea0ba5788c1af4eedc756a89411e88f64))
+
 ### [2.3.2399](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2398...v2.3.2399) (2025-11-05)
 
 ### [2.3.2398](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2393...v2.3.2398) (2025-11-05)
