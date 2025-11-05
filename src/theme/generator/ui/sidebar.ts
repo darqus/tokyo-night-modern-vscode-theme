@@ -1,13 +1,13 @@
 import { palette } from '../../palette/index.js'
-import { lighten } from '../../utils/index.js'
+import { darken, lighten } from '../../utils/index.js'
 
 export function generateSidebarColors(): Record<string, string> {
   const { bg, fg, ui, blue } = palette
 
   return {
     'activityBar.background': bg.dark,
-    'activityBar.foreground': fg.light,
-    'activityBar.inactiveForeground': fg.dark,
+    'activityBar.foreground': fg.dark,
+    'activityBar.inactiveForeground': darken(fg.dark, 0.5),
     'activityBar.activeBorder': blue.main,
     'activityBar.activeBackground': lighten(bg.dark, 0.03),
     'activityBar.border': lighten(bg.dark, 0.02),
@@ -19,9 +19,9 @@ export function generateSidebarColors(): Record<string, string> {
     'sideBar.foreground': fg.main,
     'sideBar.background': lighten(bg.dark, 0.02),
     'sideBar.border': lighten(bg.dark, 0.04),
-    'sideBarTitle.foreground': fg.light,
+    'sideBarTitle.foreground': fg.dark,
     'sideBarSectionHeader.background': lighten(bg.dark, 0.04),
-    'sideBarSectionHeader.foreground': fg.light,
+    'sideBarSectionHeader.foreground': fg.dark,
     'sideBarSectionHeader.border': lighten(bg.dark, 0.06),
     'sideBar.dropBackground': bg.light,
   }
