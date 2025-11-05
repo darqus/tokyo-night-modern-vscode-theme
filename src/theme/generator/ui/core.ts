@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import { alpha, lighten } from '../../utils/color.js'
 
 export function generateCoreColors(): Record<string, string> {
-  const { fg, bg, blue, ui, neutral } = palette
+  const { fg, bg, ui, neutral } = palette
 
   return {
     foreground: fg.light,
@@ -15,7 +15,7 @@ export function generateCoreColors(): Record<string, string> {
     'badge.background': ui.badge,
     'badge.foreground': ui.white,
     'icon.foreground': fg.light,
-    'settings.headerForeground': blue.light,
+    'settings.headerForeground': neutral.light,
     'window.activeBorder': bg.dark,
     'window.inactiveBorder': bg.dark,
     'sash.hoverBorder': lighten(bg.light, 0.02),

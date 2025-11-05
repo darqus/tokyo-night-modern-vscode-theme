@@ -2,8 +2,8 @@ import { palette } from '../../palette/index.js'
 import { alpha, lighten, mix } from '../../utils/color.js'
 
 export const generateInputColors = (): Record<string, string> => {
-  const { bg, fg, blue, yellow } = palette
-  const menuBg = mix(bg.dark, blue.dark, 0.1)
+  const { bg, fg, yellow, neutral } = palette
+  const menuBg = mix(bg.dark, neutral.dark, 0.1)
 
   return {
     'input.background': bg.dark,
@@ -11,10 +11,10 @@ export const generateInputColors = (): Record<string, string> => {
     'input.border': lighten(bg.dark, 0.02),
     'input.placeholderForeground': alpha(fg.main, 0.54),
     'inputOption.activeForeground': fg.light,
-    'inputOption.activeBackground': alpha(blue.dark, 0.27),
+    'inputOption.activeBackground': alpha(neutral.dark, 0.27),
     'inputValidation.infoForeground': palette.blue.light,
-    'inputValidation.infoBackground': alpha(blue.dark, 0.36),
-    'inputValidation.infoBorder': blue.dark,
+    'inputValidation.infoBackground': alpha(neutral.dark, 0.36),
+    'inputValidation.infoBorder': neutral.dark,
     'inputValidation.warningForeground': palette.ui.black,
     'inputValidation.warningBackground': palette.yellow.dark,
     'inputValidation.warningBorder': yellow.main,
