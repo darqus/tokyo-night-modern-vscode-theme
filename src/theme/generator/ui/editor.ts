@@ -26,7 +26,7 @@ export function generateEditorColors(): Record<string, string> {
     'editorIndentGuide.background1': lighten(bg.main, 0.05),
     'editorIndentGuide.activeBackground1': mix(neutral.dark, bg.main, 0.7),
     'editorLineNumber.foreground': neutral.dark,
-    'editorLineNumber.activeForeground': fg.main,
+    'editorLineNumber.activeForeground': neutral.main,
     'editor.lineHighlightBackground': bg.light,
     'editorWhitespace.foreground': lighten(ui.badge, 0.08),
     'editorMarkerNavigation.background': bg.main,
