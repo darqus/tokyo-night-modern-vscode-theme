@@ -1,5 +1,5 @@
 import { palette } from '../../palette/index.js'
-import { darken, lighten } from '../../utils/index.js'
+import { darken, lighten, mix } from '../../utils/index.js'
 
 export const generateSidebarColors = (): Record<string, string> => {
   const { bg, fg, ui, blue } = palette
@@ -7,7 +7,7 @@ export const generateSidebarColors = (): Record<string, string> => {
   return {
     'activityBar.background': bg.dark,
     'activityBar.foreground': fg.dark,
-    'activityBar.inactiveForeground': darken(fg.dark, 0.4),
+    'activityBar.inactiveForeground': mix(darken(fg.dark, 0.4), bg.dark, 0.2),
     'activityBar.activeBorder': blue.main,
     'activityBar.activeBackground': lighten(bg.dark, 0.03),
     'activityBar.border': lighten(bg.dark, 0.02),

@@ -38,9 +38,9 @@ export const basePalette: UnifiedPalette = {
     bright: '#1d1a33',
   },
   foreground: {
-    dark: '#9daed1',
-    main: '#b7c8e6',
-    light: '#cbd9ff',
+    dark: '#8fa5cf',
+    main: '#a8bee4',
+    light: '#bacaf8',
     bright: '#e6eeff',
   },
   blue: {

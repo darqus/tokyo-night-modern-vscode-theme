@@ -302,7 +302,7 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 1`] = `"#1d1931"`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 2`] = `"#cbd9ff"`;
+exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 2`] = `"#bacaf8"`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 3`] = `"#18162c"`;
 
@@ -326,7 +326,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific UI color secti
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 13`] = `"#18162c"`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 14`] = `"#cbd9ff"`;
+exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 14`] = `"#bacaf8"`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 15`] = `"#ff6b7a"`;
 
@@ -340,7 +340,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific UI color secti
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 20`] = `"#80e6ff"`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 21`] = `"#b7c8e6"`;
+exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 21`] = `"#a8bee4"`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 1`] = `
 {
@@ -448,13 +448,13 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 17`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#b7c8e6",
+  "foreground": "#a8bee4",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 18`] = `
 {
-  "foreground": "#b7c8e6",
+  "foreground": "#a8bee4",
 }
 `;
 
@@ -689,7 +689,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "constant.other.color.rgb-value.hex punctuation.definition.constant",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -791,7 +791,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.at-rule.mixin punctuation.separator.key-value",
     ],
     "settings": {
-      "foreground": "#addeff",
+      "foreground": "#a3d5fb",
     },
   },
   {
@@ -895,7 +895,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.tag",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -905,7 +905,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
     ],
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -935,14 +935,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.embedded.inline.phpx constant.other.php",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -958,7 +958,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -970,35 +970,35 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Object Property - Specific",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Other Variable",
     "scope": "support.other.variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1038,7 +1038,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.function.parameter variable",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1064,7 +1064,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.other.declaration",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1167,7 +1167,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.definition.variable",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1203,7 +1203,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.tag.reference",
     ],
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -1273,7 +1273,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "SCSS Include Mixin Argument",
     "scope": "meta.property-list meta.at-rule.include",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -1367,7 +1367,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Regular Expressions - Backslash",
     "scope": "constant.character.escape.backslash",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1541,7 +1541,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.embedded.block",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1553,7 +1553,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "text.log",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1567,7 +1567,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Markdown - Markup Raw Inline Punctuation",
     "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -1622,7 +1622,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1633,7 +1633,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#86b5f5",
+      "foreground": "#80b1f4",
     },
   },
   {
@@ -1644,7 +1644,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1655,7 +1655,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1666,7 +1666,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold italic",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1683,7 +1683,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Markdown - Blockquote",
     "scope": "markup.quote punctuation.definition.blockquote.markdown",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -1721,7 +1721,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": "meta.separator",
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -1790,7 +1790,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.other.class.js",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -1804,7 +1804,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Variable punctuation",
     "scope": "variable.other punctuation.definition.variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -2191,25 +2191,25 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "activityBar.activeBorder": "#66a9ff",
   "activityBar.background": "#151127",
   "activityBar.border": "#1a162b",
-  "activityBar.foreground": "#9daed1",
-  "activityBar.inactiveForeground": "#6e7a92",
+  "activityBar.foreground": "#8fa5cf",
+  "activityBar.inactiveForeground": "#49536b",
   "activityBarBadge.background": "#4089ff",
   "activityBarBadge.foreground": "#ffffff",
-  "activityBarTop.foreground": "#b7c8e6",
-  "activityBarTop.inactiveForeground": "#9daed1",
+  "activityBarTop.foreground": "#a8bee4",
+  "activityBarTop.inactiveForeground": "#8fa5cf",
   "badge.background": "#4089ff",
   "badge.foreground": "#ffffff",
   "breadcrumb.activeSelectionForeground": "#9976db",
   "breadcrumb.background": "#18162c",
-  "breadcrumb.focusForeground": "#cbd9ff",
-  "breadcrumb.foreground": "#9daed1",
+  "breadcrumb.focusForeground": "#bacaf8",
+  "breadcrumb.foreground": "#8fa5cf",
   "breadcrumbPicker.background": "#18162b",
   "button.background": "#2a5db4",
   "button.foreground": "#ffffff",
   "button.hoverBackground": "#366cc3",
   "button.secondaryBackground": "#1d1931",
   "charts.blue": "#66a9ff",
-  "charts.foreground": "#cbd9ff",
+  "charts.foreground": "#bacaf8",
   "charts.green": "#2a9657",
   "charts.lines": "#18162c",
   "charts.orange": "#e0945a",
@@ -2217,16 +2217,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "charts.red": "#ff6b7a",
   "charts.yellow": "#f0d440",
   "chat.avatarBackground": "#2a5db4",
-  "chat.avatarForeground": "#cbd9ff",
+  "chat.avatarForeground": "#bacaf8",
   "chat.requestBorder": "#1d1931",
   "chat.slashCommandBackground": "#151127",
   "chat.slashCommandForeground": "#66a9ff",
   "checkbox.background": "#18162c",
   "checkbox.border": "#283356",
-  "checkbox.foreground": "#cbd9ff",
+  "checkbox.foreground": "#bacaf8",
   "debugConsole.errorForeground": "#7a3a4a",
-  "debugConsole.infoForeground": "#b7c8e6",
-  "debugConsole.sourceForeground": "#b7c8e6",
+  "debugConsole.infoForeground": "#a8bee4",
+  "debugConsole.sourceForeground": "#a8bee4",
   "debugConsole.warningForeground": "#cccc22",
   "debugConsoleInputIcon.foreground": "#4de0d8",
   "debugExceptionWidget.background": "#151127",
@@ -2239,12 +2239,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "debugTokenExpression.name": "#80e6ff",
   "debugTokenExpression.number": "#e0945a",
   "debugTokenExpression.string": "#79d68c",
-  "debugTokenExpression.value": "#cbd9ff",
+  "debugTokenExpression.value": "#bacaf8",
   "debugToolBar.background": "#151127",
   "debugView.stateLabelBackground": "#1a172f",
-  "debugView.stateLabelForeground": "#b7c8e6",
+  "debugView.stateLabelForeground": "#a8bee4",
   "debugView.valueChangedHighlight": "#2a5db4ab",
-  "descriptionForeground": "#b7c8e6",
+  "descriptionForeground": "#a8bee4",
   "diffEditor.diagonalFill": "#2a293d",
   "diffEditor.insertedLineBackground": "#2a965720",
   "diffEditor.insertedTextBackground": "#2a965720",
@@ -2257,7 +2257,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "diffEditorOverview.removedForeground": "#7a3a4a21",
   "disabledForeground": "#7a82ad",
   "dropdown.background": "#1a172f",
-  "dropdown.foreground": "#b7c8e6",
+  "dropdown.foreground": "#a8bee4",
   "dropdown.listBackground": "#1a172f",
   "editor.background": "#1d1931",
   "editor.findMatchBackground": "#2a5db433",
@@ -2266,7 +2266,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editor.findRangeHighlightBackground": "#66a9ff33",
   "editor.focusedStackFrameHighlightBackground": "#4de0d820",
   "editor.foldBackground": "#15112733",
-  "editor.foreground": "#cbd9ff",
+  "editor.foreground": "#bacaf8",
   "editor.inactiveSelectionBackground": "#66a9ff26",
   "editor.lineHighlightBackground": "#1d1931",
   "editor.rangeHighlightBackground": "#4de0d833",
@@ -2290,8 +2290,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorBracketPairGuide.activeBackground4": "#ffe766",
   "editorBracketPairGuide.activeBackground5": "#80f0e6",
   "editorBracketPairGuide.activeBackground6": "#79d68c",
-  "editorCodeLens.foreground": "#9daed1",
-  "editorCursor.foreground": "#cbd9ff",
+  "editorCodeLens.foreground": "#8fa5cf",
+  "editorCursor.foreground": "#bacaf8",
   "editorError.foreground": "#7a3a4a",
   "editorGhostText.foreground": "#4a4f74",
   "editorGroup.border": "#221e35",
@@ -2314,7 +2314,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorLightBulbAutoFix.foreground": "#f0d440",
   "editorLineNumber.activeForeground": "#7a82ad",
   "editorLineNumber.foreground": "#4a4f74",
-  "editorLink.activeForeground": "#cbd9ff",
+  "editorLink.activeForeground": "#bacaf8",
   "editorMarkerNavigation.background": "#18162c",
   "editorOverviewRuler.addedForeground": "#233e4e",
   "editorOverviewRuler.border": "#221e35",
@@ -2340,40 +2340,40 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorWhitespace.foreground": "#4f92ff",
   "editorWidget.background": "#201f37",
   "editorWidget.border": "#283356",
-  "editorWidget.foreground": "#cbd9ff",
+  "editorWidget.foreground": "#bacaf8",
   "editorWidget.resizeBorder": "#283356",
-  "errorForeground": "#9daed1",
+  "errorForeground": "#8fa5cf",
   "extensionBadge.remoteBackground": "#2a5db4",
   "extensionBadge.remoteForeground": "#ffffff",
   "extensionButton.prominentBackground": "#2a5db4",
   "extensionButton.prominentForeground": "#ffffff",
   "extensionButton.prominentHoverBackground": "#3c74cb",
   "focusBorder": "#4089ff",
-  "foreground": "#cbd9ff",
+  "foreground": "#bacaf8",
   "gitDecoration.addedResourceForeground": "#20a09d",
   "gitDecoration.conflictingResourceForeground": "#f0d440cc",
   "gitDecoration.deletedResourceForeground": "#7a3a4a",
-  "gitDecoration.ignoredResourceForeground": "#9daed1",
+  "gitDecoration.ignoredResourceForeground": "#8fa5cf",
   "gitDecoration.modifiedResourceForeground": "#7fb5ff",
   "gitDecoration.renamedResourceForeground": "#20a09d",
   "gitDecoration.stageDeletedResourceForeground": "#7a3a4a",
   "gitDecoration.stageModifiedResourceForeground": "#7fb5ff",
   "gitDecoration.untrackedResourceForeground": "#20a09d",
   "gitlens.gutterBackgroundColor": "#18162c",
-  "gitlens.gutterForegroundColor": "#b7c8e6",
+  "gitlens.gutterForegroundColor": "#a8bee4",
   "gitlens.gutterUncommittedForegroundColor": "#66a9ff",
   "gitlens.trailingLineForegroundColor": "#4a4f74",
-  "icon.foreground": "#cbd9ff",
-  "inlineChat.foreground": "#cbd9ff",
+  "icon.foreground": "#bacaf8",
+  "inlineChat.foreground": "#bacaf8",
   "inlineChatDiff.inserted": "#2a965740",
   "inlineChatDiff.removed": "#7a3a4a42",
   "inlineChatInput.background": "#1d1931",
   "input.background": "#151127",
   "input.border": "#283356",
-  "input.foreground": "#cbd9ff",
-  "input.placeholderForeground": "#b7c8e68a",
+  "input.foreground": "#bacaf8",
+  "input.placeholderForeground": "#a8bee48a",
   "inputOption.activeBackground": "#4a4f7445",
-  "inputOption.activeForeground": "#cbd9ff",
+  "inputOption.activeForeground": "#bacaf8",
   "inputValidation.errorBackground": "#7a3a4a",
   "inputValidation.errorBorder": "#7a3a4a",
   "inputValidation.errorForeground": "#7fb5ff",
@@ -2384,17 +2384,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "inputValidation.warningBorder": "#f0d440",
   "inputValidation.warningForeground": "#000000",
   "list.activeSelectionBackground": "#66a9ff33",
-  "list.activeSelectionForeground": "#cbd9ff",
-  "list.deemphasizedForeground": "#b7c8e6",
+  "list.activeSelectionForeground": "#bacaf8",
+  "list.deemphasizedForeground": "#a8bee4",
   "list.dropBackground": "#1d1931",
   "list.errorForeground": "#7a3a4a",
   "list.focusBackground": "#66a9ff40",
-  "list.focusForeground": "#cbd9ff",
-  "list.highlightForeground": "#cbd9ff",
+  "list.focusForeground": "#bacaf8",
+  "list.highlightForeground": "#bacaf8",
   "list.hoverBackground": "#66a9ff1a",
-  "list.hoverForeground": "#cbd9ff",
+  "list.hoverForeground": "#bacaf8",
   "list.inactiveSelectionBackground": "#66a9ff26",
-  "list.inactiveSelectionForeground": "#cbd9ff",
+  "list.inactiveSelectionForeground": "#bacaf8",
   "list.invalidItemForeground": "#e5a752",
   "list.warningForeground": "#cccc22",
   "listFilterWidget.background": "#151127",
@@ -2402,13 +2402,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "listFilterWidget.outline": "#2a5db4",
   "menu.background": "#1a172f",
   "menu.border": "#283356",
-  "menu.foreground": "#b7c8e6",
+  "menu.foreground": "#a8bee4",
   "menu.selectionBackground": "#66a9ff40",
-  "menu.selectionForeground": "#e0e8ff",
+  "menu.selectionForeground": "#d6dffb",
   "menu.separatorBackground": "#28253b",
   "menubar.selectionBackground": "#66a9ff33",
   "menubar.selectionBorder": "#232037",
-  "menubar.selectionForeground": "#cbd9ff",
+  "menubar.selectionForeground": "#bacaf8",
   "merge.currentContentBackground": "#20a09d45",
   "merge.currentHeaderBackground": "#2a965726",
   "merge.incomingContentBackground": "#2a5db445",
@@ -2442,22 +2442,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "panelInput.border": "#1d1b30",
   "panelStickyScroll.background": "#1d1931",
   "panelTitle.activeBorder": "#66a9ff",
-  "panelTitle.activeForeground": "#9daed1",
-  "panelTitle.inactiveForeground": "#6e7a92",
+  "panelTitle.activeForeground": "#8fa5cf",
+  "panelTitle.inactiveForeground": "#7284a6",
   "peekView.border": "#283356",
   "peekViewEditor.background": "#18162c",
   "peekViewEditor.matchHighlightBackground": "#aabdc966",
   "peekViewResult.background": "#18162c",
-  "peekViewResult.fileForeground": "#b7c8e6",
-  "peekViewResult.lineForeground": "#cbd9ff",
+  "peekViewResult.fileForeground": "#a8bee4",
+  "peekViewResult.lineForeground": "#bacaf8",
   "peekViewResult.matchHighlightBackground": "#aabdc966",
   "peekViewResult.selectionBackground": "#66a9ff4d",
-  "peekViewResult.selectionForeground": "#cbd9ff",
+  "peekViewResult.selectionForeground": "#bacaf8",
   "peekViewTitle.background": "#151127",
-  "peekViewTitleDescription.foreground": "#b7c8e6",
-  "peekViewTitleLabel.foreground": "#cbd9ff",
+  "peekViewTitleDescription.foreground": "#a8bee4",
+  "peekViewTitleLabel.foreground": "#bacaf8",
   "pickerGroup.border": "#283356",
-  "pickerGroup.foreground": "#cbd9ff",
+  "pickerGroup.foreground": "#bacaf8",
   "progressBar.background": "#2a5db4",
   "sash.hoverBorder": "#221e35",
   "scmGraph.foreground1": "#e0945a",
@@ -2467,31 +2467,31 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "scmGraph.foreground5": "#c2a9ff",
   "scmGraph.historyItemBaseRefColor": "#7a4db4",
   "scmGraph.historyItemHoverAdditionsForeground": "#2a9657",
-  "scmGraph.historyItemHoverDefaultLabelForeground": "#cbd9ff",
+  "scmGraph.historyItemHoverDefaultLabelForeground": "#bacaf8",
   "scmGraph.historyItemHoverDeletionsForeground": "#ff6b7a",
   "scmGraph.historyItemHoverLabelForeground": "#151127",
   "scmGraph.historyItemRefColor": "#9976db",
   "scmGraph.historyItemRemoteRefColor": "#2a9657",
   "scrollbar.shadow": "#00000033",
   "scrollbarSlider.activeBackground": "#66a9ff4d",
-  "scrollbarSlider.background": "#b7c8e60a",
+  "scrollbarSlider.background": "#a8bee40a",
   "scrollbarSlider.hoverBackground": "#66a9ff33",
   "selection.background": "#66a9ff33",
   "settings.headerForeground": "#aabdc9",
   "sideBar.background": "#1a162b",
   "sideBar.border": "#1e1b30",
   "sideBar.dropBackground": "#1d1931",
-  "sideBar.foreground": "#b7c8e6",
+  "sideBar.foreground": "#a8bee4",
   "sideBarSectionHeader.background": "#1e1b30",
   "sideBarSectionHeader.border": "#231f34",
-  "sideBarSectionHeader.foreground": "#9daed1",
-  "sideBarTitle.foreground": "#9daed1",
+  "sideBarSectionHeader.foreground": "#8fa5cf",
+  "sideBarTitle.foreground": "#8fa5cf",
   "statusBar.background": "#151127",
   "statusBar.border": "#1a162b",
   "statusBar.debuggingBackground": "#482f6e",
-  "statusBar.debuggingForeground": "#9daed1",
+  "statusBar.debuggingForeground": "#8fa5cf",
   "statusBar.focusBorder": "#66a9ff",
-  "statusBar.foreground": "#9daed1",
+  "statusBar.foreground": "#8fa5cf",
   "statusBar.noFolderBackground": "#151127",
   "statusBarItem.activeBackground": "#66a9ff40",
   "statusBarItem.focusBorder": "#66a9ff",
@@ -2501,19 +2501,19 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "statusBarItem.remoteBackground": "#66a9ff40",
   "tab.activeBackground": "#18162c",
   "tab.activeBorderTop": "#9976db",
-  "tab.activeForeground": "#cbd9ff",
+  "tab.activeForeground": "#bacaf8",
   "tab.activeModifiedBorder": "#9976db",
   "tab.border": "#221e35",
-  "tab.hoverForeground": "#cbd9ff",
+  "tab.hoverForeground": "#bacaf8",
   "tab.inactiveBackground": "#17152b",
-  "tab.inactiveForeground": "#9daed1",
+  "tab.inactiveForeground": "#8fa5cf",
   "tab.inactiveModifiedBorder": "#211f34",
   "tab.lastPinnedBorder": "#9976db",
   "tab.unfocusedActiveBorder": "#211f34",
-  "tab.unfocusedActiveForeground": "#b7c8e6",
+  "tab.unfocusedActiveForeground": "#a8bee4",
   "tab.unfocusedActiveModifiedBorder": "#211f34",
-  "tab.unfocusedHoverForeground": "#b7c8e6",
-  "tab.unfocusedInactiveForeground": "#9daed1",
+  "tab.unfocusedHoverForeground": "#a8bee4",
+  "tab.unfocusedInactiveForeground": "#8fa5cf",
   "tab.unfocusedInactiveModifiedBorder": "#221e35",
   "terminal.ansiBlack": "#151127",
   "terminal.ansiBlue": "#66a9ff",
@@ -2523,30 +2523,30 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "terminal.ansiBrightGreen": "#2a9657",
   "terminal.ansiBrightMagenta": "#c2a9ff",
   "terminal.ansiBrightRed": "#7a3a4a",
-  "terminal.ansiBrightWhite": "#cbd9ff",
+  "terminal.ansiBrightWhite": "#bacaf8",
   "terminal.ansiBrightYellow": "#ffe766",
   "terminal.ansiCyan": "#80e6ff",
   "terminal.ansiGreen": "#79d68c",
   "terminal.ansiMagenta": "#c2a9ff",
   "terminal.ansiRed": "#ff6b7a",
-  "terminal.ansiWhite": "#b7c8e6",
+  "terminal.ansiWhite": "#a8bee4",
   "terminal.ansiYellow": "#f0d440",
   "terminal.background": "#18162c",
-  "terminal.foreground": "#cbd9ff",
+  "terminal.foreground": "#bacaf8",
   "terminal.selectionBackground": "#2a5db44d",
   "terminalCursor.background": "#1d1931",
-  "terminalCursor.foreground": "#cbd9ff",
+  "terminalCursor.foreground": "#bacaf8",
   "textBlockQuote.background": "#18162c",
   "textCodeBlock.background": "#18162c",
   "textLink.activeForeground": "#99c4ff",
   "textLink.foreground": "#7fb5ff",
-  "textPreformat.foreground": "#b7c8e6",
+  "textPreformat.foreground": "#a8bee4",
   "textSeparator.foreground": "#3b394c",
   "titleBar.activeBackground": "#18162c",
-  "titleBar.activeForeground": "#9daed1",
+  "titleBar.activeForeground": "#8fa5cf",
   "titleBar.border": "#1d1b30",
   "titleBar.inactiveBackground": "#17152b",
-  "titleBar.inactiveForeground": "#6e7a92",
+  "titleBar.inactiveForeground": "#56637c",
   "toolbar.activeBackground": "#1d1931",
   "toolbar.hoverBackground": "#1d1931",
   "tree.indentGuidesStroke": "#2a293d",
@@ -2589,18 +2589,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "comment": {
     "fontStyle": "italic",
-    "foreground": "#b7c8e6",
+    "foreground": "#a8bee4",
   },
   "comment.block": {
     "fontStyle": "italic",
-    "foreground": "#b7c8e6",
+    "foreground": "#a8bee4",
   },
   "comment.documentation": {
-    "foreground": "#b7c8e6",
+    "foreground": "#a8bee4",
   },
   "comment.line": {
     "fontStyle": "italic",
-    "foreground": "#b7c8e6",
+    "foreground": "#a8bee4",
   },
   "component.astro": {
     "fontStyle": "bold",
@@ -2910,25 +2910,25 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "activityBar.activeBorder": "#66a9ff",
     "activityBar.background": "#151127",
     "activityBar.border": "#1a162b",
-    "activityBar.foreground": "#9daed1",
-    "activityBar.inactiveForeground": "#6e7a92",
+    "activityBar.foreground": "#8fa5cf",
+    "activityBar.inactiveForeground": "#49536b",
     "activityBarBadge.background": "#4089ff",
     "activityBarBadge.foreground": "#ffffff",
-    "activityBarTop.foreground": "#b7c8e6",
-    "activityBarTop.inactiveForeground": "#9daed1",
+    "activityBarTop.foreground": "#a8bee4",
+    "activityBarTop.inactiveForeground": "#8fa5cf",
     "badge.background": "#4089ff",
     "badge.foreground": "#ffffff",
     "breadcrumb.activeSelectionForeground": "#9976db",
     "breadcrumb.background": "#18162c",
-    "breadcrumb.focusForeground": "#cbd9ff",
-    "breadcrumb.foreground": "#9daed1",
+    "breadcrumb.focusForeground": "#bacaf8",
+    "breadcrumb.foreground": "#8fa5cf",
     "breadcrumbPicker.background": "#18162b",
     "button.background": "#2a5db4",
     "button.foreground": "#ffffff",
     "button.hoverBackground": "#366cc3",
     "button.secondaryBackground": "#1d1931",
     "charts.blue": "#66a9ff",
-    "charts.foreground": "#cbd9ff",
+    "charts.foreground": "#bacaf8",
     "charts.green": "#2a9657",
     "charts.lines": "#18162c",
     "charts.orange": "#e0945a",
@@ -2936,16 +2936,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "charts.red": "#ff6b7a",
     "charts.yellow": "#f0d440",
     "chat.avatarBackground": "#2a5db4",
-    "chat.avatarForeground": "#cbd9ff",
+    "chat.avatarForeground": "#bacaf8",
     "chat.requestBorder": "#1d1931",
     "chat.slashCommandBackground": "#151127",
     "chat.slashCommandForeground": "#66a9ff",
     "checkbox.background": "#18162c",
     "checkbox.border": "#283356",
-    "checkbox.foreground": "#cbd9ff",
+    "checkbox.foreground": "#bacaf8",
     "debugConsole.errorForeground": "#7a3a4a",
-    "debugConsole.infoForeground": "#b7c8e6",
-    "debugConsole.sourceForeground": "#b7c8e6",
+    "debugConsole.infoForeground": "#a8bee4",
+    "debugConsole.sourceForeground": "#a8bee4",
     "debugConsole.warningForeground": "#cccc22",
     "debugConsoleInputIcon.foreground": "#4de0d8",
     "debugExceptionWidget.background": "#151127",
@@ -2958,12 +2958,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "debugTokenExpression.name": "#80e6ff",
     "debugTokenExpression.number": "#e0945a",
     "debugTokenExpression.string": "#79d68c",
-    "debugTokenExpression.value": "#cbd9ff",
+    "debugTokenExpression.value": "#bacaf8",
     "debugToolBar.background": "#151127",
     "debugView.stateLabelBackground": "#1a172f",
-    "debugView.stateLabelForeground": "#b7c8e6",
+    "debugView.stateLabelForeground": "#a8bee4",
     "debugView.valueChangedHighlight": "#2a5db4ab",
-    "descriptionForeground": "#b7c8e6",
+    "descriptionForeground": "#a8bee4",
     "diffEditor.diagonalFill": "#2a293d",
     "diffEditor.insertedLineBackground": "#2a965720",
     "diffEditor.insertedTextBackground": "#2a965720",
@@ -2976,7 +2976,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "diffEditorOverview.removedForeground": "#7a3a4a21",
     "disabledForeground": "#7a82ad",
     "dropdown.background": "#1a172f",
-    "dropdown.foreground": "#b7c8e6",
+    "dropdown.foreground": "#a8bee4",
     "dropdown.listBackground": "#1a172f",
     "editor.background": "#1d1931",
     "editor.findMatchBackground": "#2a5db433",
@@ -2985,7 +2985,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editor.findRangeHighlightBackground": "#66a9ff33",
     "editor.focusedStackFrameHighlightBackground": "#4de0d820",
     "editor.foldBackground": "#15112733",
-    "editor.foreground": "#cbd9ff",
+    "editor.foreground": "#bacaf8",
     "editor.inactiveSelectionBackground": "#66a9ff26",
     "editor.lineHighlightBackground": "#1d1931",
     "editor.rangeHighlightBackground": "#4de0d833",
@@ -3009,8 +3009,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorBracketPairGuide.activeBackground4": "#ffe766",
     "editorBracketPairGuide.activeBackground5": "#80f0e6",
     "editorBracketPairGuide.activeBackground6": "#79d68c",
-    "editorCodeLens.foreground": "#9daed1",
-    "editorCursor.foreground": "#cbd9ff",
+    "editorCodeLens.foreground": "#8fa5cf",
+    "editorCursor.foreground": "#bacaf8",
     "editorError.foreground": "#7a3a4a",
     "editorGhostText.foreground": "#4a4f74",
     "editorGroup.border": "#221e35",
@@ -3033,7 +3033,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorLightBulbAutoFix.foreground": "#f0d440",
     "editorLineNumber.activeForeground": "#7a82ad",
     "editorLineNumber.foreground": "#4a4f74",
-    "editorLink.activeForeground": "#cbd9ff",
+    "editorLink.activeForeground": "#bacaf8",
     "editorMarkerNavigation.background": "#18162c",
     "editorOverviewRuler.addedForeground": "#233e4e",
     "editorOverviewRuler.border": "#221e35",
@@ -3059,40 +3059,40 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorWhitespace.foreground": "#4f92ff",
     "editorWidget.background": "#201f37",
     "editorWidget.border": "#283356",
-    "editorWidget.foreground": "#cbd9ff",
+    "editorWidget.foreground": "#bacaf8",
     "editorWidget.resizeBorder": "#283356",
-    "errorForeground": "#9daed1",
+    "errorForeground": "#8fa5cf",
     "extensionBadge.remoteBackground": "#2a5db4",
     "extensionBadge.remoteForeground": "#ffffff",
     "extensionButton.prominentBackground": "#2a5db4",
     "extensionButton.prominentForeground": "#ffffff",
     "extensionButton.prominentHoverBackground": "#3c74cb",
     "focusBorder": "#4089ff",
-    "foreground": "#cbd9ff",
+    "foreground": "#bacaf8",
     "gitDecoration.addedResourceForeground": "#20a09d",
     "gitDecoration.conflictingResourceForeground": "#f0d440cc",
     "gitDecoration.deletedResourceForeground": "#7a3a4a",
-    "gitDecoration.ignoredResourceForeground": "#9daed1",
+    "gitDecoration.ignoredResourceForeground": "#8fa5cf",
     "gitDecoration.modifiedResourceForeground": "#7fb5ff",
     "gitDecoration.renamedResourceForeground": "#20a09d",
     "gitDecoration.stageDeletedResourceForeground": "#7a3a4a",
     "gitDecoration.stageModifiedResourceForeground": "#7fb5ff",
     "gitDecoration.untrackedResourceForeground": "#20a09d",
     "gitlens.gutterBackgroundColor": "#18162c",
-    "gitlens.gutterForegroundColor": "#b7c8e6",
+    "gitlens.gutterForegroundColor": "#a8bee4",
     "gitlens.gutterUncommittedForegroundColor": "#66a9ff",
     "gitlens.trailingLineForegroundColor": "#4a4f74",
-    "icon.foreground": "#cbd9ff",
-    "inlineChat.foreground": "#cbd9ff",
+    "icon.foreground": "#bacaf8",
+    "inlineChat.foreground": "#bacaf8",
     "inlineChatDiff.inserted": "#2a965740",
     "inlineChatDiff.removed": "#7a3a4a42",
     "inlineChatInput.background": "#1d1931",
     "input.background": "#151127",
     "input.border": "#283356",
-    "input.foreground": "#cbd9ff",
-    "input.placeholderForeground": "#b7c8e68a",
+    "input.foreground": "#bacaf8",
+    "input.placeholderForeground": "#a8bee48a",
     "inputOption.activeBackground": "#4a4f7445",
-    "inputOption.activeForeground": "#cbd9ff",
+    "inputOption.activeForeground": "#bacaf8",
     "inputValidation.errorBackground": "#7a3a4a",
     "inputValidation.errorBorder": "#7a3a4a",
     "inputValidation.errorForeground": "#7fb5ff",
@@ -3103,17 +3103,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "inputValidation.warningBorder": "#f0d440",
     "inputValidation.warningForeground": "#000000",
     "list.activeSelectionBackground": "#66a9ff33",
-    "list.activeSelectionForeground": "#cbd9ff",
-    "list.deemphasizedForeground": "#b7c8e6",
+    "list.activeSelectionForeground": "#bacaf8",
+    "list.deemphasizedForeground": "#a8bee4",
     "list.dropBackground": "#1d1931",
     "list.errorForeground": "#7a3a4a",
     "list.focusBackground": "#66a9ff40",
-    "list.focusForeground": "#cbd9ff",
-    "list.highlightForeground": "#cbd9ff",
+    "list.focusForeground": "#bacaf8",
+    "list.highlightForeground": "#bacaf8",
     "list.hoverBackground": "#66a9ff1a",
-    "list.hoverForeground": "#cbd9ff",
+    "list.hoverForeground": "#bacaf8",
     "list.inactiveSelectionBackground": "#66a9ff26",
-    "list.inactiveSelectionForeground": "#cbd9ff",
+    "list.inactiveSelectionForeground": "#bacaf8",
     "list.invalidItemForeground": "#e5a752",
     "list.warningForeground": "#cccc22",
     "listFilterWidget.background": "#151127",
@@ -3121,13 +3121,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "listFilterWidget.outline": "#2a5db4",
     "menu.background": "#1a172f",
     "menu.border": "#283356",
-    "menu.foreground": "#b7c8e6",
+    "menu.foreground": "#a8bee4",
     "menu.selectionBackground": "#66a9ff40",
-    "menu.selectionForeground": "#e0e8ff",
+    "menu.selectionForeground": "#d6dffb",
     "menu.separatorBackground": "#28253b",
     "menubar.selectionBackground": "#66a9ff33",
     "menubar.selectionBorder": "#232037",
-    "menubar.selectionForeground": "#cbd9ff",
+    "menubar.selectionForeground": "#bacaf8",
     "merge.currentContentBackground": "#20a09d45",
     "merge.currentHeaderBackground": "#2a965726",
     "merge.incomingContentBackground": "#2a5db445",
@@ -3161,22 +3161,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "panelInput.border": "#1d1b30",
     "panelStickyScroll.background": "#1d1931",
     "panelTitle.activeBorder": "#66a9ff",
-    "panelTitle.activeForeground": "#9daed1",
-    "panelTitle.inactiveForeground": "#6e7a92",
+    "panelTitle.activeForeground": "#8fa5cf",
+    "panelTitle.inactiveForeground": "#7284a6",
     "peekView.border": "#283356",
     "peekViewEditor.background": "#18162c",
     "peekViewEditor.matchHighlightBackground": "#aabdc966",
     "peekViewResult.background": "#18162c",
-    "peekViewResult.fileForeground": "#b7c8e6",
-    "peekViewResult.lineForeground": "#cbd9ff",
+    "peekViewResult.fileForeground": "#a8bee4",
+    "peekViewResult.lineForeground": "#bacaf8",
     "peekViewResult.matchHighlightBackground": "#aabdc966",
     "peekViewResult.selectionBackground": "#66a9ff4d",
-    "peekViewResult.selectionForeground": "#cbd9ff",
+    "peekViewResult.selectionForeground": "#bacaf8",
     "peekViewTitle.background": "#151127",
-    "peekViewTitleDescription.foreground": "#b7c8e6",
-    "peekViewTitleLabel.foreground": "#cbd9ff",
+    "peekViewTitleDescription.foreground": "#a8bee4",
+    "peekViewTitleLabel.foreground": "#bacaf8",
     "pickerGroup.border": "#283356",
-    "pickerGroup.foreground": "#cbd9ff",
+    "pickerGroup.foreground": "#bacaf8",
     "progressBar.background": "#2a5db4",
     "sash.hoverBorder": "#221e35",
     "scmGraph.foreground1": "#e0945a",
@@ -3186,31 +3186,31 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "scmGraph.foreground5": "#c2a9ff",
     "scmGraph.historyItemBaseRefColor": "#7a4db4",
     "scmGraph.historyItemHoverAdditionsForeground": "#2a9657",
-    "scmGraph.historyItemHoverDefaultLabelForeground": "#cbd9ff",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#bacaf8",
     "scmGraph.historyItemHoverDeletionsForeground": "#ff6b7a",
     "scmGraph.historyItemHoverLabelForeground": "#151127",
     "scmGraph.historyItemRefColor": "#9976db",
     "scmGraph.historyItemRemoteRefColor": "#2a9657",
     "scrollbar.shadow": "#00000033",
     "scrollbarSlider.activeBackground": "#66a9ff4d",
-    "scrollbarSlider.background": "#b7c8e60a",
+    "scrollbarSlider.background": "#a8bee40a",
     "scrollbarSlider.hoverBackground": "#66a9ff33",
     "selection.background": "#66a9ff33",
     "settings.headerForeground": "#aabdc9",
     "sideBar.background": "#1a162b",
     "sideBar.border": "#1e1b30",
     "sideBar.dropBackground": "#1d1931",
-    "sideBar.foreground": "#b7c8e6",
+    "sideBar.foreground": "#a8bee4",
     "sideBarSectionHeader.background": "#1e1b30",
     "sideBarSectionHeader.border": "#231f34",
-    "sideBarSectionHeader.foreground": "#9daed1",
-    "sideBarTitle.foreground": "#9daed1",
+    "sideBarSectionHeader.foreground": "#8fa5cf",
+    "sideBarTitle.foreground": "#8fa5cf",
     "statusBar.background": "#151127",
     "statusBar.border": "#1a162b",
     "statusBar.debuggingBackground": "#482f6e",
-    "statusBar.debuggingForeground": "#9daed1",
+    "statusBar.debuggingForeground": "#8fa5cf",
     "statusBar.focusBorder": "#66a9ff",
-    "statusBar.foreground": "#9daed1",
+    "statusBar.foreground": "#8fa5cf",
     "statusBar.noFolderBackground": "#151127",
     "statusBarItem.activeBackground": "#66a9ff40",
     "statusBarItem.focusBorder": "#66a9ff",
@@ -3220,19 +3220,19 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "statusBarItem.remoteBackground": "#66a9ff40",
     "tab.activeBackground": "#18162c",
     "tab.activeBorderTop": "#9976db",
-    "tab.activeForeground": "#cbd9ff",
+    "tab.activeForeground": "#bacaf8",
     "tab.activeModifiedBorder": "#9976db",
     "tab.border": "#221e35",
-    "tab.hoverForeground": "#cbd9ff",
+    "tab.hoverForeground": "#bacaf8",
     "tab.inactiveBackground": "#17152b",
-    "tab.inactiveForeground": "#9daed1",
+    "tab.inactiveForeground": "#8fa5cf",
     "tab.inactiveModifiedBorder": "#211f34",
     "tab.lastPinnedBorder": "#9976db",
     "tab.unfocusedActiveBorder": "#211f34",
-    "tab.unfocusedActiveForeground": "#b7c8e6",
+    "tab.unfocusedActiveForeground": "#a8bee4",
     "tab.unfocusedActiveModifiedBorder": "#211f34",
-    "tab.unfocusedHoverForeground": "#b7c8e6",
-    "tab.unfocusedInactiveForeground": "#9daed1",
+    "tab.unfocusedHoverForeground": "#a8bee4",
+    "tab.unfocusedInactiveForeground": "#8fa5cf",
     "tab.unfocusedInactiveModifiedBorder": "#221e35",
     "terminal.ansiBlack": "#151127",
     "terminal.ansiBlue": "#66a9ff",
@@ -3242,30 +3242,30 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "terminal.ansiBrightGreen": "#2a9657",
     "terminal.ansiBrightMagenta": "#c2a9ff",
     "terminal.ansiBrightRed": "#7a3a4a",
-    "terminal.ansiBrightWhite": "#cbd9ff",
+    "terminal.ansiBrightWhite": "#bacaf8",
     "terminal.ansiBrightYellow": "#ffe766",
     "terminal.ansiCyan": "#80e6ff",
     "terminal.ansiGreen": "#79d68c",
     "terminal.ansiMagenta": "#c2a9ff",
     "terminal.ansiRed": "#ff6b7a",
-    "terminal.ansiWhite": "#b7c8e6",
+    "terminal.ansiWhite": "#a8bee4",
     "terminal.ansiYellow": "#f0d440",
     "terminal.background": "#18162c",
-    "terminal.foreground": "#cbd9ff",
+    "terminal.foreground": "#bacaf8",
     "terminal.selectionBackground": "#2a5db44d",
     "terminalCursor.background": "#1d1931",
-    "terminalCursor.foreground": "#cbd9ff",
+    "terminalCursor.foreground": "#bacaf8",
     "textBlockQuote.background": "#18162c",
     "textCodeBlock.background": "#18162c",
     "textLink.activeForeground": "#99c4ff",
     "textLink.foreground": "#7fb5ff",
-    "textPreformat.foreground": "#b7c8e6",
+    "textPreformat.foreground": "#a8bee4",
     "textSeparator.foreground": "#3b394c",
     "titleBar.activeBackground": "#18162c",
-    "titleBar.activeForeground": "#9daed1",
+    "titleBar.activeForeground": "#8fa5cf",
     "titleBar.border": "#1d1b30",
     "titleBar.inactiveBackground": "#17152b",
-    "titleBar.inactiveForeground": "#6e7a92",
+    "titleBar.inactiveForeground": "#56637c",
     "toolbar.activeBackground": "#1d1931",
     "toolbar.hoverBackground": "#1d1931",
     "tree.indentGuidesStroke": "#2a293d",
@@ -3307,18 +3307,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "comment": {
       "fontStyle": "italic",
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
     "comment.block": {
       "fontStyle": "italic",
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
     "comment.documentation": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
     "comment.line": {
       "fontStyle": "italic",
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
     "component.astro": {
       "fontStyle": "bold",
@@ -3733,7 +3733,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "constant.other.color.rgb-value.hex punctuation.definition.constant",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -3835,7 +3835,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.at-rule.mixin punctuation.separator.key-value",
       ],
       "settings": {
-        "foreground": "#addeff",
+        "foreground": "#a3d5fb",
       },
     },
     {
@@ -3939,7 +3939,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.tag",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -3949,7 +3949,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
       ],
       "settings": {
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -3979,14 +3979,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.embedded.inline.phpx constant.other.php",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "Variable Array Key",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4002,7 +4002,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.block entity.name.label",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4014,35 +4014,35 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.function-call variable.other.object.property",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "Other Variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4082,7 +4082,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.function.parameter variable",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4108,7 +4108,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.other.declaration",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4211,7 +4211,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.definition.variable",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4247,7 +4247,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.tag.reference",
       ],
       "settings": {
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -4317,7 +4317,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "SCSS Include Mixin Argument",
       "scope": "meta.property-list meta.at-rule.include",
       "settings": {
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -4411,7 +4411,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Regular Expressions - Backslash",
       "scope": "constant.character.escape.backslash",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4585,7 +4585,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.embedded.block",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4597,7 +4597,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "text.log",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4611,7 +4611,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -4666,7 +4666,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4677,7 +4677,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#86b5f5",
+        "foreground": "#80b1f4",
       },
     },
     {
@@ -4688,7 +4688,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4699,7 +4699,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4710,7 +4710,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4727,7 +4727,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -4765,7 +4765,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": "meta.separator",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#b7c8e6",
+        "foreground": "#a8bee4",
       },
     },
     {
@@ -4834,7 +4834,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.other.class.js",
       ],
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -4848,7 +4848,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Variable punctuation",
       "scope": "variable.other punctuation.definition.variable",
       "settings": {
-        "foreground": "#cbd9ff",
+        "foreground": "#bacaf8",
       },
     },
     {
@@ -5346,7 +5346,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "constant.other.color.rgb-value.hex punctuation.definition.constant",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5448,7 +5448,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.at-rule.mixin punctuation.separator.key-value",
     ],
     "settings": {
-      "foreground": "#addeff",
+      "foreground": "#a3d5fb",
     },
   },
   {
@@ -5552,7 +5552,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.tag",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5562,7 +5562,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
     ],
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -5592,14 +5592,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.embedded.inline.phpx constant.other.php",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5615,7 +5615,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5627,35 +5627,35 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Object Property - Specific",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Other Variable",
     "scope": "support.other.variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5695,7 +5695,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.function.parameter variable",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5721,7 +5721,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.other.declaration",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5824,7 +5824,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.definition.variable",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -5860,7 +5860,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.tag.reference",
     ],
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -5930,7 +5930,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "SCSS Include Mixin Argument",
     "scope": "meta.property-list meta.at-rule.include",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -6024,7 +6024,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Regular Expressions - Backslash",
     "scope": "constant.character.escape.backslash",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6198,7 +6198,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.embedded.block",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6210,7 +6210,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "text.log",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6224,7 +6224,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Markdown - Markup Raw Inline Punctuation",
     "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -6279,7 +6279,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6290,7 +6290,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#86b5f5",
+      "foreground": "#80b1f4",
     },
   },
   {
@@ -6301,7 +6301,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6312,7 +6312,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6323,7 +6323,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold italic",
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6340,7 +6340,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Markdown - Blockquote",
     "scope": "markup.quote punctuation.definition.blockquote.markdown",
     "settings": {
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -6378,7 +6378,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": "meta.separator",
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#b7c8e6",
+      "foreground": "#a8bee4",
     },
   },
   {
@@ -6447,7 +6447,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.other.class.js",
     ],
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
@@ -6461,7 +6461,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Variable punctuation",
     "scope": "variable.other punctuation.definition.variable",
     "settings": {
-      "foreground": "#cbd9ff",
+      "foreground": "#bacaf8",
     },
   },
   {
