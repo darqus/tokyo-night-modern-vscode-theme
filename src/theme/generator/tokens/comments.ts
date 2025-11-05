@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateCommentTokens(): TokenColor[] {
-  const { fg } = palette
+  const { neutral } = palette
 
   return [
     {
@@ -44,7 +44,7 @@ export function generateCommentTokens(): TokenColor[] {
         'string.quoted.docstring.multi.python punctuation.definition.string.end',
         'string.quoted.docstring.multi.python constant.character.escape',
       ],
-      settings: { foreground: fg.main },
+      settings: { foreground: neutral.dark },
     },
     {
       name: 'Comment Doc',
@@ -62,7 +62,7 @@ export function generateCommentTokens(): TokenColor[] {
         'keyword.other.phpdoc.php',
         'log.date',
       ],
-      settings: { foreground: fg.main },
+      settings: { foreground: neutral.dark },
     },
     {
       name: 'Comment Doc Emphasized',
@@ -72,7 +72,7 @@ export function generateCommentTokens(): TokenColor[] {
         'comment.block.documentation punctuation.definition.block.tag',
         'comment.block.documentation entity.name.type.instance',
       ],
-      settings: { foreground: fg.main },
+      settings: { foreground: neutral.dark },
     },
   ]
 }

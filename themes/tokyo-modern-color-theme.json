@@ -416,7 +416,7 @@
         "string.quoted.docstring.multi.python constant.character.escape"
       ],
       "settings": {
-        "foreground": "#a4bce6"
+        "foreground": "#4a4f74"
       }
     },
     {
@@ -436,7 +436,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#a4bce6"
+        "foreground": "#4a4f74"
       }
     },
     {
@@ -448,7 +448,7 @@
         "comment.block.documentation entity.name.type.instance"
       ],
       "settings": {
-        "foreground": "#a4bce6"
+        "foreground": "#4a4f74"
       }
     },
     {
