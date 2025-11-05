@@ -7,7 +7,7 @@ export const generateSidebarColors = (): Record<string, string> => {
   return {
     'activityBar.background': bg.dark,
     'activityBar.foreground': fg.dark,
-    'activityBar.inactiveForeground': darken(fg.dark, 0.1),
+    'activityBar.inactiveForeground': darken(fg.dark, 0.4),
     'activityBar.activeBorder': blue.main,
     'activityBar.activeBackground': lighten(bg.dark, 0.03),
     'activityBar.border': lighten(bg.dark, 0.02),
