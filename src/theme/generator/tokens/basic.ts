@@ -3,8 +3,18 @@ import type { TokenColor } from '../../types/index.js'
 import { lighten, mix } from '../../utils/color.js'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, red, teal, fg, lime, magenta, indigo, purple } =
-    palette
+  const {
+    orange,
+    green,
+    red,
+    teal,
+    fg,
+    lime,
+    magenta,
+    indigo,
+    purple,
+    violet,
+  } = palette
 
   return [
     {
@@ -51,7 +61,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Storage Type',
       scope: 'storage.type',
-      settings: { foreground: teal.main },
+      settings: { foreground: violet.main },
     },
     {
       name: 'Storage - modifier, var, const, let',

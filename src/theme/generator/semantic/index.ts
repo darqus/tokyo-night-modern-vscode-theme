@@ -6,12 +6,12 @@ import { generateVariableTokens } from './variables.js'
 
 function generateTypeTokens(): Record<string, SemanticTokenStyle> {
   return {
-    type: { foreground: palette.teal.main },
-    interface: { foreground: palette.teal.main, fontStyle: 'italic' },
-    class: { foreground: palette.teal.main, fontStyle: 'bold' },
-    enum: { foreground: palette.teal.main },
-    typeParameter: { foreground: palette.teal.main },
-    struct: { foreground: palette.teal.main },
+    type: { foreground: palette.violet.main },
+    interface: { foreground: palette.violet.main, fontStyle: 'italic' },
+    class: { foreground: palette.violet.main, fontStyle: 'bold' },
+    enum: { foreground: palette.violet.main },
+    typeParameter: { foreground: palette.violet.main },
+    struct: { foreground: palette.violet.main },
   }
 }
 
@@ -29,12 +29,12 @@ function generateModifierTokens(): Record<string, SemanticTokenStyle> {
 
 function generateLiteralTokens(): Record<string, SemanticTokenStyle> {
   return {
-    string: { foreground: palette.green.main },
-    number: { foreground: palette.orange.main },
-    boolean: { foreground: palette.red.main },
+    string: { foreground: palette.green.light },
+    number: { foreground: palette.orange.light },
+    boolean: { foreground: palette.red.light },
     regexp: { foreground: palette.cyan.light },
-    null: { foreground: palette.red.main },
-    undefined: { foreground: palette.red.main },
+    null: { foreground: palette.red.light },
+    undefined: { foreground: palette.red.light },
   }
 }
 

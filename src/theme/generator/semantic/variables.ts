@@ -38,27 +38,27 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
 
     // Properties
     property: createSemanticToken({
-      foreground: teal.main,
+      foreground: teal.dark,
     }),
 
     'property.readonly': createSemanticToken({
-      foreground: mix(teal.main, cyan.main, 0.3),
+      foreground: mix(teal.dark, cyan.dark, 0.3),
       fontStyle: 'italic',
     }),
 
     'property.static': createSemanticToken({
-      foreground: mix(blue.light, cyan.light, 0.4),
+      foreground: mix(blue.dark, cyan.dark, 0.4),
       fontStyle: 'bold',
     }),
 
     'property.declaration': createSemanticToken({
-      foreground: lighten(teal.main, 0.1),
+      foreground: lighten(teal.dark, 0.1),
       fontStyle: 'bold',
     }),
 
     // Standard library
     'property.defaultLibrary': createSemanticToken({
-      foreground: mix(cyan.main, teal.main, 0.4),
+      foreground: mix(cyan.dark, teal.dark, 0.4),
     }),
 
     'variable.defaultLibrary': createSemanticToken({

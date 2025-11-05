@@ -383,14 +383,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 7`] = `
 {
-  "foreground": "#4de0d8",
+  "foreground": "#20a09d",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 8`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#4ddedf",
+  "foreground": "#2099a3",
 }
 `;
 
@@ -409,39 +409,39 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 14`] = `
 {
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 15`] = `
 {
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 16`] = `
 {
-  "foreground": "#4de0d8",
+  "foreground": "#8b5cf6",
 }
 `;
 
@@ -460,19 +460,19 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 19`] = `
 {
-  "foreground": "#79d68c",
+  "foreground": "#99e6a9",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 20`] = `
 {
-  "foreground": "#e0945a",
+  "foreground": "#eea870",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 21`] = `
 {
-  "foreground": "#ff6b7a",
+  "foreground": "#eea6b6",
 }
 `;
 
@@ -484,13 +484,13 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 23`] = `
 {
-  "foreground": "#ff6b7a",
+  "foreground": "#eea6b6",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 24`] = `
 {
-  "foreground": "#ff6b7a",
+  "foreground": "#eea6b6",
 }
 `;
 
@@ -713,7 +713,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
   },
   {
@@ -964,7 +964,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
@@ -980,7 +980,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
@@ -1006,14 +1006,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -1303,7 +1303,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "CSS value",
     "scope": "support.constant.property-value",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#f59e0b",
     },
   },
   {
@@ -1451,7 +1451,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -1460,7 +1460,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#6aa629",
+      "foreground": "#7b3eea",
     },
   },
   {
@@ -1496,7 +1496,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#e0945a",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -1523,7 +1523,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#79d68c",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -2601,14 +2601,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#70caf5",
   },
   "boolean": {
-    "foreground": "#ff6b7a",
+    "foreground": "#eea6b6",
   },
   "channel.go": {
     "foreground": "#4ddde2",
   },
   "class": {
     "fontStyle": "bold",
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "comment": {
     "fontStyle": "italic",
@@ -2646,7 +2646,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#a2a9ff",
   },
   "enum": {
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "exception": {
     "foreground": "#ff6b7a",
@@ -2682,7 +2682,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "interface": {
     "fontStyle": "italic",
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "interface.go": {
     "foreground": "#56c8f5",
@@ -2747,10 +2747,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#f4796f",
   },
   "null": {
-    "foreground": "#ff6b7a",
+    "foreground": "#eea6b6",
   },
   "number": {
-    "foreground": "#e0945a",
+    "foreground": "#eea870",
   },
   "parameter": {
     "foreground": "#d97fd2",
@@ -2769,22 +2769,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#7fc6ff",
   },
   "property": {
-    "foreground": "#4de0d8",
+    "foreground": "#20a09d",
   },
   "property.declaration": {
     "fontStyle": "bold",
-    "foreground": "#5fe3dc",
+    "foreground": "#36aaa7",
   },
   "property.defaultLibrary": {
-    "foreground": "#4ddbe6",
+    "foreground": "#2093a8",
   },
   "property.readonly": {
     "fontStyle": "italic",
-    "foreground": "#4ddedf",
+    "foreground": "#2099a3",
   },
   "property.static": {
     "fontStyle": "bold",
-    "foreground": "#7fc9ff",
+    "foreground": "#266fb2",
   },
   "protected": {
     "foreground": "#f0d440",
@@ -2847,10 +2847,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#e5a752",
   },
   "string": {
-    "foreground": "#79d68c",
+    "foreground": "#99e6a9",
   },
   "struct": {
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "test.assertion": {
     "foreground": "#ecc447",
@@ -2874,10 +2874,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#d0adf7",
   },
   "type": {
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "typeParameter": {
-    "foreground": "#4de0d8",
+    "foreground": "#8b5cf6",
   },
   "typeParameter.python": {
     "foreground": "#aebbff",
@@ -2893,7 +2893,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#b2b8ff",
   },
   "undefined": {
-    "foreground": "#ff6b7a",
+    "foreground": "#eea6b6",
   },
   "utility.css": {
     "foreground": "#5fe2e6",
@@ -3319,14 +3319,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#70caf5",
     },
     "boolean": {
-      "foreground": "#ff6b7a",
+      "foreground": "#eea6b6",
     },
     "channel.go": {
       "foreground": "#4ddde2",
     },
     "class": {
       "fontStyle": "bold",
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "comment": {
       "fontStyle": "italic",
@@ -3364,7 +3364,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#a2a9ff",
     },
     "enum": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "exception": {
       "foreground": "#ff6b7a",
@@ -3400,7 +3400,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "interface": {
       "fontStyle": "italic",
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "interface.go": {
       "foreground": "#56c8f5",
@@ -3465,10 +3465,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#f4796f",
     },
     "null": {
-      "foreground": "#ff6b7a",
+      "foreground": "#eea6b6",
     },
     "number": {
-      "foreground": "#e0945a",
+      "foreground": "#eea870",
     },
     "parameter": {
       "foreground": "#d97fd2",
@@ -3487,22 +3487,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#7fc6ff",
     },
     "property": {
-      "foreground": "#4de0d8",
+      "foreground": "#20a09d",
     },
     "property.declaration": {
       "fontStyle": "bold",
-      "foreground": "#5fe3dc",
+      "foreground": "#36aaa7",
     },
     "property.defaultLibrary": {
-      "foreground": "#4ddbe6",
+      "foreground": "#2093a8",
     },
     "property.readonly": {
       "fontStyle": "italic",
-      "foreground": "#4ddedf",
+      "foreground": "#2099a3",
     },
     "property.static": {
       "fontStyle": "bold",
-      "foreground": "#7fc9ff",
+      "foreground": "#266fb2",
     },
     "protected": {
       "foreground": "#f0d440",
@@ -3565,10 +3565,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#e5a752",
     },
     "string": {
-      "foreground": "#79d68c",
+      "foreground": "#99e6a9",
     },
     "struct": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "test.assertion": {
       "foreground": "#ecc447",
@@ -3592,10 +3592,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#d0adf7",
     },
     "type": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "typeParameter": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
     "typeParameter.python": {
       "foreground": "#aebbff",
@@ -3611,7 +3611,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#b2b8ff",
     },
     "undefined": {
-      "foreground": "#ff6b7a",
+      "foreground": "#eea6b6",
     },
     "utility.css": {
       "foreground": "#5fe2e6",
@@ -3780,7 +3780,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#4de0d8",
+        "foreground": "#8b5cf6",
       },
     },
     {
@@ -4031,7 +4031,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Variable Array Key",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#99cc40",
+        "foreground": "#9976db",
       },
     },
     {
@@ -4047,7 +4047,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.block entity.name.label",
       ],
       "settings": {
-        "foreground": "#99cc40",
+        "foreground": "#9976db",
       },
     },
     {
@@ -4073,14 +4073,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#99cc40",
+        "foreground": "#9976db",
       },
     },
     {
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#99cc40",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -4370,7 +4370,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "CSS value",
       "scope": "support.constant.property-value",
       "settings": {
-        "foreground": "#99cc40",
+        "foreground": "#f59e0b",
       },
     },
     {
@@ -4518,7 +4518,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#66a9ff",
+        "foreground": "#9976db",
       },
     },
     {
@@ -4527,7 +4527,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#6aa629",
+        "foreground": "#7b3eea",
       },
     },
     {
@@ -4563,7 +4563,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#e0945a",
+        "foreground": "#7a7aff",
       },
     },
     {
@@ -4590,7 +4590,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#79d68c",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -5416,7 +5416,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#8b5cf6",
     },
   },
   {
@@ -5667,7 +5667,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
@@ -5683,7 +5683,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
@@ -5709,14 +5709,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#9976db",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -6006,7 +6006,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "CSS value",
     "scope": "support.constant.property-value",
     "settings": {
-      "foreground": "#99cc40",
+      "foreground": "#f59e0b",
     },
   },
   {
@@ -6154,7 +6154,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -6163,7 +6163,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#6aa629",
+      "foreground": "#7b3eea",
     },
   },
   {
@@ -6199,7 +6199,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#e0945a",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -6226,7 +6226,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#79d68c",
+      "foreground": "#4dd8f0",
     },
   },
   {

@@ -75,7 +75,7 @@ export function generateCodeTokens(): TokenColor[] {
     {
       name: 'Variable Array Key',
       scope: 'meta.array.literal variable',
-      settings: { foreground: lime.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Object Key',
@@ -89,7 +89,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.field.declaration.ts variable.object.property',
         'meta.block entity.name.label',
       ],
-      settings: { foreground: lime.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'Object Property - General',
@@ -110,12 +110,12 @@ export function generateCodeTokens(): TokenColor[] {
       name: 'Object Literal Member lvl 3 (Vue Prop Validation)',
       scope:
         'meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key',
-      settings: { foreground: lime.main },
+      settings: { foreground: purple.main },
     },
     {
       name: 'C-related Block Level Variables',
       scope: 'source.cpp meta.block variable.other',
-      settings: { foreground: lime.main },
+      settings: { foreground: teal.main },
     },
     {
       name: 'Other Variable',

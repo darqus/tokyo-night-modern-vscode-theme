@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateCssTokens(): TokenColor[] {
-  const { blue, fg, teal, lime, magenta } = palette
+  const { blue, fg, teal, lime, magenta, amber } = palette
 
   return [
     {
@@ -112,7 +112,7 @@ export function generateCssTokens(): TokenColor[] {
     {
       name: 'CSS value',
       scope: 'support.constant.property-value',
-      settings: { foreground: lime.main },
+      settings: { foreground: amber.main },
     },
     {
       name: 'CSS IDs',
