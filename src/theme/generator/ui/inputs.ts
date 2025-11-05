@@ -3,7 +3,6 @@ import { alpha, mix } from '../../utils/color.js'
 
 export const generateInputColors = (): Record<string, string> => {
   const { bg, fg, blue, yellow, neutral } = palette
-  const menuBg = mix(bg.dark, neutral.dark, 0.1)
 
   return {
     'input.background': bg.dark,
@@ -22,8 +21,8 @@ export const generateInputColors = (): Record<string, string> => {
     'inputValidation.errorBackground': palette.red.dark,
     'inputValidation.errorBorder': palette.red.dark,
     'dropdown.foreground': fg.main,
-    'dropdown.background': menuBg,
-    'dropdown.listBackground': menuBg,
+    'dropdown.background': bg.main,
+    'dropdown.listBackground': bg.main,
   }
 }
 
