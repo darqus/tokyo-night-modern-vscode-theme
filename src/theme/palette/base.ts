@@ -2,7 +2,7 @@ export interface ColorVariant {
   dark: string
   main: string
   light: string
-  bright?: string
+  bright: string
 }
 
 export interface UnifiedPalette {
