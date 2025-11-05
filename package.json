@@ -43,7 +43,7 @@
     "release": "node --loader ts-node/esm --no-warnings scripts/release.ts",
     "lint": "biome lint .",
     "format": "biome check --fix src/ scripts/ && biome format --write src/ scripts/",
-    "test": "vitest run",
+    "test": "vitest run --update",
     "test:run": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
