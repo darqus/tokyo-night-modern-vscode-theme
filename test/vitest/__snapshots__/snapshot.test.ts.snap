@@ -883,7 +883,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -919,7 +919,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "constant.other",
     ],
     "settings": {
-      "foreground": "#c2a9ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -942,7 +942,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -958,7 +958,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -970,35 +970,35 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Object Property - Specific",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#a4bce6",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Other Variable",
     "scope": "support.other.variable",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -1011,7 +1011,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "storage.type.cs",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -1051,7 +1051,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "keyword.other.unit",
     ],
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -1071,7 +1071,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Inherited Class",
     "scope": "entity.other.inherited-class",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -1100,14 +1100,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
     "name": "Support Function",
     "scope": "support.function",
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -2495,7 +2495,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "statusBar.noFolderBackground": "#151127",
   "statusBarItem.activeBackground": "#211d32",
   "statusBarItem.focusBorder": "#4089ff",
-  "statusBarItem.hoverBackground": "#1d1a33",
+  "statusBarItem.hoverBackground": "#7fb5ff2e",
   "statusBarItem.prominentBackground": "#7a4db4",
   "statusBarItem.prominentHoverBackground": "#9976db",
   "statusBarItem.remoteBackground": "#7a4db4",
@@ -3214,7 +3214,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "statusBar.noFolderBackground": "#151127",
     "statusBarItem.activeBackground": "#211d32",
     "statusBarItem.focusBorder": "#4089ff",
-    "statusBarItem.hoverBackground": "#1d1a33",
+    "statusBarItem.hoverBackground": "#7fb5ff2e",
     "statusBarItem.prominentBackground": "#7a4db4",
     "statusBarItem.prominentHoverBackground": "#9976db",
     "statusBarItem.remoteBackground": "#7a4db4",
@@ -3927,7 +3927,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#9976db",
       },
     },
     {
@@ -3963,7 +3963,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "constant.other",
       ],
       "settings": {
-        "foreground": "#c2a9ff",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -3986,7 +3986,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Variable Array Key",
       "scope": "meta.array.literal variable",
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#cbd9ff",
       },
     },
     {
@@ -4002,7 +4002,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.block entity.name.label",
       ],
       "settings": {
-        "foreground": "#4de0d8",
+        "foreground": "#cbd9ff",
       },
     },
     {
@@ -4014,35 +4014,35 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.function-call variable.other.object.property",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#cbd9ff",
       },
     },
     {
       "name": "Object Property - Specific",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#a4bce6",
+        "foreground": "#cbd9ff",
       },
     },
     {
       "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
       "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
       "settings": {
-        "foreground": "#66a9ff",
+        "foreground": "#cbd9ff",
       },
     },
     {
       "name": "C-related Block Level Variables",
       "scope": "source.cpp meta.block variable.other",
       "settings": {
-        "foreground": "#66a9ff",
+        "foreground": "#cbd9ff",
       },
     },
     {
       "name": "Other Variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#cbd9ff",
       },
     },
     {
@@ -4055,7 +4055,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "storage.type.cs",
       ],
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -4095,7 +4095,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "keyword.other.unit",
       ],
       "settings": {
-        "foreground": "#80e6ff",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -4115,7 +4115,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#66a9ff",
+        "foreground": "#9976db",
       },
     },
     {
@@ -4144,14 +4144,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#66a9ff",
+        "foreground": "#9976db",
       },
     },
     {
       "name": "Support Function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#80e6ff",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -5540,7 +5540,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -5576,7 +5576,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "constant.other",
     ],
     "settings": {
-      "foreground": "#c2a9ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -5599,7 +5599,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Variable Array Key",
     "scope": "meta.array.literal variable",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -5615,7 +5615,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.block entity.name.label",
     ],
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -5627,35 +5627,35 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Object Property - Specific",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#a4bce6",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
     "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "C-related Block Level Variables",
     "scope": "source.cpp meta.block variable.other",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#cbd9ff",
     },
   },
   {
     "name": "Other Variable",
     "scope": "support.other.variable",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#cbd9ff",
     },
   },
   {
@@ -5668,7 +5668,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "storage.type.cs",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -5708,7 +5708,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "keyword.other.unit",
     ],
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -5728,7 +5728,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Inherited Class",
     "scope": "entity.other.inherited-class",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
@@ -5757,14 +5757,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#66a9ff",
+      "foreground": "#9976db",
     },
   },
   {
     "name": "Support Function",
     "scope": "support.function",
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#4dd8f0",
     },
   },
   {
