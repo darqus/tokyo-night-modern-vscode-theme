@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2398](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2393...v2.3.2398) (2025-11-05)
+
+
+### Features
+
+* **scripts:** add background contrast analysis script ([49a1a70](https://github.com/darqus/tokyo-modern-vscode-theme/commit/49a1a7000072562cc36821f79c543b3d1eca7275))
+
 ### [2.3.2393](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2392...v2.3.2393) (2025-11-04)
 
 ### [2.3.2392](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2389...v2.3.2392) (2025-11-04)
