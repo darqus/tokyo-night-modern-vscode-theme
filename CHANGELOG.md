@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2427](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2416...v2.3.2427) (2025-11-05)
+
+
+### Features
+
+* **theme:** improve editor hover widget appearance and accessibility ([329f0e9](https://github.com/darqus/tokyo-modern-vscode-theme/commit/329f0e92c9cfaf8d78c7549646ab8ddcbc456e71))
+* **theme:** improve input and checkbox border colors ([fc28464](https://github.com/darqus/tokyo-modern-vscode-theme/commit/fc28464a638969cdca740f7f0d35a2f7769f5df1))
+* **theme:** update color theme to version 2.3.2416 ([0f650cd](https://github.com/darqus/tokyo-modern-vscode-theme/commit/0f650cd1f5a9c1287495766f9d1d1706d9c4004a))
+* **theme:** update scmGraph colors and add new hues ([e4f7744](https://github.com/darqus/tokyo-modern-vscode-theme/commit/e4f7744fc3d33a3f352e1dd34f74357f0cccd3b6))
+
+
+### Bug Fixes
+
+* **theme:** adjust button secondary background color for better visibility ([a763e21](https://github.com/darqus/tokyo-modern-vscode-theme/commit/a763e217c9895eb8c9e5e75271c5a01ac966bfe0))
+* **theme:** adjust sidebar inactive foreground color and update palette ([c7a93e0](https://github.com/darqus/tokyo-modern-vscode-theme/commit/c7a93e080a9d0e5d15b2e2624ca3d3e169840b61))
+* **ui:** adjust color shades for better visibility ([d37248e](https://github.com/darqus/tokyo-modern-vscode-theme/commit/d37248e364aaf61a551f0972f9902081cfe972b3))
+
 ### [2.3.2416](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2399...v2.3.2416) (2025-11-05)
 
 
