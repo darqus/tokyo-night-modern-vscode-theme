@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import { alpha, lighten, mix } from '../../utils/color.js'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, yellow, orange, red, neutral } = palette
+  const { bg, fg, yellow, orange, red, neutral, blue } = palette
 
   return {
     'list.dropBackground': bg.light,
@@ -13,7 +13,7 @@ export function generateListColors(): Record<string, string> {
     'list.inactiveSelectionForeground': fg.light,
     'list.focusBackground': alpha(neutral.dark, 0.35),
     'list.focusForeground': fg.light,
-    'list.hoverBackground': alpha(neutral.dark, 0.15),
+    'list.hoverBackground': alpha(blue.main, 0.25),
     'list.hoverForeground': fg.light,
     'list.highlightForeground': fg.light,
     'list.invalidItemForeground': mix(orange.main, yellow.main, 0.3),

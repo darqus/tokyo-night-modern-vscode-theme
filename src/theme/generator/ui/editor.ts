@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import { alpha, lighten, mix } from '../../utils/color.js'
 
 export function generateEditorColors(): Record<string, string> {
-  const { bg, fg, cyan, yellow, red, purple, teal, green, ui, neutral } =
+  const { bg, fg, cyan, yellow, red, purple, teal, green, blue, ui, neutral } =
     palette
 
   return {
@@ -89,7 +89,7 @@ export function generateEditorColors(): Record<string, string> {
     'widget.shadow': alpha(ui.black, 0.3),
     'editorSuggestWidget.background': bg.main,
     'editorSuggestWidget.border': lighten(bg.main, 0.08),
-    'editorSuggestWidget.selectedBackground': mix(bg.main, purple.dark, 0.12),
+    'editorSuggestWidget.selectedBackground': mix(bg.main, blue.dark, 0.2),
     'editorSuggestWidget.highlightForeground': neutral.light,
     'editorCodeLens.foreground': fg.dark,
     'editorLightBulb.foreground': yellow.main,
