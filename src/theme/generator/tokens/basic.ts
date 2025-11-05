@@ -51,7 +51,7 @@ export function generateBasicTokens(): TokenColor[] {
     {
       name: 'Storage Type',
       scope: 'storage.type',
-      settings: { foreground: magenta.light },
+      settings: { foreground: teal.main },
     },
     {
       name: 'Storage - modifier, var, const, let',

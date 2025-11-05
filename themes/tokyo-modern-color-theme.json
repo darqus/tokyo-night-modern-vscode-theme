@@ -506,7 +506,7 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#e666b3"
+        "foreground": "#4de0d8"
       }
     },
     {
@@ -898,7 +898,7 @@
         "variable.other.constant.object"
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#4de0d8",
         "fontStyle": "bold"
       }
     },
@@ -906,7 +906,7 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#4de0d8"
       }
     },
     {
@@ -2190,24 +2190,24 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#c2a9ff"
+      "foreground": "#4de0d8"
     },
     "interface": {
-      "foreground": "#c2a9ff",
+      "foreground": "#4de0d8",
       "fontStyle": "italic"
     },
     "class": {
-      "foreground": "#80e6ff",
+      "foreground": "#4de0d8",
       "fontStyle": "bold"
     },
     "enum": {
-      "foreground": "#9976db"
+      "foreground": "#4de0d8"
     },
     "typeParameter": {
-      "foreground": "#c2a9ff"
+      "foreground": "#4de0d8"
     },
     "struct": {
-      "foreground": "#80e6ff"
+      "foreground": "#4de0d8"
     },
     "public": {
       "foreground": "#79d68c"

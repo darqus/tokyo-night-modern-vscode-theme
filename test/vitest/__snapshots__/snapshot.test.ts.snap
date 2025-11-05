@@ -409,39 +409,39 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
-  "foreground": "#c2a9ff",
+  "foreground": "#4de0d8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#c2a9ff",
+  "foreground": "#4de0d8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#80e6ff",
+  "foreground": "#4de0d8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 14`] = `
 {
-  "foreground": "#9976db",
+  "foreground": "#4de0d8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 15`] = `
 {
-  "foreground": "#c2a9ff",
+  "foreground": "#4de0d8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 16`] = `
 {
-  "foreground": "#80e6ff",
+  "foreground": "#4de0d8",
 }
 `;
 
@@ -713,7 +713,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#e666b3",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -1116,14 +1116,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#9976db",
+      "foreground": "#4de0d8",
     },
   },
   {
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -2608,7 +2608,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "class": {
     "fontStyle": "bold",
-    "foreground": "#80e6ff",
+    "foreground": "#4de0d8",
   },
   "comment": {
     "fontStyle": "italic",
@@ -2646,7 +2646,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#a2a9ff",
   },
   "enum": {
-    "foreground": "#9976db",
+    "foreground": "#4de0d8",
   },
   "exception": {
     "foreground": "#ff6b7a",
@@ -2682,7 +2682,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "interface": {
     "fontStyle": "italic",
-    "foreground": "#c2a9ff",
+    "foreground": "#4de0d8",
   },
   "interface.go": {
     "foreground": "#56c8f5",
@@ -2850,7 +2850,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#79d68c",
   },
   "struct": {
-    "foreground": "#80e6ff",
+    "foreground": "#4de0d8",
   },
   "test.assertion": {
     "foreground": "#ecc447",
@@ -2874,10 +2874,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#d0adf7",
   },
   "type": {
-    "foreground": "#c2a9ff",
+    "foreground": "#4de0d8",
   },
   "typeParameter": {
-    "foreground": "#c2a9ff",
+    "foreground": "#4de0d8",
   },
   "typeParameter.python": {
     "foreground": "#aebbff",
@@ -3326,7 +3326,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "class": {
       "fontStyle": "bold",
-      "foreground": "#80e6ff",
+      "foreground": "#4de0d8",
     },
     "comment": {
       "fontStyle": "italic",
@@ -3364,7 +3364,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#a2a9ff",
     },
     "enum": {
-      "foreground": "#9976db",
+      "foreground": "#4de0d8",
     },
     "exception": {
       "foreground": "#ff6b7a",
@@ -3400,7 +3400,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "interface": {
       "fontStyle": "italic",
-      "foreground": "#c2a9ff",
+      "foreground": "#4de0d8",
     },
     "interface.go": {
       "foreground": "#56c8f5",
@@ -3568,7 +3568,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#79d68c",
     },
     "struct": {
-      "foreground": "#80e6ff",
+      "foreground": "#4de0d8",
     },
     "test.assertion": {
       "foreground": "#ecc447",
@@ -3592,10 +3592,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#d0adf7",
     },
     "type": {
-      "foreground": "#c2a9ff",
+      "foreground": "#4de0d8",
     },
     "typeParameter": {
-      "foreground": "#c2a9ff",
+      "foreground": "#4de0d8",
     },
     "typeParameter.python": {
       "foreground": "#aebbff",
@@ -3780,7 +3780,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#e666b3",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -4183,14 +4183,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#9976db",
+        "foreground": "#4de0d8",
       },
     },
     {
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -5416,7 +5416,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#e666b3",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -5819,14 +5819,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#9976db",
+      "foreground": "#4de0d8",
     },
   },
   {
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#4de0d8",
     },
   },
   {

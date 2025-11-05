@@ -2,7 +2,7 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { fg, indigo, lime, purple } = palette
+  const { fg, indigo, lime, purple, teal } = palette
 
   return [
     {
@@ -201,12 +201,12 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.import.qualifier',
         'variable.other.constant.object',
       ],
-      settings: { foreground: purple.main, fontStyle: 'bold' },
+      settings: { foreground: teal.main, fontStyle: 'bold' },
     },
     {
       name: 'Class Name',
       scope: 'entity.name',
-      settings: { foreground: purple.main },
+      settings: { foreground: teal.main },
     },
     {
       name: 'Support Function',
