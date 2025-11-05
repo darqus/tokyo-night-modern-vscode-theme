@@ -1,5 +1,5 @@
 import { palette } from '../../palette/index.js'
-import { alpha, lighten, mix } from '../../utils/color.js'
+import { alpha, mix } from '../../utils/color.js'
 
 export function generateListColors(): Record<string, string> {
   const { bg, fg, yellow, orange, red, blue } = palette
@@ -23,7 +23,7 @@ export function generateListColors(): Record<string, string> {
     'listFilterWidget.outline': blue.dark,
     'listFilterWidget.noMatchesOutline': red.dark,
     'pickerGroup.foreground': fg.light,
-    'pickerGroup.border': lighten(bg.light, 0.02),
+    'pickerGroup.border': mix(bg.main, blue.main, 0.2),
     'scrollbarSlider.background': alpha(fg.main, 0.04),
     'scrollbarSlider.hoverBackground': alpha(blue.main, 0.2),
     'scrollbarSlider.activeBackground': alpha(blue.main, 0.3),
