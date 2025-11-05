@@ -1,20 +1,20 @@
 import { palette } from '../../palette/index.js'
-import { alpha, lighten, mix } from '../../utils/color.js'
+import { alpha, mix } from '../../utils/color.js'
 
 export const generateInputColors = (): Record<string, string> => {
-  const { bg, fg, yellow, neutral } = palette
+  const { bg, fg, blue, yellow, neutral } = palette
   const menuBg = mix(bg.dark, neutral.dark, 0.1)
 
   return {
     'input.background': bg.dark,
     'input.foreground': fg.light,
-    'input.border': lighten(bg.dark, 0.02),
+    'input.border': mix(bg.main, blue.main, 0.2),
     'input.placeholderForeground': alpha(fg.main, 0.54),
     'inputOption.activeForeground': fg.light,
     'inputOption.activeBackground': alpha(neutral.dark, 0.27),
     'inputValidation.infoForeground': palette.blue.light,
     'inputValidation.infoBackground': alpha(neutral.dark, 0.36),
-    'inputValidation.infoBorder': neutral.dark,
+    'inputValidation.infoBorder': mix(bg.main, blue.main, 0.2),
     'inputValidation.warningForeground': palette.ui.black,
     'inputValidation.warningBackground': palette.yellow.dark,
     'inputValidation.warningBorder': yellow.main,
@@ -28,11 +28,11 @@ export const generateInputColors = (): Record<string, string> => {
 }
 
 export const generateCheckboxColors = (): Record<string, string> => {
-  const { bg, fg, neutral } = palette
+  const { bg, fg, blue } = palette
 
   return {
     'checkbox.background': bg.main,
     'checkbox.foreground': fg.light,
-    'checkbox.border': neutral.main,
+    'checkbox.border': mix(bg.main, blue.main, 0.2),
   }
 }
