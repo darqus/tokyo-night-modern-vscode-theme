@@ -4,7 +4,7 @@ import { darken, lighten, mix } from '../../utils/color.js'
 import { createSemanticToken } from '../../utils/semantic-tokens.js'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
-  const { cyan, purple, yellow, orange, teal, blue } = palette
+  const { cyan, purple, pink, magenta, teal, blue } = palette
 
   return {
     // Base variables
@@ -24,11 +24,11 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
 
     // Function parameters
     parameter: createSemanticToken({
-      foreground: mix(yellow.main, orange.main, 0.3),
+      foreground: mix(pink.main, magenta.main, 0.3),
     }),
 
     'parameter.readonly': createSemanticToken({
-      foreground: darken(yellow.main, 0.1),
+      foreground: darken(pink.main, 0.1),
       fontStyle: 'italic',
     }),
 

@@ -3,7 +3,7 @@ import type { TokenColor } from '../../types/index.js'
 import { lighten, mix } from '../../utils/color.js'
 
 export function generateBasicTokens(): TokenColor[] {
-  const { orange, green, purple, cyan, red, yellow, pink, teal, fg } = palette
+  const { orange, green, purple, cyan, red, pink, teal, fg } = palette
 
   return [
     {
@@ -155,7 +155,7 @@ export function generateBasicTokens(): TokenColor[] {
         'meta.array-binding-pattern-variable variable.other.readwrite',
         'variable.other.object.property',
       ],
-      settings: { foreground: mix(teal.main, yellow.main, 0.3) },
+      settings: { foreground: mix(teal.main, pink.main, 0.3) },
     },
     {
       name: 'Keyword',

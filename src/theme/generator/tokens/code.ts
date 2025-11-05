@@ -53,7 +53,7 @@ export function generateCodeTokens(): TokenColor[] {
         'variable.other.global punctuation.definition.variable',
         'constant.other',
       ],
-      settings: { foreground: mix(yellow.main, orange.main, 0.3) },
+      settings: { foreground: mix(pink.light, purple.light, 0.3) },
     },
     {
       name: 'Variables',
@@ -151,7 +151,7 @@ export function generateCodeTokens(): TokenColor[] {
         'meta.function.parameters punctuation.definition.variable',
         'meta.function.parameter variable',
       ],
-      settings: { foreground: yellow.main },
+      settings: { foreground: mix(pink.light, purple.light, 0.3) },
     },
     {
       name: 'Constant, Tag Attribute',
