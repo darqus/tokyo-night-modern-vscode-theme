@@ -43,11 +43,35 @@ export const basePalette: UnifiedPalette = {
     light: '#bacaf8',
     bright: '#e6eeff',
   },
+  pink: {
+    dark: '#754da0',
+    main: '#d48ae0',
+    light: '#e6b4ec',
+    bright: '#f0c4f1',
+  },
+  purple: {
+    dark: '#7a4db4',
+    main: '#9976db',
+    light: '#c2a9ff',
+    bright: '#e6ccff',
+  },
+  magenta: {
+    dark: '#a6296a',
+    main: '#cc4099',
+    light: '#e666b3',
+    bright: '#f08ccc',
+  },
   blue: {
     dark: '#2a5db4',
     main: '#66a9ff',
     light: '#7fb5ff',
     bright: '#d6e6ff',
+  },
+  indigo: {
+    dark: '#4a4db4',
+    main: '#7a7aff',
+    light: '#a0a0ff',
+    bright: '#d6d6ff',
   },
   cyan: {
     dark: '#208ab0',
@@ -90,30 +114,6 @@ export const basePalette: UnifiedPalette = {
     main: '#ff6b7a',
     light: '#eea6b6',
     bright: '#f8c6d0',
-  },
-  pink: {
-    dark: '#754da0',
-    main: '#d48ae0',
-    light: '#e6b4ec',
-    bright: '#f0c4f1',
-  },
-  purple: {
-    dark: '#7a4db4',
-    main: '#9976db',
-    light: '#c2a9ff',
-    bright: '#e6ccff',
-  },
-  indigo: {
-    dark: '#4a4db4',
-    main: '#7a7aff',
-    light: '#a0a0ff',
-    bright: '#d6d6ff',
-  },
-  magenta: {
-    dark: '#a6296a',
-    main: '#cc4099',
-    light: '#e666b3',
-    bright: '#f08ccc',
   },
   neutral: {
     dark: '#4a4f74',
