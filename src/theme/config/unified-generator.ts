@@ -1,3 +1,4 @@
+import type { UnifiedPalette } from '../palette/index.js'
 import { palette } from '../palette/index.js'
 import type { SemanticTokenStyle, TokenColor } from '../types/index.js'
 import type {
@@ -21,8 +22,8 @@ const unifiedPaletteAdapter = {
 /**
  * Разрешает значение цвета (строка или функция)
  */
-function resolveColorValue(value: ColorValue, p: any): string {
-  return typeof value === 'function' ? value(unifiedPaletteAdapter) : value
+function resolveColorValue(value: ColorValue, p: UnifiedPalette): string {
+  return typeof value === 'function' ? value(p) : value
 }
 
 /**
@@ -36,7 +37,7 @@ export function generateUIColors(
   // Прямые правила
   if (config.rules) {
     for (const [key, value] of Object.entries(config.rules)) {
-      result[key] = resolveColorValue(value, palette)
+      result[key] = resolveColorValue(value, unifiedPaletteAdapter)
     }
   }
 
@@ -45,7 +46,7 @@ export function generateUIColors(
     for (const [prefix, rules] of Object.entries(config.groups)) {
       for (const [key, value] of Object.entries(rules)) {
         const fullKey = `${prefix}.${key}`
-        result[fullKey] = resolveColorValue(value, palette)
+        result[fullKey] = resolveColorValue(value, unifiedPaletteAdapter)
       }
     }
   }
@@ -53,7 +54,7 @@ export function generateUIColors(
   // Множественные ключи с одним значением
   if (config.multiple) {
     for (const [keys, value] of config.multiple) {
-      const resolvedValue = resolveColorValue(value, palette)
+      const resolvedValue = resolveColorValue(value, unifiedPaletteAdapter)
       for (const key of keys) {
         result[key] = resolvedValue
       }
@@ -73,14 +74,14 @@ export function generateTokenColors(configs: TokenColorConfig[]): TokenColor[] {
     if (config.settings.foreground) {
       settings.foreground = resolveColorValue(
         config.settings.foreground,
-        palette
+        unifiedPaletteAdapter
       )
     }
 
     if (config.settings.background) {
       settings.background = resolveColorValue(
         config.settings.background,
-        palette
+        unifiedPaletteAdapter
       )
     }
 
