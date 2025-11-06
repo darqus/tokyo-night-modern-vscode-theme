@@ -12,8 +12,8 @@
 
 ## 🌎 Live Preview
 
-<img src="static/vscode.svg" alt="VS Code" width="24" height="24" style="vertical-align: middle;"> [Open in VS Code](https://vscode.dev/theme/lod-inc.tokyo-modern) |
-<img src="static/vscode-insiders.svg" alt="VS Code" width="24" height="24" style="vertical-align: middle;"> [Open in VS Code Insiders](https://insiders.vscode.dev/editor/theme/lod-inc.tokyo-modern)
+🔮 [Open in VS Code](https://vscode.dev/theme/lod-inc.tokyo-modern) |
+🔮 [Open in VS Code Insiders](https://insiders.vscode.dev/editor/theme/lod-inc.tokyo-modern)
 
 ## 🎨 Features
 
