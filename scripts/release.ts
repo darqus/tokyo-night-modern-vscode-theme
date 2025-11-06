@@ -360,8 +360,9 @@ class ReleaseManager {
       .split('')
       .filter((char) => {
         const code = char.charCodeAt(0)
-        return (
-          !(code >= 0x00 && code <= 0x1f) && !(code >= 0x7f && code <= 0x9f)
+        return !(
+          (code >= 0x00 && code <= 0x1f) ||
+          (code >= 0x7f && code <= 0x9f)
         )
       })
       .join('')
@@ -379,7 +380,7 @@ class ReleaseManager {
       this.buildProject()
 
       const releaseType = options.type || this.detectReleaseType()
-      const version = this.bumpVersion(releaseType, options.prerelease || false)
+      const version = this.bumpVersion(releaseType, options.prerelease ?? false)
 
       this.generateChangelog()
       this.updateReadmeWithVsixLink(version)
