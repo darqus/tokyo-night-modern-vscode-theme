@@ -12,10 +12,26 @@ import type {
 /**
  * Адаптер палитры: преобразует SimplifiedPalette в UnifiedPalette
  */
-const unifiedPaletteAdapter = {
+const unifiedPaletteAdapter: UnifiedPalette = {
   background: palette.bg,
   foreground: palette.fg,
-  ...palette,
+  blue: palette.blue,
+  cyan: palette.cyan,
+  teal: palette.teal,
+  green: palette.green,
+  purple: palette.purple,
+  orange: palette.orange,
+  yellow: palette.yellow,
+  red: palette.red,
+  pink: palette.pink,
+  neutral: palette.neutral,
+  indigo: palette.indigo,
+  lime: palette.lime,
+  magenta: palette.magenta,
+  peach: palette.peach,
+  rose: palette.rose,
+  amber: palette.amber,
+  emerald: palette.emerald,
   ui: palette.ui,
 }
 
