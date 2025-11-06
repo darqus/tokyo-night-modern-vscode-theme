@@ -13,40 +13,43 @@ function getVisibleColor(
   }
 
   // Извлекаем RGB и альфа-канал вручную
-  let r: number, g: number, b: number, alpha: number
+  let r: number
+  let g: number
+  let b: number
+  let alpha: number
 
   if (transparentColor.length === 9) {
     // Формат #RRGGBBAA
-    r = parseInt(transparentColor.substring(1, 3), 16)
-    g = parseInt(transparentColor.substring(3, 5), 16)
-    b = parseInt(transparentColor.substring(5, 7), 16)
+    r = Number.parseInt(transparentColor.substring(1, 3), 16)
+    g = Number.parseInt(transparentColor.substring(3, 5), 16)
+    b = Number.parseInt(transparentColor.substring(5, 7), 16)
     const alphaHex = transparentColor.substring(7, 9)
-    alpha = parseInt(alphaHex, 16) / 255
+    alpha = Number.parseInt(alphaHex, 16) / 255
   } else if (transparentColor.length === 5) {
     // Формат #RGBA
-    r = parseInt(
+    r = Number.parseInt(
       transparentColor.substring(1, 2) + transparentColor.substring(1, 2),
       16
     )
-    g = parseInt(
+    g = Number.parseInt(
       transparentColor.substring(2, 3) + transparentColor.substring(2, 3),
       16
     )
-    b = parseInt(
+    b = Number.parseInt(
       transparentColor.substring(3, 4) + transparentColor.substring(3, 4),
       16
     )
     const alphaHex = transparentColor.substring(4, 5)
-    alpha = parseInt(alphaHex + alphaHex, 16) / 255
+    alpha = Number.parseInt(alphaHex + alphaHex, 16) / 255
   } else {
     // Если цвет не прозрачный, возвращаем его как есть
     return transparentColor
   }
 
   // Получаем компоненты фонового цвета
-  const bgR = parseInt(backgroundColor.substring(1, 3), 16)
-  const bgG = parseInt(backgroundColor.substring(3, 5), 16)
-  const bgB = parseInt(backgroundColor.substring(5, 7), 16)
+  const bgR = Number.parseInt(backgroundColor.substring(1, 3), 16)
+  const bgG = Number.parseInt(backgroundColor.substring(3, 5), 16)
+  const bgB = Number.parseInt(backgroundColor.substring(5, 7), 16)
 
   // Если альфа-канал равен 1 (непрозрачный), возвращаем цвет без альфа-канала
   if (alpha >= 1) {
@@ -221,22 +224,24 @@ for (const issue of results.lowContrastIssues) {
     if (originalColor.length === 9 || originalColor.length === 5) {
       // прозрачный цвет
       // Извлекаем RGB и альфа-канал
-      let r: number, g: number, b: number
+      let r: number
+      let g: number
+      let b: number
       if (originalColor.length === 9) {
-        r = parseInt(originalColor.substring(1, 3), 16)
-        g = parseInt(originalColor.substring(3, 5), 16)
-        b = parseInt(originalColor.substring(5, 7), 16)
+        r = Number.parseInt(originalColor.substring(1, 3), 16)
+        g = Number.parseInt(originalColor.substring(3, 5), 16)
+        b = Number.parseInt(originalColor.substring(5, 7), 16)
       } else {
         // 5 символов #RGBA
-        r = parseInt(
+        r = Number.parseInt(
           originalColor.substring(1, 2) + originalColor.substring(1, 2),
           16
         )
-        g = parseInt(
+        g = Number.parseInt(
           originalColor.substring(2, 3) + originalColor.substring(2, 3),
           16
         )
-        b = parseInt(
+        b = Number.parseInt(
           originalColor.substring(3, 4) + originalColor.substring(3, 4),
           16
         )
@@ -250,9 +255,9 @@ for (const issue of results.lowContrastIssues) {
         visibleColor
       )
       if (rgb) {
-        const r = Math.max(0, parseInt(rgb[1], 16) - 30)
-        const g = Math.max(0, parseInt(rgb[2], 16) - 30)
-        const b = Math.max(0, parseInt(rgb[3], 16) - 30)
+        const r = Math.max(0, Number.parseInt(rgb[1], 16) - 30)
+        const g = Math.max(0, Number.parseInt(rgb[2], 16) - 30)
+        const b = Math.max(0, Number.parseInt(rgb[3], 16) - 30)
         recommendedColor = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
 
         // Проверяем, улучшает ли это контраст
