@@ -10,8 +10,7 @@ function sanitizeOutput(text: string): string {
     .filter((char) => {
       const code = char.charCodeAt(0)
       return (
-        !(code >= 0 && code <= 31) &&
-        !(code >= 127 && code <= 159) &&
+        !((code >= 0 && code <= 31) || (code >= 127 && code <= 159)) &&
         char !== '\r' &&
         char !== '\n'
       )
