@@ -55,8 +55,10 @@ export const editorConfig: UIColorConfig = {
         mix(p.neutral.dark, p.background.main, 0.7),
     },
     editorLineNumber: {
-      foreground: (p: UnifiedPalette) => p.neutral.dark,
-      activeForeground: (p: UnifiedPalette) => p.neutral.main,
+      foreground: (p: UnifiedPalette) =>
+        mix(p.neutral.dark, p.background.main, 0.65),
+      activeForeground: (p: UnifiedPalette) =>
+        mix(p.neutral.dark, p.background.main, 0.05),
     },
     editorWhitespace: {
       foreground: (p: UnifiedPalette) => lighten(p.ui.badge, 0.08),
