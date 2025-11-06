@@ -21,7 +21,9 @@ export function convertRulesToTokens(
   for (const [key, value] of Object.entries(rules)) {
     // Ключ содержит информацию в формате "groupName.scopeName"
     const [groupName, scopeStr] = key.split('.', 2)
-    if (!groupName || !scopeStr) continue
+    if (!(groupName && scopeStr)) {
+      continue
+    }
 
     // Проверяем, есть ли определение для этой группы
     if (tokenDefinitions[groupName]) {
@@ -227,7 +229,7 @@ export const markdownTokenDefinitions = {
       const level = scopeStr.replace('keyLevel', '')
       return {
         name: `JSON Key - Level ${level}`,
-        scope: [buildJsonKeyScopeSelector(parseInt(level, 10))],
+        scope: [buildJsonKeyScopeSelector(Number.parseInt(level, 10))],
         settings: { foreground: value as string },
       }
     }
