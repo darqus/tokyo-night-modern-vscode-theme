@@ -31,18 +31,6 @@ export function generateInputColors(): Record<string, string> {
         hoverBackground: hoverState(subtleHighlight(c.neutral.dark)),
         focusBorder: borderColor(c.bg.main, c.blue.light),
       })
-      // Стили валидации: info
-      .add('inputValidation.infoForeground', c.blue.light)
-      .add('inputValidation.infoBackground', subtleHighlight(c.neutral.dark))
-      .add('inputValidation.infoBorder', borderColor(c.bg.main, c.blue.main))
-      // Стили валидации: warning
-      .add('inputValidation.warningForeground', c.ui.black)
-      .add('inputValidation.warningBackground', c.yellow.dark)
-      .add('inputValidation.warningBorder', c.yellow.main)
-      // Стили валидации: error
-      .add('inputValidation.errorForeground', c.blue.light)
-      .add('inputValidation.errorBackground', c.red.dark)
-      .add('inputValidation.errorBorder', c.red.dark)
       // Quick input & dropdown
       .add('quickInput.background', c.bg.main)
       .add('quickInput.foreground', c.fg.main)

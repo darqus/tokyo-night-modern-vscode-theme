@@ -440,24 +440,6 @@ export function generateInputColors(): Record<string, string> {
       activeForeground: c.fg.light,
       activeBackground: subtleHighlight(c.neutral.dark),
     })
-    // Validation: Info
-    .addGroup('inputValidation.info', {
-      foreground: c.blue.light,
-      background: subtleHighlight(c.neutral.dark),
-      border: borderColor(c.bg.main, c.blue.main),
-    })
-    // Validation: Warning
-    .addGroup('inputValidation.warning', {
-      foreground: c.ui.black,
-      background: c.yellow.dark,
-      border: c.yellow.main,
-    })
-    // Validation: Error
-    .addGroup('inputValidation.error', {
-      foreground: c.blue.light,
-      background: c.red.dark,
-      border: c.red.dark,
-    })
     // Quick input & dropdown
     .add('quickInput.background', c.bg.main)
     .addMultiple(
@@ -470,7 +452,7 @@ export function generateInputColors(): Record<string, string> {
 
 **Преимущества:**
 
-- ✅ Явная группировка по смыслу (базовые, активные, validation)
+- ✅ Явная группировка по смыслу (базовые, активные)
 - ✅ Семантические имена вместо магических чисел
 - ✅ Методы `addGroup` и `addMultiple` убирают повторение
 - ✅ Код читается как конфигурация

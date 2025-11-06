@@ -243,16 +243,7 @@
       "inputOption.activeBackground",
       "inputOption.activeBorder",
       "inputOption.activeForeground",
-      "inputOption.hoverBackground",
-      "inputValidation.infoBackground",
-      "inputValidation.infoForeground",
-      "inputValidation.infoBorder",
-      "inputValidation.warningBackground",
-      "inputValidation.warningForeground",
-      "inputValidation.warningBorder",
-      "inputValidation.errorBackground",
-      "inputValidation.errorForeground",
-      "inputValidation.errorBorder"
+      "inputOption.hoverBackground"
     ],
     "Цвета выпадающих списков": [
       "dropdown.background",

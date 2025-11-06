@@ -96,22 +96,6 @@ export const inputsConfig: UIColorConfig = {
       activeForeground: (p: UnifiedPalette) => p.foreground.light,
       activeBackground: (p: UnifiedPalette) => alpha(p.neutral.dark, 0.27),
     },
-    'inputValidation.info': {
-      foreground: (p: UnifiedPalette) => p.blue.light,
-      background: (p: UnifiedPalette) => alpha(p.neutral.dark, 0.36),
-      border: (p: UnifiedPalette) =>
-        borderColor(p.background.main, p.blue.main),
-    },
-    'inputValidation.warning': {
-      foreground: (p: UnifiedPalette) => p.ui.black,
-      background: (p: UnifiedPalette) => p.yellow.dark,
-      border: (p: UnifiedPalette) => p.yellow.main,
-    },
-    'inputValidation.error': {
-      foreground: (p: UnifiedPalette) => p.blue.light,
-      background: (p: UnifiedPalette) => p.red.dark,
-      border: (p: UnifiedPalette) => p.red.dark,
-    },
     quickInput: {
       background: (p: UnifiedPalette) => p.background.main,
     },
