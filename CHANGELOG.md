@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2447](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2437...v2.3.2447) (2025-11-06)
+
+
+### Features
+
+* **theme:** update error colors for improved visibility ([6a25b59](https://github.com/darqus/tokyo-modern-vscode-theme/commit/6a25b59096db32c7c50c65de536d410c9c6a021e))
+
+
+### Bug Fixes
+
+* correct the use of Angular commit message format ([5f7c8db](https://github.com/darqus/tokyo-modern-vscode-theme/commit/5f7c8db34a92d0d96cdec3d7791bc56fd0ba991e))
+* **theme:** enhance contrast for error indicators and list items ([397d30d](https://github.com/darqus/tokyo-modern-vscode-theme/commit/397d30d71c8fbaa6bc4b1301869641cd9dfa4175))
+
 ### [2.3.2437](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2436...v2.3.2437) (2025-11-05)
 
 
