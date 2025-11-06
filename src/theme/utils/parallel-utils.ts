@@ -4,7 +4,7 @@
 
 /**
  * Simple parallel processing for arrays
- * Uses Promise.all to process array items concurrently
+ * Uses Promise.all to process array items with controlled concurrency
  */
 export async function parallelMap<T, R>(
   array: T[],
@@ -13,26 +13,17 @@ export async function parallelMap<T, R>(
 ): Promise<R[]> {
   const { concurrency = 4 } = options
 
-  // Split array into chunks to limit concurrency
-  const chunks: T[][] = []
-  const chunkSize = Math.ceil(array.length / concurrency)
-
-  for (let i = 0; i < array.length; i += chunkSize) {
-    chunks.push(array.slice(i, i + chunkSize))
+  if (array.length === 0) {
+    return []
   }
 
-  // Process chunks sequentially to respect concurrency limit
-  const results: R[] = []
-  for (const chunk of chunks) {
-    const chunkResults = await Promise.all(
-      chunk.map((item, index) =>
-        Promise.resolve(mapper(item, index + results.length))
-      )
-    )
-    results.push(...chunkResults)
-  }
+  // Create an array of tasks that return promises
+  const tasks = array.map(
+    (item, index) => () => Promise.resolve(mapper(item, index))
+  )
 
-  return results
+  // Use the withConcurrencyLimit function to process with concurrency control
+  return withConcurrencyLimit(tasks, concurrency)
 }
 
 /**
@@ -43,10 +34,9 @@ export async function parallelReduce<T, R>(
   reducer: (acc: R, item: T, index: number) => R,
   initialValue: R
 ): Promise<R> {
-  // For reduce operation, we need to maintain order, so we'll just use regular reduce
-  // but allow async operations within the reducer
   let accumulator = initialValue
   for (let i = 0; i < array.length; i++) {
+    // biome-ignore lint/performance/noAwaitInLoops: Reduce operations must maintain order, so await in loop is unavoidable
     accumulator = await Promise.resolve(reducer(accumulator, array[i], i))
   }
 
@@ -60,13 +50,59 @@ export async function withConcurrencyLimit<T>(
   tasks: (() => Promise<T>)[],
   limit: number = 4
 ): Promise<T[]> {
-  const results: T[] = []
-
-  for (let i = 0; i < tasks.length; i += limit) {
-    const batch = tasks.slice(i, i + limit)
-    const batchResults = await Promise.all(batch.map((task) => task()))
-    results.push(...batchResults)
+  if (tasks.length === 0) {
+    return []
   }
 
-  return results
+  // Implement a proper concurrency limiter using a queue-based approach
+  return new Promise<T[]>((resolve, reject) => {
+    const results: T[] = new Array(tasks.length)
+    let activeCount = 0
+    let nextIndex = 0
+    let completedCount = 0
+    let hasError = false
+
+    const executeTask = () => {
+      if (hasError || nextIndex >= tasks.length || activeCount >= limit) {
+        return
+      }
+
+      const currentIndex = nextIndex++
+      activeCount++
+
+      tasks[currentIndex]()
+        .then((result) => {
+          if (!hasError) {
+            results[currentIndex] = result
+            completedCount++
+
+            if (completedCount === tasks.length) {
+              resolve(results)
+            } else {
+              activeCount--
+              executeTask() // Process next task
+            }
+          }
+        })
+        .catch((error) => {
+          if (!hasError) {
+            hasError = true
+            reject(error)
+          }
+        })
+
+      // Continue scheduling tasks if under limit
+      executeTask()
+    }
+
+    // Start processing up to 'limit' tasks
+    for (let i = 0; i < Math.min(limit, tasks.length); i++) {
+      executeTask()
+    }
+
+    // Handle the case where there are no tasks to run
+    if (tasks.length === 0) {
+      resolve([])
+    }
+  })
 }
