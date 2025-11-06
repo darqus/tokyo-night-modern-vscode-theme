@@ -48,8 +48,10 @@ export function normalizeHex(hex: string): string {
   }
 
   if (
-    !/^#[0-9A-Fa-f]{6}$/.test(normalized) &&
-    !/^#[0-9A-Fa-f]{8}$/.test(normalized)
+    !(
+      /^#[0-9A-Fa-f]{6}$/.test(normalized) ||
+      /^#[0-9A-Fa-f]{8}$/.test(normalized)
+    )
   ) {
     throw new RgbError(`Invalid hex format: ${hex}`, hex)
   }
@@ -81,13 +83,15 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } {
     const g = Number.parseInt(rgbPart.slice(3, 5), 16)
     const b = Number.parseInt(rgbPart.slice(5, 7), 16)
 
-    if (!Number.isFinite(r) || !Number.isFinite(g) || !Number.isFinite(b)) {
+    if (!(Number.isFinite(r) && Number.isFinite(g) && Number.isFinite(b))) {
       throw new RgbError(`Invalid RGB values from hex: ${hex}`, hex)
     }
 
     return { r, g, b }
   } catch (error) {
-    if (error instanceof RgbError) throw error
+    if (error instanceof RgbError) {
+      throw error
+    }
     throw new RgbError(`Failed to convert hex to RGB: ${hex}`, hex)
   }
 }
@@ -106,7 +110,7 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } {
  * ```
  */
 export function rgbToHex(r: number, g: number, b: number): string {
-  if (!Number.isFinite(r) || !Number.isFinite(g) || !Number.isFinite(b)) {
+  if (!(Number.isFinite(r) && Number.isFinite(g) && Number.isFinite(b))) {
     throw new RgbError(`Invalid RGB values: r=${r}, g=${g}, b=${b}`)
   }
 
