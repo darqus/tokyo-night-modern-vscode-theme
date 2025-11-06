@@ -694,7 +694,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#ff826c",
+      "foreground": "#e666b3",
     },
   },
   {
@@ -703,7 +703,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#b3e666",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -712,7 +712,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#e666b3",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -721,7 +721,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#f0d440",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -730,7 +730,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#7a7aff",
+      "foreground": "#ff6b7a",
     },
   },
   {
@@ -739,7 +739,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#f0d440",
     },
   },
   {
@@ -748,7 +748,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#ff6b7a",
+      "foreground": "#f88d7a",
     },
   },
   {
@@ -757,7 +757,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#99cc40",
     },
   },
   {
@@ -1003,7 +1003,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorBracketPairGuide.activeBackground6": "#79d68c",
   "editorCodeLens.foreground": "#8fa5cf",
   "editorCursor.foreground": "#bacaf8",
-  "editorError.foreground": "#7a3a4a",
+  "editorError.foreground": "#ff6b7a",
   "editorGhostText.foreground": "#7284a6",
   "editorGroup.border": "#221e35",
   "editorGroup.dropBackground": "#221e35",
@@ -1031,7 +1031,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorOverviewRuler.border": "#221e35",
   "editorOverviewRuler.bracketMatchForeground": "#151127",
   "editorOverviewRuler.deletedForeground": "#5d3043",
-  "editorOverviewRuler.errorForeground": "#7a3a4a",
+  "editorOverviewRuler.errorForeground": "#ff6b7a",
   "editorOverviewRuler.findMatchForeground": "#aabdc966",
   "editorOverviewRuler.infoForeground": "#5addc1",
   "editorOverviewRuler.modifiedForeground": "#434561",
@@ -1474,7 +1474,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorBracketPairGuide.activeBackground6": "#79d68c",
     "editorCodeLens.foreground": "#8fa5cf",
     "editorCursor.foreground": "#bacaf8",
-    "editorError.foreground": "#7a3a4a",
+    "editorError.foreground": "#ff6b7a",
     "editorGhostText.foreground": "#7284a6",
     "editorGroup.border": "#221e35",
     "editorGroup.dropBackground": "#221e35",
@@ -1502,7 +1502,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorOverviewRuler.border": "#221e35",
     "editorOverviewRuler.bracketMatchForeground": "#151127",
     "editorOverviewRuler.deletedForeground": "#5d3043",
-    "editorOverviewRuler.errorForeground": "#7a3a4a",
+    "editorOverviewRuler.errorForeground": "#ff6b7a",
     "editorOverviewRuler.findMatchForeground": "#aabdc966",
     "editorOverviewRuler.infoForeground": "#5addc1",
     "editorOverviewRuler.modifiedForeground": "#434561",
@@ -2219,7 +2219,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#ff826c",
+        "foreground": "#e666b3",
       },
     },
     {
@@ -2228,7 +2228,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#b3e666",
+        "foreground": "#7a7aff",
       },
     },
     {
@@ -2237,7 +2237,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#e666b3",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -2246,7 +2246,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#f0d440",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -2255,7 +2255,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#7a7aff",
+        "foreground": "#ff6b7a",
       },
     },
     {
@@ -2264,7 +2264,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#4de0d8",
+        "foreground": "#f0d440",
       },
     },
     {
@@ -2273,7 +2273,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#ff6b7a",
+        "foreground": "#f88d7a",
       },
     },
     {
@@ -2282,7 +2282,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#99cc40",
       },
     },
     {
@@ -2809,7 +2809,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#ff826c",
+      "foreground": "#e666b3",
     },
   },
   {
@@ -2818,7 +2818,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#b3e666",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -2827,7 +2827,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#e666b3",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -2836,7 +2836,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#f0d440",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -2845,7 +2845,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#7a7aff",
+      "foreground": "#ff6b7a",
     },
   },
   {
@@ -2854,7 +2854,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#f0d440",
     },
   },
   {
@@ -2863,7 +2863,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#ff6b7a",
+      "foreground": "#f88d7a",
     },
   },
   {
@@ -2872,7 +2872,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#99cc40",
     },
   },
   {
