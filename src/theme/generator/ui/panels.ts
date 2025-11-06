@@ -99,7 +99,7 @@ export function generatePanelColors(): Record<string, string> {
       badgeForeground: c.ui.white,
       border: c.neutral.main,
       dropBorder: c.blue.light,
-      shadow: '#00000033',
+      shadow: c.shadow.main,
     })
     .addGroup('activityBarTop', {
       foreground: c.fg.main,

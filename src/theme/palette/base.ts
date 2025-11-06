@@ -32,6 +32,7 @@ export interface UnifiedPalette {
   amber: ColorVariant
   emerald: ColorVariant
   ui: ColorsUI
+  shadow: ColorVariant
 }
 
 export const basePalette: UnifiedPalette = {
@@ -148,6 +149,12 @@ export const basePalette: UnifiedPalette = {
     main: '#10b981',
     light: '#34d399',
     bright: '#6ee7b7',
+  },
+  shadow: {
+    main: '#00000033',
+    dark: '#0000004d', // Slightly more opaque for better contrast where needed
+    light: '#0000001a', // Lighter variant for subtle shadows
+    bright: '#00000066', // Darker variant for stronger shadows
   },
   ui: {
     white: '#ffffff',

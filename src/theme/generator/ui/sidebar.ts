@@ -7,7 +7,7 @@ export function generateSidebarColors(): Record<string, string> {
       foreground: c.fg.main,
       border: c.neutral.main,
       dropBackground: `${c.blue.main}40`,
-      shadow: '#00000033',
+      shadow: c.shadow.main,
       titleForeground: c.fg.bright,
     })
     .addGroup('sideBarTitle', {
@@ -32,7 +32,7 @@ export function generateSidebarColors(): Record<string, string> {
       badgeForeground: c.ui.white,
       border: c.neutral.main,
       dropBorder: c.blue.light,
-      shadow: '#00000033',
+      shadow: c.shadow.main,
     })
     .addGroup('activityBarTop', {
       foreground: c.fg.main,

@@ -8,8 +8,8 @@ export function generateCoreColors(): Record<string, string> {
     .add('disabledForeground', c.fg.dark)
     .add('focusBorder', borderColor(c.bg.main, c.blue.main))
     .add('errorForeground', c.red.main)
-    .add('widget.shadow', '#00000033') // Using a standard shadow value
-    .add('scrollbar.shadow', '#0000033') // Using a standard shadow value
+    .add('widget.shadow', c.shadow.main) // Using a standard shadow value
+    .add('scrollbar.shadow', c.shadow.main) // Using a standard shadow value
     .addGroup('badge', {
       background: c.ui.badge,
       foreground: c.ui.white,

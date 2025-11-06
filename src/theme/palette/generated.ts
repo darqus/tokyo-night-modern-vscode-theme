@@ -22,6 +22,7 @@ export interface SimplifiedPalette {
   amber: ColorVariant
   emerald: ColorVariant
   ui: typeof basePalette.ui
+  shadow: ColorVariant
 }
 
 export const palette: SimplifiedPalette = {
@@ -45,4 +46,5 @@ export const palette: SimplifiedPalette = {
   amber: basePalette.amber,
   emerald: basePalette.emerald,
   ui: basePalette.ui,
+  shadow: basePalette.shadow,
 }

@@ -7,7 +7,7 @@ export function generateListColors(): Record<string, string> {
       dropBackground: c.bg.light,
       focusBackground: c.bg.dark,
       focusForeground: c.fg.bright,
-      activeSelectionBackground: c.blue.main + '40',
+      activeSelectionBackground: `${c.blue.main}40`,
       activeSelectionForeground: c.fg.bright,
       inactiveSelectionBackground: c.bg.light,
       inactiveSelectionForeground: c.fg.light,
@@ -17,7 +17,7 @@ export function generateListColors(): Record<string, string> {
       invalidItemForeground: c.red.main,
       errorForeground: c.red.main,
       warningForeground: c.yellow.main,
-      filterMatchBackground: c.yellow.main + '80',
+      filterMatchBackground: `${c.yellow.main}80`,
       filterMatchBorder: c.yellow.light,
       emphasizedForeground: c.blue.light,
       deemphasizedForeground: c.fg.dark,
@@ -25,7 +25,7 @@ export function generateListColors(): Record<string, string> {
     .addGroup('tree', {
       indentGuidesStroke: c.neutral.dark,
       tableColumnsBorder: c.neutral.main,
-      tableOddRowsBackground: c.bg.dark + '40',
+      tableOddRowsBackground: `${c.bg.dark}40`,
     })
     .addGroup('pickerGroup', {
       foreground: c.blue.light,
@@ -42,14 +42,14 @@ export function generateListColors(): Record<string, string> {
       listHoverForeground: c.fg.bright,
       listInactiveSelectionBackground: c.bg.light,
       listInactiveSelectionForeground: c.fg.main,
-      listActiveSelectionBackground: c.blue.main + '40',
+      listActiveSelectionBackground: `${c.blue.main}40`,
       listActiveSelectionForeground: c.fg.bright,
     })
     .addGroup('listFilterWidget', {
       background: c.bg.dark,
       outline: borderColor(c.bg.main, c.blue.main),
       noMatchesOutline: c.red.main,
-      shadow: '#00000033',
+      shadow: c.shadow.main,
     })
     .addGroup('dropdown', {
       background: c.bg.main,
@@ -91,15 +91,15 @@ export function generateListColors(): Record<string, string> {
       hoverBorder: c.blue.light,
     })
     .addGroup('scrollbar', {
-      shadow: '#00000033',
-      sliderBackground: c.neutral.dark + '80',
-      sliderHoverBackground: c.neutral.main + '80',
-      sliderActiveBackground: c.neutral.light + '80',
+      shadow: c.shadow.main,
+      sliderBackground: `${c.neutral.dark}80`,
+      sliderHoverBackground: `${c.neutral.main}80`,
+      sliderActiveBackground: `${c.neutral.light}80`,
     })
     .addGroup('scrollbarSlider', {
-      background: c.neutral.dark + '80',
-      hoverBackground: c.neutral.main + '80',
-      activeBackground: c.neutral.light + '80',
+      background: `${c.neutral.dark}80`,
+      hoverBackground: `${c.neutral.main}80`,
+      activeBackground: `${c.neutral.light}80`,
     })
     .build()
 }
