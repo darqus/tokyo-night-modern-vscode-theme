@@ -13,14 +13,14 @@ export function generateMarkdownTokens(): TokenColor[] {
 
   const jsonKeyLevelColors = [
     palette.purple.main,
-    palette.peach.dark,
-    palette.lime.light,
-    palette.magenta.light,
-    palette.yellow.main,
+    palette.magenta.main,
     palette.indigo.main,
     palette.teal.main,
-    palette.red.main,
     palette.cyan.main,
+    palette.red.main,
+    palette.yellow.main,
+    palette.peach.main,
+    palette.lime.main,
   ]
 
   return [
