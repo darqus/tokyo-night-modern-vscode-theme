@@ -201,14 +201,14 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Inherited Class',
     scope: 'entity.other.inherited-class',
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Class, Support, DOM, etc',
     scope: ['support.class', 'support.type', 'support.function'],
     settings: {
-      foreground: (p: Palette) => p.teal.main,
+      foreground: (p: UnifiedPalette) => p.teal.main,
       fontStyle: 'bold',
     },
   },
@@ -216,7 +216,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Class Name',
     scope: 'entity.name',
     settings: {
-      foreground: (p: Palette) => p.teal.main,
+      foreground: (p: UnifiedPalette) => p.teal.main,
     },
   },
 ]
@@ -229,35 +229,35 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Property Name',
     scope: ['support.type.property-name'],
     settings: {
-      foreground: (p: Palette) => p.cyan.main,
+      foreground: (p: UnifiedPalette) => p.cyan.main,
     },
   },
   {
     name: 'CSS Tag',
     scope: ['entity.name.tag.css'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'CSS ID',
     scope: ['entity.other.attribute-name.id'],
     settings: {
-      foreground: (p: Palette) => p.blue.light,
+      foreground: (p: UnifiedPalette) => p.blue.light,
     },
   },
   {
     name: 'CSS Class',
     scope: ['entity.other.attribute-name.class'],
     settings: {
-      foreground: (p: Palette) => p.blue.light,
+      foreground: (p: UnifiedPalette) => p.blue.light,
     },
   },
   {
     name: 'CSS Unit',
     scope: ['keyword.other.unit'],
     settings: {
-      foreground: (p: Palette) => p.orange.main,
+      foreground: (p: UnifiedPalette) => p.orange.main,
     },
   },
 ]
@@ -270,7 +270,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Bold',
     scope: ['markup.bold'],
     settings: {
-      foreground: (p: Palette) => p.orange.main,
+      foreground: (p: UnifiedPalette) => p.orange.main,
       fontStyle: 'bold',
     },
   },
@@ -278,7 +278,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Italic',
     scope: ['markup.italic'],
     settings: {
-      foreground: (p: Palette) => p.purple.light,
+      foreground: (p: UnifiedPalette) => p.purple.light,
       fontStyle: 'italic',
     },
   },
@@ -293,7 +293,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Heading',
     scope: ['markup.heading', 'entity.name.section', 'markup.heading.setext'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
       fontStyle: 'bold',
     },
   },
@@ -301,7 +301,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Quote',
     scope: ['markup.quote'],
     settings: {
-      foreground: (p: Palette) => p.neutral.light,
+      foreground: (p: UnifiedPalette) => p.neutral.light,
       fontStyle: 'italic',
     },
   },
@@ -309,14 +309,14 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup List',
     scope: ['markup.list'],
     settings: {
-      foreground: (p: Palette) => p.cyan.light,
+      foreground: (p: UnifiedPalette) => p.cyan.light,
     },
   },
   {
     name: 'Markup Link',
     scope: ['markup.underline.link', 'string.other.link'],
     settings: {
-      foreground: (p: Palette) => p.blue.light,
+      foreground: (p: UnifiedPalette) => p.blue.light,
     },
   },
 ]
@@ -333,7 +333,7 @@ export const markdownTokens: TokenColorConfig[] = [
       'entity.name.section.markdown',
     ],
     settings: {
-      foreground: (p: Palette) => p.purple.light,
+      foreground: (p: UnifiedPalette) => p.purple.light,
       fontStyle: 'bold',
     },
   },
@@ -344,21 +344,21 @@ export const markdownTokens: TokenColorConfig[] = [
       'string.other.link.description.markdown',
     ],
     settings: {
-      foreground: (p: Palette) => p.blue.light,
+      foreground: (p: UnifiedPalette) => p.blue.light,
     },
   },
   {
     name: 'Markdown Code',
     scope: ['markup.inline.raw.markdown', 'markup.fenced_code.block.markdown'],
     settings: {
-      foreground: (p: Palette) => p.green.main,
+      foreground: (p: UnifiedPalette) => p.green.main,
     },
   },
   {
     name: 'Markdown Bold',
     scope: ['markup.bold.markdown'],
     settings: {
-      foreground: (p: Palette) => p.orange.main,
+      foreground: (p: UnifiedPalette) => p.orange.main,
       fontStyle: 'bold',
     },
   },
@@ -366,7 +366,7 @@ export const markdownTokens: TokenColorConfig[] = [
     name: 'Markdown Italic',
     scope: ['markup.italic.markdown'],
     settings: {
-      foreground: (p: Palette) => p.purple.light,
+      foreground: (p: UnifiedPalette) => p.purple.light,
       fontStyle: 'italic',
     },
   },
@@ -380,49 +380,49 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSX Component',
     scope: ['support.class.component'],
     settings: {
-      foreground: (p: Palette) => p.peach.main,
+      foreground: (p: UnifiedPalette) => p.peach.main,
     },
   },
   {
     name: 'JSX Tag',
     scope: ['entity.name.tag.tsx', 'entity.name.tag.jsx'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: Palette) => p.peach.main,
+      foreground: (p: UnifiedPalette) => p.peach.main,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: Palette) => p.peach.main,
+      foreground: (p: UnifiedPalette) => p.peach.main,
     },
   },
   {
     name: 'GraphQL Field',
     scope: ['variable.graphql'],
     settings: {
-      foreground: (p: Palette) => p.cyan.light,
+      foreground: (p: UnifiedPalette) => p.cyan.light,
     },
   },
   {
     name: 'JSON Key',
     scope: ['support.type.property-name.json'],
     settings: {
-      foreground: (p: Palette) => p.cyan.main,
+      foreground: (p: UnifiedPalette) => p.cyan.main,
     },
   },
   {
     name: 'YAML Key',
     scope: ['entity.name.tag.yaml'],
     settings: {
-      foreground: (p: Palette) => p.cyan.main,
+      foreground: (p: UnifiedPalette) => p.cyan.main,
     },
   },
 ]
