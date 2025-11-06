@@ -39,7 +39,7 @@ export function safeExec(command: string, options: ExecOptions = {}): string {
       encoding: 'utf8',
       stdio: options.silent ? 'pipe' : 'inherit',
       cwd: options.cwd || process.cwd(),
-      timeout: 30000,
+      timeout: 30_000,
     })
     return typeof result === 'string' ? result.trim() : ''
   } catch (error: unknown) {
