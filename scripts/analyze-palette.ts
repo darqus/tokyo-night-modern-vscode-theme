@@ -21,7 +21,9 @@ function analyzePalette(): PaletteAnalysis {
   const analysis: PaletteAnalysis = {}
 
   for (const [colorName, colorValues] of Object.entries(basePalette)) {
-    if (colorName === 'ui') continue // Skip the ui object as it has different structure
+    if (colorName === 'ui') {
+      continue // Skip the ui object as it has different structure
+    }
 
     const variant = colorValues as ColorVariant
     analysis[colorName] = {

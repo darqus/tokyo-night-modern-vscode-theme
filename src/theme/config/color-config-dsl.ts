@@ -35,7 +35,7 @@ export interface UIColorConfig {
    * Множественные ключи с одним значением
    * Например: [['key1', 'key2'], '#fff']
    */
-  multiple?: Array<[string[], ColorValue]>
+  multiple?: [string[], ColorValue][]
 }
 
 /**
@@ -130,7 +130,9 @@ export class UIConfigBuilder {
    * Добавляет одно правило
    */
   rule(key: string, value: ColorValue): this {
-    if (!this.config.rules) this.config.rules = {}
+    if (!this.config.rules) {
+      this.config.rules = {}
+    }
     this.config.rules[key] = value
     return this
   }
@@ -139,7 +141,9 @@ export class UIConfigBuilder {
    * Добавляет группу правил с префиксом
    */
   group(prefix: string, rules: Record<string, ColorValue>): this {
-    if (!this.config.groups) this.config.groups = {}
+    if (!this.config.groups) {
+      this.config.groups = {}
+    }
     this.config.groups[prefix] = rules
     return this
   }
@@ -148,7 +152,9 @@ export class UIConfigBuilder {
    * Добавляет множественные ключи с одним значением
    */
   multiple(keys: string[], value: ColorValue): this {
-    if (!this.config.multiple) this.config.multiple = []
+    if (!this.config.multiple) {
+      this.config.multiple = []
+    }
     this.config.multiple.push([keys, value])
     return this
   }
