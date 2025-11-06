@@ -3,7 +3,7 @@
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 1`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#cdacf9",
+  "foreground": "#aebbff",
 }
 `;
 
@@ -14,38 +14,15 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 3`] = `
-{
-  "foreground": "#5ce2e4",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 3`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 4`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#9da9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 4`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 5`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#86da98",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 5`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 6`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#e5a752",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 6`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 7`] = `
-{
-  "foreground": "#67daaa",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 7`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 8`] = `
 {
@@ -53,18 +30,9 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 9`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#b2b8ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 9`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 10`] = `
-{
-  "foreground": "#c9abfb",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 10`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 11`] = `
 {
@@ -73,18 +41,9 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 12`] = `
-{
-  "foreground": "#5be2db",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 12`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 13`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#cdacf9",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 13`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 14`] = `
 {
@@ -93,212 +52,69 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 15`] = `
-{
-  "foreground": "#ecc447",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 15`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 16`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#d9b0f3",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 16`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 17`] = `
-{
-  "foreground": "#6ce4ef",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 17`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 18`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#8ae8ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 18`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 19`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#e68c60",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 19`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 20`] = `
-{
-  "foreground": "#a6a9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 20`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 21`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#ccd557",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 21`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 22`] = `
-{
-  "foreground": "#56c8f5",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 22`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 23`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#6ebbff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 23`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 24`] = `
-{
-  "foreground": "#4ddde2",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 24`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 25`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#eabe49",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 25`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 26`] = `
-{
-  "foreground": "#aebbff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 26`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 27`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#70caf5",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 27`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 28`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#7fc9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 28`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 29`] = `
-{
-  "foreground": "#8de9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 29`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 30`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#a2a9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 30`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 31`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#e5a752",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 31`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 32`] = `
-{
-  "foreground": "#f8819c",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 32`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 33`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#d0adf7",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 33`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 34`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#f67770",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 34`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 35`] = `
-{
-  "foreground": "#77d1ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 35`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 36`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#5fe3dc",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 36`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 37`] = `
-{
-  "foreground": "#32acc0",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 37`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 38`] = `
-{
-  "foreground": "#c6d55b",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 38`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 39`] = `
-{
-  "foreground": "#7fc6ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 39`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 40`] = `
-{
-  "foreground": "#ebc148",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 40`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 41`] = `
-{
-  "foreground": "#a6a9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 41`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 42`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#57c5f6",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 42`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 43`] = `
-{
-  "foreground": "#93b1ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 43`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 44`] = `
-{
-  "foreground": "#f4796f",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 44`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 45`] = `
-{
-  "foreground": "#5fe2e6",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 45`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 46`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#4ddae9",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 46`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific UI color sections 1`] = `"#1d1931"`;
 
@@ -398,14 +214,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 9`] = `
 {
-  "foreground": "#d97fd2",
+  "foreground": "#8293e1",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 10`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#bf7cca",
+  "foreground": "#8a6ac5",
 }
 `;
 
@@ -415,12 +231,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#f88d7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
@@ -429,36 +240,15 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 14`] = `
-{
-  "foreground": "#f88d7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 14`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 15`] = `
-{
-  "foreground": "#f88d7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 15`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 16`] = `
-{
-  "foreground": "#f88d7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 16`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 17`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#a8bee4",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 17`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 18`] = `
-{
-  "foreground": "#a8bee4",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 18`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 19`] = `
 {
@@ -478,41 +268,17 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 22`] = `
-{
-  "foreground": "#80e6ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 22`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 23`] = `
-{
-  "foreground": "#eea6b6",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 23`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 24`] = `
-{
-  "foreground": "#eea6b6",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 24`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 25`] = `
-{
-  "foreground": "#79d68c",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 25`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 26`] = `
-{
-  "foreground": "#ff6b7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 26`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 27`] = `
-{
-  "foreground": "#f0d440",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 27`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 28`] = `
 {
@@ -528,130 +294,39 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 30`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#9976db",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 30`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 31`] = `
-{
-  "fontStyle": "italic",
-  "foreground": "#4de0d8",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 31`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 32`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#f0d440",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 32`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 33`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#ff6b7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 33`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 34`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#ff6b7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 34`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 35`] = `
-{
-  "fontStyle": "bold",
-  "foreground": "#66a9ff",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 35`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 36`] = `
-{
-  "foreground": "#ff6b7a",
-}
-`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 36`] = `undefined`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific token color sections 1`] = `
 [
   {
-    "name": "Italics - Comments, Storage, Keyword Flow, Vue attributes, Decorators",
+    "name": "Italics - Comments, Storage, Keyword Flow",
     "scope": [
       "comment",
-      "meta.var.expr storage.type",
       "keyword.control.flow",
       "keyword.control.return",
-      "meta.directive.vue punctuation.separator.key-value.html",
-      "meta.directive.vue entity.other.attribute-name.html",
-      "tag.decorator.js entity.name.tag.js",
-      "tag.decorator.js punctuation.definition.tag.js",
       "storage.modifier",
-      "string.quoted.docstring.multi",
-      "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-      "string.quoted.docstring.multi.python punctuation.definition.string.end",
-      "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
       "fontStyle": "italic",
     },
   },
   {
-    "name": "Fix YAML block scalar, Python Logical",
-    "scope": [
-      "keyword.control.flow.block-scalar.literal",
-      "keyword.control.flow.python",
-    ],
-    "settings": {
-      "fontStyle": "",
-    },
-  },
-  {
     "name": "Comment",
     "scope": [
       "comment",
-      "comment.block.documentation",
       "punctuation.definition.comment",
-      "comment.block.documentation punctuation",
-      "string.quoted.docstring.multi",
-      "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-      "string.quoted.docstring.multi.python punctuation.definition.string.end",
-      "string.quoted.docstring.multi.python constant.character.escape",
-    ],
-    "settings": {
-      "foreground": "#7284a6",
-    },
-  },
-  {
-    "name": "Comment Doc",
-    "scope": [
-      "keyword.operator.assignment.jsdoc",
-      "comment.block.documentation variable",
-      "comment.block.documentation storage",
-      "comment.block.documentation keyword",
-      "comment.block.documentation support",
-      "comment.block.documentation markup",
-      "comment.block.documentation markup.inline.raw.string.markdown",
-      "meta.other.type.phpdoc.php keyword.other.type.php",
-      "meta.other.type.phpdoc.php support.other.namespace.php",
-      "meta.other.type.phpdoc.php punctuation.separator.inheritance.php",
-      "keyword.other.phpdoc.php",
-      "log.date",
-    ],
-    "settings": {
-      "foreground": "#7284a6",
-    },
-  },
-  {
-    "name": "Comment Doc Emphasized",
-    "scope": [
-      "meta.other.type.phpdoc.php support.class",
-      "comment.block.documentation storage.type",
-      "comment.block.documentation punctuation.definition.block.tag",
-      "comment.block.documentation entity.name.type.instance",
     ],
     "settings": {
       "foreground": "#7284a6",
@@ -660,12 +335,9 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Number, Boolean, Undefined, Null",
     "scope": [
-      "variable.other.constant",
-      "punctuation.definition.constant",
-      "constant.language",
       "constant.numeric",
-      "support.constant",
-      "constant.other.caps",
+      "constant.language",
+      "variable.other.constant",
     ],
     "settings": {
       "foreground": "#e0945a",
@@ -677,8 +349,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "string",
       "constant.other.symbol",
       "constant.other.key",
-      "meta.attribute-selector",
-      "string constant.character",
     ],
     "settings": {
       "foreground": "#79d68c",
@@ -688,7 +358,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Colors",
     "scope": [
       "constant.other.color",
-      "constant.other.color.rgb-value.hex punctuation.definition.constant",
     ],
     "settings": {
       "foreground": "#bacaf8",
@@ -698,17 +367,9 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Invalid",
     "scope": [
       "invalid",
-      "invalid.illegal",
     ],
     "settings": {
       "foreground": "#e98864",
-    },
-  },
-  {
-    "name": "Invalid deprecated",
-    "scope": "invalid.deprecated",
-    "settings": {
-      "foreground": "#e666b3",
     },
   },
   {
@@ -721,7 +382,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Storage - modifier, var, const, let",
     "scope": [
-      "meta.var.expr storage.type",
       "storage.modifier",
     ],
     "settings": {
@@ -729,52 +389,19 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Interpolation, PHP tags, Smarty tags",
+    "name": "Interpolation, PHP tags",
     "scope": [
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
-      "meta.embedded.line.tag.smarty",
-      "support.constant.handlebars",
-      "punctuation.section.tag.twig",
     ],
     "settings": {
       "foreground": "#a0a0ff",
     },
   },
   {
-    "name": "Blade, Twig, Smarty Handlebars keywords",
-    "scope": [
-      "keyword.control.smarty",
-      "keyword.control.twig",
-      "support.constant.handlebars keyword.control",
-      "keyword.operator.comparison.twig",
-      "keyword.blade",
-      "entity.name.function.blade",
-      "meta.tag.blade keyword.other.type.php",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Spread",
-    "scope": [
-      "keyword.operator.spread",
-      "keyword.operator.rest",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#eea6b6",
-    },
-  },
-  {
     "name": "Operators",
     "scope": [
       "keyword.operator",
-      "keyword.operator.arithmetic",
-      "keyword.operator.assignment",
-      "keyword.operator.bitwise.shift",
-      "entity.name.operator",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -785,12 +412,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Punctuation",
     "scope": [
       "punctuation",
-      "punctuation.definition.string",
-      "punctuation.definition.constant.markdown",
-      "punctuation.terminator.rule",
-      "punctuation.definition.entity",
-      "meta.property-list punctuation.separator.key-value",
-      "meta.at-rule.mixin punctuation.separator.key-value",
     ],
     "settings": {
       "foreground": "#b0b9fb",
@@ -799,22 +420,8 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Template & Misc",
     "scope": [
-      "keyword.control.as",
       "keyword.other",
-      "expression.embedded.vue punctuation.definition.tag",
-      "text.html.twig meta.tag.inline.any.html",
-      "meta.tag.template.value.twig meta.function.arguments.twig",
-      "meta.directive.vue punctuation.separator.key-value.html",
-      "punctuation.support.type.property-name",
-      "text.html.vue-html meta.tag",
-      "meta.attribute.directive",
       "punctuation.definition.keyword",
-      "punctuation.separator.inheritance.php",
-      "keyword.other.template",
-      "keyword.other.substitution",
-      "meta.at-rule.function variable.parameter.url",
-      "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
-      "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
     ],
     "settings": {
       "foreground": "#c2c07d",
@@ -823,12 +430,9 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Import, Export, From, Default",
     "scope": [
-      "keyword.control.module.js",
       "keyword.control.import",
       "keyword.control.export",
-      "keyword.control.from",
       "keyword.control.default",
-      "meta.import keyword.other",
     ],
     "settings": {
       "fontStyle": "italic",
@@ -836,45 +440,22 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Destructuring Variables",
-    "scope": [
-      "meta.object-binding-pattern-variable.js variable.other.readwrite",
-      "meta.object-binding-pattern-variable.ts variable.other.readwrite",
-      "meta.array-binding-pattern-variable variable.other.readwrite",
-      "variable.other.object.property",
-    ],
-    "settings": {
-      "foreground": "#64daaa",
-    },
-  },
-  {
     "name": "Keyword",
     "scope": [
       "keyword",
       "keyword.control",
-      "keyword.other.important",
     ],
     "settings": {
       "foreground": "#c2a9ff",
     },
   },
   {
-    "name": "Keyword SQL",
-    "scope": "keyword.other.DML",
-    "settings": {
-      "foreground": "#a0a0ff",
-    },
-  },
-  {
-    "name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
+    "name": "Keyword Operator Logical",
     "scope": [
       "keyword.operator.logical",
-      "storage.type.function",
       "keyword.operator.bitwise",
-      "keyword.operator.ternary",
       "keyword.operator.comparison",
       "keyword.operator.relational",
-      "keyword.operator.or.regexp",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -889,39 +470,12 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Tag - Custom / Unrecognized",
-    "scope": [
-      "entity.name.tag support.class.component",
-      "meta.tag.custom entity.name.tag",
-      "meta.tag.other.unrecognized.html.derivative entity.name.tag",
-      "meta.tag",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
     "name": "Tag Punctuation",
     "scope": [
       "punctuation.definition.tag",
-      "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
     ],
     "settings": {
       "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Globals, PHP Constants, etc",
-    "scope": [
-      "constant.other.php",
-      "variable.other.global.safer",
-      "variable.other.global.safer punctuation.definition.variable",
-      "variable.other.global",
-      "variable.other.global punctuation.definition.variable",
-      "constant.other",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
     },
   },
   {
@@ -929,24 +483,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "variable",
       "support.variable",
-      "string constant.other.placeholder",
-      "variable.other.object",
-      "meta.fstring",
-      "meta.embedded.inline.phpx constant.other.php",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Local Variables",
-    "scope": [
-      "variable",
-      "support.variable",
-      "string constant.other.placeholder",
-      "variable.other.object",
-      "meta.fstring",
-      "meta.embedded.inline.phpx constant.other.php",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -955,18 +491,10 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Function Arguments",
     "scope": [
-      "variable.parameter.handlebars",
-      "meta.function-call meta.function-call.arguments",
+      "variable.parameter",
     ],
     "settings": {
       "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Variable Array Key",
-    "scope": "meta.array.literal variable",
-    "settings": {
-      "foreground": "#9976db",
     },
   },
   {
@@ -974,65 +502,26 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "meta.object-literal.key",
       "entity.name.type.hcl",
-      "string.alias.graphql",
-      "string.unquoted.graphql",
-      "string.unquoted.alias.graphql",
-      "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-      "meta.field.declaration.ts variable.object.property",
-      "meta.block entity.name.label",
     ],
     "settings": {
       "foreground": "#9976db",
     },
   },
   {
-    "name": "Object Property - General",
+    "name": "Object Property",
     "scope": [
       "variable.other.property",
       "support.variable.property",
-      "support.variable.property.dom",
-      "meta.function-call variable.other.object.property",
     ],
     "settings": {
       "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Object Property - Specific",
-    "scope": "variable.other.object.property",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
-    "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "C-related Block Level Variables",
-    "scope": "source.cpp meta.block variable.other",
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "Other Variable",
-    "scope": "support.other.variable",
-    "settings": {
-      "foreground": "#99cc40",
     },
   },
   {
     "name": "Methods",
     "scope": [
-      "meta.class-method.js entity.name.function.js",
-      "entity.name.method.js",
+      "entity.name.method",
       "variable.function.constructor",
-      "keyword.other.special-method",
-      "storage.type.cs",
     ],
     "settings": {
       "foreground": "#9976db",
@@ -1042,50 +531,17 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Function Definition",
     "scope": [
       "entity.name.function",
-      "variable.other.enummember",
-      "meta.function-call",
-      "meta.function-call entity.name.function",
       "variable.function",
-      "meta.definition.method entity.name.function",
-      "meta.object-literal entity.name.function",
     ],
     "settings": {
       "foreground": "#9976db",
     },
   },
   {
-    "name": "Function Argument",
-    "scope": [
-      "variable.parameter.function.language.special",
-      "variable.parameter",
-      "meta.function.parameters punctuation.definition.variable",
-      "meta.function.parameter variable",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
     "name": "Constant, Tag Attribute",
     "scope": [
-      "keyword.other.type.php",
-      "storage.type.php",
       "constant.character",
       "constant.escape",
-      "keyword.other.unit",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Variable Definition",
-    "scope": [
-      "meta.definition.variable variable.other.constant",
-      "meta.definition.variable variable.other.readwrite",
-      "variable.declaration.hcl variable.other.readwrite.hcl",
-      "meta.mapping.key.hcl variable.other.readwrite.hcl",
-      "variable.other.declaration",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -1103,18 +559,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "support.class",
       "support.type",
-      "variable.other.readwrite.alias",
-      "support.other.namespace.use.php",
-      "meta.use.php",
-      "support.other.namespace.php",
-      "support.type.sys-types",
-      "support.variable.dom",
-      "support.constant.math",
-      "support.type.object.module",
-      "support.constant.json",
-      "entity.name.namespace",
-      "meta.import.qualifier",
-      "variable.other.constant.object",
+      "support.function",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1129,77 +574,18 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Support Function",
-    "scope": "support.function",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Indigo Color Usage",
+    "name": "CSS Property",
     "scope": [
-      "entity.name.type.indigo",
-      "support.type.indigo",
-      "variable.other.indigo",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Lime Color Usage",
-    "scope": [
-      "entity.name.type.lime",
-      "support.type.lime",
-      "variable.other.lime",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "purple Color Usage",
-    "scope": [
-      "entity.name.type.purple",
-      "support.type.purple",
-      "variable.other.purple",
-    ],
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "CSS Class and Support",
-    "scope": [
-      "source.css support.type.property-name",
-      "source.sass support.type.property-name",
-      "source.scss support.type.property-name",
-      "source.less support.type.property-name",
-      "source.stylus support.type.property-name",
-      "source.postcss support.type.property-name",
-      "support.type.property-name.css",
-      "support.type.vendored.property-name",
-      "support.type.map.key",
+      "support.type.property-name",
     ],
     "settings": {
       "foreground": "#66a9ff",
     },
   },
   {
-    "name": "CSS Font",
-    "scope": [
-      "support.constant.font-name",
-      "meta.definition.variable",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
     "name": "CSS Class",
     "scope": [
       "entity.other.attribute-name.class",
-      "meta.at-rule.mixin.scss entity.name.function.scss",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -1220,85 +606,21 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "CSS Tag Reference, Pseudo & Class Punctuation",
-    "scope": [
-      "entity.other.attribute-name.pseudo-class punctuation.definition.entity",
-      "entity.other.attribute-name.pseudo-element punctuation.definition.entity",
-      "entity.other.attribute-name.class punctuation.definition.entity",
-      "entity.name.tag.reference",
-    ],
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
     "name": "CSS Punctuation",
-    "scope": "meta.property-list",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "CSS at-rule fix",
     "scope": [
-      "meta.property-list meta.at-rule.if",
-      "meta.at-rule.return variable.parameter.url",
-      "meta.property-list meta.at-rule.else",
+      "punctuation.definition.entity",
     ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "CSS Parent Selector Entity",
-    "scope": [
-      "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css",
-    ],
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "CSS Punctuation comma fix",
-    "scope": "meta.property-list meta.property-list",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "SCSS @",
-    "scope": [
-      "meta.at-rule.mixin keyword.control.at-rule.mixin",
-      "meta.at-rule.include entity.name.function.scss",
-      "meta.at-rule.include keyword.control.at-rule.include",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "SCSS Mixins, Extends, Include Keyword",
-    "scope": [
-      "keyword.control.at-rule.include punctuation.definition.keyword",
-      "keyword.control.at-rule.mixin punctuation.definition.keyword",
-      "meta.at-rule.include keyword.control.at-rule.include",
-      "keyword.control.at-rule.extend punctuation.definition.keyword",
-      "meta.at-rule.extend keyword.control.at-rule.extend",
-      "entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
-      "meta.at-rule.media keyword.control.at-rule.media",
-      "meta.at-rule.mixin keyword.control.at-rule.mixin",
-      "meta.at-rule.function keyword.control.at-rule.function",
-      "keyword.control punctuation.definition.keyword",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "SCSS Include Mixin Argument",
-    "scope": "meta.property-list meta.at-rule.include",
     "settings": {
       "foreground": "#a8bee4",
+    },
+  },
+  {
+    "name": "CSS at-rules",
+    "scope": [
+      "keyword.control.at-rule",
+    ],
+    "settings": {
+      "foreground": "#e666b3",
     },
   },
   {
@@ -1309,95 +631,32 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "CSS IDs",
-    "scope": "source.sass keyword.control",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
     "name": "CSS pseudo selectors",
     "scope": [
       "entity.other.attribute-name.pseudo-class",
       "entity.other.attribute-name.pseudo-element",
-      "entity.other.attribute-name.placeholder",
-      "meta.property-list meta.property-value",
     ],
     "settings": {
       "foreground": "#e666b3",
     },
   },
   {
-    "name": "Inserted",
-    "scope": "markup.inserted",
+    "name": "Inserted, Deleted, Changed",
+    "scope": [
+      "markup.inserted",
+      "markup.deleted",
+      "markup.changed",
+    ],
     "settings": {
       "foreground": "#80f0e6",
     },
   },
   {
-    "name": "Deleted",
-    "scope": "markup.deleted",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Changed",
-    "scope": "markup.changed",
-    "settings": {
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
     "name": "Regular Expressions",
-    "scope": "string.regexp",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Regular Expressions - Punctuation",
-    "scope": "punctuation.definition.group",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Regular Expressions - Character Class",
     "scope": [
-      "constant.other.character-class.regexp",
+      "string.regexp",
+      "constant.character.escape",
     ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Regular Expressions - Character Class Set",
-    "scope": [
-      "constant.other.character-class.set.regexp",
-      "punctuation.definition.character-class.regexp",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Regular Expressions - Quantifier",
-    "scope": "keyword.operator.quantifier.regexp",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Regular Expressions - Backslash",
-    "scope": "constant.character.escape.backslash",
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Escape Characters",
-    "scope": "constant.character.escape",
     "settings": {
       "foreground": "#b3e666",
     },
@@ -1405,43 +664,16 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Decorators",
     "scope": [
-      "tag.decorator.js entity.name.tag.js",
-      "tag.decorator.js punctuation.definition.tag.js",
+      "tag.decorator.js",
     ],
     "settings": {
       "foreground": "#66a9ff",
     },
   },
   {
-    "name": "CSS Units",
-    "scope": "keyword.other.unit",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
     "name": "HTML Attributes",
     "scope": [
       "entity.other.attribute-name",
-      "text.html.basic entity.other.attribute-name.html",
-      "text.html.basic entity.other.attribute-name",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "HTML Character Entity",
-    "scope": "text.html constant.character.entity",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Vue (Vetur / deprecated) Template attributes",
-    "scope": [
-      "entity.other.attribute-name.id.html",
-      "meta.directive.vue entity.other.attribute-name.html",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -1529,99 +761,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Plain Punctuation",
-    "scope": "punctuation.definition.list_item.markdown",
-    "settings": {
-      "foreground": "#85baff",
-    },
-  },
-  {
-    "name": "Block Punctuation",
+    "name": "Markdown - Heading",
     "scope": [
-      "meta.block",
-      "meta.brace",
-      "punctuation.definition.block",
-      "punctuation.definition.use",
-      "punctuation.definition.class",
-      "punctuation.definition.begin.bracket",
-      "punctuation.definition.end.bracket",
-      "punctuation.definition.switch-expression.begin.bracket",
-      "punctuation.definition.switch-expression.end.bracket",
-      "punctuation.definition.section.switch-block.begin.bracket",
-      "punctuation.definition.section.switch-block.end.bracket",
-      "punctuation.definition.group.shell",
-      "punctuation.definition.parameters",
-      "punctuation.definition.arguments",
-      "punctuation.definition.dictionary",
-      "punctuation.definition.array",
-      "punctuation.section",
-    ],
-    "settings": {
-      "foreground": "#85baff",
-    },
-  },
-  {
-    "name": "Markdown - Plain",
-    "scope": [
-      "meta.embedded.block",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "HTML text",
-    "scope": [
-      "meta.tag JSXNested",
-      "meta.jsx.children",
-      "text.html",
-      "text.log",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markdown - Markup Raw Inline",
-    "scope": "text.html.markdown markup.inline.raw.markdown",
-    "settings": {
-      "foreground": "#c2a9ff",
-    },
-  },
-  {
-    "name": "Markdown - Markup Raw Inline Punctuation",
-    "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markdown - Heading 1",
-    "scope": [
-      "heading.1.markdown entity.name",
-      "heading.1.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Markdown - Heading 2",
-    "scope": [
-      "heading.2.markdown entity.name",
-      "heading.2.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#9ecf4a",
-    },
-  },
-  {
-    "name": "Markdown - Heading 3",
-    "scope": [
-      "heading.3.markdown entity.name",
-      "heading.3.markdown punctuation.definition.heading.markdown",
+      "heading.1.markdown",
+      "heading.2.markdown",
+      "heading.3.markdown",
+      "heading.4.markdown",
+      "heading.5.markdown",
+      "heading.6.markdown",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1629,102 +776,21 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "Markdown - Heading 4",
-    "scope": [
-      "heading.4.markdown entity.name",
-      "heading.4.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#5e9beb",
-    },
-  },
-  {
-    "name": "Markdown - Heading 5",
-    "scope": [
-      "heading.5.markdown entity.name",
-      "heading.5.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markdown - Heading 6",
-    "scope": [
-      "heading.6.markdown entity.name",
-      "heading.6.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#80b1f4",
-    },
-  },
-  {
-    "name": "Markup - Italic",
+    "name": "Markup - Italic, Bold",
     "scope": [
       "markup.italic",
-      "markup.italic punctuation",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Bold",
-    "scope": [
       "markup.bold",
-      "markup.bold punctuation",
     ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Bold-Italic",
-    "scope": [
-      "markup.bold markup.italic",
-      "markup.bold markup.italic punctuation",
-    ],
-    "settings": {
-      "fontStyle": "bold italic",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Underline",
-    "scope": [
-      "markup.underline",
-      "markup.underline punctuation",
-    ],
-    "settings": {
-      "fontStyle": "underline",
-    },
-  },
-  {
-    "name": "Markdown - Blockquote",
-    "scope": "markup.quote punctuation.definition.blockquote.markdown",
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markup - Quote",
-    "scope": "markup.quote",
     "settings": {
       "fontStyle": "italic",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Markdown - Link",
     "scope": [
-      "string.other.link",
       "markup.underline.link",
       "constant.other.reference.link.markdown",
-      "string.other.link.description.title.markdown",
     ],
     "settings": {
       "foreground": "#4de0d8",
@@ -1735,112 +801,16 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "markup.fenced_code.block.markdown",
       "markup.inline.raw.string.markdown",
-      "variable.language.fenced.markdown",
     ],
     "settings": {
       "foreground": "#b3e666",
     },
   },
   {
-    "name": "Markdown - Separator",
-    "scope": "meta.separator",
+    "name": "Markup - Quote",
+    "scope": "markup.quote",
     "settings": {
-      "fontStyle": "bold",
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markup - Table",
-    "scope": "markup.table",
-    "settings": {
-      "foreground": "#8cbfff",
-    },
-  },
-  {
-    "name": "Token - Info",
-    "scope": "token.info-token",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Token - Warn",
-    "scope": "token.warn-token",
-    "settings": {
-      "foreground": "#ffe766",
-    },
-  },
-  {
-    "name": "Token - Error",
-    "scope": "token.error-token",
-    "settings": {
-      "foreground": "#eea6b6",
-    },
-  },
-  {
-    "name": "Token - Debug",
-    "scope": "token.debug-token",
-    "settings": {
-      "foreground": "#c2a9ff",
-    },
-  },
-  {
-    "name": "Apache Tag",
-    "scope": "entity.tag.apacheconf",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Preprocessor",
-    "scope": [
-      "meta.preprocessor",
-    ],
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "ENV value",
-    "scope": "source.env",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "Sub-methods",
-    "scope": [
-      "entity.name.module.js",
-      "variable.import.parameter.js",
-      "variable.other.class.js",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Language methods",
-    "scope": "variable.language",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Variable punctuation",
-    "scope": "variable.other punctuation.definition.variable",
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Keyword this with Punctuation, ES7 Bind Operator",
-    "scope": [
-      "source.js constant.other.object.key.js string.unquoted.label.js",
-      "variable.language.this punctuation.definition.variable",
-      "keyword.other.this",
-    ],
-    "settings": {
-      "foreground": "#ff6b7a",
+      "fontStyle": "italic",
     },
   },
   {
@@ -1848,9 +818,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "entity.name.component",
       "support.class.component",
-      "meta.component.tsx entity.name.class",
-      "entity.name.tag.jsx",
-      "meta.jsx.children.jsx entity.name.tag",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1860,12 +827,9 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "TypeScript Types",
     "scope": [
-      "keyword.type.ts",
-      "storage.type.interface",
       "entity.name.type",
       "type.alias",
       "type.parameter",
-      "type.argument",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -1876,9 +840,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "type.name.graphql",
       "field.name.graphql",
-      "enum.name.graphql",
-      "interface.name.graphql",
-      "union.name.graphql",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -1887,35 +848,10 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
   {
     "name": "Tailwind Classes",
     "scope": [
-      "string.quoted.other.tailwind",
       "entity.other.attribute-name.class.tailwind",
-      "meta.attribute-with-value.class.html string.quoted.single.tailwind",
     ],
     "settings": {
       "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "Routing Components",
-    "scope": [
-      "entity.name.tag.custom",
-      "meta.import.react entity.name.tag",
-      "support.component.react",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "State Management",
-    "scope": [
-      "variable.other.object.state",
-      "entity.name.function.state",
-      "support.function.state",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
     },
   },
   {
@@ -1923,7 +859,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "support.function.react-hooks",
       "entity.name.function.hook",
-      "variable.other.hook",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1931,36 +866,10 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "TypeScript Generics",
-    "scope": [
-      "meta.generic.ts",
-      "type.parameter.generic",
-      "storage.type.generic",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Prisma Schema",
-    "scope": [
-      "keyword.model.prisma",
-      "entity.name.type.prisma",
-      "support.type.prisma",
-      "variable.other.property.prisma",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#4de0d8",
-    },
-  },
-  {
     "name": "Testing Frameworks",
     "scope": [
       "support.function.test",
-      "keyword.control.test",
       "entity.name.function.test",
-      "variable.other.test",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1968,243 +877,20 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
-    "name": "CSS-in-JS",
+    "name": "Modern Frameworks",
     "scope": [
-      "entity.name.tag.styled",
-      "support.function.styled",
-      "keyword.control.template.styled",
-      "string.template.styled",
-    ],
-    "settings": {
-      "foreground": "#f59e0b",
-    },
-  },
-  {
-    "name": "Astro/Svelte Components",
-    "scope": [
-      "entity.name.tag.astro",
-      "entity.name.tag.svelte",
-      "meta.component.astro",
-      "meta.component.svelte",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "API Resolvers",
-    "scope": [
-      "entity.name.function.resolver",
-      "support.function.resolver",
-      "variable.function.resolver",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Validation Schemas",
-    "scope": [
+      "support.function.solid",
+      "support.function.drizzle",
+      "support.function.hono",
       "support.function.validation",
-      "entity.name.type.validation",
-      "keyword.control.validation",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Data Fetching",
-    "scope": [
       "support.function.query",
-      "entity.name.function.query",
-      "variable.other.query",
-    ],
-    "settings": {
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
-    "name": "Rust Macros",
-    "scope": [
-      "entity.name.function.macro.rust",
+      "entity.name.function.resolver",
       "support.function.macro.rust",
-      "meta.macro.rust",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Rust Lifetime",
-    "scope": [
-      "storage.modifier.lifetime.rust",
-      "entity.name.type.lifetime.rust",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Go Functions",
-    "scope": [
       "entity.name.function.go",
-      "support.function.go",
+      "support.function.styled",
     ],
     "settings": {
       "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "Python Type Hints",
-    "scope": [
-      "meta.function.parameters.python support.type.python",
-      "meta.function.return-type.python",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Python Decorators",
-    "scope": [
-      "entity.name.function.decorator.python",
-      "meta.function.decorator.python",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Bun/Deno APIs",
-    "scope": [
-      "support.variable.bun",
-      "support.variable.deno",
-      "support.class.bun",
-      "support.class.deno",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Solid.js Signals",
-    "scope": [
-      "support.function.solid",
-      "entity.name.function.signal",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
-    "name": "Qwik Components",
-    "scope": [
-      "entity.name.tag.qwik",
-      "support.class.component.qwik",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "HTMX Attributes",
-    "scope": [
-      "entity.other.attribute-name.html.htmx",
-      "meta.attribute.htmx",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Drizzle ORM",
-    "scope": [
-      "support.function.drizzle",
-      "entity.name.type.drizzle",
-    ],
-    "settings": {
-      "foreground": "#10b981",
-    },
-  },
-  {
-    "name": "Hono Routes",
-    "scope": [
-      "support.function.hono",
-      "entity.name.function.route.hono",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Biome Config",
-    "scope": [
-      "support.type.property-name.biome",
-      "entity.name.tag.biome",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "WebAssembly",
-    "scope": [
-      "storage.type.wasm",
-      "keyword.control.wasm",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Zig Language",
-    "scope": [
-      "storage.type.zig",
-      "keyword.control.zig",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Modern Framework Indigo",
-    "scope": [
-      "support.type.indigo.modern",
-      "entity.name.type.indigo.modern",
-      "variable.other.indigo.modern",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Modern Framework Lime",
-    "scope": [
-      "support.type.lime.modern",
-      "entity.name.type.lime.modern",
-      "variable.other.lime.modern",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Modern Framework Magenta",
-    "scope": [
-      "support.type.magenta.modern",
-      "entity.name.type.magenta.modern",
-      "variable.other.magenta.modern",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
     },
   },
 ]
@@ -2586,81 +1272,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
 
 exports[`Snapshot Tests - Generated Theme > should match the expected theme semantic token colors snapshot 1`] = `
 {
-  "*.defaultLibrary": {
-    "foreground": "#4ddbe6",
-  },
-  "abstract": {
-    "fontStyle": "italic",
-    "foreground": "#9976db",
-  },
-  "action.svelte": {
-    "foreground": "#f8819c",
-  },
-  "async": {
-    "fontStyle": "italic",
-    "foreground": "#4de0d8",
-  },
-  "async.python": {
-    "fontStyle": "italic",
-    "foreground": "#70caf5",
-  },
   "boolean": {
     "foreground": "#eea6b6",
-  },
-  "channel.go": {
-    "foreground": "#4ddde2",
   },
   "class": {
     "fontStyle": "bold",
     "foreground": "#f88d7a",
   },
-  "comment": {
-    "fontStyle": "italic",
-    "foreground": "#a8bee4",
-  },
-  "comment.block": {
-    "fontStyle": "italic",
-    "foreground": "#a8bee4",
-  },
-  "comment.documentation": {
-    "foreground": "#a8bee4",
-  },
-  "comment.line": {
-    "fontStyle": "italic",
-    "foreground": "#a8bee4",
-  },
-  "component.astro": {
-    "fontStyle": "bold",
-    "foreground": "#f67770",
-  },
   "constructor": {
     "fontStyle": "bold",
-    "foreground": "#91e3e2",
+    "foreground": "#8addff",
   },
-  "decorator.python": {
-    "fontStyle": "italic",
-    "foreground": "#eabe49",
-  },
-  "derive.rust": {
-    "fontStyle": "italic",
-    "foreground": "#ccd557",
-  },
-  "effect.solid": {
-    "fontStyle": "italic",
-    "foreground": "#a2a9ff",
-  },
-  "enum": {
-    "foreground": "#f88d7a",
-  },
-  "exception": {
-    "foreground": "#ff6b7a",
+  "framework.token": {
+    "foreground": "#66a9ff",
   },
   "function": {
     "foreground": "#66a9ff",
-  },
-  "function.async": {
-    "fontStyle": "italic",
-    "foreground": "#64cff3",
   },
   "function.declaration": {
     "fontStyle": "bold",
@@ -2669,135 +1296,33 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "function.defaultLibrary": {
     "foreground": "#80e6ff",
   },
-  "goroutine.go": {
-    "fontStyle": "italic",
-    "foreground": "#6ebbff",
-  },
-  "graphql.directive": {
-    "fontStyle": "italic",
-    "foreground": "#cdacf9",
-  },
-  "graphql.field": {
-    "foreground": "#5be2db",
-  },
   "graphql.type": {
     "fontStyle": "bold",
     "foreground": "#4ddbe8",
   },
-  "interface": {
-    "fontStyle": "italic",
-    "foreground": "#f88d7a",
-  },
-  "interface.go": {
-    "foreground": "#56c8f5",
-  },
-  "island.astro": {
-    "foreground": "#77d1ff",
-  },
-  "keyword.catch": {
-    "fontStyle": "bold",
-    "foreground": "#ff6b7a",
-  },
-  "keyword.finally": {
-    "fontStyle": "bold",
-    "foreground": "#66a9ff",
-  },
-  "keyword.throw": {
-    "fontStyle": "bold",
-    "foreground": "#ff6b7a",
-  },
-  "keyword.try": {
-    "fontStyle": "bold",
-    "foreground": "#f0d440",
-  },
-  "lifetime.rust": {
-    "fontStyle": "italic",
-    "foreground": "#e68c60",
-  },
-  "macro.rust": {
-    "fontStyle": "bold",
-    "foreground": "#8ae8ff",
-  },
   "method": {
     "foreground": "#6ebbff",
-  },
-  "method.async": {
-    "fontStyle": "italic",
-    "foreground": "#4ddae9",
   },
   "method.declaration": {
     "fontStyle": "bold",
     "foreground": "#72b0ff",
   },
-  "method.readonly": {
-    "fontStyle": "italic",
-    "foreground": "#60b7f5",
-  },
-  "method.static": {
-    "fontStyle": "bold",
-    "foreground": "#8cb3ff",
-  },
-  "middleware.framework": {
-    "foreground": "#ebc148",
-  },
-  "migration.orm": {
-    "foreground": "#c6d55b",
-  },
-  "model.orm": {
-    "fontStyle": "bold",
-    "foreground": "#5fe3dc",
-  },
-  "mutation.tanstack": {
-    "foreground": "#f4796f",
-  },
-  "null": {
-    "foreground": "#eea6b6",
-  },
   "number": {
     "foreground": "#eea870",
   },
   "parameter": {
-    "foreground": "#d97fd2",
+    "foreground": "#8293e1",
   },
   "parameter.readonly": {
     "fontStyle": "italic",
-    "foreground": "#bf7cca",
-  },
-  "parameter.type": {
-    "foreground": "#76ceff",
-  },
-  "private": {
-    "foreground": "#ff6b7a",
-  },
-  "procedure.trpc": {
-    "foreground": "#7fc6ff",
+    "foreground": "#8a6ac5",
   },
   "property": {
     "foreground": "#20a09d",
   },
-  "property.declaration": {
-    "fontStyle": "bold",
-    "foreground": "#36aaa7",
-  },
-  "property.defaultLibrary": {
-    "foreground": "#2093a8",
-  },
   "property.readonly": {
     "fontStyle": "italic",
     "foreground": "#2099a3",
-  },
-  "property.static": {
-    "fontStyle": "bold",
-    "foreground": "#266fb2",
-  },
-  "protected": {
-    "foreground": "#f0d440",
-  },
-  "public": {
-    "foreground": "#79d68c",
-  },
-  "query.tanstack": {
-    "foreground": "#93b1ff",
   },
   "react.component": {
     "fontStyle": "bold",
@@ -2805,102 +1330,28 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "react.hook": {
     "fontStyle": "bold",
-    "foreground": "#cdacf9",
-  },
-  "react.props": {
-    "foreground": "#5ce2e4",
-  },
-  "react.state": {
-    "fontStyle": "italic",
-    "foreground": "#9da9ff",
+    "foreground": "#aebbff",
   },
   "readonly": {
     "fontStyle": "italic",
     "foreground": "#4dd8f0",
   },
-  "regexp": {
-    "foreground": "#80e6ff",
-  },
-  "relation.orm": {
-    "foreground": "#32acc0",
-  },
-  "router.framework": {
-    "foreground": "#a6a9ff",
-  },
-  "runtime.modern": {
-    "fontStyle": "bold",
-    "foreground": "#4ddae9",
-  },
-  "schema.validation": {
-    "fontStyle": "bold",
-    "foreground": "#57c5f6",
-  },
-  "signal.solid": {
-    "fontStyle": "bold",
-    "foreground": "#7fc9ff",
-  },
   "static": {
     "fontStyle": "italic",
     "foreground": "#66a9ff",
   },
-  "store.solid": {
-    "foreground": "#8de9ff",
-  },
-  "store.svelte": {
-    "fontStyle": "bold",
-    "foreground": "#e5a752",
-  },
   "string": {
     "foreground": "#99e6a9",
-  },
-  "struct": {
-    "foreground": "#f88d7a",
-  },
-  "test.assertion": {
-    "foreground": "#ecc447",
   },
   "test.describe": {
     "fontStyle": "bold",
     "foreground": "#7bdbaf",
   },
-  "test.fixture": {
-    "foreground": "#6ce4ef",
-  },
-  "test.mock": {
-    "fontStyle": "italic",
-    "foreground": "#d9b0f3",
-  },
-  "trait.rust": {
-    "foreground": "#a6a9ff",
-  },
-  "transition.svelte": {
-    "fontStyle": "italic",
-    "foreground": "#d0adf7",
-  },
   "type": {
     "foreground": "#f88d7a",
   },
-  "typeParameter": {
-    "foreground": "#f88d7a",
-  },
-  "typeParameter.python": {
-    "foreground": "#aebbff",
-  },
   "typescript.generic": {
     "foreground": "#78d4ff",
-  },
-  "typescript.mapped": {
-    "foreground": "#c9abfb",
-  },
-  "typescript.utility": {
-    "fontStyle": "italic",
-    "foreground": "#b2b8ff",
-  },
-  "undefined": {
-    "foreground": "#eea6b6",
-  },
-  "utility.css": {
-    "foreground": "#5fe2e6",
   },
   "variable": {
     "foreground": "#80e6ff",
@@ -2911,21 +1362,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "variable.readonly": {
     "fontStyle": "italic",
     "foreground": "#8ddaff",
-  },
-  "variable.readonly.default": {
-    "fontStyle": "italic",
-    "foreground": "#8ae8ff",
-  },
-  "vue.composable": {
-    "fontStyle": "bold",
-    "foreground": "#86da98",
-  },
-  "vue.directive": {
-    "fontStyle": "italic",
-    "foreground": "#e5a752",
-  },
-  "vue.ref": {
-    "foreground": "#67daaa",
   },
 }
 `;
@@ -3306,81 +1742,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
   "name": "Tokyo Modern",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "*.defaultLibrary": {
-      "foreground": "#4ddbe6",
-    },
-    "abstract": {
-      "fontStyle": "italic",
-      "foreground": "#9976db",
-    },
-    "action.svelte": {
-      "foreground": "#f8819c",
-    },
-    "async": {
-      "fontStyle": "italic",
-      "foreground": "#4de0d8",
-    },
-    "async.python": {
-      "fontStyle": "italic",
-      "foreground": "#70caf5",
-    },
     "boolean": {
       "foreground": "#eea6b6",
-    },
-    "channel.go": {
-      "foreground": "#4ddde2",
     },
     "class": {
       "fontStyle": "bold",
       "foreground": "#f88d7a",
     },
-    "comment": {
-      "fontStyle": "italic",
-      "foreground": "#a8bee4",
-    },
-    "comment.block": {
-      "fontStyle": "italic",
-      "foreground": "#a8bee4",
-    },
-    "comment.documentation": {
-      "foreground": "#a8bee4",
-    },
-    "comment.line": {
-      "fontStyle": "italic",
-      "foreground": "#a8bee4",
-    },
-    "component.astro": {
-      "fontStyle": "bold",
-      "foreground": "#f67770",
-    },
     "constructor": {
       "fontStyle": "bold",
-      "foreground": "#91e3e2",
+      "foreground": "#8addff",
     },
-    "decorator.python": {
-      "fontStyle": "italic",
-      "foreground": "#eabe49",
-    },
-    "derive.rust": {
-      "fontStyle": "italic",
-      "foreground": "#ccd557",
-    },
-    "effect.solid": {
-      "fontStyle": "italic",
-      "foreground": "#a2a9ff",
-    },
-    "enum": {
-      "foreground": "#f88d7a",
-    },
-    "exception": {
-      "foreground": "#ff6b7a",
+    "framework.token": {
+      "foreground": "#66a9ff",
     },
     "function": {
       "foreground": "#66a9ff",
-    },
-    "function.async": {
-      "fontStyle": "italic",
-      "foreground": "#64cff3",
     },
     "function.declaration": {
       "fontStyle": "bold",
@@ -3389,135 +1766,33 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "function.defaultLibrary": {
       "foreground": "#80e6ff",
     },
-    "goroutine.go": {
-      "fontStyle": "italic",
-      "foreground": "#6ebbff",
-    },
-    "graphql.directive": {
-      "fontStyle": "italic",
-      "foreground": "#cdacf9",
-    },
-    "graphql.field": {
-      "foreground": "#5be2db",
-    },
     "graphql.type": {
       "fontStyle": "bold",
       "foreground": "#4ddbe8",
     },
-    "interface": {
-      "fontStyle": "italic",
-      "foreground": "#f88d7a",
-    },
-    "interface.go": {
-      "foreground": "#56c8f5",
-    },
-    "island.astro": {
-      "foreground": "#77d1ff",
-    },
-    "keyword.catch": {
-      "fontStyle": "bold",
-      "foreground": "#ff6b7a",
-    },
-    "keyword.finally": {
-      "fontStyle": "bold",
-      "foreground": "#66a9ff",
-    },
-    "keyword.throw": {
-      "fontStyle": "bold",
-      "foreground": "#ff6b7a",
-    },
-    "keyword.try": {
-      "fontStyle": "bold",
-      "foreground": "#f0d440",
-    },
-    "lifetime.rust": {
-      "fontStyle": "italic",
-      "foreground": "#e68c60",
-    },
-    "macro.rust": {
-      "fontStyle": "bold",
-      "foreground": "#8ae8ff",
-    },
     "method": {
       "foreground": "#6ebbff",
-    },
-    "method.async": {
-      "fontStyle": "italic",
-      "foreground": "#4ddae9",
     },
     "method.declaration": {
       "fontStyle": "bold",
       "foreground": "#72b0ff",
     },
-    "method.readonly": {
-      "fontStyle": "italic",
-      "foreground": "#60b7f5",
-    },
-    "method.static": {
-      "fontStyle": "bold",
-      "foreground": "#8cb3ff",
-    },
-    "middleware.framework": {
-      "foreground": "#ebc148",
-    },
-    "migration.orm": {
-      "foreground": "#c6d55b",
-    },
-    "model.orm": {
-      "fontStyle": "bold",
-      "foreground": "#5fe3dc",
-    },
-    "mutation.tanstack": {
-      "foreground": "#f4796f",
-    },
-    "null": {
-      "foreground": "#eea6b6",
-    },
     "number": {
       "foreground": "#eea870",
     },
     "parameter": {
-      "foreground": "#d97fd2",
+      "foreground": "#8293e1",
     },
     "parameter.readonly": {
       "fontStyle": "italic",
-      "foreground": "#bf7cca",
-    },
-    "parameter.type": {
-      "foreground": "#76ceff",
-    },
-    "private": {
-      "foreground": "#ff6b7a",
-    },
-    "procedure.trpc": {
-      "foreground": "#7fc6ff",
+      "foreground": "#8a6ac5",
     },
     "property": {
       "foreground": "#20a09d",
     },
-    "property.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#36aaa7",
-    },
-    "property.defaultLibrary": {
-      "foreground": "#2093a8",
-    },
     "property.readonly": {
       "fontStyle": "italic",
       "foreground": "#2099a3",
-    },
-    "property.static": {
-      "fontStyle": "bold",
-      "foreground": "#266fb2",
-    },
-    "protected": {
-      "foreground": "#f0d440",
-    },
-    "public": {
-      "foreground": "#79d68c",
-    },
-    "query.tanstack": {
-      "foreground": "#93b1ff",
     },
     "react.component": {
       "fontStyle": "bold",
@@ -3525,102 +1800,28 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "react.hook": {
       "fontStyle": "bold",
-      "foreground": "#cdacf9",
-    },
-    "react.props": {
-      "foreground": "#5ce2e4",
-    },
-    "react.state": {
-      "fontStyle": "italic",
-      "foreground": "#9da9ff",
+      "foreground": "#aebbff",
     },
     "readonly": {
       "fontStyle": "italic",
       "foreground": "#4dd8f0",
     },
-    "regexp": {
-      "foreground": "#80e6ff",
-    },
-    "relation.orm": {
-      "foreground": "#32acc0",
-    },
-    "router.framework": {
-      "foreground": "#a6a9ff",
-    },
-    "runtime.modern": {
-      "fontStyle": "bold",
-      "foreground": "#4ddae9",
-    },
-    "schema.validation": {
-      "fontStyle": "bold",
-      "foreground": "#57c5f6",
-    },
-    "signal.solid": {
-      "fontStyle": "bold",
-      "foreground": "#7fc9ff",
-    },
     "static": {
       "fontStyle": "italic",
       "foreground": "#66a9ff",
     },
-    "store.solid": {
-      "foreground": "#8de9ff",
-    },
-    "store.svelte": {
-      "fontStyle": "bold",
-      "foreground": "#e5a752",
-    },
     "string": {
       "foreground": "#99e6a9",
-    },
-    "struct": {
-      "foreground": "#f88d7a",
-    },
-    "test.assertion": {
-      "foreground": "#ecc447",
     },
     "test.describe": {
       "fontStyle": "bold",
       "foreground": "#7bdbaf",
     },
-    "test.fixture": {
-      "foreground": "#6ce4ef",
-    },
-    "test.mock": {
-      "fontStyle": "italic",
-      "foreground": "#d9b0f3",
-    },
-    "trait.rust": {
-      "foreground": "#a6a9ff",
-    },
-    "transition.svelte": {
-      "fontStyle": "italic",
-      "foreground": "#d0adf7",
-    },
     "type": {
       "foreground": "#f88d7a",
     },
-    "typeParameter": {
-      "foreground": "#f88d7a",
-    },
-    "typeParameter.python": {
-      "foreground": "#aebbff",
-    },
     "typescript.generic": {
       "foreground": "#78d4ff",
-    },
-    "typescript.mapped": {
-      "foreground": "#c9abfb",
-    },
-    "typescript.utility": {
-      "fontStyle": "italic",
-      "foreground": "#b2b8ff",
-    },
-    "undefined": {
-      "foreground": "#eea6b6",
-    },
-    "utility.css": {
-      "foreground": "#5fe2e6",
     },
     "variable": {
       "foreground": "#80e6ff",
@@ -3632,97 +1833,25 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "fontStyle": "italic",
       "foreground": "#8ddaff",
     },
-    "variable.readonly.default": {
-      "fontStyle": "italic",
-      "foreground": "#8ae8ff",
-    },
-    "vue.composable": {
-      "fontStyle": "bold",
-      "foreground": "#86da98",
-    },
-    "vue.directive": {
-      "fontStyle": "italic",
-      "foreground": "#e5a752",
-    },
-    "vue.ref": {
-      "foreground": "#67daaa",
-    },
   },
   "tokenColors": [
     {
-      "name": "Italics - Comments, Storage, Keyword Flow, Vue attributes, Decorators",
+      "name": "Italics - Comments, Storage, Keyword Flow",
       "scope": [
         "comment",
-        "meta.var.expr storage.type",
         "keyword.control.flow",
         "keyword.control.return",
-        "meta.directive.vue punctuation.separator.key-value.html",
-        "meta.directive.vue entity.other.attribute-name.html",
-        "tag.decorator.js entity.name.tag.js",
-        "tag.decorator.js punctuation.definition.tag.js",
         "storage.modifier",
-        "string.quoted.docstring.multi",
-        "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-        "string.quoted.docstring.multi.python punctuation.definition.string.end",
-        "string.quoted.docstring.multi.python constant.character.escape",
       ],
       "settings": {
         "fontStyle": "italic",
       },
     },
     {
-      "name": "Fix YAML block scalar, Python Logical",
-      "scope": [
-        "keyword.control.flow.block-scalar.literal",
-        "keyword.control.flow.python",
-      ],
-      "settings": {
-        "fontStyle": "",
-      },
-    },
-    {
       "name": "Comment",
       "scope": [
         "comment",
-        "comment.block.documentation",
         "punctuation.definition.comment",
-        "comment.block.documentation punctuation",
-        "string.quoted.docstring.multi",
-        "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-        "string.quoted.docstring.multi.python punctuation.definition.string.end",
-        "string.quoted.docstring.multi.python constant.character.escape",
-      ],
-      "settings": {
-        "foreground": "#7284a6",
-      },
-    },
-    {
-      "name": "Comment Doc",
-      "scope": [
-        "keyword.operator.assignment.jsdoc",
-        "comment.block.documentation variable",
-        "comment.block.documentation storage",
-        "comment.block.documentation keyword",
-        "comment.block.documentation support",
-        "comment.block.documentation markup",
-        "comment.block.documentation markup.inline.raw.string.markdown",
-        "meta.other.type.phpdoc.php keyword.other.type.php",
-        "meta.other.type.phpdoc.php support.other.namespace.php",
-        "meta.other.type.phpdoc.php punctuation.separator.inheritance.php",
-        "keyword.other.phpdoc.php",
-        "log.date",
-      ],
-      "settings": {
-        "foreground": "#7284a6",
-      },
-    },
-    {
-      "name": "Comment Doc Emphasized",
-      "scope": [
-        "meta.other.type.phpdoc.php support.class",
-        "comment.block.documentation storage.type",
-        "comment.block.documentation punctuation.definition.block.tag",
-        "comment.block.documentation entity.name.type.instance",
       ],
       "settings": {
         "foreground": "#7284a6",
@@ -3731,12 +1860,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Number, Boolean, Undefined, Null",
       "scope": [
-        "variable.other.constant",
-        "punctuation.definition.constant",
-        "constant.language",
         "constant.numeric",
-        "support.constant",
-        "constant.other.caps",
+        "constant.language",
+        "variable.other.constant",
       ],
       "settings": {
         "foreground": "#e0945a",
@@ -3748,8 +1874,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "string",
         "constant.other.symbol",
         "constant.other.key",
-        "meta.attribute-selector",
-        "string constant.character",
       ],
       "settings": {
         "foreground": "#79d68c",
@@ -3759,7 +1883,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Colors",
       "scope": [
         "constant.other.color",
-        "constant.other.color.rgb-value.hex punctuation.definition.constant",
       ],
       "settings": {
         "foreground": "#bacaf8",
@@ -3769,17 +1892,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Invalid",
       "scope": [
         "invalid",
-        "invalid.illegal",
       ],
       "settings": {
         "foreground": "#e98864",
-      },
-    },
-    {
-      "name": "Invalid deprecated",
-      "scope": "invalid.deprecated",
-      "settings": {
-        "foreground": "#e666b3",
       },
     },
     {
@@ -3792,7 +1907,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Storage - modifier, var, const, let",
       "scope": [
-        "meta.var.expr storage.type",
         "storage.modifier",
       ],
       "settings": {
@@ -3800,52 +1914,19 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Interpolation, PHP tags, Smarty tags",
+      "name": "Interpolation, PHP tags",
       "scope": [
         "punctuation.definition.template-expression",
         "punctuation.section.embedded",
-        "meta.embedded.line.tag.smarty",
-        "support.constant.handlebars",
-        "punctuation.section.tag.twig",
       ],
       "settings": {
         "foreground": "#a0a0ff",
       },
     },
     {
-      "name": "Blade, Twig, Smarty Handlebars keywords",
-      "scope": [
-        "keyword.control.smarty",
-        "keyword.control.twig",
-        "support.constant.handlebars keyword.control",
-        "keyword.operator.comparison.twig",
-        "keyword.blade",
-        "entity.name.function.blade",
-        "meta.tag.blade keyword.other.type.php",
-      ],
-      "settings": {
-        "foreground": "#7a7aff",
-      },
-    },
-    {
-      "name": "Spread",
-      "scope": [
-        "keyword.operator.spread",
-        "keyword.operator.rest",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#eea6b6",
-      },
-    },
-    {
       "name": "Operators",
       "scope": [
         "keyword.operator",
-        "keyword.operator.arithmetic",
-        "keyword.operator.assignment",
-        "keyword.operator.bitwise.shift",
-        "entity.name.operator",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -3856,12 +1937,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Punctuation",
       "scope": [
         "punctuation",
-        "punctuation.definition.string",
-        "punctuation.definition.constant.markdown",
-        "punctuation.terminator.rule",
-        "punctuation.definition.entity",
-        "meta.property-list punctuation.separator.key-value",
-        "meta.at-rule.mixin punctuation.separator.key-value",
       ],
       "settings": {
         "foreground": "#b0b9fb",
@@ -3870,22 +1945,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Template & Misc",
       "scope": [
-        "keyword.control.as",
         "keyword.other",
-        "expression.embedded.vue punctuation.definition.tag",
-        "text.html.twig meta.tag.inline.any.html",
-        "meta.tag.template.value.twig meta.function.arguments.twig",
-        "meta.directive.vue punctuation.separator.key-value.html",
-        "punctuation.support.type.property-name",
-        "text.html.vue-html meta.tag",
-        "meta.attribute.directive",
         "punctuation.definition.keyword",
-        "punctuation.separator.inheritance.php",
-        "keyword.other.template",
-        "keyword.other.substitution",
-        "meta.at-rule.function variable.parameter.url",
-        "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
-        "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
       ],
       "settings": {
         "foreground": "#c2c07d",
@@ -3894,12 +1955,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Import, Export, From, Default",
       "scope": [
-        "keyword.control.module.js",
         "keyword.control.import",
         "keyword.control.export",
-        "keyword.control.from",
         "keyword.control.default",
-        "meta.import keyword.other",
       ],
       "settings": {
         "fontStyle": "italic",
@@ -3907,45 +1965,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Destructuring Variables",
-      "scope": [
-        "meta.object-binding-pattern-variable.js variable.other.readwrite",
-        "meta.object-binding-pattern-variable.ts variable.other.readwrite",
-        "meta.array-binding-pattern-variable variable.other.readwrite",
-        "variable.other.object.property",
-      ],
-      "settings": {
-        "foreground": "#64daaa",
-      },
-    },
-    {
       "name": "Keyword",
       "scope": [
         "keyword",
         "keyword.control",
-        "keyword.other.important",
       ],
       "settings": {
         "foreground": "#c2a9ff",
       },
     },
     {
-      "name": "Keyword SQL",
-      "scope": "keyword.other.DML",
-      "settings": {
-        "foreground": "#a0a0ff",
-      },
-    },
-    {
-      "name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
+      "name": "Keyword Operator Logical",
       "scope": [
         "keyword.operator.logical",
-        "storage.type.function",
         "keyword.operator.bitwise",
-        "keyword.operator.ternary",
         "keyword.operator.comparison",
         "keyword.operator.relational",
-        "keyword.operator.or.regexp",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -3960,39 +1995,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Tag - Custom / Unrecognized",
-      "scope": [
-        "entity.name.tag support.class.component",
-        "meta.tag.custom entity.name.tag",
-        "meta.tag.other.unrecognized.html.derivative entity.name.tag",
-        "meta.tag",
-      ],
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
       "name": "Tag Punctuation",
       "scope": [
         "punctuation.definition.tag",
-        "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
       ],
       "settings": {
         "foreground": "#a8bee4",
-      },
-    },
-    {
-      "name": "Globals, PHP Constants, etc",
-      "scope": [
-        "constant.other.php",
-        "variable.other.global.safer",
-        "variable.other.global.safer punctuation.definition.variable",
-        "variable.other.global",
-        "variable.other.global punctuation.definition.variable",
-        "constant.other",
-      ],
-      "settings": {
-        "foreground": "#99cc40",
       },
     },
     {
@@ -4000,24 +2008,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "variable",
         "support.variable",
-        "string constant.other.placeholder",
-        "variable.other.object",
-        "meta.fstring",
-        "meta.embedded.inline.phpx constant.other.php",
-      ],
-      "settings": {
-        "foreground": "#99cc40",
-      },
-    },
-    {
-      "name": "Local Variables",
-      "scope": [
-        "variable",
-        "support.variable",
-        "string constant.other.placeholder",
-        "variable.other.object",
-        "meta.fstring",
-        "meta.embedded.inline.phpx constant.other.php",
       ],
       "settings": {
         "foreground": "#99cc40",
@@ -4026,18 +2016,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Function Arguments",
       "scope": [
-        "variable.parameter.handlebars",
-        "meta.function-call meta.function-call.arguments",
+        "variable.parameter",
       ],
       "settings": {
         "foreground": "#7a7aff",
-      },
-    },
-    {
-      "name": "Variable Array Key",
-      "scope": "meta.array.literal variable",
-      "settings": {
-        "foreground": "#9976db",
       },
     },
     {
@@ -4045,65 +2027,26 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "meta.object-literal.key",
         "entity.name.type.hcl",
-        "string.alias.graphql",
-        "string.unquoted.graphql",
-        "string.unquoted.alias.graphql",
-        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-        "meta.field.declaration.ts variable.object.property",
-        "meta.block entity.name.label",
       ],
       "settings": {
         "foreground": "#9976db",
       },
     },
     {
-      "name": "Object Property - General",
+      "name": "Object Property",
       "scope": [
         "variable.other.property",
         "support.variable.property",
-        "support.variable.property.dom",
-        "meta.function-call variable.other.object.property",
       ],
       "settings": {
         "foreground": "#9976db",
-      },
-    },
-    {
-      "name": "Object Property - Specific",
-      "scope": "variable.other.object.property",
-      "settings": {
-        "foreground": "#9976db",
-      },
-    },
-    {
-      "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
-      "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
-      "settings": {
-        "foreground": "#9976db",
-      },
-    },
-    {
-      "name": "C-related Block Level Variables",
-      "scope": "source.cpp meta.block variable.other",
-      "settings": {
-        "foreground": "#4de0d8",
-      },
-    },
-    {
-      "name": "Other Variable",
-      "scope": "support.other.variable",
-      "settings": {
-        "foreground": "#99cc40",
       },
     },
     {
       "name": "Methods",
       "scope": [
-        "meta.class-method.js entity.name.function.js",
-        "entity.name.method.js",
+        "entity.name.method",
         "variable.function.constructor",
-        "keyword.other.special-method",
-        "storage.type.cs",
       ],
       "settings": {
         "foreground": "#9976db",
@@ -4113,50 +2056,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Function Definition",
       "scope": [
         "entity.name.function",
-        "variable.other.enummember",
-        "meta.function-call",
-        "meta.function-call entity.name.function",
         "variable.function",
-        "meta.definition.method entity.name.function",
-        "meta.object-literal entity.name.function",
       ],
       "settings": {
         "foreground": "#9976db",
       },
     },
     {
-      "name": "Function Argument",
-      "scope": [
-        "variable.parameter.function.language.special",
-        "variable.parameter",
-        "meta.function.parameters punctuation.definition.variable",
-        "meta.function.parameter variable",
-      ],
-      "settings": {
-        "foreground": "#7a7aff",
-      },
-    },
-    {
       "name": "Constant, Tag Attribute",
       "scope": [
-        "keyword.other.type.php",
-        "storage.type.php",
         "constant.character",
         "constant.escape",
-        "keyword.other.unit",
-      ],
-      "settings": {
-        "foreground": "#99cc40",
-      },
-    },
-    {
-      "name": "Variable Definition",
-      "scope": [
-        "meta.definition.variable variable.other.constant",
-        "meta.definition.variable variable.other.readwrite",
-        "variable.declaration.hcl variable.other.readwrite.hcl",
-        "meta.mapping.key.hcl variable.other.readwrite.hcl",
-        "variable.other.declaration",
       ],
       "settings": {
         "foreground": "#99cc40",
@@ -4174,18 +2084,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "support.class",
         "support.type",
-        "variable.other.readwrite.alias",
-        "support.other.namespace.use.php",
-        "meta.use.php",
-        "support.other.namespace.php",
-        "support.type.sys-types",
-        "support.variable.dom",
-        "support.constant.math",
-        "support.type.object.module",
-        "support.constant.json",
-        "entity.name.namespace",
-        "meta.import.qualifier",
-        "variable.other.constant.object",
+        "support.function",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -4200,77 +2099,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Support Function",
-      "scope": "support.function",
-      "settings": {
-        "foreground": "#9976db",
-      },
-    },
-    {
-      "name": "Indigo Color Usage",
+      "name": "CSS Property",
       "scope": [
-        "entity.name.type.indigo",
-        "support.type.indigo",
-        "variable.other.indigo",
-      ],
-      "settings": {
-        "foreground": "#7a7aff",
-      },
-    },
-    {
-      "name": "Lime Color Usage",
-      "scope": [
-        "entity.name.type.lime",
-        "support.type.lime",
-        "variable.other.lime",
-      ],
-      "settings": {
-        "foreground": "#99cc40",
-      },
-    },
-    {
-      "name": "purple Color Usage",
-      "scope": [
-        "entity.name.type.purple",
-        "support.type.purple",
-        "variable.other.purple",
-      ],
-      "settings": {
-        "foreground": "#9976db",
-      },
-    },
-    {
-      "name": "CSS Class and Support",
-      "scope": [
-        "source.css support.type.property-name",
-        "source.sass support.type.property-name",
-        "source.scss support.type.property-name",
-        "source.less support.type.property-name",
-        "source.stylus support.type.property-name",
-        "source.postcss support.type.property-name",
-        "support.type.property-name.css",
-        "support.type.vendored.property-name",
-        "support.type.map.key",
+        "support.type.property-name",
       ],
       "settings": {
         "foreground": "#66a9ff",
       },
     },
     {
-      "name": "CSS Font",
-      "scope": [
-        "support.constant.font-name",
-        "meta.definition.variable",
-      ],
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
       "name": "CSS Class",
       "scope": [
         "entity.other.attribute-name.class",
-        "meta.at-rule.mixin.scss entity.name.function.scss",
       ],
       "settings": {
         "foreground": "#99cc40",
@@ -4291,85 +2131,21 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "CSS Tag Reference, Pseudo & Class Punctuation",
-      "scope": [
-        "entity.other.attribute-name.pseudo-class punctuation.definition.entity",
-        "entity.other.attribute-name.pseudo-element punctuation.definition.entity",
-        "entity.other.attribute-name.class punctuation.definition.entity",
-        "entity.name.tag.reference",
-      ],
-      "settings": {
-        "foreground": "#a8bee4",
-      },
-    },
-    {
       "name": "CSS Punctuation",
-      "scope": "meta.property-list",
-      "settings": {
-        "foreground": "#66a9ff",
-      },
-    },
-    {
-      "name": "CSS at-rule fix",
       "scope": [
-        "meta.property-list meta.at-rule.if",
-        "meta.at-rule.return variable.parameter.url",
-        "meta.property-list meta.at-rule.else",
+        "punctuation.definition.entity",
       ],
-      "settings": {
-        "foreground": "#99cc40",
-      },
-    },
-    {
-      "name": "CSS Parent Selector Entity",
-      "scope": [
-        "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css",
-      ],
-      "settings": {
-        "foreground": "#4de0d8",
-      },
-    },
-    {
-      "name": "CSS Punctuation comma fix",
-      "scope": "meta.property-list meta.property-list",
-      "settings": {
-        "foreground": "#66a9ff",
-      },
-    },
-    {
-      "name": "SCSS @",
-      "scope": [
-        "meta.at-rule.mixin keyword.control.at-rule.mixin",
-        "meta.at-rule.include entity.name.function.scss",
-        "meta.at-rule.include keyword.control.at-rule.include",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "SCSS Mixins, Extends, Include Keyword",
-      "scope": [
-        "keyword.control.at-rule.include punctuation.definition.keyword",
-        "keyword.control.at-rule.mixin punctuation.definition.keyword",
-        "meta.at-rule.include keyword.control.at-rule.include",
-        "keyword.control.at-rule.extend punctuation.definition.keyword",
-        "meta.at-rule.extend keyword.control.at-rule.extend",
-        "entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
-        "meta.at-rule.media keyword.control.at-rule.media",
-        "meta.at-rule.mixin keyword.control.at-rule.mixin",
-        "meta.at-rule.function keyword.control.at-rule.function",
-        "keyword.control punctuation.definition.keyword",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "SCSS Include Mixin Argument",
-      "scope": "meta.property-list meta.at-rule.include",
       "settings": {
         "foreground": "#a8bee4",
+      },
+    },
+    {
+      "name": "CSS at-rules",
+      "scope": [
+        "keyword.control.at-rule",
+      ],
+      "settings": {
+        "foreground": "#e666b3",
       },
     },
     {
@@ -4380,95 +2156,32 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "CSS IDs",
-      "scope": "source.sass keyword.control",
-      "settings": {
-        "foreground": "#66a9ff",
-      },
-    },
-    {
       "name": "CSS pseudo selectors",
       "scope": [
         "entity.other.attribute-name.pseudo-class",
         "entity.other.attribute-name.pseudo-element",
-        "entity.other.attribute-name.placeholder",
-        "meta.property-list meta.property-value",
       ],
       "settings": {
         "foreground": "#e666b3",
       },
     },
     {
-      "name": "Inserted",
-      "scope": "markup.inserted",
+      "name": "Inserted, Deleted, Changed",
+      "scope": [
+        "markup.inserted",
+        "markup.deleted",
+        "markup.changed",
+      ],
       "settings": {
         "foreground": "#80f0e6",
       },
     },
     {
-      "name": "Deleted",
-      "scope": "markup.deleted",
-      "settings": {
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
-      "name": "Changed",
-      "scope": "markup.changed",
-      "settings": {
-        "foreground": "#7fb5ff",
-      },
-    },
-    {
       "name": "Regular Expressions",
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "#b3e666",
-      },
-    },
-    {
-      "name": "Regular Expressions - Punctuation",
-      "scope": "punctuation.definition.group",
-      "settings": {
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
-      "name": "Regular Expressions - Character Class",
       "scope": [
-        "constant.other.character-class.regexp",
+        "string.regexp",
+        "constant.character.escape",
       ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Regular Expressions - Character Class Set",
-      "scope": [
-        "constant.other.character-class.set.regexp",
-        "punctuation.definition.character-class.regexp",
-      ],
-      "settings": {
-        "foreground": "#f0d440",
-      },
-    },
-    {
-      "name": "Regular Expressions - Quantifier",
-      "scope": "keyword.operator.quantifier.regexp",
-      "settings": {
-        "foreground": "#b3e666",
-      },
-    },
-    {
-      "name": "Regular Expressions - Backslash",
-      "scope": "constant.character.escape.backslash",
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Escape Characters",
-      "scope": "constant.character.escape",
       "settings": {
         "foreground": "#b3e666",
       },
@@ -4476,43 +2189,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Decorators",
       "scope": [
-        "tag.decorator.js entity.name.tag.js",
-        "tag.decorator.js punctuation.definition.tag.js",
+        "tag.decorator.js",
       ],
       "settings": {
         "foreground": "#66a9ff",
       },
     },
     {
-      "name": "CSS Units",
-      "scope": "keyword.other.unit",
-      "settings": {
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
       "name": "HTML Attributes",
       "scope": [
         "entity.other.attribute-name",
-        "text.html.basic entity.other.attribute-name.html",
-        "text.html.basic entity.other.attribute-name",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "HTML Character Entity",
-      "scope": "text.html constant.character.entity",
-      "settings": {
-        "foreground": "#b3e666",
-      },
-    },
-    {
-      "name": "Vue (Vetur / deprecated) Template attributes",
-      "scope": [
-        "entity.other.attribute-name.id.html",
-        "meta.directive.vue entity.other.attribute-name.html",
       ],
       "settings": {
         "foreground": "#e666b3",
@@ -4600,99 +2286,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Plain Punctuation",
-      "scope": "punctuation.definition.list_item.markdown",
-      "settings": {
-        "foreground": "#85baff",
-      },
-    },
-    {
-      "name": "Block Punctuation",
+      "name": "Markdown - Heading",
       "scope": [
-        "meta.block",
-        "meta.brace",
-        "punctuation.definition.block",
-        "punctuation.definition.use",
-        "punctuation.definition.class",
-        "punctuation.definition.begin.bracket",
-        "punctuation.definition.end.bracket",
-        "punctuation.definition.switch-expression.begin.bracket",
-        "punctuation.definition.switch-expression.end.bracket",
-        "punctuation.definition.section.switch-block.begin.bracket",
-        "punctuation.definition.section.switch-block.end.bracket",
-        "punctuation.definition.group.shell",
-        "punctuation.definition.parameters",
-        "punctuation.definition.arguments",
-        "punctuation.definition.dictionary",
-        "punctuation.definition.array",
-        "punctuation.section",
-      ],
-      "settings": {
-        "foreground": "#85baff",
-      },
-    },
-    {
-      "name": "Markdown - Plain",
-      "scope": [
-        "meta.embedded.block",
-      ],
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "HTML text",
-      "scope": [
-        "meta.tag JSXNested",
-        "meta.jsx.children",
-        "text.html",
-        "text.log",
-      ],
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Markdown - Markup Raw Inline",
-      "scope": "text.html.markdown markup.inline.raw.markdown",
-      "settings": {
-        "foreground": "#c2a9ff",
-      },
-    },
-    {
-      "name": "Markdown - Markup Raw Inline Punctuation",
-      "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
-      "settings": {
-        "foreground": "#a8bee4",
-      },
-    },
-    {
-      "name": "Markdown - Heading 1",
-      "scope": [
-        "heading.1.markdown entity.name",
-        "heading.1.markdown punctuation.definition.heading.markdown",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#b3e666",
-      },
-    },
-    {
-      "name": "Markdown - Heading 2",
-      "scope": [
-        "heading.2.markdown entity.name",
-        "heading.2.markdown punctuation.definition.heading.markdown",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#9ecf4a",
-      },
-    },
-    {
-      "name": "Markdown - Heading 3",
-      "scope": [
-        "heading.3.markdown entity.name",
-        "heading.3.markdown punctuation.definition.heading.markdown",
+        "heading.1.markdown",
+        "heading.2.markdown",
+        "heading.3.markdown",
+        "heading.4.markdown",
+        "heading.5.markdown",
+        "heading.6.markdown",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -4700,102 +2301,21 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "Markdown - Heading 4",
-      "scope": [
-        "heading.4.markdown entity.name",
-        "heading.4.markdown punctuation.definition.heading.markdown",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#5e9beb",
-      },
-    },
-    {
-      "name": "Markdown - Heading 5",
-      "scope": [
-        "heading.5.markdown entity.name",
-        "heading.5.markdown punctuation.definition.heading.markdown",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Markdown - Heading 6",
-      "scope": [
-        "heading.6.markdown entity.name",
-        "heading.6.markdown punctuation.definition.heading.markdown",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#80b1f4",
-      },
-    },
-    {
-      "name": "Markup - Italic",
+      "name": "Markup - Italic, Bold",
       "scope": [
         "markup.italic",
-        "markup.italic punctuation",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Markup - Bold",
-      "scope": [
         "markup.bold",
-        "markup.bold punctuation",
       ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Markup - Bold-Italic",
-      "scope": [
-        "markup.bold markup.italic",
-        "markup.bold markup.italic punctuation",
-      ],
-      "settings": {
-        "fontStyle": "bold italic",
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Markup - Underline",
-      "scope": [
-        "markup.underline",
-        "markup.underline punctuation",
-      ],
-      "settings": {
-        "fontStyle": "underline",
-      },
-    },
-    {
-      "name": "Markdown - Blockquote",
-      "scope": "markup.quote punctuation.definition.blockquote.markdown",
-      "settings": {
-        "foreground": "#a8bee4",
-      },
-    },
-    {
-      "name": "Markup - Quote",
-      "scope": "markup.quote",
       "settings": {
         "fontStyle": "italic",
+        "foreground": "#bacaf8",
       },
     },
     {
       "name": "Markdown - Link",
       "scope": [
-        "string.other.link",
         "markup.underline.link",
         "constant.other.reference.link.markdown",
-        "string.other.link.description.title.markdown",
       ],
       "settings": {
         "foreground": "#4de0d8",
@@ -4806,112 +2326,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "markup.fenced_code.block.markdown",
         "markup.inline.raw.string.markdown",
-        "variable.language.fenced.markdown",
       ],
       "settings": {
         "foreground": "#b3e666",
       },
     },
     {
-      "name": "Markdown - Separator",
-      "scope": "meta.separator",
+      "name": "Markup - Quote",
+      "scope": "markup.quote",
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#a8bee4",
-      },
-    },
-    {
-      "name": "Markup - Table",
-      "scope": "markup.table",
-      "settings": {
-        "foreground": "#8cbfff",
-      },
-    },
-    {
-      "name": "Token - Info",
-      "scope": "token.info-token",
-      "settings": {
-        "foreground": "#b3e666",
-      },
-    },
-    {
-      "name": "Token - Warn",
-      "scope": "token.warn-token",
-      "settings": {
-        "foreground": "#ffe766",
-      },
-    },
-    {
-      "name": "Token - Error",
-      "scope": "token.error-token",
-      "settings": {
-        "foreground": "#eea6b6",
-      },
-    },
-    {
-      "name": "Token - Debug",
-      "scope": "token.debug-token",
-      "settings": {
-        "foreground": "#c2a9ff",
-      },
-    },
-    {
-      "name": "Apache Tag",
-      "scope": "entity.tag.apacheconf",
-      "settings": {
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
-      "name": "Preprocessor",
-      "scope": [
-        "meta.preprocessor",
-      ],
-      "settings": {
-        "foreground": "#4de0d8",
-      },
-    },
-    {
-      "name": "ENV value",
-      "scope": "source.env",
-      "settings": {
-        "foreground": "#66a9ff",
-      },
-    },
-    {
-      "name": "Sub-methods",
-      "scope": [
-        "entity.name.module.js",
-        "variable.import.parameter.js",
-        "variable.other.class.js",
-      ],
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Language methods",
-      "scope": "variable.language",
-      "settings": {
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
-      "name": "Variable punctuation",
-      "scope": "variable.other punctuation.definition.variable",
-      "settings": {
-        "foreground": "#bacaf8",
-      },
-    },
-    {
-      "name": "Keyword this with Punctuation, ES7 Bind Operator",
-      "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js",
-        "variable.language.this punctuation.definition.variable",
-        "keyword.other.this",
-      ],
-      "settings": {
-        "foreground": "#ff6b7a",
+        "fontStyle": "italic",
       },
     },
     {
@@ -4919,9 +2343,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "entity.name.component",
         "support.class.component",
-        "meta.component.tsx entity.name.class",
-        "entity.name.tag.jsx",
-        "meta.jsx.children.jsx entity.name.tag",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -4931,12 +2352,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "TypeScript Types",
       "scope": [
-        "keyword.type.ts",
-        "storage.type.interface",
         "entity.name.type",
         "type.alias",
         "type.parameter",
-        "type.argument",
       ],
       "settings": {
         "foreground": "#e666b3",
@@ -4947,9 +2365,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "type.name.graphql",
         "field.name.graphql",
-        "enum.name.graphql",
-        "interface.name.graphql",
-        "union.name.graphql",
       ],
       "settings": {
         "foreground": "#e666b3",
@@ -4958,35 +2373,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     {
       "name": "Tailwind Classes",
       "scope": [
-        "string.quoted.other.tailwind",
         "entity.other.attribute-name.class.tailwind",
-        "meta.attribute-with-value.class.html string.quoted.single.tailwind",
       ],
       "settings": {
         "foreground": "#4de0d8",
-      },
-    },
-    {
-      "name": "Routing Components",
-      "scope": [
-        "entity.name.tag.custom",
-        "meta.import.react entity.name.tag",
-        "support.component.react",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#66a9ff",
-      },
-    },
-    {
-      "name": "State Management",
-      "scope": [
-        "variable.other.object.state",
-        "entity.name.function.state",
-        "support.function.state",
-      ],
-      "settings": {
-        "foreground": "#e0945a",
       },
     },
     {
@@ -4994,7 +2384,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "support.function.react-hooks",
         "entity.name.function.hook",
-        "variable.other.hook",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -5002,36 +2391,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "TypeScript Generics",
-      "scope": [
-        "meta.generic.ts",
-        "type.parameter.generic",
-        "storage.type.generic",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Prisma Schema",
-      "scope": [
-        "keyword.model.prisma",
-        "entity.name.type.prisma",
-        "support.type.prisma",
-        "variable.other.property.prisma",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#4de0d8",
-      },
-    },
-    {
       "name": "Testing Frameworks",
       "scope": [
         "support.function.test",
-        "keyword.control.test",
         "entity.name.function.test",
-        "variable.other.test",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -5039,243 +2402,20 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
-      "name": "CSS-in-JS",
+      "name": "Modern Frameworks",
       "scope": [
-        "entity.name.tag.styled",
-        "support.function.styled",
-        "keyword.control.template.styled",
-        "string.template.styled",
-      ],
-      "settings": {
-        "foreground": "#f59e0b",
-      },
-    },
-    {
-      "name": "Astro/Svelte Components",
-      "scope": [
-        "entity.name.tag.astro",
-        "entity.name.tag.svelte",
-        "meta.component.astro",
-        "meta.component.svelte",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#ff6b7a",
-      },
-    },
-    {
-      "name": "API Resolvers",
-      "scope": [
-        "entity.name.function.resolver",
-        "support.function.resolver",
-        "variable.function.resolver",
-      ],
-      "settings": {
-        "foreground": "#f0d440",
-      },
-    },
-    {
-      "name": "Validation Schemas",
-      "scope": [
+        "support.function.solid",
+        "support.function.drizzle",
+        "support.function.hono",
         "support.function.validation",
-        "entity.name.type.validation",
-        "keyword.control.validation",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Data Fetching",
-      "scope": [
         "support.function.query",
-        "entity.name.function.query",
-        "variable.other.query",
-      ],
-      "settings": {
-        "foreground": "#7fb5ff",
-      },
-    },
-    {
-      "name": "Rust Macros",
-      "scope": [
-        "entity.name.function.macro.rust",
+        "entity.name.function.resolver",
         "support.function.macro.rust",
-        "meta.macro.rust",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Rust Lifetime",
-      "scope": [
-        "storage.modifier.lifetime.rust",
-        "entity.name.type.lifetime.rust",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#e0945a",
-      },
-    },
-    {
-      "name": "Go Functions",
-      "scope": [
         "entity.name.function.go",
-        "support.function.go",
+        "support.function.styled",
       ],
       "settings": {
         "foreground": "#66a9ff",
-      },
-    },
-    {
-      "name": "Python Type Hints",
-      "scope": [
-        "meta.function.parameters.python support.type.python",
-        "meta.function.return-type.python",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Python Decorators",
-      "scope": [
-        "entity.name.function.decorator.python",
-        "meta.function.decorator.python",
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#f0d440",
-      },
-    },
-    {
-      "name": "Bun/Deno APIs",
-      "scope": [
-        "support.variable.bun",
-        "support.variable.deno",
-        "support.class.bun",
-        "support.class.deno",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Solid.js Signals",
-      "scope": [
-        "support.function.solid",
-        "entity.name.function.signal",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#7fb5ff",
-      },
-    },
-    {
-      "name": "Qwik Components",
-      "scope": [
-        "entity.name.tag.qwik",
-        "support.class.component.qwik",
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "HTMX Attributes",
-      "scope": [
-        "entity.other.attribute-name.html.htmx",
-        "meta.attribute.htmx",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Drizzle ORM",
-      "scope": [
-        "support.function.drizzle",
-        "entity.name.type.drizzle",
-      ],
-      "settings": {
-        "foreground": "#10b981",
-      },
-    },
-    {
-      "name": "Hono Routes",
-      "scope": [
-        "support.function.hono",
-        "entity.name.function.route.hono",
-      ],
-      "settings": {
-        "foreground": "#e0945a",
-      },
-    },
-    {
-      "name": "Biome Config",
-      "scope": [
-        "support.type.property-name.biome",
-        "entity.name.tag.biome",
-      ],
-      "settings": {
-        "foreground": "#f0d440",
-      },
-    },
-    {
-      "name": "WebAssembly",
-      "scope": [
-        "storage.type.wasm",
-        "keyword.control.wasm",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
-      },
-    },
-    {
-      "name": "Zig Language",
-      "scope": [
-        "storage.type.zig",
-        "keyword.control.zig",
-      ],
-      "settings": {
-        "foreground": "#e0945a",
-      },
-    },
-    {
-      "name": "Modern Framework Indigo",
-      "scope": [
-        "support.type.indigo.modern",
-        "entity.name.type.indigo.modern",
-        "variable.other.indigo.modern",
-      ],
-      "settings": {
-        "foreground": "#7a7aff",
-      },
-    },
-    {
-      "name": "Modern Framework Lime",
-      "scope": [
-        "support.type.lime.modern",
-        "entity.name.type.lime.modern",
-        "variable.other.lime.modern",
-      ],
-      "settings": {
-        "foreground": "#99cc40",
-      },
-    },
-    {
-      "name": "Modern Framework Magenta",
-      "scope": [
-        "support.type.magenta.modern",
-        "entity.name.type.magenta.modern",
-        "variable.other.magenta.modern",
-      ],
-      "settings": {
-        "foreground": "#e666b3",
       },
     },
   ],
@@ -5286,79 +2426,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
 exports[`Snapshot Tests - Generated Theme > should match the expected theme token colors snapshot 1`] = `
 [
   {
-    "name": "Italics - Comments, Storage, Keyword Flow, Vue attributes, Decorators",
+    "name": "Italics - Comments, Storage, Keyword Flow",
     "scope": [
       "comment",
-      "meta.var.expr storage.type",
       "keyword.control.flow",
       "keyword.control.return",
-      "meta.directive.vue punctuation.separator.key-value.html",
-      "meta.directive.vue entity.other.attribute-name.html",
-      "tag.decorator.js entity.name.tag.js",
-      "tag.decorator.js punctuation.definition.tag.js",
       "storage.modifier",
-      "string.quoted.docstring.multi",
-      "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-      "string.quoted.docstring.multi.python punctuation.definition.string.end",
-      "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
       "fontStyle": "italic",
     },
   },
   {
-    "name": "Fix YAML block scalar, Python Logical",
-    "scope": [
-      "keyword.control.flow.block-scalar.literal",
-      "keyword.control.flow.python",
-    ],
-    "settings": {
-      "fontStyle": "",
-    },
-  },
-  {
     "name": "Comment",
     "scope": [
       "comment",
-      "comment.block.documentation",
       "punctuation.definition.comment",
-      "comment.block.documentation punctuation",
-      "string.quoted.docstring.multi",
-      "string.quoted.docstring.multi.python punctuation.definition.string.begin",
-      "string.quoted.docstring.multi.python punctuation.definition.string.end",
-      "string.quoted.docstring.multi.python constant.character.escape",
-    ],
-    "settings": {
-      "foreground": "#7284a6",
-    },
-  },
-  {
-    "name": "Comment Doc",
-    "scope": [
-      "keyword.operator.assignment.jsdoc",
-      "comment.block.documentation variable",
-      "comment.block.documentation storage",
-      "comment.block.documentation keyword",
-      "comment.block.documentation support",
-      "comment.block.documentation markup",
-      "comment.block.documentation markup.inline.raw.string.markdown",
-      "meta.other.type.phpdoc.php keyword.other.type.php",
-      "meta.other.type.phpdoc.php support.other.namespace.php",
-      "meta.other.type.phpdoc.php punctuation.separator.inheritance.php",
-      "keyword.other.phpdoc.php",
-      "log.date",
-    ],
-    "settings": {
-      "foreground": "#7284a6",
-    },
-  },
-  {
-    "name": "Comment Doc Emphasized",
-    "scope": [
-      "meta.other.type.phpdoc.php support.class",
-      "comment.block.documentation storage.type",
-      "comment.block.documentation punctuation.definition.block.tag",
-      "comment.block.documentation entity.name.type.instance",
     ],
     "settings": {
       "foreground": "#7284a6",
@@ -5367,12 +2450,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Number, Boolean, Undefined, Null",
     "scope": [
-      "variable.other.constant",
-      "punctuation.definition.constant",
-      "constant.language",
       "constant.numeric",
-      "support.constant",
-      "constant.other.caps",
+      "constant.language",
+      "variable.other.constant",
     ],
     "settings": {
       "foreground": "#e0945a",
@@ -5384,8 +2464,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "string",
       "constant.other.symbol",
       "constant.other.key",
-      "meta.attribute-selector",
-      "string constant.character",
     ],
     "settings": {
       "foreground": "#79d68c",
@@ -5395,7 +2473,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Colors",
     "scope": [
       "constant.other.color",
-      "constant.other.color.rgb-value.hex punctuation.definition.constant",
     ],
     "settings": {
       "foreground": "#bacaf8",
@@ -5405,17 +2482,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Invalid",
     "scope": [
       "invalid",
-      "invalid.illegal",
     ],
     "settings": {
       "foreground": "#e98864",
-    },
-  },
-  {
-    "name": "Invalid deprecated",
-    "scope": "invalid.deprecated",
-    "settings": {
-      "foreground": "#e666b3",
     },
   },
   {
@@ -5428,7 +2497,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Storage - modifier, var, const, let",
     "scope": [
-      "meta.var.expr storage.type",
       "storage.modifier",
     ],
     "settings": {
@@ -5436,52 +2504,19 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Interpolation, PHP tags, Smarty tags",
+    "name": "Interpolation, PHP tags",
     "scope": [
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
-      "meta.embedded.line.tag.smarty",
-      "support.constant.handlebars",
-      "punctuation.section.tag.twig",
     ],
     "settings": {
       "foreground": "#a0a0ff",
     },
   },
   {
-    "name": "Blade, Twig, Smarty Handlebars keywords",
-    "scope": [
-      "keyword.control.smarty",
-      "keyword.control.twig",
-      "support.constant.handlebars keyword.control",
-      "keyword.operator.comparison.twig",
-      "keyword.blade",
-      "entity.name.function.blade",
-      "meta.tag.blade keyword.other.type.php",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Spread",
-    "scope": [
-      "keyword.operator.spread",
-      "keyword.operator.rest",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#eea6b6",
-    },
-  },
-  {
     "name": "Operators",
     "scope": [
       "keyword.operator",
-      "keyword.operator.arithmetic",
-      "keyword.operator.assignment",
-      "keyword.operator.bitwise.shift",
-      "entity.name.operator",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -5492,12 +2527,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Punctuation",
     "scope": [
       "punctuation",
-      "punctuation.definition.string",
-      "punctuation.definition.constant.markdown",
-      "punctuation.terminator.rule",
-      "punctuation.definition.entity",
-      "meta.property-list punctuation.separator.key-value",
-      "meta.at-rule.mixin punctuation.separator.key-value",
     ],
     "settings": {
       "foreground": "#b0b9fb",
@@ -5506,22 +2535,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Template & Misc",
     "scope": [
-      "keyword.control.as",
       "keyword.other",
-      "expression.embedded.vue punctuation.definition.tag",
-      "text.html.twig meta.tag.inline.any.html",
-      "meta.tag.template.value.twig meta.function.arguments.twig",
-      "meta.directive.vue punctuation.separator.key-value.html",
-      "punctuation.support.type.property-name",
-      "text.html.vue-html meta.tag",
-      "meta.attribute.directive",
       "punctuation.definition.keyword",
-      "punctuation.separator.inheritance.php",
-      "keyword.other.template",
-      "keyword.other.substitution",
-      "meta.at-rule.function variable.parameter.url",
-      "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
-      "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
     ],
     "settings": {
       "foreground": "#c2c07d",
@@ -5530,12 +2545,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Import, Export, From, Default",
     "scope": [
-      "keyword.control.module.js",
       "keyword.control.import",
       "keyword.control.export",
-      "keyword.control.from",
       "keyword.control.default",
-      "meta.import keyword.other",
     ],
     "settings": {
       "fontStyle": "italic",
@@ -5543,45 +2555,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Destructuring Variables",
-    "scope": [
-      "meta.object-binding-pattern-variable.js variable.other.readwrite",
-      "meta.object-binding-pattern-variable.ts variable.other.readwrite",
-      "meta.array-binding-pattern-variable variable.other.readwrite",
-      "variable.other.object.property",
-    ],
-    "settings": {
-      "foreground": "#64daaa",
-    },
-  },
-  {
     "name": "Keyword",
     "scope": [
       "keyword",
       "keyword.control",
-      "keyword.other.important",
     ],
     "settings": {
       "foreground": "#c2a9ff",
     },
   },
   {
-    "name": "Keyword SQL",
-    "scope": "keyword.other.DML",
-    "settings": {
-      "foreground": "#a0a0ff",
-    },
-  },
-  {
-    "name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
+    "name": "Keyword Operator Logical",
     "scope": [
       "keyword.operator.logical",
-      "storage.type.function",
       "keyword.operator.bitwise",
-      "keyword.operator.ternary",
       "keyword.operator.comparison",
       "keyword.operator.relational",
-      "keyword.operator.or.regexp",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -5596,39 +2585,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Tag - Custom / Unrecognized",
-    "scope": [
-      "entity.name.tag support.class.component",
-      "meta.tag.custom entity.name.tag",
-      "meta.tag.other.unrecognized.html.derivative entity.name.tag",
-      "meta.tag",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
     "name": "Tag Punctuation",
     "scope": [
       "punctuation.definition.tag",
-      "text.html.php meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html text.html.basic",
     ],
     "settings": {
       "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Globals, PHP Constants, etc",
-    "scope": [
-      "constant.other.php",
-      "variable.other.global.safer",
-      "variable.other.global.safer punctuation.definition.variable",
-      "variable.other.global",
-      "variable.other.global punctuation.definition.variable",
-      "constant.other",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
     },
   },
   {
@@ -5636,24 +2598,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "variable",
       "support.variable",
-      "string constant.other.placeholder",
-      "variable.other.object",
-      "meta.fstring",
-      "meta.embedded.inline.phpx constant.other.php",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Local Variables",
-    "scope": [
-      "variable",
-      "support.variable",
-      "string constant.other.placeholder",
-      "variable.other.object",
-      "meta.fstring",
-      "meta.embedded.inline.phpx constant.other.php",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -5662,18 +2606,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Function Arguments",
     "scope": [
-      "variable.parameter.handlebars",
-      "meta.function-call meta.function-call.arguments",
+      "variable.parameter",
     ],
     "settings": {
       "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Variable Array Key",
-    "scope": "meta.array.literal variable",
-    "settings": {
-      "foreground": "#9976db",
     },
   },
   {
@@ -5681,65 +2617,26 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "meta.object-literal.key",
       "entity.name.type.hcl",
-      "string.alias.graphql",
-      "string.unquoted.graphql",
-      "string.unquoted.alias.graphql",
-      "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-      "meta.field.declaration.ts variable.object.property",
-      "meta.block entity.name.label",
     ],
     "settings": {
       "foreground": "#9976db",
     },
   },
   {
-    "name": "Object Property - General",
+    "name": "Object Property",
     "scope": [
       "variable.other.property",
       "support.variable.property",
-      "support.variable.property.dom",
-      "meta.function-call variable.other.object.property",
     ],
     "settings": {
       "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Object Property - Specific",
-    "scope": "variable.other.object.property",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Object Literal Member lvl 3 (Vue Prop Validation)",
-    "scope": "meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.objectliteral meta.object.member meta.object-literal.key",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "C-related Block Level Variables",
-    "scope": "source.cpp meta.block variable.other",
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "Other Variable",
-    "scope": "support.other.variable",
-    "settings": {
-      "foreground": "#99cc40",
     },
   },
   {
     "name": "Methods",
     "scope": [
-      "meta.class-method.js entity.name.function.js",
-      "entity.name.method.js",
+      "entity.name.method",
       "variable.function.constructor",
-      "keyword.other.special-method",
-      "storage.type.cs",
     ],
     "settings": {
       "foreground": "#9976db",
@@ -5749,50 +2646,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Function Definition",
     "scope": [
       "entity.name.function",
-      "variable.other.enummember",
-      "meta.function-call",
-      "meta.function-call entity.name.function",
       "variable.function",
-      "meta.definition.method entity.name.function",
-      "meta.object-literal entity.name.function",
     ],
     "settings": {
       "foreground": "#9976db",
     },
   },
   {
-    "name": "Function Argument",
-    "scope": [
-      "variable.parameter.function.language.special",
-      "variable.parameter",
-      "meta.function.parameters punctuation.definition.variable",
-      "meta.function.parameter variable",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
     "name": "Constant, Tag Attribute",
     "scope": [
-      "keyword.other.type.php",
-      "storage.type.php",
       "constant.character",
       "constant.escape",
-      "keyword.other.unit",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Variable Definition",
-    "scope": [
-      "meta.definition.variable variable.other.constant",
-      "meta.definition.variable variable.other.readwrite",
-      "variable.declaration.hcl variable.other.readwrite.hcl",
-      "meta.mapping.key.hcl variable.other.readwrite.hcl",
-      "variable.other.declaration",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -5810,18 +2674,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "support.class",
       "support.type",
-      "variable.other.readwrite.alias",
-      "support.other.namespace.use.php",
-      "meta.use.php",
-      "support.other.namespace.php",
-      "support.type.sys-types",
-      "support.variable.dom",
-      "support.constant.math",
-      "support.type.object.module",
-      "support.constant.json",
-      "entity.name.namespace",
-      "meta.import.qualifier",
-      "variable.other.constant.object",
+      "support.function",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -5836,77 +2689,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Support Function",
-    "scope": "support.function",
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "Indigo Color Usage",
+    "name": "CSS Property",
     "scope": [
-      "entity.name.type.indigo",
-      "support.type.indigo",
-      "variable.other.indigo",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Lime Color Usage",
-    "scope": [
-      "entity.name.type.lime",
-      "support.type.lime",
-      "variable.other.lime",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "purple Color Usage",
-    "scope": [
-      "entity.name.type.purple",
-      "support.type.purple",
-      "variable.other.purple",
-    ],
-    "settings": {
-      "foreground": "#9976db",
-    },
-  },
-  {
-    "name": "CSS Class and Support",
-    "scope": [
-      "source.css support.type.property-name",
-      "source.sass support.type.property-name",
-      "source.scss support.type.property-name",
-      "source.less support.type.property-name",
-      "source.stylus support.type.property-name",
-      "source.postcss support.type.property-name",
-      "support.type.property-name.css",
-      "support.type.vendored.property-name",
-      "support.type.map.key",
+      "support.type.property-name",
     ],
     "settings": {
       "foreground": "#66a9ff",
     },
   },
   {
-    "name": "CSS Font",
-    "scope": [
-      "support.constant.font-name",
-      "meta.definition.variable",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
     "name": "CSS Class",
     "scope": [
       "entity.other.attribute-name.class",
-      "meta.at-rule.mixin.scss entity.name.function.scss",
     ],
     "settings": {
       "foreground": "#99cc40",
@@ -5927,85 +2721,21 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "CSS Tag Reference, Pseudo & Class Punctuation",
-    "scope": [
-      "entity.other.attribute-name.pseudo-class punctuation.definition.entity",
-      "entity.other.attribute-name.pseudo-element punctuation.definition.entity",
-      "entity.other.attribute-name.class punctuation.definition.entity",
-      "entity.name.tag.reference",
-    ],
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
     "name": "CSS Punctuation",
-    "scope": "meta.property-list",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "CSS at-rule fix",
     "scope": [
-      "meta.property-list meta.at-rule.if",
-      "meta.at-rule.return variable.parameter.url",
-      "meta.property-list meta.at-rule.else",
+      "punctuation.definition.entity",
     ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "CSS Parent Selector Entity",
-    "scope": [
-      "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity.css",
-    ],
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "CSS Punctuation comma fix",
-    "scope": "meta.property-list meta.property-list",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "SCSS @",
-    "scope": [
-      "meta.at-rule.mixin keyword.control.at-rule.mixin",
-      "meta.at-rule.include entity.name.function.scss",
-      "meta.at-rule.include keyword.control.at-rule.include",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "SCSS Mixins, Extends, Include Keyword",
-    "scope": [
-      "keyword.control.at-rule.include punctuation.definition.keyword",
-      "keyword.control.at-rule.mixin punctuation.definition.keyword",
-      "meta.at-rule.include keyword.control.at-rule.include",
-      "keyword.control.at-rule.extend punctuation.definition.keyword",
-      "meta.at-rule.extend keyword.control.at-rule.extend",
-      "entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
-      "meta.at-rule.media keyword.control.at-rule.media",
-      "meta.at-rule.mixin keyword.control.at-rule.mixin",
-      "meta.at-rule.function keyword.control.at-rule.function",
-      "keyword.control punctuation.definition.keyword",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "SCSS Include Mixin Argument",
-    "scope": "meta.property-list meta.at-rule.include",
     "settings": {
       "foreground": "#a8bee4",
+    },
+  },
+  {
+    "name": "CSS at-rules",
+    "scope": [
+      "keyword.control.at-rule",
+    ],
+    "settings": {
+      "foreground": "#e666b3",
     },
   },
   {
@@ -6016,95 +2746,32 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "CSS IDs",
-    "scope": "source.sass keyword.control",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
     "name": "CSS pseudo selectors",
     "scope": [
       "entity.other.attribute-name.pseudo-class",
       "entity.other.attribute-name.pseudo-element",
-      "entity.other.attribute-name.placeholder",
-      "meta.property-list meta.property-value",
     ],
     "settings": {
       "foreground": "#e666b3",
     },
   },
   {
-    "name": "Inserted",
-    "scope": "markup.inserted",
+    "name": "Inserted, Deleted, Changed",
+    "scope": [
+      "markup.inserted",
+      "markup.deleted",
+      "markup.changed",
+    ],
     "settings": {
       "foreground": "#80f0e6",
     },
   },
   {
-    "name": "Deleted",
-    "scope": "markup.deleted",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Changed",
-    "scope": "markup.changed",
-    "settings": {
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
     "name": "Regular Expressions",
-    "scope": "string.regexp",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Regular Expressions - Punctuation",
-    "scope": "punctuation.definition.group",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Regular Expressions - Character Class",
     "scope": [
-      "constant.other.character-class.regexp",
+      "string.regexp",
+      "constant.character.escape",
     ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Regular Expressions - Character Class Set",
-    "scope": [
-      "constant.other.character-class.set.regexp",
-      "punctuation.definition.character-class.regexp",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Regular Expressions - Quantifier",
-    "scope": "keyword.operator.quantifier.regexp",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Regular Expressions - Backslash",
-    "scope": "constant.character.escape.backslash",
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Escape Characters",
-    "scope": "constant.character.escape",
     "settings": {
       "foreground": "#b3e666",
     },
@@ -6112,43 +2779,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Decorators",
     "scope": [
-      "tag.decorator.js entity.name.tag.js",
-      "tag.decorator.js punctuation.definition.tag.js",
+      "tag.decorator.js",
     ],
     "settings": {
       "foreground": "#66a9ff",
     },
   },
   {
-    "name": "CSS Units",
-    "scope": "keyword.other.unit",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
     "name": "HTML Attributes",
     "scope": [
       "entity.other.attribute-name",
-      "text.html.basic entity.other.attribute-name.html",
-      "text.html.basic entity.other.attribute-name",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "HTML Character Entity",
-    "scope": "text.html constant.character.entity",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Vue (Vetur / deprecated) Template attributes",
-    "scope": [
-      "entity.other.attribute-name.id.html",
-      "meta.directive.vue entity.other.attribute-name.html",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -6236,99 +2876,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Plain Punctuation",
-    "scope": "punctuation.definition.list_item.markdown",
-    "settings": {
-      "foreground": "#85baff",
-    },
-  },
-  {
-    "name": "Block Punctuation",
+    "name": "Markdown - Heading",
     "scope": [
-      "meta.block",
-      "meta.brace",
-      "punctuation.definition.block",
-      "punctuation.definition.use",
-      "punctuation.definition.class",
-      "punctuation.definition.begin.bracket",
-      "punctuation.definition.end.bracket",
-      "punctuation.definition.switch-expression.begin.bracket",
-      "punctuation.definition.switch-expression.end.bracket",
-      "punctuation.definition.section.switch-block.begin.bracket",
-      "punctuation.definition.section.switch-block.end.bracket",
-      "punctuation.definition.group.shell",
-      "punctuation.definition.parameters",
-      "punctuation.definition.arguments",
-      "punctuation.definition.dictionary",
-      "punctuation.definition.array",
-      "punctuation.section",
-    ],
-    "settings": {
-      "foreground": "#85baff",
-    },
-  },
-  {
-    "name": "Markdown - Plain",
-    "scope": [
-      "meta.embedded.block",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "HTML text",
-    "scope": [
-      "meta.tag JSXNested",
-      "meta.jsx.children",
-      "text.html",
-      "text.log",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markdown - Markup Raw Inline",
-    "scope": "text.html.markdown markup.inline.raw.markdown",
-    "settings": {
-      "foreground": "#c2a9ff",
-    },
-  },
-  {
-    "name": "Markdown - Markup Raw Inline Punctuation",
-    "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markdown - Heading 1",
-    "scope": [
-      "heading.1.markdown entity.name",
-      "heading.1.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Markdown - Heading 2",
-    "scope": [
-      "heading.2.markdown entity.name",
-      "heading.2.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#9ecf4a",
-    },
-  },
-  {
-    "name": "Markdown - Heading 3",
-    "scope": [
-      "heading.3.markdown entity.name",
-      "heading.3.markdown punctuation.definition.heading.markdown",
+      "heading.1.markdown",
+      "heading.2.markdown",
+      "heading.3.markdown",
+      "heading.4.markdown",
+      "heading.5.markdown",
+      "heading.6.markdown",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -6336,102 +2891,21 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "Markdown - Heading 4",
-    "scope": [
-      "heading.4.markdown entity.name",
-      "heading.4.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#5e9beb",
-    },
-  },
-  {
-    "name": "Markdown - Heading 5",
-    "scope": [
-      "heading.5.markdown entity.name",
-      "heading.5.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markdown - Heading 6",
-    "scope": [
-      "heading.6.markdown entity.name",
-      "heading.6.markdown punctuation.definition.heading.markdown",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#80b1f4",
-    },
-  },
-  {
-    "name": "Markup - Italic",
+    "name": "Markup - Italic, Bold",
     "scope": [
       "markup.italic",
-      "markup.italic punctuation",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Bold",
-    "scope": [
       "markup.bold",
-      "markup.bold punctuation",
     ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Bold-Italic",
-    "scope": [
-      "markup.bold markup.italic",
-      "markup.bold markup.italic punctuation",
-    ],
-    "settings": {
-      "fontStyle": "bold italic",
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Markup - Underline",
-    "scope": [
-      "markup.underline",
-      "markup.underline punctuation",
-    ],
-    "settings": {
-      "fontStyle": "underline",
-    },
-  },
-  {
-    "name": "Markdown - Blockquote",
-    "scope": "markup.quote punctuation.definition.blockquote.markdown",
-    "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markup - Quote",
-    "scope": "markup.quote",
     "settings": {
       "fontStyle": "italic",
+      "foreground": "#bacaf8",
     },
   },
   {
     "name": "Markdown - Link",
     "scope": [
-      "string.other.link",
       "markup.underline.link",
       "constant.other.reference.link.markdown",
-      "string.other.link.description.title.markdown",
     ],
     "settings": {
       "foreground": "#4de0d8",
@@ -6442,112 +2916,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "markup.fenced_code.block.markdown",
       "markup.inline.raw.string.markdown",
-      "variable.language.fenced.markdown",
     ],
     "settings": {
       "foreground": "#b3e666",
     },
   },
   {
-    "name": "Markdown - Separator",
-    "scope": "meta.separator",
+    "name": "Markup - Quote",
+    "scope": "markup.quote",
     "settings": {
-      "fontStyle": "bold",
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Markup - Table",
-    "scope": "markup.table",
-    "settings": {
-      "foreground": "#8cbfff",
-    },
-  },
-  {
-    "name": "Token - Info",
-    "scope": "token.info-token",
-    "settings": {
-      "foreground": "#b3e666",
-    },
-  },
-  {
-    "name": "Token - Warn",
-    "scope": "token.warn-token",
-    "settings": {
-      "foreground": "#ffe766",
-    },
-  },
-  {
-    "name": "Token - Error",
-    "scope": "token.error-token",
-    "settings": {
-      "foreground": "#eea6b6",
-    },
-  },
-  {
-    "name": "Token - Debug",
-    "scope": "token.debug-token",
-    "settings": {
-      "foreground": "#c2a9ff",
-    },
-  },
-  {
-    "name": "Apache Tag",
-    "scope": "entity.tag.apacheconf",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Preprocessor",
-    "scope": [
-      "meta.preprocessor",
-    ],
-    "settings": {
-      "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "ENV value",
-    "scope": "source.env",
-    "settings": {
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "Sub-methods",
-    "scope": [
-      "entity.name.module.js",
-      "variable.import.parameter.js",
-      "variable.other.class.js",
-    ],
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Language methods",
-    "scope": "variable.language",
-    "settings": {
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "Variable punctuation",
-    "scope": "variable.other punctuation.definition.variable",
-    "settings": {
-      "foreground": "#bacaf8",
-    },
-  },
-  {
-    "name": "Keyword this with Punctuation, ES7 Bind Operator",
-    "scope": [
-      "source.js constant.other.object.key.js string.unquoted.label.js",
-      "variable.language.this punctuation.definition.variable",
-      "keyword.other.this",
-    ],
-    "settings": {
-      "foreground": "#ff6b7a",
+      "fontStyle": "italic",
     },
   },
   {
@@ -6555,9 +2933,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "entity.name.component",
       "support.class.component",
-      "meta.component.tsx entity.name.class",
-      "entity.name.tag.jsx",
-      "meta.jsx.children.jsx entity.name.tag",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -6567,12 +2942,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "TypeScript Types",
     "scope": [
-      "keyword.type.ts",
-      "storage.type.interface",
       "entity.name.type",
       "type.alias",
       "type.parameter",
-      "type.argument",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -6583,9 +2955,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "type.name.graphql",
       "field.name.graphql",
-      "enum.name.graphql",
-      "interface.name.graphql",
-      "union.name.graphql",
     ],
     "settings": {
       "foreground": "#e666b3",
@@ -6594,35 +2963,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
   {
     "name": "Tailwind Classes",
     "scope": [
-      "string.quoted.other.tailwind",
       "entity.other.attribute-name.class.tailwind",
-      "meta.attribute-with-value.class.html string.quoted.single.tailwind",
     ],
     "settings": {
       "foreground": "#4de0d8",
-    },
-  },
-  {
-    "name": "Routing Components",
-    "scope": [
-      "entity.name.tag.custom",
-      "meta.import.react entity.name.tag",
-      "support.component.react",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "State Management",
-    "scope": [
-      "variable.other.object.state",
-      "entity.name.function.state",
-      "support.function.state",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
     },
   },
   {
@@ -6630,7 +2974,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "support.function.react-hooks",
       "entity.name.function.hook",
-      "variable.other.hook",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -6638,36 +2981,10 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "TypeScript Generics",
-    "scope": [
-      "meta.generic.ts",
-      "type.parameter.generic",
-      "storage.type.generic",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Prisma Schema",
-    "scope": [
-      "keyword.model.prisma",
-      "entity.name.type.prisma",
-      "support.type.prisma",
-      "variable.other.property.prisma",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#4de0d8",
-    },
-  },
-  {
     "name": "Testing Frameworks",
     "scope": [
       "support.function.test",
-      "keyword.control.test",
       "entity.name.function.test",
-      "variable.other.test",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -6675,243 +2992,20 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
-    "name": "CSS-in-JS",
+    "name": "Modern Frameworks",
     "scope": [
-      "entity.name.tag.styled",
-      "support.function.styled",
-      "keyword.control.template.styled",
-      "string.template.styled",
-    ],
-    "settings": {
-      "foreground": "#f59e0b",
-    },
-  },
-  {
-    "name": "Astro/Svelte Components",
-    "scope": [
-      "entity.name.tag.astro",
-      "entity.name.tag.svelte",
-      "meta.component.astro",
-      "meta.component.svelte",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#ff6b7a",
-    },
-  },
-  {
-    "name": "API Resolvers",
-    "scope": [
-      "entity.name.function.resolver",
-      "support.function.resolver",
-      "variable.function.resolver",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Validation Schemas",
-    "scope": [
+      "support.function.solid",
+      "support.function.drizzle",
+      "support.function.hono",
       "support.function.validation",
-      "entity.name.type.validation",
-      "keyword.control.validation",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Data Fetching",
-    "scope": [
       "support.function.query",
-      "entity.name.function.query",
-      "variable.other.query",
-    ],
-    "settings": {
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
-    "name": "Rust Macros",
-    "scope": [
-      "entity.name.function.macro.rust",
+      "entity.name.function.resolver",
       "support.function.macro.rust",
-      "meta.macro.rust",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Rust Lifetime",
-    "scope": [
-      "storage.modifier.lifetime.rust",
-      "entity.name.type.lifetime.rust",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Go Functions",
-    "scope": [
       "entity.name.function.go",
-      "support.function.go",
+      "support.function.styled",
     ],
     "settings": {
       "foreground": "#66a9ff",
-    },
-  },
-  {
-    "name": "Python Type Hints",
-    "scope": [
-      "meta.function.parameters.python support.type.python",
-      "meta.function.return-type.python",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Python Decorators",
-    "scope": [
-      "entity.name.function.decorator.python",
-      "meta.function.decorator.python",
-    ],
-    "settings": {
-      "fontStyle": "italic",
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "Bun/Deno APIs",
-    "scope": [
-      "support.variable.bun",
-      "support.variable.deno",
-      "support.class.bun",
-      "support.class.deno",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Solid.js Signals",
-    "scope": [
-      "support.function.solid",
-      "entity.name.function.signal",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#7fb5ff",
-    },
-  },
-  {
-    "name": "Qwik Components",
-    "scope": [
-      "entity.name.tag.qwik",
-      "support.class.component.qwik",
-    ],
-    "settings": {
-      "fontStyle": "bold",
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "HTMX Attributes",
-    "scope": [
-      "entity.other.attribute-name.html.htmx",
-      "meta.attribute.htmx",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Drizzle ORM",
-    "scope": [
-      "support.function.drizzle",
-      "entity.name.type.drizzle",
-    ],
-    "settings": {
-      "foreground": "#10b981",
-    },
-  },
-  {
-    "name": "Hono Routes",
-    "scope": [
-      "support.function.hono",
-      "entity.name.function.route.hono",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Biome Config",
-    "scope": [
-      "support.type.property-name.biome",
-      "entity.name.tag.biome",
-    ],
-    "settings": {
-      "foreground": "#f0d440",
-    },
-  },
-  {
-    "name": "WebAssembly",
-    "scope": [
-      "storage.type.wasm",
-      "keyword.control.wasm",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
-    },
-  },
-  {
-    "name": "Zig Language",
-    "scope": [
-      "storage.type.zig",
-      "keyword.control.zig",
-    ],
-    "settings": {
-      "foreground": "#e0945a",
-    },
-  },
-  {
-    "name": "Modern Framework Indigo",
-    "scope": [
-      "support.type.indigo.modern",
-      "entity.name.type.indigo.modern",
-      "variable.other.indigo.modern",
-    ],
-    "settings": {
-      "foreground": "#7a7aff",
-    },
-  },
-  {
-    "name": "Modern Framework Lime",
-    "scope": [
-      "support.type.lime.modern",
-      "entity.name.type.lime.modern",
-      "variable.other.lime.modern",
-    ],
-    "settings": {
-      "foreground": "#99cc40",
-    },
-  },
-  {
-    "name": "Modern Framework Magenta",
-    "scope": [
-      "support.type.magenta.modern",
-      "entity.name.type.magenta.modern",
-      "variable.other.magenta.modern",
-    ],
-    "settings": {
-      "foreground": "#e666b3",
     },
   },
 ]
