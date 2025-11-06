@@ -23,7 +23,7 @@ export function validateTheme(theme: VSCodeTheme): ValidationResult {
     errors.push('Theme name is required')
   }
 
-  if (!theme.type || !['dark', 'light'].includes(theme.type)) {
+  if (!(theme.type && ['dark', 'light'].includes(theme.type))) {
     errors.push('Theme type must be "dark" or "light"')
   }
 
@@ -145,7 +145,7 @@ export function validateCriticalContrast(theme: VSCodeTheme): ValidationResult {
     return { valid: true, errors, warnings }
   }
 
-  const criticalPairs: Array<[string, string, string]> = [
+  const criticalPairs: [string, string, string][] = [
     ['foreground', 'editor.background', 'Editor foreground/background'],
     ['button.foreground', 'button.background', 'Button text'],
     ['input.foreground', 'input.background', 'Input text'],
