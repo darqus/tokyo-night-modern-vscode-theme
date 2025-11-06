@@ -76,7 +76,7 @@ export function generateGitColors(): Record<string, string> {
       lineAddedForeground: c.green.main,
       lineDeletedForeground: c.red.main,
       lineSelectedForeground: c.blue.light,
-      lineSelectedBackground: c.bg.dark + '80',
+      lineSelectedBackground: `${c.bg.dark}80`,
       lineChangedForeground: c.yellow.main,
       lineBlameForeground: c.fg.main,
       lineNewModified: c.yellow.main,
