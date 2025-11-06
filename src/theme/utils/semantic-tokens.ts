@@ -17,10 +17,18 @@ export function createSemanticToken(
   const token: SemanticTokenStyle = {}
   const fontStyles: string[] = []
 
-  if (config.foreground) token.foreground = config.foreground
-  if (config.fontStyle) fontStyles.push(config.fontStyle)
-  if (config.underline) fontStyles.push('underline')
-  if (config.strikethrough) fontStyles.push('strikethrough')
+  if (config.foreground) {
+    token.foreground = config.foreground
+  }
+  if (config.fontStyle) {
+    fontStyles.push(config.fontStyle)
+  }
+  if (config.underline) {
+    fontStyles.push('underline')
+  }
+  if (config.strikethrough) {
+    fontStyles.push('strikethrough')
+  }
 
   if (fontStyles.length > 0) {
     token.fontStyle = fontStyles.join(' ') as FontStyle
