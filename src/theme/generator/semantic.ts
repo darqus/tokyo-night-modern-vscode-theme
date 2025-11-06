@@ -1,9 +1,26 @@
-import { generateSemanticTokenColors as generateExpandedSemanticTokenColors } from './semantic/index.js'
+import {
+  frameworksConfig,
+  functionsConfig,
+  literalsConfig,
+  modifiersConfig,
+  typesConfig,
+  variablesConfig,
+} from '../config/semantic-configs.js'
+import { mergeSemanticConfigs } from '../config/unified-generator.js'
 
-// Maintain backward compatibility with current implementation
+/**
+ * Генерирует все семантические токены
+ */
 export function generateSemanticTokenColors() {
-  return generateExpandedSemanticTokenColors()
+  return mergeSemanticConfigs({
+    variables: variablesConfig,
+    functions: functionsConfig,
+    types: typesConfig,
+    modifiers: modifiersConfig,
+    literals: literalsConfig,
+    frameworks: frameworksConfig,
+  })
 }
 
-// Export expanded function for direct usage
-export { generateExpandedSemanticTokenColors }
+// Maintain backward compatibility with current implementation
+export const generateExpandedSemanticTokenColors = generateSemanticTokenColors
