@@ -24,14 +24,14 @@ export function generateTerminalColors(): Record<string, string> {
       cursorBackground: c.blue.main,
       cursorForeground: c.ui.white,
       cursorInactiveBackground: c.blue.dark,
-      selectionBackground: c.blue.main + '40',
+      selectionBackground: `${c.blue.main}40`,
       selectionForeground: c.fg.bright,
       border: c.neutral.main,
-      dropBackground: c.blue.main + '40',
+      dropBackground: `${c.blue.main}40`,
       tabInactiveBackground: c.bg.dark,
       tabActiveBorder: c.blue.main,
       overviewRulerCursorForeground: c.blue.main,
-      overviewRulerFindMatchForeground: c.yellow.main + '80',
+      overviewRulerFindMatchForeground: `${c.yellow.main}80`,
     })
     .addGroup('terminal.ansi', {
       black: c.neutral.dark,
@@ -71,7 +71,7 @@ export function generateTerminalColors(): Record<string, string> {
     .addGroup('debugTerminal', {
       background: c.bg.main,
       foreground: c.fg.main,
-      selectionBackground: c.blue.main + '40',
+      selectionBackground: `${c.blue.main}40`,
       selectionForeground: c.fg.bright,
       cursorBackground: c.blue.main,
       cursorForeground: c.ui.white,
