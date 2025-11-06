@@ -1,10 +1,10 @@
 import { palette } from '../../palette/index.js'
 import type { SemanticTokenStyle } from '../../types/index.js'
-import { darken, lighten, mix } from '../../utils/color.js'
+import { darken, mix } from '../../utils/color.js'
 import { createSemanticToken } from '../../utils/semantic-tokens.js'
 
 export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
-  const { cyan, purple, pink, magenta, teal, blue } = palette
+  const { cyan, purple, teal } = palette
 
   return {
     // Base variables
@@ -17,23 +17,14 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'italic',
     }),
 
-    'variable.readonly.default': createSemanticToken({
-      foreground: lighten(cyan.light, 0.08),
-      fontStyle: 'italic',
-    }),
-
     // Function parameters
     parameter: createSemanticToken({
-      foreground: mix(pink.main, magenta.main, 0.3),
+      foreground: mix(purple.main, cyan.main, 0.3),
     }),
 
     'parameter.readonly': createSemanticToken({
-      foreground: darken(pink.main, 0.1),
+      foreground: darken(purple.main, 0.1),
       fontStyle: 'italic',
-    }),
-
-    'parameter.type': createSemanticToken({
-      foreground: mix(cyan.light, blue.main, 0.4),
     }),
 
     // Properties
@@ -46,26 +37,8 @@ export function generateVariableTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'italic',
     }),
 
-    'property.static': createSemanticToken({
-      foreground: mix(blue.dark, cyan.dark, 0.4),
-      fontStyle: 'bold',
-    }),
-
-    'property.declaration': createSemanticToken({
-      foreground: lighten(teal.dark, 0.1),
-      fontStyle: 'bold',
-    }),
-
     // Standard library
-    'property.defaultLibrary': createSemanticToken({
-      foreground: mix(cyan.dark, teal.dark, 0.4),
-    }),
-
     'variable.defaultLibrary': createSemanticToken({
-      foreground: mix(cyan.main, teal.main, 0.4),
-    }),
-
-    '*.defaultLibrary': createSemanticToken({
       foreground: mix(cyan.main, teal.main, 0.4),
     }),
   }

@@ -4,7 +4,7 @@ import { lighten, mix } from '../../utils/color.js'
 import { createSemanticToken } from '../../utils/semantic-tokens.js'
 
 export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
-  const { blue, cyan, purple, teal, yellow } = palette
+  const { blue, cyan, purple } = palette
 
   return {
     // Functions
@@ -31,31 +31,10 @@ export function generateFunctionTokens(): Record<string, SemanticTokenStyle> {
       fontStyle: 'bold',
     }),
 
-    'method.static': createSemanticToken({
-      foreground: mix(blue.light, purple.light, 0.2),
-      fontStyle: 'bold',
-    }),
-
-    'method.readonly': createSemanticToken({
-      foreground: mix(blue.main, teal.main, 0.25),
-      fontStyle: 'italic',
-    }),
-
     // Constructors
     constructor: createSemanticToken({
-      foreground: mix(cyan.light, yellow.main, 0.15),
+      foreground: mix(cyan.light, purple.light, 0.15),
       fontStyle: 'bold',
-    }),
-
-    // Async functions
-    'function.async': createSemanticToken({
-      foreground: mix(cyan.main, purple.light, 0.2),
-      fontStyle: 'italic',
-    }),
-
-    'method.async': createSemanticToken({
-      foreground: mix(cyan.main, teal.main, 0.3),
-      fontStyle: 'italic',
     }),
   }
 }

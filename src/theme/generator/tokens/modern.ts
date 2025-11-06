@@ -2,50 +2,23 @@ import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types'
 
 export function generateModernTokens(): TokenColor[] {
-  const {
-    teal,
-    blue,
-    orange,
-    green,
-    red,
-    yellow,
-    indigo,
-    lime,
-    magenta,
-    peach,
-    rose,
-    amber,
-    emerald,
-  } = palette
+  const { teal, blue, green, magenta, peach, rose } = palette
 
   return [
     // React/Vue Components
     {
       name: 'React/Vue Components',
-      scope: [
-        'entity.name.component',
-        'support.class.component',
-        'meta.component.tsx entity.name.class',
-        'entity.name.tag.jsx',
-        'meta.jsx.children.jsx entity.name.tag',
-      ],
+      scope: ['entity.name.component', 'support.class.component'],
       settings: {
         foreground: peach.light,
         fontStyle: 'bold',
       },
     },
 
-    // TypeScript/JSDoc
+    // TypeScript Types
     {
       name: 'TypeScript Types',
-      scope: [
-        'keyword.type.ts',
-        'storage.type.interface',
-        'entity.name.type',
-        'type.alias',
-        'type.parameter',
-        'type.argument',
-      ],
+      scope: ['entity.name.type', 'type.alias', 'type.parameter'],
       settings: {
         foreground: magenta.light,
       },
@@ -54,13 +27,7 @@ export function generateModernTokens(): TokenColor[] {
     // GraphQL/Prisma
     {
       name: 'GraphQL Schema',
-      scope: [
-        'type.name.graphql',
-        'field.name.graphql',
-        'enum.name.graphql',
-        'interface.name.graphql',
-        'union.name.graphql',
-      ],
+      scope: ['type.name.graphql', 'field.name.graphql'],
       settings: {
         foreground: magenta.main,
       },
@@ -69,344 +36,48 @@ export function generateModernTokens(): TokenColor[] {
     // Tailwind CSS Classes
     {
       name: 'Tailwind Classes',
-      scope: [
-        'string.quoted.other.tailwind',
-        'entity.other.attribute-name.class.tailwind',
-        'meta.attribute-with-value.class.html string.quoted.single.tailwind',
-      ],
+      scope: ['entity.other.attribute-name.class.tailwind'],
       settings: {
         foreground: teal.main,
-      },
-    },
-
-    // Next.js/React Router
-    {
-      name: 'Routing Components',
-      scope: [
-        'entity.name.tag.custom',
-        'meta.import.react entity.name.tag',
-        'support.component.react',
-      ],
-      settings: {
-        foreground: blue.main,
-        fontStyle: 'italic',
-      },
-    },
-
-    // Zustand/Redux State Management
-    {
-      name: 'State Management',
-      scope: [
-        'variable.other.object.state',
-        'entity.name.function.state',
-        'support.function.state',
-      ],
-      settings: {
-        foreground: orange.main,
       },
     },
 
     // React Hooks
     {
       name: 'React Hooks',
-      scope: [
-        'support.function.react-hooks',
-        'entity.name.function.hook',
-        'variable.other.hook',
-      ],
+      scope: ['support.function.react-hooks', 'entity.name.function.hook'],
       settings: {
         foreground: rose.main,
         fontStyle: 'bold',
       },
     },
 
-    // TypeScript Generics
-    {
-      name: 'TypeScript Generics',
-      scope: [
-        'meta.generic.ts',
-        'type.parameter.generic',
-        'storage.type.generic',
-      ],
-      settings: {
-        foreground: magenta.light,
-      },
-    },
-
-    // Prisma Schema
-    {
-      name: 'Prisma Schema',
-      scope: [
-        'keyword.model.prisma',
-        'entity.name.type.prisma',
-        'support.type.prisma',
-        'variable.other.property.prisma',
-      ],
-      settings: {
-        foreground: teal.main,
-        fontStyle: 'italic',
-      },
-    },
-
-    // Vitest/Jest Testing
+    // Testing Frameworks
     {
       name: 'Testing Frameworks',
-      scope: [
-        'support.function.test',
-        'keyword.control.test',
-        'entity.name.function.test',
-        'variable.other.test',
-      ],
+      scope: ['support.function.test', 'entity.name.function.test'],
       settings: {
         foreground: green.main,
         fontStyle: 'bold',
       },
     },
 
-    // CSS-in-JS (styled-components, emotion)
+    // Modern Frameworks General
     {
-      name: 'CSS-in-JS',
+      name: 'Modern Frameworks',
       scope: [
-        'entity.name.tag.styled',
-        'support.function.styled',
-        'keyword.control.template.styled',
-        'string.template.styled',
-      ],
-      settings: {
-        foreground: amber.main,
-      },
-    },
-
-    // Astro/Svelte Components
-    {
-      name: 'Astro/Svelte Components',
-      scope: [
-        'entity.name.tag.astro',
-        'entity.name.tag.svelte',
-        'meta.component.astro',
-        'meta.component.svelte',
-      ],
-      settings: {
-        foreground: red.main,
-        fontStyle: 'bold',
-      },
-    },
-
-    // tRPC/GraphQL Resolvers
-    {
-      name: 'API Resolvers',
-      scope: [
-        'entity.name.function.resolver',
-        'support.function.resolver',
-        'variable.function.resolver',
-      ],
-      settings: {
-        foreground: yellow.main,
-      },
-    },
-
-    // Zod/Superstruct Validation
-    {
-      name: 'Validation Schemas',
-      scope: [
+        'support.function.solid',
+        'support.function.drizzle',
+        'support.function.hono',
         'support.function.validation',
-        'entity.name.type.validation',
-        'keyword.control.validation',
-      ],
-      settings: {
-        foreground: magenta.main,
-        fontStyle: 'italic',
-      },
-    },
-
-    // TanStack Query (React Query)
-    {
-      name: 'Data Fetching',
-      scope: [
         'support.function.query',
-        'entity.name.function.query',
-        'variable.other.query',
-      ],
-      settings: {
-        foreground: blue.light,
-      },
-    },
-
-    // Rust
-    {
-      name: 'Rust Macros',
-      scope: [
-        'entity.name.function.macro.rust',
+        'entity.name.function.resolver',
         'support.function.macro.rust',
-        'meta.macro.rust',
+        'entity.name.function.go',
+        'support.function.styled',
       ],
-      settings: {
-        foreground: magenta.light,
-        fontStyle: 'bold',
-      },
-    },
-    {
-      name: 'Rust Lifetime',
-      scope: [
-        'storage.modifier.lifetime.rust',
-        'entity.name.type.lifetime.rust',
-      ],
-      settings: {
-        foreground: orange.main,
-        fontStyle: 'italic',
-      },
-    },
-
-    // Go
-    {
-      name: 'Go Functions',
-      scope: ['entity.name.function.go', 'support.function.go'],
       settings: {
         foreground: blue.main,
-      },
-    },
-
-    // Python Modern (Type Hints)
-    {
-      name: 'Python Type Hints',
-      scope: [
-        'meta.function.parameters.python support.type.python',
-        'meta.function.return-type.python',
-      ],
-      settings: {
-        foreground: magenta.light,
-      },
-    },
-    {
-      name: 'Python Decorators',
-      scope: [
-        'entity.name.function.decorator.python',
-        'meta.function.decorator.python',
-      ],
-      settings: {
-        foreground: yellow.main,
-        fontStyle: 'italic',
-      },
-    },
-
-    // Bun/Deno
-    {
-      name: 'Bun/Deno APIs',
-      scope: [
-        'support.variable.bun',
-        'support.variable.deno',
-        'support.class.bun',
-        'support.class.deno',
-      ],
-      settings: {
-        foreground: magenta.main,
-      },
-    },
-
-    // Solid.js
-    {
-      name: 'Solid.js Signals',
-      scope: ['support.function.solid', 'entity.name.function.signal'],
-      settings: {
-        foreground: blue.light,
-        fontStyle: 'bold',
-      },
-    },
-
-    // Qwik Framework
-    {
-      name: 'Qwik Components',
-      scope: ['entity.name.tag.qwik', 'support.class.component.qwik'],
-      settings: {
-        foreground: magenta.light,
-        fontStyle: 'bold',
-      },
-    },
-
-    // HTMX Attributes
-    {
-      name: 'HTMX Attributes',
-      scope: ['entity.other.attribute-name.html.htmx', 'meta.attribute.htmx'],
-      settings: {
-        foreground: magenta.light,
-      },
-    },
-
-    // Drizzle ORM
-    {
-      name: 'Drizzle ORM',
-      scope: ['support.function.drizzle', 'entity.name.type.drizzle'],
-      settings: {
-        foreground: emerald.main,
-      },
-    },
-
-    // Hono Framework
-    {
-      name: 'Hono Routes',
-      scope: ['support.function.hono', 'entity.name.function.route.hono'],
-      settings: {
-        foreground: orange.main,
-      },
-    },
-
-    // Biome/Oxc
-    {
-      name: 'Biome Config',
-      scope: ['support.type.property-name.biome', 'entity.name.tag.biome'],
-      settings: {
-        foreground: yellow.main,
-      },
-    },
-
-    // WebAssembly
-    {
-      name: 'WebAssembly',
-      scope: ['storage.type.wasm', 'keyword.control.wasm'],
-      settings: {
-        foreground: magenta.light,
-      },
-    },
-
-    // Zig
-    {
-      name: 'Zig Language',
-      scope: ['storage.type.zig', 'keyword.control.zig'],
-      settings: {
-        foreground: orange.main,
-      },
-    },
-    {
-      name: 'Modern Framework Indigo',
-      scope: [
-        'support.type.indigo.modern',
-        'entity.name.type.indigo.modern',
-        'variable.other.indigo.modern',
-      ],
-      settings: {
-        foreground: indigo.main,
-      },
-    },
-    {
-      name: 'Modern Framework Lime',
-      scope: [
-        'support.type.lime.modern',
-        'entity.name.type.lime.modern',
-        'variable.other.lime.modern',
-      ],
-      settings: {
-        foreground: lime.main,
-      },
-    },
-    {
-      name: 'Modern Framework Magenta',
-      scope: [
-        'support.type.magenta.modern',
-        'entity.name.type.magenta.modern',
-        'variable.other.magenta.modern',
-      ],
-      settings: {
-        foreground: magenta.main,
       },
     },
   ]
