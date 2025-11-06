@@ -41,7 +41,7 @@
     "build:vsix": "node --loader ts-node/esm --no-warnings scripts/build-vsix.ts",
     "package": "npm run build:vsix",
     "release": "node --loader ts-node/esm --no-warnings scripts/release.ts",
-    "lint": "biome lint .",
+    "lint": "biome lint src/ scripts/",
     "format": "biome check --fix src/ scripts/ && biome format --write src/ scripts/",
     "test": "vitest run --update",
     "test:run": "vitest run",
