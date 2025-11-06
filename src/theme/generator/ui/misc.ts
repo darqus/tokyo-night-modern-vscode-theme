@@ -15,8 +15,8 @@ export function generateMiscColors(): Record<string, string> {
     .add('debugConsole.sourceForeground', c.fg.main)
     .add('debugConsole.warningForeground', c.yellow.main)
     .add('debugConsoleInputIcon.foreground', c.blue.main)
-    .add('editor.stackFrameHighlightBackground', c.yellow.main + '40')
-    .add('editor.focusedStackFrameHighlightBackground', c.green.main + '40')
+    .add('editor.stackFrameHighlightBackground', `${c.yellow.main}40`)
+    .add('editor.focusedStackFrameHighlightBackground', `${c.green.main}40`)
     .add('debugView.stateLabelForeground', c.fg.main)
     .add('debugView.stateLabelBackground', c.bg.dark)
     .add('debugView.valueChangedHighlight', c.yellow.main)
@@ -34,12 +34,12 @@ export function generateMiscColors(): Record<string, string> {
     .add('notebook.cellBorderColor', c.neutral.main)
     .add('notebook.focusedCellBorder', c.blue.main)
     .add('notebook.cellStatusBarItemHoverBackground', c.bg.main)
-    .add('merge.currentHeaderBackground', c.green.main + '40')
-    .add('merge.currentContentBackground', c.green.main + '20')
-    .add('merge.incomingHeaderBackground', c.blue.main + '40')
-    .add('merge.incomingContentBackground', c.blue.main + '20')
-    .add('mergeEditor.change.background', c.blue.main + '20')
-    .add('mergeEditor.change.word.background', c.blue.main + '40')
+    .add('merge.currentHeaderBackground', `${c.green.main}40`)
+    .add('merge.currentContentBackground', `${c.green.main}20`)
+    .add('merge.incomingHeaderBackground', `${c.blue.main}40`)
+    .add('merge.incomingContentBackground', `${c.blue.main}20`)
+    .add('mergeEditor.change.background', `${c.blue.main}20`)
+    .add('mergeEditor.change.word.background', `${c.blue.main}40`)
     .add('mergeEditor.conflict.unhandledUnfocused.border', c.orange.main)
     .add('mergeEditor.conflict.unhandledFocused.border', c.orange.light)
     .add('mergeEditor.conflict.handledUnfocused.border', c.blue.main)
@@ -110,13 +110,13 @@ export function generateMiscColors(): Record<string, string> {
       background: c.bg.dark,
     })
     .addGroup('editor', {
-      stackFrameHighlightBackground: c.yellow.main + '40',
-      focusedStackFrameHighlightBackground: c.green.main + '40',
-      warningHighlightBackground: c.yellow.main + '40',
+      stackFrameHighlightBackground: `${c.yellow.main}40`,
+      focusedStackFrameHighlightBackground: `${c.green.main}40`,
+      warningHighlightBackground: `${c.yellow.main}40`,
       rulerForeground: c.neutral.dark,
     })
     .addGroup('editorBracketMatch', {
-      background: c.blue.main + '40',
+      background: `${c.blue.main}40`,
       border: c.blue.light,
     })
     .addGroup('editorCursor', {
@@ -124,7 +124,7 @@ export function generateMiscColors(): Record<string, string> {
       foreground: c.blue.main,
     })
     .addGroup('editorError', {
-      background: c.red.dark + '20',
+      background: `${c.red.dark}20`,
       border: c.red.main,
       foreground: c.red.main,
     })
@@ -133,17 +133,17 @@ export function generateMiscColors(): Record<string, string> {
       foreground: c.green.main,
     })
     .addGroup('editorInfo', {
-      background: c.blue.dark + '20',
+      background: `${c.blue.dark}20`,
       border: c.blue.main,
       foreground: c.blue.main,
     })
     .addGroup('editorWarning', {
-      background: c.yellow.dark + '20',
+      background: `${c.yellow.dark}20`,
       border: c.yellow.main,
       foreground: c.yellow.main,
     })
     .addGroup('editorUnnecessary', {
-      background: c.red.dark + '20',
+      background: `${c.red.dark}20`,
       foreground: c.fg.dark,
     })
     .addGroup('editorGutter', {
@@ -197,10 +197,10 @@ export function generateMiscColors(): Record<string, string> {
       historyItemHoverDefaultLabelForeground: c.fg.main,
     })
     .addGroup('merge', {
-      currentHeaderBackground: c.green.main + '40',
-      currentContentBackground: c.green.main + '20',
-      incomingHeaderBackground: c.blue.main + '40',
-      incomingContentBackground: c.blue.main + '20',
+      currentHeaderBackground: `${c.green.main}40`,
+      currentContentBackground: `${c.green.main}20`,
+      incomingHeaderBackground: `${c.blue.main}40`,
+      incomingContentBackground: `${c.blue.main}20`,
       border: c.neutral.main,
       incomingContent: c.blue.main,
       incomingHeader: c.blue.light,
@@ -208,8 +208,8 @@ export function generateMiscColors(): Record<string, string> {
       currentHeader: c.green.light,
     })
     .addGroup('mergeEditor', {
-      changeBackground: c.blue.main + '20',
-      changeWordBackground: c.blue.main + '40',
+      changeBackground: `${c.blue.main}20`,
+      changeWordBackground: `${c.blue.main}40`,
       conflictUnhandledUnfocusedBorder: c.orange.main,
       conflictUnhandledFocusedBorder: c.orange.light,
       conflictHandledUnfocusedBorder: c.blue.main,
@@ -303,8 +303,8 @@ export function generateMiscColors(): Record<string, string> {
       border: c.neutral.main,
     })
     .addGroup('inlineChatDiff', {
-      inserted: c.green.main + '40',
-      removed: c.red.main + '40',
+      inserted: `${c.green.main}40`,
+      removed: `${c.red.main}40`,
     })
     .build()
 }
