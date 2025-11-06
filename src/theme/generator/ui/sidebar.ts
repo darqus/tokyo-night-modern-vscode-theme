@@ -6,7 +6,7 @@ export function generateSidebarColors(): Record<string, string> {
       background: c.bg.dark,
       foreground: c.fg.main,
       border: c.neutral.main,
-      dropBackground: c.blue.main + '40',
+      dropBackground: `${c.blue.main}40`,
       shadow: '#00000033',
       titleForeground: c.fg.bright,
     })
@@ -20,7 +20,7 @@ export function generateSidebarColors(): Record<string, string> {
       border: c.neutral.main,
     })
     .addGroup('sideBarDropBackground', {
-      background: c.blue.main + '40',
+      background: `${c.blue.main}40`,
     })
     .addGroup('activityBar', {
       foreground: c.fg.main,
