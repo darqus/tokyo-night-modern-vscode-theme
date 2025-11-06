@@ -1,35 +1,51 @@
-import { palette } from '../../palette/index.js'
 import { alpha, darken, lighten, mix } from '../../utils/color.js'
+import { c, colorRules } from '../../utils/color-builder.js'
+import {
+  ADJUST,
+  borderColor,
+  MIX_RATIO,
+  OPACITY,
+} from '../../utils/color-helpers.js'
 
 export const generatePanelColors = (): Record<string, string> => {
-  const { bg, fg, purple, blue } = palette
+  const { bg, fg, purple, blue } = c
 
-  return {
-    'panel.background': darken(bg.main, 0.02),
-    'panel.border': mix(bg.main, blue.main, 0.2),
-    'panelTitle.activeForeground': fg.dark,
-    'panelTitle.inactiveForeground': darken(fg.dark, 0.2),
-    'panelTitle.activeBorder': blue.main,
-    'panelInput.border': lighten(bg.main, 0.02),
-    'panelStickyScroll.background': bg.light,
-    'statusBar.foreground': fg.dark,
-    'statusBar.background': bg.dark,
-    'statusBar.border': lighten(bg.dark, 0.02),
-    'statusBar.focusBorder': blue.main,
-    'statusBar.noFolderBackground': bg.dark,
-    'statusBar.debuggingBackground': mix(purple.dark, bg.dark, 0.5),
-    'statusBar.debuggingForeground': fg.dark,
-    'statusBarItem.activeBackground': alpha(blue.main, 0.25),
-    'statusBarItem.hoverBackground': alpha(blue.main, 0.15),
-    'statusBarItem.prominentBackground': alpha(blue.main, 0.25),
-    'statusBarItem.prominentHoverBackground': alpha(blue.main, 0.3),
-    'statusBarItem.focusBorder': blue.main,
-    'statusBarItem.remoteBackground': alpha(blue.main, 0.25),
-    'statusBarItem.remoteHoverForeground': fg.bright,
-    'titleBar.activeForeground': fg.dark,
-    'titleBar.inactiveForeground': darken(fg.dark, 0.4),
-    'titleBar.activeBackground': bg.main,
-    'titleBar.inactiveBackground': darken(bg.main, 0.03),
-    'titleBar.border': lighten(bg.main, 0.02),
-  }
+  return colorRules()
+    .addGroup('panel', {
+      background: darken(bg.main, ADJUST.TINY),
+      border: borderColor(bg.main, blue.main),
+    })
+    .add('panelInput.border', lighten(bg.main, ADJUST.TINY))
+    .add('panelStickyScroll.background', bg.light)
+    .addGroup('panelTitle', {
+      activeForeground: fg.dark,
+      inactiveForeground: darken(fg.dark, ADJUST.STRONG),
+      activeBorder: blue.main,
+    })
+    .addGroup('statusBar', {
+      foreground: fg.dark,
+      background: bg.dark,
+      border: lighten(bg.dark, ADJUST.TINY),
+      focusBorder: blue.main,
+      noFolderBackground: bg.dark,
+      debuggingBackground: mix(purple.dark, bg.dark, MIX_RATIO.BALANCED),
+      debuggingForeground: fg.dark,
+    })
+    .addGroup('statusBarItem', {
+      activeBackground: alpha(blue.main, OPACITY.VERY_STRONG),
+      hoverBackground: alpha(blue.main, OPACITY.SUBTLE),
+      prominentBackground: alpha(blue.main, OPACITY.VERY_STRONG),
+      prominentHoverBackground: alpha(blue.main, OPACITY.MEDIUM),
+      focusBorder: blue.main,
+      remoteBackground: alpha(blue.main, OPACITY.VERY_STRONG),
+      remoteHoverForeground: fg.bright,
+    })
+    .addGroup('titleBar', {
+      activeForeground: fg.dark,
+      inactiveForeground: darken(fg.dark, ADJUST.LIGHT),
+      activeBackground: bg.main,
+      inactiveBackground: darken(bg.main, ADJUST.SLIGHT),
+      border: lighten(bg.main, ADJUST.TINY),
+    })
+    .build()
 }

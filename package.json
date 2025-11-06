@@ -37,7 +37,7 @@
     ]
   },
   "scripts": {
-    "build": "node --loader ts-node/esm --no-warnings scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
+    "build": "tsx scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
     "build:vsix": "node --loader ts-node/esm --no-warnings scripts/build-vsix.ts",
     "package": "npm run build:vsix",
     "release": "node --loader ts-node/esm --no-warnings scripts/release.ts",

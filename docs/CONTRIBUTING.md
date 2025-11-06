@@ -107,12 +107,73 @@ pnpm run format
 Tokyo Modern использует модульную архитектуру:
 
 - `src/theme/config.ts` — централизованная конфигурация
+- `src/theme/config/` — дополнительные файлы конфигурации (constants, DSL, unified-generator)
 - `src/theme/palette/` — цветовая палитра
 - `src/theme/generator/` — генераторы темы (UI, токены, семантические)
-- `src/theme/utils/` — утилиты (цвета, контраст, валидация, кэширование)
+- `src/theme/utils/` — утилиты (цвета, контраст, валидация, кэширование, builder-ы)
 - `src/theme/types/` — типы TypeScript
 
 Для подробного описания архитектуры см. [ARCHITECTURE.md](./ARCHITECTURE.md).
+
+## 14) Новые утилиты и подходы
+
+### ColorRuleBuilder
+
+Для упрощения создания цветовых правил был добавлен builder-паттерн:
+
+```typescript
+import { colorRules, c } from '../utils/color-builder.js'
+
+export function generateCoreColors(): Record<string, string> {
+  return colorRules()
+    .add('foreground', c.fg.light)
+    .add('descriptionForeground', c.fg.main)
+    .addGroup('badge', {
+      background: c.ui.badge,
+      foreground: c.ui.white,
+    })
+    .build()
+}
+```
+
+### Семантические утилиты цвета
+
+Новые утилиты с понятными именами для часто используемых операций:
+
+```typescript
+// Подсветка
+export const subtleHighlight = (color: string) => alpha(color, OPACITY.LIGHT)
+export const mediumHighlight = (color: string) => alpha(color, OPACITY.MEDIUM)
+export const strongHighlight = (color: string) => alpha(color, OPACITY.STRONG)
+
+// Состояния элементов
+export const hoverState = (base: string) => lighten(base, ADJUST.LIGHT)
+export const activeState = (base: string) => lighten(base, ADJUST.MEDIUM)
+export const disabledState = (base: string) => alpha(base, OPACITY.STRONG)
+```
+
+### DSL для конфигурации
+
+Новый DSL для описания конфигурации цветов с типобезопасностью:
+
+```typescript
+export interface UIColorConfig {
+  rules?: Record<string, ColorValue>
+  groups?: Record<string, Record<string, ColorValue>>
+  multiple?: Array<[string[], ColorValue]>
+}
+```
+
+### Утилиты для работы с токенами
+
+Новые утилиты для преобразования правил builder в токены:
+
+```typescript
+export function convertRulesToTokens(
+  rules: Record<string, any>,
+  tokenDefinitions: Record<string, (value: any, scopeStr: string) => TokenColor | null>
+): TokenColor[]
+```
 
 ## 7) Тестирование
 

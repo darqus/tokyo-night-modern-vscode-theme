@@ -1,5 +1,5 @@
-import { palette } from '../../palette/index.js'
 import { alpha, lighten, mix } from '../../utils/color.js'
+import { c, colorRules } from '../../utils/color-builder.js'
 
 export function generateMiscColors(): Record<string, string> {
   const {
@@ -16,102 +16,113 @@ export function generateMiscColors(): Record<string, string> {
     orange,
     teal,
     neutral,
-  } = palette
+  } = c
 
-  return {
-    'walkThrough.embeddedEditorBackground': bg.main,
-    'textLink.foreground': blue.light,
-    'textLink.activeForeground': lighten(blue.light, 0.2),
-    'textPreformat.foreground': fg.main,
-    'textBlockQuote.background': bg.main,
-    'textCodeBlock.background': bg.main,
-    'textSeparator.foreground': lighten(bg.main, 0.15),
-    'debugExceptionWidget.border': red.dark,
-    'debugExceptionWidget.background': bg.dark,
-    'debugToolBar.background': bg.dark,
-    'debugConsole.infoForeground': fg.main,
-    'debugConsole.errorForeground': red.dark,
-    'debugConsole.sourceForeground': fg.main,
-    'debugConsole.warningForeground': yellow.dark,
-    'debugConsoleInputIcon.foreground': teal.main,
-    'editor.stackFrameHighlightBackground': alpha(yellow.dark, 0.125),
-    'editor.focusedStackFrameHighlightBackground': alpha(teal.main, 0.125),
-    'debugView.stateLabelForeground': fg.main,
-    'debugView.stateLabelBackground': bg.dark,
-    'debugView.valueChangedHighlight': alpha(blue.dark, 0.67),
-    'debugTokenExpression.name': cyan.light,
-    'debugTokenExpression.value': fg.light,
-    'debugTokenExpression.string': green.main,
-    'debugTokenExpression.boolean': orange.main,
-    'debugTokenExpression.number': orange.main,
-    'debugTokenExpression.error': red.dark,
-    'debugIcon.breakpointForeground': red.dark,
-    'debugIcon.breakpointDisabledForeground': bg.light,
-    'debugIcon.breakpointUnverifiedForeground': red.dark,
-    'notebook.editorBackground': bg.light,
-    'notebook.cellEditorBackground': bg.main,
-    'notebook.cellBorderColor': bg.dark,
-    'notebook.focusedCellBorder': mix(bg.main, blue.main, 0.2),
-    'notebook.cellStatusBarItemHoverBackground': alpha(blue.main, 0.15),
-    'charts.red': red.main,
-    'charts.blue': blue.main,
-    'charts.yellow': yellow.main,
-    'charts.orange': orange.main,
-    'charts.green': blue.main,
-    'charts.purple': purple.dark,
-    'charts.foreground': fg.light,
-    'charts.lines': bg.main,
-    'scmGraph.historyItemHoverLabelForeground': bg.dark,
-    'scmGraph.foreground1': blue.main,
-    'scmGraph.foreground2': purple.main,
-    'scmGraph.foreground3': cyan.main,
-    'scmGraph.foreground4': pink.main,
-    'scmGraph.foreground5': magenta.main,
-    'scmGraph.historyItemHoverAdditionsForeground': green.dark,
-    'scmGraph.historyItemHoverDeletionsForeground': red.main,
-    'scmGraph.historyItemRefColor': blue.main,
-    'scmGraph.historyItemRemoteRefColor': purple.main,
-    'scmGraph.historyItemBaseRefColor': cyan.main,
-    'scmGraph.historyItemHoverDefaultLabelForeground': fg.light,
-    'merge.currentHeaderBackground': alpha(green.dark, 0.15),
-    'merge.currentContentBackground': alpha(teal.dark, 0.27),
-    'merge.incomingHeaderBackground': alpha(blue.dark, 0.67),
-    'merge.incomingContentBackground': alpha(blue.dark, 0.27),
-    'mergeEditor.change.background': alpha(green.dark, 0.15),
-    'mergeEditor.change.word.background': alpha(green.dark, 0.25),
-    'mergeEditor.conflict.unhandledUnfocused.border': alpha(yellow.main, 0.53),
-    'mergeEditor.conflict.unhandledFocused.border': alpha(yellow.main, 0.69),
-    'mergeEditor.conflict.handledUnfocused.border': alpha(green.dark, 0.15),
-    'mergeEditor.conflict.handledFocused.border': alpha(green.dark, 0.4),
-    'mergeEditor.conflict.handled.minimapOverViewRuler': teal.dark,
-    'mergeEditor.conflict.unhandled.minimapOverViewRuler': yellow.main,
-    'gitlens.trailingLineForegroundColor': neutral.dark,
-    'gitlens.gutterUncommittedForegroundColor': blue.main,
-    'gitlens.gutterForegroundColor': fg.main,
-    'gitlens.gutterBackgroundColor': bg.main,
-    'notificationCenterHeader.background': bg.main,
-    'notifications.background': bg.main,
-    'notificationLink.foreground': blue.light,
-    'notificationsErrorIcon.foreground': red.dark,
-    'notificationsWarningIcon.foreground': yellow.main,
-    'notificationsInfoIcon.foreground': cyan.main,
-    'menubar.selectionForeground': fg.light,
-    'menubar.selectionBackground': alpha(blue.main, 0.2),
-    'menubar.selectionBorder': lighten(bg.main, 0.04),
-    'menu.foreground': fg.main,
-    'menu.background': bg.main,
-    'menu.selectionForeground': lighten(fg.light, 0.4),
-    'menu.selectionBackground': alpha(blue.main, 0.25),
-    'menu.separatorBackground': lighten(bg.main, 0.06),
-    'menu.border': mix(bg.main, blue.main, 0.2),
-    'chat.requestBorder': bg.light,
-    'chat.avatarBackground': blue.dark,
-    'chat.avatarForeground': fg.light,
-    'chat.slashCommandBackground': bg.dark,
-    'chat.slashCommandForeground': blue.main,
-    'inlineChat.foreground': fg.light,
-    'inlineChatInput.background': bg.light,
-    'inlineChatDiff.inserted': alpha(green.dark, 0.25),
-    'inlineChatDiff.removed': alpha(red.dark, 0.26),
-  }
+  const builder = colorRules()
+
+  return builder
+    .add('walkThrough.embeddedEditorBackground', bg.main)
+    .add('textLink.foreground', blue.light)
+    .add('textLink.activeForeground', lighten(blue.light, 0.2))
+    .add('textPreformat.foreground', fg.main)
+    .add('textBlockQuote.background', bg.main)
+    .add('textCodeBlock.background', bg.main)
+    .add('textSeparator.foreground', lighten(bg.main, 0.15))
+    .add('debugExceptionWidget.border', red.dark)
+    .add('debugExceptionWidget.background', bg.dark)
+    .add('debugToolBar.background', bg.dark)
+    .add('debugConsole.infoForeground', fg.main)
+    .add('debugConsole.errorForeground', red.dark)
+    .add('debugConsole.sourceForeground', fg.main)
+    .add('debugConsole.warningForeground', yellow.dark)
+    .add('debugConsoleInputIcon.foreground', teal.main)
+    .add('editor.stackFrameHighlightBackground', alpha(yellow.dark, 0.125))
+    .add('editor.focusedStackFrameHighlightBackground', alpha(teal.main, 0.125))
+    .add('debugView.stateLabelForeground', fg.main)
+    .add('debugView.stateLabelBackground', bg.dark)
+    .add('debugView.valueChangedHighlight', alpha(blue.dark, 0.67))
+    .add('debugTokenExpression.name', cyan.light)
+    .add('debugTokenExpression.value', fg.light)
+    .add('debugTokenExpression.string', green.main)
+    .add('debugTokenExpression.boolean', orange.main)
+    .add('debugTokenExpression.number', orange.main)
+    .add('debugTokenExpression.error', red.dark)
+    .add('debugIcon.breakpointForeground', red.dark)
+    .add('debugIcon.breakpointDisabledForeground', bg.light)
+    .add('debugIcon.breakpointUnverifiedForeground', red.dark)
+    .add('notebook.editorBackground', bg.light)
+    .add('notebook.cellEditorBackground', bg.main)
+    .add('notebook.cellBorderColor', bg.dark)
+    .add('notebook.focusedCellBorder', mix(bg.main, blue.main, 0.2))
+    .add('notebook.cellStatusBarItemHoverBackground', alpha(blue.main, 0.15))
+    .add('charts.red', red.main)
+    .add('charts.blue', blue.main)
+    .add('charts.yellow', yellow.main)
+    .add('charts.orange', orange.main)
+    .add('charts.green', blue.main)
+    .add('charts.purple', purple.dark)
+    .add('charts.foreground', fg.light)
+    .add('charts.lines', bg.main)
+    .add('scmGraph.historyItemHoverLabelForeground', bg.dark)
+    .add('scmGraph.foreground1', blue.main)
+    .add('scmGraph.foreground2', purple.main)
+    .add('scmGraph.foreground3', cyan.main)
+    .add('scmGraph.foreground4', pink.main)
+    .add('scmGraph.foreground5', magenta.main)
+    .add('scmGraph.historyItemHoverAdditionsForeground', green.dark)
+    .add('scmGraph.historyItemHoverDeletionsForeground', red.main)
+    .add('scmGraph.historyItemRefColor', blue.main)
+    .add('scmGraph.historyItemRemoteRefColor', purple.main)
+    .add('scmGraph.historyItemBaseRefColor', cyan.main)
+    .add('scmGraph.historyItemHoverDefaultLabelForeground', fg.light)
+    .add('merge.currentHeaderBackground', alpha(green.dark, 0.15))
+    .add('merge.currentContentBackground', alpha(teal.dark, 0.27))
+    .add('merge.incomingHeaderBackground', alpha(blue.dark, 0.67))
+    .add('merge.incomingContentBackground', alpha(blue.dark, 0.27))
+    .add('mergeEditor.change.background', alpha(green.dark, 0.15))
+    .add('mergeEditor.change.word.background', alpha(green.dark, 0.25))
+    .add(
+      'mergeEditor.conflict.unhandledUnfocused.border',
+      alpha(yellow.main, 0.53)
+    )
+    .add(
+      'mergeEditor.conflict.unhandledFocused.border',
+      alpha(yellow.main, 0.69)
+    )
+    .add(
+      'mergeEditor.conflict.handledUnfocused.border',
+      alpha(green.dark, 0.15)
+    )
+    .add('mergeEditor.conflict.handledFocused.border', alpha(green.dark, 0.4))
+    .add('mergeEditor.conflict.handled.minimapOverViewRuler', teal.dark)
+    .add('mergeEditor.conflict.unhandled.minimapOverViewRuler', yellow.main)
+    .add('gitlens.trailingLineForegroundColor', neutral.dark)
+    .add('gitlens.gutterUncommittedForegroundColor', blue.main)
+    .add('gitlens.gutterForegroundColor', fg.main)
+    .add('gitlens.gutterBackgroundColor', bg.main)
+    .add('notificationCenterHeader.background', bg.main)
+    .add('notifications.background', bg.main)
+    .add('notificationLink.foreground', blue.light)
+    .add('notificationsErrorIcon.foreground', red.dark)
+    .add('notificationsWarningIcon.foreground', yellow.main)
+    .add('notificationsInfoIcon.foreground', cyan.main)
+    .add('menubar.selectionForeground', fg.light)
+    .add('menubar.selectionBackground', alpha(blue.main, 0.2))
+    .add('menubar.selectionBorder', lighten(bg.main, 0.04))
+    .add('menu.foreground', fg.main)
+    .add('menu.background', bg.main)
+    .add('menu.selectionForeground', lighten(fg.light, 0.4))
+    .add('menu.selectionBackground', alpha(blue.main, 0.25))
+    .add('menu.separatorBackground', lighten(bg.main, 0.06))
+    .add('menu.border', mix(bg.main, blue.main, 0.2))
+    .add('chat.requestBorder', bg.light)
+    .add('chat.avatarBackground', blue.dark)
+    .add('chat.avatarForeground', fg.light)
+    .add('chat.slashCommandBackground', bg.dark)
+    .add('chat.slashCommandForeground', blue.main)
+    .add('inlineChat.foreground', fg.light)
+    .add('inlineChatInput.background', bg.light)
+    .add('inlineChatDiff.inserted', alpha(green.dark, 0.25))
+    .add('inlineChatDiff.removed', alpha(red.dark, 0.26))
+    .build()
 }

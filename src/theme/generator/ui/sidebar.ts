@@ -1,28 +1,41 @@
-import { palette } from '../../palette/index.js'
-import { darken, lighten, mix } from '../../utils/index.js'
+import { darken, lighten, mix } from '../../utils/color.js'
+import { c, colorRules } from '../../utils/color-builder.js'
 
 export const generateSidebarColors = (): Record<string, string> => {
-  const { bg, fg, ui, blue } = palette
+  const { bg, fg, ui, blue } = c
+  const builder = colorRules()
 
-  return {
-    'activityBar.background': bg.dark,
-    'activityBar.foreground': fg.dark,
-    'activityBar.inactiveForeground': mix(darken(fg.dark, 0.4), bg.dark, 0.2),
-    'activityBar.activeBorder': blue.main,
-    'activityBar.activeBackground': lighten(bg.dark, 0.03),
-    'activityBar.border': lighten(bg.dark, 0.02),
-    'activityBarBadge.background': ui.badge,
-    'activityBarBadge.foreground': ui.white,
-    'activityBarTop.foreground': fg.main,
-    'activityBarTop.inactiveForeground': fg.dark,
-    'tree.indentGuidesStroke': lighten(bg.main, 0.08),
-    'sideBar.foreground': fg.main,
-    'sideBar.background': lighten(bg.dark, 0.02),
-    'sideBar.border': lighten(bg.dark, 0.04),
-    'sideBarTitle.foreground': fg.dark,
-    'sideBarSectionHeader.background': lighten(bg.dark, 0.04),
-    'sideBarSectionHeader.foreground': fg.dark,
-    'sideBarSectionHeader.border': lighten(bg.dark, 0.06),
-    'sideBar.dropBackground': bg.light,
-  }
+  return builder
+    .addGroup('activityBar', {
+      background: bg.dark,
+      foreground: fg.dark,
+      inactiveForeground: mix(darken(fg.dark, 0.4), bg.dark, 0.2),
+      activeBorder: blue.main,
+      activeBackground: lighten(bg.dark, 0.03),
+      border: lighten(bg.dark, 0.02),
+    })
+    .addGroup('activityBarBadge', {
+      background: ui.badge,
+      foreground: ui.white,
+    })
+    .addGroup('activityBarTop', {
+      foreground: fg.main,
+      inactiveForeground: fg.dark,
+    })
+    .add('tree.indentGuidesStroke', lighten(bg.main, 0.08))
+    .addGroup('sideBar', {
+      foreground: fg.main,
+      background: lighten(bg.dark, 0.02),
+      border: lighten(bg.dark, 0.04),
+      dropBackground: bg.light,
+    })
+    .addGroup('sideBarTitle', {
+      foreground: fg.dark,
+    })
+    .addGroup('sideBarSectionHeader', {
+      background: lighten(bg.dark, 0.04),
+      foreground: fg.dark,
+      border: lighten(bg.dark, 0.06),
+    })
+    .build()
 }

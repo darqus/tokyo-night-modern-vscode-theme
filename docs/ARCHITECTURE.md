@@ -9,6 +9,10 @@ Tokyo Modern - это тема для VS Code с модульной архите
 ```
 src/theme/
 ├── config.ts              # Конфигурация темы
+├── config/
+│   ├── constants.ts       # Константы темы
+│   ├── color-config-dsl.ts # DSL для конфигурации цветов
+│   └── unified-generator.ts # Унифицированный генератор
 ├── index.ts               # Точка входа
 ├── generator/             # Генераторы темы
 │   ├── index.ts           # Основной генератор
@@ -48,12 +52,15 @@ src/theme/
 └── utils/
     ├── cache.ts          # Кэширование
     ├── color.ts          # Утилиты цветов
+    ├── color-builder.ts  # Builder для цветов
     ├── color-generator.ts # Генераторы цветовых палитр
+    ├── color-helpers.ts  # Семантические утилиты цвета
     ├── contrast.ts       # Утилиты контраста
     ├── logger.ts         # Логирование
     ├── rgb.ts            # Утилиты RGB
     ├── safe-exec.ts      # Безопасное выполнение
     ├── semantic-tokens.ts # Утилиты семантических токенов
+    ├── token-helpers.ts  # Утилиты для работы с токенами
     └── validation.ts     # Валидация
 ```
 
@@ -80,11 +87,20 @@ src/theme/
 Набор переиспользуемых утилит:
 
 - **color.ts** - функции работы с цветами (lighten, darken, mix, alpha)
+- **color-helpers.ts** - семантические утилиты цвета с именованными константами (OPACITY, ADJUST, MIX_RATIO)
+- **color-builder.ts** - builder для упрощения создания цветовых правил (ColorRuleBuilder, colorRules)
+- **token-helpers.ts** - утилиты для работы с токенами (convertRulesToTokens, token definitions)
 - **rgb.ts** - конвертация между цветовыми форматами
 - **contrast.ts** - проверка контраста и соответствия WCAG
 - **validation.ts** - валидация темы и цветов
 - **cache.ts** - кэширование для оптимизации
 - **semantic-tokens.ts** - работа с семантическими токенами
+
+### 4. Конфигурация
+
+- **config/constants.ts** - централизованные константы темы
+- **config/color-config-dsl.ts** - DSL для конфигурации цветов с типами и builder-ами
+- **config/unified-generator.ts** - унифицированный генератор темы на основе конфигурации
 
 ## 🔄 Процесс генерации темы
 
@@ -92,6 +108,55 @@ src/theme/
 2. **Палитра**: `basePalette` содержит все базовые цвета
 3. **Генераторы**: Функции в `generator/` используют палитру для создания специфичных токенов
 4. **Сборка**: Все части объединяются в один объект темы
+
+## 🛠️ Новые утилиты и подходы
+
+### ColorRuleBuilder
+
+Новый builder для упрощения создания цветовых правил:
+
+```typescript
+import { colorRules, c } from '../utils/color-builder.js'
+
+export function generateCoreColors(): Record<string, string> {
+  return colorRules()
+    .add('foreground', c.fg.light)
+    .add('descriptionForeground', c.fg.main)
+    .addGroup('badge', {
+      background: c.ui.badge,
+      foreground: c.ui.white,
+    })
+    .build()
+}
+```
+
+### Семантические утилиты цвета
+
+Утилиты с понятными именами для часто используемых операций:
+
+```typescript
+// Подсветка
+export const subtleHighlight = (color: string) => alpha(color, OPACITY.LIGHT)
+export const mediumHighlight = (color: string) => alpha(color, OPACITY.MEDIUM)
+export const strongHighlight = (color: string) => alpha(color, OPACITY.STRONG)
+
+// Состояния элементов
+export const hoverState = (base: string) => lighten(base, ADJUST.LIGHT)
+export const activeState = (base: string) => lighten(base, ADJUST.MEDIUM)
+export const disabledState = (base: string) => alpha(base, OPACITY.STRONG)
+```
+
+### DSL для конфигурации
+
+Новый DSL для описания конфигурации цветов с типобезопасностью:
+
+```typescript
+export interface UIColorConfig {
+  rules?: Record<string, ColorValue>
+  groups?: Record<string, Record<string, ColorValue>>
+  multiple?: Array<[string[], ColorValue]>
+}
+```
 
 ## 🧪 Тестирование
 

@@ -1,31 +1,50 @@
-import { palette } from '../../palette/index.js'
 import { alpha, mix } from '../../utils/color.js'
+import { c, colorRules } from '../../utils/color-builder.js'
+import {
+  borderColor,
+  mediumHighlight,
+  OPACITY,
+  subtleBackground,
+  subtleHighlight,
+} from '../../utils/color-helpers.js'
 
 export function generateListColors(): Record<string, string> {
-  const { bg, fg, yellow, orange, red, blue } = palette
-
-  return {
-    'list.dropBackground': bg.light,
-    'list.deemphasizedForeground': fg.main,
-    'list.activeSelectionBackground': alpha(blue.main, 0.2),
-    'list.activeSelectionForeground': fg.light,
-    'list.inactiveSelectionBackground': alpha(blue.main, 0.15),
-    'list.inactiveSelectionForeground': fg.light,
-    'list.focusBackground': alpha(blue.main, 0.25),
-    'list.focusForeground': fg.light,
-    'list.hoverBackground': alpha(blue.main, 0.1),
-    'list.hoverForeground': fg.light,
-    'list.highlightForeground': fg.light,
-    'list.invalidItemForeground': mix(orange.main, yellow.main, 0.3),
-    'list.errorForeground': red.main,
-    'list.warningForeground': yellow.dark,
-    'listFilterWidget.background': bg.dark,
-    'listFilterWidget.outline': blue.dark,
-    'listFilterWidget.noMatchesOutline': red.dark,
-    'pickerGroup.foreground': fg.light,
-    'pickerGroup.border': mix(bg.main, blue.main, 0.2),
-    'scrollbarSlider.background': alpha(fg.main, 0.04),
-    'scrollbarSlider.hoverBackground': alpha(blue.main, 0.2),
-    'scrollbarSlider.activeBackground': alpha(blue.main, 0.3),
-  }
+  return (
+    colorRules()
+      // Основные элементы списка
+      .addGroup('list', {
+        dropBackground: c.bg.light,
+        deemphasizedForeground: c.fg.main,
+        activeSelectionBackground: subtleHighlight(c.blue.main),
+        activeSelectionForeground: c.fg.light,
+        inactiveSelectionBackground: alpha(c.blue.main, OPACITY.SUBTLE),
+        inactiveSelectionForeground: c.fg.light,
+        focusBackground: alpha(c.blue.main, 0.25),
+        focusForeground: c.fg.light,
+        hoverBackground: subtleBackground(c.blue.main),
+        hoverForeground: c.fg.light,
+        highlightForeground: c.fg.light,
+        invalidItemForeground: mix(c.orange.main, c.yellow.main, 0.3),
+        errorForeground: c.red.main,
+        warningForeground: c.yellow.dark,
+      })
+      // Виджет фильтрации списка
+      .addGroup('listFilterWidget', {
+        background: c.bg.dark,
+        outline: c.blue.dark,
+        noMatchesOutline: c.red.dark,
+      })
+      // Группа пикера (например, в палитре команд)
+      .addGroup('pickerGroup', {
+        foreground: c.fg.light,
+        border: borderColor(c.bg.main, c.blue.main),
+      })
+      // Скроллбар в списках
+      .addGroup('scrollbarSlider', {
+        background: alpha(c.fg.main, 0.04),
+        hoverBackground: subtleHighlight(c.blue.main),
+        activeBackground: mediumHighlight(c.blue.main),
+      })
+      .build()
+  )
 }

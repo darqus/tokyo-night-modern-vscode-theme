@@ -1,35 +1,45 @@
-import { palette } from '../../palette/index.js'
 import { alpha } from '../../utils/color.js'
+import { c, colorRules } from '../../utils/color-builder.js'
+import { OPACITY } from '../../utils/color-helpers.js'
 
 export const generateTerminalColors = (): Record<string, string> => {
-  const { bg, fg, red, green, yellow, blue, purple, cyan, neutral } = palette
+  const { bg, fg, red, green, yellow, blue, purple, cyan, neutral } = c
+  const builder = colorRules()
 
-  return {
-    // Main terminal colors
-    'terminal.background': bg.main,
-    'terminal.foreground': fg.light,
-    'terminalCursor.foreground': fg.light,
-    'terminalCursor.background': bg.light,
-    'terminal.selectionBackground': alpha(blue.dark, 0.3),
+  // Группа основных цветов терминала
+  builder.addGroup('terminal', {
+    background: bg.main,
+    foreground: fg.light,
+    selectionBackground: alpha(blue.dark, OPACITY.MEDIUM),
+  })
 
-    // Basic ANSI colors
-    'terminal.ansiBlack': bg.dark,
-    'terminal.ansiRed': red.main,
-    'terminal.ansiGreen': green.main,
-    'terminal.ansiYellow': yellow.main,
-    'terminal.ansiBlue': blue.main,
-    'terminal.ansiMagenta': purple.light,
-    'terminal.ansiCyan': cyan.light,
-    'terminal.ansiWhite': fg.main,
+  // Группа цветов курсора
+  builder.add('terminalCursor.foreground', fg.light)
+  builder.add('terminalCursor.background', bg.light)
 
-    // Bright ANSI colors with improved contrast
-    'terminal.ansiBrightBlack': neutral.main,
-    'terminal.ansiBrightRed': red.dark, // For errors
-    'terminal.ansiBrightGreen': green.dark, // For success
-    'terminal.ansiBrightYellow': yellow.light, // For warnings
-    'terminal.ansiBrightBlue': blue.light, // For information
-    'terminal.ansiBrightMagenta': purple.light,
-    'terminal.ansiBrightCyan': cyan.light,
-    'terminal.ansiBrightWhite': fg.light,
-  }
+  // Группа базовых ANSI цветов
+  builder.addGroup('terminal', {
+    ansiBlack: bg.dark,
+    ansiRed: red.main,
+    ansiGreen: green.main,
+    ansiYellow: yellow.main,
+    ansiBlue: blue.main,
+    ansiMagenta: purple.light,
+    ansiCyan: cyan.light,
+    ansiWhite: fg.main,
+  })
+
+  // Группа ярких ANSI цветов с улучшенным контрастом
+  builder.addGroup('terminal', {
+    ansiBrightBlack: neutral.main,
+    ansiBrightRed: red.dark, // For errors
+    ansiBrightGreen: green.dark, // For success
+    ansiBrightYellow: yellow.light, // For warnings
+    ansiBrightBlue: blue.light, // For information
+    ansiBrightMagenta: purple.light,
+    ansiBrightCyan: cyan.light,
+    ansiBrightWhite: fg.light,
+  })
+
+  return builder.build()
 }

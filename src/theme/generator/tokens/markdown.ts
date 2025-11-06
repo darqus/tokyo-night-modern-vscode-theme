@@ -1,12 +1,15 @@
-import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
-
-function buildJsonKeyScopeSelector(level: number): string {
-  const base = 'source.json meta.structure.dictionary.json'
-  const nestingPattern =
-    ' meta.structure.dictionary.value.json meta.structure.dictionary.json'
-  return `${base}${nestingPattern.repeat(level)} support.type.property-name.json`
-}
+import { c, colorRules } from '../../utils/color-builder.js'
+import {
+  borderColor,
+  mediumHighlight,
+  subtleHighlight,
+} from '../../utils/color-helpers.js'
+import {
+  buildJsonKeyScopeSelector,
+  convertRulesToTokens,
+  markdownTokenDefinitions,
+} from '../../utils/token-helpers.js'
 
 export function generateMarkdownTokens(): TokenColor[] {
   const {
@@ -21,7 +24,7 @@ export function generateMarkdownTokens(): TokenColor[] {
     red,
     yellow,
     peach,
-  } = palette
+  } = c
 
   const jsonKeyLevelColors = [
     purple.main,
@@ -35,49 +38,27 @@ export function generateMarkdownTokens(): TokenColor[] {
     lime.main,
   ]
 
-  return [
-    ...jsonKeyLevelColors.map((color, level) => ({
-      name: `JSON Key - Level ${level}`,
-      scope: [buildJsonKeyScopeSelector(level)],
-      settings: { foreground: color },
-    })),
-    {
-      name: 'Markdown - Heading',
-      scope: [
-        'heading.1.markdown',
-        'heading.2.markdown',
-        'heading.3.markdown',
-        'heading.4.markdown',
-        'heading.5.markdown',
-        'heading.6.markdown',
-      ],
-      settings: { fontStyle: 'bold', foreground: blue.main },
-    },
-    {
-      name: 'Markup - Italic, Bold',
-      scope: ['markup.italic', 'markup.bold'],
-      settings: { fontStyle: 'italic', foreground: fg.light },
-    },
-    {
-      name: 'Markdown - Link',
-      scope: [
-        'markup.underline.link',
-        'constant.other.reference.link.markdown',
-      ],
-      settings: { foreground: teal.main },
-    },
-    {
-      name: 'Markdown - Fenced Code Block',
-      scope: [
-        'markup.fenced_code.block.markdown',
-        'markup.inline.raw.string.markdown',
-      ],
-      settings: { foreground: lime.light },
-    },
-    {
-      name: 'Markup - Quote',
-      scope: 'markup.quote',
-      settings: { fontStyle: 'italic' },
-    },
-  ]
+  // Используем builder для логической группировки токенов
+  const builder = colorRules()
+
+  // JSON Key уровни
+  jsonKeyLevelColors.forEach((color, level) => {
+    builder.add(`json.keyLevel${level}`, color)
+  })
+
+  // Заголовки
+  builder.add('headings.default', blue.main)
+
+  // Стили разметки
+  builder.add('markup.italicBold', fg.light)
+  builder.add('markup.quote', 'italic')
+
+  // Ссылки
+  builder.add('links.default', teal.main)
+
+  // Код
+  builder.add('code.fencedBlock', lime.light)
+
+  // Convert builder rules to TokenColor format
+  return convertRulesToTokens(builder.build(), markdownTokenDefinitions)
 }

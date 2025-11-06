@@ -1,84 +1,51 @@
-import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types'
+import { c, colorRules } from '../../utils/color-builder.js'
+import {
+  convertRulesToTokens,
+  modernTokenDefinitions,
+} from '../../utils/token-helpers.js'
 
 export function generateModernTokens(): TokenColor[] {
-  const { teal, blue, green, magenta, peach, rose } = palette
+  const { teal, blue, green, magenta, peach, rose } = c
 
-  return [
-    // React/Vue Components
-    {
-      name: 'React/Vue Components',
-      scope: ['entity.name.component', 'support.class.component'],
-      settings: {
-        foreground: peach.light,
-        fontStyle: 'bold',
-      },
-    },
+  // Используем builder для логической группировки токенов
+  const builder = colorRules()
 
-    // TypeScript Types
-    {
-      name: 'TypeScript Types',
-      scope: ['entity.name.type', 'type.alias', 'type.parameter'],
-      settings: {
-        foreground: magenta.light,
-      },
-    },
+  // Frontend Frameworks
+  builder.addGroup('reactVue', {
+    components: peach.light,
+  })
 
-    // GraphQL/Prisma
-    {
-      name: 'GraphQL Schema',
-      scope: ['type.name.graphql', 'field.name.graphql'],
-      settings: {
-        foreground: magenta.main,
-      },
-    },
+  // TypeScript
+  builder.addGroup('typescript', {
+    types: magenta.light,
+  })
 
-    // Tailwind CSS Classes
-    {
-      name: 'Tailwind Classes',
-      scope: ['entity.other.attribute-name.class.tailwind'],
-      settings: {
-        foreground: teal.main,
-      },
-    },
+  // GraphQL
+  builder.addGroup('graphql', {
+    schema: magenta.main,
+  })
 
-    // React Hooks
-    {
-      name: 'React Hooks',
-      scope: ['support.function.react-hooks', 'entity.name.function.hook'],
-      settings: {
-        foreground: rose.main,
-        fontStyle: 'bold',
-      },
-    },
+  // Styling
+  builder.addGroup('tailwind', {
+    classes: teal.main,
+  })
 
-    // Testing Frameworks
-    {
-      name: 'Testing Frameworks',
-      scope: ['support.function.test', 'entity.name.function.test'],
-      settings: {
-        foreground: green.main,
-        fontStyle: 'bold',
-      },
-    },
+  // React-specific
+  builder.addGroup('reactHooks', {
+    hooks: rose.main,
+  })
 
-    // Modern Frameworks General
-    {
-      name: 'Modern Frameworks',
-      scope: [
-        'support.function.solid',
-        'support.function.drizzle',
-        'support.function.hono',
-        'support.function.validation',
-        'support.function.query',
-        'entity.name.function.resolver',
-        'support.function.macro.rust',
-        'entity.name.function.go',
-        'support.function.styled',
-      ],
-      settings: {
-        foreground: blue.main,
-      },
-    },
-  ]
+  // Testing
+  builder.addGroup('testing', {
+    frameworks: green.main,
+  })
+
+  // Modern Frameworks and Libraries
+  builder.addGroup('modernFrameworks', {
+    general: blue.main,
+  })
+
+  // Convert builder rules to TokenColor format
+  return convertRulesToTokens(builder.build(), modernTokenDefinitions)
 }

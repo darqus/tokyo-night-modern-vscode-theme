@@ -1,69 +1,57 @@
-import { palette } from '../../palette/index.js'
 import type { TokenColor } from '../../types/index.js'
+import { c, colorRules } from '../../utils/color-builder.js'
+import {
+  borderColor,
+  mediumHighlight,
+  subtleHighlight,
+} from '../../utils/color-helpers.js'
+import {
+  codeTokenDefinitions,
+  convertRulesToTokens,
+} from '../../utils/token-helpers.js'
 
 export function generateCodeTokens(): TokenColor[] {
-  const { fg, indigo, lime, purple, teal } = palette
+  const { fg, indigo, lime, purple, teal } = c
 
-  return [
-    {
-      name: 'Tag',
-      scope: 'entity.name.tag',
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Tag Punctuation',
-      scope: ['punctuation.definition.tag'],
-      settings: { foreground: fg.main },
-    },
-    {
-      name: 'Variables',
-      scope: ['variable', 'support.variable'],
-      settings: { foreground: lime.main },
-    },
-    {
-      name: 'Function Arguments',
-      scope: ['variable.parameter'],
-      settings: { foreground: indigo.main },
-    },
-    {
-      name: 'Object Key',
-      scope: ['meta.object-literal.key', 'entity.name.type.hcl'],
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Object Property',
-      scope: ['variable.other.property', 'support.variable.property'],
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Methods',
-      scope: ['entity.name.method', 'variable.function.constructor'],
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Function Definition',
-      scope: ['entity.name.function', 'variable.function'],
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Constant, Tag Attribute',
-      scope: ['constant.character', 'constant.escape'],
-      settings: { foreground: lime.main },
-    },
-    {
-      name: 'Inherited Class',
-      scope: 'entity.other.inherited-class',
-      settings: { foreground: purple.main },
-    },
-    {
-      name: 'Class, Support, DOM, etc',
-      scope: ['support.class', 'support.type', 'support.function'],
-      settings: { foreground: teal.main, fontStyle: 'bold' },
-    },
-    {
-      name: 'Class Name',
-      scope: 'entity.name',
-      settings: { foreground: teal.main },
-    },
-  ]
+  // Используем builder для логической группировки токенов
+  const builder = colorRules()
+
+  // Structural elements: Tags
+  builder.addGroup('tag', {
+    entityNameTag: purple.main,
+    punctuationDefinitionTag: fg.main,
+  })
+
+  // Variable-related elements
+  builder.addGroup('variable', {
+    variableSupport: lime.main,
+    variableParameter: indigo.main,
+  })
+
+  // Object-related elements
+  builder.addGroup('object', {
+    metaObjectLiteralKey: purple.main,
+    variableOtherProperty: purple.main,
+  })
+
+  // Function-related elements
+  builder.addGroup('function', {
+    entityNameMethod: purple.main,
+    entityNameFunction: purple.main,
+  })
+
+  // Constant values
+  builder.addGroup('constant', {
+    constantCharacter: lime.main,
+  })
+
+  // Class and type-related elements
+  builder.addGroup('class', {
+    entityOtherInherited: purple.main,
+    supportClassType: teal.main,
+    entityName: teal.main,
+  })
+
+  // Convert builder rules to TokenColor format
+  return convertRulesToTokens(builder.build(), codeTokenDefinitions)
 }
