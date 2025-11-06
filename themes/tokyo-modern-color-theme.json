@@ -82,7 +82,7 @@
     "list.hoverForeground": "#bacaf8",
     "list.highlightForeground": "#bacaf8",
     "list.invalidItemForeground": "#e5a752",
-    "list.errorForeground": "#7a3a4a",
+    "list.errorForeground": "#ff6b7a",
     "list.warningForeground": "#cccc22",
     "listFilterWidget.background": "#151127",
     "listFilterWidget.outline": "#2a5db4",

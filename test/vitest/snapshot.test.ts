@@ -70,6 +70,7 @@ describe('Snapshot Tests - Generated Theme', () => {
     expect(theme.colors['terminal.ansiMagenta']).toMatchSnapshot()
     expect(theme.colors['terminal.ansiCyan']).toMatchSnapshot()
     expect(theme.colors['terminal.ansiWhite']).toMatchSnapshot()
+    expect(theme.colors['list.errorForeground']).toMatchSnapshot()
   })
 
   it('should match specific token color sections', async () => {

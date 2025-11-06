@@ -91,6 +91,10 @@ const newTooltipBg = mix(palette.bg.light, palette.blue.main, 0.1)
 const tooltipFg = check('Tooltip text', palette.fg.light, newTooltipBg)
 logContrastResult('Tooltip text', tooltipFg, palette.fg.light, newTooltipBg)
 
+// List error foreground on tab background
+const listErrorOnTab = check('List error on tab', '#ff6b7a', '#18162c')
+logContrastResult('List error on tab', listErrorOnTab, '#ff6b7a', '#18162c')
+
 // Summary
 const compliancePercentage =
   issues.length === 0

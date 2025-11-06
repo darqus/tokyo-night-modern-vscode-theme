@@ -17,7 +17,7 @@ export function generateListColors(): Record<string, string> {
     'list.hoverForeground': fg.light,
     'list.highlightForeground': fg.light,
     'list.invalidItemForeground': mix(orange.main, yellow.main, 0.3),
-    'list.errorForeground': red.dark,
+    'list.errorForeground': red.main,
     'list.warningForeground': yellow.dark,
     'listFilterWidget.background': bg.dark,
     'listFilterWidget.outline': blue.dark,
