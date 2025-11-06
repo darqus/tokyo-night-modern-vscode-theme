@@ -42,7 +42,7 @@ export function generateTabColors(): Record<string, string> {
     })
     .addGroup('editorGroup', {
       border: c.neutral.main,
-      dropBackground: c.blue.main + '40',
+      dropBackground: `${c.blue.main}40`,
       emptyBackground: c.bg.main,
       focusedEmptyBorder: c.blue.main,
     })
