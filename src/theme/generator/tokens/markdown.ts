@@ -9,18 +9,30 @@ function buildJsonKeyScopeSelector(level: number): string {
 }
 
 export function generateMarkdownTokens(): TokenColor[] {
-  const { fg, blue, teal, lime } = palette
+  const {
+    fg,
+    blue,
+    teal,
+    lime,
+    purple,
+    magenta,
+    indigo,
+    cyan,
+    red,
+    yellow,
+    peach,
+  } = palette
 
   const jsonKeyLevelColors = [
-    palette.purple.main,
-    palette.magenta.main,
-    palette.indigo.main,
-    palette.teal.main,
-    palette.cyan.main,
-    palette.red.main,
-    palette.yellow.main,
-    palette.peach.main,
-    palette.lime.main,
+    purple.main,
+    magenta.main,
+    indigo.main,
+    teal.main,
+    cyan.main,
+    red.main,
+    yellow.main,
+    peach.main,
+    lime.main,
   ]
 
   return [
