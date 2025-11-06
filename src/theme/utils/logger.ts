@@ -10,7 +10,7 @@ export function sanitizeLogOutput(text: unknown): string {
     .split('')
     .filter((char) => {
       const code = char.charCodeAt(0)
-      return !(code >= 0 && code <= 31) && !(code >= 127 && code <= 159)
+      return !((code >= 0 && code <= 31) || (code >= 127 && code <= 159))
     })
     .join('')
     .replace(/[\r\n]/g, '')
