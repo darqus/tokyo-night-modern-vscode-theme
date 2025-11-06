@@ -1,4 +1,4 @@
-import { alpha, lighten, mix } from './color.js'
+import { alpha, darken, lighten, mix } from './color.js'
 
 /**
  * Константы для прозрачности
@@ -56,6 +56,13 @@ export const disabledState = (base: string) => alpha(base, OPACITY.STRONG)
 export const subtleBackground = (base: string) =>
   alpha(base, OPACITY.VERY_SUBTLE)
 export const lightBackground = (base: string) => lighten(base, ADJUST.TINY)
+
+// Смешивание цветов
+export const mixLight = (color1: string, color2: string) =>
+  mix(color1, color2, 0.3) // 70% первого цвета, 30% второго
+
+// Изменение яркости
+export const slightlyDarker = (base: string) => darken(base, ADJUST.TINY)
 
 // Тени
 export const softShadow = (color: string) => alpha(color, OPACITY.MEDIUM)

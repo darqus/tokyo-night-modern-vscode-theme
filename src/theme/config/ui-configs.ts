@@ -1,24 +1,13 @@
 import type { Palette } from '../palette/index.js'
+import { alpha, darken, lighten, mix } from '../utils/color.js'
 import {
-  activeState,
   borderColor,
-  dimBackground,
-  focusState,
-  hoverState,
   lightBackground,
   mediumHighlight,
-  mixHeavy,
   mixLight,
-  mixModerate,
-  muchDarker,
-  slightlyBrighter,
   slightlyDarker,
-  softShadow,
-  strongHighlight,
-  subtleBackground,
   subtleHighlight,
 } from '../utils/color-helpers.js'
-import { alpha, darken, lighten, mix } from '../utils/color.js'
 import type { UIColorConfig } from './color-config-dsl.js'
 
 /**

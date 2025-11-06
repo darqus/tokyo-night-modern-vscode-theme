@@ -1,13 +1,11 @@
 import type { Palette } from '../palette/index.js'
+import { alpha, darken, lighten, mix } from '../utils/color.js'
 import {
   lightBackground,
   mediumHighlight,
   slightlyDarker,
-  softShadow,
-  strongHighlight,
   subtleHighlight,
 } from '../utils/color-helpers.js'
-import { alpha, darken, lighten, mix } from '../utils/color.js'
 import type { UIColorConfig } from './color-config-dsl.js'
 
 /**
@@ -28,14 +26,16 @@ export const editorConfig: UIColorConfig = {
       findMatchBackground: (p: Palette) => alpha(p.blue.dark, 0.2),
       findMatchBorder: (p: Palette) => alpha(p.yellow.main, 0.5),
       findMatchHighlightBackground: (p: Palette) => alpha(p.blue.dark, 0.2),
-      findRangeHighlightBackground: (p: Palette) => subtleHighlight(p.blue.main),
+      findRangeHighlightBackground: (p: Palette) =>
+        subtleHighlight(p.blue.main),
       rangeHighlightBackground: (p: Palette) => subtleHighlight(p.teal.main),
       wordHighlightBackground: (p: Palette) => alpha(p.blue.main, 0.25),
       wordHighlightStrongBackground: (p: Palette) =>
         mediumHighlight(p.blue.main),
       selectionHighlightBackground: (p: Palette) => alpha(p.blue.main, 0.25),
       lineHighlightBackground: (p: Palette) => p.bg.light,
-      stackFrameHighlightBackground: (p: Palette) => alpha(p.yellow.dark, 0.125),
+      stackFrameHighlightBackground: (p: Palette) =>
+        alpha(p.yellow.dark, 0.125),
       focusedStackFrameHighlightBackground: (p: Palette) =>
         alpha(p.teal.main, 0.125),
     },

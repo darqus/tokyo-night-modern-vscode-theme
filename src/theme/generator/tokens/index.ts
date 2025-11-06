@@ -1,7 +1,2 @@
-export * from './basic.js'
-export * from './code.js'
-export * from './comments.js'
-export * from './css.js'
-export * from './markdown.js'
-export * from './markup.js'
-export * from './modern.js'
+// Old token generators have been removed as part of the new unified approach
+// All token generation is now handled through the unified generator

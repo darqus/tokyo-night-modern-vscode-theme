@@ -10,10 +10,10 @@ import type { TokenColor } from '../types/index.js'
  * соответствующие настройки на основе группы и подгруппы
  */
 export function convertRulesToTokens(
-  rules: Record<string, any>,
+  rules: Record<string, unknown>,
   tokenDefinitions: Record<
     string,
-    (value: any, scopeStr: string) => TokenColor | null
+    (value: unknown, scopeStr: string) => TokenColor | null
   >
 ): TokenColor[] {
   const tokens: TokenColor[] = []
@@ -49,7 +49,7 @@ export function buildJsonKeyScopeSelector(level: number): string {
  * Стандартные определения токенов для комментариев
  */
 export const commentTokenDefinitions = {
-  comments: (value: any, scopeStr: string): TokenColor | null => {
+  comments: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'italics':
         return {
@@ -108,7 +108,7 @@ export const commentTokenDefinitions = {
  * Стандартные определения токенов для кода
  */
 export const codeTokenDefinitions = {
-  tag: (value: any, scopeStr: string): TokenColor | null => {
+  tag: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'entityNameTag':
         return {
@@ -126,7 +126,7 @@ export const codeTokenDefinitions = {
         return null
     }
   },
-  variable: (value: any, scopeStr: string): TokenColor | null => {
+  variable: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'variableSupport':
         return {
@@ -144,7 +144,7 @@ export const codeTokenDefinitions = {
         return null
     }
   },
-  object: (value: any, scopeStr: string): TokenColor | null => {
+  object: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'metaObjectLiteralKey':
         return {
@@ -162,7 +162,7 @@ export const codeTokenDefinitions = {
         return null
     }
   },
-  function: (value: any, scopeStr: string): TokenColor | null => {
+  function: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'entityNameMethod':
         return {
@@ -180,7 +180,7 @@ export const codeTokenDefinitions = {
         return null
     }
   },
-  constant: (value: any, scopeStr: string): TokenColor | null => {
+  constant: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'constantCharacter':
         return {
@@ -192,7 +192,7 @@ export const codeTokenDefinitions = {
         return null
     }
   },
-  class: (value: any, scopeStr: string): TokenColor | null => {
+  class: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'entityOtherInherited':
         return {
@@ -222,18 +222,18 @@ export const codeTokenDefinitions = {
  * Стандартные определения токенов для markdown
  */
 export const markdownTokenDefinitions = {
-  json: (value: any, scopeStr: string): TokenColor | null => {
+  json: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr.startsWith('keyLevel')) {
       const level = scopeStr.replace('keyLevel', '')
       return {
         name: `JSON Key - Level ${level}`,
-        scope: [buildJsonKeyScopeSelector(parseInt(level))],
+        scope: [buildJsonKeyScopeSelector(parseInt(level, 10))],
         settings: { foreground: value as string },
       }
     }
     return null
   },
-  headings: (value: any, scopeStr: string): TokenColor | null => {
+  headings: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'default') {
       return {
         name: 'Markdown - Heading',
@@ -250,7 +250,7 @@ export const markdownTokenDefinitions = {
     }
     return null
   },
-  markup: (value: any, scopeStr: string): TokenColor | null => {
+  markup: (value: unknown, scopeStr: string): TokenColor | null => {
     switch (scopeStr) {
       case 'italicBold':
         return {
@@ -268,7 +268,7 @@ export const markdownTokenDefinitions = {
         return null
     }
   },
-  links: (value: any, scopeStr: string): TokenColor | null => {
+  links: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'default') {
       return {
         name: 'Markdown - Link',
@@ -281,7 +281,7 @@ export const markdownTokenDefinitions = {
     }
     return null
   },
-  code: (value: any, scopeStr: string): TokenColor | null => {
+  code: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'fencedBlock') {
       return {
         name: 'Markdown - Fenced Code Block',
@@ -300,7 +300,7 @@ export const markdownTokenDefinitions = {
  * Стандартные определения токенов для modern фреймворков
  */
 export const modernTokenDefinitions = {
-  reactVue: (value: any, scopeStr: string): TokenColor | null => {
+  reactVue: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'components') {
       return {
         name: 'React/Vue Components',
@@ -310,7 +310,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  typescript: (value: any, scopeStr: string): TokenColor | null => {
+  typescript: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'types') {
       return {
         name: 'TypeScript Types',
@@ -320,7 +320,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  graphql: (value: any, scopeStr: string): TokenColor | null => {
+  graphql: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'schema') {
       return {
         name: 'GraphQL Schema',
@@ -330,7 +330,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  tailwind: (value: any, scopeStr: string): TokenColor | null => {
+  tailwind: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'classes') {
       return {
         name: 'Tailwind Classes',
@@ -340,7 +340,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  reactHooks: (value: any, scopeStr: string): TokenColor | null => {
+  reactHooks: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'hooks') {
       return {
         name: 'React Hooks',
@@ -350,7 +350,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  testing: (value: any, scopeStr: string): TokenColor | null => {
+  testing: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'frameworks') {
       return {
         name: 'Testing Frameworks',
@@ -360,7 +360,7 @@ export const modernTokenDefinitions = {
     }
     return null
   },
-  modernFrameworks: (value: any, scopeStr: string): TokenColor | null => {
+  modernFrameworks: (value: unknown, scopeStr: string): TokenColor | null => {
     if (scopeStr === 'general') {
       return {
         name: 'Modern Frameworks',

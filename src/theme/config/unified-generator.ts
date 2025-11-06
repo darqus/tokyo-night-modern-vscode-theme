@@ -1,26 +1,36 @@
 import { palette } from '../palette/index.js'
-import type { Palette } from '../palette/index.js'
 import type { SemanticTokenStyle, TokenColor } from '../types/index.js'
 import type {
   ColorValue,
   SemanticTokenConfig,
   ThemeConfig,
   TokenColorConfig,
-  TokenSettings,
   UIColorConfig,
 } from './color-config-dsl.js'
 
 /**
+ * Адаптер палитры: преобразует SimplifiedPalette в UnifiedPalette
+ */
+const unifiedPaletteAdapter = {
+  background: palette.bg,
+  foreground: palette.fg,
+  ...palette,
+  ui: palette.ui,
+}
+
+/**
  * Разрешает значение цвета (строка или функция)
  */
-function resolveColorValue(value: ColorValue, p: Palette): string {
-  return typeof value === 'function' ? value(p) : value
+function resolveColorValue(value: ColorValue, p: any): string {
+  return typeof value === 'function' ? value(unifiedPaletteAdapter) : value
 }
 
 /**
  * Генерирует UI цвета из конфигурации
  */
-export function generateUIColors(config: UIColorConfig): Record<string, string> {
+export function generateUIColors(
+  config: UIColorConfig
+): Record<string, string> {
   const result: Record<string, string> = {}
 
   // Прямые правила
@@ -56,9 +66,7 @@ export function generateUIColors(config: UIColorConfig): Record<string, string> 
 /**
  * Генерирует токены подсветки синтаксиса из конфигурации
  */
-export function generateTokenColors(
-  configs: TokenColorConfig[]
-): TokenColor[] {
+export function generateTokenColors(configs: TokenColorConfig[]): TokenColor[] {
   return configs.map((config) => {
     const settings: Record<string, string> = {}
 
@@ -98,7 +106,7 @@ export function generateSemanticTokens(
 
   for (const [key, value] of Object.entries(config.rules)) {
     if (typeof value === 'function') {
-      result[key] = value(palette)
+      result[key] = value(unifiedPaletteAdapter)
     } else {
       result[key] = value
     }

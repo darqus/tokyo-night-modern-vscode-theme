@@ -1,4 +1,4 @@
-import type { Palette } from '../palette/index.js'
+import type { UnifiedPalette } from '../palette/index.js'
 import { lighten, mix } from '../utils/color.js'
 import type { TokenColorConfig } from './color-config-dsl.js'
 
@@ -10,7 +10,7 @@ export const commentsTokens: TokenColorConfig[] = [
     name: 'Comment',
     scope: ['comment', 'punctuation.definition.comment'],
     settings: {
-      foreground: (p: Palette) => p.neutral.main,
+      foreground: (p: UnifiedPalette) => p.neutral.main,
       fontStyle: 'italic',
     },
   },
@@ -24,42 +24,42 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Number, Boolean, Undefined, Null',
     scope: ['constant.numeric', 'constant.language', 'variable.other.constant'],
     settings: {
-      foreground: (p: Palette) => p.orange.main,
+      foreground: (p: UnifiedPalette) => p.orange.main,
     },
   },
   {
     name: 'String, Symbols',
     scope: ['string', 'constant.other.symbol', 'constant.other.key'],
     settings: {
-      foreground: (p: Palette) => p.green.main,
+      foreground: (p: UnifiedPalette) => p.green.main,
     },
   },
   {
     name: 'Colors',
     scope: ['constant.other.color'],
     settings: {
-      foreground: (p: Palette) => p.fg.light,
+      foreground: (p: UnifiedPalette) => p.foreground.light,
     },
   },
   {
     name: 'Invalid',
     scope: ['invalid'],
     settings: {
-      foreground: (p: Palette) => mix(p.red.main, p.orange.main, 0.7),
+      foreground: (p: UnifiedPalette) => mix(p.red.main, p.orange.main, 0.7),
     },
   },
   {
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: Palette) => p.peach.main,
+      foreground: (p: UnifiedPalette) => p.peach.main,
     },
   },
   {
     name: 'Storage - modifier, var, const, let',
     scope: ['storage.modifier'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
@@ -69,14 +69,14 @@ export const basicTokens: TokenColorConfig[] = [
       'punctuation.section.embedded',
     ],
     settings: {
-      foreground: (p: Palette) => p.indigo.light,
+      foreground: (p: UnifiedPalette) => p.indigo.light,
     },
   },
   {
     name: 'Operators',
     scope: ['keyword.operator'],
     settings: {
-      foreground: (p: Palette) => p.red.main,
+      foreground: (p: UnifiedPalette) => p.red.main,
       fontStyle: 'bold',
     },
   },
@@ -84,14 +84,16 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Punctuation',
     scope: ['punctuation'],
     settings: {
-      foreground: (p: Palette) => mix(p.fg.light, p.indigo.light, 0.4),
+      foreground: (p: UnifiedPalette) =>
+        mix(p.foreground.light, p.indigo.light, 0.4),
     },
   },
   {
     name: 'Template & Misc',
     scope: ['keyword.other', 'punctuation.definition.keyword'],
     settings: {
-      foreground: (p: Palette) => mix(p.lime.light, p.magenta.light, 0.3),
+      foreground: (p: UnifiedPalette) =>
+        mix(p.lime.light, p.magenta.light, 0.3),
     },
   },
   {
@@ -102,7 +104,7 @@ export const basicTokens: TokenColorConfig[] = [
       'keyword.control.default',
     ],
     settings: {
-      foreground: (p: Palette) => p.teal.main,
+      foreground: (p: UnifiedPalette) => p.teal.main,
       fontStyle: 'italic',
     },
   },
@@ -110,7 +112,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Keyword',
     scope: ['keyword', 'keyword.control'],
     settings: {
-      foreground: (p: Palette) => p.purple.light,
+      foreground: (p: UnifiedPalette) => p.purple.light,
     },
   },
   {
@@ -122,7 +124,7 @@ export const basicTokens: TokenColorConfig[] = [
       'keyword.operator.relational',
     ],
     settings: {
-      foreground: (p: Palette) => lighten(p.red.main, 0.12),
+      foreground: (p: UnifiedPalette) => lighten(p.red.main, 0.12),
       fontStyle: 'bold',
     },
   },
@@ -136,63 +138,63 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Tag Punctuation',
     scope: ['punctuation.definition.tag'],
     settings: {
-      foreground: (p: Palette) => p.fg.main,
+      foreground: (p: UnifiedPalette) => p.foreground.main,
     },
   },
   {
     name: 'Variables',
     scope: ['variable', 'support.variable'],
     settings: {
-      foreground: (p: Palette) => p.lime.main,
+      foreground: (p: UnifiedPalette) => p.lime.main,
     },
   },
   {
     name: 'Function Arguments',
     scope: ['variable.parameter'],
     settings: {
-      foreground: (p: Palette) => p.indigo.main,
+      foreground: (p: UnifiedPalette) => p.indigo.main,
     },
   },
   {
     name: 'Object Key',
     scope: ['meta.object-literal.key', 'entity.name.type.hcl'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Object Property',
     scope: ['variable.other.property', 'support.variable.property'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Methods',
     scope: ['entity.name.method', 'variable.function.constructor'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Function Definition',
     scope: ['entity.name.function', 'variable.function'],
     settings: {
-      foreground: (p: Palette) => p.purple.main,
+      foreground: (p: UnifiedPalette) => p.purple.main,
     },
   },
   {
     name: 'Constant, Tag Attribute',
     scope: ['constant.character', 'constant.escape'],
     settings: {
-      foreground: (p: Palette) => p.lime.main,
+      foreground: (p: UnifiedPalette) => p.lime.main,
     },
   },
   {
@@ -289,11 +291,7 @@ export const markupTokens: TokenColorConfig[] = [
   },
   {
     name: 'Markup Heading',
-    scope: [
-      'markup.heading',
-      'entity.name.section',
-      'markup.heading.setext',
-    ],
+    scope: ['markup.heading', 'entity.name.section', 'markup.heading.setext'],
     settings: {
       foreground: (p: Palette) => p.purple.main,
       fontStyle: 'bold',
@@ -341,7 +339,10 @@ export const markdownTokens: TokenColorConfig[] = [
   },
   {
     name: 'Markdown Link',
-    scope: ['string.other.link.title.markdown', 'string.other.link.description.markdown'],
+    scope: [
+      'string.other.link.title.markdown',
+      'string.other.link.description.markdown',
+    ],
     settings: {
       foreground: (p: Palette) => p.blue.light,
     },
