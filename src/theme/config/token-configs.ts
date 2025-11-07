@@ -1,5 +1,5 @@
 import type { UniversalPalette } from '../palette/index.js'
-import { lighten, mix } from '../utils/color.js'
+import { mix } from '../utils/color.js'
 import type { TokenColorConfig } from './color-config-dsl.js'
 
 /**
@@ -24,7 +24,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Number, Boolean, Undefined, Null',
     scope: ['constant.numeric', 'constant.language', 'variable.other.constant'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
     },
   },
   {
@@ -32,7 +32,7 @@ export const basicTokens: TokenColorConfig[] = [
     scope: ['string', 'constant.other.symbol', 'constant.other.key'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.cyan.main, p.chromatic.blue.main, 0.3),
+        mix(p.chromatic.emerald.main, p.chromatic.green.main, 0.3),
     },
   },
   {
@@ -54,7 +54,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
   },
   {
@@ -71,7 +71,7 @@ export const basicTokens: TokenColorConfig[] = [
       'punctuation.section.embedded',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
     },
   },
   {
@@ -126,7 +126,7 @@ export const basicTokens: TokenColorConfig[] = [
       'keyword.operator.relational',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => lighten(p.chromatic.red.main, 0.12),
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
       fontStyle: 'bold',
     },
   },
@@ -140,7 +140,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
   {
@@ -155,7 +155,7 @@ export const codeTokens: TokenColorConfig[] = [
     scope: ['variable', 'support.variable'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.3),
+        mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.5),
     },
   },
   {
@@ -169,28 +169,28 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Object Key',
     scope: ['meta.object-literal.key', 'entity.name.type.hcl'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
     },
   },
   {
     name: 'Object Property',
     scope: ['variable.other.property', 'support.variable.property'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
     },
   },
   {
     name: 'Methods',
     scope: ['entity.name.method', 'variable.function.constructor'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
     name: 'Function Definition',
     scope: ['entity.name.function', 'variable.function'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
   {
@@ -205,7 +205,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Inherited Class',
     scope: 'entity.other.inherited-class',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
     },
   },
   {
@@ -220,7 +220,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Class Name',
     scope: 'entity.name',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
     },
   },
 ]
@@ -233,28 +233,28 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Property Name',
     scope: ['support.type.property-name'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
     },
   },
   {
     name: 'CSS Tag',
     scope: ['entity.name.tag.css'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
   {
     name: 'CSS ID',
     scope: ['entity.other.attribute-name.id'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
   },
   {
     name: 'CSS Class',
     scope: ['entity.other.attribute-name.class'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
   },
   {
@@ -274,7 +274,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Bold',
     scope: ['markup.bold'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
       fontStyle: 'bold',
     },
   },
@@ -282,7 +282,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Italic',
     scope: ['markup.italic'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
       fontStyle: 'italic',
     },
   },
@@ -297,7 +297,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Heading',
     scope: ['markup.heading', 'entity.name.section', 'markup.heading.setext'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
       fontStyle: 'bold',
     },
   },
@@ -313,14 +313,14 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup List',
     scope: ['markup.list'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.light,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.light,
     },
   },
   {
     name: 'Markup Link',
     scope: ['markup.underline.link', 'string.other.link'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.light,
     },
   },
 ]
@@ -337,7 +337,7 @@ export const markdownTokens: TokenColorConfig[] = [
       'entity.name.section.markdown',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
       fontStyle: 'bold',
     },
   },
@@ -348,7 +348,7 @@ export const markdownTokens: TokenColorConfig[] = [
       'string.other.link.description.markdown',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.light,
     },
   },
   {
@@ -356,14 +356,14 @@ export const markdownTokens: TokenColorConfig[] = [
     scope: ['markup.inline.raw.markdown', 'markup.fenced_code.block.markdown'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.cyan.main, p.chromatic.blue.main, 0.4),
+        mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.4),
     },
   },
   {
     name: 'Markdown Bold',
     scope: ['markup.bold.markdown'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
       fontStyle: 'bold',
     },
   },
@@ -371,7 +371,7 @@ export const markdownTokens: TokenColorConfig[] = [
     name: 'Markdown Italic',
     scope: ['markup.italic.markdown'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
       fontStyle: 'italic',
     },
   },
@@ -385,28 +385,28 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSX Component',
     scope: ['support.class.component'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
     },
   },
   {
     name: 'JSX Tag',
     scope: ['entity.name.tag.tsx', 'entity.name.tag.jsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
   {
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
   },
   {
@@ -420,14 +420,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSON Key',
     scope: ['support.type.property-name.json'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
     },
   },
   {
     name: 'YAML Key',
     scope: ['entity.name.tag.yaml'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
   },
 ]

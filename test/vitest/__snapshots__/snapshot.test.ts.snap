@@ -151,7 +151,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 3`] = `
 {
-  "foreground": "#6ebbff",
+  "foreground": "#5ccef5",
 }
 `;
 
@@ -164,7 +164,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 5`] = `
 {
-  "foreground": "#5cbcf9",
+  "foreground": "#44afcd",
 }
 `;
 
@@ -177,14 +177,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 7`] = `
 {
-  "foreground": "#64aefe",
+  "foreground": "#b1a5ff",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 8`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#62b0fd",
+  "foreground": "#b8a6ff",
 }
 `;
 
@@ -203,7 +203,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
-  "foreground": "#5eb7fb",
+  "foreground": "#6c96fb",
 }
 `;
 
@@ -212,7 +212,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#5eb7fb",
+  "foreground": "#22c59b",
 }
 `;
 
@@ -228,13 +228,13 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 19`] = `
 {
-  "foreground": "#80d2ff",
+  "foreground": "#47cb91",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 20`] = `
 {
-  "foreground": "#61b2fc",
+  "foreground": "#1cbf97",
 }
 `;
 
@@ -305,7 +305,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.other.constant",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -316,7 +316,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "constant.other.key",
     ],
     "settings": {
-      "foreground": "#55caf5",
+      "foreground": "#30c284",
     },
   },
   {
@@ -341,7 +341,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -360,7 +360,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "punctuation.section.embedded",
     ],
     "settings": {
-      "foreground": "#a0a0ff",
+      "foreground": "#7fb5ff",
     },
   },
   {
@@ -424,14 +424,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#ff7d8a",
+      "foreground": "#ff6b7a",
     },
   },
   {
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -450,7 +450,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.variable",
     ],
     "settings": {
-      "foreground": "#5eb7fb",
+      "foreground": "#5ac1f8",
     },
   },
   {
@@ -469,7 +469,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.hcl",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -479,7 +479,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.variable.property",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -489,7 +489,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.function.constructor",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -499,7 +499,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.function",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -516,7 +516,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Inherited Class",
     "scope": "entity.other.inherited-class",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -535,7 +535,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#10b981",
     },
   },
   {
@@ -544,7 +544,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.type.property-name",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -553,7 +553,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.tag.css",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -562,7 +562,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.other.attribute-name.id",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -571,7 +571,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.other.attribute-name.class",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -590,7 +590,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -600,7 +600,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#c2a9ff",
+      "foreground": "#a0a0ff",
     },
   },
   {
@@ -621,7 +621,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -640,7 +640,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "markup.list",
     ],
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#80f0e6",
     },
   },
   {
@@ -650,7 +650,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "string.other.link",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#80e6ff",
     },
   },
   {
@@ -662,7 +662,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#c2a9ff",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -672,7 +672,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "string.other.link.description.markdown",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#80e6ff",
     },
   },
   {
@@ -682,7 +682,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "markup.fenced_code.block.markdown",
     ],
     "settings": {
-      "foreground": "#57c5f6",
+      "foreground": "#28c9a4",
     },
   },
   {
@@ -692,7 +692,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -702,7 +702,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#c2a9ff",
+      "foreground": "#a0a0ff",
     },
   },
   {
@@ -711,7 +711,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.class.component",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -721,7 +721,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.tag.jsx",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -731,7 +731,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -740,7 +740,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -758,7 +758,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -767,7 +767,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.tag.yaml",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#4de0d8",
     },
   },
 ]
@@ -1145,15 +1145,15 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "class": {
     "fontStyle": "bold",
-    "foreground": "#5eb7fb",
+    "foreground": "#22c59b",
   },
   "class.component": {
     "fontStyle": "bold",
-    "foreground": "#5ac1f8",
+    "foreground": "#2fcdad",
   },
   "constructor": {
     "fontStyle": "bold",
-    "foreground": "#8addff",
+    "foreground": "#8ae5ea",
   },
   "decorator": {
     "fontStyle": "italic",
@@ -1167,28 +1167,28 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#75b2ff",
   },
   "function.defaultLibrary": {
-    "foreground": "#80e6ff",
+    "foreground": "#34d399",
   },
   "interface.component": {
     "fontStyle": "bold",
-    "foreground": "#5ac1f8",
+    "foreground": "#2fcdad",
   },
   "macro": {
     "fontStyle": "bold",
     "foreground": "#7a7aff",
   },
   "method": {
-    "foreground": "#6ebbff",
+    "foreground": "#5ccef5",
   },
   "method.declaration": {
     "fontStyle": "bold",
     "foreground": "#72b0ff",
   },
   "namespace": {
-    "foreground": "#57c5f6",
+    "foreground": "#6e96ff",
   },
   "number": {
-    "foreground": "#61b2fc",
+    "foreground": "#1cbf97",
   },
   "parameter": {
     "foreground": "#61b2fc",
@@ -1198,11 +1198,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#698bdc",
   },
   "property": {
-    "foreground": "#64aefe",
+    "foreground": "#b1a5ff",
   },
   "property.readonly": {
     "fontStyle": "italic",
-    "foreground": "#62b0fd",
+    "foreground": "#b8a6ff",
   },
   "readonly": {
     "fontStyle": "italic",
@@ -1213,16 +1213,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#66a9ff",
   },
   "string": {
-    "foreground": "#80d2ff",
+    "foreground": "#47cb91",
   },
   "type": {
-    "foreground": "#5eb7fb",
+    "foreground": "#6c96fb",
   },
   "variable": {
-    "foreground": "#5cbcf9",
+    "foreground": "#44afcd",
   },
   "variable.defaultLibrary": {
-    "foreground": "#7fc4ff",
+    "foreground": "#68bee0",
   },
   "variable.readonly": {
     "fontStyle": "italic",
@@ -1603,15 +1603,15 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "class": {
       "fontStyle": "bold",
-      "foreground": "#5eb7fb",
+      "foreground": "#22c59b",
     },
     "class.component": {
       "fontStyle": "bold",
-      "foreground": "#5ac1f8",
+      "foreground": "#2fcdad",
     },
     "constructor": {
       "fontStyle": "bold",
-      "foreground": "#8addff",
+      "foreground": "#8ae5ea",
     },
     "decorator": {
       "fontStyle": "italic",
@@ -1625,28 +1625,28 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#75b2ff",
     },
     "function.defaultLibrary": {
-      "foreground": "#80e6ff",
+      "foreground": "#34d399",
     },
     "interface.component": {
       "fontStyle": "bold",
-      "foreground": "#5ac1f8",
+      "foreground": "#2fcdad",
     },
     "macro": {
       "fontStyle": "bold",
       "foreground": "#7a7aff",
     },
     "method": {
-      "foreground": "#6ebbff",
+      "foreground": "#5ccef5",
     },
     "method.declaration": {
       "fontStyle": "bold",
       "foreground": "#72b0ff",
     },
     "namespace": {
-      "foreground": "#57c5f6",
+      "foreground": "#6e96ff",
     },
     "number": {
-      "foreground": "#61b2fc",
+      "foreground": "#1cbf97",
     },
     "parameter": {
       "foreground": "#61b2fc",
@@ -1656,11 +1656,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#698bdc",
     },
     "property": {
-      "foreground": "#64aefe",
+      "foreground": "#b1a5ff",
     },
     "property.readonly": {
       "fontStyle": "italic",
-      "foreground": "#62b0fd",
+      "foreground": "#b8a6ff",
     },
     "readonly": {
       "fontStyle": "italic",
@@ -1671,16 +1671,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#66a9ff",
     },
     "string": {
-      "foreground": "#80d2ff",
+      "foreground": "#47cb91",
     },
     "type": {
-      "foreground": "#5eb7fb",
+      "foreground": "#6c96fb",
     },
     "variable": {
-      "foreground": "#5cbcf9",
+      "foreground": "#44afcd",
     },
     "variable.defaultLibrary": {
-      "foreground": "#7fc4ff",
+      "foreground": "#68bee0",
     },
     "variable.readonly": {
       "fontStyle": "italic",
@@ -1707,7 +1707,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.other.constant",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -1718,7 +1718,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "constant.other.key",
       ],
       "settings": {
-        "foreground": "#55caf5",
+        "foreground": "#30c284",
       },
     },
     {
@@ -1743,7 +1743,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#7a7aff",
       },
     },
     {
@@ -1762,7 +1762,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "punctuation.section.embedded",
       ],
       "settings": {
-        "foreground": "#a0a0ff",
+        "foreground": "#7fb5ff",
       },
     },
     {
@@ -1826,14 +1826,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#ff7d8a",
+        "foreground": "#ff6b7a",
       },
     },
     {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -1852,7 +1852,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.variable",
       ],
       "settings": {
-        "foreground": "#5eb7fb",
+        "foreground": "#5ac1f8",
       },
     },
     {
@@ -1871,7 +1871,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.hcl",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#c2a9ff",
       },
     },
     {
@@ -1881,7 +1881,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.variable.property",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#c2a9ff",
       },
     },
     {
@@ -1891,7 +1891,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.function.constructor",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#4dd8f0",
       },
     },
     {
@@ -1901,7 +1901,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.function",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -1918,7 +1918,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#c2a9ff",
       },
     },
     {
@@ -1937,7 +1937,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#4de0d8",
+        "foreground": "#10b981",
       },
     },
     {
@@ -1946,7 +1946,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.type.property-name",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -1955,7 +1955,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.tag.css",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -1964,7 +1964,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.other.attribute-name.id",
       ],
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#7a7aff",
       },
     },
     {
@@ -1973,7 +1973,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.other.attribute-name.class",
       ],
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -1992,7 +1992,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -2002,7 +2002,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#c2a9ff",
+        "foreground": "#a0a0ff",
       },
     },
     {
@@ -2023,7 +2023,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#9976db",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -2042,7 +2042,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "markup.list",
       ],
       "settings": {
-        "foreground": "#80e6ff",
+        "foreground": "#80f0e6",
       },
     },
     {
@@ -2052,7 +2052,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "string.other.link",
       ],
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#80e6ff",
       },
     },
     {
@@ -2064,7 +2064,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#c2a9ff",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -2074,7 +2074,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "string.other.link.description.markdown",
       ],
       "settings": {
-        "foreground": "#7fb5ff",
+        "foreground": "#80e6ff",
       },
     },
     {
@@ -2084,7 +2084,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "markup.fenced_code.block.markdown",
       ],
       "settings": {
-        "foreground": "#57c5f6",
+        "foreground": "#28c9a4",
       },
     },
     {
@@ -2094,7 +2094,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -2104,7 +2104,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#c2a9ff",
+        "foreground": "#a0a0ff",
       },
     },
     {
@@ -2113,7 +2113,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.class.component",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -2123,7 +2123,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.tag.jsx",
       ],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#66a9ff",
       },
     },
     {
@@ -2133,7 +2133,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.tsx",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#7a7aff",
       },
     },
     {
@@ -2142,7 +2142,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.interface",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#4de0d8",
       },
     },
     {
@@ -2160,7 +2160,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.type.property-name.json",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#10b981",
       },
     },
     {
@@ -2169,7 +2169,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.tag.yaml",
       ],
       "settings": {
-        "foreground": "#4dd8f0",
+        "foreground": "#4de0d8",
       },
     },
   ],
@@ -2198,7 +2198,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.other.constant",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2209,7 +2209,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "constant.other.key",
     ],
     "settings": {
-      "foreground": "#55caf5",
+      "foreground": "#30c284",
     },
   },
   {
@@ -2234,7 +2234,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -2253,7 +2253,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "punctuation.section.embedded",
     ],
     "settings": {
-      "foreground": "#a0a0ff",
+      "foreground": "#7fb5ff",
     },
   },
   {
@@ -2317,14 +2317,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#ff7d8a",
+      "foreground": "#ff6b7a",
     },
   },
   {
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2343,7 +2343,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.variable",
     ],
     "settings": {
-      "foreground": "#5eb7fb",
+      "foreground": "#5ac1f8",
     },
   },
   {
@@ -2362,7 +2362,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.hcl",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -2372,7 +2372,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.variable.property",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -2382,7 +2382,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.function.constructor",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#4dd8f0",
     },
   },
   {
@@ -2392,7 +2392,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.function",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2409,7 +2409,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Inherited Class",
     "scope": "entity.other.inherited-class",
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#c2a9ff",
     },
   },
   {
@@ -2428,7 +2428,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Class Name",
     "scope": "entity.name",
     "settings": {
-      "foreground": "#4de0d8",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2437,7 +2437,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.type.property-name",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2446,7 +2446,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.tag.css",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2455,7 +2455,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.other.attribute-name.id",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -2464,7 +2464,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.other.attribute-name.class",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -2483,7 +2483,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2493,7 +2493,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#c2a9ff",
+      "foreground": "#a0a0ff",
     },
   },
   {
@@ -2514,7 +2514,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2533,7 +2533,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "markup.list",
     ],
     "settings": {
-      "foreground": "#80e6ff",
+      "foreground": "#80f0e6",
     },
   },
   {
@@ -2543,7 +2543,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "string.other.link",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#80e6ff",
     },
   },
   {
@@ -2555,7 +2555,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#c2a9ff",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2565,7 +2565,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "string.other.link.description.markdown",
     ],
     "settings": {
-      "foreground": "#7fb5ff",
+      "foreground": "#80e6ff",
     },
   },
   {
@@ -2575,7 +2575,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "markup.fenced_code.block.markdown",
     ],
     "settings": {
-      "foreground": "#57c5f6",
+      "foreground": "#28c9a4",
     },
   },
   {
@@ -2585,7 +2585,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2595,7 +2595,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#c2a9ff",
+      "foreground": "#a0a0ff",
     },
   },
   {
@@ -2604,7 +2604,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.class.component",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2614,7 +2614,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.tag.jsx",
     ],
     "settings": {
-      "foreground": "#9976db",
+      "foreground": "#66a9ff",
     },
   },
   {
@@ -2624,7 +2624,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#7a7aff",
     },
   },
   {
@@ -2633,7 +2633,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#4de0d8",
     },
   },
   {
@@ -2651,7 +2651,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.type.property-name.json",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#10b981",
     },
   },
   {
@@ -2660,7 +2660,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.tag.yaml",
     ],
     "settings": {
-      "foreground": "#4dd8f0",
+      "foreground": "#4de0d8",
     },
   },
 ]

@@ -9,7 +9,7 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
     variable: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.4)),
+      token(mix(p.chromatic.blue.main, p.chromatic.emerald.main, 0.4)),
     'variable.readonly': (p: UniversalPalette) =>
       italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
     parameter: (p: UniversalPalette) =>
@@ -19,11 +19,11 @@ export const variablesConfig: SemanticTokenConfig = {
         darken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3), 0.1)
       ),
     property: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.1)),
+      token(mix(p.chromatic.purple.light, p.chromatic.indigo.light, 0.5)),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.15)),
+      italicToken(mix(p.chromatic.purple.light, p.chromatic.indigo.light, 0.3)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.light, p.chromatic.cyan.light, 0.3)),
+      token(mix(p.chromatic.blue.light, p.chromatic.emerald.light, 0.3)),
   },
 }
 
@@ -36,13 +36,13 @@ export const functionsConfig: SemanticTokenConfig = {
     'function.declaration': (p: UniversalPalette) =>
       boldToken(lighten(p.chromatic.blue.main, 0.1)),
     'function.defaultLibrary': (p: UniversalPalette) =>
-      token(p.chromatic.cyan.light),
+      token(p.chromatic.emerald.light),
     method: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.light, 0.3)),
+      token(mix(p.chromatic.cyan.main, p.chromatic.blue.light, 0.3)),
     'method.declaration': (p: UniversalPalette) =>
       boldToken(lighten(p.chromatic.blue.main, 0.08)),
     constructor: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.cyan.light, p.chromatic.purple.light, 0.15)),
+      boldToken(mix(p.chromatic.teal.light, p.chromatic.purple.light, 0.15)),
   },
 }
 
@@ -52,9 +52,9 @@ export const functionsConfig: SemanticTokenConfig = {
 export const typesConfig: SemanticTokenConfig = {
   rules: {
     type: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.3)),
+      token(mix(p.chromatic.indigo.main, p.chromatic.cyan.main, 0.3)),
     class: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.3)),
+      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.3)),
   },
 }
 
@@ -74,9 +74,9 @@ export const modifiersConfig: SemanticTokenConfig = {
 export const literalsConfig: SemanticTokenConfig = {
   rules: {
     string: (p: UniversalPalette) =>
-      token(mix(p.chromatic.cyan.light, p.chromatic.blue.light, 0.4)),
+      token(mix(p.chromatic.emerald.main, p.chromatic.green.light, 0.4)),
     number: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.2)),
+      token(mix(p.chromatic.emerald.main, p.chromatic.cyan.main, 0.2)),
     boolean: (p: UniversalPalette) =>
       token(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
   },
@@ -89,9 +89,9 @@ export const frameworksConfig: SemanticTokenConfig = {
   rules: {
     // React/Vue/Angular компоненты
     'class.component': (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.5)),
+      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.5)),
     'interface.component': (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.5)),
+      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.5)),
 
     // Декораторы
     decorator: (p: UniversalPalette) =>
@@ -102,6 +102,6 @@ export const frameworksConfig: SemanticTokenConfig = {
 
     // Namespace
     namespace: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.6)),
+      token(mix(p.chromatic.indigo.main, p.chromatic.blue.main, 0.6)),
   },
 }
