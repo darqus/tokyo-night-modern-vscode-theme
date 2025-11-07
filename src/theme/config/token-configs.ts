@@ -9,7 +9,7 @@ export const commentsTokens: TokenColorConfig[] = [
     name: 'Comment',
     scope: ['comment', 'punctuation.definition.comment'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.light,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
       fontStyle: 'italic',
     },
   },
@@ -75,7 +75,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Operators',
     scope: ['keyword.operator'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
     },
   },
   {
@@ -119,7 +119,7 @@ export const basicTokens: TokenColorConfig[] = [
       'keyword.operator.relational',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
     },
   },
 ]
@@ -132,7 +132,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
     },
   },
   {
@@ -160,14 +160,14 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Object Key',
     scope: ['meta.object-literal.key', 'entity.name.type.hcl'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
   },
   {
     name: 'Object Property',
     scope: ['variable.other.property', 'support.variable.property'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
@@ -222,7 +222,7 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Property Name',
     scope: ['support.type.property-name'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
   },
   {
@@ -271,7 +271,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Italic',
     scope: ['markup.italic'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.emerald.main,
       fontStyle: 'italic',
     },
   },

@@ -16,7 +16,7 @@ export const variablesConfig: SemanticTokenConfig = {
       italicToken(
         darken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3), 0.1)
       ),
-    property: (p: UniversalPalette) => token(p.chromatic.blue.main),
+    property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
     'property.readonly': (p: UniversalPalette) =>
       italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
@@ -46,8 +46,8 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => token(p.chromatic.purple.main),
-    class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
+    class: (p: UniversalPalette) => boldToken(p.chromatic.orange.main),
   },
 }
 

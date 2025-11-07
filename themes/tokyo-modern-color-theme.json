@@ -369,7 +369,7 @@
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#aabdc9",
+        "foreground": "#7284a6",
         "fontStyle": "italic"
       }
     },
@@ -433,7 +433,7 @@
       "name": "Operators",
       "scope": ["keyword.operator"],
       "settings": {
-        "foreground": "#4dd8f0"
+        "foreground": "#ff6b7a"
       }
     },
     {
@@ -477,14 +477,14 @@
         "keyword.operator.relational"
       ],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#ff6b7a"
       }
     },
     {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#d48ae0"
       }
     },
     {
@@ -512,14 +512,14 @@
       "name": "Object Key",
       "scope": ["meta.object-literal.key", "entity.name.type.hcl"],
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#7a7aff"
       }
     },
     {
       "name": "Object Property",
       "scope": ["variable.other.property", "support.variable.property"],
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -568,7 +568,7 @@
       "name": "CSS Property Name",
       "scope": ["support.type.property-name"],
       "settings": {
-        "foreground": "#66a9ff"
+        "foreground": "#4de0d8"
       }
     },
     {
@@ -611,7 +611,7 @@
       "name": "Markup Italic",
       "scope": ["markup.italic"],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#10b981",
         "fontStyle": "italic"
       }
     },
@@ -770,7 +770,7 @@
       "fontStyle": "italic"
     },
     "property": {
-      "foreground": "#66a9ff"
+      "foreground": "#4dd8f0"
     },
     "property.readonly": {
       "foreground": "#759af4",
@@ -801,10 +801,11 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#9976db"
+      "foreground": "#9976db",
+      "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#f0d440",
+      "foreground": "#e0945a",
       "fontStyle": "bold"
     },
     "static": {
