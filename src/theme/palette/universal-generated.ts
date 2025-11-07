@@ -1,5 +1,4 @@
-import type { basePalette, ColorVariant } from './base.js'
-import type { UniversalPalette } from './universal-base.js'
+import type { ColorVariant, UniversalPalette } from './universal-base.js'
 import { universalBasePalette } from './universal-base.js'
 
 /**
@@ -33,7 +32,7 @@ export interface CompatiblePalette {
   rose: ColorVariant
   amber: ColorVariant
   emerald: ColorVariant
-  ui: typeof basePalette.ui
+  ui: typeof universalBasePalette.ui
   shadow: ColorVariant
 }
 

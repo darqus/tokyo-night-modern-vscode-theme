@@ -1,4 +1,4 @@
-import { basePalette } from '../src/theme/palette/base.js'
+import { compatiblePalette as basePalette } from '../src/theme/palette/universal-generated.js'
 import { getLuminance } from '../src/theme/utils/contrast.js'
 
 interface ColorVariant {
