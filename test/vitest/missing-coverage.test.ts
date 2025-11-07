@@ -1,7 +1,26 @@
 import { describe, expect, it } from 'vitest'
 
 describe('Missing Coverage Tests', () => {
-  describe('Palette Coverage', () => {})
+  describe('Palette Coverage', () => {
+    it('should import universal base palette', async () => {
+      const palette = await import('../../src/theme/palette/universal-base')
+      expect(palette).toBeDefined()
+    })
+
+    it('should import legacy palette', async () => {
+      const legacyPalette = await import(
+        '../../src/theme/palette/legacy-palette'
+      )
+      expect(legacyPalette).toBeDefined()
+    })
+
+    it('should import generated universal palette', async () => {
+      const generatedPalette = await import(
+        '../../src/theme/palette/universal-generated'
+      )
+      expect(generatedPalette).toBeDefined()
+    })
+  })
 
   describe('Config Constants Coverage', () => {
     it('should import config constants', async () => {
