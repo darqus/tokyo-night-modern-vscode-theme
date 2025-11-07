@@ -203,6 +203,12 @@ export const universalBasePalette: UniversalPalette = {
       light: '#eba56b',
       bright: '#ffd9a3',
     },
+    amber: {
+      dark: '#5d3d1a',
+      main: '#e6a32a',
+      light: '#fbbf24',
+      bright: '#fcd34d',
+    },
     yellow: {
       dark: '#a0a02c',
       main: '#e6d466',
@@ -215,11 +221,23 @@ export const universalBasePalette: UniversalPalette = {
       light: '#eea6b6',
       bright: '#f8c6d0',
     },
+    rose: {
+      dark: '#97263e',
+      main: '#c45c6b',
+      light: '#f57e8f',
+      bright: '#fda4af',
+    },
     pink: {
       dark: '#754da0',
       main: '#d48ae0',
       light: '#e6b4ec',
       bright: '#f0c4f1',
+    },
+    magenta: {
+      dark: '#a6296a',
+      main: '#e666b3',
+      light: '#e666b3',
+      bright: '#f08ccc',
     },
     neutral: {
       dark: '#7284a6',
@@ -238,24 +256,6 @@ export const universalBasePalette: UniversalPalette = {
       main: '#99cc40',
       light: '#b3e666',
       bright: '#ccf08c',
-    },
-    magenta: {
-      dark: '#a6296a',
-      main: '#e666b3',
-      light: '#e666b3',
-      bright: '#f08ccc',
-    },
-    rose: {
-      dark: '#97263e',
-      main: '#c45c6b',
-      light: '#f57e8f',
-      bright: '#fda4af',
-    },
-    amber: {
-      dark: '#5d3d1a',
-      main: '#e6a32a',
-      light: '#fbbf24',
-      bright: '#fcd34d',
     },
     emerald: {
       dark: '#047857',
