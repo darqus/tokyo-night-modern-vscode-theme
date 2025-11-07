@@ -49,5 +49,84 @@ export const colorRules = (): ColorRuleBuilder => new ColorRuleBuilder()
 
 /**
  * Вспомогательная функция для быстрого доступа к цветам палитры
+ * Создаем сокращенные алиасы для удобства использования
  */
-export const c = universalPalette
+export const c = {
+  get bg() {
+    return universalPalette.background.base
+  },
+  get fg() {
+    return universalPalette.foreground.primary
+  },
+  get ui() {
+    return universalPalette.ui
+  },
+  get blue() {
+    return universalPalette.chromatic.blue
+  },
+  get cyan() {
+    return universalPalette.chromatic.cyan
+  },
+  get teal() {
+    return universalPalette.chromatic.teal
+  },
+  get green() {
+    return universalPalette.chromatic.green
+  },
+  get purple() {
+    return universalPalette.chromatic.purple
+  },
+  get orange() {
+    return universalPalette.chromatic.orange
+  },
+  get yellow() {
+    return universalPalette.chromatic.yellow
+  },
+  get red() {
+    return universalPalette.chromatic.red
+  },
+  get pink() {
+    return universalPalette.chromatic.pink
+  },
+  get neutral() {
+    return universalPalette.chromatic.neutral
+  },
+  get indigo() {
+    return universalPalette.chromatic.indigo
+  },
+  get lime() {
+    return universalPalette.chromatic.lime
+  },
+  get magenta() {
+    return universalPalette.chromatic.magenta
+  },
+  get rose() {
+    return universalPalette.chromatic.rose
+  },
+  get amber() {
+    return universalPalette.chromatic.amber
+  },
+  get emerald() {
+    return universalPalette.chromatic.emerald
+  },
+  get success() {
+    return universalPalette.semantic.success
+  },
+  get warning() {
+    return universalPalette.semantic.warning
+  },
+  get error() {
+    return universalPalette.semantic.error
+  },
+  get info() {
+    return universalPalette.semantic.info
+  },
+  get accent() {
+    return universalPalette.semantic.accent
+  },
+  get shadow() {
+    return universalPalette.shadow
+  },
+  // Добавляем остальные свойства универсальной палитры
+  ...universalPalette,
+}
