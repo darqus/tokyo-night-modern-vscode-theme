@@ -409,7 +409,7 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#f88d7a"
+        "foreground": "#e0945a"
       }
     },
     {
@@ -712,7 +712,7 @@
       "name": "JSX Component",
       "scope": ["support.class.component"],
       "settings": {
-        "foreground": "#f88d7a"
+        "foreground": "#e0945a"
       }
     },
     {
@@ -726,14 +726,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#f88d7a"
+        "foreground": "#e0945a"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#f88d7a"
+        "foreground": "#e0945a"
       }
     },
     {
@@ -805,10 +805,10 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#f88d7a"
+      "foreground": "#e0945a"
     },
     "class": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
       "fontStyle": "bold"
     },
     "static": {
@@ -829,11 +829,11 @@
       "foreground": "#eea6b6"
     },
     "class.component": {
-      "foreground": "#f39686",
+      "foreground": "#eea870",
       "fontStyle": "bold"
     },
     "interface.component": {
-      "foreground": "#f39686",
+      "foreground": "#eea870",
       "fontStyle": "bold"
     },
     "decorator": {

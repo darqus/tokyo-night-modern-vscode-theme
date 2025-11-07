@@ -1,5 +1,5 @@
 import type { ColorVariant } from './base.js'
-import { basePalette } from './base.js'
+import { compatiblePalette } from './universal-generated.js'
 
 export interface SimplifiedPalette {
   bg: ColorVariant
@@ -21,30 +21,30 @@ export interface SimplifiedPalette {
   rose: ColorVariant
   amber: ColorVariant
   emerald: ColorVariant
-  ui: typeof basePalette.ui
+  ui: typeof compatiblePalette.ui
   shadow: ColorVariant
 }
 
 export const palette: SimplifiedPalette = {
-  bg: basePalette.background,
-  fg: basePalette.foreground,
-  blue: basePalette.blue,
-  cyan: basePalette.cyan,
-  teal: basePalette.teal,
-  green: basePalette.green,
-  purple: basePalette.purple,
-  orange: basePalette.orange,
-  yellow: basePalette.yellow,
-  red: basePalette.red,
-  pink: basePalette.pink,
-  neutral: basePalette.neutral,
-  indigo: basePalette.indigo,
-  lime: basePalette.lime,
-  magenta: basePalette.magenta,
-  peach: basePalette.peach,
-  rose: basePalette.rose,
-  amber: basePalette.amber,
-  emerald: basePalette.emerald,
-  ui: basePalette.ui,
-  shadow: basePalette.shadow,
+  bg: compatiblePalette.bg,
+  fg: compatiblePalette.fg,
+  blue: compatiblePalette.blue,
+  cyan: compatiblePalette.cyan,
+  teal: compatiblePalette.teal,
+  green: compatiblePalette.green,
+  purple: compatiblePalette.purple,
+  orange: compatiblePalette.orange,
+  yellow: compatiblePalette.yellow,
+  red: compatiblePalette.red,
+  pink: compatiblePalette.pink,
+  neutral: compatiblePalette.neutral,
+  indigo: compatiblePalette.indigo,
+  lime: compatiblePalette.lime,
+  magenta: compatiblePalette.magenta,
+  peach: compatiblePalette.peach,
+  rose: compatiblePalette.rose,
+  amber: compatiblePalette.amber,
+  emerald: compatiblePalette.emerald,
+  ui: compatiblePalette.ui,
+  shadow: compatiblePalette.shadow,
 }

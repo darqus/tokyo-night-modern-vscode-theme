@@ -3,21 +3,13 @@
  */
 
 /**
- * Основная палитра цветов темы
+ * Универсальная палитра цветов темы
  */
 export interface Palette {
   bg: BackgroundPalette
   fg: ForegroundPalette
-  blue: BluePalette
-  cyan: CyanPalette
-  teal: TealPalette
-  green: GreenPalette
-  purple: PurplePalette
-  orange: OrangePalette
-  yellow: YellowPalette
-  red: RedPalette
-  pink: PinkPalette
-  special: SpecialPalette
+  semantic: SemanticPalette
+  chromatic: ChromaticPalette
   ui: UIPalette
   brackets: BracketsPalette
   git: GitPalette
@@ -29,6 +21,16 @@ export interface Palette {
  * Палитра цветов фона
  */
 export interface BackgroundPalette {
+  base: BackgroundVariant
+  elevated: BackgroundVariant
+  inset: BackgroundVariant
+  overlay: BackgroundVariant
+}
+
+/**
+ * Варианты оттенков фона
+ */
+export interface BackgroundVariant {
   darkest: string
   darker: string
   dark: string
@@ -43,6 +45,16 @@ export interface BackgroundPalette {
  * Палитра цветов текста
  */
 export interface ForegroundPalette {
+  primary: ForegroundVariant
+  secondary: ForegroundVariant
+  muted: ForegroundVariant
+  disabled: ForegroundVariant
+}
+
+/**
+ * Варианты оттенков текста
+ */
+export interface ForegroundVariant {
   dim: string
   muted: string
   medium: string
@@ -52,99 +64,60 @@ export interface ForegroundPalette {
 }
 
 /**
- * Палитра синих цветов
+ * Семантическая палитра цветов
  */
-export interface BluePalette {
+export interface SemanticPalette {
+  success: SemanticVariant
+  warning: SemanticVariant
+  error: SemanticVariant
+  info: SemanticVariant
+  accent: SemanticVariant
+}
+
+/**
+ * Варианты семантических цветов
+ */
+export interface SemanticVariant {
   primary: string
   light: string
-  medium: string
+  dark: string
+  contrast: string
 }
 
 /**
- * Палитра циановых цветов
+ * Хроматическая палитра цветов
  */
-export interface CyanPalette {
+export interface ChromaticPalette {
+  blue: ChromaticVariant
+  cyan: ChromaticVariant
+  teal: ChromaticVariant
+  green: ChromaticVariant
+  purple: ChromaticVariant
+  orange: ChromaticVariant
+  yellow: ChromaticVariant
+  red: ChromaticVariant
+  pink: ChromaticVariant
+  neutral: ChromaticVariant
+  indigo: ChromaticVariant
+  lime: ChromaticVariant
+  magenta: ChromaticVariant
+  rose: ChromaticVariant
+  amber: ChromaticVariant
+  emerald: ChromaticVariant
+}
+
+/**
+ * Варианты хроматических цветов
+ */
+export interface ChromaticVariant {
+  darkest: string
+  darker: string
   dark: string
-  medium: string
+  main: string
   light: string
+  lighter: string
+  lightest: string
   bright: string
-}
-
-/**
- * Палитра бирюзовых цветов
- */
-export interface TealPalette {
-  main: string
-  dark: string
-}
-
-/**
- * Палитра зеленых цветов
- */
-export interface GreenPalette {
-  main: string
-  dark: string
-}
-
-/**
- * Палитра фиолетовых цветов
- */
-export interface PurplePalette {
-  light: string
-  dark: string
-  bright: string
-}
-
-/**
- * Палитра оранжевых цветов
- */
-export interface OrangePalette {
-  dark: string
-  main: string
-  light: string
-  bright: string
-}
-
-/**
- * Палитра желтых цветов
- */
-export interface YellowPalette {
-  main: string
-  light: string
-  muted: string
-}
-
-/**
- * Палитра красных цветов
- */
-export interface RedPalette {
-  main: string
-  dark: string
-  muted: string
-}
-
-/**
- * Палитра розовых цветов
- */
-export interface PinkPalette {
-  main: string
-  light: string
-  bright: string
-}
-
-/**
- * Специальные цвета
- */
-export interface SpecialPalette {
-  regex: string
-  invalid: string
-  selection: string
-  indentActive: string
-  disabled: string
-  badge: string
-  scrollbar: string
-  ghostText: string
-  inactive: string
 }
 
 /**
@@ -152,8 +125,11 @@ export interface SpecialPalette {
  */
 export interface UIPalette {
   white: string
-  badgeForeground: string
-  linkActive: string
+  black: string
+  badge: string
+  border: UIVariant
+  scrollbar: UIVariant
+  selection: UIVariant
   codeLens: string
   brightWhite: string
   preformat: string
@@ -174,7 +150,6 @@ export interface UIPalette {
   diffDiagonal: string
   diffUnchanged: string
   scrollbarShadow: string
-  black: string
   parameter: string
   defaultLibrary: string
   commentDoc: string
@@ -184,6 +159,27 @@ export interface UIPalette {
   heading4: string
   heading6: string
   table: string
+  badgeForeground: string
+  linkActive: string
+  ghostText: string
+  inactive: string
+  regex: string
+  invalid: string
+  indentActive: string
+  disabled: string
+}
+
+/**
+ * Варианты UI-цветов
+ */
+export interface UIVariant {
+  darkest: string
+  darker: string
+  dark: string
+  main: string
+  light: string
+  lighter: string
+  lightest: string
 }
 
 /**

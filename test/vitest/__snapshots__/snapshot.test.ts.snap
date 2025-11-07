@@ -203,7 +203,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
-  "foreground": "#f88d7a",
+  "foreground": "#e0945a",
 }
 `;
 
@@ -212,7 +212,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#f88d7a",
+  "foreground": "#e0945a",
 }
 `;
 
@@ -341,7 +341,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -711,7 +711,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.class.component",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -731,7 +731,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -740,7 +740,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -900,8 +900,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorInlayHint.foreground": "#939bc4",
   "editorLightBulb.foreground": "#f0d440",
   "editorLightBulbAutoFix.foreground": "#f0d440",
-  "editorLineNumber.activeForeground": "#939bc4",
-  "editorLineNumber.foreground": "#7284a6",
+  "editorLineNumber.activeForeground": "#6e7ea0",
+  "editorLineNumber.foreground": "#383d57",
   "editorLink.activeForeground": "#bacaf8",
   "editorMarkerNavigation.background": "#18162c",
   "editorOverviewRuler.addedForeground": "#233e4e",
@@ -1145,11 +1145,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "class": {
     "fontStyle": "bold",
-    "foreground": "#f88d7a",
+    "foreground": "#e0945a",
   },
   "class.component": {
     "fontStyle": "bold",
-    "foreground": "#f39686",
+    "foreground": "#eea870",
   },
   "constructor": {
     "fontStyle": "bold",
@@ -1171,7 +1171,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "interface.component": {
     "fontStyle": "bold",
-    "foreground": "#f39686",
+    "foreground": "#eea870",
   },
   "macro": {
     "fontStyle": "bold",
@@ -1216,7 +1216,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#99e6a9",
   },
   "type": {
-    "foreground": "#f88d7a",
+    "foreground": "#e0945a",
   },
   "variable": {
     "foreground": "#80e6ff",
@@ -1359,8 +1359,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorInlayHint.foreground": "#939bc4",
     "editorLightBulb.foreground": "#f0d440",
     "editorLightBulbAutoFix.foreground": "#f0d440",
-    "editorLineNumber.activeForeground": "#939bc4",
-    "editorLineNumber.foreground": "#7284a6",
+    "editorLineNumber.activeForeground": "#6e7ea0",
+    "editorLineNumber.foreground": "#383d57",
     "editorLink.activeForeground": "#bacaf8",
     "editorMarkerNavigation.background": "#18162c",
     "editorOverviewRuler.addedForeground": "#233e4e",
@@ -1603,11 +1603,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "class": {
       "fontStyle": "bold",
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
     "class.component": {
       "fontStyle": "bold",
-      "foreground": "#f39686",
+      "foreground": "#eea870",
     },
     "constructor": {
       "fontStyle": "bold",
@@ -1629,7 +1629,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "interface.component": {
       "fontStyle": "bold",
-      "foreground": "#f39686",
+      "foreground": "#eea870",
     },
     "macro": {
       "fontStyle": "bold",
@@ -1674,7 +1674,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#99e6a9",
     },
     "type": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
     "variable": {
       "foreground": "#80e6ff",
@@ -1743,7 +1743,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#f88d7a",
+        "foreground": "#e0945a",
       },
     },
     {
@@ -2113,7 +2113,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.class.component",
       ],
       "settings": {
-        "foreground": "#f88d7a",
+        "foreground": "#e0945a",
       },
     },
     {
@@ -2133,7 +2133,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.tsx",
       ],
       "settings": {
-        "foreground": "#f88d7a",
+        "foreground": "#e0945a",
       },
     },
     {
@@ -2142,7 +2142,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.interface",
       ],
       "settings": {
-        "foreground": "#f88d7a",
+        "foreground": "#e0945a",
       },
     },
     {
@@ -2234,7 +2234,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Storage Type",
     "scope": "storage.type",
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -2604,7 +2604,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.class.component",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -2624,7 +2624,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {
@@ -2633,7 +2633,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#f88d7a",
+      "foreground": "#e0945a",
     },
   },
   {

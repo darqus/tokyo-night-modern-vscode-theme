@@ -36,7 +36,7 @@ import {
   panelsConfig,
   terminalConfig,
 } from '../config/ui-configs-extended.js'
-import { generateFromConfig } from '../config/unified-generator.js'
+import { generateFromUniversalConfig } from '../config/unified-generator.js'
 import { THEME_CONFIG } from '../config.js'
 import type { VSCodeTheme } from '../types/index.js'
 
@@ -85,7 +85,7 @@ export const generateTheme = (): VSCodeTheme => {
     },
   }
 
-  const generated = generateFromConfig(fullConfig)
+  const generated = generateFromUniversalConfig(fullConfig)
 
   return {
     name: THEME_CONFIG.name,
