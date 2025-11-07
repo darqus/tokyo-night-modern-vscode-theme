@@ -1,4 +1,4 @@
-import { compatiblePalette } from '../../src/theme/palette/universal-generated'
+import { universalPalette } from '../../src/theme/palette/universal-generated'
 import { isValidHex } from '../../src/theme/utils/color'
 
 describe('Palette Generation', () => {
@@ -24,7 +24,7 @@ describe('Palette Generation', () => {
     }
 
     try {
-      checkColors(compatiblePalette as unknown as Record<string, unknown>)
+      checkColors(universalPalette as unknown as Record<string, unknown>)
     } catch (error) {
       throw new Error(
         `Palette validation failed: ${error instanceof Error ? error.message : String(error)}`
@@ -33,26 +33,26 @@ describe('Palette Generation', () => {
   })
 
   it('should have all required color groups', () => {
-    expect(compatiblePalette.bg).toBeDefined()
-    expect(compatiblePalette.fg).toBeDefined()
-    expect(compatiblePalette.blue).toBeDefined()
-    expect(compatiblePalette.cyan).toBeDefined()
-    expect(compatiblePalette.green).toBeDefined()
-    expect(compatiblePalette.purple).toBeDefined()
-    expect(compatiblePalette.red).toBeDefined()
-    expect(compatiblePalette.yellow).toBeDefined()
-    expect(compatiblePalette.ui).toBeDefined()
+    expect(universalPalette.background).toBeDefined()
+    expect(universalPalette.foreground).toBeDefined()
+    expect(universalPalette.chromatic.blue).toBeDefined()
+    expect(universalPalette.chromatic.cyan).toBeDefined()
+    expect(universalPalette.chromatic.green).toBeDefined()
+    expect(universalPalette.chromatic.purple).toBeDefined()
+    expect(universalPalette.chromatic.red).toBeDefined()
+    expect(universalPalette.chromatic.yellow).toBeDefined()
+    expect(universalPalette.ui).toBeDefined()
   })
 
   it('should have background variants', () => {
-    expect(compatiblePalette.bg.dark).toBeDefined()
-    expect(compatiblePalette.bg.main).toBeDefined()
-    expect(compatiblePalette.bg.light).toBeDefined()
+    expect(universalPalette.background.base.dark).toBeDefined()
+    expect(universalPalette.background.base.main).toBeDefined()
+    expect(universalPalette.background.base.light).toBeDefined()
   })
 
   it('should have foreground variants', () => {
-    expect(compatiblePalette.fg.dark).toBeDefined()
-    expect(compatiblePalette.fg.main).toBeDefined()
-    expect(compatiblePalette.fg.light).toBeDefined()
+    expect(universalPalette.foreground.primary.dark).toBeDefined()
+    expect(universalPalette.foreground.primary.main).toBeDefined()
+    expect(universalPalette.foreground.primary.light).toBeDefined()
   })
 })

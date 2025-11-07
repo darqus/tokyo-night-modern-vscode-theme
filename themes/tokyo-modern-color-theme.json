@@ -146,7 +146,7 @@
     "editorHint.foreground": "#4dd8f0",
     "editorGutter.modifiedBackground": "#434561",
     "editorGutter.addedBackground": "#233e4e",
-    "editorGutter.deletedBackground": "#693447",
+    "editorGutter.deletedBackground": "#5d3043",
     "editorGhostText.foreground": "#7284a6",
     "minimapGutter.modifiedBackground": "#494b69",
     "minimapGutter.addedBackground": "#254957",

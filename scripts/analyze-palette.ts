@@ -1,12 +1,12 @@
-import { compatiblePalette as basePalette } from '../src/theme/palette/universal-generated.js'
+import { universalPalette as basePalette } from '../src/theme/palette/universal-generated.js'
 import { getLuminance } from '../src/theme/utils/contrast.js'
 
-interface ColorVariant {
-  dark: string
-  main: string
-  light: string
-  bright: string
-}
+// interface ColorVariant {
+//   dark: string
+//   main: string
+//   light: string
+//   bright: string
+// }
 
 interface PaletteAnalysis {
   [key: string]: {
@@ -20,30 +20,142 @@ interface PaletteAnalysis {
 function analyzePalette(): PaletteAnalysis {
   const analysis: PaletteAnalysis = {}
 
-  for (const [colorName, colorValues] of Object.entries(basePalette)) {
-    if (colorName === 'ui') {
-      continue // Skip the ui object as it has different structure
-    }
-
-    const variant = colorValues as ColorVariant
-    analysis[colorName] = {
+  // Анализируем background
+  for (const [bgName, bgValues] of Object.entries(basePalette.background)) {
+    analysis[`background.${bgName}`] = {
       dark: {
-        hex: variant.dark,
-        luminance: getLuminance(variant.dark),
+        hex: bgValues.dark,
+        luminance: getLuminance(bgValues.dark),
       },
       main: {
-        hex: variant.main,
-        luminance: getLuminance(variant.main),
+        hex: bgValues.main,
+        luminance: getLuminance(bgValues.main),
       },
       light: {
-        hex: variant.light,
-        luminance: getLuminance(variant.light),
+        hex: bgValues.light,
+        luminance: getLuminance(bgValues.light),
       },
       bright: {
-        hex: variant.bright,
-        luminance: getLuminance(variant.bright),
+        hex: bgValues.bright,
+        luminance: getLuminance(bgValues.bright),
       },
     }
+  }
+
+  // Анализируем foreground
+  for (const [fgName, fgValues] of Object.entries(basePalette.foreground)) {
+    analysis[`foreground.${fgName}`] = {
+      dark: {
+        hex: fgValues.dark,
+        luminance: getLuminance(fgValues.dark),
+      },
+      main: {
+        hex: fgValues.main,
+        luminance: getLuminance(fgValues.main),
+      },
+      light: {
+        hex: fgValues.light,
+        luminance: getLuminance(fgValues.light),
+      },
+      bright: {
+        hex: fgValues.bright,
+        luminance: getLuminance(fgValues.bright),
+      },
+    }
+  }
+
+  // Анализируем semantic
+  for (const [semanticName, semanticValues] of Object.entries(
+    basePalette.semantic
+  )) {
+    analysis[`semantic.${semanticName}`] = {
+      dark: {
+        hex: semanticValues.dark,
+        luminance: getLuminance(semanticValues.dark),
+      },
+      main: {
+        hex: semanticValues.main,
+        luminance: getLuminance(semanticValues.main),
+      },
+      light: {
+        hex: semanticValues.light,
+        luminance: getLuminance(semanticValues.light),
+      },
+      bright: {
+        hex: semanticValues.bright,
+        luminance: getLuminance(semanticValues.bright),
+      },
+    }
+  }
+
+  // Анализируем chromatic
+  for (const [chromaticName, chromaticValues] of Object.entries(
+    basePalette.chromatic
+  )) {
+    analysis[`chromatic.${chromaticName}`] = {
+      dark: {
+        hex: chromaticValues.dark,
+        luminance: getLuminance(chromaticValues.dark),
+      },
+      main: {
+        hex: chromaticValues.main,
+        luminance: getLuminance(chromaticValues.main),
+      },
+      light: {
+        hex: chromaticValues.light,
+        luminance: getLuminance(chromaticValues.light),
+      },
+      bright: {
+        hex: chromaticValues.bright,
+        luminance: getLuminance(chromaticValues.bright),
+      },
+    }
+  }
+
+  // Анализируем ui
+  for (const [uiName, uiValue] of Object.entries(basePalette.ui)) {
+    if (typeof uiValue === 'string') {
+      // Пропускаем простые строковые значения
+      continue
+    }
+    analysis[`ui.${uiName}`] = {
+      dark: {
+        hex: uiValue.dark,
+        luminance: getLuminance(uiValue.dark),
+      },
+      main: {
+        hex: uiValue.main,
+        luminance: getLuminance(uiValue.main),
+      },
+      light: {
+        hex: uiValue.light,
+        luminance: getLuminance(uiValue.light),
+      },
+      bright: {
+        hex: uiValue.bright,
+        luminance: getLuminance(uiValue.bright),
+      },
+    }
+  }
+
+  // Анализируем shadow
+  analysis.shadow = {
+    dark: {
+      hex: basePalette.shadow.dark,
+      luminance: getLuminance(basePalette.shadow.dark),
+    },
+    main: {
+      hex: basePalette.shadow.main,
+      luminance: getLuminance(basePalette.shadow.main),
+    },
+    light: {
+      hex: basePalette.shadow.light,
+      luminance: getLuminance(basePalette.shadow.light),
+    },
+    bright: {
+      hex: basePalette.shadow.bright,
+      luminance: getLuminance(basePalette.shadow.bright),
+    },
   }
 
   return analysis

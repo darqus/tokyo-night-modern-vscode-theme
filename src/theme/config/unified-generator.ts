@@ -1,5 +1,5 @@
-import type { CompatiblePalette } from '../palette/index.js'
-import { compatiblePalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/index.js'
+import { universalPalette } from '../palette/index.js'
 import type { SemanticTokenStyle, TokenColor } from '../types/index.js'
 import type {
   ColorValue,
@@ -12,7 +12,7 @@ import type {
 /**
  * Разрешает значение цвета (строка или функция)
  */
-function resolveColorValue(value: ColorValue, p: CompatiblePalette): string {
+function resolveColorValue(value: ColorValue, p: UniversalPalette): string {
   return typeof value === 'function' ? value(p) : value
 }
 
@@ -27,7 +27,7 @@ export function generateUIColors(
   // Прямые правила
   if (config.rules) {
     for (const [key, value] of Object.entries(config.rules)) {
-      result[key] = resolveColorValue(value, compatiblePalette)
+      result[key] = resolveColorValue(value, universalPalette)
     }
   }
 
@@ -36,7 +36,7 @@ export function generateUIColors(
     for (const [prefix, rules] of Object.entries(config.groups)) {
       for (const [key, value] of Object.entries(rules)) {
         const fullKey = `${prefix}.${key}`
-        result[fullKey] = resolveColorValue(value, compatiblePalette)
+        result[fullKey] = resolveColorValue(value, universalPalette)
       }
     }
   }
@@ -44,7 +44,7 @@ export function generateUIColors(
   // Множественные ключи с одним значением
   if (config.multiple) {
     for (const [keys, value] of config.multiple) {
-      const resolvedValue = resolveColorValue(value, compatiblePalette)
+      const resolvedValue = resolveColorValue(value, universalPalette)
       for (const key of keys) {
         result[key] = resolvedValue
       }
@@ -64,14 +64,14 @@ export function generateTokenColors(configs: TokenColorConfig[]): TokenColor[] {
     if (config.settings.foreground) {
       settings.foreground = resolveColorValue(
         config.settings.foreground,
-        compatiblePalette
+        universalPalette
       )
     }
 
     if (config.settings.background) {
       settings.background = resolveColorValue(
         config.settings.background,
-        compatiblePalette
+        universalPalette
       )
     }
 
@@ -97,7 +97,7 @@ export function generateSemanticTokens(
 
   for (const [key, value] of Object.entries(config.rules)) {
     if (typeof value === 'function') {
-      result[key] = value(compatiblePalette)
+      result[key] = value(universalPalette)
     } else {
       result[key] = value
     }

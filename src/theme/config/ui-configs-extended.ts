@@ -1,4 +1,4 @@
-import type { CompatiblePalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/index.js'
 import { alpha, darken, lighten, mix } from '../utils/color.js'
 import {
   lightBackground,
@@ -13,210 +13,223 @@ import type { UIColorConfig } from './color-config-dsl.js'
  */
 export const editorConfig: UIColorConfig = {
   rules: {
-    'selection.background': (p: CompatiblePalette) =>
-      subtleHighlight(p.blue.main),
-    'editorLink.activeForeground': (p: CompatiblePalette) => p.fg.light,
+    'selection.background': (p: UniversalPalette) =>
+      subtleHighlight(p.chromatic.blue.main),
+    'editorLink.activeForeground': (p: UniversalPalette) =>
+      p.foreground.primary.light,
   },
   groups: {
     editor: {
-      background: (p: CompatiblePalette) => p.bg.light,
-      foreground: (p: CompatiblePalette) => p.fg.light,
-      foldBackground: (p: CompatiblePalette) => alpha(p.bg.dark, 0.2),
-      selectionBackground: (p: CompatiblePalette) =>
-        subtleHighlight(p.blue.main),
-      inactiveSelectionBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.15),
-      findMatchBackground: (p: CompatiblePalette) => alpha(p.blue.dark, 0.2),
-      findMatchBorder: (p: CompatiblePalette) => alpha(p.yellow.main, 0.5),
-      findMatchHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.dark, 0.2),
-      findRangeHighlightBackground: (p: CompatiblePalette) =>
-        subtleHighlight(p.blue.main),
-      rangeHighlightBackground: (p: CompatiblePalette) =>
-        subtleHighlight(p.teal.main),
-      wordHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.25),
-      wordHighlightStrongBackground: (p: CompatiblePalette) =>
-        mediumHighlight(p.blue.main),
-      selectionHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.25),
-      lineHighlightBackground: (p: CompatiblePalette) => p.bg.light,
-      stackFrameHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.yellow.dark, 0.125),
-      focusedStackFrameHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.teal.main, 0.125),
+      background: (p: UniversalPalette) => p.background.base.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foldBackground: (p: UniversalPalette) =>
+        alpha(p.background.base.dark, 0.2),
+      selectionBackground: (p: UniversalPalette) =>
+        subtleHighlight(p.chromatic.blue.main),
+      inactiveSelectionBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.15),
+      findMatchBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.2),
+      findMatchBorder: (p: UniversalPalette) =>
+        alpha(p.chromatic.yellow.main, 0.5),
+      findMatchHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.2),
+      findRangeHighlightBackground: (p: UniversalPalette) =>
+        subtleHighlight(p.chromatic.blue.main),
+      rangeHighlightBackground: (p: UniversalPalette) =>
+        subtleHighlight(p.chromatic.teal.main),
+      wordHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      wordHighlightStrongBackground: (p: UniversalPalette) =>
+        mediumHighlight(p.chromatic.blue.main),
+      selectionHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      lineHighlightBackground: (p: UniversalPalette) => p.background.base.light,
+      stackFrameHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.yellow.dark, 0.125),
+      focusedStackFrameHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.teal.main, 0.125),
     },
     editorCursor: {
-      foreground: (p: CompatiblePalette) => p.fg.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     editorStickyScrollHover: {
-      background: (p: CompatiblePalette) => alpha(p.blue.main, 0.1),
+      background: (p: UniversalPalette) => alpha(p.chromatic.blue.main, 0.1),
     },
     editorIndentGuide: {
-      background1: (p: CompatiblePalette) => lighten(p.bg.main, 0.05),
-      activeBackground1: (p: CompatiblePalette) =>
-        mix(p.neutral.dark, p.bg.main, 0.7),
+      background1: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.05),
+      activeBackground1: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.dark, p.background.base.main, 0.7),
     },
     editorLineNumber: {
-      foreground: (p: CompatiblePalette) =>
-        mix(p.neutral.dark, p.bg.main, 0.65),
-      activeForeground: (p: CompatiblePalette) =>
-        mix(p.neutral.dark, p.bg.main, 0.05),
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.dark, p.background.base.main, 0.65),
+      activeForeground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.dark, p.background.base.main, 0.05),
     },
     editorWhitespace: {
-      foreground: (p: CompatiblePalette) => lighten(p.ui.badge, 0.08),
+      foreground: (p: UniversalPalette) => lighten(p.ui.badge, 0.08),
     },
     editorMarkerNavigation: {
-      background: (p: CompatiblePalette) => p.bg.main,
+      background: (p: UniversalPalette) => p.background.base.main,
     },
     editorHoverWidget: {
-      background: (p: CompatiblePalette) => mix(p.bg.light, p.blue.main, 0.1),
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.25),
+      background: (p: UniversalPalette) =>
+        mix(p.background.base.light, p.chromatic.blue.main, 0.1),
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.25),
     },
     editorBracketMatch: {
-      background: (p: CompatiblePalette) => p.bg.main,
-      border: (p: CompatiblePalette) => lightBackground(p.bg.main),
+      background: (p: UniversalPalette) => p.background.base.main,
+      border: (p: UniversalPalette) => lightBackground(p.background.base.main),
     },
     editorBracketHighlight: {
-      foreground1: (p: CompatiblePalette) => p.neutral.light,
-      foreground2: (p: CompatiblePalette) => p.cyan.light,
-      foreground3: (p: CompatiblePalette) => p.purple.light,
-      foreground4: (p: CompatiblePalette) => p.yellow.light,
-      foreground5: (p: CompatiblePalette) => p.teal.light,
-      foreground6: (p: CompatiblePalette) => p.green.main,
-      'unexpectedBracket.foreground': (p: CompatiblePalette) => p.red.dark,
+      foreground1: (p: UniversalPalette) => p.chromatic.neutral.light,
+      foreground2: (p: UniversalPalette) => p.chromatic.cyan.light,
+      foreground3: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground4: (p: UniversalPalette) => p.chromatic.yellow.light,
+      foreground5: (p: UniversalPalette) => p.chromatic.teal.light,
+      foreground6: (p: UniversalPalette) => p.chromatic.green.main,
+      'unexpectedBracket.foreground': (p: UniversalPalette) =>
+        p.chromatic.red.dark,
     },
     editorBracketPairGuide: {
-      activeBackground1: (p: CompatiblePalette) => p.neutral.light,
-      activeBackground2: (p: CompatiblePalette) => p.cyan.light,
-      activeBackground3: (p: CompatiblePalette) => p.purple.light,
-      activeBackground4: (p: CompatiblePalette) => p.yellow.light,
-      activeBackground5: (p: CompatiblePalette) => p.teal.light,
-      activeBackground6: (p: CompatiblePalette) => p.green.main,
+      activeBackground1: (p: UniversalPalette) => p.chromatic.neutral.light,
+      activeBackground2: (p: UniversalPalette) => p.chromatic.cyan.light,
+      activeBackground3: (p: UniversalPalette) => p.chromatic.purple.light,
+      activeBackground4: (p: UniversalPalette) => p.chromatic.yellow.light,
+      activeBackground5: (p: UniversalPalette) => p.chromatic.teal.light,
+      activeBackground6: (p: UniversalPalette) => p.chromatic.green.main,
     },
     editorOverviewRuler: {
-      border: (p: CompatiblePalette) => lightBackground(p.bg.light),
-      errorForeground: (p: CompatiblePalette) => p.red.main,
-      warningForeground: (p: CompatiblePalette) => p.yellow.main,
-      infoForeground: (p: CompatiblePalette) =>
-        mix(p.teal.main, p.green.main, 0.3),
-      bracketMatchForeground: (p: CompatiblePalette) => p.bg.dark,
-      findMatchForeground: (p: CompatiblePalette) =>
-        alpha(p.neutral.light, 0.4),
-      rangeHighlightForeground: (p: CompatiblePalette) =>
-        alpha(p.teal.main, 0.3),
-      selectionHighlightForeground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.25),
-      wordHighlightForeground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.35),
-      wordHighlightStrongForeground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.45),
-      modifiedForeground: (p: CompatiblePalette) =>
-        mix(p.neutral.main, p.bg.main, 0.65),
-      addedForeground: (p: CompatiblePalette) =>
-        mix(p.teal.main, p.bg.main, 0.8),
-      deletedForeground: (p: CompatiblePalette) =>
-        mix(p.red.main, p.bg.main, 0.7),
+      border: (p: UniversalPalette) => lightBackground(p.background.base.light),
+      errorForeground: (p: UniversalPalette) => p.chromatic.red.main,
+      warningForeground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      infoForeground: (p: UniversalPalette) =>
+        mix(p.chromatic.teal.main, p.chromatic.green.main, 0.3),
+      bracketMatchForeground: (p: UniversalPalette) => p.background.base.dark,
+      findMatchForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.neutral.light, 0.4),
+      rangeHighlightForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.teal.main, 0.3),
+      selectionHighlightForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      wordHighlightForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.35),
+      wordHighlightStrongForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.45),
+      modifiedForeground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.main, p.background.base.main, 0.65),
+      addedForeground: (p: UniversalPalette) =>
+        mix(p.chromatic.teal.main, p.background.base.main, 0.8),
+      deletedForeground: (p: UniversalPalette) =>
+        mix(p.chromatic.red.main, p.background.base.main, 0.7),
     },
     editorRuler: {
-      foreground: (p: CompatiblePalette) => p.bg.dark,
+      foreground: (p: UniversalPalette) => p.background.base.dark,
     },
     editorError: {
-      foreground: (p: CompatiblePalette) => p.red.main,
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
     },
     editorWarning: {
-      foreground: (p: CompatiblePalette) => p.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
     },
     editorInfo: {
-      foreground: (p: CompatiblePalette) => p.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
     editorHint: {
-      foreground: (p: CompatiblePalette) => p.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
     editorGutter: {
-      modifiedBackground: (p: CompatiblePalette) =>
-        mix(p.neutral.main, p.bg.main, 0.65),
-      addedBackground: (p: CompatiblePalette) =>
-        mix(p.teal.main, p.bg.main, 0.8),
-      deletedBackground: (p: CompatiblePalette) =>
-        mix(p.red.main, p.bg.main, 0.65),
+      modifiedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.main, p.background.base.main, 0.65),
+      addedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.teal.main, p.background.base.main, 0.8),
+      deletedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.red.main, p.background.base.main, 0.7),
     },
     editorGhostText: {
-      foreground: (p: CompatiblePalette) => p.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
     },
     minimapGutter: {
-      modifiedBackground: (p: CompatiblePalette) =>
-        mix(p.neutral.main, p.bg.main, 0.6),
-      addedBackground: (p: CompatiblePalette) =>
-        mix(p.teal.main, p.bg.main, 0.75),
-      deletedBackground: (p: CompatiblePalette) =>
-        mix(p.red.main, p.bg.main, 0.6),
+      modifiedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.main, p.background.base.main, 0.6),
+      addedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.teal.main, p.background.base.main, 0.75),
+      deletedBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.red.main, p.background.base.main, 0.6),
     },
     editorGroup: {
-      border: (p: CompatiblePalette) => lightBackground(p.bg.light),
-      dropBackground: (p: CompatiblePalette) => lightBackground(p.bg.light),
+      border: (p: UniversalPalette) => lightBackground(p.background.base.light),
+      dropBackground: (p: UniversalPalette) =>
+        lightBackground(p.background.base.light),
     },
     editorGroupHeader: {
-      tabsBorder: (p: CompatiblePalette) => p.bg.dark,
-      tabsBackground: (p: CompatiblePalette) => p.bg.main,
-      noTabsBackground: (p: CompatiblePalette) => p.bg.main,
-      border: (p: CompatiblePalette) => lightBackground(p.bg.main),
+      tabsBorder: (p: UniversalPalette) => p.background.base.dark,
+      tabsBackground: (p: UniversalPalette) => p.background.base.main,
+      noTabsBackground: (p: UniversalPalette) => p.background.base.main,
+      border: (p: UniversalPalette) => lightBackground(p.background.base.main),
     },
     editorPane: {
-      background: (p: CompatiblePalette) => p.bg.light,
+      background: (p: UniversalPalette) => p.background.base.light,
     },
     editorWidget: {
-      foreground: (p: CompatiblePalette) => p.fg.light,
-      background: (p: CompatiblePalette) =>
-        mix(p.bg.main, p.neutral.dark, 0.15),
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
-      resizeBorder: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      background: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.neutral.dark, 0.15),
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+      resizeBorder: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
     },
     editorSuggestWidget: {
-      background: (p: CompatiblePalette) => p.bg.main,
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
-      selectedBackground: (p: CompatiblePalette) =>
-        mediumHighlight(p.blue.main),
-      highlightForeground: (p: CompatiblePalette) => p.neutral.light,
+      background: (p: UniversalPalette) => p.background.base.main,
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+      selectedBackground: (p: UniversalPalette) =>
+        mediumHighlight(p.chromatic.blue.main),
+      highlightForeground: (p: UniversalPalette) => p.chromatic.neutral.light,
     },
     editorCodeLens: {
-      foreground: (p: CompatiblePalette) => p.fg.dark,
+      foreground: (p: UniversalPalette) => p.foreground.primary.dark,
     },
     editorLightBulb: {
-      foreground: (p: CompatiblePalette) => p.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
     },
     editorLightBulbAutoFix: {
-      foreground: (p: CompatiblePalette) => p.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
     },
     editorInlayHint: {
-      foreground: (p: CompatiblePalette) => p.neutral.main,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main,
     },
     peekView: {
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
     },
     peekViewEditor: {
-      background: (p: CompatiblePalette) => p.bg.main,
-      matchHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.neutral.light, 0.4),
+      background: (p: UniversalPalette) => p.background.base.main,
+      matchHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.neutral.light, 0.4),
     },
     peekViewTitle: {
-      background: (p: CompatiblePalette) => p.bg.dark,
+      background: (p: UniversalPalette) => p.background.base.dark,
     },
     peekViewTitleLabel: {
-      foreground: (p: CompatiblePalette) => p.fg.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     peekViewTitleDescription: {
-      foreground: (p: CompatiblePalette) => p.fg.main,
+      foreground: (p: UniversalPalette) => p.foreground.primary.main,
     },
     peekViewResult: {
-      background: (p: CompatiblePalette) => p.bg.main,
-      selectionForeground: (p: CompatiblePalette) => p.fg.light,
-      selectionBackground: (p: CompatiblePalette) =>
-        mediumHighlight(p.blue.main),
-      lineForeground: (p: CompatiblePalette) => p.fg.light,
-      fileForeground: (p: CompatiblePalette) => p.fg.main,
-      matchHighlightBackground: (p: CompatiblePalette) =>
-        alpha(p.neutral.light, 0.4),
+      background: (p: UniversalPalette) => p.background.base.main,
+      selectionForeground: (p: UniversalPalette) => p.foreground.primary.light,
+      selectionBackground: (p: UniversalPalette) =>
+        mediumHighlight(p.chromatic.blue.main),
+      lineForeground: (p: UniversalPalette) => p.foreground.primary.light,
+      fileForeground: (p: UniversalPalette) => p.foreground.primary.main,
+      matchHighlightBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.neutral.light, 0.4),
     },
   },
 }
@@ -227,46 +240,56 @@ export const editorConfig: UIColorConfig = {
 export const panelsConfig: UIColorConfig = {
   groups: {
     panel: {
-      background: (p: CompatiblePalette) => slightlyDarker(p.bg.main),
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
+      background: (p: UniversalPalette) =>
+        slightlyDarker(p.background.base.main),
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
     },
     panelTitle: {
-      activeForeground: (p: CompatiblePalette) => p.fg.dark,
-      inactiveForeground: (p: CompatiblePalette) => darken(p.fg.dark, 0.2),
-      activeBorder: (p: CompatiblePalette) => p.blue.main,
+      activeForeground: (p: UniversalPalette) => p.foreground.primary.dark,
+      inactiveForeground: (p: UniversalPalette) =>
+        darken(p.foreground.primary.dark, 0.2),
+      activeBorder: (p: UniversalPalette) => p.chromatic.blue.main,
     },
     panelInput: {
-      border: (p: CompatiblePalette) => lightBackground(p.bg.main),
+      border: (p: UniversalPalette) => lightBackground(p.background.base.main),
     },
     panelStickyScroll: {
-      background: (p: CompatiblePalette) => p.bg.light,
+      background: (p: UniversalPalette) => p.background.base.light,
     },
     statusBar: {
-      foreground: (p: CompatiblePalette) => p.fg.dark,
-      background: (p: CompatiblePalette) => p.bg.dark,
-      border: (p: CompatiblePalette) => lightBackground(p.bg.dark),
-      focusBorder: (p: CompatiblePalette) => p.blue.main,
-      noFolderBackground: (p: CompatiblePalette) => p.bg.dark,
-      debuggingBackground: (p: CompatiblePalette) =>
-        mix(p.purple.dark, p.bg.dark, 0.5),
-      debuggingForeground: (p: CompatiblePalette) => p.fg.dark,
+      foreground: (p: UniversalPalette) => p.foreground.primary.dark,
+      background: (p: UniversalPalette) => p.background.base.dark,
+      border: (p: UniversalPalette) => lightBackground(p.background.base.dark),
+      focusBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+      noFolderBackground: (p: UniversalPalette) => p.background.base.dark,
+      debuggingBackground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.dark, p.background.base.dark, 0.5),
+      debuggingForeground: (p: UniversalPalette) => p.foreground.primary.dark,
     },
     statusBarItem: {
-      activeBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.25),
-      hoverBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.15),
-      prominentBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.25),
-      prominentHoverBackground: (p: CompatiblePalette) =>
-        mediumHighlight(p.blue.main),
-      focusBorder: (p: CompatiblePalette) => p.blue.main,
-      remoteBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.25),
-      remoteHoverForeground: (p: CompatiblePalette) => p.fg.bright,
+      activeBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      hoverBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.15),
+      prominentBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      prominentHoverBackground: (p: UniversalPalette) =>
+        mediumHighlight(p.chromatic.blue.main),
+      focusBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+      remoteBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      remoteHoverForeground: (p: UniversalPalette) =>
+        p.foreground.primary.bright,
     },
     titleBar: {
-      activeForeground: (p: CompatiblePalette) => p.fg.dark,
-      inactiveForeground: (p: CompatiblePalette) => darken(p.fg.dark, 0.4),
-      activeBackground: (p: CompatiblePalette) => p.bg.main,
-      inactiveBackground: (p: CompatiblePalette) => darken(p.bg.main, 0.03),
-      border: (p: CompatiblePalette) => lightBackground(p.bg.main),
+      activeForeground: (p: UniversalPalette) => p.foreground.primary.dark,
+      inactiveForeground: (p: UniversalPalette) =>
+        darken(p.foreground.primary.dark, 0.4),
+      activeBackground: (p: UniversalPalette) => p.background.base.main,
+      inactiveBackground: (p: UniversalPalette) =>
+        darken(p.background.base.main, 0.03),
+      border: (p: UniversalPalette) => lightBackground(p.background.base.main),
     },
   },
 }
@@ -277,29 +300,30 @@ export const panelsConfig: UIColorConfig = {
 export const terminalConfig: UIColorConfig = {
   groups: {
     terminal: {
-      background: (p: CompatiblePalette) => p.bg.main,
-      foreground: (p: CompatiblePalette) => p.fg.light,
-      selectionBackground: (p: CompatiblePalette) => alpha(p.blue.dark, 0.3),
-      ansiBlack: (p: CompatiblePalette) => p.bg.dark,
-      ansiRed: (p: CompatiblePalette) => p.red.main,
-      ansiGreen: (p: CompatiblePalette) => p.green.main,
-      ansiYellow: (p: CompatiblePalette) => p.yellow.main,
-      ansiBlue: (p: CompatiblePalette) => p.blue.main,
-      ansiMagenta: (p: CompatiblePalette) => p.purple.light,
-      ansiCyan: (p: CompatiblePalette) => p.cyan.light,
-      ansiWhite: (p: CompatiblePalette) => p.fg.main,
-      ansiBrightBlack: (p: CompatiblePalette) => p.neutral.main,
-      ansiBrightRed: (p: CompatiblePalette) => p.red.dark,
-      ansiBrightGreen: (p: CompatiblePalette) => p.green.dark,
-      ansiBrightYellow: (p: CompatiblePalette) => p.yellow.light,
-      ansiBrightBlue: (p: CompatiblePalette) => p.blue.light,
-      ansiBrightMagenta: (p: CompatiblePalette) => p.purple.light,
-      ansiBrightCyan: (p: CompatiblePalette) => p.cyan.light,
-      ansiBrightWhite: (p: CompatiblePalette) => p.fg.light,
+      background: (p: UniversalPalette) => p.background.base.main,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      selectionBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.3),
+      ansiBlack: (p: UniversalPalette) => p.background.base.dark,
+      ansiRed: (p: UniversalPalette) => p.chromatic.red.main,
+      ansiGreen: (p: UniversalPalette) => p.chromatic.green.main,
+      ansiYellow: (p: UniversalPalette) => p.chromatic.yellow.main,
+      ansiBlue: (p: UniversalPalette) => p.chromatic.blue.main,
+      ansiMagenta: (p: UniversalPalette) => p.chromatic.purple.light,
+      ansiCyan: (p: UniversalPalette) => p.chromatic.cyan.light,
+      ansiWhite: (p: UniversalPalette) => p.foreground.primary.main,
+      ansiBrightBlack: (p: UniversalPalette) => p.chromatic.neutral.main,
+      ansiBrightRed: (p: UniversalPalette) => p.chromatic.red.dark,
+      ansiBrightGreen: (p: UniversalPalette) => p.chromatic.green.dark,
+      ansiBrightYellow: (p: UniversalPalette) => p.chromatic.yellow.light,
+      ansiBrightBlue: (p: UniversalPalette) => p.chromatic.blue.light,
+      ansiBrightMagenta: (p: UniversalPalette) => p.chromatic.purple.light,
+      ansiBrightCyan: (p: UniversalPalette) => p.chromatic.cyan.light,
+      ansiBrightWhite: (p: UniversalPalette) => p.foreground.primary.light,
     },
     terminalCursor: {
-      foreground: (p: CompatiblePalette) => p.fg.light,
-      background: (p: CompatiblePalette) => p.bg.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      background: (p: UniversalPalette) => p.background.base.light,
     },
   },
 }
@@ -310,16 +334,21 @@ export const terminalConfig: UIColorConfig = {
 export const gitConfig: UIColorConfig = {
   groups: {
     gitDecoration: {
-      modifiedResourceForeground: (p: CompatiblePalette) => p.blue.light,
-      ignoredResourceForeground: (p: CompatiblePalette) => p.fg.dark,
-      deletedResourceForeground: (p: CompatiblePalette) => p.red.dark,
-      renamedResourceForeground: (p: CompatiblePalette) => p.teal.dark,
-      addedResourceForeground: (p: CompatiblePalette) => p.teal.dark,
-      untrackedResourceForeground: (p: CompatiblePalette) => p.teal.dark,
-      conflictingResourceForeground: (p: CompatiblePalette) =>
-        alpha(p.yellow.main, 0.8),
-      stageDeletedResourceForeground: (p: CompatiblePalette) => p.red.dark,
-      stageModifiedResourceForeground: (p: CompatiblePalette) => p.blue.light,
+      modifiedResourceForeground: (p: UniversalPalette) =>
+        p.chromatic.blue.light,
+      ignoredResourceForeground: (p: UniversalPalette) =>
+        p.foreground.primary.dark,
+      deletedResourceForeground: (p: UniversalPalette) => p.chromatic.red.dark,
+      renamedResourceForeground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      addedResourceForeground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      untrackedResourceForeground: (p: UniversalPalette) =>
+        p.chromatic.teal.dark,
+      conflictingResourceForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.yellow.main, 0.8),
+      stageDeletedResourceForeground: (p: UniversalPalette) =>
+        p.chromatic.red.dark,
+      stageModifiedResourceForeground: (p: UniversalPalette) =>
+        p.chromatic.blue.light,
     },
   },
 }
@@ -330,28 +359,34 @@ export const gitConfig: UIColorConfig = {
 export const diffConfig: UIColorConfig = {
   groups: {
     diffEditor: {
-      insertedTextBackground: (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.125),
-      removedTextBackground: (p: CompatiblePalette) => alpha(p.red.dark, 0.13),
-      insertedLineBackground: (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.125),
-      removedLineBackground: (p: CompatiblePalette) => alpha(p.red.dark, 0.13),
-      diagonalFill: (p: CompatiblePalette) => lighten(p.bg.main, 0.08),
-      unchangedCodeBackground: (p: CompatiblePalette) =>
-        alpha(lighten(p.bg.main, 0.06), 0.4),
+      insertedTextBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.125),
+      removedTextBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.red.dark, 0.13),
+      insertedLineBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.125),
+      removedLineBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.red.dark, 0.13),
+      diagonalFill: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.08),
+      unchangedCodeBackground: (p: UniversalPalette) =>
+        alpha(lighten(p.background.base.main, 0.06), 0.4),
     },
     diffEditorGutter: {
-      insertedLineBackground: (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.15),
-      removedLineBackground: (p: CompatiblePalette) => alpha(p.red.dark, 0.13),
+      insertedLineBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.15),
+      removedLineBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.red.dark, 0.13),
     },
     diffEditorOverview: {
-      insertedForeground: (p: CompatiblePalette) => alpha(p.green.dark, 0.15),
-      removedForeground: (p: CompatiblePalette) => alpha(p.red.dark, 0.13),
+      insertedForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.15),
+      removedForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.red.dark, 0.13),
     },
     multiDiffEditor: {
-      headerBackground: (p: CompatiblePalette) => p.bg.light,
-      border: (p: CompatiblePalette) => p.bg.light,
+      headerBackground: (p: UniversalPalette) => p.background.base.light,
+      border: (p: UniversalPalette) => p.background.base.light,
     },
   },
 }
@@ -361,173 +396,188 @@ export const diffConfig: UIColorConfig = {
  */
 export const miscConfig: UIColorConfig = {
   rules: {
-    'textLink.foreground': (p: CompatiblePalette) => p.blue.light,
-    'textLink.activeForeground': (p: CompatiblePalette) =>
-      lighten(p.blue.light, 0.2),
-    'textPreformat.foreground': (p: CompatiblePalette) => p.fg.main,
-    'textSeparator.foreground': (p: CompatiblePalette) =>
-      lighten(p.bg.main, 0.15),
+    'textLink.foreground': (p: UniversalPalette) => p.chromatic.blue.light,
+    'textLink.activeForeground': (p: UniversalPalette) =>
+      lighten(p.chromatic.blue.light, 0.2),
+    'textPreformat.foreground': (p: UniversalPalette) =>
+      p.foreground.primary.main,
+    'textSeparator.foreground': (p: UniversalPalette) =>
+      lighten(p.background.base.main, 0.15),
   },
   groups: {
     walkThrough: {
-      embeddedEditorBackground: (p: CompatiblePalette) => p.bg.main,
+      embeddedEditorBackground: (p: UniversalPalette) => p.background.base.main,
     },
     textBlockQuote: {
-      background: (p: CompatiblePalette) => p.bg.main,
+      background: (p: UniversalPalette) => p.background.base.main,
     },
     textCodeBlock: {
-      background: (p: CompatiblePalette) => p.bg.main,
+      background: (p: UniversalPalette) => p.background.base.main,
     },
     debugExceptionWidget: {
-      border: (p: CompatiblePalette) => p.red.dark,
-      background: (p: CompatiblePalette) => p.bg.dark,
+      border: (p: UniversalPalette) => p.chromatic.red.dark,
+      background: (p: UniversalPalette) => p.background.base.dark,
     },
     debugToolBar: {
-      background: (p: CompatiblePalette) => p.bg.dark,
+      background: (p: UniversalPalette) => p.background.base.dark,
     },
     debugConsole: {
-      infoForeground: (p: CompatiblePalette) => p.fg.main,
-      errorForeground: (p: CompatiblePalette) => p.red.dark,
-      sourceForeground: (p: CompatiblePalette) => p.fg.main,
-      warningForeground: (p: CompatiblePalette) => p.yellow.dark,
+      infoForeground: (p: UniversalPalette) => p.foreground.primary.main,
+      errorForeground: (p: UniversalPalette) => p.chromatic.red.dark,
+      sourceForeground: (p: UniversalPalette) => p.foreground.primary.main,
+      warningForeground: (p: UniversalPalette) => p.chromatic.yellow.dark,
     },
     debugConsoleInputIcon: {
-      foreground: (p: CompatiblePalette) => p.teal.main,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
     debugView: {
-      stateLabelForeground: (p: CompatiblePalette) => p.fg.main,
-      stateLabelBackground: (p: CompatiblePalette) => p.bg.dark,
-      valueChangedHighlight: (p: CompatiblePalette) => alpha(p.blue.dark, 0.67),
+      stateLabelForeground: (p: UniversalPalette) => p.foreground.primary.main,
+      stateLabelBackground: (p: UniversalPalette) => p.background.base.dark,
+      valueChangedHighlight: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.67),
     },
     debugTokenExpression: {
-      name: (p: CompatiblePalette) => p.cyan.light,
-      value: (p: CompatiblePalette) => p.fg.light,
-      string: (p: CompatiblePalette) => p.green.main,
-      boolean: (p: CompatiblePalette) => p.orange.main,
-      number: (p: CompatiblePalette) => p.orange.main,
-      error: (p: CompatiblePalette) => p.red.dark,
+      name: (p: UniversalPalette) => p.chromatic.cyan.light,
+      value: (p: UniversalPalette) => p.foreground.primary.light,
+      string: (p: UniversalPalette) => p.chromatic.green.main,
+      boolean: (p: UniversalPalette) => p.chromatic.orange.main,
+      number: (p: UniversalPalette) => p.chromatic.orange.main,
+      error: (p: UniversalPalette) => p.chromatic.red.dark,
     },
     debugIcon: {
-      breakpointForeground: (p: CompatiblePalette) => p.red.dark,
-      breakpointDisabledForeground: (p: CompatiblePalette) => p.bg.light,
-      breakpointUnverifiedForeground: (p: CompatiblePalette) => p.red.dark,
+      breakpointForeground: (p: UniversalPalette) => p.chromatic.red.dark,
+      breakpointDisabledForeground: (p: UniversalPalette) =>
+        p.background.base.light,
+      breakpointUnverifiedForeground: (p: UniversalPalette) =>
+        p.chromatic.red.dark,
     },
     notebook: {
-      editorBackground: (p: CompatiblePalette) => p.bg.light,
-      cellEditorBackground: (p: CompatiblePalette) => p.bg.main,
-      cellBorderColor: (p: CompatiblePalette) => p.bg.dark,
-      focusedCellBorder: (p: CompatiblePalette) =>
-        mix(p.bg.main, p.blue.main, 0.2),
-      cellStatusBarItemHoverBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.main, 0.15),
+      editorBackground: (p: UniversalPalette) => p.background.base.light,
+      cellEditorBackground: (p: UniversalPalette) => p.background.base.main,
+      cellBorderColor: (p: UniversalPalette) => p.background.base.dark,
+      focusedCellBorder: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+      cellStatusBarItemHoverBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.15),
     },
     charts: {
-      red: (p: CompatiblePalette) => p.red.main,
-      blue: (p: CompatiblePalette) => p.blue.main,
-      yellow: (p: CompatiblePalette) => p.yellow.main,
-      orange: (p: CompatiblePalette) => p.orange.main,
-      green: (p: CompatiblePalette) => p.blue.main,
-      purple: (p: CompatiblePalette) => p.purple.dark,
-      foreground: (p: CompatiblePalette) => p.fg.light,
-      lines: (p: CompatiblePalette) => p.bg.main,
+      red: (p: UniversalPalette) => p.chromatic.red.main,
+      blue: (p: UniversalPalette) => p.chromatic.blue.main,
+      yellow: (p: UniversalPalette) => p.chromatic.yellow.main,
+      orange: (p: UniversalPalette) => p.chromatic.orange.main,
+      green: (p: UniversalPalette) => p.chromatic.blue.main,
+      purple: (p: UniversalPalette) => p.chromatic.purple.dark,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      lines: (p: UniversalPalette) => p.background.base.main,
     },
     scmGraph: {
-      historyItemHoverLabelForeground: (p: CompatiblePalette) => p.bg.dark,
-      foreground1: (p: CompatiblePalette) => p.blue.main,
-      foreground2: (p: CompatiblePalette) => p.purple.main,
-      foreground3: (p: CompatiblePalette) => p.cyan.main,
-      foreground4: (p: CompatiblePalette) => p.pink.main,
-      foreground5: (p: CompatiblePalette) => p.magenta.main,
-      historyItemHoverAdditionsForeground: (p: CompatiblePalette) =>
-        p.green.dark,
-      historyItemHoverDeletionsForeground: (p: CompatiblePalette) => p.red.main,
-      historyItemRefColor: (p: CompatiblePalette) => p.blue.main,
-      historyItemRemoteRefColor: (p: CompatiblePalette) => p.purple.main,
-      historyItemBaseRefColor: (p: CompatiblePalette) => p.cyan.main,
-      historyItemHoverDefaultLabelForeground: (p: CompatiblePalette) =>
-        p.fg.light,
+      historyItemHoverLabelForeground: (p: UniversalPalette) =>
+        p.background.base.dark,
+      foreground1: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground2: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground3: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground4: (p: UniversalPalette) => p.chromatic.pink.main,
+      foreground5: (p: UniversalPalette) => p.chromatic.magenta.main,
+      historyItemHoverAdditionsForeground: (p: UniversalPalette) =>
+        p.chromatic.green.dark,
+      historyItemHoverDeletionsForeground: (p: UniversalPalette) =>
+        p.chromatic.red.main,
+      historyItemRefColor: (p: UniversalPalette) => p.chromatic.blue.main,
+      historyItemRemoteRefColor: (p: UniversalPalette) =>
+        p.chromatic.purple.main,
+      historyItemBaseRefColor: (p: UniversalPalette) => p.chromatic.cyan.main,
+      historyItemHoverDefaultLabelForeground: (p: UniversalPalette) =>
+        p.foreground.primary.light,
     },
     merge: {
-      currentHeaderBackground: (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.15),
-      currentContentBackground: (p: CompatiblePalette) =>
-        alpha(p.teal.dark, 0.27),
-      incomingHeaderBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.dark, 0.67),
-      incomingContentBackground: (p: CompatiblePalette) =>
-        alpha(p.blue.dark, 0.27),
+      currentHeaderBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.15),
+      currentContentBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.teal.dark, 0.27),
+      incomingHeaderBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.67),
+      incomingContentBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.dark, 0.27),
     },
     mergeEditor: {
-      'change.background': (p: CompatiblePalette) => alpha(p.green.dark, 0.15),
-      'change.word.background': (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.25),
-      'conflict.unhandledUnfocused.border': (p: CompatiblePalette) =>
-        alpha(p.yellow.main, 0.53),
-      'conflict.unhandledFocused.border': (p: CompatiblePalette) =>
-        alpha(p.yellow.main, 0.69),
-      'conflict.handledUnfocused.border': (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.15),
-      'conflict.handledFocused.border': (p: CompatiblePalette) =>
-        alpha(p.green.dark, 0.4),
-      'conflict.handled.minimapOverViewRuler': (p: CompatiblePalette) =>
-        p.teal.dark,
-      'conflict.unhandled.minimapOverViewRuler': (p: CompatiblePalette) =>
-        p.yellow.main,
+      'change.background': (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.15),
+      'change.word.background': (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.25),
+      'conflict.unhandledUnfocused.border': (p: UniversalPalette) =>
+        alpha(p.chromatic.yellow.main, 0.53),
+      'conflict.unhandledFocused.border': (p: UniversalPalette) =>
+        alpha(p.chromatic.yellow.main, 0.69),
+      'conflict.handledUnfocused.border': (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.15),
+      'conflict.handledFocused.border': (p: UniversalPalette) =>
+        alpha(p.chromatic.green.dark, 0.4),
+      'conflict.handled.minimapOverViewRuler': (p: UniversalPalette) =>
+        p.chromatic.teal.dark,
+      'conflict.unhandled.minimapOverViewRuler': (p: UniversalPalette) =>
+        p.chromatic.yellow.main,
     },
     gitlens: {
-      trailingLineForegroundColor: (p: CompatiblePalette) => p.neutral.dark,
-      gutterUncommittedForegroundColor: (p: CompatiblePalette) => p.blue.main,
-      gutterForegroundColor: (p: CompatiblePalette) => p.fg.main,
-      gutterBackgroundColor: (p: CompatiblePalette) => p.bg.main,
+      trailingLineForegroundColor: (p: UniversalPalette) =>
+        p.chromatic.neutral.dark,
+      gutterUncommittedForegroundColor: (p: UniversalPalette) =>
+        p.chromatic.blue.main,
+      gutterForegroundColor: (p: UniversalPalette) => p.foreground.primary.main,
+      gutterBackgroundColor: (p: UniversalPalette) => p.background.base.main,
     },
     notificationCenterHeader: {
-      background: (p: CompatiblePalette) => p.bg.main,
+      background: (p: UniversalPalette) => p.background.base.main,
     },
     notifications: {
-      background: (p: CompatiblePalette) => p.bg.main,
+      background: (p: UniversalPalette) => p.background.base.main,
     },
     notificationLink: {
-      foreground: (p: CompatiblePalette) => p.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
     },
     notificationsErrorIcon: {
-      foreground: (p: CompatiblePalette) => p.red.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.red.dark,
     },
     notificationsWarningIcon: {
-      foreground: (p: CompatiblePalette) => p.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
     },
     notificationsInfoIcon: {
-      foreground: (p: CompatiblePalette) => p.cyan.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
     menubar: {
-      selectionForeground: (p: CompatiblePalette) => p.fg.light,
-      selectionBackground: (p: CompatiblePalette) =>
-        subtleHighlight(p.blue.main),
-      selectionBorder: (p: CompatiblePalette) => lighten(p.bg.main, 0.04),
+      selectionForeground: (p: UniversalPalette) => p.foreground.primary.light,
+      selectionBackground: (p: UniversalPalette) =>
+        subtleHighlight(p.chromatic.blue.main),
+      selectionBorder: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.04),
     },
     menu: {
-      foreground: (p: CompatiblePalette) => p.fg.main,
-      background: (p: CompatiblePalette) => p.bg.main,
-      selectionForeground: (p: CompatiblePalette) => lighten(p.fg.light, 0.4),
-      selectionBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.25),
-      separatorBackground: (p: CompatiblePalette) => lighten(p.bg.main, 0.06),
-      border: (p: CompatiblePalette) => mix(p.bg.main, p.blue.main, 0.2),
+      foreground: (p: UniversalPalette) => p.foreground.primary.main,
+      background: (p: UniversalPalette) => p.background.base.main,
+      selectionForeground: (p: UniversalPalette) =>
+        lighten(p.foreground.primary.light, 0.4),
+      selectionBackground: (p: UniversalPalette) =>
+        alpha(p.chromatic.blue.main, 0.25),
+      separatorBackground: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.06),
+      border: (p: UniversalPalette) =>
+        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
     },
     chat: {
-      requestBorder: (p: CompatiblePalette) => p.bg.light,
-      avatarBackground: (p: CompatiblePalette) => p.blue.dark,
-      avatarForeground: (p: CompatiblePalette) => p.fg.light,
-      slashCommandBackground: (p: CompatiblePalette) => p.bg.dark,
-      slashCommandForeground: (p: CompatiblePalette) => p.blue.main,
+      requestBorder: (p: UniversalPalette) => p.background.base.light,
+      avatarBackground: (p: UniversalPalette) => p.chromatic.blue.dark,
+      avatarForeground: (p: UniversalPalette) => p.foreground.primary.light,
+      slashCommandBackground: (p: UniversalPalette) => p.background.base.dark,
+      slashCommandForeground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
     inlineChat: {
-      foreground: (p: CompatiblePalette) => p.fg.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     inlineChatInput: {
-      background: (p: CompatiblePalette) => p.bg.light,
+      background: (p: UniversalPalette) => p.background.base.light,
     },
     inlineChatDiff: {
-      inserted: (p: CompatiblePalette) => alpha(p.green.dark, 0.25),
-      removed: (p: CompatiblePalette) => alpha(p.red.dark, 0.26),
+      inserted: (p: UniversalPalette) => alpha(p.chromatic.green.dark, 0.25),
+      removed: (p: UniversalPalette) => alpha(p.chromatic.red.dark, 0.26),
     },
   },
 }

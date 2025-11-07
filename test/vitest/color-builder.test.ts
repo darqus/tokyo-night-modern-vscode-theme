@@ -7,9 +7,11 @@ import {
 
 // Mock the palette object
 vi.mock('../../src/theme/palette/index.js', () => ({
-  compatiblePalette: {
-    blue: {
-      dark: '#0000ff',
+  universalPalette: {
+    chromatic: {
+      blue: {
+        dark: '#0000ff',
+      },
     },
     ui: {
       white: '#ffffff',
@@ -78,7 +80,7 @@ describe('ColorRuleBuilder', () => {
 })
 
 describe('Palette alias', () => {
-  it('c should be an alias for compatiblePalette', () => {
+  it('c should be an alias for universalPalette', () => {
     expect(c).toBeDefined()
   })
 })
