@@ -157,21 +157,21 @@ export function generateEditorColors(): Record<string, string> {
       foreground: c.fg.main,
     })
     .addGroup('editorBracketHighlight', {
-      foreground1: c.blue.main,
-      foreground2: c.cyan.main,
-      foreground3: c.purple.main,
-      foreground4: c.green.main,
-      foreground5: c.orange.main,
-      foreground6: c.pink.main,
+      foreground1: c.orange.light,
+      foreground2: c.rose.light,
+      foreground3: c.red.light,
+      foreground4: c.yellow.light,
+      foreground5: c.magenta.light,
+      foreground6: c.lime.light,
       unexpectedBracket: c.red.main,
     })
     .addGroup('editorBracketPairGuide', {
-      background1: `${c.blue.dark}40`,
-      background2: `${c.cyan.dark}40`,
-      background3: `${c.purple.dark}40`,
-      background4: `${c.green.dark}40`,
-      background5: `${c.orange.dark}40`,
-      background6: `${c.pink.dark}40`,
+      background1: `${c.orange.light}40`,
+      background2: `${c.rose.light}40`,
+      background3: `${c.red.light}40`,
+      background4: `${c.yellow.light}40`,
+      background5: `${c.magenta.light}40`,
+      background6: `${c.lime.light}40`,
     })
     .addGroup('peekView', {
       background: c.bg.dark,
