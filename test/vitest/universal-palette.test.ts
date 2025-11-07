@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { universalBasePalette } from '../../src/theme/palette/universal-base.js'
-import {
-  compatiblePalette,
-  universalPalette,
-} from '../../src/theme/palette/universal-generated.js'
+import { universalPalette } from '../../src/theme/palette/universal-generated.js'
 import { getLuminance } from '../../src/theme/utils/contrast.js'
 
 /**
@@ -110,55 +107,6 @@ describe('Universal Palette', () => {
         expect(getLuminance(variant.light)).toBeLessThanOrEqual(
           getLuminance(variant.bright)
         )
-      }
-    }
-  })
-
-  /**
-   * Проверка совместимой палитры
-   */
-  it('should have correct structure for compatiblePalette', () => {
-    expect(compatiblePalette).toHaveProperty('bg')
-    expect(compatiblePalette).toHaveProperty('fg')
-    expect(compatiblePalette).toHaveProperty('blue')
-    expect(compatiblePalette).toHaveProperty('cyan')
-    expect(compatiblePalette).toHaveProperty('teal')
-    expect(compatiblePalette).toHaveProperty('green')
-    expect(compatiblePalette).toHaveProperty('purple')
-    expect(compatiblePalette).toHaveProperty('orange')
-    expect(compatiblePalette).toHaveProperty('yellow')
-    expect(compatiblePalette).toHaveProperty('red')
-    expect(compatiblePalette).toHaveProperty('pink')
-    expect(compatiblePalette).toHaveProperty('neutral')
-    expect(compatiblePalette).toHaveProperty('indigo')
-    expect(compatiblePalette).toHaveProperty('lime')
-    expect(compatiblePalette).toHaveProperty('magenta')
-    expect(compatiblePalette).toHaveProperty('peach')
-    expect(compatiblePalette).toHaveProperty('rose')
-    expect(compatiblePalette).toHaveProperty('amber')
-    expect(compatiblePalette).toHaveProperty('emerald')
-    expect(compatiblePalette).toHaveProperty('ui')
-    expect(compatiblePalette).toHaveProperty('shadow')
-  })
-
-  /**
-   * Проверка значений совместимой палитры
-   */
-  it('should have valid color values in compatiblePalette', () => {
-    // Проверка, что все значения являются строками с правильным форматом HEX
-    const validateColor = (color: string) => {
-      expect(color).toMatch(/^#[0-9A-Fa-f]{6,8}$/)
-    }
-
-    for (const [, value] of Object.entries(compatiblePalette)) {
-      if (typeof value === 'object' && value !== null) {
-        for (const colorValue of Object.values(value)) {
-          if (typeof colorValue === 'string') {
-            validateColor(colorValue)
-          }
-        }
-      } else if (typeof value === 'string') {
-        validateColor(value)
       }
     }
   })

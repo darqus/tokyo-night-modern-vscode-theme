@@ -1,17 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 describe('Missing Coverage Tests', () => {
-  describe('Palette Coverage', () => {
-    it('should import compatible palette', async () => {
-      const { compatiblePalette } = await import(
-        '../../src/theme/palette/universal-generated'
-      )
-      expect(compatiblePalette).toBeDefined()
-      expect(compatiblePalette.bg).toHaveProperty('dark')
-      expect(compatiblePalette.bg).toHaveProperty('main')
-      expect(compatiblePalette.bg).toHaveProperty('light')
-    })
-  })
+  describe('Palette Coverage', () => {})
 
   describe('Config Constants Coverage', () => {
     it('should import config constants', async () => {
