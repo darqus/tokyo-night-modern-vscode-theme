@@ -65,7 +65,7 @@ export const literalsConfig: SemanticTokenConfig = {
   rules: {
     string: (p: UniversalPalette) => token(p.chromatic.green.main),
     number: (p: UniversalPalette) => token(p.chromatic.orange.main),
-    boolean: (p: UniversalPalette) => token(p.chromatic.orange.main),
+    boolean: (p: UniversalPalette) => token(p.chromatic.red.main),
   },
 }
 
