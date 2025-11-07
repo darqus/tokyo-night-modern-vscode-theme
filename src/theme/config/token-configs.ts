@@ -24,14 +24,15 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Number, Boolean, Undefined, Null',
     scope: ['constant.numeric', 'constant.language', 'variable.other.constant'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
     name: 'String, Symbols',
     scope: ['string', 'constant.other.symbol', 'constant.other.key'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.cyan.main, p.chromatic.blue.main, 0.3),
     },
   },
   {
@@ -46,14 +47,14 @@ export const basicTokens: TokenColorConfig[] = [
     scope: ['invalid'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.red.main, p.chromatic.orange.main, 0.7),
+        mix(p.chromatic.red.main, p.chromatic.cyan.main, 0.7),
     },
   },
   {
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
@@ -94,7 +95,7 @@ export const basicTokens: TokenColorConfig[] = [
     scope: ['keyword.other', 'punctuation.definition.keyword'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.lime.light, p.chromatic.magenta.light, 0.3),
+        mix(p.chromatic.blue.light, p.chromatic.cyan.light, 0.2),
     },
   },
   {
@@ -153,7 +154,8 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Variables',
     scope: ['variable', 'support.variable'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.lime.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.3),
     },
   },
   {
@@ -195,7 +197,8 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Constant, Tag Attribute',
     scope: ['constant.character', 'constant.escape'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.lime.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.2),
     },
   },
   {
@@ -258,7 +261,7 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Unit',
     scope: ['keyword.other.unit'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
 ]
@@ -271,7 +274,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Markup Bold',
     scope: ['markup.bold'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
       fontStyle: 'bold',
     },
   },
@@ -352,14 +355,15 @@ export const markdownTokens: TokenColorConfig[] = [
     name: 'Markdown Code',
     scope: ['markup.inline.raw.markdown', 'markup.fenced_code.block.markdown'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.cyan.main, p.chromatic.blue.main, 0.4),
     },
   },
   {
     name: 'Markdown Bold',
     scope: ['markup.bold.markdown'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
       fontStyle: 'bold',
     },
   },
@@ -381,7 +385,7 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSX Component',
     scope: ['support.class.component'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
@@ -395,14 +399,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
