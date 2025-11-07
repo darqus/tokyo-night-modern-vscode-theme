@@ -53,7 +53,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // peach не существует, используем orange
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
   {
@@ -381,7 +381,7 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSX Component',
     scope: ['support.class.component'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // используем orange вместо peach
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
   {
@@ -395,14 +395,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // используем orange вместо peach
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // используем orange вместо peach
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
   {

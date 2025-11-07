@@ -333,8 +333,8 @@ const SEMANTIC_GENERATORS = [
  */
 function generateTypeTokens(): Record<string, SemanticTokenStyle> {
   return {
-    type: token(p.peach.main),
-    class: token(p.peach.main, 'bold'),
+    type: token(p.orange.main),
+    class: token(p.orange.main, 'bold'),
   }
 }
 
