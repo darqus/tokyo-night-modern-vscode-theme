@@ -1,5 +1,5 @@
 import type { UniversalPalette } from '../palette/index.js'
-import { darken, lighten, mix } from '../utils/color.js'
+import { darken, mix } from '../utils/color.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
 
@@ -8,22 +8,19 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.emerald.main, 0.4)),
+    variable: (p: UniversalPalette) => token(p.foreground.primary.light),
     'variable.readonly': (p: UniversalPalette) =>
       italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
-    parameter: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.cyan.main, 0.2)),
+    parameter: (p: UniversalPalette) => token(p.foreground.primary.light),
     'parameter.readonly': (p: UniversalPalette) =>
       italicToken(
         darken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3), 0.1)
       ),
-    property: (p: UniversalPalette) =>
-      token(mix(p.chromatic.purple.light, p.chromatic.indigo.light, 0.5)),
+    property: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.purple.light, p.chromatic.indigo.light, 0.3)),
+      italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.light, p.chromatic.emerald.light, 0.3)),
+      token(p.chromatic.cyan.main),
   },
 }
 
@@ -34,15 +31,13 @@ export const functionsConfig: SemanticTokenConfig = {
   rules: {
     function: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'function.declaration': (p: UniversalPalette) =>
-      boldToken(lighten(p.chromatic.blue.main, 0.1)),
+      boldToken(p.chromatic.blue.main),
     'function.defaultLibrary': (p: UniversalPalette) =>
-      token(p.chromatic.emerald.light),
-    method: (p: UniversalPalette) =>
-      token(mix(p.chromatic.cyan.main, p.chromatic.blue.light, 0.3)),
+      token(p.chromatic.cyan.main),
+    method: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'method.declaration': (p: UniversalPalette) =>
-      boldToken(lighten(p.chromatic.blue.main, 0.08)),
-    constructor: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.teal.light, p.chromatic.purple.light, 0.15)),
+      boldToken(p.chromatic.blue.main),
+    constructor: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }
 
@@ -51,10 +46,8 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) =>
-      token(mix(p.chromatic.indigo.main, p.chromatic.cyan.main, 0.3)),
-    class: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.3)),
+    type: (p: UniversalPalette) => token(p.chromatic.purple.main),
+    class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }
 
@@ -73,12 +66,9 @@ export const modifiersConfig: SemanticTokenConfig = {
  */
 export const literalsConfig: SemanticTokenConfig = {
   rules: {
-    string: (p: UniversalPalette) =>
-      token(mix(p.chromatic.emerald.main, p.chromatic.green.light, 0.4)),
-    number: (p: UniversalPalette) =>
-      token(mix(p.chromatic.emerald.main, p.chromatic.cyan.main, 0.2)),
-    boolean: (p: UniversalPalette) =>
-      token(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
+    string: (p: UniversalPalette) => token(p.chromatic.green.main),
+    number: (p: UniversalPalette) => token(p.chromatic.orange.main),
+    boolean: (p: UniversalPalette) => token(p.chromatic.orange.main),
   },
 }
 
@@ -89,19 +79,17 @@ export const frameworksConfig: SemanticTokenConfig = {
   rules: {
     // React/Vue/Angular компоненты
     'class.component': (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.5)),
+      boldToken(p.chromatic.yellow.main),
     'interface.component': (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.emerald.main, p.chromatic.teal.main, 0.5)),
+      boldToken(p.chromatic.yellow.main),
 
     // Декораторы
-    decorator: (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.4)),
+    decorator: (p: UniversalPalette) => italicToken(p.chromatic.cyan.main),
 
     // Макросы
-    macro: (p: UniversalPalette) => boldToken(p.chromatic.indigo.main),
+    macro: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
 
     // Namespace
-    namespace: (p: UniversalPalette) =>
-      token(mix(p.chromatic.indigo.main, p.chromatic.blue.main, 0.6)),
+    namespace: (p: UniversalPalette) => token(p.chromatic.blue.main),
   },
 }
