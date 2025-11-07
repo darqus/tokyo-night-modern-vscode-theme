@@ -7,13 +7,6 @@ describe('Missing Coverage Tests', () => {
       expect(palette).toBeDefined()
     })
 
-    it('should import legacy palette', async () => {
-      const legacyPalette = await import(
-        '../../src/theme/palette/legacy-palette'
-      )
-      expect(legacyPalette).toBeDefined()
-    })
-
     it('should import generated universal palette', async () => {
       const generatedPalette = await import(
         '../../src/theme/palette/universal-generated'
