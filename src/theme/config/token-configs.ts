@@ -10,7 +10,7 @@ export const commentsTokens: TokenColorConfig[] = [
     name: 'Comment',
     scope: ['comment', 'punctuation.definition.comment'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main,
       fontStyle: 'italic',
     },
   },
@@ -52,15 +52,14 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
+      foreground: (p: UniversalPalette) => p.chromatic.violet.main,
     },
   },
   {
     name: 'Storage - modifier, var, const, let',
     scope: ['storage.modifier'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.violet.main,
     },
   },
   {
@@ -155,7 +154,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Function Arguments',
     scope: ['variable.parameter'],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foreground: (p: UniversalPalette) => p.chromatic.sky.main,
     },
   },
   {
@@ -197,16 +196,14 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Inherited Class',
     scope: 'entity.other.inherited-class',
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
+      foreground: (p: UniversalPalette) => p.chromatic.violet.light,
     },
   },
   {
     name: 'Class, Support, DOM, etc',
     scope: ['support.class', 'support.type', 'support.function'],
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.yellow.main, p.chromatic.orange.main, 0.2),
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
     },
   },
   {
@@ -226,8 +223,7 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Property Name',
     scope: ['support.type.property-name'],
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
@@ -393,16 +389,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
+      foreground: (p: UniversalPalette) => p.chromatic.violet.light,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
+      foreground: (p: UniversalPalette) => p.chromatic.violet.light,
     },
   },
   {

@@ -73,6 +73,8 @@ export interface UniversalPalette {
     rose: ColorVariant
     amber: ColorVariant
     emerald: ColorVariant
+    sky: ColorVariant
+    violet: ColorVariant
   }
   ui: UIColors
   shadow: ColorVariant
@@ -173,6 +175,12 @@ export const universalBasePalette: UniversalPalette = {
       light: '#7fb5ff',
       bright: '#d6e6ff',
     },
+    sky: {
+      dark: '#3a8acf',
+      main: '#82bcf8',
+      light: '#a2d2ff',
+      bright: '#cde6ff',
+    },
     cyan: {
       dark: '#208ab0',
       main: '#4dd8f0',
@@ -251,17 +259,23 @@ export const universalBasePalette: UniversalPalette = {
       light: '#c2a9ff',
       bright: '#e6ccff',
     },
-    neutral: {
-      dark: '#7284a6',
-      main: '#939bc4',
-      light: '#aabdc9',
-      bright: '#d0d9f3',
+    violet: {
+      dark: '#a256c7',
+      main: '#c276db',
+      light: '#d699e6',
+      bright: '#e9bcf0',
     },
     indigo: {
       dark: '#4a4db4',
       main: '#7a7aff',
       light: '#a0a0ff',
       bright: '#d6d6ff',
+    },
+    neutral: {
+      dark: '#7284a6',
+      main: '#939bc4',
+      light: '#aabdc9',
+      bright: '#d0d9f3',
     },
   },
   ui: {

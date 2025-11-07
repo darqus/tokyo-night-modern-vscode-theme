@@ -369,7 +369,7 @@
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#7284a6",
+        "foreground": "#939bc4",
         "fontStyle": "italic"
       }
     },
@@ -409,14 +409,14 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#ab7aaa"
+        "foreground": "#c276db"
       }
     },
     {
       "name": "Storage - modifier, var, const, let",
       "scope": ["storage.modifier"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#c276db"
       }
     },
     {
@@ -505,7 +505,7 @@
       "name": "Function Arguments",
       "scope": ["variable.parameter"],
       "settings": {
-        "foreground": "#bacaf8"
+        "foreground": "#82bcf8"
       }
     },
     {
@@ -547,14 +547,14 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#ab7aaa"
+        "foreground": "#d699e6"
       }
     },
     {
       "name": "Class, Support, DOM, etc",
       "scope": ["support.class", "support.type", "support.function"],
       "settings": {
-        "foreground": "#e3c45d"
+        "foreground": "#e6d466"
       }
     },
     {
@@ -568,7 +568,7 @@
       "name": "CSS Property Name",
       "scope": ["support.type.property-name"],
       "settings": {
-        "foreground": "#ab7aaa"
+        "foreground": "#4dd8f0"
       }
     },
     {
@@ -722,14 +722,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#ab7aaa"
+        "foreground": "#d699e6"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#ab7aaa"
+        "foreground": "#d699e6"
       }
     },
     {
@@ -759,21 +759,21 @@
       "foreground": "#bacaf8"
     },
     "variable.readonly": {
-      "foreground": "#759af4",
+      "foreground": "#82bcf8",
       "fontStyle": "italic"
     },
     "parameter": {
-      "foreground": "#bacaf8"
+      "foreground": "#82bcf8"
     },
     "parameter.readonly": {
-      "foreground": "#698bdc",
+      "foreground": "#82bcf8",
       "fontStyle": "italic"
     },
     "property": {
       "foreground": "#4dd8f0"
     },
     "property.readonly": {
-      "foreground": "#759af4",
+      "foreground": "#4dd8f0",
       "fontStyle": "italic"
     },
     "variable.defaultLibrary": {
@@ -801,11 +801,11 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#ab7aaa",
+      "foreground": "#d699e6",
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#d99440",
+      "foreground": "#e6d466",
       "fontStyle": "bold"
     },
     "static": {

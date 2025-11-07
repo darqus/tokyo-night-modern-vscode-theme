@@ -1,5 +1,4 @@
 import type { UniversalPalette } from '../palette/index.js'
-import { darken, mix } from '../utils/color.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
 
@@ -10,15 +9,13 @@ export const variablesConfig: SemanticTokenConfig = {
   rules: {
     variable: (p: UniversalPalette) => token(p.foreground.primary.light),
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
-    parameter: (p: UniversalPalette) => token(p.foreground.primary.light),
+      italicToken(p.chromatic.sky.main),
+    parameter: (p: UniversalPalette) => token(p.chromatic.sky.main),
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(
-        darken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3), 0.1)
-      ),
+      italicToken(p.chromatic.sky.main),
     property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.blue.main, p.chromatic.purple.main, 0.3)),
+      italicToken(p.chromatic.cyan.main),
     'variable.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
   },
@@ -46,10 +43,8 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3)),
-    class: (p: UniversalPalette) =>
-      boldToken(mix(p.chromatic.orange.main, p.chromatic.yellow.main, 0.2)),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.violet.light),
+    class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }
 
