@@ -191,11 +191,17 @@ export const universalBasePalette: UniversalPalette = {
       light: '#99e6a9',
       bright: '#ccf8d4',
     },
-    purple: {
-      dark: '#7a4db4',
-      main: '#9976db',
-      light: '#c2a9ff',
-      bright: '#e6ccff',
+    lime: {
+      dark: '#6aa629',
+      main: '#99cc40',
+      light: '#b3e666',
+      bright: '#ccf08c',
+    },
+    emerald: {
+      dark: '#047857',
+      main: '#10b981',
+      light: '#34d399',
+      bright: '#6ee7b7',
     },
     orange: {
       dark: '#aa5e0d',
@@ -239,6 +245,12 @@ export const universalBasePalette: UniversalPalette = {
       light: '#e666b3',
       bright: '#f08ccc',
     },
+    purple: {
+      dark: '#7a4db4',
+      main: '#9976db',
+      light: '#c2a9ff',
+      bright: '#e6ccff',
+    },
     neutral: {
       dark: '#7284a6',
       main: '#939bc4',
@@ -250,18 +262,6 @@ export const universalBasePalette: UniversalPalette = {
       main: '#7a7aff',
       light: '#a0a0ff',
       bright: '#d6d6ff',
-    },
-    lime: {
-      dark: '#6aa629',
-      main: '#99cc40',
-      light: '#b3e666',
-      bright: '#ccf08c',
-    },
-    emerald: {
-      dark: '#047857',
-      main: '#10b981',
-      light: '#34d399',
-      bright: '#6ee7b7',
     },
   },
   ui: {
