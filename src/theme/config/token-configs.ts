@@ -1,4 +1,5 @@
 import type { UniversalPalette } from '../palette/index.js'
+import { mix } from '../utils/color.js'
 import type { TokenColorConfig } from './color-config-dsl.js'
 
 /**
@@ -51,7 +52,8 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Storage Type',
     scope: 'storage.type',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
     },
   },
   {
@@ -195,14 +197,16 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Inherited Class',
     scope: 'entity.other.inherited-class',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
     },
   },
   {
     name: 'Class, Support, DOM, etc',
     scope: ['support.class', 'support.type', 'support.function'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.yellow.main, p.chromatic.orange.main, 0.2),
     },
   },
   {
@@ -222,7 +226,8 @@ export const cssTokens: TokenColorConfig[] = [
     name: 'CSS Property Name',
     scope: ['support.type.property-name'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
     },
   },
   {
@@ -373,7 +378,8 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'JSX Component',
     scope: ['support.class.component'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.yellow.main, p.chromatic.orange.main, 0.2),
     },
   },
   {
@@ -387,14 +393,16 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3),
     },
   },
   {

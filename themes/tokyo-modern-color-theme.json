@@ -409,7 +409,7 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#ae7fb4"
       }
     },
     {
@@ -547,14 +547,14 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#ae7fb4"
       }
     },
     {
       "name": "Class, Support, DOM, etc",
       "scope": ["support.class", "support.type", "support.function"],
       "settings": {
-        "foreground": "#f0d440"
+        "foreground": "#edc745"
       }
     },
     {
@@ -568,7 +568,7 @@
       "name": "CSS Property Name",
       "scope": ["support.type.property-name"],
       "settings": {
-        "foreground": "#4de0d8"
+        "foreground": "#ae7fb4"
       }
     },
     {
@@ -708,7 +708,7 @@
       "name": "JSX Component",
       "scope": ["support.class.component"],
       "settings": {
-        "foreground": "#f0d440"
+        "foreground": "#edc745"
       }
     },
     {
@@ -722,14 +722,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#ae7fb4"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#ae7fb4"
       }
     },
     {
@@ -801,11 +801,11 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#9976db",
+      "foreground": "#ae7fb4",
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#e0945a",
+      "foreground": "#e3a155",
       "fontStyle": "bold"
     },
     "static": {

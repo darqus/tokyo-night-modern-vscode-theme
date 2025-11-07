@@ -46,8 +46,10 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
-    class: (p: UniversalPalette) => boldToken(p.chromatic.orange.main),
+    type: (p: UniversalPalette) =>
+      boldToken(mix(p.chromatic.purple.main, p.chromatic.orange.main, 0.3)),
+    class: (p: UniversalPalette) =>
+      boldToken(mix(p.chromatic.orange.main, p.chromatic.yellow.main, 0.2)),
   },
 }
 
