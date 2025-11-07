@@ -1,4 +1,4 @@
-import { palette } from '../../src/theme/palette/generated'
+import { compatiblePalette } from '../../src/theme/palette/universal-generated'
 import { isValidHex } from '../../src/theme/utils/color'
 
 describe('Palette Generation', () => {
@@ -24,7 +24,7 @@ describe('Palette Generation', () => {
     }
 
     try {
-      checkColors(palette as unknown as Record<string, unknown>)
+      checkColors(compatiblePalette as unknown as Record<string, unknown>)
     } catch (error) {
       throw new Error(
         `Palette validation failed: ${error instanceof Error ? error.message : String(error)}`
@@ -33,26 +33,26 @@ describe('Palette Generation', () => {
   })
 
   it('should have all required color groups', () => {
-    expect(palette.bg).toBeDefined()
-    expect(palette.fg).toBeDefined()
-    expect(palette.blue).toBeDefined()
-    expect(palette.cyan).toBeDefined()
-    expect(palette.green).toBeDefined()
-    expect(palette.purple).toBeDefined()
-    expect(palette.red).toBeDefined()
-    expect(palette.yellow).toBeDefined()
-    expect(palette.ui).toBeDefined()
+    expect(compatiblePalette.bg).toBeDefined()
+    expect(compatiblePalette.fg).toBeDefined()
+    expect(compatiblePalette.blue).toBeDefined()
+    expect(compatiblePalette.cyan).toBeDefined()
+    expect(compatiblePalette.green).toBeDefined()
+    expect(compatiblePalette.purple).toBeDefined()
+    expect(compatiblePalette.red).toBeDefined()
+    expect(compatiblePalette.yellow).toBeDefined()
+    expect(compatiblePalette.ui).toBeDefined()
   })
 
   it('should have background variants', () => {
-    expect(palette.bg.dark).toBeDefined()
-    expect(palette.bg.main).toBeDefined()
-    expect(palette.bg.light).toBeDefined()
+    expect(compatiblePalette.bg.dark).toBeDefined()
+    expect(compatiblePalette.bg.main).toBeDefined()
+    expect(compatiblePalette.bg.light).toBeDefined()
   })
 
   it('should have foreground variants', () => {
-    expect(palette.fg.dark).toBeDefined()
-    expect(palette.fg.main).toBeDefined()
-    expect(palette.fg.light).toBeDefined()
+    expect(compatiblePalette.fg.dark).toBeDefined()
+    expect(compatiblePalette.fg.main).toBeDefined()
+    expect(compatiblePalette.fg.light).toBeDefined()
   })
 })

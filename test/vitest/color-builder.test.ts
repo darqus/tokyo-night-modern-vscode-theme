@@ -7,7 +7,7 @@ import {
 
 // Mock the palette object
 vi.mock('../../src/theme/palette/index.js', () => ({
-  palette: {
+  compatiblePalette: {
     blue: {
       dark: '#0000ff',
     },
@@ -78,7 +78,7 @@ describe('ColorRuleBuilder', () => {
 })
 
 describe('Palette alias', () => {
-  it('c should be an alias for palette', () => {
+  it('c should be an alias for compatiblePalette', () => {
     expect(c).toBeDefined()
   })
 })

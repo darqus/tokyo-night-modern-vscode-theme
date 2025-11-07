@@ -1,4 +1,4 @@
-import type { UnifiedPalette } from '../palette/index.js'
+import type { CompatiblePalette } from '../palette/index.js'
 import { darken, lighten, mix } from '../utils/color.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
@@ -8,17 +8,17 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UnifiedPalette) => token(p.cyan.light),
-    'variable.readonly': (p: UnifiedPalette) =>
+    variable: (p: CompatiblePalette) => token(p.cyan.light),
+    'variable.readonly': (p: CompatiblePalette) =>
       italicToken(mix(p.cyan.light, p.purple.light, 0.2)),
-    parameter: (p: UnifiedPalette) =>
+    parameter: (p: CompatiblePalette) =>
       token(mix(p.purple.main, p.cyan.main, 0.3)),
-    'parameter.readonly': (p: UnifiedPalette) =>
+    'parameter.readonly': (p: CompatiblePalette) =>
       italicToken(darken(p.purple.main, 0.1)),
-    property: (p: UnifiedPalette) => token(p.teal.dark),
-    'property.readonly': (p: UnifiedPalette) =>
+    property: (p: CompatiblePalette) => token(p.teal.dark),
+    'property.readonly': (p: CompatiblePalette) =>
       italicToken(mix(p.teal.dark, p.cyan.dark, 0.3)),
-    'variable.defaultLibrary': (p: UnifiedPalette) =>
+    'variable.defaultLibrary': (p: CompatiblePalette) =>
       token(mix(p.cyan.main, p.teal.main, 0.4)),
   },
 }
@@ -28,14 +28,15 @@ export const variablesConfig: SemanticTokenConfig = {
  */
 export const functionsConfig: SemanticTokenConfig = {
   rules: {
-    function: (p: UnifiedPalette) => token(p.blue.main),
-    'function.declaration': (p: UnifiedPalette) =>
+    function: (p: CompatiblePalette) => token(p.blue.main),
+    'function.declaration': (p: CompatiblePalette) =>
       boldToken(lighten(p.blue.main, 0.1)),
-    'function.defaultLibrary': (p: UnifiedPalette) => token(p.cyan.light),
-    method: (p: UnifiedPalette) => token(mix(p.blue.main, p.cyan.light, 0.3)),
-    'method.declaration': (p: UnifiedPalette) =>
+    'function.defaultLibrary': (p: CompatiblePalette) => token(p.cyan.light),
+    method: (p: CompatiblePalette) =>
+      token(mix(p.blue.main, p.cyan.light, 0.3)),
+    'method.declaration': (p: CompatiblePalette) =>
       boldToken(lighten(p.blue.main, 0.08)),
-    constructor: (p: UnifiedPalette) =>
+    constructor: (p: CompatiblePalette) =>
       boldToken(mix(p.cyan.light, p.purple.light, 0.15)),
   },
 }
@@ -45,8 +46,8 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UnifiedPalette) => token(p.peach.main),
-    class: (p: UnifiedPalette) => boldToken(p.peach.main),
+    type: (p: CompatiblePalette) => token(p.peach.main),
+    class: (p: CompatiblePalette) => boldToken(p.peach.main),
   },
 }
 
@@ -55,8 +56,8 @@ export const typesConfig: SemanticTokenConfig = {
  */
 export const modifiersConfig: SemanticTokenConfig = {
   rules: {
-    static: (p: UnifiedPalette) => italicToken(p.blue.main),
-    readonly: (p: UnifiedPalette) => italicToken(p.cyan.main),
+    static: (p: CompatiblePalette) => italicToken(p.blue.main),
+    readonly: (p: CompatiblePalette) => italicToken(p.cyan.main),
   },
 }
 
@@ -65,9 +66,9 @@ export const modifiersConfig: SemanticTokenConfig = {
  */
 export const literalsConfig: SemanticTokenConfig = {
   rules: {
-    string: (p: UnifiedPalette) => token(p.green.light),
-    number: (p: UnifiedPalette) => token(p.orange.light),
-    boolean: (p: UnifiedPalette) => token(p.red.light),
+    string: (p: CompatiblePalette) => token(p.green.light),
+    number: (p: CompatiblePalette) => token(p.orange.light),
+    boolean: (p: CompatiblePalette) => token(p.red.light),
   },
 }
 
@@ -77,16 +78,16 @@ export const literalsConfig: SemanticTokenConfig = {
 export const frameworksConfig: SemanticTokenConfig = {
   rules: {
     // React/Vue/Angular компоненты
-    'class.component': (p: UnifiedPalette) => boldToken(p.peach.light),
-    'interface.component': (p: UnifiedPalette) => boldToken(p.peach.light),
+    'class.component': (p: CompatiblePalette) => boldToken(p.peach.light),
+    'interface.component': (p: CompatiblePalette) => boldToken(p.peach.light),
 
     // Декораторы
-    decorator: (p: UnifiedPalette) => italicToken(p.yellow.main),
+    decorator: (p: CompatiblePalette) => italicToken(p.yellow.main),
 
     // Макросы
-    macro: (p: UnifiedPalette) => boldToken(p.indigo.main),
+    macro: (p: CompatiblePalette) => boldToken(p.indigo.main),
 
     // Namespace
-    namespace: (p: UnifiedPalette) => token(p.teal.light),
+    namespace: (p: CompatiblePalette) => token(p.teal.light),
   },
 }

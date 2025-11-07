@@ -1,4 +1,10 @@
-import type { ColorVariant } from './base.js'
+// Определение ColorVariant в этом файле, так как base.ts был удален
+export interface ColorVariant {
+  dark: string
+  main: string
+  light: string
+  bright: string
+}
 
 /**
  * Интерфейс для семантических цветов

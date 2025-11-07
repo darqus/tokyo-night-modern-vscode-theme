@@ -1,4 +1,4 @@
-import { palette } from '../palette/index.js'
+import { compatiblePalette } from '../palette/index.js'
 
 /**
  * Builder для упрощения создания цветовых правил
@@ -50,4 +50,4 @@ export const colorRules = (): ColorRuleBuilder => new ColorRuleBuilder()
 /**
  * Вспомогательная функция для быстрого доступа к цветам палитры
  */
-export const c = palette
+export const c = compatiblePalette

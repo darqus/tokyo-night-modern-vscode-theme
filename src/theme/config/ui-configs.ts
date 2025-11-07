@@ -1,4 +1,4 @@
-import type { UnifiedPalette } from '../palette/index.js'
+import type { CompatiblePalette } from '../palette/index.js'
 import { alpha, darken, lighten, mix } from '../utils/color.js'
 import {
   borderColor,
@@ -15,37 +15,37 @@ import type { UIColorConfig } from './color-config-dsl.js'
  */
 export const coreConfig: UIColorConfig = {
   rules: {
-    foreground: (p: UnifiedPalette) => p.foreground.light,
-    descriptionForeground: (p: UnifiedPalette) => p.foreground.main,
-    disabledForeground: (p: UnifiedPalette) => p.neutral.main,
-    focusBorder: (p: UnifiedPalette) => alpha(p.ui.badge, 0.3),
-    errorForeground: (p: UnifiedPalette) => p.foreground.dark,
-    'icon.foreground': (p: UnifiedPalette) => p.foreground.light,
+    foreground: (p: CompatiblePalette) => p.fg.light,
+    descriptionForeground: (p: CompatiblePalette) => p.fg.main,
+    disabledForeground: (p: CompatiblePalette) => p.neutral.main,
+    focusBorder: (p: CompatiblePalette) => alpha(p.ui.badge, 0.3),
+    errorForeground: (p: CompatiblePalette) => p.fg.dark,
+    'icon.foreground': (p: CompatiblePalette) => p.fg.light,
   },
   groups: {
     widget: {
-      shadow: (p: UnifiedPalette) => alpha(p.ui.black, 0.3),
+      shadow: (p: CompatiblePalette) => alpha(p.ui.black, 0.3),
     },
     scrollbar: {
-      shadow: (p: UnifiedPalette) => alpha(p.ui.black, 0.2),
+      shadow: (p: CompatiblePalette) => alpha(p.ui.black, 0.2),
     },
     badge: {
-      background: (p: UnifiedPalette) => p.ui.badge,
-      foreground: (p: UnifiedPalette) => p.ui.white,
+      background: (p: CompatiblePalette) => p.ui.badge,
+      foreground: (p: CompatiblePalette) => p.ui.white,
     },
     settings: {
-      headerForeground: (p: UnifiedPalette) => p.neutral.light,
+      headerForeground: (p: CompatiblePalette) => p.neutral.light,
     },
     window: {
-      activeBorder: (p: UnifiedPalette) => p.background.dark,
-      inactiveBorder: (p: UnifiedPalette) => p.background.dark,
+      activeBorder: (p: CompatiblePalette) => p.bg.dark,
+      inactiveBorder: (p: CompatiblePalette) => p.bg.dark,
     },
     sash: {
-      hoverBorder: (p: UnifiedPalette) => lightBackground(p.background.light),
+      hoverBorder: (p: CompatiblePalette) => lightBackground(p.bg.light),
     },
     toolbar: {
-      activeBackground: (p: UnifiedPalette) => p.background.light,
-      hoverBackground: (p: UnifiedPalette) => p.background.light,
+      activeBackground: (p: CompatiblePalette) => p.bg.light,
+      hoverBackground: (p: CompatiblePalette) => p.bg.light,
     },
   },
 }
@@ -56,25 +56,25 @@ export const coreConfig: UIColorConfig = {
 export const buttonsConfig: UIColorConfig = {
   groups: {
     button: {
-      background: (p: UnifiedPalette) => p.blue.dark,
-      hoverBackground: (p: UnifiedPalette) =>
+      background: (p: CompatiblePalette) => p.blue.dark,
+      hoverBackground: (p: CompatiblePalette) =>
         mixLight(p.blue.dark, p.blue.main),
-      secondaryBackground: (p: UnifiedPalette) =>
+      secondaryBackground: (p: CompatiblePalette) =>
         darken(mixLight(p.blue.dark, p.purple.dark), 0.4),
-      foreground: (p: UnifiedPalette) => p.ui.white,
+      foreground: (p: CompatiblePalette) => p.ui.white,
     },
     extensionButton: {
-      prominentBackground: (p: UnifiedPalette) => p.blue.dark,
-      prominentHoverBackground: (p: UnifiedPalette) =>
+      prominentBackground: (p: CompatiblePalette) => p.blue.dark,
+      prominentHoverBackground: (p: CompatiblePalette) =>
         mix(p.blue.dark, p.blue.main, 0.3),
-      prominentForeground: (p: UnifiedPalette) => p.ui.white,
+      prominentForeground: (p: CompatiblePalette) => p.ui.white,
     },
     extensionBadge: {
-      remoteBackground: (p: UnifiedPalette) => p.blue.dark,
-      remoteForeground: (p: UnifiedPalette) => p.ui.white,
+      remoteBackground: (p: CompatiblePalette) => p.blue.dark,
+      remoteForeground: (p: CompatiblePalette) => p.ui.white,
     },
     progressBar: {
-      background: (p: UnifiedPalette) => p.blue.dark,
+      background: (p: CompatiblePalette) => p.blue.dark,
     },
   },
 }
@@ -85,24 +85,22 @@ export const buttonsConfig: UIColorConfig = {
 export const inputsConfig: UIColorConfig = {
   groups: {
     input: {
-      background: (p: UnifiedPalette) => p.background.dark,
-      foreground: (p: UnifiedPalette) => p.foreground.light,
-      border: (p: UnifiedPalette) =>
-        borderColor(p.background.main, p.blue.main),
-      placeholderForeground: (p: UnifiedPalette) =>
-        alpha(p.foreground.main, 0.54),
+      background: (p: CompatiblePalette) => p.bg.dark,
+      foreground: (p: CompatiblePalette) => p.fg.light,
+      border: (p: CompatiblePalette) => borderColor(p.bg.main, p.blue.main),
+      placeholderForeground: (p: CompatiblePalette) => alpha(p.fg.main, 0.54),
     },
     inputOption: {
-      activeForeground: (p: UnifiedPalette) => p.foreground.light,
-      activeBackground: (p: UnifiedPalette) => alpha(p.neutral.dark, 0.27),
+      activeForeground: (p: CompatiblePalette) => p.fg.light,
+      activeBackground: (p: CompatiblePalette) => alpha(p.neutral.dark, 0.27),
     },
     quickInput: {
-      background: (p: UnifiedPalette) => p.background.main,
+      background: (p: CompatiblePalette) => p.bg.main,
     },
     dropdown: {
-      foreground: (p: UnifiedPalette) => p.foreground.main,
-      background: (p: UnifiedPalette) => p.background.main,
-      listBackground: (p: UnifiedPalette) => p.background.main,
+      foreground: (p: CompatiblePalette) => p.fg.main,
+      background: (p: CompatiblePalette) => p.bg.main,
+      listBackground: (p: CompatiblePalette) => p.bg.main,
     },
   },
 }
@@ -113,10 +111,9 @@ export const inputsConfig: UIColorConfig = {
 export const checkboxesConfig: UIColorConfig = {
   groups: {
     checkbox: {
-      background: (p: UnifiedPalette) => p.background.main,
-      foreground: (p: UnifiedPalette) => p.foreground.light,
-      border: (p: UnifiedPalette) =>
-        borderColor(p.background.main, p.blue.main),
+      background: (p: CompatiblePalette) => p.bg.main,
+      foreground: (p: CompatiblePalette) => p.fg.light,
+      border: (p: CompatiblePalette) => borderColor(p.bg.main, p.blue.main),
     },
   },
 }
@@ -127,39 +124,38 @@ export const checkboxesConfig: UIColorConfig = {
 export const sidebarConfig: UIColorConfig = {
   groups: {
     activityBar: {
-      background: (p: UnifiedPalette) => p.background.dark,
-      foreground: (p: UnifiedPalette) => p.foreground.dark,
-      inactiveForeground: (p: UnifiedPalette) =>
-        mix(darken(p.foreground.dark, 0.4), p.background.dark, 0.2),
-      activeBorder: (p: UnifiedPalette) => p.blue.main,
-      activeBackground: (p: UnifiedPalette) => lighten(p.background.dark, 0.03),
-      border: (p: UnifiedPalette) => lightBackground(p.background.dark),
+      background: (p: CompatiblePalette) => p.bg.dark,
+      foreground: (p: CompatiblePalette) => p.fg.dark,
+      inactiveForeground: (p: CompatiblePalette) =>
+        mix(darken(p.fg.dark, 0.4), p.bg.dark, 0.2),
+      activeBorder: (p: CompatiblePalette) => p.blue.main,
+      activeBackground: (p: CompatiblePalette) => lighten(p.bg.dark, 0.03),
+      border: (p: CompatiblePalette) => lightBackground(p.bg.dark),
     },
     activityBarBadge: {
-      background: (p: UnifiedPalette) => p.ui.badge,
-      foreground: (p: UnifiedPalette) => p.ui.white,
+      background: (p: CompatiblePalette) => p.ui.badge,
+      foreground: (p: CompatiblePalette) => p.ui.white,
     },
     activityBarTop: {
-      foreground: (p: UnifiedPalette) => p.foreground.main,
-      inactiveForeground: (p: UnifiedPalette) => p.foreground.dark,
+      foreground: (p: CompatiblePalette) => p.fg.main,
+      inactiveForeground: (p: CompatiblePalette) => p.fg.dark,
     },
     tree: {
-      indentGuidesStroke: (p: UnifiedPalette) =>
-        lighten(p.background.main, 0.08),
+      indentGuidesStroke: (p: CompatiblePalette) => lighten(p.bg.main, 0.08),
     },
     sideBar: {
-      foreground: (p: UnifiedPalette) => p.foreground.main,
-      background: (p: UnifiedPalette) => lightBackground(p.background.dark),
-      border: (p: UnifiedPalette) => lighten(p.background.dark, 0.04),
-      dropBackground: (p: UnifiedPalette) => p.background.light,
+      foreground: (p: CompatiblePalette) => p.fg.main,
+      background: (p: CompatiblePalette) => lightBackground(p.bg.dark),
+      border: (p: CompatiblePalette) => lighten(p.bg.dark, 0.04),
+      dropBackground: (p: CompatiblePalette) => p.bg.light,
     },
     sideBarTitle: {
-      foreground: (p: UnifiedPalette) => p.foreground.dark,
+      foreground: (p: CompatiblePalette) => p.fg.dark,
     },
     sideBarSectionHeader: {
-      background: (p: UnifiedPalette) => lighten(p.background.dark, 0.04),
-      foreground: (p: UnifiedPalette) => p.foreground.dark,
-      border: (p: UnifiedPalette) => lighten(p.background.dark, 0.06),
+      background: (p: CompatiblePalette) => lighten(p.bg.dark, 0.04),
+      foreground: (p: CompatiblePalette) => p.fg.dark,
+      border: (p: CompatiblePalette) => lighten(p.bg.dark, 0.06),
     },
   },
 }
@@ -170,38 +166,37 @@ export const sidebarConfig: UIColorConfig = {
 export const listsConfig: UIColorConfig = {
   groups: {
     list: {
-      dropBackground: (p: UnifiedPalette) => p.background.light,
-      deemphasizedForeground: (p: UnifiedPalette) => p.foreground.main,
-      activeSelectionBackground: (p: UnifiedPalette) =>
+      dropBackground: (p: CompatiblePalette) => p.bg.light,
+      deemphasizedForeground: (p: CompatiblePalette) => p.fg.main,
+      activeSelectionBackground: (p: CompatiblePalette) =>
         subtleHighlight(p.blue.main),
-      activeSelectionForeground: (p: UnifiedPalette) => p.foreground.light,
-      inactiveSelectionBackground: (p: UnifiedPalette) =>
+      activeSelectionForeground: (p: CompatiblePalette) => p.fg.light,
+      inactiveSelectionBackground: (p: CompatiblePalette) =>
         alpha(p.blue.main, 0.15),
-      inactiveSelectionForeground: (p: UnifiedPalette) => p.foreground.light,
-      focusBackground: (p: UnifiedPalette) => alpha(p.blue.main, 0.25),
-      focusForeground: (p: UnifiedPalette) => p.foreground.light,
-      hoverBackground: (p: UnifiedPalette) => alpha(p.blue.main, 0.1),
-      hoverForeground: (p: UnifiedPalette) => p.foreground.light,
-      highlightForeground: (p: UnifiedPalette) => p.foreground.light,
-      invalidItemForeground: (p: UnifiedPalette) =>
+      inactiveSelectionForeground: (p: CompatiblePalette) => p.fg.light,
+      focusBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.25),
+      focusForeground: (p: CompatiblePalette) => p.fg.light,
+      hoverBackground: (p: CompatiblePalette) => alpha(p.blue.main, 0.1),
+      hoverForeground: (p: CompatiblePalette) => p.fg.light,
+      highlightForeground: (p: CompatiblePalette) => p.fg.light,
+      invalidItemForeground: (p: CompatiblePalette) =>
         mix(p.orange.main, p.yellow.main, 0.3),
-      errorForeground: (p: UnifiedPalette) => p.red.main,
-      warningForeground: (p: UnifiedPalette) => p.yellow.dark,
+      errorForeground: (p: CompatiblePalette) => p.red.main,
+      warningForeground: (p: CompatiblePalette) => p.yellow.dark,
     },
     listFilterWidget: {
-      background: (p: UnifiedPalette) => p.background.dark,
-      outline: (p: UnifiedPalette) => p.blue.dark,
-      noMatchesOutline: (p: UnifiedPalette) => p.red.dark,
+      background: (p: CompatiblePalette) => p.bg.dark,
+      outline: (p: CompatiblePalette) => p.blue.dark,
+      noMatchesOutline: (p: CompatiblePalette) => p.red.dark,
     },
     pickerGroup: {
-      foreground: (p: UnifiedPalette) => p.foreground.light,
-      border: (p: UnifiedPalette) =>
-        borderColor(p.background.main, p.blue.main),
+      foreground: (p: CompatiblePalette) => p.fg.light,
+      border: (p: CompatiblePalette) => borderColor(p.bg.main, p.blue.main),
     },
     scrollbarSlider: {
-      background: (p: UnifiedPalette) => alpha(p.foreground.main, 0.04),
-      hoverBackground: (p: UnifiedPalette) => subtleHighlight(p.blue.main),
-      activeBackground: (p: UnifiedPalette) => mediumHighlight(p.blue.main),
+      background: (p: CompatiblePalette) => alpha(p.fg.main, 0.04),
+      hoverBackground: (p: CompatiblePalette) => subtleHighlight(p.blue.main),
+      activeBackground: (p: CompatiblePalette) => mediumHighlight(p.blue.main),
     },
   },
 }
@@ -212,36 +207,34 @@ export const listsConfig: UIColorConfig = {
 export const tabsConfig: UIColorConfig = {
   groups: {
     breadcrumb: {
-      background: (p: UnifiedPalette) => p.background.main,
-      foreground: (p: UnifiedPalette) => p.foreground.dark,
-      focusForeground: (p: UnifiedPalette) => p.foreground.light,
-      activeSelectionForeground: (p: UnifiedPalette) => p.purple.main,
+      background: (p: CompatiblePalette) => p.bg.main,
+      foreground: (p: CompatiblePalette) => p.fg.dark,
+      focusForeground: (p: CompatiblePalette) => p.fg.light,
+      activeSelectionForeground: (p: CompatiblePalette) => p.purple.main,
     },
     breadcrumbPicker: {
-      background: (p: UnifiedPalette) => slightlyDarker(p.background.main),
+      background: (p: CompatiblePalette) => slightlyDarker(p.bg.main),
     },
     tab: {
-      activeBackground: (p: UnifiedPalette) => p.background.main,
-      inactiveBackground: (p: UnifiedPalette) =>
-        darken(p.background.main, 0.03),
-      activeForeground: (p: UnifiedPalette) => p.foreground.light,
-      hoverForeground: (p: UnifiedPalette) => p.foreground.light,
-      activeBorderTop: (p: UnifiedPalette) => p.purple.main,
-      inactiveForeground: (p: UnifiedPalette) => p.foreground.dark,
-      border: (p: UnifiedPalette) => lightBackground(p.background.light),
-      unfocusedActiveForeground: (p: UnifiedPalette) => p.foreground.main,
-      unfocusedInactiveForeground: (p: UnifiedPalette) => p.foreground.dark,
-      unfocusedHoverForeground: (p: UnifiedPalette) => p.foreground.main,
-      activeModifiedBorder: (p: UnifiedPalette) => p.purple.main,
-      inactiveModifiedBorder: (p: UnifiedPalette) =>
-        lighten(p.background.main, 0.04),
-      unfocusedActiveModifiedBorder: (p: UnifiedPalette) =>
-        lighten(p.background.main, 0.04),
-      unfocusedInactiveModifiedBorder: (p: UnifiedPalette) =>
-        lightBackground(p.background.light),
-      unfocusedActiveBorder: (p: UnifiedPalette) =>
-        lighten(p.background.main, 0.04),
-      lastPinnedBorder: (p: UnifiedPalette) => p.purple.main,
+      activeBackground: (p: CompatiblePalette) => p.bg.main,
+      inactiveBackground: (p: CompatiblePalette) => darken(p.bg.main, 0.03),
+      activeForeground: (p: CompatiblePalette) => p.fg.light,
+      hoverForeground: (p: CompatiblePalette) => p.fg.light,
+      activeBorderTop: (p: CompatiblePalette) => p.purple.main,
+      inactiveForeground: (p: CompatiblePalette) => p.fg.dark,
+      border: (p: CompatiblePalette) => lightBackground(p.bg.light),
+      unfocusedActiveForeground: (p: CompatiblePalette) => p.fg.main,
+      unfocusedInactiveForeground: (p: CompatiblePalette) => p.fg.dark,
+      unfocusedHoverForeground: (p: CompatiblePalette) => p.fg.main,
+      activeModifiedBorder: (p: CompatiblePalette) => p.purple.main,
+      inactiveModifiedBorder: (p: CompatiblePalette) =>
+        lighten(p.bg.main, 0.04),
+      unfocusedActiveModifiedBorder: (p: CompatiblePalette) =>
+        lighten(p.bg.main, 0.04),
+      unfocusedInactiveModifiedBorder: (p: CompatiblePalette) =>
+        lightBackground(p.bg.light),
+      unfocusedActiveBorder: (p: CompatiblePalette) => lighten(p.bg.main, 0.04),
+      lastPinnedBorder: (p: CompatiblePalette) => p.purple.main,
     },
   },
 }

@@ -1,10 +1,10 @@
-import type { UnifiedPalette } from '../palette/index.js'
+import type { CompatiblePalette } from '../palette/index.js'
 import type { SemanticTokenStyle } from '../types/index.js'
 
 /**
  * Тип для цветового значения - может быть строкой или функцией
  */
-export type ColorValue = string | ((p: UnifiedPalette) => string)
+export type ColorValue = string | ((p: CompatiblePalette) => string)
 
 /**
  * Тип для настроек токена
@@ -67,7 +67,7 @@ export interface SemanticTokenConfig {
    */
   rules: Record<
     string,
-    SemanticTokenStyle | ((p: UnifiedPalette) => SemanticTokenStyle)
+    SemanticTokenStyle | ((p: CompatiblePalette) => SemanticTokenStyle)
   >
 }
 
@@ -191,7 +191,7 @@ export function createToken(
 export function semanticConfig(
   rules: Record<
     string,
-    SemanticTokenStyle | ((p: UnifiedPalette) => SemanticTokenStyle)
+    SemanticTokenStyle | ((p: CompatiblePalette) => SemanticTokenStyle)
   >
 ): SemanticTokenConfig {
   return { rules }
