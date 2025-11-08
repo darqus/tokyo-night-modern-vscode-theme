@@ -498,14 +498,7 @@
       "name": "Tag Punctuation",
       "scope": ["punctuation.definition.tag"],
       "settings": {
-        "foreground": "#a8bee4"
-      }
-    },
-    {
-      "name": "Variables",
-      "scope": ["variable", "support.variable"],
-      "settings": {
-        "foreground": "#dcd49c"
+        "foreground": "#74eff3"
       }
     },
     {

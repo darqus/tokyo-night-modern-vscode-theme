@@ -147,14 +147,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Tag Punctuation',
     scope: ['punctuation.definition.tag'],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.main,
-    },
-  },
-  {
-    name: 'Variables',
-    scope: ['variable', 'support.variable'],
-    settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.light,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
   },
   {
