@@ -87,7 +87,7 @@ const VARIANT_DELTA = {
   background: { d: ADJUST.MEDIUM, l: ADJUST.LIGHT, b: ADJUST.STRONG },
   foregroundStrong: { d: ADJUST.SLIGHT, l: ADJUST.SLIGHT, b: ADJUST.STRONG },
   foregroundSoft: { d: ADJUST.SLIGHT, l: ADJUST.TINY, b: ADJUST.LIGHT },
-  chromatic: { d: ADJUST.MEDIUM, l: ADJUST.LIGHT, b: ADJUST.STRONG },
+  chromatic: { d: ADJUST.STRONG, l: ADJUST.LIGHT, b: ADJUST.STRONG },
   border: { d: ADJUST.TINY, l: ADJUST.SLIGHT, b: ADJUST.LIGHT },
   scrollbar: { d: ADJUST.TINY, l: ADJUST.SLIGHT, b: ADJUST.LIGHT },
 } as const
@@ -110,19 +110,19 @@ const fromMain = (
 
 // Base chromatic main tones
 const chromaMain = {
+  pink: '#cd66dd',
   purple: '#a686ff',
-  indigo: '#7a7aff',
-  blue: '#66a9ff',
-  cyan: '#4dd8f0',
-  teal: '#4de0d8',
+  indigo: '#8484fc',
+  blue: '#57aef5',
+  cyan: '#74eff3',
+  teal: '#60bebe',
   emerald: '#10b981',
   green: '#79d68c',
   lime: '#99cc40',
-  orange: '#ce7a2b',
-  amber: '#e6a32a',
-  yellow: '#e6d466',
-  red: '#f31f77',
-  pink: '#d48ae0',
+  orange: '#cc936e',
+  amber: '#f0ba74',
+  yellow: '#d8cf91',
+  red: '#f33f8a',
   neutral: '#939bc4',
 } as const
 
