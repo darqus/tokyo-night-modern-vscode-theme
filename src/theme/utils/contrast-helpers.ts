@@ -30,11 +30,26 @@ export function ensureReadableForeground(
   let adjustedBg = bg
   for (let i = 0; i < maxSteps; i++) {
     adjustedBg = darken(adjustedBg, step)
-    if (getContrastRatio(white, adjustedBg) >= min) {
+    const contrastWithWhite = getContrastRatio(white, adjustedBg)
+    if (contrastWithWhite >= min) {
       return { fg: white, bg: adjustedBg }
     }
   }
 
-  // Fallback: return the better of white/black on original bg
-  return cb > cw ? { fg: black, bg } : { fg: white, bg }
+  // Fallback: if white doesn't work on adjusted background, try black
+  const contrastBlackAdjusted = getContrastRatio(black, adjustedBg)
+  if (contrastBlackAdjusted >= min) {
+    return { fg: black, bg: adjustedBg }
+  }
+
+  // Last resort: ensure at least one color meets minimum contrast on adjusted background
+  // If neither white nor black meets the minimum contrast, return the combination with the best contrast
+  const contrastWhiteAdjusted = getContrastRatio(white, adjustedBg)
+  const contrastBlackAdjustedFinal = getContrastRatio(black, adjustedBg)
+
+  if (contrastWhiteAdjusted >= contrastBlackAdjustedFinal) {
+    return { fg: white, bg: adjustedBg }
+  } else {
+    return { fg: black, bg: adjustedBg }
+  }
 }
