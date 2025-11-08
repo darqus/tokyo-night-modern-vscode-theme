@@ -101,7 +101,7 @@ export const basicTokens: TokenColorConfig[] = [
       'keyword.control.default',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
     },
   },
   {
@@ -109,6 +109,13 @@ export const basicTokens: TokenColorConfig[] = [
     scope: ['keyword', 'keyword.control'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Variable Import',
+    scope: ['variable.other.readwrite.import'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
   },
   {
@@ -147,7 +154,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Variables',
     scope: ['variable', 'support.variable'],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.light,
     },
   },
   {
@@ -168,7 +175,8 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Object Property',
     scope: ['variable.other.property', 'support.variable.property'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.light, p.chromatic.yellow.light, 0.5),
     },
   },
   {
@@ -189,7 +197,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Constant, Tag Attribute',
     scope: ['constant.character', 'constant.escape'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
     },
   },
   {
@@ -203,7 +211,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Class, Support, DOM, etc',
     scope: ['support.class', 'support.type', 'support.function'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
   {

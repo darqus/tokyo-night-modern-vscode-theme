@@ -1,4 +1,5 @@
 import type { UniversalPalette } from '../palette/index.js'
+import { mix } from '../utils/color.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
 
@@ -7,15 +8,16 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UniversalPalette) => token(p.foreground.primary.light),
+    variable: (p: UniversalPalette) => token(p.chromatic.green.main),
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.blue.main),
+      italicToken(p.chromatic.green.light),
     parameter: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.blue.main),
-    property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
+      italicToken(p.chromatic.blue.light),
+    property: (p: UniversalPalette) =>
+      token(mix(p.chromatic.neutral.light, p.chromatic.yellow.light, 0.5)),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.cyan.main),
+      italicToken(mix(p.chromatic.neutral.main, p.chromatic.yellow.main, 0.5)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
   },
@@ -28,12 +30,12 @@ export const functionsConfig: SemanticTokenConfig = {
   rules: {
     function: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'function.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.blue.main),
+      boldToken(p.chromatic.blue.light),
     'function.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
     method: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'method.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.blue.main),
+      boldToken(p.chromatic.blue.light),
     constructor: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }
@@ -43,7 +45,7 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.purple.light),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
     class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }
@@ -66,6 +68,8 @@ export const literalsConfig: SemanticTokenConfig = {
     string: (p: UniversalPalette) => token(p.chromatic.green.main),
     number: (p: UniversalPalette) => token(p.chromatic.orange.main),
     boolean: (p: UniversalPalette) => token(p.chromatic.red.main),
+    'string.escape': (p: UniversalPalette) => token(p.chromatic.yellow.main),
+    'string.template': (p: UniversalPalette) => token(p.chromatic.emerald.main),
   },
 }
 
@@ -81,12 +85,16 @@ export const frameworksConfig: SemanticTokenConfig = {
       boldToken(p.chromatic.yellow.main),
 
     // Декораторы
-    decorator: (p: UniversalPalette) => italicToken(p.chromatic.cyan.main),
+    decorator: (p: UniversalPalette) => italicToken(p.chromatic.pink.main),
 
     // Макросы
     macro: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
 
     // Namespace
-    namespace: (p: UniversalPalette) => token(p.chromatic.blue.main),
+    namespace: (p: UniversalPalette) => token(p.chromatic.indigo.main),
+
+    // Enum
+    enum: (p: UniversalPalette) => boldToken(p.chromatic.orange.main),
+    enumMember: (p: UniversalPalette) => token(p.chromatic.orange.light),
   },
 }
