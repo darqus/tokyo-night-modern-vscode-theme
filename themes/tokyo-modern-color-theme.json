@@ -472,7 +472,7 @@
       "name": "Variable Import",
       "scope": ["variable.other.readwrite.import"],
       "settings": {
-        "foreground": "#8484fc"
+        "foreground": "#83aee0"
       }
     },
     {

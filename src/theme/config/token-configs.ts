@@ -115,7 +115,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Variable Import',
     scope: ['variable.other.readwrite.import'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
+      foreground: (p: UniversalPalette) => mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
     },
   },
   {
