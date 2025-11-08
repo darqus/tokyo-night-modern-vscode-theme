@@ -84,7 +84,7 @@ import { darken, lighten, mix } from '../utils/color.js'
 /**
  * Расширенная базовая палитра с улучшенной структурой
  */
-import { ADJUST, MIX_RATIO } from '../utils/color-helpers.ts'
+import { ADJUST, MIX_RATIO } from '../utils/color-helpers.js'
 
 // Centralized deltas for variant generation
 const VARIANT_DELTA = {
