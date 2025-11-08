@@ -10,7 +10,7 @@ export const commentsTokens: TokenColorConfig[] = [
     name: 'Comment',
     scope: ['comment', 'punctuation.definition.comment'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.main,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
       fontStyle: 'italic',
     },
   },
@@ -115,7 +115,8 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Variable Import',
     scope: ['variable.other.readwrite.import'],
     settings: {
-      foreground: (p: UniversalPalette) => mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
     },
   },
   {
