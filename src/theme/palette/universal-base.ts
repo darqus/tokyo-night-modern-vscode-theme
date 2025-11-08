@@ -76,11 +76,10 @@ export interface UniversalPalette {
   shadow: ColorVariant
 }
 
-import { darken, lighten, mix } from '../utils/color.js'
-/**
- * Расширенная базовая палитра с улучшенной структурой
- */
+import { lighten, mix } from '../utils/color.js'
 import { ADJUST, MIX_RATIO } from '../utils/color-helpers.js'
+import { fromMain } from '../utils/palette-helpers.js'
+import { baseColors } from './base-colors.js'
 
 // Centralized deltas for variant generation
 const VARIANT_DELTA = {
@@ -92,43 +91,9 @@ const VARIANT_DELTA = {
   scrollbar: { d: ADJUST.TINY, l: ADJUST.SLIGHT, b: ADJUST.LIGHT },
 } as const
 
-// Helper to build ColorVariant from a main color using deltas
-const fromMain = (
-  main: string,
-  opts?: { d?: number; l?: number; b?: number }
-) => {
-  const d = opts?.d ?? ADJUST.MEDIUM
-  const l = opts?.l ?? ADJUST.LIGHT
-  const b = opts?.b ?? ADJUST.STRONG
-  return {
-    dark: darken(main, d),
-    main,
-    light: lighten(main, l),
-    bright: lighten(main, b),
-  }
-}
-
-// Base chromatic main tones
-const chromaMain = {
-  pink: '#cd66dd',
-  purple: '#a686ff',
-  indigo: '#8484fc',
-  blue: '#57aef5',
-  cyan: '#74eff3',
-  teal: '#60bebe',
-  emerald: '#10b981',
-  green: '#79d68c',
-  lime: '#99cc40',
-  orange: '#cc936e',
-  amber: '#f0ba74',
-  yellow: '#d8cf91',
-  red: '#f33f8a',
-  neutral: '#939bc4',
-} as const
-
 // Build chromatic variants from main tones
 const chromatic: UniversalPalette['chromatic'] = Object.fromEntries(
-  Object.entries(chromaMain).map(([k, main]) => [
+  Object.entries(baseColors.chromaMain).map(([k, main]) => [
     k,
     fromMain(main, VARIANT_DELTA.chromatic),
   ])
@@ -136,13 +101,16 @@ const chromatic: UniversalPalette['chromatic'] = Object.fromEntries(
 
 export const universalBasePalette: UniversalPalette = {
   background: {
-    base: fromMain('#18162c', VARIANT_DELTA.background),
+    base: fromMain(baseColors.background.base.main, VARIANT_DELTA.background),
     elevated: fromMain('#1e1a37', VARIANT_DELTA.background),
     inset: fromMain('#151225', VARIANT_DELTA.background),
     overlay: fromMain('#120f20', VARIANT_DELTA.background),
   },
   foreground: {
-    primary: fromMain('#a8bee4', VARIANT_DELTA.foregroundStrong),
+    primary: fromMain(
+      baseColors.foreground.primary.main,
+      VARIANT_DELTA.foregroundStrong
+    ),
     secondary: fromMain('#94a9d0', VARIANT_DELTA.foregroundStrong),
     muted: fromMain('#7f94b8', VARIANT_DELTA.foregroundStrong),
     disabled: fromMain('#697c9a', VARIANT_DELTA.foregroundSoft),
@@ -157,22 +125,26 @@ export const universalBasePalette: UniversalPalette = {
   },
   chromatic,
   ui: {
-    white: '#ffffff',
-    black: '#000000',
-    badge: '#007acc',
+    white: baseColors.ui.white,
+    black: baseColors.ui.black,
+    badge: baseColors.ui.badge,
     border: fromMain(
-      mix('#18162c', '#a8bee4', MIX_RATIO.MOSTLY_FIRST),
+      mix(
+        baseColors.background.base.main,
+        baseColors.foreground.primary.main,
+        MIX_RATIO.MOSTLY_FIRST
+      ),
       VARIANT_DELTA.border
     ),
     scrollbar: fromMain(
-      lighten('#18162c', ADJUST.SLIGHT),
+      lighten(baseColors.background.base.main, ADJUST.SLIGHT),
       VARIANT_DELTA.scrollbar
     ),
     selection: {
-      dark: mix(chromatic.blue.dark, '#18162c', 0.25),
-      main: mix(chromatic.blue.main, '#18162c', 0.25),
-      light: mix(chromatic.blue.light, '#18162c', 0.25),
-      bright: mix(chromatic.blue.bright, '#18162c', 0.25),
+      dark: mix(chromatic.blue.dark, baseColors.background.base.main, 0.25),
+      main: mix(chromatic.blue.main, baseColors.background.base.main, 0.25),
+      light: mix(chromatic.blue.light, baseColors.background.base.main, 0.25),
+      bright: mix(chromatic.blue.bright, baseColors.background.base.main, 0.25),
     },
   },
   shadow: {
