@@ -21,7 +21,7 @@
     "toolbar.hoverBackground": "#2f2d41",
     "button.background": "#5790d9",
     "button.hoverBackground": "#5c98e4",
-    "button.secondaryBackground": "#3c4f7d",
+    "button.secondaryBackground": "#3e5182",
     "button.foreground": "#000000",
     "extensionButton.prominentBackground": "#5790d9",
     "extensionButton.prominentHoverBackground": "#5c98e4",
@@ -197,24 +197,24 @@
     "breadcrumb.background": "#18162c",
     "breadcrumb.foreground": "#a0b5d9",
     "breadcrumb.focusForeground": "#acc1e5",
-    "breadcrumb.activeSelectionForeground": "#9976db",
+    "breadcrumb.activeSelectionForeground": "#a686ff",
     "breadcrumbPicker.background": "#18162b",
     "tab.activeBackground": "#18162c",
     "tab.inactiveBackground": "#17152b",
     "tab.activeForeground": "#acc1e5",
     "tab.hoverForeground": "#acc1e5",
-    "tab.activeBorderTop": "#9976db",
+    "tab.activeBorderTop": "#a686ff",
     "tab.inactiveForeground": "#a0b5d9",
     "tab.border": "#333145",
     "tab.unfocusedActiveForeground": "#a8bee4",
     "tab.unfocusedInactiveForeground": "#a0b5d9",
     "tab.unfocusedHoverForeground": "#a8bee4",
-    "tab.activeModifiedBorder": "#9976db",
+    "tab.activeModifiedBorder": "#a686ff",
     "tab.inactiveModifiedBorder": "#211f34",
     "tab.unfocusedActiveModifiedBorder": "#211f34",
     "tab.unfocusedInactiveModifiedBorder": "#333145",
     "tab.unfocusedActiveBorder": "#211f34",
-    "tab.lastPinnedBorder": "#9976db",
+    "tab.lastPinnedBorder": "#a686ff",
     "panel.background": "#18162b",
     "panel.border": "#283356",
     "panelTitle.activeForeground": "#a0b5d9",
@@ -227,7 +227,7 @@
     "statusBar.border": "#191829",
     "statusBar.focusBorder": "#66a9ff",
     "statusBar.noFolderBackground": "#141325",
-    "statusBar.debuggingBackground": "#4b3c70",
+    "statusBar.debuggingBackground": "#51437f",
     "statusBar.debuggingForeground": "#a0b5d9",
     "statusBarItem.activeBackground": "#66a9ff40",
     "statusBarItem.hoverBackground": "#66a9ff26",
@@ -249,7 +249,7 @@
     "terminal.ansiGreen": "#79d68c",
     "terminal.ansiYellow": "#e6d466",
     "terminal.ansiBlue": "#66a9ff",
-    "terminal.ansiMagenta": "#a384df",
+    "terminal.ansiMagenta": "#af92ff",
     "terminal.ansiCyan": "#5fdcf2",
     "terminal.ansiWhite": "#a8bee4",
     "terminal.ansiBrightBlack": "#939bc4",
@@ -257,7 +257,7 @@
     "terminal.ansiBrightGreen": "#67b677",
     "terminal.ansiBrightYellow": "#e9d875",
     "terminal.ansiBrightBlue": "#75b2ff",
-    "terminal.ansiBrightMagenta": "#a384df",
+    "terminal.ansiBrightMagenta": "#af92ff",
     "terminal.ansiBrightCyan": "#5fdcf2",
     "terminal.ansiBrightWhite": "#acc1e5",
     "terminalCursor.foreground": "#acc1e5",
@@ -308,19 +308,19 @@
     "charts.yellow": "#e6d466",
     "charts.orange": "#ce7a2b",
     "charts.green": "#66a9ff",
-    "charts.purple": "#8264ba",
+    "charts.purple": "#8d72d9",
     "charts.foreground": "#acc1e5",
     "charts.lines": "#18162c",
     "scmGraph.historyItemHoverLabelForeground": "#141325",
     "scmGraph.foreground1": "#66a9ff",
-    "scmGraph.foreground2": "#9976db",
+    "scmGraph.foreground2": "#a686ff",
     "scmGraph.foreground3": "#4dd8f0",
     "scmGraph.foreground4": "#d48ae0",
     "scmGraph.foreground5": "#d48ae0",
     "scmGraph.historyItemHoverAdditionsForeground": "#67b677",
     "scmGraph.historyItemHoverDeletionsForeground": "#f31f77",
     "scmGraph.historyItemRefColor": "#66a9ff",
-    "scmGraph.historyItemRemoteRefColor": "#9976db",
+    "scmGraph.historyItemRemoteRefColor": "#a686ff",
     "scmGraph.historyItemBaseRefColor": "#4dd8f0",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#acc1e5",
     "merge.currentHeaderBackground": "#67b67726",
@@ -409,14 +409,14 @@
       "name": "Storage Type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
       "name": "Storage - modifier, var, const, let",
       "scope": ["storage.modifier"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
@@ -447,7 +447,7 @@
       "name": "Template & Misc",
       "scope": ["keyword.other", "punctuation.definition.keyword"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
@@ -458,14 +458,14 @@
         "keyword.control.default"
       ],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
       "name": "Keyword",
       "scope": ["keyword", "keyword.control"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
@@ -547,7 +547,7 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#a384df"
+        "foreground": "#af92ff"
       }
     },
     {
@@ -582,7 +582,7 @@
       "name": "CSS ID",
       "scope": ["entity.other.attribute-name.id"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
@@ -646,7 +646,7 @@
       "name": "Markup List",
       "scope": ["markup.list"],
       "settings": {
-        "foreground": "#9976db"
+        "foreground": "#a686ff"
       }
     },
     {
@@ -700,7 +700,7 @@
       "name": "Markdown Italic",
       "scope": ["markup.italic.markdown"],
       "settings": {
-        "foreground": "#9976db",
+        "foreground": "#a686ff",
         "fontStyle": "italic"
       }
     },
@@ -722,14 +722,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#a384df"
+        "foreground": "#af92ff"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#a384df"
+        "foreground": "#af92ff"
       }
     },
     {
@@ -801,7 +801,7 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#a384df",
+      "foreground": "#af92ff",
       "fontStyle": "bold"
     },
     "class": {
@@ -838,7 +838,7 @@
       "fontStyle": "italic"
     },
     "macro": {
-      "foreground": "#9976db",
+      "foreground": "#a686ff",
       "fontStyle": "bold"
     },
     "namespace": {

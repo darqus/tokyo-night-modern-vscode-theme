@@ -9,10 +9,10 @@ export const variablesConfig: SemanticTokenConfig = {
   rules: {
     variable: (p: UniversalPalette) => token(p.foreground.primary.light),
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.sky.main),
-    parameter: (p: UniversalPalette) => token(p.chromatic.sky.main),
+      italicToken(p.chromatic.blue.main),
+    parameter: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.sky.main),
+      italicToken(p.chromatic.blue.main),
     property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
     'property.readonly': (p: UniversalPalette) =>
       italicToken(p.chromatic.cyan.main),
@@ -43,7 +43,7 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.violet.light),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.purple.light),
     class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
   },
 }

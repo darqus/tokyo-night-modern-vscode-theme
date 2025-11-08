@@ -69,12 +69,8 @@ export interface UniversalPalette {
     neutral: ColorVariant
     indigo: ColorVariant
     lime: ColorVariant
-    magenta: ColorVariant
-    rose: ColorVariant
     amber: ColorVariant
     emerald: ColorVariant
-    sky: ColorVariant
-    violet: ColorVariant
   }
   ui: UIColors
   shadow: ColorVariant
@@ -114,8 +110,9 @@ const fromMain = (
 
 // Base chromatic main tones
 const chromaMain = {
+  purple: '#a686ff',
+  indigo: '#7a7aff',
   blue: '#66a9ff',
-  sky: '#66a9ff', // alias of blue
   cyan: '#4dd8f0',
   teal: '#4de0d8',
   green: '#79d68c',
@@ -125,12 +122,7 @@ const chromaMain = {
   amber: '#e6a32a',
   yellow: '#e6d466',
   red: '#f31f77',
-  rose: '#d48ae0', // alias of pink
   pink: '#d48ae0',
-  magenta: '#d48ae0', // alias of pink
-  purple: '#9976db',
-  violet: '#9976db', // alias of purple
-  indigo: '#7a7aff',
   neutral: '#939bc4',
 } as const
 

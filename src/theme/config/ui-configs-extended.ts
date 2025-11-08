@@ -87,20 +87,20 @@ export const editorConfig: UIColorConfig = {
     },
     editorBracketHighlight: {
       foreground1: (p: UniversalPalette) => p.chromatic.orange.light,
-      foreground2: (p: UniversalPalette) => p.chromatic.rose.light,
+      foreground2: (p: UniversalPalette) => p.chromatic.pink.light,
       foreground3: (p: UniversalPalette) => p.chromatic.red.light,
       foreground4: (p: UniversalPalette) => p.chromatic.yellow.light,
-      foreground5: (p: UniversalPalette) => p.chromatic.magenta.light,
+      foreground5: (p: UniversalPalette) => p.chromatic.pink.light,
       foreground6: (p: UniversalPalette) => p.chromatic.lime.main,
       'unexpectedBracket.foreground': (p: UniversalPalette) =>
         p.chromatic.red.main,
     },
     editorBracketPairGuide: {
       activeBackground1: (p: UniversalPalette) => p.chromatic.orange.light,
-      activeBackground2: (p: UniversalPalette) => p.chromatic.rose.light,
+      activeBackground2: (p: UniversalPalette) => p.chromatic.pink.light,
       activeBackground3: (p: UniversalPalette) => p.chromatic.red.light,
       activeBackground4: (p: UniversalPalette) => p.chromatic.yellow.light,
-      activeBackground5: (p: UniversalPalette) => p.chromatic.magenta.light,
+      activeBackground5: (p: UniversalPalette) => p.chromatic.pink.light,
       activeBackground6: (p: UniversalPalette) => p.chromatic.lime.main,
     },
     editorOverviewRuler: {
@@ -478,7 +478,7 @@ export const miscConfig: UIColorConfig = {
       foreground2: (p: UniversalPalette) => p.chromatic.purple.main,
       foreground3: (p: UniversalPalette) => p.chromatic.cyan.main,
       foreground4: (p: UniversalPalette) => p.chromatic.pink.main,
-      foreground5: (p: UniversalPalette) => p.chromatic.magenta.main,
+      foreground5: (p: UniversalPalette) => p.chromatic.pink.main,
       historyItemHoverAdditionsForeground: (p: UniversalPalette) =>
         p.chromatic.green.dark,
       historyItemHoverDeletionsForeground: (p: UniversalPalette) =>

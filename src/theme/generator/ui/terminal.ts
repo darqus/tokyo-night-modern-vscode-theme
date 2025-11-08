@@ -39,7 +39,6 @@ export function generateTerminalColors(): Record<string, string> {
       green: c.green.main,
       yellow: c.yellow.main,
       blue: c.blue.main,
-      magenta: c.purple.main,
       cyan: c.cyan.main,
       white: c.ui.white,
       brightBlack: c.neutral.main,

@@ -100,8 +100,6 @@ export interface ChromaticPalette {
   neutral: ChromaticVariant
   indigo: ChromaticVariant
   lime: ChromaticVariant
-  magenta: ChromaticVariant
-  rose: ChromaticVariant
   amber: ChromaticVariant
   emerald: ChromaticVariant
 }

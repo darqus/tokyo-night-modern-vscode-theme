@@ -97,12 +97,6 @@ export const c = {
   get lime() {
     return universalPalette.chromatic.lime
   },
-  get magenta() {
-    return universalPalette.chromatic.magenta
-  },
-  get rose() {
-    return universalPalette.chromatic.rose
-  },
   get amber() {
     return universalPalette.chromatic.amber
   },

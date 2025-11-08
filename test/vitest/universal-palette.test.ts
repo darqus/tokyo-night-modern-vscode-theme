@@ -47,8 +47,6 @@ describe('Universal Palette', () => {
     expect(universalBasePalette.chromatic).toHaveProperty('neutral')
     expect(universalBasePalette.chromatic).toHaveProperty('indigo')
     expect(universalBasePalette.chromatic).toHaveProperty('lime')
-    expect(universalBasePalette.chromatic).toHaveProperty('magenta')
-    expect(universalBasePalette.chromatic).toHaveProperty('rose')
     expect(universalBasePalette.chromatic).toHaveProperty('amber')
     expect(universalBasePalette.chromatic).toHaveProperty('emerald')
   })
