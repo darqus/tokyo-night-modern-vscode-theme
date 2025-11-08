@@ -8,18 +8,20 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UniversalPalette) => token(p.chromatic.green.main),
+    variable: (p: UniversalPalette) =>
+      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.green.light),
-    parameter: (p: UniversalPalette) => token(p.chromatic.blue.main),
+      italicToken(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+    parameter: (p: UniversalPalette) =>
+      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.blue.light),
+      italicToken(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
     property: (p: UniversalPalette) =>
-      token(mix(p.chromatic.neutral.light, p.chromatic.yellow.light, 0.5)),
+      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.neutral.main, p.chromatic.yellow.main, 0.5)),
+      italicToken(mix(p.chromatic.neutral.main, p.chromatic.blue.main, 0.5)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
-      token(p.chromatic.cyan.main),
+      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
   },
 }
 
@@ -45,9 +47,12 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.teal.dark),
-    interface: (p: UniversalPalette) => boldToken(p.chromatic.teal.dark),
-    class: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
+    type: (p: UniversalPalette) =>
+      boldToken(mix(p.chromatic.neutral.light, p.chromatic.teal.light, 0.5)),
+    interface: (p: UniversalPalette) =>
+      boldToken(mix(p.chromatic.neutral.light, p.chromatic.teal.light, 0.5)),
+    class: (p: UniversalPalette) =>
+      boldToken(mix(p.chromatic.neutral.light, p.chromatic.yellow.light, 0.5)),
   },
 }
 

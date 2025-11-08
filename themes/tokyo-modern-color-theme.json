@@ -763,28 +763,28 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "foreground": "#79d68c"
+      "foreground": "#83aee0"
     },
     "variable.readonly": {
-      "foreground": "#86da98",
+      "foreground": "#83aee0",
       "fontStyle": "italic"
     },
     "parameter": {
-      "foreground": "#57aef5"
+      "foreground": "#83aee0"
     },
     "parameter.readonly": {
-      "foreground": "#68b6f6",
+      "foreground": "#83aee0",
       "fontStyle": "italic"
     },
     "property": {
-      "foreground": "#bdbdb3"
+      "foreground": "#83aee0"
     },
     "property.readonly": {
-      "foreground": "#b6b5ab",
+      "foreground": "#75a5dd",
       "fontStyle": "italic"
     },
     "variable.defaultLibrary": {
-      "foreground": "#74eff3"
+      "foreground": "#83aee0"
     },
     "function": {
       "foreground": "#57aef5"
@@ -808,15 +808,15 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#4d9898",
+      "foreground": "#87b5c8",
       "fontStyle": "bold"
     },
     "interface": {
-      "foreground": "#4d9898",
+      "foreground": "#87b5c8",
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#d8cf91",
+      "foreground": "#bdbdb3",
       "fontStyle": "bold"
     },
     "static": {
