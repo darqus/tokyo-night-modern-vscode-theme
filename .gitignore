@@ -6,5 +6,4 @@ build/
 coverage/
 .nyc_output/
 *.tsbuildinfo
-.vscode/settings.json
-.release-notes-*.tmp
+.log
