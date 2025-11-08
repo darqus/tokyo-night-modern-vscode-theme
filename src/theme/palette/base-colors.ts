@@ -1,6 +1,5 @@
 // Centralized base color definitions
-import { darken, lighten } from '../utils/color.js'
-import { ADJUST } from '../utils/color-helpers.js'
+import { fromMain } from '../utils/palette-helpers.js'
 
 // Base chromatic main tones
 export const chromaMain = {
@@ -20,29 +19,25 @@ export const chromaMain = {
   neutral: '#939bc4',
 } as const
 
-// Helper to build ColorVariant from a main color
-const fromMain = (
-  main: string,
-  opts?: { d?: number; l?: number; b?: number }
-) => {
-  const d = opts?.d ?? ADJUST.MEDIUM
-  const l = opts?.l ?? ADJUST.LIGHT
-  const b = opts?.b ?? ADJUST.STRONG
-  return {
-    dark: darken(main, d),
-    main,
-    light: lighten(main, l),
-    bright: lighten(main, b),
-  }
-}
-
 export const baseColors = {
   chromaMain,
   background: {
     base: fromMain('#18162c'),
+    elevated: fromMain('#1e1a37'),
+    inset: fromMain('#151225'),
+    overlay: fromMain('#120f20'),
   },
   foreground: {
     primary: fromMain('#a8bee4'),
+    secondary: fromMain('#94a9d0'),
+    muted: fromMain('#7f94b8'),
+    disabled: fromMain('#697c9a'),
+  },
+  shadow: {
+    main: '#00000033',
+    dark: '#0000004d',
+    light: '#0000001a',
+    bright: '#00000066',
   },
   ui: {
     white: '#ffffff',

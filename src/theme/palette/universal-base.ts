@@ -102,18 +102,33 @@ const chromatic: UniversalPalette['chromatic'] = Object.fromEntries(
 export const universalBasePalette: UniversalPalette = {
   background: {
     base: fromMain(baseColors.background.base.main, VARIANT_DELTA.background),
-    elevated: fromMain('#1e1a37', VARIANT_DELTA.background),
-    inset: fromMain('#151225', VARIANT_DELTA.background),
-    overlay: fromMain('#120f20', VARIANT_DELTA.background),
+    elevated: fromMain(
+      baseColors.background.elevated.main,
+      VARIANT_DELTA.background
+    ),
+    inset: fromMain(baseColors.background.inset.main, VARIANT_DELTA.background),
+    overlay: fromMain(
+      baseColors.background.overlay.main,
+      VARIANT_DELTA.background
+    ),
   },
   foreground: {
     primary: fromMain(
       baseColors.foreground.primary.main,
       VARIANT_DELTA.foregroundStrong
     ),
-    secondary: fromMain('#94a9d0', VARIANT_DELTA.foregroundStrong),
-    muted: fromMain('#7f94b8', VARIANT_DELTA.foregroundStrong),
-    disabled: fromMain('#697c9a', VARIANT_DELTA.foregroundSoft),
+    secondary: fromMain(
+      baseColors.foreground.secondary.main,
+      VARIANT_DELTA.foregroundStrong
+    ),
+    muted: fromMain(
+      baseColors.foreground.muted.main,
+      VARIANT_DELTA.foregroundStrong
+    ),
+    disabled: fromMain(
+      baseColors.foreground.disabled.main,
+      VARIANT_DELTA.foregroundSoft
+    ),
   },
   semantic: {
     // semantic references chromatic to guarantee consistency
@@ -148,9 +163,9 @@ export const universalBasePalette: UniversalPalette = {
     },
   },
   shadow: {
-    main: '#00000033',
-    dark: '#0000004d',
-    light: '#0000001a',
-    bright: '#00000066',
+    main: baseColors.shadow.main,
+    dark: baseColors.shadow.dark,
+    light: baseColors.shadow.light,
+    bright: baseColors.shadow.bright,
   },
 }
