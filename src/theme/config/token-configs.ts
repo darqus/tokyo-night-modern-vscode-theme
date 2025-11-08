@@ -404,14 +404,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
     },
   },
   {

@@ -204,11 +204,16 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#a686ff",
+  "foreground": "#4d9898",
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `undefined`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
+{
+  "fontStyle": "bold",
+  "foreground": "#4d9898",
+}
+`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
@@ -443,7 +448,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#cd66dd",
+      "foreground": "#57aef5",
     },
   },
   {
@@ -595,6 +600,15 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
+    "name": "Markup Attribute",
+    "scope": [
+      "entity.other.attribute-name",
+    ],
+    "settings": {
+      "foreground": "#74eff3",
+    },
+  },
+  {
     "name": "Markup Bold",
     "scope": [
       "markup.bold",
@@ -742,7 +756,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#af92ff",
+      "foreground": "#4d9898",
     },
   },
   {
@@ -751,7 +765,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#af92ff",
+      "foreground": "#4d9898",
     },
   },
   {
@@ -1160,7 +1174,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "class.component": {
     "fontStyle": "bold",
-    "foreground": "#d8cf91",
+    "foreground": "#60bebe",
   },
   "constructor": {
     "fontStyle": "bold",
@@ -1187,9 +1201,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "function.defaultLibrary": {
     "foreground": "#74eff3",
   },
+  "interface": {
+    "fontStyle": "bold",
+    "foreground": "#4d9898",
+  },
   "interface.component": {
     "fontStyle": "bold",
-    "foreground": "#d8cf91",
+    "foreground": "#60bebe",
   },
   "macro": {
     "fontStyle": "bold",
@@ -1241,7 +1259,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "type": {
     "fontStyle": "bold",
-    "foreground": "#a686ff",
+    "foreground": "#4d9898",
   },
   "variable": {
     "foreground": "#79d68c",
@@ -1632,7 +1650,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "class.component": {
       "fontStyle": "bold",
-      "foreground": "#d8cf91",
+      "foreground": "#60bebe",
     },
     "constructor": {
       "fontStyle": "bold",
@@ -1659,9 +1677,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "function.defaultLibrary": {
       "foreground": "#74eff3",
     },
+    "interface": {
+      "fontStyle": "bold",
+      "foreground": "#4d9898",
+    },
     "interface.component": {
       "fontStyle": "bold",
-      "foreground": "#d8cf91",
+      "foreground": "#60bebe",
     },
     "macro": {
       "fontStyle": "bold",
@@ -1713,7 +1735,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "type": {
       "fontStyle": "bold",
-      "foreground": "#a686ff",
+      "foreground": "#4d9898",
     },
     "variable": {
       "foreground": "#79d68c",
@@ -1878,7 +1900,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#cd66dd",
+        "foreground": "#57aef5",
       },
     },
     {
@@ -2030,6 +2052,15 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
+      "name": "Markup Attribute",
+      "scope": [
+        "entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#74eff3",
+      },
+    },
+    {
       "name": "Markup Bold",
       "scope": [
         "markup.bold",
@@ -2177,7 +2208,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.tsx",
       ],
       "settings": {
-        "foreground": "#af92ff",
+        "foreground": "#4d9898",
       },
     },
     {
@@ -2186,7 +2217,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.interface",
       ],
       "settings": {
-        "foreground": "#af92ff",
+        "foreground": "#4d9898",
       },
     },
     {
@@ -2374,7 +2405,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#cd66dd",
+      "foreground": "#57aef5",
     },
   },
   {
@@ -2526,6 +2557,15 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
+    "name": "Markup Attribute",
+    "scope": [
+      "entity.other.attribute-name",
+    ],
+    "settings": {
+      "foreground": "#74eff3",
+    },
+  },
+  {
     "name": "Markup Bold",
     "scope": [
       "markup.bold",
@@ -2673,7 +2713,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#af92ff",
+      "foreground": "#4d9898",
     },
   },
   {
@@ -2682,7 +2722,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#af92ff",
+      "foreground": "#4d9898",
     },
   },
   {

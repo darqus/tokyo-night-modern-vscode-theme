@@ -736,14 +736,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#af92ff"
+        "foreground": "#4d9898"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#af92ff"
+        "foreground": "#4d9898"
       }
     },
     {
@@ -815,7 +815,11 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#a686ff",
+      "foreground": "#4d9898",
+      "fontStyle": "bold"
+    },
+    "interface": {
+      "foreground": "#4d9898",
       "fontStyle": "bold"
     },
     "class": {
