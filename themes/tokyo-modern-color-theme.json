@@ -491,7 +491,7 @@
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#cd66dd"
+        "foreground": "#57aef5"
       }
     },
     {
@@ -604,6 +604,13 @@
       "scope": ["keyword.other.unit"],
       "settings": {
         "foreground": "#cc936e"
+      }
+    },
+    {
+      "name": "Markup Attribute",
+      "scope": ["entity.other.attribute-name"],
+      "settings": {
+        "foreground": "#74eff3"
       }
     },
     {
@@ -839,11 +846,11 @@
       "foreground": "#10b981"
     },
     "class.component": {
-      "foreground": "#d8cf91",
+      "foreground": "#60bebe",
       "fontStyle": "bold"
     },
     "interface.component": {
-      "foreground": "#d8cf91",
+      "foreground": "#60bebe",
       "fontStyle": "bold"
     },
     "decorator": {

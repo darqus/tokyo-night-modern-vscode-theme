@@ -80,9 +80,9 @@ export const frameworksConfig: SemanticTokenConfig = {
   rules: {
     // React/Vue/Angular компоненты
     'class.component': (p: UniversalPalette) =>
-      boldToken(p.chromatic.yellow.main),
+      boldToken(p.chromatic.teal.main),
     'interface.component': (p: UniversalPalette) =>
-      boldToken(p.chromatic.yellow.main),
+      boldToken(p.chromatic.teal.main),
 
     // Декораторы
     decorator: (p: UniversalPalette) => italicToken(p.chromatic.pink.main),

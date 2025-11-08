@@ -140,7 +140,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
   {
@@ -268,6 +268,13 @@ export const cssTokens: TokenColorConfig[] = [
  * Markup tokens - XML, HTML
  */
 export const markupTokens: TokenColorConfig[] = [
+  {
+    name: 'Markup Attribute',
+    scope: ['entity.other.attribute-name'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
   {
     name: 'Markup Bold',
     scope: ['markup.bold'],
