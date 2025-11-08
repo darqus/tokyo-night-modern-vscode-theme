@@ -20,7 +20,8 @@ export const editorConfig: UIColorConfig = {
   },
   groups: {
     editor: {
-      background: (p: UniversalPalette) => p.background.base.light,
+      background: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.02),
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       foldBackground: (p: UniversalPalette) =>
         alpha(p.background.base.dark, 0.2),
