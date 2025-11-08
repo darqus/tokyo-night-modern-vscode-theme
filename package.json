@@ -56,17 +56,17 @@
     "deps:update": "ncu -u"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.3",
+    "@biomejs/biome": "^2.3.4",
     "@types/node": "^24.10.0",
-    "@vitest/coverage-v8": "^4.0.6",
-    "@vitest/ui": "^4.0.6",
-    "@vscode/vsce": "^3.6.2",
+    "@vitest/coverage-v8": "^4.0.8",
+    "@vitest/ui": "^4.0.8",
+    "@vscode/vsce": "^3.7.0",
     "lint-staged": "^16.2.6",
     "npm-check-updates": "^19.1.2",
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.6"
+    "vitest": "^4.0.8"
   }
 }
