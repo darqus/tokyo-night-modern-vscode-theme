@@ -77,7 +77,7 @@ export const editorConfig: UIColorConfig = {
     },
     editorHoverWidget: {
       background: (p: UniversalPalette) =>
-        mix(p.background.base.light, p.chromatic.blue.main, 0.1),
+        mix(p.background.base.main, p.chromatic.blue.main, 0.1),
       border: (p: UniversalPalette) =>
         mix(p.background.base.main, p.chromatic.blue.main, 0.25),
     },
@@ -185,7 +185,7 @@ export const editorConfig: UIColorConfig = {
         mix(p.background.base.main, p.chromatic.blue.main, 0.2),
     },
     editorSuggestWidget: {
-      background: (p: UniversalPalette) => p.background.base.main,
+      background: (p: UniversalPalette) => p.background.base.dark,
       border: (p: UniversalPalette) =>
         mix(p.background.base.main, p.chromatic.blue.main, 0.2),
       selectedBackground: (p: UniversalPalette) =>
