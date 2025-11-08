@@ -164,61 +164,61 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 5`] = `
 {
-  "foreground": "#79d68c",
+  "foreground": "#83aee0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 6`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#86da98",
+  "foreground": "#83aee0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 7`] = `
 {
-  "foreground": "#bdbdb3",
+  "foreground": "#83aee0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 8`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#b6b5ab",
+  "foreground": "#75a5dd",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 9`] = `
 {
-  "foreground": "#57aef5",
+  "foreground": "#83aee0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 10`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#68b6f6",
+  "foreground": "#83aee0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#4d9898",
+  "foreground": "#87b5c8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#4d9898",
+  "foreground": "#87b5c8",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 13`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#d8cf91",
+  "foreground": "#bdbdb3",
 }
 `;
 
@@ -305,7 +305,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#939bc4",
+      "foreground": "#767c9d",
     },
   },
   {
@@ -429,7 +429,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.other.readwrite.import",
     ],
     "settings": {
-      "foreground": "#8484fc",
+      "foreground": "#83aee0",
     },
   },
   {
@@ -445,6 +445,16 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
+    "name": "Variables",
+    "scope": [
+      "variable",
+      "support.variable",
+    ],
+    "settings": {
+      "foreground": "#83aee0",
+    },
+  },
+  {
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
@@ -457,17 +467,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "punctuation.definition.tag",
     ],
     "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Variables",
-    "scope": [
-      "variable",
-      "support.variable",
-    ],
-    "settings": {
-      "foreground": "#dcd49c",
+      "foreground": "#74eff3",
     },
   },
   {
@@ -1170,7 +1170,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "class": {
     "fontStyle": "bold",
-    "foreground": "#d8cf91",
+    "foreground": "#bdbdb3",
   },
   "class.component": {
     "fontStyle": "bold",
@@ -1203,7 +1203,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "interface": {
     "fontStyle": "bold",
-    "foreground": "#4d9898",
+    "foreground": "#87b5c8",
   },
   "interface.component": {
     "fontStyle": "bold",
@@ -1227,18 +1227,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#cc936e",
   },
   "parameter": {
-    "foreground": "#57aef5",
+    "foreground": "#83aee0",
   },
   "parameter.readonly": {
     "fontStyle": "italic",
-    "foreground": "#68b6f6",
+    "foreground": "#83aee0",
   },
   "property": {
-    "foreground": "#bdbdb3",
+    "foreground": "#83aee0",
   },
   "property.readonly": {
     "fontStyle": "italic",
-    "foreground": "#b6b5ab",
+    "foreground": "#75a5dd",
   },
   "readonly": {
     "fontStyle": "italic",
@@ -1259,17 +1259,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "type": {
     "fontStyle": "bold",
-    "foreground": "#4d9898",
+    "foreground": "#87b5c8",
   },
   "variable": {
-    "foreground": "#79d68c",
+    "foreground": "#83aee0",
   },
   "variable.defaultLibrary": {
-    "foreground": "#74eff3",
+    "foreground": "#83aee0",
   },
   "variable.readonly": {
     "fontStyle": "italic",
-    "foreground": "#86da98",
+    "foreground": "#83aee0",
   },
 }
 `;
@@ -1646,7 +1646,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "class": {
       "fontStyle": "bold",
-      "foreground": "#d8cf91",
+      "foreground": "#bdbdb3",
     },
     "class.component": {
       "fontStyle": "bold",
@@ -1679,7 +1679,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "interface": {
       "fontStyle": "bold",
-      "foreground": "#4d9898",
+      "foreground": "#87b5c8",
     },
     "interface.component": {
       "fontStyle": "bold",
@@ -1703,18 +1703,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#cc936e",
     },
     "parameter": {
-      "foreground": "#57aef5",
+      "foreground": "#83aee0",
     },
     "parameter.readonly": {
       "fontStyle": "italic",
-      "foreground": "#68b6f6",
+      "foreground": "#83aee0",
     },
     "property": {
-      "foreground": "#bdbdb3",
+      "foreground": "#83aee0",
     },
     "property.readonly": {
       "fontStyle": "italic",
-      "foreground": "#b6b5ab",
+      "foreground": "#75a5dd",
     },
     "readonly": {
       "fontStyle": "italic",
@@ -1735,17 +1735,17 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "type": {
       "fontStyle": "bold",
-      "foreground": "#4d9898",
+      "foreground": "#87b5c8",
     },
     "variable": {
-      "foreground": "#79d68c",
+      "foreground": "#83aee0",
     },
     "variable.defaultLibrary": {
-      "foreground": "#74eff3",
+      "foreground": "#83aee0",
     },
     "variable.readonly": {
       "fontStyle": "italic",
-      "foreground": "#86da98",
+      "foreground": "#83aee0",
     },
   },
   "tokenColors": [
@@ -1757,7 +1757,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#939bc4",
+        "foreground": "#767c9d",
       },
     },
     {
@@ -1881,7 +1881,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.other.readwrite.import",
       ],
       "settings": {
-        "foreground": "#8484fc",
+        "foreground": "#83aee0",
       },
     },
     {
@@ -1897,6 +1897,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "support.variable",
+      ],
+      "settings": {
+        "foreground": "#83aee0",
+      },
+    },
+    {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
@@ -1909,17 +1919,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "punctuation.definition.tag",
       ],
       "settings": {
-        "foreground": "#a8bee4",
-      },
-    },
-    {
-      "name": "Variables",
-      "scope": [
-        "variable",
-        "support.variable",
-      ],
-      "settings": {
-        "foreground": "#dcd49c",
+        "foreground": "#74eff3",
       },
     },
     {
@@ -2262,7 +2262,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#939bc4",
+      "foreground": "#767c9d",
     },
   },
   {
@@ -2386,7 +2386,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.other.readwrite.import",
     ],
     "settings": {
-      "foreground": "#8484fc",
+      "foreground": "#83aee0",
     },
   },
   {
@@ -2402,6 +2402,16 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     },
   },
   {
+    "name": "Variables",
+    "scope": [
+      "variable",
+      "support.variable",
+    ],
+    "settings": {
+      "foreground": "#83aee0",
+    },
+  },
+  {
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
@@ -2414,17 +2424,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "punctuation.definition.tag",
     ],
     "settings": {
-      "foreground": "#a8bee4",
-    },
-  },
-  {
-    "name": "Variables",
-    "scope": [
-      "variable",
-      "support.variable",
-    ],
-    "settings": {
-      "foreground": "#dcd49c",
+      "foreground": "#74eff3",
     },
   },
   {

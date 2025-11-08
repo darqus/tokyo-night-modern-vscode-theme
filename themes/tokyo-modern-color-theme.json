@@ -488,6 +488,13 @@
       }
     },
     {
+      "name": "Variables",
+      "scope": ["variable", "support.variable"],
+      "settings": {
+        "foreground": "#83aee0"
+      }
+    },
+    {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {

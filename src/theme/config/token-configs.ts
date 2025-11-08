@@ -138,6 +138,14 @@ export const basicTokens: TokenColorConfig[] = [
  */
 export const codeTokens: TokenColorConfig[] = [
   {
+    name: 'Variables',
+    scope: ['variable', 'support.variable'],
+    settings: {
+      foreground: (p: UniversalPalette) =>
+        mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
+    },
+  },
+  {
     name: 'Tag',
     scope: 'entity.name.tag',
     settings: {
