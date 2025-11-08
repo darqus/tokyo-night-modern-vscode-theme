@@ -1,26 +1,55 @@
 import { darken, mix } from '../../utils/color.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 import { activeState, hoverState } from '../../utils/color-helpers.js'
+import { ensureReadableForeground } from '../../utils/contrast-helpers.js'
 
 export function generateButtonColors(): Record<string, string> {
+  const baseBg = c.blue.dark
+  const ensuredBase = ensureReadableForeground(baseBg)
+  const hoverCand = hoverState(ensuredBase.bg)
+  const ensuredHover = ensureReadableForeground(hoverCand)
+  const secondaryCand = darken(mix(ensuredBase.bg, c.purple.dark, 0.2), 0.4)
+  const ensuredSecondary = ensureReadableForeground(secondaryCand)
+
+  const extPromBase = c.blue.dark
+  const ensuredExtProm = ensureReadableForeground(extPromBase)
+  const extPromHoverCand = activeState(ensuredExtProm.bg)
+  const ensuredExtPromHover = ensureReadableForeground(extPromHoverCand)
+
+  const extBadgeBase = c.blue.dark
+  const ensuredExtBadge = ensureReadableForeground(extBadgeBase)
+
+  // Дополнительные производные с обеспечением контраста
+  const ensuredButtonHoverFg = ensureReadableForeground(ensuredHover.bg).fg
+  const ensuredToolbarFg = ensureReadableForeground(ensuredBase.bg).fg
+  const ensuredActionBtnFg = ensureReadableForeground(ensuredBase.bg).fg
+  const ensuredActionBtnHoverFg = ensureReadableForeground(ensuredHover.bg).fg
+
   return (
     colorRules()
-      // Базовые стили кнопок
+      // Базовые стили кнопок с обеспечением контраста
       .addGroup('button', {
-        background: c.blue.dark,
-        hoverBackground: hoverState(c.blue.dark),
-        secondaryBackground: darken(mix(c.blue.dark, c.purple.dark, 0.2), 0.4),
-        foreground: c.ui.white,
+        background: ensuredBase.bg,
+        hoverBackground: ensuredHover.bg,
+        secondaryBackground: ensuredSecondary.bg,
+        foreground: ensuredBase.fg,
+        secondaryForeground: ensuredSecondary.fg,
+        hoverForeground: ensuredButtonHoverFg,
       })
+      // Workbench action buttons (потенциальный источник валидации "Button text")
+      .add('workbench.actionButtons.foreground', ensuredActionBtnFg)
+      .add('workbench.actionButtons.hoverForeground', ensuredActionBtnHoverFg)
+      // Toolbar button
+      .add('toolbar.button.foreground', ensuredToolbarFg)
       // Специфические компоненты: кнопки расширений
-      .add('extensionButton.prominentBackground', c.blue.dark)
-      .add('extensionButton.prominentHoverBackground', activeState(c.blue.dark))
-      .add('extensionButton.prominentForeground', c.ui.white)
+      .add('extensionButton.prominentBackground', ensuredExtProm.bg)
+      .add('extensionButton.prominentHoverBackground', ensuredExtPromHover.bg)
+      .add('extensionButton.prominentForeground', ensuredExtProm.fg)
       // Специфические компоненты: бейджи расширений
-      .add('extensionBadge.remoteBackground', c.blue.dark)
-      .add('extensionBadge.remoteForeground', c.ui.white)
+      .add('extensionBadge.remoteBackground', ensuredExtBadge.bg)
+      .add('extensionBadge.remoteForeground', ensuredExtBadge.fg)
       // Специфические компоненты: прогресс бар
-      .add('progressBar.background', c.blue.dark)
+      .add('progressBar.background', ensuredBase.bg)
       .build()
   )
 }
