@@ -1,5 +1,5 @@
 import type { UniversalPalette } from '../palette/index.js'
-import { mix } from '../utils/color.js'
+import { darken, mix } from '../utils/color.js'
 import type { TokenColorConfig } from './color-config-dsl.js'
 
 /**
@@ -10,7 +10,8 @@ export const commentsTokens: TokenColorConfig[] = [
     name: 'Comment',
     scope: ['comment', 'punctuation.definition.comment'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) =>
+        darken(p.chromatic.neutral.dark, 0.3),
       fontStyle: 'italic',
     },
   },
