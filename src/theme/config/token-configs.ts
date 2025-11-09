@@ -116,7 +116,7 @@ export const basicTokens: TokenColorConfig[] = [
     scope: ['variable.other.readwrite.import'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
+        mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5),
     },
   },
   {
@@ -142,7 +142,7 @@ export const codeTokens: TokenColorConfig[] = [
     scope: ['variable', 'support.variable'],
     settings: {
       foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5),
+        mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5),
     },
   },
   {

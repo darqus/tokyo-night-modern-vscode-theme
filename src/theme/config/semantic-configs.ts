@@ -9,19 +9,19 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
     variable: (p: UniversalPalette) =>
-      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      token(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      italicToken(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
     parameter: (p: UniversalPalette) =>
-      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      token(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      italicToken(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
     property: (p: UniversalPalette) =>
-      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      token(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(mix(p.chromatic.neutral.main, p.chromatic.blue.main, 0.5)),
+      italicToken(mix(p.chromatic.neutral.main, p.chromatic.cyan.main, 0.5)),
     'variable.defaultLibrary': (p: UniversalPalette) =>
-      token(mix(p.chromatic.neutral.light, p.chromatic.blue.light, 0.5)),
+      token(mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5)),
   },
 }
 

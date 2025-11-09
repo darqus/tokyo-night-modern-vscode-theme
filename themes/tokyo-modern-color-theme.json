@@ -472,7 +472,7 @@
       "name": "Variable Import",
       "scope": ["variable.other.readwrite.import"],
       "settings": {
-        "foreground": "#83aee0"
+        "foreground": "#90cbdf"
       }
     },
     {
@@ -491,7 +491,7 @@
       "name": "Variables",
       "scope": ["variable", "support.variable"],
       "settings": {
-        "foreground": "#83aee0"
+        "foreground": "#90cbdf"
       }
     },
     {
@@ -770,28 +770,28 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "foreground": "#83aee0"
+      "foreground": "#90cbdf"
     },
     "variable.readonly": {
-      "foreground": "#83aee0",
+      "foreground": "#90cbdf",
       "fontStyle": "italic"
     },
     "parameter": {
-      "foreground": "#83aee0"
+      "foreground": "#90cbdf"
     },
     "parameter.readonly": {
-      "foreground": "#83aee0",
+      "foreground": "#90cbdf",
       "fontStyle": "italic"
     },
     "property": {
-      "foreground": "#83aee0"
+      "foreground": "#90cbdf"
     },
     "property.readonly": {
-      "foreground": "#75a5dd",
+      "foreground": "#84c5dc",
       "fontStyle": "italic"
     },
     "variable.defaultLibrary": {
-      "foreground": "#83aee0"
+      "foreground": "#90cbdf"
     },
     "function": {
       "foreground": "#57aef5"
