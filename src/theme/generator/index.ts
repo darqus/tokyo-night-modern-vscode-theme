@@ -20,22 +20,25 @@ import {
 import {
   buttonsConfig,
   checkboxesConfig,
-  // UI configs - основные
+  // Core UI configurations
   coreConfig,
+  // Diff configurations
+  diffConfig,
+  // Editor configurations
+  editorConfig,
+  // Git configurations
+  gitConfig,
   inputsConfig,
   listsConfig,
+  // Miscellaneous configurations
+  miscConfig,
+  // Panel configurations
+  panelsConfig,
   sidebarConfig,
   tabsConfig,
-} from '../config/ui-configs.js'
-import {
-  diffConfig,
-  // UI configs - расширенные
-  editorConfig,
-  gitConfig,
-  miscConfig,
-  panelsConfig,
+  // Terminal configurations
   terminalConfig,
-} from '../config/ui-configs-extended.js'
+} from '../config/ui-configs.js'
 import { generateFromConfig } from '../config/unified-generator.js'
 import { THEME_CONFIG } from '../config.js'
 import type { VSCodeTheme } from '../types/index.js'
