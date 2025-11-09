@@ -62,37 +62,42 @@ export const coreConfig: UIColorConfig = {
 export const buttonsConfig: UIColorConfig = {
   groups: {
     button: {
-      background: (p: UniversalPalette) => p.chromatic.blue.dark,
+      background: (p: UniversalPalette) => darken(p.chromatic.blue.dark, 0.3),
       hoverBackground: (p: UniversalPalette) =>
-        mixLight(p.chromatic.blue.dark, p.chromatic.blue.main),
+        mixLight(darken(p.chromatic.blue.dark, 0.3), p.chromatic.blue.main),
       secondaryBackground: (p: UniversalPalette) =>
-        darken(mixLight(p.chromatic.blue.dark, p.chromatic.purple.dark), 0.4),
+        darken(
+          mixLight(darken(p.chromatic.blue.dark, 0.3), p.chromatic.purple.dark),
+          0.4
+        ),
       foreground: (p: UniversalPalette) => {
-        const bg = p.chromatic.blue.dark
+        const bg = darken(p.chromatic.blue.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     extensionButton: {
-      prominentBackground: (p: UniversalPalette) => p.chromatic.blue.dark,
+      prominentBackground: (p: UniversalPalette) =>
+        darken(p.chromatic.blue.dark, 0.3),
       prominentHoverBackground: (p: UniversalPalette) =>
-        mix(p.chromatic.blue.dark, p.chromatic.blue.main, 0.3),
+        mix(darken(p.chromatic.blue.dark, 0.3), p.chromatic.blue.main, 0.3),
       prominentForeground: (p: UniversalPalette) => {
-        const bg = p.chromatic.blue.dark
+        const bg = darken(p.chromatic.blue.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     extensionBadge: {
-      remoteBackground: (p: UniversalPalette) => p.chromatic.blue.dark,
+      remoteBackground: (p: UniversalPalette) =>
+        darken(p.chromatic.blue.dark, 0.3),
       remoteForeground: (p: UniversalPalette) => {
-        const bg = p.chromatic.blue.dark
+        const bg = darken(p.chromatic.blue.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     progressBar: {
-      background: (p: UniversalPalette) => p.chromatic.blue.dark,
+      background: (p: UniversalPalette) => darken(p.chromatic.blue.dark, 0.3),
     },
   },
 }
@@ -866,7 +871,8 @@ export const miscConfig: UIColorConfig = {
     },
     chat: {
       requestBorder: (p: UniversalPalette) => p.background.base.light,
-      avatarBackground: (p: UniversalPalette) => p.chromatic.blue.dark,
+      avatarBackground: (p: UniversalPalette) =>
+        darken(p.chromatic.blue.dark, 0.3),
       avatarForeground: (p: UniversalPalette) => p.foreground.primary.light,
       slashCommandBackground: (p: UniversalPalette) => p.background.base.dark,
       slashCommandForeground: (p: UniversalPalette) => p.chromatic.blue.main,
