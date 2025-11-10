@@ -62,42 +62,45 @@ export const coreConfig: UIColorConfig = {
 export const buttonsConfig: UIColorConfig = {
   groups: {
     button: {
-      background: (p: UniversalPalette) => darken(p.chromatic.blue.dark, 0.3),
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.3),
       hoverBackground: (p: UniversalPalette) =>
-        mixLight(darken(p.chromatic.blue.dark, 0.3), p.chromatic.blue.main),
+        mixLight(darken(p.chromatic.indigo.dark, 0.3), p.chromatic.indigo.main),
       secondaryBackground: (p: UniversalPalette) =>
         darken(
-          mixLight(darken(p.chromatic.blue.dark, 0.3), p.chromatic.purple.dark),
+          mixLight(
+            darken(p.chromatic.indigo.dark, 0.3),
+            p.chromatic.purple.dark
+          ),
           0.4
         ),
       foreground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.blue.dark, 0.3)
+        const bg = darken(p.chromatic.indigo.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     extensionButton: {
       prominentBackground: (p: UniversalPalette) =>
-        darken(p.chromatic.blue.dark, 0.3),
+        darken(p.chromatic.indigo.dark, 0.3),
       prominentHoverBackground: (p: UniversalPalette) =>
-        mix(darken(p.chromatic.blue.dark, 0.3), p.chromatic.blue.main, 0.3),
+        mix(darken(p.chromatic.indigo.dark, 0.3), p.chromatic.indigo.main, 0.3),
       prominentForeground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.blue.dark, 0.3)
+        const bg = darken(p.chromatic.indigo.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     extensionBadge: {
       remoteBackground: (p: UniversalPalette) =>
-        darken(p.chromatic.blue.dark, 0.3),
+        darken(p.chromatic.indigo.dark, 0.3),
       remoteForeground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.blue.dark, 0.3)
+        const bg = darken(p.chromatic.indigo.dark, 0.3)
         const { fg } = ensureReadableForeground(bg)
         return fg
       },
     },
     progressBar: {
-      background: (p: UniversalPalette) => darken(p.chromatic.blue.dark, 0.3),
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.3),
     },
   },
 }
@@ -111,7 +114,7 @@ export const inputsConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.dark,
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       border: (p: UniversalPalette) =>
-        borderColor(p.background.base.main, p.chromatic.blue.main),
+        borderColor(p.background.base.main, p.chromatic.indigo.main),
       placeholderForeground: (p: UniversalPalette) =>
         alpha(p.foreground.primary.main, 0.54),
     },
@@ -140,7 +143,7 @@ export const checkboxesConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.main,
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       border: (p: UniversalPalette) =>
-        borderColor(p.background.base.main, p.chromatic.blue.main),
+        borderColor(p.background.base.main, p.chromatic.indigo.main),
     },
   },
 }
@@ -154,7 +157,7 @@ export const sidebarConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.dark,
       foreground: (p: UniversalPalette) => p.foreground.primary.dark,
       inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
-      activeBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+      activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
       activeBackground: (p: UniversalPalette) =>
         lighten(p.background.base.dark, 0.03),
       border: (p: UniversalPalette) => lightBackground(p.background.base.dark),
@@ -200,18 +203,18 @@ export const listsConfig: UIColorConfig = {
       deemphasizedForeground: (p: UniversalPalette) =>
         p.foreground.primary.main,
       activeSelectionBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.blue.main),
+        subtleHighlight(p.chromatic.indigo.main),
       activeSelectionForeground: (p: UniversalPalette) =>
         p.foreground.primary.light,
       inactiveSelectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.15),
+        alpha(p.chromatic.indigo.main, 0.15),
       inactiveSelectionForeground: (p: UniversalPalette) =>
         p.foreground.primary.light,
       focusBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       focusForeground: (p: UniversalPalette) => p.foreground.primary.light,
       hoverBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.1),
+        alpha(p.chromatic.indigo.main, 0.1),
       hoverForeground: (p: UniversalPalette) => p.foreground.primary.light,
       highlightForeground: (p: UniversalPalette) => p.foreground.primary.light,
       invalidItemForeground: (p: UniversalPalette) =>
@@ -221,21 +224,21 @@ export const listsConfig: UIColorConfig = {
     },
     listFilterWidget: {
       background: (p: UniversalPalette) => p.background.base.dark,
-      outline: (p: UniversalPalette) => p.chromatic.blue.dark,
+      outline: (p: UniversalPalette) => p.chromatic.indigo.dark,
       noMatchesOutline: (p: UniversalPalette) => p.chromatic.red.dark,
     },
     pickerGroup: {
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       border: (p: UniversalPalette) =>
-        borderColor(p.background.base.main, p.chromatic.blue.main),
+        borderColor(p.background.base.main, p.chromatic.indigo.main),
     },
     scrollbarSlider: {
       background: (p: UniversalPalette) =>
         alpha(p.foreground.primary.main, 0.04),
       hoverBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.blue.main),
+        subtleHighlight(p.chromatic.indigo.main),
       activeBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.blue.main),
+        mediumHighlight(p.chromatic.indigo.main),
     },
   },
 }
@@ -295,7 +298,7 @@ export const tabsConfig: UIColorConfig = {
 export const editorConfig: UIColorConfig = {
   rules: {
     'selection.background': (p: UniversalPalette) =>
-      subtleHighlight(p.chromatic.blue.main),
+      subtleHighlight(p.chromatic.indigo.main),
     'editorLink.activeForeground': (p: UniversalPalette) =>
       p.foreground.primary.light,
   },
@@ -307,25 +310,25 @@ export const editorConfig: UIColorConfig = {
       foldBackground: (p: UniversalPalette) =>
         alpha(p.background.base.dark, 0.2),
       selectionBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.blue.main),
+        subtleHighlight(p.chromatic.indigo.main),
       inactiveSelectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.15),
+        alpha(p.chromatic.indigo.main, 0.15),
       findMatchBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.2),
+        alpha(p.chromatic.indigo.dark, 0.2),
       findMatchBorder: (p: UniversalPalette) =>
         alpha(p.chromatic.yellow.main, 0.5),
       findMatchHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.2),
+        alpha(p.chromatic.indigo.dark, 0.2),
       findRangeHighlightBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.blue.main),
+        subtleHighlight(p.chromatic.indigo.main),
       rangeHighlightBackground: (p: UniversalPalette) =>
         subtleHighlight(p.chromatic.teal.main),
       wordHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       wordHighlightStrongBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.blue.main),
+        mediumHighlight(p.chromatic.indigo.main),
       selectionHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       lineHighlightBackground: (p: UniversalPalette) => p.background.base.light,
       stackFrameHighlightBackground: (p: UniversalPalette) =>
         alpha(p.chromatic.yellow.dark, 0.125),
@@ -336,7 +339,7 @@ export const editorConfig: UIColorConfig = {
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     editorStickyScrollHover: {
-      background: (p: UniversalPalette) => alpha(p.chromatic.blue.main, 0.1),
+      background: (p: UniversalPalette) => alpha(p.chromatic.indigo.main, 0.1),
     },
     editorIndentGuide: {
       background1: (p: UniversalPalette) =>
@@ -358,9 +361,9 @@ export const editorConfig: UIColorConfig = {
     },
     editorHoverWidget: {
       background: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.1),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.1),
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.25),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.25),
     },
     editorBracketMatch: {
       background: (p: UniversalPalette) => p.background.base.main,
@@ -396,11 +399,11 @@ export const editorConfig: UIColorConfig = {
       rangeHighlightForeground: (p: UniversalPalette) =>
         alpha(p.chromatic.teal.main, 0.3),
       selectionHighlightForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       wordHighlightForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.35),
+        alpha(p.chromatic.indigo.main, 0.35),
       wordHighlightStrongForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.45),
+        alpha(p.chromatic.indigo.main, 0.45),
       modifiedForeground: (p: UniversalPalette) =>
         mix(p.chromatic.neutral.main, p.background.base.main, 0.65),
       addedForeground: (p: UniversalPalette) =>
@@ -461,16 +464,16 @@ export const editorConfig: UIColorConfig = {
       background: (p: UniversalPalette) =>
         mix(p.background.base.main, p.chromatic.neutral.dark, 0.15),
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
       resizeBorder: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
     },
     editorSuggestWidget: {
       background: (p: UniversalPalette) => p.background.base.dark,
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
       selectedBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.blue.main),
+        mediumHighlight(p.chromatic.indigo.main),
       highlightForeground: (p: UniversalPalette) => p.chromatic.neutral.light,
     },
     editorCodeLens: {
@@ -487,7 +490,7 @@ export const editorConfig: UIColorConfig = {
     },
     peekView: {
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
     },
     peekViewEditor: {
       background: (p: UniversalPalette) => p.background.base.main,
@@ -507,7 +510,7 @@ export const editorConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.main,
       selectionForeground: (p: UniversalPalette) => p.foreground.primary.light,
       selectionBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.blue.main),
+        mediumHighlight(p.chromatic.indigo.main),
       lineForeground: (p: UniversalPalette) => p.foreground.primary.light,
       fileForeground: (p: UniversalPalette) => p.foreground.primary.main,
       matchHighlightBackground: (p: UniversalPalette) =>
@@ -529,12 +532,12 @@ export const panelsConfig: UIColorConfig = {
       background: (p: UniversalPalette) =>
         slightlyDarker(p.background.base.main),
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
     },
     panelTitle: {
       activeForeground: (p: UniversalPalette) => p.foreground.primary.dark,
       inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
-      activeBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+      activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
     panelInput: {
       border: (p: UniversalPalette) => lightBackground(p.background.base.main),
@@ -546,7 +549,7 @@ export const panelsConfig: UIColorConfig = {
       foreground: (p: UniversalPalette) => p.foreground.primary.dark,
       background: (p: UniversalPalette) => p.background.base.dark,
       border: (p: UniversalPalette) => lightBackground(p.background.base.dark),
-      focusBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+      focusBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
       noFolderBackground: (p: UniversalPalette) => p.background.base.dark,
       debuggingBackground: (p: UniversalPalette) =>
         mix(p.chromatic.purple.dark, p.background.base.dark, 0.5),
@@ -554,16 +557,16 @@ export const panelsConfig: UIColorConfig = {
     },
     statusBarItem: {
       activeBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       hoverBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.15),
+        alpha(p.chromatic.indigo.main, 0.15),
       prominentBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       prominentHoverBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.blue.main),
-      focusBorder: (p: UniversalPalette) => p.chromatic.blue.main,
+        mediumHighlight(p.chromatic.indigo.main),
+      focusBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
       remoteBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       remoteHoverForeground: (p: UniversalPalette) =>
         p.foreground.primary.bright,
     },
@@ -591,12 +594,12 @@ export const terminalConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.main,
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       selectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.3),
+        alpha(p.chromatic.indigo.dark, 0.3),
       ansiBlack: (p: UniversalPalette) => p.background.base.dark,
       ansiRed: (p: UniversalPalette) => p.chromatic.red.main,
       ansiGreen: (p: UniversalPalette) => p.chromatic.green.main,
       ansiYellow: (p: UniversalPalette) => p.chromatic.yellow.main,
-      ansiBlue: (p: UniversalPalette) => p.chromatic.blue.main,
+      ansiBlue: (p: UniversalPalette) => p.chromatic.indigo.main,
       ansiMagenta: (p: UniversalPalette) => p.chromatic.purple.light,
       ansiCyan: (p: UniversalPalette) => p.chromatic.cyan.light,
       ansiWhite: (p: UniversalPalette) => p.foreground.primary.main,
@@ -604,7 +607,7 @@ export const terminalConfig: UIColorConfig = {
       ansiBrightRed: (p: UniversalPalette) => p.chromatic.red.dark,
       ansiBrightGreen: (p: UniversalPalette) => p.chromatic.green.dark,
       ansiBrightYellow: (p: UniversalPalette) => p.chromatic.yellow.light,
-      ansiBrightBlue: (p: UniversalPalette) => p.chromatic.blue.light,
+      ansiBrightBlue: (p: UniversalPalette) => p.chromatic.indigo.light,
       ansiBrightMagenta: (p: UniversalPalette) => p.chromatic.purple.light,
       ansiBrightCyan: (p: UniversalPalette) => p.chromatic.cyan.light,
       ansiBrightWhite: (p: UniversalPalette) => p.foreground.primary.light,
@@ -627,7 +630,7 @@ export const gitConfig: UIColorConfig = {
   groups: {
     gitDecoration: {
       modifiedResourceForeground: (p: UniversalPalette) =>
-        p.chromatic.blue.light,
+        p.chromatic.indigo.light,
       ignoredResourceForeground: (p: UniversalPalette) =>
         p.foreground.primary.dark,
       deletedResourceForeground: (p: UniversalPalette) => p.chromatic.red.dark,
@@ -640,7 +643,7 @@ export const gitConfig: UIColorConfig = {
       stageDeletedResourceForeground: (p: UniversalPalette) =>
         p.chromatic.red.dark,
       stageModifiedResourceForeground: (p: UniversalPalette) =>
-        p.chromatic.blue.light,
+        p.chromatic.indigo.light,
     },
   },
 }
@@ -696,9 +699,9 @@ export const diffConfig: UIColorConfig = {
  */
 export const miscConfig: UIColorConfig = {
   rules: {
-    'textLink.foreground': (p: UniversalPalette) => p.chromatic.blue.light,
+    'textLink.foreground': (p: UniversalPalette) => p.chromatic.indigo.light,
     'textLink.activeForeground': (p: UniversalPalette) =>
-      lighten(p.chromatic.blue.light, 0.2),
+      lighten(p.chromatic.indigo.light, 0.2),
     'textPreformat.foreground': (p: UniversalPalette) =>
       p.foreground.primary.main,
     'textSeparator.foreground': (p: UniversalPalette) =>
@@ -734,7 +737,7 @@ export const miscConfig: UIColorConfig = {
       stateLabelForeground: (p: UniversalPalette) => p.foreground.primary.main,
       stateLabelBackground: (p: UniversalPalette) => p.background.base.dark,
       valueChangedHighlight: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.67),
+        alpha(p.chromatic.indigo.dark, 0.67),
     },
     debugTokenExpression: {
       name: (p: UniversalPalette) => p.chromatic.cyan.light,
@@ -756,16 +759,16 @@ export const miscConfig: UIColorConfig = {
       cellEditorBackground: (p: UniversalPalette) => p.background.base.main,
       cellBorderColor: (p: UniversalPalette) => p.background.base.dark,
       focusedCellBorder: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
       cellStatusBarItemHoverBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.15),
+        alpha(p.chromatic.indigo.main, 0.15),
     },
     charts: {
       red: (p: UniversalPalette) => p.chromatic.red.main,
-      blue: (p: UniversalPalette) => p.chromatic.blue.main,
+      indigo: (p: UniversalPalette) => p.chromatic.indigo.main,
       yellow: (p: UniversalPalette) => p.chromatic.yellow.main,
       orange: (p: UniversalPalette) => p.chromatic.orange.main,
-      green: (p: UniversalPalette) => p.chromatic.blue.main,
+      green: (p: UniversalPalette) => p.chromatic.indigo.main,
       purple: (p: UniversalPalette) => p.chromatic.purple.dark,
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       lines: (p: UniversalPalette) => p.background.base.main,
@@ -773,7 +776,7 @@ export const miscConfig: UIColorConfig = {
     scmGraph: {
       historyItemHoverLabelForeground: (p: UniversalPalette) =>
         p.background.base.dark,
-      foreground1: (p: UniversalPalette) => p.chromatic.blue.main,
+      foreground1: (p: UniversalPalette) => p.chromatic.indigo.main,
       foreground2: (p: UniversalPalette) => p.chromatic.purple.main,
       foreground3: (p: UniversalPalette) => p.chromatic.cyan.main,
       foreground4: (p: UniversalPalette) => p.chromatic.pink.main,
@@ -782,7 +785,7 @@ export const miscConfig: UIColorConfig = {
         p.chromatic.green.dark,
       historyItemHoverDeletionsForeground: (p: UniversalPalette) =>
         p.chromatic.red.main,
-      historyItemRefColor: (p: UniversalPalette) => p.chromatic.blue.main,
+      historyItemRefColor: (p: UniversalPalette) => p.chromatic.indigo.main,
       historyItemRemoteRefColor: (p: UniversalPalette) =>
         p.chromatic.purple.main,
       historyItemBaseRefColor: (p: UniversalPalette) => p.chromatic.cyan.main,
@@ -795,9 +798,9 @@ export const miscConfig: UIColorConfig = {
       currentContentBackground: (p: UniversalPalette) =>
         alpha(p.chromatic.teal.dark, 0.27),
       incomingHeaderBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.67),
+        alpha(p.chromatic.indigo.dark, 0.67),
       incomingContentBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.dark, 0.27),
+        alpha(p.chromatic.indigo.dark, 0.27),
     },
     mergeEditor: {
       'change.background': (p: UniversalPalette) =>
@@ -821,7 +824,7 @@ export const miscConfig: UIColorConfig = {
       trailingLineForegroundColor: (p: UniversalPalette) =>
         p.chromatic.neutral.dark,
       gutterUncommittedForegroundColor: (p: UniversalPalette) =>
-        p.chromatic.blue.main,
+        p.chromatic.indigo.main,
       gutterForegroundColor: (p: UniversalPalette) => p.foreground.primary.main,
       gutterBackgroundColor: (p: UniversalPalette) => p.background.base.main,
     },
@@ -832,7 +835,7 @@ export const miscConfig: UIColorConfig = {
       background: (p: UniversalPalette) => p.background.base.main,
     },
     notificationLink: {
-      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
     },
     notificationsErrorIcon: {
       foreground: (p: UniversalPalette) => p.chromatic.red.dark,
@@ -846,7 +849,7 @@ export const miscConfig: UIColorConfig = {
     menubar: {
       selectionForeground: (p: UniversalPalette) => p.foreground.primary.light,
       selectionBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.blue.main),
+        subtleHighlight(p.chromatic.indigo.main),
       selectionBorder: (p: UniversalPalette) =>
         lighten(p.background.base.main, 0.04),
     },
@@ -856,19 +859,19 @@ export const miscConfig: UIColorConfig = {
       selectionForeground: (p: UniversalPalette) =>
         lighten(p.foreground.primary.light, 0.4),
       selectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.blue.main, 0.25),
+        alpha(p.chromatic.indigo.main, 0.25),
       separatorBackground: (p: UniversalPalette) =>
         lighten(p.background.base.main, 0.06),
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.blue.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
     },
     chat: {
       requestBorder: (p: UniversalPalette) => p.background.base.light,
       avatarBackground: (p: UniversalPalette) =>
-        darken(p.chromatic.blue.dark, 0.3),
+        darken(p.chromatic.indigo.dark, 0.3),
       avatarForeground: (p: UniversalPalette) => p.foreground.primary.light,
       slashCommandBackground: (p: UniversalPalette) => p.background.base.dark,
-      slashCommandForeground: (p: UniversalPalette) => p.chromatic.blue.main,
+      slashCommandForeground: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
     inlineChat: {
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
