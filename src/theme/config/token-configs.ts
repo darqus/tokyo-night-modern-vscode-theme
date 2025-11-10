@@ -19,7 +19,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'string.quoted.docstring.multi.python constant.character.escape',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.disabled.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.slate.main,
       fontStyle: '',
     },
   },
@@ -58,7 +58,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'log.date',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.slate.main,
     },
   },
   {
@@ -70,7 +70,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'comment.block.documentation entity.name.type.instance',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.stone.main,
     },
   },
 ]
@@ -123,7 +123,7 @@ export const basicTokens: TokenColorConfig[] = [
     name: 'Regular Expressions',
     scope: ['string.regexp', 'punctuation.definition.group.regexp'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // Оранжевый для регулярных выражений
+      foreground: (p: UniversalPalette) => p.chromatic.orange.light, // Более яркий оранжевый для регулярных выражений
     },
   },
   {
@@ -145,7 +145,7 @@ export const basicTokens: TokenColorConfig[] = [
       'constant.other.color.rgb-value.hex punctuation.definition.constant',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.light, // Яркий cyan для цветовых литералов
     },
   },
   {
@@ -379,7 +379,7 @@ export const codeTokens: TokenColorConfig[] = [
       'meta.embedded.inline.phpx constant.other.php',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенная контрастность
+      foreground: (p: UniversalPalette) => p.chromatic.sky.light, // Более контрастный голубой для переменных
     },
   },
   {
@@ -547,7 +547,7 @@ export const codeTokens: TokenColorConfig[] = [
     name: 'Class Name',
     scope: 'entity.name',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.light,
+      foreground: (p: UniversalPalette) => p.foreground.primary.main, // Основной цвет для имен классов
     },
   },
   {
@@ -778,7 +778,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'HTML text',
     scope: ['meta.tag JSXNested', 'meta.jsx.children', 'text.html', 'text.log'],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main, // Вторичный цвет для HTML текста
     },
   },
   {
@@ -839,7 +839,7 @@ export const markdownTokens: TokenColorConfig[] = [
     name: 'Markdown - Plain',
     scope: ['meta.embedded.block'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.light,
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main, // Вторичный цвет для обычного текста
     },
   },
   {
@@ -854,7 +854,7 @@ export const markdownTokens: TokenColorConfig[] = [
     scope:
       'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.slate.dark, // Более темный для пунктуации
     },
   },
   {
@@ -908,7 +908,7 @@ export const markdownTokens: TokenColorConfig[] = [
       'heading.5.markdown punctuation.definition.heading.markdown',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Нейтральный для H5
       fontStyle: 'bold',
     },
   },
@@ -954,14 +954,14 @@ export const markdownTokens: TokenColorConfig[] = [
     name: 'Markdown - Blockquote',
     scope: 'markup.quote punctuation.definition.blockquote.markdown',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.slate.dark, // Более темный для цитат
     },
   },
   {
     name: 'Markdown - Separator',
     scope: 'meta.separator',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.stone.dark, // Каменный для разделителей
       fontStyle: 'bold',
     },
   },
@@ -1200,21 +1200,21 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'Token - Warn',
     scope: 'token.warn-token',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.light,
+      foreground: (p: UniversalPalette) => p.semantic.warning.main, // Семантический warning цвет
     },
   },
   {
     name: 'Token - Error',
     scope: 'token.error-token',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+      foreground: (p: UniversalPalette) => p.semantic.error.main, // Семантический error цвет
     },
   },
   {
     name: 'Token - Debug',
     scope: 'token.debug-token',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.purple.dark,
+      foreground: (p: UniversalPalette) => p.semantic.info.main, // Семантический info цвет для debug
     },
   },
   {

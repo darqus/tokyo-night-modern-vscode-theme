@@ -7,16 +7,16 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UniversalPalette) => token(p.chromatic.blue.main),
+    variable: (p: UniversalPalette) => token(p.chromatic.sky.light), // Более контрастный для переменных
     'variable.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.blue.main),
+      italicToken(p.chromatic.sky.light),
     'variable.declaration': (p: UniversalPalette) =>
       token(p.chromatic.purple.main),
-    parameter: (p: UniversalPalette) => token(p.chromatic.amber.main),
+    parameter: (p: UniversalPalette) => token(p.chromatic.yellow.main), // Желтый для параметров
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.amber.main),
+      italicToken(p.chromatic.yellow.main),
     'parameter.declaration': (p: UniversalPalette) =>
-      token(p.chromatic.orange.main),
+      token(p.chromatic.amber.main),
     property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
     'property.readonly': (p: UniversalPalette) =>
       italicToken(p.chromatic.cyan.main),
@@ -106,9 +106,10 @@ export const literalsConfig: SemanticTokenConfig = {
   rules: {
     string: (p: UniversalPalette) => token(p.chromatic.green.main),
     number: (p: UniversalPalette) => token(p.chromatic.orange.main),
-    boolean: (p: UniversalPalette) => token(p.chromatic.red.main),
-    'string.escape': (p: UniversalPalette) => token(p.chromatic.yellow.main),
-    'string.template': (p: UniversalPalette) => token(p.chromatic.green.main),
+    boolean: (p: UniversalPalette) => token(p.chromatic.pink.main), // Розовый для булевых значений
+    'string.escape': (p: UniversalPalette) =>
+      boldToken(p.chromatic.yellow.main), // Жирный для escape
+    'string.template': (p: UniversalPalette) => token(p.chromatic.lime.main), // Лайм для template strings
   },
 }
 

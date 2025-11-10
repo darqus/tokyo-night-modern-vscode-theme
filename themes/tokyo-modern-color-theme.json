@@ -378,7 +378,7 @@
         "string.quoted.docstring.multi.python constant.character.escape"
       ],
       "settings": {
-        "foreground": "#525a82"
+        "foreground": "#7c87a4"
       }
     },
     {
@@ -416,7 +416,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#9eb2ba"
+        "foreground": "#7c87a4"
       }
     },
     {
@@ -428,7 +428,7 @@
         "comment.block.documentation entity.name.type.instance"
       ],
       "settings": {
-        "foreground": "#9eb2ba"
+        "foreground": "#9aa5ce"
       }
     },
     {
@@ -475,7 +475,7 @@
       "name": "Regular Expressions",
       "scope": ["string.regexp", "punctuation.definition.group.regexp"],
       "settings": {
-        "foreground": "#ff86c4"
+        "foreground": "#ff92ca"
       }
     },
     {
@@ -497,7 +497,7 @@
         "constant.other.color.rgb-value.hex punctuation.definition.constant"
       ],
       "settings": {
-        "foreground": "#c3cdf6"
+        "foreground": "#5bcddc"
       }
     },
     {
@@ -725,7 +725,7 @@
         "meta.embedded.inline.phpx constant.other.php"
       ],
       "settings": {
-        "foreground": "#c5dfe9"
+        "foreground": "#61c7ff"
       }
     },
     {
@@ -890,7 +890,7 @@
       "name": "Class Name",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#cbe2eb"
+        "foreground": "#c0caf5"
       }
     },
     {
@@ -1114,7 +1114,7 @@
         "text.log"
       ],
       "settings": {
-        "foreground": "#c3cdf6"
+        "foreground": "#a9b1d6"
       }
     },
     {
@@ -1169,7 +1169,7 @@
       "name": "Markdown - Plain",
       "scope": ["meta.embedded.block"],
       "settings": {
-        "foreground": "#cbe2eb"
+        "foreground": "#a9b1d6"
       }
     },
     {
@@ -1183,7 +1183,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#9eb2ba"
+        "foreground": "#636c83"
       }
     },
     {
@@ -1237,7 +1237,7 @@
         "heading.5.markdown punctuation.definition.heading.markdown"
       ],
       "settings": {
-        "foreground": "#c3cdf6",
+        "foreground": "#c5dfe9",
         "fontStyle": "bold"
       }
     },
@@ -1283,14 +1283,14 @@
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#9eb2ba"
+        "foreground": "#636c83"
       }
     },
     {
       "name": "Markdown - Separator",
       "scope": "meta.separator",
       "settings": {
-        "foreground": "#9eb2ba",
+        "foreground": "#7b84a5",
         "fontStyle": "bold"
       }
     },
@@ -1522,7 +1522,7 @@
       "name": "Token - Warn",
       "scope": "token.warn-token",
       "settings": {
-        "foreground": "#dac9b4"
+        "foreground": "#ffc66d"
       }
     },
     {
@@ -1536,7 +1536,7 @@
       "name": "Token - Debug",
       "scope": "token.debug-token",
       "settings": {
-        "foreground": "#8968c6"
+        "foreground": "#5a9ffa"
       }
     },
     {
@@ -1563,24 +1563,24 @@
   ],
   "semanticTokenColors": {
     "variable": {
-      "foreground": "#5a9ffa"
+      "foreground": "#61c7ff"
     },
     "variable.readonly": {
-      "foreground": "#5a9ffa",
+      "foreground": "#61c7ff",
       "fontStyle": "italic"
     },
     "variable.declaration": {
       "foreground": "#ab82f7"
     },
     "parameter": {
-      "foreground": "#ffc66d"
+      "foreground": "#d6c3ac"
     },
     "parameter.readonly": {
-      "foreground": "#ffc66d",
+      "foreground": "#d6c3ac",
       "fontStyle": "italic"
     },
     "parameter.declaration": {
-      "foreground": "#ff86c4"
+      "foreground": "#ffc66d"
     },
     "property": {
       "foreground": "#49c7d8"
@@ -1647,13 +1647,14 @@
       "foreground": "#ff86c4"
     },
     "boolean": {
-      "foreground": "#ff6b6b"
+      "foreground": "#e07af5"
     },
     "string.escape": {
-      "foreground": "#d6c3ac"
+      "foreground": "#d6c3ac",
+      "fontStyle": "bold"
     },
     "string.template": {
-      "foreground": "#98c379"
+      "foreground": "#80d151"
     },
     "class.component": {
       "foreground": "#57dac9",
