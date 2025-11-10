@@ -1177,9 +1177,101 @@ export const modernTokens: TokenColorConfig[] = [
     scope: [
       'tag.decorator.js entity.name.tag.js',
       'tag.decorator.js punctuation.definition.tag.js',
+      'meta.decorator punctuation.decorator.ts',
+      'meta.decorator.ts entity.name.function.ts',
+      'meta.decorator.ts punctuation.definition',
+      'meta.decorator.ts punctuation.accessor',
+      'meta.decorator.ts variable.other.readwrite',
+      'meta.decorator.ts meta.function-call',
+      'meta.decorator.ts meta.function-call entity.name.function',
+      'meta.class.ts meta.decorator.ts punctuation.decorator.ts',
+      'meta.class.ts meta.decorator.ts entity.name.function.ts',
+      'meta.class.ts meta.decorator.ts variable.other.readwrite.ts',
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'TypeScript Generics',
+    scope: [
+      'meta.type.parameters.ts',
+      'meta.type.parameters.tsx',
+      'meta.generic-type-argument',
+      'meta.type.annotation punctuation.definition.type-parameters',
+      'punctuation.definition.typeparameters',
+      'punctuation.definition.type-parameters',
+      'punctuation.definition.type-parameters.begin',
+      'punctuation.definition.type-parameters.end',
+      'meta.type.parameters.ts entity.name.type',
+      'meta.type.parameters.tsx entity.name.type',
+      'meta.type.parameters.ts support.type',
+      'meta.type.parameters.tsx support.type',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+    },
+  },
+  {
+    name: 'TypeScript Generic Keywords',
+    scope: [
+      'keyword.other.extends.ts',
+      'keyword.other.keyof.ts',
+      'keyword.other.infer.ts',
+      'keyword.other.conditional.type.ts',
+      'keyword.other.mapped.type.ts',
+      'storage.modifier.in.ts',
+      'storage.modifier.out.ts',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'JSX/TSX Tags',
+    scope: [
+      'support.class.component.tsx',
+      'entity.name.tag.tsx',
+      'entity.name.tag.jsx',
+      'meta.jsx entity.name.tag',
+      'meta.jsx.tsx entity.name.tag',
+      'meta.tag.component.tsx',
+      'meta.tag.component.jsx',
+      'meta.element.jsx entity.name.tag',
+      'meta.element.tsx entity.name.tag',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.light,
+    },
+  },
+  {
+    name: 'JSX/TSX Attributes',
+    scope: [
+      'entity.other.attribute-name.jsx',
+      'entity.other.attribute-name.tsx',
+      'meta.jsx.attributes',
+      'meta.tsx.attributes',
+      'meta.tag.attributes.jsx',
+      'meta.tag.attributes.tsx',
+      'meta.element.jsx entity.other.attribute-name',
+      'meta.element.tsx entity.other.attribute-name',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'JSX/TSX Children',
+    scope: [
+      'meta.jsx.children',
+      'meta.tsx.children',
+      'meta.element.jsx meta.embedded.expression',
+      'meta.element.tsx meta.embedded.expression',
+      'meta.element.jsx jsx.children',
+      'meta.element.tsx tsx.children',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main,
     },
   },
   {
@@ -1258,6 +1350,8 @@ export const modernTokens: TokenColorConfig[] = [
       'support.function.macro.rust',
       'variable.other.metavariable.name.rust',
       'punctuation.definition.macro.rust',
+      'keyword.other.rust.macro',
+      'meta.macro.rust',
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.orange.main,
@@ -1274,7 +1368,7 @@ export const modernTokens: TokenColorConfig[] = [
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.light,
     },
-  },
+ },
   {
     name: 'Rust Type Parameter',
     scope: ['meta.type_params.rust', 'entity.name.type.parameter.rust'],
@@ -1292,6 +1386,34 @@ export const modernTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+  {
+    name: 'Rust Pattern Matching Keyword',
+    scope: [
+      'keyword.control.flow.rust',
+      'keyword.match.rust',
+      'keyword.other.match.rust',
+      'keyword.control.conditional.if-let.rust',
+      'keyword.control.conditional.while-let.rust',
+      'keyword.control.conditional.for-let.rust',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Rust Derive',
+    scope: [
+      'meta.annotation.rust',
+      'meta.attribute.rust',
+      'entity.name.function.attribute.rust',
+      'keyword.other.rust.attribute',
+      'keyword.other.rust.derive',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main,
+      fontStyle: 'italic',
     },
   },
   // Go-specific tokens

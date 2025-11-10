@@ -323,7 +323,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -361,7 +361,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "log.date",
     ],
     "settings": {
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -721,14 +721,14 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#87bcd2",
+      "foreground": "#86c2d8",
     },
   },
   {
     "name": "Object Property (alternative)",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#87bcd2",
+      "foreground": "#86c2d8",
     },
   },
   {
@@ -991,7 +991,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "SCSS Include Mixin Argument",
     "scope": "meta.property-list meta.at-rule.include",
     "settings": {
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -1089,7 +1089,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -1100,7 +1100,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -1111,7 +1111,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold italic",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -1213,7 +1213,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -1224,7 +1224,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#88809b",
+      "foreground": "#868ba5",
     },
   },
   {
@@ -1473,7 +1473,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "name": "Regular Expressions - Backslash",
     "scope": "constant.character.escape.backslash",
     "settings": {
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -1488,9 +1488,101 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     "scope": [
       "tag.decorator.js entity.name.tag.js",
       "tag.decorator.js punctuation.definition.tag.js",
+      "meta.decorator punctuation.decorator.ts",
+      "meta.decorator.ts entity.name.function.ts",
+      "meta.decorator.ts punctuation.definition",
+      "meta.decorator.ts punctuation.accessor",
+      "meta.decorator.ts variable.other.readwrite",
+      "meta.decorator.ts meta.function-call",
+      "meta.decorator.ts meta.function-call entity.name.function",
+      "meta.class.ts meta.decorator.ts punctuation.decorator.ts",
+      "meta.class.ts meta.decorator.ts entity.name.function.ts",
+      "meta.class.ts meta.decorator.ts variable.other.readwrite.ts",
     ],
     "settings": {
       "foreground": "#309ffa",
+    },
+  },
+  {
+    "name": "TypeScript Generics",
+    "scope": [
+      "meta.type.parameters.ts",
+      "meta.type.parameters.tsx",
+      "meta.generic-type-argument",
+      "meta.type.annotation punctuation.definition.type-parameters",
+      "punctuation.definition.typeparameters",
+      "punctuation.definition.type-parameters",
+      "punctuation.definition.type-parameters.begin",
+      "punctuation.definition.type-parameters.end",
+      "meta.type.parameters.ts entity.name.type",
+      "meta.type.parameters.tsx entity.name.type",
+      "meta.type.parameters.ts support.type",
+      "meta.type.parameters.tsx support.type",
+    ],
+    "settings": {
+      "foreground": "#d6c3ac",
+    },
+  },
+  {
+    "name": "TypeScript Generic Keywords",
+    "scope": [
+      "keyword.other.extends.ts",
+      "keyword.other.keyof.ts",
+      "keyword.other.infer.ts",
+      "keyword.other.conditional.type.ts",
+      "keyword.other.mapped.type.ts",
+      "storage.modifier.in.ts",
+      "storage.modifier.out.ts",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "JSX/TSX Tags",
+    "scope": [
+      "support.class.component.tsx",
+      "entity.name.tag.tsx",
+      "entity.name.tag.jsx",
+      "meta.jsx entity.name.tag",
+      "meta.jsx.tsx entity.name.tag",
+      "meta.tag.component.tsx",
+      "meta.tag.component.jsx",
+      "meta.element.jsx entity.name.tag",
+      "meta.element.tsx entity.name.tag",
+    ],
+    "settings": {
+      "foreground": "#ff7a7a",
+    },
+  },
+  {
+    "name": "JSX/TSX Attributes",
+    "scope": [
+      "entity.other.attribute-name.jsx",
+      "entity.other.attribute-name.tsx",
+      "meta.jsx.attributes",
+      "meta.tsx.attributes",
+      "meta.tag.attributes.jsx",
+      "meta.tag.attributes.tsx",
+      "meta.element.jsx entity.other.attribute-name",
+      "meta.element.tsx entity.other.attribute-name",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "JSX/TSX Children",
+    "scope": [
+      "meta.jsx.children",
+      "meta.tsx.children",
+      "meta.element.jsx meta.embedded.expression",
+      "meta.element.tsx meta.embedded.expression",
+      "meta.element.jsx jsx.children",
+      "meta.element.tsx tsx.children",
+    ],
+    "settings": {
+      "foreground": "#a9b1d6",
     },
   },
   {
@@ -1570,6 +1662,8 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "support.function.macro.rust",
       "variable.other.metavariable.name.rust",
       "punctuation.definition.macro.rust",
+      "keyword.other.rust.macro",
+      "meta.macro.rust",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -1607,6 +1701,34 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     ],
     "settings": {
       "foreground": "#ff6b6b",
+    },
+  },
+  {
+    "name": "Rust Pattern Matching Keyword",
+    "scope": [
+      "keyword.control.flow.rust",
+      "keyword.match.rust",
+      "keyword.other.match.rust",
+      "keyword.control.conditional.if-let.rust",
+      "keyword.control.conditional.while-let.rust",
+      "keyword.control.conditional.for-let.rust",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "Rust Derive",
+    "scope": [
+      "meta.annotation.rust",
+      "meta.attribute.rust",
+      "entity.name.function.attribute.rust",
+      "keyword.other.rust.attribute",
+      "keyword.other.rust.derive",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#ffc66d",
     },
   },
   {
@@ -1829,7 +1951,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorCodeLens.foreground": "#b6c0e9",
   "editorCursor.foreground": "#c3cdf6",
   "editorError.foreground": "#ff6b6b",
-  "editorGhostText.foreground": "#88809b",
+  "editorGhostText.foreground": "#868ba5",
   "editorGroup.border": "#333144",
   "editorGroup.dropBackground": "#333144",
   "editorGroupHeader.border": "#1d1b2f",
@@ -1838,18 +1960,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorGroupHeader.tabsBorder": "#141325",
   "editorGutter.addedBackground": "#253d4b",
   "editorGutter.deletedBackground": "#5d303e",
-  "editorGutter.modifiedBackground": "#4b4660",
+  "editorGutter.modifiedBackground": "#4a4b64",
   "editorHint.foreground": "#49c7d8",
   "editorHoverWidget.background": "#1a2440",
   "editorHoverWidget.border": "#1e385f",
-  "editorIndentGuide.activeBackground1": "#3a364d",
+  "editorIndentGuide.activeBackground1": "#393950",
   "editorIndentGuide.background1": "#242236",
   "editorInfo.foreground": "#49c7d8",
-  "editorInlayHint.foreground": "#aaa0c2",
+  "editorInlayHint.foreground": "#a8aece",
   "editorLightBulb.foreground": "#d6c3ac",
   "editorLightBulbAutoFix.foreground": "#d6c3ac",
-  "editorLineNumber.activeForeground": "#827b95",
-  "editorLineNumber.foreground": "#3f3b52",
+  "editorLineNumber.activeForeground": "#81859f",
+  "editorLineNumber.foreground": "#3f3f56",
   "editorLink.activeForeground": "#c3cdf6",
   "editorMarkerNavigation.background": "#18162b",
   "editorOverviewRuler.addedForeground": "#253d4b",
@@ -1857,9 +1979,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorOverviewRuler.bracketMatchForeground": "#141325",
   "editorOverviewRuler.deletedForeground": "#5d303e",
   "editorOverviewRuler.errorForeground": "#ff6b6b",
-  "editorOverviewRuler.findMatchForeground": "#b3aac866",
+  "editorOverviewRuler.findMatchForeground": "#b1b6d366",
   "editorOverviewRuler.infoForeground": "#6bd3b1",
-  "editorOverviewRuler.modifiedForeground": "#4b4660",
+  "editorOverviewRuler.modifiedForeground": "#4a4b64",
   "editorOverviewRuler.rangeHighlightForeground": "#57dac94d",
   "editorOverviewRuler.selectionHighlightForeground": "#309ffa40",
   "editorOverviewRuler.warningForeground": "#d6c3ac",
@@ -1870,11 +1992,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "editorStickyScrollHover.background": "#309ffa1a",
   "editorSuggestWidget.background": "#141325",
   "editorSuggestWidget.border": "#1d3154",
-  "editorSuggestWidget.highlightForeground": "#b3aac8",
+  "editorSuggestWidget.highlightForeground": "#b1b6d3",
   "editorSuggestWidget.selectedBackground": "#309ffa4d",
   "editorWarning.foreground": "#d6c3ac",
   "editorWhitespace.foreground": "#1485d0",
-  "editorWidget.background": "#29263c",
+  "editorWidget.background": "#29283d",
   "editorWidget.border": "#1d3154",
   "editorWidget.foreground": "#c3cdf6",
   "editorWidget.resizeBorder": "#1d3154",
@@ -1898,7 +2020,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "gitlens.gutterBackgroundColor": "#18162b",
   "gitlens.gutterForegroundColor": "#c0caf5",
   "gitlens.gutterUncommittedForegroundColor": "#309ffa",
-  "gitlens.trailingLineForegroundColor": "#88809b",
+  "gitlens.trailingLineForegroundColor": "#868ba5",
   "icon.foreground": "#c3cdf6",
   "inlineChat.foreground": "#c3cdf6",
   "inlineChatDiff.inserted": "#7a9c6140",
@@ -1908,7 +2030,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "input.border": "#1d3154",
   "input.foreground": "#c3cdf6",
   "input.placeholderForeground": "#c0caf58a",
-  "inputOption.activeBackground": "#88809b45",
+  "inputOption.activeBackground": "#868ba545",
   "inputOption.activeForeground": "#c3cdf6",
   "list.activeSelectionBackground": "#309ffa33",
   "list.activeSelectionForeground": "#c3cdf6",
@@ -1950,7 +2072,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "mergeEditor.conflict.unhandledUnfocused.border": "#d6c3ac87",
   "minimapGutter.addedBackground": "#284753",
   "minimapGutter.deletedBackground": "#743845",
-  "minimapGutter.modifiedBackground": "#524d67",
+  "minimapGutter.modifiedBackground": "#52536c",
   "multiDiffEditor.border": "#2f2d40",
   "multiDiffEditor.headerBackground": "#2f2d40",
   "notebook.cellBorderColor": "#141325",
@@ -1973,11 +2095,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "panelTitle.inactiveForeground": "#525a82",
   "peekView.border": "#1d3154",
   "peekViewEditor.background": "#18162b",
-  "peekViewEditor.matchHighlightBackground": "#b3aac866",
+  "peekViewEditor.matchHighlightBackground": "#b1b6d366",
   "peekViewResult.background": "#18162b",
   "peekViewResult.fileForeground": "#c0caf5",
   "peekViewResult.lineForeground": "#c3cdf6",
-  "peekViewResult.matchHighlightBackground": "#b3aac866",
+  "peekViewResult.matchHighlightBackground": "#b1b6d366",
   "peekViewResult.selectionBackground": "#309ffa4d",
   "peekViewResult.selectionForeground": "#c3cdf6",
   "peekViewTitle.background": "#141325",
@@ -2005,7 +2127,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "scrollbarSlider.background": "#c0caf50a",
   "scrollbarSlider.hoverBackground": "#309ffa33",
   "selection.background": "#309ffa33",
-  "settings.headerForeground": "#b3aac8",
+  "settings.headerForeground": "#b1b6d3",
   "sideBar.background": "#191829",
   "sideBar.border": "#1d1c2e",
   "sideBar.dropBackground": "#2f2d40",
@@ -2046,7 +2168,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
   "tab.unfocusedInactiveModifiedBorder": "#525a82",
   "terminal.ansiBlack": "#141325",
   "terminal.ansiBlue": "#309ffa",
-  "terminal.ansiBrightBlack": "#aaa0c2",
+  "terminal.ansiBrightBlack": "#a8aece",
   "terminal.ansiBrightBlue": "#45a9fb",
   "terminal.ansiBrightCyan": "#5bcddc",
   "terminal.ansiBrightGreen": "#7a9c61",
@@ -2143,6 +2265,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "jsx.attribute": {
     "foreground": "#ab82f7",
   },
+  "jsx.children": {
+    "foreground": "#a9b1d6",
+  },
+  "jsx.prop": {
+    "foreground": "#ab82f7",
+  },
   "jsx.tag": {
     "foreground": "#ff6b6b",
   },
@@ -2164,6 +2292,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "keyword.generator": {
     "fontStyle": "italic",
     "foreground": "#e07af5",
+  },
+  "keyword.generic": {
+    "foreground": "#ab82f7",
   },
   "keyword.new": {
     "fontStyle": "bold",
@@ -2228,6 +2359,24 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "readonly": {
     "fontStyle": "italic",
     "foreground": "#49c7d8",
+  },
+  "rust.derive": {
+    "fontStyle": "italic",
+    "foreground": "#ffc66d",
+  },
+  "rust.lifetime": {
+    "fontStyle": "italic",
+    "foreground": "#ab82f7",
+  },
+  "rust.macro": {
+    "fontStyle": "bold",
+    "foreground": "#ff9486",
+  },
+  "rust.pattern.iflet": {
+    "foreground": "#ab82f7",
+  },
+  "rust.pattern.match": {
+    "foreground": "#ab82f7",
   },
   "static": {
     "fontStyle": "italic",
@@ -2410,7 +2559,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorCodeLens.foreground": "#b6c0e9",
     "editorCursor.foreground": "#c3cdf6",
     "editorError.foreground": "#ff6b6b",
-    "editorGhostText.foreground": "#88809b",
+    "editorGhostText.foreground": "#868ba5",
     "editorGroup.border": "#333144",
     "editorGroup.dropBackground": "#333144",
     "editorGroupHeader.border": "#1d1b2f",
@@ -2419,18 +2568,18 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorGroupHeader.tabsBorder": "#141325",
     "editorGutter.addedBackground": "#253d4b",
     "editorGutter.deletedBackground": "#5d303e",
-    "editorGutter.modifiedBackground": "#4b4660",
+    "editorGutter.modifiedBackground": "#4a4b64",
     "editorHint.foreground": "#49c7d8",
     "editorHoverWidget.background": "#1a2440",
     "editorHoverWidget.border": "#1e385f",
-    "editorIndentGuide.activeBackground1": "#3a364d",
+    "editorIndentGuide.activeBackground1": "#393950",
     "editorIndentGuide.background1": "#242236",
     "editorInfo.foreground": "#49c7d8",
-    "editorInlayHint.foreground": "#aaa0c2",
+    "editorInlayHint.foreground": "#a8aece",
     "editorLightBulb.foreground": "#d6c3ac",
     "editorLightBulbAutoFix.foreground": "#d6c3ac",
-    "editorLineNumber.activeForeground": "#827b95",
-    "editorLineNumber.foreground": "#3f3b52",
+    "editorLineNumber.activeForeground": "#81859f",
+    "editorLineNumber.foreground": "#3f3f56",
     "editorLink.activeForeground": "#c3cdf6",
     "editorMarkerNavigation.background": "#18162b",
     "editorOverviewRuler.addedForeground": "#253d4b",
@@ -2438,9 +2587,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorOverviewRuler.bracketMatchForeground": "#141325",
     "editorOverviewRuler.deletedForeground": "#5d303e",
     "editorOverviewRuler.errorForeground": "#ff6b6b",
-    "editorOverviewRuler.findMatchForeground": "#b3aac866",
+    "editorOverviewRuler.findMatchForeground": "#b1b6d366",
     "editorOverviewRuler.infoForeground": "#6bd3b1",
-    "editorOverviewRuler.modifiedForeground": "#4b4660",
+    "editorOverviewRuler.modifiedForeground": "#4a4b64",
     "editorOverviewRuler.rangeHighlightForeground": "#57dac94d",
     "editorOverviewRuler.selectionHighlightForeground": "#309ffa40",
     "editorOverviewRuler.warningForeground": "#d6c3ac",
@@ -2451,11 +2600,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "editorStickyScrollHover.background": "#309ffa1a",
     "editorSuggestWidget.background": "#141325",
     "editorSuggestWidget.border": "#1d3154",
-    "editorSuggestWidget.highlightForeground": "#b3aac8",
+    "editorSuggestWidget.highlightForeground": "#b1b6d3",
     "editorSuggestWidget.selectedBackground": "#309ffa4d",
     "editorWarning.foreground": "#d6c3ac",
     "editorWhitespace.foreground": "#1485d0",
-    "editorWidget.background": "#29263c",
+    "editorWidget.background": "#29283d",
     "editorWidget.border": "#1d3154",
     "editorWidget.foreground": "#c3cdf6",
     "editorWidget.resizeBorder": "#1d3154",
@@ -2479,7 +2628,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "gitlens.gutterBackgroundColor": "#18162b",
     "gitlens.gutterForegroundColor": "#c0caf5",
     "gitlens.gutterUncommittedForegroundColor": "#309ffa",
-    "gitlens.trailingLineForegroundColor": "#88809b",
+    "gitlens.trailingLineForegroundColor": "#868ba5",
     "icon.foreground": "#c3cdf6",
     "inlineChat.foreground": "#c3cdf6",
     "inlineChatDiff.inserted": "#7a9c6140",
@@ -2489,7 +2638,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "input.border": "#1d3154",
     "input.foreground": "#c3cdf6",
     "input.placeholderForeground": "#c0caf58a",
-    "inputOption.activeBackground": "#88809b45",
+    "inputOption.activeBackground": "#868ba545",
     "inputOption.activeForeground": "#c3cdf6",
     "list.activeSelectionBackground": "#309ffa33",
     "list.activeSelectionForeground": "#c3cdf6",
@@ -2531,7 +2680,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "mergeEditor.conflict.unhandledUnfocused.border": "#d6c3ac87",
     "minimapGutter.addedBackground": "#284753",
     "minimapGutter.deletedBackground": "#743845",
-    "minimapGutter.modifiedBackground": "#524d67",
+    "minimapGutter.modifiedBackground": "#52536c",
     "multiDiffEditor.border": "#2f2d40",
     "multiDiffEditor.headerBackground": "#2f2d40",
     "notebook.cellBorderColor": "#141325",
@@ -2554,11 +2703,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "panelTitle.inactiveForeground": "#525a82",
     "peekView.border": "#1d3154",
     "peekViewEditor.background": "#18162b",
-    "peekViewEditor.matchHighlightBackground": "#b3aac866",
+    "peekViewEditor.matchHighlightBackground": "#b1b6d366",
     "peekViewResult.background": "#18162b",
     "peekViewResult.fileForeground": "#c0caf5",
     "peekViewResult.lineForeground": "#c3cdf6",
-    "peekViewResult.matchHighlightBackground": "#b3aac866",
+    "peekViewResult.matchHighlightBackground": "#b1b6d366",
     "peekViewResult.selectionBackground": "#309ffa4d",
     "peekViewResult.selectionForeground": "#c3cdf6",
     "peekViewTitle.background": "#141325",
@@ -2586,7 +2735,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "scrollbarSlider.background": "#c0caf50a",
     "scrollbarSlider.hoverBackground": "#309ffa33",
     "selection.background": "#309ffa33",
-    "settings.headerForeground": "#b3aac8",
+    "settings.headerForeground": "#b1b6d3",
     "sideBar.background": "#191829",
     "sideBar.border": "#1d1c2e",
     "sideBar.dropBackground": "#2f2d40",
@@ -2627,7 +2776,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "tab.unfocusedInactiveModifiedBorder": "#525a82",
     "terminal.ansiBlack": "#141325",
     "terminal.ansiBlue": "#309ffa",
-    "terminal.ansiBrightBlack": "#aaa0c2",
+    "terminal.ansiBrightBlack": "#a8aece",
     "terminal.ansiBrightBlue": "#45a9fb",
     "terminal.ansiBrightCyan": "#5bcddc",
     "terminal.ansiBrightGreen": "#7a9c61",
@@ -2723,6 +2872,12 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "jsx.attribute": {
       "foreground": "#ab82f7",
     },
+    "jsx.children": {
+      "foreground": "#a9b1d6",
+    },
+    "jsx.prop": {
+      "foreground": "#ab82f7",
+    },
     "jsx.tag": {
       "foreground": "#ff6b6b",
     },
@@ -2744,6 +2899,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "keyword.generator": {
       "fontStyle": "italic",
       "foreground": "#e07af5",
+    },
+    "keyword.generic": {
+      "foreground": "#ab82f7",
     },
     "keyword.new": {
       "fontStyle": "bold",
@@ -2808,6 +2966,24 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "readonly": {
       "fontStyle": "italic",
       "foreground": "#49c7d8",
+    },
+    "rust.derive": {
+      "fontStyle": "italic",
+      "foreground": "#ffc66d",
+    },
+    "rust.lifetime": {
+      "fontStyle": "italic",
+      "foreground": "#ab82f7",
+    },
+    "rust.macro": {
+      "fontStyle": "bold",
+      "foreground": "#ff9486",
+    },
+    "rust.pattern.iflet": {
+      "foreground": "#ab82f7",
+    },
+    "rust.pattern.match": {
+      "foreground": "#ab82f7",
     },
     "static": {
       "fontStyle": "italic",
@@ -2893,7 +3069,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "string.quoted.docstring.multi.python constant.character.escape",
       ],
       "settings": {
-        "foreground": "#aaa0c2",
+        "foreground": "#a8aece",
       },
     },
     {
@@ -2931,7 +3107,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "log.date",
       ],
       "settings": {
-        "foreground": "#aaa0c2",
+        "foreground": "#a8aece",
       },
     },
     {
@@ -3291,14 +3467,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.function-call variable.other.object.property",
       ],
       "settings": {
-        "foreground": "#87bcd2",
+        "foreground": "#86c2d8",
       },
     },
     {
       "name": "Object Property (alternative)",
       "scope": "variable.other.object.property",
       "settings": {
-        "foreground": "#87bcd2",
+        "foreground": "#86c2d8",
       },
     },
     {
@@ -3561,7 +3737,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "SCSS Include Mixin Argument",
       "scope": "meta.property-list meta.at-rule.include",
       "settings": {
-        "foreground": "#b3aac8",
+        "foreground": "#b1b6d3",
       },
     },
     {
@@ -3659,7 +3835,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b3aac8",
+        "foreground": "#b1b6d3",
       },
     },
     {
@@ -3670,7 +3846,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#b3aac8",
+        "foreground": "#b1b6d3",
       },
     },
     {
@@ -3681,7 +3857,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#b3aac8",
+        "foreground": "#b1b6d3",
       },
     },
     {
@@ -3783,7 +3959,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#aaa0c2",
+        "foreground": "#a8aece",
       },
     },
     {
@@ -3794,7 +3970,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#88809b",
+        "foreground": "#868ba5",
       },
     },
     {
@@ -4043,7 +4219,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "name": "Regular Expressions - Backslash",
       "scope": "constant.character.escape.backslash",
       "settings": {
-        "foreground": "#b3aac8",
+        "foreground": "#b1b6d3",
       },
     },
     {
@@ -4058,9 +4234,101 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "scope": [
         "tag.decorator.js entity.name.tag.js",
         "tag.decorator.js punctuation.definition.tag.js",
+        "meta.decorator punctuation.decorator.ts",
+        "meta.decorator.ts entity.name.function.ts",
+        "meta.decorator.ts punctuation.definition",
+        "meta.decorator.ts punctuation.accessor",
+        "meta.decorator.ts variable.other.readwrite",
+        "meta.decorator.ts meta.function-call",
+        "meta.decorator.ts meta.function-call entity.name.function",
+        "meta.class.ts meta.decorator.ts punctuation.decorator.ts",
+        "meta.class.ts meta.decorator.ts entity.name.function.ts",
+        "meta.class.ts meta.decorator.ts variable.other.readwrite.ts",
       ],
       "settings": {
         "foreground": "#309ffa",
+      },
+    },
+    {
+      "name": "TypeScript Generics",
+      "scope": [
+        "meta.type.parameters.ts",
+        "meta.type.parameters.tsx",
+        "meta.generic-type-argument",
+        "meta.type.annotation punctuation.definition.type-parameters",
+        "punctuation.definition.typeparameters",
+        "punctuation.definition.type-parameters",
+        "punctuation.definition.type-parameters.begin",
+        "punctuation.definition.type-parameters.end",
+        "meta.type.parameters.ts entity.name.type",
+        "meta.type.parameters.tsx entity.name.type",
+        "meta.type.parameters.ts support.type",
+        "meta.type.parameters.tsx support.type",
+      ],
+      "settings": {
+        "foreground": "#d6c3ac",
+      },
+    },
+    {
+      "name": "TypeScript Generic Keywords",
+      "scope": [
+        "keyword.other.extends.ts",
+        "keyword.other.keyof.ts",
+        "keyword.other.infer.ts",
+        "keyword.other.conditional.type.ts",
+        "keyword.other.mapped.type.ts",
+        "storage.modifier.in.ts",
+        "storage.modifier.out.ts",
+      ],
+      "settings": {
+        "foreground": "#ab82f7",
+      },
+    },
+    {
+      "name": "JSX/TSX Tags",
+      "scope": [
+        "support.class.component.tsx",
+        "entity.name.tag.tsx",
+        "entity.name.tag.jsx",
+        "meta.jsx entity.name.tag",
+        "meta.jsx.tsx entity.name.tag",
+        "meta.tag.component.tsx",
+        "meta.tag.component.jsx",
+        "meta.element.jsx entity.name.tag",
+        "meta.element.tsx entity.name.tag",
+      ],
+      "settings": {
+        "foreground": "#ff7a7a",
+      },
+    },
+    {
+      "name": "JSX/TSX Attributes",
+      "scope": [
+        "entity.other.attribute-name.jsx",
+        "entity.other.attribute-name.tsx",
+        "meta.jsx.attributes",
+        "meta.tsx.attributes",
+        "meta.tag.attributes.jsx",
+        "meta.tag.attributes.tsx",
+        "meta.element.jsx entity.other.attribute-name",
+        "meta.element.tsx entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#ab82f7",
+      },
+    },
+    {
+      "name": "JSX/TSX Children",
+      "scope": [
+        "meta.jsx.children",
+        "meta.tsx.children",
+        "meta.element.jsx meta.embedded.expression",
+        "meta.element.tsx meta.embedded.expression",
+        "meta.element.jsx jsx.children",
+        "meta.element.tsx tsx.children",
+      ],
+      "settings": {
+        "foreground": "#a9b1d6",
       },
     },
     {
@@ -4140,6 +4408,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "support.function.macro.rust",
         "variable.other.metavariable.name.rust",
         "punctuation.definition.macro.rust",
+        "keyword.other.rust.macro",
+        "meta.macro.rust",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -4177,6 +4447,34 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       ],
       "settings": {
         "foreground": "#ff6b6b",
+      },
+    },
+    {
+      "name": "Rust Pattern Matching Keyword",
+      "scope": [
+        "keyword.control.flow.rust",
+        "keyword.match.rust",
+        "keyword.other.match.rust",
+        "keyword.control.conditional.if-let.rust",
+        "keyword.control.conditional.while-let.rust",
+        "keyword.control.conditional.for-let.rust",
+      ],
+      "settings": {
+        "foreground": "#ab82f7",
+      },
+    },
+    {
+      "name": "Rust Derive",
+      "scope": [
+        "meta.annotation.rust",
+        "meta.attribute.rust",
+        "entity.name.function.attribute.rust",
+        "keyword.other.rust.attribute",
+        "keyword.other.rust.derive",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ffc66d",
       },
     },
     {
@@ -4308,7 +4606,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -4346,7 +4644,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "log.date",
     ],
     "settings": {
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -4706,14 +5004,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.function-call variable.other.object.property",
     ],
     "settings": {
-      "foreground": "#87bcd2",
+      "foreground": "#86c2d8",
     },
   },
   {
     "name": "Object Property (alternative)",
     "scope": "variable.other.object.property",
     "settings": {
-      "foreground": "#87bcd2",
+      "foreground": "#86c2d8",
     },
   },
   {
@@ -4976,7 +5274,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "SCSS Include Mixin Argument",
     "scope": "meta.property-list meta.at-rule.include",
     "settings": {
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -5074,7 +5372,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -5085,7 +5383,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -5096,7 +5394,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold italic",
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -5198,7 +5496,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#aaa0c2",
+      "foreground": "#a8aece",
     },
   },
   {
@@ -5209,7 +5507,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "fontStyle": "bold",
-      "foreground": "#88809b",
+      "foreground": "#868ba5",
     },
   },
   {
@@ -5458,7 +5756,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "name": "Regular Expressions - Backslash",
     "scope": "constant.character.escape.backslash",
     "settings": {
-      "foreground": "#b3aac8",
+      "foreground": "#b1b6d3",
     },
   },
   {
@@ -5473,9 +5771,101 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     "scope": [
       "tag.decorator.js entity.name.tag.js",
       "tag.decorator.js punctuation.definition.tag.js",
+      "meta.decorator punctuation.decorator.ts",
+      "meta.decorator.ts entity.name.function.ts",
+      "meta.decorator.ts punctuation.definition",
+      "meta.decorator.ts punctuation.accessor",
+      "meta.decorator.ts variable.other.readwrite",
+      "meta.decorator.ts meta.function-call",
+      "meta.decorator.ts meta.function-call entity.name.function",
+      "meta.class.ts meta.decorator.ts punctuation.decorator.ts",
+      "meta.class.ts meta.decorator.ts entity.name.function.ts",
+      "meta.class.ts meta.decorator.ts variable.other.readwrite.ts",
     ],
     "settings": {
       "foreground": "#309ffa",
+    },
+  },
+  {
+    "name": "TypeScript Generics",
+    "scope": [
+      "meta.type.parameters.ts",
+      "meta.type.parameters.tsx",
+      "meta.generic-type-argument",
+      "meta.type.annotation punctuation.definition.type-parameters",
+      "punctuation.definition.typeparameters",
+      "punctuation.definition.type-parameters",
+      "punctuation.definition.type-parameters.begin",
+      "punctuation.definition.type-parameters.end",
+      "meta.type.parameters.ts entity.name.type",
+      "meta.type.parameters.tsx entity.name.type",
+      "meta.type.parameters.ts support.type",
+      "meta.type.parameters.tsx support.type",
+    ],
+    "settings": {
+      "foreground": "#d6c3ac",
+    },
+  },
+  {
+    "name": "TypeScript Generic Keywords",
+    "scope": [
+      "keyword.other.extends.ts",
+      "keyword.other.keyof.ts",
+      "keyword.other.infer.ts",
+      "keyword.other.conditional.type.ts",
+      "keyword.other.mapped.type.ts",
+      "storage.modifier.in.ts",
+      "storage.modifier.out.ts",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "JSX/TSX Tags",
+    "scope": [
+      "support.class.component.tsx",
+      "entity.name.tag.tsx",
+      "entity.name.tag.jsx",
+      "meta.jsx entity.name.tag",
+      "meta.jsx.tsx entity.name.tag",
+      "meta.tag.component.tsx",
+      "meta.tag.component.jsx",
+      "meta.element.jsx entity.name.tag",
+      "meta.element.tsx entity.name.tag",
+    ],
+    "settings": {
+      "foreground": "#ff7a7a",
+    },
+  },
+  {
+    "name": "JSX/TSX Attributes",
+    "scope": [
+      "entity.other.attribute-name.jsx",
+      "entity.other.attribute-name.tsx",
+      "meta.jsx.attributes",
+      "meta.tsx.attributes",
+      "meta.tag.attributes.jsx",
+      "meta.tag.attributes.tsx",
+      "meta.element.jsx entity.other.attribute-name",
+      "meta.element.tsx entity.other.attribute-name",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "JSX/TSX Children",
+    "scope": [
+      "meta.jsx.children",
+      "meta.tsx.children",
+      "meta.element.jsx meta.embedded.expression",
+      "meta.element.tsx meta.embedded.expression",
+      "meta.element.jsx jsx.children",
+      "meta.element.tsx tsx.children",
+    ],
+    "settings": {
+      "foreground": "#a9b1d6",
     },
   },
   {
@@ -5555,6 +5945,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "support.function.macro.rust",
       "variable.other.metavariable.name.rust",
       "punctuation.definition.macro.rust",
+      "keyword.other.rust.macro",
+      "meta.macro.rust",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -5592,6 +5984,34 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "foreground": "#ff6b6b",
+    },
+  },
+  {
+    "name": "Rust Pattern Matching Keyword",
+    "scope": [
+      "keyword.control.flow.rust",
+      "keyword.match.rust",
+      "keyword.other.match.rust",
+      "keyword.control.conditional.if-let.rust",
+      "keyword.control.conditional.while-let.rust",
+      "keyword.control.conditional.for-let.rust",
+    ],
+    "settings": {
+      "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "Rust Derive",
+    "scope": [
+      "meta.annotation.rust",
+      "meta.attribute.rust",
+      "entity.name.function.attribute.rust",
+      "keyword.other.rust.attribute",
+      "keyword.other.rust.derive",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#ffc66d",
     },
   },
   {
