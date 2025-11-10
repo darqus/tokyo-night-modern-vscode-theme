@@ -19,7 +19,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'string.quoted.docstring.multi.python constant.character.escape',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенный контраст для комментариев
+      foreground: (p: UniversalPalette) => p.chromatic.slate.dark,
       fontStyle: '',
     },
   },
@@ -58,7 +58,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'log.date',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенный контраст для комментариев
+      foreground: (p: UniversalPalette) => p.chromatic.slate.dark,
     },
   },
   {
@@ -70,7 +70,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'comment.block.documentation entity.name.type.instance',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.stone.main,
+      foreground: (p: UniversalPalette) => p.chromatic.slate.dark,
     },
   },
 ]
@@ -1368,7 +1368,7 @@ export const modernTokens: TokenColorConfig[] = [
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.light,
     },
- },
+  },
   {
     name: 'Rust Type Parameter',
     scope: ['meta.type_params.rust', 'entity.name.type.parameter.rust'],

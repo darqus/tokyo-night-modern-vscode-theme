@@ -108,7 +108,8 @@ function getColorFromPalette(
 
   if (colorPath.length === 1) {
     // Простой цвет из chromatic
-    const chromaticColor = palette.chromatic[colorPath[0] as keyof typeof palette.chromatic]
+    const chromaticColor =
+      palette.chromatic[colorPath[0] as keyof typeof palette.chromatic]
     return chromaticColor?.main || palette.chromatic.neutral.main
   }
 
@@ -117,11 +118,13 @@ function getColorFromPalette(
     const [category, shade] = colorPath
 
     if (category === 'chromatic') {
-      const chromaticColor = palette.chromatic[shade as keyof typeof palette.chromatic]
+      const chromaticColor =
+        palette.chromatic[shade as keyof typeof palette.chromatic]
       return chromaticColor?.main || palette.chromatic.neutral.main
     } else {
       // Предполагаем, что первый элемент - это цвет, второй - модификатор
-      const chromaticColor = palette.chromatic[category as keyof typeof palette.chromatic]
+      const chromaticColor =
+        palette.chromatic[category as keyof typeof palette.chromatic]
       if (chromaticColor) {
         const modifier = shade as keyof typeof chromaticColor
         return chromaticColor[modifier] || chromaticColor.main
@@ -133,7 +136,8 @@ function getColorFromPalette(
     // Полный путь (например, chromatic.red.light)
     const [category, color, modifier] = colorPath
     if (category === 'chromatic') {
-      const chromaticColor = palette.chromatic[color as keyof typeof palette.chromatic]
+      const chromaticColor =
+        palette.chromatic[color as keyof typeof palette.chromatic]
       if (chromaticColor) {
         const mod = modifier as keyof typeof chromaticColor
         return chromaticColor[mod] || chromaticColor.main
@@ -153,7 +157,7 @@ export function generateContrastToken(
   palette: UniversalPalette
 ): SemanticTokenStyle {
   const level = getContrastLevel(elementType)
-  const levelConfig = contrastHierarchy[level]
+  const _levelConfig = contrastHierarchy[level]
 
   // Выбираем цвет в зависимости от уровня контрастности
   switch (level) {
@@ -166,11 +170,17 @@ export function generateContrastToken(
         case 'keyword.void':
         case 'keyword.this':
         case 'keyword.self':
-          return { foreground: getColorFromPalette(palette, 'chromatic.red'), fontStyle: 'bold' }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.red'),
+            fontStyle: 'bold',
+          }
         case 'variable.language.this':
         case 'variable.language.super':
         case 'variable.language.self':
-          return { foreground: getColorFromPalette(palette, 'chromatic.rose'), fontStyle: 'bold' }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.rose'),
+            fontStyle: 'bold',
+          }
         default:
           return { foreground: getColorFromPalette(palette, 'chromatic.red') }
       }
@@ -179,7 +189,9 @@ export function generateContrastToken(
       switch (elementType) {
         case 'variable':
         case 'variable.declaration':
-          return { foreground: getColorFromPalette(palette, 'chromatic.blue.light') }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.blue.light'),
+          }
         case 'parameter':
         case 'parameter.declaration':
           return { foreground: getColorFromPalette(palette, 'chromatic.amber') }
@@ -197,7 +209,10 @@ export function generateContrastToken(
         case 'type':
         case 'interface':
         case 'class':
-          return { foreground: getColorFromPalette(palette, 'chromatic.teal.dark'), fontStyle: 'bold' }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.teal.dark'),
+            fontStyle: 'bold',
+          }
         default:
           return { foreground: getColorFromPalette(palette, 'chromatic.blue') }
       }
@@ -205,17 +220,23 @@ export function generateContrastToken(
       // Второстепенные элементы получают более приглушенные цвета
       switch (elementType) {
         case 'comment':
-          return { foreground: getColorFromPalette(palette, 'chromatic.neutral') }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.neutral'),
+          }
         case 'punctuation':
           return { foreground: getColorFromPalette(palette, 'chromatic.slate') }
         case 'string':
           return { foreground: getColorFromPalette(palette, 'chromatic.green') }
         case 'number':
-          return { foreground: getColorFromPalette(palette, 'chromatic.orange') }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.orange'),
+          }
         case 'boolean':
           return { foreground: getColorFromPalette(palette, 'chromatic.pink') }
         default:
-          return { foreground: getColorFromPalette(palette, 'chromatic.neutral') }
+          return {
+            foreground: getColorFromPalette(palette, 'chromatic.neutral'),
+          }
       }
   }
 }

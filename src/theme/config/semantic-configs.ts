@@ -163,18 +163,16 @@ export const frameworksConfig: SemanticTokenConfig = {
       italicToken(p.chromatic.yellow.main),
     'typescript.utility': (p: UniversalPalette) =>
       token(p.chromatic.violet.main),
-    
+
     // JSX/TSX props и children
     'jsx.prop': (p: UniversalPalette) => token(p.chromatic.purple.main),
     'jsx.children': (p: UniversalPalette) => token(p.foreground.secondary.main),
-    
+
     // Rust-specific
     'rust.lifetime': (p: UniversalPalette) =>
       italicToken(p.chromatic.purple.main),
-    'rust.macro': (p: UniversalPalette) =>
-      boldToken(p.chromatic.orange.main),
-    'rust.derive': (p: UniversalPalette) =>
-      italicToken(p.chromatic.amber.main),
+    'rust.macro': (p: UniversalPalette) => boldToken(p.chromatic.orange.main),
+    'rust.derive': (p: UniversalPalette) => italicToken(p.chromatic.amber.main),
     'rust.pattern.match': (p: UniversalPalette) =>
       token(p.chromatic.purple.main),
     'rust.pattern.iflet': (p: UniversalPalette) =>

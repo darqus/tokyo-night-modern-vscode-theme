@@ -323,7 +323,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
-      "foreground": "#a8aece",
+      "foreground": "#636c83",
     },
   },
   {
@@ -361,7 +361,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "log.date",
     ],
     "settings": {
-      "foreground": "#a8aece",
+      "foreground": "#636c83",
     },
   },
   {
@@ -373,7 +373,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "comment.block.documentation entity.name.type.instance",
     ],
     "settings": {
-      "foreground": "#9aa5ce",
+      "foreground": "#636c83",
     },
   },
   {
@@ -3069,7 +3069,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "string.quoted.docstring.multi.python constant.character.escape",
       ],
       "settings": {
-        "foreground": "#a8aece",
+        "foreground": "#636c83",
       },
     },
     {
@@ -3107,7 +3107,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "log.date",
       ],
       "settings": {
-        "foreground": "#a8aece",
+        "foreground": "#636c83",
       },
     },
     {
@@ -3119,7 +3119,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "comment.block.documentation entity.name.type.instance",
       ],
       "settings": {
-        "foreground": "#9aa5ce",
+        "foreground": "#636c83",
       },
     },
     {
@@ -4606,7 +4606,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "string.quoted.docstring.multi.python constant.character.escape",
     ],
     "settings": {
-      "foreground": "#a8aece",
+      "foreground": "#636c83",
     },
   },
   {
@@ -4644,7 +4644,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "log.date",
     ],
     "settings": {
-      "foreground": "#a8aece",
+      "foreground": "#636c83",
     },
   },
   {
@@ -4656,7 +4656,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "comment.block.documentation entity.name.type.instance",
     ],
     "settings": {
-      "foreground": "#9aa5ce",
+      "foreground": "#636c83",
     },
   },
   {
