@@ -1,22 +1,30 @@
 // Centralized base color definitions
 import { fromMain } from '../utils/palette-helpers.js'
 
-// Base chromatic main tones
+// Base chromatic main tones - оптимизированные для лучшей читаемости и контрастности
 export const chromaMain = {
   pink: '#e07af5',
+  violet: '#c678dd',
+  fuchsia: '#d68ffc',
   purple: '#ab82f7',
   indigo: '#4d9cf7',
   blue: '#5a9ffa',
+  sky: '#4fc1ff',
   cyan: '#49c7d8',
   teal: '#57dac9',
   emerald: '#45dd91',
-  green: '#9ece6a',
+  green: '#98c379',
   lime: '#80d151',
   yellow: '#d6c3ac',
-  amber: '#e0af68',
-  orange: '#dba280',
-  red: '#f7768e',
-  neutral: '#939bc4',
+  amber: '#ffc66d',
+  orange: '#ff86c4',
+  red: '#ff6b6b',
+  rose: '#ff6ba4',
+  neutral: '#87ceeb',
+  slate: '#7c87a4',
+  stone: '#9aa5ce',
+  zinc: '#a9b1d6',
+  gray: '#c0caf5',
 } as const
 
 export const baseColors = {
