@@ -47,6 +47,22 @@ export const functionsConfig: SemanticTokenConfig = {
 }
 
 /**
+ * Async/Await tokens - асинхронные конструкции
+ */
+export const asyncConfig: SemanticTokenConfig = {
+  rules: {
+    'keyword.async': (p: UniversalPalette) =>
+      boldToken(p.chromatic.purple.main),
+    'keyword.await': (p: UniversalPalette) =>
+      boldToken(p.chromatic.purple.main),
+    'keyword.yield': (p: UniversalPalette) =>
+      boldToken(p.chromatic.purple.main),
+    'keyword.generator': (p: UniversalPalette) =>
+      italicToken(p.chromatic.purple.main),
+  },
+}
+
+/**
  * Type tokens - типы и классы
  */
 export const typesConfig: SemanticTokenConfig = {

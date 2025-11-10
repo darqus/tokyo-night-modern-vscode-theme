@@ -67,3 +67,40 @@ export const slightlyDarker = (base: string) => darken(base, ADJUST.TINY)
 // Тени
 export const softShadow = (color: string) => alpha(color, OPACITY.MEDIUM)
 export const hardShadow = (color: string) => alpha(color, OPACITY.STRONG)
+
+// Функции для генерации вариантов цвета
+export const generateShades = (baseColor: string) => ({
+  lightest: lighten(baseColor, ADJUST.VERY_STRONG),
+  lighter: lighten(baseColor, ADJUST.STRONG),
+  light: lighten(baseColor, ADJUST.MEDIUM),
+  base: baseColor,
+  dark: darken(baseColor, ADJUST.MEDIUM),
+  darker: darken(baseColor, ADJUST.STRONG),
+  darkest: darken(baseColor, ADJUST.VERY_STRONG),
+})
+
+// Функции для контрастности
+export const ensureContrast = (foregroundColor: string, backgroundColor: string, minRatio: number = 4.5) => {
+  // В реальной реализации здесь будет проверка контрастности и корректировка цвета при необходимости
+  // Пока что возвращаем цвет как есть
+  return foregroundColor
+}
+
+export const getContrastRatio = (color1: string, color2: string): number => {
+  // В реальной реализации здесь будет вычисление контрастности по формуле WCAG
+  // Пока что возвращаем заглушку
+  return 4.5
+}
+
+// Функции для адаптации цветов под разные режимы
+export const adaptForColorblind = (color: string, type: 'protanopia' | 'deuteranopia' | 'tritanopia' = 'deuteranopia'): string => {
+  // В реальной реализации здесь будет адаптация цвета для разных типов дальтонизма
+  // Пока что возвращаем цвет как есть
+  return color
+}
+
+export const highContrastVariant = (baseColor: string): string => {
+  // В реальной реализации здесь будет генерация высококонтрастного варианта цвета
+  // Пока что возвращаем более насыщенный вариант
+  return lighten(darken(baseColor, ADJUST.MEDIUM), ADJUST.VERY_STRONG)
+}

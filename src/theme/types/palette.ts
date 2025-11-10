@@ -102,6 +102,15 @@ export interface ChromaticPalette {
   lime: ChromaticVariant
   amber: ChromaticVariant
   emerald: ChromaticVariant
+  // Новые цвета для расширенной палитры
+  rose: ChromaticVariant
+  violet: ChromaticVariant
+  fuchsia: ChromaticVariant
+  sky: ChromaticVariant
+  slate: ChromaticVariant
+  stone: ChromaticVariant
+  zinc: ChromaticVariant
+  gray: ChromaticVariant
 }
 
 /**

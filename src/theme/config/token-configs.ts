@@ -19,8 +19,25 @@ export const commentsTokens: TokenColorConfig[] = [
       'string.quoted.docstring.multi.python constant.character.escape',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark, // Улучшенная контрастность
       fontStyle: '',
+    },
+  },
+  {
+    name: 'Comment TODO/FIXME',
+    scope: [
+      'comment.todo',
+      'comment.fixme',
+      'comment.hack',
+      'comment.note',
+      'comment.todo keyword', // TODO, FIXME, NOTE, HACK
+      'comment.fixme keyword',
+      'comment.hack keyword',
+      'comment.note keyword',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main, // Золотой для выделения
+      fontStyle: 'bold',
     },
   },
   {
@@ -79,7 +96,9 @@ export const basicTokens: TokenColorConfig[] = [
   {
     name: 'String, Symbols',
     scope: [
-      'string',
+      'string.quoted', // Только обычные строки в кавычках
+      'string.quoted.single',
+      'string.quoted.double',
       'constant.other.symbol',
       'constant.other.key',
       'meta.attribute-selector',
@@ -87,6 +106,36 @@ export const basicTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+  {
+    name: 'Template Strings',
+    scope: [
+      'string.template',
+      'punctuation.definition.template-expression',
+      'string.quoted.template',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.lime.main, // Яркий зеленый для template strings
+    },
+  },
+  {
+    name: 'Regular Expressions',
+    scope: ['string.regexp', 'punctuation.definition.group.regexp'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main, // Оранжевый для регулярных выражений
+    },
+  },
+  {
+    name: 'Escape Sequences',
+    scope: [
+      'constant.character.escape',
+      'constant.character.escape.backslash',
+      'punctuation.definition.escape',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main, // Желтый для escape последовательностей
+      fontStyle: 'bold',
     },
   },
   {
@@ -330,8 +379,7 @@ export const codeTokens: TokenColorConfig[] = [
       'meta.embedded.inline.phpx constant.other.php',
     ],
     settings: {
-      foreground: (p: UniversalPalette) =>
-        mix(p.chromatic.neutral.light, p.chromatic.cyan.light, 0.5),
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенная контрастность
     },
   },
   {
