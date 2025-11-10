@@ -7,7 +7,7 @@ export function generateCoreColors(): Record<string, string> {
     .add('foreground', c.fg.light)
     .add('descriptionForeground', c.fg.main)
     .add('disabledForeground', universalPalette.foreground.disabled.dark)
-    .add('focusBorder', borderColor(c.bg.main, c.blue.main))
+    .add('focusBorder', borderColor(c.bg.main, c.indigo.main))
     .add('errorForeground', c.red.main)
     .add('widget.shadow', c.shadow.main) // Using a standard shadow value
     .add('scrollbar.shadow', c.shadow.main) // Using a standard shadow value
@@ -19,14 +19,14 @@ export function generateCoreColors(): Record<string, string> {
       foreground: c.fg.main,
     })
     .addGroup('settings', {
-      headerForeground: c.blue.light,
+      headerForeground: c.indigo.light,
     })
     .addGroup('window', {
-      activeBorder: borderColor(c.bg.main, c.blue.main),
+      activeBorder: borderColor(c.bg.main, c.indigo.main),
       inactiveBorder: borderColor(c.bg.main, c.neutral.dark),
     })
     .addGroup('sash', {
-      hoverBorder: c.blue.light,
+      hoverBorder: c.indigo.light,
     })
     .addGroup('toolbar', {
       activeBackground: c.bg.dark,

@@ -7,7 +7,7 @@ export function generateSidebarColors(): Record<string, string> {
       background: c.bg.dark,
       foreground: c.fg.main,
       border: c.neutral.main,
-      dropBackground: `${c.blue.main}40`,
+      dropBackground: `${c.indigo.main}40`,
       shadow: c.shadow.main,
       titleForeground: c.fg.bright,
     })
@@ -21,25 +21,25 @@ export function generateSidebarColors(): Record<string, string> {
       border: c.neutral.main,
     })
     .addGroup('sideBarDropBackground', {
-      background: `${c.blue.main}40`,
+      background: `${c.indigo.main}40`,
     })
     .addGroup('activityBar', {
       foreground: c.fg.main,
-      activeBorder: c.blue.main,
+      activeBorder: c.indigo.main,
       activeBackground: c.bg.main,
-      activeFocusBorder: c.blue.main,
+      activeFocusBorder: c.indigo.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
       badgeBackground: c.ui.badge,
       badgeForeground: c.ui.white,
       border: c.neutral.main,
-      dropBorder: c.blue.light,
+      dropBorder: c.indigo.light,
       shadow: c.shadow.main,
     })
     .addGroup('activityBarTop', {
       foreground: c.fg.main,
       background: c.bg.dark,
       border: c.neutral.main,
-      activeBorder: c.blue.main,
+      activeBorder: c.indigo.main,
       activeBackground: c.bg.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
       badgeBackground: c.ui.badge,
@@ -50,14 +50,14 @@ export function generateSidebarColors(): Record<string, string> {
       background: c.ui.badge,
     })
     .addGroup('remote', {
-      foreground: c.blue.light,
+      foreground: c.indigo.light,
       background: c.bg.main,
     })
     .addGroup('remoteExplorer', {
       baseForeground: c.fg.main,
       baseBackground: c.bg.main,
       baseBorder: c.neutral.main,
-      folderForegroundColor: c.blue.main,
+      folderForegroundColor: c.indigo.main,
       folderBackground: c.bg.main,
       folderBorder: c.neutral.main,
     })

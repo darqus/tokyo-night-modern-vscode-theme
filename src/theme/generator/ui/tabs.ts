@@ -9,10 +9,10 @@ export function generateTabColors(): Record<string, string> {
       universalPalette.foreground.disabled.dark
     )
     .add('tab.unfocusedHoverForeground', c.fg.bright)
-    .add('tab.activeModifiedBorder', c.blue.main)
-    .add('tab.inactiveModifiedBorder', c.blue.dark)
-    .add('tab.unfocusedActiveModifiedBorder', c.blue.dark)
-    .add('tab.unfocusedInactiveModifiedBorder', c.blue.dark)
+    .add('tab.activeModifiedBorder', c.indigo.main)
+    .add('tab.inactiveModifiedBorder', c.indigo.dark)
+    .add('tab.unfocusedActiveModifiedBorder', c.indigo.dark)
+    .add('tab.unfocusedInactiveModifiedBorder', c.indigo.dark)
     .addGroup('tab', {
       activeBackground: c.bg.main,
       inactiveBackground: c.bg.dark,
@@ -22,10 +22,10 @@ export function generateTabColors(): Record<string, string> {
       unFocusedHoverForeground: c.fg.main,
       hoverBackground: c.bg.light,
       unFocusedHoverBackground: c.bg.dark,
-      hoverBorder: c.blue.main,
+      hoverBorder: c.indigo.main,
       unFocusedHoverBorder: c.neutral.main,
       activeBorder: c.bg.main,
-      activeBorderTop: c.blue.main,
+      activeBorderTop: c.indigo.main,
       inactiveBorder: c.bg.main,
       unFocusedActiveBorder: c.bg.main,
       unFocusedInactiveBorder: c.bg.main,
@@ -36,7 +36,7 @@ export function generateTabColors(): Record<string, string> {
       unfocusedInactiveBorder: c.neutral.main,
       unfocusedHoverBorder: c.neutral.main,
       lastPinnedBorder: c.neutral.dark,
-      dragAndDropBorder: c.blue.light,
+      dragAndDropBorder: c.indigo.light,
     })
     .addGroup('editorGroupHeader', {
       tabsBackground: c.bg.dark,
@@ -46,19 +46,19 @@ export function generateTabColors(): Record<string, string> {
     })
     .addGroup('editorGroup', {
       border: c.neutral.main,
-      dropBackground: `${c.blue.main}40`,
+      dropBackground: `${c.indigo.main}40`,
       emptyBackground: c.bg.main,
-      focusedEmptyBorder: c.blue.main,
+      focusedEmptyBorder: c.indigo.main,
     })
     .addGroup('breadcrumb', {
       background: c.bg.dark,
       foreground: c.fg.main,
       focusForeground: c.fg.bright,
-      activeSelectionForeground: c.blue.light,
+      activeSelectionForeground: c.indigo.light,
       pickerBackground: c.bg.main,
       pickerForeground: c.fg.main,
       pickerBorder: c.neutral.main,
-      pickerFocusForeground: c.blue.light,
+      pickerFocusForeground: c.indigo.light,
       pickerFocusBackground: c.bg.dark,
     })
     .addGroup('breadcrumbPicker', {
