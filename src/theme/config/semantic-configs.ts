@@ -68,6 +68,25 @@ export const modifiersConfig: SemanticTokenConfig = {
 }
 
 /**
+ * Critical keywords tokens - критические ключевые слова (this, super и т.д.)
+ */
+export const criticalKeywordsConfig: SemanticTokenConfig = {
+  rules: {
+    'variable.language.this': (p: UniversalPalette) =>
+      boldToken(p.chromatic.red.main),
+    'variable.language.super': (p: UniversalPalette) =>
+      boldToken(p.chromatic.red.main),
+    'keyword.this': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'keyword.self': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'variable.language.self': (p: UniversalPalette) =>
+      boldToken(p.chromatic.red.main),
+    'keyword.new': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'keyword.delete': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'keyword.void': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+  },
+}
+
+/**
  * Literal tokens - литералы (строки, числа, булевы)
  */
 export const literalsConfig: SemanticTokenConfig = {

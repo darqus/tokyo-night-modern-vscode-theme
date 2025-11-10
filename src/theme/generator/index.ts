@@ -1,4 +1,5 @@
 import {
+  criticalKeywordsConfig,
   frameworksConfig,
   functionsConfig,
   literalsConfig,
@@ -85,6 +86,7 @@ export const generateTheme = (): VSCodeTheme => {
       modifiers: modifiersConfig,
       literals: literalsConfig,
       frameworks: frameworksConfig,
+      criticalKeywords: criticalKeywordsConfig,
     },
   }
 
