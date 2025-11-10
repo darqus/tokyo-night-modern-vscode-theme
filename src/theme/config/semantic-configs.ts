@@ -67,6 +67,19 @@ export const typesConfig: SemanticTokenConfig = {
     type: (p: UniversalPalette) => boldToken(p.chromatic.teal.main),
     interface: (p: UniversalPalette) => boldToken(p.chromatic.teal.main),
     class: (p: UniversalPalette) => boldToken(p.chromatic.blue.main),
+    // Улучшенная поддержка TypeScript
+    'type.generic': (p: UniversalPalette) =>
+      italicToken(p.chromatic.yellow.main), // Generics
+    'type.parameter': (p: UniversalPalette) =>
+      italicToken(p.chromatic.amber.main), // Type parameters
+    'class.declaration': (p: UniversalPalette) =>
+      boldToken(p.chromatic.blue.main),
+    'interface.declaration': (p: UniversalPalette) =>
+      boldToken(p.chromatic.teal.main),
+    'type.declaration': (p: UniversalPalette) =>
+      boldToken(p.chromatic.teal.main),
+    // Utility types
+    'type.utility': (p: UniversalPalette) => token(p.chromatic.violet.main),
   },
 }
 
@@ -136,5 +149,17 @@ export const frameworksConfig: SemanticTokenConfig = {
     // Enum
     enum: (p: UniversalPalette) => boldToken(p.chromatic.orange.main),
     enumMember: (p: UniversalPalette) => token(p.chromatic.orange.light),
+
+    // JSX/TSX улучшения
+    'jsx.tag': (p: UniversalPalette) => token(p.chromatic.red.main),
+    'jsx.attribute': (p: UniversalPalette) => token(p.chromatic.purple.main),
+    'jsx.text': (p: UniversalPalette) => token(p.foreground.secondary.main),
+    'react.hook': (p: UniversalPalette) => token(p.chromatic.cyan.main),
+
+    // TypeScript-specific
+    'typescript.generic': (p: UniversalPalette) =>
+      italicToken(p.chromatic.yellow.main),
+    'typescript.utility': (p: UniversalPalette) =>
+      token(p.chromatic.violet.main),
   },
 }

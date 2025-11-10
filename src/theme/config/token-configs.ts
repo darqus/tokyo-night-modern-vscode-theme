@@ -19,7 +19,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'string.quoted.docstring.multi.python constant.character.escape',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.slate.main,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенный контраст для комментариев
       fontStyle: '',
     },
   },
@@ -58,7 +58,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'log.date',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.slate.main,
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.main, // Улучшенный контраст для комментариев
     },
   },
   {
@@ -379,7 +379,7 @@ export const codeTokens: TokenColorConfig[] = [
       'meta.embedded.inline.phpx constant.other.php',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.sky.light, // Более контрастный голубой для переменных
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main, // Улучшенный контраст для переменных
     },
   },
   {
@@ -485,7 +485,7 @@ export const codeTokens: TokenColorConfig[] = [
       'meta.function.parameter variable',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main, // Улучшенный контраст для параметров
     },
   },
   {
@@ -1236,6 +1236,158 @@ export const modernTokens: TokenColorConfig[] = [
     scope: 'source.env',
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  // Rust-specific tokens
+  {
+    name: 'Rust Lifetime',
+    scope: [
+      'storage.modifier.lifetime.rust',
+      'entity.name.type.lifetime.rust',
+      'punctuation.definition.lifetime.rust',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'Rust Macro',
+    scope: [
+      'entity.name.function.macro.rust',
+      'support.function.macro.rust',
+      'variable.other.metavariable.name.rust',
+      'punctuation.definition.macro.rust',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Rust Pattern Binding',
+    scope: [
+      'meta.pattern.rust',
+      'variable.other.binding.rust',
+      'meta.pattern-binding.rust',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+    },
+  },
+  {
+    name: 'Rust Type Parameter',
+    scope: ['meta.type_params.rust', 'entity.name.type.parameter.rust'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Rust Keyword',
+    scope: [
+      'storage.type.rust',
+      'storage.modifier.rust',
+      'keyword.other.rust',
+      'keyword.control.rust',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+  // Go-specific tokens
+  {
+    name: 'Go Channel',
+    scope: [
+      'keyword.channel.go',
+      'channel.type.go',
+      'keyword.operator.channel.go',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Go Goroutine',
+    scope: ['keyword.goroutine.go', 'support.function.goroutine.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Go Interface',
+    scope: ['storage.type.interface.go', 'entity.name.type.interface.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+    },
+  },
+  {
+    name: 'Go Method Receiver',
+    scope: ['variable.parameter.receiver.go', 'meta.function.receiver.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main,
+    },
+  },
+  {
+    name: 'Go Package',
+    scope: ['entity.name.type.package.go', 'support.package.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  // Vue 3 Composition API tokens
+  {
+    name: 'Vue 3 Composable',
+    scope: [
+      'support.function.composable.vue',
+      'entity.name.function.composable.vue',
+      'variable.composable.vue',
+      'function.composable.v3',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Vue 3 Composition API Function',
+    scope: [
+      'support.function.composition-api.vue',
+      'entity.name.function.composition-api.vue',
+      'function.composition.api',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Vue 3 Directive',
+    scope: [
+      'entity.other.attribute-name.directive.vue',
+      'support.directive.vue',
+      'keyword.directive.vue',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Vue 3 Setup Script',
+    scope: [
+      'meta.setup.vue',
+      'punctuation.section.embedded.begin.vue',
+      'punctuation.section.embedded.end.vue',
+      'meta.script.setup',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+    },
+  },
+  {
+    name: 'Vue 3 Template Ref',
+    scope: ['support.function.template.ref.vue', 'variable.template.ref.vue'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
     },
   },
 ]
