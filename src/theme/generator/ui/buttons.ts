@@ -4,19 +4,19 @@ import { activeState, hoverState } from '../../utils/color-helpers.js'
 import { ensureReadableForeground } from '../../utils/contrast-helpers.js'
 
 export function generateButtonColors(): Record<string, string> {
-  const baseBg = darken(c.blue.dark, 0.3)
+  const baseBg = c.blue.dark
   const ensuredBase = ensureReadableForeground(baseBg)
   const hoverCand = hoverState(ensuredBase.bg)
   const ensuredHover = ensureReadableForeground(hoverCand)
   const secondaryCand = darken(mix(ensuredBase.bg, c.purple.dark, 0.2), 0.4)
   const ensuredSecondary = ensureReadableForeground(secondaryCand)
 
-  const extPromBase = darken(c.blue.dark, 0.3)
+  const extPromBase = c.blue.dark
   const ensuredExtProm = ensureReadableForeground(extPromBase)
   const extPromHoverCand = activeState(ensuredExtProm.bg)
   const ensuredExtPromHover = ensureReadableForeground(extPromHoverCand)
 
-  const extBadgeBase = darken(c.blue.dark, 0.3)
+  const extBadgeBase = c.blue.dark
   const ensuredExtBadge = ensureReadableForeground(extBadgeBase)
 
   // Дополнительные производные с обеспечением контраста

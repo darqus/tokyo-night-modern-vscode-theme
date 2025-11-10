@@ -4,7 +4,7 @@ import { fromMain } from '../utils/palette-helpers.js'
 // Base chromatic main tones
 export const chromaMain = {
   pink: '#e07af5',
-  purple: '#6e60ef',
+  purple: '#ab82f7',
   indigo: '#4d9cf7',
   blue: '#5a9ffa',
   cyan: '#49c7d8',
