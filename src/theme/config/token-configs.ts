@@ -19,7 +19,7 @@ export const commentsTokens: TokenColorConfig[] = [
       'string.quoted.docstring.multi.python constant.character.escape',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.neutral.dark, // Улучшенная контрастность
+      foreground: (p: UniversalPalette) => p.foreground.disabled.dark,
       fontStyle: '',
     },
   },

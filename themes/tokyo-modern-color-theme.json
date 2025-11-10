@@ -378,7 +378,7 @@
         "string.quoted.docstring.multi.python constant.character.escape"
       ],
       "settings": {
-        "foreground": "#6ca5bc"
+        "foreground": "#525a82"
       }
     },
     {
