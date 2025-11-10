@@ -23,18 +23,18 @@ export interface ContrastHierarchy {
 export const contrastHierarchy: ContrastHierarchy = {
   critical: {
     contrast: 7.0,
-    colors: ['#FF6B6B', '#4ECDC4', '#45B7D1'],
+    colors: [], // Будет заполнено динамически из палитры
     description:
       'Критически важные элементы: ключевые слова, this, super, ошибки',
   },
   important: {
     contrast: 4.5,
-    colors: ['#96CEB4', '#FFEAA7', '#DDA0DD'],
+    colors: [], // Будет заполнено динамически из палитры
     description: 'Важные элементы: переменные, функции, типы',
   },
   secondary: {
     contrast: 3.0,
-    colors: ['#B8B8B8', '#A8A8A8', '#989898'],
+    colors: [], // Будет заполнено динамически из палитры
     description: 'Второстепенные элементы: комментарии, пунктуация',
   },
 }
@@ -124,7 +124,7 @@ export function generateContrastToken(
         case 'variable.language.self':
           return { foreground: palette.chromatic.red.main, fontStyle: 'bold' }
         default:
-          return { foreground: levelConfig.colors[0] }
+          return { foreground: palette.chromatic.red.main }
       }
     case 'important':
       // Важные элементы получают хорошо читаемые цвета
@@ -151,7 +151,7 @@ export function generateContrastToken(
         case 'class':
           return { foreground: palette.chromatic.teal.dark, fontStyle: 'bold' }
         default:
-          return { foreground: levelConfig.colors[0] }
+          return { foreground: palette.chromatic.blue.main }
       }
     case 'secondary':
       // Второстепенные элементы получают более приглушенные цвета
@@ -167,7 +167,7 @@ export function generateContrastToken(
         case 'boolean':
           return { foreground: palette.chromatic.pink.main }
         default:
-          return { foreground: levelConfig.colors[0] }
+          return { foreground: palette.chromatic.neutral.main }
       }
   }
 }
