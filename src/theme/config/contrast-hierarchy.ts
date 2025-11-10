@@ -23,18 +23,18 @@ export interface ContrastHierarchy {
 export const contrastHierarchy: ContrastHierarchy = {
   critical: {
     contrast: 7.0,
-    colors: [], // Будет заполнено динамически из палитры
+    colors: ['red', 'rose', 'orange'], // Критические цвета из палитры
     description:
       'Критически важные элементы: ключевые слова, this, super, ошибки',
   },
   important: {
     contrast: 4.5,
-    colors: [], // Будет заполнено динамически из палитры
+    colors: ['blue', 'purple', 'cyan'], // Важные цвета из палитры
     description: 'Важные элементы: переменные, функции, типы',
   },
   secondary: {
     contrast: 3.0,
-    colors: [], // Будет заполнено динамически из палитры
+    colors: ['neutral', 'slate', 'stone'], // Второстепенные цвета из палитры
     description: 'Второстепенные элементы: комментарии, пунктуация',
   },
 }
@@ -98,6 +98,54 @@ export function getContrastLevel(
 }
 
 /**
+ * Вспомогательная функция для получения цвета из палитры по имени
+ */
+function getColorFromPalette(
+  palette: UniversalPalette,
+  colorName: string
+): string {
+  const colorPath = colorName.split('.')
+
+  if (colorPath.length === 1) {
+    // Простой цвет из chromatic
+    const chromaticColor = palette.chromatic[colorPath[0] as keyof typeof palette.chromatic]
+    return chromaticColor?.main || palette.chromatic.neutral.main
+  }
+
+  if (colorPath.length === 2) {
+    // Цвет с модификатором (например, chromatic.red.light или просто red.light)
+    const [category, shade] = colorPath
+
+    if (category === 'chromatic') {
+      const chromaticColor = palette.chromatic[shade as keyof typeof palette.chromatic]
+      return chromaticColor?.main || palette.chromatic.neutral.main
+    } else {
+      // Предполагаем, что первый элемент - это цвет, второй - модификатор
+      const chromaticColor = palette.chromatic[category as keyof typeof palette.chromatic]
+      if (chromaticColor) {
+        const modifier = shade as keyof typeof chromaticColor
+        return chromaticColor[modifier] || chromaticColor.main
+      }
+    }
+  }
+
+  if (colorPath.length === 3) {
+    // Полный путь (например, chromatic.red.light)
+    const [category, color, modifier] = colorPath
+    if (category === 'chromatic') {
+      const chromaticColor = palette.chromatic[color as keyof typeof palette.chromatic]
+      if (chromaticColor) {
+        const mod = modifier as keyof typeof chromaticColor
+        return chromaticColor[mod] || chromaticColor.main
+      }
+    }
+  }
+
+  // Fallback
+  return palette.chromatic.neutral.main
+}
+
+/**
  * Функция для генерации стиля токена на основе уровня контрастности
  */
 export function generateContrastToken(
@@ -118,56 +166,56 @@ export function generateContrastToken(
         case 'keyword.void':
         case 'keyword.this':
         case 'keyword.self':
-          return { foreground: palette.chromatic.red.main, fontStyle: 'bold' }
+          return { foreground: getColorFromPalette(palette, 'chromatic.red'), fontStyle: 'bold' }
         case 'variable.language.this':
         case 'variable.language.super':
         case 'variable.language.self':
-          return { foreground: palette.chromatic.red.main, fontStyle: 'bold' }
+          return { foreground: getColorFromPalette(palette, 'chromatic.rose'), fontStyle: 'bold' }
         default:
-          return { foreground: palette.chromatic.red.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.red') }
       }
     case 'important':
       // Важные элементы получают хорошо читаемые цвета
       switch (elementType) {
         case 'variable':
         case 'variable.declaration':
-          return { foreground: palette.chromatic.blue.light }
+          return { foreground: getColorFromPalette(palette, 'chromatic.blue.light') }
         case 'parameter':
         case 'parameter.declaration':
-          return { foreground: palette.chromatic.amber.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.amber') }
         case 'property':
         case 'property.declaration':
-          return { foreground: palette.chromatic.cyan.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.cyan') }
         case 'function':
         case 'function.declaration':
         case 'method':
         case 'method.declaration':
           return {
-            foreground: palette.chromatic.blue.main,
+            foreground: getColorFromPalette(palette, 'chromatic.blue'),
             fontStyle: elementType.includes('declaration') ? 'bold' : undefined,
           }
         case 'type':
         case 'interface':
         case 'class':
-          return { foreground: palette.chromatic.teal.dark, fontStyle: 'bold' }
+          return { foreground: getColorFromPalette(palette, 'chromatic.teal.dark'), fontStyle: 'bold' }
         default:
-          return { foreground: palette.chromatic.blue.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.blue') }
       }
     case 'secondary':
       // Второстепенные элементы получают более приглушенные цвета
       switch (elementType) {
         case 'comment':
-          return { foreground: palette.chromatic.neutral.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.neutral') }
         case 'punctuation':
-          return { foreground: palette.chromatic.blue.light }
+          return { foreground: getColorFromPalette(palette, 'chromatic.slate') }
         case 'string':
-          return { foreground: palette.chromatic.green.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.green') }
         case 'number':
-          return { foreground: palette.chromatic.orange.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.orange') }
         case 'boolean':
-          return { foreground: palette.chromatic.pink.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.pink') }
         default:
-          return { foreground: palette.chromatic.neutral.main }
+          return { foreground: getColorFromPalette(palette, 'chromatic.neutral') }
       }
   }
 }
