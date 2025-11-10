@@ -20,7 +20,7 @@ export const chromaMain = {
   orange: '#ff86c4',
   red: '#ff6b6b',
   rose: '#ff6ba4',
-  neutral: '#87ceeb',
+  neutral: '#c5dfe9',
   slate: '#7c87a4',
   stone: '#9aa5ce',
   zinc: '#a9b1d6',
