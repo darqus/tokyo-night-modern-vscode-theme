@@ -57,20 +57,28 @@ export interface UniversalPalette {
   foreground: ForegroundColors
   semantic: SemanticColors
   chromatic: {
+    pink: ColorVariant
+    violet: ColorVariant
+    fuchsia: ColorVariant
+    purple: ColorVariant
+    indigo: ColorVariant
     blue: ColorVariant
+    sky: ColorVariant
     cyan: ColorVariant
     teal: ColorVariant
-    green: ColorVariant
-    purple: ColorVariant
-    orange: ColorVariant
-    yellow: ColorVariant
-    red: ColorVariant
-    pink: ColorVariant
-    neutral: ColorVariant
-    indigo: ColorVariant
-    lime: ColorVariant
-    amber: ColorVariant
     emerald: ColorVariant
+    green: ColorVariant
+    lime: ColorVariant
+    yellow: ColorVariant
+    amber: ColorVariant
+    orange: ColorVariant
+    red: ColorVariant
+    rose: ColorVariant
+    neutral: ColorVariant
+    slate: ColorVariant
+    stone: ColorVariant
+    zinc: ColorVariant
+    gray: ColorVariant
   }
   ui: UIColors
   shadow: ColorVariant
