@@ -23,7 +23,7 @@ export const coreConfig: UIColorConfig = {
     foreground: (p: UniversalPalette) => p.foreground.primary.light,
     descriptionForeground: (p: UniversalPalette) => p.foreground.primary.main,
     disabledForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
-    focusBorder: (p: UniversalPalette) => alpha(p.ui.badge, 0.3),
+    focusBorder: (p: UniversalPalette) => alpha(p.chromatic.indigo.main, 0.3),
     errorForeground: (p: UniversalPalette) => p.foreground.primary.dark,
     'icon.foreground': (p: UniversalPalette) => p.foreground.primary.light,
   },

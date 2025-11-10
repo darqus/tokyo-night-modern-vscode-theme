@@ -6,7 +6,7 @@
     "foreground": "#c3cdf6",
     "descriptionForeground": "#c0caf5",
     "disabledForeground": "#525a82",
-    "focusBorder": "#007acc4d",
+    "focusBorder": "#786ce04d",
     "errorForeground": "#b6c0e9",
     "icon.foreground": "#c3cdf6",
     "widget.shadow": "#0000004d",
