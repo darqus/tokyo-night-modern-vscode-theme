@@ -17,7 +17,7 @@ export const chromaMain = {
   lime: '#80d151',
   yellow: '#d6c3ac',
   amber: '#ffc66d',
-  orange: '#ff86c4',
+  orange: '#ff9486',
   red: '#ff6b6b',
   rose: '#ff6ba4',
   neutral: '#c5dfe9',
