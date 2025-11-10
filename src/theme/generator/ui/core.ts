@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 import { borderColor } from '../../utils/color-helpers.js'
 
@@ -5,7 +6,7 @@ export function generateCoreColors(): Record<string, string> {
   return colorRules()
     .add('foreground', c.fg.light)
     .add('descriptionForeground', c.fg.main)
-    .add('disabledForeground', c.fg.dark)
+    .add('disabledForeground', universalPalette.foreground.disabled.dark)
     .add('focusBorder', borderColor(c.bg.main, c.blue.main))
     .add('errorForeground', c.red.main)
     .add('widget.shadow', c.shadow.main) // Using a standard shadow value

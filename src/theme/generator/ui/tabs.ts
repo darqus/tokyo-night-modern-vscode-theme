@@ -1,9 +1,13 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 
 export function generateTabColors(): Record<string, string> {
   return colorRules()
     .add('tab.unfocusedActiveForeground', c.fg.main)
-    .add('tab.unfocusedInactiveForeground', c.fg.dark)
+    .add(
+      'tab.unfocusedInactiveForeground',
+      universalPalette.foreground.disabled.dark
+    )
     .add('tab.unfocusedHoverForeground', c.fg.bright)
     .add('tab.activeModifiedBorder', c.blue.main)
     .add('tab.inactiveModifiedBorder', c.blue.dark)
@@ -13,7 +17,7 @@ export function generateTabColors(): Record<string, string> {
       activeBackground: c.bg.main,
       inactiveBackground: c.bg.dark,
       activeForeground: c.fg.bright,
-      inactiveForeground: c.fg.main,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       hoverForeground: c.fg.bright,
       unFocusedHoverForeground: c.fg.main,
       hoverBackground: c.bg.light,

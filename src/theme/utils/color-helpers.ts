@@ -80,20 +80,27 @@ export const generateShades = (baseColor: string) => ({
 })
 
 // Функции для контрастности
-export const ensureContrast = (foregroundColor: string, backgroundColor: string, minRatio: number = 4.5) => {
+export const ensureContrast = (
+  foregroundColor: string,
+  _backgroundColor: string,
+  _minRatio: number = 4.5
+) => {
   // В реальной реализации здесь будет проверка контрастности и корректировка цвета при необходимости
   // Пока что возвращаем цвет как есть
   return foregroundColor
 }
 
-export const getContrastRatio = (color1: string, color2: string): number => {
+export const getContrastRatio = (_color1: string, _color2: string): number => {
   // В реальной реализации здесь будет вычисление контрастности по формуле WCAG
   // Пока что возвращаем заглушку
   return 4.5
 }
 
 // Функции для адаптации цветов под разные режимы
-export const adaptForColorblind = (color: string, type: 'protanopia' | 'deuteranopia' | 'tritanopia' = 'deuteranopia'): string => {
+export const adaptForColorblind = (
+  color: string,
+  _type: 'protanopia' | 'deuteranopia' | 'tritanopia' = 'deuteranopia'
+): string => {
   // В реальной реализации здесь будет адаптация цвета для разных типов дальтонизма
   // Пока что возвращаем цвет как есть
   return color

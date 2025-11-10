@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 
 export function generateEditorColors(): Record<string, string> {
@@ -5,7 +6,10 @@ export function generateEditorColors(): Record<string, string> {
     .add('selection.background', `${c.blue.main}40`)
     .add('editorCursor.foreground', c.blue.main)
     .add('editorIndentGuide.background1', `${c.neutral.dark}40`)
-    .add('editorLineNumber.foreground', c.fg.dark)
+    .add(
+      'editorLineNumber.foreground',
+      universalPalette.foreground.disabled.dark
+    )
     .add('editorBracketMatch.background', `${c.blue.main}40`)
     .add('peekViewEditor.background', c.bg.main)
     .addGroup('editor', {
@@ -149,7 +153,7 @@ export function generateEditorColors(): Record<string, string> {
       modifiedBackground: c.yellow.main,
       foldedBackground: c.bg.dark,
       indentationBackground: `${c.neutral.dark}40`,
-      commentRangeForeground: c.fg.dark,
+      commentRangeForeground: universalPalette.foreground.disabled.dark,
       commentGlyphForeground: c.blue.main,
       commentUnresolvedGlyphForeground: c.blue.light,
     })

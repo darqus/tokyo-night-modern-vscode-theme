@@ -22,7 +22,7 @@ export const coreConfig: UIColorConfig = {
   rules: {
     foreground: (p: UniversalPalette) => p.foreground.primary.light,
     descriptionForeground: (p: UniversalPalette) => p.foreground.primary.main,
-    disabledForeground: (p: UniversalPalette) => p.chromatic.neutral.main,
+    disabledForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
     focusBorder: (p: UniversalPalette) => alpha(p.ui.badge, 0.3),
     errorForeground: (p: UniversalPalette) => p.foreground.primary.dark,
     'icon.foreground': (p: UniversalPalette) => p.foreground.primary.light,
@@ -153,12 +153,7 @@ export const sidebarConfig: UIColorConfig = {
     activityBar: {
       background: (p: UniversalPalette) => p.background.base.dark,
       foreground: (p: UniversalPalette) => p.foreground.primary.dark,
-      inactiveForeground: (p: UniversalPalette) =>
-        mix(
-          darken(p.foreground.primary.dark, 0.4),
-          p.background.base.dark,
-          0.2
-        ),
+      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
       activeBorder: (p: UniversalPalette) => p.chromatic.blue.main,
       activeBackground: (p: UniversalPalette) =>
         lighten(p.background.base.dark, 0.03),
@@ -170,7 +165,7 @@ export const sidebarConfig: UIColorConfig = {
     },
     activityBarTop: {
       foreground: (p: UniversalPalette) => p.foreground.primary.main,
-      inactiveForeground: (p: UniversalPalette) => p.foreground.primary.dark,
+      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
     },
     tree: {
       indentGuidesStroke: (p: UniversalPalette) =>
@@ -268,12 +263,12 @@ export const tabsConfig: UIColorConfig = {
       activeForeground: (p: UniversalPalette) => p.foreground.primary.light,
       hoverForeground: (p: UniversalPalette) => p.foreground.primary.light,
       activeBorderTop: (p: UniversalPalette) => p.chromatic.purple.main,
-      inactiveForeground: (p: UniversalPalette) => p.foreground.primary.dark,
+      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
       border: (p: UniversalPalette) => lightBackground(p.background.base.light),
       unfocusedActiveForeground: (p: UniversalPalette) =>
         p.foreground.primary.main,
       unfocusedInactiveForeground: (p: UniversalPalette) =>
-        p.foreground.primary.dark,
+        p.foreground.disabled.dark,
       unfocusedHoverForeground: (p: UniversalPalette) =>
         p.foreground.primary.main,
       activeModifiedBorder: (p: UniversalPalette) => p.chromatic.purple.main,
@@ -282,7 +277,7 @@ export const tabsConfig: UIColorConfig = {
       unfocusedActiveModifiedBorder: (p: UniversalPalette) =>
         lighten(p.background.base.main, 0.04),
       unfocusedInactiveModifiedBorder: (p: UniversalPalette) =>
-        lightBackground(p.background.base.light),
+        p.foreground.disabled.dark,
       unfocusedActiveBorder: (p: UniversalPalette) =>
         lighten(p.background.base.main, 0.04),
       lastPinnedBorder: (p: UniversalPalette) => p.chromatic.purple.main,
@@ -538,8 +533,7 @@ export const panelsConfig: UIColorConfig = {
     },
     panelTitle: {
       activeForeground: (p: UniversalPalette) => p.foreground.primary.dark,
-      inactiveForeground: (p: UniversalPalette) =>
-        darken(p.foreground.primary.dark, 0.2),
+      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
       activeBorder: (p: UniversalPalette) => p.chromatic.blue.main,
     },
     panelInput: {
@@ -575,8 +569,7 @@ export const panelsConfig: UIColorConfig = {
     },
     titleBar: {
       activeForeground: (p: UniversalPalette) => p.foreground.primary.dark,
-      inactiveForeground: (p: UniversalPalette) =>
-        darken(p.foreground.primary.dark, 0.4),
+      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
       activeBackground: (p: UniversalPalette) => p.background.base.main,
       inactiveBackground: (p: UniversalPalette) =>
         darken(p.background.base.main, 0.03),

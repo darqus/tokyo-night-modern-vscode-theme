@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 
 export function generateSidebarColors(): Record<string, string> {
@@ -27,7 +28,7 @@ export function generateSidebarColors(): Record<string, string> {
       activeBorder: c.blue.main,
       activeBackground: c.bg.main,
       activeFocusBorder: c.blue.main,
-      inactiveForeground: c.fg.dark,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       badgeBackground: c.ui.badge,
       badgeForeground: c.ui.white,
       border: c.neutral.main,
@@ -40,7 +41,7 @@ export function generateSidebarColors(): Record<string, string> {
       border: c.neutral.main,
       activeBorder: c.blue.main,
       activeBackground: c.bg.main,
-      inactiveForeground: c.fg.dark,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       badgeBackground: c.ui.badge,
       badgeForeground: c.ui.white,
     })

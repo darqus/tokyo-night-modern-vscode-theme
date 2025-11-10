@@ -51,14 +51,11 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const asyncConfig: SemanticTokenConfig = {
   rules: {
-    'keyword.async': (p: UniversalPalette) =>
-      boldToken(p.chromatic.purple.main),
-    'keyword.await': (p: UniversalPalette) =>
-      boldToken(p.chromatic.purple.main),
-    'keyword.yield': (p: UniversalPalette) =>
-      boldToken(p.chromatic.purple.main),
+    'keyword.async': (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
+    'keyword.await': (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
+    'keyword.yield': (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
     'keyword.generator': (p: UniversalPalette) =>
-      italicToken(p.chromatic.purple.main),
+      italicToken(p.chromatic.pink.main),
   },
 }
 

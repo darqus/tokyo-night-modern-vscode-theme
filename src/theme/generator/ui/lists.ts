@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 import { borderColor } from '../../utils/color-helpers.js'
 
@@ -10,7 +11,7 @@ export function generateListColors(): Record<string, string> {
       activeSelectionBackground: `${c.blue.main}40`,
       activeSelectionForeground: c.fg.bright,
       inactiveSelectionBackground: c.bg.light,
-      inactiveSelectionForeground: c.fg.light,
+      inactiveSelectionForeground: universalPalette.foreground.disabled.dark,
       hoverBackground: c.bg.dark,
       hoverForeground: c.fg.bright,
       highlightForeground: c.blue.light,
@@ -20,7 +21,7 @@ export function generateListColors(): Record<string, string> {
       filterMatchBackground: `${c.yellow.main}80`,
       filterMatchBorder: c.yellow.light,
       emphasizedForeground: c.blue.light,
-      deemphasizedForeground: c.fg.dark,
+      deemphasizedForeground: universalPalette.foreground.disabled.dark,
     })
     .addGroup('tree', {
       indentGuidesStroke: c.neutral.dark,
@@ -41,7 +42,8 @@ export function generateListColors(): Record<string, string> {
       listHoverBackground: c.bg.main,
       listHoverForeground: c.fg.bright,
       listInactiveSelectionBackground: c.bg.light,
-      listInactiveSelectionForeground: c.fg.main,
+      listInactiveSelectionForeground:
+        universalPalette.foreground.disabled.dark,
       listActiveSelectionBackground: `${c.blue.main}40`,
       listActiveSelectionForeground: c.fg.bright,
     })

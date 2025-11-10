@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 import {
   activeState,
@@ -57,7 +58,7 @@ export function generateCheckboxColors(): Record<string, string> {
       activeBackground: activeState(c.bg.main),
       focusBorder: borderColor(c.bg.main, c.blue.light),
       disabledBackground: disabledState(c.bg.main),
-      disabledForeground: disabledState(c.fg.light),
+      disabledForeground: universalPalette.foreground.disabled.dark,
       disabledBorder: disabledState(c.blue.main),
     })
     .build()

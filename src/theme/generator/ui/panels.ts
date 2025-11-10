@@ -1,3 +1,4 @@
+import { universalPalette } from '../../palette/index.js'
 import { c, colorRules } from '../../utils/color-builder.js'
 
 export function generatePanelColors(): Record<string, string> {
@@ -11,7 +12,7 @@ export function generatePanelColors(): Record<string, string> {
       titleSeparatorBorder: c.neutral.main,
       activeTitleForeground: c.fg.bright,
       activeTitleBorder: c.blue.main,
-      inactiveTitleForeground: c.fg.main,
+      inactiveTitleForeground: universalPalette.foreground.disabled.dark,
       inputBorder: c.neutral.main,
       sectionHeaderBackground: c.bg.dark,
       sectionHeaderForeground: c.fg.bright,
@@ -23,7 +24,7 @@ export function generatePanelColors(): Record<string, string> {
     .addGroup('panelTitle', {
       activeForeground: c.fg.bright,
       activeBorder: c.blue.main,
-      inactiveForeground: c.fg.main,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       inactiveBorder: c.neutral.main,
     })
     .addGroup('statusBar', {
@@ -44,7 +45,7 @@ export function generatePanelColors(): Record<string, string> {
       itemActiveBackground: c.bg.main,
       itemHoverBackground: c.bg.dark,
       itemActiveForeground: c.fg.bright,
-      itemInactiveForeground: c.fg.main,
+      itemInactiveForeground: universalPalette.foreground.disabled.dark,
       itemInactiveBackground: c.bg.dark,
       itemHoverForeground: c.fg.bright,
       itemActiveBorder: c.blue.main,
@@ -70,7 +71,7 @@ export function generatePanelColors(): Record<string, string> {
     .addGroup('titleBar', {
       activeForeground: c.fg.main,
       activeBackground: c.bg.dark,
-      inactiveForeground: c.fg.dark,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       inactiveBackground: c.bg.dark,
       border: c.neutral.main,
     })
@@ -94,7 +95,7 @@ export function generatePanelColors(): Record<string, string> {
       activeBorder: c.blue.main,
       activeBackground: c.bg.main,
       activeFocusBorder: c.blue.main,
-      inactiveForeground: c.fg.dark,
+      inactiveForeground: universalPalette.foreground.disabled.dark,
       badgeBackground: c.ui.badge,
       badgeForeground: c.ui.white,
       border: c.neutral.main,
