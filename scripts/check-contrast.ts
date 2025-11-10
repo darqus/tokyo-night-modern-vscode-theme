@@ -1,4 +1,4 @@
-import { palette } from '../src/theme/palette/index.js'
+import { universalPalette as palette } from '../src/theme/palette/index.js'
 import { checkContrast } from '../src/theme/utils/contrast.js'
 import { sanitizeLogOutput } from '../src/theme/utils/logger.js'
 
@@ -40,60 +40,130 @@ console.log('🔍 Tokyo Modern theme contrast check\n')
 
 // Main combinations
 console.log('📊 Main combinations:')
-const mainFg = check('Main text', palette.fg.light, palette.bg.light)
+const mainFg = check(
+  'Main text',
+  palette.foreground.primary.light,
+  palette.background.base.light
+)
 logContrastResult('Main text', mainFg)
 
-const dimFg = check('Dim text', palette.fg.dark, palette.bg.light)
+const dimFg = check(
+  'Dim text',
+  palette.foreground.primary.dark,
+  palette.background.base.light
+)
 logContrastResult('Dim text', dimFg)
 
 const brightFg = check(
   'Bright text',
-  palette.fg.bright ?? palette.fg.light,
-  palette.bg.light
+  palette.foreground.primary.bright ?? palette.foreground.primary.light,
+  palette.background.base.light
 )
 logContrastResult('Bright text', brightFg)
 
 // Accent colors
 console.log('\n🎨 Accent colors on background:')
-const blue = check('Blue', palette.blue.main, palette.bg.light)
+const blue = check(
+  'Blue',
+  palette.chromatic.blue.main,
+  palette.background.base.light
+)
 logContrastResult('Blue', blue)
 
-const cyan = check('Cyan', palette.cyan.light, palette.bg.light)
+const cyan = check(
+  'Cyan',
+  palette.chromatic.cyan.light,
+  palette.background.base.light
+)
 logContrastResult('Cyan', cyan)
 
-const green = check('Green', palette.green.main, palette.bg.light)
+const green = check(
+  'Green',
+  palette.chromatic.green.main,
+  palette.background.base.light
+)
 logContrastResult('Green', green)
 
-const yellow = check('Yellow', palette.yellow.main, palette.bg.light)
+const yellow = check(
+  'Yellow',
+  palette.chromatic.yellow.main,
+  palette.background.base.light
+)
 logContrastResult('Yellow', yellow)
 
-const red = check('Red', palette.red.main, palette.bg.light)
+const red = check(
+  'Red',
+  palette.chromatic.red.main,
+  palette.background.base.light
+)
 logContrastResult('Red', red)
 
-const purple = check('Purple', palette.purple.light, palette.bg.light)
+const purple = check(
+  'Purple',
+  palette.chromatic.purple.light,
+  palette.background.base.light
+)
 logContrastResult('Purple', purple)
 
 // UI elements
 console.log('\n🖥️  UI elements:')
-const sidebarFg = check('Sidebar', palette.fg.main, palette.bg.dark)
+const sidebarFg = check(
+  'Sidebar',
+  palette.foreground.primary.main,
+  palette.background.base.dark
+)
 logContrastResult('Sidebar', sidebarFg)
 
-const tabActive = check('Active Tab', palette.fg.light, palette.bg.main)
+const tabActive = check(
+  'Active Tab',
+  palette.foreground.primary.light,
+  palette.background.base.main
+)
 logContrastResult('Active Tab', tabActive)
 
-const tabInactive = check('Inactive Tab', palette.fg.main, palette.bg.light)
+const tabInactive = check(
+  'Inactive Tab',
+  palette.foreground.primary.main,
+  palette.background.base.light
+)
 logContrastResult('Inactive Tab', tabInactive)
 
 // Hover tooltips
 // Using the same text color but with the new mixed background
-const { mix } = await import('../src/theme/utils/color.js')
-const newTooltipBg = mix(palette.bg.light, palette.blue.main, 0.1)
-const tooltipFg = check('Tooltip text', palette.fg.light, newTooltipBg)
-logContrastResult('Tooltip text', tooltipFg, palette.fg.light, newTooltipBg)
+async function checkTooltipContrast() {
+  const { mix } = await import('../src/theme/utils/color.js')
+  const newTooltipBg = mix(
+    palette.background.base.light,
+    palette.chromatic.blue.main,
+    0.1
+  )
+  const tooltipFg = check(
+    'Tooltip text',
+    palette.foreground.primary.light,
+    newTooltipBg
+  )
+  logContrastResult(
+    'Tooltip text',
+    tooltipFg,
+    palette.foreground.primary.light,
+    newTooltipBg
+  )
+}
+
+await checkTooltipContrast()
 
 // List error foreground on tab background
-const listErrorOnTab = check('List error on tab', '#ff6b7a', '#18162c')
-logContrastResult('List error on tab', listErrorOnTab, '#ff6b7a', '#18162c')
+const listErrorOnTab = check(
+  'List error on tab',
+  palette.chromatic.red.main,
+  palette.background.base.dark
+)
+logContrastResult(
+  'List error on tab',
+  listErrorOnTab,
+  palette.chromatic.red.main,
+  palette.background.base.dark
+)
 
 // Summary
 const compliancePercentage =
