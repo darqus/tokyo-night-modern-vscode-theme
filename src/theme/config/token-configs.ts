@@ -279,9 +279,6 @@ export const basicTokens: TokenColorConfig[] = [
       'variable.language.this punctuation.definition.variable',
       'keyword.control.return',
       'keyword.control.throw',
-      'keyword.control.yield',
-      'keyword.control.await',
-      'keyword.control.async',
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.red.main,

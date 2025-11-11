@@ -588,9 +588,6 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "variable.language.this punctuation.definition.variable",
       "keyword.control.return",
       "keyword.control.throw",
-      "keyword.control.yield",
-      "keyword.control.await",
-      "keyword.control.async",
     ],
     "settings": {
       "fontStyle": "bold",
@@ -3334,9 +3331,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "variable.language.this punctuation.definition.variable",
         "keyword.control.return",
         "keyword.control.throw",
-        "keyword.control.yield",
-        "keyword.control.await",
-        "keyword.control.async",
       ],
       "settings": {
         "fontStyle": "bold",
@@ -4871,9 +4865,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "variable.language.this punctuation.definition.variable",
       "keyword.control.return",
       "keyword.control.throw",
-      "keyword.control.yield",
-      "keyword.control.await",
-      "keyword.control.async",
     ],
     "settings": {
       "fontStyle": "bold",

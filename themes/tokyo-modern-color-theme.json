@@ -630,10 +630,7 @@
         "variable.language.special.self",
         "variable.language.this punctuation.definition.variable",
         "keyword.control.return",
-        "keyword.control.throw",
-        "keyword.control.yield",
-        "keyword.control.await",
-        "keyword.control.async"
+        "keyword.control.throw"
       ],
       "settings": {
         "foreground": "#ff6b6b",
