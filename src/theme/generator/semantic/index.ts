@@ -20,5 +20,5 @@ export function generateSemanticTokenColors(): Record<
     modifiers: modifiersConfig,
     literals: literalsConfig,
     frameworks: frameworksConfig,
- })
+  })
 }

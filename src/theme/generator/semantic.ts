@@ -13,15 +13,15 @@ import { mergeSemanticConfigs } from '../config/unified-generator.js'
  * Генерирует все семантические токены
  */
 export function generateSemanticTokenColors() {
-   return mergeSemanticConfigs({
-     variables: variablesConfig,
-     functions: functionsConfig,
-     types: typesConfig,
-     modifiers: modifiersConfig,
-     literals: literalsConfig,
-     frameworks: frameworksConfig,
-     criticalKeywords: criticalKeywordsConfig,
-   })
+  return mergeSemanticConfigs({
+    variables: variablesConfig,
+    functions: functionsConfig,
+    types: typesConfig,
+    modifiers: modifiersConfig,
+    literals: literalsConfig,
+    frameworks: frameworksConfig,
+    criticalKeywords: criticalKeywordsConfig,
+  })
 }
 
 // Maintain backward compatibility with current implementation

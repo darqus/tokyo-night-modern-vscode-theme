@@ -35,6 +35,40 @@ export const dockerTokens: TokenColorConfig[] = [
 ]
 ```
 
+**Apache, Preprocessor, Environment tokens:**
+
+```typescript
+export const apacheTokens: TokenColorConfig[] = [
+  {
+    name: 'Apache Tag',
+    scope: ['entity.tag.apacheconf'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+]
+
+export const preprocessorTokens: TokenColorConfig[] = [
+  {
+    name: 'Preprocessor',
+    scope: ['meta.preprocessor'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+]
+
+export const envTokens: TokenColorConfig[] = [
+  {
+    name: 'ENV value',
+    scope: ['source.env'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+]
+```
+
 **Расширенная поддержка языков:**
 
 - **Rust**: Lifetimes, macros, pattern matching, type parameters, derive
@@ -92,9 +126,9 @@ export const dockerTokens: TokenColorConfig[] = [
 
 | Метрика | До | После | Улучшение |
 |---------|----|-------|-----------|
-| Правила токенов | 173 | 197 | +14% |
-| Категории языков | 8 | 13 | +63% |
-| Специфичные токены | 85 | 120+ | +41% |
+| Правила токенов | 173 | 198 | +14% |
+| Категории языков | 8 | 16 | +100% |
+| Специфичные токены | 85 | 125+ | +47% |
 | WCAG AA соответствие | 100% | 100% | ✓ |
 
 ### 🧪 Тестирование

@@ -5,7 +5,7 @@ import {
   literalsConfig,
   modifiersConfig,
   typesConfig,
- variablesConfig,
+  variablesConfig,
 } from '../config/semantic-configs.js'
 import {
   basicTokens,

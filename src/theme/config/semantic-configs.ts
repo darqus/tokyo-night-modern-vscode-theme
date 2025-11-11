@@ -46,7 +46,6 @@ export const functionsConfig: SemanticTokenConfig = {
   },
 }
 
-
 /**
  * Type tokens - типы и классы
  */

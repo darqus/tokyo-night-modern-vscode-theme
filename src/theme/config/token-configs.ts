@@ -505,20 +505,14 @@ export const basicTokens: TokenColorConfig[] = [
   },
   {
     name: 'SQL Functions',
-    scope: [
-      'support.function.sql',
-      'entity.name.function.sql',
-    ],
+    scope: ['support.function.sql', 'entity.name.function.sql'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.purple.main,
     },
   },
   {
     name: 'SQL Variables',
-    scope: [
-      'variable.other.sql',
-      'variable.parameter.sql',
-    ],
+    scope: ['variable.other.sql', 'variable.parameter.sql'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
@@ -1196,6 +1190,13 @@ export const markdownTokens: TokenColorConfig[] = [
     },
   },
   {
+    name: 'Markdown - Entity Section',
+    scope: ['entity.name.section.markdown'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
     name: 'Markdown - Separator',
     scope: 'meta.separator',
     settings: {
@@ -1364,6 +1365,45 @@ export const shellTokens: TokenColorConfig[] = [
     scope: ['string.interpolated.backtick.shell'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+]
+
+/**
+ * Apache tokens - специфичные для Apache конфигураций
+ */
+export const apacheTokens: TokenColorConfig[] = [
+  {
+    name: 'Apache Tag',
+    scope: ['entity.tag.apacheconf'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+]
+
+/**
+ * Preprocessor tokens - для препроцессоров
+ */
+export const preprocessorTokens: TokenColorConfig[] = [
+  {
+    name: 'Preprocessor',
+    scope: ['meta.preprocessor'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+]
+
+/**
+ * Environment tokens - для переменных окружения
+ */
+export const envTokens: TokenColorConfig[] = [
+  {
+    name: 'ENV value',
+    scope: ['source.env'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
 ]
@@ -1906,10 +1946,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Python Classes',
-    scope: [
-      'entity.name.type.class.python',
-      'support.type.python',
-    ],
+    scope: ['entity.name.type.class.python', 'support.type.python'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
@@ -1951,10 +1988,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Ruby Methods',
-    scope: [
-      'entity.name.function.ruby',
-      'support.function.ruby',
-    ],
+    scope: ['entity.name.function.ruby', 'support.function.ruby'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
@@ -1974,10 +2008,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Java Classes',
-    scope: [
-      'entity.name.type.class.java',
-      'support.class.java',
-    ],
+    scope: ['entity.name.type.class.java', 'support.class.java'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
@@ -2155,10 +2186,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Python Classes',
-    scope: [
-      'entity.name.type.class.python',
-      'support.type.python',
-    ],
+    scope: ['entity.name.type.class.python', 'support.type.python'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
@@ -2200,10 +2228,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Ruby Methods',
-    scope: [
-      'entity.name.function.ruby',
-      'support.function.ruby',
-    ],
+    scope: ['entity.name.function.ruby', 'support.function.ruby'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
@@ -2223,10 +2248,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Java Classes',
-    scope: [
-      'entity.name.type.class.java',
-      'support.class.java',
-    ],
+    scope: ['entity.name.type.class.java', 'support.class.java'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
     },
@@ -2296,10 +2318,7 @@ export const modernTokens: TokenColorConfig[] = [
   },
   {
     name: 'Shell Builtins',
-    scope: [
-      'support.function.builtin.shell',
-      'entity.name.function.shell',
-    ],
+    scope: ['support.function.builtin.shell', 'entity.name.function.shell'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },

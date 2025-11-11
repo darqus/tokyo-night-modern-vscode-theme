@@ -1519,6 +1519,13 @@
       }
     },
     {
+      "name": "Markdown - Entity Section",
+      "scope": ["entity.name.section.markdown"],
+      "settings": {
+        "foreground": "#49c7d8"
+      }
+    },
+    {
       "name": "Markdown - Separator",
       "scope": "meta.separator",
       "settings": {
