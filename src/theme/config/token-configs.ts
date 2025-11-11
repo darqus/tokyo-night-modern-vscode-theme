@@ -205,6 +205,56 @@ export const basicTokens: TokenColorConfig[] = [
     },
   },
   {
+    name: 'Blade Directives',
+    scope: [
+      'keyword.control.blade',
+      'punctuation.definition.keyword.blade',
+      'begin.blade',
+      'end.blade',
+      'keyword.other.blade',
+      'support.function.blade',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Twig Tags',
+    scope: [
+      'entity.name.tag.twig',
+      'keyword.control.twig',
+      'support.function.twig',
+      'variable.parameter.twig',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+  {
+    name: 'Smarty Tags',
+    scope: [
+      'entity.name.tag.smarty',
+      'keyword.control.smarty',
+      'support.function.smarty',
+      'variable.parameter.smarty',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+    },
+  },
+  {
+    name: 'Handlebars Expressions',
+    scope: [
+      'support.constant.handlebars',
+      'variable.parameter.handlebars',
+      'meta.function-call.handlebars',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
     name: 'Spread',
     scope: ['keyword.operator.spread', 'keyword.operator.rest'],
     settings: {
@@ -342,6 +392,90 @@ export const basicTokens: TokenColorConfig[] = [
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.pink.main,
       fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'PHP Keywords',
+    scope: [
+      'keyword.control.php',
+      'keyword.other.php',
+      'storage.type.php',
+      'storage.modifier.php',
+      'keyword.operator.type.php',
+      'keyword.operator.class.php',
+      'keyword.operator.namespace.php',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'PHP Variables',
+    scope: [
+      'variable.other.php',
+      'variable.other.property.php',
+      'variable.other.global.php',
+      'variable.language.php',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'PHP Functions',
+    scope: [
+      'entity.name.function.php',
+      'support.function.php',
+      'meta.function-call.php entity.name.function.php',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'PHP Classes',
+    scope: [
+      'entity.name.type.class.php',
+      'support.class.php',
+      'entity.name.class.php',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'SQL Keywords',
+    scope: [
+      'keyword.other.DML.sql',
+      'keyword.other.DDL.sql',
+      'keyword.other.DCL.sql',
+      'keyword.other.TCL.sql',
+      'storage.type.sql',
+      'keyword.control.sql',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'SQL Functions',
+    scope: [
+      'support.function.sql',
+      'entity.name.function.sql',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'SQL Variables',
+    scope: [
+      'variable.other.sql',
+      'variable.parameter.sql',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
     },
   },
 ]
@@ -725,6 +859,38 @@ export const cssTokens: TokenColorConfig[] = [
     scope: 'support.constant.property-value',
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+    },
+  },
+  {
+    name: 'CSS @rules',
+    scope: [
+      'keyword.control.at-rule',
+      'keyword.control.at-rule.import',
+      'keyword.control.at-rule.media',
+      'keyword.control.at-rule.font-face',
+      'keyword.control.at-rule.page',
+      'keyword.control.at-rule.keyframes',
+      'keyword.control.at-rule.supports',
+      'keyword.control.at-rule.document',
+      'keyword.control.at-rule.viewport',
+      'keyword.control.at-rule.region',
+      'keyword.control.at-rule.namespace',
+      'keyword.control.at-rule.counter-style',
+      'keyword.control.at-rule.font-feature-values',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'CSS @rules - Function',
+    scope: [
+      'meta.at-rule.function variable.parameter.url',
+      'meta.at-rule.function support.function.misc',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
     },
   },
 ]
@@ -1558,6 +1724,192 @@ export const modernTokens: TokenColorConfig[] = [
     scope: ['support.function.template.ref.vue', 'variable.template.ref.vue'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+  // Python-specific tokens
+  {
+    name: 'Python Keywords',
+    scope: [
+      'keyword.control.python',
+      'keyword.other.python',
+      'storage.type.python',
+      'storage.modifier.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Python Functions',
+    scope: [
+      'entity.name.function.python',
+      'meta.function-call.python entity.name.function.python',
+      'support.function.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Python Classes',
+    scope: [
+      'entity.name.type.class.python',
+      'support.type.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Python Decorators',
+    scope: [
+      'meta.function.decorator.python',
+      'entity.name.function.decorator.python',
+      'punctuation.definition.decorator.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'italic',
+    },
+  },
+  // Ruby-specific tokens
+  {
+    name: 'Ruby Keywords',
+    scope: [
+      'keyword.control.ruby',
+      'keyword.other.ruby',
+      'storage.type.ruby',
+      'storage.modifier.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Ruby Symbols',
+    scope: [
+      'constant.other.symbol.ruby',
+      'punctuation.definition.constant.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Ruby Methods',
+    scope: [
+      'entity.name.function.ruby',
+      'support.function.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  // Java-specific tokens
+  {
+    name: 'Java Keywords',
+    scope: [
+      'keyword.control.java',
+      'keyword.other.java',
+      'storage.type.java',
+      'storage.modifier.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Java Classes',
+    scope: [
+      'entity.name.type.class.java',
+      'support.class.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Java Annotations',
+    scope: [
+      'meta.annotation.java',
+      'punctuation.definition.annotation.java',
+      'storage.type.annotation.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      fontStyle: 'italic',
+    },
+  },
+  // C/C++ specific tokens
+  {
+    name: 'C/C++ Keywords',
+    scope: [
+      'keyword.control.c',
+      'keyword.control.cpp',
+      'storage.type.c',
+      'storage.type.cpp',
+      'storage.modifier.c',
+      'storage.modifier.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'C/C++ Functions',
+    scope: [
+      'entity.name.function.c',
+      'entity.name.function.cpp',
+      'support.function.c',
+      'support.function.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'C/C++ Macros',
+    scope: [
+      'entity.name.function.preprocessor.c',
+      'meta.preprocessor.macro.c',
+      'meta.preprocessor.macro.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'bold',
+    },
+  },
+  // Shell/Bash specific tokens
+  {
+    name: 'Shell Keywords',
+    scope: [
+      'keyword.control.shell',
+      'keyword.other.shell',
+      'storage.modifier.shell',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Shell Builtins',
+    scope: [
+      'support.function.builtin.shell',
+      'entity.name.function.shell',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Shell Variables',
+    scope: [
+      'variable.other.shell',
+      'variable.parameter.shell',
+      'meta.variable.shell',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
     },
   },
 ]
