@@ -27,16 +27,22 @@ export async function parallelMap<T, R>(
 }
 
 /**
- * Parallel reduce function
+ * Async reduce function
+ * Note: Reduce operations are inherently sequential since each step depends on the previous one.
+ * This implementation handles both synchronous and asynchronous reducers.
+ * While the lint rule suggests avoiding await in loops, in the case of reduce operations
+ * this is necessary as each step depends on the result of the previous step.
  */
-export async function parallelReduce<T, R>(
+export async function asyncReduce<T, R>(
   array: T[],
-  reducer: (acc: R, item: T, index: number) => R,
+  reducer: (acc: R, item: T, index: number) => R | Promise<R>,
   initialValue: R
 ): Promise<R> {
   let accumulator = initialValue
   for (let i = 0; i < array.length; i++) {
-    accumulator = await Promise.resolve(reducer(accumulator, array[i], i))
+    // biome-ignore lint/performance/noAwaitInLoops: This is necessary for reduce operations where each step depends on the previous
+    const result = await Promise.resolve(reducer(accumulator, array[i], i))
+    accumulator = result
   }
 
   return accumulator
