@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2580](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2447...v2.3.2580) (2025-11-11)
+
+
+### Features
+
+* **biome.json:** update linting rules and add JSON configuration ([a369c79](https://github.com/darqus/tokyo-modern-vscode-theme/commit/a369c79c82ba7cddf15f76b5cf9b023fc37b94ab))
+* **colors:** update boolean color to red for literals and theme ([6383813](https://github.com/darqus/tokyo-modern-vscode-theme/commit/63838133941a0c12b4e18e8fb26a9c03b0372f5f))
+* **static:** update screenshot of tokyo modern theme ([760548f](https://github.com/darqus/tokyo-modern-vscode-theme/commit/760548fecbaabb5622e5fc3badac5d8a06e8419f))
+* **test:** add syntax highlighting test file ([f86719c](https://github.com/darqus/tokyo-modern-vscode-theme/commit/f86719cc9aa0fcf7d33c220f0d46171951104660))
+* **theme:** add async config to semantic token colors ([d7cdc0b](https://github.com/darqus/tokyo-modern-vscode-theme/commit/d7cdc0bcc25cbbf7f21ec180eeb1b7bf693d5fe9))
+* **theme:** add support for async/await and yield/generator keywords ([db4e5d6](https://github.com/darqus/tokyo-modern-vscode-theme/commit/db4e5d6a056341abcd296d4220167f0a84067213))
+* **theme:** add UI color generators for various components ([4ce0787](https://github.com/darqus/tokyo-modern-vscode-theme/commit/4ce07879b56869a2a15e0a6a44ccf41625ef65f3))
+* **theme:** complete Phase 2 TypeScript improvements and start Phase 3 Rust support ([f86a0e7](https://github.com/darqus/tokyo-modern-vscode-theme/commit/f86a0e764f03a548e3540b4c1fdd51aedef7bf39))
+* **theme:** enhance syntax highlighting and color palette ([9453314](https://github.com/darqus/tokyo-modern-vscode-theme/commit/9453314450b9bacd042b889d2ede1c282c0edba8))
+* **theme:** expand syntax highlighting color palette ([fbb9f11](https://github.com/darqus/tokyo-modern-vscode-theme/commit/fbb9f11cbbcc39719205d2c4f9f4318631674174))
+* **theme:** extend chromatic color variants in universal palette ([ec1394e](https://github.com/darqus/tokyo-modern-vscode-theme/commit/ec1394e963fe08b220fc9fb95cef478cfbd075dc))
+* **theme:** extend token support for Tokyo Modern ([4fa3d61](https://github.com/darqus/tokyo-modern-vscode-theme/commit/4fa3d61da354dfdaaf9fabd26b4ab487dc48793e))
+* **theme:** implement phase 1 critical improvements ([1b330e0](https://github.com/darqus/tokyo-modern-vscode-theme/commit/1b330e054d0b98efb15608e4f834f60328f8349d))
+* **theme:** integrate enhanced token support and new language features ([4b63c25](https://github.com/darqus/tokyo-modern-vscode-theme/commit/4b63c251984835535179e9d6cf05f3288e216cbe))
+* **theme:** integrate Tokyo Night color scheme and expand language support ([61e4c0b](https://github.com/darqus/tokyo-modern-vscode-theme/commit/61e4c0b96eb5cfe127103c7e47e538029bff5a05))
+
+
+### Bug Fixes
+
+* correct Angular commit message format ([7e1bb7d](https://github.com/darqus/tokyo-modern-vscode-theme/commit/7e1bb7de5bad42c8f97377432e836f22506e901c))
+* **format:** adjust the order of commands in npm format script ([b5a9b11](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b5a9b116390f0ffc5bd418c309e691dc08da31b3))
+* **scripts:** improve ASCII control character filtering and nullish coalescing ([28ed966](https://github.com/darqus/tokyo-modern-vscode-theme/commit/28ed966be288011a321f3c42f7b516f2dd9df126))
+* **theme:** add critical keywords and async configurations ([cd75cca](https://github.com/darqus/tokyo-modern-vscode-theme/commit/cd75cca45ebb19ffc61d7678279496a64e8e085f))
+* **theme:** adjust editor background for better visibility ([9394ce7](https://github.com/darqus/tokyo-modern-vscode-theme/commit/9394ce75a085f951292dfd5a4690970c3cccba9d))
+* **theme:** correct import extension in universal-base.ts ([b302362](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b3023628b4ddeabdacee06123b27c0fa64bde266))
+* **theme:** darken button and badge background for better visibility ([2030c2c](https://github.com/darqus/tokyo-modern-vscode-theme/commit/2030c2c8ee792424bda2bdfe107e809500dbaf01))
+* **theme:** darken comment foreground color ([a75a3da](https://github.com/darqus/tokyo-modern-vscode-theme/commit/a75a3da5690eedf8d933c3059151edcc3fa4bd61))
+* **theme:** improve comment coloring and code formatting ([21c9287](https://github.com/darqus/tokyo-modern-vscode-theme/commit/21c9287faa879e7eb19a434d533c2de6191d2b19))
+* **theme:** unify palette adapter type in configuration ([05a56f1](https://github.com/darqus/tokyo-modern-vscode-theme/commit/05a56f15b55f0becfd9a407db84a81f8d57c7f74))
+* **theme:** use template literals for color values ([482245f](https://github.com/darqus/tokyo-modern-vscode-theme/commit/482245fe56a065a30b5b99ce48341a510df9887d))
+* **tokyo-modern:** update theme colors and vsix package ([a13b59a](https://github.com/darqus/tokyo-modern-vscode-theme/commit/a13b59a92ecc11d85af59e8448e84f190f641f5b))
+
 ### [2.3.2447](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2437...v2.3.2447) (2025-11-06)
 
 
