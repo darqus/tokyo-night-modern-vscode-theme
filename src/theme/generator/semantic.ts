@@ -1,4 +1,6 @@
 import {
+  asyncConfig,
+  criticalKeywordsConfig,
   frameworksConfig,
   functionsConfig,
   literalsConfig,
@@ -19,6 +21,8 @@ export function generateSemanticTokenColors() {
     modifiers: modifiersConfig,
     literals: literalsConfig,
     frameworks: frameworksConfig,
+    criticalKeywords: criticalKeywordsConfig,
+    async: asyncConfig,
   })
 }
 
