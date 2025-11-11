@@ -2,29 +2,29 @@ import { describe, expect, it } from 'vitest'
 import { generateTheme } from '../../src/theme/generator'
 
 describe('Snapshot Tests - Generated Theme', () => {
-  it('should match the expected theme snapshot', async () => {
-    const theme = await generateTheme()
+  it('should match the expected theme snapshot',  () => {
+    const theme =  generateTheme()
     expect(theme).toMatchSnapshot()
   })
 
-  it('should match the expected theme colors snapshot', async () => {
-    const theme = await generateTheme()
+  it('should match the expected theme colors snapshot',  () => {
+    const theme =  generateTheme()
     expect(theme.colors).toMatchSnapshot()
   })
 
-  it('should match the expected theme token colors snapshot', async () => {
-    const theme = await generateTheme()
+  it('should match the expected theme token colors snapshot',  () => {
+    const theme =  generateTheme()
     expect(theme.tokenColors).toMatchSnapshot()
   })
 
-  it('should match the expected theme semantic token colors snapshot', async () => {
-    const theme = await generateTheme()
+  it('should match the expected theme semantic token colors snapshot',  () => {
+    const theme =  generateTheme()
     expect(theme.semanticTokenColors).toMatchSnapshot()
   })
 
-  it('should have consistent structure between runs', async () => {
-    const theme1 = await generateTheme()
-    const theme2 = await generateTheme()
+  it('should have consistent structure between runs', () => {
+    const theme1 = generateTheme()
+    const theme2 = generateTheme()
 
     // Ensure the structure is consistent between runs
     expect(Object.keys(theme1)).toEqual(Object.keys(theme2))
@@ -40,15 +40,15 @@ describe('Snapshot Tests - Generated Theme', () => {
     expect(theme1.semanticTokenColors).toEqual(theme2.semanticTokenColors)
   })
 
-  it('should match theme name and configuration', async () => {
-    const theme = await generateTheme()
+  it('should match theme name and configuration', () => {
+    const theme = generateTheme()
     expect(theme.name).toMatchSnapshot()
     expect(theme.type).toMatchSnapshot()
     expect(theme.semanticHighlighting).toMatchSnapshot()
   })
 
-  it('should match specific UI color sections', async () => {
-    const theme = await generateTheme()
+  it('should match specific UI color sections', () => {
+    const theme = generateTheme()
     expect(theme.colors['editor.background']).toMatchSnapshot()
     expect(theme.colors['editor.foreground']).toMatchSnapshot()
     expect(theme.colors['tab.activeBackground']).toMatchSnapshot()
@@ -73,13 +73,13 @@ describe('Snapshot Tests - Generated Theme', () => {
     expect(theme.colors['list.errorForeground']).toMatchSnapshot()
   })
 
-  it('should match specific token color sections', async () => {
-    const theme = await generateTheme()
+  it('should match specific token color sections',  () => {
+    const theme =  generateTheme()
     expect(theme.tokenColors).toMatchSnapshot()
   })
 
-  it('should match specific semantic token color sections', async () => {
-    const theme = await generateTheme()
+  it('should match specific semantic token color sections',  () => {
+    const theme =  generateTheme()
     expect(theme.semanticTokenColors.function).toMatchSnapshot()
     expect(theme.semanticTokenColors['function.declaration']).toMatchSnapshot()
     expect(theme.semanticTokenColors.method).toMatchSnapshot()
@@ -118,8 +118,8 @@ describe('Snapshot Tests - Generated Theme', () => {
     expect(theme.semanticTokenColors.exception).toMatchSnapshot()
   })
 
-  it('should match modern framework semantic tokens', async () => {
-    const theme = await generateTheme()
+  it('should match modern framework semantic tokens',  () => {
+    const theme =  generateTheme()
     expect(theme.semanticTokenColors['react.hook']).toMatchSnapshot()
     expect(theme.semanticTokenColors['react.component']).toMatchSnapshot()
     expect(theme.semanticTokenColors['react.props']).toMatchSnapshot()
