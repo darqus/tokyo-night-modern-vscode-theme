@@ -1431,14 +1431,14 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.amber.dark,
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.amber.dark,
     },
   },
   {

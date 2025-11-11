@@ -1551,14 +1551,14 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#46aea1"
+        "foreground": "#cc9e57"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#ab9c8a"
+        "foreground": "#cc9e57"
       }
     },
     {
@@ -2446,9 +2446,6 @@
     }
   ],
   "semanticTokenColors": {
-    "variable": {
-      "foreground": "#61d2ff"
-    },
     "variable.readonly": {
       "foreground": "#61d2ff",
       "fontStyle": "italic"
@@ -2505,11 +2502,11 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#ab9c8a",
+      "foreground": "#cc9e57",
       "fontStyle": "bold"
     },
     "interface": {
-      "foreground": "#ab9c8a",
+      "foreground": "#cc9e57",
       "fontStyle": "bold"
     },
     "class": {
@@ -2529,11 +2526,11 @@
       "fontStyle": "bold"
     },
     "interface.declaration": {
-      "foreground": "#ab9c8a",
+      "foreground": "#cc9e57",
       "fontStyle": "bold"
     },
     "type.declaration": {
-      "foreground": "#ab9c8a",
+      "foreground": "#cc9e57",
       "fontStyle": "bold"
     },
     "type.utility": {
@@ -2562,9 +2559,6 @@
     "string.escape": {
       "foreground": "#d6c3ac",
       "fontStyle": "bold"
-    },
-    "string.template": {
-      "foreground": "#80d151"
     },
     "class.component": {
       "foreground": "#57dac9",
@@ -2614,9 +2608,6 @@
     "jsx.prop": {
       "foreground": "#ab82f7"
     },
-    "jsx.children": {
-      "foreground": "#a9b1d6"
-    },
     "rust.lifetime": {
       "foreground": "#ab82f7",
       "fontStyle": "italic"
@@ -2635,14 +2626,6 @@
     "rust.pattern.iflet": {
       "foreground": "#ab82f7"
     },
-    "variable.language.this": {
-      "foreground": "#ff6b6b",
-      "fontStyle": "bold"
-    },
-    "variable.language.super": {
-      "foreground": "#ff6b6b",
-      "fontStyle": "bold"
-    },
     "keyword.this": {
       "foreground": "#ff6b6b",
       "fontStyle": "bold"
@@ -2652,18 +2635,6 @@
       "fontStyle": "bold"
     },
     "variable.language.self": {
-      "foreground": "#ff6b6b",
-      "fontStyle": "bold"
-    },
-    "keyword.new": {
-      "foreground": "#ff6b6b",
-      "fontStyle": "bold"
-    },
-    "keyword.delete": {
-      "foreground": "#ff6b6b",
-      "fontStyle": "bold"
-    },
-    "keyword.void": {
       "foreground": "#ff6b6b",
       "fontStyle": "bold"
     }

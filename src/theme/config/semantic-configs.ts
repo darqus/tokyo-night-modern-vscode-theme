@@ -50,8 +50,8 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.yellow.dark),
-    interface: (p: UniversalPalette) => boldToken(p.chromatic.yellow.dark),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.amber.dark),
+    interface: (p: UniversalPalette) => boldToken(p.chromatic.amber.dark),
     class: (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
     // Улучшенная поддержка TypeScript
     'type.generic': (p: UniversalPalette) =>
@@ -61,9 +61,9 @@ export const typesConfig: SemanticTokenConfig = {
     'class.declaration': (p: UniversalPalette) =>
       boldToken(p.chromatic.pink.main),
     'interface.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.yellow.dark),
+      boldToken(p.chromatic.amber.dark),
     'type.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.yellow.dark),
+      boldToken(p.chromatic.amber.dark),
     // Utility types
     'type.utility': (p: UniversalPalette) => token(p.chromatic.violet.main),
     // TypeScript generics keywords
