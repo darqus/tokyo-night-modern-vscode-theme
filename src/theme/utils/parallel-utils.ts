@@ -36,7 +36,6 @@ export async function parallelReduce<T, R>(
 ): Promise<R> {
   let accumulator = initialValue
   for (let i = 0; i < array.length; i++) {
-    // biome-ignore lint/performance/noAwaitInLoops: Reduce operations must maintain order, so await in loop is unavoidable
     accumulator = await Promise.resolve(reducer(accumulator, array[i], i))
   }
 
