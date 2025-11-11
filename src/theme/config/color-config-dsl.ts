@@ -26,14 +26,14 @@ export interface UIColorConfig {
 
   /**
    * Группы правил с общим префиксом
-   * Например: { 'button': { background: '#fff', foreground: '#000' } }
+   * Например: { 'button': { background: 'p.background.base.main', foreground: 'p.foreground.primary.main' } }
    * Создаст: button.background, button.foreground
    */
   groups?: Record<string, Record<string, ColorValue>>
 
   /**
    * Множественные ключи с одним значением
-   * Например: [['key1', 'key2'], '#fff']
+   * Например: [['key1', 'key2'], 'p.background.base.main']
    */
   multiple?: [string[], ColorValue][]
 }

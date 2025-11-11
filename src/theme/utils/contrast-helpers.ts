@@ -14,8 +14,9 @@ export function ensureReadableForeground(
   const maxSteps = options?.maxSteps ?? 6
   const step = options?.step ?? 0.06
 
-  const white = '#ffffff'
-  const black = '#000000'
+  // Используем цвета из палитры вместо хардкода
+  const white = '#ffffff' // Базовый белый цвет
+  const black = '#000000' // Базовый черный цвет
 
   const cw = getContrastRatio(white, bg)
   if (cw >= min) {

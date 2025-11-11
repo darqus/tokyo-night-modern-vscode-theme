@@ -16,7 +16,7 @@ export class ColorRuleBuilder {
 
   /**
    * Добавляет группу правил с общим префиксом
-   * Например: addGroup('button', { background: '#fff', foreground: '#000' })
+   * Например: addGroup('button', { background: 'p.background.base.main', foreground: 'p.foreground.primary.main' })
    * Создаст: button.background, button.foreground
    */
   addGroup = (prefix: string, rules: Record<string, string>): this => {

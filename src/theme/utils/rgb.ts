@@ -23,7 +23,7 @@ export class RgbError extends Error {
  * ```ts
  * normalizeHex('f00') // '#ff0000'
  * normalizeHex('#F00') // '#ff0000'
- * normalizeHex('ff0000') // '#ff000'
+ * normalizeHex('ff0000') // '#ff0000'
  * normalizeHex('a4bce68a') // '#a4bce68a'
  * ```
  */
