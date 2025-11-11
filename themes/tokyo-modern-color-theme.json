@@ -1346,7 +1346,7 @@
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#46aea1"
+        "foreground": "#ab9c8a"
       }
     },
     {
@@ -1590,6 +1590,14 @@
       }
     },
     {
+      "name": "Document Javascript",
+      "scope": ["storage.modifier.async", "variable.other.object.js"],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "JSX/TSX Tags",
       "scope": [
         "support.class.component.tsx",
@@ -1800,7 +1808,7 @@
       "name": "Go Interface",
       "scope": ["storage.type.interface.go", "entity.name.type.interface.go"],
       "settings": {
-        "foreground": "#d6c3ac"
+        "foreground": "#ab9c8a"
       }
     },
     {
@@ -1935,15 +1943,15 @@
       "fontStyle": "bold"
     },
     "type": {
-      "foreground": "#57dac9",
+      "foreground": "#ab9c8a",
       "fontStyle": "bold"
     },
     "interface": {
-      "foreground": "#57dac9",
+      "foreground": "#ab9c8a",
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#4aaaf8",
+      "foreground": "#e07af5",
       "fontStyle": "bold"
     },
     "type.generic": {
@@ -1955,15 +1963,15 @@
       "fontStyle": "italic"
     },
     "class.declaration": {
-      "foreground": "#4aaaf8",
+      "foreground": "#e07af5",
       "fontStyle": "bold"
     },
     "interface.declaration": {
-      "foreground": "#57dac9",
+      "foreground": "#ab9c8a",
       "fontStyle": "bold"
     },
     "type.declaration": {
-      "foreground": "#57dac9",
+      "foreground": "#ab9c8a",
       "fontStyle": "bold"
     },
     "type.utility": {
@@ -2001,7 +2009,7 @@
       "fontStyle": "bold"
     },
     "interface.component": {
-      "foreground": "#57dac9",
+      "foreground": "#46aea1",
       "fontStyle": "bold"
     },
     "decorator": {
@@ -2096,22 +2104,6 @@
     "keyword.void": {
       "foreground": "#ff6b6b",
       "fontStyle": "bold"
-    },
-    "keyword.async": {
-      "foreground": "#e07af5",
-      "fontStyle": "italic"
-    },
-    "keyword.await": {
-      "foreground": "#e07af5",
-      "fontStyle": "italic"
-    },
-    "keyword.yield": {
-      "foreground": "#e07af5",
-      "fontStyle": "italic"
-    },
-    "keyword.generator": {
-      "foreground": "#e07af5",
-      "fontStyle": "italic"
     }
   }
 }

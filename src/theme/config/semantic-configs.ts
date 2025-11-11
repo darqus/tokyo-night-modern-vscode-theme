@@ -52,20 +52,20 @@ export const functionsConfig: SemanticTokenConfig = {
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.teal.main),
-    interface: (p: UniversalPalette) => boldToken(p.chromatic.teal.main),
-    class: (p: UniversalPalette) => boldToken(p.chromatic.blue.main),
+    type: (p: UniversalPalette) => boldToken(p.chromatic.yellow.dark),
+    interface: (p: UniversalPalette) => boldToken(p.chromatic.yellow.dark),
+    class: (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
     // Улучшенная поддержка TypeScript
     'type.generic': (p: UniversalPalette) =>
       italicToken(p.chromatic.yellow.main), // Generics
     'type.parameter': (p: UniversalPalette) =>
       italicToken(p.chromatic.amber.main), // Type parameters
     'class.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.blue.main),
+      boldToken(p.chromatic.pink.main),
     'interface.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.teal.main),
+      boldToken(p.chromatic.yellow.dark),
     'type.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.teal.main),
+      boldToken(p.chromatic.yellow.dark),
     // Utility types
     'type.utility': (p: UniversalPalette) => token(p.chromatic.violet.main),
     // TypeScript generics keywords
@@ -125,7 +125,7 @@ export const frameworksConfig: SemanticTokenConfig = {
     'class.component': (p: UniversalPalette) =>
       boldToken(p.chromatic.teal.main),
     'interface.component': (p: UniversalPalette) =>
-      boldToken(p.chromatic.teal.main),
+      boldToken(p.chromatic.teal.dark),
 
     // Декораторы
     decorator: (p: UniversalPalette) => italicToken(p.chromatic.blue.main),

@@ -1024,7 +1024,7 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.dark,
     },
   },
   {
@@ -1488,7 +1488,7 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'Go Interface',
     scope: ['storage.type.interface.go', 'entity.name.type.interface.go'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.dark,
     },
   },
   {
