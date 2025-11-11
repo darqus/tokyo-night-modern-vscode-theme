@@ -6,8 +6,6 @@ I will inspect the relevant configuration and generator files to trace how async
 
 Разбор по коду
 
-- Семантические правила для async находятся в src/theme/config/semantic-configs.ts -> asyncConfig:
-  - 'keyword.async', 'keyword.await', 'keyword.yield', 'keyword.generator'
 - Пайплайн генерации (src/theme/config/unified-generator.ts) просто копирует эти ключи в semanticTokenColors. Ошибок в сборке нет.
 - Однако VS Code использует фиксированный набор семантических токенов и модификаторов из Semantic Token Standard (например: keyword, operator, function, method, variable, parameter, property, type, class, interface, enum, enumMember, decorator, namespace, macro и т.д.). Ключи keyword.async/await/yield/generator не распознаются движком, если не объявлены кастомные semantic token types через semantic token provider расширения. У темы нет своего провайдера — она только задаёт цвета. Поэтому указанные ключи игнорируются.
 
@@ -31,12 +29,10 @@ I will inspect the relevant configuration and generator files to trace how async
 
 3) Минимальная коррекция конфигурации темы
 
-- Удалить или переименовать несрабатывающие ключи 'keyword.async', 'keyword.await', 'keyword.yield', 'keyword.generator' из asyncConfig, чтобы избежать ложного ожидания. Либо свести их к просто 'keyword' (что повлияет на все ключевые слова, вероятно не то, что вам нужно).
 - Оставить акцент только в TextMate scopes, которые уже покрывают async/await/yield/generator, и там задать нужные цвета и fontStyle (что у вас уже настроено: розовый + bold/italic).
 
 Рекомендованное решение
 
-- Консервативно: убрать из semantic-configs.ts раздел asyncConfig или оставить комментарий, что VS Code без кастомного semantic token provider эти ключи игнорирует. Подсветка async/await/yield/generator остаётся через token-configs.ts (TextMate), где она реально работает.
 - Если хотите единообразия стилей между семантическими и текстовыми правилами, синхронизируйте цвета в token-configs.ts и в semantic-configs.ts для тех типов, которые реально поддерживаются (например function, method, variable, property и др.), а раздел async не используйте в semantic-configs.ts.
 
 Итог

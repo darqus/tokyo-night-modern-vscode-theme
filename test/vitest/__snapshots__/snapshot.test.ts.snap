@@ -638,7 +638,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "storage.type.await",
     ],
     "settings": {
-      "fontStyle": "bold",
+      "fontStyle": "italic",
       "foreground": "#e07af5",
     },
   },
@@ -1566,6 +1566,30 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
+    "name": "Keyword",
+    "scope": [
+      "keyword.control.flow.tsx",
+      "keyword.control.flow.ts",
+      "storage.modifier.async.tsx",
+      "storage.modifier.async.ts",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
+  },
+  {
+    "name": "Document Javascript",
+    "scope": [
+      "storage.modifier.async",
+      "variable.other.object.js",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
+  },
+  {
     "name": "JSX/TSX Tags",
     "scope": [
       "support.class.component.tsx",
@@ -2304,21 +2328,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "jsx.text": {
     "foreground": "#a9b1d6",
   },
-  "keyword.async": {
-    "fontStyle": "bold",
-    "foreground": "#e07af5",
-  },
-  "keyword.await": {
-    "fontStyle": "bold",
-    "foreground": "#e07af5",
-  },
   "keyword.delete": {
     "fontStyle": "bold",
     "foreground": "#ff6b6b",
-  },
-  "keyword.generator": {
-    "fontStyle": "italic",
-    "foreground": "#e07af5",
   },
   "keyword.generic": {
     "foreground": "#ab82f7",
@@ -2338,10 +2350,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "keyword.void": {
     "fontStyle": "bold",
     "foreground": "#ff6b6b",
-  },
-  "keyword.yield": {
-    "fontStyle": "bold",
-    "foreground": "#e07af5",
   },
   "macro": {
     "fontStyle": "bold",
@@ -2911,21 +2919,9 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "jsx.text": {
       "foreground": "#a9b1d6",
     },
-    "keyword.async": {
-      "fontStyle": "bold",
-      "foreground": "#e07af5",
-    },
-    "keyword.await": {
-      "fontStyle": "bold",
-      "foreground": "#e07af5",
-    },
     "keyword.delete": {
       "fontStyle": "bold",
       "foreground": "#ff6b6b",
-    },
-    "keyword.generator": {
-      "fontStyle": "italic",
-      "foreground": "#e07af5",
     },
     "keyword.generic": {
       "foreground": "#ab82f7",
@@ -2945,10 +2941,6 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "keyword.void": {
       "fontStyle": "bold",
       "foreground": "#ff6b6b",
-    },
-    "keyword.yield": {
-      "fontStyle": "bold",
-      "foreground": "#e07af5",
     },
     "macro": {
       "fontStyle": "bold",
@@ -3411,7 +3403,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "storage.type.await",
       ],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "italic",
         "foreground": "#e07af5",
       },
     },
@@ -4339,6 +4331,30 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
+      "name": "Keyword",
+      "scope": [
+        "keyword.control.flow.tsx",
+        "keyword.control.flow.ts",
+        "storage.modifier.async.tsx",
+        "storage.modifier.async.ts",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#e07af5",
+      },
+    },
+    {
+      "name": "Document Javascript",
+      "scope": [
+        "storage.modifier.async",
+        "variable.other.object.js",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#e07af5",
+      },
+    },
+    {
       "name": "JSX/TSX Tags",
       "scope": [
         "support.class.component.tsx",
@@ -4975,7 +4991,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "storage.type.await",
     ],
     "settings": {
-      "fontStyle": "bold",
+      "fontStyle": "italic",
       "foreground": "#e07af5",
     },
   },
@@ -5900,6 +5916,30 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "Keyword",
+    "scope": [
+      "keyword.control.flow.tsx",
+      "keyword.control.flow.ts",
+      "storage.modifier.async.tsx",
+      "storage.modifier.async.ts",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
+  },
+  {
+    "name": "Document Javascript",
+    "scope": [
+      "storage.modifier.async",
+      "variable.other.object.js",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
     },
   },
   {

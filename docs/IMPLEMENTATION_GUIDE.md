@@ -220,20 +220,6 @@ export const functionsConfig: SemanticTokenConfig = {
 }
 ```
 
-**Файл:** `src/theme/config/semantic-configs.ts`
-
-```typescript
-// ДОБАВИТЬ НОВЫЙ КОНФИГ:
-export const asyncConfig: SemanticTokenConfig = {
-  rules: {
-    'keyword.async': (p: UniversalPalette) => boldToken('#C678DD'),
-    'keyword.await': (p: UniversalPalette) => boldToken('#C678DD'),
-    'keyword.yield': (p: UniversalPalette) => boldToken('#C678DD'),
-    'keyword.generator': (p: UniversalPalette) => italicToken('#C678DD'),
-  },
-}
-```
-
 ## 🧪 Тестирование изменений
 
 ### Создание тестовых файлов

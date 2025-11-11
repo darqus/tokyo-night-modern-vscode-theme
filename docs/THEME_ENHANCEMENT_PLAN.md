@@ -152,15 +152,6 @@ export const functionsConfig: SemanticTokenConfig = {
   },
 }
 
-// Семантические токены
-export const asyncConfig: SemanticTokenConfig = {
-  rules: {
-    'keyword.async': (p: UniversalPalette) => boldToken('#C678DD'),
-    'keyword.await': (p: UniversalPalette) => boldToken('#C678DD'),
-  },
-}
-```
-
 **Задачи:**
 
 - [ ] Добавить текстовые токены async/await

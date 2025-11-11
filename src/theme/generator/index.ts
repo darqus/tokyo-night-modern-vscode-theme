@@ -1,13 +1,11 @@
 import {
-  asyncConfig,
   criticalKeywordsConfig,
   frameworksConfig,
   functionsConfig,
   literalsConfig,
   modifiersConfig,
   typesConfig,
-  // Semantic configs
-  variablesConfig,
+ variablesConfig,
 } from '../config/semantic-configs.js'
 import {
   basicTokens,
@@ -88,7 +86,6 @@ export const generateTheme = (): VSCodeTheme => {
       literals: literalsConfig,
       frameworks: frameworksConfig,
       criticalKeywords: criticalKeywordsConfig,
-      async: asyncConfig,
     },
   }
 
