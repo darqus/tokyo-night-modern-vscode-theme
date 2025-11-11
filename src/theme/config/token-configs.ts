@@ -326,7 +326,7 @@ export const basicTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.pink.main,
-      fontStyle: 'bold',
+      fontStyle: 'italic',
     },
   },
   {
@@ -1252,6 +1252,27 @@ export const modernTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Keyword',
+    scope: [
+      'keyword.control.flow.tsx',
+      'keyword.control.flow.ts',
+      'storage.modifier.async.tsx',
+      'storage.modifier.async.ts',
+    ],
+    settings: {
+      fontStyle: 'italic',
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+    },
+  },
+  {
+    name: 'Document Javascript',
+    scope: ['storage.modifier.async', 'variable.other.object.js'],
+    settings: {
+      fontStyle: 'italic',
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
     },
   },
   {
