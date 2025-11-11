@@ -473,9 +473,47 @@
     },
     {
       "name": "Regular Expressions",
-      "scope": ["string.regexp", "punctuation.definition.group.regexp"],
+      "scope": ["string.regexp"],
       "settings": {
         "foreground": "#ff9f92"
+      }
+    },
+    {
+      "name": "Regular Expressions - Punctuation",
+      "scope": ["punctuation.definition.group.regexp"],
+      "settings": {
+        "foreground": "#ff6b6b"
+      }
+    },
+    {
+      "name": "Regular Expressions - Character Class",
+      "scope": ["constant.other.character-class.regexp"],
+      "settings": {
+        "foreground": "#ab82f7"
+      }
+    },
+    {
+      "name": "Regular Expressions - Character Class Set",
+      "scope": [
+        "constant.other.character-class.set.regexp",
+        "punctuation.definition.character-class.regexp"
+      ],
+      "settings": {
+        "foreground": "#d6c3ac"
+      }
+    },
+    {
+      "name": "Regular Expressions - Quantifier",
+      "scope": ["keyword.operator.quantifier.regexp"],
+      "settings": {
+        "foreground": "#5cb3f9"
+      }
+    },
+    {
+      "name": "Regular Expressions - Backslash",
+      "scope": ["constant.character.escape.backslash"],
+      "settings": {
+        "foreground": "#b1b6d3"
       }
     },
     {
@@ -498,6 +536,13 @@
       ],
       "settings": {
         "foreground": "#5bcddc"
+      }
+    },
+    {
+      "name": "URL",
+      "scope": ["*url*", "*link*", "*uri*"],
+      "settings": {
+        "fontStyle": "underline"
       }
     },
     {
@@ -1698,7 +1743,8 @@
         "meta.class.ts meta.decorator.ts variable.other.readwrite.ts"
       ],
       "settings": {
-        "foreground": "#4aaaf8"
+        "foreground": "#4aaaf8",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1943,6 +1989,186 @@
       "settings": {
         "foreground": "#ffc66d",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Go Channel",
+      "scope": [
+        "keyword.channel.go",
+        "channel.type.go",
+        "keyword.operator.channel.go"
+      ],
+      "settings": {
+        "foreground": "#49c7d8"
+      }
+    },
+    {
+      "name": "Go Goroutine",
+      "scope": ["keyword.goroutine.go", "support.function.goroutine.go"],
+      "settings": {
+        "foreground": "#98c379",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Go Interface",
+      "scope": ["storage.type.interface.go", "entity.name.type.interface.go"],
+      "settings": {
+        "foreground": "#ab9c8a"
+      }
+    },
+    {
+      "name": "Go Method Receiver",
+      "scope": ["variable.parameter.receiver.go", "meta.function.receiver.go"],
+      "settings": {
+        "foreground": "#ffc66d"
+      }
+    },
+    {
+      "name": "Go Package",
+      "scope": ["entity.name.type.package.go", "support.package.go"],
+      "settings": {
+        "foreground": "#4aaaf8"
+      }
+    },
+    {
+      "name": "Python Keywords",
+      "scope": [
+        "keyword.control.python",
+        "keyword.other.python",
+        "storage.type.python",
+        "storage.modifier.python"
+      ],
+      "settings": {
+        "foreground": "#ab82f7"
+      }
+    },
+    {
+      "name": "Python Functions",
+      "scope": [
+        "entity.name.function.python",
+        "meta.function-call.python entity.name.function.python",
+        "support.function.python"
+      ],
+      "settings": {
+        "foreground": "#4aaaf8"
+      }
+    },
+    {
+      "name": "Python Classes",
+      "scope": ["entity.name.type.class.python", "support.type.python"],
+      "settings": {
+        "foreground": "#49c7d8"
+      }
+    },
+    {
+      "name": "Python Decorators",
+      "scope": [
+        "meta.function.decorator.python",
+        "entity.name.function.decorator.python",
+        "punctuation.definition.decorator.python"
+      ],
+      "settings": {
+        "foreground": "#ff9486",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Ruby Keywords",
+      "scope": [
+        "keyword.control.ruby",
+        "keyword.other.ruby",
+        "storage.type.ruby",
+        "storage.modifier.ruby"
+      ],
+      "settings": {
+        "foreground": "#ab82f7"
+      }
+    },
+    {
+      "name": "Ruby Symbols",
+      "scope": [
+        "constant.other.symbol.ruby",
+        "punctuation.definition.constant.ruby"
+      ],
+      "settings": {
+        "foreground": "#57dac9"
+      }
+    },
+    {
+      "name": "Ruby Methods",
+      "scope": ["entity.name.function.ruby", "support.function.ruby"],
+      "settings": {
+        "foreground": "#4aaaf8"
+      }
+    },
+    {
+      "name": "Java Keywords",
+      "scope": [
+        "keyword.control.java",
+        "keyword.other.java",
+        "storage.type.java",
+        "storage.modifier.java"
+      ],
+      "settings": {
+        "foreground": "#ab82f7"
+      }
+    },
+    {
+      "name": "Java Classes",
+      "scope": ["entity.name.type.class.java", "support.class.java"],
+      "settings": {
+        "foreground": "#49c7d8"
+      }
+    },
+    {
+      "name": "Java Annotations",
+      "scope": [
+        "meta.annotation.java",
+        "punctuation.definition.annotation.java",
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#98c379",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "C/C++ Keywords",
+      "scope": [
+        "keyword.control.c",
+        "keyword.control.cpp",
+        "storage.type.c",
+        "storage.type.cpp",
+        "storage.modifier.c",
+        "storage.modifier.cpp"
+      ],
+      "settings": {
+        "foreground": "#ab82f7"
+      }
+    },
+    {
+      "name": "C/C++ Functions",
+      "scope": [
+        "entity.name.function.c",
+        "entity.name.function.cpp",
+        "support.function.c",
+        "support.function.cpp"
+      ],
+      "settings": {
+        "foreground": "#4aaaf8"
+      }
+    },
+    {
+      "name": "C/C++ Macros",
+      "scope": [
+        "entity.name.function.preprocessor.c",
+        "meta.preprocessor.macro.c",
+        "meta.preprocessor.macro.cpp"
+      ],
+      "settings": {
+        "foreground": "#ff9486",
+        "fontStyle": "bold"
       }
     },
     {

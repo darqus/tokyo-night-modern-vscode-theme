@@ -121,9 +121,47 @@ export const basicTokens: TokenColorConfig[] = [
   },
   {
     name: 'Regular Expressions',
-    scope: ['string.regexp', 'punctuation.definition.group.regexp'],
+    scope: ['string.regexp'],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.orange.light, // Более яркий оранжевый для регулярных выражений
+    },
+  },
+  {
+    name: 'Regular Expressions - Punctuation',
+    scope: ['punctuation.definition.group.regexp'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+  {
+    name: 'Regular Expressions - Character Class',
+    scope: ['constant.other.character-class.regexp'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Regular Expressions - Character Class Set',
+    scope: [
+      'constant.other.character-class.set.regexp',
+      'punctuation.definition.character-class.regexp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.main,
+    },
+  },
+  {
+    name: 'Regular Expressions - Quantifier',
+    scope: ['keyword.operator.quantifier.regexp'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+    },
+  },
+  {
+    name: 'Regular Expressions - Backslash',
+    scope: ['constant.character.escape.backslash'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.neutral.light,
     },
   },
   {
@@ -146,6 +184,13 @@ export const basicTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.cyan.light, // Яркий cyan для цветовых литералов
+    },
+  },
+  {
+    name: 'URL',
+    scope: ['*url*', '*link*', '*uri*'],
+    settings: {
+      fontStyle: 'underline',
     },
   },
   {
@@ -1161,6 +1206,169 @@ export const markdownTokens: TokenColorConfig[] = [
 ]
 
 /**
+ * Makefile tokens - специфичные для Makefile
+ */
+export const makefileTokens: TokenColorConfig[] = [
+  {
+    name: 'Makefile - Function Name',
+    scope: ['entity.name.function.target.makefile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Makefile - Keyword Control',
+    scope: ['keyword.control.@.makefile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Makefile - Scope',
+    scope: ['meta.scope.recipe.makefile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+  {
+    name: 'Makefile - Function Call',
+    scope: ['meta.scope.function-call.makefile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Makefile - Variable',
+    scope: ['variable.other.makefile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+]
+
+/**
+ * Docker tokens - специфичные для Docker
+ */
+export const dockerTokens: TokenColorConfig[] = [
+  {
+    name: 'Docker - Keyword',
+    scope: ['keyword.other.special-method.dockerfile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Docker - Source',
+    scope: ['source.dockerfile'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main,
+    },
+  },
+]
+
+/**
+ * YAML tokens - специфичные для YAML
+ */
+export const yamlTokens: TokenColorConfig[] = [
+  {
+    name: 'YAML - Unquoted String',
+    scope: ['string.unquoted.plain.out.yaml'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main,
+    },
+  },
+]
+
+/**
+ * Lua tokens - специфичные для Lua
+ */
+export const luaTokens: TokenColorConfig[] = [
+  {
+    name: 'Lua - Function',
+    scope: ['support.function.lua'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Lua - Keyword',
+    scope: ['keyword.local.lua', 'keyword.control.lua'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Lua - Other Variable',
+    scope: ['variable.other.lua', 'keyword.operator.logical.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main,
+    },
+  },
+  {
+    name: 'Lua - Other Attribute',
+    scope: ['entity.other.attribute.lua'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Lua - Keyword Operator',
+    scope: ['keyword.operator.lua'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.main,
+    },
+  },
+]
+
+/**
+ * Shell tokens - специфичные для Shell/Bash
+ */
+export const shellTokens: TokenColorConfig[] = [
+  {
+    name: 'Shell - Function Name',
+    scope: ['entity.name.function.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Shell - Function Builtin',
+    scope: ['support.function.builtin.shell', 'keyword.control.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Shell - Definition Variable',
+    scope: ['variable.other.bracket.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Shell - Source',
+    scope: ['source.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.foreground.secondary.main,
+    },
+  },
+  {
+    name: 'Shell - Scope Group',
+    scope: ['meta.scope.group.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Shell - String',
+    scope: ['string.interpolated.backtick.shell'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+]
+
+/**
  * Modern tokens - для современных фреймворков и языков
  */
 export const modernTokens: TokenColorConfig[] = [
@@ -1383,6 +1591,7 @@ export const modernTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+      fontStyle: 'italic',
     },
   },
   {
@@ -1628,6 +1837,200 @@ export const modernTokens: TokenColorConfig[] = [
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.amber.main,
       fontStyle: 'italic',
+    },
+  },
+  // Go-specific tokens
+  {
+    name: 'Go Channel',
+    scope: [
+      'keyword.channel.go',
+      'channel.type.go',
+      'keyword.operator.channel.go',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Go Goroutine',
+    scope: ['keyword.goroutine.go', 'support.function.goroutine.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Go Interface',
+    scope: ['storage.type.interface.go', 'entity.name.type.interface.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.yellow.dark,
+    },
+  },
+  {
+    name: 'Go Method Receiver',
+    scope: ['variable.parameter.receiver.go', 'meta.function.receiver.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main,
+    },
+  },
+  {
+    name: 'Go Package',
+    scope: ['entity.name.type.package.go', 'support.package.go'],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  // Python-specific tokens
+  {
+    name: 'Python Keywords',
+    scope: [
+      'keyword.control.python',
+      'keyword.other.python',
+      'storage.type.python',
+      'storage.modifier.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Python Functions',
+    scope: [
+      'entity.name.function.python',
+      'meta.function-call.python entity.name.function.python',
+      'support.function.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'Python Classes',
+    scope: [
+      'entity.name.type.class.python',
+      'support.type.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Python Decorators',
+    scope: [
+      'meta.function.decorator.python',
+      'entity.name.function.decorator.python',
+      'punctuation.definition.decorator.python',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'italic',
+    },
+  },
+  // Ruby-specific tokens
+  {
+    name: 'Ruby Keywords',
+    scope: [
+      'keyword.control.ruby',
+      'keyword.other.ruby',
+      'storage.type.ruby',
+      'storage.modifier.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Ruby Symbols',
+    scope: [
+      'constant.other.symbol.ruby',
+      'punctuation.definition.constant.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+    },
+  },
+  {
+    name: 'Ruby Methods',
+    scope: [
+      'entity.name.function.ruby',
+      'support.function.ruby',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  // Java-specific tokens
+  {
+    name: 'Java Keywords',
+    scope: [
+      'keyword.control.java',
+      'keyword.other.java',
+      'storage.type.java',
+      'storage.modifier.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'Java Classes',
+    scope: [
+      'entity.name.type.class.java',
+      'support.class.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+    },
+  },
+  {
+    name: 'Java Annotations',
+    scope: [
+      'meta.annotation.java',
+      'punctuation.definition.annotation.java',
+      'storage.type.annotation.java',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+      fontStyle: 'italic',
+    },
+  },
+  // C/C++ specific tokens
+  {
+    name: 'C/C++ Keywords',
+    scope: [
+      'keyword.control.c',
+      'keyword.control.cpp',
+      'storage.type.c',
+      'storage.type.cpp',
+      'storage.modifier.c',
+      'storage.modifier.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+    },
+  },
+  {
+    name: 'C/C++ Functions',
+    scope: [
+      'entity.name.function.c',
+      'entity.name.function.cpp',
+      'support.function.c',
+      'support.function.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.main,
+    },
+  },
+  {
+    name: 'C/C++ Macros',
+    scope: [
+      'entity.name.function.preprocessor.c',
+      'meta.preprocessor.macro.c',
+      'meta.preprocessor.macro.cpp',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'bold',
     },
   },
   // Go-specific tokens
