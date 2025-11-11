@@ -7,7 +7,6 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
-    variable: (p: UniversalPalette) => token(p.chromatic.sky.light), // Более контрастный для переменных
     'variable.readonly': (p: UniversalPalette) =>
       italicToken(p.chromatic.sky.light),
     'variable.declaration': (p: UniversalPalette) =>
@@ -87,17 +86,10 @@ export const modifiersConfig: SemanticTokenConfig = {
  */
 export const criticalKeywordsConfig: SemanticTokenConfig = {
   rules: {
-    'variable.language.this': (p: UniversalPalette) =>
-      boldToken(p.chromatic.red.main),
-    'variable.language.super': (p: UniversalPalette) =>
-      boldToken(p.chromatic.red.main),
     'keyword.this': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
     'keyword.self': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
     'variable.language.self': (p: UniversalPalette) =>
       boldToken(p.chromatic.red.main),
-    'keyword.new': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
-    'keyword.delete': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
-    'keyword.void': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
   },
 }
 
@@ -111,7 +103,6 @@ export const literalsConfig: SemanticTokenConfig = {
     boolean: (p: UniversalPalette) => token(p.chromatic.pink.main), // Розовый для булевых значений
     'string.escape': (p: UniversalPalette) =>
       boldToken(p.chromatic.yellow.main), // Жирный для escape
-    'string.template': (p: UniversalPalette) => token(p.chromatic.lime.main), // Лайм для template strings
   },
 }
 
@@ -153,7 +144,6 @@ export const frameworksConfig: SemanticTokenConfig = {
 
     // JSX/TSX props и children
     'jsx.prop': (p: UniversalPalette) => token(p.chromatic.purple.main),
-    'jsx.children': (p: UniversalPalette) => token(p.foreground.secondary.main),
 
     // Rust-specific
     'rust.lifetime': (p: UniversalPalette) =>
