@@ -1,4 +1,5 @@
 import {
+  asyncConfig,
   frameworksConfig,
   functionsConfig,
   literalsConfig,
@@ -20,5 +21,6 @@ export function generateSemanticTokenColors(): Record<
     modifiers: modifiersConfig,
     literals: literalsConfig,
     frameworks: frameworksConfig,
+    async: asyncConfig,
   })
 }
