@@ -18,6 +18,7 @@ export {
   meetsWCAG,
 } from './contrast.js'
 export * from './logger.js'
+export * from './parallel-utils.js'
 export * from './rgb.js'
 export * from './safe-exec.js'
 export * from './semantic-tokens.js'
