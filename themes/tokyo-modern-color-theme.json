@@ -678,7 +678,7 @@
       ],
       "settings": {
         "foreground": "#e07af5",
-        "fontStyle": "bold"
+        "fontStyle": "italic"
       }
     },
     {
@@ -1577,6 +1577,19 @@
       }
     },
     {
+      "name": "Keyword",
+      "scope": [
+        "keyword.control.flow.tsx",
+        "keyword.control.flow.ts",
+        "storage.modifier.async.tsx",
+        "storage.modifier.async.ts"
+      ],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "JSX/TSX Tags",
       "scope": [
         "support.class.component.tsx",
@@ -2086,15 +2099,15 @@
     },
     "keyword.async": {
       "foreground": "#e07af5",
-      "fontStyle": "bold"
+      "fontStyle": "italic"
     },
     "keyword.await": {
       "foreground": "#e07af5",
-      "fontStyle": "bold"
+      "fontStyle": "italic"
     },
     "keyword.yield": {
       "foreground": "#e07af5",
-      "fontStyle": "bold"
+      "fontStyle": "italic"
     },
     "keyword.generator": {
       "foreground": "#e07af5",
