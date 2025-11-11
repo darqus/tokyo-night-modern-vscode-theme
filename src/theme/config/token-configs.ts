@@ -314,6 +314,36 @@ export const basicTokens: TokenColorConfig[] = [
       foreground: (p: UniversalPalette) => p.chromatic.purple.main,
     },
   },
+  {
+    name: 'Async/Await Keywords',
+    scope: [
+      'keyword.control.async',
+      'keyword.other.async',
+      'storage.type.async',
+      'keyword.control.await',
+      'keyword.other.await',
+      'storage.type.await',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Yield and Generator Keywords',
+    scope: [
+      'keyword.control.yield',
+      'keyword.other.yield',
+      'storage.type.yield',
+      'keyword.control.generator',
+      'keyword.other.generator',
+      'storage.type.generator',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+      fontStyle: 'italic',
+    },
+  },
 ]
 
 /**

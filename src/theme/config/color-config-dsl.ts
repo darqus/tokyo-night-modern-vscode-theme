@@ -117,6 +117,7 @@ export interface ThemeConfig {
     modifiers?: SemanticTokenConfig
     literals?: SemanticTokenConfig
     frameworks?: SemanticTokenConfig
+    async?: SemanticTokenConfig
   }
 }
 

@@ -628,6 +628,36 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
     },
   },
   {
+    "name": "Async/Await Keywords",
+    "scope": [
+      "keyword.control.async",
+      "keyword.other.async",
+      "storage.type.async",
+      "keyword.control.await",
+      "keyword.other.await",
+      "storage.type.await",
+    ],
+    "settings": {
+      "fontStyle": "bold",
+      "foreground": "#e07af5",
+    },
+  },
+  {
+    "name": "Yield and Generator Keywords",
+    "scope": [
+      "keyword.control.yield",
+      "keyword.other.yield",
+      "storage.type.yield",
+      "keyword.control.generator",
+      "keyword.other.generator",
+      "storage.type.generator",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
+  },
+  {
     "name": "Tag",
     "scope": "entity.name.tag",
     "settings": {
@@ -3371,6 +3401,36 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       },
     },
     {
+      "name": "Async/Await Keywords",
+      "scope": [
+        "keyword.control.async",
+        "keyword.other.async",
+        "storage.type.async",
+        "keyword.control.await",
+        "keyword.other.await",
+        "storage.type.await",
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#e07af5",
+      },
+    },
+    {
+      "name": "Yield and Generator Keywords",
+      "scope": [
+        "keyword.control.yield",
+        "keyword.other.yield",
+        "storage.type.yield",
+        "keyword.control.generator",
+        "keyword.other.generator",
+        "storage.type.generator",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#e07af5",
+      },
+    },
+    {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
@@ -4902,6 +4962,36 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
     ],
     "settings": {
       "foreground": "#ab82f7",
+    },
+  },
+  {
+    "name": "Async/Await Keywords",
+    "scope": [
+      "keyword.control.async",
+      "keyword.other.async",
+      "storage.type.async",
+      "keyword.control.await",
+      "keyword.other.await",
+      "storage.type.await",
+    ],
+    "settings": {
+      "fontStyle": "bold",
+      "foreground": "#e07af5",
+    },
+  },
+  {
+    "name": "Yield and Generator Keywords",
+    "scope": [
+      "keyword.control.yield",
+      "keyword.other.yield",
+      "storage.type.yield",
+      "keyword.control.generator",
+      "keyword.other.generator",
+      "storage.type.generator",
+    ],
+    "settings": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
     },
   },
   {

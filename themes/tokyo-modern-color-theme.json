@@ -667,6 +667,36 @@
       }
     },
     {
+      "name": "Async/Await Keywords",
+      "scope": [
+        "keyword.control.async",
+        "keyword.other.async",
+        "storage.type.async",
+        "keyword.control.await",
+        "keyword.other.await",
+        "storage.type.await"
+      ],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Yield and Generator Keywords",
+      "scope": [
+        "keyword.control.yield",
+        "keyword.other.yield",
+        "storage.type.yield",
+        "keyword.control.generator",
+        "keyword.other.generator",
+        "storage.type.generator"
+      ],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
