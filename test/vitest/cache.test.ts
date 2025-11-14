@@ -5,7 +5,8 @@ describe('Cache Utils', () => {
   describe('memoize', () => {
     it('should cache function results', () => {
       let callCount = 0
-      const fn = memoize((x: number) => {
+      const fn = memoize((...args: readonly unknown[]) => {
+        const x = args[0] as number
         callCount++
         return x * 2
       }) as (x: number) => number
@@ -24,7 +25,9 @@ describe('Cache Utils', () => {
 
     it('should handle multiple arguments', () => {
       let callCount = 0
-      const fn = memoize((a: number, b: number) => {
+      const fn = memoize((...args: readonly unknown[]) => {
+        const a = args[0] as number
+        const b = args[1] as number
         callCount++
         return a + b
       }) as (a: number, b: number) => number
@@ -41,7 +44,7 @@ describe('Cache Utils', () => {
 
     it('should handle functions with no arguments', () => {
       let callCount = 0
-      const fn = memoize(() => {
+      const fn = memoize((..._args: readonly unknown[]) => {
         callCount++
         return 'result'
       }) as () => string
@@ -66,7 +69,9 @@ describe('Cache Utils', () => {
       clearCache()
       expect(getCacheSize()).toBe(0)
 
-      const fn = memoize((x: number) => x * 2) as (x: number) => number
+      const fn = memoize(
+        (...args: readonly unknown[]) => (args[0] as number) * 2
+      ) as (x: number) => number
       fn(1)
       fn(2)
       fn(3)
