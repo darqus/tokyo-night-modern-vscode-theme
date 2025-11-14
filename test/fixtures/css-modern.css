@@ -1,0 +1,173 @@
+/* Modern CSS Features Test File */
+
+/* CSS Custom Properties (CSS Variables) */
+:root {
+  --primary-color: #7aa2f7;
+  --secondary-color: #bb9af7;
+  --spacing-unit: 1rem;
+  --border-radius: 8px;
+  --font-family: "Inter", sans-serif;
+}
+
+/* CSS Grid and Flexbox Properties */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-unit);
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* CSS Functions */
+.calculated-width {
+  width: clamp(300px, 80%, 1200px);
+  height: calc(100vh - 2rem);
+  font-size: min(1rem, 3vw);
+  margin: max(1rem, 2vw);
+  padding: min(1.5rem, 5vw);
+}
+
+/* CSS Logical Properties */
+.logical-box {
+  margin-inline: auto;
+  padding-block: 1rem;
+  border-inline-start: 2px solid var(--primary-color);
+  inset-inline: 0;
+  margin-block-start: 2rem;
+  padding-block-end: 1rem;
+}
+
+/* Modern CSS Pseudo-classes */
+.modern-selector:hover {
+  transform: translateY(-2px);
+}
+
+.modern-selector:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+.modern-selector:is(:hover, :focus) {
+  background-color: var(--secondary-color);
+}
+
+/* CSS Container Queries */
+.card-container {
+  container-type: inline-size;
+}
+
+@container (min-width: 400px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CSS Cascade Layers */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .button {
+    padding: var(--spacing-unit);
+    border: none;
+    border-radius: var(--border-radius);
+  }
+}
+
+@layer utilities {
+  .text-center {
+    text-align: center;
+  }
+}
+
+/* CSS Subgrid */
+.grid-subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+/* Modern CSS Functions with Gradients */
+.gradient-background {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.gradient-radial {
+  background: radial-gradient(
+    circle at center,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.gradient-conic {
+  background: conic-gradient(
+    from 0deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+/* Modern CSS Functions with Filters and Transforms */
+.modern-effects {
+  filter: blur(2px) brightness(1.2);
+  transform: rotate(45deg) scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* CSS Environment Variables */
+.responsive-text {
+  font-size: clamp(1rem, 4vw, 2rem);
+  color: var(--primary-color);
+  margin: env(safe-area-inset-top) env(safe-area-inset-right);
+}
+
+/* CSS Custom Properties with Media Queries */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #9ece6a;
+    --secondary-color: #e0af68;
+  }
+}
+
+/* Modern CSS Selectors */
+.article > h2:first-of-type {
+  color: var(--primary-color);
+}
+
+.list-item:nth-child(even) {
+  background-color: rgba(122, 162, 247, 0.1);
+}
+
+/* CSS Functions with attr() */
+.data-attribute::before {
+  content: attr(data-label);
+  color: var(--secondary-color);
+}
+
+/* Modern CSS Layout */
+.modern-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--spacing-unit);
+}

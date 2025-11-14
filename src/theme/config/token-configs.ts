@@ -919,6 +919,78 @@ export const cssTokens: TokenColorConfig[] = [
     },
   },
   {
+    name: 'CSS Grid and Flexbox Properties',
+    scope: [
+      'support.type.property-name.grid',
+      'support.type.property-name.flexbox',
+      'support.constant.property-value.grid',
+      'support.constant.property-value.flexbox',
+      'support.type.property-name.display.grid',
+      'support.type.property-name.display.flex',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'CSS Custom Properties (CSS Variables)',
+    scope: [
+      'variable.other.css',
+      'support.type.property-name.custom-property',
+      'keyword.other.var.css',
+      'meta.property-name.custom.css',
+      'variable.other.custom-property.css',
+      'support.type.custom-property.css',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'CSS Functions',
+    scope: [
+      'support.function.css',
+      'support.function.calc.css',
+      'support.function.clamp.css',
+      'support.function.min.css',
+      'support.function.max.css',
+      'support.function.var.css',
+      'support.function.env.css',
+      'support.function.attr.css',
+      'support.function.url.css',
+      'support.function.rgb.css',
+      'support.function.rgba.css',
+      'support.function.hsl.css',
+      'support.function.hsla.css',
+      'support.function.linear-gradient.css',
+      'support.function.radial-gradient.css',
+      'support.function.conic-gradient.css',
+      'support.function.repeat.css',
+      'support.function.repeating-linear-gradient.css',
+      'support.function.repeating-radial-gradient.css',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'CSS Logical Properties',
+    scope: [
+      'support.type.property-name.logical',
+      'support.constant.property-value.logical',
+      'support.type.property-name.inline',
+      'support.type.property-name.block',
+      'support.type.property-name.inset',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
     name: 'CSS Font',
     scope: ['support.constant.font-name', 'meta.definition.variable'],
     settings: {
@@ -1032,6 +1104,60 @@ export const cssTokens: TokenColorConfig[] = [
     },
   },
   {
+    name: 'SCSS Control Directives',
+    scope: [
+      'keyword.control.at-rule.if.scss',
+      'keyword.control.at-rule.each.scss',
+      'keyword.control.at-rule.for.scss',
+      'keyword.control.at-rule.while.scss',
+      'keyword.control.at-rule.function.scss',
+      'keyword.control.at-rule.return.scss',
+      'keyword.control.at-rule.warn.scss',
+      'keyword.control.at-rule.error.scss',
+      'keyword.control.at-rule.debug.scss',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'SCSS Maps and Lists',
+    scope: [
+      'variable.other.map.scss',
+      'variable.other.list.scss',
+      'support.type.map.scss',
+      'support.type.list.scss',
+      'meta.map.scss',
+      'meta.list.scss',
+      'entity.name.function.map-get.scss',
+      'entity.name.function.map-has-key.scss',
+      'entity.name.function.map-merge.scss',
+      'entity.name.function.map-remove.scss',
+      'entity.name.function.list.append.scss',
+      'entity.name.function.list.join.scss',
+      'entity.name.function.list.index.scss',
+      'entity.name.function.list.length.scss',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.amber.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'SCSS String Interpolation',
+    scope: [
+      'string.interpolated.scss',
+      'variable.interpolation.scss',
+      'punctuation.definition.interpolation.begin.scss',
+      'punctuation.definition.interpolation.end.scss',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+      fontStyle: 'bold',
+    },
+  },
+  {
     name: 'CSS value',
     scope: 'support.constant.property-value',
     settings: {
@@ -1054,6 +1180,9 @@ export const cssTokens: TokenColorConfig[] = [
       'keyword.control.at-rule.namespace',
       'keyword.control.at-rule.counter-style',
       'keyword.control.at-rule.font-feature-values',
+      'keyword.control.at-rule.container',
+      'keyword.control.at-rule.layer',
+      'keyword.control.at-rule.property',
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.purple.main,
@@ -2905,6 +3034,201 @@ export const modernTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.slate.main,
+      fontStyle: 'bold',
+    },
+  },
+  // CSS-in-JS and Modern CSS Frameworks
+  {
+    name: 'CSS-in-JS Template Literals',
+    scope: [
+      'string.template.css',
+      'string.template.styled',
+      'string.template.emotion',
+      'meta.embedded.css',
+      'meta.embedded.styled',
+      'meta.embedded.emotion',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.main,
+    },
+  },
+  {
+    name: 'Styled Components Specific',
+    scope: [
+      'entity.name.function.styled',
+      'support.function.styled-components',
+      'keyword.other.styled',
+      'entity.name.tag.styled',
+      'meta.styled-components',
+      'punctuation.definition.styled',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.rose.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'Emotion CSS-in-JS',
+    scope: [
+      'entity.name.function.emotion',
+      'support.function.emotion',
+      'keyword.other.emotion',
+      'meta.emotion',
+      'support.function.css.emotion',
+      'support.function.keyframes.emotion',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.pink.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'CSS Modules Specific',
+    scope: [
+      'entity.other.attribute-name.class.modules',
+      'keyword.other.local.css',
+      'keyword.other.global.css',
+      'entity.other.attribute-name.local',
+      'entity.other.attribute-name.global',
+      'meta.composes.css',
+      'keyword.control.composes.css',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.violet.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'Bootstrap 5 Classes',
+    scope: [
+      'entity.other.attribute-name.class.bootstrap',
+      'support.class.bootstrap',
+      'entity.other.attribute-name.bootstrap',
+      'string.quoted.bootstrap',
+      'meta.bootstrap',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.main,
+    },
+  },
+  {
+    name: 'Bulma CSS Classes',
+    scope: [
+      'entity.other.attribute-name.class.bulma',
+      'support.class.bulma',
+      'entity.other.attribute-name.bulma',
+      'string.quoted.bulma',
+      'meta.bulma',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.dark,
+    },
+  },
+  {
+    name: 'Material-UI Classes',
+    scope: [
+      'entity.other.attribute-name.class.material-ui',
+      'support.class.material-ui',
+      'entity.other.attribute-name.mui',
+      'string.quoted.material-ui',
+      'meta.material-ui',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.blue.light,
+    },
+  },
+  {
+    name: 'Ant Design Classes',
+    scope: [
+      'entity.other.attribute-name.class.antd',
+      'support.class.antd',
+      'entity.other.attribute-name.ant-design',
+      'string.quoted.antd',
+      'meta.antd',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.red.dark,
+    },
+  },
+  {
+    name: 'Chakra UI Classes',
+    scope: [
+      'entity.other.attribute-name.class.chakra',
+      'support.class.chakra',
+      'entity.other.attribute-name.chakra-ui',
+      'string.quoted.chakra',
+      'meta.chakra',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.teal.light,
+    },
+  },
+  {
+    name: 'PostCSS and Plugins',
+    scope: [
+      'entity.name.function.postcss',
+      'support.function.postcss',
+      'keyword.control.postcss',
+      'support.type.postcss',
+      'variable.other.postcss',
+      'meta.postcss',
+      'entity.name.function.autoprefixer',
+      'entity.name.function.postcss-nested',
+      'entity.name.function.postcss-custom-media',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.orange.dark,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Modern CSS Pseudo-classes',
+    scope: [
+      'entity.other.attribute-name.pseudo-class.modern',
+      'entity.other.attribute-name.pseudo-element.modern',
+      'support.type.pseudo-class.modern',
+      'support.type.pseudo-element.modern',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.purple.light,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'CSS Container Queries',
+    scope: [
+      'keyword.control.at-rule.container',
+      'support.type.property-name.container',
+      'support.constant.property-value.container',
+      'entity.name.function.container',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.dark,
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'CSS Cascade Layers',
+    scope: [
+      'keyword.control.at-rule.layer',
+      'support.type.layer',
+      'entity.name.function.layer',
+      'meta.layer.css',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.fuchsia.main,
+      fontStyle: 'italic',
+    },
+  },
+  {
+    name: 'CSS Subgrid',
+    scope: [
+      'support.constant.property-value.subgrid',
+      'support.type.property-name.subgrid',
+      'entity.name.function.subgrid',
+    ],
+    settings: {
+      foreground: (p: UniversalPalette) => p.chromatic.green.dark,
       fontStyle: 'bold',
     },
   },

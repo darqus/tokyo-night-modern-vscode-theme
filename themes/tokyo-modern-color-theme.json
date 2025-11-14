@@ -1251,6 +1251,78 @@
       }
     },
     {
+      "name": "CSS Grid and Flexbox Properties",
+      "scope": [
+        "support.type.property-name.grid",
+        "support.type.property-name.flexbox",
+        "support.constant.property-value.grid",
+        "support.constant.property-value.flexbox",
+        "support.type.property-name.display.grid",
+        "support.type.property-name.display.flex"
+      ],
+      "settings": {
+        "foreground": "#57dac9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Custom Properties (CSS Variables)",
+      "scope": [
+        "variable.other.css",
+        "support.type.property-name.custom-property",
+        "keyword.other.var.css",
+        "meta.property-name.custom.css",
+        "variable.other.custom-property.css",
+        "support.type.custom-property.css"
+      ],
+      "settings": {
+        "foreground": "#49c7d8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Functions",
+      "scope": [
+        "support.function.css",
+        "support.function.calc.css",
+        "support.function.clamp.css",
+        "support.function.min.css",
+        "support.function.max.css",
+        "support.function.var.css",
+        "support.function.env.css",
+        "support.function.attr.css",
+        "support.function.url.css",
+        "support.function.rgb.css",
+        "support.function.rgba.css",
+        "support.function.hsl.css",
+        "support.function.hsla.css",
+        "support.function.linear-gradient.css",
+        "support.function.radial-gradient.css",
+        "support.function.conic-gradient.css",
+        "support.function.repeat.css",
+        "support.function.repeating-linear-gradient.css",
+        "support.function.repeating-radial-gradient.css"
+      ],
+      "settings": {
+        "foreground": "#ab82f7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Logical Properties",
+      "scope": [
+        "support.type.property-name.logical",
+        "support.constant.property-value.logical",
+        "support.type.property-name.inline",
+        "support.type.property-name.block",
+        "support.type.property-name.inset"
+      ],
+      "settings": {
+        "foreground": "#786ce0",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "CSS Font",
       "scope": ["support.constant.font-name", "meta.definition.variable"],
       "settings": {
@@ -1364,6 +1436,60 @@
       }
     },
     {
+      "name": "SCSS Control Directives",
+      "scope": [
+        "keyword.control.at-rule.if.scss",
+        "keyword.control.at-rule.each.scss",
+        "keyword.control.at-rule.for.scss",
+        "keyword.control.at-rule.while.scss",
+        "keyword.control.at-rule.function.scss",
+        "keyword.control.at-rule.return.scss",
+        "keyword.control.at-rule.warn.scss",
+        "keyword.control.at-rule.error.scss",
+        "keyword.control.at-rule.debug.scss"
+      ],
+      "settings": {
+        "foreground": "#ff9486",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SCSS Maps and Lists",
+      "scope": [
+        "variable.other.map.scss",
+        "variable.other.list.scss",
+        "support.type.map.scss",
+        "support.type.list.scss",
+        "meta.map.scss",
+        "meta.list.scss",
+        "entity.name.function.map-get.scss",
+        "entity.name.function.map-has-key.scss",
+        "entity.name.function.map-merge.scss",
+        "entity.name.function.map-remove.scss",
+        "entity.name.function.list.append.scss",
+        "entity.name.function.list.join.scss",
+        "entity.name.function.list.index.scss",
+        "entity.name.function.list.length.scss"
+      ],
+      "settings": {
+        "foreground": "#ffc66d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "SCSS String Interpolation",
+      "scope": [
+        "string.interpolated.scss",
+        "variable.interpolation.scss",
+        "punctuation.definition.interpolation.begin.scss",
+        "punctuation.definition.interpolation.end.scss"
+      ],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "CSS value",
       "scope": "support.constant.property-value",
       "settings": {
@@ -1385,7 +1511,10 @@
         "keyword.control.at-rule.region",
         "keyword.control.at-rule.namespace",
         "keyword.control.at-rule.counter-style",
-        "keyword.control.at-rule.font-feature-values"
+        "keyword.control.at-rule.font-feature-values",
+        "keyword.control.at-rule.container",
+        "keyword.control.at-rule.layer",
+        "keyword.control.at-rule.property"
       ],
       "settings": {
         "foreground": "#ab82f7",
@@ -3004,6 +3133,200 @@
       ],
       "settings": {
         "foreground": "#7c87a4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS-in-JS Template Literals",
+      "scope": [
+        "string.template.css",
+        "string.template.styled",
+        "string.template.emotion",
+        "meta.embedded.css",
+        "meta.embedded.styled",
+        "meta.embedded.emotion"
+      ],
+      "settings": {
+        "foreground": "#98c379"
+      }
+    },
+    {
+      "name": "Styled Components Specific",
+      "scope": [
+        "entity.name.function.styled",
+        "support.function.styled-components",
+        "keyword.other.styled",
+        "entity.name.tag.styled",
+        "meta.styled-components",
+        "punctuation.definition.styled"
+      ],
+      "settings": {
+        "foreground": "#ff6ba4",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Emotion CSS-in-JS",
+      "scope": [
+        "entity.name.function.emotion",
+        "support.function.emotion",
+        "keyword.other.emotion",
+        "meta.emotion",
+        "support.function.css.emotion",
+        "support.function.keyframes.emotion"
+      ],
+      "settings": {
+        "foreground": "#e07af5",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Modules Specific",
+      "scope": [
+        "entity.other.attribute-name.class.modules",
+        "keyword.other.local.css",
+        "keyword.other.global.css",
+        "entity.other.attribute-name.local",
+        "entity.other.attribute-name.global",
+        "meta.composes.css",
+        "keyword.control.composes.css"
+      ],
+      "settings": {
+        "foreground": "#c678dd",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Bootstrap 5 Classes",
+      "scope": [
+        "entity.other.attribute-name.class.bootstrap",
+        "support.class.bootstrap",
+        "entity.other.attribute-name.bootstrap",
+        "string.quoted.bootstrap",
+        "meta.bootstrap"
+      ],
+      "settings": {
+        "foreground": "#786ce0"
+      }
+    },
+    {
+      "name": "Bulma CSS Classes",
+      "scope": [
+        "entity.other.attribute-name.class.bulma",
+        "support.class.bulma",
+        "entity.other.attribute-name.bulma",
+        "string.quoted.bulma",
+        "meta.bulma"
+      ],
+      "settings": {
+        "foreground": "#3b88c6"
+      }
+    },
+    {
+      "name": "Material-UI Classes",
+      "scope": [
+        "entity.other.attribute-name.class.material-ui",
+        "support.class.material-ui",
+        "entity.other.attribute-name.mui",
+        "string.quoted.material-ui",
+        "meta.material-ui"
+      ],
+      "settings": {
+        "foreground": "#5cb3f9"
+      }
+    },
+    {
+      "name": "Ant Design Classes",
+      "scope": [
+        "entity.other.attribute-name.class.antd",
+        "support.class.antd",
+        "entity.other.attribute-name.ant-design",
+        "string.quoted.antd",
+        "meta.antd"
+      ],
+      "settings": {
+        "foreground": "#cc5656"
+      }
+    },
+    {
+      "name": "Chakra UI Classes",
+      "scope": [
+        "entity.other.attribute-name.class.chakra",
+        "support.class.chakra",
+        "entity.other.attribute-name.chakra-ui",
+        "string.quoted.chakra",
+        "meta.chakra"
+      ],
+      "settings": {
+        "foreground": "#68dece"
+      }
+    },
+    {
+      "name": "PostCSS and Plugins",
+      "scope": [
+        "entity.name.function.postcss",
+        "support.function.postcss",
+        "keyword.control.postcss",
+        "support.type.postcss",
+        "variable.other.postcss",
+        "meta.postcss",
+        "entity.name.function.autoprefixer",
+        "entity.name.function.postcss-nested",
+        "entity.name.function.postcss-custom-media"
+      ],
+      "settings": {
+        "foreground": "#cc766b",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Modern CSS Pseudo-classes",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.modern",
+        "entity.other.attribute-name.pseudo-element.modern",
+        "support.type.pseudo-class.modern",
+        "support.type.pseudo-element.modern"
+      ],
+      "settings": {
+        "foreground": "#b38ff8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Container Queries",
+      "scope": [
+        "keyword.control.at-rule.container",
+        "support.type.property-name.container",
+        "support.constant.property-value.container",
+        "entity.name.function.container"
+      ],
+      "settings": {
+        "foreground": "#3a9fad",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Cascade Layers",
+      "scope": [
+        "keyword.control.at-rule.layer",
+        "support.type.layer",
+        "entity.name.function.layer",
+        "meta.layer.css"
+      ],
+      "settings": {
+        "foreground": "#d68ffc",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Subgrid",
+      "scope": [
+        "support.constant.property-value.subgrid",
+        "support.type.property-name.subgrid",
+        "entity.name.function.subgrid"
+      ],
+      "settings": {
+        "foreground": "#7a9c61",
         "fontStyle": "bold"
       }
     }

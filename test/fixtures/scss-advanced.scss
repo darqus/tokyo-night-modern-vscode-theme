@@ -1,0 +1,305 @@
+// Advanced SCSS Features Test File
+
+// SCSS Maps and Lists
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+$colors: (
+  'primary': #7aa2f7,
+  'secondary': #bb9af7,
+  'success': #9ece6a,
+  'warning': #e0af68,
+  'error': #f7768e,
+  'info': #0db9d7
+);
+
+$spacing: 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem;
+
+// SCSS Custom Functions
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function get-color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn "Color '#{$key}' not found in $colors map";
+  @return null;
+}
+
+@function rem($pixels) {
+  @return (strip-unit($pixels) / 16px) * 1rem;
+}
+
+@function em($pixels, $base: 16px) {
+  @return (strip-unit($pixels) / strip-unit($base)) * 1em;
+}
+
+// SCSS Mixins with Advanced Features
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in $breakpoints map";
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-variant($bg-color, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 1px solid $bg-color;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    border-color: darken($bg-color, 15%);
+  }
+
+  &:active {
+    background-color: darken($bg-color, 15%);
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: 2px solid lighten($bg-color, 20%);
+    outline-offset: 2px;
+  }
+}
+
+// SCSS Control Directives
+@each $color-name, $color-value in $colors {
+  .text-#{$color-name} {
+    color: $color-value;
+  }
+
+  .bg-#{$color-name} {
+    background-color: $color-value;
+  }
+
+  .border-#{$color-name} {
+    border-color: $color-value;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: rem(24px - ($i * 2px));
+    margin-bottom: rem(16px - ($i * 2px));
+  }
+}
+
+@while $i > 0 {
+  .grid-col-#{$i} {
+    flex: 0 0 percentage($i / 12);
+  }
+  $i: $i - 1;
+}
+
+// SCSS String Interpolation
+$prefix: 'modern';
+
+%#{$prefix}-button {
+  padding: rem(12px) rem(24px);
+  border: none;
+  border-radius: rem(6px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  @extend %modern-button;
+  @include button-variant(get-color('primary'));
+}
+
+.btn-secondary {
+  @extend %modern-button;
+  @include button-variant(get-color('secondary'));
+}
+
+// SCSS Lists Operations
+$font-sizes: (
+  'xs': rem(12px),
+  'sm': rem(14px),
+  'base': rem(16px),
+  'lg': rem(18px),
+  'xl': rem(20px),
+  '2xl': rem(24px),
+  '3xl': rem(30px)
+);
+
+@each $size-name, $size-value in $font-sizes {
+  .text-#{$size-name} {
+    font-size: $size-value;
+    line-height: 1.5;
+  }
+}
+
+// SCSS Advanced Maps
+$theme-config: (
+  'border-radius': (
+    'sm': rem(4px),
+    'md': rem(8px),
+    'lg': rem(12px),
+    'xl': rem(16px)
+  ),
+  'shadows': (
+    'sm': 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+    'md': 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    'lg': 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    'xl': 0 20px 25px -5px rgba(0, 0, 0, 0.1)
+  ),
+  'transitions': (
+    'fast': 0.15s ease,
+    'normal': 0.3s ease,
+    'slow': 0.5s ease
+  )
+);
+
+// SCSS Nested Properties with Interpolation
+.card {
+  border-radius: map-get(map-get($theme-config, 'border-radius'), 'lg');
+  box-shadow: map-get(map-get($theme-config, 'shadows'), 'md');
+  transition: map-get(map-get($theme-config, 'transitions'), 'normal');
+
+  &__header {
+    padding: rem(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  &__body {
+    padding: rem(20px);
+  }
+
+  &__footer {
+    padding: rem(16px) rem(20px);
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+}
+
+// SCSS Conditionals in Mixins
+@mixin responsive-grid($columns: 1, $gap: rem(16px)) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+
+  @if $columns > 3 {
+    @include respond-to('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @if $gap > rem(20px) {
+    @warn "Gap size might be too large for optimal layout";
+  }
+}
+
+// SCSS List Functions Usage
+$grid-columns: 12;
+$column-width: percentage(1 / $grid-columns);
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    flex: 0 0 $i * $column-width;
+    max-width: $i * $column-width;
+  }
+}
+
+// SCSS Error Handling and Debugging
+@function safe-color($color) {
+  @if not $color {
+    @error "Color cannot be null or undefined";
+    @return get-color('primary');
+  }
+
+  @if type-of($color) != 'color' {
+    @warn "Expected color, got #{type-of($color)}";
+    @return get-color('primary');
+  }
+
+  @return $color;
+}
+
+// SCSS Advanced Usage with CSS Custom Properties
+:root {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $font-sizes {
+    --font-size-#{$key}: #{$value};
+  }
+}
+
+// SCSS Module-like Structure
+@module 'utilities' {
+  @function spacing($size) {
+    $spacing-map: (
+      '0': 0,
+      '1': rem(4px),
+      '2': rem(8px),
+      '3': rem(12px),
+      '4': rem(16px),
+      '5': rem(20px),
+      '6': rem(24px)
+    );
+
+    @return map-get($spacing-map, $size);
+  }
+
+  @function border-radius($size) {
+    @return map-get(map-get($theme-config, 'border-radius'), $size);
+  }
+}
+
+// Using the module
+.util-p-1 {
+  padding: utilities.spacing('1');
+}
+
+.util-rounded-lg {
+  border-radius: utilities.border-radius('lg');
+}
+
+// SCSS Advanced Animation Keyframes
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// SCSS Complex Selectors with Interpolation
+@each $breakpoint in map-keys($breakpoints) {
+  @include respond-to($breakpoint) {
+    .container-#{$breakpoint} {
+      max-width: map-get($breakpoints, $breakpoint);
+      margin: 0 auto;
+      padding: 0 rem(16px);
+    }
+  }
+}
