@@ -957,7 +957,7 @@ export const markupTokens: TokenColorConfig[] = [
       'entity.other.attribute-name.id.html',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.dark, // Темно-синебирюзовый цвет
+      foreground: (p: UniversalPalette) => p.chromatic.blue.dark, // Темно-синебирюзовый цвет
     },
   },
   {
@@ -1029,7 +1029,7 @@ export const markupTokens: TokenColorConfig[] = [
     name: 'Inserted',
     scope: 'markup.inserted',
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.dark,
     },
   },
   {
@@ -2706,7 +2706,7 @@ export const modernTokens: TokenColorConfig[] = [
       'support.function.controller',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.blue.dark,
       fontStyle: 'bold',
     },
   },
