@@ -1,6 +1,5 @@
 # 🌆 Tokyo Modern
 
-[![Tests](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/test.yml/badge.svg)](https://github.com/darqus/tokyo-modern-vscode-theme/actions/workflows/test.yml)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lod-inc.tokyo-modern?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/lod-inc.tokyo-modern?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=lod-inc.tokyo-modern)
