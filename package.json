@@ -37,10 +37,10 @@
     ]
   },
   "scripts": {
-    "build": "node --loader ts-node/esm --no-warnings scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
-    "build:vsix": "node --loader ts-node/esm --no-warnings scripts/build-vsix.ts",
+    "build": "npx tsx scripts/build-theme.ts && biome format --write themes/tokyo-modern-color-theme.json",
+    "build:vsix": "npx tsx scripts/build-vsix.ts",
     "package": "npm run build:vsix",
-    "release": "node --loader ts-node/esm --no-warnings scripts/release.ts",
+    "release": "npx tsx scripts/release.ts",
     "lint": "biome lint src/ scripts/",
     "format": "biome check --fix --unsafe src/ scripts/ && biome format --write src/ scripts/",
     "test": "vitest run --update",
@@ -49,9 +49,9 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "test:no-coverage": "COVERAGE=false vitest run --coverage=false",
-    "check:contrast": "node --loader ts-node/esm --no-warnings scripts/check-contrast.ts",
-    "check:syntax": "node --loader ts-node/esm --no-warnings scripts/check-syntax-contrast.ts",
-    "analyze:colors": "node --loader ts-node/esm --no-warnings scripts/analyze-token-colors.ts",
+    "check:contrast": "npx tsx scripts/check-contrast.ts",
+    "check:syntax": "npx tsx scripts/check-syntax-contrast.ts",
+    "analyze:colors": "npx tsx scripts/analyze-token-colors.ts",
     "deps:check": "ncu",
     "deps:update": "ncu -u"
   },
@@ -66,6 +66,7 @@
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vitest": "^4.0.8"
   }

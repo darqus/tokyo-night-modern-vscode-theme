@@ -741,6 +741,131 @@
       }
     },
     {
+      "name": "TypeScript Type Operators (typeof, keyof, instanceof, in, as, satisfies, extends)",
+      "scope": [
+        "keyword.operator.typeof.ts",
+        "keyword.operator.keyof.ts",
+        "keyword.operator.instanceof.ts",
+        "keyword.operator.in.ts",
+        "keyword.operator.as.ts",
+        "keyword.operator.satisfies.ts",
+        "keyword.other.typeof.ts",
+        "keyword.other.keyof.ts",
+        "keyword.other.instanceof.ts",
+        "keyword.other.in.ts",
+        "keyword.other.as.ts",
+        "keyword.other.satisfies.ts",
+        "keyword.other.extends.ts",
+        "storage.modifier.extends.ts",
+        "keyword.control.extends.ts",
+        "keyword.control.satisfies.ts",
+        "keyword.typeof.ts",
+        "keyword.keyof.ts",
+        "keyword.instanceof.ts",
+        "keyword.in.ts",
+        "keyword.as.ts",
+        "keyword.satisfies.ts"
+      ],
+      "settings": {
+        "foreground": "#ff7a7a",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Utility Keywords (readonly, infer, never, unknown, any)",
+      "scope": [
+        "storage.modifier.readonly.ts",
+        "storage.modifier.readonly.tsx",
+        "keyword.other.readonly.ts",
+        "keyword.other.readonly.tsx",
+        "keyword.other.infer.ts",
+        "keyword.other.never.ts",
+        "keyword.other.unknown.ts",
+        "keyword.other.any.ts",
+        "storage.type.never.ts",
+        "storage.type.unknown.ts",
+        "storage.type.any.ts",
+        "support.type.never.ts",
+        "support.type.unknown.ts",
+        "support.type.any.ts",
+        "variable.other.readonly.ts",
+        "variable.other.readonly.tsx"
+      ],
+      "settings": {
+        "foreground": "#ff9486",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "TypeScript Declaration Keywords (declare, enum, namespace, module, type)",
+      "scope": [
+        "keyword.control.declare.ts",
+        "keyword.other.declare.ts",
+        "keyword.control.enum.ts",
+        "keyword.other.enum.ts",
+        "keyword.control.namespace.ts",
+        "keyword.other.namespace.ts",
+        "keyword.control.module.ts",
+        "keyword.other.module.ts",
+        "keyword.control.type.ts",
+        "keyword.other.type.ts",
+        "storage.type.enum.ts",
+        "storage.type.namespace.ts",
+        "storage.type.module.ts",
+        "storage.type.type.ts",
+        "entity.name.type.enum.ts",
+        "entity.name.type.namespace.ts",
+        "entity.name.type.module.ts"
+      ],
+      "settings": {
+        "foreground": "#ab82f7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Access Modifiers (public, private, protected, abstract)",
+      "scope": [
+        "storage.modifier.public.ts",
+        "storage.modifier.private.ts",
+        "storage.modifier.protected.ts",
+        "storage.modifier.abstract.ts",
+        "keyword.control.public.ts",
+        "keyword.control.private.ts",
+        "keyword.control.protected.ts",
+        "keyword.control.abstract.ts",
+        "storage.modifier.access.ts",
+        "keyword.control.access.ts",
+        "variable.language.access.ts",
+        "storage.modifier.public.tsx",
+        "storage.modifier.private.tsx",
+        "storage.modifier.protected.tsx",
+        "storage.modifier.abstract.tsx"
+      ],
+      "settings": {
+        "foreground": "#786ce0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Control Flow (asserts, is, implements)",
+      "scope": [
+        "keyword.control.asserts.ts",
+        "keyword.other.asserts.ts",
+        "keyword.control.is.ts",
+        "keyword.other.is.ts",
+        "keyword.control.implements.ts",
+        "keyword.other.implements.ts",
+        "storage.modifier.implements.ts",
+        "keyword.asserts.ts",
+        "keyword.is.ts",
+        "keyword.implements.ts"
+      ],
+      "settings": {
+        "foreground": "#57dac9",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Keyword",
       "scope": ["keyword", "keyword.control", "keyword.other.important"],
       "settings": {
@@ -1288,7 +1413,7 @@
         "entity.other.attribute-name.id.html"
       ],
       "settings": {
-        "foreground": "#46aea1"
+        "foreground": "#3b88c6"
       }
     },
     {
@@ -1360,7 +1485,7 @@
       "name": "Inserted",
       "scope": "markup.inserted",
       "settings": {
-        "foreground": "#46aea1"
+        "foreground": "#3b88c6"
       }
     },
     {
@@ -2810,7 +2935,7 @@
         "support.function.controller"
       ],
       "settings": {
-        "foreground": "#46aea1",
+        "foreground": "#3b88c6",
         "fontStyle": "bold"
       }
     },
