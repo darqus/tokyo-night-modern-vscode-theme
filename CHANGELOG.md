@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2589](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2580...v2.3.2589) (2025-11-14)
+
+
+### Features
+
+* **theme:** update TypeScript syntax highlighting ([526dcbe](https://github.com/darqus/tokyo-modern-vscode-theme/commit/526dcbea2b54847b8895c820344eb353d41ecd31))
+* **tokens:** enhance syntax highlighting for modern frameworks and languages ([e1a21eb](https://github.com/darqus/tokyo-modern-vscode-theme/commit/e1a21eb4de4dfe1609e30f6e6ed1b2872b177081))
+
+
+### Bug Fixes
+
+* correct the indentation in the code snippet ([e6a29d9](https://github.com/darqus/tokyo-modern-vscode-theme/commit/e6a29d90018f1c39aac892946c51e22c9eeca8d2))
+* remove unnecessary whitespace ([1b17278](https://github.com/darqus/tokyo-modern-vscode-theme/commit/1b17278765363667486f988b1086423ae7d5f10b))
+
 ### [2.3.2580](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2447...v2.3.2580) (2025-11-11)
 
 
