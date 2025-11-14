@@ -18,7 +18,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "lib": ["ES2022", "DOM"],
-    "types": ["node"]
+    "types": ["node", "vitest/globals"]
   },
   "include": [
     "src/**/*.ts",
