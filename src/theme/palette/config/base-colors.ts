@@ -10,7 +10,6 @@ export const chromaMain = {
   violet: '#c678dd',
   fuchsia: '#d68ffc',
   purple: '#ab82f7',
-  visited: '#9333ea',
   indigo: '#786ce0',
   blue: '#4aaaf8',
   sky: '#4fcdff',

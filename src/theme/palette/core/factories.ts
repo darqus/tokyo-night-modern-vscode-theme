@@ -157,7 +157,8 @@ export const createLinkColors = (baseColor: string, visitedColor?: string) => {
     active: darken(baseColor, UI_STATES.active.lighten),
     focus: alpha(baseColor, UI_STATES.focus.opacity),
     visited:
-      visitedColor || mix(baseColor, chromaMain.visited, MIX_RATIO.BALANCED),
+      visitedColor ||
+      mix(baseColor, chromaMain.purple[500], MIX_RATIO.BALANCED),
     disabled: alpha(baseColor, UI_STATES.disabled.opacity),
   }
 }
