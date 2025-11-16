@@ -67,13 +67,6 @@ export const ui = {
   white: '#ffffff',
   black: '#000000',
   badge: chromaMain.indigo,
-  gray: {
-    700: '#777777',
-    800: '#888888',
-    900: '#999999',
-    a: '#aaaaaa',
-    c: '#cccccc',
-  },
 } as const
 
 /**
