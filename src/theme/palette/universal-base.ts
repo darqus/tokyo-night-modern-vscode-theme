@@ -87,7 +87,7 @@ export interface UniversalPalette {
 import { lighten, mix } from '../utils/color.js'
 import { ADJUST, MIX_RATIO } from '../utils/color-helpers.js'
 import { fromMain } from '../utils/palette-helpers.js'
-import { baseColors } from './base-colors.js'
+import { baseColors } from './config/base-colors.js'
 
 // Centralized deltas for variant generation
 const VARIANT_DELTA = {
@@ -109,32 +109,29 @@ const chromatic: UniversalPalette['chromatic'] = Object.fromEntries(
 
 export const universalBasePalette: UniversalPalette = {
   background: {
-    base: fromMain(baseColors.background.base.main, VARIANT_DELTA.background),
+    base: fromMain(baseColors.background.base, VARIANT_DELTA.background),
     elevated: fromMain(
-      baseColors.background.elevated.main,
+      baseColors.background.elevated,
       VARIANT_DELTA.background
     ),
-    inset: fromMain(baseColors.background.inset.main, VARIANT_DELTA.background),
-    overlay: fromMain(
-      baseColors.background.overlay.main,
-      VARIANT_DELTA.background
-    ),
+    inset: fromMain(baseColors.background.inset, VARIANT_DELTA.background),
+    overlay: fromMain(baseColors.background.overlay, VARIANT_DELTA.background),
   },
   foreground: {
     primary: fromMain(
-      baseColors.foreground.primary.main,
+      baseColors.foreground.primary,
       VARIANT_DELTA.foregroundStrong
     ),
     secondary: fromMain(
-      baseColors.foreground.secondary.main,
+      baseColors.foreground.secondary,
       VARIANT_DELTA.foregroundStrong
     ),
     muted: fromMain(
-      baseColors.foreground.muted.main,
+      baseColors.foreground.muted,
       VARIANT_DELTA.foregroundStrong
     ),
     disabled: fromMain(
-      baseColors.foreground.disabled.main,
+      baseColors.foreground.disabled,
       VARIANT_DELTA.foregroundSoft
     ),
   },
@@ -153,21 +150,21 @@ export const universalBasePalette: UniversalPalette = {
     badge: baseColors.ui.badge,
     border: fromMain(
       mix(
-        baseColors.background.base.main,
-        baseColors.foreground.primary.main,
+        baseColors.background.base,
+        baseColors.foreground.primary,
         MIX_RATIO.MOSTLY_FIRST
       ),
       VARIANT_DELTA.border
     ),
     scrollbar: fromMain(
-      lighten(baseColors.background.base.main, ADJUST.SLIGHT),
+      lighten(baseColors.background.base, ADJUST.SLIGHT),
       VARIANT_DELTA.scrollbar
     ),
     selection: {
-      dark: mix(chromatic.blue.dark, baseColors.background.base.main, 0.25),
-      main: mix(chromatic.blue.main, baseColors.background.base.main, 0.25),
-      light: mix(chromatic.blue.light, baseColors.background.base.main, 0.25),
-      bright: mix(chromatic.blue.bright, baseColors.background.base.main, 0.25),
+      dark: mix(chromatic.blue.dark, baseColors.background.base, 0.25),
+      main: mix(chromatic.blue.main, baseColors.background.base, 0.25),
+      light: mix(chromatic.blue.light, baseColors.background.base, 0.25),
+      bright: mix(chromatic.blue.bright, baseColors.background.base, 0.25),
     },
   },
   shadow: {

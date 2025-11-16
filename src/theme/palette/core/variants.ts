@@ -1,5 +1,5 @@
 import { alpha, darken, lighten, mix } from '../../utils/color.js'
-import { baseColors, chromaMain } from '../base-colors.js'
+import { baseColors, chromaMain } from '../config/base-colors.js'
 import type { ColorVariant } from '../types.js'
 import { ADJUST, VARIANT_MIX_RATIOS } from './constants.js'
 

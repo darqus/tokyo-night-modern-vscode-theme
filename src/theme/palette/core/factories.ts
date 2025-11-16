@@ -1,5 +1,5 @@
 import { alpha, darken, lighten, mix } from '../../utils/color.js'
-import { chromaMain } from '../base-colors.js'
+import { chromaMain } from '../config/base-colors.js'
 import type { InteractiveOptions, Palette } from '../types.js'
 import {
   ADJUST,
