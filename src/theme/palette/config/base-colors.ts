@@ -81,26 +81,6 @@ export const baseColors = {
 } as const
 
 /**
- * Алиасы для обратной совместимости
- */
-export const legacyColors = {
-  // Старые имена → новые имена
-  backgroundPrimary: background.base,
-  backgroundSecondary: background.elevated,
-  backgroundTertiary: background.inset,
-  textPrimary: foreground.primary,
-  textSecondary: foreground.secondary,
-  textMuted: foreground.muted,
-  textDisabled: foreground.disabled,
-  accentPrimary: chromaMain.indigo,
-  accentSecondary: chromaMain.purple,
-  accentError: chromaMain.red,
-  accentWarning: chromaMain.amber,
-  accentSuccess: chromaMain.emerald,
-  accentInfo: chromaMain.blue,
-} as const
-
-/**
  * Получить базовый цвет по имени
  */
 export const getBaseColor = (name: keyof typeof chromaMain): string => {

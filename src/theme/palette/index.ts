@@ -17,7 +17,6 @@ export {
   getBaseColor,
   getForegroundColor,
   isChromaticColor,
-  legacyColors,
   shadow,
   ui,
 } from './config/base-colors.js'
