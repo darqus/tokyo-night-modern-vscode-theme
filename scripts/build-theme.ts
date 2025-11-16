@@ -11,11 +11,11 @@ import {
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-function buildTheme(): void {
+async function buildTheme(): Promise<void> {
   try {
     console.log('Generating Tokyo Night theme...')
 
-    const theme = generateTheme()
+    const theme = await generateTheme()
 
     console.log('Validating theme...')
     const validation = validateTheme(theme)
@@ -99,4 +99,4 @@ function buildTheme(): void {
   }
 }
 
-buildTheme()
+await buildTheme()

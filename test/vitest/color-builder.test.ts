@@ -1,4 +1,5 @@
 import { vi } from 'vitest'
+import { baseColors } from '../../src/theme/palette/config/base-colors.js'
 import {
   ColorRuleBuilder,
   c,
@@ -10,11 +11,11 @@ vi.mock('../../src/theme/palette/index.js', () => ({
   universalPalette: {
     chromatic: {
       blue: {
-        dark: '#0000ff',
+        dark: '#3b86c6', // darken('#4aaaf8', 0.2)
       },
     },
     ui: {
-      white: '#ffffff',
+      white: baseColors.ui.white,
     },
   },
 }))

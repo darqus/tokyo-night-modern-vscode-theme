@@ -7,6 +7,7 @@ export const chromaMain = {
   violet: '#c678dd',
   fuchsia: '#d68ffc',
   purple: '#ab82f7',
+  visited: '#9333ea',
   indigo: '#786ce0',
   blue: '#4aaaf8',
   sky: '#4fcdff',
@@ -51,5 +52,12 @@ export const baseColors = {
     white: '#ffffff',
     black: '#000000',
     badge: '#007acc',
+    gray: {
+      700: '#777777',
+      800: '#888888',
+      900: '#999999',
+      a: '#aaaaaa',
+      c: '#cccccc',
+    },
   },
 }

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { chromaMain } from '../../src/theme/palette/base-colors'
 import {
   alpha,
   ColorError,
@@ -31,16 +32,18 @@ describe('Color Utils Edge Cases', () => {
     })
 
     it('should throw error for invalid opacity', () => {
-      expect(() => alpha('#ff0000', NaN)).toThrow(ColorError)
-      expect(() => alpha('#ff0000', Infinity)).toThrow(ColorError)
-      expect(() => alpha('#ff0000', 'invalid' as unknown as number)).toThrow(
+      expect(() => alpha(chromaMain.red, Number.NaN)).toThrow(ColorError)
+      expect(() => alpha(chromaMain.red, Number.POSITIVE_INFINITY)).toThrow(
         ColorError
       )
+      expect(() =>
+        alpha(chromaMain.red, 'invalid' as unknown as number)
+      ).toThrow(ColorError)
     })
 
     it('should clamp opacity values', () => {
-      expect(alpha('#ff0000', -0.5)).toBe('#ff000000')
-      expect(alpha('#ff0000', 1.5)).toBe('#ff0000ff')
+      expect(alpha(chromaMain.red, -0.5)).toBe('#ff6b6b00')
+      expect(alpha(chromaMain.red, 1.5)).toBe('#ff6b6bff')
     })
   })
 
@@ -50,8 +53,10 @@ describe('Color Utils Edge Cases', () => {
     })
 
     it('should throw error for invalid amount', () => {
-      expect(() => lighten('#ff0000', NaN)).toThrow(ColorError)
-      expect(() => lighten('#ff0000', Infinity)).toThrow(ColorError)
+      expect(() => lighten('#ff0000', Number.NaN)).toThrow(ColorError)
+      expect(() => lighten('#ff0000', Number.POSITIVE_INFINITY)).toThrow(
+        ColorError
+      )
     })
   })
 
@@ -61,8 +66,10 @@ describe('Color Utils Edge Cases', () => {
     })
 
     it('should throw error for invalid amount', () => {
-      expect(() => darken('#ff0000', NaN)).toThrow(ColorError)
-      expect(() => darken('#ff0000', Infinity)).toThrow(ColorError)
+      expect(() => darken('#ff0000', Number.NaN)).toThrow(ColorError)
+      expect(() => darken('#ff0000', Number.POSITIVE_INFINITY)).toThrow(
+        ColorError
+      )
     })
   })
 
@@ -76,8 +83,10 @@ describe('Color Utils Edge Cases', () => {
     })
 
     it('should throw error for invalid ratio', () => {
-      expect(() => mix('#ff0000', '#0000ff', NaN)).toThrow(ColorError)
-      expect(() => mix('#ff0000', '#0000ff', Infinity)).toThrow(ColorError)
+      expect(() => mix('#ff0000', '#0000ff', Number.NaN)).toThrow(ColorError)
+      expect(() => mix('#ff0000', '#0000ff', Number.POSITIVE_INFINITY)).toThrow(
+        ColorError
+      )
     })
 
     it('should clamp ratio values', () => {

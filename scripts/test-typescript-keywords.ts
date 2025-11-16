@@ -3,19 +3,19 @@
 
 // === Базовые ключевые слова ===
 const stringValue: string = 'Hello TypeScript'
-const numberValue: number = 42
-const booleanValue: boolean = true
-var oldValue: any = 'legacy'
+const _numberValue: number = 42
+const _booleanValue: boolean = true
+var _oldValue: any = 'legacy'
 
 // === Операторы типов ===
-const typeOfString = typeof stringValue
-const keysOfObject = keyof
+const _typeOfString = typeof stringValue
+const _keysOfObject = keyof
 {
   name: string
   age: number
 }
-const isString = stringValue instanceof String
-const hasProperty = 'name' in { name: 'test' }
+const _isString = stringValue instanceof String
+const _hasProperty = 'name' in { name: 'test' }
 
 // === Утилиты типов ===
 type ReadonlyUser = readonly { name: string; age: number }
@@ -27,7 +27,6 @@ type NeverType = never
 // === Модификаторы доступа ===
 class ExampleClass {
   public publicField: string
-  private privateField: number
   protected protectedField: boolean;
   abstract abstractMethod(): void
 
@@ -40,10 +39,6 @@ class ExampleClass {
   // Методы с модификаторами
   public publicMethod(): string {
     return this.publicField
-  }
-
-  private privateMethod(): number {
-    return this.privateField
   }
 
   protected protectedMethod(): boolean {
@@ -141,17 +136,17 @@ function ClassDecorator<T extends { new (...args: any[]): {} }>(
 }
 
 function MethodDecorator(
-  target: any,
-  propertyKey: string,
-  descriptor: PropertyDescriptor
+  _target: any,
+  _propertyKey: string,
+  _descriptor: PropertyDescriptor
 ) {
   console.log('Method decorated')
 }
 
 function ParameterDecorator(
-  target: any,
-  propertyKey: string,
-  parameterIndex: number
+  _target: any,
+  _propertyKey: string,
+  _parameterIndex: number
 ) {
   console.log('Parameter decorated')
 }
@@ -165,9 +160,9 @@ class DecoratedClass {
 }
 
 // === Использование ключевых слов ===
-const example = new ExampleClass()
-const status: Status = Status.Active
-const config: MyNamespace.Config = { debug: true }
+const _example = new ExampleClass()
+const _status: Status = Status.Active
+const _config: MyNamespace.Config = { debug: true }
 
 // Проверка типов
 if (isString(stringValue)) {
@@ -177,14 +172,14 @@ if (isString(stringValue)) {
 assertsCondition(true)
 
 // Оператор satisfies (TypeScript 4.9+)
-const data = { name: 'John', age: 30 } satisfies { name: string; age: number }
+const _data = { name: 'John', age: 30 } satisfies { name: string; age: number }
 
 // Использование утилитных типов
-const partialUser: PartialUser = { name: 'John' }
-const userKeys: (keyof UserType)[] = ['name', 'age']
+const _partialUser: PartialUser = { name: 'John' }
+const _userKeys: (keyof UserType)[] = ['name', 'age']
 
 // Generics в действии
-const userName = genericFunction({ name: 'Alice', age: 25 })
-const genericInterface: GenericInterface<string> = { value: 'test' }
+const _userName = genericFunction({ name: 'Alice', age: 25 })
+const _genericInterface: GenericInterface<string> = { value: 'test' }
 
 console.log('TypeScript keywords test complete')

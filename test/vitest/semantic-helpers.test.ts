@@ -5,8 +5,10 @@ import {
   token,
 } from '../../src/theme/utils/semantic-helpers'
 
+import { TEST_COLORS } from './test-constants'
+
 describe('Semantic Helpers', () => {
-  const color = '#ff0000'
+  const color = TEST_COLORS.RED
 
   describe('token', () => {
     it('should create a token with only foreground', () => {

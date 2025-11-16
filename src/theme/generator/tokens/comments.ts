@@ -1,9 +1,10 @@
 import { commentsTokens } from '../../config/token-configs.js'
 import { generateTokenColors } from '../../config/unified-generator.js'
+import { universalPalette } from '../../palette/index.js'
 
 /**
  * Генерирует токены для комментариев
  */
 export function generateCommentTokens() {
-  return generateTokenColors(commentsTokens)
+  return generateTokenColors(commentsTokens, universalPalette)
 }

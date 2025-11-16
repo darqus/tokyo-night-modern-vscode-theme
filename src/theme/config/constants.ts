@@ -46,6 +46,14 @@ export const THEME_CONSTANTS = {
       'sideBar.background',
     ],
   },
+
+  // Font style constants
+  FONT_STYLE: {
+    BOLD: 'bold',
+    ITALIC: 'italic',
+    BOLD_ITALIC: 'bold italic',
+    UNDERLINE: 'underline',
+  } as const,
 } as const
 
 export type ThemeConstants = typeof THEME_CONSTANTS

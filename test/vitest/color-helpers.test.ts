@@ -15,6 +15,7 @@ import {
   subtleBackground,
   subtleHighlight,
 } from '../../src/theme/utils/color-helpers'
+import { TEST_COLORS } from './test-constants'
 
 describe('Color Helpers', () => {
   describe('Constants', () => {
@@ -45,8 +46,8 @@ describe('Color Helpers', () => {
   })
 
   describe('Semantic Functions', () => {
-    const baseColor = '#ff0000'
-    const accentColor = '#0000ff'
+    const baseColor = TEST_COLORS.RED
+    const accentColor = TEST_COLORS.BLUE
 
     it('subtleHighlight should apply light opacity', () => {
       expect(subtleHighlight(baseColor)).toBe(alpha(baseColor, OPACITY.LIGHT))

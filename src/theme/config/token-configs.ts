@@ -1,6 +1,7 @@
-import type { UniversalPalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/universal-base.js'
 import { mix } from '../utils/color.js'
 import type { TokenColorConfig } from './color-config-dsl.js'
+import { THEME_CONSTANTS } from './constants.js'
 
 /**
  * Comments - комментарии в коде
@@ -37,7 +38,7 @@ export const commentsTokens: TokenColorConfig[] = [
     ],
     settings: {
       foreground: (p: UniversalPalette) => p.chromatic.amber.main, // Золотой для выделения
-      fontStyle: 'bold',
+      fontStyle: THEME_CONSTANTS.FONT_STYLE.BOLD,
     },
   },
   {

@@ -11,7 +11,7 @@ import { generateModernTokens } from '../../src/theme/generator/tokens/modern.js
 
 describe('Integration Tests - Full Theme Generation', () => {
   it('should generate a complete theme with all components', async () => {
-    const theme = generateTheme()
+    const theme = await generateTheme()
 
     expect(theme).toBeDefined()
     expect(theme.name).toBeDefined()
@@ -31,7 +31,7 @@ describe('Integration Tests - Full Theme Generation', () => {
   })
 
   it('should include all UI color components', async () => {
-    const theme = generateTheme()
+    const theme = await generateTheme()
 
     // Check that key UI color categories are present in the theme
     expect(Object.keys(theme.colors).length).toBeGreaterThan(50) // Ensure substantial number of colors
@@ -58,8 +58,8 @@ describe('Integration Tests - Full Theme Generation', () => {
     }
   })
 
-  it('should include all token color components', () => {
-    const theme = generateTheme()
+  it('should include all token color components', async () => {
+    const theme = await generateTheme()
     const expectedTokens = [
       ...generateCommentTokens(),
       ...generateBasicTokens(),
@@ -85,7 +85,7 @@ describe('Integration Tests - Full Theme Generation', () => {
   })
 
   it('should include semantic token colors', async () => {
-    const theme = generateTheme()
+    const theme = await generateTheme()
     const expectedSemanticTokens = generateSemanticTokenColors()
 
     // Check that semantic tokens are present
@@ -98,8 +98,8 @@ describe('Integration Tests - Full Theme Generation', () => {
     }
   })
 
-  it('should have valid color values throughout the theme', () => {
-    const theme = generateTheme()
+  it('should have valid color values throughout the theme', async () => {
+    const theme = await generateTheme()
 
     // Check UI colors
     for (const [, value] of Object.entries(theme.colors)) {
@@ -146,11 +146,11 @@ describe('Integration Tests - Full Theme Generation', () => {
     }
   })
 
-  it('should maintain consistent theme configuration', () => {
-    const theme = generateTheme()
+  it('should maintain consistent theme configuration', async () => {
+    const theme = await generateTheme()
 
     // Generate theme multiple times and ensure consistency
-    const theme2 = generateTheme()
+    const theme2 = await generateTheme()
 
     expect(theme.name).toBe(theme2.name)
     expect(theme.type).toBe(theme2.type)
@@ -166,8 +166,8 @@ describe('Integration Tests - Full Theme Generation', () => {
     expect(theme.semanticTokenColors).toEqual(theme2.semanticTokenColors)
   })
 
-  it('should have expected theme properties', () => {
-    const theme = generateTheme()
+  it('should have expected theme properties', async () => {
+    const theme = await generateTheme()
 
     // Check for expected theme name
     expect(theme.name).toContain('Tokyo')

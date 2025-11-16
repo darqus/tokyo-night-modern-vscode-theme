@@ -1,3 +1,4 @@
+import { THEME_CONSTANTS } from '../config/constants.js'
 import type { SemanticTokenStyle } from '../types/index.js'
 
 /**
@@ -12,6 +13,9 @@ export const token = (
 /**
  * Алиасы для часто используемых стилей
  */
-export const boldToken = (fg: string) => token(fg, 'bold')
-export const italicToken = (fg: string) => token(fg, 'italic')
-export const boldItalicToken = (fg: string) => token(fg, 'bold italic')
+export const boldToken = (fg: string) =>
+  token(fg, THEME_CONSTANTS.FONT_STYLE.BOLD)
+export const italicToken = (fg: string) =>
+  token(fg, THEME_CONSTANTS.FONT_STYLE.ITALIC)
+export const boldItalicToken = (fg: string) =>
+  token(fg, THEME_CONSTANTS.FONT_STYLE.BOLD_ITALIC)

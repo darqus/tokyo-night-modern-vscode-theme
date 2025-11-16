@@ -1,3 +1,4 @@
+import { baseColors } from '../../src/theme/palette/base-colors'
 import type { VSCodeTheme } from '../../src/theme/types'
 import {
   validateCriticalContrast,
@@ -9,8 +10,8 @@ describe('Validation Utils', () => {
     name: 'Test Theme',
     type: 'dark',
     colors: {
-      foreground: '#ffffff',
-      'editor.background': '#000000',
+      foreground: baseColors.ui.white,
+      'editor.background': baseColors.ui.black,
     },
     tokenColors: [],
     semanticTokenColors: {},
@@ -61,8 +62,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: '#888888',
-          'editor.background': '#777777',
+          foreground: baseColors.ui.gray[800],
+          'editor.background': baseColors.ui.gray[700],
         },
       }
       const result = validateTheme(theme)
@@ -80,10 +81,10 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: '#888888',
-          'editor.background': '#777777',
-          'button.foreground': '#999999',
-          'button.background': '#888888',
+          foreground: baseColors.ui.gray[800],
+          'editor.background': baseColors.ui.gray[700],
+          'button.foreground': baseColors.ui.gray[900],
+          'button.background': baseColors.ui.gray[800],
         },
       }
       const result = validateCriticalContrast(theme)
@@ -122,8 +123,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: '#aaaaaa',
-          'editor.background': '#999999',
+          foreground: baseColors.ui.gray.a,
+          'editor.background': baseColors.ui.gray[900],
         },
       }
       const result = validateTheme(theme)
@@ -135,12 +136,15 @@ describe('Validation Utils', () => {
         name: 'Valid Theme',
         type: 'dark' as const,
         colors: {
-          foreground: '#ffffff',
-          'editor.background': '#000000',
-          'editor.foreground': '#cccccc',
+          foreground: baseColors.ui.white,
+          'editor.background': baseColors.ui.black,
+          'editor.foreground': baseColors.ui.gray.c,
         },
         tokenColors: [
-          { scope: 'comment', settings: { foreground: '#888888' } },
+          {
+            scope: 'comment',
+            settings: { foreground: baseColors.ui.gray[800] },
+          },
         ],
         semanticTokenColors: {},
       }
@@ -193,8 +197,8 @@ describe('Validation Utils', () => {
         ...validTheme,
         type: 'light' as const,
         colors: {
-          foreground: '#000000',
-          'editor.background': '#ffffff',
+          foreground: baseColors.ui.black,
+          'editor.background': baseColors.ui.white,
         },
       }
       const result = validateTheme(theme)
@@ -249,8 +253,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          'button.foreground': '#ffffff',
-          'button.background': '#000000',
+          'button.foreground': baseColors.ui.white,
+          'button.background': baseColors.ui.black,
         },
       }
       const result = validateCriticalContrast(theme)
@@ -261,8 +265,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          'input.foreground': '#ffffff',
-          'input.background': '#000000',
+          'input.foreground': baseColors.ui.white,
+          'input.background': baseColors.ui.black,
         },
       }
       const result = validateCriticalContrast(theme)
@@ -273,8 +277,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: '#999999',
-          'editor.background': '#000000',
+          foreground: baseColors.ui.gray[900],
+          'editor.background': baseColors.ui.black,
         },
       }
       const result = validateCriticalContrast(theme)
@@ -295,8 +299,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          'button.foreground': '#888888',
-          'button.background': '#000000',
+          'button.foreground': baseColors.ui.gray[800],
+          'button.background': baseColors.ui.black,
         },
       }
       const result = validateCriticalContrast(theme)

@@ -61,6 +61,7 @@ export interface UniversalPalette {
     violet: ColorVariant
     fuchsia: ColorVariant
     purple: ColorVariant
+    visited: ColorVariant
     indigo: ColorVariant
     blue: ColorVariant
     sky: ColorVariant

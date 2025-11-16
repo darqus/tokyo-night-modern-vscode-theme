@@ -5,53 +5,54 @@ import {
   lighten,
   mix,
 } from '../../src/theme/utils/color'
+import { TEST_COLORS } from './test-constants.js'
 
 describe('Color Utils', () => {
   describe('alpha', () => {
     it('should add alpha channel', () => {
-      expect(alpha('#ff0000', 0.5)).toBe('#ff000080')
-      expect(alpha('#ff0000', 1)).toBe('#ff0000ff')
-      expect(alpha('#ff0000', 0)).toBe('#ff000000')
+      expect(alpha(TEST_COLORS.RED, 0.5)).toBe('#ff000080')
+      expect(alpha(TEST_COLORS.RED, 1)).toBe('#ff0000ff')
+      expect(alpha(TEST_COLORS.RED, 0)).toBe('#ff000000')
     })
 
     it('should clamp opacity values', () => {
-      expect(alpha('#ff0000', 1.5)).toBe('#ff0000ff')
-      expect(alpha('#ff0000', -0.5)).toBe('#ff000000')
+      expect(alpha(TEST_COLORS.RED, 1.5)).toBe('#ff0000ff')
+      expect(alpha(TEST_COLORS.RED, -0.5)).toBe('#ff000000')
     })
   })
 
   describe('lighten', () => {
     it('should lighten color', () => {
-      expect(lighten('#000000', 0.5)).toBe('#808080')
-      expect(lighten('#000000', 1)).toBe('#ffffff')
+      expect(lighten(TEST_COLORS.BLACK, 0.5)).toBe('#808080')
+      expect(lighten(TEST_COLORS.BLACK, 1)).toBe(TEST_COLORS.WHITE)
     })
 
     it('should not change white', () => {
-      expect(lighten('#ffffff', 0.5)).toBe('#ffffff')
+      expect(lighten(TEST_COLORS.WHITE, 0.5)).toBe(TEST_COLORS.WHITE)
     })
   })
 
   describe('darken', () => {
     it('should darken color', () => {
-      expect(darken('#ffffff', 0.5)).toBe('#808080')
-      expect(darken('#ffffff', 1)).toBe('#000000')
+      expect(darken(TEST_COLORS.WHITE, 0.5)).toBe('#808080')
+      expect(darken(TEST_COLORS.WHITE, 1)).toBe(TEST_COLORS.BLACK)
     })
 
     it('should not change black', () => {
-      expect(darken('#000000', 0.5)).toBe('#000000')
+      expect(darken(TEST_COLORS.BLACK, 0.5)).toBe(TEST_COLORS.BLACK)
     })
   })
 
   describe('mix', () => {
     it('should mix two colors', () => {
-      expect(mix('#ff0000', '#0000ff', 0.5)).toBe('#800080')
-      expect(mix('#ff0000', '#0000ff', 0)).toBe('#ff0000')
-      expect(mix('#ff0000', '#0000ff', 1)).toBe('#0000ff')
+      expect(mix(TEST_COLORS.RED, TEST_COLORS.BLUE, 0.5)).toBe('#800080')
+      expect(mix(TEST_COLORS.RED, TEST_COLORS.BLUE, 0)).toBe(TEST_COLORS.RED)
+      expect(mix(TEST_COLORS.RED, TEST_COLORS.BLUE, 1)).toBe(TEST_COLORS.BLUE)
     })
 
     it('should clamp ratio', () => {
-      expect(mix('#ff0000', '#0000ff', 1.5)).toBe('#0000ff')
-      expect(mix('#ff0000', '#0000ff', -0.5)).toBe('#ff0000')
+      expect(mix(TEST_COLORS.RED, TEST_COLORS.BLUE, 1.5)).toBe(TEST_COLORS.BLUE)
+      expect(mix(TEST_COLORS.RED, TEST_COLORS.BLUE, -0.5)).toBe(TEST_COLORS.RED)
     })
   })
 

@@ -1,4 +1,9 @@
 import { describe, expect, it } from 'vitest'
+import {
+  background,
+  chromaMain,
+  ui,
+} from '../../src/theme/palette/config/base-colors'
 
 describe('Missing Coverage Tests', () => {
   describe('Palette Coverage', () => {
@@ -72,22 +77,26 @@ describe('Missing Coverage Tests', () => {
       const { normalizeHex } = await import('../../src/theme/utils/rgb')
 
       // Test 8-digit hex should now be accepted (with alpha channel)
-      expect(() => normalizeHex('ff0000ff')).not.toThrow()
-      expect(() => normalizeHex('#ff0000ff')).not.toThrow()
-      expect(normalizeHex('ff0000ff')).toBe('#ff0000ff')
-      expect(normalizeHex('#ff0000ff')).toBe('#ff0000ff')
+      expect(() => normalizeHex(`${chromaMain.red.slice(1)}ff`)).not.toThrow()
+      expect(() => normalizeHex(`#${chromaMain.red.slice(1)}ff`)).not.toThrow()
+      expect(normalizeHex(`${chromaMain.red.slice(1)}ff`)).toBe(
+        `${chromaMain.red}ff`
+      )
+      expect(normalizeHex(`#${chromaMain.red.slice(1)}ff`)).toBe(
+        `${chromaMain.red}ff`
+      )
 
       // Test 4-digit hex with alpha should also work
-      expect(() => normalizeHex('f00f')).not.toThrow()
-      expect(normalizeHex('f00f')).toBe('#ff0000ff')
+      expect(() => normalizeHex(`${chromaMain.red.slice(1, 4)}f`)).not.toThrow()
+      expect(normalizeHex(`${chromaMain.red.slice(1, 4)}f`)).toBe('#ffff66ff')
     })
 
     it('should test rgbToHex validation', async () => {
       const { rgbToHex } = await import('../../src/theme/utils/rgb')
 
       // Test valid values
-      expect(rgbToHex(0, 0, 0)).toBe('#000000')
-      expect(rgbToHex(255, 255, 255)).toBe('#ffffff')
+      expect(rgbToHex(0, 0, 0)).toBe(ui.black)
+      expect(rgbToHex(255, 255, 255)).toBe(ui.white)
 
       // Test clamping (current implementation doesn't validate, so these should work)
       expect(rgbToHex(-1, 0, 0)).toBeDefined()
@@ -99,7 +108,7 @@ describe('Missing Coverage Tests', () => {
     it('should test meetsWCAG return structure', async () => {
       const { meetsWCAG } = await import('../../src/theme/utils/contrast')
 
-      const result = meetsWCAG('#000000', '#ffffff')
+      const result = meetsWCAG(ui.black, ui.white)
       // meetsWCAG returns a boolean, not an object
       expect(typeof result).toBe('boolean')
     })
@@ -107,7 +116,7 @@ describe('Missing Coverage Tests', () => {
     it('should test checkContrast return structure', async () => {
       const { checkContrast } = await import('../../src/theme/utils/contrast')
 
-      const result = checkContrast('#000000', '#ffffff')
+      const result = checkContrast(ui.black, ui.white)
       expect(result).toHaveProperty('ratio')
       expect(result).toHaveProperty('aa')
       expect(result).toHaveProperty('aaa')
@@ -122,7 +131,7 @@ describe('Missing Coverage Tests', () => {
 
       // Test with background property
       const token = createSemanticToken({
-        foreground: '#ff0000',
+        foreground: chromaMain.red,
         fontStyle: 'italic',
       })
 
@@ -133,7 +142,7 @@ describe('Missing Coverage Tests', () => {
     it('should test alpha function from semantic-tokens', async () => {
       const { alpha } = await import('../../src/theme/utils/semantic-tokens')
 
-      const result = alpha('#ff0000', 0.5)
+      const result = alpha(chromaMain.red, 0.5)
       expect(result).toMatch(/^#[0-9a-f]{8}$/i)
     })
   })
@@ -147,8 +156,8 @@ describe('Missing Coverage Tests', () => {
         name: 'Test Theme',
         type: 'dark' as const,
         colors: {
-          'editor.background': '#1a1a1a',
-          'editor.foreground': '#ffffff',
+          'editor.background': background.base,
+          'editor.foreground': ui.white,
         },
         tokenColors: [],
         semanticTokenColors: {},

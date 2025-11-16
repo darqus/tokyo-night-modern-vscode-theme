@@ -1,3 +1,4 @@
+import { universalPalette } from '../../src/theme/palette'
 import { hexToRgb, normalizeHex, rgbToHex } from '../../src/theme/utils/rgb'
 
 describe('RGB Utils', () => {
@@ -19,9 +20,21 @@ describe('RGB Utils', () => {
 
   describe('hexToRgb', () => {
     it('should convert hex to rgb', () => {
-      expect(hexToRgb('#ff0000')).toEqual({ r: 255, g: 0, b: 0 })
-      expect(hexToRgb('#00ff00')).toEqual({ r: 0, g: 255, b: 0 })
-      expect(hexToRgb('#0000ff')).toEqual({ r: 0, g: 0, b: 255 })
+      expect(hexToRgb(universalPalette.chromatic.red.main)).toEqual({
+        r: 255,
+        g: 107,
+        b: 107,
+      })
+      expect(hexToRgb(universalPalette.chromatic.green.main)).toEqual({
+        r: 152,
+        g: 195,
+        b: 121,
+      })
+      expect(hexToRgb(universalPalette.chromatic.blue.main)).toEqual({
+        r: 74,
+        g: 170,
+        b: 248,
+      })
     })
 
     it('should handle short hex format', () => {
@@ -35,9 +48,11 @@ describe('RGB Utils', () => {
 
   describe('rgbToHex', () => {
     it('should convert rgb to hex', () => {
-      expect(rgbToHex(255, 0, 0)).toBe('#ff0000')
-      expect(rgbToHex(0, 255, 0)).toBe('#00ff00')
-      expect(rgbToHex(0, 0, 255)).toBe('#0000ff')
+      expect(rgbToHex(255, 107, 107)).toBe(universalPalette.chromatic.red.main)
+      expect(rgbToHex(152, 195, 121)).toBe(
+        universalPalette.chromatic.green.main
+      )
+      expect(rgbToHex(74, 170, 248)).toBe(universalPalette.chromatic.blue.main)
     })
 
     it('should clamp values', () => {

@@ -52,7 +52,7 @@ import type { VSCodeTheme } from '../types/index.js'
  * 3. Генерируются семантические токены
  * 4. Всё объединяется в финальную тему
  */
-export const generateTheme = (): VSCodeTheme => {
+export const generateTheme = async (): Promise<VSCodeTheme> => {
   const fullConfig = {
     ui: {
       core: coreConfig,
@@ -89,7 +89,7 @@ export const generateTheme = (): VSCodeTheme => {
     },
   }
 
-  const generated = generateFromConfig(fullConfig)
+  const generated = await generateFromConfig(fullConfig)
 
   return {
     name: THEME_CONFIG.name,

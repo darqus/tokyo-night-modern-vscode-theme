@@ -1,6 +1,7 @@
-import type { UniversalPalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/universal-base.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
+import { THEME_CONSTANTS } from './constants.js'
 
 /**
  * Variable tokens - переменные
@@ -35,7 +36,7 @@ export const functionsConfig: SemanticTokenConfig = {
   rules: {
     function: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'function.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.blue.main),
+      boldToken(p.chromatic.blue.main, THEME_CONSTANTS.FONT_STYLE.BOLD),
     'function.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
     method: (p: UniversalPalette) => token(p.chromatic.blue.main),

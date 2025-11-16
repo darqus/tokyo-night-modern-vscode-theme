@@ -1,4 +1,9 @@
 import { describe, expect, it, vi } from 'vitest'
+import {
+  background,
+  chromaMain,
+  ui,
+} from '../../src/theme/palette/config/base-colors'
 
 describe('Complete Coverage Tests', () => {
   describe('Logger Utils - Full Coverage', () => {
@@ -12,9 +17,15 @@ describe('Complete Coverage Tests', () => {
     })
 
     it('should test all logger methods', async () => {
-      const infoSpy = vi.spyOn(console, 'log').mockImplementation(() => {})
-      const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {})
-      const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
+      const infoSpy = vi.spyOn(console, 'log').mockImplementation(() => {
+        /* empty */
+      })
+      const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {
+        /* empty */
+      })
+      const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {
+        /* empty */
+      })
 
       const { logger } = await import('../../src/theme/utils/logger')
       logger.info('info message')
@@ -34,7 +45,9 @@ describe('Complete Coverage Tests', () => {
       const originalEnv = process.env.NODE_ENV
       process.env.NODE_ENV = 'development'
 
-      const consoleSpy = vi.spyOn(console, 'debug').mockImplementation(() => {})
+      const consoleSpy = vi.spyOn(console, 'debug').mockImplementation(() => {
+        /* empty */
+      })
 
       const { logger } = await import('../../src/theme/utils/logger')
       logger.debug('debug message')
@@ -49,7 +62,9 @@ describe('Complete Coverage Tests', () => {
       const originalEnv = process.env.NODE_ENV
       process.env.NODE_ENV = 'production'
 
-      const consoleSpy = vi.spyOn(console, 'debug').mockImplementation(() => {})
+      const consoleSpy = vi.spyOn(console, 'debug').mockImplementation(() => {
+        /* empty */
+      })
 
       const { logger } = await import('../../src/theme/utils/logger')
       logger.debug('debug message')
@@ -112,17 +127,17 @@ describe('Complete Coverage Tests', () => {
         generateColorVariants,
       } = await import('../../src/theme/utils/color-generator')
 
-      const bgScale = generateBackgroundScale('#1a1a1a')
+      const bgScale = generateBackgroundScale(background.base)
       expect(bgScale).toHaveProperty('darkest')
       expect(bgScale).toHaveProperty('main')
       expect(bgScale).toHaveProperty('lightest')
 
-      const fgScale = generateForegroundScale('#ffffff')
+      const fgScale = generateForegroundScale(ui.white)
       expect(fgScale).toHaveProperty('dim')
       expect(fgScale).toHaveProperty('medium')
       expect(fgScale).toHaveProperty('brightest')
 
-      const variants = generateColorVariants('#ff0000')
+      const variants = generateColorVariants(chromaMain.red)
       expect(variants).toHaveProperty('dark')
       expect(variants).toHaveProperty('main')
       expect(variants).toHaveProperty('bright')
@@ -195,7 +210,7 @@ describe('Complete Coverage Tests', () => {
       const { getLuminance } = await import('../../src/theme/utils/contrast')
 
       // Test edge case for sRGB conversion
-      const darkLuminance = getLuminance('#0a0a0a')
+      const darkLuminance = getLuminance(background.overlay)
       expect(darkLuminance).toBeGreaterThan(0)
     })
   })
