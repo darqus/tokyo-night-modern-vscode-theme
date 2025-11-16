@@ -66,7 +66,7 @@ export const shadow = {
 export const ui = {
   white: '#ffffff',
   black: '#000000',
-  badge: '#007acc',
+  badge: chromaMain.indigo,
   gray: {
     700: '#777777',
     800: '#888888',
