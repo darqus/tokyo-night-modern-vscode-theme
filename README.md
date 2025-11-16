@@ -16,11 +16,7 @@
 
 ## 🎨 Features
 
-- **Utility-Based Colors**: All colors derived using `mix()`, `lighten()`, `darken()` utilities
-- **Code-First**: TypeScript-based theme generation with type safety
 - **Modern Framework Support**: Enhanced tokens for React, Vue, TypeScript, Rust, Go, Python, and more
-- **Vibrant UI**: Bright borders, high-contrast selections, and consistent color palette
-- **Zero Hardcoded Values**: Every color is computed from base palette
 
 ## 🚀 Installation
 
