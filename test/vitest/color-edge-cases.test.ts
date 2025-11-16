@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { chromaMain } from '../../src/theme/palette/base-colors'
+import { chromaMain } from '../../src/theme/palette/config/base-colors'
 import {
   alpha,
   ColorError,

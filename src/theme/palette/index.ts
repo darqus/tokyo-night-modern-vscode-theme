@@ -8,15 +8,6 @@ export {
   baseColors,
   chromaMain,
   foreground,
-  getAllBackgroundColors,
-  getAllChromaticColors,
-  getAllForegroundColors,
-  getAllShadowColors,
-  getAllUIColors,
-  getBackgroundColor,
-  getBaseColor,
-  getForegroundColor,
-  isChromaticColor,
   shadow,
   ui,
 } from './config/base-colors.js'
@@ -108,7 +99,7 @@ export type {
 export { universalPalette } from './universal-generated.js'
 
 import { alpha, lighten, mix } from '../utils/color.js'
-// Импорты для геерации палитры
+// Импорты для генерации палитры
 import { baseColors } from './config/base-colors.js'
 import { getColorType, getShadeConfig } from './config/generation-config.js'
 import { MIX_RATIO, OPACITY, UI_STATES } from './core/constants.js'

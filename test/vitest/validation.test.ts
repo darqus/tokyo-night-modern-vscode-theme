@@ -1,4 +1,4 @@
-import { baseColors } from '../../src/theme/palette/base-colors'
+import { baseColors } from '../../src/theme/palette/config/base-colors'
 import type { VSCodeTheme } from '../../src/theme/types'
 import {
   validateCriticalContrast,
@@ -62,8 +62,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: baseColors.ui.gray[800],
-          'editor.background': baseColors.ui.gray[700],
+          foreground: '#565f89',
+          'editor.background': '#7c87a4',
         },
       }
       const result = validateTheme(theme)
@@ -81,10 +81,10 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: baseColors.ui.gray[800],
-          'editor.background': baseColors.ui.gray[700],
-          'button.foreground': baseColors.ui.gray[900],
-          'button.background': baseColors.ui.gray[800],
+          foreground: '#565f89',
+          'editor.background': '#7c87a4',
+          'button.foreground': '#101227',
+          'button.background': '#565f89',
         },
       }
       const result = validateCriticalContrast(theme)
@@ -123,8 +123,8 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: baseColors.ui.gray.a,
-          'editor.background': baseColors.ui.gray[900],
+          foreground: '#7c87a4',
+          'editor.background': '#565f89',
         },
       }
       const result = validateTheme(theme)
@@ -138,12 +138,12 @@ describe('Validation Utils', () => {
         colors: {
           foreground: baseColors.ui.white,
           'editor.background': baseColors.ui.black,
-          'editor.foreground': baseColors.ui.gray.c,
+          'editor.foreground': '#a9b1d6',
         },
         tokenColors: [
           {
             scope: 'comment',
-            settings: { foreground: baseColors.ui.gray[800] },
+            settings: { foreground: '#565f89' },
           },
         ],
         semanticTokenColors: {},
@@ -277,7 +277,7 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          foreground: baseColors.ui.gray[900],
+          foreground: '#101227',
           'editor.background': baseColors.ui.black,
         },
       }
@@ -299,7 +299,7 @@ describe('Validation Utils', () => {
       const theme = {
         ...validTheme,
         colors: {
-          'button.foreground': baseColors.ui.gray[800],
+          'button.foreground': '#a9b1d6',
           'button.background': baseColors.ui.black,
         },
       }
