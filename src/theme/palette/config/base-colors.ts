@@ -22,9 +22,9 @@ export const chromaMain = {
   lime: '#80d151',
   yellow: '#d6c3ac',
   amber: '#fdb57e',
-  orange: '#ff9c86',
-  red: '#ff6b6b',
-  rose: '#ff6ba4',
+  orange: '#f2865b',
+  red: '#fc5555',
+  rose: '#ff5998',
   neutral: '#a8aece',
   slate: '#7c87a4',
   stone: '#9aa5ce',
@@ -58,7 +58,7 @@ export const foreground = {
 export const ui = {
   white: '#ffffff',
   black: '#000000',
-  badge: chromaMain.indigo,
+  badge: chromaMain.rose,
 } as const
 
 /**

@@ -195,11 +195,11 @@ export const listsConfig: UIColorConfig = {
       deemphasizedForeground: (p: UniversalPalette) =>
         p.foreground.primary.main,
       activeSelectionBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.indigo.main),
+        alpha(p.chromatic.indigo.main, OPACITY.STRONG),
       activeSelectionForeground: (p: UniversalPalette) =>
         p.foreground.primary.light,
       inactiveSelectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.LIGHT),
+        alpha(p.chromatic.indigo.main, OPACITY.STRONG),
       inactiveSelectionForeground: (p: UniversalPalette) =>
         p.foreground.primary.light,
       focusBackground: (p: UniversalPalette) =>
@@ -290,7 +290,7 @@ export const tabsConfig: UIColorConfig = {
 export const editorConfig: UIColorConfig = {
   rules: {
     'selection.background': (p: UniversalPalette) =>
-      subtleHighlight(p.chromatic.indigo.main),
+      alpha(p.chromatic.blue.main, 0.35),
     'editorLink.activeForeground': (p: UniversalPalette) =>
       p.foreground.primary.light,
   },
@@ -300,32 +300,41 @@ export const editorConfig: UIColorConfig = {
         lighten(p.background.base.main, 0.02),
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       foldBackground: (p: UniversalPalette) =>
-        alpha(p.background.base.dark, OPACITY.MEDIUM),
+        alpha(p.background.base.dark, OPACITY.LIGHT),
+
+      // Выделение текста - более заметное и контрастное
       selectionBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.indigo.main),
+        alpha(p.chromatic.blue.main, 0.4),
       inactiveSelectionBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.LIGHT),
+        alpha(p.chromatic.indigo.main, 0.25),
+
+      // Поиск - четкая иерархия подсветки
       findMatchBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.dark, OPACITY.MEDIUM),
+        alpha(p.chromatic.emerald.main, 0.45),
       findMatchBorder: (p: UniversalPalette) =>
-        alpha(p.chromatic.yellow.main, OPACITY.VERY_STRONG),
+        alpha(p.chromatic.emerald.light, 0.6),
       findMatchHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.dark, OPACITY.MEDIUM),
+        alpha(p.chromatic.cyan.main, 0.35),
       findRangeHighlightBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.indigo.main),
+        alpha(p.chromatic.teal.main, 0.25),
+
+      // Подсветка диапазонов и слов
       rangeHighlightBackground: (p: UniversalPalette) =>
-        subtleHighlight(p.chromatic.teal.main),
+        alpha(p.chromatic.sky.main, 0.3),
       wordHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.MEDIUM),
+        alpha(p.chromatic.violet.main, 0.35),
       wordHighlightStrongBackground: (p: UniversalPalette) =>
-        mediumHighlight(p.chromatic.indigo.main),
+        alpha(p.chromatic.purple.main, 0.5),
       selectionHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.MEDIUM),
-      lineHighlightBackground: (p: UniversalPalette) => p.background.base.light,
+        alpha(p.chromatic.amber.main, 0.3),
+
+      // Подсветка строк и стека
+      lineHighlightBackground: (p: UniversalPalette) =>
+        lighten(p.background.base.main, 0.08),
       stackFrameHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.yellow.dark, OPACITY.LIGHT),
+        alpha(p.chromatic.orange.main, 0.3),
       focusedStackFrameHighlightBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.teal.main, OPACITY.LIGHT),
+        alpha(p.chromatic.red.main, 0.35),
     },
     editorCursor: {
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
@@ -387,16 +396,20 @@ export const editorConfig: UIColorConfig = {
       infoForeground: (p: UniversalPalette) =>
         mix(p.chromatic.teal.main, p.chromatic.green.main, 0.3),
       bracketMatchForeground: (p: UniversalPalette) => p.background.base.dark,
+
+      // Улучшенная подсветка для поиска в overview ruler
       findMatchForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.neutral.light, OPACITY.STRONG),
+        alpha(p.chromatic.emerald.main, 0.8),
       rangeHighlightForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.teal.main, OPACITY.STRONG),
+        alpha(p.chromatic.teal.main, 0.7),
       selectionHighlightForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.MEDIUM),
+        alpha(p.chromatic.amber.main, 0.7),
       wordHighlightForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.STRONG),
+        alpha(p.chromatic.violet.main, 0.7),
       wordHighlightStrongForeground: (p: UniversalPalette) =>
-        alpha(p.chromatic.indigo.main, OPACITY.VERY_STRONG),
+        alpha(p.chromatic.purple.main, 0.8),
+
+      // Git изменения в overview ruler
       modifiedForeground: (p: UniversalPalette) =>
         mix(p.chromatic.neutral.main, p.background.base.main, 0.65),
       addedForeground: (p: UniversalPalette) =>
