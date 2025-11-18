@@ -26,7 +26,7 @@ export function generateCoreColors(): Record<string, string> {
       inactiveBorder: borderColor(c.bg.main, c.neutral.dark),
     })
     .addGroup('sash', {
-      hoverBorder: c.indigo.light,
+      hoverBorder: c.indigo.main,
     })
     .addGroup('toolbar', {
       activeBackground: c.bg.dark,
