@@ -11,7 +11,7 @@ describe('Semantic Tokens', () => {
       const token = createSemanticToken({
         foreground: universalPalette.chromatic.red.main,
       })
-      expect(token.foreground).toBe('#ff6b6b')
+      expect(token.foreground).toBe('#fc5555')
     })
 
     it('should create token with fontStyle', () => {
@@ -35,7 +35,7 @@ describe('Semantic Tokens', () => {
         fontStyle: 'bold',
         underline: true,
       })
-      expect(token.foreground).toBe('#ff6b6b')
+      expect(token.foreground).toBe('#fc5555')
       expect(token.fontStyle).toContain('bold')
       expect(token.fontStyle).toContain('underline')
     })
@@ -51,7 +51,7 @@ describe('Semantic Tokens', () => {
         }
       )
 
-      expect(group.variant1.foreground).toBe('#ff6b6b')
+      expect(group.variant1.foreground).toBe('#fc5555')
       expect(group.variant1.fontStyle).toBe('italic')
       expect(group.variant2.fontStyle).toBe('bold')
     })
@@ -60,17 +60,17 @@ describe('Semantic Tokens', () => {
   describe('alpha', () => {
     it('should add alpha channel', () => {
       const result = alpha(universalPalette.chromatic.red.main, 0.5)
-      expect(result).toMatch(/#ff6b6b[0-9a-f]{2}/)
+      expect(result).toMatch(/#fc5555[0-9a-f]{2}/)
     })
 
     it('should handle full opacity', () => {
       const result = alpha(universalPalette.chromatic.red.main, 1)
-      expect(result).toBe('#ff6b6bff')
+      expect(result).toBe('#fc5555ff')
     })
 
     it('should handle zero opacity', () => {
       const result = alpha(universalPalette.chromatic.red.main, 0)
-      expect(result).toBe('#ff6b6b00')
+      expect(result).toBe('#fc555500')
     })
   })
 })

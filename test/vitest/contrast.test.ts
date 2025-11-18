@@ -49,7 +49,7 @@ describe('Contrast Utils', () => {
     it('should calculate color distance', () => {
       expect(getColorDistance(ui.black, ui.black)).toBe(0)
       expect(getColorDistance(chromaMain.red, chromaMain.green)).toBeCloseTo(
-        136.19,
+        152.96,
         1
       )
     })

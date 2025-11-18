@@ -88,7 +88,7 @@ describe('Missing Coverage Tests', () => {
 
       // Test 4-digit hex with alpha should also work
       expect(() => normalizeHex(`${chromaMain.red.slice(1, 4)}f`)).not.toThrow()
-      expect(normalizeHex(`${chromaMain.red.slice(1, 4)}f`)).toBe('#ffff66ff')
+      expect(normalizeHex(`${chromaMain.red.slice(1, 4)}f`)).toBe('#ffcc55ff')
     })
 
     it('should test rgbToHex validation', async () => {
