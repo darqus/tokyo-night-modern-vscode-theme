@@ -16,9 +16,9 @@ export function generateTabColors(): Record<string, string> {
     .addGroup('tab', {
       activeBackground: c.bg.main,
       inactiveBackground: c.bg.dark,
-      activeForeground: c.fg.bright,
+      activeForeground: c.fg.light,
       inactiveForeground: universalPalette.foreground.disabled.dark,
-      hoverForeground: c.fg.bright,
+      hoverForeground: c.fg.light,
       unFocusedHoverForeground: c.fg.main,
       hoverBackground: c.bg.light,
       unFocusedHoverBackground: c.bg.dark,
@@ -53,7 +53,7 @@ export function generateTabColors(): Record<string, string> {
     .addGroup('breadcrumb', {
       background: c.bg.dark,
       foreground: c.fg.main,
-      focusForeground: c.fg.bright,
+      focusForeground: c.fg.light,
       activeSelectionForeground: c.indigo.light,
       pickerBackground: c.bg.main,
       pickerForeground: c.fg.main,

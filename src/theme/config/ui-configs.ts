@@ -9,7 +9,6 @@ import {
   slightlyDarker,
   subtleHighlight,
 } from '../utils/color-helpers.js'
-import { ensureReadableForeground } from '../utils/contrast-helpers.js'
 import type { UIColorConfig } from './color-config-dsl.js'
 
 /**
@@ -75,31 +74,20 @@ export const buttonsConfig: UIColorConfig = {
           ),
           0.4
         ),
-      foreground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.indigo.dark, 0.3)
-        const { fg } = ensureReadableForeground(bg)
-        return fg
-      },
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
+      secondaryForeground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     extensionButton: {
       prominentBackground: (p: UniversalPalette) =>
         darken(p.chromatic.indigo.dark, 0.3),
       prominentHoverBackground: (p: UniversalPalette) =>
         mix(darken(p.chromatic.indigo.dark, 0.3), p.chromatic.indigo.main, 0.3),
-      prominentForeground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.indigo.dark, 0.3)
-        const { fg } = ensureReadableForeground(bg)
-        return fg
-      },
+      prominentForeground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     extensionBadge: {
       remoteBackground: (p: UniversalPalette) =>
         darken(p.chromatic.indigo.dark, 0.3),
-      remoteForeground: (p: UniversalPalette) => {
-        const bg = darken(p.chromatic.indigo.dark, 0.3)
-        const { fg } = ensureReadableForeground(bg)
-        return fg
-      },
+      remoteForeground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     progressBar: {
       background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.3),
