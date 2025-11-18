@@ -455,11 +455,11 @@ export const editorConfig: UIColorConfig = {
     editorWidget: {
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
       background: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.neutral.dark, 0.15),
+        mix(p.background.base.main, p.chromatic.indigo.dark, 0.2),
       border: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.dark, 0.2),
       resizeBorder: (p: UniversalPalette) =>
-        mix(p.background.base.main, p.chromatic.indigo.main, 0.2),
+        mix(p.background.base.main, p.chromatic.indigo.dark, 0.2),
     },
     editorSuggestWidget: {
       background: (p: UniversalPalette) => p.background.base.dark,
