@@ -58,7 +58,6 @@ export const foreground = {
 export const ui = {
   white: '#ffffff',
   black: '#000000',
-  badge: chromaMain.rose,
 } as const
 
 /**

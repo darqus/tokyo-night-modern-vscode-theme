@@ -12,8 +12,8 @@ export function generateCoreColors(): Record<string, string> {
     .add('widget.shadow', c.shadow.main) // Using a standard shadow value
     .add('scrollbar.shadow', c.shadow.main) // Using a standard shadow value
     .addGroup('badge', {
-      background: c.ui.badge,
-      foreground: c.ui.white,
+      background: c.rose.main,
+      foreground: c.ui.black,
     })
     .addGroup('icon', {
       foreground: c.fg.main,

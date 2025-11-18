@@ -29,7 +29,7 @@ export function generateSidebarColors(): Record<string, string> {
       activeBackground: c.bg.main,
       activeFocusBorder: c.indigo.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
-      badgeBackground: c.ui.badge,
+      badgeBackground: c.indigo.dark,
       badgeForeground: c.ui.white,
       border: c.neutral.main,
       dropBorder: c.indigo.light,
@@ -42,12 +42,12 @@ export function generateSidebarColors(): Record<string, string> {
       activeBorder: c.indigo.main,
       activeBackground: c.bg.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
-      badgeBackground: c.ui.badge,
+      badgeBackground: c.indigo.dark,
       badgeForeground: c.ui.white,
     })
     .addGroup('activityBarBadge', {
       foreground: c.ui.white,
-      background: c.ui.badge,
+      background: c.indigo.dark,
     })
     .addGroup('remote', {
       foreground: c.indigo.light,

@@ -54,8 +54,8 @@ export function generateGitColors(): Record<string, string> {
       historyItemBorder: c.neutral.main,
       historyItemForeground: c.fg.main,
       historyItemLabelForeground: c.fg.main,
-      historyItemBadgeBackground: c.ui.badge,
-      historyItemBadgeForeground: c.ui.white,
+      historyItemBadgeBackground: c.rose.main,
+      historyItemBadgeForeground: c.ui.black,
     })
     .addGroup('git', {
       statusCurrentBranch: c.blue.light,

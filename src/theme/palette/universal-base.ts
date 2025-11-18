@@ -43,7 +43,6 @@ export interface ForegroundColors {
 export interface UIColors {
   white: string
   black: string
-  badge: string
   border: ColorVariant
   scrollbar: ColorVariant
   selection: ColorVariant
@@ -147,7 +146,6 @@ export const universalBasePalette: UniversalPalette = {
   ui: {
     white: baseColors.ui.white,
     black: baseColors.ui.black,
-    badge: baseColors.ui.badge,
     border: fromMain(
       mix(
         baseColors.background.base,

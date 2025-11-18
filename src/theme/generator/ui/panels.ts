@@ -96,8 +96,8 @@ export function generatePanelColors(): Record<string, string> {
       activeBackground: c.bg.main,
       activeFocusBorder: c.indigo.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
-      badgeBackground: c.ui.badge,
-      badgeForeground: c.ui.white,
+      badgeBackground: c.rose.main,
+      badgeForeground: c.ui.black,
       border: c.neutral.main,
       dropBorder: c.indigo.light,
       shadow: c.shadow.main,
@@ -109,12 +109,12 @@ export function generatePanelColors(): Record<string, string> {
       activeBorder: c.indigo.main,
       activeBackground: c.bg.main,
       inactiveForeground: c.fg.dark,
-      badgeBackground: c.ui.badge,
-      badgeForeground: c.ui.white,
+      badgeBackground: c.rose.main,
+      badgeForeground: c.ui.black,
     })
     .addGroup('activityBarBadge', {
-      foreground: c.ui.white,
-      background: c.ui.badge,
+      foreground: c.ui.black,
+      background: c.rose.main,
     })
     .build()
 }

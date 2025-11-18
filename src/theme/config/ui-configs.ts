@@ -36,7 +36,7 @@ export const coreConfig: UIColorConfig = {
       shadow: (p: UniversalPalette) => alpha(p.ui.black, OPACITY.MEDIUM),
     },
     badge: {
-      background: (p: UniversalPalette) => p.ui.badge,
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.main, 0.3),
       foreground: (p: UniversalPalette) => p.ui.white,
     },
     settings: {
@@ -155,7 +155,7 @@ export const sidebarConfig: UIColorConfig = {
       border: (p: UniversalPalette) => lightBackground(p.background.base.dark),
     },
     activityBarBadge: {
-      background: (p: UniversalPalette) => p.ui.badge,
+      background: (p: UniversalPalette) => darken(p.chromatic.pink.main, 0.3),
       foreground: (p: UniversalPalette) => p.ui.white,
     },
     activityBarTop: {
@@ -356,7 +356,7 @@ export const editorConfig: UIColorConfig = {
         mix(p.chromatic.neutral.dark, p.background.base.main, 0.05),
     },
     editorWhitespace: {
-      foreground: (p: UniversalPalette) => lighten(p.ui.badge, 0.08),
+      foreground: (p: UniversalPalette) => lighten(p.chromatic.rose.main, 0.08),
     },
     editorMarkerNavigation: {
       background: (p: UniversalPalette) => p.background.base.main,

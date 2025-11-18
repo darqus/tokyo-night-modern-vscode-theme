@@ -83,7 +83,6 @@ export interface SemanticColors {
 export interface UIColors {
   white: string
   black: string
-  badge: string
   border: ColorVariant
   scrollbar: ColorVariant
   selection: ColorVariant
@@ -245,6 +244,5 @@ export interface BaseColors {
   ui: {
     white: string
     black: string
-    badge: string
   }
 }

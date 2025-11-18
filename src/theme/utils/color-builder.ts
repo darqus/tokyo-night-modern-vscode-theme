@@ -88,6 +88,9 @@ export const c = {
   get pink() {
     return universalPalette.chromatic.pink
   },
+  get rose() {
+    return universalPalette.chromatic.rose
+  },
   get neutral() {
     return universalPalette.chromatic.neutral
   },

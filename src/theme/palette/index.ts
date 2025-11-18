@@ -206,7 +206,6 @@ const generateUIColors = (
   return {
     white: baseColors.ui.white,
     black: baseColors.ui.black,
-    badge: baseColors.ui.badge,
     border: {
       50: alpha(
         mix(baseBg, accentColor, MIX_RATIO.MOSTLY_FIRST),
