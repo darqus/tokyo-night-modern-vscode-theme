@@ -7,9 +7,10 @@ export const OPACITY = {
   VERY_SUBTLE: 0.1,
   SUBTLE: 0.15,
   LIGHT: 0.2,
-  MEDIUM: 0.3,
-  STRONG: 0.5,
-  VERY_STRONG: 0.7,
+  MEDIUM: 0.25,
+  STRONG: 0.3,
+  VERY_STRONG: 0.5,
+  MAXIMUM: 0.67,
 } as const
 
 /**

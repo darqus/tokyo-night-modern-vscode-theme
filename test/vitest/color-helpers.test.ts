@@ -23,9 +23,10 @@ describe('Color Helpers', () => {
       expect(OPACITY.VERY_SUBTLE).toBe(0.1)
       expect(OPACITY.SUBTLE).toBe(0.15)
       expect(OPACITY.LIGHT).toBe(0.2)
-      expect(OPACITY.MEDIUM).toBe(0.3)
-      expect(OPACITY.STRONG).toBe(0.5)
-      expect(OPACITY.VERY_STRONG).toBe(0.7)
+      expect(OPACITY.MEDIUM).toBe(0.25)
+      expect(OPACITY.STRONG).toBe(0.3)
+      expect(OPACITY.VERY_STRONG).toBe(0.5)
+      expect(OPACITY.MAXIMUM).toBe(0.67)
     })
 
     it('ADJUST should have correct values', () => {
