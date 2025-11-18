@@ -1,4 +1,4 @@
-import type { UniversalPalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/universal-base.js'
 import { alpha, darken, lighten, mix } from '../utils/color.js'
 import {
   borderColor,
@@ -121,7 +121,9 @@ export const inputsConfig: UIColorConfig = {
     inputOption: {
       activeForeground: (p: UniversalPalette) => p.foreground.primary.light,
       activeBackground: (p: UniversalPalette) =>
-        alpha(p.chromatic.neutral.dark, 0.27),
+        darken(p.chromatic.indigo.dark, 0.3),
+      activeBorder: (p: UniversalPalette) =>
+        darken(p.chromatic.indigo.dark, 0.3),
     },
     quickInput: {
       background: (p: UniversalPalette) => p.background.base.main,
