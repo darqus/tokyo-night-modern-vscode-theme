@@ -65,7 +65,7 @@ export const buttonsConfig: UIColorConfig = {
     button: {
       background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.3),
       hoverBackground: (p: UniversalPalette) =>
-        mixLight(darken(p.chromatic.indigo.dark, 0.3), p.chromatic.indigo.main),
+        lighten(darken(p.chromatic.indigo.dark, 0.3), 0.05),
       secondaryBackground: (p: UniversalPalette) =>
         darken(
           mixLight(
@@ -81,7 +81,7 @@ export const buttonsConfig: UIColorConfig = {
       prominentBackground: (p: UniversalPalette) =>
         darken(p.chromatic.indigo.dark, 0.3),
       prominentHoverBackground: (p: UniversalPalette) =>
-        mix(darken(p.chromatic.indigo.dark, 0.3), p.chromatic.indigo.main, 0.3),
+        lighten(darken(p.chromatic.indigo.dark, 0.3), 0.05),
       prominentForeground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     extensionBadge: {

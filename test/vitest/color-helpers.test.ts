@@ -69,7 +69,7 @@ describe('Color Helpers', () => {
     })
 
     it('hoverState should lighten base color', () => {
-      expect(hoverState(baseColor)).toBe(lighten(baseColor, ADJUST.LIGHT))
+      expect(hoverState(baseColor)).toBe(lighten(baseColor, 0.05))
     })
 
     it('activeState should lighten base color more', () => {

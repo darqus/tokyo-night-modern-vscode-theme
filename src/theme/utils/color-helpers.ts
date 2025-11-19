@@ -49,7 +49,7 @@ export const borderColor = (bg: string, accent: string) =>
   mix(bg, accent, MIX_RATIO.MOSTLY_FIRST)
 
 // Состояния элементов
-export const hoverState = (base: string) => lighten(base, ADJUST.LIGHT)
+export const hoverState = (base: string) => lighten(base, ADJUST.SLIGHT)
 export const activeState = (base: string) => lighten(base, ADJUST.MEDIUM)
 export const disabledState = (base: string) => alpha(base, OPACITY.STRONG)
 
