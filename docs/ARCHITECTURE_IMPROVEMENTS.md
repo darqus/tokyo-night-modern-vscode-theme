@@ -100,6 +100,73 @@ src/theme/
 - **API стабильность:** 100% - нет breaking changes
 - **Тестовая совместимость:** 100% - все тесты проходят
 
+## 📚 Использование новой архитектуры
+
+### ThemeGenerator
+
+```typescript
+import { createThemeGenerator, type ThemeConfig } from './src/theme/core/index.js'
+
+// Базовое использование
+const generator = await createThemeGenerator()
+const theme = await generator.generateTheme()
+
+// Кастомная конфигурация
+const customConfig: Partial<ThemeConfig> = {
+  ui: {
+    buttons: { /* custom button config */ }
+  }
+}
+const customGenerator = await createThemeGenerator(customConfig)
+const customTheme = await customGenerator.generateTheme()
+
+// Обновление палитры
+const newPalette = generator.getDependencies().palette
+generator.updatePalette(modifiedPalette)
+```
+
+### PaletteManager
+
+```typescript
+import { createPaletteManager, type UniversalPalette } from './src/theme/core/index.js'
+
+const manager = createPaletteManager()
+
+// Валидация палитры
+const result = manager.validatePalette(customPalette)
+if (!result.isValid) {
+  console.error('Palette errors:', result.errors)
+}
+
+// Создание варианта
+const variant = manager.createVariant({
+  chromatic: {
+    blue: { main: '#007acc' }
+  }
+})
+
+// Статистика
+const stats = manager.getPaletteStats()
+console.log(`Total colors: ${stats.totalColors}`)
+```
+
+## 🛠️ Примеры миграции
+
+### Старый код
+
+```typescript
+import { generateBasicTokens } from './generator/tokens/basic.js'
+import { generateFunctionTokens } from './generator/semantic/functions.js'
+```
+
+### Новый код
+
+```typescript
+import { createThemeGenerator } from './core/index.js'
+const generator = await createThemeGenerator()
+const theme = await generator.generateTheme()
+```
+
 ## Следующие шаги
 
 ### 🎯 Рекомендации для дальнейшего развития
@@ -111,14 +178,49 @@ src/theme/
 2. **Расширение PaletteManager**
    - Добавить поддержку динамических тем
    - Реализовать горячую замену палитры
+   - Добавить экспорт/импорт палитр
 
 3. **Оптимизация производительности**
    - Профилирование генерации тем
    - Оптимизация "горячих путей"
+   - Ленивая загрузка конфигураций
 
 4. **Усиление тестирования**
    - Добавить интеграционные тесты для core модуля
    - Тесты производительности для кэширования
+   - Тесты на валидацию палитр
+
+5. **Документирование и примеры**
+   - Добавить JSDoc для всех public методов
+   - Создать примеры использования
+   - Добавить руководство по миграции
+
+### 🔄 План deprecated-цикла
+
+1. **Phase 1 (v2.4):** Маркировка старых функций как deprecated
+2. **Phase 2 (v2.5):** Удаление compatibility layers
+3. **Phase 3 (v3.0):** Только core архитектура
+
+## 📈 Мониторинг и метрики
+
+### Ключевые показатели
+
+- **Производительность генерации:** < 50ms для полной темы
+- **Использование кэша:** > 80% hit rate
+- **Покрытие кода:** > 95%
+- **Размер бандла:** < 500KB сжато
+
+### Инструменты мониторинга
+
+```typescript
+// Получение метрик
+const stats = generator.getDependencies().paletteManager.getPaletteStats()
+console.log({
+  cacheSize: stats.validationCacheSize,
+  totalColors: stats.totalColors,
+  hasCustomPalette: stats.hasCustomPalette
+})
+```
 
 ## Заключение
 
