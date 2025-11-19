@@ -20,13 +20,13 @@ import type { UIColorConfig } from './color-config-dsl.js'
  */
 export const coreConfig: UIColorConfig = {
   rules: {
-    foreground: (p: UniversalPalette) => p.foreground.primary.light,
+    foreground: (p: UniversalPalette) => p.foreground.primary.main,
     descriptionForeground: (p: UniversalPalette) => p.foreground.primary.main,
     disabledForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
     focusBorder: (p: UniversalPalette) =>
       alpha(p.chromatic.indigo.main, OPACITY.STRONG),
     errorForeground: (p: UniversalPalette) => p.foreground.primary.dark,
-    'icon.foreground': (p: UniversalPalette) => p.foreground.primary.light,
+    'icon.foreground': (p: UniversalPalette) => p.foreground.primary.main,
   },
   groups: {
     widget: {
@@ -36,8 +36,8 @@ export const coreConfig: UIColorConfig = {
       shadow: (p: UniversalPalette) => alpha(p.ui.black, OPACITY.MEDIUM),
     },
     badge: {
-      background: (p: UniversalPalette) => darken(p.chromatic.indigo.main, 0.3),
-      foreground: (p: UniversalPalette) => p.ui.white,
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     settings: {
       headerForeground: (p: UniversalPalette) => p.chromatic.neutral.light,
