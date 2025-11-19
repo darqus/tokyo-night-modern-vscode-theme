@@ -16,7 +16,53 @@
 
 ## 🎨 Features
 
-- **Modern Framework Support**: Enhanced tokens for React, Vue, TypeScript, Rust, Go, Python, and more
+- **Modern Framework Support**: Extended tokens for React, Vue, TypeScript, Rust, Go, Python, and others
+- **Improved Architecture**: New core architecture with dependency injection and caching
+- **Extended Palette**: 220+ tokens with support for 15+ modern frameworks
+- **CSS/SCSS Capabilities**: Full support for modern CSS features and CSS-in-JS
+- **Optimized Highlighting**: Enhanced selection and search highlighting with new color hierarchy
+- **100% Test Coverage**: 260 tests ensure stability and quality
+
+## 🔧 Supported Technologies
+
+### 🌐 Frameworks and Libraries
+
+- **React**: Hooks, Next.js, React Hook Form, Formik
+- **Vue**: Vue 3 Composition API, Directives, Pinia
+- **Angular**: Components, Services, RxJS
+- **TypeScript**: Utility Types, Generics, Modern operators
+
+### 🎨 CSS and Styling
+
+- **Modern CSS**: Grid, Flexbox, Custom Properties, Container Queries
+- **Preprocessors**: SCSS/SASS, Less, Stylus, PostCSS
+- **CSS-in-JS**: Styled Components, Emotion, Stitches, Goober
+- **Frameworks**: Tailwind CSS, Bootstrap 5, Bulma, Material-UI, Ant Design, Chakra UI
+
+### 🗄️ Backend and Databases
+
+- **API**: tRPC, Express, Fastify, Hono
+- **ORM**: Prisma, Drizzle, TypeORM
+- **GraphQL**: Apollo, Relay, urql
+- **Databases**: SQL, MongoDB, Redis
+
+### 🧪 Testing and Development
+
+- **Testing**: Jest, Vitest, Playwright, Cypress
+- **Build Tools**: Vite, Webpack, Rollup, esbuild, Parcel
+- **Validation**: Zod, Yup, Joi
+- **State Management**: Redux, Zustand, Pinia, MobX
+
+### 💻 Programming Languages
+
+- **JavaScript/TypeScript**: Full support for modern features
+- **Python**: Decorators, type hints, async/await
+- **Rust**: Lifetimes, macros, pattern matching
+- **Go**: Goroutines, channels, interfaces
+- **Java**: Annotations, streams, lambdas
+- **C/C++**: Modern C++, preprocessor macros
+- **Ruby**: Symbols, blocks, metaprogramming
+- **Others**: PHP, Swift, Kotlin, Dart, Elixir
 
 ## 🚀 Installation
 
