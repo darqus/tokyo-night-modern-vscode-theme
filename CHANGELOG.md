@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2620](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2592...v2.3.2620) (2025-11-19)
+
+
+### Features
+
+* **theme:** update activity bar and side bar section header colors ([b5e5758](https://github.com/darqus/tokyo-modern-vscode-theme/commit/b5e57589f5d371e39f88c24e87ea2145952e8e25))
+* **theme:** update badge colors and add new activity bar badges ([e6e2fe4](https://github.com/darqus/tokyo-modern-vscode-theme/commit/e6e2fe47ab77c6ba2b09696a4112308b677f1df5))
+
+
+### Bug Fixes
+
+* **theme:** improve foreground color contrast for accessibility ([4828412](https://github.com/darqus/tokyo-modern-vscode-theme/commit/4828412075d73454cff0845b134da3ec86d0c3b4)), closes [#ff6b6](https://github.com/darqus/tokyo-modern-vscode-theme/issues/ff6b6) [#9ca5c2](https://github.com/darqus/tokyo-modern-vscode-theme/issues/9ca5c2)
+* **theme:** update input option active background and border ([916066b](https://github.com/darqus/tokyo-modern-vscode-theme/commit/916066bade822f06a41316ba48a1a72bde69efde))
+
 ### [2.3.2592](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2591...v2.3.2592) (2025-11-16)
 
 ### [2.3.2591](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2590...v2.3.2591) (2025-11-14)
