@@ -147,8 +147,8 @@ export const sidebarConfig: UIColorConfig = {
   groups: {
     activityBar: {
       background: (p: UniversalPalette) => p.background.base.dark,
-      foreground: (p: UniversalPalette) => p.foreground.primary.dark,
-      inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
+      inactiveForeground: (p: UniversalPalette) => alpha(p.chromatic.indigo.light, 0.5),
       activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
       activeBackground: (p: UniversalPalette) =>
         lighten(p.background.base.dark, 0.03),
@@ -186,7 +186,7 @@ export const sidebarConfig: UIColorConfig = {
     },
     sideBarSectionHeader: {
       background: (p: UniversalPalette) =>
-        lighten(p.background.base.dark, 0.04),
+        mix(p.background.base.dark, p.chromatic.neutral.light, 0.1),
       foreground: (p: UniversalPalette) => p.foreground.primary.dark,
       border: (p: UniversalPalette) => lighten(p.background.base.dark, 0.06),
     },
