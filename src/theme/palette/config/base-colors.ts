@@ -23,7 +23,7 @@ export const chromaMain = {
   yellow: '#d6c3ac',
   amber: '#fdb57e',
   orange: '#f2865b',
-  red: '#fc5555',
+  red: '#ff6b6b', // Улучшено: было #fc5555, контрастность 4.18:1 → 4.82:1
   rose: '#ff5998',
   neutral: '#a8aece',
   slate: '#7c87a4',
@@ -43,13 +43,13 @@ export const background = {
 } as const
 
 /**
- * Цвета текста
+ * Цвета текста - улучшенные для лучшей контрастности
  */
 export const foreground = {
   primary: '#c0caf5',
   secondary: '#a9b1d6',
   muted: '#9aa5ce',
-  disabled: '#565f89',
+  disabled: '#9ca5c2', // Улучшено: было #565f89, контрастность 2.16:1 → 5.46:1
 } as const
 
 /**

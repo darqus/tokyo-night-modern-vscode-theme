@@ -21,9 +21,9 @@ describe('RGB Utils', () => {
   describe('hexToRgb', () => {
     it('should convert hex to rgb', () => {
       expect(hexToRgb(universalPalette.chromatic.red.main)).toEqual({
-        r: 252,
-        g: 85,
-        b: 85,
+        r: 255,
+        g: 107,
+        b: 107,
       })
       expect(hexToRgb(universalPalette.chromatic.green.main)).toEqual({
         r: 152,
@@ -48,7 +48,7 @@ describe('RGB Utils', () => {
 
   describe('rgbToHex', () => {
     it('should convert rgb to hex', () => {
-      expect(rgbToHex(252, 85, 85)).toBe(universalPalette.chromatic.red.main)
+      expect(rgbToHex(255, 107, 107)).toBe(universalPalette.chromatic.red.main)
       expect(rgbToHex(152, 195, 121)).toBe(
         universalPalette.chromatic.green.main
       )

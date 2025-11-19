@@ -42,8 +42,8 @@ describe('Color Utils Edge Cases', () => {
     })
 
     it('should clamp opacity values', () => {
-      expect(alpha(chromaMain.red, -0.5)).toBe('#fc555500')
-      expect(alpha(chromaMain.red, 1.5)).toBe('#fc5555ff')
+      expect(alpha(chromaMain.red, -0.5)).toBe('#ff6b6b00')
+      expect(alpha(chromaMain.red, 1.5)).toBe('#ff6b6bff')
     })
   })
 
