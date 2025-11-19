@@ -36,7 +36,7 @@ export const coreConfig: UIColorConfig = {
       shadow: (p: UniversalPalette) => alpha(p.ui.black, OPACITY.MEDIUM),
     },
     badge: {
-      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.main, 0.5),
       foreground: (p: UniversalPalette) => p.foreground.primary.light,
     },
     settings: {
@@ -156,6 +156,14 @@ export const sidebarConfig: UIColorConfig = {
     },
     activityBarBadge: {
       background: (p: UniversalPalette) => darken(p.chromatic.pink.main, 0.3),
+      foreground: (p: UniversalPalette) => p.ui.white,
+    },
+    activityWarningBadge: {
+      background: (p: UniversalPalette) => darken(p.chromatic.yellow.main, 0.3),
+      foreground: (p: UniversalPalette) => p.ui.black,
+    },
+    activityErrorBadge: {
+      background: (p: UniversalPalette) => darken(p.chromatic.red.main, 0.3),
       foreground: (p: UniversalPalette) => p.ui.white,
     },
     activityBarTop: {
@@ -545,6 +553,10 @@ export const panelsConfig: UIColorConfig = {
       inactiveForeground: (p: UniversalPalette) => p.foreground.disabled.dark,
       activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
+    panelTitleBadge: {
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      foreground: (p: UniversalPalette) => p.ui.white,
+    },
     panelInput: {
       border: (p: UniversalPalette) => lightBackground(p.background.base.main),
     },
@@ -858,6 +870,15 @@ export const miscConfig: UIColorConfig = {
         subtleHighlight(p.chromatic.indigo.main),
       selectionBorder: (p: UniversalPalette) =>
         lighten(p.background.base.main, 0.04),
+    },
+    profileBadge: {
+      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      foreground: (p: UniversalPalette) => p.ui.white,
+    },
+    testing: {
+      coverCountBadgeBackground: (p: UniversalPalette) =>
+        darken(p.chromatic.green.dark, 0.5),
+      coverCountBadgeForeground: (p: UniversalPalette) => p.ui.white,
     },
     menu: {
       foreground: (p: UniversalPalette) => p.foreground.primary.main,
