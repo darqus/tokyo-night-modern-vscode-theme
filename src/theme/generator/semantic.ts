@@ -27,6 +27,3 @@ export function generateSemanticTokenColors() {
     universalPalette
   )
 }
-
-// Maintain backward compatibility with current implementation
-export const generateExpandedSemanticTokenColors = generateSemanticTokenColors

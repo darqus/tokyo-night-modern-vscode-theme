@@ -1,24 +1,9 @@
-import {
-  frameworksConfig,
-  functionsConfig,
-  literalsConfig,
-  modifiersConfig,
-  typesConfig,
-  variablesConfig,
-} from '../../config/semantic-configs.js'
-import { mergeSemanticConfigs } from '../../config/unified-generator.js'
-import type { SemanticTokenStyle } from '../../types/index.js'
+// Semantic token generation is now handled through the unified generator
+// This file serves as a compatibility layer for existing imports
 
-export function generateSemanticTokenColors(): Record<
-  string,
-  SemanticTokenStyle
-> {
-  return mergeSemanticConfigs({
-    variables: variablesConfig,
-    functions: functionsConfig,
-    types: typesConfig,
-    modifiers: modifiersConfig,
-    literals: literalsConfig,
-    frameworks: frameworksConfig,
-  })
-}
+export type { SemanticTokenConfig } from '../../config/color-config-dsl.js'
+export {
+  generateSemanticTokens,
+  mergeSemanticConfigs,
+} from '../../config/unified-generator.js'
+export type { SemanticTokenStyle } from '../../types/index.js'

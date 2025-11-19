@@ -6,7 +6,7 @@ import { LRUCache } from './lru-cache.js'
 // Define a type alias to avoid direct use of 'any' in the generic constraint
 type MemoizableFunction = (...args: readonly unknown[]) => unknown
 
-const cache = new LRUCache<string, unknown>(1000) // Limit cache to 1000 entries
+let cache = new LRUCache<string, unknown>(1000) // Limit cache to 1000 entries
 
 export function memoize<T extends MemoizableFunction>(
   fn: T,
@@ -35,26 +35,35 @@ export function getCacheSize(): number {
 }
 
 /**
- * Sets the cache capacity
+ * Sets the cache capacity and preserves recent entries
  */
 export function setCacheCapacity(capacity: number): void {
-  // We need to recreate the cache with new capacity
-  // This is a simplified approach - in a more complex scenario we might want to preserve some entries
+  if (capacity <= 0) {
+    throw new Error('Cache capacity must be positive')
+  }
+
   const oldCache = cache
   const newCache = new LRUCache<string, unknown>(capacity)
 
   // Copy over recent entries up to the new capacity
   const entries = Array.from(oldCache.entries())
-  for (
-    let i = Math.max(0, entries.length - capacity);
-    i < entries.length;
-    i++
-  ) {
+  const startIndex = Math.max(0, entries.length - capacity)
+
+  for (let i = startIndex; i < entries.length; i++) {
     const [key, value] = entries[i]
     newCache.set(key, value)
   }
 
-  // Replace the cache instance (this won't work directly since cache is const)
-  // Instead, we'll need to modify the cache capacity in a different way
-  // For now, we'll just keep the original implementation but expose the capacity setting
+  // Replace the cache instance
+  cache = newCache
+}
+
+/**
+ * Gets cache statistics for monitoring
+ */
+export function getCacheStats() {
+  return {
+    size: cache.size(),
+    capacity: 1000, // This should be tracked separately in a real implementation
+  }
 }

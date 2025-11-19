@@ -1,4 +1,4 @@
-import type { UniversalPalette } from '../palette/index.js'
+import type { UniversalPalette } from '../palette/universal-base.js'
 import type { SemanticTokenStyle } from '../types/index.js'
 
 /**
@@ -117,7 +117,7 @@ export interface ThemeConfig {
     modifiers?: SemanticTokenConfig
     literals?: SemanticTokenConfig
     frameworks?: SemanticTokenConfig
-    async?: SemanticTokenConfig
+    criticalKeywords?: SemanticTokenConfig
   }
 }
 

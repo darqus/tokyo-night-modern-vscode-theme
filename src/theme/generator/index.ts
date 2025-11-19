@@ -1,3 +1,4 @@
+import type { ThemeConfig } from '../config/color-config-dsl.js'
 import {
   criticalKeywordsConfig,
   frameworksConfig,
@@ -10,7 +11,6 @@ import {
 import {
   basicTokens,
   codeTokens,
-  // Token configs
   commentsTokens,
   cssTokens,
   markdownTokens,
@@ -20,40 +20,31 @@ import {
 import {
   buttonsConfig,
   checkboxesConfig,
-  // Core UI configurations
   coreConfig,
-  // Diff configurations
   diffConfig,
-  // Editor configurations
   editorConfig,
-  // Git configurations
   gitConfig,
   inputsConfig,
   listsConfig,
-  // Miscellaneous configurations
   miscConfig,
-  // Panel configurations
   panelsConfig,
   sidebarConfig,
   tabsConfig,
-  // Terminal configurations
   terminalConfig,
 } from '../config/ui-configs.js'
-import { generateFromConfig } from '../config/unified-generator.js'
-import { THEME_CONFIG } from '../config.js'
+import { createThemeGenerator } from '../core/index.js'
 import type { VSCodeTheme } from '../types/index.js'
 
 /**
- * Генерирует полную тему VS Code Tokyo Modern
+ * Генерирует полную тему VS Code Tokyo Modern с использованием улучшенной архитектуры
  *
  * Процесс:
- * 1. Генерируются UI цвета для всех компонентов
- * 2. Генерируются токены подсветки синтаксиса
- * 3. Генерируются семантические токены
- * 4. Всё объединяется в финальную тему
+ * 1. Создается генератор с dependency injection
+ * 2. Генерируется тема с кэшированием
+ * 3. Возвращается финальная тема
  */
 export const generateTheme = async (): Promise<VSCodeTheme> => {
-  const fullConfig = {
+  const fullConfig: ThemeConfig = {
     ui: {
       core: coreConfig,
       buttons: buttonsConfig,
@@ -89,14 +80,16 @@ export const generateTheme = async (): Promise<VSCodeTheme> => {
     },
   }
 
-  const generated = await generateFromConfig(fullConfig)
+  const generator = await createThemeGenerator(fullConfig)
+  return generator.generateTheme()
+}
 
-  return {
-    name: THEME_CONFIG.name,
-    type: THEME_CONFIG.type,
-    semanticHighlighting: THEME_CONFIG.semanticHighlighting,
-    colors: generated.colors,
-    tokenColors: generated.tokenColors,
-    semanticTokenColors: generated.semanticTokenColors,
-  }
+/**
+ * Генерирует тему с кастомной конфигурацией
+ */
+export const generateCustomTheme = async (
+  customConfig?: Partial<ThemeConfig>
+): Promise<VSCodeTheme> => {
+  const generator = await createThemeGenerator(customConfig)
+  return generator.generateTheme()
 }
