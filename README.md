@@ -16,7 +16,7 @@
 
 ## 🎨 Features
 
-- **Modern Framework Support**: Extended tokens for React, Vue, TypeScript, Rust, Go, Python, and others
+- **Modern Framework Support**: Extended tokens for React, Vue, Nuxt, TypeScript, Rust, Go, Python, and others
 - **Improved Architecture**: New core architecture with dependency injection and caching
 - **Extended Palette**: 220+ tokens with support for 15+ modern frameworks
 - **CSS/SCSS Capabilities**: Full support for modern CSS features and CSS-in-JS

@@ -3341,6 +3341,540 @@
         "foreground": "#7a9c61",
         "fontStyle": "bold"
       }
+    },
+    {
+      "name": "Nuxt 4 Composables",
+      "scope": [
+        "support.function.nuxt",
+        "entity.name.function.composable.nuxt",
+        "support.function.useasyncdata",
+        "support.function.usefetch",
+        "support.function.uselazyasyncdata",
+        "support.function.uselazyfetch",
+        "support.function.usestate",
+        "support.function.useruntimeconfig",
+        "support.function.useappconfig",
+        "support.function.usecookie",
+        "support.function.usenavigate",
+        "support.function.usethead",
+        "support.function.useloading",
+        "support.function.useerror",
+        "support.function.useroute",
+        "support.function.useparams",
+        "support.function.usequery",
+        "support.function.useform",
+        "support.function.usefield",
+        "support.function.usetransform",
+        "support.function.usedebounce",
+        "support.function.usethrottle",
+        "support.function.useinterval",
+        "support.function.usetimeout",
+        "support.function.usestorage",
+        "support.function.uselocalstorage",
+        "support.function.usesessionstorage",
+        "support.function.usehydrated",
+        "support.function.useclientonly",
+        "support.function.usenumber",
+        "support.function.usebool",
+        "support.function.usestring",
+        "support.function.usearray",
+        "support.function.useobject"
+      ],
+      "settings": {
+        "foreground": "#98c379",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Components",
+      "scope": [
+        "support.class.component.nuxt",
+        "entity.name.tag.nuxt",
+        "entity.name.tag.nuxt-link",
+        "entity.name.tag.nuxt-img",
+        "entity.name.tag.nuxt-picture",
+        "entity.name.tag.nuxt-layout",
+        "entity.name.tag.nuxt-page",
+        "entity.name.tag.nuxt-loading-indicator",
+        "entity.name.tag.nuxt-client-only",
+        "entity.name.tag.nuxt-island",
+        "entity.name.tag.nuxt-route-announcer",
+        "entity.name.tag.nuxt-dev-tools",
+        "support.component.nuxt",
+        "support.component.nuxt-link",
+        "support.component.nuxt-img",
+        "support.component.nuxt-picture",
+        "support.component.nuxt-layout",
+        "support.component.nuxt-page",
+        "support.component.nuxt-client-only"
+      ],
+      "settings": {
+        "foreground": "#57dac9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Directives",
+      "scope": [
+        "entity.other.attribute-name.directive.nuxt",
+        "keyword.directive.nuxt",
+        "support.directive.nuxt",
+        "meta.directive.nuxt",
+        "punctuation.definition.directive.nuxt",
+        "entity.other.attribute-name.v-show",
+        "entity.other.attribute-name.v-if",
+        "entity.other.attribute-name.v-else-if",
+        "entity.other.attribute-name.v-else",
+        "entity.other.attribute-name.v-for",
+        "entity.other.attribute-name.v-model",
+        "entity.other.attribute-name.v-on",
+        "entity.other.attribute-name.v-bind",
+        "entity.other.attribute-name.v-slot",
+        "entity.other.attribute-name.v-pre",
+        "entity.other.attribute-name.v-cloak",
+        "entity.other.attribute-name.v-once",
+        "entity.other.attribute-name.v-memo"
+      ],
+      "settings": {
+        "foreground": "#c678dd",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Server API",
+      "scope": [
+        "support.function.nuxt-server",
+        "entity.name.function.server.nuxt",
+        "support.function.eventhandler",
+        "support.function.gethandler",
+        "support.function.posthandler",
+        "support.function.puthandler",
+        "support.function.deletehandler",
+        "support.function.patchhandler",
+        "support.function.optionshandler",
+        "support.function.headhandler",
+        "support.function.middlewarehandler",
+        "support.function.defineroute",
+        "support.function.definemiddleware",
+        "support.function.defineplugin",
+        "support.function.readbody",
+        "support.function.readevent",
+        "support.function.getcookie",
+        "support.function.setcookie",
+        "support.function.deletecookie",
+        "support.function.getheader",
+        "support.function.setheader",
+        "support.function.appendheader",
+        "support.function.getquery",
+        "support.function.getparams",
+        "support.function.send",
+        "support.function.sendredirect",
+        "support.function.senderror",
+        "support.function.sendstatus",
+        "support.function.sendjson",
+        "support.function.sendstream"
+      ],
+      "settings": {
+        "foreground": "#ff6b6b",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Configuration",
+      "scope": [
+        "support.function.nuxt-config",
+        "entity.name.function.config.nuxt",
+        "keyword.control.nuxt-config",
+        "support.function.definenuxtconfig",
+        "support.function.nuxtconfig",
+        "support.function.runtimeconfig",
+        "support.function.appconfig",
+        "support.function.cssconfig",
+        "support.function.appconfig",
+        "support.function.pagesconfig",
+        "support.function.routeconfig",
+        "support.function.nitroconfig",
+        "support.function.devtoolsconfig",
+        "support.function.experimentconfig",
+        "support.function.futureconfig",
+        "support.function.hooksconfig",
+        "support.function.modulesconfig",
+        "support.function.aliasconfig",
+        "support.function.dirconfig",
+        "support.function.extensionsconfig",
+        "support.function.typescriptconfig",
+        "support.function.viteconfig",
+        "support.function.postcssconfig",
+        "support.function.tailwindconfig",
+        "support.function.sassconfig",
+        "support.function.lessconfig",
+        "support.function.stylusconfig"
+      ],
+      "settings": {
+        "foreground": "#ca9165",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Utilities",
+      "scope": [
+        "support.function.nuxt-util",
+        "entity.name.function.util.nuxt",
+        "support.function.clearerror",
+        "support.function.createerror",
+        "support.function.iserror",
+        "support.function.abortnavigation",
+        "support.function.prefetchnavigation",
+        "support.function.createnavigatortoprops",
+        "support.function.navigateto",
+        "support.function.reloadnuxtapp",
+        "support.function.resolvenavigationerror",
+        "support.function.usepayload",
+        "support.function.getpayload",
+        "support.function.setpayload",
+        "support.function.clearpayload",
+        "support.function.refreshnuxtdata",
+        "support.function.cachenuxtdata",
+        "support.function.clearnuxtdata",
+        "support.function.cleannuxtdata",
+        "support.function.callwithnuxt",
+        "support.function.setcontext",
+        "support.function.getcontext",
+        "support.function.usecontext"
+      ],
+      "settings": {
+        "foreground": "#4fcdff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Head Management",
+      "scope": [
+        "support.function.nuxt-head",
+        "entity.name.function.head.nuxt",
+        "support.function.usehead",
+        "support.function.useheadsafe",
+        "support.function.usetitle",
+        "support.function.usemeta",
+        "support.function.usehtmlattr",
+        "support.function.usebodyattr",
+        "support.function.uselink",
+        "support.function.usescript",
+        "support.function.usestyle",
+        "support.function.usebase",
+        "support.function.canonicalurl",
+        "support.function.buildmetatags",
+        "support.function.resolvemeta",
+        "support.function.resolvetitle",
+        "support.function.resolveseo"
+      ],
+      "settings": {
+        "foreground": "#e387f6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 State Management",
+      "scope": [
+        "support.function.nuxt-state",
+        "entity.name.function.state.nuxt",
+        "support.function.usestate",
+        "support.function.usereducer",
+        "support.function.usestore",
+        "support.function.usepinia",
+        "support.function.usedata",
+        "support.function.usecomputed",
+        "support.function.watch",
+        "support.function.watcheffect",
+        "support.function.watchposteffect",
+        "support.function.watchsync",
+        "support.function.nexttick",
+        "support.function.triggerref",
+        "support.function.unref",
+        "support.function.toref",
+        "support.function.torefs",
+        "support.function.isref",
+        "support.function.ishallowref",
+        "support.function.unshallowref",
+        "support.function.triggerref",
+        "support.function.customref",
+        "support.function.shallowref",
+        "support.function.markraw",
+        "support.function.toraw"
+      ],
+      "settings": {
+        "foreground": "#45dd91",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Image Optimization",
+      "scope": [
+        "support.function.nuxt-image",
+        "entity.name.function.image.nuxt",
+        "support.function.useimage",
+        "support.function.getimage",
+        "support.function.createimage",
+        "support.function.resolvesrcset",
+        "support.function.resolvesizes",
+        "support.function.resolvemodifiers",
+        "support.function.getprovider",
+        "support.function.setprovider",
+        "support.function.addimageprovider",
+        "support.function.nuxtimg",
+        "support.function.nuxtpicture",
+        "support.function.useimg",
+        "support.function.usepicture"
+      ],
+      "settings": {
+        "foreground": "#f3926b",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 I18n Support",
+      "scope": [
+        "support.function.nuxt-i18n",
+        "entity.name.function.i18n.nuxt",
+        "support.function.usei18n",
+        "support.function.uselocale",
+        "support.function.setlocale",
+        "support.function.getlocale",
+        "support.function.locales",
+        "support.function.t",
+        "support.function.tc",
+        "support.function.te",
+        "support.function.rt",
+        "support.function.d",
+        "support.function.n",
+        "support.function.datetime",
+        "support.function.number",
+        "support.function.currency",
+        "support.function.percent",
+        "support.function.setlocaletimeout",
+        "support.function.mergelocalemessage",
+        "support.function.getlocatemessage",
+        "support.function.setlocatemessage"
+      ],
+      "settings": {
+        "foreground": "#68dece",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Content Module",
+      "scope": [
+        "support.function.nuxt-content",
+        "entity.name.function.content.nuxt",
+        "support.function.usecontent",
+        "support.function.querycontent",
+        "support.function.fetchcontentnavigation",
+        "support.function.getcontentcomponent",
+        "support.function.parsecontent",
+        "support.function.rendercontent",
+        "support.function.usecontenthead",
+        "support.function.usecontentlazyhydrate",
+        "support.function.usecontentpreview",
+        "support.function.usecontentsearch",
+        "support.function.contentdocument",
+        "support.function.contentlist",
+        "support.function.contentnavigation",
+        "support.function.contentquery"
+      ],
+      "settings": {
+        "foreground": "#786ce0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 DevTools",
+      "scope": [
+        "support.function.nuxt-devtools",
+        "entity.name.function.devtools.nuxt",
+        "support.function.usedevtools",
+        "support.function.usedevtoolsui",
+        "support.function.usedevtoolsclient",
+        "support.function.usedevtoolsserver",
+        "support.function.getdevtools",
+        "support.function.setdevtools",
+        "support.function.devtoolsrefresh",
+        "support.function.devtoolsreload",
+        "support.function.devtoolsopen",
+        "support.function.devtoolsclose",
+        "support.function.devtoolsposition",
+        "support.function.devtoolssize",
+        "support.function.devtoolstheme",
+        "support.function.devtoolsenabled"
+      ],
+      "settings": {
+        "foreground": "#d68ffc",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Layer System",
+      "scope": [
+        "support.function.nuxt-layer",
+        "entity.name.function.layer.nuxt",
+        "support.function.uselayer",
+        "support.function.getlayer",
+        "support.function.setlayer",
+        "support.function.addlayer",
+        "support.function.removelayer",
+        "support.function.mergeconfig",
+        "support.function.extendconfig",
+        "support.function.overwriteconfig",
+        "support.function.inheritconfig",
+        "support.function.layerconfig",
+        "support.function.layerpath",
+        "support.function.layermeta",
+        "support.function.layerdependencies",
+        "support.function.layerextends"
+      ],
+      "settings": {
+        "foreground": "#a9b1d6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Performance",
+      "scope": [
+        "support.function.nuxt-performance",
+        "entity.name.function.performance.nuxt",
+        "support.function.useperformance",
+        "support.function.usehybrid",
+        "support.function.uselazy",
+        "support.function.useasync",
+        "support.function.usecached",
+        "support.function.usepreload",
+        "support.function.useprefetch",
+        "support.function.usedefer",
+        "support.function.usecritical",
+        "support.function.useoptimistic",
+        "support.function.usetransition",
+        "support.function.useanimation",
+        "support.function.useintersection",
+        "support.function.useresize",
+        "support.function.usemutation",
+        "support.function.usemedia",
+        "support.function.usematchmedia"
+      ],
+      "settings": {
+        "foreground": "#ff5998",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Security",
+      "scope": [
+        "support.function.nuxt-security",
+        "entity.name.function.security.nuxt",
+        "support.function.usesecurity",
+        "support.function.usecsrf",
+        "support.function.usecsp",
+        "support.function.usecors",
+        "support.function.userate",
+        "support.function.useauth",
+        "support.function.usesession",
+        "support.function.usejwt",
+        "support.function.useoauth",
+        "support.function.useencryption",
+        "supportfunction.usedecryption",
+        "supportfunction.usehash",
+        "supportfunction.useverify",
+        "supportfunction.usesign",
+        "supportfunction.usevalidate"
+      ],
+      "settings": {
+        "foreground": "#cc5656",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Testing",
+      "scope": [
+        "support.function.nuxt-testing",
+        "entity.name.function.testing.nuxt",
+        "support.function.usetest",
+        "support.function.useexpect",
+        "supportfunction.usevitest",
+        "supportfunction.usejest",
+        "supportfunction.usecypress",
+        "supportfunction.useplaywright",
+        "supportfunction.usestorybook",
+        "supportfunction.usetestutils",
+        "supportfunction.usemock",
+        "supportfunction.usestub",
+        "supportfunction.usespy",
+        "supportfunction.usefixture",
+        "supportfunction.usesetup",
+        "supportfunction.useteardown",
+        "supportfunction.usebeforeeach",
+        "supportfunction.useaftereach",
+        "supportfunction.usebeforeall",
+        "supportfunction.useafterall"
+      ],
+      "settings": {
+        "foreground": "#ab72ca",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Nuxt 4 Build Tools",
+      "scope": [
+        "support.function.nuxt-build",
+        "entity.name.function.build.nuxt",
+        "support.function.usebuild",
+        "supportfunction.usevite",
+        "supportfunction.usewebpack",
+        "supportfunction.userollup",
+        "supportfunction.useesbuild",
+        "supportfunction.usepostcss",
+        "supportfunction.usesass",
+        "supportfunction.useless",
+        "supportfunction.usestylus",
+        "supportfunction.usetailwind",
+        "supportfunction.usebootstrap",
+        "supportfunction.usebulma",
+        "supportfunction.usematerial",
+        "supportfunction.usechakra",
+        "supportfunction.useant",
+        "supportfunction.usequasar",
+        "supportfunction.usevuetify",
+        "supportfunction.useelement",
+        "supportfunction.useprimevue"
+      ],
+      "settings": {
+        "foreground": "#7c87a4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Nuxt 4 Deployment",
+      "scope": [
+        "support.function.nuxt-deploy",
+        "entity.name.function.deploy.nuxt",
+        "supportfunction.usedeploy",
+        "supportfunction.usevercel",
+        "supportfunction.usenetlify",
+        "supportfunction.usecloudflare",
+        "supportfunction.useaws",
+        "supportfunction.useazure",
+        "supportfunction.usegcp",
+        "supportfunction.usedocker",
+        "supportfunction.usekubernetes",
+        "supportfunction.useheroku",
+        "supportfunction.usedigitalocean",
+        "supportfunction.usegithubpages",
+        "supportfunction.usenetlifyfunctions",
+        "supportfunction.usecloudfonctions",
+        "supportfunction.useawslambda",
+        "supportfunction.useazurefunctions"
+      ],
+      "settings": {
+        "foreground": "#9aa5ce",
+        "fontStyle": "italic"
+      }
     }
   ],
   "semanticTokenColors": {
@@ -3523,6 +4057,458 @@
     },
     "rust.pattern.iflet": {
       "foreground": "#ab82f7"
+    },
+    "nuxt.composable": {
+      "foreground": "#98c379",
+      "fontStyle": "bold"
+    },
+    "nuxt.directive": {
+      "foreground": "#c678dd"
+    },
+    "nuxt.component": {
+      "foreground": "#57dac9",
+      "fontStyle": "bold"
+    },
+    "nuxt.plugin": {
+      "foreground": "#f2865b",
+      "fontStyle": "italic"
+    },
+    "nuxt.middleware": {
+      "foreground": "#e07af5"
+    },
+    "nuxt.server": {
+      "foreground": "#ff6b6b",
+      "fontStyle": "bold"
+    },
+    "nuxt.client": {
+      "foreground": "#4aaaf8",
+      "fontStyle": "bold"
+    },
+    "nuxt.config": {
+      "foreground": "#ca9165"
+    },
+    "nuxt.route": {
+      "foreground": "#49c7d8"
+    },
+    "nuxt.meta": {
+      "foreground": "#b38ff8",
+      "fontStyle": "italic"
+    },
+    "nuxt.store": {
+      "foreground": "#45dd91",
+      "fontStyle": "bold"
+    },
+    "nuxt.state": {
+      "foreground": "#d6c3ac"
+    },
+    "nuxt.action": {
+      "foreground": "#d68ffc",
+      "fontStyle": "bold"
+    },
+    "nuxt.getter": {
+      "foreground": "#4fcdff",
+      "fontStyle": "italic"
+    },
+    "nuxt.mutation": {
+      "foreground": "#ff5998"
+    },
+    "nuxt.hook": {
+      "foreground": "#786ce0",
+      "fontStyle": "bold"
+    },
+    "nuxt.util": {
+      "foreground": "#7c87a4"
+    },
+    "nuxt.helper": {
+      "foreground": "#9aa5ce",
+      "fontStyle": "italic"
+    },
+    "nuxt.layout": {
+      "foreground": "#a9b1d6",
+      "fontStyle": "bold"
+    },
+    "nuxt.page": {
+      "foreground": "#a8aece"
+    },
+    "nuxt.error": {
+      "foreground": "#ff8989",
+      "fontStyle": "bold"
+    },
+    "nuxt.loading": {
+      "foreground": "#dac9b4",
+      "fontStyle": "italic"
+    },
+    "nuxt.cache": {
+      "foreground": "#c0caf5"
+    },
+    "nuxt.i18n": {
+      "foreground": "#68dece",
+      "fontStyle": "bold"
+    },
+    "nuxt.head": {
+      "foreground": "#e387f6"
+    },
+    "nuxt.body": {
+      "foreground": "#cc86e0",
+      "fontStyle": "italic"
+    },
+    "nuxt.script": {
+      "foreground": "#5cb3f9",
+      "fontStyle": "bold"
+    },
+    "nuxt.style": {
+      "foreground": "#a2c986"
+    },
+    "nuxt.image": {
+      "foreground": "#f3926b",
+      "fontStyle": "bold"
+    },
+    "nuxt.link": {
+      "foreground": "#5bcddc",
+      "fontStyle": "italic"
+    },
+    "nuxt.form": {
+      "foreground": "#ff7a7a"
+    },
+    "nuxt.input": {
+      "foreground": "#fdbc8b",
+      "fontStyle": "bold"
+    },
+    "nuxt.button": {
+      "foreground": "#b38ff8"
+    },
+    "nuxt.modal": {
+      "foreground": "#867be3",
+      "fontStyle": "italic"
+    },
+    "nuxt.toast": {
+      "foreground": "#decfbd",
+      "fontStyle": "bold"
+    },
+    "nuxt.notification": {
+      "foreground": "#adcf94"
+    },
+    "nuxt.card": {
+      "foreground": "#6ebbf9",
+      "fontStyle": "italic"
+    },
+    "nuxt.table": {
+      "foreground": "#8993ad",
+      "fontStyle": "bold"
+    },
+    "nuxt.list": {
+      "foreground": "#a4aed3"
+    },
+    "nuxt.nav": {
+      "foreground": "#b2b9da",
+      "fontStyle": "bold"
+    },
+    "nuxt.footer": {
+      "foreground": "#b1b6d3",
+      "fontStyle": "italic"
+    },
+    "nuxt.header": {
+      "foreground": "#c6cff6"
+    },
+    "nuxt.sidebar": {
+      "foreground": "#cc5656",
+      "fontStyle": "bold"
+    },
+    "nuxt.content": {
+      "foreground": "#c26b49",
+      "fontStyle": "italic"
+    },
+    "nuxt.api": {
+      "foreground": "#b362c4"
+    },
+    "nuxt.fetch": {
+      "foreground": "#9e60b1",
+      "fontStyle": "bold"
+    },
+    "nuxt.asyncData": {
+      "foreground": "#46aea1",
+      "fontStyle": "italic"
+    },
+    "nuxt.useFetch": {
+      "foreground": "#3a9fad"
+    },
+    "nuxt.lazy": {
+      "foreground": "#37b174",
+      "fontStyle": "bold"
+    },
+    "nuxt.defineNuxtPlugin": {
+      "foreground": "#ab9c8a"
+    },
+    "nuxt.defineNuxtMiddleware": {
+      "foreground": "#ab72ca",
+      "fontStyle": "italic"
+    },
+    "nuxt.defineNuxtRouteMiddleware": {
+      "foreground": "#3fa4cc",
+      "fontStyle": "bold"
+    },
+    "nuxt.defineNuxtComponent": {
+      "foreground": "#cc477a"
+    },
+    "nuxt.defineNuxtConfig": {
+      "foreground": "#636c83",
+      "fontStyle": "italic"
+    },
+    "nuxt.nuxtConfig": {
+      "foreground": "#7b84a5",
+      "fontStyle": "bold"
+    },
+    "nuxt.runtimeConfig": {
+      "foreground": "#878eab"
+    },
+    "nuxt.appConfig": {
+      "foreground": "#868ba5",
+      "fontStyle": "italic"
+    },
+    "nuxt.vueApp": {
+      "foreground": "#9aa2c4",
+      "fontStyle": "bold"
+    },
+    "nuxt.h3Event": {
+      "foreground": "#ff6b6b"
+    },
+    "nuxt.h3Error": {
+      "foreground": "#f2865b",
+      "fontStyle": "italic"
+    },
+    "nuxt.h3Response": {
+      "foreground": "#e07af5",
+      "fontStyle": "bold"
+    },
+    "nuxt.h3Request": {
+      "foreground": "#c678dd"
+    },
+    "nuxt.h3Handler": {
+      "foreground": "#57dac9",
+      "fontStyle": "italic"
+    },
+    "nuxt.h3Middleware": {
+      "foreground": "#49c7d8",
+      "fontStyle": "bold"
+    },
+    "nuxt4.composable": {
+      "foreground": "#98c379",
+      "fontStyle": "bold"
+    },
+    "nuxt4.server": {
+      "foreground": "#ff6b6b",
+      "fontStyle": "bold"
+    },
+    "nuxt4.client": {
+      "foreground": "#4aaaf8",
+      "fontStyle": "bold"
+    },
+    "nuxt4.config": {
+      "foreground": "#ca9165"
+    },
+    "nuxt4.route": {
+      "foreground": "#49c7d8"
+    },
+    "nuxt4.meta": {
+      "foreground": "#b38ff8",
+      "fontStyle": "italic"
+    },
+    "nuxt4.store": {
+      "foreground": "#45dd91",
+      "fontStyle": "bold"
+    },
+    "nuxt4.state": {
+      "foreground": "#d6c3ac"
+    },
+    "nuxt4.action": {
+      "foreground": "#d68ffc",
+      "fontStyle": "bold"
+    },
+    "nuxt4.getter": {
+      "foreground": "#4fcdff",
+      "fontStyle": "italic"
+    },
+    "nuxt4.mutation": {
+      "foreground": "#ff5998"
+    },
+    "nuxt4.hook": {
+      "foreground": "#786ce0",
+      "fontStyle": "bold"
+    },
+    "nuxt4.util": {
+      "foreground": "#7c87a4"
+    },
+    "nuxt4.helper": {
+      "foreground": "#9aa5ce",
+      "fontStyle": "italic"
+    },
+    "nuxt4.layout": {
+      "foreground": "#a9b1d6",
+      "fontStyle": "bold"
+    },
+    "nuxt4.page": {
+      "foreground": "#a8aece"
+    },
+    "nuxt4.error": {
+      "foreground": "#ff8989",
+      "fontStyle": "bold"
+    },
+    "nuxt4.loading": {
+      "foreground": "#dac9b4",
+      "fontStyle": "italic"
+    },
+    "nuxt4.cache": {
+      "foreground": "#c0caf5"
+    },
+    "nuxt4.i18n": {
+      "foreground": "#68dece",
+      "fontStyle": "bold"
+    },
+    "nuxt4.head": {
+      "foreground": "#e387f6"
+    },
+    "nuxt4.body": {
+      "foreground": "#cc86e0",
+      "fontStyle": "italic"
+    },
+    "nuxt4.script": {
+      "foreground": "#5cb3f9",
+      "fontStyle": "bold"
+    },
+    "nuxt4.style": {
+      "foreground": "#a2c986"
+    },
+    "nuxt4.image": {
+      "foreground": "#f3926b",
+      "fontStyle": "bold"
+    },
+    "nuxt4.link": {
+      "foreground": "#5bcddc",
+      "fontStyle": "italic"
+    },
+    "nuxt4.form": {
+      "foreground": "#ff7a7a"
+    },
+    "nuxt4.input": {
+      "foreground": "#fdbc8b",
+      "fontStyle": "bold"
+    },
+    "nuxt4.button": {
+      "foreground": "#b38ff8"
+    },
+    "nuxt4.modal": {
+      "foreground": "#867be3",
+      "fontStyle": "italic"
+    },
+    "nuxt4.toast": {
+      "foreground": "#decfbd",
+      "fontStyle": "bold"
+    },
+    "nuxt4.notification": {
+      "foreground": "#adcf94"
+    },
+    "nuxt4.card": {
+      "foreground": "#6ebbf9",
+      "fontStyle": "italic"
+    },
+    "nuxt4.table": {
+      "foreground": "#8993ad",
+      "fontStyle": "bold"
+    },
+    "nuxt4.list": {
+      "foreground": "#a4aed3"
+    },
+    "nuxt4.nav": {
+      "foreground": "#b2b9da",
+      "fontStyle": "bold"
+    },
+    "nuxt4.footer": {
+      "foreground": "#b1b6d3",
+      "fontStyle": "italic"
+    },
+    "nuxt4.header": {
+      "foreground": "#c6cff6"
+    },
+    "nuxt4.sidebar": {
+      "foreground": "#cc5656",
+      "fontStyle": "bold"
+    },
+    "nuxt4.content": {
+      "foreground": "#c26b49",
+      "fontStyle": "italic"
+    },
+    "nuxt4.api": {
+      "foreground": "#b362c4"
+    },
+    "nuxt4.fetch": {
+      "foreground": "#9e60b1",
+      "fontStyle": "bold"
+    },
+    "nuxt4.asyncData": {
+      "foreground": "#46aea1",
+      "fontStyle": "italic"
+    },
+    "nuxt4.useFetch": {
+      "foreground": "#3a9fad"
+    },
+    "nuxt4.lazy": {
+      "foreground": "#37b174",
+      "fontStyle": "bold"
+    },
+    "nuxt4.defineNuxtPlugin": {
+      "foreground": "#ab9c8a"
+    },
+    "nuxt4.defineNuxtMiddleware": {
+      "foreground": "#ab72ca",
+      "fontStyle": "italic"
+    },
+    "nuxt4.defineNuxtRouteMiddleware": {
+      "foreground": "#3fa4cc",
+      "fontStyle": "bold"
+    },
+    "nuxt4.defineNuxtComponent": {
+      "foreground": "#cc477a"
+    },
+    "nuxt4.defineNuxtConfig": {
+      "foreground": "#636c83",
+      "fontStyle": "italic"
+    },
+    "nuxt4.nuxtConfig": {
+      "foreground": "#7b84a5",
+      "fontStyle": "bold"
+    },
+    "nuxt4.runtimeConfig": {
+      "foreground": "#878eab"
+    },
+    "nuxt4.appConfig": {
+      "foreground": "#868ba5",
+      "fontStyle": "italic"
+    },
+    "nuxt4.vueApp": {
+      "foreground": "#9aa2c4",
+      "fontStyle": "bold"
+    },
+    "nuxt4.h3Event": {
+      "foreground": "#ff6b6b"
+    },
+    "nuxt4.h3Error": {
+      "foreground": "#f2865b",
+      "fontStyle": "italic"
+    },
+    "nuxt4.h3Response": {
+      "foreground": "#e07af5",
+      "fontStyle": "bold"
+    },
+    "nuxt4.h3Request": {
+      "foreground": "#c678dd"
+    },
+    "nuxt4.h3Handler": {
+      "foreground": "#57dac9",
+      "fontStyle": "italic"
+    },
+    "nuxt4.h3Middleware": {
+      "foreground": "#49c7d8",
+      "fontStyle": "bold"
     },
     "keyword.this": {
       "foreground": "#ff6b6b",

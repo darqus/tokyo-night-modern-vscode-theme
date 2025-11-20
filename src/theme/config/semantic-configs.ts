@@ -1,7 +1,6 @@
 import type { UniversalPalette } from '../palette/universal-base.js'
 import { boldToken, italicToken, token } from '../utils/semantic-helpers.js'
 import type { SemanticTokenConfig } from './color-config-dsl.js'
-import { THEME_CONSTANTS } from './constants.js'
 
 /**
  * Variable tokens - переменные
@@ -36,7 +35,7 @@ export const functionsConfig: SemanticTokenConfig = {
   rules: {
     function: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'function.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.blue.main, THEME_CONSTANTS.FONT_STYLE.BOLD),
+      boldToken(p.chromatic.blue.main),
     'function.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
     method: (p: UniversalPalette) => token(p.chromatic.blue.main),
@@ -155,5 +154,176 @@ export const frameworksConfig: SemanticTokenConfig = {
       token(p.chromatic.purple.main),
     'rust.pattern.iflet': (p: UniversalPalette) =>
       token(p.chromatic.purple.main),
+
+    // Nuxt.js specific tokens
+    'nuxt.composable': (p: UniversalPalette) =>
+      boldToken(p.chromatic.green.main),
+    'nuxt.directive': (p: UniversalPalette) => token(p.chromatic.violet.main),
+    'nuxt.component': (p: UniversalPalette) => boldToken(p.chromatic.teal.main),
+    'nuxt.plugin': (p: UniversalPalette) =>
+      italicToken(p.chromatic.orange.main),
+    'nuxt.middleware': (p: UniversalPalette) => token(p.chromatic.pink.main),
+    'nuxt.server': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'nuxt.client': (p: UniversalPalette) => boldToken(p.chromatic.blue.main),
+    'nuxt.config': (p: UniversalPalette) => token(p.chromatic.amber.dark),
+    'nuxt.route': (p: UniversalPalette) => token(p.chromatic.cyan.main),
+    'nuxt.meta': (p: UniversalPalette) => italicToken(p.chromatic.purple.light),
+    'nuxt.store': (p: UniversalPalette) => boldToken(p.chromatic.emerald.main),
+    'nuxt.state': (p: UniversalPalette) => token(p.chromatic.yellow.main),
+    'nuxt.action': (p: UniversalPalette) => boldToken(p.chromatic.fuchsia.main),
+    'nuxt.getter': (p: UniversalPalette) => italicToken(p.chromatic.sky.main),
+    'nuxt.mutation': (p: UniversalPalette) => token(p.chromatic.rose.main),
+    'nuxt.hook': (p: UniversalPalette) => boldToken(p.chromatic.indigo.main),
+    'nuxt.util': (p: UniversalPalette) => token(p.chromatic.slate.main),
+    'nuxt.helper': (p: UniversalPalette) => italicToken(p.chromatic.stone.main),
+    'nuxt.layout': (p: UniversalPalette) => boldToken(p.chromatic.zinc.main),
+    'nuxt.page': (p: UniversalPalette) => token(p.chromatic.neutral.main),
+    'nuxt.error': (p: UniversalPalette) => boldToken(p.chromatic.red.bright),
+    'nuxt.loading': (p: UniversalPalette) =>
+      italicToken(p.chromatic.yellow.light),
+    'nuxt.cache': (p: UniversalPalette) => token(p.chromatic.gray.main),
+    'nuxt.i18n': (p: UniversalPalette) => boldToken(p.chromatic.teal.light),
+    'nuxt.head': (p: UniversalPalette) => token(p.chromatic.pink.light),
+    'nuxt.body': (p: UniversalPalette) => italicToken(p.chromatic.violet.light),
+    'nuxt.script': (p: UniversalPalette) => boldToken(p.chromatic.blue.light),
+    'nuxt.style': (p: UniversalPalette) => token(p.chromatic.green.light),
+    'nuxt.image': (p: UniversalPalette) => boldToken(p.chromatic.orange.light),
+    'nuxt.link': (p: UniversalPalette) => italicToken(p.chromatic.cyan.light),
+    'nuxt.form': (p: UniversalPalette) => token(p.chromatic.red.light),
+    'nuxt.input': (p: UniversalPalette) => boldToken(p.chromatic.amber.light),
+    'nuxt.button': (p: UniversalPalette) => token(p.chromatic.purple.light),
+    'nuxt.modal': (p: UniversalPalette) =>
+      italicToken(p.chromatic.indigo.light),
+    'nuxt.toast': (p: UniversalPalette) => boldToken(p.chromatic.yellow.bright),
+    'nuxt.notification': (p: UniversalPalette) =>
+      token(p.chromatic.green.bright),
+    'nuxt.card': (p: UniversalPalette) => italicToken(p.chromatic.blue.bright),
+    'nuxt.table': (p: UniversalPalette) => boldToken(p.chromatic.slate.light),
+    'nuxt.list': (p: UniversalPalette) => token(p.chromatic.stone.light),
+    'nuxt.nav': (p: UniversalPalette) => boldToken(p.chromatic.zinc.light),
+    'nuxt.footer': (p: UniversalPalette) =>
+      italicToken(p.chromatic.neutral.light),
+    'nuxt.header': (p: UniversalPalette) => token(p.chromatic.gray.light),
+    'nuxt.sidebar': (p: UniversalPalette) => boldToken(p.chromatic.red.dark),
+    'nuxt.content': (p: UniversalPalette) =>
+      italicToken(p.chromatic.orange.dark),
+    'nuxt.api': (p: UniversalPalette) => token(p.chromatic.pink.dark),
+    'nuxt.fetch': (p: UniversalPalette) => boldToken(p.chromatic.violet.dark),
+    'nuxt.asyncData': (p: UniversalPalette) =>
+      italicToken(p.chromatic.teal.dark),
+    'nuxt.useFetch': (p: UniversalPalette) => token(p.chromatic.cyan.dark),
+    'nuxt.lazy': (p: UniversalPalette) => boldToken(p.chromatic.emerald.dark),
+    'nuxt.defineNuxtPlugin': (p: UniversalPalette) =>
+      token(p.chromatic.yellow.dark),
+    'nuxt.defineNuxtMiddleware': (p: UniversalPalette) =>
+      italicToken(p.chromatic.fuchsia.dark),
+    'nuxt.defineNuxtRouteMiddleware': (p: UniversalPalette) =>
+      boldToken(p.chromatic.sky.dark),
+    'nuxt.defineNuxtComponent': (p: UniversalPalette) =>
+      token(p.chromatic.rose.dark),
+    'nuxt.defineNuxtConfig': (p: UniversalPalette) =>
+      italicToken(p.chromatic.slate.dark),
+    'nuxt.nuxtConfig': (p: UniversalPalette) =>
+      boldToken(p.chromatic.stone.dark),
+    'nuxt.runtimeConfig': (p: UniversalPalette) => token(p.chromatic.zinc.dark),
+    'nuxt.appConfig': (p: UniversalPalette) =>
+      italicToken(p.chromatic.neutral.dark),
+    'nuxt.vueApp': (p: UniversalPalette) => boldToken(p.chromatic.gray.dark),
+    'nuxt.h3Event': (p: UniversalPalette) => token(p.chromatic.red.main),
+    'nuxt.h3Error': (p: UniversalPalette) =>
+      italicToken(p.chromatic.orange.main),
+    'nuxt.h3Response': (p: UniversalPalette) =>
+      boldToken(p.chromatic.pink.main),
+    'nuxt.h3Request': (p: UniversalPalette) => token(p.chromatic.violet.main),
+    'nuxt.h3Handler': (p: UniversalPalette) =>
+      italicToken(p.chromatic.teal.main),
+    'nuxt.h3Middleware': (p: UniversalPalette) =>
+      boldToken(p.chromatic.cyan.main),
+
+    // Enhanced Nuxt 4 semantic tokens with better organization
+    'nuxt4.composable': (p: UniversalPalette) =>
+      boldToken(p.chromatic.green.main),
+    'nuxt4.server': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'nuxt4.client': (p: UniversalPalette) => boldToken(p.chromatic.blue.main),
+    'nuxt4.config': (p: UniversalPalette) => token(p.chromatic.amber.dark),
+    'nuxt4.route': (p: UniversalPalette) => token(p.chromatic.cyan.main),
+    'nuxt4.meta': (p: UniversalPalette) =>
+      italicToken(p.chromatic.purple.light),
+    'nuxt4.store': (p: UniversalPalette) => boldToken(p.chromatic.emerald.main),
+    'nuxt4.state': (p: UniversalPalette) => token(p.chromatic.yellow.main),
+    'nuxt4.action': (p: UniversalPalette) =>
+      boldToken(p.chromatic.fuchsia.main),
+    'nuxt4.getter': (p: UniversalPalette) => italicToken(p.chromatic.sky.main),
+    'nuxt4.mutation': (p: UniversalPalette) => token(p.chromatic.rose.main),
+    'nuxt4.hook': (p: UniversalPalette) => boldToken(p.chromatic.indigo.main),
+    'nuxt4.util': (p: UniversalPalette) => token(p.chromatic.slate.main),
+    'nuxt4.helper': (p: UniversalPalette) =>
+      italicToken(p.chromatic.stone.main),
+    'nuxt4.layout': (p: UniversalPalette) => boldToken(p.chromatic.zinc.main),
+    'nuxt4.page': (p: UniversalPalette) => token(p.chromatic.neutral.main),
+    'nuxt4.error': (p: UniversalPalette) => boldToken(p.chromatic.red.bright),
+    'nuxt4.loading': (p: UniversalPalette) =>
+      italicToken(p.chromatic.yellow.light),
+    'nuxt4.cache': (p: UniversalPalette) => token(p.chromatic.gray.main),
+    'nuxt4.i18n': (p: UniversalPalette) => boldToken(p.chromatic.teal.light),
+    'nuxt4.head': (p: UniversalPalette) => token(p.chromatic.pink.light),
+    'nuxt4.body': (p: UniversalPalette) =>
+      italicToken(p.chromatic.violet.light),
+    'nuxt4.script': (p: UniversalPalette) => boldToken(p.chromatic.blue.light),
+    'nuxt4.style': (p: UniversalPalette) => token(p.chromatic.green.light),
+    'nuxt4.image': (p: UniversalPalette) => boldToken(p.chromatic.orange.light),
+    'nuxt4.link': (p: UniversalPalette) => italicToken(p.chromatic.cyan.light),
+    'nuxt4.form': (p: UniversalPalette) => token(p.chromatic.red.light),
+    'nuxt4.input': (p: UniversalPalette) => boldToken(p.chromatic.amber.light),
+    'nuxt4.button': (p: UniversalPalette) => token(p.chromatic.purple.light),
+    'nuxt4.modal': (p: UniversalPalette) =>
+      italicToken(p.chromatic.indigo.light),
+    'nuxt4.toast': (p: UniversalPalette) =>
+      boldToken(p.chromatic.yellow.bright),
+    'nuxt4.notification': (p: UniversalPalette) =>
+      token(p.chromatic.green.bright),
+    'nuxt4.card': (p: UniversalPalette) => italicToken(p.chromatic.blue.bright),
+    'nuxt4.table': (p: UniversalPalette) => boldToken(p.chromatic.slate.light),
+    'nuxt4.list': (p: UniversalPalette) => token(p.chromatic.stone.light),
+    'nuxt4.nav': (p: UniversalPalette) => boldToken(p.chromatic.zinc.light),
+    'nuxt4.footer': (p: UniversalPalette) =>
+      italicToken(p.chromatic.neutral.light),
+    'nuxt4.header': (p: UniversalPalette) => token(p.chromatic.gray.light),
+    'nuxt4.sidebar': (p: UniversalPalette) => boldToken(p.chromatic.red.dark),
+    'nuxt4.content': (p: UniversalPalette) =>
+      italicToken(p.chromatic.orange.dark),
+    'nuxt4.api': (p: UniversalPalette) => token(p.chromatic.pink.dark),
+    'nuxt4.fetch': (p: UniversalPalette) => boldToken(p.chromatic.violet.dark),
+    'nuxt4.asyncData': (p: UniversalPalette) =>
+      italicToken(p.chromatic.teal.dark),
+    'nuxt4.useFetch': (p: UniversalPalette) => token(p.chromatic.cyan.dark),
+    'nuxt4.lazy': (p: UniversalPalette) => boldToken(p.chromatic.emerald.dark),
+    'nuxt4.defineNuxtPlugin': (p: UniversalPalette) =>
+      token(p.chromatic.yellow.dark),
+    'nuxt4.defineNuxtMiddleware': (p: UniversalPalette) =>
+      italicToken(p.chromatic.fuchsia.dark),
+    'nuxt4.defineNuxtRouteMiddleware': (p: UniversalPalette) =>
+      boldToken(p.chromatic.sky.dark),
+    'nuxt4.defineNuxtComponent': (p: UniversalPalette) =>
+      token(p.chromatic.rose.dark),
+    'nuxt4.defineNuxtConfig': (p: UniversalPalette) =>
+      italicToken(p.chromatic.slate.dark),
+    'nuxt4.nuxtConfig': (p: UniversalPalette) =>
+      boldToken(p.chromatic.stone.dark),
+    'nuxt4.runtimeConfig': (p: UniversalPalette) =>
+      token(p.chromatic.zinc.dark),
+    'nuxt4.appConfig': (p: UniversalPalette) =>
+      italicToken(p.chromatic.neutral.dark),
+    'nuxt4.vueApp': (p: UniversalPalette) => boldToken(p.chromatic.gray.dark),
+    'nuxt4.h3Event': (p: UniversalPalette) => token(p.chromatic.red.main),
+    'nuxt4.h3Error': (p: UniversalPalette) =>
+      italicToken(p.chromatic.orange.main),
+    'nuxt4.h3Response': (p: UniversalPalette) =>
+      boldToken(p.chromatic.pink.main),
+    'nuxt4.h3Request': (p: UniversalPalette) => token(p.chromatic.violet.main),
+    'nuxt4.h3Handler': (p: UniversalPalette) =>
+      italicToken(p.chromatic.teal.main),
+    'nuxt4.h3Middleware': (p: UniversalPalette) =>
+      boldToken(p.chromatic.cyan.main),
   },
 }
