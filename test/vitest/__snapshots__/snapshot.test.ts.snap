@@ -2,6 +2,7 @@
 
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 1`] = `
 {
+  "fontStyle": "bold",
   "foreground": "#49c7d8",
 }
 `;
@@ -21,12 +22,13 @@ exports[`Snapshot Tests - Generated Theme > should match modern framework semant
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 8`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#d6c3ac",
+  "foreground": "#cc86e0",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match modern framework semantic tokens 9`] = `
 {
+  "fontStyle": "bold",
   "foreground": "#c678dd",
 }
 `;
@@ -618,34 +620,34 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 8`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#49c7d8",
+  "foreground": "#5bcddc",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 9`] = `
 {
-  "foreground": "#d6c3ac",
+  "foreground": "#57dac9",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 10`] = `
 {
   "fontStyle": "italic",
-  "foreground": "#d6c3ac",
+  "foreground": "#68dece",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 11`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#ca9165",
+  "foreground": "#57dac9",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 12`] = `
 {
   "fontStyle": "bold",
-  "foreground": "#ca9165",
+  "foreground": "#49c7d8",
 }
 `;
 
@@ -685,15 +687,24 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 21`] = `
 {
+  "fontStyle": "bold",
   "foreground": "#e07af5",
 }
 `;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 22`] = `undefined`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 23`] = `undefined`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 23`] = `
+{
+  "foreground": "#c0caf5",
+}
+`;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 24`] = `undefined`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 24`] = `
+{
+  "foreground": "#7c87a4",
+}
+`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 25`] = `undefined`;
 
@@ -703,8 +714,8 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 28`] = `
 {
-  "fontStyle": "italic",
-  "foreground": "#4aaaf8",
+  "fontStyle": "bold",
+  "foreground": "#786ce0",
 }
 `;
 
@@ -715,7 +726,12 @@ exports[`Snapshot Tests - Generated Theme > should match specific semantic token
 }
 `;
 
-exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 30`] = `undefined`;
+exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 30`] = `
+{
+  "fontStyle": "italic",
+  "foreground": "#c678dd",
+}
+`;
 
 exports[`Snapshot Tests - Generated Theme > should match specific semantic token color sections 31`] = `undefined`;
 
@@ -1560,6 +1576,7 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "meta.function.parameter variable",
     ],
     "settings": {
+      "fontStyle": "italic",
       "foreground": "#57dac9",
     },
   },
@@ -2278,7 +2295,8 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#ca9165",
+      "fontStyle": "bold",
+      "foreground": "#57dac9",
     },
   },
   {
@@ -2287,7 +2305,8 @@ exports[`Snapshot Tests - Generated Theme > should match specific token color se
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#ca9165",
+      "fontStyle": "bold",
+      "foreground": "#49c7d8",
     },
   },
   {
@@ -4725,7 +4744,24 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme colo
 
 exports[`Snapshot Tests - Generated Theme > should match the expected theme semantic token colors snapshot 1`] = `
 {
+  "abstract": {
+    "fontStyle": "italic",
+    "foreground": "#c678dd",
+  },
+  "access.internal": {
+    "foreground": "#c0caf5",
+  },
+  "access.private": {
+    "foreground": "#ff6b6b",
+  },
+  "access.protected": {
+    "foreground": "#fdb57e",
+  },
+  "access.public": {
+    "foreground": "#98c379",
+  },
   "boolean": {
+    "fontStyle": "bold",
     "foreground": "#e07af5",
   },
   "class": {
@@ -4742,11 +4778,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "constructor": {
     "fontStyle": "bold",
-    "foreground": "#d6c3ac",
+    "foreground": "#fdb57e",
   },
   "decorator": {
-    "fontStyle": "italic",
-    "foreground": "#4aaaf8",
+    "fontStyle": "bold",
+    "foreground": "#c678dd",
   },
   "enum": {
     "fontStyle": "bold",
@@ -4755,8 +4791,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "enumMember": {
     "foreground": "#f3926b",
   },
+  "final": {
+    "fontStyle": "bold",
+    "foreground": "#f2865b",
+  },
   "function": {
     "foreground": "#4aaaf8",
+  },
+  "function.async": {
+    "fontStyle": "italic",
+    "foreground": "#e07af5",
+  },
+  "function.builtin": {
+    "foreground": "#4fcdff",
+  },
+  "function.component": {
+    "foreground": "#45dd91",
   },
   "function.declaration": {
     "fontStyle": "bold",
@@ -4765,9 +4815,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "function.defaultLibrary": {
     "foreground": "#49c7d8",
   },
+  "function.generator": {
+    "fontStyle": "italic",
+    "foreground": "#c678dd",
+  },
   "interface": {
     "fontStyle": "bold",
-    "foreground": "#ca9165",
+    "foreground": "#49c7d8",
   },
   "interface.component": {
     "fontStyle": "bold",
@@ -4775,13 +4829,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   },
   "interface.declaration": {
     "fontStyle": "bold",
-    "foreground": "#ca9165",
+    "foreground": "#49c7d8",
   },
   "jsx.attribute": {
     "foreground": "#ab82f7",
   },
-  "jsx.prop": {
-    "foreground": "#ab82f7",
+  "jsx.children": {
+    "foreground": "#c0caf5",
   },
   "jsx.tag": {
     "foreground": "#ff6b6b",
@@ -4789,33 +4843,85 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
   "jsx.text": {
     "foreground": "#a9b1d6",
   },
+  "keyword.delete": {
+    "fontStyle": "bold",
+    "foreground": "#ff8989",
+  },
+  "keyword.extends": {
+    "foreground": "#8968c6",
+  },
   "keyword.generic": {
+    "fontStyle": "bold",
     "foreground": "#ab82f7",
+  },
+  "keyword.infer": {
+    "fontStyle": "italic",
+    "foreground": "#c678dd",
+  },
+  "keyword.instanceof": {
+    "foreground": "#867be3",
+  },
+  "keyword.keyof": {
+    "foreground": "#b38ff8",
+  },
+  "keyword.new": {
+    "fontStyle": "bold",
+    "foreground": "#f2865b",
   },
   "keyword.self": {
     "fontStyle": "bold",
-    "foreground": "#ff6b6b",
+    "foreground": "#cc5656",
+  },
+  "keyword.super": {
+    "fontStyle": "bold",
+    "foreground": "#ff7a7a",
   },
   "keyword.this": {
     "fontStyle": "bold",
     "foreground": "#ff6b6b",
   },
+  "keyword.typeof": {
+    "foreground": "#b38ff8",
+  },
+  "keyword.void": {
+    "foreground": "#c0caf5",
+  },
   "macro": {
     "fontStyle": "bold",
-    "foreground": "#ab82f7",
+    "foreground": "#f2865b",
   },
   "method": {
     "foreground": "#4aaaf8",
+  },
+  "method.abstract": {
+    "fontStyle": "italic",
+    "foreground": "#ab82f7",
   },
   "method.declaration": {
     "fontStyle": "bold",
     "foreground": "#4aaaf8",
   },
+  "method.static": {
+    "fontStyle": "italic",
+    "foreground": "#786ce0",
+  },
   "namespace": {
     "foreground": "#4aaaf8",
   },
+  "null": {
+    "foreground": "#c0caf5",
+  },
   "number": {
     "foreground": "#f2865b",
+  },
+  "number.binary": {
+    "foreground": "#fdbc8b",
+  },
+  "number.hex": {
+    "foreground": "#b38ff8",
+  },
+  "number.octal": {
+    "foreground": "#5bcddc",
   },
   "nuxt.action": {
     "fontStyle": "bold",
@@ -5269,27 +5375,36 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "fontStyle": "bold",
     "foreground": "#9aa2c4",
   },
+  "override": {
+    "fontStyle": "italic",
+    "foreground": "#e07af5",
+  },
   "parameter": {
-    "foreground": "#d6c3ac",
+    "foreground": "#57dac9",
   },
   "parameter.declaration": {
-    "foreground": "#fdb57e",
+    "foreground": "#49c7d8",
   },
   "parameter.readonly": {
     "fontStyle": "italic",
-    "foreground": "#d6c3ac",
+    "foreground": "#68dece",
+  },
+  "parameter.type": {
+    "fontStyle": "italic",
+    "foreground": "#786ce0",
   },
   "property": {
     "foreground": "#49c7d8",
   },
   "property.declaration": {
-    "foreground": "#57dac9",
+    "foreground": "#4fcdff",
   },
   "property.readonly": {
     "fontStyle": "italic",
-    "foreground": "#49c7d8",
+    "foreground": "#5bcddc",
   },
   "react.hook": {
+    "fontStyle": "bold",
     "foreground": "#49c7d8",
   },
   "readonly": {
@@ -5315,41 +5430,98 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#ab82f7",
   },
   "static": {
-    "fontStyle": "italic",
-    "foreground": "#4aaaf8",
+    "fontStyle": "bold",
+    "foreground": "#786ce0",
   },
   "string": {
     "foreground": "#98c379",
+  },
+  "string.character": {
+    "foreground": "#45dd91",
   },
   "string.escape": {
     "fontStyle": "bold",
     "foreground": "#d6c3ac",
   },
+  "string.regex": {
+    "foreground": "#f3926b",
+  },
+  "string.template": {
+    "foreground": "#80d151",
+  },
   "type": {
     "fontStyle": "bold",
-    "foreground": "#ca9165",
+    "foreground": "#57dac9",
+  },
+  "type.alias": {
+    "foreground": "#4fcdff",
+  },
+  "type.builtin": {
+    "foreground": "#5cb3f9",
+  },
+  "type.condition": {
+    "fontStyle": "italic",
+    "foreground": "#ab82f7",
   },
   "type.declaration": {
     "fontStyle": "bold",
-    "foreground": "#ca9165",
+    "foreground": "#57dac9",
+  },
+  "type.enum": {
+    "fontStyle": "bold",
+    "foreground": "#f2865b",
   },
   "type.generic": {
     "fontStyle": "italic",
-    "foreground": "#d6c3ac",
+    "foreground": "#cc86e0",
+  },
+  "type.intersection": {
+    "foreground": "#5cb3f9",
+  },
+  "type.mapped": {
+    "foreground": "#867be3",
   },
   "type.parameter": {
     "fontStyle": "italic",
-    "foreground": "#fdb57e",
+    "foreground": "#786ce0",
+  },
+  "type.primitive": {
+    "foreground": "#45dd91",
+  },
+  "type.union": {
+    "foreground": "#5bcddc",
   },
   "type.utility": {
+    "fontStyle": "bold",
     "foreground": "#c678dd",
+  },
+  "typescript.extends": {
+    "foreground": "#5cb3f9",
   },
   "typescript.generic": {
     "fontStyle": "italic",
-    "foreground": "#d6c3ac",
+    "foreground": "#cc86e0",
+  },
+  "typescript.infer": {
+    "fontStyle": "italic",
+    "foreground": "#e387f6",
+  },
+  "typescript.keyof": {
+    "foreground": "#867be3",
+  },
+  "typescript.typeof": {
+    "foreground": "#b38ff8",
   },
   "typescript.utility": {
+    "fontStyle": "bold",
     "foreground": "#c678dd",
+  },
+  "undefined": {
+    "foreground": "#7c87a4",
+  },
+  "variable.constant": {
+    "fontStyle": "bold",
+    "foreground": "#f2865b",
   },
   "variable.declaration": {
     "foreground": "#ab82f7",
@@ -5359,11 +5531,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme sema
     "foreground": "#ab82f7",
   },
   "variable.defaultLibrary": {
-    "foreground": "#5bcddc",
+    "foreground": "#5cb3f9",
+  },
+  "variable.global": {
+    "foreground": "#c678dd",
   },
   "variable.language.self": {
     "fontStyle": "bold",
-    "foreground": "#ff6b6b",
+    "foreground": "#cc5656",
   },
   "variable.readonly": {
     "fontStyle": "italic",
@@ -5751,7 +5926,24 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
   "name": "Tokyo Modern",
   "semanticHighlighting": true,
   "semanticTokenColors": {
+    "abstract": {
+      "fontStyle": "italic",
+      "foreground": "#c678dd",
+    },
+    "access.internal": {
+      "foreground": "#c0caf5",
+    },
+    "access.private": {
+      "foreground": "#ff6b6b",
+    },
+    "access.protected": {
+      "foreground": "#fdb57e",
+    },
+    "access.public": {
+      "foreground": "#98c379",
+    },
     "boolean": {
+      "fontStyle": "bold",
       "foreground": "#e07af5",
     },
     "class": {
@@ -5768,11 +5960,11 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "constructor": {
       "fontStyle": "bold",
-      "foreground": "#d6c3ac",
+      "foreground": "#fdb57e",
     },
     "decorator": {
-      "fontStyle": "italic",
-      "foreground": "#4aaaf8",
+      "fontStyle": "bold",
+      "foreground": "#c678dd",
     },
     "enum": {
       "fontStyle": "bold",
@@ -5781,8 +5973,22 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "enumMember": {
       "foreground": "#f3926b",
     },
+    "final": {
+      "fontStyle": "bold",
+      "foreground": "#f2865b",
+    },
     "function": {
       "foreground": "#4aaaf8",
+    },
+    "function.async": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
+    "function.builtin": {
+      "foreground": "#4fcdff",
+    },
+    "function.component": {
+      "foreground": "#45dd91",
     },
     "function.declaration": {
       "fontStyle": "bold",
@@ -5791,9 +5997,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "function.defaultLibrary": {
       "foreground": "#49c7d8",
     },
+    "function.generator": {
+      "fontStyle": "italic",
+      "foreground": "#c678dd",
+    },
     "interface": {
       "fontStyle": "bold",
-      "foreground": "#ca9165",
+      "foreground": "#49c7d8",
     },
     "interface.component": {
       "fontStyle": "bold",
@@ -5801,13 +6011,13 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     },
     "interface.declaration": {
       "fontStyle": "bold",
-      "foreground": "#ca9165",
+      "foreground": "#49c7d8",
     },
     "jsx.attribute": {
       "foreground": "#ab82f7",
     },
-    "jsx.prop": {
-      "foreground": "#ab82f7",
+    "jsx.children": {
+      "foreground": "#c0caf5",
     },
     "jsx.tag": {
       "foreground": "#ff6b6b",
@@ -5815,33 +6025,85 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
     "jsx.text": {
       "foreground": "#a9b1d6",
     },
+    "keyword.delete": {
+      "fontStyle": "bold",
+      "foreground": "#ff8989",
+    },
+    "keyword.extends": {
+      "foreground": "#8968c6",
+    },
     "keyword.generic": {
+      "fontStyle": "bold",
       "foreground": "#ab82f7",
+    },
+    "keyword.infer": {
+      "fontStyle": "italic",
+      "foreground": "#c678dd",
+    },
+    "keyword.instanceof": {
+      "foreground": "#867be3",
+    },
+    "keyword.keyof": {
+      "foreground": "#b38ff8",
+    },
+    "keyword.new": {
+      "fontStyle": "bold",
+      "foreground": "#f2865b",
     },
     "keyword.self": {
       "fontStyle": "bold",
-      "foreground": "#ff6b6b",
+      "foreground": "#cc5656",
+    },
+    "keyword.super": {
+      "fontStyle": "bold",
+      "foreground": "#ff7a7a",
     },
     "keyword.this": {
       "fontStyle": "bold",
       "foreground": "#ff6b6b",
     },
+    "keyword.typeof": {
+      "foreground": "#b38ff8",
+    },
+    "keyword.void": {
+      "foreground": "#c0caf5",
+    },
     "macro": {
       "fontStyle": "bold",
-      "foreground": "#ab82f7",
+      "foreground": "#f2865b",
     },
     "method": {
       "foreground": "#4aaaf8",
+    },
+    "method.abstract": {
+      "fontStyle": "italic",
+      "foreground": "#ab82f7",
     },
     "method.declaration": {
       "fontStyle": "bold",
       "foreground": "#4aaaf8",
     },
+    "method.static": {
+      "fontStyle": "italic",
+      "foreground": "#786ce0",
+    },
     "namespace": {
       "foreground": "#4aaaf8",
     },
+    "null": {
+      "foreground": "#c0caf5",
+    },
     "number": {
       "foreground": "#f2865b",
+    },
+    "number.binary": {
+      "foreground": "#fdbc8b",
+    },
+    "number.hex": {
+      "foreground": "#b38ff8",
+    },
+    "number.octal": {
+      "foreground": "#5bcddc",
     },
     "nuxt.action": {
       "fontStyle": "bold",
@@ -6295,27 +6557,36 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "fontStyle": "bold",
       "foreground": "#9aa2c4",
     },
+    "override": {
+      "fontStyle": "italic",
+      "foreground": "#e07af5",
+    },
     "parameter": {
-      "foreground": "#d6c3ac",
+      "foreground": "#57dac9",
     },
     "parameter.declaration": {
-      "foreground": "#fdb57e",
+      "foreground": "#49c7d8",
     },
     "parameter.readonly": {
       "fontStyle": "italic",
-      "foreground": "#d6c3ac",
+      "foreground": "#68dece",
+    },
+    "parameter.type": {
+      "fontStyle": "italic",
+      "foreground": "#786ce0",
     },
     "property": {
       "foreground": "#49c7d8",
     },
     "property.declaration": {
-      "foreground": "#57dac9",
+      "foreground": "#4fcdff",
     },
     "property.readonly": {
       "fontStyle": "italic",
-      "foreground": "#49c7d8",
+      "foreground": "#5bcddc",
     },
     "react.hook": {
+      "fontStyle": "bold",
       "foreground": "#49c7d8",
     },
     "readonly": {
@@ -6341,41 +6612,98 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#ab82f7",
     },
     "static": {
-      "fontStyle": "italic",
-      "foreground": "#4aaaf8",
+      "fontStyle": "bold",
+      "foreground": "#786ce0",
     },
     "string": {
       "foreground": "#98c379",
+    },
+    "string.character": {
+      "foreground": "#45dd91",
     },
     "string.escape": {
       "fontStyle": "bold",
       "foreground": "#d6c3ac",
     },
+    "string.regex": {
+      "foreground": "#f3926b",
+    },
+    "string.template": {
+      "foreground": "#80d151",
+    },
     "type": {
       "fontStyle": "bold",
-      "foreground": "#ca9165",
+      "foreground": "#57dac9",
+    },
+    "type.alias": {
+      "foreground": "#4fcdff",
+    },
+    "type.builtin": {
+      "foreground": "#5cb3f9",
+    },
+    "type.condition": {
+      "fontStyle": "italic",
+      "foreground": "#ab82f7",
     },
     "type.declaration": {
       "fontStyle": "bold",
-      "foreground": "#ca9165",
+      "foreground": "#57dac9",
+    },
+    "type.enum": {
+      "fontStyle": "bold",
+      "foreground": "#f2865b",
     },
     "type.generic": {
       "fontStyle": "italic",
-      "foreground": "#d6c3ac",
+      "foreground": "#cc86e0",
+    },
+    "type.intersection": {
+      "foreground": "#5cb3f9",
+    },
+    "type.mapped": {
+      "foreground": "#867be3",
     },
     "type.parameter": {
       "fontStyle": "italic",
-      "foreground": "#fdb57e",
+      "foreground": "#786ce0",
+    },
+    "type.primitive": {
+      "foreground": "#45dd91",
+    },
+    "type.union": {
+      "foreground": "#5bcddc",
     },
     "type.utility": {
+      "fontStyle": "bold",
       "foreground": "#c678dd",
+    },
+    "typescript.extends": {
+      "foreground": "#5cb3f9",
     },
     "typescript.generic": {
       "fontStyle": "italic",
-      "foreground": "#d6c3ac",
+      "foreground": "#cc86e0",
+    },
+    "typescript.infer": {
+      "fontStyle": "italic",
+      "foreground": "#e387f6",
+    },
+    "typescript.keyof": {
+      "foreground": "#867be3",
+    },
+    "typescript.typeof": {
+      "foreground": "#b38ff8",
     },
     "typescript.utility": {
+      "fontStyle": "bold",
       "foreground": "#c678dd",
+    },
+    "undefined": {
+      "foreground": "#7c87a4",
+    },
+    "variable.constant": {
+      "fontStyle": "bold",
+      "foreground": "#f2865b",
     },
     "variable.declaration": {
       "foreground": "#ab82f7",
@@ -6385,11 +6713,14 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
       "foreground": "#ab82f7",
     },
     "variable.defaultLibrary": {
-      "foreground": "#5bcddc",
+      "foreground": "#5cb3f9",
+    },
+    "variable.global": {
+      "foreground": "#c678dd",
     },
     "variable.language.self": {
       "fontStyle": "bold",
-      "foreground": "#ff6b6b",
+      "foreground": "#cc5656",
     },
     "variable.readonly": {
       "fontStyle": "italic",
@@ -7226,6 +7557,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "meta.function.parameter variable",
       ],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#57dac9",
       },
     },
@@ -7944,7 +8276,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.tsx",
       ],
       "settings": {
-        "foreground": "#ca9165",
+        "fontStyle": "bold",
+        "foreground": "#57dac9",
       },
     },
     {
@@ -7953,7 +8286,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme snap
         "entity.name.type.interface",
       ],
       "settings": {
-        "foreground": "#ca9165",
+        "fontStyle": "bold",
+        "foreground": "#49c7d8",
       },
     },
     {
@@ -10845,6 +11179,7 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "meta.function.parameter variable",
     ],
     "settings": {
+      "fontStyle": "italic",
       "foreground": "#57dac9",
     },
   },
@@ -11563,7 +11898,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.tsx",
     ],
     "settings": {
-      "foreground": "#ca9165",
+      "fontStyle": "bold",
+      "foreground": "#57dac9",
     },
   },
   {
@@ -11572,7 +11908,8 @@ exports[`Snapshot Tests - Generated Theme > should match the expected theme toke
       "entity.name.type.interface",
     ],
     "settings": {
-      "foreground": "#ca9165",
+      "fontStyle": "bold",
+      "foreground": "#49c7d8",
     },
   },
   {

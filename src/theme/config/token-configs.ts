@@ -824,7 +824,8 @@ export const codeTokens: TokenColorConfig[] = [
       'meta.function.parameter variable',
     ],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.teal.main, // Изменен на teal для лучшего контраста
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main, // Teal для лучшего контраста
+      fontStyle: 'italic', // Курсив для параметров функций
     },
   },
   {
@@ -1749,14 +1750,16 @@ export const modernTokens: TokenColorConfig[] = [
     name: 'TypeScript Type',
     scope: ['entity.name.type.ts', 'entity.name.type.tsx'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.amber.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.teal.main, // Teal для лучшей контрастности
+      fontStyle: 'bold',
     },
   },
   {
     name: 'TypeScript Interface',
     scope: ['entity.name.type.interface'],
     settings: {
-      foreground: (p: UniversalPalette) => p.chromatic.amber.dark,
+      foreground: (p: UniversalPalette) => p.chromatic.cyan.main, // Cyan для интерфейсов
+      fontStyle: 'bold',
     },
   },
   {

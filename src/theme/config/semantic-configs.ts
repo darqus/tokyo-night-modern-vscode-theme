@@ -4,6 +4,10 @@ import type { SemanticTokenConfig } from './color-config-dsl.js'
 
 /**
  * Variable tokens - переменные
+ *
+ * Улучшения:
+ * - Параметры функций используют более контрастный teal вместо желтого
+ * - Добавлены новые семантические токены для лучшей различимости
  */
 export const variablesConfig: SemanticTokenConfig = {
   rules: {
@@ -11,25 +15,42 @@ export const variablesConfig: SemanticTokenConfig = {
       italicToken(p.chromatic.sky.light),
     'variable.declaration': (p: UniversalPalette) =>
       token(p.chromatic.purple.main),
-    parameter: (p: UniversalPalette) => token(p.chromatic.yellow.main), // Желтый для параметров
+
+    // Параметры функций - улучшенная контрастность и читаемость
+    parameter: (p: UniversalPalette) => token(p.chromatic.teal.main), // Teal вместо желтого - лучше контраст
     'parameter.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.yellow.main),
+      italicToken(p.chromatic.teal.light),
     'parameter.declaration': (p: UniversalPalette) =>
-      token(p.chromatic.amber.main),
+      token(p.chromatic.cyan.main), // Cyan для деклараций параметров
+
+    // Свойства объектов
     property: (p: UniversalPalette) => token(p.chromatic.cyan.main),
     'property.readonly': (p: UniversalPalette) =>
-      italicToken(p.chromatic.cyan.main),
+      italicToken(p.chromatic.cyan.light),
     'property.declaration': (p: UniversalPalette) =>
-      token(p.chromatic.teal.main),
+      token(p.chromatic.sky.main), // Sky для деклараций свойств
+
+    // Библиотечные переменные
     'variable.defaultLibrary': (p: UniversalPalette) =>
-      token(p.chromatic.cyan.light),
+      token(p.chromatic.blue.light),
     'variable.declaration.readonly': (p: UniversalPalette) =>
       italicToken(p.chromatic.purple.main),
+
+    // Дополнительные улучшенные токены
+    'variable.constant': (p: UniversalPalette) =>
+      boldToken(p.chromatic.orange.main),
+    'variable.global': (p: UniversalPalette) => token(p.chromatic.violet.main),
+    'parameter.type': (p: UniversalPalette) =>
+      italicToken(p.chromatic.indigo.main),
   },
 }
 
 /**
  * Function tokens - функции и методы
+ *
+ * Улучшения:
+ * - Конструкторы используют более выразительный цвет
+ * - Добавлены новые токены для асинхронных функций
  */
 export const functionsConfig: SemanticTokenConfig = {
   rules: {
@@ -38,76 +59,153 @@ export const functionsConfig: SemanticTokenConfig = {
       boldToken(p.chromatic.blue.main),
     'function.defaultLibrary': (p: UniversalPalette) =>
       token(p.chromatic.cyan.main),
+    'function.async': (p: UniversalPalette) =>
+      italicToken(p.chromatic.pink.main), // Розовый для async функций
+    'function.generator': (p: UniversalPalette) =>
+      italicToken(p.chromatic.violet.main), // Фиолетовый для генераторов
+
     method: (p: UniversalPalette) => token(p.chromatic.blue.main),
     'method.declaration': (p: UniversalPalette) =>
       boldToken(p.chromatic.blue.main),
-    constructor: (p: UniversalPalette) => boldToken(p.chromatic.yellow.main),
+    'method.static': (p: UniversalPalette) =>
+      italicToken(p.chromatic.indigo.main), // Индиго для статических методов
+    'method.abstract': (p: UniversalPalette) =>
+      italicToken(p.chromatic.purple.main), // Пурпурный для абстрактных методов
+
+    constructor: (p: UniversalPalette) => boldToken(p.chromatic.amber.main), // Amber вместо желтого
+    'function.builtin': (p: UniversalPalette) => token(p.chromatic.sky.main), // Sky для встроенных функций
   },
 }
 
 /**
  * Type tokens - типы и классы
+ *
+ * Улучшения:
+ * - Типы используют более яркие и контрастные цвета
+ * - Добавлена поддержка современных TypeScript возможностей
  */
 export const typesConfig: SemanticTokenConfig = {
   rules: {
-    type: (p: UniversalPalette) => boldToken(p.chromatic.amber.dark),
-    interface: (p: UniversalPalette) => boldToken(p.chromatic.amber.dark),
+    // Основные типы - улучшенная контрастность
+    type: (p: UniversalPalette) => boldToken(p.chromatic.teal.main), // Teal вместо amber.dark
+    interface: (p: UniversalPalette) => boldToken(p.chromatic.cyan.main), // Cyan вместо amber.dark
     class: (p: UniversalPalette) => boldToken(p.chromatic.pink.main),
+
     // Улучшенная поддержка TypeScript
     'type.generic': (p: UniversalPalette) =>
-      italicToken(p.chromatic.yellow.main), // Generics
+      italicToken(p.chromatic.violet.light), // Фиолетовый для дженериков
     'type.parameter': (p: UniversalPalette) =>
-      italicToken(p.chromatic.amber.main), // Type parameters
+      italicToken(p.chromatic.indigo.main), // Индиго для параметров типов
+    'type.builtin': (p: UniversalPalette) => token(p.chromatic.blue.light), // Светло-синий для встроенных типов
+    'type.enum': (p: UniversalPalette) => boldToken(p.chromatic.orange.main), // Оранжевый для enum
+
+    // Декларации типов
     'class.declaration': (p: UniversalPalette) =>
       boldToken(p.chromatic.pink.main),
     'interface.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.amber.dark),
+      boldToken(p.chromatic.cyan.main),
     'type.declaration': (p: UniversalPalette) =>
-      boldToken(p.chromatic.amber.dark),
-    // Utility types
-    'type.utility': (p: UniversalPalette) => token(p.chromatic.violet.main),
+      boldToken(p.chromatic.teal.main),
+    'type.alias': (p: UniversalPalette) => token(p.chromatic.sky.main), // Sky для алиасов типов
+
+    // Utility types - улучшенная различимость
+    'type.utility': (p: UniversalPalette) => boldToken(p.chromatic.violet.main), // Жирный для utility types
+    'type.condition': (p: UniversalPalette) =>
+      italicToken(p.chromatic.purple.main), // Условные типы
+    'type.mapped': (p: UniversalPalette) => token(p.chromatic.indigo.light), // Mapped types
+
     // TypeScript generics keywords
-    'keyword.generic': (p: UniversalPalette) => token(p.chromatic.purple.main), // extends, keyof и др.
+    'keyword.generic': (p: UniversalPalette) =>
+      boldToken(p.chromatic.purple.main), // Жирный для extends, keyof
+    'keyword.extends': (p: UniversalPalette) => token(p.chromatic.purple.dark), // Темный для extends
+    'keyword.keyof': (p: UniversalPalette) => token(p.chromatic.purple.light), // Светлый для keyof
+    'keyword.infer': (p: UniversalPalette) =>
+      italicToken(p.chromatic.violet.main), // Курсив для infer
+
+    // Дополнительные типовые токены
+    'type.primitive': (p: UniversalPalette) => token(p.chromatic.emerald.main), // Изумрудный для примитивов
+    'type.union': (p: UniversalPalette) => token(p.chromatic.cyan.light), // Светло-бирюзовый для union
+    'type.intersection': (p: UniversalPalette) => token(p.chromatic.blue.light), // Светло-синий для intersection
   },
 }
 
 /**
  * Modifier tokens - модификаторы (static, readonly и т.д.)
+ *
+ * Улучшения:
+ * - Более четкое разделение между модификаторами
+ * - Добавлены новые модификаторы доступа
  */
 export const modifiersConfig: SemanticTokenConfig = {
   rules: {
-    static: (p: UniversalPalette) => italicToken(p.chromatic.blue.main),
+    static: (p: UniversalPalette) => boldToken(p.chromatic.indigo.main), // Жирный индиго
     readonly: (p: UniversalPalette) => italicToken(p.chromatic.cyan.main),
+    abstract: (p: UniversalPalette) => italicToken(p.chromatic.violet.main), // Фиолетовый для abstract
+    final: (p: UniversalPalette) => boldToken(p.chromatic.orange.main), // Оранжевый для final
+    override: (p: UniversalPalette) => italicToken(p.chromatic.pink.main), // Розовый для override
+
+    // Модификаторы доступа
+    'access.public': (p: UniversalPalette) => token(p.chromatic.green.main),
+    'access.private': (p: UniversalPalette) => token(p.chromatic.red.main),
+    'access.protected': (p: UniversalPalette) => token(p.chromatic.amber.main),
+    'access.internal': (p: UniversalPalette) => token(p.chromatic.gray.main),
   },
 }
 
 /**
  * Critical keywords tokens - критические ключевые слова (this, super и т.д.)
+ *
+ * Улучшения:
+ * - Более выразительные цвета для критических ключевых слов
  */
 export const criticalKeywordsConfig: SemanticTokenConfig = {
   rules: {
     'keyword.this': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
-    'keyword.self': (p: UniversalPalette) => boldToken(p.chromatic.red.main),
+    'keyword.super': (p: UniversalPalette) => boldToken(p.chromatic.red.light), // Светлее для super
+    'keyword.self': (p: UniversalPalette) => boldToken(p.chromatic.red.dark), // Темнее для self
     'variable.language.self': (p: UniversalPalette) =>
-      boldToken(p.chromatic.red.main),
+      boldToken(p.chromatic.red.dark),
+    'keyword.new': (p: UniversalPalette) => boldToken(p.chromatic.orange.main), // Оранжевый для new
+    'keyword.delete': (p: UniversalPalette) =>
+      boldToken(p.chromatic.red.bright), // Яркий для delete
+    'keyword.void': (p: UniversalPalette) => token(p.chromatic.gray.main), // Серый для void
+    'keyword.typeof': (p: UniversalPalette) => token(p.chromatic.purple.light), // Фиолетовый для typeof
+    'keyword.instanceof': (p: UniversalPalette) =>
+      token(p.chromatic.indigo.light), // Индиго для instanceof
   },
 }
 
 /**
  * Literal tokens - литералы (строки, числа, булевы)
+ *
+ * Улучшения:
+ * - Более контрастные цвета для разных типов литералов
  */
 export const literalsConfig: SemanticTokenConfig = {
   rules: {
     string: (p: UniversalPalette) => token(p.chromatic.green.main),
+    'string.template': (p: UniversalPalette) => token(p.chromatic.lime.main), // Лайм для template strings
+    'string.regex': (p: UniversalPalette) => token(p.chromatic.orange.light), // Светло-оранжевый для regex
     number: (p: UniversalPalette) => token(p.chromatic.orange.main),
-    boolean: (p: UniversalPalette) => token(p.chromatic.pink.main), // Розовый для булевых значений
+    'number.binary': (p: UniversalPalette) => token(p.chromatic.amber.light), // Светло-янтарный для бинарных
+    'number.hex': (p: UniversalPalette) => token(p.chromatic.purple.light), // Фиолетовый для hex
+    'number.octal': (p: UniversalPalette) => token(p.chromatic.cyan.light), // Бирюзовый для octal
+    boolean: (p: UniversalPalette) => boldToken(p.chromatic.pink.main), // Жирный розовый для булевых
+    null: (p: UniversalPalette) => token(p.chromatic.gray.main), // Серый для null
+    undefined: (p: UniversalPalette) => token(p.chromatic.slate.main), // Сланцевый для undefined
     'string.escape': (p: UniversalPalette) =>
-      boldToken(p.chromatic.yellow.main), // Жирный для escape
+      boldToken(p.chromatic.yellow.main), // Желтый для escape
+    'string.character': (p: UniversalPalette) =>
+      token(p.chromatic.emerald.main), // Изумрудный для символов
   },
 }
 
 /**
  * Framework tokens - специфичные для современных фреймворков
+ *
+ * Улучшения:
+ * - Более организованная структура цветов
+ * - Улучшенная контрастность для фреймворк-специфичных токенов
  */
 export const frameworksConfig: SemanticTokenConfig = {
   rules: {
@@ -116,12 +214,14 @@ export const frameworksConfig: SemanticTokenConfig = {
       boldToken(p.chromatic.teal.main),
     'interface.component': (p: UniversalPalette) =>
       boldToken(p.chromatic.teal.dark),
+    'function.component': (p: UniversalPalette) =>
+      token(p.chromatic.emerald.main), // Изумрудный для функциональных компонентов
 
     // Декораторы
-    decorator: (p: UniversalPalette) => italicToken(p.chromatic.blue.main),
+    decorator: (p: UniversalPalette) => boldToken(p.chromatic.violet.main), // Жирный фиолетовый
 
     // Макросы
-    macro: (p: UniversalPalette) => boldToken(p.chromatic.purple.main),
+    macro: (p: UniversalPalette) => boldToken(p.chromatic.orange.main), // Оранжевый для макросов
 
     // Namespace
     namespace: (p: UniversalPalette) => token(p.chromatic.blue.main),
@@ -134,16 +234,22 @@ export const frameworksConfig: SemanticTokenConfig = {
     'jsx.tag': (p: UniversalPalette) => token(p.chromatic.red.main),
     'jsx.attribute': (p: UniversalPalette) => token(p.chromatic.purple.main),
     'jsx.text': (p: UniversalPalette) => token(p.foreground.secondary.main),
-    'react.hook': (p: UniversalPalette) => token(p.chromatic.cyan.main),
+    'jsx.children': (p: UniversalPalette) => token(p.foreground.primary.main), // Основной цвет для children
+    'react.hook': (p: UniversalPalette) => boldToken(p.chromatic.cyan.main), // Жирный для React hooks
 
-    // TypeScript-specific
+    // TypeScript-specific улучшения
     'typescript.generic': (p: UniversalPalette) =>
-      italicToken(p.chromatic.yellow.main),
+      italicToken(p.chromatic.violet.light),
     'typescript.utility': (p: UniversalPalette) =>
-      token(p.chromatic.violet.main),
-
-    // JSX/TSX props и children
-    'jsx.prop': (p: UniversalPalette) => token(p.chromatic.purple.main),
+      boldToken(p.chromatic.violet.main), // Жирный для utility types
+    'typescript.typeof': (p: UniversalPalette) =>
+      token(p.chromatic.purple.light), // Фиолетовый для typeof
+    'typescript.keyof': (p: UniversalPalette) =>
+      token(p.chromatic.indigo.light), // Индиго для keyof
+    'typescript.infer': (p: UniversalPalette) =>
+      italicToken(p.chromatic.pink.light), // Розовый для infer
+    'typescript.extends': (p: UniversalPalette) =>
+      token(p.chromatic.blue.light), // Синий для extends
 
     // Rust-specific
     'rust.lifetime': (p: UniversalPalette) =>
@@ -155,7 +261,7 @@ export const frameworksConfig: SemanticTokenConfig = {
     'rust.pattern.iflet': (p: UniversalPalette) =>
       token(p.chromatic.purple.main),
 
-    // Nuxt.js specific tokens
+    // Nuxt.js specific tokens - улучшенная организация
     'nuxt.composable': (p: UniversalPalette) =>
       boldToken(p.chromatic.green.main),
     'nuxt.directive': (p: UniversalPalette) => token(p.chromatic.violet.main),

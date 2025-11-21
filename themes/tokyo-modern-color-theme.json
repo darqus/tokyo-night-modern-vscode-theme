@@ -1173,7 +1173,8 @@
         "meta.function.parameter variable"
       ],
       "settings": {
-        "foreground": "#57dac9"
+        "foreground": "#57dac9",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1870,14 +1871,16 @@
       "name": "TypeScript Type",
       "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
       "settings": {
-        "foreground": "#ca9165"
+        "foreground": "#57dac9",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "TypeScript Interface",
       "scope": ["entity.name.type.interface"],
       "settings": {
-        "foreground": "#ca9165"
+        "foreground": "#49c7d8",
+        "fontStyle": "bold"
       }
     },
     {
@@ -3886,30 +3889,41 @@
       "foreground": "#ab82f7"
     },
     "parameter": {
-      "foreground": "#d6c3ac"
+      "foreground": "#57dac9"
     },
     "parameter.readonly": {
-      "foreground": "#d6c3ac",
+      "foreground": "#68dece",
       "fontStyle": "italic"
     },
     "parameter.declaration": {
-      "foreground": "#fdb57e"
+      "foreground": "#49c7d8"
     },
     "property": {
       "foreground": "#49c7d8"
     },
     "property.readonly": {
-      "foreground": "#49c7d8",
+      "foreground": "#5bcddc",
       "fontStyle": "italic"
     },
     "property.declaration": {
-      "foreground": "#57dac9"
+      "foreground": "#4fcdff"
     },
     "variable.defaultLibrary": {
-      "foreground": "#5bcddc"
+      "foreground": "#5cb3f9"
     },
     "variable.declaration.readonly": {
       "foreground": "#ab82f7",
+      "fontStyle": "italic"
+    },
+    "variable.constant": {
+      "foreground": "#f2865b",
+      "fontStyle": "bold"
+    },
+    "variable.global": {
+      "foreground": "#c678dd"
+    },
+    "parameter.type": {
+      "foreground": "#786ce0",
       "fontStyle": "italic"
     },
     "function": {
@@ -3922,6 +3936,14 @@
     "function.defaultLibrary": {
       "foreground": "#49c7d8"
     },
+    "function.async": {
+      "foreground": "#e07af5",
+      "fontStyle": "italic"
+    },
+    "function.generator": {
+      "foreground": "#c678dd",
+      "fontStyle": "italic"
+    },
     "method": {
       "foreground": "#4aaaf8"
     },
@@ -3929,16 +3951,27 @@
       "foreground": "#4aaaf8",
       "fontStyle": "bold"
     },
+    "method.static": {
+      "foreground": "#786ce0",
+      "fontStyle": "italic"
+    },
+    "method.abstract": {
+      "foreground": "#ab82f7",
+      "fontStyle": "italic"
+    },
     "constructor": {
-      "foreground": "#d6c3ac",
+      "foreground": "#fdb57e",
       "fontStyle": "bold"
     },
+    "function.builtin": {
+      "foreground": "#4fcdff"
+    },
     "type": {
-      "foreground": "#ca9165",
+      "foreground": "#57dac9",
       "fontStyle": "bold"
     },
     "interface": {
-      "foreground": "#ca9165",
+      "foreground": "#49c7d8",
       "fontStyle": "bold"
     },
     "class": {
@@ -3946,51 +3979,138 @@
       "fontStyle": "bold"
     },
     "type.generic": {
-      "foreground": "#d6c3ac",
+      "foreground": "#cc86e0",
       "fontStyle": "italic"
     },
     "type.parameter": {
-      "foreground": "#fdb57e",
+      "foreground": "#786ce0",
       "fontStyle": "italic"
+    },
+    "type.builtin": {
+      "foreground": "#5cb3f9"
+    },
+    "type.enum": {
+      "foreground": "#f2865b",
+      "fontStyle": "bold"
     },
     "class.declaration": {
       "foreground": "#e07af5",
       "fontStyle": "bold"
     },
     "interface.declaration": {
-      "foreground": "#ca9165",
+      "foreground": "#49c7d8",
       "fontStyle": "bold"
     },
     "type.declaration": {
-      "foreground": "#ca9165",
+      "foreground": "#57dac9",
       "fontStyle": "bold"
     },
+    "type.alias": {
+      "foreground": "#4fcdff"
+    },
     "type.utility": {
-      "foreground": "#c678dd"
+      "foreground": "#c678dd",
+      "fontStyle": "bold"
+    },
+    "type.condition": {
+      "foreground": "#ab82f7",
+      "fontStyle": "italic"
+    },
+    "type.mapped": {
+      "foreground": "#867be3"
     },
     "keyword.generic": {
-      "foreground": "#ab82f7"
+      "foreground": "#ab82f7",
+      "fontStyle": "bold"
+    },
+    "keyword.extends": {
+      "foreground": "#8968c6"
+    },
+    "keyword.keyof": {
+      "foreground": "#b38ff8"
+    },
+    "keyword.infer": {
+      "foreground": "#c678dd",
+      "fontStyle": "italic"
+    },
+    "type.primitive": {
+      "foreground": "#45dd91"
+    },
+    "type.union": {
+      "foreground": "#5bcddc"
+    },
+    "type.intersection": {
+      "foreground": "#5cb3f9"
     },
     "static": {
-      "foreground": "#4aaaf8",
-      "fontStyle": "italic"
+      "foreground": "#786ce0",
+      "fontStyle": "bold"
     },
     "readonly": {
       "foreground": "#49c7d8",
       "fontStyle": "italic"
     },
+    "abstract": {
+      "foreground": "#c678dd",
+      "fontStyle": "italic"
+    },
+    "final": {
+      "foreground": "#f2865b",
+      "fontStyle": "bold"
+    },
+    "override": {
+      "foreground": "#e07af5",
+      "fontStyle": "italic"
+    },
+    "access.public": {
+      "foreground": "#98c379"
+    },
+    "access.private": {
+      "foreground": "#ff6b6b"
+    },
+    "access.protected": {
+      "foreground": "#fdb57e"
+    },
+    "access.internal": {
+      "foreground": "#c0caf5"
+    },
     "string": {
       "foreground": "#98c379"
+    },
+    "string.template": {
+      "foreground": "#80d151"
+    },
+    "string.regex": {
+      "foreground": "#f3926b"
     },
     "number": {
       "foreground": "#f2865b"
     },
+    "number.binary": {
+      "foreground": "#fdbc8b"
+    },
+    "number.hex": {
+      "foreground": "#b38ff8"
+    },
+    "number.octal": {
+      "foreground": "#5bcddc"
+    },
     "boolean": {
-      "foreground": "#e07af5"
+      "foreground": "#e07af5",
+      "fontStyle": "bold"
+    },
+    "null": {
+      "foreground": "#c0caf5"
+    },
+    "undefined": {
+      "foreground": "#7c87a4"
     },
     "string.escape": {
       "foreground": "#d6c3ac",
       "fontStyle": "bold"
+    },
+    "string.character": {
+      "foreground": "#45dd91"
     },
     "class.component": {
       "foreground": "#57dac9",
@@ -4000,12 +4120,15 @@
       "foreground": "#46aea1",
       "fontStyle": "bold"
     },
+    "function.component": {
+      "foreground": "#45dd91"
+    },
     "decorator": {
-      "foreground": "#4aaaf8",
-      "fontStyle": "italic"
+      "foreground": "#c678dd",
+      "fontStyle": "bold"
     },
     "macro": {
-      "foreground": "#ab82f7",
+      "foreground": "#f2865b",
       "fontStyle": "bold"
     },
     "namespace": {
@@ -4027,18 +4150,33 @@
     "jsx.text": {
       "foreground": "#a9b1d6"
     },
+    "jsx.children": {
+      "foreground": "#c0caf5"
+    },
     "react.hook": {
-      "foreground": "#49c7d8"
+      "foreground": "#49c7d8",
+      "fontStyle": "bold"
     },
     "typescript.generic": {
-      "foreground": "#d6c3ac",
+      "foreground": "#cc86e0",
       "fontStyle": "italic"
     },
     "typescript.utility": {
-      "foreground": "#c678dd"
+      "foreground": "#c678dd",
+      "fontStyle": "bold"
     },
-    "jsx.prop": {
-      "foreground": "#ab82f7"
+    "typescript.typeof": {
+      "foreground": "#b38ff8"
+    },
+    "typescript.keyof": {
+      "foreground": "#867be3"
+    },
+    "typescript.infer": {
+      "foreground": "#e387f6",
+      "fontStyle": "italic"
+    },
+    "typescript.extends": {
+      "foreground": "#5cb3f9"
     },
     "rust.lifetime": {
       "foreground": "#ab82f7",
@@ -4514,13 +4652,34 @@
       "foreground": "#ff6b6b",
       "fontStyle": "bold"
     },
+    "keyword.super": {
+      "foreground": "#ff7a7a",
+      "fontStyle": "bold"
+    },
     "keyword.self": {
-      "foreground": "#ff6b6b",
+      "foreground": "#cc5656",
       "fontStyle": "bold"
     },
     "variable.language.self": {
-      "foreground": "#ff6b6b",
+      "foreground": "#cc5656",
       "fontStyle": "bold"
+    },
+    "keyword.new": {
+      "foreground": "#f2865b",
+      "fontStyle": "bold"
+    },
+    "keyword.delete": {
+      "foreground": "#ff8989",
+      "fontStyle": "bold"
+    },
+    "keyword.void": {
+      "foreground": "#c0caf5"
+    },
+    "keyword.typeof": {
+      "foreground": "#b38ff8"
+    },
+    "keyword.instanceof": {
+      "foreground": "#867be3"
     }
   }
 }
