@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2623](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2621...v2.3.2623) (2025-11-21)
+
+
+### Features
+
+* **theme:** update badge colors and adjust alpha values ([4d63970](https://github.com/darqus/tokyo-modern-vscode-theme/commit/4d639705855cdfed2292917b06850555377f7536))
+
 ### [2.3.2621](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2620...v2.3.2621) (2025-11-20)
 
 ### [2.3.2620](https://github.com/darqus/tokyo-modern-vscode-theme/compare/v2.3.2592...v2.3.2620) (2025-11-19)
