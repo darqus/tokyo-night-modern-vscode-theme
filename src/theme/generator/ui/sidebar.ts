@@ -42,12 +42,12 @@ export function generateSidebarColors(): Record<string, string> {
       activeBorder: c.indigo.main,
       activeBackground: c.bg.main,
       inactiveForeground: universalPalette.foreground.disabled.dark,
-      badgeBackground: c.indigo.dark,
+      badgeBackground: c.purple.main,
       badgeForeground: c.ui.white,
     })
     .addGroup('activityBarBadge', {
       foreground: c.ui.white,
-      background: c.indigo.dark,
+      background: c.rose.main,
     })
     .addGroup('remote', {
       foreground: c.indigo.light,

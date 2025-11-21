@@ -148,7 +148,8 @@ export const sidebarConfig: UIColorConfig = {
     activityBar: {
       background: (p: UniversalPalette) => p.background.base.dark,
       foreground: (p: UniversalPalette) => p.chromatic.indigo.light,
-      inactiveForeground: (p: UniversalPalette) => alpha(p.chromatic.indigo.light, 0.5),
+      inactiveForeground: (p: UniversalPalette) =>
+        alpha(p.chromatic.indigo.light, 0.5),
       activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
       activeBackground: (p: UniversalPalette) =>
         lighten(p.background.base.dark, 0.03),
@@ -554,7 +555,7 @@ export const panelsConfig: UIColorConfig = {
       activeBorder: (p: UniversalPalette) => p.chromatic.indigo.main,
     },
     panelTitleBadge: {
-      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      background: (p: UniversalPalette) => darken(p.chromatic.pink.main, 0.3),
       foreground: (p: UniversalPalette) => p.ui.white,
     },
     panelInput: {
@@ -872,12 +873,12 @@ export const miscConfig: UIColorConfig = {
         lighten(p.background.base.main, 0.04),
     },
     profileBadge: {
-      background: (p: UniversalPalette) => darken(p.chromatic.indigo.dark, 0.5),
+      background: (p: UniversalPalette) => darken(p.chromatic.pink.main, 0.3),
       foreground: (p: UniversalPalette) => p.ui.white,
     },
     testing: {
       coverCountBadgeBackground: (p: UniversalPalette) =>
-        darken(p.chromatic.green.dark, 0.5),
+        darken(p.chromatic.pink.main, 0.3),
       coverCountBadgeForeground: (p: UniversalPalette) => p.ui.white,
     },
     menu: {
